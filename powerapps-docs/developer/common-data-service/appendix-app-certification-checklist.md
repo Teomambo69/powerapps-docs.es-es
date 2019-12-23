@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e008a8d4751e9ae418393e9daf7eded3495d9450
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5dc66ce68c27ddf0ccea275c862e5c780a8d039c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749409"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861857"
 ---
 # <a name="appendix-app-certification-checklist"></a>Apéndice: Lista de comprobación de certificación de aplicaciones
 
@@ -46,7 +46,7 @@ La lista de comprobación siguiente proporciona la lista de comprobaciones reali
 <td>Validación de código</td>
 <td>
 <ul>
-<li>La validación de código para las aplicaciones de lienzo se efectuará a través de la <a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/accessibility-checker">herramienta Accessibility Checker</a> en PowerApps para comprobar lo siguiente:
+<li>La validación de código para las aplicaciones de lienzo se efectuará a través de la <a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/accessibility-checker">herramienta Accessibility Checker</a> en Power Apps para comprobar lo siguiente:
 <ul>
 <li>Errores y advertencias estáticos de fórmula: Si se encuentran problemas, el equipo de la certificación compartirá los comentarios para resolver y reenviar a AppSource.</li>
 <li>Errores en tiempo de ejecución: Pueden producirse cuando la aplicación se abre en modo de ejecución para ver. Los problemas que se encuentren se comunicarán por correo electrónico.</li>
@@ -62,7 +62,7 @@ La lista de comprobación siguiente proporciona la lista de comprobaciones reali
 <td>Validación de la implementación</td>
 <td>
 <ul>
-<li>La solución se instalará en PowerApps Studio mediante <a href="https://docs.microsoft.com/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer">Package Deployer</a>. Las aplicaciones de lienzo instaladas se localizarán manualmente en la solución y también en la sección de aplicaciones después de la instalación y garantizarán que la aplicación está abierta en modo de edición y ejecución. La aplicación de lienzo se eliminará manualmente de PowerApps Studio para validar la desinstalación correcta</li>
+<li>La solución se instalará en Power Apps Studio mediante <a href="https://docs.microsoft.com/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer">Package Deployer</a>. Las aplicaciones de lienzo instaladas se localizarán manualmente en la solución y también en la sección de aplicaciones después de la instalación y garantizarán que la aplicación está abierta en modo de edición y ejecución. La aplicación de lienzo se eliminará manualmente de Power Apps Studio para validar la desinstalación correcta</li>
 <li>Compruebe que la aplicación de lienzo se conecta correctamente a través de conectores proporcionados por los editores. Por ejemplo, Common Data Service o cualquier otra conexión.</li>
 <li>Compruebe todos los componentes de Common Data Service (entidades, recursos web, complementos y otros componentes) están disponibles en la solución.</li>
 <li>Desinstale manualmente la solución y compruebe si todos los componentes asociados con la solución administrada se han quitado.</li>
@@ -83,7 +83,7 @@ La lista de comprobación siguiente proporciona la lista de comprobaciones reali
 <td>
 <ul>
 <li>La comprobación si la aplicación de lienzo se conecta a cualquier origen de datos externo o conexiones que necesiten acceso, y se comparten los detalles de conexión del documento E2E.</li>
-<li>Compruebe que la aplicación de lienzo se conecta a cualquier conexión externa desde los conectores PowerApps.</li>
+<li>Compruebe que la aplicación de lienzo se conecta a cualquier conexión externa desde los conectores Power Apps.</li>
 <li>Compruebe el código personalizado proporcionado en Package Deployer. Valide el código antes de aprobar la aplicación a AppSource.</li>
 <li>Valide manualmente el código para ver si el código personalizado está recuperando datos del cliente del entorno de destino.</li>
 </ul>
@@ -109,7 +109,7 @@ La lista de comprobación siguiente proporciona la lista de comprobaciones reali
 <td>Validación de la implementación</td>
 <td>
 <ul>
-<li>La aplicación de lienzo se instalará manualmente en PowerApps Studio mediante la característica de importación de aplicaciones. Las aplicaciones de lienzo instaladas se localizarán manualmente en la sección de aplicaciones después de la instalación y garantizarán que la aplicación está abierta en modo de edición y ejecución. La aplicación de lienzo se eliminará manualmente de PowerApps Studio para validar la desinstalación correcta.</li>
+<li>La aplicación de lienzo se instalará manualmente en Power Apps Studio mediante la característica de importación de aplicaciones. Las aplicaciones de lienzo instaladas se localizarán manualmente en la sección de aplicaciones después de la instalación y garantizarán que la aplicación está abierta en modo de edición y ejecución. La aplicación de lienzo se eliminará manualmente de Power Apps Studio para validar la desinstalación correcta.</li>
 <li>Compruebe que la aplicación de lienzo se conecta correctamente a conectores proporcionados por los editores.</li>
 </ul>
 </td>

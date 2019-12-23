@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 38a1ac18a5c978c7b39d6dee85afcb9adf334534
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 9c4ea4e34dacf70a9bb51c28c5761700904a3053
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755836"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862249"
 ---
 # <a name="use-oauth-20-implicit-grant-flow-within-your-portal"></a>Use flujo de concesión implícito de OAuth 2.0 en el portal 
 
@@ -127,11 +127,11 @@ Debe registrar el identificador de cliente con el portal para el que está permi
 
 ## <a name="sample-code"></a>Código de ejemplo
 
-Puede usar el código siguiente para empezar a usar la concesión implícita de OAuth 2.0 con las API de portales de PowerApps.
+Puede usar el código siguiente para empezar a usar la concesión implícita de OAuth 2.0 con las API de portales de Power Apps.
 
 ### <a name="use-portal-oauth-token-with-an-external-web-api"></a>Use el token de OAuth del portal con una API web externa
 
-Este ejemplo es un proyecto basado en ASP.NET y se usa para validar el token de id. emitido por portales de PowerApps. El código de ejemplo completo se puede encontrar aquí: [Use el token de OAuth del portal con una API web externa](https://github.com/microsoft/PowerApps-Samples/tree/master/portals/ExternalWebApiConsumingPortalOAuthTokenSample).
+Este ejemplo es un proyecto basado en ASP.NET y se usa para validar el token de id. emitido por portales de Power Apps. El código de ejemplo completo se puede encontrar aquí: [Use el token de OAuth del portal con una API web externa](https://github.com/microsoft/PowerApps-Samples/tree/master/portals/ExternalWebApiConsumingPortalOAuthTokenSample).
 
 ### <a name="authorize-endpoint-sample"></a>Ejemplo de Autorizar el extremo
 
@@ -139,4 +139,4 @@ En este ejemplo se muestra cómo autorizar el extremo devuelve el token de id. c
 
 ### <a name="token-endpoint-sample"></a>Ejemplo de extremo de token
 
-Este ejemplo le muestra cómo puede usar la función getAuthenticationToken para capturar un token de identificador mediante el extremo de token en portales de PowerApps. El ejemplo se puede encontrar aquí: [Ejemplo de extremo de token](https://github.com/microsoft/PowerApps-Samples/blob/master/portals/TokenEndpoint.js).
+Este ejemplo le muestra cómo puede usar la función getAuthenticationToken para capturar un token de identificador mediante el extremo de token en portales de Power Apps. El ejemplo se puede encontrar aquí: [Ejemplo de extremo de token](https://github.com/microsoft/PowerApps-Samples/blob/master/portals/TokenEndpoint.js).

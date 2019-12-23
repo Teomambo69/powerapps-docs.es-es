@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 90658adac8f04ea131968816a6004b4789ff42e4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 907a1147630cc779e6c1af7be2486548f1907c5a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757784"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865809"
 ---
 # <a name="create-many-to-many-entity-relationships-overview"></a>Crear información general de relación varios a varios entre entidades
 
@@ -43,7 +43,7 @@ Hay dos diseñadores que puede usar para crear y editar relaciones de 1:N (uno a
 
 |Diseñador| Descripción|
 |--|--|
-|[Portal PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Proporciona una experiencia fácil y ágil, pero algunos valores especiales no están disponibles.<br />Más información: [Crear relaciones varios a varios entre entidades en Common Data Service con el portal de PowerApps](create-edit-nn-relationships-portal.md)|
+|[Portal Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Proporciona una experiencia fácil y ágil, pero algunos valores especiales no están disponibles.<br />Más información: [Crear relaciones varios a varios entre entidades en Common Data Service con el portal de Power Apps](create-edit-nn-relationships-portal.md)|
 |Explorador de soluciones|No es tan fácil, pero proporciona más flexibilidad para requisitos menos comunes.<br />Más información: [Crear relaciones entre entidades N:N (varios a varios) en Common Data Service mediante el explorador de soluciones](create-edit-nn-relationships-solution-explorer.md) |
 
 > [!NOTE]
@@ -53,7 +53,7 @@ Hay dos diseñadores que puede usar para crear y editar relaciones de 1:N (uno a
 
 La información de este tema le ayudará a elegir el diseñador que puede usar. 
 
-Debe usar el portal PowerApps para crear y editar relaciones entre entidades de varios a varios (N:N) a menos que necesite satisfacer cualquiera de los siguientes requisitos:
+Debe usar el portal Power Apps para crear y editar relaciones entre entidades de varios a varios (N:N) a menos que necesite satisfacer cualquiera de los siguientes requisitos:
 
 - Configurar opciones del panel de navegación para aplicaciones basadas en modelos
 - Ocultar la relación de la Búsqueda avanzada en aplicaciones basadas en modelos.
@@ -61,7 +61,7 @@ Debe usar el portal PowerApps para crear y editar relaciones entre entidades de 
 ## <a name="see-also"></a>Vea también
 
 [Crear y editar relaciones entre entidades](create-edit-entity-relationships.md)<br />
-[Crear relaciones varios a varios entre entidades en Common Data Service con el portal de PowerApps](create-edit-nn-relationships-portal.md)<br />
+[Crear relaciones varios a varios entre entidades en Common Data Service con el portal de Power Apps](create-edit-nn-relationships-portal.md)<br />
 [Crear relaciones entre entidades N:N (varios a varios) en Common Data Service mediante el explorador de soluciones](create-edit-nn-relationships-solution-explorer.md)<br />
 [Documentación para desarrolladores: Personalizar metadatos de relaciones entre entidades](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)<br />
 [Documentación para desarrolladores: Elegibilidad de relación entre entidades](https://docs.microsoft.com/dynamics365/customer-engagement/developer/entity-relationship-eligibility)

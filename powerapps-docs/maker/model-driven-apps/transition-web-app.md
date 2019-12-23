@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: eed1efac81b882d076e0e809c93ddec63f6a75f7
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: bf9b21936a0b1a9d843d248cf4941854dcdbbd7d
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759752"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874582"
 ---
 # <a name="quick-start-for-transitioning-your-legacy-web-client-application-to-unified-interface"></a>Tutorial para la transición de su aplicación de cliente web heredada a la interfaz unificada
 
@@ -43,7 +43,7 @@ Para usar un entorno de no producción existente para realizar la transición de
 ## <a name="prepare-the-environment"></a>Preparar el entorno
 Primero, seleccione un entorno de no producción y habilite el modo **Usar solo la interfaz unificada**, que usará la interfaz unificada para todas las aplicaciones basadas en modelo del entorno. Esto también incluye cualquier módulo de aplicación de Dynamics 365 configurado originalmente para el cliente web heredado.
 
-1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione **Entorno** y luego seleccione un entorno de espacio aislado. 
+1. Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione **Entorno** y luego seleccione un entorno de espacio aislado. 
 
 2. Seleccione **Configuración** > **Comportamiento** y después active **Usar solo la interfaz unificada**.
 
@@ -62,7 +62,7 @@ También puede establecer esto en el área de configuración. Vaya a **Configura
 ## <a name="run-and-validate-your-application-in-the-unified-interface"></a>Ejecute y valide la aplicación en la interfaz unificada
 Ejecute sus aplicaciones que eran originalmente aplicaciones del cliente web. Tenga en cuenta que, una vez que se active **Usar solo la interfaz unificada**, todas las aplicaciones disponibles en el entorno usan la interfaz unificada incluso si la aplicación estaba configurada originalmente para el cliente web.
 
-Para ejecutar la aplicación, inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione **Aplicaciones** y luego seleccione la aplicación que desea ejecutar. Como alternativa, puede ir directamente a la página **Mis aplicaciones**, como *https://contoso.crm.dynamics.com/apps/*.
+Para ejecutar la aplicación, inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione **Aplicaciones** y luego seleccione la aplicación que desea ejecutar. Como alternativa, puede ir directamente a la página **Mis aplicaciones**, como *https://contoso.crm.dynamics.com/apps/*.
 
 ### <a name="validate-your-app-processes-and-customizations"></a>Valide la aplicación, procesos, y personalizaciones 
 Se recomienda probar todos los casos de uso. Puede empezar con los casos de uso más críticos o agruparlos en patrones lógicos de diseño. Puesto que la interfaz unificada se basa en diseño dinámico, se recomienda realizar pruebas con distintos dispositivos que tienen diferentes resoluciones de pantalla. Al probar la aplicación podrá comprobar que las personalizaciones son compatibles con la interfaz unificada y si existen características que necesiten un rediseño o les falta funcionalidad. Cree un plan para revisar estos elementos y envíe sus preguntas y sus comentarios al foro de la comunidad. 
@@ -118,10 +118,10 @@ Más información: [Diseñar aplicaciones basadas en modelo mediante el diseñad
 [Cuaderno de estrategias de la interfaz unificada](unified-interface-playbook.md) <br />
 [Aproximación a la experiencia de usuario y transición a la interfaz unificada](approaching-unified-interface.md) <br />
 [Acerca de la interfaz unificada](/dynamics365/customer-engagement/admin/about-unified-interface) <br />
-[¿Qué son las aplicaciones controladas por modelos en PowerApps?](model-driven-app-overview.md) <br />
+[¿Qué son las aplicaciones controladas por modelos en Power Apps?](model-driven-app-overview.md) <br />
 [Actualizar aplicaciones a la interfaz unificada](/dynamics365/customer-engagement/admin/update-apps-to-unified-interface) <br />
 [Configurar paneles de experiencia interactiva de aplicaciones controladas por modelos](configure-interactive-experience-dashboards.md) <br />
 [Usar controles personalizados para visualizaciones de datos de aplicaciones controladas por modelos](use-custom-controls-data-visualizations.md) <br />
-[Información general sobre PowerApps component framework](/powerapps/developer/component-framework/overview) <br />
+[Información general sobre Power Apps component framework](/powerapps/developer/component-framework/overview) <br />
 [Interfaz unificada para todos](/power-platform-release-plan/2019wave2/microsoft-powerapps/unified-interface-app-everybody)
 

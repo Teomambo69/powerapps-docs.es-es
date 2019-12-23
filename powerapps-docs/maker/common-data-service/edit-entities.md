@@ -1,5 +1,5 @@
 ---
-title: Editar una entidad en PowerApps | MicrosoftDocs
+title: Editar una entidad en Power Apps | MicrosoftDocs
 description: Obtenga información sobre las formas diferentes en que se puede editar una entidad
 ms.custom: ''
 ms.date: 05/15/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3ec64583e2146703711b88456ff7bc91ece3e921
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: cff90011a80bd051882da08be1f479cb997a7a72
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757464"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863968"
 ---
 # <a name="edit-an-entity"></a>Editar una entidad
 
@@ -40,10 +40,10 @@ Hay dos formas de editar una entidad mediante un diseñador:
 
 |Diseñador|Descripción|
 |--|--|
-|[Portal PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Proporciona una experiencia fácil y ágil, pero algunos valores especiales no están disponibles.|
+|[Portal Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Proporciona una experiencia fácil y ágil, pero algunos valores especiales no están disponibles.|
 |Explorador de soluciones|No es tan fácil, pero proporciona más flexibilidad para requisitos menos comunes.|
 
-En el portal de PowerApps y en el explorador de soluciones puede realizar lo siguiente:
+En el portal de Power Apps y en el explorador de soluciones puede realizar lo siguiente:
 
 - **Editar campos de la entidad**. Más información: [Crear y editar campos para Common Data Service](create-edit-fields.md)
   
@@ -63,9 +63,9 @@ También puede realizar cambios en los registros que admiten la entidad:
 
 - **Gráficos**. [Creación o edición de un gráfico del sistema](../model-driven-apps/create-edit-system-chart.md)
 
-## <a name="edit-using-powerapps-portal-designer"></a>Editar usando el diseñador del portal de PowerApps
+## <a name="edit-using-power-apps-portal-designer"></a>Editar usando el diseñador del portal de Power Apps
 
-En el diseñador del portal de PowerApps solo hay tres propiedades de la entidad que se pueden editar:
+En el diseñador del portal de Power Apps solo hay tres propiedades de la entidad que se pueden editar:
  - Nombre para mostrar
  - Nombre para mostrar plural
  - Descripción

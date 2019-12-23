@@ -8,16 +8,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 71c3418de53792b71987f1c0f4fd205a88760dab
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f93574f9a994d7363129f99fec9b33d4c9ee66ad
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754093"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861950"
 ---
 # <a name="implementing-increment-component"></a>Implementar componente de incremento
 
-Este componente de ejemplo muestra cómo enlazar datos con PowerApps component framework y el control de errores. Este componente se representa como cuadro de texto con un botón `Increment` en el tiempo de ejecución. El cuadro de texto muestra el valor actual y es posible hacer clic en el botón `Increment`. Cada vez que haga clic en el botón, el valor del cuadro de texto aumenta en 1. El valor del incremento se puede cambiar a cualquier número que desee.
+Este componente de ejemplo muestra cómo enlazar datos con Power Apps component framework y el control de errores. Este componente se representa como cuadro de texto con un botón `Increment` en el tiempo de ejecución. El cuadro de texto muestra el valor actual y es posible hacer clic en el botón `Increment`. Cada vez que haga clic en el botón, el valor del cuadro de texto aumenta en 1. El valor del incremento se puede cambiar a cualquier número que desee.
 
 Para implementar este componente, lo primero que necesita es definir el archivo de [Manifiesto](../manifest-schema-reference/manifest.md) y, a continuación, implementar la lógica personalizada en TypeScript.
 
@@ -58,7 +58,7 @@ export class TSIncrementControl
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
   // Value of the field is stored and used inside the control
   private _value: number;
-  // PowerApps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
+  // Power Apps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
   private _notifyOutputChanged: () => void;
   // label element created as part of this control
   private label: HTMLInputElement;
@@ -247,15 +247,16 @@ export class TSIncrementControl
 </root>
 ```
 
-Cuando hace clic en el botón, el valor del cuadro de texto aumenta en 1. El valor actualizado fluirá a PowerApps component framework a través del método `notifyOutputChanged`.
+Cuando hace clic en el botón, el valor del cuadro de texto aumenta en 1. El valor actualizado fluirá a Power Apps component framework a través del método `notifyOutputChanged`.
 
 > [!NOTE]
 > Puede cambiar el valor del incremento cuando configura el componente al campo del formulario.
 
-Edite el valor en el cuadro de texto y, si es un entero válido, después actualiza el valor a PowerApps component framework. Puede hacer clic continuamente en el botón `Increment` y actualizarlo. Si es un entero no válido, aparece un mensaje de error.
+Edite el valor en el cuadro de texto y, si es un entero válido, después actualiza el valor a Power Apps component framework. Puede hacer clic continuamente en el botón `Increment` y actualizarlo. Si es un entero no válido, aparece un mensaje de error.
 
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API de PowerApps component framework](../reference/index.md)<br/>
-[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)
+[¿Cómo usar los componentes de ejemplo?](../use-sample-components.md)<br/>
+[Referencia de la API de Power Apps component framework](../reference/index.md)<br/>
+[Referencia de esquema de manifiesto de Power Apps component framework](../manifest-schema-reference/index.md)

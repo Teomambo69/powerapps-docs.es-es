@@ -1,5 +1,5 @@
 ---
-title: Crear o editar recursos web de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
+title: Crear o editar recursos web de aplicaciones controladas por modelos en Power Apps | MicrosoftDocs
 description: Aprenda a crear o editar un recurso web.
 ms.custom: ''
 ms.date: 06/02/2018
@@ -22,19 +22,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6711d78a217bc5bcee34f0bd209f7bdfe56249c5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4aa4e0399395861cf94740c92f35b738998b8209
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702475"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860540"
 ---
 # <a name="create-or-edit-model-driven-app-web-resources-to-extend-an-app"></a>Crear o editar recursos web de aplicaciones controladas por modelos para ampliar una aplicación
 
 Los programadores usan recursos web normalmente para extender la aplicación utilizando archivos que se usan en el desarrollo web. Los usuarios de la aplicación es posible que necesiten administrar los recursos web proporcionados por un programador o un diseñador.  
 
 > [!TIP]
-> Para obtener información detallada de los recursos web, consulte [Documentación para desarrolladores: Recursos Web para aplicaciones basadas en modelo](/powerapps/developer/model-driven-apps/web-resources).<br /> Para obtener información sobre las dependencias de recursos web agregadas a PowerApps, consulte [Documentación para desarrolladores: Dependencias de recursos web](/dynamics365/customer-engagement/developer/web-resources).
+> Para obtener información detallada de los recursos web, consulte [Documentación para desarrolladores: Recursos Web para aplicaciones basadas en modelo](/powerapps/developer/model-driven-apps/web-resources).<br /> Para obtener información sobre las dependencias de recursos web agregadas a Power Apps, consulte [Documentación para desarrolladores: Dependencias de recursos web](/dynamics365/customer-engagement/developer/web-resources).
    
 <a name="BKMK_WhatAreWebResources"></a>
 

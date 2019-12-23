@@ -1,6 +1,6 @@
 ---
-title: Visualización o descarga de recursos para desarrolladores de PowerApps y Common Data Service | MicrosoftDocs
-description: Buscar recursos para desarrolladores y direcciones URL del extremo de servicio para PowerApps y Common Data Service
+title: Visualización o descarga de recursos para desarrolladores de Power Apps y Common Data Service | MicrosoftDocs
+description: Buscar recursos para desarrolladores y direcciones URL del extremo de servicio para Power Apps y Common Data Service
 keywords: ''
 ms.date: 06/06/2018
 ms.service: powerapps
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3c51d7c80844f53d95c73c0bfce061aaa96e50a7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d0d3a36795506c7127be61657fee8d46baaae28e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749771"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862030"
 ---
 # <a name="view-or-download-developer-resources"></a>Visualización o descarga de recursos para programadores
 
@@ -35,7 +35,7 @@ Esta página ofrece recursos para desarrolladores e información acerca de la in
 
 ## <a name="view-the-developer-resources-page-for-your-environment"></a>Ver la página de Recursos para desarrolladores para su entorno
 
-1. En el portal de PowerApps seleccione el ![Botón Configuración](../../administrator/media/settings-button-nav-bar.png) botón Configuración y elija **Personalizaciones avanzadas**.
+1. En el portal de Power Apps seleccione el ![Botón Configuración](../../administrator/media/settings-button-nav-bar.png) botón Configuración y elija **Personalizaciones avanzadas**.
 
     ![Personalizaciones avanzadas](media/advanced-customizations-menu.png)
 

@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 47730a2ba169b89534fa93221290c5598a95a8e8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c92b664c2c40c6bb6354e2666d583d5c7ed7aead
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2761095"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874450"
 ---
 # <a name="add-record-based-security-by-using-entity-permissions-for-portals"></a>Agregar seguridad basada en registros utilizando los permisos de entidad para portales
 
@@ -30,9 +30,11 @@ Para proteger estas características, los permisos de entidad permiten conceder 
 
 2. Vaya a **Portales** &gt; **Roles web** y abra el rol web al que desea agregar permisos. 
 
-3. Seleccione **Agregar** para agregar un permiso de entidad existente a un rol web. 
+3. En **Relacionado**, seleccione **Permisos de entidad**.
 
-4. Seleccione **Nuevo** para crear un nuevo registro de permisos de entidad.
+4. Seleccione **Agregar permiso de entidad existente** para agregar un permiso de entidad existente a un rol web. 
+
+4. Busque un permiso de entidad o seleccione **Nuevo permiso de entidad** para crear un nuevo registro de permiso de entidad.
 
     ![Agregar permisos de entidad a un rol web](../media/add-entity-permission-web-role.png "Agregar permisos de entidad a un rol web")  
 
@@ -51,7 +53,7 @@ Con el ámbito de contacto, un usuario que ha iniciado sesión en el rol para el
 
 En una lista de entidades, esto significa que un filtro se agregará a las vistas de cualquier aplicación basada en modelo que hayan emergido de esa lista, que recupera solo los registros vinculados al usuario actual directamente. (En función del escenario, esta relación puede considerarse como propiedad o derechos de administración).
 
-Los formularios de entidad permitirán sólo el permiso apropiado para lectura, creación, escritura, etc. si existe esta relación cuando el registro se carga. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Definir formularios de entidad y lógica personalizada en el portal](entity-forms.md)  
+Los formularios de entidad permitirán sólo el permiso apropiado para lectura, creación, escritura, etc. si existe esta relación cuando el registro se carga. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Definir formularios de entidad](entity-forms.md).  
 
 ### <a name="account-scope"></a>Ámbito de cuenta
 

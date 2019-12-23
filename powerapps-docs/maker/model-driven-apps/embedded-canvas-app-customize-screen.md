@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6be2a23a64108ec616fd95a0178d2008290bc289
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7d766a40dca689f6d0537be56edc9865437f62fa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706039"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868379"
 ---
 # <a name="customize-the-screen-size-and-orientation-of-a-canvas-app-embedded-on-a-model-driven-form"></a>Personalizar el tamaño y orientación de la pantalla de una aplicación de lienzo insertada en un formulario basado en modelos
 Este tema explica cómo personalizar el tamaño y orientación de la pantalla de una aplicación de lienzo insertada en un formulario basado en modelos
@@ -34,7 +34,7 @@ Este tema explica cómo personalizar el tamaño y orientación de la pantalla de
 1.  Siga los pasos para agregar o editar aplicación de lienzo incrustada en un formulario basado en modelos.
     - [Agregar una aplicación de lienzo incrustada en un formulario basado en modelos](embedded-canvas-app-add-classic-designer.md)
     - [Editar una aplicación de lienzo incrustada en un formulario basado en modelos](embedded-canvas-app-edit-classic-designer.md)
-2. Con la aplicación de lienzo abierta en PowerApps Studio, seleccione la pestaña **Archivo** y, a continuación seleccione **Configuración de la aplicación**.
+2. Con la aplicación de lienzo abierta en Power Apps Studio, seleccione la pestaña **Archivo** y, a continuación seleccione **Configuración de la aplicación**.
 3. Seleccione la pestaña **Tamaño de pantalla + orientiation**. De forma predeterminada, el **Tamaño** se ajusta como **Personalizado**.
 4. Seleccione en la lista de opciones disponibles de **Tamaño** y **Orientación** o seleccione **Personalizado** y proporcione la configuración que desea para **Ancho** y **Alto**.
     > [!NOTE]

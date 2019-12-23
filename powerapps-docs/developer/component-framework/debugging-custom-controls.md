@@ -8,12 +8,12 @@ ms.topic: article
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 088792a32f401ddaf7d3a3cd4fd4d5aa9fa472ff
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 1ffc32fdb1479552d77cd68d858c0d3b43d9b86e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749468"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862002"
 ---
 # <a name="debug-code-components"></a>Depurar componentes de código
 
@@ -59,7 +59,7 @@ Como se muestra en la imagen de arriba, la ventana del explorador se abre con cu
 
 ## <a name="watch-mode-in-test-harness"></a>Modo watch en agente de prueba
 
-El agente de prueba admite el modo `watch` del que se puede aprovechar para proyectos de PowerApps component framework. Para habilitar el modo `watch`, inicie el agente de prueba usando el comando `npm start watch`. En modo `watch`, los cambios realizados en cualquiera de los activos de componente se reflejan automáticamente en el agente de prueba sin tener que reiniciarlo:
+El agente de prueba admite el modo `watch` del que se puede aprovechar para proyectos de Power Apps component framework. Para habilitar el modo `watch`, inicie el agente de prueba usando el comando `npm start watch`. En modo `watch`, los cambios realizados en cualquiera de los activos de componente se reflejan automáticamente en el agente de prueba sin tener que reiniciarlo:
 
 1.  `index.ts`.
 2.  `ControlManifest.Input.xml`.
@@ -93,5 +93,5 @@ Use Fiddler AutoResponder para depurar rápidamente sus componentes de código. 
 
 ### <a name="related-topics"></a>Temas relacionados
 
-[Referencia de la API de PowerApps component framework](reference/index.md)<br/>
-[Información general sobre PowerApps component framework](overview.md)
+[Referencia de la API de Power Apps component framework](reference/index.md)<br/>
+[Información general sobre Power Apps component framework](overview.md)

@@ -6,24 +6,24 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/22/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 3735a0ef1a26fdd19b7bfb7f6db717cf9bd07861
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 722789d726d02b306eb794aa51665c13ce7f495d
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2710087"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874714"
 ---
 # <a name="add-a-power-bi-report-or-dashboard-to-a-web-page-in-portal"></a>Adición de informes o un panel de Power BI a una página web en un portal
 
-Puede agregar un informe o un panel de Power BI a una página web en un portal usando la etiqueta de Liquid [powerbi](../liquid/portals-entity-tags.md#powerbi). Puede agregar la etiqueta en el campo **Copiar** en una página web o en el campo **Origen** en una Plantilla web. Si que agrega un informe o un panel de Power BI creado en el nuevo espacio de trabajo en Power BI, deberá especificar el tipo de autenticación como powerbiembedded en la etiqueta powerbi Liquid.
+Puede agregar un informe o un panel de Power BI a una página web en un portal usando la etiqueta de Liquid [powerbi](../liquid/portals-entity-tags.md#powerbi). Puede agregar la etiqueta en el campo **Copiar** en una página web o en el campo **Origen** en una Plantilla web. Si que agrega un informe o un panel de Power BI creado en el nuevo espacio de trabajo en Power BI, deberá especificar el tipo de autenticación como **powerbiembedded** en la etiqueta powerbi Liquid.
 
 Por ejemplo: 
 
 ```
-{% powerbi path:"https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000001/ReportSection01" %}
+{% powerbi authentication_type:"powerbiembedded" path:"https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000001/ReportSection01" %}
 ```
 
 > [!NOTE]

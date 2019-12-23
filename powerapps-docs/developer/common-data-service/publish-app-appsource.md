@@ -1,6 +1,6 @@
 ---
 title: Publicar la aplicación en AppSource (Common Data Service) | Microsoft Docs
-description: Obtenga información sobre cómo publicar PowerApps en Microsoft AppSource para que los suscriptores puedan encontrarla, probarla y comprarla.
+description: Obtenga información sobre cómo publicar Power Apps en Microsoft AppSource para que los suscriptores puedan encontrarla, probarla y comprarla.
 ms.custom: ''
 ms.date: 03/20/2019
 ms.reviewer: ''
@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d5d14f30fc5877a8021f61e8ba9b4d5176c7af9c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 61b34d32835cd3553f880791250efad48d783ffd
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749813"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861890"
 ---
 # <a name="publish-your-app-on-appsource"></a>Publicar la aplicación en AppSource
 
-Publique su aplicación en [Microsoft AppSource](https://appsource.microsoft.com) para que los suscriptores de aplicaciones puedan encontrarla, probarla y comprarla. Las aplicaciones que crea y que publica con PowerApps se detectan y se usan en Dynamics 365 en la web. Más información: [Descubrir aplicaciones mediante AppSource](/powerapps/user/app-source). 
+Publique su aplicación en [Microsoft AppSource](https://appsource.microsoft.com) para que los suscriptores de aplicaciones puedan encontrarla, probarla y comprarla. Las aplicaciones que crea y que publica con Power Apps se detectan y se usan en Dynamics 365 en la web. Más información: [Descubrir aplicaciones mediante AppSource](/powerapps/user/app-source). 
 
 ## <a name="prepare-for-submitting-your-app-on-appsource"></a>Preparar para enviar su aplicación en AppSource
 

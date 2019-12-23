@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9f7279a2491d576f505252bcd8ebdbb7df0e8ae7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 6e4991ce913cf5812b1405321619df84759b1cb0
+ms.sourcegitcommit: 8f4b2c070ff57bf6ceac8d694b264bff163c6eab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749477"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "2804386"
 ---
 # <a name="sample-quick-start-for-xrm-tooling-api"></a>Ejemplo: inicio rápido para la API de útiles de XMR
 
@@ -35,9 +35,9 @@ Descargue el ejemplo: [Trabajar con API de útiles de XRM](https://github.com/mi
 
 ## <a name="how-to-run-the-sample"></a>Cómo ejecutar el ejemplo
 
-1. Descargue y extraiga el ejemplo de [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/Xrm%20Tooling/Quick%20start%20for%20XRM%20Tooling).  
-1. Abra el archivo `Quick start for XRM Tooling\C#\QuickStartXRMToolingWPFClient.sln` en Visual Studio.  
-1. Presione **F5** para compilar y ejecutar el programa.  
+1. Descargar y extraer la muestra para que tenga una copia local.  
+2. Abra el archivo `Quick start for XRM Tooling\C#\QuickStartXRMToolingWPFClient.sln` en Visual Studio.  
+3. Presione **F5** para compilar y ejecutar el programa.  
 
 
 ## <a name="demonstrates"></a>Demostraciones

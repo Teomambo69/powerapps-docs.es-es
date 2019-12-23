@@ -1,6 +1,6 @@
 ---
 title: Personalizaciones compatibles para Common Data Service (Common Data Service) | Microsoft Docs
-description: Lea cómo puede personalizar Common Data Service mediante las herramientas disponibles en el portal PowerApps o las que aparecen descritas en documentos.
+description: Lea cómo puede personalizar Common Data Service mediante las herramientas disponibles en el portal Power Apps o las que aparecen descritas en documentos.
 ms.custom: ''
 ms.date: 01/25/2019
 ms.reviewer: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5e595ca13e4aac62861c6b00b5af0967ff1e9ad2
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 38cf4a367c197649dde3e9f8737584f03c9b4a1a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749788"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883514"
 ---
 <!-- This is the portion of the old topic that applies to Common Data Service
 https://docs.microsoft.com/dynamics365/customer-engagement/developer/supported-extensions
@@ -28,22 +28,22 @@ https://docs.microsoft.com/dynamics365/customer-engagement/developer/supported-e
 
 # <a name="supported-customizations-for-common-data-service"></a>Personalizaciones compatibles para Common Data Service
 
-Puede personalizar Common Data Service con las herramientas disponibles en el portal PowerApps o con aquellas que se describen en la documentación oficial. Estas personalizaciones están admitidas y se pueden actualizar.
+Puede personalizar Common Data Service con las herramientas disponibles en el portal Power Apps o con aquellas que se describen en la documentación oficial. Estas personalizaciones están admitidas y se pueden actualizar.
 
 Las personalizaciones realizadas con otros métodos que no sean los que aquí se describen no están admitidas y podrían causar problemas durante la instalación de actualizaciones y mejoras de Common Data Service. Consulte [Personalizaciones no admitidas](#unsupported-customizations) para obtener más información.
 
 Los temas cubiertos en los artículos técnicos publicados en sitios de Microsoft como docs.microsoft.com, msdn.microsoft.com o technet.microsoft.com, son compatibles pero quizá no se actualicen.
 
 
-## <a name="customizations-using-powerapps-portal"></a>Personalizaciones utilizando el portal de PowerApps
+## <a name="customizations-using-power-apps-portal"></a>Personalizaciones utilizando el portal de Power Apps
 
-Hay una variedad de herramientas que se incluyen con Common Data Service que puede utilizar para personalizarlo. Las personalizaciones realizadas con las herramientas y la aplicación web del portal de PowerApps son completamente compatibles y se pueden actualizar por completo.
+Hay una variedad de herramientas que se incluyen con Common Data Service que puede utilizar para personalizarlo. Las personalizaciones realizadas con las herramientas y la aplicación web del portal de Power Apps son completamente compatibles y se pueden actualizar por completo.
 
 Se pueden usar los siguientes métodos de personalización para generar personalizaciones completamente compatibles:
 
-- Personalización en el portal de PowerApps o la solución del explorador. Para obtener más información, consulte [¿Qué es Common Data Service?](../../maker/common-data-service/data-platform-intro.md).
+- Personalización en el portal de Power Apps o la solución del explorador. Para obtener más información, consulte [¿Qué es Common Data Service?](../../maker/common-data-service/data-platform-intro.md).
 
-- Configuración en la aplicación web. Para obtener más información, vea [Administrar PowerApps](../../administrator/admin-guide.md).
+- Configuración en la aplicación web. Para obtener más información, vea [Administrar Power Apps](../../administrator/admin-guide.md).
 
 - Reporting Services. Para obtener más información, consulte [Agregar informes a la aplicación basada en modelos](/powerapps/maker/model-driven-apps/add-reporting-to-app).
 

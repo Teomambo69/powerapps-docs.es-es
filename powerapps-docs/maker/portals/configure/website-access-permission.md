@@ -1,5 +1,5 @@
 ---
-title: Crear permisos de acceso al sitio web en los portales de Dynamics 365 | MicrosoftDocs
+title: Crear permisos de acceso al sitio web en portales de Power Apps | MicrosoftDocs
 description: Aprenda cómo crear y asociar los permisos de acceso al sitio web a elementos en un portal.
 author: sbmjais
 manager: shujoshi
@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 0ac02992498204efc42a52e736284ea134ed42f5
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ab85eb4feca871089366c8675305b4f6c741f0af
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2761101"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873482"
 ---
 # <a name="create-website-access-permissions"></a>Crear permisos de acceso al sitio web
 
@@ -38,8 +38,10 @@ Para crear un permiso de acceso al sitio web y agregarlo a un rol web:
 
 4. En **General**, especifique el nombre y el sitio web y seleccione los permisos necesarios.
 
-5. En **Roles web**, seleccione y agregue el rol web al que asociar el permiso.
+    ![Crear permiso de acceso al sitio web](../media/website-access-permission.png "Crear permiso de acceso al sitio web")
+
+5. En **Roles web**, seleccione **Agregar rol web existente** y agregar el rol web al que asociar el permiso.
 
 6. Guarde los cambios.
 
-    ![Crear permiso de acceso al sitio web](../media/website-access-permission.png "Crear permiso de acceso al sitio web")  
+    

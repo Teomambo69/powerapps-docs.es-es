@@ -1,6 +1,6 @@
 ---
 title: Comprobar estado de análisis | Microsoft Docs
-description: Aprenda a formar solicitud GET mediante la API web del comprobador de PowerApps para comprobar el estado de un trabajo de solicitud de análisis.
+description: Aprenda a formar solicitud GET mediante la API web del comprobador de Power Apps para comprobar el estado de un trabajo de solicitud de análisis.
 ms.custom: ''
 ms.date: 06/04/2019
 ms.service: powerapps
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 97b244b59bccbde9c8e20a86723133af07d4eb2b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0e221ad292a1a973a79c308a8ec5bef7a4dadeaa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749584"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861821"
 ---
 # <a name="check-for-analysis-status"></a>Comprobar estado de análisis
 
@@ -121,7 +121,7 @@ Content-Type: application/json; charset=utf-8
 
 ### <a name="see-also"></a>Vea también
 
-[Usar la API web del comprobador de PowerApps](overview.md)<br />
+[Usar la API web del comprobador de Power Apps](overview.md)<br />
 [Recuperar la lista de conjuntos de reglas](retrieve-rulesets.md)<br />
 [Recuperar la lista de reglas](retrieve-rules.md)<br />
 [Cargar un archivo](upload-file.md)<br />

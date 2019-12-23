@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1d71e39bc36d948894947bf7a665f6c0b3ead2ec
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 874fb17ddb2911f1464b07e7dacd597f89fc8c75
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753760"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2859937"
 ---
 # <a name="walkthrough-registering-and-configuring-a-spa-application-with-adaljs"></a>Tutorial: Registrar y configurar una aplicación SPA con adal.js
 
@@ -28,7 +28,7 @@ En este tutorial se describe el proceso para registrar y configurar la Aplicaci�
   
 ## <a name="prerequisites"></a>Requisitos previos  
   
-- PowerApps Common Data Service  
+- Power Apps Common Data Service  
   
 - Debe tener una cuenta de usuario del sistema de Common Data Service con el rol administrador para Office 365.  
   
@@ -281,7 +281,7 @@ Por último, puede hacer clic en el botón **Cerrar sesión** para cerrar la ses
   
     ```javascript  
     //Set these variables to match your environment  
-    var organizationURI = "https://[organization name].crm.dynamics.com"; //The URL to connect to PowerApps Common Data Service  
+    var organizationURI = "https://[organization name].crm.dynamics.com"; //The URL to connect to Power Apps Common Data Service  
     var tenant = "[xxx.onmicrosoft.com]"; //The name of the Azure AD organization you use  
     var clientId = "[client id]"; //The ClientId you got when you registered the application  
     var pageUrl = "https://localhost:[PORT #]/SimpleSPA.html"; //The URL of this page in your development environment when debugging.  

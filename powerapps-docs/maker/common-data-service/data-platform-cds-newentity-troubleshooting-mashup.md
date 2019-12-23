@@ -13,19 +13,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5679d82d6ec53d579567a778043ac9542099a20e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9b1f0152782a31b13d6209fe3911ed10792652af
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706699"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2864276"
 ---
 # <a name="troubleshoot-power-query"></a>Solución de problemas de Power Query
 Cuando usa Power Query for Excel para crear una entidad personalizada que contiene datos de orígenes externos, podría aparecer este error:
 
 >“El administrador de Azure Active Directory ha establecido una política que le impide usar esta función. Póngase en contacto con al administrador, que puede conceder los permisos para esta función en su nombre”.
 
-El error se produce si Power Query no puede acceder a los datos de la organización en PowerApps o Common Data Service. Esta situación surge bajo dos grupos de circunstancias:
+El error se produce si Power Query no puede acceder a los datos de la organización en Power Apps o Common Data Service. Esta situación surge bajo dos grupos de circunstancias:
 
 * Un administrador de inquilinos de Azure Active Directory (Azure AD) ha deshabilitado la capacidad de los usuarios de consentir aplicaciones que acceden a datos de la compañía en su nombre.
 * Uso de un inquilino de Active Directory no administrado. Un inquilino no administrado es un directorio sin un administrador global que se creó para completar una oferta de suscripción de autoservicio. Para corregir este escenario, los usuarios primero deben realizar la conversión a un inquilino administrado y después seguir una de las dos soluciones a este problema. Las soluciones se describen en la siguiente sección.
@@ -52,7 +52,7 @@ La ventaja de este método (respecto a la solución de inquilinos) es que esta s
 
 Los usuarios pueden actualizar los mashups y otra información (como nombres de consulta y metadatos de mashup) a través del editor de consultas y a través del cuadro **Opciones** al que se puede acceder desde el editor de consultas.
 
-En PowerApps, puede acceder al editor de consultas mediante el procedimiento siguiente:
+En Power Apps, puede acceder al editor de consultas mediante el procedimiento siguiente:
 1. Vaya al panel **Datos**, expándalo y, a continuación, seleccione **Entidades**. 
 2. Seleccione los puntos suspensivos (...) y, a continuación, seleccione **Editar consultas**.
 3. En la cinta de opciones, seleccione el botón **Opciones** y después seleccione el botón **Diagnóstico de exportación**.
@@ -60,7 +60,7 @@ En PowerApps, puede acceder al editor de consultas mediante el procedimiento sig
 
 ## <a name="delete-personal-data"></a>Eliminar datos personales
 
-La mayoría de los datos se elimina automáticamente en 30 días. Para los datos y metadatos alrededor de los mashups, los usuarios deben quitar todos los mashups con PowerApps. Todos los datos y metadatos asociados se eliminarán en 30 días.
+La mayoría de los datos se elimina automáticamente en 30 días. Para los datos y metadatos alrededor de los mashups, los usuarios deben quitar todos los mashups con Power Apps. Todos los datos y metadatos asociados se eliminarán en 30 días.
 
 Para quitar mashups de Power Apps:
 1. Quite los proyectos del integrador de datos, que se pueden quitar desde la ficha homónima.
@@ -79,7 +79,7 @@ Para exportar datos personales, los usuarios pueden hacer lo siguiente:
 2. En la cinta de opciones, seleccione el botón **Opciones**.
 3. Seleccionar el botón **Diagnóstico de exportación**.
 
-En PowerApps, puede acceder al editor de consultas mediante el procedimiento siguiente:
+En Power Apps, puede acceder al editor de consultas mediante el procedimiento siguiente:
 1. Vaya al panel **Datos**, expándalo y, a continuación, seleccione **Entidades**.
 2. Seleccione los puntos suspensivos (...) y, a continuación, seleccione **Editar consultas**. 
 3. En la cinta de opciones, seleccione el botón **Opciones** y después seleccione el botón **Diagnóstico de exportación**.

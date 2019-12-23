@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/11/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 3da40cfdcb88726384218c4b1df370c301f8ac16
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0d9b49857528cf0e55fa2ad3dfcaae2aa88b77c0
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759928"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2816024"
 ---
 # <a name="enable-azure-storage"></a>Habilitar Azure Storage
 
@@ -55,7 +55,7 @@ En la [aplicación Administración del portal](configure/configure-portal.md), v
 
 También debe agregar la regla de uso compartido de recursos de origen cruzado (CORS) en su cuenta de Azure Storage como sigue; de lo contrario, verá el icono normal de los datos adjuntos en lugar del icono de nube:
 
-- **Orígenes permitidos**: Especifique el dominio. Por ejemplo, contoso.crm.dynamics.com.
+- **Orígenes permitidos**: Especifique el dominio. Por ejemplo, `http://contoso.crm.dynamics.com`.
 - **Verbos permitidos**: OBTENER, PONER, ELIMINAR, ENCABEZAR, PUBLICAR
 - **Encabezados permitidos**: Especifique los encabezados de solicitud que el dominio de origen puede especificar en la solicitud de CORS. Por ejemplo, x-ms-meta-data\*, x-ms-meta-target\*. 
 - **Encabezados expuestos**: Especifique los encabezados de respuesta que se pueden enviar en la respuesta a la solicitud de CORS y que expone el explorador al emisor de la solicitud. Por ejemplo, x-ms-meta-\*.

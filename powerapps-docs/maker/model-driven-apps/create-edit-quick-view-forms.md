@@ -1,5 +1,5 @@
 ---
-title: Crear o editar formularios de vista rápida de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
+title: Crear o editar formularios de vista rápida de aplicaciones controladas por modelos en Power Apps | MicrosoftDocs
 description: Aprenda a crear o editar un formulario de vista rápida.
 ms.custom: ''
 ms.date: 05/23/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0384b233ddd9df0f88019df6064f5a99ef8af0bd
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e6a4540927ad4329bab936fac631e2693d618104
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759136"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875286"
 ---
 # <a name="create-a-model-driven-app-quick-view-form-to-view-information-about-a-related-entity"></a>Crear un formulario de vista rápida de una aplicación controlada por modelos para ver información sobre una entidad relacionada
 
@@ -43,7 +43,7 @@ Un formulario de vista rápida se puede agregar a otro formulario como un contro
 ## <a name="create-a-quick-view-form"></a>Crear un formulario de vista rápida  
  Puede crear formularios de vista rápida mediante el editor de formularios de forma similar al proceso de creación de otros formularios. Los formularios de vista rápida son de solo lectura. Úselos para crear formularios solo con fines de lectura.  
   
-1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1. Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 
     > [!IMPORTANT]
@@ -79,7 +79,7 @@ Un formulario de vista rápida se puede agregar a otro formulario como un contro
 ## <a name="add-a-quick-view-control-to-a-main-form"></a>Agregar un control de vista rápida a un formulario principal  
  Los formularios de vista rápida pueden agregarse solo a un formulario principal donde exista un campo de búsqueda que tenga como destino la entidad del formulario de vista rápida.  
   
-1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
     > [!IMPORTANT]
     > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).     

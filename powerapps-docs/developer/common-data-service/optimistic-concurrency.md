@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3d2a1c36f86a23766d88ab22a894a06a36c1d76e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c21caa604e025250805d26d0b31a2e88d1a7ad64
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749553"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2859997"
 ---
 # <a name="optimistic-concurrency"></a>Simultaneidad optimista
 
-En un sistema con varios subprocesos y usuarios como PowerApps, las cambios en operaciones y datos suceden a menudo paralelamente. Un problema surge cuando dos o más operaciones de actualización o de eliminación del mismo dato suceden al mismo tiempo. Esta situación podría producir la pérdida de datos. La característica de simultaneidad optimista ofrece la capacidad de que las aplicaciones detecten si un registro de entidad ha cambiado en el servidor desde el momento en que la aplicación recuperó el registro y cuando intenta actualizar o eliminar ese registro.  
+En un sistema con varios subprocesos y usuarios como Power Apps, las cambios en operaciones y datos suceden a menudo paralelamente. Un problema surge cuando dos o más operaciones de actualización o de eliminación del mismo dato suceden al mismo tiempo. Esta situación podría producir la pérdida de datos. La característica de simultaneidad optimista ofrece la capacidad de que las aplicaciones detecten si un registro de entidad ha cambiado en el servidor desde el momento en que la aplicación recuperó el registro y cuando intenta actualizar o eliminar ese registro.  
   
  La simultaneidad optimista se admite en todas las entidades predefinidas habilitadas para sincronización sin conexión y todas las entidades personalizadas. Puede determinar si una entidad admite simultaneidad optimista recuperando metadatos de la entidad con una llamada de SDK, o viendo los metadatos mediante el [Explorador de metadatos](browse-your-metadata.md), y comprobar si el atributo **IsOptimisticConcurrencyEnabled** está establecido como `true`. Para las entidades personalizadas, esta propiedad se establece como `true` de forma predeterminada.  
   

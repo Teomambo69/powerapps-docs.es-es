@@ -1,7 +1,7 @@
 ---
-title: Actualizar componentes de código existentes mediante útiles de PowerApps component framework| Microsoft Docs
-description: Actualizar componentes mediante útiles de PowerApps component framework
-keywords: PowerApps component framework, componente de código, component Framework
+title: Actualizar componentes de código existentes mediante útiles de Power Apps component framework| Microsoft Docs
+description: Actualizar componentes mediante útiles de Power Apps component framework
+keywords: Power Apps component framework, componente de código, component Framework
 ms.author: nabuthuk
 author: Nkrb
 manager: kvivek
@@ -11,25 +11,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2cbf58a-9112-45c2-b823-2c07a310714c
-ms.openlocfilehash: 05e32fb7e098dad3aabf36f2efdaf311c1bea327
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: ddbacd01b76a99e385875a0b8af18d28ce24bed8
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749928"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861914"
 ---
 # <a name="update-existing-code-components"></a>Actualizar componentes de código existentes 
 
-Si usted es participante de Versión preliminar privada de PowerApps component framework para aplicaciones basadas en modelo y ha creado ya componentes de código, deberá realizar algunas actualizaciones de menor importancia para que sea compatible con las nuevas estructuras de proyecto centradas en ALM. 
+Si usted es participante de Versión preliminar privada de Power Apps component framework para aplicaciones basadas en modelo y ha creado ya componentes de código, deberá realizar algunas actualizaciones de menor importancia para que sea compatible con las nuevas estructuras de proyecto centradas en ALM. 
 
-Algunos cambios son necesarios usar los nuevos útiles de PowerApps CLI con sus componentes de código de PowerApps component framework existentes.
+Algunos cambios son necesarios usar los nuevos útiles de Power Apps CLI con sus componentes de código de Power Apps component framework existentes.
 
 > [!NOTE]
-> Este tema es aplicable solo para actualizar los componentes de código para aplicaciones basadas en modelo porque los útiles PowerApps CLI no están disponibles en el momento de vista previa privada para aplicaciones basadas en modelo.  
+> Este tema es aplicable solo para actualizar los componentes de código para aplicaciones basadas en modelo porque los útiles Power Apps CLI no están disponibles en el momento de vista previa privada para aplicaciones basadas en modelo.  
 
 ## <a name="creating-an-empty-project"></a>Crear un proyecto vacío
 
-Utilice PowerApps CLI para crear un nuevo proyecto vacío para el componente de código. Más información: [Crear componentes usando los útiles](create-custom-controls-using-pcf.md).
+Utilice Power Apps CLI para crear un nuevo proyecto vacío para el componente de código. Más información: [Crear componentes usando los útiles](create-custom-controls-using-pcf.md).
 
 Una vez el proyecto se ha creado, migre el origen de componente de código al nuevo proyecto:
 
@@ -67,7 +67,7 @@ Si ha creado un componente que use la versión anterior de los útiles y desea a
 
 1. Actualizar las proyectos existentes para usar los últimos módulos.
  
-   - Actualice la etiqueta de la versión en su `pcfproj` situado en la carpeta de proyecto de PowerApps Component Framework de este modo:
+   - Actualice la etiqueta de la versión en su `pcfproj` situado en la carpeta de proyecto de Power Apps Component Framework de este modo:
 
       ```XML
       <Packagereference Include="Microsoft.PowerApps.MSBuild.Pcf" Version="1.*"/>
@@ -82,7 +82,7 @@ Si ha creado un componente que use la versión anterior de los útiles y desea a
       > Después de realizar los cambios mencionados, ejecute el comando `msbuild /t:restore` para actualizar el proyecto a la versión correcta.
 
 
-   - Actualice la etiqueta de la versión en su archivo `package.json` situado en la carpeta de proyecto de PowerApps Component Framework:
+   - Actualice la etiqueta de la versión en su archivo `package.json` situado en la carpeta de proyecto de Power Apps Component Framework:
 
       ```JSON
       "devDependencies":{
@@ -128,7 +128,7 @@ Las herramientas de generación esperan que el origen de componente se exporte u
 
 ## <a name="using-generated-manifest-typing-file"></a>Uso del archivo de escritura del manifiesto generado
 
-Los proyectos heredados requieren la creación y edición manual de un archivo de escritura `inputsOutputs.d.ts`, establecido normalmente en la subcarpeta `private_typing`. Los útiles PowerApps CLI ahora generan automáticamente este archivo en la compilación. 
+Los proyectos heredados requieren la creación y edición manual de un archivo de escritura `inputsOutputs.d.ts`, establecido normalmente en la subcarpeta `private_typing`. Los útiles Power Apps CLI ahora generan automáticamente este archivo en la compilación. 
 
 La generación de código garantiza que las definiciones de `type` usadas en el código de origen del componente permanezcan en sincronizadas con `types` definidos en el archivo de manifiesto del componente.
 
@@ -173,6 +173,6 @@ Para utilizar el nuevo archivo de escritura:
 
 ### <a name="see-also"></a>Vea también
 
-[Limitaciones de PowerApps component framework](limitations.md)<br/>
-[Referencia de la API de PowerApps component framework](reference/index.md)<br/>
-[Información general sobre PowerApps component framework](overview.md)
+[Limitaciones de Power Apps component framework](limitations.md)<br/>
+[Referencia de la API de Power Apps component framework](reference/index.md)<br/>
+[Información general sobre Power Apps component framework](overview.md)

@@ -1,5 +1,5 @@
 ---
-title: Definir campos calculados en PowerApps | MicrosoftDocs
+title: Definir campos calculados en Power Apps | MicrosoftDocs
 description: Aprenda a definir campos calculados
 ms.custom: ''
 ms.date: 05/25/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d4f66e3f047da19fd040cccdd3f9af2da913df09
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 82bf8cad9b64f9866cb1cc856eff94eacf1f23a2
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758784"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873922"
 ---
 # <a name="define-calculated-fields-to-automate-manual-calculations"></a>Definir campos calculados para automatizar los cálculos manuales
 
 Usar campos calculados para automatizar los cálculos manuales usados en los procesos de negocio. 
 
-Por ejemplo, un comercial puede querer conocer los ingresos ponderados de una oportunidad que se basan en los ingresos estimados de una oportunidad multiplicados por la probabilidad. O bien, automáticamente desea aplicar un descuento, si un pedido es superior a $500. Un campo calculado puede que contenga valores resultado de simples operaciones matemáticas, u operaciones condicionales, por ejemplo, Mayor que o If-Else, y muchos otras. Puede llevar a todo esto utilizando PowerApps, sin necesidad de escribir código.  
+Por ejemplo, un comercial puede querer conocer los ingresos ponderados de una oportunidad que se basan en los ingresos estimados de una oportunidad multiplicados por la probabilidad. O bien, automáticamente desea aplicar un descuento, si un pedido es superior a $500. Un campo calculado puede que contenga valores resultado de simples operaciones matemáticas, u operaciones condicionales, por ejemplo, Mayor que o If-Else, y muchos otras. Puede llevar a todo esto utilizando Power Apps, sin necesidad de escribir código.  
   
 ## <a name="capabilities"></a>Capacidades
   
@@ -60,9 +60,9 @@ Por ejemplo, un comercial puede querer conocer los ingresos ponderados de una op
 
 ## <a name="create-a-calculated-field"></a>Crear un campo calculado
 
-Use el editor de campos para especificar un campo calculado. En este ejemplo usaremos [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) pero los pasos son similares con el explorador de soluciones. Más información: [Crear y editar campos](create-edit-fields.md)
+Use el editor de campos para especificar un campo calculado. En este ejemplo usaremos [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) pero los pasos son similares con el explorador de soluciones. Más información: [Crear y editar campos](create-edit-fields.md)
   
-1. Abrir[PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
+1. Abrir[Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 1. Expanda **Datos** > **Entidades**.  
 1. Seleccione la entidad que desee y que elija **Campos**. Elija **Agregar campo**.  
 1. Indique la información necesaria para el campo, incluidos el **Nombre para mostrar**, el **Nombre** y el **Tipo de datos**. 

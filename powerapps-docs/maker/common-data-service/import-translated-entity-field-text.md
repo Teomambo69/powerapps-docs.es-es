@@ -1,5 +1,5 @@
 ---
-title: Importar texto de campo y entidad traducido con PowerApps | MicrosoftDocs
+title: Importar texto de campo y entidad traducido con Power Apps | MicrosoftDocs
 description: Obtenga información sobre como importar entidades traducidas y texto de campo
 ms.custom: ''
 ms.date: 06/19/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3836eaebd6f3064ad2e5f4209d86f1bc34898144
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9887132a8cba9a68faf0d9f16b2e7dbc64221f1b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706215"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863792"
 ---
 # <a name="import-translated-entity-and-field-text-back-into-an-app"></a>Importar entidades y texto de campo traducidos a una aplicación
 
@@ -51,7 +51,7 @@ Si ha personalizado texto de entidad o campo, como etiquetas de campos o valores
 
 ## <a name="community-tools"></a>Herramientas de la Comunidad
 
-[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/) es una herramienta desarrollada para PowerApps por la comunidad de XrmToolbox. Use Easy Translator para exportar e importar traducciones con información contextual. 
+[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/) es una herramienta desarrollada para Power Apps por la comunidad de XrmToolbox. Use Easy Translator para exportar e importar traducciones con información contextual. 
 
 > [!NOTE]
 > Las herramientas de la comunidad no se admiten en Microsoft. Si tiene alguna duda relacionada con la herramienta, póngase en contacto con el editor. Más información: [XrmToolBox](https://www.xrmtoolbox.com).

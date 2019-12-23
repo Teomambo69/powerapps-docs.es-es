@@ -1,5 +1,5 @@
 ---
-title: Usar soluciones en PowerApps | MicrosoftDocs
+title: Usar soluciones en Power Apps | MicrosoftDocs
 description: Aprenda cómo usar soluciones para crear o personalizar aplicaciones
 ms.custom: ''
 ms.date: 10/28/2019
@@ -16,22 +16,22 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 57df12285848d67a8cd85016aec0bbb033fef89a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e4d8b6b69ab820541b822fc58ce5c079df7b5b19
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2703179"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885350"
 ---
-# <a name="use-solutions-in-powerapps"></a>Usar soluciones en PowerApps
+# <a name="use-solutions-in-power-apps"></a>Usar soluciones en Power Apps
 
- En PowerApps, puede ver una lista de soluciones seleccionando **Soluciones** en la navegación izquierda. A continuación puede seleccionar una solución para ver todos sus componentes. 
+ En Power Apps, puede ver una lista de soluciones seleccionando **Soluciones** en la navegación izquierda. A continuación puede seleccionar una solución para ver todos sus componentes. 
  
 > [!div class="mx-imgBorder"]  
 > ![Solución de demostración con todos los componentes](media/solution-all-items-list.PNG "Solución de demostración con todos los componentes")  
  
 > [!NOTE]
->  La experiencia de soluciones solo está disponibles con conexión y para entornos de la versión 9.1.0.267 y posteriores. Para comprobar la versión, vaya a …[Centro de administración de PowerApps](https://admin.powerapps.com/)> **Entornos** > seleccione el entorno > pestaña **Detalles**. Para los entornos de una versión anterior, la selección de una solución lo abrirá en la experiencia clásica.  
+>  La experiencia de soluciones solo está disponibles con conexión y para entornos de la versión 9.1.0.267 y posteriores. Para comprobar la versión, vaya a …[Centro de administración de Power Apps](https://admin.powerapps.com/)> **Entornos** > seleccione el entorno > pestaña **Detalles**. Para los entornos de una versión anterior, la selección de una solución lo abrirá en la experiencia clásica.  
  
  Puede examinar todos los componentes de una solución desplazándose a través de los elementos. Si hay más de 100 elementos en la lista puede seleccionar **Cargar los siguientes 100 elementos** para ver más. 
  
@@ -87,7 +87,7 @@ ms.locfileid: "2703179"
 
 ## <a name="classic-solution-explorer"></a>Explorador de soluciones clásico
 
-En PowerApps, puede ver el explorador de soluciones clásico seleccionando **Soluciones** en el panel de navegación de la izquierda y, a continuación seleccionando **Cambiar a clásica** en la barra de comandos. El explorador de soluciones clásico es el que anteriormente estaba disponible en el área **Configuración > Personalizaciones avanzadas** en PowerApps. 
+En Power Apps, puede ver el explorador de soluciones clásico seleccionando **Soluciones** en el panel de navegación de la izquierda y, a continuación seleccionando **Cambiar a clásica** en la barra de comandos. El explorador de soluciones clásico es el que anteriormente estaba disponible en el área **Configuración > Personalizaciones avanzadas** en Power Apps. 
 
 ## <a name="known-limitations"></a>Limitaciones conocidas
 
@@ -98,7 +98,7 @@ Las siguientes limitaciones se aplican al uso de aplicaciones de lienzo, flujos 
 - Las conexiones requieren autenticación y consentimiento, que requiere una sesión de usuario interactiva y por tanto no se pueden transportar mediante soluciones. Después de importar la solución, juegue la aplicación para autenticar conexiones. También puede crear las conexiones en el entorno de destino antes de importar la solución. 
 -   Las aplicaciones de lienzo compartidas como copropietario con grupo de seguridad Azure Active Directory (AAD) no se pueden agregar a soluciones. Deje de comaprtir la aplicación antes de agregarla a una solución.
 -   Las aplicaciones de lienzo no se mostrarán en el explorador de soluciones clásico. Use la experiencia moderna.
--   El acceso a la aplicación de lienzo (CRUD y seguridad) se administra completamente en PowerApps y no en la base de datos de Common Data Service ().
+-   El acceso a la aplicación de lienzo (CRUD y seguridad) se administra completamente en Power Apps y no en la base de datos de Common Data Service ().
 - Las operaciones de base de datos como copia de seguridad, restauración, y copia no son compatibles con las aplicaciones de lienzo y flujos. Estas operaciones pueden dañar a aplicaciones de lienzo y flujos.
 - Al eliminar una solución administrada no se revertirá a la versión de otra aplicación de lienzo. En su lugar, todas las versiones de la aplicación se eliminan.
 - Cuando se importa una solución que contiene un flujo no se crearán o asociarán conexiones necesarias. El flujo se debe editar para corregir las conexiones.

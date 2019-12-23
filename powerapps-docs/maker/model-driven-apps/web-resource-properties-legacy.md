@@ -1,5 +1,5 @@
 ---
-title: Propiedades de recurso web para formularios principales de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
+title: Propiedades de recurso web para formularios principales de aplicaciones controladas por modelos en Power Apps | MicrosoftDocs
 description: Comprender las propiedades de recurso web para formularios principales
 Keywords: Formulario principal; propiedades de recurso web; Dynamics 365
 author: Mattp123
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: efc8f74806a464f4aa8b37df875e429ba92247b8
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7784c70c2559aeecb5fabb7f44efdfc644f55b33
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2710175"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867475"
 ---
 # <a name="web-resource-properties-for-model-driven-app-forms"></a>Propiedades de recurso web para formularios de aplicaciones controladas por modelos
 

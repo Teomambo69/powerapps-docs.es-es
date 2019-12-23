@@ -1,5 +1,5 @@
 ---
-title: Crear o editar una vista de aplicación controlada por modelos en PowerApps | MicrosoftDocs
+title: Crear o editar una vista de aplicación controlada por modelos en Power Apps | MicrosoftDocs
 description: Aprenda a crear o editar una vista
 ms.custom: ''
 ms.date: 06/11/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 78de24571448c0e3c8584ef3b31583acd9d6a4f4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0835e35f5815e7704cfe3d0de24ad4429600512b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2704191"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868795"
 ---
 # <a name="understand-model-driven-app-views"></a>Conocer las vistas de las aplicaciones controladas por modelos
 
 <a name="BKMK_CreatingAndEditingViews"></a>   
 
-Con las aplicaciones de PowerApps, utilice vistas para definir cómo se muestra una lista de registros para una entidad específica en la aplicación. Las vistas definen:
+Con las aplicaciones de Power Apps, utilice vistas para definir cómo se muestra una lista de registros para una entidad específica en la aplicación. Las vistas definen:
 
 - Las columnas que aparecen
 - Qué ancho debe tener cada columna
@@ -89,7 +89,7 @@ Puede crear vistas públicas personalizadas. Puede eliminar cualquier vista púb
 
 ## <a name="places-where-you-can-access-the-view-editor-to-create-or-edit-views"></a>Lugares donde puede acceder al editor de vistas para crear o editar vistas
 
-- Sitio de PowerApps: puede acceder al diseñador de vistas en el área **Controlado por modelos** > pestaña **Datos** > **Entidades** > **Vista**. Abra una vista existente o cree una nueva. Más información: [Crear o editar una vista](create-and-edit-views.md)
+- Sitio de Power Apps: puede acceder al diseñador de vistas en el área **Controlado por modelos** > pestaña **Datos** > **Entidades** > **Vista**. Abra una vista existente o cree una nueva. Más información: [Crear o editar una vista](create-and-edit-views.md)
 - Diseñador de aplicaciones: si está trabajando con una aplicación, puede que desee usar el diseñador de aplicaciones, que ofrece una IU intuitiva y simple con capacidades de arrastrar y colocar para las vistas creadas. Más información: [Tutorial: Crear y editar vistas públicas o del sistema usando el diseñador de aplicaciones](create-edit-views-app-designer.md)
 - Explorador de soluciones: si ya tiene experiencia con Dynamics 365, es posible que desee utilizar el explorador de soluciones. Más información: [Navegar a áreas de creación y personalización avanzadas de aplicaciones](advanced-navigation.md#solution-explorer)
  

@@ -1,6 +1,6 @@
 ---
-title: Configurar paneles de experiencia interactiva de aplicaciones controladas por modelos en PowerApps | Microsoft Docs
-description: Aprenda a configurar paneles de experiencia interactiva en PowerApps
+title: Configurar paneles de experiencia interactiva de aplicaciones controladas por modelos en Power Apps | Microsoft Docs
+description: Aprenda a configurar paneles de experiencia interactiva en Power Apps
 keywords: Paneles interactivos; Customer Service; Microsoft Dynamics 365; centro de servicio interactivo
 author: Mattp123
 ms.author: matp
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4e73097b6b02f98b6ac5dc83a7f1d833e07a8696
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fefeebb0106907e59ea1fd5a13d620cdeb315774
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752632"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885021"
 ---
 # <a name="configure-model-driven-app-interactive-experience-dashboards"></a>Configurar paneles de experiencia interactiva de aplicaciones controladas por modelos
 
@@ -149,7 +149,7 @@ El siguiente ejemplo muestra el cuadro de diálogo de control flotante con la li
   
 ### <a name="configure-a-multi-stream-interactive-dashboard-using-the-4-column-layout"></a>Configure un panel interactivo de varias secuencias utilizando el diseño de 4 columnas  
  
-1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
   
 2.  Seleccione **Datos** > **Entidades** > seleccione la entidad que desee. 
 
@@ -203,7 +203,7 @@ La siguiente ilustración es un ejemplo de un panel de gráficos completamente y
   
 #### <a name="edit-or-delete-individual-streams-of-an-existing-dashboard"></a>Editar o eliminar secuencias individuales de un panel existente  
   
-1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).   
+1. Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).   
   
 2. Seleccione **Datos** > **Entidades** > seleccione la entidad que desee. Seleccione la ficha **Paneles**.  
   
@@ -226,7 +226,7 @@ La siguiente ilustración es un ejemplo de un panel de gráficos completamente y
 
 Por ejemplo, en lugar de seleccionar una entidad, algunos campos del panel específico de la entidad se preestablecen en la entidad para la que está creando el panel.  
   
-1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 2.  Seleccione **Datos** > **Entidades** > seleccione la entidad que desee. 
 

@@ -17,12 +17,12 @@ search.audienceType:
 - developer
 search.app:
 - D365CE
-ms.openlocfilehash: 4ce6e11f599eedd6b44c4fbf7271760ecb3cd9c2
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: da8d3ac44d9993aee813347b327442789e7fb8a7
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749752"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2859925"
 ---
 # <a name="set-up-a-postman-environment"></a>Configure un entorno Postman
 
@@ -32,7 +32,7 @@ Puede usar un entorno Postman para guardar un conjunto de variables que usará p
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* Obtenga un entorno de PowerApps Common Data Service al que puede conectarse. 
+* Obtenga un entorno de Power Apps Common Data Service al que puede conectarse. 
 * Descargue e instale el  [Aplicación de envío para ordenador](https://www.getpostman.com/apps).
 
 <a name="bkmk_connectcds"></a> 

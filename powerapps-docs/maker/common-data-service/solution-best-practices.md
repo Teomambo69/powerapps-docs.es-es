@@ -1,5 +1,5 @@
 ---
-title: Prácticas recomendadas de soluciones en PowerApps | MicrosoftDocs
+title: Prácticas recomendadas de soluciones en Power Apps | MicrosoftDocs
 description: Información sobre prácticas recomendadas cuando trabaja con soluciones
 ms.custom: ''
 ms.date: 10/08/2019
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e10b9951ca70e497349620ae96308d6db49403fe
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 810fd536da5236f5ac7490505e82e78179ab61da
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702167"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865313"
 ---
 # <a name="best-practices-when-working-with-solutions"></a>Prácticas recomendadas cuando trabaja con soluciones 
 Este tema describe las prácticas recomendadas cuando trabaja con soluciones. 

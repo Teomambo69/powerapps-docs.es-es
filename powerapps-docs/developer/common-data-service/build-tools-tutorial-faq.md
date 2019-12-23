@@ -1,6 +1,6 @@
 ---
 title: Tutorial sobre Build tools y preguntas más frecuentes| Microsoft Docs
-description: 'PowerApps build tools son una colección de tareas de compilación de Azure DevOps específicas de PowerApps que eliminan la necesidad de descargar manualmente los scripts para administrar el desarrollo de PowerApps. En este tema se describen el tutorial y las preguntas más frecuentes a los que puede tener acceso para obtener más información sobre estas herramientas. '
+description: 'Power Apps build tools son una colección de tareas de compilación de Azure DevOps específicas de Power Apps que eliminan la necesidad de descargar manualmente los scripts para administrar el desarrollo de Power Apps. En este tema se describen el tutorial y las preguntas más frecuentes a los que puede tener acceso para obtener más información sobre estas herramientas. '
 ms.custom: ''
 ms.date: 07/21/2019
 ms.reviewer: Dean-Haas
@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 69736094b6c15d8731ec61f614da3085bed14924
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: ac7b2aeabe6121ee45b8593abb3234cfb6fb566b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749587"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861833"
 ---
 # <a name="tutorial-and-faq"></a>Tutorial y preguntas más frecuentes
 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
-Utilice el tutorial y las preguntas más frecuentes para obtener más información acerca de PowerApps build tools para Azure DevOps. 
+Utilice el tutorial y las preguntas más frecuentes para obtener más información acerca de Power Apps build tools para Azure DevOps. 
 
 ## <a name="hands-on-lab"></a>Laboratorio práctico
 
@@ -47,17 +47,17 @@ El laboratorio práctico proporciona un tutorial con instrucciones paso a paso s
 
 ## <a name="frequently-asked-question-faq"></a>Preguntas más frecuentes (P+F)
 
-**¿PowerApps build tools funcionan sólo para PowerApps?**  
+**¿Power Apps build tools funcionan sólo para Power Apps?**  
 
-*PowerApps Build Tools funcionan con PowerApps y con aplicaciones basadas en modelo en Dynamics 365 como Dynamics 365 Sales y Dynamics 365 Customer Service. Las tareas de compilación independientes están disponibles para Microsoft Dynamics para Finance and Operations.*
+*Power Apps Build Tools funcionan con Power Apps y con aplicaciones basadas en modelo en Dynamics 365 como Dynamics 365 Sales y Dynamics 365 Customer Service. Las tareas de compilación independientes están disponibles para Microsoft Dynamics para Finance and Operations.*
 
 **¿Puedo incluir aplicaciones de flujo y de lienzo?**
 
 *Sí, las aplicaciones de flujo y lienzo son compatibles con las soluciones. Por tanto, si se agregan a la solución, pueden participar en el ciclo de vida de su aplicación. Sin embargo, algunos pasos siguen requiriendo configuraciones manuales. Este aspecto se abordará más adelante este año cuando introduzcamos variables de entorno y conectores.*
 
-**¿Cuánto cuestan PowerApps build tools?**
+**¿Cuánto cuestan Power Apps build tools?**
 
-*PowerApps Build Tools están disponibles sin coste alguno. Sin embargo, una suscripción válida a Azure DevOps es necesaria para usar Build Tools. Más información está disponible [aquí](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).*
+*Power Apps Build Tools están disponibles sin coste alguno. Sin embargo, una suscripción válida a Azure DevOps es necesaria para usar Build Tools. Más información está disponible [aquí](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).*
 
 **Veo la extensión, pero ¿por qué no tengo la opción de instalarla?**
 

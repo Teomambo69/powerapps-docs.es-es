@@ -1,5 +1,5 @@
 ---
-title: Crear cuadrículas (listas) editables de aplicaciones controladas por modelos mediante el control personalizado Cuadrícula editable con PowerApps | MicrosoftDocs
+title: Crear cuadrículas (listas) editables de aplicaciones controladas por modelos mediante el control personalizado Cuadrícula editable con Power Apps | MicrosoftDocs
 description: Obtenga información sobre cómo usar el control personalizado de cuadrícula editable
 ms.custom: ''
 ms.date: 06/27/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8ec97723dcc5c1e17b3907c7b683ba24977b69de
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 866c058ad873fa278ee0bb8bf026983ed0201df7
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2700627"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868003"
 ---
 # <a name="make-model-driven-app-grids-lists-editable-using-the-editable-grid-custom-control"></a>Crear cuadrículas (listas) editables de aplicaciones controladas por modelos mediante el control personalizado Cuadrícula editable
 

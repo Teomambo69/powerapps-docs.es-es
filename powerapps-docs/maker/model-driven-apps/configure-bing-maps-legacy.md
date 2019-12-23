@@ -1,5 +1,5 @@
 ---
-title: Configurar mapas de Bing en una aplicación controlada por modelos con PowerApps | MicrosoftDocs
+title: Configurar mapas de Bing en una aplicación controlada por modelos con Power Apps | MicrosoftDocs
 ms.custom: ''
 ms.date: 10/18/2019
 ms.reviewer: ''
@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ff7f5c01e913da60409bb60c637b37ebd4bfa096
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 132f5c2cfb5763714176a86c1ea846085588f862
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756496"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875242"
 ---
 # <a name="configure-a-map-on-a-form"></a>Configurar un mapa en un formulario
 De forma predeterminada, el control de mapas de Bing se configura en el formulario principal para las entidades de cuenta y contacto, lo que proporciona la capacidad de mostrar un mapa en registros de entidad. Aunque no está configurado de forma predeterminada, el control de mapas de Bing puede agregarse a la entidad de usuario del sistema. El control de mapas de Bing también se puede usar con algunas entidades incluidas con aplicaciones basadas en modelo en Dynamics 365, como Dynamics 365 Sales y Dynamics 365 Customer Service. Por ejemplo, las entidades cliente potencial, oferta, pedido, facturación, y competidor. El control de mapas de Bing no se puede usar con entidades personalizadas.  
@@ -49,7 +49,7 @@ Puede quitar el área de mapas de Bing en el editor de formularios o volver a ag
     ![Habilitar mapas en formularios](media/enable-maps.png)
 
 ## <a name="configure-a-map"></a>Configurar un mapa 
-1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+1. Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
 2. Vaya a **Datos** > **Entidades** y seleccione la entidad que desea configurar un mapa en el formulario principal. 
 3. Seleccione la pestaña **Formularios** y seleccione el formulario principal y, en la barra de comandos seleccione **Cambiar a clásico**. 
 4. En el diseñador de formularios clásico, haga doble clic en el control **Vista del mapa** para ver y editar las propiedades. Más información: [Ver y editar propiedades de mapa](#view-and-edit-map-properties)

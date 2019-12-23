@@ -1,5 +1,5 @@
 ---
-title: Eliminar o desactivar una vista de aplicación controlada por modelos en PowerApps | MicrosoftDocs
+title: Eliminar o desactivar una vista de aplicación controlada por modelos en Power Apps | MicrosoftDocs
 description: Aprenda cómo eliminar o desactivar una vista
 ms.custom: ''
 ms.date: 06/12/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3dd7e6a6838f9ba148c8d90719746c4a1488c559
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: fd754dabac61c744044dce088ca063dc31ba63af
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711319"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865246"
 ---
 # <a name="delete-or-deactivate-a-model-driven-app-view"></a>Eliminar o desactivar una vista de aplicación controlada por modelos 
 

@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d6c620f518331f46ef3e662040975cd8c6c5625a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 7ad5f422c0d45bbeb60ae43e687329b1fb770c2b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758828"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861179"
 ---
 # <a name="define-alternate-keys-to-reference-records"></a>Definir claves alternativas para hacer referencia a registros
 
@@ -38,7 +38,7 @@ Un sistema de integración de datos usará claves alternativas para identificar 
 Por ejemplo, para identificar un registro de cuenta con una clave alternativa, puede usar el número de cuenta o el campo de número de cuenta conjuntamente con otros campos que tienen valores que no deben cambiar.
 
 > [!NOTE]
-> Aunque puede definir claves alternativas con PowerApps, solo se pueden usar mediante programación en código. Para obtener más información sobre cómo usar claves alternativas mediante programación, consulte:   
+> Aunque puede definir claves alternativas con Power Apps, solo se pueden usar mediante programación en código. Para obtener más información sobre cómo usar claves alternativas mediante programación, consulte:   
 > - [Documentación para desarrolladores: Usar una clave alternativa para crear un registro](/dynamics365/customer-engagement/developer/use-alternate-key-create-record) 
 > - [Documentación para desarrolladores: Recuperar un registro con la API web mediante una clave alternativa](/dynamics365/customer-engagement/developer/webapi/retrieve-entity-using-web-api#retrieve-using-an-alternate-key)
 
@@ -55,7 +55,7 @@ Hay dos diseñadores que puede usar para crear claves alternativas:
 
 |Diseñador| Descripción|
 |--|--|
-|[Portal PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Proporciona una experiencia fácil y ágil, pero algunas opciones no están disponibles.<br />Más información: [Definir claves alternativas con el portal de PowerApps](define-alternate-keys-portal.md)|
+|[Portal Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Proporciona una experiencia fácil y ágil, pero algunas opciones no están disponibles.<br />Más información: [Definir claves alternativas con el portal de Power Apps](define-alternate-keys-portal.md)|
 |Explorador de soluciones|No es tan fácil, pero proporciona más flexibilidad para requisitos menos comunes.<br />Más información: [Definir claves alternativas con el explorador de soluciones](define-alternate-keys-solution-explorer.md) |
 
 > [!NOTE]
@@ -65,7 +65,7 @@ Hay dos diseñadores que puede usar para crear claves alternativas:
 
 La información de este tema le ayudará a elegir el diseñador que puede usar. 
 
-Debería usar el [portal de PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) para crear claves alternativas, a menos que necesite satisfacer cualquiera de los siguientes requisitos:
+Debería usar el [portal de Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) para crear claves alternativas, a menos que necesite satisfacer cualquiera de los siguientes requisitos:
 
 - Crear una clave alternativa en una solución distinta de la solución predeterminada de Common Data Service
 - Desea realizar fácilmente un seguimiento del trabajo del sistema que realiza el seguimiento del progreso de creación de los índices de soporte
@@ -120,7 +120,7 @@ Si se produce un error en el trabajo del sistema, busque el trabajo del sistema 
   
 ### <a name="see-also"></a>Vea también  
 
-[Definir las claves alternativas con el portal PowerApps](define-alternate-keys-portal.md)<br />
+[Definir las claves alternativas con el portal Power Apps](define-alternate-keys-portal.md)<br />
 [Definir las claves alternativas con el explorador de soluciones](define-alternate-keys-solution-explorer.md)<br />
 [Documentación para desarrolladores: Definir claves alternativas para una entidad](/dynamics365/customer-engagement/developer/define-alternate-keys-entity)<br />
 [Documentación para desarrolladores: Usar una clave alternativa para crear un registro](/dynamics365/customer-engagement/developer/use-alternate-key-create-record)

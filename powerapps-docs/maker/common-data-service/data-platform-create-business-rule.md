@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 45d0d4ce80d1552ace70ae5b25a67e570141d261
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 6be1df71af6a4fab7d60414aca1a3ecd75f7dc12
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754759"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872910"
 ---
 # <a name="create-a-business-rule-for-an-entity"></a>Crear una regla de negocio para una entidad
 
@@ -51,7 +51,7 @@ Para seguir este tema, debe cambiar a un [entorno](../canvas-apps/working-with-e
 
 ## <a name="create-a-business-rule"></a>Creación de una regla de negocio
   
-1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y haga clic o pulse en la flecha hacia abajo para **Datos** cerca del borde izquierdo.
+1. Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y haga clic o pulse en la flecha hacia abajo para **Datos** cerca del borde izquierdo.
 
 2. En la lista que aparece, haga clic o pulse en **Entidades**.
   

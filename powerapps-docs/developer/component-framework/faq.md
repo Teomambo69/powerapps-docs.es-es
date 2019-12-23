@@ -8,12 +8,12 @@ ms.topic: index-page
 ms.assetid: 9f940264-d7d5-4930-8052-1bd582445d37
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: dd5b6701c28e91ba2f0a2b99041446d0e2c45204
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 89ca91795b0644b0b7275697864211a4d3263c80
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749634"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861998"
 ---
 # <a name="faq"></a>Preguntas más frecuentes
 
@@ -33,9 +33,9 @@ No se admite esta operación.
 
 ## <a name="font-resource"></a>Recurso de fuente
 
-No se admite actualmente el recurso de fuente (.tff) en PowerApps component framework.
+No se admite actualmente el recurso de fuente (.tff) en Power Apps component framework.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Referencia de la API de PowerApps component framework](reference/index.md)<br/>
-[Información general sobre PowerApps component framework](overview.md)
+[Referencia de la API de Power Apps component framework](reference/index.md)<br/>
+[Información general sobre Power Apps component framework](overview.md)

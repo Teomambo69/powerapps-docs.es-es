@@ -1,6 +1,6 @@
 ---
-title: Usar la API web del comprobador de PowerApps | Microsoft Docs
-description: La API web del comprobador de PowerApps proporciona una experiencia de desarrollo que puede usarse en una gran variedad de lenguajes de programación, plataformas, y dispositivos.
+title: Usar la API web del comprobador de Power Apps | Microsoft Docs
+description: La API web del comprobador de Power Apps proporciona una experiencia de desarrollo que puede usarse en una gran variedad de lenguajes de programación, plataformas, y dispositivos.
 ms.custom: ''
 ms.date: 06/3/2019
 ms.service: powerapps
@@ -20,22 +20,22 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 495a5e976ae3ef9579e96023e65be5bee85f5c01
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: eed1556726cb947d7eba6b8f94ceed538f669ea3
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753036"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861813"
 ---
-# <a name="use-the-powerapps-checker-web-api"></a>Usar la API web del comprobador de PowerApps
+# <a name="use-the-power-apps-checker-web-api"></a>Usar la API web del comprobador de Power Apps
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../../../includes/cc-beta-prerelease-disclaimer.md)]
 
-La API web del comprobador de PowerApps proporciona un mecanismo para ejecutar comprobaciones de análisis estático con personalizaciones y extensiones de la plataforma Common Data Service. Está disponible para que fabricantes y desarrolladores realicen comprobaciones de análisis estático de sus soluciones con un conjunto de reglas de prácticas recomendadas para identificar rápidamente patrones problemáticos. El servicio proporciona la lógica para la [característica del comprobador de soluciones](../../../../maker/common-data-service/use-powerapps-checker.md) en el [portal del fabricante de PowerApps](https://make.powerapps.com) y se incluye como parte de la automatización para [solicitudes enviadas a AppSource](../../publish-app-appsource.md). La interacción directamente con el servicio de esta manera permite el análisis de soluciones que se incluyen como parte de entornos locales (todas las versiones admitidas) y en línea.
+La API web del comprobador de Power Apps proporciona un mecanismo para ejecutar comprobaciones de análisis estático con personalizaciones y extensiones de la plataforma Common Data Service. Está disponible para que fabricantes y desarrolladores realicen comprobaciones de análisis estático de sus soluciones con un conjunto de reglas de prácticas recomendadas para identificar rápidamente patrones problemáticos. El servicio proporciona la lógica para la [característica del comprobador de soluciones](../../../../maker/common-data-service/use-powerapps-checker.md) en el [portal del fabricante de Power Apps](https://make.powerapps.com) y se incluye como parte de la automatización para [solicitudes enviadas a AppSource](../../publish-app-appsource.md). La interacción directamente con el servicio de esta manera permite el análisis de soluciones que se incluyen como parte de entornos locales (todas las versiones admitidas) y en línea.
 
  > [!IMPORTANT]
  >
- > - La API web para el comprobador de PowerApps es una característica de vista previa.
+ > - La API web para el comprobador de Power Apps es una característica de vista previa.
  > - [!INCLUDE[cc_preview_features_definition](../../../../includes/cc-preview-features-definition.md)]
 
 <a name="bkmk_altApproaches"></a>
@@ -80,7 +80,7 @@ Consulte los temas siguientes para documentación sobre las API individuales:
 
 ## <a name="determine-a-geography"></a>Determinar una geografía
 
-Cuando se interactúa con el servicio del comprobador de PowerApps, los archivos se almacenan temporalmente en Azure junto con informes que se generan. Mediante el uso de una API específica de la geografía puede controlar dónde se almacenan los datos. Se recomienda usar la misma geografía para cada llamada de API en el ciclo de vida de análisis. Cada geografía puede tener una versión diferente en cualquier momento determinado en el tiempo debido a nuestro método seguro de implementación de varias etapas y al hacer se asegura compatibilidad completa de la versión. También puede reducir el tiempo de ejecución ya que los datos no tendrán que viajar tan lejos en algunos casos. Las siguientes son las geografías disponibles:
+Cuando se interactúa con el servicio del comprobador de Power Apps, los archivos se almacenan temporalmente en Azure junto con informes que se generan. Mediante el uso de una API específica de la geografía puede controlar dónde se almacenan los datos. Se recomienda usar la misma geografía para cada llamada de API en el ciclo de vida de análisis. Cada geografía puede tener una versión diferente en cualquier momento determinado en el tiempo debido a nuestro método seguro de implementación de varias etapas y al hacer se asegura compatibilidad completa de la versión. También puede reducir el tiempo de ejecución ya que los datos no tendrán que viajar tan lejos en algunos casos. Las siguientes son las geografías disponibles:
 
 |Centro de datos de Azure|Nombre|Zona geográfica|URI base|
 |---|---|---|---|
@@ -112,7 +112,7 @@ Si no se proporciona, se usará de forma predeterminada la última versión de l
 
 ## <a name="rulesets-and-rules"></a>Conjuntos de reglas y reglas
 
-l comprobador de PowerApps requiere una lista de reglas cuando se ejecuta. Estas reglas se pueden proporcionar en forma de reglas individuales o agrupaciones de reglas, denominadas *conjuntos de reglas*. Un conjunto de reglas es una forma cómoda de especificar un grupo de reglas en lugar de especificar cada regla individualmente. Por ejemplo, la característica del comprobador de soluciones usa un conjunto de reglas llamado *Comprobador de soluciones*. Cuando se agregan o se quitan reglas, el servicio incluirá estos cambios automáticamente sin requerir ningún cambio por parte de la aplicación que consume. Si requiere que la lista de reglas no cambie automáticamente como se describe anteriormente, pueden especificar reglas de forma individual.
+l comprobador de Power Apps requiere una lista de reglas cuando se ejecuta. Estas reglas se pueden proporcionar en forma de reglas individuales o agrupaciones de reglas, denominadas *conjuntos de reglas*. Un conjunto de reglas es una forma cómoda de especificar un grupo de reglas en lugar de especificar cada regla individualmente. Por ejemplo, la característica del comprobador de soluciones usa un conjunto de reglas llamado *Comprobador de soluciones*. Cuando se agregan o se quitan reglas, el servicio incluirá estos cambios automáticamente sin requerir ningún cambio por parte de la aplicación que consume. Si requiere que la lista de reglas no cambie automáticamente como se describe anteriormente, pueden especificar reglas de forma individual.
 Los conjuntos de reglas pueden tener runa o varias reglas sin límite. Una regla puede no estar en ningún conjunto de reglas o en varios. Puede obtener una lista de todos los conjuntos de reglas llamando a la API de la siguiente manera: `[Geographical URL]/api/ruleset`. Esta extremo esté abierto y no requiere autenticación.
 
 ### <a name="solution-checker-ruleset"></a>Conjunto de reglas del comprobador de soluciones
@@ -143,7 +143,7 @@ El identificador de inquilinos es el valor de la propiedad `ObjectId` que se dev
 
 ## <a name="authentication-and-authorization"></a>Autenticación y autorización
 
- La consulta de reglas y conjuntos de reglas no requiere un símbolo OAuth, pero todas las demás API requieren el símbolo. Las API admiten detección de autorización llamando a cualquiera de las API que requieren un símbolo. La respuesta será un código de estado HTTP no autorizado de 401 con un encabezado de WWW-Authenticate, el URI de autorización y el ID de recursos. También debe proporcionar el identificador de inquilinos en el encabezado `x-ms-tenant-id`. Consulte [Autenticación y autorización del Comprobador de PowerApps](/powershell/powerapps/overview#powerapps-checker-authentication-and-authorization) para obtener más información. A continuación se proporciona un ejemplo del encabezado de respuesta devuelto de una solicitud API:
+ La consulta de reglas y conjuntos de reglas no requiere un símbolo OAuth, pero todas las demás API requieren el símbolo. Las API admiten detección de autorización llamando a cualquiera de las API que requieren un símbolo. La respuesta será un código de estado HTTP no autorizado de 401 con un encabezado de WWW-Authenticate, el URI de autorización y el ID de recursos. También debe proporcionar el identificador de inquilinos en el encabezado `x-ms-tenant-id`. Consulte [Autenticación y autorización del Comprobador de Power Apps](/powershell/powerapps/overview#powerapps-checker-authentication-and-authorization) para obtener más información. A continuación se proporciona un ejemplo del encabezado de respuesta devuelto de una solicitud API:
 
 ```http
 WWW-Authenticate →Bearer authorization_uri="https://login.microsoftonline.com/0082fff7-33c5-44c9-920c-c2009943fd1e", resource_id="https://api.advisor.powerapps.com/"

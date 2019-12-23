@@ -1,6 +1,6 @@
 ---
 title: Cargar un archivo para análisis | Microsoft Docs
-description: Lea cómo formar una solicitud POST mediante la API web del comprobador de PowerApps para cargar un archivo para analizar.
+description: Lea cómo formar una solicitud POST mediante la API web del comprobador de Power Apps para cargar un archivo para analizar.
 ms.custom: ''
 ms.date: 06/04/2019
 ms.service: powerapps
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8945db30eaad8f8b47c2c933330b63dd12ed1662
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f2e83835e80c2393b9b97077c51338c55dd1c3e4
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749728"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861805"
 ---
 # <a name="upload-a-file-for-analysis"></a>Cargar un archivo para analizar
 
@@ -86,7 +86,7 @@ Content-Type: application/json; charset=utf-8
 
 ### <a name="see-also"></a>Vea también
 
-[Usar la API web del comprobador de PowerApps](overview.md)<br />
+[Usar la API web del comprobador de Power Apps](overview.md)<br />
 [Recuperar la lista de conjuntos de reglas](retrieve-rulesets.md)<br />
 [Recuperar la lista de reglas](retrieve-rules.md)<br />
 [Invocar análisis](analyze.md)<br />

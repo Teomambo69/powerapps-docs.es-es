@@ -1,6 +1,6 @@
 ---
 title: Introducción a la personalización de aplicaciones basada en modelos mediante código | Microsoft Docs
-description: 'Puede personalizar aplicaciones basadas en modelos mediante las herramientas disponibles en el portal PowerApps o las que aparecen descritas en la documentación. '
+description: 'Puede personalizar aplicaciones basadas en modelos mediante las herramientas disponibles en el portal Power Apps o las que aparecen descritas en la documentación. '
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 53971f95f73824773477cf00660a7593e7d501b1
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0ac5d6ec9527334b8e9ef82fcff9e37744967c16
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749522"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865585"
 ---
 # <a name="get-started-with-model-driven-apps-customization-using-code"></a>Introducción a la personalización de aplicaciones basada en modelos mediante código
 
@@ -27,20 +27,20 @@ ms.locfileid: "2749522"
 Split to just include MDA issues
  -->
 
-Puede personalizar aplicaciones basadas en modelos mediante las herramientas disponibles en el portal PowerApps o las que aparecen descritas en la documentación. Estas personalizaciones están admitidas y se pueden actualizar.
+Puede personalizar aplicaciones basadas en modelos mediante las herramientas disponibles en el portal Power Apps o las que aparecen descritas en la documentación. Estas personalizaciones están admitidas y se pueden actualizar.
 
 Las personalizaciones realizadas con otros métodos que no sean los que aquí se describen no están admitidas y podrían causar problemas durante la instalación de actualizaciones y mejoras aplicaciones basadas en modelos. Para obtener más información, consulte [Personalizaciones no admitidas](#unsupported-customizations) más adelante en este tema.
 
 Se admiten los temas cubiertos en los artículos técnicos publicados en sitios de Microsoft como este, pero podrían no ser actualizables.
 
 
-## <a name="customizations-using-powerapps-portal"></a>Personalizaciones utilizando el portal de PowerApps
+## <a name="customizations-using-power-apps-portal"></a>Personalizaciones utilizando el portal de Power Apps
 
 Hay una variedad de herramientas que se incluyen con aplicaciones basadas en modelos para aplicaciones que puede utilizar para personalizarlas. Las personalizaciones realizadas con las herramientas de aplicaciones basadas en modelos son completamente compatibles y se pueden actualizar por completo.
 
 Se pueden usar los siguientes métodos de personalización para generar personalizaciones completamente compatibles:
 
-- Personalización en el portal de PowerApps o la solución del explorador. Para obtener más información, vea [Información general para generar aplicaciones basadas en modelos](../../maker/model-driven-apps/model-driven-app-overview.md)
+- Personalización en el portal de Power Apps o la solución del explorador. Para obtener más información, vea [Información general para generar aplicaciones basadas en modelos](../../maker/model-driven-apps/model-driven-app-overview.md)
 
 - Configuración en la aplicación web. Para obtener más información, vea [Administrar aplicaciones basadas en modelos](/dynamics365/customer-engagement/admin/admin-guide).
 
@@ -75,7 +75,7 @@ Se admite el uso de `RibbonDiffXml` para agregar, quitar u ocultar elementos de 
 
 ## <a name="unsupported-customizations"></a>Personalizaciones no admitidas
 
-Las modificaciones en aplicaciones basadas en modelos que se realizan sin usar los métodos descritos en esta documentación o las herramientas del portal PowerApps no se admiten ni se mantienen durante la instalación de actualizaciones o mejoras de aplicaciones basadas en modelos. No se admite nada que no esté reflejado en esta documentación y en los documentos relacionados. Además, las modificaciones no admitidas podrían provocar problemas cuando se actualice a través de la instalación de revisiones, los Service Pack o mejoras de aplicaciones basadas en modelos.
+Las modificaciones en aplicaciones basadas en modelos que se realizan sin usar los métodos descritos en esta documentación o las herramientas del portal Power Apps no se admiten ni se mantienen durante la instalación de actualizaciones o mejoras de aplicaciones basadas en modelos. No se admite nada que no esté reflejado en esta documentación y en los documentos relacionados. Además, las modificaciones no admitidas podrían provocar problemas cuando se actualice a través de la instalación de revisiones, los Service Pack o mejoras de aplicaciones basadas en modelos.
 
 La siguiente es una lista de los tipos de acciones no admitidas por los que recibimos preguntas frecuentes: 
 

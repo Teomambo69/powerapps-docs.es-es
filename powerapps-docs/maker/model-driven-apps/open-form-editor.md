@@ -1,5 +1,5 @@
 ---
-title: Abrir el editor de formularios de una aplicación controlada por modelos en PowerApps | MicrosoftDocs
+title: Abrir el editor de formularios de una aplicación controlada por modelos en Power Apps | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
@@ -21,21 +21,21 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f922908611d56afc99c5ebc844ff75c94d48657c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5824f2acfdcf1a6dc6e3491abfdd8896528597a1
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759532"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872713"
 ---
 # <a name="open-the-model-driven-app-form-editor"></a>Abrir el editor de formularios de una aplicación controlada por modelos 
 El editor de formularios es donde debe diseñar los formularios colocando componentes como secciones, pestañas, campos y controles sobre el lienzo del editor de formularios. En este tema aprenderá varias formas de acceder al editor de formularios.
  
 Si crea componentes de la solución nuevos en el proceso de edición del formulario, como recursos web, los nombres de los componentes usarán el prefijo de personalización del editor de soluciones de la solución predeterminada y estos componentes solo se incluirán en la solución predeterminada. Si desea que los nuevos componentes de la solución se incluyan en una solución no administrada específica, debe abrir el editor de formularios a través de esa solución no administrada.  
 
-## <a name="access-the-form-editor-from-the-powerapps-site"></a>Acceder al editor de formularios desde el sitio de PowerApps
+## <a name="access-the-form-editor-from-the-power-apps-site"></a>Acceder al editor de formularios desde el sitio de Power Apps
 
-1. Inicie sesión en [PowerApps](https://make.powerapps.com/). 
+1. Inicie sesión en [Power Apps](https://make.powerapps.com/). 
 
 2. Seleccione **Datos** > **Entidades** y, a continuación, seleccione la entidad que desee, como la entidad Cuenta. 
 

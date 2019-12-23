@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 10/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 19dca44c26565bc55dcfaace48987b69dd0a195f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 6f37959db1296995abe08e85995750796a93da9c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759576"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866947"
 ---
 # <a name="configure-site-settings-for-portals"></a>Configurar opciones del sitio para portales
 
 Una configuración del sitio es un valor configurable con nombre que usa el código del sitio web para modificar el comportamiento o el estilo visual del portal. Normalmente cuando un desarrollador crea el código de sitio web, hará referencia a la configuración del sitio para los distintos componentes para permitir a un usuario final modificar los valores de configuración para modificar el sitio web sin tener que cambiar el código, recopilar y volver a implementar el sitio web.
 
-Los portales de ejemplo que se proporcionan con la instalación de portales de PowerApps contienen varias configuraciones ajustables del sitio para diversos estilos usados para editar muchos elementos visuales dentro del sitio, como estilo de fondo, color del texto, y ancho del diseño.
+Los portales de ejemplo que se proporcionan con la instalación de portales de Power Apps contienen varias configuraciones ajustables del sitio para diversos estilos usados para editar muchos elementos visuales dentro del sitio, como estilo de fondo, color del texto, y ancho del diseño.
 Puede administrar los siguientes tipos de configuraciones de sitio:
 
 - **Configuración de portal global**: Esta configuración se aplica a todos los portales asociados con el entorno Common Data Service donde se agregan.

@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 26070652e0cafe91731384a75ae66334288eef9e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a006a7cdb2110161ad30ecd7acbf6f95cbca41de
+ms.sourcegitcommit: da16207fe9bf4e2382a9a25463b2ee8c3a680a3b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749908"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "2806043"
 ---
 # <a name="customize-entity-views"></a>Personalizar vistas de entidad
 
@@ -218,7 +218,11 @@ SetStateRequest ssreq = new SetStateRequest
     Status = new OptionSetValue(2)
 };
 _serviceProxy.Execute(ssreq);
- ```  
+ ``` 
+ 
+> [!NOTE]
+> El estado de la vista, activo o inactivo, no se incluye con la vista cuando se agrega a una solución. Por lo tanto, cuando la solución se importa a una organización de destino, el estado se establecerá en activo de forma predeterminada.
+
   
 <a name="BKMK_EditFilterOrSorting"></a>   
 ## <a name="edit-filter-criteria-or-configure-sorting"></a>Editar los criterios de filtro o configurar la ordenación  

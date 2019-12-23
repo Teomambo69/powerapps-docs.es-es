@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
 - Dynamics 365 for Customer Engagement (online)
-- powerapps
+- PowerApps
 ms.assetid: cb1bb002-8300-43bb-ab75-99e7a9c9c35d
 caps.latest.revision: 11
 author: Mattp123
@@ -21,12 +21,12 @@ search.audienceType:
 - customizer
 search.app:
 - D365CE
-ms.openlocfilehash: d3600ad3c1f0953ff3aef5786c62afebca43b4c4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 09fbaedac9e6638925cc1c8fe9cebe8e970f989e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755067"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884164"
 ---
 # <a name="reporting-considerations"></a>Consideraciones sobre informes
 

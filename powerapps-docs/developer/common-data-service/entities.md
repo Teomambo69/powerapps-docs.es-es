@@ -20,16 +20,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8173ba424ea9c6af3c29443db106e9feac02179a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8bd68d7a1039be8254dda59d7d1f45d52e15b899
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752988"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861797"
 ---
 <!-- 
 Was Mike Carter
-This topic was not migrated it was written for PowerApps 
+This topic was not migrated it was written for Power Apps 
 
 Overlap with content in https://docs.microsoft.com/dynamics365/customer-engagement/developer/introduction-entities
 

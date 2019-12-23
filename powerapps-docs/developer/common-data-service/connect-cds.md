@@ -14,19 +14,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 82616711b47a2f14d32e7ee327b21e27df919a9b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 29f6cca10ca81eacc9f70c589b8dc12f0e0cd466
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749579"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883534"
 ---
 # <a name="create-client-applications"></a>Crear aplicaciones cliente
 
 Puede crear aplicaciones cliente sin escribir código mediante aplicaciones basadas en modelos y lienzos.
-Más información: [Visión general de creación de aplicaciones en PowerApps](../../maker/index.md)
+Más información: [Visión general de creación de aplicaciones en Power Apps](../../maker/index.md)
 
-Si las opciones de PowerApps no cumplen los requisitos, puede crear una aplicación cliente con código.
+Si las opciones de Power Apps no cumplen los requisitos, puede crear una aplicación cliente con código.
 
 ## <a name="connecting-to-common-data-service"></a>Conectando a Common Data Service
 

@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 23435229c30298a6e2ff6a3e8417b0c09dad1312
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8c4b56d78b4c7337a9baf442231636e3d35ee27c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711143"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884076"
 ---
 # <a name="share-an-embedded-canvas-app"></a>Compartir una aplicación incrustada de lienzo
 En este tema se explica cómo compartir una aplicación incrustada de lienzo que ha creado ya.
@@ -34,7 +34,7 @@ En este tema se explica cómo compartir una aplicación incrustada de lienzo que
 Una vez que haya creado y haya agregado una aplicación incrustada de lienzo a un formulario controlado por modelos deberá realizar pasos para garantizar que todos los usuarios que tienen acceso al formulario controlado por modelos también accedan a la aplicación de lienzo y los datos que usa. Consulte las directrices siguientes:
 -   Comparta la aplicación incrustada de lienzo con todos los usuarios de su organización o usuarios del grupo de seguridad o específicos. Más información: [Compartir una aplicación](../canvas-apps/share-app.md#share-an-app).
 -   Asegúrese de que los usuarios tienen permisos adecuados para cualquier entidad de Common Data Service que su aplicación incrustada de lienzo use. Más información: [Administrar permisos de entidades](../canvas-apps/share-app.md#manage-entity-permissions)
--   Asegúrese de que los usuarios tienen permisos adecuados para datos de cualquier servicio de nube que su aplicación incrustada de lienzo use, como SharePoint o OneDrive. Los pasos para compartir son específicos para cada servicio en la nube y salen de alcance de PowerApps.
+-   Asegúrese de que los usuarios tienen permisos adecuados para datos de cualquier servicio de nube que su aplicación incrustada de lienzo use, como SharePoint o OneDrive. Los pasos para compartir son específicos para cada servicio en la nube y salen de alcance de Power Apps.
 
 > [!NOTE]
 > Actualmente no puede usar el privilegio **Aplicación de lienzo** en un rol de seguridad para conceder acceso a usuarios de aplicaciones a una aplicación incrustada o independiente de lienzo.

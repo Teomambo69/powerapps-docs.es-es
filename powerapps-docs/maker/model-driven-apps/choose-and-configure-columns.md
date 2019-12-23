@@ -1,5 +1,5 @@
 ---
-title: Elegir y configurar columnas en vistas de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
+title: Elegir y configurar columnas en vistas de aplicaciones controladas por modelos en Power Apps | MicrosoftDocs
 description: Aprenda a seleccionar y configurar vistas para la aplicación
 keywords: ''
 ms.date: 11/27/2018
@@ -24,18 +24,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d9f34be645a8e3dee1283f064e5aeda6a9d59e9a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: b259ea097ed5caf1683d2ba7b2450551d32e3a61
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754627"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874915"
 ---
 # <a name="choose-and-configure-columns-in-model-driven-app-views"></a>Elegir y configurar columnas en vistas de aplicaciones controladas por modelos
 
 <a name="BKMK_ChooseAndConfigureColumns"></a>   
 
- Junto con los criterios de filtro, las columnas visibles en una vista de PowerApps son muy importantes para el valor proporcionado por la vista. En este tema, creará o editará vistas realizando las siguientes tareas:  
+ Junto con los criterios de filtro, las columnas visibles en una vista de Power Apps son muy importantes para el valor proporcionado por la vista. En este tema, creará o editará vistas realizando las siguientes tareas:  
 
 -   [Abrir el editor de vistas](choose-and-configure-columns.md#open-the-view-editor)  
    
@@ -57,7 +57,7 @@ ms.locfileid: "2754627"
 
 ### <a name="open-the-view-editor"></a>Abrir el editor de vistas
 
-1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Vistas**. 
 

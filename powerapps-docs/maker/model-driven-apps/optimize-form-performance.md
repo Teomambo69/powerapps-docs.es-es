@@ -1,5 +1,5 @@
 ---
-title: Optimizar el rendimiento de los formularios de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
+title: Optimizar el rendimiento de los formularios de aplicaciones controladas por modelos en Power Apps | MicrosoftDocs
 description: Aprenda a evitar los diseños de formularios que hacen un formulario se cargue lentamente
 ms.custom: ''
 ms.date: 06/27/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b777dc346897f87d710edc309b9e9a7eda1b711b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5df20edea9440d407c75b114d24dcb3c0f39306a
+ms.sourcegitcommit: 5e6d71967902c463f34a9254f988b9c10e431eb4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711627"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "2890688"
 ---
 # <a name="optimize-model-driven-app-form-performance"></a>Optimizar el rendimiento de los formularios de aplicaciones controladas por modelos
 
@@ -38,8 +38,11 @@ Los formularios que se cargan lentamente pueden reducir la productividad y la ad
  Considere la interacción que el usuario tendrá con el formulario y la cantidad de datos que se deben mostrar en él.  
   
  **Mantenga el número de campos al mínimo**  
- Cuanto más campos tenga en un formulario, más datos deberá transferir a través de Internet o de a una intranet para ver cada registro.  
-  
+ Cuanto más campos tenga en un formulario, más datos deberá transferir a través de Internet o de a una intranet para ver cada registro.
+ 
+ **Diseño para rendimiento**  
+ Al diseñar formularios y páginas, coloque lo más importante en la parte superior para que el acceso sea lo más fácil posible para los usuarios. Mueva los componentes utilizados con poca frecuencia a otras pestañas en un formulario, use formularios basados en roles en lugar de mostrar y ocultar componentes, y asegúrese de que los diferentes flujos de trabajo tengan paneles y vistas dedicados. Utilice según desee las secciones para organizar sus controles, esto no hará que sus formularios sean más lentos.
+ 
 <a name="BKMK_FormScripts"></a>   
 ## <a name="form-scripts"></a>Scripts de formularios  
  Si tiene personalizaciones que usan scripts de formularios, asegúrese de que el desarrollador comprende estas estrategias para mejorar el rendimiento.  

@@ -1,5 +1,5 @@
 ---
-title: Búsqueda global en portales de PowerApps | MicrosoftDocs
+title: Búsqueda global en portales de Power Apps | MicrosoftDocs
 description: Aprenda cómo funciona la búsqueda global en un portal
 author: sbmjais
 manager: shujoshi
@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: da142a452e903b890b1b395262771228e245140c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 71a06d24e628ddae508af031aa80b8a08b380905
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2761092"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866727"
 ---
 # <a name="search"></a>Search
 
-En portales de PowerApps, puede buscar los registros a través de varias entidades mediante búsqueda por relevancia o búsqueda categorizada. También puede buscar en los registros de listas de la entidad con funcionalidad de búsqueda de la lista de entidades. 
+En portales de Power Apps, puede buscar los registros a través de varias entidades mediante búsqueda por relevancia o búsqueda categorizada. También puede buscar en los registros de listas de la entidad con funcionalidad de búsqueda de la lista de entidades. 
 
 La funcionalidad de búsqueda de lista de entidades en el portal usa FetchXML en el backend para buscar las columnas definidas en la lista de entidades y luego mostrar los resultados. 
 
@@ -36,7 +36,7 @@ Entre las ventajas de la búsqueda global está su capacidad para:
 
 En Búsqueda por relevancia, cuanto mejor sea la correspondencia, más alta aparecerá en los resultados. Una coincidencia tiene una relevancia mayor si se encuentran más palabras del término de búsqueda en gran proximidad mutua. Cuanto más pequeña sea la cantidad de texto donde se encuentran las palabras de búsqueda, más alta será la relevancia. Por ejemplo, si encuentra las palabras de búsqueda en un nombre de compañía y una dirección, podría ser una coincidencia mejor que las mismas palabras se encuentren en un artículo grande, muy alejadas entre sí. Como los resultados se devuelven en una sola lista, puede ver una combinación de registros mostrados uno tras otro, con los trabajos coincidentes resaltados. 
 
-Las secciones siguientes detallan cómo funciona la búsqueda global en portales de PowerApps y describen varias opciones de configuración disponibles.
+Las secciones siguientes detallan cómo funciona la búsqueda global en portales de Power Apps y describen varias opciones de configuración disponibles.
 
 ## <a name="entities-searchable-in-portal-global-search"></a>Entidades de búsqueda en búsqueda global de portal
 
@@ -188,7 +188,7 @@ Puede invocar la búsqueda global del portal desde plantillas líquidas utilizan
 
 ## <a name="update-search-index"></a>Actualizar el índice de búsqueda
 
-Las actualizaciones de índice de búsqueda en los portales de PowerApps se producen automáticamente como la invalidación de caché. Sin embargo, tenga en cuenta estos aspectos importantes a tener presentes:
+Las actualizaciones de índice de búsqueda en los portales de Power Apps se producen automáticamente como la invalidación de caché. Sin embargo, tenga en cuenta estos aspectos importantes a tener presentes:
 
 - Todas las entidades habilitadas para la búsqueda deben tener activado el indicador de metadatos Notificación de cambios, de lo contrario, ninguno de los cambios se notificará al portal y el índice de búsqueda no se actualizará.
 

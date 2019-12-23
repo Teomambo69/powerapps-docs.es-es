@@ -1,5 +1,5 @@
 ---
-title: Consideraciones de diseño para formularios principales de aplicaciones controladas por modelos con PowerApps | MicrosoftDocs
+title: Consideraciones de diseño para formularios principales de aplicaciones controladas por modelos con Power Apps | MicrosoftDocs
 description: Aprenda a diseñar formularios principales
 ms.custom: ''
 ms.date: 06/27/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0af7158c1734c0a73fc6658ee15f865e3d516676
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: fcf37cd2de916e2f418c8cc5417fb5e4c9c2073b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2703707"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860431"
 ---
 # <a name="design-considerations-for-model-driven-app-main-forms"></a>Consideraciones de diseño para formularios principales de aplicaciones controladas por modelos
 

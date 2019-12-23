@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: f94dee983d5d2d9cedf417f2843a2c10c46b82c1
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a4ba89a1497a6ed81d2e71f7d7a43813d47b6583
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757024"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873329"
 ---
 # <a name="manage-sharepoint-documents"></a>Administrar documentos de SharePoint
 
-Common Data Service admite la integración de [!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)] que le habilita a usar las funcionalidades de administración de documentos de [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] desde Common Data Service. Los portales de PowerApps ahora admiten cargar y mostrar documentos desde y hacia [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] directamente en un formulario de entidad o formulario web en un portal. Esto permite que los usuarios del portal vean , descarguen, agreguen y eliminen documentos de un portal. Los usuarios del portal también pueden crear subcarpetas para organizar sus documentos.
+Common Data Service admite la integración de [!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)] que le habilita a usar las funcionalidades de administración de documentos de [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] desde Common Data Service. Los portales de Power Apps ahora admiten cargar y mostrar documentos desde y hacia [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] directamente en un formulario de entidad o formulario web en un portal. Esto permite que los usuarios del portal vean , descarguen, agreguen y eliminen documentos de un portal. Los usuarios del portal también pueden crear subcarpetas para organizar sus documentos.
 
 > [!NOTE]
 > - La administración de documentos solo fuinciona con [!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)].
@@ -28,11 +28,11 @@ Para trabajar con las funcionalidades de la administración de documentos de [!I
 
 1.  [Habilitar la función de administración de documentos en aplicaciones basadas en modelo en Dynamics 365](#step-1-enable-document-management-functionality-in-model-driven-apps-in-dynamics-365)
 
-2.  [Configurar la integración de SharePoint del centro de administración de portales PowerApps](#step-2-set-up-sharepoint-integration-from-powerapps-portals-admin-center)
+2.  [Configurar la integración de SharePoint del centro de administración de portales Power Apps](#step-2-set-up-sharepoint-integration-from-power-apps-portals-admin-center)
 
 3.  [Habilitar la administración de documentos para entidades](#step-3-enable-document-management-for-entities)
 
-4.  [Configurar el formulario correspondiente en documentos de PowerApps](#step-4-configure-the-appropriate-form-to-display-documents)
+4.  [Configurar el formulario correspondiente en documentos de Power Apps](#step-4-configure-the-appropriate-form-to-display-documents)
 
 5.  [Crear el permiso de entidad adecuado y asignarlo al rol web adecuado](#step-5-create-appropriate-entity-permission-and-assign-it-to-the-appropriate-web-role)
 
@@ -40,14 +40,14 @@ Para trabajar con las funcionalidades de la administración de documentos de [!I
 
 Debe habilitar la funcionalidad de administración de documentos en aplicaciones basadas en modelo en Dynamics 365 mediante la integración de [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] basada en servidor. La integración de [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] basada en servidor permite a aplicaciones basadas en modelo en Dynamics 365 y [!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)] realizar una conexión entre servidores. El portal usa el registro del sitio [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] predeterminado. Para obtener información sobre cómo habilitar funcionalidades de administración de documentos en aplicaciones basadas en modelo en Dynamics 365, consulte [Configurar aplicaciones basadas en modelo en Dynamics 365 para usar SharePoint Online](https://docs.microsoft.com/power-platform/admin/set-up-dynamics-365-online-to-use-sharepoint-online).
 
-## <a name="step-2-set-up-sharepoint-integration-from-powerapps-portals-admin-center"></a>Paso 2: Configurar la integración de SharePoint del centro de administración de portales de PowerApps
+## <a name="step-2-set-up-sharepoint-integration-from-power-apps-portals-admin-center"></a>Paso 2: Configurar la integración de SharePoint del centro de administración de portales de Power Apps
 
-Para usar las funcionalidades de administración de documentos de [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)], debe habilitar la integración de [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] desde el centro de administración de portales de PowerApps.
+Para usar las funcionalidades de administración de documentos de [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)], debe habilitar la integración de [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] desde el centro de administración de portales de Power Apps.
 
 > [!NOTE]
 > Debe ser un administrador global para realizar esta acción.
 
-1. Abra [Centro de administración de Portales de PowerApps](admin/admin-overview.md).
+1. Abra [Centro de administración de Portales de Power Apps](admin/admin-overview.md).
 
 2.  Vaya a **Configurar la integración de [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]** > **Habilitar la integración de [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]**.
 
@@ -80,7 +80,7 @@ Debe permitir que la administración de documentos para entidades almacene docum
 
 ## <a name="step-4-configure-the-appropriate-form-to-display-documents"></a>Paso 4: Configurar el formulario apropiado para mostrar documentos
 
-### <a name="powerapps-customization"></a>PowerApps personalización
+### <a name="power-apps-customization"></a>Power Apps personalización
 
 Identifique el formulario donde desea usar funcionalidades de administración de documentos. Debe editar el formulario usando el editor de formularios de aplicaciones basadas en formulario y agregarle una subcuadrícula. El subcuadrícula agrega una sección al formulario, lo que le permite trabajar con documentos desde un portal. Debe establecer las siguientes propiedades en la subcuadrícula para que esta característica funcione:
 
@@ -93,7 +93,7 @@ Puede especificar el nombre y la etiqueta según sus necesidades. Guarde y publi
 > [!NOTE]
 > La administración de documentos debe estar habilitada para la entidad para la que edita el formulario. Más información: [Habilitar la administración de documentos para entidades](#step-3-enable-document-management-for-entities)
 
-### <a name="powerapps-portals-configuration"></a>Configuración de portales de PowerApps
+### <a name="power-apps-portals-configuration"></a>Configuración de portales de Power Apps
 
 Aparte de la configuración estándar necesaria para el formulario de entidad o el formulario web, debe establecer las siguientes propiedades para habilitar la administración de documentos:
 
@@ -135,7 +135,7 @@ El siguiente ejemplo demuestra la configuración utilizando la entidad Caso que 
 
 1.  Siga las instrucciones en [Paso 1](#step-1-enable-document-management-functionality-in-model-driven-apps-in-dynamics-365) para asegurarse de que la configuración basada en servidor está completa para aplicaciones basadas en modelo en la integración de Dynamics 365 y [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)].
 
-2.  Siga las instrucciones en [Paso 2](#step-2-set-up-sharepoint-integration-from-powerapps-portals-admin-center) para asegurarse de que el portal tiene permisos para integrarse con [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]. 
+2.  Siga las instrucciones en [Paso 2](#step-2-set-up-sharepoint-integration-from-power-apps-portals-admin-center) para asegurarse de que el portal tiene permisos para integrarse con [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]. 
 
 3.  Siga las instrucciones en [Paso 3](#step-3-enable-document-management-for-entities) para asegurarse de que la administración de documentos está habilitada para la entidad Caso.
 
@@ -172,7 +172,7 @@ El siguiente ejemplo demuestra la configuración utilizando la entidad Caso que 
 
         f. En el editor de formularios, seleccione **Guardar** y, después, seleccione **Publicar**.
 
-    - Configuración de portales de PowerApps
+    - Configuración de portales de Power Apps
 
         a. Vaya a **Portales** > **Formularios de entidad**.
     

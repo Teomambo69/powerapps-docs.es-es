@@ -23,16 +23,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3e3a3e8bd5527f9707849bf1b54247605d447469
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d052e981d80578a2db844f3e8ff3f70ff0c07c2c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2704587"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884933"
 ---
 # <a name="create-and-design-model-driven-app-forms"></a>Crear y diseñar formularios de aplicaciones controladas por modelos 
 
-Con PowerApps, los formularios ofrecen la interfaz de usuario que emplean los usuarios para interactuar con los datos que necesitan para realizar su trabajo. Es importante que los formularios que usan los usuarios estén diseñados para permitirles buscar o especificar la información que necesitan de manera eficaz. 
+Con Power Apps, los formularios ofrecen la interfaz de usuario que emplean los usuarios para interactuar con los datos que necesitan para realizar su trabajo. Es importante que los formularios que usan los usuarios estén diseñados para permitirles buscar o especificar la información que necesitan de manera eficaz. 
 
 En la solución predeterminada o en una solución no administrada, se pueden crear nuevos formularios o editar los formularios existentes de todas las entidades que admitan personalizaciones de formularios. En una solución no administrada, se pueden editar las propiedades administradas para una entidad personalizada no administrada creada para la solución.
 Si está viendo una solución administrada, aquí no se pueden crear nuevos formularios ni editar los formularios existentes entre las entidades. Sin embargo, si las propiedades administradas de una entidad de la solución administrada están establecidas para admitir personalizaciones, se pueden agregar o editar formularios a esa entidad. 
@@ -40,12 +40,12 @@ Si está viendo una solución administrada, aquí no se pueden crear nuevos form
 
 <a name="BKMK_TypesOfForms"></a> 
 ## <a name="type-of-forms"></a>Tipos de formularios
-Hay diferentes tipos de formularios y cada tipo tiene una funcionalidad o uso específico. Más información: [Tipo de formularios en PowerApps](types-forms.md).  
+Hay diferentes tipos de formularios y cada tipo tiene una funcionalidad o uso específico. Más información: [Tipo de formularios en Power Apps](types-forms.md).  
 
   
 <a name="BKMK_FormDifferencesByEntity"></a>   
 ## <a name="updated-versus-classic-entities"></a>Actualización frente a entidades clásicas  
-PowerApps ofrece diversas opciones para diseñar formularios. Con interfaz unificada, la mayoría de las entidades se actualizaron para adaptarse a la interfaz de dinámica. Las entidades actualizadas, igual que las entidades personalizadas, incluyen soporte para el cliente, flujos de proceso de negocio y reglas de negocio de Dynamics 365 for tablets. Al usar estas entidades, puede diseñar una vez e implementar en todos los clientes.  
+Power Apps ofrece diversas opciones para diseñar formularios. Con interfaz unificada, la mayoría de las entidades se actualizaron para adaptarse a la interfaz de dinámica. Las entidades actualizadas, igual que las entidades personalizadas, incluyen soporte para el cliente, flujos de proceso de negocio y reglas de negocio de Dynamics 365 for tablets. Al usar estas entidades, puede diseñar una vez e implementar en todos los clientes.  
   
 Todavía existen varias entidades, referidas aquí como entidades clásicas, que mantienen la apariencia y las capacidades de las versiones anteriores. Estas entidades se utilizan menos a menudo. Aquí se enumeran:  
   

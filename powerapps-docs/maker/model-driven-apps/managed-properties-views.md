@@ -1,5 +1,5 @@
 ---
-title: Propiedades administradas de aplicaciones controladas por modelos para vistas con PowerApps | MicrosoftDocs
+title: Propiedades administradas de aplicaciones controladas por modelos para vistas con Power Apps | MicrosoftDocs
 description: Aprenda cómo establecer propiedades administradas de una vista
 ms.custom: ''
 ms.date: 06/12/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b99fe00731066a4ee0f029bdba09c7eab9d8d67b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 335084ee98cdfe82382eac775d068a62c9a429d9
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2703003"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860035"
 ---
 # <a name="model-driven-app-managed-properties-for-views"></a>Propiedades administradas de aplicaciones controladas por modelos para vistas
 
 <a name="BKMK_ManagedProperties"></a>   
  
- Si crea una vista pública personalizada en PowerApps que desea incluir en una solución administrada que distribuirá, tiene la opción de limitar la capacidad de personalizar la vista a cualquier usuario que esté instalando la solución.  
+ Si crea una vista pública personalizada en Power Apps que desea incluir en una solución administrada que distribuirá, tiene la opción de limitar la capacidad de personalizar la vista a cualquier usuario que esté instalando la solución.  
   
  De forma predeterminada, la mayoría de las vistas tienen la propiedad administrada **Personalizable** establecida como verdadero para que los usuarios puedan personalizarlas. A menos que tenga una razón muy buena para cambiar esto, se recomienda permitir que los usuarios personalicen las vistas en la aplicación.  
   

@@ -1,6 +1,6 @@
 ---
 title: 'Programadores: Prácticas recomendadas e instrucciones para Common Data Service | Microsoft Docs'
-description: 'Programadores: Prácticas recomendadas e instrucciones para desarrolladores de Common Data Service en PowerApps.'
+description: 'Programadores: Prácticas recomendadas e instrucciones para desarrolladores de Common Data Service en Power Apps.'
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 95c31b72e07747f77877dd9ff664827c6d63a16b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 24a873eab99dc8e453d18f5bf32f1f5c56903008
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749388"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883542"
 ---
 # <a name="best-practices-and-guidance-for-the-common-data-service"></a>Prácticas recomendadas e instrucciones para Common Data Service
 

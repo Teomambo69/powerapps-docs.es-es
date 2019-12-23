@@ -1,5 +1,5 @@
 ---
-title: Deshabilitar guardado automático en una aplicación controlada por modelos con PowerApps | MicrosoftDocs
+title: Deshabilitar guardado automático en una aplicación controlada por modelos con Power Apps | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fda8a194a47101eb26d000ea60ede5b38b0f235d
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2f09cd488165643a3336c526050abc0b9223b49f
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759488"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875682"
 ---
 # <a name="disable-auto-save-in-a-model-driven-app"></a>Deshabilitar el guardado automático en una aplicación controlada por modelos
 
@@ -63,7 +63,7 @@ El guardado automático ayuda a los usuarios de la aplicación a centrarse en el
 > [!NOTE]
 >  El guardado automático se deshabilitará para el formulario, pero los datos se guardarán al seleccionar el ![botón Botón Guardado automático](media/auto-save-icon.png "ABotón de autoguardado") de la esquina inferior derecha. Si intenta desplazarse fuera de un formulario o cerrar un formulario donde se han cambiado los datos, se les pedirá que guarden los cambios para poder salir o cerrar el formulario.  
   
-1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**.  
   

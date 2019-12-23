@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 59ed66842874414737b7bdc04f0f4dfa51d212c8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 9e46f1273d9c599078cbcd814ebe54f6a55701f3
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756584"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862420"
 ---
 # <a name="configure-notes-for-entity-forms-and-web-forms-on-portals"></a>Configurar notas para formularios de entidad y formularios web en portales
 
@@ -62,7 +62,7 @@ Como con las subcuadrículas, agregar notas a los formularios administrados en e
 | Mensaje de error         | Reemplaza el mensaje que se muestra cuando se produce un error al intentar cargar la lista de notas.                                                                     |
 | Mensaje de acceso denegado | Reemplaza el mensaje que se muestra cuando el usuario no tiene permisos suficientes para ver la lista de notas.                                                    |
 | Mensaje vacío         | Reemplaza el mensaje que se muestra cuando la entidad actual no tiene notas que pueden ser vistas.                                                              |
-| Mostrar órdenes           | Permite establecer el orden en que las notas se mostrarán. Los configuración de lista de órdenes le permite establecer lo siguiente: <ul><li>Atributo: el nombre lógico de la columna por la que desea ordenar</li><li>Alias: el alias para el atributo en la consulta</li><li>Dirección: Ascendente (menor a mayor, o primera a última), o descendente (mayor a menor, o última a primera).</li></ul> ![Establecer atributos para Mostrar órdenes](media/set-attributes-list-orders.png "SEstablecer atributos para Mostrar órdenes”) Para agregar una regla de ordenación, seleccione "Columna" (4) y rellene los detalles. Mostrar órdenes se procesará en orden de arriba de la lista que tenga la prioridad máxima.|
+| Mostrar órdenes           | Permite establecer el orden en que las notas se mostrarán. Los configuración de lista de órdenes le permite establecer lo siguiente: <ul><li>Atributo: el nombre lógico de la columna por la que desea ordenar</li><li>Alias: el alias para el atributo en la consulta</li><li>Dirección: Ascendente (menor a mayor, o primera a última), o descendente (mayor a menor, o última a primera).</li></ul>  ![Establecer atributos para Mostrar órdenes](media/set-attributes-list-orders.png "SeEstablecer atributos para mostrar órdenes")   Para agregar una regla de ordenación, seleccione "Columna" (4) y rellene los detalles. Mostrar órdenes se procesará en orden de arriba de la lista que tenga la prioridad máxima.|
 ||
 
 

@@ -1,6 +1,6 @@
 ---
 title: Creación y edición de relaciones de entidades 1:N (uno a varios) o N:1 (varios a uno) con el explorador de soluciones | MicrosoftDocs
-description: Aprenda a crear relaciones entre entidades de uno a varios o de varios a uno con el explorador de soluciones de PowerApps
+description: Aprenda a crear relaciones entre entidades de uno a varios o de varios a uno con el explorador de soluciones de Power Apps
 ms.custom: ''
 ms.date: 10/28/2018
 ms.reviewer: ''
@@ -20,20 +20,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3488b8228841f7b5323daee972472884e7c873d8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2c40ea1fc52849290135e04274fed5c5e0c9232f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758168"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866243"
 ---
 # <a name="create-and-edit-1n-one-to-many-or-n1-many-to-one-entity-relationships-using-solution-explorer"></a>Creación y edición de relaciones entre entidades 1:N (uno a varios) o N:1 (varios a uno) con el explorador de soluciones 
 
 El explorador de soluciones proporciona una forma de crear y editar relaciones entre entidades de 1:N (uno a varios) o N:1 (varios a uno) para Common Data Service.
 
-El [portal de PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. Más información: 
+El [portal de Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. Más información: 
 - [Crear relaciones 1: N (uno a varios) o N:1 (varios a uno)](create-edit-1n-relationships.md)
-- [Creación y edición de relaciones entre entidades 1:N (uno a varios) o N:1 (varios a uno) en el portal de PowerApps](create-edit-1n-relationships-portal.md)
+- [Creación y edición de relaciones entre entidades 1:N (uno a varios) o N:1 (varios a uno) en el portal de Power Apps](create-edit-1n-relationships-portal.md)
   
 ## <a name="open-solution-explorer"></a>Abra el explorador de soluciones
 
@@ -235,6 +235,6 @@ Dado que son relaciones jerárquicas, existen limitaciones que debe tener presen
 
 [Crear y editar relaciones entre entidades](create-edit-entity-relationships.md)<br />
 [Crear y editar relaciones 1: N (uno a varios) o N:1 (varios a uno)](create-edit-1n-relationships.md)<br />
-[Creación y edición de relaciones entre entidades 1:N (uno a varios) o N:1 (varios a uno) en el portal de PowerApps](create-edit-1n-relationships-portal.md)<br />
+[Creación y edición de relaciones entre entidades 1:N (uno a varios) o N:1 (varios a uno) en el portal de Power Apps](create-edit-1n-relationships-portal.md)<br />
 [Crear relaciones N:N (varios a varios)](create-edit-nn-relationships.md)
 

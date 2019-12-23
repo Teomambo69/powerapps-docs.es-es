@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c58e70e596bc2382907da5baebfe8d901cb9f420
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 287df9ac6daa38022a269177247a5b446bdfa1fa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702343"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870004"
 ---
 # <a name="set-managed-properties-in-common-data-service-metadata"></a>Establecer propiedades administradas en metadatos de Common Data Service 
 
@@ -64,7 +64,7 @@ Las entidades tienen más propiedades administradas que ningún otro tipo de com
 
 ## <a name="field-managed-properties"></a>Propiedades administradas de campos
 
-Consulte [Crear y editar campos para Common Data Service usando el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md) para obtener información sobre cómo editar campos.
+Consulte [Crear y editar campos para Common Data Service usando el explorador de soluciones de Power Apps](create-edit-field-solution-explorer.md) para obtener información sobre cómo editar campos.
 
 Mientras [visualiza campos](create-edit-field-solution-explorer.md#view-fields), seleccione un campo personalizado de una solución no administrada y elija **Más acciones** >  **Propiedades administradas** en la barra de menús.
 
@@ -100,6 +100,6 @@ Con las relaciones, la única propiedad administrada es **Se puede personalizar*
 
 [Propiedades administradas](solutions-overview.md#managed-properties)<br />
 [Crear y editar entidades con el explorador de soluciones](create-edit-entities-solution-explorer.md)<br />
-[Crear y editar campos para Common Data Service con el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md)<br />
+[Crear y editar campos para Common Data Service con el explorador de soluciones de Power Apps](create-edit-field-solution-explorer.md)<br />
 [Creación y edición de relaciones entre entidades 1:N (uno a varios) o N:1 (varios a uno) con el explorador de soluciones](create-edit-1n-relationships-solution-explorer.md)<br />
 [Crear relaciones entre entidades N:N (varios a varios) en Common Data Service mediante el explorador de soluciones](create-edit-nn-relationships-solution-explorer.md)

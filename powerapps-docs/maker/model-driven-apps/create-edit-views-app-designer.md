@@ -1,5 +1,5 @@
 ---
-title: Crear y editar vistas públicas o del sistema de aplicaciones controladas por modelos con PowerApps | MicrosoftDocs
+title: Crear y editar vistas públicas o del sistema de aplicaciones controladas por modelos con Power Apps | MicrosoftDocs
 description: Aprender ahora a crear o editar vistas mediante el diseñador de aplicaciones
 keywords: ''
 ms.date: 11/27/2018
@@ -24,18 +24,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3c3e7133076eb46718ed3f60d1df4f36a012c520
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 03bfaec424624be1094314dbae763114892d2a59
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753910"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884889"
 ---
 # <a name="create-and-edit-public-or-system-model-driven-app-views"></a>Crear y editar vistas públicas o del sistema de aplicaciones controladas por modelos
 
 En este tema realizará varias tareas necesarias para trabajar con las vistas, como crear una vista pública, agregar una vista existente a una aplicación y cambiar las columnas, los filtros y el criterio de ordenación para una vista.
 
-En PowerApps, las vistas definen cómo se muestran los registros de una entidad específica. Una vista define lo siguiente:
+En Power Apps, las vistas definen cómo se muestran los registros de una entidad específica. Una vista define lo siguiente:
 -  Las columnas (atributos) que aparecen
 -  Ancho de las columnas
 -  Cómo se ordenan los registros de forma predeterminada
@@ -48,9 +48,9 @@ Las vistas se clasifican generalmente en tres tipos:
 
 Más información: [Comprender las vistas](create-edit-views.md)
 
-## <a name="create-a-public-view-in-powerapps"></a>Crear una vista pública en PowerApps
-Como creador de aplicaciones, puede crear y editar vistas públicas usando PowerApps.
-1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+## <a name="create-a-public-view-in-power-apps"></a>Crear una vista pública en Power Apps
+Como creador de aplicaciones, puede crear y editar vistas públicas usando Power Apps.
+1. Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 
     > [!IMPORTANT]
@@ -84,7 +84,7 @@ En la siguiente sección se describe cómo crear y editar las vistas en diseñad
 ### <a name="open-and-add-a-view-in-the-app-designer"></a>Abrir y agregar una vista en el diseñador de aplicaciones.
 
 En los pasos siguientes se explica cómo abrir y agregar una vista en el diseñador de aplicaciones.
-1. En PowerApps seleccione **Aplicaciones** en el panel de navegación de la izquierda, seleccione **...** junto a la aplicación que desee y seleccione **Editar**. 
+1. En Power Apps seleccione **Aplicaciones** en el panel de navegación de la izquierda, seleccione **...** junto a la aplicación que desee y seleccione **Editar**. 
 
 2. En sección **Vista de entidad** del diseñador de aplicaciones, seleccione **Vistas**.
 
@@ -181,7 +181,7 @@ Cuando edite una vista pública o de sistema, debe guardar y publicar los cambio
 
 
 ## <a name="community-tools"></a>Herramientas de la Comunidad
-**Ver diseño del Duplicador** y **Ver diseñador** son herramientas que la comunidad XrmToolbox desarrolló para PowerApps.
+**Ver diseño del Duplicador** y **Ver diseñador** son herramientas que la comunidad XrmToolbox desarrolló para Power Apps.
 
 Más información: [Herramientas del desarrollador](/powerapps/developer/common-data-service/developer-tools).
 

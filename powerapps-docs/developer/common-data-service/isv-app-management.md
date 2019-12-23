@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 49628d24d6d87f4cc541ba11e498b255c9b71a2f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 38ab2ea7116093e41d7816e17eed9cc183b34d14
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749424"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861765"
 ---
 # <a name="introduction-to-isv-studio-for-the-power-platform"></a>Introducción a ISV Studio para Power Platform
 
@@ -40,7 +40,7 @@ ISV Studio está diseñado para convertirse en el destino de Power Platform al q
 
 ISV Studio admite aplicaciones creados en el Common Data Service que se publican e implementan a través de [AppSource](https://appsource.microsoft.com/). No se proporcionará telemetría en soluciones cargadas lateralmente no implementadas a través de AppSource.
 
-Las aplicaciones disponibles actualmente en Common Data Service incluyen PowerApps así como Dynamics 365 for Sales, Marketing, Service y Talent.
+Las aplicaciones disponibles actualmente en Common Data Service incluyen Power Apps así como Dynamics 365 for Sales, Marketing, Service y Talent.
 
 Cuando un usuario final instala una aplicación desde AppSource, se mostrará un diálogo de consentimiento que solicita al usuario que confirme que la información de contacto, uso y transacción puede compartirse con el proveedor de la aplicación. Esta información la usa el proveedor para permitir la facturación y otras actividades transaccionales y para permitir telemetría en ISV Studio para que ISV aprenda y actúe.
 
@@ -50,7 +50,7 @@ Para obtener acceso a la vista previa pública de ISV Studio, vaya al explorador
 
 ## <a name="pre-requisites"></a>Requisitos previos
 
-1. El ISV debe estar asociado con una organización asociada registrada en Microsoft [ISV] que tenga una o varias aplicaciones admitidas publicadas en [AppSource](https://appsource.microsoft.com/). Las aplicaciones compatibles incluyen PowerApps y aplicaciones basadas en modelo en Dynamics 365 como Dynamics 365 Sales y Dynamics 365 Customer Service.
+1. El ISV debe estar asociado con una organización asociada registrada en Microsoft [ISV] que tenga una o varias aplicaciones admitidas publicadas en [AppSource](https://appsource.microsoft.com/). Las aplicaciones compatibles incluyen Power Apps y aplicaciones basadas en modelo en Dynamics 365 como Dynamics 365 Sales y Dynamics 365 Customer Service.
 
 2. El ISV debe tener una cuenta [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) (AAD) y la cuenta se debe estar configurada como colaborador o propietario de la aplicación en el Cloud Partner Portal (CPP) para ese ISV determinado.
 

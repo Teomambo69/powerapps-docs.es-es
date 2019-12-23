@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 356561d0-a36b-4b93-8b76-3e1abf9414e9
-ms.openlocfilehash: 958afe9136117112153d7f285b03ffc1e5cf7aed
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 36875f7422d29b761807d61d6cf8e0b903f45ea8
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754105"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861970"
 ---
 # <a name="implementing-data-set-component"></a>Implementar el componente de conjunto de datos
 
@@ -243,7 +243,7 @@ export class TSDataSetGrid
     if (rowRecordId) {
       let entityreference = this.contextObj.parameters.dataSetGrid.records[
         rowRecordId
-      ].getNamedreference();
+      ].getNamedReference();
       let entityFormOptions = {
         entityName: entityreference.name,
         entityId: entityreference.id
@@ -443,5 +443,6 @@ El método ***getSortedColumnsOnView*** devuelve la lista de columnas en funció
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API de PowerApps component framework](../reference/index.md)<br/>
-[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)
+[¿Cómo usar los componentes de ejemplo?](../use-sample-components.md)<br/>
+[Referencia de la API de Power Apps component framework](../reference/index.md)<br/>
+[Referencia de esquema de manifiesto de Power Apps component framework](../manifest-schema-reference/index.md)

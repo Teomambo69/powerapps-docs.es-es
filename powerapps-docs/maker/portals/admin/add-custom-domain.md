@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: cd015b656c90ec2707f3654e02b4e1a5ef65e7d2
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c36a077233a83b6246634cfc456d51deec14cf40
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756848"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867409"
 ---
 # <a name="add-a-custom-domain-name"></a>Agregue un nombre de dominio personalizado
 
 Un dominio personalizado puede ayudar a sus clientes a encontrar los recursos de soporte más fácilmente y mejorar su marca. Solo un nombre de dominio personalizado se puede agregar a un portal. Después de aprovisionar el portal y adquirir el nombre de dominio, necesitará un certificado SSL para configurar un nombre de host personalizado. Puede usar el certificado SSL comprado para el dominio para vincular el portal a un dominio personalizado utilizando el asistente.
 
-1. Abra [Centro de administración de Portales de PowerApps](admin-overview.md).
+1. Abra [Centro de administración de Portales de Power Apps](admin-overview.md).
 
 2. Vaya a **Acciones del portal** > **Agregar un nombre de dominio personalizado**. Se abrirá el asistente para elegir el certificado SSL.
 

@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 400fb236df41fefc8a9cfa7175ebfd8260ec96bd
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f96485d0c47da3b1d48ed9e1cafad89984133535
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2707491"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866023"
 ---
 # <a name="entity-relationships-overview"></a>Información general sobre relaciones entre entidades
 Las relaciones de entidad definen cómo pueden relacionarse los registros entre sí en la base de datos. En el nivel más sencillo, si agrega un campo de búsqueda a una entidad se crea una nueva relación 1:N (uno a varios) entre las dos entidades y permite colocar el campo de búsqueda en un formulario. Con el campo de búsqueda, los usuarios pueden asociar varios registros *secundarios* de la entidad a un solo registro de la entidad *primaria*.  
@@ -55,7 +55,7 @@ Al mirar el explorador de soluciones es posible que piense que existen tres tipo
   
 |Tipo de relación|Descripción|  
 |-----------------------|-----------------|  
-|**1:N (uno a varios)**|Una relación entre entidades en la que un registro de entidad para **Entidad principal** se puede asociar a muchos otros registros de **Entidad relacionada** debido a un campo de búsqueda en la entidad relacionada.<br /><br /> Al ver un registro de entidad principal puede ver una lista de los registros de entidad relacionados asociados a este.<br /><br /> En el portal de PowerApps, **Entidad actual** representa la entidad principal.|  
+|**1:N (uno a varios)**|Una relación entre entidades en la que un registro de entidad para **Entidad principal** se puede asociar a muchos otros registros de **Entidad relacionada** debido a un campo de búsqueda en la entidad relacionada.<br /><br /> Al ver un registro de entidad principal puede ver una lista de los registros de entidad relacionados asociados a este.<br /><br /> En el portal de Power Apps, **Entidad actual** representa la entidad principal.|  
 |**N:N (varios a varios)**|Una relación de entidad que depende de una **Entidad relación** especial, a veces denominada una entidad de intersección, para que se puedan relacionar muchos registros de una entidad con muchos registros de otra entidad.<br /><br /> Para ver los registros de cualquier entidad en una relación de N:N puede ver una lista de los registros de la otra entidad relacionados con esta.|  
   
 El tipo de relación **N:1 (varios a uno)** existe en la interfaz de usuario porque el diseñador muestra una vista agrupada por entidades. Las relaciones de 1:N existen realmente *entre* entidades y hacen referencia a cada entidad como **Entidad principal/actual** o **Entidad relacionada**. La entidad relacionada, a veces denominada la entidad *secundaria*, tiene un campo de búsqueda que permite almacenar una referencia en un registro desde la entidad principal, a veces denominada la entidad *principal*. Una relación de N:1 es simplemente una relación de 1:N vista desde la entidad relacionada.  

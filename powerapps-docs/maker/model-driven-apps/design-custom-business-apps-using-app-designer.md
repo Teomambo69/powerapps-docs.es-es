@@ -22,16 +22,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a9ec701c921c9ad488d9d9b8b3a1f6615c5a9cd7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a839c261618e51bc06a426f3b1ab9dc69d0d5af3
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2703663"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868619"
 ---
 # <a name="design-model-driven-apps-by-using-the-app-designer"></a>Diseñar aplicaciones controladas por modelos usando el diseñador de aplicaciones
 
-Con PowerApps, las aplicaciones controladas por modelos están formadas por componentes como entidades, paneles, formularios, vistas, gráficos y procesos de negocio.  
+Con Power Apps, las aplicaciones controladas por modelos están formadas por componentes como entidades, paneles, formularios, vistas, gráficos y procesos de negocio.  
   
  El diseñador de la aplicación ayuda a reunir todos estos componentes rápidamente. Su estructura de información basada en ventanas y la interfaz simplificada hacen que el proceso de generar una aplicación sea mucho más fácil, y puede crear aplicaciones que son específicas de las funciones y los roles de negocio sin necesidad de escribir código.  
   

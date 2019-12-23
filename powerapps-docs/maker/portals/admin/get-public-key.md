@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 39e909acb325bd870f73e16a72da78b4bec07c79
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 120339aae2cc0f39bbdaa9a0343c31f42b98cfdd
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2709867"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867299"
 ---
 # <a name="download-public-key-of-portal"></a>Descargar clave pública del portal
 
 La clave pública de un portal se usa para configurar Live Assist para alicaciones basadas en modelo para Dynamics 365 para que funcione con los visitantes autenticados de un portal. [Live Assist](https://www.cafex.com/en/products/live-assist-dynamics-365/), de CafeX, ofrece una solución de chat a través de la que los usuarios pueden incluir asistencia de chat en vivo en su portal. Puede encontrar más información sobre cómo usar la clave pública para incluir un chat en un portal en: [Visitantes autenticados en el portal para clientes de Dynamics](https://www.liveassistfor365.com/en/support/authenticated-visitors-in-the-dynamics-customer-portal/).
 
-1. Abra [Centro de administración de Portales de PowerApps](admin-overview.md).
+1. Abra [Centro de administración de Portales de Power Apps](admin-overview.md).
 
 2.  Vaya a **Acciones del portal** > **Obtener clave pública**. Aparecerá la clave.
 

@@ -1,5 +1,5 @@
 ---
-title: Edición de mensajes de entidades del sistema con PowerApps | MicrosoftDocs
+title: Edición de mensajes de entidades del sistema con Power Apps | MicrosoftDocs
 description: Obtenga información sobre cómo editar mensajes de entidad del sistema
 ms.custom: ''
 ms.date: 05/15/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f90f2fc6f3a4eb0707eda9d9ce73acfc422ed5d9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8272196bae92d9724cc41816eced2d1cfc2d2eac
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705423"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861003"
 ---
 # <a name="edit-system-entity-messages"></a>Editar mensajes de entidades del sistema
 
 El nombre para mostrar predeterminado de algunas entidades del sistema se usa en texto y mensajes de error de la interfaz de usuario en Common Data Service. Si cambia el nombre para mostrar, también debe actualizar los mensajes que usan el nombre para mostrar predeterminado. Por ejemplo, si cambia el nombre para mostrar de *Cuenta* a *Empresa*, podría aparecer un mensaje de error con el nombre antiguo.  
 
-No puede editar mensajes del sistema mediante el portal de PowerApps, debe usar el explorador de soluciones.
+No puede editar mensajes del sistema mediante el portal de Power Apps, debe usar el explorador de soluciones.
 
 [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
 

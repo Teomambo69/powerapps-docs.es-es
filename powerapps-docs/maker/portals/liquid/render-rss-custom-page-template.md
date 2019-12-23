@@ -9,25 +9,25 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 240af2f54e153490794358dc1598b72a16fe1c38
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 998a233f5051c1445d56dbeeba1f2d7faff5811d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757200"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862332"
 ---
 # <a name="create-a-custom-page-template-to-render-an-rss-feed"></a>Crear una plantilla de página personalizada para representar una fuente RSS
 En este ejemplo, crearemos una plantilla de página personalizada para representar una [fuente RSS](https://en.wikipedia.org/wiki/RSS) de artículos de noticias, utilizando Liquid y una plantilla de página web. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)][Almacenar contenido de origen con plantillas web](store-content-web-templates.md).  
 
-## <a name="step-1-create-a-new-powerapps-view"></a>Paso 1: Crear nueva vista de PowerApps
+## <a name="step-1-create-a-new-power-apps-view"></a>Paso 1: Crear nueva vista de Power Apps
 
-Primero, crearemos una nueva vista de PowerApps que utilizaremos para cargar los datos para nuestra fuente. En este ejemplo, la convertiremos en una vista de páginas web, y usaremos esta entidad para almacenar nuestros artículos. Podemos usar esta vista para configurar la ordenación y el filtrado de resultados, e incluir como columnas los atributos de entidad que deseamos disponibles en nuestra plantilla de Liquid.
+Primero, crearemos una nueva vista de Power Apps que utilizaremos para cargar los datos para nuestra fuente. En este ejemplo, la convertiremos en una vista de páginas web, y usaremos esta entidad para almacenar nuestros artículos. Podemos usar esta vista para configurar la ordenación y el filtrado de resultados, e incluir como columnas los atributos de entidad que deseamos disponibles en nuestra plantilla de Liquid.
 
 ![Edición una plantilla de página](../media/edit-page-template.png "Edición una plantilla de página")  
 
 ## <a name="step-2-create-a-web-template-for-rss-feed"></a>Paso 2: Crear una plantilla web para la fuente RSS
 
-En este paso, crearemos una plantilla web para nuestra fuente RSS. Esta plantilla será aplicada a una página web particular en nuestro sitio web, por lo que usaremos el título y el resumen de esa página como título y descripción de la fuente. A continuación usaremos la etiqueta entityview para cargar nuestra vista Artículos de noticias recién creada. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Etiquetas de entidad de PowerApps common data service](portals-entity-tags.md). Tenga en cuenta que también establecemos el campo **Tipo MIME** de la plantilla web como application/rss+xml. Esto indica qué tipo de contenido de respuesta podría ser cuando se representa nuestra plantilla.  
+En este paso, crearemos una plantilla web para nuestra fuente RSS. Esta plantilla será aplicada a una página web particular en nuestro sitio web, por lo que usaremos el título y el resumen de esa página como título y descripción de la fuente. A continuación usaremos la etiqueta entityview para cargar nuestra vista Artículos de noticias recién creada. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Etiquetas de entidad de Power Apps common data service](portals-entity-tags.md). Tenga en cuenta que también establecemos el campo **Tipo MIME** de la plantilla web como application/rss+xml. Esto indica qué tipo de contenido de respuesta podría ser cuando se representa nuestra plantilla.  
 
 ![Configurar una plantilla web para una fuente RSS](../media/web-template-rss-feed.png "Configurar una plantilla web para una fuente RSS")  
 
@@ -67,7 +67,7 @@ Ahora lo único que queda es crear una nueva página web a través de la plantil
 
 ![Ejemplo de fuente RSS](../media/rss-feed-example.png "Ejemplo de fuente RSS")  
 
-En este ejemplo, hemos visto cómo podemos agrupar características de administración de contenido de Liquid, plantillas web, vistas de PowerApps, y los portales para crear una fuente RSS personalizada. La combinación de estas características agrega eficaces capacidades de personalización a cualquier aplicación de portal.
+En este ejemplo, hemos visto cómo podemos agrupar características de administración de contenido de Liquid, plantillas web, vistas de Power Apps, y los portales para crear una fuente RSS personalizada. La combinación de estas características agrega eficaces capacidades de personalización a cualquier aplicación de portal.
 
 ### <a name="see-also"></a>Vea también
 

@@ -9,23 +9,23 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 26bb1186710bbf0bc3fd40765459638245f3b027
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 077c1fee0c0a7b599516c0553ad190b6a3229dec
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756348"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2864674"
 ---
 # <a name="create-and-manage-webpages"></a>Crear y administrar páginas web
 
 Una página web es un documento que se identifica mediante una dirección URL única en una página web. Es uno de los objetos básicos de la página web y construye una jerarquía de la página web a través de relaciones primarias y secundarias a otras páginas web.
 
 > [!NOTE]
-> Si personaliza el portal usando el diseñador de portales de PowerApps, los usuarios del sitio web observarían un impacto en el rendimiento. Se recomienda realizar los cambios en horas de poca actividad en un portal en directo.
+> Si personaliza el portal usando el diseñador de portales de Power Apps, los usuarios del sitio web observarían un impacto en el rendimiento. Se recomienda realizar los cambios en horas de poca actividad en un portal en directo.
 
 ## <a name="create-webpage"></a>Crear página web
 
-1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de PowerApps Studio.  
+1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de Power Apps Studio.  
 
 2.  En la barra de comandos, seleccione **Nueva página** y elija una página **Diseños** o **Diseños fijos**.
 
@@ -66,7 +66,7 @@ Si trabaja con un portal creado en un entorno que contiene aplicaciones basadas 
 
 ## <a name="manage-webpage"></a>Administrar página web
 
-1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de PowerApps Studio.  
+1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de Power Apps Studio.  
 
 2.  Seleccione **Páginas** ![icono de páginas](media/pages-icon.png "Icono Páginas") del toolbelt en el lateral izquierdo de la pantalla.  
 

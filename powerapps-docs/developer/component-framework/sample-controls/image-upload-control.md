@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: nkrb
-ms.openlocfilehash: 1ca8e97d32f6003b26c511e3ad2aee96bff42322
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c1e61cc74d3ee739a0b25cd84153e9040d18e7d1
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754101"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861958"
 ---
 # <a name="implementing-an-image-upload-component"></a>Implementar un componente de carga de imagen
 
@@ -66,9 +66,9 @@ export class TSImageUploadControl
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
   // Value of the field is stored and used inside the control
   private _value: string | null;
-  // PowerApps component framework framework context, "Input Properties" containing the parameters, control metadata and interface functions.
+  // Power Apps component framework framework context, "Input Properties" containing the parameters, control metadata and interface functions.
   private _context: ComponentFramework.Context<IInputs>;
-  // PowerApps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
+  // Power Apps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
   private _notifyOutputChanged: () => void;
   // Control's container
   private controlContainer: HTMLDivElement;
@@ -393,5 +393,6 @@ El método `device.pickFile` abre un cuadro de diálogo para seleccionar archivo
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API de PowerApps component framework](../reference/index.md)<br/>
-[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)
+[¿Cómo usar los componentes de ejemplo?](../use-sample-components.md)<br/>
+[Referencia de la API de Power Apps component framework](../reference/index.md)<br/>
+[Referencia de esquema de manifiesto de Power Apps component framework](../manifest-schema-reference/index.md)

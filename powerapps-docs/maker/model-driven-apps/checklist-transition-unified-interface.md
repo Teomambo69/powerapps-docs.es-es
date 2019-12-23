@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 03b3db348ff88b7fd2c5e89e2b94a7d16a1fee17
-ms.sourcegitcommit: bcaffcb3135251ea3c2e828f8b59926d19520bec
+ms.openlocfilehash: 20a64e12abc70e8c1b636ab5412e2a951b5ad612
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2761836"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869235"
 ---
 # <a name="checklist-unified-interface-transition"></a>Lista de comprobación: Transición a la interfaz unificada
 
@@ -35,9 +35,9 @@ Las instrucciones se aplican a las siguientes aplicaciones basadas en modelo en 
 
 - Dynamics 365 Project Service Automation
 
-## <a name="run-the-powerapps-solution-checker-on-your-solutions"></a>Ejecute al comprobador de soluciones de PowerApps en las soluciones.
+## <a name="run-the-power-apps-solution-checker-on-your-solutions"></a>Ejecute al comprobador de soluciones de Power Apps en las soluciones.
 
-El [comprobador de soluciones de PowerApps](https://docs.microsoft.com/powerapps/maker/common-data-service/use-powerapps-checker) realiza una completa verificación de análisis estático de sus soluciones con un conjunto de reglas de prácticas recomendadas para identificar rápidamente patrones problemáticos. Cuando la comprobación se completa, usted recibe un informe detallado que lista los problemas identificados, los componentes y el código afectados y vínculos a la documentación que describe cómo solucionar cada problema.
+El [comprobador de soluciones de Power Apps](https://docs.microsoft.com/powerapps/maker/common-data-service/use-powerapps-checker) realiza una completa verificación de análisis estático de sus soluciones con un conjunto de reglas de prácticas recomendadas para identificar rápidamente patrones problemáticos. Cuando la comprobación se completa, usted recibe un informe detallado que lista los problemas identificados, los componentes y el código afectados y vínculos a la documentación que describe cómo solucionar cada problema.
 
 El comprobador de soluciones analiza estos componentes de la solución:
 
@@ -73,7 +73,7 @@ Antes de realizar la transición a la interfaz unificada, es importante asegurar
 
 ## <a name="identify-replacements-for-deprecated-client-api-code-and-features"></a>Identificar sustituciones de código y características de la API cliente obsoleta
 
-En función de las salidas del **Comprobador de soluciones de PowerApps** y la información contenida en [Próximos cambios importantes (funciones obsoletas)](https://docs.microsoft.com/power-platform/important-changes-coming) en API y características de clientes obsoletas, debe comprender bien las personalizaciones y características que deben corregirse o ser reemplazadas en el proyecto de la interfaz unificada.
+En función de las salidas del **Comprobador de soluciones de Power Apps** y la información contenida en [Próximos cambios importantes (funciones obsoletas)](https://docs.microsoft.com/power-platform/important-changes-coming) en API y características de clientes obsoletas, debe comprender bien las personalizaciones y características que deben corregirse o ser reemplazadas en el proyecto de la interfaz unificada.
 
 Estas son algunas de las áreas más comunes que requieren atención:
 
@@ -129,7 +129,7 @@ Las aplicaciones de primera parte de Microsoft Dynamics 365 que ya se han optimi
 
 ### <a name="what-are-model-driven-apps"></a>¿Qué son las aplicaciones basadas en modelo?
 
-Las **aplicaciones basadas en modelo** son un tipo de aplicación que puede crear mediante PowerApps y que le ayuda a proporcionar experiencia adaptada a los usuarios en función del rol en la organización. Por ejemplo, un comercial puede tener una experiencia completamente diferente que un representante de servicio al cliente con distintas aplicaciones basadas en modelo aunque usan datos del mismo entorno. Se pueden crear varias aplicaciones basadas en modelo en un entorno de Common Data Service. Más información: [¿Qué son las aplicaciones basadas en modelo?](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview)
+Las **aplicaciones basadas en modelo** son un tipo de aplicación que puede crear mediante Power Apps y que le ayuda a proporcionar experiencia adaptada a los usuarios en función del rol en la organización. Por ejemplo, un comercial puede tener una experiencia completamente diferente que un representante de servicio al cliente con distintas aplicaciones basadas en modelo aunque usan datos del mismo entorno. Se pueden crear varias aplicaciones basadas en modelo en un entorno de Common Data Service. Más información: [¿Qué son las aplicaciones basadas en modelo?](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview)
 
 Las aplicaciones de primera parte de Dynamics 365 que aparecen en la lista anterior son ejemplos de aplicaciones basadas en modelo.
 
@@ -203,7 +203,7 @@ Esta es la oportunidad de repensar la experiencia en el contexto de los procesos
 
 -   Aproveche **Paneles de referencia** en los formularios para empaquetar varias vistas, vistas rápidas y la característica de búsqueda de KB en un solo lugar.
 
--   Aproveche el [PowerApps Component Framework](https://docs.microsoft.com/powerapps/developer/component-framework/overview) para agregar aún más controles personalizados. Puede obtener algunos de la comunidad o de partners e ISV.
+-   Aproveche el [Power Apps Component Framework](https://docs.microsoft.com/powerapps/developer/component-framework/overview) para agregar aún más controles personalizados. Puede obtener algunos de la comunidad o de partners e ISV.
 
 -   Inserte [aplicaciones de lienzo](https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started) en los formularios para ampliar fácilmente su aplicación. La extensión con poco o ningún código de su aplicación sin necesidad de desarrollar recursos web HTML/JS personalizados.
 

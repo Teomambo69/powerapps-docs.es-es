@@ -1,6 +1,6 @@
 ---
-title: Información general de entidades en PowerApps | MicrosoftDocs
-description: Aprenda a crear y editar entidades con el portal de PowerApps
+title: Información general de entidades en Power Apps | MicrosoftDocs
+description: Aprenda a crear y editar entidades con el portal de Power Apps
 ms.custom: ''
 ms.date: 07/25/2018
 ms.reviewer: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e6288c4195c2364ee7ac1bdf7a2644cfaefd4695
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 80973e157e3f439dc1989ea87f28abaf65b9a17c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705379"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863924"
 ---
 # <a name="entity-overview"></a>Información general sobre las entidades
 

@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 67239062f30efb80fb8ee416614c1088e20c4075
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 813a31b3b9d56dfb6742dc138ec947829613cf89
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702211"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869960"
 ---
 # <a name="view-the-history-of-a-solution"></a>Ver el historial de una solución
 Puede ver los detalles de las operaciones de una solución desde el área **Soluciones** de una aplicación basada en modelos. Una operación puede ser la importación, exportación o eliminación de una solución. El historial de la solución muestra información como versión de la solución, editor de soluciones, tipo de operación, hora de inicio y finalización de la operación, y estado de la operación.
@@ -40,7 +40,7 @@ Puede ver los detalles de las operaciones de una solución desde el área **Solu
      > ![](media/solution-history-sitemap.png "Solution History area")
 
      > [!NOTE]
-     > Para ir al área **Configuración** desde una aplicación basada en modelo de la interfaz unificada de PowerApps, seleccione **Configuración** ![Configuración](../model-driven-apps/media/powerapps-gear.png) en la barra de herramientas de la aplicación y, a continuación seleccione **Opciones avanzadas**. 
+     > Para ir al área **Configuración** desde una aplicación basada en modelo de la interfaz unificada de Power Apps, seleccione **Configuración** ![Configuración](../model-driven-apps/media/powerapps-gear.png) en la barra de herramientas de la aplicación y, a continuación seleccione **Opciones avanzadas**. 
 
 2. De forma predeterminada, se muestra la vista **Historial de la solución personalizado**. Las vistas siguientes están disponibles en el área **Historial de soluciones**. 
 - **Historial de todas las soluciones**. Muestra el historial de las soluciones personalizadas e internas del sistema. 

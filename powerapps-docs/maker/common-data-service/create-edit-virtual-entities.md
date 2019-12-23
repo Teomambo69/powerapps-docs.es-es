@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ecb0731d3cbba030f3b819e2b2744cb6a7b29c20
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 07a6d262aeaba818d5a965409ce28a90934536c3
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706919"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861315"
 ---
 # <a name="create-and-edit-virtual-entities-that-contain-data-from-an-external-data-source"></a>Crear y editar entidades virtuales que contienen datos desde un origen de datos externo
 
@@ -48,7 +48,7 @@ Como alternativa, los programadores pueden crear sus propios proveedores de dato
 ## <a name="virtual-entity-benefits"></a>Ventajas de la entidad virtual  
   
 - Los desarrolladores pueden implementar complementos para leer los datos externos con los servicios web de Common Data Service y la herramienta de registro de complementos.  
-- Los personalizadores del sistema usan el explorador de soluciones de PowerApps para configurar el registro del origen de datos y crear las entidades virtuales que se usan para tener acceso a datos externos sin necesidad de escribir código.  
+- Los personalizadores del sistema usan el explorador de soluciones de Power Apps para configurar el registro del origen de datos y crear las entidades virtuales que se usan para tener acceso a datos externos sin necesidad de escribir código.  
 - Los usuarios finales trabajan con los registros creados por la entidad virtual para ver los datos en campos, cuadrículas, resultados de la búsqueda e informes y paneles basados en Fetch XML.  
   
 <a name="AddDataSource"></a> 

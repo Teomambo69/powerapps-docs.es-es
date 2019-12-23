@@ -1,5 +1,5 @@
 ---
-title: Especificar propiedades para aplicaciones controladas por modelos de Interfaz unificada en PowerApps | MicrosoftDocs
+title: Especificar propiedades para aplicaciones controladas por modelos de Interfaz unificada en Power Apps | MicrosoftDocs
 description: Aprenda a configurar el control de cuadrícula para la aplicación
 keywords: ''
 ms.date: 06/03/2019
@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: efca6e540a962295553222805052fda2c9a8ddf6
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 25e6125476ae3e5ceac47b0ef6b45f67ccfc1d3f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2710923"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867915"
 ---
 # <a name="specify-properties-for-model-driven-unified-interface-apps"></a>Especificar propiedades para aplicaciones controladas por modelos de Interfaz unificada
 

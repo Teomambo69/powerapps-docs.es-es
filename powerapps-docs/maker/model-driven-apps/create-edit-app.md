@@ -1,5 +1,5 @@
 ---
-title: Crear o editar una aplicación basada en modelos utilizando el diseñador de aplicaciones en PowerApps | MicrosoftDocs
+title: Crear o editar una aplicación basada en modelos utilizando el diseñador de aplicaciones en Power Apps | MicrosoftDocs
 description: Aprender a crear o editar aplicaciones mediante el diseñador de aplicaciones
 keywords: ''
 ms.date: 02/05/2019
@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fb852ce8b6137d16eb8544da4eb6c9b92c12e29e
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ef8fa8e20afd7d0e4ad1593ae169a132246d3992
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759312"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875455"
 ---
 # <a name="create-a-model-driven-app-by-using-the-app-designer"></a>Crear o editar una aplicación controlada por modelos utilizando el diseñador de aplicaciones
 
@@ -37,13 +37,13 @@ En este tema aprenderá los aspectos básicos de cómo crear y editar una aplica
 
 ## <a name="prerequisites"></a>Requisitos previos
 Compruebe los requisitos siguientes antes de empezar a crear una aplicación:
-- Un entorno de PowerApps. Más información: [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment)
+- Un entorno de Power Apps. Más información: [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment)
 - Rol de seguridad de administrador del sistema o de personalizador del sistema. Más información: [Acerca de los roles de seguridad predefinidos](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app#about-predefined-security-roles)
  
 <a name="createApp"></a>   
 ## <a name="create-an-app"></a>Crear una aplicación  
 
-1.  En la página **Inicio** de [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione la opción **Empezar en blanco una aplicación basada en modelos** para una aplicación basada en modelos.  
+1.  En la página **Inicio** de [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione la opción **Empezar en blanco una aplicación basada en modelos** para una aplicación basada en modelos.  
 
     > [!IMPORTANT]
     > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment). 
@@ -82,7 +82,7 @@ Compruebe los requisitos siguientes antes de empezar a crear una aplicación:
 <a name="editApp"></a>   
 ## <a name="edit-an-app"></a>Editar una aplicación  
   
-1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 > [!IMPORTANT]
 > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment). 

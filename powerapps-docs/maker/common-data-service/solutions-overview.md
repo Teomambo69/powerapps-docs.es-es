@@ -1,5 +1,5 @@
 ---
-title: Trabajar con soluciones en PowerApps | Microsoft Docs
+title: Trabajar con soluciones en Power Apps | Microsoft Docs
 description: Aprenda cómo se distribuyen las soluciones
 ms.custom: ''
 ms.date: 09/30/2019
@@ -22,16 +22,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 391220159917462833afac204183cdc68a94f898
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 286d955bfa0e6b28061d6a73962da25156820c9a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759048"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870136"
 ---
 # <a name="solutions-overview"></a>Información general de las soluciones  
 
-  En PowerApps, las soluciones se aprovechan para transportar aplicaciones y componentes desde un entorno a otro o para aplicar un conjunto de personalizaciones a aplicaciones existentes. Una solución puede contener una o varias aplicaciones así como otros componentes como mapas del sitio, entidades, procesos, recursos web, los conjuntos de opciones, etc.  Puede obtener una solución de [AppSource](https://appsource.microsoft.com/) o de un proveedor de software independiente (ISV).
+  En Power Apps, las soluciones se aprovechan para transportar aplicaciones y componentes desde un entorno a otro o para aplicar un conjunto de personalizaciones a aplicaciones existentes. Una solución puede contener una o varias aplicaciones así como otros componentes como mapas del sitio, entidades, procesos, recursos web, los conjuntos de opciones, etc.  Puede obtener una solución de [AppSource](https://appsource.microsoft.com/) o de un proveedor de software independiente (ISV).
   
 Más información: [Notas del producto: Administración del ciclo de vida de las soluciones](https://www.microsoft.com/download/details.aspx?id=57777)  
   

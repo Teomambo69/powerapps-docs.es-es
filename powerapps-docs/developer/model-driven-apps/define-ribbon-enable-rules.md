@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8c22ec2532371093afbe224a5ea12c44652a30cc
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9dce1d13b5cb74173ff8af678480bda7b8e00140
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749616"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865589"
 ---
 # <a name="define-ribbon-enable-rules"></a>Definir las reglas de habilitación de la cinta de opciones
 
@@ -141,7 +141,7 @@ function EnableRule()
  Usa el elemento `<OrRule>`. `OrRule` permite reemplazar el valor de comparación predeterminado AND para varios tipos de reglas de habilitación. Use el elemento `OrRule` para definir varias combinaciones posibles válidas para comprobar.
 
 ### <a name="outlook-item-tracking-rule"></a>Regla de seguimiento de elementos de Outlook
- Usa el elemento `<OutlookItemTrackingRule>`. Use el atributo `TrackedInCrm` de este elemento para determinar si se realiza el seguimiento del registro en PowerApps.  
+ Usa el elemento `<OutlookItemTrackingRule>`. Use el atributo `TrackedInCrm` de este elemento para determinar si se realiza el seguimiento del registro en Power Apps.  
 
 ### <a name="outlook-version-rule"></a>Regla de la versión de Outlook
  Usa el elemento `<OutlookVersionRule>`. Use esto para habilitar un elemento de la cinta de opciones de una versión determinada de [!INCLUDE[pn_MS_Outlook_Full](../../includes/pn-ms-outlook-full.md)], de la siguiente manera:  

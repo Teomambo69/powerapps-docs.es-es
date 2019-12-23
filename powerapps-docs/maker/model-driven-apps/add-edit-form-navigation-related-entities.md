@@ -1,5 +1,5 @@
 ---
-title: Agregar navegación de formulario de aplicación controlada por modelos para entidades relacionadas en PowerApps | MicrosoftDocs
+title: Agregar navegación de formulario de aplicación controlada por modelos para entidades relacionadas en Power Apps | MicrosoftDocs
 description: Aprenda a agregar navegación de formulario para entidades relacionadas
 ms.custom: ''
 ms.date: 06/18/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 34b1680d7596719cd050c71af8cc6c355f6353e3
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 9751a917dc553355c89aa2a42865ad69bfee5c10
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2751929"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874949"
 ---
 # <a name="add-model-driven-app-form-navigation-for-related-entities"></a>Agregar navegación de formulario de aplicación controlada por modelos para entidades relacionadas
 
 En este tema, usará el panel de navegación de formulario que se usa para agregar vínculos a las entidades relacionadas. Cuando el usuario de una aplicación hace clic en uno de estos vínculos en un registro, se muestra la vista asociada para la entidad.   
   
-1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
   
     > [!IMPORTANT]

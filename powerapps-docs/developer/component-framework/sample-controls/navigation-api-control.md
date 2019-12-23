@@ -8,16 +8,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 85dd665f7a3dc92b5198cfd8429b59af0896d5cc
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8a6db9ca3f6eb34cee3c9d45d1d9917f4b33115d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749461"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861938"
 ---
 # <a name="implementing-navigation-api-component"></a>Implementar componente API de navegación
 
-Este componente de ejemplo explora los distintos métodos disponibles como parte de la API de navegación de PowerApps component framework. En este ejemplo, usted crea una serie de elementos de entrada de botones de tipo que llaman a los métodos respectivos de la API de navegación que coincide con el valor mostrado.  
+Este componente de ejemplo explora los distintos métodos disponibles como parte de la API de navegación de Power Apps component framework. En este ejemplo, usted crea una serie de elementos de entrada de botones de tipo que llaman a los métodos respectivos de la API de navegación que coincide con el valor mostrado.  
 
 > [!div class="mx-imgBorder"]
 > ![Componente de API de navegación](../media/navigation-api-control.png "Componente de API de navegación")
@@ -52,7 +52,7 @@ Aplicaciones basadas en modelos
 ```TypeScript
 import {IInputs, IOutputs} from "./generated/ManifestTypes";
 export class TSNavigationAPI implements ComponentFramework.StandardControl<IInputs, IOutputs> {
-// PowerApps component framework framework delegate which will be assigned to this object which would be called whenever an update happens. 
+// Power Apps component framework framework delegate which will be assigned to this object which would be called whenever an update happens. 
 private _notifyOutputChanged: () => void;
 // Reference to the div element that hold together all the HTML elements that we are creating as part of this control
 private divElement: HTMLDivElement;
@@ -245,6 +245,7 @@ Este ejemplo abre una ventana nueva y carga la página principal de microsoft.co
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API de PowerApps component framework](../reference/index.md)<br/>
-[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)
+[¿Cómo usar los componentes de ejemplo?](../use-sample-components.md)<br/>
+[Referencia de la API de Power Apps component framework](../reference/index.md)<br/>
+[Referencia de esquema de manifiesto de Power Apps component framework](../manifest-schema-reference/index.md)
 

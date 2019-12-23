@@ -1,6 +1,6 @@
 ---
-title: Descripción de la accesibilidad en diseñador de aplicaciones, diseñador del mapa del sitio y página Mis aplicaciones en PowerApps | Microsoft Docs
-description: Descripción de la accesibilidad en aplicaciones basadas en modelo con el diseñador de aplicaciones, el diseñador del mapa del sitio y página Mis aplicaciones en PowerApps
+title: Descripción de la accesibilidad en diseñador de aplicaciones, diseñador del mapa del sitio y página Mis aplicaciones en Power Apps | Microsoft Docs
+description: Descripción de la accesibilidad en aplicaciones basadas en modelo con el diseñador de aplicaciones, el diseñador del mapa del sitio y página Mis aplicaciones en Power Apps
 keywords: Diseñador de aplicaciones; diseñador del mapa del sitio; mis aplicaciones; Dynamics 365
 author: Mattp123
 ms.author: matp
@@ -17,21 +17,21 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c0f845b1b1b390bb6033efa282792b0b5116e6fc
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5a2226e87193079c1b68858f30759f509562cbda
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752082"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885241"
 ---
-# <a name="accessibility-in-powerapps-app-designer-site-map-designer-and-my-apps-page"></a>Accesibilidad en PowerApps, diseñador de aplicaciones, diseñador del mapa del sitio y página Mis aplicaciones
+# <a name="accessibility-in-power-apps-app-designer-site-map-designer-and-my-apps-page"></a>Accesibilidad en Power Apps, diseñador de aplicaciones, diseñador del mapa del sitio y página Mis aplicaciones
 
 Microsoft se compromete a hacer que sus productos y servicios sean más fáciles de utilizar para todos los usuarios. Más información: : [Accesibilidad de Microsoft](https://www.microsoft.com/enable/default.aspx)  
  
 En este tema se describen las características de accesiblidad disponibles con aplicaciones basadas en modelos.  
   
 ## <a name="keyboard-shortcuts"></a>Métodos abreviados de teclado  
-PowerApps ofrece métodos abreviados de teclado para resolver los problemas a los que se enfrentan las personas con destreza manual limitada o discapacidad motriz.  
+Power Apps ofrece métodos abreviados de teclado para resolver los problemas a los que se enfrentan las personas con destreza manual limitada o discapacidad motriz.  
   
 |Página Mis aplicaciones|||  
 |------------------|-|-|  
@@ -111,4 +111,4 @@ PowerApps ofrece métodos abreviados de teclado para resolver los problemas a lo
 
 ## <a name="see-also"></a>Vea también
 
-[Uso de métodos abreviados de teclado en PowerApps](/powerapps/user/keyboard-shortcuts)
+[Uso de métodos abreviados de teclado en Power Apps](/powerapps/user/keyboard-shortcuts)

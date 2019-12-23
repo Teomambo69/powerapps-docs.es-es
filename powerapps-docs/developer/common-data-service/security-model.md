@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4305fca9d8a343421bc1128a4d4dcc8103d373be
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: b637d0a26acddad25dcfe56b5ad8067f34735398
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749795"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2859917"
 ---
 # <a name="security-model"></a>Modelo de seguridad
 
@@ -34,7 +34,7 @@ La **seguridad basada en roles** se centra en el agrupamiento de un conjunto de 
 La **seguridad basada en registros** se centra en los derechos de acceso a registros específicos.
 
 La **seguridad de nivel de campo** restringe el acceso a los campos de alto impacto empresarial específicos de una entidad solo a los usuarios o equipos especificados.
-Combine la seguridad basada en roles, la seguridad de nivel de registro y la seguridad de nivel de campo para definir los derechos de seguridad generales que los usuarios tienen en su aplicación de PowerApps.
+Combine la seguridad basada en roles, la seguridad de nivel de registro y la seguridad de nivel de campo para definir los derechos de seguridad generales que los usuarios tienen en su aplicación de Power Apps.
 
 Como programador, debe saber que las consultas en el código se ejecutan en el contexto de un usuario, y solo devolverán los registros a los que tiene derecho el usuario a leer.
 Además, el código solo podrá realizar operaciones basadas en los privilegios asignados a la cuenta de usuario con los roles de seguridad o pertenencia al equipo.

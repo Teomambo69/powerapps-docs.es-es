@@ -16,18 +16,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1d763fd341c3537f908720ea9616b1646bda1745
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4a2f17995d92d09ad025d643589f5993041a2f96
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2704851"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884845"
 ---
 # <a name="embed-a-canvas-app-on-a-model-driven-form"></a>Insertar una aplicación de lienzo en un formulario controlado por modelos
 
@@ -45,9 +45,9 @@ Tras agregar una aplicación incrustada de lienzo al formulario controlado por m
 Para las directrices acerca de cómo trabajar con aplicaciones incrustadas de lienzo, así como sugerencias útiles para solucionar problemas que puede encontrar, consulte: [Directrices acerca de cómo trabajar con aplicaciones incrustadas de lienzo](embedded-canvas-app-guidelines.md).
 
 ## <a name="see-also"></a>Vea también
-[¿Qué son las aplicaciones de lienzo en PowerApps?](../canvas-apps/getting-started.md) <br />
-[Agregar y configurar un control de aplicaciones de lienzo en PowerApps](../canvas-apps/add-configure-controls.md) <br />
-[Información general sobre conectores de aplicaciones de lienzo para PowerApps](../canvas-apps/connections-list.md) <br />
+[¿Qué son las aplicaciones de lienzo en Power Apps?](../canvas-apps/getting-started.md) <br />
+[Agregar y configurar un control de aplicaciones de lienzo en Power Apps](../canvas-apps/add-configure-controls.md) <br />
+[Información general sobre conectores de aplicaciones de lienzo para Power Apps](../canvas-apps/connections-list.md) <br />
 [Agregar una aplicación de lienzo incrustada en un formulario basado en modelos](embedded-canvas-app-add-classic-designer.md) <br />
 [Editar una aplicación de lienzo incrustada en un formulario basado en modelos](embedded-canvas-app-edit-classic-designer.md) <br />
 [Personalizar el tamaño y orientación de la pantalla de una aplicación de lienzo insertada en un formulario basado en modelos](embedded-canvas-app-customize-screen.md) <br />

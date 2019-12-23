@@ -1,6 +1,6 @@
 ---
-title: Administrar portales existentes en PowerApps | Microsoft Docs
-description: Instrucciones para la administración de un portal en PowerApps.
+title: Administrar portales existentes en Power Apps | Microsoft Docs
+description: Instrucciones para la administración de un portal en Power Apps.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 82fbc5d8cafa6af13af63eaff106ea028830bd01
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0921e39c93b5f63a3f9a0ea038fd97389ea2b968
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757001"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883935"
 ---
-# <a name="manage-existing-portals-in-powerapps"></a>Administrar portales existentes en PowerApps
+# <a name="manage-existing-portals-in-power-apps"></a>Administrar portales existentes en Power Apps
 
-Cuando haya creado un portal, está visible en la sección **Aplicaciones recientes** en la página principal de PowerApps.
+Cuando haya creado un portal, está visible en la sección **Aplicaciones recientes** en la página principal de Power Apps.
 
 > [!div class=mx-imgBorder]
 > ![aplicaciones recientes](media/recent-apps.png "Aplicaciones recientes")  
@@ -30,7 +30,7 @@ Para administrar una aplicación, seleccione **Más comandos** (**…**) para el
 
 ## <a name="edit"></a>Editar
 
-Abre [portales de PowerApps Studio](portal-designer-anatomy.md) para editar el contenido y componentes del portal.  
+Abre [portales de Power Apps Studio](portal-designer-anatomy.md) para editar el contenido y componentes del portal.  
 
 > [!div class=mx-imgBorder]
 > ![creador de portal](media/portal-maker.png "Creador de portal")  
@@ -42,7 +42,7 @@ Abre el portal para explorar la página web. Esto ayuda a ver el portal como lo 
 > [!div class=mx-imgBorder]
 > ![sitio web del portal](media/portal-website.png "Sitio web del portal")  
 
-Como alternativa, también puede abrir el portal para explorar la página web seleccionando **Explorar sitio web** en [portales de PowerApps Studio](portal-designer-anatomy.md) para ver los cambios que ha realizado a la página web. La página web se abre en una nueva pestaña con la dirección URL de la página web.
+Como alternativa, también puede abrir el portal para explorar la página web seleccionando **Explorar sitio web** en [portales de Power Apps Studio](portal-designer-anatomy.md) para ver los cambios que ha realizado a la página web. La página web se abre en una nueva pestaña con la dirección URL de la página web.
 
 ## <a name="share"></a>Compartir
 
@@ -91,7 +91,7 @@ Su portal debe funcionar de manera anónima y debe ser accesible por los usuario
 
 ## <a name="settings"></a>Configuración
 
-Muestra la configuración de portal y permite cambiar el nombre del portal. Puede realizar acciones avanzadas como administrar el portal a través del centro de administración de portales de PowerApps y trabajar con la configuración del sitio. La configuración proporciona vínculos con el Centro de administración de los portales de PowerApps y Configuración del sitio. Más información: [Administración avanzada de portal](admin/admin-overview.md) y [Configuración del sitio](configure/configure-site-settings.md).  
+Muestra la configuración de portal y permite cambiar el nombre del portal. Puede realizar acciones avanzadas como administrar el portal a través del centro de administración de portales de Power Apps y trabajar con la configuración del sitio. La configuración proporciona vínculos con el Centro de administración de los portales de Power Apps y Configuración del sitio. Más información: [Administración avanzada de portal](admin/admin-overview.md) y [Configuración del sitio](configure/configure-site-settings.md).  
 
 > [!div class=mx-imgBorder]
 > ![configuración del portal](media/portal-settings.png "Configuración del portal")  

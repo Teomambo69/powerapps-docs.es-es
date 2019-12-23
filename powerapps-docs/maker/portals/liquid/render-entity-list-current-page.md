@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: e31f83efb7cedfa42b6c4c9e7da83280b261d9c8
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 73b8af19419bb59fe63e7ecea92188d6cff4c180
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2707975"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866375"
 ---
 # <a name="render-the-entity-list-associated-with-the-current-page"></a>Representar la lista de entidades asociada a la página actual
 
-Represente la lista de entidades asociada a la página actual como una tabla paginada y ordenable. Usa los parámetros [entitylist](liquid-objects.md#entitylist), [entityview](liquid-objects.md#entityview), [PowerApps Common Data Service entity tags](portals-entity-tags.md), [page](liquid-objects.md#page) y [request](liquid-objects.md#request) e incluye búsqueda y selección de varias vistas.  
+Represente la lista de entidades asociada a la página actual como una tabla paginada y ordenable. Usa los parámetros [entitylist](liquid-objects.md#entitylist), [entityview](liquid-objects.md#entityview), [Power Apps Common Data Service entity tags](portals-entity-tags.md), [page](liquid-objects.md#page) y [request](liquid-objects.md#request) e incluye búsqueda y selección de varias vistas.  
 
 ```xml
 {% entitylist id:page.adx_entitylist.id %}

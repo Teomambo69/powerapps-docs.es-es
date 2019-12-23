@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 0bedeae7952f5ec11394b680064af9016ae2b82e
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a6affbb0d13af137ddd044a7ae4b6d2cddbf813c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756628"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862464"
 ---
 # <a name="compose-a-page"></a>Componer una página
 
@@ -33,11 +33,11 @@ Después de agregar las páginas web necesarias y administrar su jerarquía en e
     - Ruta de navegación
 
 > [!NOTE]
-> Si personaliza el portal usando el diseñador de portales de PowerApps, los usuarios del sitio web observarían un impacto en el rendimiento. Se recomienda realizar los cambios en horas de poca actividad en un portal en directo. 
+> Si personaliza el portal usando el diseñador de portales de Power Apps, los usuarios del sitio web observarían un impacto en el rendimiento. Se recomienda realizar los cambios en horas de poca actividad en un portal en directo. 
 
 ## <a name="use-the-wysiwyg-editor"></a>Usar el editor WYSIWYG
 
-1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de PowerApps Studio.  
+1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de Power Apps Studio.  
 
 2.  Seleccione la página en la que desee agregar el componente.
 
@@ -64,7 +64,7 @@ Después de agregar las páginas web necesarias y administrar su jerarquía en e
 
 Las secciones le permiten definir una estructura para la página y organizar los componentes del portal en consecuencia. Una vez que agregue secciones a la página, puede agregar componentes del portal dentro de las secciones según el requisito.
 
-1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de PowerApps Studio.
+1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de Power Apps Studio.
 
 2.  Seleccione la página en la que desea agregar una sección.
 
@@ -115,7 +115,7 @@ Puede agregar los componentes siguientes en una página web.
 
 ### <a name="add-text-box"></a>Agregar cuadro de texto
 
-1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de PowerApps Studio.  
+1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de Power Apps Studio.  
 
 2.  Seleccione la página en la que desee agregar el componente.
 
@@ -144,7 +144,7 @@ Puede agregar los componentes siguientes en una página web.
 
 ### <a name="add-image"></a>Agregar imagen
 
-1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de PowerApps Studio.  
+1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de Power Apps Studio.  
 
 2.  Seleccione la página en la que desee agregar el componente.
 
@@ -181,7 +181,7 @@ Puede agregar los componentes siguientes en una página web.
 
 ### <a name="add-iframe"></a>Agregar un IFrame
 
-1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de PowerApps Studio.  
+1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de Power Apps Studio.  
 
 2.  Seleccione la página en la que desee agregar el componente.
 
@@ -209,7 +209,7 @@ Puede agregar los componentes siguientes en una página web.
 
 Un formulario es una configuración basada en datos que se utiliza para agregar un formulario para obtener datos del portal sin necesidad de que un programador emerja el formulario en el portal. [Los formularios se crean en Common Data Service](https://docs.microsoft.com/powerapps/maker/model-driven-apps/form-designer-overview) y pueden utilizarse en páginas web en el portal o junto con listas para crear aplicaciones web completas.  
 
-1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de PowerApps Studio.  
+1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de Power Apps Studio.  
 
 2.  Seleccione la página en la que desee agregar el componente.
 
@@ -264,7 +264,7 @@ Un formulario es una configuración basada en datos que se utiliza para agregar 
 
 Una lista es una configuración basada en datos que usa para agregar una página web que representará una lista de registros sin necesidad de que un programador muestre la cuadrícula en el portal. Las listas usan [Vistas de Common Data Service](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-and-edit-views) para mostrar registros en el portal.  
 
-1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de PowerApps Studio.  
+1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de Power Apps Studio.  
 
 2.  Seleccione la página en la que desee agregar el componente.
 
@@ -308,7 +308,7 @@ Una lista es una configuración basada en datos que usa para agregar una página
 
 ### <a name="add-breadcrumb"></a>Agregar ruta de navegación
 
-1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de PowerApps Studio.  
+1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de Power Apps Studio.  
 
 2.  Seleccione la página en la que desee agregar el componente.
 
@@ -324,7 +324,7 @@ De forma predeterminada, el menú en el sitio web se crea automáticamente basá
 
 Tras crear el conjunto de vínculos web:
 
-1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de PowerApps Studio.
+1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de Power Apps Studio.
 
 2.  Seleccione el componente del encabezado. 
 

@@ -1,5 +1,5 @@
 ---
-title: Utilizar controles personalizados para visualizaciones de datos de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
+title: Utilizar controles personalizados para visualizaciones de datos de aplicaciones controladas por modelos en Power Apps | MicrosoftDocs
 description: Aprenda a usar los controles personalizados para los campos
 ms.custom: ''
 ms.date: 06/07/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b34354a1bc0bdfb3556acc6ca999a1e0e8dcec74
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8fd79185c4db541700e3079e9151a1193ebd6247
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756056"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874520"
 ---
 # <a name="use-custom-controls-for-model-driven-app-data-visualizations"></a>Usar controles personalizados para visualizaciones de datos de aplicaciones controladas por modelos
 
@@ -48,7 +48,7 @@ Puede establecer un tipo de control personalizado para que aparezca en el client
 ## <a name="use-a-custom-control-to-add-visualizations-to-a-field"></a>Usar un control personalizado para agregar visualizaciones a un campo  
  Siga los pasos de este procedimiento para cambiar la etiqueta predeterminada y el campo de cuadro de texto del campo **Importe del presupuesto** por un control personalizado deslizante en la entidad Oportunidad. Puede seguir los mismos pasos para sustituir un campo existente por un control personalizado o configurar un control personalizado para un campo personalizado.  
   
-1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
      
 

@@ -9,16 +9,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: grhurl
 ms.reviewer: nkrb
-ms.openlocfilehash: 62a46acf98c8cdd93524f17b8a3a28ac999e325b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7fdade7a1476c05214483eaa9b766c9c709fc9cf
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749929"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861934"
 ---
 # <a name="implementing-the-facepile-component"></a>Implementar el componente FacePile
 
-En este ejemplo se muestra cómo usar React para crear componentes utilizando PowerApps Component Framework.  El componente de ejemplo facepile se implementa en función de los componentes React y Office UI Fabric React. El código puede no revelar las prácticas recomendadas para las bibliotecas de terceros mencioinadas.
+En este ejemplo se muestra cómo usar React para crear componentes utilizando Power Apps Component Framework.  El componente de ejemplo facepile se implementa en función de los componentes React y Office UI Fabric React. El código puede no revelar las prácticas recomendadas para las bibliotecas de terceros mencioinadas.
 
 > [!div class="mx-imgBorder"]
 > ![React Facepile](../media/react-facepile.png "React Facepile")
@@ -29,7 +29,7 @@ Aplicaciones basadas en modelo y aplicaciones de lienzo (vista previa piloto)
 
 
 > [!IMPORTANT]
-> Aunque las aplicaciones host de PowerApps trabajen sobre React, la versión de React que usted empaqueta no se comunicará con la versión host, y tampoco depende de esa versión. Una nueva copia de React (o cualquier biblioteca de terceros que empaquete con el componente) se cargará en la página host para cada instancia de ese control, por tanto, tenga cuidado con el tamaño que crea de las páginas cuando agrega componentes. Tendremos una solución a este problema en una futura versión.
+> Aunque las aplicaciones host de Power Apps trabajen sobre React, la versión de React que usted empaqueta no se comunicará con la versión host, y tampoco depende de esa versión. Una nueva copia de React (o cualquier biblioteca de terceros que empaquete con el componente) se cargará en la página host para cada instancia de ese control, por tanto, tenga cuidado con el tamaño que crea de las páginas cuando agrega componentes. Tendremos una solución a este problema en una futura versión.
 
 ## <a name="manifest"></a>Manifiesto
 
@@ -49,13 +49,13 @@ Aplicaciones basadas en modelo y aplicaciones de lienzo (vista previa piloto)
 
 ## <a name="overview"></a>información general
 
-Este ejemplo proporciona ejemplos de cómo agregar dependencias para las bibliotecas de terceros y Office UI Fabric, indicando cómo usar los componentes Office UI Fabric para React para la interfaz de usuario y realizar de enlace de datos bidireccional entre PowerApps Component Framework y el modelo de estado de React.
+Este ejemplo proporciona ejemplos de cómo agregar dependencias para las bibliotecas de terceros y Office UI Fabric, indicando cómo usar los componentes Office UI Fabric para React para la interfaz de usuario y realizar de enlace de datos bidireccional entre Power Apps Component Framework y el modelo de estado de React.
 
 El ejemplo del componente consta de tres componentes de Office UI Fabric: un facepile, un control deslizante, una casilla, y una lista desplegable. Cuando mueva el control deslizante, el número de caras de la facepile cambiará. La casilla controla si las caras aparecen y desaparecen paulatinamene o si simplemente aparecen o desaparecen, y las opciones en la lista desplegable controlan el tamaño de las caras. Si no se establece ningún valor, el número de caras predeterminado será 3.
 
 - Cuando el componente se carga, el control deslizante se establece con el valor de atributo enlazado. La propiedad `context.parameters.[property_name].attributes` contiene los metadatos asociados.
-- Se pasan a un controlador de eventos en los apoyos del componente de React; esto permite que el componente de Reac notifique al control de PowerApps Component Framework host que un valor ha cambiado. El controlador de eventos a continuación determina si una llamada al método **notifyOutputEvents** es necesaria.
-- Al deslizar el control deslizante React actualizará el valor enlazado y llamará al controlador de eventos pasado. Dentro del controlador, si se hace una llamada al método **notifyOutputEvents**, el método [getOutputs](../reference/control/getoutputs.md) del control será llamado de forma asincrónica y fluirá a PowerApps Component Framework. 
+- Se pasan a un controlador de eventos en los apoyos del componente de React; esto permite que el componente de Reac notifique al control de Power Apps Component Framework host que un valor ha cambiado. El controlador de eventos a continuación determina si una llamada al método **notifyOutputEvents** es necesaria.
+- Al deslizar el control deslizante React actualizará el valor enlazado y llamará al controlador de eventos pasado. Dentro del controlador, si se hace una llamada al método **notifyOutputEvents**, el método [getOutputs](../reference/control/getoutputs.md) del control será llamado de forma asincrónica y fluirá a Power Apps Component Framework. 
 - El host de marco actualiza el valor de atributo enlzado, y el valor actualizado fluye al componente, desencadenando el método [updateView](../reference/control/updateview.md) del control. A continuación el control representa el componente React con el nuevo valor.
 
 
@@ -420,6 +420,7 @@ export const TestImages = {
 
 ### <a name="related-topics"></a>Temas relacionados
 
-[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)<br />
-[Referencia de la API de PowerApps component framework](../reference/index.md)<br />
-[Información general sobre PowerApps component framework](../overview.md)
+[¿Cómo usar los componentes de ejemplo?](../use-sample-components.md)<br/>
+[Referencia de esquema de manifiesto de Power Apps component framework](../manifest-schema-reference/index.md)<br />
+[Referencia de la API de Power Apps component framework](../reference/index.md)<br />
+[Información general sobre Power Apps component framework](../overview.md)

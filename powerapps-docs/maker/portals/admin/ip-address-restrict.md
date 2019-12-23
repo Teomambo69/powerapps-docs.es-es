@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: da8e6ac6d4e86a12ba196393073706c3705e4a92
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: efc0ea8449e387d292063f16ee6e38f69863267c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756144"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867255"
 ---
 # <a name="restrict-portal-access-by-ip-address"></a>Limitar el acceso al portal mediante la dirección IP
 
@@ -39,7 +39,7 @@ Una vez que agrega una dirección IP a la lista de restricción, el portal será
 > [!NOTE]
 > Debe especificar una dirección IP pública a la que pueda acceder el portal. El portal no puede acceder a la dirección IP privada.
 
-1.  Abra [Centro de administración de Portales de PowerApps](admin-overview.md).
+1.  Abra [Centro de administración de Portales de Power Apps](admin-overview.md).
 
 2.  Vaya a **Configurar restricción de direcciones IP**. Se muestra una lista de direcciones IP y su tipo
 
@@ -63,7 +63,7 @@ Una vez que agrega una dirección IP a la lista de restricción, el portal será
 
 Para quitar el acceso a un portal de una dirección IP anteriormente permitida, puede quitar la dirección IP de la lista. Si quita todas las direcciones IP, el portal será accesiblede desde todas las direcciones IP.
 
-1.  Abra [Centro de administración de Portales de PowerApps](admin-overview.md).
+1.  Abra [Centro de administración de Portales de Power Apps](admin-overview.md).
 
 2.  Vaya a **Configurar restricción de direcciones IP**. Se muestra una lista de direcciones IP y su tipo
 

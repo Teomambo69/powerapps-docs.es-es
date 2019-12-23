@@ -31,7 +31,7 @@
     - name: Trabajar con datos mediante código
       href: work-with-data/index.md
       items:
-        - name: Límites de la API
+        - name: Límites de la API de protección de servicio
           href: ../api-limits.md
     - name: Trabajar con metadatos mediante código
       href: work-with-metadata/index.md

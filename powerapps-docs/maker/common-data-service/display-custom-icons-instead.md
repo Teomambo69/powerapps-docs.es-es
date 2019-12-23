@@ -1,8 +1,8 @@
 ---
-title: Mostrar iconos personalizados junto con los valores en vistas de lista con PowerApps | MicrosoftDocs
+title: Mostrar iconos personalizados junto con los valores en vistas de lista con Power Apps | MicrosoftDocs
 description: Obtenga información sobre cómo mostrar gráficos de icono en una vista
 ms.custom: ''
-ms.date: 02/14/2019
+ms.date: 11/20/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,36 +22,37 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e1facad3d5d6cb95e0441800f4d743d429f50787
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5a8eec0d7079b748b5b70c623c794b403b399ea2
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705511"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861091"
 ---
 # <a name="display-custom-icons-alongside-values-in-list-views"></a>Mostrar iconos personalizados junto con los valores en vistas de lista
 
 <a name="GridIcons"></a>   
 
- Los administradores y personalizadores de entornos de PowerApps pueden agregar gráficos a una vista y establecer la lógica usada para seleccionar un gráfico según el valor de la columna con JavaScript. La funcionalidad le permite personalizar las vistas de lista que muestran iconos junto al texto o los valores numéricos. 
+ Los administradores y personalizadores de entornos de Power Apps pueden agregar gráficos a una vista y establecer la lógica usada para seleccionar un gráfico según el valor de la columna con JavaScript. La funcionalidad le permite personalizar las vistas de lista que muestran iconos junto al texto o los valores numéricos. 
+
+Este ejemplo muestra iconos personalizados en una vista para la entidad oportunidad, que está disponible con ciertas aplicaciones, como Dynamics 365 Sales. Puede mostrar iconos personalizados en vistas con otras entidades estándar, como las entidades cuenta o contacto, así como entidades personalizadas. 
 
 > [!div class="mx-imgBorder"] 
 > ![](media/icon-in-opportunity-view.png "All Opportunities view with Rating column displaying icons and text value")
   
-> [!NOTE]
->  Los iconos de cuadrícula se muestran únicamente en la interfaz web. No se muestran en [!INCLUDE[pn_Outlook_short](../../includes/pn-outlook-short.md)] o la aplicación móvil.  
+Los iconos personalizados en las vistas de lista se pueden mostrar en la interfaz unificada, cliente web heredado, aplicación móvil y aplicación para Outlook. 
   
-### <a name="add-custom-graphics-and-javascript-as-web-resources"></a>Agregue gráficos personalizados y JavaScript como recursos web  
+## <a name="add-custom-graphics-and-javascript-as-web-resources"></a>Agregue gráficos personalizados y JavaScript como recursos web  
   
 1.  Cree los nuevos archivos de gráficos necesarios para la personalización. Se recomienda un tamaño de icono de 16x16 píxeles (las imágenes más grandes serán reducidas proporcionalmente).  
   
-2.  Escriba una o más funciones JavaScript que establezcan qué iconos se mostrarán para qué valores (normalmente necesitará una función para cada columna que desea personalizar). Cada función debe aceptar un objeto de datos fila y un código de idioma (LCID) como entrada y devolver una matriz que contiene un nombre de imagen y texto de información sobre herramientas. Para ver una función de ejemplo, consulte [Función JavaScript de ejemplo](#SampleJavascript), más adelante en este tema.  
+2.  Escriba una o más funciones JavaScript que establezcan qué iconos se mostrarán para qué valores (normalmente necesitará una función para cada columna que desea personalizar). Cada función debe aceptar un objeto de datos fila y un código de idioma (LCID) como entrada y devolver una matriz que contiene un nombre de imagen y texto de información sobre herramientas. Para ver una función de ejemplo, consulte [Función JavaScript de ejemplo](#SampleJavascript), más adelante en este artículo.  
   
-3.  Inicie sesión en el entorno como administrador y abra el explorador de soluciones.  
+3.  Inicie sesión en su entorno como administrador y abra el [explorador de soluciones](../model-driven-apps/advanced-navigation.md#solution-explorer).  
   
 4.  Se abre la ventana **Solución predeterminada**. Vaya a **Componentes** > **Recursos web** aquí.  
   
-5.  A continuación, cargará los gráficos personalizados, uno cada vez, como recursos web. Seleccione el botón **Nuevo** en la barra de herramientas para crear un nuevo recurso web. Se abre otra ventana emergente para ayudarle a crear el recurso. Haga lo siguiente:  
+5.  A continuación, cargará los gráficos personalizados, uno cada vez, como recursos web. Seleccione el botón **Nuevo** en la barra de herramientas para crear un nuevo recurso web. Se abre otra ventana emergente para ayudarle a crear el recurso. Siga estos pasos:  
   
     1.  Dé **Nombre** significativo para el nuevo recurso. Es el nombre que usará para referirse a cada gráfico desde su código JavaScript.  
   
@@ -162,7 +163,27 @@ function displayIconTooltip(rowData, userLCID) {
   
  <!-- This results in displaying icons with tooltips in the **Rating** column that depend on the value in each row. The result could look like this:  
   
- ![Custom column graphics example](../customize/media/custom-column-graphics-example.png "Custom column graphics example")  -->
+ ![Custom column graphics example](../customize/media/custom-column-graphics-example.png "Custom column graphics example")  --> 
+
+## <a name="custom-icon-view-display-behavior"></a>Comportamiento de visualización de vista del icono personalizado
+### <a name="primary-fields"></a>Campos principales 
+En la vista de lista de cuadrícula, los iconos personalizados aplicados al campo primario de la entidad reemplazan el icono predeterminado generado por el sistema. 
+
+> [!div class="mx-imgBorder"] 
+> ![](media/mobile-primary-field-custom-icon-display.png "Primary field replaces default icon in the custom icon view")
+
+### <a name="other-fields"></a>Otros campos 
+En la vista de lista de cuadrícula, los iconos personalizados aplicados a un campo que no es el campo primario de la entidad se muestran como un icono secundario además del icono predeterminado generado por el sistema. 
+
+> [!div class="mx-imgBorder"] 
+> ![](media/card-form-not-primary-field.png "Not an entity primary field custom icon view")
+
+### <a name="card-forms"></a>Formularios de tarjeta
+Los iconos personalizados reemplazan el icono predeterminado generado por el sistema cuando la vista está configurada para usar un formulario de tarjeta. 
+
+> [!div class="mx-imgBorder"] 
+> ![](media/card-view-icon-display.png "Card view custom icon view")
+
  
  ### <a name="see-also"></a>Vea también
 [Conocer las vistas de las aplicaciones controladas por modelos](../model-driven-apps/create-edit-views.md)

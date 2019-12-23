@@ -1,6 +1,6 @@
 ---
 title: Crear una relación entre entidades usando un campo de búsqueda | Microsoft Docs
-description: Instrucciones paso a paso sobre cómo crear una relación entre entidades en PowerApps usando un campo de búsqueda.
+description: Instrucciones paso a paso sobre cómo crear una relación entre entidades en Power Apps usando un campo de búsqueda.
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ac4b57853e6dfc4c0969a4207538e15db0b58bc8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 468f31eeb48a3e79f79db9188be78a7fa6d28c18
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757552"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883592"
 ---
 # <a name="create-a-relationship-between-entities"></a>Crear una relación entre entidades
 Los datos de una entidad suelen estar relacionados con los datos de otra entidad. Por ejemplo, podría tener una entidad **Profesores** y una entidad **Clase**, y la entidad **Clase** podría tener una relación de búsqueda con la entidad **Profesores** para indicar qué profesor da la clase. Puede usar un campo de búsqueda para mostrar los datos de la entidad **Profesores**. Se le suele denominar campo de búsqueda.
@@ -136,7 +136,7 @@ Para obtener más información sobre valores predeterminados y comportamientos p
 Si [crea una aplicación automáticamente](../canvas-apps/data-platform-create-app.md) a partir de una entidad que contiene un campo de búsqueda, ésta aparece como control **Desplegable** que contiene datos del campo **Nombre principal** de la entidad.
 
 ## <a name="add-1n-and-nn-relationships-for-canvas-apps"></a>Agregue relaciones de 1:N y de N:N para las aplicaciones del lienzo
-Use la función **Relacionar** para vincular dos registros a través de una relación de uno a varios o de varios a varios en Common Data Service. Más información: [Funciones Relacionar y Cancelar la relación en PowerApps](../canvas-apps/functions/function-relate-unrelate.md)
+Use la función **Relacionar** para vincular dos registros a través de una relación de uno a varios o de varios a varios en Common Data Service. Más información: [Funciones Relacionar y Cancelar la relación en Power Apps](../canvas-apps/functions/function-relate-unrelate.md)
 
 ## <a name="next-steps"></a>Pasos siguientes
 * [Generar una aplicación mediante una base de datos de Common Data Service](../canvas-apps/data-platform-create-app.md)

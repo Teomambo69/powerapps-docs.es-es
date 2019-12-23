@@ -22,16 +22,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3db46288b0f1fc384cae8c683648d1dd0a945d44
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 81b20a326be239445422cce51a54b2e0b991d5c4
+ms.sourcegitcommit: a7f2313a048d3b8a03516a2e4c349f3fb08f4a22
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2710879"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "2805713"
 ---
-# <a name="add-the-team-entity-as-a-lookup-option-in-your-app"></a>Agregar la entidad de equipo como opción de búsqueda en la aplicación
+# <a name="add-an-entity-as-a-lookup-option-in-your-app"></a>Agregar una entidad de equipo como opción de búsqueda en la aplicación
 
-Con aplicaciones de la interfaz unificada, para que la entidad de equipo esté disponible en una búsqueda se debe agregar a la aplicación. Por ejemplo, los registros de contacto tienen la capacidad de asignarse a un usuario o equipo.  
+Con aplicaciones de la interfaz unificada, para que una entidad esté disponible en una búsqueda se debe agregar a la aplicación. Por ejemplo, los registros de contacto tienen la capacidad de asignarse a un usuario o equipo.  
 
 > [!div class="mx-imgBorder"] 
 > ![](media/entity-lookup-teams.png "Entity lookup with both users and teams available")

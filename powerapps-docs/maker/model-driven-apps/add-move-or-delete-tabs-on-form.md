@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 985b876adda527eec2a1cc240c25f571d66b01fd
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0799fd352a17bb398f3f42444b9312fd90756caa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2700407"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860674"
 ---
 # <a name="add-configure-move-or-delete-tabs-on-a-form"></a>Agregar, configurar, mover o eliminar pestañas de un formulario  
 Agregar, mover o eliminar pestañas en un formulario usando el diseñador de formularios.

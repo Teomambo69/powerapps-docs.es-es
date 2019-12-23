@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 7989c15b0c5c4cf50d4b55f518244758afc067e1
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ced53e6b3eb30668d81aca0f385f4ebd841f02fa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756672"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862508"
 ---
 # <a name="view-portal-error-logs"></a>Ver los logs de error del portal
 
-Como administrador o desarrollador de un portal, puede usar portales de PowerApps para crear un sitio web para sus clientes. Una tarea habitual entre los desarrolladores es depurar problemas mientras desarrollan el portal. Para ayudar a depurar, puede acceder a los registros de errores detallados para todos los problemas en el portal. Hay varias formas en las que puede obtener registros de errores para sus portales.
+Como administrador o desarrollador de un portal, puede usar portales de Power Apps para crear un sitio web para sus clientes. Una tarea habitual entre los desarrolladores es depurar problemas mientras desarrollan el portal. Para ayudar a depurar, puede acceder a los registros de errores detallados para todos los problemas en el portal. Hay varias formas en las que puede obtener registros de errores para sus portales.
 
 ## <a name="custom-error"></a>Error personalizado
 
@@ -40,7 +40,7 @@ Más información sobre el error personalizado: [mostrar una página de Error pe
 
 Puede deshabilitar los errores personalizados en los portales para visualizar el mensaje detallado de excepción si se produce una excepción de lado de servidor en el portal.
 
-1. Abra [Centro de administración de Portales de PowerApps](admin-overview.md).
+1. Abra [Centro de administración de Portales de Power Apps](admin-overview.md).
 
 2. Vaya a **Acciones del portal** > **deshabilitar errores personalizados**.
 
@@ -53,7 +53,7 @@ Puede deshabilitar los errores personalizados en los portales para visualizar el
 
 Puede habilitar los errores personalizados en el portal para mostrar una página de aspecto profesional en lugar de YSOD. Esta página ofrece información importante si se produce cualquier excepción en la aplicación.
 
-1. Abra [Centro de administración de Portales de PowerApps](admin-overview.md).
+1. Abra [Centro de administración de Portales de Power Apps](admin-overview.md).
 
 2. Vaya a **Acciones del portal** > **habilitar errores personalizados**.
 
@@ -94,14 +94,14 @@ Este es un error personalizado, presente un vale de soporte con la captura de pa
 
 ## <a name="access-portal-error-logs"></a>Los registros de error del portal de acceso
 
-Después de desarrollar y publicar el portal, debe poder seguir teniendo acceso a los registros del portal para depurar los problemas notificados por sus clientes. Para obtener acceso a los registros, puede configurar su portal para enviar todos los errores de aplicación a una cuenta de Azure Blob Storage propia. Mediante el acceso a registros de error del portal, puede responder a consultas de clientes eficazmente porque tiene detalles del problema. Para obtener los registros de error del portal en Azure Blob Storage, debe habilitar el registro de diagnóstico en el centro de administración de portales de PowerApps.
+Después de desarrollar y publicar el portal, debe poder seguir teniendo acceso a los registros del portal para depurar los problemas notificados por sus clientes. Para obtener acceso a los registros, puede configurar su portal para enviar todos los errores de aplicación a una cuenta de Azure Blob Storage propia. Mediante el acceso a registros de error del portal, puede responder a consultas de clientes eficazmente porque tiene detalles del problema. Para obtener los registros de error del portal en Azure Blob Storage, debe habilitar el registro de diagnóstico en el centro de administración de portales de Power Apps.
 
 > [!NOTE]
 > Si cambia la instancia Common Data Service a la que está conectado su portal, el registro de diagnóstico se deshabilita. Debe habilitar el registro de diagnóstico de nuevo.
 
 ### <a name="enable-diagnostic-logging"></a>Habilitar registro de diagnóstico
 
-1. Abra [Centro de administración de Portales de PowerApps](admin-overview.md).
+1. Abra [Centro de administración de Portales de Power Apps](admin-overview.md).
 
 2. Vaya a **Acciones del portal** > **habilitar registro de diagnóstico**.
 
@@ -138,7 +138,7 @@ Cuando el registro de diagnóstico se habilita correctamente, la acción siguien
  
 ### <a name="update-diagnostic-logging"></a>Actualizar el registro de diagnóstico
 
-1. Abra [Centro de administración de Portales de PowerApps](admin-overview.md).
+1. Abra [Centro de administración de Portales de Power Apps](admin-overview.md).
 
 2. Vaya a **Acciones de portal** > **Actualizar configuración de registro de diagnóstico**.
 
@@ -166,7 +166,7 @@ Cuando el registro de diagnóstico se habilita correctamente, la acción siguien
 
 ### <a name="disable-diagnostic-logging"></a>Deshabilitar el registro de diagnóstico
 
-1. Abra [Centro de administración de Portales de PowerApps](admin-overview.md).
+1. Abra [Centro de administración de Portales de Power Apps](admin-overview.md).
 
 2. Vaya a **Acciones del portal** > **deshabilitar el registro de diagnóstico**.
 

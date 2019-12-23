@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 639b8631f1d953408d30a1fdbba9c9ae8161af4d
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 529e22a70532bc906af060f58df0017786a6e802
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755155"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873878"
 ---
 # <a name="pass-the-current-record-as-data-context-to-an-embedded-canvas-app"></a>Pasar el registro actual como contexto de datos a una aplicación incrustada de lienzo
 > [!IMPORTANT]
@@ -37,7 +37,7 @@ En este tema se explica cómo agregar una aplicación incrustada de lienzo y pas
 
 Imagine que desea agregar una aplicación incrustada de lienzo en el formulario principal de una cuenta y pasar el registro de cuenta actual a la aplicación incrustada de lienzo. Para ello, siga estos pasos: 
 
-1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y abra el editor de formularios para un formulario principal de una entidad, como la entidad contable. 
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y abra el editor de formularios para un formulario principal de una entidad, como la entidad contable. 
 2.  Seleccione la sección del formulario donde desea que aparezca la aplicación incrustada de lienzo.
 3.  Usando el panel del explorador de campos, agregue un campo obligatorio, como **Nombre de cuenta**.
       > [!IMPORTANT]
@@ -52,10 +52,10 @@ Imagine que desea agregar una aplicación incrustada de lienzo en el formulario 
          - Tenga en cuenta que, aunque esta propiedad parece cambiable, cambiarla no tendrá ningún efecto en la aplicación incrustada de lienzo. Está previsto que solo sirva como referencia para usted.
      - La propiedad **Identificador de la aplicación** especifica el identificador de la aplicación incrustada de lienzo. Se generará y rellenará automáticamente en su lugar cuando se cree la aplicación de lienzo.
          - Tenga en cuenta que, los cambios efectuados en el valor **Identificador de la aplicación** rompen el vínculo entre el formulario controlado por modelos y la aplicación incrustada de lienzo.
-10. Seleccione **Personalizar** para crear o editar la aplicación de lienzo. Esto abre PowerApps Studio en una nueva pestaña.
+10. Seleccione **Personalizar** para crear o editar la aplicación de lienzo. Esto abre Power Apps Studio en una nueva pestaña.
        > [!NOTE]
-       > Si abrir PowerApps Studio está bloqueado debido a un bloqueador de elementos emergentes de explorador web, debe habilitar el sitio de make.powerapps.com o temporalmente deshabilitar el bloqueador de elementos emergentes y después seleccionar **Personalizar** de nuevo.
-11. En PowerApps Studio, observe que hay un control **ModelDrivenFormIntegration** especial en el panel izquierdo. Este control es responsable de llevar datos contextuales del formulario controlado por modelos del host a la aplicación incrustada de lienzo.
+       > Si abrir Power Apps Studio está bloqueado debido a un bloqueador de elementos emergentes de explorador web, debe habilitar el sitio de make.powerapps.com o temporalmente deshabilitar el bloqueador de elementos emergentes y después seleccionar **Personalizar** de nuevo.
+11. En Power Apps Studio, observe que hay un control **ModelDrivenFormIntegration** especial en el panel izquierdo. Este control es responsable de llevar datos contextuales del formulario controlado por modelos del host a la aplicación incrustada de lienzo.
 12. Seleccione el control **Gallery1** y observe que la propiedad **Elementos** está establecida en **ModelDrivenFormIntegration.Data**.
       > [!NOTE]
       > ModelDrivenFormIntegration.Data es una lista de registros. En este ejemplo sólo tiene un registro. Para hacer referencia directamente el registro puede usar Primera función. Ejemplo: *First(ModelDrivenFormIntegration.Data).Name*.
@@ -69,7 +69,7 @@ Imagine que desea agregar una aplicación incrustada de lienzo en el formulario 
     -  Guardar una aplicación por primera vez publica automáticamente la aplicación.
       -  En las operaciones de guardar posteriores, seleccione **Publicar** y después seleccione **Publicar esta versión** para que los cambios pasen a estar disponibles.
 20. En el menú, seleccione **Atrás** y seleccione la ficha del explorador que tiene el editor de formularios abierto. Observe que la propiedad **Identificador de la aplicación** del control de apliaciones de lienzo ahora tiene un valor automáticamente rellenado. Tenga en cuenta lo siguiente: 
-    -   El editor de formularios tiene un vínculo directo con PowerApps Studio que se abrió en otra pestaña del explorador en un paso anterior.
+    -   El editor de formularios tiene un vínculo directo con Power Apps Studio que se abrió en otra pestaña del explorador en un paso anterior.
     -   El editor de formularios “escucha” para recibir el **Identificador de la aplicación** que se le envía.
     -   El **Identificador de la aplicación** se envía al editor de formularios cuando se guarda la aplicación.
 21. En el cuadro de diálogo **Propiedades de campo** , seleccione la pestaña **Mostrar** .

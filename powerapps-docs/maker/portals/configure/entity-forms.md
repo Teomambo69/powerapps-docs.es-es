@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/04/2019
+ms.date: 11/22/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 79e6f02f9a13f1c828efe5c472d267e707b09576
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a53bfa0a588da16e302e6986a7226e2c1bc42192
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2761110"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874362"
 ---
 # <a name="about-entity-forms"></a>Acerca de formularios de entidad
 
@@ -109,7 +109,7 @@ Para proteger los formularios, debe crear permisos de entidad que determinan el 
 |Asociar usuario actual del portal| Indica que el registro del usuario que ha iniciado sesión actualmente se debe asociar al registro de la entidad de destino.|
 |Atributo de búsqueda de usuarios del portal de la entidad de destino|    El nombre lógico del atributo de la entidad de destino que almacena el usuario del portal.|
 |Es grupo de actividad| Valor booleano que indica si el Atributo de búsqueda de usuarios del portal de la entidad de destino es un tipo del grupo de actividad.|
-|Adjuntar archivo|   Active esta opción para que el formulario incluya un control de carga de archivos en la parte inferior del formulario para permitir adjuntar un archivo al registro.|
+|Adjuntar archivo|   Seleccione esta opción para que el formulario incluya un control de carga de archivos en la parte inferior del formulario para permitir adjuntar un archivo al registro. Debe elegir **Habilitar permisos de entidad** y asignar los permisos Crear, Anexar y Anexar a permisos a la entidad Anotación para permitir que un usuario adjunte archivos al formulario. Más información: [Asignar permisos de entidades](assign-entity-permissions.md)<br>**Nota**: Si un usuario no tiene los permisos adecuados para cargar un archivo o no está seleccionada Habilitar permisos de entidad, la opción para cargar un archivo no se mostrará en el formulario.|
 |Ubicación de almacenamiento de archivos adjuntos|  Opciones: Datos adjuntos de nota, Almacenamiento de blobs de Azure. Si su organización está configurada para utilizar Azure Storage, puede elegir almacenar los archivos cargados para este formulario de entidad allí. De lo contrario, los archivos se almacenarán como Datos adjuntos de nota.|
 |Permitir varios archivos|Valor booleano que indica si el usuario puede cargar más de un archivo.|
 |Aceptar|    El atributo de aceptación especifica los tipos MIME de archivos que el servidor acepta a través de la carga de archivos. Para especificar más de un valor, separe los valores con comas (por ejemplo, audio/*,video/*,image/*).|

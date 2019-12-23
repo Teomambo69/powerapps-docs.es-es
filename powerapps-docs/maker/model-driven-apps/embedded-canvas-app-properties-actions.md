@@ -16,18 +16,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 20a28b159158579b35fb9e8a1b650f718c5ef83b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 674147425097d75b96e14bfbf76b3c937f9fd999
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2703971"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868474"
 ---
 # <a name="modeldrivenformintegration-control-properties-and-actions"></a>Propiedades y acciones del control ModelDrivenFormIntegration
 Las aplicaciones de lienzo incrustadas en formularios basados en modelos incluyen un control especial llamado **ModelDrivenFormIntegration**. Este control es responsable de llevar datos contextuales del formulario controlado por modelos del host a la aplicación incrustada de lienzo.  

@@ -1,6 +1,6 @@
 ---
 title: 'Programadores: Prácticas recomendadas e instrucciones de creación de scripts en clientes para las aplicaciones basadas en modelos | Microsoft Docs'
-description: Prácticas recomendadas e instrucciones de creación de scripts para desarrolladores para las aplicaciones basadas en modelos en PowerApps.
+description: Prácticas recomendadas e instrucciones de creación de scripts para desarrolladores para las aplicaciones basadas en modelos en Power Apps.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 516dde533ee012a0e4cb64e988a574de6ea8948c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: b1c2c27e7edbf338a735574ad004a980d841930b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749454"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883510"
 ---
 # <a name="best-practices-and-guidance-of-client-side-scripting-for-model-driven-apps"></a>Prácticas recomendadas e instrucciones de creación de scripts para aplicaciones basadas en modelos
 

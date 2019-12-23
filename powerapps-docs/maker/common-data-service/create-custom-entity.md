@@ -1,6 +1,6 @@
 ---
-title: Crear una entidad personalizada que tiene componentes con PowerApps | Microsoft Docs
-description: Tema con las instrucciones paso a paso para crear y configurar una entidad para usar con una aplicación de PowerApps.
+title: Crear una entidad personalizada que tiene componentes con Power Apps | Microsoft Docs
+description: Tema con las instrucciones paso a paso para crear y configurar una entidad para usar con una aplicación de Power Apps.
 author: Mattp123
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 436e4f03a38efc3d61a0d4fb9f027ae6eff1c931
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 864bc9c8cfad92bac661db0b12b47d880cc86edf
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754847"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883812"
 ---
-# <a name="create-a-custom-entity-that-has-components-in-powerapps"></a>Crear una entidad personalizada que tenga componentes en PowerApps
+# <a name="create-a-custom-entity-that-has-components-in-power-apps"></a>Crear una entidad personalizada que tenga componentes en Power Apps
 
-Con in PowerApps puede personalizar su aplicación para que se ajuste más al sector, la nomenclatura y los procesos de negocio únicos de la organización. El desarrollo de aplicaciones de PowerApps incluye agregar entidades predefinidas estándar o crear entidades personalizadas. Una entidad define la información a la que desea realizar seguimiento en forma de registros, que incluyen normalmente propiedades como el nombre, ubicación, productos, correo electrónico, y teléfono de la compañía. 
+Con in Power Apps puede personalizar su aplicación para que se ajuste más al sector, la nomenclatura y los procesos de negocio únicos de la organización. El desarrollo de aplicaciones de Power Apps incluye agregar entidades predefinidas estándar o crear entidades personalizadas. Una entidad define la información a la que desea realizar seguimiento en forma de registros, que incluyen normalmente propiedades como el nombre, ubicación, productos, correo electrónico, y teléfono de la compañía. 
 
 En este tema creará una entidad y luego agregará o personalizará componentes clave como campos, relaciones, vistas, y formularios. Aprenderá a:
 
@@ -36,7 +36,7 @@ El tema seguirá a la compañía, Contoso, que es un negocio de cuidado de anima
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Si aún no tiene una cuenta de PowerApps, seleccione el vínculo **Introducción gratuita** de [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Si aún no tiene una cuenta de Power Apps, seleccione el vínculo **Introducción gratuita** de [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ## <a name="create-a-custom-entity"></a>Crear una entidad personalizada
 

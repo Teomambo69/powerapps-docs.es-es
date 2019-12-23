@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: nkrb
-ms.openlocfilehash: 4e893466a5a7404926942b4e297cdc4ecb1affef
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 15a0314f043d130ac5afabf1591dbd4b0b789d1e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749459"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861922"
 ---
 # <a name="implementing-web-api-component"></a>Implementar componente de API web
 
@@ -640,5 +640,6 @@ Tras la recuperación correcta de los registros, el componente de código tiene 
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API de PowerApps component framework](../reference/index.md)<br/>
-[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)
+[¿Cómo usar los componentes de ejemplo?](../use-sample-components.md)<br/>
+[Referencia de la API de Power Apps component framework](../reference/index.md)<br/>
+[Referencia de esquema de manifiesto de Power Apps component framework](../manifest-schema-reference/index.md)

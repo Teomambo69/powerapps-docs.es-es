@@ -1,6 +1,6 @@
 ---
-title: Información general del Centro de administración de portales de PowerApps | MicrosoftDocs
-description: Información general sobre el Centro de administración de portales de PowerApps
+title: Información general del Centro de administración de portales de Power Apps | MicrosoftDocs
+description: Información general sobre el Centro de administración de portales de Power Apps
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,20 +9,20 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 6f8434a6a395931fc4edfe02913f47536b4a709d
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0996704ccbc10f81b95c41d86234ca626a33a345
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756188"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867431"
 ---
-# <a name="powerapps-portals-admin-center"></a>Centro de administración de portales de PowerApps
+# <a name="power-apps-portals-admin-center"></a>Centro de administración de portales de Power Apps
 
-El Centro de administración de portales de PowerApps permite realizar acciones administrativas avanzadas en portales. El Centro de administración está disponible cuando un portal se aprovisiona correctamente.
+El Centro de administración de portales de Power Apps permite realizar acciones administrativas avanzadas en portales. El Centro de administración está disponible cuando un portal se aprovisiona correctamente.
 
-## <a name="open-powerapps-portals-admin-center"></a>Abrir Centro de administración de portales de PowerApps
+## <a name="open-power-apps-portals-admin-center"></a>Abrir Centro de administración de portales de Power Apps
 
-1. Vaya a la sección **Aplicaciones recientes** en la página principal de PowerApps y busque el portal.
+1. Vaya a la sección **Aplicaciones recientes** en la página principal de Power Apps y busque el portal.
 
     > [!div class=mx-imgBorder]
     > ![Aplicaciones recientes](../media/recent-apps.png "Aplicaciones recientes")  
@@ -41,7 +41,7 @@ El Centro de administración de portales de PowerApps permite realizar acciones 
 
 Si no es administrador global e intenta administrar un portal ya aprovisionado o quiere reenviar el aprovisionamiento si se crearon errores, debe ser el propietario de la aplicación de Azure Active Directory (Azure AD) que está conectada al portal.
 
-1. Vaya al centro de administración de los portales de PowerApps y abra la pestaña **Detalles del portal**.
+1. Vaya al centro de administración de los portales de Power Apps y abra la pestaña **Detalles del portal**.
 
 2. Copie el valor del campo **Id. de la aplicación**.
 
@@ -57,4 +57,4 @@ Si no es administrador global e intenta administrar un portal ya aprovisionado o
     > [!Note]
     > Esta tarea la puede realizar el administrador global de su organización o el propietario existente de esta aplicación.
 
-6. Una vez que se haya agregado como propietario, vuelva a abrir la página del centro de administración de portales de PowerApps.
+6. Una vez que se haya agregado como propietario, vuelva a abrir la página del centro de administración de portales de Power Apps.

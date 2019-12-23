@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 76c8e525c5d5b612e055da9c43e14df55cec6e4f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d75a8afd6b269078a4be3c0c7cc9b370cb9fe9f5
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757112"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866466"
 ---
 # <a name="store-source-content-by-using-web-templates"></a>Almacenar contenido de origen con plantillas web
 
-La plantilla web es una entidad de PowerApps (adx\_webtemplate), que se incluye con los portales de PowerApps, que se usa para almacenar contenido de origen de la plantilla. Una plantilla web contendrá normalmente Liquid para representación de contenido dinámico, y es la entidad central usada para integrar plantillas de Liquid con el resto del sistema de portales de PowerApps.
+La plantilla web es una entidad de Power Apps (adx\_webtemplate), que se incluye con los portales de Power Apps, que se usa para almacenar contenido de origen de la plantilla. Una plantilla web contendrá normalmente Liquid para representación de contenido dinámico, y es la entidad central usada para integrar plantillas de Liquid con el resto del sistema de portales de Power Apps.
 
 Las plantillas web se pueden incluir en otro contenido o combinar con otras mediante etiquetas de plantilla, y se hace referencia a ellas en estas etiquetas mediante el atributo **Nombre**. También se pueden usar para crear plantillas de página personalizadas completas, o para crear encabezados o pies de página personalizados para el sitio web del portal.
 
@@ -27,13 +27,13 @@ Las plantillas web se pueden incluir en otro contenido o combinar con otras medi
 |           |                                                                                                                                                                                                                                                                                 |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   Nombre    |                                                                         Nombre de la plantilla. Usado para hacer referencia a esta plantilla cuando se incluye en otro contenido, o es ampliado por otras plantillas.                                                                         |
-|  Origen   |                                  El contenido de origen de la plantilla. En PowerApps, un editor de código de origen con resalto de sintaxis y otras funciones de edición de código se proporciona para este campo.                                  |
+|  Origen   |                                  El contenido de origen de la plantilla. En Power Apps, un editor de código de origen con resalto de sintaxis y otras funciones de edición de código se proporciona para este campo.                                  |
 | Tipo MIME | Opcionalmente proporciona un tipo MIME para el contenido de la plantilla. Si no se ofrece ninguno, se da por hecho un tipo de texto/html. Esta valor se usará solo en casos en que la plantilla esté asociada a una plantilla de página, y controla la representación de todo el contenido de esa plantilla. |
 |           |                                                                                                                                                                                                                                                                                 |
 
 ## <a name="web-templates-as-page-templates"></a>Plantillas web como plantillas de página
 
-Las plantillas web pueden usarse junto con plantillas de página para crear nuevas plantillas para el sistema de administración de contenido de los portales de PowerApps. Esto se puede hacer completamente desde PowerApps, sin necesidad de escribir código .NET o de volver a implementar la aplicación de portal.
+Las plantillas web pueden usarse junto con plantillas de página para crear nuevas plantillas para el sistema de administración de contenido de los portales de Power Apps. Esto se puede hacer completamente desde Power Apps, sin necesidad de escribir código .NET o de volver a implementar la aplicación de portal.
 
 Para crear una nueva plantilla de página a partir de una plantilla web, seleccione el **Tipo** de Plantilla web cuando cree un nuevo registro de plantilla de página. Luego seleccione una **Plantilla web**.
 
@@ -43,11 +43,11 @@ Si bien los casos de uso más comunes para plantillas web serán representar HTM
 
 ## <a name="web-templates-as-website-headers-and-footers"></a>Plantillas web como encabezados y pies de página de página web
 
-Las plantillas web también se pueden usar para reemplazar el encabezado y el pie de página globales usados por un portal de PowerApps. Para ello, establezca el campo **Plantilla de encabezado** o **Plantilla de pie de página** de la página web en la plantilla web de su elección. Tenga en cuenta que si reemplaza el **Encabezado del sitio web**, la plantilla seleccionada asumirá la responsabilidad de representar la navegación principal, los vínculos de inicio/cierre de sesión, la interfaz de búsqueda, etc. para los elementos de la interfaz del sitio que suele gestionar la plantilla de encabezado predeterminada.
+Las plantillas web también se pueden usar para reemplazar el encabezado y el pie de página globales usados por un portal de Power Apps. Para ello, establezca el campo **Plantilla de encabezado** o **Plantilla de pie de página** de la página web en la plantilla web de su elección. Tenga en cuenta que si reemplaza el **Encabezado del sitio web**, la plantilla seleccionada asumirá la responsabilidad de representar la navegación principal, los vínculos de inicio/cierre de sesión, la interfaz de búsqueda, etc. para los elementos de la interfaz del sitio que suele gestionar la plantilla de encabezado predeterminada.
 
 ## <a name="built-in-web-templates"></a>Plantillas web integradas
 
-Hay un conjunto de plantillas de Liquid preelaboradas disponibles en los portales de PowerApps. Para usarlos, debe incluirlos por nombre, mediante la siguiente lista como referencia.
+Hay un conjunto de plantillas de Liquid preelaboradas disponibles en los portales de Power Apps. Para usarlos, debe incluirlos por nombre, mediante la siguiente lista como referencia.
 
 | Nombre                        | Descripción                                                                                                                                                                                                                             | Código                                                                                   |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|

@@ -1,5 +1,5 @@
 ---
-title: Propiedades de formularios de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
+title: Propiedades de formularios de aplicaciones controladas por modelos en Power Apps | MicrosoftDocs
 description: Comprender las propiedades de formularios principales
 Keywords: Propiedades de formulario principal; Dynamics 365
 author: Mattp123
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3a71fe6cf7771a0e15be85e0696e27226e84467e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: b9b638c63e14d57cddfa36e6d2134b440b76898a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2700319"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868047"
 ---
 # <a name="model-driven-app-form-properties"></a>Propiedades de formularios de aplicaciones controladas por modelos 
 

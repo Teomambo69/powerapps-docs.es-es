@@ -20,20 +20,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8b1b38c94cbd4615ff0ab449944e65089865a823
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c13838bdd957d78552d71636b4a165902154e82c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758740"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865792"
 ---
 # <a name="define-alternate-keys-using-solution-explorer"></a>Definir las claves alternativas con el explorador de soluciones
 
 El explorador de soluciones proporciona una forma de ver y crear claves alternativas para Common Data Service.
 
-El [portal de PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. <br />Más información: 
+El [portal de Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. <br />Más información: 
 - [Definir claves alternativas para hacer referencia a registros](define-alternate-keys-reference-records.md)<br />
-- [Definir las claves alternativas con el portal PowerApps](define-alternate-keys-portal.md)
+- [Definir las claves alternativas con el portal Power Apps](define-alternate-keys-portal.md)
 
 ## <a name="open-solution-explorer"></a>Abra el explorador de soluciones
 
@@ -72,5 +72,5 @@ Mientras [visualiza claves alternativas](#view-alternate-keys), seleccione ![Eli
 ### <a name="see-also"></a>Vea también
 
 [Definir claves alternativas para hacer referencia a registros](define-alternate-keys-reference-records.md)<br />
-[Definir las claves alternativas con el portal PowerApps](define-alternate-keys-portal.md)<br />
+[Definir las claves alternativas con el portal Power Apps](define-alternate-keys-portal.md)<br />
 [Documentación para desarrolladores: Definir claves alternativas para una entidad](/dynamics365/customer-engagement/developer/define-alternate-keys-entity)

@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 4475e9e2ccc474a6eeb3e7a2e959b360b3250aa8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 951b4055aa47a6fba31df5473bd517ed67c8f17d
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757068"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873241"
 ---
 # <a name="template-tags"></a>Etiquetas de plantilla
 
@@ -22,7 +22,7 @@ Las etiquetas de plantilla controlan el resultado de una plantilla de varias for
 
 ## <a name="include"></a>include
 
-Incluye el contenido de una plantilla en otra, por nombre. En los portales de PowerApps, el origen de esta otra plantilla será normalmente una [plantilla web](store-content-web-templates.md). Esto permite la reutilización de fragmentos comunes de plantilla en varios lugares.  
+Incluye el contenido de una plantilla en otra, por nombre. En los portales de Power Apps, el origen de esta otra plantilla será normalmente una [plantilla web](store-content-web-templates.md). Esto permite la reutilización de fragmentos comunes de plantilla en varios lugares.  
 
 Cuando una plantilla se incluye en otra, la plantilla incluida tendrá acceso a las variables definidas en la plantilla primaria.
 
@@ -40,7 +40,7 @@ Usado junto con extends para proporcionar herencia de plantilla. Vea extends par
 
 Usado junto con la etiqueta block para proporcionar herencia de plantilla. Esto permite que varias plantillas usen un diseño compartido, al tiempo que reemplazan áreas específicas del diseño primario.
 
-En los portales de PowerApps, el nombre de la plantilla primaria suministrado a la etiqueta normalmente hará referencia al nombre de una [plantilla web](store-content-web-templates.md).  
+En los portales de Power Apps, el nombre de la plantilla primaria suministrado a la etiqueta normalmente hará referencia al nombre de una [plantilla web](store-content-web-templates.md).  
 
 Cuando se utiliza extends, debe ser el primer contenido de la plantilla, y solo puede ir seguido de una o más etiquetas block.
 
@@ -66,9 +66,13 @@ Permite el resultado de código de Liquid en una página sin analizarlo ni ejecu
 
 `Hello, {{ user.fullname }}. My name is Charles.`
 
+## <a name="substitution"></a>sustitución
+
+Cuando el usuario ha habilitado el almacenamiento en caché del encabezado y pie de página, y desea evitar el almacenamiento en caché de los resultados de cierta sección, puede usar esta etiqueta. Esta etiqueta proporciona el bloque de contenido en el encabezado o pie de página donde el resultado del bloque de contenido envuelto no se almacena en caché. Esto es útil en escenarios en los que el usuario usa un objeto que se puede actualizar con frecuencia, como solicitud, página, idioma y fecha. Por ejemplo, consulte los escenarios de actualización del código fuente de la plantilla web de encabezado y pie de página cuando [el almacenamiento en caché del encabezado y pie de página esté habilitado](../configure/enable-header-footer-output-caching.md).
+
 ### <a name="see-also"></a>Vea también
 
 [Etiquetas del flujo de control](control-flow-tags.md)<br>
 [Etiquetas de iteración](iteration-tags.md)<br>
 [Etiquetas variables](variable-tags.md)<br>
-[Etiquetas de entidad de PowerApps common data service](portals-entity-tags.md)
+[Etiquetas de entidad de Power Apps common data service](portals-entity-tags.md)

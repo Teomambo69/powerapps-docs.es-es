@@ -1,6 +1,6 @@
 ---
-title: Visualización o descarga de recursos para desarrolladores de PowerApps y Common Data Service | MicrosoftDocs
-description: Buscar recursos para desarrolladores y direcciones URL del extremo de servicio PowerApps y Common Data Service
+title: Visualización o descarga de recursos para desarrolladores de Power Apps y Common Data Service | MicrosoftDocs
+description: Buscar recursos para desarrolladores y direcciones URL del extremo de servicio Power Apps y Common Data Service
 keywords: ''
 ms.date: 09/25/2019
 ms.service: powerapps
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ae293843c38e7077580effd1c7670762cec91e1e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4cb1670334f676af1a6ddcb1e90ba47240ed46a4
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2700451"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869587"
 ---
 # <a name="view-or-download-developer-resources"></a>Visualización o descarga de recursos para programadores
 
@@ -31,7 +31,7 @@ Esta página ofrece recursos para desarrolladores e información acerca de la in
 
 ## <a name="view-the-developer-resources-page-for-your-environment"></a>Ver la página de Recursos para desarrolladores para su entorno
 
-1. En el portal de PowerApps seleccione el ![Botón Configuración](../../administrator/media/settings-button-nav-bar.png) botón Configuración y elija **Personalizaciones avanzadas**.
+1. En el portal de Power Apps seleccione el ![Botón Configuración](../../administrator/media/settings-button-nav-bar.png) botón Configuración y elija **Personalizaciones avanzadas**.
 
     ![Personalizaciones avanzadas](media/advanced-customizations-menu.png)
 
@@ -44,11 +44,11 @@ Esta sección proporciona los vínculos para que los desarrolladores busquen rec
 
 |Vínculo |Descripción|
 |---------|---------|
-|[Centro para desarrolladores](https://go.microsoft.com/fwlink/?LinkId=551006).|Empiece aquí para documentos de desarrollo en PowerApps y Common Data Service.|
-|[Comunidad/Foro de PowerApps](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)|Formule y responda preguntas de la comunidad de PowerApps.|
+|[Centro para desarrolladores](https://go.microsoft.com/fwlink/?LinkId=551006).|Empiece aquí para documentos de desarrollo en Power Apps y Common Data Service.|
+|[Comunidad/Foro de Power Apps](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)|Formule y responda preguntas de la comunidad de Power Apps.|
 |[NuGetPaquetes](https://www.nuget.org/profiles/crmsdk)|Descubra los paquetes de NuGet para agregar ensamblados de SDK a sus proyectos.|
 |[Descargar herramientas](/powerapps/developer/common-data-service/download-tools-nuget)|Las herramientas que necesita se pueden descargar desde NuGet. Use el script de PowerShell en esta página para obtener las últimas versiones.|
-|[Código de ejemplo](https://go.microsoft.com/fwlink/?LinkId=553007)|Un repositorio de GitHub para ejemplos de PowerApps.|
+|[Código de ejemplo](https://go.microsoft.com/fwlink/?LinkId=553007)|Un repositorio de GitHub para ejemplos de Power Apps.|
 |[Información general para desarrolladores](https://go.microsoft.com/fwlink/?LinkId=550995)|Vincular a un tema que proporciona información general para desarrolladores.|
 
 ## <a name="connect-your-apps-to-this-instance-of-common-data-service"></a>Conectar las aplicaciones a esta instancia de Common Data Service

@@ -23,15 +23,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4a47f082520b4680c9045209f85c26beb3586875
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0b534e3c4a7aae36d38901b75b34cc87fd7f511e
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752258"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895260"
 ---
 # <a name="using-an-on-premises-data-gateway-in-power-platform-dataflows"></a>Uso de una puerta de enlace de datos local en flujos de datos de Power Platform
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Instale una puerta de enlace de datos local para transferir los datos de forma rápida y segura entre un flujo de datos de Power Platform y un origen de datos que no está en la nube, como una base de datos de SQL Server local o un sitio SharePoint local.
 Se pueden ver todas las puertas de enlace para las cuales dispone de permisos administrativos y administrar los permisos y las conexiones de estas puertas de enlace.
@@ -52,13 +51,13 @@ Con una puerta de enlace, puede conectarse a los datos locales a través de esta
 
 ## <a name="prerequisites"></a>Requisitos previos
 
--   Una cuenta de PowerApps. ¿No tiene una? [Suscribirse durante 30 días gratis](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps).
+-   Una cuenta de Power Apps. ¿No tiene una? [Suscribirse durante 30 días gratis](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps).
 
 -   Se requieren permisos administrativos sobre una puerta de enlace. Estos permisos se proporcionan de forma predeterminada para las puertas de enlace que instale. Los administradores pueden conceder permisos a otros usuarios para puertas de enlace. 
 
--   Una licencia que admite datos locales de acceso mediante una puerta de enlace local. Para obtener más información, consulte la sección “Conectar con los datos y sistemas" de [Buscar la página del plan de PowerApps adecuado](https://powerapps.microsoft.com/pricing/)”.
+-   Una licencia que admite datos locales de acceso mediante una puerta de enlace local. Para obtener más información, consulte la sección “Conectar con los datos y sistemas" de [Buscar la página del plan de Power Apps adecuado](https://powerapps.microsoft.com/pricing/)”.
 
--   Las puertas de enlace y las conexiones locales se pueden crear y usar solo en el entorno predeterminado del usuario. Más información: [Trabajar con entornos y Microsoft PowerApps](../canvas-apps/working-with-environments.md).
+-   Las puertas de enlace y las conexiones locales se pueden crear y usar solo en el entorno predeterminado del usuario. Más información: [Trabajar con entornos y Microsoft Power Apps](../canvas-apps/working-with-environments.md).
 
 ## <a name="install-a-gateway"></a>Instalar una puerta de enlace
 1.  En el panel de navegación de la izquierda de [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione **Puertas de enlace**.
@@ -107,9 +106,9 @@ Puede cambiar la puerta de enlace de empresa usada para un flujo de datos determ
     - Para compartir una conexión, seleccione **Compartir** y agregue o elimine usuarios.
 
       > [!NOTE]
-      > Puede compartir solo algunos tipos de conexiones, como una conexión SQL Server. Para obtener más información, consulte [Compartir recursos de aplicación de lienzo en PowerApps](../canvas-apps/share-app-resources.md). <br />
+      > Puede compartir solo algunos tipos de conexiones, como una conexión SQL Server. Para obtener más información, consulte [Compartir recursos de aplicación de lienzo en Power Apps](../canvas-apps/share-app-resources.md). <br />
       >
-      > Para obtener más información acerca de cómo administrar una conexión, consulte [Administrar conexiones de aplicación de lienzo en PowerApps](../canvas-apps/add-manage-connections.md).
+      > Para obtener más información acerca de cómo administrar una conexión, consulte [Administrar conexiones de aplicación de lienzo en Power Apps](../canvas-apps/add-manage-connections.md).
 
 
 ## <a name="limitations"></a>Limitaciones
@@ -127,7 +126,7 @@ Para obtener información sobre solucionar los problemas con puertas de enlace, 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- [Creación y uso de flujos de datos en PowerApps](create-and-use-dataflows.md)
+- [Creación y uso de flujos de datos en Power Apps](create-and-use-dataflows.md)
 
 - [Agregar datos a una entidad en Common Data Service con Power Query](data-platform-cds-newentity-pq.md)
 

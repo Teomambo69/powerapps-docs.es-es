@@ -10,12 +10,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: 63ecdde21328219b70af04b9b65edbb3073f3025
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 89dacd67f5a7876f7fd0950d0bba4cd60218f296
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749637"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862026"
 ---
 # <a name="add-code-components-to-a-field-or-entity-in-model-driven-apps"></a>Agregar componentes de código a un campo o entidad en aplicaciones basadas en modelo
 
@@ -27,13 +27,13 @@ Los componentes de código permiten transformar en visualizaciones campos que no
 
 ## <a name="add-a-code-component-to-a-field"></a>Agregar un componente de código a un campo
 
-Siga los pasos de este procedimiento para cambiar la etiqueta predeterminada y el campo de cuadro de texto del campo **Importe del presupuesto** por un componente de código deslizante en la entidad Oportunidad. Puede seguir los mismos pasos para sustituir un campo existente por un componente de código o configurar un componente de código para un campo personalizado.
+Siga los pasos para cambiar la etiqueta predeterminada y el campo de cuadro de texto del campo **Importe del presupuesto** por un componente de código deslizante en la entidad Oportunidad. Puede seguir los mismos pasos para sustituir un campo existente por un componente de código o configurar un componente de código para un campo personalizado.
 
 1. Abra el explorador de soluciones.
 
 2. Expanda **Entidades**, expanda la entidad que desee, como la entidad **Oportunidad**, seleccione **Formularios** y, a continuación, abra un formulario como el formulario **Principal** .
 
-3. En el editor de formularios, haga doble clic en el campo en el que desee agregar un componente de código, como el campo **Importe del presupuesto** en el formulario principal de oportunidad. Como alternativa, puede crear un campo personalizado.
+3. En el editor de formularios, haga doble clic en el campo en el que desee agregar un componente de código, como el campo **Importe del presupuesto** en el formulario principal de oportunidad. También puede crear un campo personalizado.
 
 4. En la página **Propiedades de campo**, seleccione la pestaña **Controles** y, a continuación, seleccione **Agregar control**.
 
@@ -68,7 +68,7 @@ Siga los pasos de este procedimiento para cambiar la etiqueta predeterminada y e
   
    - **Paso**. Representa la unidad que debe aumentar o disminuir al sumar o restar del valor actual. Por ejemplo, para el importe del presupuesto, puede seleccionar incrementos/disminuciones de 100 dólares.  
   
-   - **Ocultar control predeterminado**. Al seleccionar esta opción, se oculta el componente, por lo que ni el componente ni los datos se muestran en ninguno de los clientes que no admitan el componente de código.   
+   - **Ocultar control predeterminado**. Se oculta el componente, por lo que ni el componente ni los datos se muestran en ninguno de los clientes que no admitan el componente de código.   
   
 8. Seleccione **Aceptar** para cerrar la página Propiedades de campo.  
   
@@ -97,5 +97,5 @@ Para agregar un componente de código como el componente de conjunto de datos o 
 ### <a name="see-also"></a>Vea también
 
 [Implementación de componentes en TypeScript](implementing-controls-using-typescript.md)<br/>
-[Referencia de la API de PowerApps component framework](reference/index.md)<br/>
-[Información general sobre PowerApps component framework](overview.md)
+[Referencia de la API de Power Apps component framework](reference/index.md)<br/>
+[Información general sobre Power Apps component framework](overview.md)

@@ -19,18 +19,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5fce8b9f693d56cd5f0955779152dbd7d8100378
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 060d749fe3f8c7f3d2e0870b99a836571c29bd86
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757904"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865935"
 ---
 # <a name="create-and-edit-global-option-sets-for-common-data-service-using-solution-explorer"></a>Creación y edición de conjuntos de opciones globales para Common Data Service utilizando el explorador de soluciones
 
 El explorador de soluciones proporciona una forma de crear y editar conjuntos de opciones globales para Common Data Service.
 
-El [portal de PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. <br />Más información: 
+El [portal de Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. <br />Más información: 
 - [Crear y editar conjuntos de opciones globales para Common Data Service](create-edit-global-option-sets.md)
 - [Crear un conjunto de opciones](custom-picklists.md)
 

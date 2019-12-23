@@ -1,6 +1,6 @@
 ---
-title: Información general sobre cómo crear una aplicación controlada por modelos con PowerApps | Microsoft Docs
-description: Instrucciones paso a paso para crear y configurar una entidad para usar con una aplicación de PowerApps.
+title: Información general sobre cómo crear una aplicación controlada por modelos con Power Apps | Microsoft Docs
+description: Instrucciones paso a paso para crear y configurar una entidad para usar con una aplicación de Power Apps.
 documentationcenter: na
 author: Mattp123
 manager: kvivek
@@ -17,14 +17,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 38ea420dc973e5e6c0a4df2ff361344c4704137a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 11febe03a69fe774f2c0394ee5d3a016c901498d
+ms.sourcegitcommit: 5e6d71967902c463f34a9254f988b9c10e431eb4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711759"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "2890701"
 ---
-# <a name="what-are-model-driven-apps-in-powerapps"></a>¿Qué son las aplicaciones controladas por modelos en PowerApps?
+# <a name="what-are-model-driven-apps-in-power-apps"></a>¿Qué son las aplicaciones controladas por modelos en Power Apps?
 
 El diseño de una aplicación controlada por modelos es un enfoque centrado en los componentes para el desarrollo de la aplicación. Para el diseño de aplicaciones controladas por modelos no se requiere código y las aplicaciones que crea pueden ser simples o muy complejas.  A diferencia del desarrollo de aplicaciones de lienzo, donde el diseñador tiene control total sobre el diseño de la aplicación, con las aplicaciones controladas por modelos, la mayoría del diseño lo determina el usuario y viene determinado en gran medida por los componentes que agrega a la aplicación. 
 
@@ -44,7 +44,7 @@ Básicamente, la creación de una aplicación controlada por modelos consta de t
 - Componer la aplicación
 
 ### <a name="modeling-business-data"></a>Modelar datos profesionales
-Para modelar datos empresariales determine qué datos necesitará la aplicación y cómo se relacionarán los datos con otros datos. En el diseño controlado por modelos se usa una arquitectura controlada por metadatos para que los diseñadores puedan personalizar la aplicación sin escribir código. Metadatos significa "datos acerca de datos" y define la estructura de los datos almacenados en el sistema. [Tutorial: Crear una entidad personalizada que tenga componentes en PowerApps](../common-data-service/create-custom-entity.md)
+Para modelar datos empresariales determine qué datos necesitará la aplicación y cómo se relacionarán los datos con otros datos. En el diseño controlado por modelos se usa una arquitectura controlada por metadatos para que los diseñadores puedan personalizar la aplicación sin escribir código. Metadatos significa "datos acerca de datos" y define la estructura de los datos almacenados en el sistema. [Tutorial: Crear una entidad personalizada que tenga componentes en Power Apps](../common-data-service/create-custom-entity.md)
 
 ### <a name="defining-business-processes"></a>Definir procesos de negocio
 La definición y aplicación de procesos de negocio coherentes es un aspecto clave del diseño de aplicaciones controladas por modelos. Los procesos coherentes garantizan que los usuarios de la aplicación se centren en su trabajo y no en recordar realizar un conjunto de pasos manuales. Los procesos pueden ser simples o complejos y normalmente cambian con el tiempo. Para crear un proceso, en el área Controlado por modelos de PowerApps.com, seleccione ![Configuración](media/powerapps-gear.png) > **Personalizaciones avanzadas** > **Abrir explorador de soluciones**. A continuación, en el panel de navegación de la izquierda en el explorador de soluciones, seleccione **Procesos** y, a continuación, **Nuevo**. Más información: [Información general sobre flujos de proceso de negocio](/flow/business-process-flows-overview) y [Aplicar lógica de negocios con Common Data Service](../common-data-service/cds-processes.md). 

@@ -1,5 +1,5 @@
 ---
-title: Conocer los componentes de las aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
+title: Conocer los componentes de las aplicaciones controladas por modelos en Power Apps | MicrosoftDocs
 description: Comprender los distintos componentes de una aplicación controlada por modelos, como datos, IU, lógica y visualización.
 Keywords: campos, atributos, aplicación basada en modelos
 author: Mattp123
@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b84fa7a8bc0b77bddaa4e0a22d68cd983ac735ef
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4f1c05ca41e6873a0072e8ea6720343e468e38bb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711803"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863080"
 ---
 # <a name="understand-model-driven-app-components"></a>Conocer los componentes de las aplicaciones basadas en modelos
 Una aplicación controlada por modelos bien diseñada se compone de varios componentes que selecciona usando el diseñador para crear la apariencia y funcionalidades de la aplicación terminada. Los componentes y propiedades de componentes que los diseñadores usan para crear una aplicación son los metadatos. 
@@ -64,7 +64,7 @@ Determina los procesos de negocio, reglas y automatización que la aplicación t
 |Flujo de trabajo     |  Los flujos de trabajo automatizan los procesos de negocio sin una interfaz de usuario. Los diseñadores usan flujos de trabajo para iniciar tareas de automatización que no requieren ninguna interacción del usuario.       | Diseñador de flujos de trabajo        |
 |Acciones    |  Las acciones son un tipo de proceso que le permiten invocar acciones manualmente, incluidas acciones personalizadas, directamente desde un flujo de trabajo.       |  Diseñador de procesos       |
 |Regla de negocio     | Se usa para aplicar lógica de reglas o de recomendación a un formulario, por ejemplo, para establecer los requisitos de campo, ocultar campos o validar datos. Los diseñadores de aplicaciones usan una interfaz básica para implementar y mantener reglas de evolución rápida y de uso general.         |  Diseñador de reglas de negocio       |
-|Flujo     | Un flujo es un servicio basado en la nube que le permite crear flujos de trabajo automáticos entre aplicaciones y servicios para obtener notificaciones, sincronizar archivos, recopilar datos, etc.        | Microsoft Flow        |
+|Flujo     | Un flujo es un servicio basado en la nube que le permite crear flujos de trabajo automáticos entre aplicaciones y servicios para obtener notificaciones, sincronizar archivos, recopilar datos, etc.        | Power Automate        |
 
 ![Diseñadores de flujos de trabajo, acciones y flujos de proceso de negocio](media/model-driven-app-overview/designer-mash.png)
 

@@ -14,12 +14,12 @@ search.audienceType:
 - customizer
 search.app:
 - PowerApps
-ms.openlocfilehash: b9c0f192f96d9ce967d1b8e56266aadeb64646c9
-ms.sourcegitcommit: 7411b4cf9e30e71052fe932dfd3276e969854af4
+ms.openlocfilehash: bd40b60a82735d2bddb3629c8b34647df9e34857
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2768307"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875456"
 ---
 # <a name="create-guided-help-learning-path-for-your-app"></a>Crear ayuda guiada (Ruta de aprendizaje) para la aplicación
 
@@ -44,7 +44,7 @@ La Ruta de aprendizaje facilita el aprendizaje y adopción de aplicaciones y de 
 
  Para crear contenido de Ruta de aprendizaje, debe:  
 
-- Estar usando PowerApps o [!INCLUDE[pn_crm_online_shortest](../../includes/pn-crm-online-shortest.md)].  
+- Estar usando Power Apps o [!INCLUDE[pn_crm_online_shortest](../../includes/pn-crm-online-shortest.md)].  
 
 - Han optado por recibir la Ruta de aprendizaje. Este valor está activado de forma predeterminada, pero puede haberse desactivado.  
 
@@ -64,7 +64,7 @@ La Ruta de aprendizaje facilita el aprendizaje y adopción de aplicaciones y de 
 ## <a name="turn-on-learning-path-for-your-organization"></a>Activar la Ruta de aprendizaje para la organización  
  La Ruta de aprendizaje es una característica opcional que se puede activar o desactivar para su organización. Puede mostrar el contenido de Ruta de aprendizaje incluido con [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)], crear su propio contenido de Ruta de aprendizaje para los usuarios, o ambos.  
 
-1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) o [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] con una cuenta de administrador.  
+1. Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) o [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] con una cuenta de administrador.  
 
 2. Vaya a **Configuración** y, luego, **Administración** en **Sistema**. Más información: [Configuración](/powerapps/maker/model-driven-apps/advanced-navigation#settings)
 
@@ -133,7 +133,7 @@ La Ruta de aprendizaje facilita el aprendizaje y adopción de aplicaciones y de 
 <a name="ConfigureRoles"></a>   
 #### <a name="configure-security-roles"></a>Configurar roles de seguridad  
 
-1. Inicie sesión en PowerApps con una cuenta que tenga permisos de creación de la Ruta de aprendizaje.  
+1. Inicie sesión en Power Apps con una cuenta que tenga permisos de creación de la Ruta de aprendizaje.  
 
 2. Abra la **Biblioteca de contenido**.  
 

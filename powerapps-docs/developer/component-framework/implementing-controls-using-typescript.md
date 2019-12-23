@@ -1,5 +1,5 @@
 ---
-title: Implementar componentes de código con TypeScript | MicrosoftDocs
+title: Cree su primer componente usando Power Apps Component Framework | MicrosoftDocs
 description: Cómo implementar componentes de código mediante TypeScript
 manager: kvivek
 ms.date: 10/01/2019
@@ -8,16 +8,16 @@ ms.topic: index-page
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 669bf03d7869d6fd625288a65a305a3a458cfde4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: dc71362d9b4076e74b836e9f7aa1603c8c84df47
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749632"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895074"
 ---
-# <a name="implement-components-using-typescript"></a>Implementar componentes con TypeScript
+# <a name="create-your-first-component-using-power-apps-component-framework"></a>Cree su primer componente usando Power Apps Component Framework
 
-En este tema le guiará por el proceso de crear un nuevo componente de código en Typescript mediante PowerApps CLI. En este tutorial crearemos un componente de código lineal de ejemplo que permita a los usuarios cambiar los valores numéricos mediante un control deslizante visual en lugar de teclear los valores en el campo. 
+En este tema le guiará por el proceso de crear un nuevo componente de código en Typescript mediante Power Apps CLI. En este tutorial crearemos un componente de código lineal de ejemplo que permita a los usuarios cambiar los valores numéricos mediante un control deslizante visual en lugar de teclear los valores en el campo. 
 
 Las artefactos necesarios para crear componentes de código son:
 
@@ -131,7 +131,7 @@ export class TSLinearInputComponent
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
   // Value of the field is stored and used inside the component
   private _value: number;
-  // PowerApps component framework delegate which will be assigned to this object which would be called whenever any update happens.
+  // Power Apps component framework delegate which will be assigned to this object which would be called whenever any update happens.
   private _notifyOutputChanged: () => void;
   // label element created as part of this component
   private labelElement: HTMLLabelElement;
@@ -140,7 +140,7 @@ export class TSLinearInputComponent
   // reference to the component container HTMLDivElement
   // This element contains all elements of our code component example
   private _container: HTMLDivElement;
-  // reference to PowerApps component framework Context object
+  // reference to Power Apps component framework Context object
   private _context: ComponentFramework.Context<IInputs>;
   // Event Handler 'refreshData' reference
   private _refreshData: EventListenerOrEventListenerObject;
@@ -174,12 +174,11 @@ export class TSLinearInputComponent
     this._value = context.parameters.sliderValue.raw
       ? context.parameters.sliderValue.raw
       : 0;
-    this.inputElement.setAttribute(
-      "value",
+    this.inputElement.value =
       context.parameters.sliderValue.formatted
         ? context.parameters.sliderValue.formatted
-        : "0"
-    );
+        : "0";
+    
     this.labelElement.innerHTML = context.parameters.sliderValue.formatted
       ? context.parameters.sliderValue.formatted
       : "0";
@@ -206,12 +205,12 @@ export class TSLinearInputComponent
       ? context.parameters.sliderValue.raw
       : 0;
     this._context = context;
-    this.inputElement.setAttribute(
-      "value",
+    this.inputElement.value =
+     
       context.parameters.sliderValue.formatted
         ? context.parameters.sliderValue.formatted
-        : ""
-    );
+        : "";
+    
     this.labelElement.innerHTML = context.parameters.sliderValue.formatted
       ? context.parameters.sliderValue.formatted
       : "";
@@ -376,7 +375,7 @@ Siga estos pasos para crear e importar un archivo de [solución](https://docs.mi
     > - En **Herramientas de código**, active **Destinos de NuGet y tareas de compilación**.
 
 6. El archivo zip generado de la solución se encuentra en la carpeta `Solution\bin\debug`.
-7. [Importe la solución manualmente en Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) mediante el portal web una vez que el archivo zip está listo o consulte las secciones [Autenticar en la organización](import-custom-controls.md#authenticating-to-your-organization) e [Implementación](import-custom-controls.md#deploying-code-components) para importar usando comandos de PowerApps CLI.
+7. Manualmente [importe la solución a Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) usando el portal web una vez que el archivo zip esté listo o consulte las secciones [Conexión a su entorno](import-custom-controls.md#connecting-to-your-environment) e [Implementación](import-custom-controls.md#deploying-code-components) para realizar importaciones usando los comandos CLI de Power Apps.
 
 ## <a name="adding-code-components-in-model-driven-apps"></a>Agregar componentes código en aplicaciones basadas en modelo
 
@@ -389,6 +388,6 @@ Para agregar los componentes de código a una aplicación de lienzo, siga los pa
 ### <a name="see-also"></a>Vea también
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Actualizar componentes existentes de PowerApps component framework](updating-existing-controls.md)<br/>
-[Referencia de la API de PowerApps component framework](reference/index.md)<br/>
-[Información general sobre PowerApps component framework](overview.md)
+[Actualizar componentes existentes de Power Apps component framework](updating-existing-controls.md)<br/>
+[Referencia de la API de Power Apps component framework](reference/index.md)<br/>
+[Información general sobre Power Apps component framework](overview.md)

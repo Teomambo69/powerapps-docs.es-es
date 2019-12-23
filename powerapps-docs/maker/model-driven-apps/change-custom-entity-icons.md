@@ -1,5 +1,5 @@
 ---
-title: Cambiar iconos de entidades personalizadas de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
+title: Cambiar iconos de entidades personalizadas de aplicaciones controladas por modelos en Power Apps | MicrosoftDocs
 definition: Learn how to change the icon for a custom entity
 ms.custom: ''
 ms.date: 05/17/2018
@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f7e23ece0ee37d15ef5401421d078e81dd5d590c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7d45a3fc5afae25f2a4e254c033f4e35be20c0ff
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2700803"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869279"
 ---
 # <a name="change-model-driven-app-custom-entity-icons"></a>Cambiar iconos de entidades personalizadas de aplicaciones controladas por modelos 
 
@@ -69,7 +69,7 @@ Debe usar el explorador de soluciones para establecer iconos de entidades.
   
 ## <a name="community-tools"></a>Herramientas de la Comunidad
 
-**[Iconator](https://www.xrmtoolbox.com/plugins/MscrmTools.Iconator/)** es una herramienta desarrollada por la comunidad de XrmToolbox para PowerApps. Consulte el tema [Herramientas para desarrolladores para Common Data Service](/powerapps/developer/common-data-service/developer-tools) para la comunidad de herramientas desarrolladas.
+**[Iconator](https://www.xrmtoolbox.com/plugins/MscrmTools.Iconator/)** es una herramienta desarrollada por la comunidad de XrmToolbox para Power Apps. Consulte el tema [Herramientas para desarrolladores para Common Data Service](/powerapps/developer/common-data-service/developer-tools) para la comunidad de herramientas desarrolladas.
 
 > [!NOTE]
 > Las herramientas de la comunidad no son un producto de Microsoft y no se incluyen en el soporte técnico. Si tiene alguna duda relacionada con la herramienta, póngase en contacto con el Editor. Más información: [XrmToolBox](https://www.xrmtoolbox.com).

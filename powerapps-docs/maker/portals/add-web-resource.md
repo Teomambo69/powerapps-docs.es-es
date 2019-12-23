@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/11/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: c735513bc0a8f325aaf0debca2170131d45178dc
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 873f2054856e21b7fbf56247a4234ae2fb2a72c9
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756892"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2816491"
 ---
 # <a name="add-the-azure-storage-web-resource-to-a-form"></a>Agregar el recurso de web Azure Storage a un formulario
 
@@ -67,7 +67,7 @@ El icono de clip de papel se ha reemplazado por un icono de nube para indicar qu
 
 > [!Note]
 > También debe agregar la regla de uso compartido de recursos de origen cruzado (CORS) en su cuenta de Azure Storage como sigue; de lo contrario, verá el icono normal de los datos adjuntos en lugar del icono de nube.
-> - **Orígenes permitidos**: Especifique el dominio. Por ejemplo, contoso.crm.dynamics.com.
+> - **Orígenes permitidos**: Especifique el dominio. Por ejemplo, `http://contoso.crm.dynamics.com`.
 > - **Verbos permitidos**: OBTENER, PONER, ELIMINAR, ENCABEZAR, PUBLICAR
 > - **Encabezados permitidos**: Especifique los encabezados de solicitud que el dominio de origen puede especificar en la solicitud de CORS. Por ejemplo, x-ms-meta-data\*, x-ms-meta-target\*. En este escenario, debe especificar *, si no el recurso web no generará representaciones correctamente.
 > - **Encabezados expuestos**: Especifique los encabezados de respuesta que se pueden enviar en la respuesta a la solicitud de CORS y que expone el explorador al emisor de la solicitud. Por ejemplo, x-ms-meta-\*.

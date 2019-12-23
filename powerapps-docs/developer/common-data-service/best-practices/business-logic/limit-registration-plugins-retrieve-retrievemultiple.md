@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d17772aab805ae6d7969db19b888b3565926ca6c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4bd25cf31e21278d94450eadb0a38e32a4ae1292
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749396"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861853"
 ---
 # <a name="limit-the-registration-of-plug-ins-for-retrieve-and-retrievemultiple-messages"></a>Limitar el registro de complementos para los mensajes Retrieve y de RetrieveMultiple
 
@@ -59,7 +59,7 @@ Si es una solución adecuada, siga estas sugerencias para minimizar el impacto e
 
 ### <a name="virtual-entities"></a>Entidades virtuales
 
-Por lo general Retrieve y RetrieveMultiple se invocan en el complementos para recuperar datos de orígenes externos. Los datos de orígenes externos se generan en PowerApps o se usan trabajar con los datos existentes o gestionarlos. Dynamics 365 (online) versión 9.0 presenta una función denominada [Entidades virtuales](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve) que permiten la integración de los datos que se encuentran en sistemas externos y representan sin problemas esos datos como entidades en PowerApps, sin replicación de datos y a menudo sin código personalizado. Consulte la documentación de [Entidades virtuales](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve) para obtener más información acerca de las funcionalidades, las limitaciones y la configuración.
+Por lo general Retrieve y RetrieveMultiple se invocan en el complementos para recuperar datos de orígenes externos. Los datos de orígenes externos se generan en Power Apps o se usan trabajar con los datos existentes o gestionarlos. Dynamics 365 (online) versión 9.0 presenta una función denominada [Entidades virtuales](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve) que permiten la integración de los datos que se encuentran en sistemas externos y representan sin problemas esos datos como entidades en Power Apps, sin replicación de datos y a menudo sin código personalizado. Consulte la documentación de [Entidades virtuales](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve) para obtener más información acerca de las funcionalidades, las limitaciones y la configuración.
 
 ### <a name="retrieve-caution"></a>Precaución de Retrieve
 

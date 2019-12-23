@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8ba09c46a46d0a4d40891419e1f6eb787f75f096
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 67941c3793be4a7dbb6860a6787536759cc267c4
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2703927"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868311"
 ---
 # <a name="configure-a-lookup-component-on-a-form"></a>Configurar un componente de búsqueda en un formulario  
 Un campo de búsqueda se puede usar para vincular con un registro en otra entidad. Se utiliza un componente de búsqueda automáticamente cuando un campo de búsqueda se agrega a un formulario. Los fabricantes pueden configurar un componente de búsqueda con el diseñador de formularios.

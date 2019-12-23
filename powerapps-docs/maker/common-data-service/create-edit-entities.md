@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ba8fe12a9ecffa0ffb1116546d2bfe9ab2c62ac8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c13092daaa86abbcba5ef65dc809f29d9a6a6f12
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758080"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883724"
 ---
 # <a name="create-and-edit-entities-in-common-data-service"></a>Crear y editar entidades en Common Data Service
 
@@ -36,7 +36,7 @@ Hay dos diseñadores que puede usar para crear una entidad:
 
 |Diseñador| Descripción|
 |--|--|
-|[Portal PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Proporciona una experiencia fácil y ágil, pero algunos valores especiales no están disponibles.<br />Más información: <br />[Tutorial: Crear una entidad personalizada que tenga componentes en PowerApps](/powerapps/maker/common-data-service/create-custom-entity)<br />[Crear y editar entidades con el portal de PowerApps](create-edit-entities-portal.md)|
+|[Portal Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Proporciona una experiencia fácil y ágil, pero algunos valores especiales no están disponibles.<br />Más información: <br />[Tutorial: Crear una entidad personalizada que tenga componentes en Power Apps](/powerapps/maker/common-data-service/create-custom-entity)<br />[Crear y editar entidades con el portal de Power Apps](create-edit-entities-portal.md)|
 |Explorador de soluciones|No es tan fácil, pero proporciona más flexibilidad para requisitos menos comunes. <br />Más información: [Crear y editar entidades con el explorador de soluciones](create-edit-entities-solution-explorer.md)|
 
 > [!NOTE]
@@ -46,9 +46,9 @@ Hay dos diseñadores que puede usar para crear una entidad:
 > - Un programador puede usar [Servicios de metadatos](/powerapps/developer/common-data-service/use-web-services#metadata-services) para escribir un programa.
 
 
-## <a name="entity-options-not-available-in-the-powerapps-portal"></a>Las opciones de entidad no están disponibles en el portal de PowerApps
+## <a name="entity-options-not-available-in-the-power-apps-portal"></a>Las opciones de entidad no están disponibles en el portal de Power Apps
 
-La información de este tema le ayudará a elegir el diseñador que puede usar. Puede usar el portal de PowerApps para crear la entidad a menos que necesite satisfacer cualquiera de los siguientes requisitos.
+La información de este tema le ayudará a elegir el diseñador que puede usar. Puede usar el portal de Power Apps para crear la entidad a menos que necesite satisfacer cualquiera de los siguientes requisitos.
 
 - Controlar el prefijo de personalización
 
@@ -56,7 +56,7 @@ La información de este tema le ayudará a elegir el diseñador que puede usar. 
 
 - Crear entidad propiedad de la organización
 
-  De forma predeterminada, el portal de PowerApps creará entidades propiedad de un **Usuario o equipo**. Use el explorador de soluciones para establecer la propiedad en **Organización**. Más información: [Propiedad de entidad](types-of-entities.md#entity-ownership).
+  De forma predeterminada, el portal de Power Apps creará entidades propiedad de un **Usuario o equipo**. Use el explorador de soluciones para establecer la propiedad en **Organización**. Más información: [Propiedad de entidad](types-of-entities.md#entity-ownership).
 
 - Crear una entidad de actividad
 
@@ -85,7 +85,7 @@ La información de este tema le ayudará a elegir el diseñador que puede usar. 
   |**Habilitar para móvil**|Hace que esta entidad esté disponible para las aplicaciones de Dynamics 365 for phones y tablets. También tiene la opción de convertir esta entidad en **Solo lectura en móvil**.<br /><br /> Si los formularios de una entidad requieren una extensión que no es compatible con las aplicaciones Dynamics 365 for phones y tablets, use esta configuración para asegurarse de que los usuarios de aplicaciones móviles no puedan editar los datos de estas entidades.|
   |**Habilitar para Phone Express**|Hace que esta entidad esté disponible para la aplicación Dynamics 365 for phones.|
   |**Combinar correspondencia**|Los usuarios pueden usar esta entidad con la combinación de correspondencia.|
-  |**Funcionalidad sin conexión para Dynamics 365 for Outlook**|Especifica si los datos de esta entidad estarán disponibles mientras la aplicación Dynamics 365 for Outlook no esté conectada a la red.|
+  |**Capacidad de trabajar sin conexión de Dynamics 365 for Outlook**|Especifica si los datos de esta entidad estarán disponibles mientras la aplicación Dynamics 365 for Outlook no esté conectada a la red.|
   |**Panel de lectura en Dynamics 365 for Outlook**|Especifica si la entidad estará visible en el panel de lectura de la aplicación Dynamics 365 for Outlook.|
   |**Usar la Ayuda personalizada**|Si se habilita esta opción, establece una dirección URL de Ayuda para controlar qué página verán los usuarios cuando hagan clic en el botón Ayuda de la aplicación. Use esta opción para dar instrucciones específicas para los procesos de su empresa para la entidad.|
 
@@ -93,6 +93,6 @@ La información de este tema le ayudará a elegir el diseñador que puede usar. 
 ### <a name="see-also"></a>Vea también
 
 [Crear y editar entidades con el explorador de soluciones](create-edit-entities-solution-explorer.md)<br />
-[Tutorial: Crear una entidad personalizada que tenga componentes en PowerApps](/powerapps/maker/common-data-service/create-custom-entity)<br />
+[Tutorial: Crear una entidad personalizada que tenga componentes en Power Apps](/powerapps/maker/common-data-service/create-custom-entity)<br />
 [Editar una entidad](edit-entities.md)<br />
 [Documentación para desarrolladores: crear una entidad personalizada](/dynamics365/customer-engagement/developer/org-service/create-custom-entity)

@@ -1,6 +1,6 @@
 ---
-title: Información general de campos en PowerApps | MicrosoftDocs
-description: Información sobre campos en el portal de PowerApps
+title: Información general de campos en Power Apps | MicrosoftDocs
+description: Información sobre campos en el portal de Power Apps
 ms.custom: ''
 ms.date: 07/25/2018
 ms.reviewer: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 24d92eaad2468d7537d3091e8bef0ca8ef7f6903
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c6b729731c34930cef8123d052dcfbc4b7508833
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701639"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861047"
 ---
 # <a name="fields-overview"></a>Información general de campos
 

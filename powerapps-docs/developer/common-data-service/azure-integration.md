@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5d5bce76dd9e123d6d6c5db1e8d1dc59293471f2
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 46f7c5506f8c26a70188e8b3cec59b26bf13cb1e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753060"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861861"
 ---
 # <a name="azure-integration"></a>Integración de Azure
 
@@ -70,7 +70,7 @@ De forma similar a los complementos, las actividades de flujo de trabajo persona
   
 ### <a name="asynchronous-service"></a>Servicio asincrónico
 
-Una vez notificado por el servicio de notificación de extremo de servicio, el servicio asincrónico controla la publicación del contexto de datos del mensaje de solicitud que está procesando actualmente la canalización de ejecución de eventos en el Azure Service Bus. Cada publicación la realiza un trabajo del sistema del servicio asincrónico. Un usuario puede ver el estado de cada trabajo del sistema con la vista **Trabajos del sistema** de la aplicación web de PowerApps.  
+Una vez notificado por el servicio de notificación de extremo de servicio, el servicio asincrónico controla la publicación del contexto de datos del mensaje de solicitud que está procesando actualmente la canalización de ejecución de eventos en el Azure Service Bus. Cada publicación la realiza un trabajo del sistema del servicio asincrónico. Un usuario puede ver el estado de cada trabajo del sistema con la vista **Trabajos del sistema** de la aplicación web de Power Apps.  
   
 Para obtener más información sobre el servicio asincrónico consulte [Servicio asincrónico](asynchronous-service.md).  
   

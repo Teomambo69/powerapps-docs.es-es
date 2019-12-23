@@ -1,5 +1,5 @@
 ---
-title: Utilizar el formulario principal de la aplicación controlada por modelos y sus componentes en PowerApps | Microsoft Docs
+title: Utilizar el formulario principal de la aplicación controlada por modelos y sus componentes en Power Apps | Microsoft Docs
 description: Aprender a usar el formulario principal y sus componentes en las aplicaciones basadas en la interfaz unificada
 keywords: Formularios principales; Customer Service; Centro de servicio al cliente; Dynamics 365
 author: Mattp123
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 610a4baf51a2affea142b496d016d732fa626d20
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3232099a5ad1526ad351aea37e8952afc6e474bf
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755924"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884296"
 ---
 # <a name="use-the-model-driven-app-main-form-and-its-components"></a>Utilizar el formulario principal de la aplicación controlada por modelos y sus componentes
 
@@ -41,9 +41,9 @@ Siga las instrucciones a continuación para acceder al editor de formularios.
 > Si crea componentes de la solución nuevos en el proceso de edición del formulario, los nombres de los componentes usarán el prefijo de personalización del editor de soluciones de la solución predeterminada y estos componentes solo se incluirán en la solución predeterminada. Si desea que los nuevos componentes de la solución se incluyan en una solución no administrada específica, abra el editor de formularios a través de esa solución no administrada.
 
 
-### <a name="access-the-form-editor-through-app-designer-in-powerapps"></a>Acceda al editor de formularios a través del diseñador de aplicaciones en PowerApps
+### <a name="access-the-form-editor-through-app-designer-in-power-apps"></a>Acceda al editor de formularios a través del diseñador de aplicaciones en Power Apps
 
-1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  En el panel de navegación de la izquierda seleccione **Aplicaciones**, seleccione la aplicación que desee y, en la barra de herramientas, seleccione **Editar**.  
 
@@ -64,7 +64,7 @@ Siga las instrucciones a continuación para acceder al editor de formularios.
 
 ### <a name="access-the-form-editor-through-the-default-solution"></a>Acceso al editor de formularios a través de la solución predeterminada
 
-1.  Inicie sesión en [PowerApps](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Inicie sesión en [Power Apps](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**.  
 

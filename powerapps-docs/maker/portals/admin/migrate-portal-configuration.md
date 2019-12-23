@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 0aa057594b500c7019a4d645c70cafcfff183608
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 80f9cc89b0da2eec5d134f282507e68658e42a96
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756012"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2816403"
 ---
 # <a name="migrate-portal-configuration"></a>Migrar la configuración del portal
 
@@ -29,11 +29,16 @@ Para exportar datos de instalación, deberá usar la herramienta Migración de l
 > - La versión mínima de la solución de portales que admiten los archivos de esquema para la migración de la configuración es 8.4.0.275. Sin embargo, se recomienda que use la versión más reciente de la solución.
 
 Los archivos de esquema están disponibles para los tipos de portal siguientes:
-- [Portal de la comunidad](https://go.microsoft.com/fwlink/p/?linkid=2019704)
-- [Portal de autoservicio de clientes](https://go.microsoft.com/fwlink/p/?linkid=2019705)
-- [Portal de asociados](https://go.microsoft.com/fwlink/p/?linkid=2019803)
-- [Portal de autoservicio de empleados](https://go.microsoft.com/fwlink/p/?linkid=2019802)
-- [Portal personalizado](https://go.microsoft.com/fwlink/p/?linkid=2019804)
+
+- **Portales creados en un entorno con Common Data Service**
+    - [Portal personalizado (portal vacío)](https://go.microsoft.com/fwlink/p/?linkid=2110477)
+
+- **Portales creados en un entorno que contiene aplicaciones basadas en modelo en Dynamics 365**
+    - [Portal personalizado (portal vacío)](https://go.microsoft.com/fwlink/p/?linkid=2019804)
+    - [Portal de la comunidad](https://go.microsoft.com/fwlink/p/?linkid=2019704)
+    - [Portal de autoservicio de clientes](https://go.microsoft.com/fwlink/p/?linkid=2019705)
+    - [Portal de asociados](https://go.microsoft.com/fwlink/p/?linkid=2019803)
+    - [Portal de autoservicio de empleados](https://go.microsoft.com/fwlink/p/?linkid=2019802)
 
 El archivo de esquema predeterminado contiene información sobre las entidades, relaciones y definiciones de la exclusividad del portal para cada entidad. Más información: [Exportar datos de configuración del portal](#export-portal-configuration-data)
 

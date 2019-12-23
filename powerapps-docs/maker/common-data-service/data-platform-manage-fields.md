@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b0c576b8eab2b547c66a90f0693becf516b01207
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fd0499f48cfb5c02d8dab45b89bd38b753850ea1
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758608"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865531"
 ---
 # <a name="manage-custom-fields-in-an-entity"></a>Administrar campos personalizados de una entidad
 Puede crear y actualizar uno o varios campos personalizados de cualquier entidad. Cuando crea un campo personalizado, especifica un conjunto de propiedades, como el nombre del campo, el nombre para mostrar y el tipo de datos que contendrá. Para obtener más información, consulte [Metadatos de atributos de entidad](../../developer/common-data-service/entity-attribute-metadata.md).
@@ -106,5 +106,5 @@ Cuando cree y modifique campos, tenga en cuenta lo siguiente:
 * [Crear una aplicación desde cero usando una base de datos de Common Data Service](../canvas-apps/data-platform-create-app-scratch.md)
 
 ## <a name="privacy-notice"></a>Aviso de privacidad
-Con el modelo común de datos de Microsoft PowerApps, recopilamos y almacenamos la entidad personalizada y los nombres de campo en nuestros sistemas de diagnóstico.  Usamos esta información para mejorar el modelo común de datos para los clientes. La entidad y los nombres de campo que los creadores crean nos ayudan a comprender los escenarios que son comunes en la comunidad de Microsoft PowerApps y a determinar los huecos en la cobertura de las entidades estándar del servicio, como los esquemas relacionados con las organizaciones. Microsoft no accede a los datos de las tablas de base de datos asociadas a estas entidades ni los usa o replica fuera de la región en la que se proporciona la base de datos. No obstante, tenga en cuenta que la entidad personalizada y los nombres de campo se pueden replicar en las regiones y que se eliminan de acuerdo con nuestras directivas de retención de datos. Microsoft se compromete a proteger su privacidad, como se describe con más detalle en nuestro [Centro de confianza](https://www.microsoft.com/trustcenter/Privacy/default.aspx).
+Con el modelo común de datos de Microsoft Power Apps, recopilamos y almacenamos la entidad personalizada y los nombres de campo en nuestros sistemas de diagnóstico.  Usamos esta información para mejorar el modelo común de datos para los clientes. La entidad y los nombres de campo que los creadores crean nos ayudan a comprender los escenarios que son comunes en la comunidad de Microsoft Power Apps y a determinar los huecos en la cobertura de las entidades estándar del servicio, como los esquemas relacionados con las organizaciones. Microsoft no accede a los datos de las tablas de base de datos asociadas a estas entidades ni los usa o replica fuera de la región en la que se proporciona la base de datos. No obstante, tenga en cuenta que la entidad personalizada y los nombres de campo se pueden replicar en las regiones y que se eliminan de acuerdo con nuestras directivas de retención de datos. Microsoft se compromete a proteger su privacidad, como se describe con más detalle en nuestro [Centro de confianza](https://www.microsoft.com/trustcenter/Privacy/default.aspx).
 

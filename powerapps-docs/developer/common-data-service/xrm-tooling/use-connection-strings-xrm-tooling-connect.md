@@ -2,17 +2,11 @@
 title: Usar cadenas de conexión en útiles de XRM para conectarse a Common Data Service (Common Data Service)| Microsoft Docs
 description: Los útiles de XRM le permiten conectarse al entorno de Common Data Service mediante cadenas de conexión.
 ms.custom: ''
-ms.date: 03/27/2019
+ms.date: 11/13/2019
 ms.reviewer: ''
 ms.service: powerapps
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: article
-applies_to:
-- Dynamics 365 (online)
-ms.assetid: a98b2fce-df49-4b60-91f4-a4446aa61cd3
-caps.latest.revision: 21
-author: MattB-msft
+author: nkrb
 ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
@@ -20,18 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 326904046c33ed426d879794c3076d7a509741dd
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 648aba609cb8b7b8cafeefa9515fabf0751595c7
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749644"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2815948"
 ---
 # <a name="use-connection-strings-in-xrm-tooling-to-connect-to-common-data-service"></a>Usar cadenas de conexión en útiles de XRM para conectarse a Common Data Service
 
 Con Common Data Service, los útiles de XRM le permiten conectarse al entorno de Common Data Service mediante cadenas de conexión. Esto es similar al concepto de cadenas de conexión que se utilizan con **SQL Server**. Las cadenas de conexión tienen compatibilidad nativa en archivos de configuración, incluida la capacidad de cifrar las secciones de configuración para máxima seguridad. Esto permite configurar las conexiones de Common Data Service en tiempo de implementación, y no codificar de forma rígida en su aplicación para conectarse al entorno de Common Data Service.  
-
-
 
 
 <a name="Create"></a> 
@@ -42,7 +34,7 @@ Con Common Data Service, los útiles de XRM le permiten conectarse al entorno de
   
 ```xml  
 <connectionStrings>  
-    <add name="MyCDSServer" connectionString="AuthType=OAuth;Username=jsmith@contoso.onmicrosoft.com;Password=passcode;Url=https://contosotest.crm.dynamics.com;AppId=51f81489-12ee-4a9e-aaae-a2591f45987d;RedirectUri=app://58145B91-0C36-4500-8554-080854F2AC97;TokenCacheStorePath=c:\MyTokenCache;LoginPrompt=Auto"
+    <add name="MyCDSServer" connectionString="AuthType=OAuth;Username=jsmith@contoso.onmicrosoft.com;Password=passcode;Url=https://contosotest.crm.dynamics.com;AppId=51f81489-12ee-4a9e-aaae-a2591f45987d;RedirectUri=app://58145B91-0C36-4500-8554-080854F2AC97;TokenCacheStorePath=c:\MyTokenCache;LoginPrompt=Auto"/>
 </connectionStrings>  
 ```  
   
@@ -96,7 +88,7 @@ CrmServiceClient svc = new CrmServiceClient(ConnectionString);
 
 ## <a name="connection-string-examples"></a>Ejemplos de cadena de conexión
  
-Los ejemplos siguientes muestran cómo usar cadenas de conexión para conectar con implementaciones y escenarios de autenticación. Los ejemplos de la cadena de conexión para instancias locales y de implementación IFD están ahora disponibles en la documentación de Dynamics 365 Customer Engagement (on-premises) en: [Usar cadenas de conexión en útiles de XRM para conectarse a Customer Engagement](/dynamics365/customer-engagement/on-premises/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect) 
+Los ejemplos siguientes muestran cómo usar cadenas de conexión para conectar con implementaciones y escenarios de autenticación. Los ejemplos de la cadena de conexión para instancias locales y de implementación IFD están ahora disponibles en la documentación de Dynamics 365 Customer Engagement (on-premises) en: [Usar cadenas de conexión en útiles de XRM para conectarse a Customer Engagement](/dynamics365/customerengagement/on-premises/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect) 
 
 ### <a name="named-account-using-office-365"></a>Cuenta con nombre utilizando Office 365  
   
@@ -110,6 +102,7 @@ Los ejemplos siguientes muestran cómo usar cadenas de conexión para conectar c
 ```  
   
 ### <a name="oauth-using-named-account-in-office-365-with-ux-to-prompt-for-authentication"></a>OAuth utilizando cuenta con nombre en Office 365 con UX para solicitar autenticación  
+
 Crear una nueva conexión con Common Data Service usando un UserID o contraseña mediante OAuth.
 
 > [!NOTE]
@@ -163,6 +156,7 @@ Crear una nueva conexión con Common Data Service usando un Id. de la aplicació
 ```
 
 ### <a name="clientid-or-client-secret-based-authentication"></a>Autenticación basada en ClientId o secreto de cliente
+
 Crear una nueva conexión con Common Data Service usando un Id. de la aplicación o de cliente y un secreto de cliente.
 ```xml
 <add name="MyCDSServer" 

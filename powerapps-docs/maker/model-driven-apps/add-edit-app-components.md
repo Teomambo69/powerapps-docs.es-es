@@ -1,6 +1,6 @@
 ---
-title: Tutorial para agregar o editar componentes de aplicación controlada por modelos con PowerApps | MicrosoftDocs
-description: Utilice el diseñador de aplicaciones de PowerApps para agregar o editar componentes.
+title: Tutorial para agregar o editar componentes de aplicación controlada por modelos con Power Apps | MicrosoftDocs
+description: Utilice el diseñador de aplicaciones de Power Apps para agregar o editar componentes.
 keywords: ''
 ms.date: 10/15/2018
 ms.service: powerapps
@@ -23,14 +23,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c9cbb77b0b312b4376aed8b5f9d106e2c2826ea4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f78b990432988de5ba1d6c2b254bef8577770d16
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752214"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873570"
 ---
-# <a name="tutorial-add-or-edit-model-driven-app-components-in-the-powerapps-app-designer"></a>Tutorial: Agregar o editar componentes de aplicación controlada por modelos en el diseñador de aplicaciones de PowerApps
+# <a name="tutorial-add-or-edit-model-driven-app-components-in-the-power-apps-app-designer"></a>Tutorial: Agregar o editar componentes de aplicación controlada por modelos en el diseñador de aplicaciones de Power Apps
 
 En este tutorial aprenderá a agregar y quitar componentes de una aplicación controlada por modelos. 
 
@@ -56,7 +56,7 @@ El diseñador de la aplicación hace referencia a metadatos existentes en la sol
  > ![Opción de búsqueda en el lienzo](media/app-designer-search-tab.png "Buscar en el lienzo")
 
 ## <a name="open-an-app"></a>Abra una aplicación
-1. Inicie sesión en [PowerApps](https://make.powerapps.com/). 
+1. Inicie sesión en [Power Apps](https://make.powerapps.com/). 
 
 2. Seleccione una aplicación basada en modelos ya existente o seleccione **Empezar en blanco**. Para obtener información acerca de cómo crear una aplicación, consulte [Creación o edición de una aplicación controlada por modelos usando el diseñador de aplicaciones](create-edit-app.md#create-an-app).
 
@@ -85,7 +85,7 @@ El diseñador de la aplicación hace referencia a metadatos existentes en la sol
 
      Esos paneles se agregarán a la ventana **Panel** en el lienzo del diseñador de la aplicación. La ventana **Panel** también muestra el número de paneles agregados a la aplicación. Si no selecciona un panel, **Todos** aparecerán en vez del recuento de paneles y estarán disponibles todos los paneles para los usuarios cuando usen la aplicación.  
   
-     Todas las entidades que utiliza el panel también se agregan al área **Vista de la entidad**. Por ejemplo, si agrega el panel Administrador de servicio de atención al cliente, las entidades Caso, Derechos y Cola se agregan al área Vista de entidad. Para cada entidad, también se agregan las ventanas de sus activos. Puede usar estas ventanas para agregar formularios, vistas y gráficos. Más información:[Agregar o editar componentes en el diseñador de aplicaciones de PowerApps](add-edit-app-components.md#bkmk_AddEntityAssets)   
+     Todas las entidades que utiliza el panel también se agregan al área **Vista de la entidad**. Por ejemplo, si agrega el panel Administrador de servicio de atención al cliente, las entidades Caso, Derechos y Cola se agregan al área Vista de entidad. Para cada entidad, también se agregan las ventanas de sus activos. Puede usar estas ventanas para agregar formularios, vistas y gráficos. Más información:[Agregar o editar componentes en el diseñador de aplicaciones de Power Apps](add-edit-app-components.md#bkmk_AddEntityAssets)   
   
     ![Agregar la entidad al lienzo del diseñador de aplicaciones](../model-driven-apps/media/add-entity-app-designer-canvas.png "Agregar una entidad al lienzo del diseñador de aplicaciones")  
   

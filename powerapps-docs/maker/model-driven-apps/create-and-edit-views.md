@@ -1,5 +1,5 @@
 ---
-title: Crear o editar una vista de aplicación controlada por modelos en PowerApps | MicrosoftDocs
+title: Crear o editar una vista de aplicación controlada por modelos en Power Apps | MicrosoftDocs
 description: Aprenda a crear o editar una vista
 ms.custom: ''
 ms.date: 06/11/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7a83134fb655e67dba8b0aa211ba6f25ec383832
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 68d295e6c5426296cf4fb77e794b7c6edbf37021
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759356"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875594"
 ---
 # <a name="create-or-edit-a-model-driven-app-view"></a>Crear o editar una vista de aplicación controlada por modelos
 
@@ -37,7 +37,7 @@ ms.locfileid: "2759356"
   
 ### <a name="create-a-new-view"></a>Crea una vista  
   
-1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
     
 
@@ -65,11 +65,11 @@ ms.locfileid: "2759356"
 
 7.  Seleccione **Aceptar** para cerrar el cuadro de diálogo **Editar criterios de filtrado** y, a continuación, seleccione **Guardar y cerrar** en el editor de la vista.  
   
-8.  Tenga en cuenta que la vista ahora está disponible en la pestaña **Vistas** en el sitio de PowerApps, lo que permite agregarla a una aplicación.
+8.  Tenga en cuenta que la vista ahora está disponible en la pestaña **Vistas** en el sitio de Power Apps, lo que permite agregarla a una aplicación.
   
 ### <a name="edit-a-view"></a>Edite una vista  
   
-1.  En la pestaña **Vistas** en el sitio de PowerApps, seleccione la vista **Número de empleados**.
+1.  En la pestaña **Vistas** en el sitio de Power Apps, seleccione la vista **Número de empleados**.
   
 2.  Cambie el **Nombre** de la vista a **Número de empleados con 25 o más empleados de Arizona** y, a continuación, seleccione **Aceptar**.  
 

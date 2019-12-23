@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 2de821da110808432cc6769995e94c9d2a1e8523
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 36c6657e8f565b38495dded1f408c21cc0414356
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2709075"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866991"
 ---
 # <a name="portal-management-app"></a>Aplicación Administración del portal
 
 La aplicación Administración del portal permite realizar acciones de configuración avanzadas en el portal. La aplicación está disponible después de que la base de datos en Common Data Service se cree correctamente.
 
-Para abrir la aplicación Administración del portal, vaya a la sección **Las aplicaciones** en la página principal de PowerApps, busque la aplicación Administración del portal y, selecciónela.
+Para abrir la aplicación Administración del portal, vaya a la sección **Las aplicaciones** en la página principal de Power Apps, busque la aplicación Administración del portal y, selecciónela.
 
 > [!div class=mx-imgBorder]
 > ![Aplicación Administración del portal](../media/portal-mgmt.png "Aplicación Administración del portal")

@@ -1,6 +1,6 @@
 ---
 title: Importar, actualizar y exportar soluciones | MicrosoftDocs
-description: Obtener información sobre cómo importar, actualizar y exportar una solución en PowerApps
+description: Obtener información sobre cómo importar, actualizar y exportar una solución en Power Apps
 ms.custom: ''
 ms.date: 09/30/2019
 ms.reviewer: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: de2c4a4ecefe303f607a9d7f19d892eae2c4bffb
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d726860afa8aa2f3cdbb60ede7c549df4da424d2
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701595"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884738"
 ---
 # <a name="import-update-and-export-solutions"></a>Importar, actualizar y exportar soluciones 
 
@@ -93,12 +93,12 @@ ms.locfileid: "2701595"
 <a name="BKMK_ExportSolutions"></a>   
 
 ## <a name="export-solutions"></a>Exportar soluciones  
- Se recomienda crear una solución no administrada para usar para exportar las personalizaciones. A continuación exporte las personalizaciones periódicamente para tener una copia de seguridad en caso de que surjan problemas. No puede exportar soluciones administradas. Puede exportar soluciones desde PowerApps o puede exportar mediante la experiencia clásica. 
+ Se recomienda crear una solución no administrada para usar para exportar las personalizaciones. A continuación exporte las personalizaciones periódicamente para tener una copia de seguridad en caso de que surjan problemas. No puede exportar soluciones administradas. Puede exportar soluciones desde Power Apps o puede exportar mediante la experiencia clásica. 
  
 > [!IMPORTANT]
 > Exportar la solución predeterminada no se admite. 
 
-### <a name="export-from-powerapps"></a>Exportar de PowerApps
+### <a name="export-from-power-apps"></a>Exportar de Power Apps
   
 1.  Seleccione **Soluciones** en la barra de navegación izquierda.   
   
@@ -134,7 +134,7 @@ ms.locfileid: "2701595"
 <a name="BKMK_SettingsOptionsOnSolutionExport"></a>  
  
 ## <a name="settings-options-for-solution-export"></a>Opciones de configuración para la exportación de la solución  
- Si exporta la solución desde PowerApps, ignore esta sección. La siguiente tabla muestra las opciones disponibles cuando se exporta una solución desde la experiencia clásica.  
+ Si exporta la solución desde Power Apps, ignore esta sección. La siguiente tabla muestra las opciones disponibles cuando se exporta una solución desde la experiencia clásica.  
   
 |Grupo|Configuración|Descripción|  
 |-----------|-------------|-----------------|  

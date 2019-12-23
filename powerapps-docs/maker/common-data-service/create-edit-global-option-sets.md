@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e1b89a4f87938ac0147a6724e27441517728baef
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 746f3b1677df7eb89ce35ef1161a291bfdb7d2be
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757860"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865891"
 ---
 # <a name="create-and-edit-global-option-sets-overview"></a>Información general para crear y editar conjuntos de opciones globales 
 
@@ -43,7 +43,7 @@ Hay dos diseñadores que puede usar para crear o editar conjuntos de opciones gl
 
 |Diseñador| Descripción|
 |--|--|
-|[Portal PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Proporciona una experiencia fácil y ágil, pero algunos valores especiales no están disponibles.<br />Más información: [Crear un conjunto de opciones](custom-picklists.md) |
+|[Portal Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Proporciona una experiencia fácil y ágil, pero algunos valores especiales no están disponibles.<br />Más información: [Crear un conjunto de opciones](custom-picklists.md) |
 |Explorador de soluciones|No es tan fácil, pero proporciona más flexibilidad para requisitos menos comunes. <br />Más información: [Creación y edición de conjuntos de opciones globales para Common Data Service utilizando el explorador de soluciones](create-edit-global-option-sets-solution-explorer.md) |
 
 > [!NOTE]
@@ -53,7 +53,7 @@ Hay dos diseñadores que puede usar para crear o editar conjuntos de opciones gl
 
 La información de este tema le ayudará a elegir el diseñador que puede usar. 
 
-Debe usar el [portal de PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) para trabajar con conjuntos de opciones globales a menos que necesite satisfacer cualquiera de los siguientes requisitos:
+Debe usar el [portal de Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) para trabajar con conjuntos de opciones globales a menos que necesite satisfacer cualquiera de los siguientes requisitos:
 
 - Asignar colores a opciones
 - Cambiar el orden de las opciones

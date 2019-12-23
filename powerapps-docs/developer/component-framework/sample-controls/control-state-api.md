@@ -1,7 +1,6 @@
 ---
 title: API de estado de control | Microsoft Docs
 description: ''
-keywords: PowerApps; PowerApps component framework
 ms.author: nabuthuk
 author: Nkrb
 manager: kvivek
@@ -11,16 +10,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4a77bf37-8ea0-4fe3-9fe7-2769387167c3
-ms.openlocfilehash: 57982a4e9a4ee50954eb7b5f12e75a8ca43544ef
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 507a2f68c331556d7085f3add597996175130572
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749934"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861974"
 ---
 # <a name="implementing-control-state-api-component"></a>Implementar el componente API de estado de control
 
-PowerApps component framework le permite mantener el estado del componente a través de varias representaciones del componente en la misma sesión. Proporciona la posibilidad de crear componentes que puedan mantener el estado de usuario a lo largo de la sesión del usuario mientras el usuario navega a y desde el componente.
+Power Apps component framework le permite mantener el estado del componente a través de varias representaciones del componente en la misma sesión. Proporciona la posibilidad de crear componentes que puedan mantener el estado de usuario a lo largo de la sesión del usuario mientras el usuario navega a y desde el componente.
 
 Por ejemplo, si el componente de código es una lista larga por la que el usuario puede desplazarse, puede aprovechar la funcionalidad **_SetControlState_** para recordar el punto de la lista que el usuario está mirando cuando sale del formulario. A continuación puede agregar lógica en la inicialización del componente para comprobar el estado almacenado y generar la lista del componente en el punto donde el usuario estaba leyendo anteriormente.
 
@@ -299,5 +298,6 @@ export class TSControlStateAPI
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API de PowerApps component framework](../reference/index.md)<br/>
-[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)
+[¿Cómo usar los componentes de ejemplo?](../use-sample-components.md)<br/>
+[Referencia de la API de Power Apps component framework](../reference/index.md)<br/>
+[Referencia de esquema de manifiesto de Power Apps component framework](../manifest-schema-reference/index.md)

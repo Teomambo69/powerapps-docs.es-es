@@ -1,5 +1,5 @@
 ---
-title: Crear o editar formularios principales de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
+title: Crear o editar formularios principales de aplicaciones controladas por modelos en Power Apps | MicrosoftDocs
 description: Aprenda a crear o editar un formulario principal.
 ms.custom: ''
 ms.date: 05/23/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 52b80ac0809bbcfe0b008e6fc31fd8b97b894959
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2c60e3b149ae634364a0e0bca8fb2349c96c1aab
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759224"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875330"
 ---
 # <a name="create-or-edit-a-model-driven-app-main-form-for-an-entity"></a>Crear o editar formularios principales de aplicaciones controladas por modelos 
 
@@ -41,7 +41,7 @@ Compruebe que tiene el rol de seguridad de Administrador del sistema o de Person
 
 ## <a name="how-to-create-or-edit-a-main-form"></a>Cómo crear o editar un formulario principal
   
-1.   Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.   Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 
 > [!IMPORTANT]

@@ -14,21 +14,21 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: aba6196680d674b8ee42096e340a105b19ac8d07
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 847d132ba3d7ac3e928014fa61b04e0cb8a0ec7b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752408"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885197"
 ---
 # <a name="add-reporting-features-to-your-model-driven-app"></a>Agregar características de informes a una aplicación basada en modelos
 
-Las aplicaciones PowerApps pueden incluir informes que proporcionen información de negocio útil al usuario. Estos informes se basan en SQL Server Reporting Services y proporcionan el mismo conjunto de características que están disponibles para los informes típicos de SQL Server Reporting Services.
+Las aplicaciones Power Apps pueden incluir informes que proporcionen información de negocio útil al usuario. Estos informes se basan en SQL Server Reporting Services y proporcionan el mismo conjunto de características que están disponibles para los informes típicos de SQL Server Reporting Services.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/progress-against-goals-report.png "Progress against goals standard report")
 
-Los informes del sistema están disponibles para todos los usuarios. Los usuarios que crean o poseen informes pueden compartirlos con equipos o colegas específicos, o pueden ponerlos a disposición de la organización para que todos los usuarios puedan ejecutarlos. Estos informes usan consultas FetchXML que pertenecen a Common Data Service y recuperan datos para crear el informe. Los informes que crea en una aplicación de PowerApps son informes basados en Fetch.
+Los informes del sistema están disponibles para todos los usuarios. Los usuarios que crean o poseen informes pueden compartirlos con equipos o colegas específicos, o pueden ponerlos a disposición de la organización para que todos los usuarios puedan ejecutarlos. Estos informes usan consultas FetchXML que pertenecen a Common Data Service y recuperan datos para crear el informe. Los informes que crea en una aplicación de Power Apps son informes basados en Fetch.
 
 > [!NOTE]
 > Las características del informe no funcionan con las aplicaciones de lienzo o aplicaciones basadas en modelos que se ejecutan en dispositivos móviles, como tabletas y teléfonos. 
@@ -42,7 +42,7 @@ Los informes del sistema están disponibles para todos los usuarios. Los usuario
 ## <a name="add-reporting-to-a-unified-interface-app"></a>Agregar informes a una aplicación de la interfaz unificada
 Puede agregar funcionalidad de informes basados en Fetch a la aplicación de forma que los usuarios puedan ejecutar, compartir, crear y editar informes. Para ello, agregue la entidad de informe al mapa del sitio de su aplicación. 
 
-1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y abra una aplicación existente para editar. 
+1. Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y abra una aplicación existente para editar. 
 2. En el diseñador de aplicaciones, seleccione ![Icono de lápiz para editar el mapa del sitio](media/ccf-pencil-icon.png) junto a **Mapa del sitio**. 
 3. En el Diseñador del mapa del sitio, seleccione **Agregar** y después seleccione **Área**. 
 4. En el cuadro **Título**, escriba un nombre para el título del área, como *Informes*. 
@@ -74,7 +74,7 @@ Puede crear un informe nuevo de dos maneras diferentes:
 Los informes de entidad estándar, como por ejemplo el Informe de resumen de cuentas para la entidad de cuenta, están disponibles para todos los usuarios de la aplicación. Los usuarios que tengan informes pueden compartirlos con equipos o colegas específicos. Los administradores y personalizadores del sistema pueden poner los informes disponibles con visibilidad para toda la organización, para que todos los usuarios puedan usarlos. Para obtener información acerca de cómo compartir un informe, consulte [Compartir un informe con otros usuarios y equipos](../../user/work-with-reports.md#share-a-report-with-other-users-or-teams). 
 
 ## <a name="reports-in-solutions"></a>Informes en soluciones
-Los informes son compatibles con las soluciones. Al agregar un informe como componente a una solución hace que esta sea una sola unidad de software que amplía la funcionalidad de PowerApps y la interfaz de usuario. Solo los informes que son visibles para la organización se pueden agregar a las soluciones.
+Los informes son compatibles con las soluciones. Al agregar un informe como componente a una solución hace que esta sea una sola unidad de software que amplía la funcionalidad de Power Apps y la interfaz de usuario. Solo los informes que son visibles para la organización se pueden agregar a las soluciones.
 
 Para saber si un informe puede verse en la organización: En la lista de informes, abra una aplicación basada en modelos, seleccione un informe y luego seleccione **Editar**. En la pestaña **Administración**, vea si **Visible por** está configurado en **Organización**. 
 
@@ -86,6 +86,6 @@ Puede agregar, importar o exportar las instantáneas de informes como parte de u
 ## <a name="related-topics"></a>Temas relacionados
 [Trabajar con informes](/powerapps/user/work-with-reports)<br/>
 [Crear un informe con el Asistente para informes](/powerapps/user/create-report-with-wizard)<br/>
-[Agregar un informe desde fuera de PowerApps](/powerapps/user/add-existing-report)<br/>
+[Agregar un informe desde fuera de Power Apps](/powerapps/user/add-existing-report)<br/>
 [Edición del filtro predeterminado de un informe](/powerapps/user/edit-report-filter)<br/>
 [Informes de solución de problemas](/powerapps/user/troubleshoot-reports)

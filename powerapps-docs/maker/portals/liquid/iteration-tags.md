@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 600ddb0ac6e016acf057e592ac638b4e07ddf8ba
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 582bd72897a91fac08ac86a79aa6c71cab49aaad
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2708415"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866572"
 ---
 # <a name="iteration-tags"></a>Etiquetas de iteración
 
@@ -401,4 +401,4 @@ Define un intervalo de números para recorrer en bucle.
 [Etiquetas de flujo de control](control-flow-tags.md)
 [Etiquetas de variable](variable-tags.md)
 [Etiquetas de plantilla](template-tags.md)
-[Etiquetas de entidad de PowerApps Common Data Service](portals-entity-tags.md)
+[Etiquetas de entidad de Power Apps Common Data Service](portals-entity-tags.md)

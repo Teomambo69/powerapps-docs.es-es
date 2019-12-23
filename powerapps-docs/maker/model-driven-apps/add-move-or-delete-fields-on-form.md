@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: eaa02abdc4c85d4d6abd5e5ca3afe176144c4027
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d711a46676003786363f3496515dbd387024dadb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701551"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860695"
 ---
 # <a name="add-configure-move-or-delete-fields-on-a-form"></a>Agregar, configurar, mover o eliminar campos de un formulario  
 Agregar, configurar, mover o eliminar campos usando el diseñador de formularios.
@@ -123,7 +123,7 @@ Puede mover un campo en un formulario mediante arrastrar y colocar o cortar y pe
 5. En el diálogo **Nuevo campo**, seleccione **Tipo de datos** y configure cualquier otra propiedad necesaria del campo.
 
      > [!NOTE]
-     >   -  Algunos tipos de campos no están disponibles cuando crea un campo desde el diseñador de formularios. Si un tipo de campo que desea no está disponible, puede seguir los pasos que se describen en [Crear y editar campos para Common Data Service usando el portal de PowerApps](../common-data-service/create-edit-field-portal.md)
+     >   -  Algunos tipos de campos no están disponibles cuando crea un campo desde el diseñador de formularios. Si un tipo de campo que desea no está disponible, puede seguir los pasos que se describen en [Crear y editar campos para Common Data Service usando el portal de Power Apps](../common-data-service/create-edit-field-portal.md)
 
 6. Seleccione **Hecho** para crear un nuevo campo de la entidad. El campo aparece en el panel **Campos**.
 7. Si desea agregar el campo recién creado al formulario, siga los pasos indicados en la sección [**Agregar campos a un formulario**](add-move-or-delete-fields-on-form.md#add-fields-to-a-form).

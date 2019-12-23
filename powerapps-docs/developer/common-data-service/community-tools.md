@@ -1,6 +1,6 @@
 ---
 title: Herramientas de la comunidad para Common Data Service (Common Data Service) | Microsoft Docs
-description: Lea sobre las herramientas creadas por la comunidad que ayudan a realizar diversas tareas con PowerApps Common Data Service.
+description: Lea sobre las herramientas creadas por la comunidad que ayudan a realizar diversas tareas con Power Apps Common Data Service.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f87e8e6d6e56ccc82ae589b371edca3257370a42
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 495772c8e530823897412ea1db03854d52ff1548
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749727"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861809"
 ---
 # <a name="community-tools-for-common-data-service"></a>Herramientas de la Comunidad para Common Data Service
 

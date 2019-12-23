@@ -1,5 +1,5 @@
 ---
-title: Propiedades de subcuadrícula para formularios principales de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
+title: Propiedades de subcuadrícula para formularios principales de aplicaciones controladas por modelos en Power Apps | MicrosoftDocs
 description: Comprender las propiedades de subcuadrícula para formularios principales
 Keywords: Formulario principal; propiedades de subcuadrícula; Dynamics 365
 author: Mattp123
@@ -18,19 +18,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a6bb86fde69554808f8cbf75f0366dc49ea485f4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ff9b79565525cee42eedfcd48c59669c4fe277d8
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759708"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872845"
 ---
 # <a name="sub-grid-properties-for-model-driven-app-main-forms-overview"></a>Información general de propiedades de subcuadrícula para formularios principales de aplicaciones controladas por modelos
 
 Puede configurar una subcuadrícula en un formulario para presentar una lista de registros o un gráfico. Seleccione **Solo mostrar gráfico** en la ficha **Mostrar** para mostrar un gráfico en lugar de una lista.  
 
-Puede acceder a las **Propiedades de subcuadrícula** desde el sitio de PowerApps. 
-1.  En el sitio de [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación).  
+Puede acceder a las **Propiedades de subcuadrícula** desde el sitio de Power Apps. 
+1.  En el sitio de [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación).  
 
      ![Modo de diseño controlado por modelos](media/model-driven-switch.png)
 

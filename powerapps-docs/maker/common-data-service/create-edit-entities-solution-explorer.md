@@ -19,16 +19,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2ec1fb0471ad1f47f4afad083ad89e87633ce9ed
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7774090950b179e349c6c576439ebd4ad47da67b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2707315"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883768"
 ---
 # <a name="create-and-edit-entities-using-solution-explorer"></a>Crear y editar entidades con el explorador de soluciones
 
-Puede crear fácilmente una entidad mediante el portal de PowerApps para la mayoría de las situaciones comunes, pero no todas las capacidades se implementan ahí. Cuando necesite cumplir los requisitos descritos en [Creación y edición de entidades en Common Data Service](create-edit-entities.md), puede cumplirlas creando o editar entidades mediante el Explorador de soluciones.
+Puede crear fácilmente una entidad mediante el portal de Power Apps para la mayoría de las situaciones comunes, pero no todas las capacidades se implementan ahí. Cuando necesite cumplir los requisitos descritos en [Creación y edición de entidades en Common Data Service](create-edit-entities.md), puede cumplirlas creando o editar entidades mediante el Explorador de soluciones.
 
 ## <a name="open-solution-explorer"></a>Abra el explorador de soluciones
 
@@ -203,5 +203,5 @@ Más información: [Crear y editar entidades virtuales que contienen datos desde
 
 ### <a name="see-also"></a>Vea también
 [Crear y editar entidades en Common Data Service](create-edit-entities.md)<br />
-[Tutorial: Crear una entidad personalizada que tenga componentes en PowerApps](/powerapps/maker/common-data-service/create-custom-entity)<br />
+[Tutorial: Crear una entidad personalizada que tenga componentes en Power Apps](/powerapps/maker/common-data-service/create-custom-entity)<br />
 [Crear una solución](create-solution.md)

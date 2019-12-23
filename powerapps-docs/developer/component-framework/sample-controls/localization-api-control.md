@@ -8,18 +8,18 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 4917728c08323c0c0e96f452621cd14298116a12
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 43be87e84ea321db6f5df6919914bbccb48e0130
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754097"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861946"
 ---
 # <a name="implementing-localization-api-component"></a>Implementar componente API de localización
 
 Este ejemplo muestra cómo se realiza la localización para controles personalizados. En este ejemplo, usamos [Incrementar componente](increment-control.md) para localizar el texto que se muestra en el botón de incremento basado en el idioma seleccionado del usuario. 
 
-PowerApps component framework usa el concepto de implementar recursos web String(resx) que se usa para administrar las cadenas localizadas mostradas en cualquier interfaz de usuario. Más información: [String(Resx) Webresources](https://docs.microsoft.com/dynamics365/customer-engagement/developer/resx-web-resources). 
+Power Apps component framework usa el concepto de implementar recursos web String(resx) que se usa para administrar las cadenas localizadas mostradas en cualquier interfaz de usuario. Más información: [String(Resx) Webresources](https://docs.microsoft.com/dynamics365/customer-engagement/developer/resx-web-resources). 
 
 > [!div class="mx-imgBorder"]
 > ![Componente API de localización](../media/localization-api-control.png "Componente API de localización")
@@ -60,7 +60,7 @@ export class TSLocalizationAPI
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
   // Value of the field is stored and used inside the control
   private _value: number;
-  // PowerApps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
+  // Power Apps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
   private _notifyOutputChanged: () => void;
   // label element created as part of this control
   private label: HTMLInputElement;
@@ -437,7 +437,7 @@ export class TSLocalizationAPI
 
 Para localizar un proyecto existente, todo lo que debe hacer es crear archivos de recursos(resx) adicionales, uno para cada idioma específico que se menciona en los recursos web de cadena e incluirlos como parte del archivo de manifiesto del control en el nodo [recursos](../reference/resources.md).  
 
-PowerApps component framework identifica el idioma del usuario y devuelve las cadenas del archivo de recursos específico del idioma cuando usted intenta acceder a la cadena utilizando el método `context.resources.getString`.
+Power Apps component framework identifica el idioma del usuario y devuelve las cadenas del archivo de recursos específico del idioma cuando usted intenta acceder a la cadena utilizando el método `context.resources.getString`.
 
 En este ejemplo, dos idiomas `Spanish` y `Finnish` con los códigos de idioma 3082 y 1035 definidos respectivamente. Hemos hecho una copia del ejemplo `Increment component` y le hemos cambiado el nombre a `Localization API`. Todos los archivos correspondientes incluidos los archivos de las subcarpetas cambian de nombre en consecuencia.
 
@@ -445,7 +445,7 @@ En la carpeta de cadenas en `TS_LocalizationAPI`, se agregan dos archivos resx a
 
 Asegúrese de que las teclas usadas para las cadenas en todos estos archivos de recursos comparten el mismo nombre en todos los idiomas. Ahora, cuando el componente se genere en la interfaz de usuario, podemos ver en el código que recuperamos el valor que se mostrará en el botón mediante `context.resources.getString("PCF_LocalizationSample_ButtonLabel")`.
 
-Cuando esta línea de origen se ejecute, PowerApps component framework identifica automáticamente el idioma del usuario y recoge el valor de la etiqueta del botón con la tecla proporcionada en el archivo de idioma correspondiente que definimos. A continuación se proporciona el texto que ve para cada uno de los 3 idiomas que admitimos para este componente de ejemplo.
+Cuando esta línea de origen se ejecute, Power Apps component framework identifica automáticamente el idioma del usuario y recoge el valor de la etiqueta del botón con la tecla proporcionada en el archivo de idioma correspondiente que definimos. A continuación se proporciona el texto que ve para cada uno de los 3 idiomas que admitimos para este componente de ejemplo.
   
 |LanguageCode |Valor mostrado |
 |---|---|
@@ -456,5 +456,6 @@ Cuando esta línea de origen se ejecute, PowerApps component framework identific
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API de PowerApps component framework](../reference/index.md)<br/>
-[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)
+[¿Cómo usar los componentes de ejemplo?](../use-sample-components.md)<br/>
+[Referencia de la API de Power Apps component framework](../reference/index.md)<br/>
+[Referencia de esquema de manifiesto de Power Apps component framework](../manifest-schema-reference/index.md)

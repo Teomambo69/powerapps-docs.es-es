@@ -1,5 +1,5 @@
 ---
-title: Usar comprobador de soluciones para validar sus aplicaciones en PowerApps | Microsoft Docs
+title: Usar comprobador de soluciones para validar sus aplicaciones en Power Apps | Microsoft Docs
 description: Use el comprobador de soluciones para validar su solución.
 author: Mattp123
 manager: kvivek
@@ -13,14 +13,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c42dfe260fd77f40cd3046f754177838b17eefc2
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e9a3fb0c291678c5c571895c900bfde10a7f42ed
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758901"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885394"
 ---
-# <a name="use-solution-checker-to-validate-your-model-driven-apps-in-powerapps"></a>Use el comprobador de soluciones para validar sus aplicaciones basadas en modelos en PowerApps
+# <a name="use-solution-checker-to-validate-your-model-driven-apps-in-power-apps"></a>Use el comprobador de soluciones para validar sus aplicaciones basadas en modelos en Power Apps
 
 Para cumplir complejos requisitos de negocio, los fabricantes de aplicaciones basadas en modelos pueden terminar con frecuencia con soluciones muy avanzadas que personalizan y extienden la plataforma Common Data Service. Con implementaciones avanzadas aumenta el riesgo, pues se presentan problemas de rendimiento, estabilidad y fiabilidad que pueden afectar negativamente la experiencia de usuario. Identificar y comprender cómo resolver estos problemas puede ser complejo y laborioso. Con la característica del comprobador de soluciones puede realizar una completa verificación de análisis estático de sus soluciones con un conjunto de reglas de prácticas recomendadas e identificar rápidamente estos patrones problemáticos. Cuando la comprobación se completa, usted recibe un informe detallado que lista los problemas identificados, los componentes y el código afectados y vínculos a la documentación que describe cómo solucionar cada problema.
 
@@ -33,13 +33,13 @@ El comprobador de soluciones analiza estos componentes de la solución:
 El comprobador de soluciones trabaja con soluciones no administradas que se pueden exportar desde un entorno. 
 
 > [!NOTE]
-> - En este tema se explica cómo ejecutar el comprobador de soluciones desde el portal de creadores de PowerApps. También está disponible un módulo de PowerShell que puede usar para interactuar directamente con el servicio. El módulo Microsoft.PowerApps.Checker.PowerShell se puede usar para análisis de soluciones administradas y no administradas para versiones admitidas de entornos locales y en línea, o para automatizar e integrar el servicio en las canalizaciones de compilación y de lanzamiento. Más información: [Información general sobre Microsoft.PowerApps.Checker.PowerShell]( /powershell/powerapps/overview?view=pa-ps-latest#get-started-using-the-microsoftpowerappscheckerpowershell-module) 
+> - En este tema se explica cómo ejecutar el comprobador de soluciones desde el portal de creadores de Power Apps. También está disponible un módulo de PowerShell que puede usar para interactuar directamente con el servicio. El módulo Microsoft.PowerApps.Checker.PowerShell se puede usar para análisis de soluciones administradas y no administradas para versiones admitidas de entornos locales y en línea, o para automatizar e integrar el servicio en las canalizaciones de compilación y de lanzamiento. Más información: [Información general sobre Microsoft.PowerApps.Checker.PowerShell]( /powershell/powerapps/overview?view=pa-ps-latest#get-started-using-the-microsoftpowerappscheckerpowershell-module) 
 > - El comprobador de soluciones no funciona con soluciones que contienen JavaScript que usa ECMAScript 6 (2015) o versiones posteriores. Cuando se detecta JavaScript que usa una de estas versiones, se informará de un problema de la sintaxis JS001 para el recurso web.
 
 ## <a name="enable-the-solution-checker"></a>Habilitar el comprobador de soluciones
-El comprobador de soluciones está habilitado de forma predeterminada en cada entorno de Common Data Service. Un elemento de menú **Comprobador de soluciones** está disponible cuando selecciona una solución no administrada en el área **Soluciones de PowerApps**. Si la opción **Ejecutar** no está disponible en el menú **Comprobador de soluciones**, puede habilitarla instalando la solución del comprobador de PowerApps. Para instalarlo, siga estos pasos:   
+El comprobador de soluciones está habilitado de forma predeterminada en cada entorno de Common Data Service. Un elemento de menú **Comprobador de soluciones** está disponible cuando selecciona una solución no administrada en el área **Soluciones de Power Apps**. Si la opción **Ejecutar** no está disponible en el menú **Comprobador de soluciones**, puede habilitarla instalando la solución del comprobador de Power Apps. Para instalarlo, siga estos pasos:   
 
-1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y seleccione el entorno de Common Data Service donde desea habilitar el comprobador de soluciones. 
+1. Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y seleccione el entorno de Common Data Service donde desea habilitar el comprobador de soluciones. 
 2. En el panel de navegación izquierdo, seleccione **Soluciones**.
 3. En la barra de herramientas, seleccione **Comprobador de soluciones** y después seleccione **Instalar** – esto abre la página de Microsoft AppSource. Debe permitir ventanas emergentes si el explorador bloquea la apertura de la página. 
 
@@ -48,25 +48,25 @@ El comprobador de soluciones está habilitado de forma predeterminada en cada en
 
 4. Seleccione **Prueba gratuita** en la página de AppSource. 
 
-5. Si está de acuerdo, acepte las condiciones y seleccione el entorno para instalar la solución de comprobador de PowerApps. 
-6. Cuando se complete la instalación, actualice la lista **Solución** en el sitio de PowerApps para comprobar que el comprobador de soluciones está disponible.  
+5. Si está de acuerdo, acepte las condiciones y seleccione el entorno para instalar la solución de comprobador de Power Apps. 
+6. Cuando se complete la instalación, actualice la lista **Solución** en el sitio de Power Apps para comprobar que el comprobador de soluciones está disponible.  
 7. Para comprobar una solución [Ejecute al comprobador de soluciones](#run-the-solution-checker).
 
 
-<!-- ### Components created with the PowerApps checker
-When you install the PowerApps checker these solution specific components are created. 
+<!-- ### Components created with the Power Apps checker
+When you install the Power Apps checker these solution specific components are created. 
 - Entities: The entities that are created are required to store the results of solution analysis and the status of analysis jobs in your environment.
    - Analysis Component
    - Analysis Job
    - Analysis Result
 - System job: A system job is created so admins can remove solution analysis data from the environment. The job contains a configuration value, currently set to remove the solution analysis data after 60 days, which an administrator can override. 
 - Security Roles: Two security roles, **Export Customizations**, and **Solution Checker** are created. These roles are required to export the solution for analysis, and storing the analysis results to the entities in your environment.
-- User principle: The **PowerApps Advisor** user is created that allows the checker to authenticate with your Common Data Service environment and assign the two security roles, Export Customizations and Solution Checker. The PowerApps Advisor is an application user and does not consume a license.  -->
+- User principle: The **Power Apps Advisor** user is created that allows the checker to authenticate with your Common Data Service environment and assign the two security roles, Export Customizations and Solution Checker. The Power Apps Advisor is an application user and does not consume a license.  -->
 
 ## <a name="run-the-solution-checker"></a>Ejecutar el comprobador de soluciones
-Después de instalar el comprobador de PowerApps en el entorno, un elemento de menú **Comprobador de soluciones** está disponible cuando seleccione una solución no administrada en el área **Soluciones** de PowerApps. 
+Después de instalar el comprobador de Power Apps en el entorno, un elemento de menú **Comprobador de soluciones** está disponible cuando seleccione una solución no administrada en el área **Soluciones** de Power Apps. 
 
-1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+1. Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
 2. En el panel izquierdo, seleccione **Soluciones**. 
 3. Junto a la solución no administrada que desea analizar, seleccione **...**, señale a **Comprobador de soluciones** y, a continuación seleccione **Ejecutar**. 
 
@@ -83,7 +83,7 @@ Después de instalar el comprobador de PowerApps en el entorno, un elemento de m
     
     - Durante este tiempo observará el estado **Ejecutándose…** en la columna **Comprobación de solución** de la lista **Solución**. 
     
-    - Usted recibe un correo electrónico de notificación y una notificación en el área **Notificaciones** del sitio de PowerApps cuando finalice la comprobación.  
+    - Usted recibe un correo electrónico de notificación y una notificación en el área **Notificaciones** del sitio de Power Apps cuando finalice la comprobación.  
 
 5.  [Vea el informe](#review-the-solution-checker-report) cuando finalice la comprobación.
 

@@ -1,27 +1,24 @@
 ---
-title: Plantillas de portal disponible en PowerApps | Microsoft Docs
-description: Obtenga información sobre las distintas plantillas de portal disponibles en PowerApps.
+title: Plantillas de portal disponible en Power Apps | Microsoft Docs
+description: Obtenga información sobre las distintas plantillas de portal disponibles en Power Apps.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 01995c7d1d23d4986441e8ccdcbba59029004cdf
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f37769e63d6231869aedfd83e834ffcdd86062ea
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755704"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884537"
 ---
 # <a name="portal-templates"></a>Plantillas del portal
 
-Según el entorno seleccionado en PowerApps, puede crear un portal de inicio de Common Data Service o un portal en un entorno que contiene aplicaciones basadas en modelo en Dynamics 365.
-
-> [!NOTE]
-> Los portales existentes y plantillas de portal existentes (Comunidad, Asociado, Autoservicio de empleado, Autoservicio de cliente) no se admiten completamente en portales de PowerApps Studio y algunos componentes pueden no representarse. Sin embargo, puede seguir editando el resto de los componentes como de costumbre.
+Según el entorno seleccionado en Power Apps, puede crear un portal de inicio de Common Data Service o un portal en un entorno que contiene aplicaciones basadas en modelo en Dynamics 365.
 
 ## <a name="environment-with-common-data-service"></a>Entorno con Common Data Service
 

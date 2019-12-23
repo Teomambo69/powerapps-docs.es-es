@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 22920502b75d16dedba7a70ced60b9b3f373ff10
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: cc5ce204047810704f01562a9a00668e51784769
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757596"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872933"
 ---
 # <a name="add-data-to-an-entity-in-common-data-service-by-using-power-query"></a>Agregar datos a una entidad en Common Data Service con Power Query
 En este procedimiento, creará una entidad en [Common Data Service](data-platform-intro.md) y la rellenará con datos de una fuente de OData usando Power Query. Puede usar las mismas técnicas para integrar datos desde estos orígenes en línea y locales, entre otros:
@@ -35,16 +35,16 @@ En este procedimiento, creará una entidad en [Common Data Service](data-platfor
 
 También puede filtrar, transformar y combinar datos antes de cargarlos en una entidad nueva o existente.
 
-Si no tiene una licencia de PowerApps, puede [suscribirse para obtener una gratuita](../signup-for-powerapps.md).
+Si no tiene una licencia de Power Apps, puede [suscribirse para obtener una gratuita](../signup-for-powerapps.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
 Para seguir este tema, debe cambiar a un [entorno](../canvas-apps/working-with-environments.md) en el que pueda crear entidades.
 
 ## <a name="specify-the-source-data"></a>Especificar los datos de origen
 
-1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y haga clic o pulse en la flecha hacia abajo para **Datos** cerca del borde izquierdo.
+1. Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y haga clic o pulse en la flecha hacia abajo para **Datos** cerca del borde izquierdo.
 
-    ![Página principal de PowerApps](./media/data-platform-cds-newentity-pq/sign-in.png)
+    ![Página principal de Power Apps](./media/data-platform-cds-newentity-pq/sign-in.png)
 
 1. En la lista que aparece, haga clic o pulse en **Integración de datos** y haga clic o pulse en **Nuevo proyecto** cerca de la esquina superior derecha de la ventana.
 

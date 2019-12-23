@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dd5d967cae6988c7949c1c6eca0b862cf42281b0
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 15790d37a187eafa73a5dc837aa090833f3d95ee
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752952"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2859993"
 ---
 # <a name="subscribe-to-sdk-assembly-updates-using-nuget"></a>Suscribirse a las actualizaciones de ensamblados de SDK mediante NuGet
 
@@ -38,7 +38,7 @@ El SDK de NuGet se encuentra en el perfil [crmsdk](https://www.nuget.org/profile
 |[Microsoft.CrmSdk.CoreTools](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreTools/)|Contiene las herramientas SDK creadas por el equipo de Microsoft Dynamics 365.|
 |[Microsoft.CrmSdk.Deployment](https://www.nuget.org/packages/Microsoft.CrmSdk.Deployment/)|Contiene el ensamblado Microsoft.Xrm.Sdk.Deployment.dll|
 |[Microsoft.CrmSdk.Outlook](https://www.nuget.org/packages/Microsoft.CrmSdk.Outlook/)|Contiene el ensamblado Microsoft.Crm.Outlook.dll|
-|[Microsoft.CrmSdk.WebApi.Samples.HelperCode](https://www.nuget.org/packages/Microsoft.CrmSdk.WebApi.Samples.HelperCode/)|Código de Ayuda de C# creado por el equipo de documentación para desarrolladores de PowerApps. Este código es para su uso con la API de Web. Estas clases proporcionan autenticación de servicios web tanto para implementaciones locales y en línea, gestión de errores y configuración de cadenas de conexión. Estas clases se utilizan en nuestros ejemplos de la API web|
+|[Microsoft.CrmSdk.WebApi.Samples.HelperCode](https://www.nuget.org/packages/Microsoft.CrmSdk.WebApi.Samples.HelperCode/)|Código de Ayuda de C# creado por el equipo de documentación para desarrolladores de Power Apps. Este código es para su uso con la API de Web. Estas clases proporcionan autenticación de servicios web tanto para implementaciones locales y en línea, gestión de errores y configuración de cadenas de conexión. Estas clases se utilizan en nuestros ejemplos de la API web|
 |[Microsoft.CrmSdk.Workflow](https://www.nuget.org/packages/Microsoft.CrmSdk.Workflow/)|Contiene el ensamblado Microsoft.Xrm.Sdk.Workflow.dll|
 |[Microsoft.CrmSdk.XrmTooling.CoreAssembly](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.CoreAssembly/)|Contiene el ensamblado Microsoft.Xrm.Tooling.Connector |
 |[Microsoft.CrmSdk.XrmTooling.CrmConnector.PowerShell](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.CrmConnector.PowerShell/)|Contiene los ensamblados para Xrm.Tooling.Connector Powershell |

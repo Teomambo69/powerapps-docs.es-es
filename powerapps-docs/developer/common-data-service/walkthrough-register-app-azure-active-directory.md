@@ -15,19 +15,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 79773316bd5ff4e6d2652e7dfae53add0a782dc3
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: b2cf649ad1bcba55e32192a8f72f3a7c7aabf10f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749769"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2859933"
 ---
 # <a name="walkthrough-register-an-app-with-azure-active-directory"></a>Tutorial: Registrar una aplicación con Azure Active Directory
 
-Este tutorial describe cómo registrar una aplicación con Azure Active Directory, lo que permite a un usuario con cuenta de usuario de PowerApps conectarse a su entorno de Common Data Service desde aplicaciones de cliente externo mediante la autenticación de OAuth.
+Este tutorial describe cómo registrar una aplicación con Azure Active Directory, lo que permite a un usuario con cuenta de usuario de Power Apps conectarse a su entorno de Common Data Service desde aplicaciones de cliente externo mediante la autenticación de OAuth.
 
 > [!IMPORTANT]
-> PowerApps también proporciona la opción de autenticación entre servidores (S2S) para conectarse al entorno de Common Data Service desde aplicaciones y servicios externos mediante la cuenta usuario de la aplicación especial. La autenticación S2S es la forma común que las aplicaciones registradas en Microsoft AppSource usan para tener acceso a los datos de sus suscriptores. Más información: [Crear aplicaciones web mediante la autenticación de servidor a servidor (S2S)](build-web-applications-server-server-s2s-authentication.md).
+> Power Apps también proporciona la opción de autenticación entre servidores (S2S) para conectarse al entorno de Common Data Service desde aplicaciones y servicios externos mediante la cuenta usuario de la aplicación especial. La autenticación S2S es la forma común que las aplicaciones registradas en Microsoft AppSource usan para tener acceso a los datos de sus suscriptores. Más información: [Crear aplicaciones web mediante la autenticación de servidor a servidor (S2S)](build-web-applications-server-server-s2s-authentication.md).
 
 Normalmente el registro de aplicaciones en Azure Active Directory se hace mediante ISV que desean desarrollar aplicaciones cliente externas para leer y escribir datos en Common Data Service. Si registra una aplicación en Azure Active Directory obtendrá valores de **identificador de aplicación** y de **URI de redirección** que los ISV pueden usar en su código de autenticación de la aplicación cliente. Cuando los usuarios finales utilizan la aplicación de ISV por *primera vez* para conectarse a su entorno de Common Data Service proporcionando sus credenciales de Common Data Service, se muestra un formulario de consentimiento al usuario final. Después de autorizar el uso de su cuenta de Common Data Service con la aplicación del ISV, los usuarios finales pueden conectarse al entorno de Common Data Service desde la aplicación externa. El formulario de consentimiento no se vuelve a mostrar a otros usuarios después del primer usuario que ya ha dado su consentimiento a usar la aplicación del ISV. Las aplicaciones registradas en Azure Active Directory son multiinquilino, lo que indica que otros usuarios de Common Data Service de otros inquilinos pueden conectarse a su entorno mediante aplicaciones de ISV. 
 

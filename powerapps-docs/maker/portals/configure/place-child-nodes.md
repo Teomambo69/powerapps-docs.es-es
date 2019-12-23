@@ -9,19 +9,19 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: e004b0f4f37a57e37d8f847ad7221e6a50d549ed
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2a9bd271c8aaa2f1dbc0278078868606fb4c64de
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2761103"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2864982"
 ---
 # <a name="place-child-nodes-by-using-shortcuts-for-portals"></a>Colocar los nodos secundarios mediante accesos directos para portales
 Utilice accesos directos para colocar nodos secundarios en el mapa del sitio del portal que simplemente apuntan a otros nodos que existen en el mapa del sitio, o a direcciones URL externas al portal. Es decir, páginas web, archivos web, eventos, y foros se pueden considerar nodos “sólidos” del mapa del sitio del portal: se agregan al mapa del sitio y cuando se navega a ellos, se ve el contenido real de los nodos directamente. Los accesos directos, por otra parte, se pueden considerar nodos 'intangibles': también se agregan al mapa del sitio (a diferencia de vínculos web, que no), pero cuando usted se desplaza a ellos, ve el contenido del nodo "sólido" de destino al que apunta el acceso directo, y ese contenido es representado por la plantilla de página para ese nodo.
 
 ## <a name="manage-shortcuts"></a>Administrar accesos directos
 
-Crear, editar y eliminar accesos directos se puede realizar en portales de PowerApps.
+Crear, editar y eliminar accesos directos se puede realizar en portales de Power Apps.
 
 1. Abra la aplicación [Administración del portal](configure-portal.md).
 

@@ -1,6 +1,6 @@
 ---
 title: Recuperar la lista de reglas | Microsoft Docs
-description: Aprenda a formar una solicitud GET mediante la API web del comprobador de PowerApps para recuperar la lista de reglas disponibles.
+description: Aprenda a formar una solicitud GET mediante la API web del comprobador de Power Apps para recuperar la lista de reglas disponibles.
 ms.custom: ''
 ms.date: 06/04/2019
 ms.service: powerapps
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bf01185c83e3bfd4f325e4cdfd5b6625e58f7058
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 54db18819f22b01195fa1462395fc2be17f5ec74
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753040"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861825"
 ---
 # <a name="retrieve-the-list-of-rules"></a>Recuperar la lista de reglas
 
@@ -251,7 +251,7 @@ Content-Type: application/json; charset=utf-8
 
 ### <a name="see-also"></a>Vea también
 
-[Usar la API web del comprobador de PowerApps](overview.md)<br />
+[Usar la API web del comprobador de Power Apps](overview.md)<br />
 [Recuperar la lista de conjuntos de reglas](retrieve-rulesets.md)<br />
 [Cargar un archivo](upload-file.md)<br />
 [Invocar análisis](analyze.md)<br />

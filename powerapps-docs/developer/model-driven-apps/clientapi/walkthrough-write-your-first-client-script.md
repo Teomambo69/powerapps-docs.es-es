@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 15ba73e097a03b1fd1b200f3653f169ec5afaf7f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 9b9936cccd243213f785cf65b7dc2d94cfaa1763
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754589"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895134"
 ---
 # <a name="walkthrough-write-your-first-client-script"></a>Tutorial: Escribir el primer script de cliente
 
@@ -38,7 +38,7 @@ Llamaremos su atención sobre hechos importantes durante el tutorial y proporcio
 
 El primer paso es identificar el problema del negocio que intenta abordar usando el scripting del cliente. Una vez que lo haya identificado, debe escribir el código JavaScript que contiene la lógica de negocios personalizada que trata su problema del negocio. 
 
-las aplicaciones basadas en modelos no proporcionan un editor de JavaScript. Por lo tanto, puede usar una herramienta de creación externa que proporciona características específicamente para la edición de archivos JavaScript, como [Notepad++](https://notepad-plus-plus.org/), [código de Visual Studio](https://code.visualstudio.com/docs/languages/javascript) o [Microsoft Visual Studio](https://docs.microsoft.com/scripting/javascript/).
+Las aplicaciones basadas en modelo no proporcionan un editor de JavaScript. Por lo tanto, puede usar una herramienta de creación externa que proporciona características específicamente para la edición de archivos JavaScript, como [Notepad++](https://notepad-plus-plus.org/), [código de Visual Studio](https://code.visualstudio.com/docs/languages/javascript) o [Microsoft Visual Studio](https://docs.microsoft.com/scripting/javascript/).
 
 Puede revisar el código de ejemplo completo que se utiliza en el tutorial más adelante en este tema.
 

@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2e6ae7ac84710e6558adde2949025868e6da6930
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8195103992e14094816b0bbedfd17d6a799072a0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2710307"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884358"
 ---
 # <a name="validate-and-publish-a-model-driven-app-using-the-app-designer"></a>Validar y publicar una aplicación controlada por modelos usando el diseñador de aplicaciones
 
@@ -80,6 +80,6 @@ Publique una aplicación para que esté disponible para los usuarios.
 > - No puede publicar una aplicación hasta que la guarde.  
 
 ## <a name="next-steps"></a>Pasos siguientes  
-[Compartir una aplicación controlada por modelos con PowerApps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app) <br/>
+[Compartir una aplicación controlada por modelos con Power Apps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app) <br/>
  [Ejecutar una aplicación controlada por modelos en un dispositivo móvil](https://docs.microsoft.com/powerapps/user/run-app-client-model-driven)   
  

@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 1/15/2019
+ms.date: 12/06/2019
 ms.author: jowells
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e0732dfee3d4824f33042936af7e8f6157bcec83
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 6e1f27c68b020e7b22728d1c8e80c65f82e94d90
+ms.sourcegitcommit: adfad395aab302fb71b56d8b7a7490265bbdaaae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749400"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "2899505"
 ---
 # <a name="avoid-usage-of-batch-request-types-in-plug-ins-and-workflow-activities"></a>Evite usar de tipos de solicitud por lotes en complementos y actividades de flujo de trabajo
 
@@ -37,14 +37,8 @@ ms.locfileid: "2749400"
 
 ## <a name="symptoms"></a>Síntomas
 
-A continuación se describen efectos posibles cuando se usan las clases de solicitud de mensajes <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> o <xref:Microsoft.Xrm.Sdk.Messages.ExecuteTransactionRequest> en situaciones con complementos o actividad de flujo de trabajo.
+Debido a la naturaleza de ejecución prolongada, el uso de mensajes de solicitud de mensaje <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> o <xref:Microsoft.Xrm.Sdk.Messages.ExecuteTransactionRequest> en el contexto de un complemento o actividad de flujo de trabajo por lotes expone los tipos de complementos en espacios aislados a la excepción de tiempo de espera de canal de dos minutos (12000 ms) y puede degradar la experiencia del usuario para registros síncronos.
 
-- Debido a la naturaleza de ejecución prolongada, los mensajes de solicitud por lotes exponen tipos de complemento en espacios aislados para la excepción de tiempo de espera del canal de dos minutos (2000-ms) y puede mermar la experiencia del usuario para los registros síncronos.
-
-- La solicitudes por lotes están sujetas a la limitación de simultaneidad, que se puede producir excepciones innecesarias de servidor ocupado cuando se varios subprocesos ejecutan el complemento. Hay un límite de dos operaciones `ExecuteMultiple` simultáneas por cada instancia conectada.
-
-    > [!NOTE]
-    > En implementaciones locales, la configuración de [ExecuteAsyncPerOrMaxConnectionsPerServer](/dotnet/api/microsoft.xrm.sdk.deployment.throttlesettings.executeasyncmaxconnectionsperserver) habilita la misma limitación.  De forma predeterminada, no se define para entornos locales.
 
 <a name='guidance'></a>
 

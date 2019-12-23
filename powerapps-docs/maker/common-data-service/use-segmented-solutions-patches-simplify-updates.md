@@ -1,5 +1,5 @@
 ---
-title: Use soluciones y revisiones divididas en segmentos para simplificar las actualizaciones de la solución con PowerApps | MicrosoftDocs
+title: Use soluciones y revisiones divididas en segmentos para simplificar las actualizaciones de la solución con Power Apps | MicrosoftDocs
 description: Aprenda a usar la segmentación de la solución para actualizar sus soluciones
 ms.custom: ''
 ms.date: 06/18/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8f2b890766c6643da0a5363f49ef9b5c233b0b0b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c7a757e7c9b8342778ec2d9f12d05c2b9bc49dd4
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2703135"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869784"
 ---
 # <a name="use-segmented-solutions-and-patches-to-export-selected-entity-assets"></a>Usar soluciones y revisiones segmentadas para exportar activos seleccionados de la entidad
 

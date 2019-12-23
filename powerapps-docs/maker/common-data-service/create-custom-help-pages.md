@@ -22,18 +22,21 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e5c0d84da984fbdb5d7bdb4a2f05a567f76cee09
-ms.sourcegitcommit: 7411b4cf9e30e71052fe932dfd3276e969854af4
+ms.openlocfilehash: 25ad6206fb76c1c26f182c4ff4b67c8815e7e8ba
+ms.sourcegitcommit: 94aa6fd38aab1e145e0b9a0189154fb69b0ee223
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2768462"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "2778965"
 ---
 # <a name="create-guided-help-for-your-unified-interface-app"></a>Crear ayuda guiada para la aplicación de la Interfaz unificada
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Use paneles de ayuda personalizados y tareas guiadas de dar a su aplicación de la Interfaz unificada una experiencia de ayuda personalizada en el producto que esté adaptada a su organización. Use paneles de ayuda personalizados para proporcionar asistencia y orientación específicas de la entidad, formulario, e idioma que incluyan texto enriquecido, vínculos de contenido, imágenes, y vínculos de vídeos. Los paneles de ayuda personalizados reemplazan la característica de aprendizaje guiado de la ruta de aprendizaje anterior usada en aplicaciones del cliente web heredadas.
+Use paneles de ayuda personalizados y tareas guiadas de dar a su aplicación de la Interfaz unificada una experiencia de ayuda personalizada en el producto que esté adaptada a su organización. Use paneles de ayuda personalizados para proporcionar asistencia y orientación específicas de la entidad, formulario, e idioma que incluyan texto enriquecido, vínculos de contenido, imágenes, y vínculos de vídeos. 
+
+> [!IMPORTANT]
+> Los paneles de ayuda personalizados reemplazan la característica de aprendizaje guiado de la ruta de aprendizaje anterior usada en aplicaciones del cliente web heredadas.
 
 ## <a name="custom-help-panes-and-learning-path"></a>Paneles de ayuda personalizados y ruta de aprendizaje
 La nueva implementación de ayuda guiada de paneles de ayuda personalizados se diferencia de la característica de ayuda guiada de la ruta de aprendizaje anterior. Ambas características permiten crear la ayuda personalizada para su aplicación. Sin embargo, los paneles de ayuda personalizados están optimizados para los escenarios de ayuda guiada más comunes.   

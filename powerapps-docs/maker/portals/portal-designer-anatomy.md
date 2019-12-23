@@ -1,26 +1,26 @@
 ---
-title: Anatomía de portales de PowerApps Studio | Microsoft Docs
-description: Obtenga más información sobre la anatomía de portales de PowerApps Studio.
+title: Anatomía de portales de Power Apps Studio | Microsoft Docs
+description: Obtenga más información sobre la anatomía de portales de Power Apps Studio.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/29/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: a007dccdd82b4297b7bee245d4036d9e00b48244
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: bb5102107d9d152e2f95d608959efe035f79a5b8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755748"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884581"
 ---
-# <a name="powerapps-portals-studio-anatomy"></a>Anatomía de portales de PowerApps Studio
+# <a name="power-apps-portals-studio-anatomy"></a>Anatomía de portales de Power Apps Studio
 
-Puede usar portales de PowerApps Studio para crear y personalizar la página web. Contiene distintas opciones para agregar y configurar páginas web, componentes, formularios y listas. La anatomía de portales de PowerApps Studio es la siguiente:
+Puede usar portales de Power Apps Studio para crear y personalizar la página web. Contiene distintas opciones para agregar y configurar páginas web, componentes, formularios y listas. La anatomía de portales de Power Apps Studio es la siguiente:
 
-![Anatomía de portales de PowerApps Studio](media/maker-anatomy.png "Anatomía de portales de PowerApps Studio")  
+![Anatomía de portales de Power Apps Studio](media/maker-anatomy.png "Anatomía de portales de Power Apps Studio")  
 
 | **Anotación** | **Nombre**        | **Descripción**                                                                              |
 |----------------|-----------------|----------------------------------------------------------------------------------------------|
@@ -30,3 +30,5 @@ Puede usar portales de PowerApps Studio para crear y personalizar la página web
 | 4              | Pie de página          | Muestra el estado de autoguardado y permite abrir el editor de código fuente.                         |
 | 5              | Panel de propiedades | Muestra propiedades de la página web y componentes seleccionados y permite editarlos según corresponda. |
 
+> [!NOTE]
+> Editar un portal a través de los portales de Power Apps Studio ocasionará temporalmente un bajo rendimiento del portal debido a los múltiples procesos en segundo plano. Por ejemplo, el proceso de limpieza de caché se ejecuta y vuelve a cargar datos de Common Data Service.

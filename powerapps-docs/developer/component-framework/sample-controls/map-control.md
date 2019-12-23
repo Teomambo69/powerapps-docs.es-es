@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: f4b8702ef39688bdfc5f3ce9a51bf5c8c6e0ff20
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9901f69f1d3ecbcfc1c53d3bd2a6d25fbdaf7569
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749930"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861942"
 ---
 # <a name="implementing-map-component"></a>Implementar componente de mapa
 
@@ -49,7 +49,7 @@ export class TSMapControl
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
   // HTML IFrame element that will be used to render the map
   private _iFrameElement: HTMLIFrameElement;
-  // PowerApps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
+  // Power Apps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
   private _notifyOutputChanged: () => void;
   // reference to ComponentFramework Context object
   private _context: ComponentFramework.Context<IInputs>;
@@ -82,7 +82,7 @@ export class TSMapControl
     container.appendChild(this._iFrameElement);
   }
   /**
-   * Checks if the url is not null and sets the value to the iFrame source to be loaded inside it and then notifies the ControlFramework that the output has changed
+   * Checks if the url is not null and sets the value to the iFrame source to be loaded inside it and then notifies the ComponentFramework that the output has changed
    * @param mapUrl : The url for the map that needs to be loaded inside the iFrame.
    */
   public renderMap(mapUrl: string) {
@@ -174,5 +174,6 @@ Asegúrese de llamar a la función `renderMap` dentro de la función [updateView
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API de PowerApps component framework](../reference/index.md)<br/>
-[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)
+[¿Cómo usar los componentes de ejemplo?](../use-sample-components.md)<br/>
+[Referencia de la API de Power Apps component framework](../reference/index.md)<br/>
+[Referencia de esquema de manifiesto de Power Apps component framework](../manifest-schema-reference/index.md)

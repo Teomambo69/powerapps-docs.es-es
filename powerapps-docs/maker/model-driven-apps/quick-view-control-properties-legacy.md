@@ -1,5 +1,5 @@
 ---
-title: Propiedades de los controles de vista rápida para formularios principales de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
+title: Propiedades de los controles de vista rápida para formularios principales de aplicaciones controladas por modelos en Power Apps | MicrosoftDocs
 description: Comprender las pPropiedades de los controles de vista rápida para formularios principales
 Keywords: Propiedades de control de la vista rápida; Dynamics 365; Formularios principales
 author: Mattp123
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b2d4a8f55bf9b6f3e54f948ad16be36fdecb6d20
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 549728e2fb100f927de6660dd5fc5d5aa0da4f68
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755111"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873702"
 ---
 # <a name="model-driven-app-quick-view-control-properties"></a>Propiedades de los controles de vista rápida de aplicaciones controladas por modelos
 
@@ -32,8 +32,8 @@ Un control de vista rápida en un formulario de aplicación basada en modelos mu
 > [!div class="mx-imgBorder"] 
 > ![Formulario de vista rápida de contacto en el formulario de cuenta](media/quick-view-form-contact.png "Formulario de vista rápida de contacto en el formulario de cuenta")  
 
-Puede acceder a las **Propiedades de controles de vista rápida** desde el sitio de PowerApps. 
-1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+Puede acceder a las **Propiedades de controles de vista rápida** desde el sitio de Power Apps. 
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 
 2.  Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**. 

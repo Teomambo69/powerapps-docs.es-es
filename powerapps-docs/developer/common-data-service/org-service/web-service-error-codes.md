@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ef32c596a2740d5a459975061058d1bb682505fe
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3ba89c9798286e8aaf8a2a068c99347452b0effa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753072"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861277"
 ---
 # <a name="web-service-error-codes"></a>Códigos de error de servicio web
 
@@ -669,9 +669,9 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />CanvasAppsExpectedFileMissing<br />**Hex**:<br />80072356<br />**Número**:<br />-2147015850|La solución especificó un archivo de activos esperado pero ese archivo faltaba o no era válido.|
 > |**Nombre**:<br />CanvasAppsInvalidSolutionFileContent<br />**Hex**:<br />80072354<br />**Número**:<br />-2147015852|La solicitud para importar una aplicación de lienzo debe contener al menos un archivo de activos.|
 > |**Nombre**:<br />CanvasAppsNotEnabled<br />**Hex**:<br />80072351<br />**Número**:<br />-2147015855|La creación y la edición de las aplicaciones de lienzo no está habilitada.|
-> |**Nombre**:<br />CanvasAppsServiceRequestClientFailure<br />**Hex**:<br />80072352<br />**Número**:<br />-2147015854|La solicitud al servicio de PowerApps falló con un error de cliente.|
-> |**Nombre**:<br />CanvasAppsServiceRequestServerFailure<br />**Hex**:<br />80072353<br />**Número**:<br />-2147015853|La solicitud al servicio de PowerApps falló con un error de sevidor.|
-> |**Nombre**:<br />CanvasAppsUnexpectedCanvasAppId<br />**Hex**:<br />80072355<br />**Número**:<br />-2147015851|La solicitud al servicio de PowerApps dio lugar a un nuevo canvasappid cuando se esperaba el valor previamente existente.|
+> |**Nombre**:<br />CanvasAppsServiceRequestClientFailure<br />**Hex**:<br />80072352<br />**Número**:<br />-2147015854|La solicitud al servicio de Power Apps falló con un error de cliente.|
+> |**Nombre**:<br />CanvasAppsServiceRequestServerFailure<br />**Hex**:<br />80072353<br />**Número**:<br />-2147015853|La solicitud al servicio de Power Apps falló con un error de sevidor.|
+> |**Nombre**:<br />CanvasAppsUnexpectedCanvasAppId<br />**Hex**:<br />80072355<br />**Número**:<br />-2147015851|La solicitud al servicio de Power Apps dio lugar a un nuevo canvasappid cuando se esperaba el valor previamente existente.|
 > |**Nombre**:<br />CanvasAppVersionDoesNotMatchLatestPublishedVersion<br />**Hex**:<br />80072358<br />**Número**:<br />-2147015848|La última versión publicada de la aplicación de lienzo no coincide con la versión conocida por el servicio de Dynamics.|
 > |**Nombre**:<br />CanvasAppVersionMissingOrInvalid<br />**Hex**:<br />80072357<br />**Número**:<br />-2147015849|La versión de la aplicación de lienzo no se estableció o era un valor no válido.|
 > |**Nombre**:<br />CAPolicyValidationFailedLateBind<br />**Hex**:<br />80072561<br />**Número**:<br />-2147015327|El usuario está en una ubicación limitada de administración.|

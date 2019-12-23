@@ -8,16 +8,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 90d74124e21fe74a96ca31830508f3bbb99e17b9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7826fa33f8ced492a8748ffa073a18521cc496f5
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749466"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861978"
 ---
 # <a name="implementing-flip-component"></a>Implementar componente Flip
 
-En este ejemplo se muestra cómo usar las bibliotecas de terceros para crear componentes en PowerApps component framework.  El componente de ejemplo Flip se implementa basándose en angular.js, angular-ui, angular-animate, angular-sanitize, bootstrap. El código puede no revelar las prácticas recomendadas para las bibliotecas de terceros mencioinadas.
+En este ejemplo se muestra cómo usar las bibliotecas de terceros para crear componentes en Power Apps component framework.  El componente de ejemplo Flip se implementa basándose en angular.js, angular-ui, angular-animate, angular-sanitize, bootstrap. El código puede no revelar las prácticas recomendadas para las bibliotecas de terceros mencioinadas.
 
 > [!div class="mx-imgBorder"]
 > ![Flip angular](../media/angular-flip.png "Flip angular")
@@ -43,13 +43,13 @@ Aplicaciones basadas en modelo y aplicaciones de lienzo (vista previa piloto)
 
 ## <a name="overview"></a>información general
 
-Este ejemplo proporciona ejemplos de cómo agregar dependencias para bibliotecas de terceros, mostrando cómo realizar de enlace de datos entre PowerApps component framework, el modelo de componentes y el modelo de datos internos a terceros de forma bidireccional.
+Este ejemplo proporciona ejemplos de cómo agregar dependencias para bibliotecas de terceros, mostrando cómo realizar de enlace de datos entre Power Apps component framework, el modelo de componentes y el modelo de datos internos a terceros de forma bidireccional.
 
 El ejemplo de componente Flip consta de una etiqueta y un botón. Al hacer clic en el botón, cambia el texto de la etiqueta.
 
 - Cuando el componente se carga, la etiqueta muestra el texto basado en el valor del atributo de vinculación. Los `context.parameters.[property_name].attributes` contienen los metadatos asociados.
 - Para los campos TwoOptions, `context.parameters.[property_name].Options` incluirá la opción de valores Verdadero y Falso. 
-- Al hacer clic en el botón Flip, la etiqueta actualizará el valor mediante el método **notifyOutputEvents**, el método [getOutputs](../reference/control/getoutputs.md) se llamará de forma asincrónica y pasará a PowerApps component framework,. 
+- Al hacer clic en el botón Flip, la etiqueta actualizará el valor mediante el método **notifyOutputEvents**, el método [getOutputs](../reference/control/getoutputs.md) se llamará de forma asincrónica y pasará a Power Apps component framework,. 
 - ClientAPI actualzia el valor del atributo de vínculo y el valor actualizado pasa a la etiqueta de componente. También puede usar `ClientAPI` para actualizar un valor de atributo para desencadenar el método [updateView](../reference/control/updateview.md) del control. El componente entronces actualiza el modelo de terceros y la etiqueta se actualiza.
 
 
@@ -217,7 +217,7 @@ export class JSAngularJSFlipControl
     }
   }
   /**
-   * Update value in PowerApps component framework
+   * Update value in Power Apps component framework
    * @param newValue new value
    */
   private updateOutputIfNeeded(newValue: boolean): void {
@@ -355,11 +355,11 @@ fieldset[disabled].btn-primary:hover {
   border: 1px solid transparent;
   border-radius: 4px;
 }
-
 ```
 
 ### <a name="related-topics"></a>Temas relacionados
 
-[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)<br />
-[Referencia de la API de PowerApps component framework](../reference/index.md)<br />
-[Información general sobre PowerApps component framework](../overview.md)
+[¿Cómo usar los componentes de ejemplo?](../use-sample-components.md)<br/>
+[Referencia de esquema de manifiesto de Power Apps component framework](../manifest-schema-reference/index.md)<br />
+[Referencia de la API de Power Apps component framework](../reference/index.md)<br />
+[Información general sobre Power Apps component framework](../overview.md)

@@ -20,20 +20,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 68b64d5ec7c7f81352a2b9733310d2ec5e51d9c1
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8c5239874449772922ec9fa89ece7d2b3a5d7f06
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757816"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861359"
 ---
 # <a name="create-nn-many-to-many-entity-relationships-in-common-data-service-using-solution-explorer"></a>Crear relaciones entre entidades N:N (varios a varios) en Common Data Service mediante el explorador de soluciones
 
 El explorador de soluciones proporciona una forma de crear y editar relaciones N:N (varios a varios) para Common Data Service.
 
-El [portal de PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. Más información:
+El [portal de Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. Más información:
 - [Crear relaciones entre entidades de varios a varios (N:N)](create-edit-nn-relationships.md)
-- [Crear relaciones varios a varios entre entidades en Common Data Service con el portal de PowerApps](create-edit-nn-relationships-portal.md)
+- [Crear relaciones varios a varios entre entidades en Common Data Service con el portal de Power Apps](create-edit-nn-relationships-portal.md)
 
   
 ## <a name="open-solution-explorer"></a>Abra el explorador de soluciones
@@ -112,5 +112,5 @@ Al eliminar la relación se eliminará la entidad de relación creada. Se perder
 ### <a name="see-also"></a>Vea también
 
 [Crear relaciones entre entidades de varios a varios (N:N)](create-edit-nn-relationships.md)<br />
-[Crear relaciones varios a varios entre entidades en Common Data Service con el portal de PowerApps](create-edit-nn-relationships-portal.md)<br />
+[Crear relaciones varios a varios entre entidades en Common Data Service con el portal de Power Apps](create-edit-nn-relationships-portal.md)<br />
 [Crear y editar relaciones de entidad de 1: N (uno a varios) o N:1 (varios a uno)](create-edit-1n-relationships.md)

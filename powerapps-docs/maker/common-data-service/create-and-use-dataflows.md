@@ -1,8 +1,8 @@
 ---
-title: Creación y uso de flujos de datos en PowerApps | MicrosoftDocs
-description: Aprenda a crear y utilizar flujos de datos en PowerApps
+title: Creación y uso de flujos de datos en Power Apps | MicrosoftDocs
+description: Aprenda a crear y utilizar flujos de datos en Power Apps
 ms.custom: ''
-ms.date: 08/05/2019
+ms.date: 12/05/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -23,25 +23,24 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5ad261f668c36e623b35e619e4d573401f3b547a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c1f58228cb86ae7415739f5e6ffe4b3175b87b0d
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705819"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895056"
 ---
-# <a name="create-and-use-dataflows-in-powerapps"></a>Creación y uso de flujos de datos en PowerApps
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# <a name="create-and-use-dataflows-in-power-apps"></a>Creación y uso de flujos de datos en Power Apps
 
-Con la preparación de datos avanzada disponible en PowerApps, puede crear una colección de datos llamada flujo de datos, que puede usar posteriormente para conectar con datos empresariales de varios orígenes, limpiar datos, transformarlos y, a continuación cargarlos a Common Data Service o la cuenta de almacenamiento de Azure Data Lake Gen 2 de la organización.
+Con la preparación de datos avanzada disponible en Power Apps, puede crear una colección de datos llamada flujo de datos, que puede usar posteriormente para conectar con datos empresariales de varios orígenes, limpiar datos, transformarlos y, a continuación cargarlos a Common Data Service o la cuenta de almacenamiento de Azure Data Lake Gen 2 de la organización.
 
-Un flujo de datos es una colección de entidades (las entidades son similares a las tablas) que se crean y se administran en entornos en el servicio de PowerApps. Puede agregar y editar as entidades en su flujo de datos, así como administrar programaciones de actualización de datos, directamente desde el entorno en el que se creó el flujo de datos.
+Un flujo de datos es una colección de entidades (las entidades son similares a las tablas) que se crean y se administran en entornos en el servicio de Power Apps. Puede agregar y editar as entidades en su flujo de datos, así como administrar programaciones de actualización de datos, directamente desde el entorno en el que se creó el flujo de datos.
 
-Una vez que cree un flujo de datos en el portal de PowerApps, puede obtener datos de este utilizando el conector Common Data Service o el conector de flujo de datos de Power BI Desktop, en función del destino que eligió al crear el flujo de datos.
+Una vez que cree un flujo de datos en el portal de Power Apps, puede obtener datos de este utilizando el conector Common Data Service o el conector de flujo de datos de Power BI Desktop, en función del destino que eligió al crear el flujo de datos.
 
 Hay tres pasos primarios para usar un flujo de datos:
 
-1.  Cree el flujo de datos en el portal de PowerApps. Seleccione el destino al que cargar los datos de salida, el origen del que obtener los datos, y pasos de Power Query para transformar los datos mediante herramientas de Microsoft diseñadas para hacerlo directamente.
+1.  Cree el flujo de datos en el portal de Power Apps. Seleccione el destino al que cargar los datos de salida, el origen del que obtener los datos, y pasos de Power Query para transformar los datos mediante herramientas de Microsoft diseñadas para hacerlo directamente.
 
 2.  Programe ejecuciones de flujo de datos. Ésta es la frecuencia con la que el flujo de datos de Power Platform debe actualizar los datos que el flujo de datos cargará y transformará.
 
@@ -52,10 +51,8 @@ Las secciones siguientes examinan cada uno de estos pasos para que pueda estar f
 ## <a name="create-a-dataflow"></a>Crear un flujo de datos
 Los flujos de datos se crean en un entorno. Por lo tanto, solo podrán verlos y administrarlos desde ese entorno. Además, los individuos que desean obtener datos del flujo de datos deben tener acceso al entorno en el que los creó.
 
-> [!NOTE]
-> No se admite la creación de flujos de datos que cargan datos a Azure Data Lake Storage Gen2 en el entorno predeterminado.
 
-1.  Inicie sesión en PowerApps, y compruebe en qué entorno está, busque aparece el selector de entorno cerca del lado derecho de la barra de comandos.
+1.  Inicie sesión en Power Apps, y compruebe en qué entorno está, busque aparece el selector de entorno cerca del lado derecho de la barra de comandos.
 
     ![Selector de entorno](media/environment-switcher.png)
 

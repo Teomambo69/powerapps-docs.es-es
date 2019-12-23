@@ -1,5 +1,5 @@
 ---
-title: Establecer propiedades para un gráfico o una lista de una aplicación controlada por modelos incluidos en un panel de PowerApps | MicrosoftDocs
+title: Establecer propiedades para un gráfico o una lista de una aplicación controlada por modelos incluidos en un panel de Power Apps | MicrosoftDocs
 description: Aprenda cómo establecer propiedades para un gráfico o una lista incluidos en un panel
 ms.custom: ''
 ms.date: 06/06/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b284b42c162c44d59fc7af22905be08748d9c766
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 46861b569be4140ca2ac66d016285930c5d9fc31
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711187"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862860"
 ---
 # <a name="set-properties-for-a-model-driven-app-chart-or-list-included-in-a-dashboard"></a>Establecer propiedades para un gráfico o una lista de una aplicación controlada por modelos incluidos en un panel
 

@@ -1,6 +1,6 @@
 ---
 title: Invocar análisis | Microsoft Docs
-description: Aprenda a formar solicitud POST mediante la API web del comprobador de PowerApps para iniciar el trabajo de solicitud de análisis.
+description: Aprenda a formar solicitud POST mediante la API web del comprobador de Power Apps para iniciar el trabajo de solicitud de análisis.
 ms.custom: ''
 ms.date: 06/04/2019
 ms.service: powerapps
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dad4a5ad069287ad84ff0cbf237dbdb243b82076
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9c4ddd64f5c32b9ea12782f34d0194082786f474
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749382"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861829"
 ---
 # <a name="invoke-analysis"></a>Invocar análisis
 
@@ -113,7 +113,7 @@ Location: [Geographical URI]/api/status/9E378E56-6F35-41E9-BF8B-C0CC88E2B832&api
 
 ### <a name="see-also"></a>Vea también
 
-[Usar la API web del comprobador de PowerApps](overview.md)<br />
+[Usar la API web del comprobador de Power Apps](overview.md)<br />
 [Recuperar la lista de conjuntos de reglas](retrieve-rulesets.md)<br />
 [Recuperar la lista de reglas](retrieve-rules.md)<br />
 [Cargar un archivo](upload-file.md)<br />

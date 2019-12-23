@@ -1,6 +1,6 @@
 ---
-title: Crear un portal en PowerApps | Microsoft Doc
-description: Instrucciones para crear un portal en PowerApps.
+title: Crear un portal en Power Apps | Microsoft Doc
+description: Instrucciones para crear un portal en Power Apps.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,22 +9,22 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: b818db8fb72fe36fcc7ea049a4e5b4cfb17eb0d9
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: b0482a5005f1cc0ca0b6e61636570b313dbd8a9c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756364"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884625"
 ---
 # <a name="create-a-common-data-service-starter-portal"></a>Crear un portal de inicio de Common Data Service
 
-Con la capacidad de crear un portal en PowerApps, puede crear una página web para usuarios externos e internos habilitándolos para interactuar con los datos almacenados en Common Data Service.
+Con la capacidad de crear un portal en Power Apps, puede crear una página web para usuarios externos e internos habilitándolos para interactuar con los datos almacenados en Common Data Service.
 
 Estas son algunas ventajas de crear un portal:
 
-- Puesto que los datos se almacenan en Common Data Service, no necesita crear una conexión de PowerApps como lo hace con orígenes de datos como SharePoint, aplicaciones basadas en modelo de Dynamics 365 o Salesforce. Debe especificar únicamente las entidades que desea mostrar o administrar en el portal.
+- Puesto que los datos se almacenan en Common Data Service, no necesita crear una conexión de Power Apps como lo hace con orígenes de datos como SharePoint, aplicaciones basadas en modelo de Dynamics 365 o Salesforce. Debe especificar únicamente las entidades que desea mostrar o administrar en el portal.
 
-- Puede diseñar el portal a través de portales de PowerApps Studio WYSIWYG agregando y configurando componentes en las páginas web.
+- Puede diseñar el portal a través de portales de Power Apps Studio WYSIWYG agregando y configurando componentes en las páginas web.
 
 Puede crear un portal en un nuevo entorno o en su entorno existente.
 
@@ -32,15 +32,18 @@ Si elige crear el portal en un nuevo entorno mediante el vínculo **Crear nuevo 
 
 Si elige crear el portal en un entorno existente sin requisitos previos de portal, los requisitos previos se instalan primero y después el portal se crea. En este método, el aprovisionamiento del portal puede tardar un tiempo y se le notificará cuando se aprovisione el portal.
 
-Según el entorno seleccionado en PowerApps, puede crear un portal de inicio de Common Data Service o un portal en un entorno que contiene aplicaciones basadas en modelo en Dynamics 365.
+Según el entorno seleccionado en Power Apps, puede crear un portal de inicio de Common Data Service o un portal en un entorno que contiene aplicaciones basadas en modelo en Dynamics 365.
 
-Más información sobre cómo trabajar con entornos: [Trabajar con entornos y Microsoft PowerApps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-environments)
+> [!NOTE]
+> Cuando crea un portal, se instalan algunas soluciones y se importan datos de muestra.
+
+Más información sobre cómo trabajar con entornos: [Trabajar con entornos y Microsoft Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-environments)
 
 Más información sobre las plantillas de portal disponibles: [Plantillas de portal](portal-templates.md)
 
 Para crear un portal:
 
-1.  Inicie sesión en [PowerApps](https://make.powerapps.com).  
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com).  
 
 2.  En **Crear sus propias aplicaciones**, seleccione **Portal en blanco**.
 
@@ -68,7 +71,7 @@ Después de que el portal se aprovisione correctamente, el estado se actualiza y
 > [!div class=mx-imgBorder]
 > ![Portal aprovisionado](media/recent-apps.png "Portal aprovisionado")
 
-Para editar el portal en portales de PowerApps Studio, consulte [Editar un portal](manage-existing-portals.md#edit).
+Para editar el portal en portales de Power Apps Studio, consulte [Editar un portal](manage-existing-portals.md#edit).
 
 > [!NOTE]
 > - Puede crearse un máximo de cinco portales en un inquilino. Sin embargo, solo puede haber un portal de cada tipo creado en un entorno.
@@ -77,7 +80,7 @@ Para editar el portal en portales de PowerApps Studio, consulte [Editar un porta
 > - Si ha suministrado un portal con el complemento de portal más antiguo, puede seguir personalizándolo y administrándolo desde [make.powerapps.com](https://make.powerapps.com).
 > - Aprovisionar portales desde [make.powerapps.com](https://make.powerapps.com) no consume los complementos de portal más antiguos. Además, estos portales no se muestran en la pestaña **Aplicaciones** en la página **Centro de administración de Dynamics 365**.
 > - Un portal de inicio de Common Data Service no se puede crear desde la página **Centro de administración de Dynamics 365**.
-> - Los portales de PowerApps no están disponibles en la región de Francia.
+> - Los portales de Power Apps no están disponibles en la región de Francia.
 
 ## <a name="create-new-environment"></a>Crear nuevo entorno
 
@@ -99,12 +102,12 @@ Siga estos pasos al crear un entorno mediante la opción proporcionada en la ven
 3.  Seleccione la divisa y el idioma de los datos almacenados en la base de datos. No puede cambiar la divisa ni el idioma una vez que se cree la base de datos. Cuando esté listo, seleccione **Crear mi base de datos**. La base de datos se crea con el portal de inicio que le permite comenzar rápidamente con el contenido de ejemplo cuando se aprovisione el portal.
 
     > [!NOTE]
-    > La opción **Incluir portal de inicio** solo está disponible cuando cree un entorno mediante la opción proporcionada en la ventana **Portal en blanco**. Esta opción no está disponible cuando cree un entorno desde el Centro de administración de PowerApps.
+    > La opción **Incluir portal de inicio** solo está disponible cuando cree un entorno mediante la opción proporcionada en la ventana **Portal en blanco**. Esta opción no está disponible cuando cree un entorno desde el Centro de administración de Power Apps.
 
     > [!div class=mx-imgBorder]
     > ![crear nueva base de datos](media/create-new-database.png "Crear nueva base de datos") 
 
-    Puede que tarde varios minutos en crear la base de datos en Common Data Service. Una vez que se cree la base de datos, el nuevo entorno se selecciona en la lista de entornos en la página principal de PowerApps y se crea la aplicación Administración del portal. Esta aplicación no es el portal real sino una aplicación complementaria basada en modelo que permite realizar actividades de configuración avanzada. Ahora puede continuar creando el portal para diseñar la página web externa.
+    Puede que tarde varios minutos en crear la base de datos en Common Data Service. Una vez que se cree la base de datos, el nuevo entorno se selecciona en la lista de entornos en la página principal de Power Apps y se crea la aplicación Administración del portal. Esta aplicación no es el portal real sino una aplicación complementaria basada en modelo que permite realizar actividades de configuración avanzada. Ahora puede continuar creando el portal para diseñar la página web externa.
 
     > [!div class=mx-imgBorder]
     > ![aplicación de administración del portal](media/portal-mgmt-app.png "Aplicación de administración del portal")
@@ -112,7 +115,7 @@ Siga estos pasos al crear un entorno mediante la opción proporcionada en la ven
 4. Después de crear el entorno y la base de datos, en **Crear su propia aplicación**, seleccione **Portal en blanco**. 
 
     > [!NOTE]
-    > Si se crea la base de datos y sigue recibiendo el mensaje de crear base de datos, debe actualizar la página principal de PowerApps antes de seleccionar la ventana **Portal en blanco**.
+    > Si se crea la base de datos y sigue recibiendo el mensaje de crear base de datos, debe actualizar la página principal de Power Apps antes de seleccionar la ventana **Portal en blanco**.
 
 
 ## <a name="portal-provisioning-notifications"></a>Notificaciones de aprovisionamiento del portal

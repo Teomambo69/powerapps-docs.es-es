@@ -17,12 +17,12 @@ search.audienceType:
 - customizer
 search.app:
 - D365CE
-ms.openlocfilehash: d8a81b531f43f3e252f2df348b8ae95551e068d4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f245d4c2a9272d10f7aefa2b2847adba5ce0f6e5
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702827"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860827"
 ---
 # <a name="add-the-sharepoint-documents-tab-to-the-main-form-for-an-entity"></a>Agregar la pestaña documentos de SharePoint al formulario principal de una entidad
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
@@ -35,7 +35,7 @@ Agregar una pestaña en un formulario de entidad principal para documentos de Sh
 > Debe habilitar la administración de documentos para usar esta característica. Más información: [Administrar los documentos utilizando SharePoint](/dynamics365/customer-engagement/admin/manage-documents-using-sharepoint)
 
 ## <a name="add-the-documents-tab-in-the-formxml"></a>Agreguar la pestaña de documentos en FormXML 
-1.  Cree una nueva solución. Inicio sesión en PowerApps y vaya a **Soluciones**, seleccione **Nueva solución** y especifique la información necesaria y opcional. Más información: [Crear una solución](../common-data-service/create-solution.md)
+1.  Cree una nueva solución. Inicio sesión en Power Apps y vaya a **Soluciones**, seleccione **Nueva solución** y especifique la información necesaria y opcional. Más información: [Crear una solución](../common-data-service/create-solution.md)
 2. Agregue la entidad a la solución donde desee agregar la pestaña de documentos en el formulario principal. Se admiten todas las entidades estándar y personalizadas. Más información: [Agreguar un componente existente a una solución](/powerapps/maker/common-data-service/use-solution-explorer#add-an-existing-component-to-a-solution)
 3. Incluya el formulario de la entidad en la solución, como el formulario principal para la entidad de cuenta. Junto a la entidad, seleccione **...** y a continuación seleccione **Editar**. Seleccione la pestaña **Formularios**. Si el formulario que desea falta, agréguelo.   
 
@@ -45,7 +45,7 @@ Agregar una pestaña en un formulario de entidad principal para documentos de Sh
 5. En el diseñador de formularios seleccione **Nueva pestaña** en el lienzo del diseñador de formularios, seleccione **Agregar campo**, y agregue el campo como *Dirección 1: Ciudad* desde el panel izquierdo. Puede usar cualquier campo numérico o de texto para la pestaña. ![Agregar un campo a la pestaña](media/add-field-to-tab.png)
 6. Cambiar el nombre de la etiqueta de la pestaña. Para ello, seleccione **Nueva pestaña** y, en el panel derecho de propiedades reemplace **Nueva pestaña** con algo más descriptivo, como *Archivos*.
 7. Seleccione **Guardar** y **Publicar**, y luego cierre el editor de formularios. 
-8. En la página principal del fabricante de PowerApps, seleccione **Soluciones**, seleccione la solución y seleccione **Exportación** para exportar la solución como una solución no administrada. Más información: [Exportar soluciones](../common-data-service/import-update-export-solutions.md#export-solutions) 
+8. En la página principal del fabricante de Power Apps, seleccione **Soluciones**, seleccione la solución y seleccione **Exportación** para exportar la solución como una solución no administrada. Más información: [Exportar soluciones](../common-data-service/import-update-export-solutions.md#export-solutions) 
 9. Extraiga la solución y abra el archivo customization.xml con un editor de XML o texto. 
 10. En customization.xml busque **label description="Files"** (o el nombre que dio a la etiqueta de la pestaña en el paso anterior).
 11. Desplácese hasta el elemento *field name*” del id de control, como **control id="address1_city"** y reemplace el elemento completo con el [Ejemplo de XML](#xml-sample-for-adding-the-documents-tab-to-a-form) en este tema. 

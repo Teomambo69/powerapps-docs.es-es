@@ -1,5 +1,5 @@
 ---
-title: Definir campos consolidados con PowerApps | MicrosoftDocs
+title: Definir campos consolidados con Power Apps | MicrosoftDocs
 description: Aprenda a definir campos consolidados
 ms.custom: ''
 ms.date: 05/23/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9691912bab995fac0b3489580aaa1fef82f9dcc8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e0c254635d6d51ee037ef7865f4b67b72710f319
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758652"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2864012"
 ---
 # <a name="define-rollup-fields-that-aggregate-values"></a>Definir campos consolidados que agregan valores
 
 Los campos consolidados ayudan a los usuarios a obtener ideas sobre los datos supervisando indicadores clave de negocio. Un campo consolidado contiene un valor agregado calculado a través de los registros relacionados con un registro específico. Esto incluye entidades normales y entidades de actividad, como correos electrónicos y citas.
 
-En situaciones más complejos, puede agregar datos a la jerarquía de registros. Como administrador o personalizador, puede definir campos consolidados mediante las herramientas de personalización de PowerApps, sin necesidad de escribir código.  
+En situaciones más complejos, puede agregar datos a la jerarquía de registros. Como administrador o personalizador, puede definir campos consolidados mediante las herramientas de personalización de Power Apps, sin necesidad de escribir código.  
   
 <a name="BKMK_benefitsandcapabilities"></a> 
  

@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: d25283531665a0e1c534bd0e797cbaa722c44bba
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a37efda1dd6593f30e90ade7e11f7e762d67b932
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749460"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861930"
 ---
 # <a name="implementing-table-component"></a>Implementar componente de tabla
 
@@ -25,6 +25,9 @@ Este componente de ejemplo genera una tabla con dos columnas. La columna de la i
 ## <a name="available-for"></a>Disponible para 
 
 Aplicaciones basadas en modelos
+
+> ![!NOTE]
+> Cuando depura el componente de tabla usando el comando `npm start`, el componente no se representa en el arnés de prueba. Esto se debe a que el componente utiliza el método `context.utils.getEntityMetadata` que no es compatible con las herramientas de Power Apps CLI todavía.
 
 ## <a name="manifest"></a>Manifiesto
 
@@ -444,5 +447,6 @@ El método de devolución de llamada inserta esta información como HTML en un d
 ### <a name="related-topics"></a>Temas relacionados
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Referencia de la API de PowerApps component framework](../reference/index.md)<br/>
-[Referencia de esquema de manifiesto de PowerApps component framework](../manifest-schema-reference/index.md)
+[¿Cómo usar los componentes de ejemplo?](../use-sample-components.md)<br/>
+[Referencia de la API de Power Apps component framework](../reference/index.md)<br/>
+[Referencia de esquema de manifiesto de Power Apps component framework](../manifest-schema-reference/index.md)

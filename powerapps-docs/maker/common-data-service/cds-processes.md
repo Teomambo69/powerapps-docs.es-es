@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 24e1ed3f2c2836bef1d861a2ef6b4b1f61dc09b9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9ee7770528f104d383bbf2f1b6c810d261334800
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702651"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "2780322"
 ---
 # <a name="apply-business-logic-in-common-data-service"></a>Aplicar la lógica de negocios en Common Data Service
 
@@ -36,7 +36,7 @@ Defina las *reglas de negocio* de una entidad que se aplica a todos los formular
 > [!NOTE]
 > Para definir una regla de negocio que se aplique a un formulario en una aplicación basada en modelos, consulte [Crear reglas de negocio para un formulario de aplicaciones controladas por modelos](../model-driven-apps/create-business-rules-recommendations-apply-logic-form.md)
 
-También puede usar los procesos de Common Data Service clásicos, que son flujos de trabajo y acciones. Más información: [Microsoft Flow: Usar procesos de flujo de trabajo](/flow/workflow-processes) y [Microsoft Flow: Información general sobre acciones](/flow/actions).
+También puede usar los procesos de Common Data Service clásicos, que son flujos de trabajo y acciones. Más información: [Power Automate: Usar procesos de flujo de trabajo](/flow/workflow-processes) y [Power Automate: Información general sobre acciones](/flow/actions).
 
 ## <a name="see-also"></a>Vea también
 

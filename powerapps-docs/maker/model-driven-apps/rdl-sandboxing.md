@@ -20,16 +20,16 @@ search.audienceType:
 - customizer
 search.app:
 - D365CE
-ms.openlocfilehash: f936dc4c6b78096b74b650bf8426ba1d78c41d19
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 557959f9bb561fcb138f15011bd8320dfa5c94ff
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711407"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862904"
 ---
 # <a name="rdl-sandboxing"></a>Espacio seguro para RDL 
 
-En Common Data Service, los informes se ejecutan en el modo de espacio seguro. Para hacerlo se habilita el espacio seguro del lenguaje RDL (Report Definition Language) en SQL Server Reporting Services. El espacio seguro para RDL permite detectar y limitar el uso de determinados tipos de recursos. Como resultado, determinadas características de aplicaciones basadas en modelos de PowerApps pueden no estar disponibles. Para obtener más información, vea [MSDN: Habilitar y deshabilitar el espacio aislado de RDL](https://msdn.microsoft.com/library/ee210591.aspx).  
+En Common Data Service, los informes se ejecutan en el modo de espacio seguro. Para hacerlo se habilita el espacio seguro del lenguaje RDL (Report Definition Language) en SQL Server Reporting Services. El espacio seguro para RDL permite detectar y limitar el uso de determinados tipos de recursos. Como resultado, determinadas características de aplicaciones basadas en modelos de Power Apps pueden no estar disponibles. Para obtener más información, vea [MSDN: Habilitar y deshabilitar el espacio aislado de RDL](https://msdn.microsoft.com/library/ee210591.aspx).  
   
  Las opciones de configuración del espacio seguro para RDL en Common Data Service se describen en las siguientes secciones en este tema.  
     

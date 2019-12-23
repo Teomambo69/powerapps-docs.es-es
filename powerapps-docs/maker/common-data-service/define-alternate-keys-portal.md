@@ -1,6 +1,6 @@
 ---
-title: Definir las claves alternativas con el portal PowerApps | MicrosoftDocs
-description: Aprenda a definir claves alternativas usando el portal de PowerApps
+title: Definir las claves alternativas con el portal Power Apps | MicrosoftDocs
+description: Aprenda a definir claves alternativas usando el portal de Power Apps
 ms.custom: ''
 ms.date: 05/31/2018
 ms.reviewer: ''
@@ -20,16 +20,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fec01122ad00710507fb3e0976ec9f80115f06cf
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d52b3fa67863a43f82f020f3894bbabf5d38df84
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758916"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865487"
 ---
-# <a name="define-alternate-keys-using-powerapps-portal"></a>Definir las claves alternativas con el portal de PowerApps
+# <a name="define-alternate-keys-using-power-apps-portal"></a>Definir las claves alternativas con el portal de Power Apps
 
-El [portal de PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) proporciona una forma fácil de ver y crear claves alternativas de entidad con Common Data Service.
+El [portal de Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) proporciona una forma fácil de ver y crear claves alternativas de entidad con Common Data Service.
 
 El portal permite configurar las opciones más comunes, pero algunas opciones solo se pueden configurar usando el explorador de soluciones. <br />Más información: 
 - [Definir claves alternativas para hacer referencia a registros](define-alternate-keys-reference-records.md)
@@ -37,7 +37,7 @@ El portal permite configurar las opciones más comunes, pero algunas opciones so
 
 ## <a name="view-alternate-keys"></a>Ver claves alternativas
 
-1. En el [portal de PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione el modo de diseño **Controlado por modelos** o **Lienzo**.
+1. En el [portal de Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione el modo de diseño **Controlado por modelos** o **Lienzo**.
 2. Seleccione **Datos** > **Entidades** y seleccione la entidad que desea ver.
 3. Seleccione **Claves** para ver una lista de las claves alternativas que están definidas.
 

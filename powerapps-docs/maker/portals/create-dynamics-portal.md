@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 50459f3fcd9ebe8894196f934c1b1d2275c490c4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 896f6cfe9fabf08606e69b68b9957835a0147aee
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756408"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873417"
 ---
 # <a name="create-a-portal-in-an-environment-containing-model-driven-apps-in-dynamics-365"></a>Crear un portal en un entorno que contiene aplicaciones basadas en modelo en Dynamics 365
 
 Si selecciona un entorno que contiene aplicaciones basadas en modelo en Dynamics 365 (como Dynamics 365 Sales y Dynamics 365 Customer Service), puede crear los portales mencionados en [Plantillas de portal](portal-templates.md).
 
-1.  Inicie sesión en [PowerApps](https://make.powerapps.com).
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com).
 
 2.  Seleccione **Crear** en el panel izquierdo e introduzca **portal** en el campo **Plantillas de búsqueda** para mostrar todas las plantillas de portales de Dynamics 365.
 
@@ -37,4 +37,5 @@ Si selecciona un entorno que contiene aplicaciones basadas en modelo en Dynamics
 > - Aprovisionar portales desde [make.powerapps.com](https://make.powerapps.com) no consume los complementos de portal más antiguos. Además, estos portales no se muestran en la pestaña **Aplicaciones** en la página **Centro de administración de Dynamics 365**.
 > - Un portal de inicio de Common Data Service no se puede crear desde la página **Centro de administración de Dynamics 365**.
 > - Para deshabilitar la creación de portales en un inquilino, consulte [Deshabilitar creación de portales en un inquilino](create-portal.md#disable-portal-creation-in-a-tenant).
+> - Cuando crea un portal, se instalan algunas soluciones y se importan datos de muestra.
 

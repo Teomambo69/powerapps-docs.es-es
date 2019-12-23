@@ -23,15 +23,15 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3d1ea2b05abb592ec6d2925e813cd213b5b7492a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5ea6ed1011ce9d21c78adf6beed9a2943c9f4cd0
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706171"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860475"
 ---
 # <a name="embed-a-power-bi-report-in-a-model-driven-system-form"></a>Insertar un informe de Power BI en un formulario basado en modelos
-Puede usar informes de Power BI en aplicaciones basadas en modelos PowerApps para incluir informes y análisis enriquecido en los formularios del sistema y permitir a los usuarios conseguir más. Esto desbloquea la capacidad de agregar datos en entre los sistemas, y adaptarlos al contexto de un solo registro.
+Puede usar informes de Power BI en aplicaciones basadas en modelos Power Apps para incluir informes y análisis enriquecido en los formularios del sistema y permitir a los usuarios conseguir más. Esto desbloquea la capacidad de agregar datos en entre los sistemas, y adaptarlos al contexto de un solo registro.
  
 ## <a name="prerequisites"></a>Requisitos previos
 Insertar contenido de Power BI es una característica opcional y está deshabilitada en todos los entornos de forma predeterminada. Debe habilitarla para poder insertar contenido de Power BI. Más información: [Visualizaciones de Power BI en la organización](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi?#enable--visualizations-in-the-organization).
@@ -127,14 +127,14 @@ En esta tabla se describen las propiedades adicionales utilizadas en el ejemplo 
     }
 ```
 
-La parte de destino de la expresión anterior identifica la tabla y la columna a la que aplicar filtros. El operador identifica la lógica y los valores identifican los últimos datos pasados desde la aplicación basada en modelos de PowerApps. Para parametrizar de una forma genérica, los valores son construidos mediante alias. En la expresión anterior, se pasa el valor de **firstname** y **lastname** de una cuenta, y se busca cualquiera de ellos en la columna **Nombre de cuenta** en el informe de Power BI. Tenga en cuenta que **firstname** y **lastname** son los nombres únicos de los atributos de la entidad de cuenta, cuyo valor será pasado aquí. 
+La parte de destino de la expresión anterior identifica la tabla y la columna a la que aplicar filtros. El operador identifica la lógica y los valores identifican los últimos datos pasados desde la aplicación basada en modelos de Power Apps. Para parametrizar de una forma genérica, los valores son construidos mediante alias. En la expresión anterior, se pasa el valor de **firstname** y **lastname** de una cuenta, y se busca cualquiera de ellos en la columna **Nombre de cuenta** en el informe de Power BI. Tenga en cuenta que **firstname** y **lastname** son los nombres únicos de los atributos de la entidad de cuenta, cuyo valor será pasado aquí. 
 
 Puede crear expresiones de filtro más complejas consultando ejemplos de [Construir los filtros](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#contructingfilters) y proporcionando los valores adecuados para $schema y filterType. Asegúrese de escapar cada literal en la parte de filtro con *\"*, para generar JSON correctamente.
 
 ## <a name="known-issues-and-limitations"></a>Problemas y limitaciones conocidos
 1. Esta integración solo está disponible en el cliente de la interfaz unificada, en exploradores web y los dispositivos móviles compatibles.
-2. Al abrir este formulario en el diseñador de formularios de PowerApps no se mostrará el control en una forma significativa. Esto se debe a que el control se personaliza fuera del diseñador de formularios.
-3. Los usuarios se autenticarán en Power BI automáticamente con su nombre de usuario y contraseña de PowerApps. Si no existe una cuenta de Power BI con credenciales coincidentes, un inicio de sesión mensaje se muestra como se ilustra aquí. 
+2. Al abrir este formulario en el diseñador de formularios de Power Apps no se mostrará el control en una forma significativa. Esto se debe a que el control se personaliza fuera del diseñador de formularios.
+3. Los usuarios se autenticarán en Power BI automáticamente con su nombre de usuario y contraseña de Power Apps. Si no existe una cuenta de Power BI con credenciales coincidentes, un inicio de sesión mensaje se muestra como se ilustra aquí. 
 
    > [!div class="mx-imgBorder"] 
    > ![](media/embed-powerbi/embed-powerbi-report-in-system-form-auth-1.png "Embed-powerbi-report-in-system-form-auth-1")
@@ -147,13 +147,13 @@ Puede crear expresiones de filtro más complejas consultando ejemplos de [Constr
    > [!div class="mx-imgBorder"] 
    > ![](media/embed-powerbi/embed-powerbi-report-in-system-form-auth-3.png "Embed-powerbi-report-in-system-form-auth-3")
 
-5. La vista de los datos de informe que se muestran en PowerApps es igual que en Power BI, y los roles de seguridad y los privilegios de PowerApps no afectan a los datos que se muestran. Por lo tanto, los datos son esencialmente iguales que los que vería el creador del conjunto de datos de Power BI. Para aplicar las restricciones de acceso a datos similares a los roles de seguridad y equipos de PowerApps, use [Seguridad de nivel de fila (RLS) con Power BI](https://docs.microsoft.com/power-bi/service-admin-rls).
+5. La vista de los datos de informe que se muestran en Power Apps es igual que en Power BI, y los roles de seguridad y los privilegios de Power Apps no afectan a los datos que se muestran. Por lo tanto, los datos son esencialmente iguales que los que vería el creador del conjunto de datos de Power BI. Para aplicar las restricciones de acceso a datos similares a los roles de seguridad y equipos de Power Apps, use [Seguridad de nivel de fila (RLS) con Power BI](https://docs.microsoft.com/power-bi/service-admin-rls).
 6. Si el formulario no muestra el informe de Power BI después de importar la solución y de publicar las personalizaciones, ábrala en el editor de formularios basados en modelos y guárdelo, para que se genere el JSON de formulario.
 
 
 ### <a name="see-also"></a>Vea también
 
-[Insertar un panel de Power BI en un panel personal basado en modelos de PowerApps](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)
+[Insertar un panel de Power BI en un panel personal basado en modelos de Power Apps](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)
 
 [Usar Power BI con aplicaciones de Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi)
 

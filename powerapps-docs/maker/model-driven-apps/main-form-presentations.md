@@ -1,5 +1,5 @@
 ---
-title: Presentaciones de formularios principales de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
+title: Presentaciones de formularios principales de aplicaciones controladas por modelos en Power Apps | MicrosoftDocs
 description: Obtenga información sobre como aparecen los formularios principales en distintos dispositivos
 ms.custom: ''
 ms.date: 06/27/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9ed031f75235cfb47a2206de0a814fb008a335bd
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 03eca0ade83c4d241eca9e4f7a6004232aac2b87
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702563"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860123"
 ---
 # <a name="how-model-driven-app-main-forms-appear-on-different-devices"></a>Cómo se presentan los formularios principales de aplicaciones controladas por modelos en los distintos dispositivos
 

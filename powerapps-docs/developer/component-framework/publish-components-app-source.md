@@ -1,7 +1,7 @@
 ---
 title: Publicar componentes de código en AppSource | Microsoft Docs
 description: Una vez que ha probado los componentes de código y desear distribuir a otros para usarlos, debe publicarlos en Microsoft AppSource.
-keywords: Component Framework, componente, componentes de código, controles de PowerApps
+keywords: Component Framework, componente, componentes de código, controles de Power Apps
 author: nkrb
 manager: kvivek
 ms.date: 06/09/2019
@@ -12,12 +12,12 @@ ms.custom:
 ms.topic: article
 ms.assetid: 7923e36d-3640-49f7-9f2f-c97358a632db
 ms.author: nabuthuk
-ms.openlocfilehash: e954539845d4ee56e79a6f0753249122d3947b48
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9d9466c8da4bcad54269f1820138a3a12a0debf1
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749935"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861898"
 ---
 # <a name="publish-code-components-on-appsource"></a>Publicar componentes de código en AppSource
 

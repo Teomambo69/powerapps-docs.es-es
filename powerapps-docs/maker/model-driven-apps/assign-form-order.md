@@ -1,5 +1,5 @@
 ---
-title: Asignar orden de formularios de aplicación controlada por modelos en PowerApps | MicrosoftDocs
+title: Asignar orden de formularios de aplicación controlada por modelos en Power Apps | MicrosoftDocs
 description: Aprenda a asignar el formulario predeterminado en las aplicaciones
 ms.custom: ''
 ms.date: 03/07/2019
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 90190dc9021d3852d123dd63e678c7924e164838
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 10e4861f5bf0eb68287d5b91e9dfaaaab9ec0167
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2700891"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869323"
 ---
 # <a name="assign-model-driven-app-form-order"></a>Asignar orden de formularios de aplicación controlada por modelos
 

@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 207a1abdfc8145c38b8d6222f71281ce714e8947
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 76e0f5cceedb2e2b1ba1bf7c5d0d7f338af920fd
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2751841"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862068"
 ---
 # <a name="work-with-templates"></a>Trabajar con plantillas
 
@@ -30,7 +30,7 @@ Las plantillas integradas están disponibles según el portal que se aprovisiona
 
 Para abrir una plantilla en el editor de código:
 
-1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de PowerApps Studio.  
+1.  [Edite el portal](manage-existing-portals.md#edit) para abrirlo en portales de Power Apps Studio.  
 
 2.  Seleccione **Plantillas** ![icono de plantillas](media/templates-icon.png "Icono Plantillas") del toolbelt en el lateral izquierdo de la pantalla. Se muestran las siguientes plantillas disponibles.  
 

@@ -1,6 +1,6 @@
 ---
 title: Crear una entidad personalizada | Microsoft Docs
-description: Aprenda a crear una entidad personalizada en PowerApps.
+description: Aprenda a crear una entidad personalizada en Power Apps.
 author: Mattp123
 ms.service: powerapps
 ms.component: cds
@@ -12,23 +12,23 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b1331d272b30bb3455ae06a8dd726eb3a9dc630f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e24249573f6c7e56ff16de6808e2423acbf3c0cf
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754979"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884208"
 ---
 # <a name="create-a-custom-entity"></a>Creación de una entidad personalizada
-En PowerApps, una *entidad* define la información de la que desea realizar un seguimiento en forma de registros, que incluyen normalmente propiedades como el nombre, ubicación, productos, correo electrónico, y teléfono de la compañía. A continuación puede exponer los datos desarrollando una aplicación que haga referencia a la entidad. PowerApps ofrece entidades estándar “listas para usar” que cubren los escenarios típicos de una organización (como citas de seguimiento), pero puede haber ocasiones en las que necesite crear entidades personalizadas para almacenar datos que sean específicos de la organización.
+En Power Apps, una *entidad* define la información de la que desea realizar un seguimiento en forma de registros, que incluyen normalmente propiedades como el nombre, ubicación, productos, correo electrónico, y teléfono de la compañía. A continuación puede exponer los datos desarrollando una aplicación que haga referencia a la entidad. Power Apps ofrece entidades estándar “listas para usar” que cubren los escenarios típicos de una organización (como citas de seguimiento), pero puede haber ocasiones en las que necesite crear entidades personalizadas para almacenar datos que sean específicos de la organización.
 
 En este tema, aprenderá a crear una entidad personalizada llamada Valoración de producto que puede usar para crear una aplicación que muestre calificaciones y comentarios de los productos que vende su compañía.
 
 ## <a name="prerequisites"></a>Requisitos previos
 Para seguir este procedimiento, debe tener un rol de seguridad de administrador del sistema o personalizador del sistema en Common Data Service.
 
-## <a name="sign-in-to-powerapps"></a>Iniciar sesión en PowerApps
-Iniciar sesión en PowerApps en [https://make.powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+## <a name="sign-in-to-power-apps"></a>Iniciar sesión en Power Apps
+Iniciar sesión en Power Apps en [https://make.powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ## <a name="create-an-entity"></a>Crear una entidad
 1. En el panel de navegación, haga clic o pulse en **Datos** para expandirlo y haga clic o pulse en **Entidades**.
@@ -45,7 +45,7 @@ Iniciar sesión en PowerApps en [https://make.powerapps.com](https://make.powera
 
     Observe que los cuadros siguientes se rellenan automáticamente mientras escribe un nombre para mostrar:
 
-    * **Nombre para mostrar plural** - Este cuadro se rellena automáticamente cuando introduce un nombre para mostrar, pero puede cambiarlo si fuera necesario. El nombre para mostrar plural es el nombre de la entidad en la API web de Common Data Service y se usa para interactuar con esta entidad desde PowerApps o Flow.
+    * **Nombre para mostrar plural** - Este cuadro se rellena automáticamente cuando introduce un nombre para mostrar, pero puede cambiarlo si fuera necesario. El nombre para mostrar plural es el nombre de la entidad en la API web de Common Data Service y se usa para interactuar con esta entidad desde Power Apps o Flow.
     * **Nombre** - Este cuadro también se rellena automáticamente al escribir un nombre para mostrar. El prefijo se definió cuando se creó el entorno y garantiza que las entidades que cree se puedan exportar e importar en otros entornos sin entrar en conflicto con otros nombres de entidad. Puede cambiar este prefijo actualizándolo en su publicador para la solución predeterminada de Common Data Service. Para evitar que se dañen las aplicaciones existentes, no puede cambiar el nombre después de guardar la entidad.
 
        > [!NOTE]
@@ -111,4 +111,4 @@ En este tema, ha aprendido a crear una entidad personalizada llamada Valoración
 > [Crear una relación](data-platform-entity-lookup.md)
 
 ## <a name="privacy-notice"></a>Aviso de privacidad
-Con el modelo común de datos de Microsoft PowerApps, Microsoft recopila y almacena la entidad personalizada y los nombres de campo en nuestros sistemas de diagnóstico. Usamos esta información para mejorar el modelo común de datos para los clientes. La entidad y los nombres de campo que los creadores de la aplicación crean nos ayudan a comprender los escenarios que son comunes en la comunidad de Microsoft PowerApps y a determinar los huecos en la cobertura de las entidades estándar del servicio, como los esquemas relacionados con las organizaciones. Microsoft no accede a los datos de las tablas de base de datos asociadas a estas entidades ni los usa o replica fuera de la región en la que se proporciona la base de datos. No obstante, tenga en cuenta que la entidad personalizada y los nombres de campo se pueden replicar en las regiones y que se eliminan de acuerdo con nuestras directivas de retención de datos. Microsoft se compromete a proteger su privacidad, como se describe con más detalle en nuestro [Centro de confianza](https://www.microsoft.com/trustcenter/Privacy/default.aspx).
+Con el modelo común de datos de Microsoft Power Apps, Microsoft recopila y almacena la entidad personalizada y los nombres de campo en nuestros sistemas de diagnóstico. Usamos esta información para mejorar el modelo común de datos para los clientes. La entidad y los nombres de campo que los creadores de la aplicación crean nos ayudan a comprender los escenarios que son comunes en la comunidad de Microsoft Power Apps y a determinar los huecos en la cobertura de las entidades estándar del servicio, como los esquemas relacionados con las organizaciones. Microsoft no accede a los datos de las tablas de base de datos asociadas a estas entidades ni los usa o replica fuera de la región en la que se proporciona la base de datos. No obstante, tenga en cuenta que la entidad personalizada y los nombres de campo se pueden replicar en las regiones y que se eliminan de acuerdo con nuestras directivas de retención de datos. Microsoft se compromete a proteger su privacidad, como se describe con más detalle en nuestro [Centro de confianza](https://www.microsoft.com/trustcenter/Privacy/default.aspx).

@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo definir acciones que se deben real
 keywords: ''
 ms.date: 10/31/2018
 ms.service:
-- powerapps
+- PowerApps
 ms.topic: article
 ms.assetid: fbb7ff68-e4be-d8c2-069f-6a4a69665b56
 author: JimDaly
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ef25670c338838d70257a394b5701f3132cb2ac7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 835378bb68adc7a90c84e2b1db1d48616aa59127
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749909"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883498"
 ---
 # <a name="define-ribbon-actions"></a>Definir acciones de la cinta de opciones
 

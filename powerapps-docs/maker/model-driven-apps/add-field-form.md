@@ -1,5 +1,5 @@
 ---
-title: Agregar un campo a un formulario de aplicación controlada por modelos en PowerApps | MicrosoftDocs
+title: Agregar un campo a un formulario de aplicación controlada por modelos en Power Apps | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
@@ -21,20 +21,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1eb7d5c88031f7269472906b5bfcad7c91214417
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 38ada6c4c63807c16dd577339c287808f389681a
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2751885"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874978"
 ---
 # <a name="add-a-field-to-a-model-driven-app-form"></a>Agregar un campo a un formulario de aplicación controlada por modelos 
 
-Si un formulario de PowerApps para una entidad estándar no cumple los requisitos empresariales de su organización, puede personalizar el formulario cambiando los campos existentes o agregando nuevos campos. Si bien puede que sea más fácil editar los campos existentes en un formulario, a veces es mejor agregar un campo para abordar un escenario específico de negocio.
+Si un formulario de Power Apps para una entidad estándar no cumple los requisitos empresariales de su organización, puede personalizar el formulario cambiando los campos existentes o agregando nuevos campos. Si bien puede que sea más fácil editar los campos existentes en un formulario, a veces es mejor agregar un campo para abordar un escenario específico de negocio.
 
 En este tema, agregará un campo a un formulario.   
   
-1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 
     > [!IMPORTANT]

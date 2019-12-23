@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/04/2019
+ms.date: 11/11/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 6572a92a46fa308eab6cb46b813a572605327197
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 01a5ce5662b27b9d95c15441ac1a791572890fcf
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2761096"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2816711"
 ---
 # <a name="provision-a-portal-using-the-older-portal-add-on"></a>Aprovisione un portal con el complemento de portal más antiguo
 
@@ -25,15 +25,29 @@ Si ha adquirido un complemento de portal más antiguo, y desea para aprovisionar
 
 Para aprovisionar un portal:
 
-1.  Vaya a la página **Centro de administración de Dynamics 365** y, a continuación, haga clic en la pestaña **Aplicaciones**.
+1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com).
+ 
+2. En la columna de navegación de la izquierda, seleccione **Mostrar todo**.
 
-2.  Seleccione la fila de la aplicación con el título **Complemento de portal** y, a continuación, haga clic en **Administrar**.
+3. Si está trabajando con el nuevo centro de administración, seleccione **Todos los centros de administración**. En la lista de todos los centros de administración, seleccione **Dynamics 365**.
 
-3.  En la sección **Configuración general**, escriba un **Nombre** del portal. El **Nombre** ayudará a identificar el portal y se puede cambiar más adelante.
+    > [!div class="mx-imgBorder"]
+    > ![Abrir el Centro de administración de Dynamics 365 desde el nuevo centro de administración](media/from-new-admin-center.png "Abrir el Centro de administración de Dynamics 365 desde el nuevo centro de administración") 
 
-4.  El campo **Tipo** representa el tipo de suscripción de portal (prueba o producción). Es un campo del sistema, por lo que no puede modificarlo el usuario. El valor cambia según se trate de una suscripción de prueba o de pago.
+4. Si está trabajando con el antiguo centro de administración, expanda **Centros de administración** en la columna de navegación izquierda y luego seleccione **Dynamics 365**.
 
-5. Opcionalmente, en la lista **Estado de desarrollo del portal**, seleccione uno de los siguientes estados de desarrollo para el portal:
+    > [!div class="mx-imgBorder"]
+    > ![Abrir el Centro de administración de Dynamics 365 desde el antiguo centro de administración](media/from-old-admin-center.png "Abrir el Centro de administración de Dynamics 365 desde el antiguo centro de administración") 
+
+5. En la página **Centro de administración de Dynamics 365**, seleccione la pestaña **Aplicaciones**.
+
+6. Seleccione la fila de la aplicación con el título **Complemento de portal** y, a continuación, haga clic en **Administrar**.
+
+7. En la sección **Configuración general**, escriba un **Nombre** del portal. El **Nombre** ayudará a identificar el portal y se puede cambiar más adelante.
+
+8. El campo **Tipo** representa el tipo de suscripción de portal (prueba o producción). Es un campo del sistema, por lo que no puede modificarlo el usuario. El valor cambia según se trate de una suscripción de prueba o de pago.
+
+9. Opcionalmente, en la lista **Estado de desarrollo del portal**, seleccione uno de los siguientes estados de desarrollo para el portal:
 
     - Prototipo
     - Desarrollo
@@ -46,22 +60,22 @@ Para aprovisionar un portal:
     > - Esta lista desplegable solo está disponible para los portales de tipo producción.
     > - Este campo se usa en Microsoft para comprender el patrón de este portal y no afecta a ninguna funcionalidad. Si usa nombres diferentes para el ciclo de vida de desarrollo, seleccione el que está más cerca del propósito. Esto se puede cambiar más tarde una vez el portal esté aprovisionado.
 
-5.  En el campo **Dirección URL de portal**, escriba el nombre del subdominio que desee para el portal. Puede usar únicamente caracteres alfanuméricos o guiones (-); otros caracteres no se permiten.
+10. En el campo **Dirección URL de portal**, escriba el nombre del subdominio que desee para el portal. Puede usar únicamente caracteres alfanuméricos o guiones (-); otros caracteres no se permiten.
 
     > [!NOTE]
     > - Para cambiar la dirección URL de un portal después de su aprovisionamiento, vea [Cambiar la dirección URL base de un portal](admin/change-base-url.md).
     > - Para vincular su portal a un dominio personalizado, vea [Vincular el portal a un dominio personalizado](admin/add-custom-domain.md).
 
-6.  En la lista desplegable **Instancia Dynamics 365** seleccione la instancia con la que quiera vincular el portal. Esto requiere un rol de administrador del sistema o personalizador del sistema en la instancia que elija para seleccionarlo.
+11. En la lista desplegable **Instancia Dynamics 365** seleccione la instancia con la que quiera vincular el portal. Esto requiere un rol de administrador del sistema o personalizador del sistema en la instancia que elija para seleccionarlo.
 
-7.  Elija el idioma predeterminado de su portal en la lista desplegable **Seleccionar idioma del portal**. Los idiomas disponibles dependerán de los que estén instalados en la instancia. 
-
+12. Elija el idioma predeterminado de su portal en la lista desplegable **Seleccionar idioma del portal**. Los idiomas disponibles dependerán de los que estén instalados en la instancia. 
+    
     > [!NOTE]
     > Los datos de ejemplo se proporcionan únicamente en un idioma, por lo que la selección de un idioma predeterminado también decidirá cómo se traducen los datos de ejemplo. El árabe y el hebreo no se admiten y no aparecerán en la lista.
 
-8. En la lista desplegable **Seleccionar administrador del portal**, seleccione el usuario que configurará, personalizará, y mantendrá el portal. Todos los usuarios que tienen el rol Administrador del sistema en la organización aparecerán como opciones. 
+13. En la lista desplegable **Seleccionar administrador del portal**, seleccione el usuario que configurará, personalizará, y mantendrá el portal. Todos los usuarios que tienen el rol Administrador del sistema en la organización aparecerán como opciones. 
 
-9. En la sección **Público del portal**, seleccione el tipo de público que visitará el portal nuevo. Esto determina qué opciones de portales se le ofrecerán. Puede optar por:
+14. En la sección **Público del portal**, seleccione el tipo de público que visitará el portal nuevo. Esto determina qué opciones de portales se le ofrecerán. Puede optar por:
 
     -   Asociado    
         -   Portal de autoservicio de clientes
@@ -79,12 +93,12 @@ Para aprovisionar un portal:
     -   Empleado
         -   Portal de autoservicio de empleados
 
-10. En la sección **Seleccione el portal para implementar**, elija qué tipo de portal desea crear. Las opciones que ve se basan en el público que seleccionó.
+15. En la sección **Seleccione el portal para implementar**, elija qué tipo de portal desea crear. Las opciones que ve se basan en el público que seleccionó.
 
     > [!div class="mx-imgBorder"]
     > ![Configurar opciones para el portal](media/configure-settings-portal.png "Configurar opciones para el portal")  
 
-11. Seleccione **Enviar** y acepte las Condiciones de servicio.
+16. Seleccione **Enviar** y acepte las Condiciones de servicio.
     > [!div class="mx-imgBorder"]
     > ![Condiciones de servicio](media/terms-of-service.png "Condiciones de servicio")  
 

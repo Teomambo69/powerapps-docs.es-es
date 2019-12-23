@@ -20,14 +20,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6dc0aeb076aa97950b2049cc8054a809bf268e0d
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 51f75af11ca276d96611fcaef29cc65db72e4c7c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749446"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861785"
 ---
-<!-- This topic was not migrated it was written for PowerApps 
+<!-- This topic was not migrated it was written for Power Apps 
 Was Mike Carter
 Overlap with https://docs.microsoft.com/dynamics365/customer-engagement/developer/introduction-entity-attributes
 

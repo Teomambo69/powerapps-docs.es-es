@@ -9,20 +9,20 @@ ms.custom: ''
 ms.date: 10/21/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: f05a0dfb6424b11e71cf5bf4324d5e3db03a7897
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 6e1f577e5097aead282b6da9338acfd5d1f36364
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2709823"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862658"
 ---
 # <a name="import-metadata-translation"></a>Importar traducción de metadatos
 
-Cuando se aprovisiona un portal, las soluciones relacionadas con el portal se instalan en la organización. Durante la instalación de las soluciones, las traducciones de los metadatos de la solución (por ejemplo: el nombre de campo, el nombre del formulario, el nombre de vista, etc.) se instalan solo en los idiomas activados actualmente en la organización. Si posteriormente se activa un nuevo idioma, los metadatos no se instalarán automáticamente en el idioma recién activado. Para obtener la traducción de los metadatos al idioma recién activado, debe importar la traducción de los metadatos desde el Centro de administración de portales de PowerApps.
+Cuando se aprovisiona un portal, las soluciones relacionadas con el portal se instalan en la organización. Durante la instalación de las soluciones, las traducciones de los metadatos de la solución (por ejemplo: el nombre de campo, el nombre del formulario, el nombre de vista, etc.) se instalan solo en los idiomas activados actualmente en la organización. Si posteriormente se activa un nuevo idioma, los metadatos no se instalarán automáticamente en el idioma recién activado. Para obtener la traducción de los metadatos al idioma recién activado, debe importar la traducción de los metadatos desde el Centro de administración de portales de Power Apps.
 
 ## <a name="to-import-metadata-translation"></a>Para importar la traducción de metadatos
 
-1.  Abra [Centro de administración de Portales de PowerApps](admin-overview.md).
+1.  Abra [Centro de administración de Portales de Power Apps](admin-overview.md).
 
 2.  Vaya a **Acciones del portal** > **Obtener las traducciones de metadatos más recientes**. Una ventana de confirmación que se muestra pregunta si desea actualizar las soluciones de portal.
 

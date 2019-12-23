@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 24972d4c159db30c4abb142adf258a5930c8ace9
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ebecba9aedb8c475e3f8ce8628b7b24d104669e0
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758964"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873790"
 ---
 # <a name="create-a-power-bi-report"></a>Crear informes Power BI
 Common Data Service le permite conectarse directamente a sus datos mediante Power BI Desktop para crear informes y para publicarlos en Power BI. Desde Power BI, los informes se pueden usar en paneles, se pueden compartir con otros usuarios y se puede acceder a ellos desde varias plataformas en las aplicaciones móviles de Power BI.
@@ -34,7 +34,7 @@ Pra usar Power BI con Common Data Service se requiere lo siguiente:
 
 ## <a name="finding-your-common-data-service-environment-url"></a>Buscar la dirección URL del entorno de Common Data Service
 
-1. Abra [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione el entorno al que se va a conectar, haga clic en **engranaje de configuración** en la esquina superior derecha y haga clic en **Personalizaciones avanzadas**
+1. Abra [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione el entorno al que se va a conectar, haga clic en **engranaje de configuración** en la esquina superior derecha y haga clic en **Personalizaciones avanzadas**
 
     ![Entorno de Common Data Service](./media/data-platform-cds-powerbi-connector/CDSEnv1.png "Entorno de Common Data Service")
 
@@ -57,7 +57,7 @@ Pra usar Power BI con Common Data Service se requiere lo siguiente:
 
     ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport2.png "Power BI Desktop")
 
-3. Pegue la **Dirección URL de entorno de Common Data Service** en el campo **Dirección URL del servidor** y haga clic en **Aceptar**. Si ésta es la primera vez, se le pedirá que inicie sesión usando las mismas credenciales que usa para conectarse a PowerApps y a Common Data Service.
+3. Pegue la **Dirección URL de entorno de Common Data Service** en el campo **Dirección URL del servidor** y haga clic en **Aceptar**. Si ésta es la primera vez, se le pedirá que inicie sesión usando las mismas credenciales que usa para conectarse a Power Apps y a Common Data Service.
 
     ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport3.png "Power BI Desktop")
 

@@ -2,7 +2,7 @@
 title: Consultar datos con la API web (Common Data Service)| Microsoft Docs
 description: Obtenga información sobre las distintas formas de consultar los datos de Common Data Service con la API web de Common Data Service y las distintas opciones de consulta del sistema que se pueden aplicar en estas consultas.
 ms.custom: ''
-ms.date: 09/10/2019
+ms.date: 12/04/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 61b958e6f08757154dba415ec59ca6f12e80fb5f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3db4a538b45b754b1c0a3ca823638c4850aae43b
+ms.sourcegitcommit: 5e6d71967902c463f34a9254f988b9c10e431eb4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753692"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "2890711"
 ---
 # <a name="query-data-using-the-web-api"></a>Consultar datos utilizando la API web
 
@@ -516,9 +516,13 @@ GET [Organization URI]/api/data/v9.1/accounts?$select=name,revenue
 ## <a name="retrieve-a-count-of-entities"></a>Recuperar un recuento de entidades
 
  Use la opción de consulta del sistema `$count` con un valor de `true` para incluir un recuento de entidades que coincidan con los criterios de filtro hasta 5000.  
+
+ 
   
 > [!NOTE]
->  El valor de recuento no representa el número total de entidades del sistema. Está limitado por el número máximo de entidades que se pueden devueltas. Más información: [Límites en el número de entidades devueltas](#bkmk_limits)  
+>  El valor de recuento no representa el número total de entidades del sistema. Está limitado por el número máximo de entidades que se pueden devueltas. Más información: [Límites en el número de entidades devueltas](#bkmk_limits)
+>
+> Si desea recuperar el número total de registros para una entidad superior a 5000, use la función <xref href="Microsoft.Dynamics.CRM.RetrieveTotalRecordCount?text=RetrieveTotalRecordCount  Function" />.
   
  La propiedad de respuesta `@odata.count` contendrá el número de entidades que coinciden con los criterios de filtro con independencia de la limitación de la preferencia `odata.maxpagesize`.  
   

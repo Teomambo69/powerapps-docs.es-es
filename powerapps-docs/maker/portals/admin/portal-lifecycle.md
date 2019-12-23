@@ -1,6 +1,6 @@
 ---
-title: Acerca del ciclo de vida de los portales de PowerApps | MicrosoftDocs
-description: Información sobre el ciclo de vida de los portales de PowerApps y su conversión de prueba a producción.
+title: Acerca del ciclo de vida de los portales de Power Apps | MicrosoftDocs
+description: Información sobre el ciclo de vida de los portales de Power Apps y su conversión de prueba a producción.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 5476bb0306b5d9e0767f451fba36a567a70c4c54
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 60300176f0a39258bbb7030c9e30d9b2e7711990
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756804"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874670"
 ---
 # <a name="about-portal-lifecycle"></a>Acerca del ciclo de vida de portales
 
@@ -28,13 +28,13 @@ El primer portal se crea gratis en un entorno en un inquilino. Si necesita crear
 
 ### <a name="trial-portal"></a>Portal de prueba
 
-Un portal se crea siempre como portal de prueba. Puede convertirlo a producción desde el Centro de administración de portales de PowerApps si tiene las licencias requeridas. Para obtener información sobre convertir un portal de prueba a producción, consulte [Convertir un portal de prueba en producción](#convert-a-trial-portal-to-production).
+Un portal se crea siempre como portal de prueba. Puede convertirlo a producción desde el Centro de administración de portales de Power Apps si tiene las licencias requeridas. Para obtener información sobre convertir un portal de prueba a producción, consulte [Convertir un portal de prueba en producción](#convert-a-trial-portal-to-production).
 
-Para convertir un portal de prueba en producción, el entorno debe tener complementos requeridos para usuarios externos, o una licencia para usuarios internos. Para obtener más información sobre las licencias, consulte [Preguntas frecuentes sobre licencias de PowerApps y Microsoft Flow ](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) y [Licencias de portales de PowerApps](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-powerapps-portals-licensing).
+Para convertir un portal de prueba en producción, el entorno debe tener complementos requeridos para usuarios externos, o una licencia para usuarios internos. Para obtener más información sobre las licencias, consulte [Preguntas frecuentes sobre licencias de Power Apps y Power Automate ](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) y [Licencias de portales de Power Apps](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-power-apps-portals-licensing).
 
 ### <a name="suspended-portal"></a>Portal suspendido
 
-Seguirán mostrándose notificaciones en el Centro de administración de portales de PowerApps sobre la caducidad del portal de prueba. Los portales de prueba expiran después de 30 días. Si no convierte el portal a producción en el período de prueba, el portal se cierra y se sitúa en estado suspendido. No podrá obtener acceso al portal después de su caducidad.
+Seguirán mostrándose notificaciones en el Centro de administración de portales de Power Apps sobre la caducidad del portal de prueba. Los portales de prueba expiran después de 30 días. Si no convierte el portal a producción en el período de prueba, el portal se cierra y se sitúa en estado suspendido. No podrá obtener acceso al portal después de su caducidad.
 
 Sin embargo, el portal suspendido se puede seguir convertiendo a producción en un plazo de siete días de la suspensión. 
 
@@ -44,14 +44,14 @@ Si no convierte el portal a producción en el período de siete días desde la s
 
 ## <a name="convert-a-trial-portal-to-production"></a>Convertir un portal de prueba a producción
 
-Puede convertir un portal de prueba a producción desde las notificaciones mostradas en el Centro de administración de portales de PowerApps.
+Puede convertir un portal de prueba a producción desde las notificaciones mostradas en el Centro de administración de portales de Power Apps.
 
 > [!NOTE]
 > Debe tener asignado uno de los siguientes roles para convertir un portal de prueba a producción:
 > - Administrador global
 > - Administrador del sistema
 
-Al abrir el [Centro de administración de portales de PowerApps](admin-overview.md) y navegar a la pestaña [Detalles del portal](portal-details.md), verá la notificación sobre la caducidad de prueba mostrada en el campo **Tipo**.
+Al abrir el [Centro de administración de portales de Power Apps](admin-overview.md) y navegar a la pestaña [Detalles del portal](portal-details.md), verá la notificación sobre la caducidad de prueba mostrada en el campo **Tipo**.
 
 > [!div class=mx-imgBorder]
 > ![Notificación de prueba en pestaña Detalles del portal](../media/admin-center-convert-notif.png "Notificación de prueba en pestaña Detalles del portal")

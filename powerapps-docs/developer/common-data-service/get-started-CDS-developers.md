@@ -1,6 +1,6 @@
 ---
 title: 'Desarrolladores: Introducción a Common Data Service | Microsoft Docs'
-description: Descubra cómo los desarrolladores pueden agregar valor mediante Common Data Service en PowerApps.
+description: Descubra cómo los desarrolladores pueden agregar valor mediante Common Data Service en Power Apps.
 suite: powerapps
 author: JimDaly
 manager: ryjones
@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cfb5472981aab82f9f4909d71b45135e02ca9c33
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d896f91cc08e5a025fdbb87366543768508a6fb4
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749436"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883522"
 ---
 # <a name="developers-get-started-with-common-data-service"></a>Desarrolladores: Introducción a Common Data Service
 

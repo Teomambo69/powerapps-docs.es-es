@@ -1,6 +1,6 @@
 ---
-title: Entidades complejas que requieren licencias de Plan 2 de PowerApps | Microsoft Docs
-description: Una lista de entidades complejas en Common Data Service que requieren una licencia de Plan 2 de PowerApps.
+title: Entidades complejas que requieren licencias de Plan 2 de Power Apps | Microsoft Docs
+description: Una lista de entidades complejas en Common Data Service que requieren una licencia de Plan 2 de Power Apps.
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -13,25 +13,25 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f5ec7419ea7369a57308e046ae820557303f0d15
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a87b41fd2688992b85fb4dde36a2e7119f4e7a9f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706655"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861267"
 ---
 # <a name="complex-entities-and-licensing"></a>Entidades y licencias complejas
 
 > [!IMPORTANT]
-> Este tema está obsoleto y se actualizará pronto para reflejar los últimos cambios en licencias aplicables a partir del 1 de octubre de 2019. Para obtener la información más reciente sobre los requisitos de licencia para entidades, consulte [Manual de licencias de PowerApps](https://go.microsoft.com/fwlink/?linkid=2085130).
+> Este tema está obsoleto y se actualizará pronto para reflejar los últimos cambios en licencias aplicables a partir del 1 de octubre de 2019. Para obtener la información más reciente sobre los requisitos de licencia para entidades, consulte [Manual de licencias de Power Apps](https://go.microsoft.com/fwlink/?linkid=2085130).
 
-Las entidades que incluyen la siguiente lógica compleja de servidor requieren que los usuarios de una aplicación o flujo en el que se usen estas entidades tengan una licencia de Plan 2 de PowerApps o de Plan 2 de Microsoft Flow:
+Las entidades que incluyen la siguiente lógica compleja de servidor requieren que los usuarios de una aplicación o flujo en el que se usen estas entidades tengan una licencia de Plan 2 de Power Apps o de Plan 2 de Power Automate:
 
 * Complementos de código. Más información: [Desarrollo de complementos](/powerapps/developer/common-data-service/plug-ins)
 * Flujos de trabajo en tiempo real. Más información: [Procesos de flujo de trabajo](/flow/workflow-processes)
 
     > [!IMPORTANT]
-    >  Solo los flujos de trabajo que se convierten a un flujo de trabajo en tiempo real se consideran en tiempo real y sincrónicos. Los flujos de trabajo que se ejecutan en segundo plano pueden usarse con el plan adecuado de PowerApps y no requieren licencias adicionales.
+    >  Solo los flujos de trabajo que se convierten a un flujo de trabajo en tiempo real se consideran en tiempo real y sincrónicos. Los flujos de trabajo que se ejecutan en segundo plano pueden usarse con el plan adecuado de Power Apps y no requieren licencias adicionales.
 
 Para saber si ha agregado lógica de negocios compleja a las entidades, revise la lista de ensamblados de complementos y de flujos de trabajo configurados en el entorno.
 
@@ -178,5 +178,5 @@ En la tabla siguiente se muestran las entidades que contienen lógica del lado d
 
 
 ## <a name="licensing"></a>Licencias
-Para obtener más información acerca de las licencias de PowerApps y Dynamics 365, consulte la página [Información general de las licencias](../../administrator/pricing-billing-skus.md).
+Para obtener más información acerca de las licencias de Power Apps y Dynamics 365, consulte la página [Información general de las licencias](../../administrator/pricing-billing-skus.md).
 

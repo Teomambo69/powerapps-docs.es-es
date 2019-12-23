@@ -1,5 +1,5 @@
 ---
-title: Ordenar registros en una vista de aplicación controlada por modelos en PowerApps | MicrosoftDocs
+title: Ordenar registros en una vista de aplicación controlada por modelos en Power Apps | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
@@ -21,18 +21,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7cd1e7b160550b877dd0ddd7a79b6babfbf56669
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5a80764f3f00df60b54c4c7c23d2e167de2e006b
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752567"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874802"
 ---
 # <a name="sort-records-in-a-model-driven-app-view"></a>Ordenar registros en una vista de aplicación controlada por modelos
 
  Al crear o editar una vista puede configurar el criterio de ordenación ascendente o descendente.   
   
-1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 
 2.  Expanda **Datos**, seleccione **Entidades** y, a continuación, seleccione la entidad que desee, como **Cuentas**.   

@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a51bc5b959938d37e222c695bd949bdd08207b29
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 405e27d3461f78a2452de1c8b19d99d4d827d879
+ms.sourcegitcommit: abeedb952afc5e09ae4c158611e4813b63cb49b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749514"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "2854678"
 ---
 # <a name="compose-http-requests-and-handle-errors"></a>Componer solicitudes HTTP y administrar errores
 
@@ -138,7 +138,7 @@ Puede usar encabezados adicionales para habilitar funcionalidades específicas.
 |404 No encontrado|Esto se produce cuando no exista el recurso.|Error de cliente|  
 |405 Método no permitido|Este error se produce porque el método y las combinaciones de recursos no son correctas. Por ejemplo, no puede utilizar DELETE o PATCH en una colección de entidades.<br /><br /> Esto se produce para los siguientes tipos de errores:<br /><br /> -   CannotDeleteDueToAssociation<br />-   InvalidOperation<br />-   NotSupported|Error de cliente|  
 |412 Error de condición previa|Esto se produce para los siguientes tipos de errores:<br /><br /> -   ConcurrencyVersionMismatch<br />-   DuplicateRecord|Error de cliente|
-|429 Demasiadas solicitudes|Espere esto cuando se superan los límites de la API. Más información:[Limitaciones de la API](../api-limits.md)|Error de cliente|  
+|429 Demasiadas solicitudes|Espere esto cuando se superan los límites de la API. Más información: [Límites de API de protección de servicios](../api-limits.md)|Error de cliente|  
 |501 No implementado|Esto se produce cuando alguna operación solicitada no se implementa.|Error de servidor|  
 |503 Servicio no disponible|Esto se produce cuando el servicio de la API web no está disponible.|Error de servidor|  
   

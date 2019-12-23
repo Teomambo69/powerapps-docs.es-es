@@ -12,12 +12,12 @@ search.audienceType:
 - developer
 search.app:
 - PowerApps
-ms.openlocfilehash: 8b900ff8a1d4eae9664289cdcb96e53a453579ad
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 520079abf73c0367628de3bca01b316554b3af8c
+ms.sourcegitcommit: 8f32eed48adf4b24b9ca607bbf6db3d19749c46f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749704"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "2830527"
 ---
 # <a name="quick-start-sample-retrieve-common-data-service-environements-using-online-management-api"></a>Ejemplo de inicio rápido: Recuperar entornos de Common Data Service mediante la API de administración en línea 
 
@@ -45,7 +45,7 @@ Para poder ejecutar este ejemplo, asegúrese de que tiene:
 - .NET Framework 4.6.2
 
 Para ejecutar el ejemplo:
-1. [Descargue](https://code.msdn.microsoft.com/Sample-Retrieve-Customer-94e4076d) el ejemplo y extráigalo.
+1. [Descargue](https://github.com/microsoft/PowerApps-Samples/tree/master/cds/online-management-api) el ejemplo y extráigalo.
 2. Haga doble clic en el archivo de solución de Visual Studio (.sln) en la carpeta de C# en la ubicación extraída para abrir la solución en Visual Studio.
 3. En el archivo **Programs.cs**, especifique otra dirección URL del servicio si la región no es Norte América. Para obtener una lista de los valores de direcciones URL de servicio en todas las regiones del mundo, consulte [Dirección URL de servicio](get-started-online-management-api.md#service-url).
     ```csharp

@@ -1,5 +1,5 @@
 ---
-title: Información general sobre crear relaciones entre entidades de 1:N (uno a varios) o N:1 (varios a uno) en PowerApps | MicrosoftDocs
+title: Información general sobre crear relaciones entre entidades de 1:N (uno a varios) o N:1 (varios a uno) en Power Apps | MicrosoftDocs
 description: Aprender a crear relaciones entre entidades de uno a varios o varios a uno
 ms.custom: ''
 ms.date: 05/27/2018
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 724a887df3a5347f1d403ac30201297abf5201aa
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 07e173dff08a10de5354c08d3530605f530e512d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758212"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866155"
 ---
 # <a name="create-one-to-many-or-many-to-one-entity-relationships-overview"></a>Información general sobre crear relaciones entre entidades de uno a varios o varios a uno
 
@@ -40,7 +40,7 @@ Hay dos diseñadores que puede usar para crear y editar relaciones de 1:N (uno a
 
 |Diseñador| Descripción|
 |--|--|
-|[Portal PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Proporciona una experiencia fácil y ágil, pero algunos valores especiales no están disponibles.<br />Más información: [Creación y edición de relaciones entre entidades 1:N (uno a varios) o N:1 (varios a uno) en el portal de PowerApps](create-edit-1n-relationships-portal.md)|
+|[Portal Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Proporciona una experiencia fácil y ágil, pero algunos valores especiales no están disponibles.<br />Más información: [Creación y edición de relaciones entre entidades 1:N (uno a varios) o N:1 (varios a uno) en el portal de Power Apps](create-edit-1n-relationships-portal.md)|
 |Explorador de soluciones|No es tan fácil, pero proporciona más flexibilidad para requisitos menos comunes. <br />Más información: [Creación y edición de relaciones entre entidades 1:N (uno a varios) o N:1 (varios a uno) con el explorador de soluciones](create-edit-1n-relationships-solution-explorer.md) |
 
 > [!NOTE]
@@ -53,7 +53,7 @@ Hay dos diseñadores que puede usar para crear y editar relaciones de 1:N (uno a
 
 La información de este tema le ayudará a elegir el diseñador que puede usar. 
 
-Debe usar el portal PowerApps para crear y editar relaciones entre entidades de 1:N (uno a varios) o N:1 (varios a uno) a menos que necesite satisfacer cualquiera de los siguientes requisitos:
+Debe usar el portal Power Apps para crear y editar relaciones entre entidades de 1:N (uno a varios) o N:1 (varios a uno) a menos que necesite satisfacer cualquiera de los siguientes requisitos:
 
 - Configurar asignaciones de campos
 - Configurar opciones del panel de navegación para aplicaciones basadas en modelos
@@ -72,7 +72,7 @@ Debe usar el portal PowerApps para crear y editar relaciones entre entidades de 
 ### <a name="see-also"></a>Vea también
 
 [Crear y editar relaciones entre entidades](create-edit-entity-relationships.md)<br />
-[Creación y edición de relaciones entre entidades 1:N (uno a varios) o N:1 (varios a uno) en el portal de PowerApps](create-edit-1n-relationships-portal.md)<br />
+[Creación y edición de relaciones entre entidades 1:N (uno a varios) o N:1 (varios a uno) en el portal de Power Apps](create-edit-1n-relationships-portal.md)<br />
 [Creación y edición de relaciones entre entidades 1:N (uno a varios) o N:1 (varios a uno) con el explorador de soluciones](create-edit-1n-relationships-solution-explorer.md)<br />
 [Documentación para desarrolladores: Personalizar metadatos de relaciones entre entidades](/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)<br />
 [Documentación para desarrolladores: Elegibilidad de relación entre entidades](/dynamics365/customer-engagement/developer/entity-relationship-eligibility)

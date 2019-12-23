@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 38a2ebe769fdff6ebeeebd82824fffecae5ff00e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7a30c6b59b5426cea7fc265112ac24ebe8efd36d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2700363"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868135"
 ---
 # <a name="properties-available-in-the-form-designer"></a>Propiedades disponibles en el diseñador de formularios
 

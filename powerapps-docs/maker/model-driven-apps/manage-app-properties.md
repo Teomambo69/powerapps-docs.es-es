@@ -1,5 +1,5 @@
 ---
-title: Administrar propiedades de aplicaciones basadas en modelos en el diseñador de aplicaciones de PowerApps | MicrosoftDocs
+title: Administrar propiedades de aplicaciones basadas en modelos en el diseñador de aplicaciones de Power Apps | MicrosoftDocs
 description: Obtenga información sobre cómo administrar las propiedades de la aplicación
 keywords: ''
 ms.date: 02/05/2019
@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a4f28dd878ca2e862a99982564066eefacfb7892
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a2f0dc0130e8a698a4407d90f3f1ce51c9873c31
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701903"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860079"
 ---
 # <a name="manage-model-driven-app-properties-in-the-app-designer"></a>Administrar las propiedades de aplicaciones controladas por modelos en el diseñador de aplicaciones
 

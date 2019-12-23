@@ -20,16 +20,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0dd20288c36354903ab81ee3947336479f2e4c47
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f78aefd09433c956d278db7d1c7ae209b5239450
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705995"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861711"
 ---
 # <a name="change-the-solution-publisher-prefix"></a>Cambiar el prefijo del editor de soluciones
 
-Cada personalización creada es parte de una solución. Cada solución tiene un editor. De forma predeterminada, la solución con la que trabajará en PowerApps será la **Solución predeterminada de Common Data Service** que está asociado con el **Editor predeterminado de Common Data Service**.
+Cada personalización creada es parte de una solución. Cada solución tiene un editor. De forma predeterminada, la solución con la que trabajará en Power Apps será la **Solución predeterminada de Common Data Service** que está asociado con el **Editor predeterminado de Common Data Service**.
 
 El prefijo de personalización predeterminado se asignará aleatoriamente para este editor, por ejemplo, podría ser `cr8a3`. Esto significa que el nombre de cada nuevo elemento de metadatos creado para su organización tendrá que anexarse a los nombres usados para identificar los elementos. Si crea una nueva entidad denominada **Animal**, el nombre único usado por Common Data Service sería `cr8a3_animal`. Lo mismo se aplica a los nuevos campos (atributos), relaciones u opciones de conjuntos de opciones.
 
@@ -43,7 +43,7 @@ Por este motivo, a mucha gente le gusta cambiar el prefijo del editor de solucio
 
 ## <a name="change-the-solution-publisher-prefix-for-the-common-data-service-default-publisher"></a>Cambiar el prefijo del editor de soluciones del editor predeterminado de Common Data Service  
 
- 1. En el portal PowerApps, seleccione **Aplicaciones basadas en modelos** en la esquina inferior izquierda.
+ 1. En el portal Power Apps, seleccione **Aplicaciones basadas en modelos** en la esquina inferior izquierda.
  2. Haga clic en **Avanzadas** en la navegación izquierda para abrir la **Solución predeterminada de Common Data Service**
  3. En el explorador de soluciones, seleccione el área **Información** en la navegación izquierda.
  4. Haga clic en el vínculo **Editor** para abrir el formulario **Editor predeterminados de Common Data Service**.
@@ -54,7 +54,7 @@ Por este motivo, a mucha gente le gusta cambiar el prefijo del editor de solucio
 
 Las personas que distribuyen sus soluciones trabajarán normalmente en una solución que se creen en lugar de en la **Solución predeterminada de Common Data Service**. El prefijo de personalización suele establecerse cuando crean la solución. Puede cambiar el prefijo de personalización para otra solución no administrada con la que trabaja siguiendo estos pasos: 
 
- 1. En el portal PowerApps, seleccione **Aplicaciones basadas en modelos** en la esquina inferior izquierda.
+ 1. En el portal Power Apps, seleccione **Aplicaciones basadas en modelos** en la esquina inferior izquierda.
  2. Haga clic en **Avanzadas** en la navegación izquierda para abrir la **Solución predeterminada de Common Data Service**
  3. Edite la dirección URL de la página para quitar todos después `dynamics.com` y volver a cargar la página.
  4. Navegue a **Configuración** > **Personalización** > **Personalizaciones**. 

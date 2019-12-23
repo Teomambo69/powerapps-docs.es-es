@@ -1,5 +1,5 @@
 ---
-title: Crear la primera aplicación controlada por modelos desde cero con PowerApps | Microsoft Docs
+title: Crear la primera aplicación controlada por modelos desde cero con Power Apps | Microsoft Docs
 description: Aprenda cómo crear una aplicación controlada por modelos simple
 documentationcenter: ''
 author: Mattp123
@@ -17,25 +17,25 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9c41feb81fbe90c1ca675105fe898b667f61b2b9
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2a1e27dea75ba2e15ee7b96be2b7597430f89cba
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752615"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885065"
 ---
 # <a name="build-your-first-model-driven-app-from-scratch"></a>Crear la primera aplicación controlada por modelos desde cero
-El diseño de una aplicación controlada por modelos es un enfoque centrado en los componentes para el desarrollo de la aplicación. En este tema, simplificará el modo de crear una aplicación controlada por modelos usando una de las entidades estándar que esté disponible en el entorno de PowerApps.
+El diseño de una aplicación controlada por modelos es un enfoque centrado en los componentes para el desarrollo de la aplicación. En este tema, simplificará el modo de crear una aplicación controlada por modelos usando una de las entidades estándar que esté disponible en el entorno de Power Apps.
 
 > [!TIP]
 > Para obtener todos sobre las aplicaciones controladas por modelos, empiece aquí: [Comprender los componentes de aplicaciones controladas por modelos](model-driven-app-components.md). 
 
-## <a name="sign-in-to-powerapps"></a>Iniciar sesión en PowerApps
-Inicie sesión en [PowerApps](https://make.powerapps.com/). Si aún no tiene una cuenta de [!INCLUDE [powerapps](../../includes/powerapps.md)], seleccione el vínculo **Introducción gratuita**. 
+## <a name="sign-in-to-power-apps"></a>Iniciar sesión en Power Apps
+Inicie sesión en [Power Apps](https://make.powerapps.com/). Si aún no tiene una cuenta de [!INCLUDE [powerapps](../../includes/powerapps.md)], seleccione el vínculo **Introducción gratuita**. 
 
 ## <a name="create-your-model-driven-app"></a>Cree su aplicación controlada por modelos
 
-1.  Seleccione el entorno que desee o vaya al [Centro de administración de PowerApps](https://admin.powerapps.com/) para crear uno nuevo.
+1.  Seleccione el entorno que desee o vaya al [Centro de administración de Power Apps](https://admin.powerapps.com/) para crear uno nuevo.
 
   > [!IMPORTANT]
   > Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).   

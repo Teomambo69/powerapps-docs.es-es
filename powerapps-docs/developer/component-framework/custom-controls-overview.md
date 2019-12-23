@@ -1,6 +1,6 @@
 ---
 title: Qué son los componentes de código | MicrosoftDocs
-description: Use PowerApps component framework para crear componentes de código para proporcionar una mejor experiencia para que los usuarios vean y trabajen con datos en formularios, vistas, y paneles.
+description: Use Power Apps component framework para crear componentes de código para proporcionar una mejor experiencia para que los usuarios vean y trabajen con datos en formularios, vistas, y paneles.
 manager: kvivek
 ms.date: 09/05/2019
 ms.service: powerapps
@@ -8,12 +8,12 @@ ms.topic: article
 ms.assetid: 135481cd-4583-4e49-8f58-02f32a9b054a
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 08a2043dfb92634837c367e664306d9c100632d6
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: afc3f967d8fe93cbd0c5c8d21f67773f970d9ca2
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749635"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895027"
 ---
 # <a name="what-are-code-components"></a>Qué son los componentes de código
 
@@ -23,9 +23,9 @@ Puede agregar los componentes de código incluyéndolos en una solución y despu
 
 Los componentes de código constan de tres elementos:
 
-1. [Manifiesto](#manifest)
-2. [Biblioteca de implementación del componente](#component-implementation-library)
-3. [Recursos](#resources)
+- [Manifiesto](#manifest)
+- [Biblioteca de implementación del componente](#component-implementation-library)
+- [Recursos](#resources)
 
 ## <a name="manifest"></a>Manifiesto
 
@@ -41,7 +41,7 @@ Cuando un usuario configura un componente de código, los datos del archivo de m
 
 ## <a name="component-implementation-library"></a>Biblioteca de implementación del componente
 
-Implementar la biblioteca de componentes es uno de los pasos clave cuando está desarrollando componentes de código con PowerApps component framework. Los desarrolladores pueden implementar una biblioteca de componentes con TypeScript. Cada componente de código debe tener una biblioteca que incluya la definición de una función que devuelva un objeto que implemente los métodos descritos en la interfaz de componentes de código. 
+Implementar la biblioteca de componentes es uno de los pasos clave cuando está desarrollando componentes de código con Power Apps component framework. Los desarrolladores pueden implementar una biblioteca de componentes con TypeScript. Cada componente de código debe tener una biblioteca que incluya la definición de una función que devuelva un objeto que implemente los métodos descritos en la interfaz de componentes de código. 
 
 El objeto implementa los siguientes métodos:
 
@@ -74,7 +74,7 @@ controlObj.init(context,notifyOutputChanged,state,container);
 
 |Parámetro|Descripción|
 |---|---|
-|contexto| Contiene toda la información sobre cómo se configura el componente y todos los parámetros que se pueden usar en el componente junto con las [API de PowerApps component framework](reference/index.md). Por ejemplo, `context.parameters.<"property name from manifest">` se puede usar para tener acceso a la propiedad de entrada.|
+|contexto| Contiene toda la información sobre cómo se configura el componente y todos los parámetros que se pueden usar en el componente junto con las [API de Power Apps component framework](reference/index.md). Por ejemplo, `context.parameters.<"property name from manifest">` se puede usar para tener acceso a la propiedad de entrada.|
 |notifyOutputChanged |Alerta al marco de trabajo cuando el componente de código tiene las nuevas salidas listas para recuperarse de forma asincrónica.|
 |estado|Contiene datos del componente de la carga de página anterior en la sesión actual si el componente explícitamente lo almacenó antes usando el método [setControlState](reference/mode/setcontrolstate.md).|
 |contenedor|Un elemento de div HTML al que los desarrolladores y creadores de aplicaciones pueden anexar los elementos HTML para la interfaz de usuario que define el componente.|

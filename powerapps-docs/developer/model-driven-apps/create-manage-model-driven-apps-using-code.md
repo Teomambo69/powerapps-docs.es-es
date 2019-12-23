@@ -1,6 +1,6 @@
 ---
 title: Crear, administrar, y publicar aplicaciones basadas en modelos con código | Microsoft Docs
-description: Obtenga información sobre cómo crear, administrar y publicar aplicaciones basadas en modelos usando código en PowerApps.
+description: Obtenga información sobre cómo crear, administrar y publicar aplicaciones basadas en modelos usando código en Power Apps.
 keywords: ''
 ms.date: 03/04/2019
 ms.service: powerapps
@@ -15,18 +15,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9d33c07aa54a0a971f3d246a6390f736daa11627
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: bffa59c11805b803997e9025ff4fcf9470773efd
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749913"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883502"
 ---
 # <a name="create-manage-and-publish-model-driven-apps-using-code"></a>Crear, administrar, y publicar aplicaciones basadas en modelos con código
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-manage-custom-business-apps-using-code -->
 
-Además de crear una aplicación basada en modelos usando el diseñador de aplicaciones PowerApps, puede mediante programación crear y administrar aplicaciones basadas en modelos. 
+Además de crear una aplicación basada en modelos usando el diseñador de aplicaciones Power Apps, puede mediante programación crear y administrar aplicaciones basadas en modelos. 
 
 > [!IMPORTANT]
 > No tiene que escribir código para crear aplicaciones basadas en modelos si no es necesario. El diseñador de aplicaciones proporciona una experiencia mucho más sencilla e intuitiva para la creación de aplicaciones basadas en modelos sin necesidad de escribir código mediante el suministro de una estructura de información basada en ventanas y una interfaz simplificada. Consúltelo aquí: [Diseñar aplicaciones basadas en modelos mediante el diseñador de aplicaciones](../../maker/model-driven-apps/design-custom-business-apps-using-app-designer.md)  

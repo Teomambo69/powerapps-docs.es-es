@@ -1,6 +1,6 @@
 ---
 title: Herramientas de desarrollador (aplicaciones basadas en modelos) | Microsoft Docs
-description: Proporciona información sobre herramientas desarrolladas por la comunidad que puede usar con aplicaciones basadas en modelos en PowerApps.
+description: Proporciona información sobre herramientas desarrolladas por la comunidad que puede usar con aplicaciones basadas en modelos en Power Apps.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1288b04acee069345f15efbc3925229315fd83f7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 62bb1bd34fe5f6c20f385e22d2c41155762c2720
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749905"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883450"
 ---
 # <a name="developer-tools"></a>Herramientas del desarrollador
 

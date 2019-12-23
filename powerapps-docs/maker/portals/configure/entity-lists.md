@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/04/2019
+ms.date: 11/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 1ab175f69fdcf292185fd96cb176045dccc3a70b
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 4fa68ace39f9a1b2dbcb2d9111e71364fde49fbc
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2761109"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874406"
 ---
 # <a name="about-entity-lists"></a>Acerca de listas de entidades
 
@@ -325,7 +325,7 @@ Agregar la capacidad de filtrar registros de una lista de entidad es fácil: hab
 
 **Habilitar el filtro de lista de entidades**
 
-En la sección Filtro de metadatos, seleccione la casilla Habilitado. Esto agregará el área Filtro a la lista de entidades cuando se muestran. Hasta que haya definido por lo menos un tipo de filtro, aparecerá el cuadro vacío.
+En la sección **Filtro de metadatos**, seleccione la casilla **Habilitado**. Esto agregará el área Filtro a la lista de entidades cuando se muestran. Hasta que haya definido por lo menos un tipo de filtro, aparecerá el cuadro vacío.
 
 Puede definir cómo el área Filtro en la lista de entidades se representará con la opción Orientación. El valor predeterminado, Horizontal, representa el área Filtro por encima de la lista de entidades. Orientación vertical representa el área Filtro como un cuadro a la izquierda de la lista de entidades.
 
@@ -493,16 +493,27 @@ Use la Vista de calendario de lista de entidades para representar una lista de e
 
 Para mostrar los registros mediante un calendario, esos registros deben incluir como mínimo un campo de fecha. Para que los eventos tengan horas de inicio y finalización exactos, los campos correspondientes deben existir, etc. Si se supone que estos campos estén configurados, una vista de calendario de lista de entidades aparecerá en el portal.
 
-## <a name="enhanced-view-filter-for-entity-lists"></a>Filtro de vista mejorado para listas de entidades
+## <a name="entity-list-odata-feeds"></a>Fuentes de OData de la lista de entidades
 
 Si está habilitada, una entidad se puede publicar a una fuente de OData. El protocolo OData es un protocolo a nivel de aplicación para interactuar con datos a través de servicios web RESTful. Los datos de esta fuente se pueden ver en un explorador web, consumir por una aplicación web del lado del cliente, o importar a [!INCLUDE[pn-excel-short](../../../includes/pn-excel-short.md)].
 
-## <a name="entity-list-odata-feeds"></a>Fuentes de OData de la lista de entidades
+> [!Note]
+> La fuente OData que se publica es anónima y no tiene comprobaciones de autorización; por tanto, es importante no habilitar las fuentes OData para los datos que son inadecuados para el acceso anónimo al portal.
+
+## <a name="enhanced-view-filter-for-entity-lists"></a>Filtro de vista mejorado para listas de entidades
 
 Puede usar permisos de la entidad si desea proteger los registros, pero si desea proporcionar simplemente un filtro como parte del conjunto de opciones de filtro que corresponde al usuario del portal actual, puede usar la función lista de entidades. Esta característica admite el filtro de usuario actual, de la cuenta primaria del usuario, o una página web en cualquier profundidad. Simplemente cree el filtro de la vista para que coincida con cualquier registro de contacto único, y el código reemplazará la configuración con el valor real en tiempo de ejecución, sin la necesidad de asignar valores a los campos de la sección Condiciones de filtro.
 
-> [!Note]
-> La fuente OData que se publica es anónima y no tiene comprobaciones de autorización; por tanto, es importante no habilitar las fuentes OData para los datos que son inadecuados para el acceso anónimo al portal.
+- El control encontrará todos los elementos de condición donde uitype= "contact" y establecerá el valor en el valor real del identificador de contacto del usuario del portal actual.
+- El control encontrará todos los elementos de condición donde uitype= "account" y establecerá el valor en el valor real del identificador de la cuenta principal del usuario del portal actual.
+- El control encontrará todos los elementos de condición donde uitype= "adx_website" y establecerá el valor en el valor real del identificador del sitio web actual.
+
+Ejemplo de criterios de filtro de vista
+
+La siguiente imagen muestra un contacto arbitrario asignado a una condición de filtro, este contacto resulta ser un contacto "falso" pendiente de confirmación, pero esto podría ser cualquier registro de contacto. La identificación de este registro será reemplazada por el valor real del identificador del usuario que ve la página. Si el usuario no ha iniciado sesión, no se devolverán registros. Esto proporciona una mayor flexibilidad para filtrar los datos en función del usuario y el sitio web contextualmente.
+
+> [!NOTE]
+> Si está filtrando por el contacto del usuario del portal actual o cuenta primaria, se recomienda que asocie una [Regla de control de acceso de página web ](webpage-access-control.md)a la página web para obligar al usuario a iniciar sesión. Debe crear un [Rol web](create-web-roles.md) con "Rol de usuarios autenticados" marcado. Cree una regla de control de acceso a páginas web con el derecho "Restringir lectura" y asocie el rol web. Esto obligará a los usuarios a iniciar sesión para ver la página y, por lo tanto, permitirá que los datos se completen en consecuencia.
 
 ### <a name="see-also"></a>Vea también
 

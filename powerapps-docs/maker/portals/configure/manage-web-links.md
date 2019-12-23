@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 5d0ead5104765ab71848ffcf8c4aaff801a58a20
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d8e2421545247f72b5b164e08b4ac210466048c1
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2761105"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866859"
 ---
 # <a name="manage-web-links"></a>Administrar vínculos web
 
 Un vínculo web puede vincular cualquier dirección URL o puede vincularse a otra página web dentro del mismo sitio web. Cuando un vínculo web se establece con una página web, la seguridad y el estado de publicación de la página web se aplicará también al vínculo web. Los vínculos web siempre forman parte de un conjunto de vínculos web. Un conjunto de vínculos web es un grupo de vínculos como una navegación principal o un grupo de vínculos de pie de página. Los conjuntos de vínculos web permiten que los vínculos internos, independientemente de su ubicación en el mapa del sitio, y externos se agrupen y ordenen.
 
-## <a name="manage-web-links-in-powerapps-portals"></a>Administrar vínculos web en portales PowerApps
+## <a name="manage-web-links-in-power-apps-portals"></a>Administrar vínculos web en portales Power Apps
 
 Una vez que las personalizaciones del portal se hayan importado en su entorno de Common Data Service, los vínculos web se pueden administrar desde un conjunto de vínculos web.
 

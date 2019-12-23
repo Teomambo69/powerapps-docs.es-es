@@ -1,6 +1,6 @@
 ---
 title: Entidades de cola (Common Data Service) | Microsoft Docs
-description: Las colas en PowerApps son fundamentales para organizar, asignar prioridades y supervisar el progreso de su trabajo.
+description: Las colas en Power Apps son fundamentales para organizar, asignar prioridades y supervisar el progreso de su trabajo.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6452dd50cb54e1c7c3aa5a57b9d7751ba9f13af7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f250fc7fffede19ddd263a22319220de44fd50e4
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749811"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861894"
 ---
 # <a name="queue-entities"></a>Entidades de cola
 

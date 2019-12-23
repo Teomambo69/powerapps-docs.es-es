@@ -1,5 +1,5 @@
 ---
-title: Crear o editar formularios de creación rápida de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
+title: Crear o editar formularios de creación rápida de aplicaciones controladas por modelos en Power Apps | MicrosoftDocs
 description: Aprenda a crear o editar un formulario de creación rápida.
 ms.custom: ''
 ms.date: 05/14/2019
@@ -22,20 +22,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b1496fcb600524e7934fe55ca17a7a7bafb54c75
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 171d64581fd0a9feb51d5a6111c79e63de1ba845
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759180"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875374"
 ---
 # <a name="create-or-edit-model-driven-app-quick-create-forms-for-a-streamlined-data-entry-experience"></a>Crear o editar formularios de creación rápida de aplicaciones controladas por modelos para lograr una experiencia optimizada de entrada de datos
 
 En este tema, creará y editará un formulario de creación rápida.
 
- Con los formularios de creación rápida, la aplicación puede tener una experiencia simplificada de entrada de datos totalmente compatibles con la lógica definida por scripts de formulario y reglas de negocio. En una aplicación controlada por modelos de PowerApps, los formularios de creación rápida aparecen al seleccionar el botón **Crear** en la barra de navegación o al elegir **+ Nuevo** al crear un registro nuevo desde una búsqueda o subcuadrícula.
+ Con los formularios de creación rápida, la aplicación puede tener una experiencia simplificada de entrada de datos totalmente compatibles con la lógica definida por scripts de formulario y reglas de negocio. En una aplicación controlada por modelos de Power Apps, los formularios de creación rápida aparecen al seleccionar el botón **Crear** en la barra de navegación o al elegir **+ Nuevo** al crear un registro nuevo desde una búsqueda o subcuadrícula.
   
- Las aplicaciones móviles de Dynamics 365 usan formularios de creación rápida para crear registros nuevos. Si una entidad ya tiene un formulario de creación rápida configurado, las aplicaciones móviles usan ese formulario. Si una entidad no tiene configurado un formulario de creación rápida, PowerApps genera un formulario creación rápida para crear registros en las aplicaciones móviles basadas en la definición del formulario principal.  
+ Las aplicaciones móviles de Dynamics 365 usan formularios de creación rápida para crear registros nuevos. Si una entidad ya tiene un formulario de creación rápida configurado, las aplicaciones móviles usan ese formulario. Si una entidad no tiene configurado un formulario de creación rápida, Power Apps genera un formulario creación rápida para crear registros en las aplicaciones móviles basadas en la definición del formulario principal.  
   
 <a name="BKMK_QuickCreateFormEntities"></a>   
 ## <a name="entities-with-quick-create-forms"></a>Entidades con formularios de creación rápida  
@@ -61,7 +61,7 @@ Puede habilitar entidades de actividad personalizadas para admitir formularios d
   
 ### <a name="how-to-create-a-quick-create-form"></a>Cómo crear un formulario de creación rápida  
   
-1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 
 > [!IMPORTANT]
@@ -99,7 +99,7 @@ Si agrega un campo compuesto a un formulario de creación rápida, este se mostr
   
 ### <a name="to-edit-a-quick-create-form"></a>Para editar un formulario de creación rápida  
   
-1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 > [!IMPORTANT]
 > Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).    

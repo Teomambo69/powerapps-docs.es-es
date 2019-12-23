@@ -1,5 +1,5 @@
 ---
-title: Definir transiciones de razón para el estado con PowerApps | MicrosoftDocs
+title: Definir transiciones de razón para el estado con Power Apps | MicrosoftDocs
 description: Aprender a definir transiciones de razón para el estado
 ms.custom: ''
 ms.date: 05/25/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9fb1fc93b5559c47cebeef4fb73ebd095a48f0a5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5dd257a07a21b2d0b0d2a449feb9df855d51d604
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705599"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861135"
 ---
 # <a name="define-status-reason-transitions-for-the-case-or-custom-entities"></a>Definir las transiciones de razón para el estado de la entidad Caso o de entidades personalizadas
 
@@ -65,7 +65,7 @@ Los metadatos para el campo definen qué valores de estado son válidos para un 
 Puede modificar las opciones de campo de razón para el estado para que las entidades de entidad de caso y personalizadas definan qué otras opciones de razón para el estado pueden elegir. La única restricción es que cada opción de razón para el estado de un estado activo debe permitir al menos una ruta a un estado inactivo. Si no, podría crear una condición donde no sería posible resolver ni cancelar el caso.  
 
 > [!NOTE]
-> Editar las transiciones de razón para el estado requiere el uso del explorador de soluciones. Consulte [Crear y editar campos para Common Data Service usando el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md) para obtener información sobre cómo editar campos.
+> Editar las transiciones de razón para el estado requiere el uso del explorador de soluciones. Consulte [Crear y editar campos para Common Data Service usando el explorador de soluciones de Power Apps](create-edit-field-solution-explorer.md) para obtener información sobre cómo editar campos.
   
  Cuando edita un campo de razón para el estado, el botón **Editar las transiciones de la razón para el estado** está en el menú. 
 
@@ -86,7 +86,7 @@ La captura de pantalla a continuación proporciona un ejemplo que cumple los sig
   
 ### <a name="see-also"></a>Vea también  
 
-[Crear y editar campos para Common Data Service con el explorador de soluciones de PowerApps](create-edit-field-solution-explorer.md)<br />
+[Crear y editar campos para Common Data Service con el explorador de soluciones de Power Apps](create-edit-field-solution-explorer.md)<br />
 [Metadatos de entidad > Estados de entidad](/powerapps/developer/common-data-service/entity-metadata#entity-states)<br />
 [Definir transiciones de modelo de estado personalizadas](/dynamics365/customer-engagement/developer/define-custom-state-model-transitions)
 

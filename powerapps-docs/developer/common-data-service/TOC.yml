@@ -57,6 +57,8 @@
       href: optimistic-concurrency.md
     - name: Suplantar a otro usuario
       href: impersonate-another-user.md
+    - name: Límites de la API de protección de servicio
+      href: api-limits.md
     - name: Prácticas recomendadas
       href: best-practices/work-with-data/index.md
     - name: Agregar y quitar datos de ejemplo
@@ -343,7 +345,7 @@
       href: package-deployer/create-packages-package-deployer.md
     - name: Comprobar calidad de soluciones y de paquetes
       items:
-        - name: Usar la API web del comprobador de PowerApps
+        - name: Usar la API web del comprobador de Power Apps
           href: checker/webapi/overview.md
         - name: Invocar el análisis
           href: checker/webapi/analyze.md

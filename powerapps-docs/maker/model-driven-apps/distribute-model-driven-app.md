@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 72f5ad809983738526a03f306c3479f53745d991
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2d9c6692f26e16b03872696b094ccd14a649299f
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755419"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873197"
 ---
 # <a name="distribute-a-model-driven-app-using-a-solution"></a>Distribuir una aplicación controlada por modelos usando una solución
 
@@ -38,7 +38,7 @@ Las aplicaciones basadas en modelos se distribuyen como componentes de la soluci
 ## <a name="add-an-app-to-a-solution"></a>Agregar una aplicación a una solución
 Para distribuir su aplicación, debe crear una solución para que la aplicación se pueda empaquetar para la exportación.
 
-1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 2. Seleccione **Soluciones** y seleccione **Nueva solución**.
 3. Complete los campos en la página **Nueva solución** y, a continuación, seleccione **Guardar**. Más información: [Crear una solución](../common-data-service/create-solution.md)
@@ -66,7 +66,7 @@ Para distribuir la aplicación de modo que se pueda importar en otro entorno o p
 ## <a name="import-a-solution"></a>Importación de soluciones  
 Cuando reciba un archivo zip de la solución que contiene la aplicación que desea importar, abra la página de componentes de soluciones e importe la solución. Cuando la solución se haya importado correctamente, la aplicación estará disponible en su entorno.
 
-1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 2. Seleccione **Soluciones** y en la barra de herramientas seleccione **Importar**.
 3. Examine el archivo que desea importar y elija **Siguiente**.

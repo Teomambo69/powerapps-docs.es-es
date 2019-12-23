@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: abe7420026edb23ff23c652f3531a63a87b5fd86
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 414541da940771c68acf49f338308a8b4a80e751
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749618"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863094"
 ---
 # <a name="define-custom-actions-to-modify-the-ribbon"></a>Definir acciones personalizadas para modificar la cinta de opciones
 
@@ -62,5 +62,5 @@ El valor predeterminado, una barra de comandos de la aplicación o la cinta de o
   
 ### <a name="see-also"></a>Vea también  
  [Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)   
- [Pasar los datos desde una página como parámetro de las acciones de la cinta de opciones](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actions)<br/>   <!-- TODO need to update the relevant PowerApps repo link-->
+ [Pasar los datos desde una página como parámetro de las acciones de la cinta de opciones](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actions)<br/>   <!-- TODO need to update the relevant Power Apps repo link-->
  [Definir la escalabilidad para elementos de la cinta de opciones](define-scaling-ribbon-elements.md)

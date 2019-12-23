@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/11/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: e53380c39257645e9056a271226b6f7ef8c8c721
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: cc2c7aae9b2329bfa7b24d45049d7cbbab399e28
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2709955"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862728"
 ---
 # <a name="maintenance-mode-for-a-portal"></a>Modo de mantenimiento para un portal
 
@@ -29,7 +29,7 @@ Como administrador del portal, puede configurar el portal para mostrar un mensaj
 
 Puede habilitar el modo de mantenimiento en el portal para proporcionar un mensaje consistente, en lugar de tratar un comportamiento impredecible cuando la página web esté en mantenimiento programado. Esto le proporcionará una mejor experiencia a los usuarios del portal.
 
-1. Abra [Centro de administración de Portales de PowerApps](admin-overview.md).
+1. Abra [Centro de administración de Portales de Power Apps](admin-overview.md).
 
 3. Vaya a **Acciones del portal** > **Habilitar modo de mantenimiento**.
 
@@ -45,6 +45,9 @@ Puede habilitar el modo de mantenimiento en el portal para proporcionar un mensa
 
     - **Dirección URL de página personalizada**: Este campo se habilita solo cuando selecciona la opción para mostrar una página HTML personalizada. Debe asegurarse de que la dirección URL de la página que proporciona es accesible públicamente. Si no se puede acceder a la página HTML especificada, la página predeterminada se muestra con una nota a los administradores.
 
+        > [!NOTE]
+        > La página de mantenimiento personalizado usa IFrame para mostrar la página. Por lo tanto, la página no debe contener el encabezado de respuesta `x-frame-options:SAMEORIGIN`. de lo contrario la página no se cargará.
+
 5. Seleccione **Habilitar**. Mientras está habilitado el modo de mantenimiento, se reinicia el portal y no está disponible durante unos minutos. 
 
     > [!div class=mx-imgBorder]
@@ -56,7 +59,7 @@ Después de habilitar el modo de mantenimiento para el portal, puede actualizar 
 
 También puede elegir deshabilitar el modo de mantenimiento en el portal cuando el mantenimiento programado de la página web se completa. Los usuarios del portal ahora pueden explorar y obtener acceso a todas las páginas web como de costumbre.
 
-1. Abra [Centro de administración de Portales de PowerApps](admin-overview.md).
+1. Abra [Centro de administración de Portales de Power Apps](admin-overview.md).
 
 2. Vaya a **Acciones del portal** > **Configurar o deshabilitar modo de mantenimiento**.
 

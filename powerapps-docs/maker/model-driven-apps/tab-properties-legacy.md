@@ -1,5 +1,5 @@
 ---
-title: Propiedades de pestaña para formularios de aplicaciones controladas por modelos en PowerApps | MicrosoftDocs
+title: Propiedades de pestaña para formularios de aplicaciones controladas por modelos en Power Apps | MicrosoftDocs
 description: Comprender las propiedades de pestañas para formularios principales
 Keywords: Propiedades de pestaña; Dynamics 365; formularios principales
 author: matp
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bd97c61829aaba7279f56019f0eec7fa9829a6ea
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d0653ad2089be03ff06bfd5495c8995d92ec704e
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756276"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874626"
 ---
 # <a name="tab-properties-for-model-driven-app-forms-overview"></a>Información general de propiedades de pestaña para formularios de aplicaciones controladas por modelos
 
@@ -31,8 +31,8 @@ ms.locfileid: "2756276"
   
  Las pestañas contienen hasta tres columnas y el ancho de cada columna se puede establecer en un porcentaje del ancho total. Al crear una nueva pestaña, cada columna se rellena previamente con una sección.  
 
-Puede acceder a las **Propiedades de pestaña** desde el sitio de PowerApps. 
-1.  En el sitio de [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación).  
+Puede acceder a las **Propiedades de pestaña** desde el sitio de Power Apps. 
+1.  En el sitio de [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación).  
 
      ![Modo de diseño controlado por modelos](media/model-driven-switch.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Eliminar una aplicación controlada por modelos | MicrosoftDocs
-description: Aprenda a eliminar o quitar una aplicación controlada por modelos de su entorno de PowerApps.
+description: Aprenda a eliminar o quitar una aplicación controlada por modelos de su entorno de Power Apps.
 keywords: ''
 ms.date: 10/08/2019
 ms.service: powerapps
@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 026420ad6a5f3ab3e74c9c0d11f87f8a52ffa417
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e8f7d58f7c5cf40f6b582bc5be7970211334d271
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756233"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874848"
 ---
 # <a name="delete-a-model-driven-app"></a>Eliminar una aplicación controlada por modelos
 Elimine o quite aplicaciones obsoletas en su entorno.
@@ -37,7 +37,7 @@ Elimine o quite aplicaciones obsoletas en su entorno.
 > [!IMPORTANT]
 > Si se instaló una aplicación basada en modelo en la solución predeterminada como parte de una solución administrada, consulte [Eliminar una aplicación basada en modelo que se instaló como parte de una solución administrada](#delete-a-model-driven-app-that-was-installed-as-part-of-a-managed-solution).
 
-1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2. En el panel de navegación izquierdo, seleccione **Aplicaciones**. 
 3. Seleccione la aplicación que desea eliminar y, a continuación, seleccione **Eliminar** en la barra de comandos.
 4. En el mensaje de confirmación que aparece, seleccione **Eliminar**.
@@ -54,7 +54,7 @@ Para eliminar una aplicación basada en modelo que se instaló en el entorno com
 
 ### <a name="delete-a-managed-solution"></a>Eliminar una solución administrada 
 Todos los componentes de la solución administrada se eliminan al eliminar la solución.
-1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
 2.  En el panel de navegación izquierdo, seleccione **Soluciones**.
 3.  En la lista **Soluciones**, seleccione la solución administrada que desea eliminar y en la barra de herramientas, seleccione **Eliminar**. 
 

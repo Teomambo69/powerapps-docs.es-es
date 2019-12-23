@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8e032cc95f64e842552308ccf9d179fc153b49fd
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 37f935bc8767f4738e2cfd317b7447653f848f65
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2710439"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867563"
 ---
 # <a name="using-the-tree-view-in-the-form-designer"></a>Use la vista de árbol del diseñador de formularios
 El panel **Vista de árbol** muestra una jerarquía visual de componentes del formulario. Los iconos en la ayuda de la vista de árbol ayudan a identificar rápidamente el tipo de campo o de componente. 

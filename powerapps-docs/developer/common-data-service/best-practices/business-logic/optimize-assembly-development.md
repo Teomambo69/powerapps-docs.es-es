@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ae7b61fde2de24d68e9debab4ae61ad9c18718b4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 926cc3f7ebb61d0d9c59df707f6d4d824d59599a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749395"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861845"
 ---
 # <a name="optimize-assembly-development"></a>Optimizar el desarrollo de ensamblados
 
@@ -63,7 +63,7 @@ Las actividades de complementos y de flujo de trabajo personalizado desarrollada
 
 ### <a name="move-plug-inscustom-workflow-activities-into-multiple-assemblies"></a>Mover actividades de complementos/actividades personalizadas a múltiples ensamblados
 
-PowerApps y Dynamics 365 (online) tienen una limitación de tamaño de ensamblado de 16 MB, que no se puede cambiar. Si el tamaño del ensamblado se acerca a 16 MB, considere transferir las actividades de complementos y de flujo de trabajo personalizado a varios ensamblados.
+Power Apps y Dynamics 365 (online) tienen una limitación de tamaño de ensamblado de 16 MB, que no se puede cambiar. Si el tamaño del ensamblado se acerca a 16 MB, considere transferir las actividades de complementos y de flujo de trabajo personalizado a varios ensamblados.
 
 <a name='problem'></a>
 

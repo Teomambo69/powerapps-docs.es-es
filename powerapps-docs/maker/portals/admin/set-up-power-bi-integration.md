@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 6a471dba2f91ca869ad9ba9da46f6e02cb2a643d
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f307e84ccfae749b86b34f787716b80784c8c617
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756760"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867171"
 ---
 # <a name="set-up-power-bi-integration"></a>Configurar integración de Power BI
 
-Power BI es una de las mejores herramientas para ofrecer ideas con visualización básica e interactiva. Para ver los paneles e informes de Power BI en las páginas web de un portal, debe habilitar la visualización de Power BI desde el Ccentro de administración de portales de PowerApps. También puede insertar paneles e informes creados en el nuevo espacio de trabajo de Power BI habilitando la integración con el servicio Power BI Embedded.
+Power BI es una de las mejores herramientas para ofrecer ideas con visualización básica e interactiva. Para ver los paneles e informes de Power BI en las páginas web de un portal, debe habilitar la visualización de Power BI desde el Ccentro de administración de portales de Power Apps. También puede insertar paneles e informes creados en el nuevo espacio de trabajo de Power BI habilitando la integración con el servicio Power BI Embedded.
 
 > [!NOTE]
 > - Debe tener una licencia adecuada de Power BI.
@@ -28,7 +28,7 @@ Power BI es una de las mejores herramientas para ofrecer ideas con visualizació
 
 Habilitar la visualización de Power BI permite insertar paneles e informes en las páginas web en un portal utilizando la etiqueta powerbi Liquid.
 
-1.  Abra [Centro de administración de Portales de PowerApps](admin-overview.md).
+1.  Abra [Centro de administración de Portales de Power Apps](admin-overview.md).
 
 2.  Vaya a **Configurar la integración de Power BI** > **Habilitar la visualización de Power BI**.
 
@@ -41,7 +41,7 @@ Los personalizadores pueden usar la etiqueta Liquid [powerbi](../liquid/portals-
 
 ### <a name="disable-power-bi-visualization"></a>Deshabilitar visualización de Power BI
 
-1.  Abra [Centro de administración de Portales de PowerApps](admin-overview.md).
+1.  Abra [Centro de administración de Portales de Power Apps](admin-overview.md).
 
 2.  Vaya a **Configurar la integración de Power BI** > **Deshabilitar la visualización de Power BI**.
 
@@ -54,14 +54,14 @@ Los personalizadores pueden usar la etiqueta Liquid [powerbi](../liquid/portals-
 
 Habilitar el servicio Power BI Embedded le permite insertar paneles e informes creados en el nuevo espacio de trabajo de Power BI. Los paneles e informes se insertan en las páginas web en un portal utilizando la etiqueta powerbi Liquid.
 
-**Requisitos previos**: Para habilitar el servicio Power BI Embedded, asegúrese de que ha creado los paneles e informes en el nuevo espacio de trabajo de Power BI. Después de crear el espacio de trabajo, proporcione acceso de administración al administrador global para que los espacios de trabajo se muestren en el Centro de administración de portales de PowerApps. Para obtener más información sobre la creación de nuevos espacios de trabajo y agregar acceso a ellos, consulte [Crear nuevos espacios de trabajo en Power BI](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces).
+**Requisitos previos**: Para habilitar el servicio Power BI Embedded, asegúrese de que ha creado los paneles e informes en el nuevo espacio de trabajo de Power BI. Después de crear el espacio de trabajo, proporcione acceso de administración al administrador global para que los espacios de trabajo se muestren en el Centro de administración de portales de Power Apps. Para obtener más información sobre la creación de nuevos espacios de trabajo y agregar acceso a ellos, consulte [Crear nuevos espacios de trabajo en Power BI](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces).
 
 **Limitaciones del servicio Power BI Embedded**: Para obtener información sobre limitaciones, consulte [Consideraciones y limitaciones](https://docs.microsoft.com/power-bi/developer/embed-service-principal#considerations-and-limitations).
 
 > [!NOTE]
 > Asegúrese de que la visualización de Power BI está habilitada para que funcione la etiqueta powerbi Liquid.
 
-1. Abra [Centro de administración de Portales de PowerApps](admin-overview.md).
+1. Abra [Centro de administración de Portales de Power Apps](admin-overview.md).
 
 2. Vaya a **Configurar la integración de Power BI** > **Habilitar servicio Power BI Embedded**.
 
@@ -111,7 +111,7 @@ Después de habilitar la integración del servicio Power BI Embedded, debe crear
 
 **Paso 2: Agregar un miembro del grupo**
 
-**Requisitos previos**: Antes de agregar un integrante al grupo de seguridad, debe tener el identificador de aplicación del portal con usted. El id. de aplicación del portal está disponible en la pestaña **Detalles del portal** en el [Centro de administración de portales de PowerApps](admin-overview.md).
+**Requisitos previos**: Antes de agregar un integrante al grupo de seguridad, debe tener el identificador de aplicación del portal con usted. El id. de aplicación del portal está disponible en la pestaña **Detalles del portal** en el [Centro de administración de portales de Power Apps](admin-overview.md).
 
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com) usando una cuenta de administrador global cuenta para el directorio.
 
@@ -156,7 +156,7 @@ Los personalizadores pueden ahora usar la etiqueta Liquid [powerbi](../liquid/po
 
 ### <a name="manage-the-power-bi-embedded-service"></a>Administrar el servicio Power BI Embedded
 
-1. Abra [Centro de administración de Portales de PowerApps](admin-overview.md).
+1. Abra [Centro de administración de Portales de Power Apps](admin-overview.md).
 
 2. Vaya a **Configurar la integración de Power BI** > **Administrar servicio Power BI Embedded**.
 
@@ -175,7 +175,7 @@ Los personalizadores pueden ahora usar la etiqueta Liquid [powerbi](../liquid/po
 
 ### <a name="disable-the-power-bi-embedded-service"></a>Deshabilitar el servicio Power BI Embedded
 
-1.  Abra [Centro de administración de Portales de PowerApps](admin-overview.md).
+1.  Abra [Centro de administración de Portales de Power Apps](admin-overview.md).
 
 2.  Vaya a **Configurar la integración de Power BI** > **Administrar servicio Power BI Embedded**.
 

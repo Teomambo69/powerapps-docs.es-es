@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 028be1172621c9bdb510f5e57d16eb226b10f92b
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 434dea11e5238167e824561e247bc23ddbb7839b
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758256"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874186"
 ---
 # <a name="configure-connection-roles"></a>Configurar roles de conexión
 
@@ -38,7 +38,7 @@ Cualquiera con acceso de escritura a la entidad **Rol de conexión** puede estab
 > Para que una entidad esté disponible como tipo de registro para un nuevo o existente rol de conexión, la propiedad **Habilitar conexiones** debe estar habilitado para la entidad. 
 
 ## <a name="enable-connection-roles-for-an-entity"></a>Habilitar roles de conexión para una entidad
-1. Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+1. Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
 2. Expanda **Datos**y, a continuación seleccione **Entidades**. 
 3. Seleccione la entidad que desee habilitar para roles de conexión y, en la barra de comandos seleccione **Configuración**. 
 4. En el panel **Configuración** expanda el área **Colaboración** y, a continuación seleccione **Habilitar conexiones**.

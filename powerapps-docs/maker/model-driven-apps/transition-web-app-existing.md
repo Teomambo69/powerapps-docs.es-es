@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e39cb11b9883e93d341232bcdcbb43dc17fa491a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 75175b34b158be75165c6bcdae5826060fb47f38
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759796"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884384"
 ---
 # <a name="quick-start-for-using-an-existing-environment-to-validate-your-legacy-web-client-app-with-the-unified-interface"></a>Inicio rápido para usar un entorno existente para validar la antigua aplicación de cliente web heredada con la interfaz unificada
 Este tema de inicio rápido muestra cómo usar un entorno existente para crear una aplicación de interfaz unificada basada en la configuración actual o la configuración predeterminada. Esto le permite explorar y comprobar la interfaz unificada mientras ejecuta aplicaciones de cliente web heredadas existentes paralelamente. Un usuario a continuación puede cambiar entre entornos para obtener una vista lado a lado. 
@@ -65,7 +65,7 @@ El proceso para validar la aplicación de cliente web heredada en un entorno exi
 Si ha cambiado recientemente el modo **Usar solo la interfaz unificada** a **Activado** en el entorno de desarrollo, siguiendo las instrucciones del tema [Inicio rápido para realizar la transición de la aplicación de cliente web heredada de aplicaciones de Dynamics 365 a la interfaz unificada](transition-web-app.md), deberá volver a **Desactivarlo** para poder ejecutar las antiguas del cliente web heredadas existentes.
 
 ### <a name="create-a-new-solution-thats-based-on-the-default-solution"></a>Crear una solución nueva que se base en la solución predeterminada
-1. Iniciar sesión en el [portal de creador de PowerApps](https://make.powerapps.com).   
+1. Iniciar sesión en el [portal de creador de Power Apps](https://make.powerapps.com).   
 2. Seleccione la lista de entornos, seleccione el entorno que desee.  
 3. En el panel de navegación izquierdo, seleccione **Soluciones**. 
 4. En la barra de menú, seleccione **Nueva solución**. 
@@ -98,7 +98,7 @@ Una nueva ventana se abre en el explorador con la nueva aplicación basada en mo
 > [!div class="mx-imgBorder"] 
 > ![Nueva aplicación de la interfaz unificada](media/new-unified-interface-app.png "Nueva aplicación de la interfaz unificada")
 
-Recuerde que cuando vuelva a la pestaña del explorador con el área **Soluciones** del portal del creador de PowerApps, la nueva aplicación basada en modelo y una extensión de cliente del mapa del sitio con nombre similar forman parte de la solución que ha creado.  
+Recuerde que cuando vuelva a la pestaña del explorador con el área **Soluciones** del portal del creador de Power Apps, la nueva aplicación basada en modelo y una extensión de cliente del mapa del sitio con nombre similar forman parte de la solución que ha creado.  
 
 > [!div class="mx-imgBorder"] 
 > ![Activos de solución](media/solution-assets.png "Activos de solución")
@@ -158,7 +158,7 @@ Con su aplicación mostrando la interfaz unificada, puede empezar a validar la a
 > La versión actual de Common Data Service y aplicaciones basadas en modelo en Dynamics 365 incluye aún varias características obsoletas. Debe comprobar si la aplicación tiene características obsoletas y reemplazarlas según sea necesario con nuevas capacidades. Más información: [Próximos cambios importantes (funciones obsoletas)](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming)
 
 > [!TIP]
-> La herramienta Comprobador de PowerApps ayuda a comprobar la calidad de los componentes de la solución.  Más información: [Use el comprobador de soluciones para validar sus aplicaciones basadas en modelos en PowerApps](../common-data-service/use-powerapps-checker.md)
+> La herramienta Comprobador de Power Apps ayuda a comprobar la calidad de los componentes de la solución.  Más información: [Use el comprobador de soluciones para validar sus aplicaciones basadas en modelos en Power Apps](../common-data-service/use-powerapps-checker.md)
 
 ## <a name="next-steps"></a>Pasos siguientes
 En función de sus hallazgos, el equipo o el asociado de implementación puede estimar la cantidad de esfuerzo necesario para realizar la transición de su aplicación en la interfaz unificada y también identificar mejoras potenciales en la facilidad de uso. Con muchas características y capacidades nuevas disponibles en la interfaz unificada hay oportunidad para aumentar el valor de los usuarios de la aplicación. 
@@ -171,9 +171,9 @@ Más información: [Diseñar aplicaciones basadas en modelo mediante el diseñad
 [Cuaderno de estrategias de la interfaz unificada](unified-interface-playbook.md) <br />
 [Aproximación a la experiencia de usuario y transición a la interfaz unificada](approaching-unified-interface.md) <br />
 [Acerca de la interfaz unificada](/dynamics365/customer-engagement/admin/about-unified-interface) <br />
-[¿Qué son las aplicaciones controladas por modelos en PowerApps?](model-driven-app-overview.md) <br />
+[¿Qué son las aplicaciones controladas por modelos en Power Apps?](model-driven-app-overview.md) <br />
 [Actualizar aplicaciones a la interfaz unificada](/dynamics365/customer-engagement/admin/update-apps-to-unified-interface) <br />
 [Configurar paneles de experiencia interactiva de aplicaciones controladas por modelos](configure-interactive-experience-dashboards.md) <br />
 [Usar controles personalizados para visualizaciones de datos de aplicaciones controladas por modelos](use-custom-controls-data-visualizations.md) <br />
-[Información general sobre PowerApps component framework](/powerapps/developer/component-framework/overview) <br />
+[Información general sobre Power Apps component framework](/powerapps/developer/component-framework/overview) <br />
 [Interfaz unificada para todos](/power-platform-release-plan/2019wave2/microsoft-powerapps/unified-interface-app-everybody)

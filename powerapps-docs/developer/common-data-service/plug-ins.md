@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 110a530c25c7f7e502c26da18bf2f473d53b6673
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 1631ab73d2714a3c0981849ce37fa091bfa3f5a4
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749815"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "2779947"
 ---
 # <a name="use-plug-ins-to-extend-business-processes"></a>Use complementos para ampliar los procesos de negocio
 
@@ -49,7 +49,7 @@ La gente a menudo compara flujos de trabajo y complementos como las opciones par
 
 - La integración de bus del servicio Azure y los vínculos web se pueden usar para insertar datos a los sistemas externos donde la lógica se puede aplicar con diferentes recursos.
 
-- Microsoft Flow ofrece muchas capacidades que antes se ejecutaban usando complementos.
+- Power Automate ofrece muchas capacidades que antes se ejecutaban usando complementos.
 
 Puede tener numerosas opciones disponibles. Debería evaluar cada una de ellas para comprender la mejor forma que cumpla sus requisitos.
 

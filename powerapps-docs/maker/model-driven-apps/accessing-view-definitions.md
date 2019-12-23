@@ -22,16 +22,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3b29f863399c8a49ca0c0d60ebe2196d6de6414c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 43a35f82f93260b4f4a8f6b5084e6827e46eff8f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752038"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885153"
 ---
-# <a name="access-a-model-driven-app-view-definition-in-powerapps"></a>Acceso a una definición de vista de aplicación controlada por modelos en PowerApps
+# <a name="access-a-model-driven-app-view-definition-in-power-apps"></a>Acceso a una definición de vista de aplicación controlada por modelos en Power Apps
 
- En este tema abrirá una definición de vista para mostrar propiedades y opciones para configurar la vista. Existen varias formas de acceder a definiciones de vista en PowerApps. 
+ En este tema abrirá una definición de vista para mostrar propiedades y opciones para configurar la vista. Existen varias formas de acceder a definiciones de vista en Power Apps. 
   
   
 ## <a name="open-a-view-for-editing-in-the-latest-view-designer"></a>Abra una vista para editar en el último diseñador de vistas
@@ -39,7 +39,7 @@ ms.locfileid: "2752038"
 > [!IMPORTANT]
 > La versión más reciente del diseñador de vistas está funcionando actualmente en vista previa. Algunas características como el filtrado avanzado, controles personalizados, así como propiedades de columnas aún no se admiten. Para realizar estas tareas [Abra una vista para editar en el explorador de soluciones](#open-a-view-for-editing-in-solution-explorer).
 
-1.  Inicie sesión en [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 
     > [!IMPORTANT]

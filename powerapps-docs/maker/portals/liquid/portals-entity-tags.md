@@ -1,28 +1,28 @@
 ---
-title: Usar etiquetas de entidad de PowerApps Common Data Service para un portal | MicrosoftDocs
-description: Obtenga información sobre las etiquetas de entidad de PowerApps Common Data Service disponibles en portales.
+title: Usar etiquetas de entidad de Power Apps Common Data Service para un portal | MicrosoftDocs
+description: Obtenga información sobre las etiquetas de entidad de Power Apps Common Data Service disponibles en portales.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/28/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: b6efc3e176602d366315b9b54b66593005051e55
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f252b0c9ef0ea90f6206863fe45a36702e4ce481
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757156"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884669"
 ---
-# <a name="powerapps-common-data-service-entity-tags"></a>Etiquetas de entidad de PowerApps Common Data Service.
+# <a name="power-apps-common-data-service-entity-tags"></a>Etiquetas de entidad de Power Apps Common Data Service.
 
-Las etiquetas de entidad de PowerApps se usan para cargar y mostrar los datos de PowerApps, o usar otros servicios de marco de portales de PowerApps. Estos etiquetas son extensiones específicas de PowerApps del lenguaje Liquid.
+Las etiquetas de entidad de Power Apps se usan para cargar y mostrar los datos de Power Apps, o usar otros servicios de marco de portales de Power Apps. Estos etiquetas son extensiones específicas de Power Apps del lenguaje Liquid.
 
 ## <a name="chart"></a>Gráfico
 
-Agrega un gráfico PowerApps a una página web. La etiqueta del gráfico puede añadirse en el campo Copiar en una página web o en el campo Origen en una Plantilla web. Para ver los pasos para agregar un gráfico de PowerApps en una página web, consulte [Agregar un gráfico a una página web en el portal](../configure/add-chart.md).
+Agrega un gráfico Power Apps a una página web. La etiqueta del gráfico puede añadirse en el campo Copiar en una página web o en el campo Origen en una Plantilla web. Para ver los pasos para agregar un gráfico de Power Apps en una página web, consulte [Agregar un gráfico a una página web en el portal](../configure/add-chart.md).
 
 ```
 {% chart id:"EE3C733D-5693-DE11-97D4-00155DA3B01E" viewid:"00000000-0000-0000-00AA-000010001006" %}
@@ -45,7 +45,7 @@ Identificador de la entidad cuando se abre en el editor de vistas.
 Agrega los paneles e informes de Power BI dentro de las páginas. La etiqueta del gráfico puede añadirse en el campo **Copiar** en una página web o en el campo **Origen** en una plantilla web. Para ver los pasos para agregar un informe o una panel de Power BI a una página web en el portal, consulte [Adición de informes o paneles de Power BI a una página web en el portal](../admin/add-powerbi-report.md).
 
 > [!NOTE]
-> Para que la etiqueta funcione, debe [habilitar la integración de Power BI](../admin/set-up-power-bi-integration.md) desde el Centro de administración de portales de PowerApps. Si la integración de Power BI no está habilitada, el panel o el informe no se mostrará.
+> Para que la etiqueta funcione, debe [habilitar la integración de Power BI](../admin/set-up-power-bi-integration.md) desde el Centro de administración de portales de Power Apps. Si la integración de Power BI no está habilitada, el panel o el informe no se mostrará.
 
 ### <a name="parameters"></a>Parámetros
 
@@ -56,14 +56,14 @@ La etiqueta powerbi acepta los siguientes parámetros.
 Ruta del informe o el panel de Power BI. Si el informe o el panel de Power BI son seguros, debe proporcionar el tipo de autenticación.
 
 ```
-{% powerbi path:"https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000001/ReportSection01" %}
+{% powerbi authentication_type:"powerbiembedded" path:"https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000001/ReportSection01" %}
 ```
 
 **authentication_type**
 
 Tipo de autenticación necesaria para el informe o el panel de Power BI. Los valores válidos para este parámetro son:
 
-- **Anónimo**: Permite insertar publicaciones en informes de Power BI web. El tipo de autenticación predeterminado es Anónimo.
+- **Anónimo**: Permite insertar publicaciones en informes de Power BI web. El tipo de autenticación predeterminado es Anónimo. Cuando utilice el tipo de autenticación como Anónimo, debe obtener la dirección URL del informe de Power BI como se describe en: [Publicar en la web desde Power BI](https://docs.microsoft.com/power-bi/service-publish-to-web)
 
 - **AAD**: Permitir compartir informes Power BI o los paneles Power BI Azure Active Directory a los usuarios autenticados.
 
@@ -139,7 +139,7 @@ Si ha asignado un rol a un informe de Power BI, y no especificó el parámetro *
 
 ## <a name="editable"></a>editable
 
-Representa un objeto CMS de portales de PowerApps como editable en el portal, para usuarios con permiso de edición de contenido para ese objeto. Los objetos editables son [página](liquid-objects.md#page), [fragmentos](liquid-objects.md#snippets) y [weblinks](liquid-objects.md#weblinks).  
+Representa un objeto CMS de portales de Power Apps como editable en el portal, para usuarios con permiso de edición de contenido para ese objeto. Los objetos editables son [página](liquid-objects.md#page), [fragmentos](liquid-objects.md#snippets) y [weblinks](liquid-objects.md#weblinks).  
 
 ```
 {% editable page 'adx_copy' type: 'html', title: 'Page Copy', escape: false, liquid: true %}
@@ -284,7 +284,7 @@ Loaded entity list {{ entitylist.adx_name }}.
 
 **language\_code**
 
-Un código de idioma entero de PowerApps para seleccionar las etiquetas localizadas de la lista de entidades que se cargarán. Si no se proporciona un language\_code, el idioma predeterminado de la conexión de PowerApps de la aplicación del portal se usará.
+Un código de idioma entero de Power Apps para seleccionar las etiquetas localizadas de la lista de entidades que se cargarán. Si no se proporciona un language\_code, el idioma predeterminado de la conexión de Power Apps de la aplicación del portal se usará.
 
 ```
 {% entitylist name:"My Entity List", language_code:1033 %}
@@ -296,7 +296,7 @@ Loaded entity list {{ entitylist.adx_name }}.
 
 ## <a name="entityview"></a>entityview
 
-Carga una vista de PowerApps dada, por nombre o Id. A continuación se puede acceder a las propiedades de la vista ߝ de metadatos de columna de la vista, registros paginados de resultados, etc. utilizando un [objeto entityview](liquid-objects.md#entityview) que estará disponible en el bloque de etiquetas.  
+Carga una vista de Power Apps dada, por nombre o Id. A continuación se puede acceder a las propiedades de la vista ߝ de metadatos de columna de la vista, registros paginados de resultados, etc. utilizando un [objeto entityview](liquid-objects.md#entityview) que estará disponible en el bloque de etiquetas.  
 
 Si la vista se carga correctamente, el contenido del bloque se representará. Si la vista no se encuentra, el contenido del bloque no se representará.
 
@@ -334,7 +334,7 @@ Loaded default view of the entity list associated with the current page, with {{
 
 ### <a name="parameters"></a>Parámetros
 
-Proporcione **bien** id**o bien** logical\_name con el nombre para seleccionar la vista de PowerApps para cargar. Si no se proporciona ninguna, y la etiqueta entityview está anidada en una etiqueta entitylist, se cargará la vista predeterminada de la entitylist asociada.
+Proporcione **bien** id**o bien** logical\_name con el nombre para seleccionar la vista de Power Apps para cargar. Si no se proporciona ninguna, y la etiqueta entityview está anidada en una etiqueta entitylist, se cargará la vista predeterminada de la entitylist asociada.
 
 **id**
 
@@ -360,7 +360,7 @@ Loaded entity view {{ entityview.name }} using view query string request paramet
 
 **logical\_name**
 
-Nombre lógico de la entidad de PowerApps de la vista que se va a cargar. Deben usarse junto con name.
+Nombre lógico de la entidad de Power Apps de la vista que se va a cargar. Deben usarse junto con name.
 
 ```
 {% entityview logical_name:'contact', name:"Active Contacts" %}
@@ -372,7 +372,7 @@ Loaded entity view with {{ entityview.total_records }} total records.
 
 **name**
 
-El nombre de PowerApps de la vista que se cargará. Deben usarse junto con logical\_name.
+El nombre de Power Apps de la vista que se cargará. Deben usarse junto con logical\_name.
 
 ```
 {% entityview logical_name:'contact', name:"Active Contacts" %}
@@ -527,7 +527,7 @@ Loaded entity view with {{ entityview.total_records }} total records to which th
 
 **language\_code**
 
-Un código de idioma entero de PowerApps para seleccionar las etiquetas localizadas de vista de la entidad (etiquetas de encabezado de columna, etc.) para cargar. Si no se proporciona un language\_code, el idioma predeterminado de la conexión de PowerApps de la aplicación del portal se usará.
+Un código de idioma entero de Power Apps para seleccionar las etiquetas localizadas de vista de la entidad (etiquetas de encabezado de columna, etc.) para cargar. Si no se proporciona un language\_code, el idioma predeterminado de la conexión de Power Apps de la aplicación del portal se usará.
 
 Si entityview se usa dentro de un bloque entitylist, entityview heredará su configuración de código de idioma de entitylist.
 
@@ -636,7 +636,7 @@ Este parámetro admite la [sintaxis de analizador de consultas de Lucene](https:
 
 **logical\_names**
 
-Los nombres lógicos de entidad de PowerApps a los que los resultados coincidentes estarán restringidos, como una cadena delimitada por comas. Si no se proporcionan, se devolverán todas las entidades que coincidan.
+Los nombres lógicos de entidad de Power Apps a los que los resultados coincidentes estarán restringidos, como una cadena delimitada por comas. Si no se proporcionan, se devolverán todas las entidades que coincidan.
 
 ```
 {% searchindex query: request.params.query, logical_names: 'kbarticle,incident' %}
@@ -681,7 +681,7 @@ El tamaño de la página de resultados que se devolverá. Si no se proporciona, 
 
 ## <a name="entityform"></a>entityform
 
-Representa completamente formularios de entidad configurados por PowerApps, por nombre o Id.  
+Representa completamente formularios de entidad configurados por Power Apps, por nombre o Id.  
 
 > [!Note]
 > La etiqueta entityform sólo está disponible para su uso en el contenido representado en una plantilla de página basada en <em>[plantilla web](store-content-web-templates.md)–</em>. Intentar usar la etiqueta en una plantilla de página basada en reescritura no representará nada. Solo puede representar una sola etiqueta entityform o webform por página. Las etiquetas entityform o webform después de la primera no se representarán.       
@@ -696,9 +696,9 @@ El nombre del formulario de entidad que desea cargar.
 
 `{% entityform name:My Entity Form %}`
 
-### <a name="webform"></a>**webform**
+## <a name="webform"></a>webform
 
-Representa completamente un formulario web configurado por PowerApps, por nombre o Id. La etiqueta webform solo está disponible para su uso en el contenido representado en una plantilla de página basada en [plantilla web](store-content-web-templates.md). Intentar usar la etiqueta en una plantilla de página basada en reescritura no representará nada. Solo puede representar una sola etiqueta entityform o webform por página. Las etiquetas entityform o webform después de la primera no se representarán.                
+Representa completamente un formulario web configurado por Power Apps, por nombre o Id. La etiqueta webform solo está disponible para su uso en el contenido representado en una plantilla de página basada en [plantilla web](store-content-web-templates.md). Intentar usar la etiqueta en una plantilla de página basada en reescritura no representará nada. Solo puede representar una sola etiqueta entityform o webform por página. Las etiquetas entityform o webform después de la primera no se representarán.                
 `{% webform name: 'My Web Form' %}`
 
 ### <a name="parameters"></a>Parámetros
@@ -708,6 +708,7 @@ Representa completamente un formulario web configurado por PowerApps, por nombre
 El nombre del formulario web que desea cargar.
 
 `{% webform name:My Web Form %}`
+
 
 ### <a name="see-also"></a>Vea también
 

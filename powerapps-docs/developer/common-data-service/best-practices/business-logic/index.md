@@ -1,6 +1,6 @@
 ---
 title: 'Programadores: Prácticas recomendadas e instrucciones sobre la programación de complementos y flujos de trabajo para Common Data Service | Microsoft Docs'
-description: Prácticas recomendadas e instrucciones sobre la programación de complementos y flujos de trabajo para desarrolladores de Common Data Service en PowerApps.
+description: Prácticas recomendadas e instrucciones sobre la programación de complementos y flujos de trabajo para desarrolladores de Common Data Service en Power Apps.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a3915f554ef650df33f53921c4fba8135ea1baf5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: ca0c34bfb12ba417c14426cbb14dc2382d8ffc55
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749397"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883550"
 ---
 # <a name="best-practices-and-guidance-regarding-plug-in-and-workflow-development-for-the-common-data-service"></a>Prácticas recomendadas e instrucciones sobre la programación de complementos y flujos de trabajo para Common Data Service
 
