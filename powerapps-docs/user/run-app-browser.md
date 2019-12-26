@@ -1,6 +1,6 @@
 ---
-title: 在網頁瀏覽器中執行應用程式 | Microsoft Docs
-description: 在本主題中，您將了解如何在網頁瀏覽器中執行應用程式
+title: Ejecución de aplicaciones en un explorador web | Microsoft Docs
+description: En este tema aprenderá a ejecutar aplicaciones en un explorador web
 author: mduelae
 ms.service: powerapps
 ms.component: pa-user
@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2019
 ms.locfileid: "74956793"
 ---
-# <a name="run-an-app-in-a-web-browser"></a>在網頁瀏覽器中執行應用程式
+# <a name="run-an-app-in-a-web-browser"></a>Ejecución de una aplicación en un explorador web
 Cuando se crea una aplicación o alguien comparte una aplicación con usted, puede ejecutarla en la aplicación móvil Dynamics 365 o en un explorador Web en una tableta. En este tema, aprenderá a ejecutar una aplicación de lienzo o controlada por modelos en un explorador Web en una tableta desde la [Página principal de Dynamics 365](https://home.dynamics.com).
 
 Para obtener una funcionalidad completa y una experiencia optimizada, recomendamos encarecidamente que use la aplicación móvil Dynamics 365 para teléfonos y tabletas. Si no tiene la aplicación Dynamics 365 para teléfonos y tabletas instalada, todavía puede usar el explorador Web en la tableta, siempre que el dispositivo tenga una resolución de pantalla suficientemente alta. Para obtener más información: [lo que se admite](https://docs.microsoft.com/dynamics365/mobile-app/support-phones-tablets#supported-devices-for-the-mobile-app).
@@ -31,40 +31,40 @@ Para obtener una funcionalidad completa y una experiencia optimizada, recomendam
 > [!NOTE]
 > No se admite el uso del explorador Web en el teléfono para ejecutar aplicaciones controladas por modelos; debe usar la aplicación Dynamics 365 para teléfonos.
 
-若要遵循本快速入門，您需要：
+Para seguir este inicio rápido, necesita:
 - Una licencia de Power apps. Esto está disponible con un plan de Power Apps, como la [evaluación de Power apps plan 2](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps), o cualquiera de los planes [Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) o [Dynamics 365](https://dynamics.microsoft.com/pricing/) que incluyen Power apps. 
-- 存取您建置的應用程式，或是其他人建置並與您共用的應用程式。
-- 存取支援的網頁瀏覽器和作業系統。
-   - 針對畫布應用程式，請參閱[系統需求、限制和設定值](../maker/canvas-apps/limits-and-config.md)
-   - 針對模型驅動應用程式，請參閱[支援的網頁瀏覽器和行動裝置](https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-web-browsers-and-mobile-devices)
+- Acceso a una aplicación que haya compilado o que otra persona haya compilado y compartido con usted.
+- Acceso a un explorador web y un sistema operativo compatibles.
+   - Para las aplicaciones de lienzo, vea [Requisitos del sistema, límites y valores de configuración](../maker/canvas-apps/limits-and-config.md)
+   - Para las aplicaciones controladas por modelos, vea: [Exploradores web y dispositivos móviles admitidos](https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-web-browsers-and-mobile-devices)
 
 
-## <a name="sign-in-to-dynamics-365"></a>登入 Dynamics 365
-登入 Dynamics 365 (網址為 [https://home.dynamics.com](https://home.dynamics.com))。
+## <a name="sign-in-to-dynamics-365"></a>Inicio de sesión en Dynamics 365
+Inicie sesión en Dynamics 365 en [https://home.dynamics.com](https://home.dynamics.com).
 
-## <a name="find-an-app-on-the-home-page"></a>在首頁上尋找應用程式
-首頁可能會顯示數種類型的商務應用程式，但您可以在搜尋方塊中輸入部分名稱來尋找特定的應用程式。 También puede filtrar la lista para mostrar solo las aplicaciones creadas por un origen específico, como Power apps. Para ello, seleccione **filtrar** y, a continuación, seleccione el origen.
+## <a name="find-an-app-on-the-home-page"></a>Buscar una aplicación en la página principal
+En la página principal se pueden mostrar varios tipos de aplicaciones empresariales, pero se puede buscar una aplicación específica si se escribe al menos una parte de su nombre en el cuadro de búsqueda. También puede filtrar la lista para mostrar solo las aplicaciones creadas por un origen específico, como Power apps. Para ello, seleccione **filtrar** y, a continuación, seleccione el origen.
 
-如果您最近剛安裝應用程式，可能不會立即出現在應用程式清單中。 Seleccione **sincronizar** para mostrar todas las aplicaciones. 此程序可能需要最多 1 分鐘的時間。
+Si ha instalado la aplicación recientemente, es posible que no aparezca inmediatamente en la lista de aplicaciones. Seleccione **sincronizar** para mostrar todas las aplicaciones. Este proceso puede tardar hasta un minuto.
 
 ![](./media/run-app-browser/dynamics-365-home.png)
 
 
-## <a name="run-an-app-from-a-url"></a>從 URL 執行應用程式
-Puede guardar la dirección URL de una aplicación como un marcador en el explorador de la tableta y ejecutarla seleccionando el marcador, o bien puede enviar una dirección URL como un vínculo por correo electrónico. Si otro usuario creó una aplicación y la compartió con usted en un correo electrónico, puede ejecutar la aplicación seleccionando el vínculo en el correo electrónico. 使用 URL 執行應用程式時，系統可能會提示您使用 Azure Active Directory 認證登入。
+## <a name="run-an-app-from-a-url"></a>Ejecutar una aplicación desde una dirección URL
+Puede guardar la dirección URL de una aplicación como un marcador en el explorador de la tableta y ejecutarla seleccionando el marcador, o bien puede enviar una dirección URL como un vínculo por correo electrónico. Si otro usuario creó una aplicación y la compartió con usted en un correo electrónico, puede ejecutar la aplicación seleccionando el vínculo en el correo electrónico. Al ejecutar una aplicación desde una dirección URL, es posible que se le solicite que inicie sesión con las credenciales de Azure Active Directory.
 
 ![](./media/run-app-browser/web-login.png)
 
-## <a name="connect-to-data"></a>連接到資料
-如果應用程式必須連接至資料來源，或是需要權限才能使用裝置的功能 (例如相機或位置服務)，則必須經過您的同意，您才能使用應用程式。 一般而言，系統只會在首次使用時提示您。
+## <a name="connect-to-data"></a>Conectarse a datos
+Si una aplicación requiere una conexión a un origen de datos o permiso para usar las funcionalidades del dispositivo (como la cámara o los servicios de ubicación), debe dar su consentimiento antes de usar la aplicación. Habitualmente, solo se le solicitará la primera vez.
 
-![Connection](./media/run-app-browser/app-connection.png)
+![Conexión](./media/run-app-browser/app-connection.png)
 
-## <a name="close-an-app"></a>關閉應用程式
-若要關閉應用程式，請登出 Dynamics 365 首頁，或開啟另一個應用程式。
+## <a name="close-an-app"></a>Cerrar una aplicación
+Para cerrar una aplicación, cierre la sesión en la página de inicio de 365 Dynamics o abra otra aplicación.
 
-## <a name="next-steps"></a>後續步驟
-在本主題中，您已了解如何在網頁瀏覽器中執行畫布或模型驅動應用程式。 Para obtener información sobre cómo:
+## <a name="next-steps"></a>Pasos siguientes
+En este tema ha aprendido a ejecutar una aplicación de lienzo o controlada por modelos en un explorador web. Para obtener información sobre cómo:
 - ejecutar una aplicación de lienzo en un dispositivo móvil, consulte [ejecutar una aplicación de lienzo en un dispositivo móvil](run-app-client.md)
 - ejecutar una aplicación controlada por modelos en un dispositivo móvil, consulte [ejecutar una aplicación controlada por modelos en un dispositivo móvil](run-app-client-model-driven.md)
 - usar una aplicación controlada por modelos, consulte [uso de aplicaciones controladas por](use-model-driven-apps.md) modelos
