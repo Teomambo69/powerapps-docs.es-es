@@ -13,19 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ae11f42fef927509461d8219b8df4134a633ae5d
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 3275c93aea5492384727701d1074982a345fae67
+ms.sourcegitcommit: fa88889cd109651d403ab03287b7f0521bb90e02
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75204028"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "75324951"
 ---
 # <a name="date-picker-control-in-power-apps"></a>Control selector de fecha en Power apps
 Un control en el que el usuario puede hacer clic o pulsar para especificar una fecha.
 
-## <a name="description"></a>Descripción
-Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de texto](control-text-input.md)**, ayuda a garantizar que el usuario especifica una fecha en el formato correcto.
+## <a name="description"></a>Description
+Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de texto](control-text-input.md)** , ayuda a garantizar que el usuario especifica una fecha en el formato correcto.
 
 ## <a name="key-properties"></a>Propiedades principales
 **DefaultDate** (FechaPred): el valor inicial de un control de fecha a menos que el usuario lo modifique.
@@ -40,37 +39,39 @@ Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de 
 **Idioma** : determina el idioma que se usa para dar formato a las fechas, incluidos los nombres de los meses. Si no se especifica esta propiedad, la configuración del dispositivo del usuario determina el idioma. Los valores admitidos son "EN-US" y "FR".
 
 ## <a name="additional-properties"></a>Propiedades adicionales
-**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla.
+**[AccessibleLabel](properties-accessibility.md)** : etiqueta para lectores de pantalla.
 
-**[BorderColor](properties-color-border.md)**: el color de un borde del control.
+**[BorderColor](properties-color-border.md)** : el color de un borde del control.
 
-**[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
+**[BorderStyle](properties-color-border.md)** : si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
-**[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
+**[BorderThickness](properties-color-border.md)** : el grosor de un borde del control.
 
-**[Color](properties-color-border.md)**: el color del texto en un control.
+**[Color](properties-color-border.md)** : el color del texto en un control.
 
-**[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (Edit), solo muestra datos (View) o si está deshabilitado (Disabled).
+**DateTimeZone** : indica si se va a mostrar la fecha en formato **UTC** o la hora **local** del usuario.
 
-**[DisabledBorderColor](properties-color-border.md)**: el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
+**[DisplayMode](properties-core.md)** : indica si el control permite entradas de usuario (Edit), solo muestra datos (View) o si está deshabilitado (Disabled).
 
-**[DisabledColor](properties-color-border.md)**: el color del texto en un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
+**[DisabledBorderColor](properties-color-border.md)** : el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
 
-**[DisabledFill](properties-color-border.md)**: el color de fondo de un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
+**[DisabledColor](properties-color-border.md)** : el color del texto en un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
+
+**[DisabledFill](properties-color-border.md)** : el color de fondo de un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
 
 **EndYear**: el último año en el que el usuario puede establecer el valor de un control Selector de fecha.
 
-**[Fill](properties-color-border.md)**: el color de fondo de un control.
+**[Fill](properties-color-border.md)** : el color de fondo de un control.
 
-**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+**[FocusedBorderColor](properties-color-border.md)** : el color del borde de un control cuando el control recibe el foco.
 
-**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
+**[FocusedBorderThickness](properties-color-border.md)** : el grosor del borde de un control cuando el control recibe el foco.
 
-**[Font](properties-text.md)**: el nombre de la familia de fuentes en la que aparece el texto.
+**[Font](properties-text.md)** : el nombre de la familia de fuentes en la que aparece el texto.
 
-**[FontWeight](properties-text.md)**: el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
+**[FontWeight](properties-text.md)** : el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
 
-**[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
+**[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
 
 **IconFill**: el color de primer plano del icono del selector de fecha.
 
@@ -78,43 +79,45 @@ Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de 
 
 **InputTextPlaceholder** : texto informativo que aparece si no se especifica ninguna fecha.
 
-**[Italic](properties-text.md)**: indica si el texto de un control está en cursiva.
+**IsEditable** : indica si se puede editar el texto del DatePicker. Si es false, solo se puede cambiar la fecha mediante el calendario.
 
-**[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
+**[Italic](properties-text.md)** : indica si el texto de un control está en cursiva.
 
-**[RellenoInferior](properties-size-location.md)**: distancia entre el texto de un control y el borde inferior de ese control.
+**[OnSelect](properties-core.md)** : indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
 
-**[RellenoIzquierdo](properties-size-location.md)**: distancia entre el texto de un control y el borde izquierdo de ese control.
+**[RellenoInferior](properties-size-location.md)** : distancia entre el texto de un control y el borde inferior de ese control.
 
-**[RellenoDerecho](properties-size-location.md)**: distancia entre el texto de un control y el borde derecho de ese control.
+**[RellenoIzquierdo](properties-size-location.md)** : distancia entre el texto de un control y el borde izquierdo de ese control.
 
-**[RellenoSuperior](properties-size-location.md)**: distancia entre el texto de un control y el borde superior de ese control.
+**[RellenoDerecho](properties-size-location.md)** : distancia entre el texto de un control y el borde derecho de ese control.
 
-**[Size](properties-text.md)**: el tamaño de la fuente del texto que aparece en un control.
+**[RellenoSuperior](properties-size-location.md)** : distancia entre el texto de un control y el borde superior de ese control.
+
+**[Size](properties-text.md)** : el tamaño de la fuente del texto que aparece en un control.
 
 **Iniciodelasemana** : el día de la semana que se va a mostrar en la columna primer día del control selector de fecha.
 
 **StartYear**: el primer año en el que el usuario puede establecer el valor de un control Selector de fecha.
 
-**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
+**[TabIndex](properties-accessibility.md)** : orden de navegación del teclado en relación con otros controles.
 
-**[Visible](properties-core.md)**: indica si un control aparece o está oculto.
+**[Visible](properties-core.md)** : indica si un control aparece o está oculto.
 
-**[Width](properties-size-location.md)**: la distancia entre los bordes derecho e izquierdo de un control.
+**[Width](properties-size-location.md)** : la distancia entre los bordes derecho e izquierdo de un control.
 
-**[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[X](properties-size-location.md)** : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
 
-**[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-**[Año](../functions/function-datetime-parts.md)**( *FechaHoraNúmero* )
+**[Año](../functions/function-datetime-parts.md)** ( *FechaHoraNúmero* )
 
 ## <a name="example"></a>Ejemplo
 1. Agregue un control **Selector de fecha** y denomínelo **Deadline**.
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
-2. Agregue un control **[Label](control-text-box.md)** y establezca su propiedad **[Text](properties-core.md)** en esta fórmula:
-   <br>**DateDiff(Today(); Deadline.SelectedDate) & " days to go!"**
+2. Agregue un control **[Etiqueta](control-text-box.md)** y establezca su propiedad **[Texto](properties-core.md)** en esta fórmula:
+   <br>**DateDiff(Today(), Deadline.SelectedDate) & " days to go!"**
 
     ¿Desea más información sobre la función **[DateDiff](../functions/function-dateadd-datediff.md)** u [otras funciones](../formula-reference.md)?
 3. Presione F5, elija una fecha en **Deadline** (Fecha límite) y, a continuación, pulse o haga clic en **Aceptar**.
