@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9a1ff224557bd36074f7c981a5e76a9721943afb
-ms.sourcegitcommit: 366f0d1b8309ab1fd533ebd7e1b41a69a99fd25a
+ms.openlocfilehash: c5814eedfd05ea5bba19a469dad1b3e28c311974
+ms.sourcegitcommit: 6f94650ea540db69d2723c3c5dff9de8c59056cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75302870"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75859135"
 ---
 # <a name="power-apps-custom-visual-for-power-bi"></a>Objetos visuales personalizados de Power apps para Power BI
 
@@ -54,7 +53,7 @@ Echemos un vistazo a los pasos necesarios para usar el visual personalizado de P
 
     ![Fórmula personalizada](./media/powerapps-custom-visual/custom-formula.png)
 
-    Esta fórmula combina datos de Power BI con el origen de datos de cliente: `LookUp(Customer;Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
+    Esta fórmula combina datos de Power BI con el origen de datos de cliente: `LookUp(Customer,Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
 
    El informe de Power BI y la instancia de Power apps Studio que se inició comparten una conexión de datos activa. Mientras ambos están abiertos, puede filtrar o cambiar los datos del informe para ver los datos actualizados reflejados inmediatamente en la aplicación en Power apps Studio.
 
@@ -66,7 +65,7 @@ Echemos un vistazo a los pasos necesarios para usar el visual personalizado de P
 
     ![Informe de trabajo](./media/powerapps-custom-visual/working-report.gif)
 
-    Si necesita realizar cambios en una aplicación, abra el informe en el modo de edición, haga clic o pulse en **más opciones** (**...**) en el visual de Power apps y seleccione **Editar**.
+    Si necesita realizar cambios en una aplicación, abra el informe en el modo de edición, haga clic o pulse en **más opciones** ( **...** ) en el visual de Power apps y seleccione **Editar**.
 
     ![Editar la aplicación](./media/powerapps-custom-visual/edit-app.png)
 
@@ -78,7 +77,7 @@ Las siguientes limitaciones se aplican al objetos visuales personalizados de Pow
 - El objetos visuales personalizados de Power apps no puede desencadenar una actualización de Power BI informes y Power BI orígenes de datos desde Power BI Desktop. Si escribe datos de la aplicación en el mismo origen de datos que el informe, los cambios no se reflejarán inmediatamente en Power BI Desktop. Los cambios se reflejan en la siguiente actualización programada.
 - El objetos visuales personalizados de Power apps no puede filtrar los datos o devolver los datos al informe.
 - Tendrá que compartir la aplicación Power apps por separado del informe. Más información sobre el [uso compartido de aplicaciones en Power apps](share-app.md).
-- Power BI Report Server y la aplicación móvil para Power BI no admiten el objetos visuales personalizados de Power apps.
+- Power BI Report Server no admite el objetos visuales personalizados de Power apps.
 - Al usar la función `PowerBIIntegration.Refresh()` se aplican las siguientes limitaciones:
     - Debe crear una nueva aplicación desde el objetos visuales personalizados de Power Apps en Power BI informe para que esta función esté disponible en la aplicación.
     - Debe usar un origen que admita [DirectQuery](https://docs.microsoft.com/power-bi/desktop-directquery-data-sources) y la conexión de datos se debe crear con el método directquery.
@@ -87,11 +86,11 @@ Las siguientes limitaciones se aplican al objetos visuales personalizados de Pow
 > [!NOTE]
 > Se recomienda publicar primero el informe en el servicio Power BI y, a continuación, crear o modificar las aplicaciones.
 
-## <a name="browser-support"></a>Compatibilidad con exploradores
+## <a name="browser-support"></a>Compatibilidad del explorador
 
 En la tabla siguiente se muestra la compatibilidad del explorador para ver, crear y modificar acciones del código Visual personalizado de Power apps. Los exploradores y las acciones admitidos se identifican con una marca de verificación (&check;).
 
-|Explorador|Visores|A|Modificaciones
+|Explorador|Vista|Crear|Modificar
 |-|-|-|-
 |Microsoft Edge|&check;|&check;|&check;
 |Internet Explorer 11|&check;

@@ -15,18 +15,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 08859f70e047d1c53379e8a79f56997d6beedc58
-ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
+ms.openlocfilehash: 78b4e997a398bfb806a4e89a70c0ed3e466be381
+ms.sourcegitcommit: e3d3a608ef74e1d90ca74ed38de3e5aebc624713
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67456981"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "75333619"
 ---
 # <a name="frequently-asked-questions-about-activities-and-the-timeline-wall"></a>Preguntas frecuentes sobre las actividades y la pared de escala de tiempo  
 
 ## <a name="is-a-title-required-when-adding-a-new-note"></a>¿Es necesario un título al agregar una nueva nota?
 
-No. Al agregar una nota a una actividad, el campo de título se marca como campo obligatorio, aunque no lo es. Se trata de un problema conocido en el cliente web heredado.
+Núm. Al agregar una nota a una actividad, el campo de título se marca como campo obligatorio, aunque no lo es. Se trata de un problema conocido en el cliente web heredado.
 
 ## <a name="for-an-appointment-when-i-choose-the-option-to-save-as-draft-it-doesnt-show-that-the-appointment-has-been-saved-as-a-draft"></a>En una cita, cuando elijo la opción *Guardar como borrador*, no se muestra que la cita se haya guardado como tal.
 
@@ -38,7 +38,7 @@ Sí. Puede agregar actividades a entidades que son de solo lectura, como notas, 
 
 ## <a name="are-html-tags-supported-in-notes"></a>¿Se admiten etiquetas HTML en **Notas**?
 
-No. Al crear una actividad de nota para cualquier registro o entidad, no se admiten etiquetas HTML. Por ejemplo, si agrega `<TAG> </TAG>` a un campo de nota, se mostrará como. `<TAG_XXX="XX"> </TAG>`
+Núm. Al crear una actividad de nota para cualquier registro o entidad, no se admiten etiquetas HTML. Por ejemplo, si agrega `<TAG> </TAG>` a un campo de nota, se mostrará como `<TAG_XXX="XX"> </TAG>`.
 
 ## <a name="how-can-i-improve-performance-on-timeline-wall"></a>¿Cómo puedo mejorar el rendimiento en la pared de escala de tiempo?
 
@@ -51,7 +51,12 @@ El rendimiento de la pared de escala de tiempo se puede mejorar mediante la opti
 
 Cuando se selecciona la opción **Vista previa de impresión** de Dynamics 365, la **pared de escala de tiempo** no se mostrará en la lista de elementos disponibles. Verá **Notas**, pero no se mostrarán las tareas ni los mensajes de correo electrónico.
 
+## <a name="see-also"></a>Vea también
 
+[Configurar el control de escala de tiempo](../maker/model-driven-apps/set-up-timeline-control.md)
 
+[Preguntas más frecuentes sobre el control de escala de tiempo](../maker/model-driven-apps/faqs-timeline-control.md)
 
+[Agregar una cita, un correo electrónico, una llamada de teléfono, una nota o una actividad de tarea a la escala de tiempo](add-activities.md)
 
+[Sección de escala de tiempo en la aplicación del centro de atención al cliente](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)
