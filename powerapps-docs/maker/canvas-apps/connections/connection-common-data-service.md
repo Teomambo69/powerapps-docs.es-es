@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 04/22/2019
+ms.date: 11/27/2019
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2473f445839b774ecc28fe007912511095d9316d
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: e2b11b536c29a31053353f3c2616a594208e8acf
+ms.sourcegitcommit: 54d52a9c3c9242f95be54f4444054d9c41ed577c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74723829"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75928875"
 ---
 # <a name="connect-to-common-data-service"></a>Conectarse a Common Data Service
 
@@ -26,20 +26,17 @@ Puede almacenar de forma segura los datos empresariales en Common Data Service y
 
 De forma predeterminada, el conector de Common Data Service se conecta a los datos del entorno actual de la aplicación. Si la aplicación se mueve a otro entorno, el conector se conecta a los datos en el nuevo entorno. Este comportamiento funciona bien para una aplicación que usa un solo entorno o una aplicación que sigue un proceso ALM para pasar del desarrollo a la prueba a producción.
 
-Al agregar un origen de datos con el conector de Common Data Service, puede cambiar el entorno y, a continuación, seleccionar una o más entidades. De forma predeterminada, la aplicación se conecta a los datos del entorno actual y la interfaz de usuario muestra **(actual)** en la lista de entidades.
+Al agregar un origen de datos con el conector de Common Data Service, puede cambiar el entorno y, a continuación, seleccionar una o más entidades. De forma predeterminada, la aplicación se conecta a los datos del entorno actual.
 
-> [!div class="mx-imgBorder"]
-> ![entorno predeterminado](media/connection-common-data-service/common-data-service-connection-change-environment.png)
+![Entorno predeterminado](media/connection-common-data-service/common-data-service-connection-change-environment.png)
 
 Si selecciona **cambiar**, puede especificar un entorno diferente para extraer datos de él en lugar de o además del entorno actual.
 
-> [!div class="mx-imgBorder"]
-> ![otros entornos](media/connection-common-data-service/common-data-service-connection-select-environment.png)
+![Otros entornos](media/connection-common-data-service/common-data-service-connection-select-environment.png)
 
-El nombre del entorno seleccionado aparece en el cuadro de búsqueda.
+El nombre del entorno seleccionado aparece bajo la lista entidades.
 
-> [!div class="mx-imgBorder"]
-> ![nuevos entornos](media/connection-common-data-service/common-data-service-connection-after-change-environment.png)
+![Nuevos entornos](media/connection-common-data-service/common-data-service-connection-after-change-environment.png)
 
 El conector de Common Data Service es más robusto que el conector de Dynamics 365 y el enfoque de la paridad de características.
 

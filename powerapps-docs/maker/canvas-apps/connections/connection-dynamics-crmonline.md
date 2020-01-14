@@ -6,25 +6,27 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.date: 07/12/2017
+ms.date: 11/27/2019
 ms.author: matp
-ms.reviewer: ''
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 37818e3c7cca175218826c1707ab83cd5c193ae7
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 4285a80d3751285929378336aa9806b3639f3457
+ms.sourcegitcommit: 54d52a9c3c9242f95be54f4444054d9c41ed577c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74723926"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75928978"
 ---
 # <a name="connect-to-dynamics-365-from-power-apps"></a>Conexión a Dynamics 365 desde Power apps
 Power apps le permite generar, personalizar, compartir y ejecutar rápidamente aplicaciones móviles con poco o ningún código. Mediante el conector de Dynamics 365, puede crear útiles aplicaciones móviles para compartir con su organización en tan solo unos minutos.
 
-Si sigue los pasos descritos en este tema, creará una aplicación en la que los usuarios podrán examinar, agregar, eliminar y realizar actualizaciones en los contactos de Dynamics 365. Los usuarios pueden ejecutar la aplicación [en un explorador](../../../user/run-app-browser.md) o [en un dispositivo móvil](../../../user/run-app-client.md), como un teléfono.
+Al seguir los pasos de este tema, creará una aplicación en la que los usuarios pueden examinar, agregar, eliminar y realizar actualizaciones de los contactos en aplicaciones controladas por modelos en Dynamics 365 (Dynamics 365 sales, Dynamics 365 Customer Service, Dynamics 365 Field service, Dynamics 365 marketing y Dynamics 365 Project Service Automation). Los usuarios pueden ejecutar la aplicación [en un explorador](../../../user/run-app-browser.md) o [en un dispositivo móvil](../../../user/run-app-client.md), como un teléfono.
+
+> [!NOTE]
+> Se recomienda usar un conector de [Common Data Service](connection-common-data-service.md) más sólido al conectarse a aplicaciones controladas por modelos en Dynamics 365.
 
 ## <a name="prerequisite"></a>Requisito previo
 Para seguir este tutorial, necesita una cuenta de Microsoft Office 365 que incluye una suscripción a Dynamics 365.
@@ -42,7 +44,7 @@ Para seguir este tutorial, necesita una cuenta de Microsoft Office 365 que inclu
     ![Opción Conexión en el menú Archivo](./media/connection-dynamics-crmonline/connection-d365.png)
 5. En el cuadro de diálogo, haga clic en **Crear**.
    
-    ![Crear conexión](./media/connection-dynamics-crmonline/create-connection.png)
+    ![Creación de una conexión](./media/connection-dynamics-crmonline/create-connection.png)
 6. En el cuadro de diálogo **Iniciar sesión en la cuenta**, indique sus credenciales para el inquilino Dynamics 365 (en línea).
    
     Se crea una conexión.
@@ -82,7 +84,7 @@ En este procedimiento, va a configurar **ExaminarPantalla1** para mostrar los no
     ![Seleccionar diseño](./media/connection-dynamics-crmonline/select-layout.png)
 4. Copie esta fórmula y, después, con la galería aún seleccionada, pegue la fórmula en la barra de fórmulas (a la derecha del botón **fx**):
    
-    `SortByColumns(Search(Filter(Contacts;statuscode=1); TextSearchBox1.Text; "lastname"); "lastname"; If(SortDescending1; Descending; Ascending))`
+    `SortByColumns(Search(Filter(Contacts,statuscode=1), TextSearchBox1.Text, "lastname"), "lastname", If(SortDescending1, Descending, Ascending))`
 5. En el panel derecho, establezca la lista desplegable superior en **firstname** y la lista desplegable central en **lastname**.
    
     ![Seleccionar Cuerpo1](./media/connection-dynamics-crmonline/firstname-lastname.png)
