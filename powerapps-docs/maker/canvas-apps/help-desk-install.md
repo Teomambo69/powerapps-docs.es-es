@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/29/2019
+ms.date: 01/15/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 01fdadfd5ecf19d56ac115e53cef08a2cff2a254
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 4eafe6aaafb2fe461a98212a64d3858ebf5f5f0f
+ms.sourcegitcommit: 1c4ab1859febccf79a835bd2f168e7e12a953a18
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729645"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111110"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-power-apps"></a>Instalación y configuración del ejemplo de servicio de asistencia en Power apps
 
@@ -31,7 +31,7 @@ Tiempo estimado para completar estos pasos: **10-15 minutos**
 
 ## <a name="overview-of-the-sample"></a>Información general sobre el ejemplo
 
-El Departamento de soporte técnico proporciona una experiencia fácil de utilizar para conectar a los usuarios finales con profesionales de soporte técnico. Encuentre rápidamente respuestas a sus preguntas más importantes, realice un seguimiento del progreso de los vales abiertos y revise los detalles de las solicitudes anteriores. Esta aplicación requiere un mínimo de configuración para personalizarla.
+Help Desk proporciona una experiencia muy intuitiva para poner en contacto a los usuarios finales con profesionales de soporte técnico. Obtenga respuestas con rapidez a sus dudas más importantes, mantenga un seguimiento del progreso de las incidencias abiertas y revise los detalles de solicitudes anteriores. Esta aplicación requiere un mínimo de configuración para personalizarla.
 
 ![Pantalla inicial de la aplicación Help Desk de PowerApps](./media/help-desk-install/Login-screen.png)
 
@@ -100,7 +100,7 @@ Esta lista almacena los vales del servicio Help Desk.
 3. En la lista de botones de radio **El tipo de información de esta columna es**, seleccione **Elección**.
 4. En el cuadro de texto **Escriba cada opción en una línea distinta**, especifique los valores siguientes, cada uno en una línea diferente: 
     - ALTA
-    - MEDIO
+    - INTERMEDIA
     - BAJA
 5. En la lista de botones de radio **Aplicar valores únicos**, seleccione **No**.
 6. En la lista de botones de radio **Mostrar opciones con**, seleccione **Menú desplegable**.
@@ -138,7 +138,7 @@ Esta lista almacena los vales del servicio Help Desk.
 2. En la lista de botones de radio **Esta columna debe contener información**, seleccione **No**.
 3. Haga clic en **Aceptar**.
 
-## <a name="download-the-app"></a>Descarga de la aplicación
+## <a name="download-the-app"></a>Descargar la aplicación
 
 1.  [Descargue](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip) el paquete de Power apps y guárdelo en el equipo.
 
@@ -233,7 +233,7 @@ Esta lista almacena los vales del servicio Help Desk.
 
 ### <a name="update-admin-list"></a>Actualizar la lista de administradores
 
-1. Seleccione **LoginScreen**.
+1. Seleccione la **aplicación**.
 2. Seleccione **OnStart** en la lista desplegable.
 3. Expanda la ventana de fórmulas y busque la colección **AdminList**.
 4. Reemplace <strong>user@microsoft.com</strong> por los administradores de Help Desk.
