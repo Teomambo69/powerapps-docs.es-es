@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 61b34d32835cd3553f880791250efad48d783ffd
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: bbb8853a1193cffbf11840f847394466db61bd17
+ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861890"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "2922403"
 ---
 # <a name="publish-your-app-on-appsource"></a>Publicar la aplicación en AppSource
 
@@ -29,21 +29,17 @@ Publique su aplicación en [Microsoft AppSource](https://appsource.microsoft.com
 
 Utilice los pasos siguientes para prepararse para enviar su aplicación para que aparezca en Microsoft AppSource:
 
-> [Paso 1: Rellenar el formulario de envío de la aplicación en AppSource](fill-app-submission-form-appsource.md)
+> [Paso 1: Crear una cuenta del Centro de partners de Microsoft](register-microsoft-partner-network.md)
 > 
-> [Paso 2: Registrar una cuenta en Microsoft Partner Network](register-microsoft-partner-network.md)
+> [Paso 2: Crear una solución administrada para la aplicación](create-solution-app-appsource.md)
 > 
-> [Paso 3: Crear una solución administrada para la aplicación](create-solution-app-appsource.md)
+> [Paso 3: Crear un paquete de AppSource para la aplicación](create-package-app-appsource.md)
 > 
-> [Paso 4: Crear un paquete de AppSource para la aplicación](create-package-app-appsource.md)
-> 
-> [Paso 5: Almacenar el paquete en Azure Storage](store-appsource-package-azure-storage.md)
+> [Paso 4: Almacenar el paquete en Azure Storage](store-appsource-package-azure-storage.md)
 
 ## <a name="submit-your-app-on-partner-center"></a>Enviar la aplicación en Centro de partners
 
-Una vez que la aplicación esté lista para el envío, utilice el [Centro de partners](https://partner.microsoft.com/dashboard/account/v3/enrollment/introduction/azureisv) en la nube para enviar su aplicación para que aparezca en Microsoft AppSource. El acceso al Centro de partners y a la documentación relacionada solo está disponible para los miembros de Microsoft Partner Network.
-
-Más información: [Pasos siguientes: enviar la aplicación en el Centro de partners](next-steps-submit-app-cloud-partner-portal.md)
+Una vez que la aplicación esté lista para el envío, utilice el [Centro de partners](https://partner.microsoft.com/dashboard/commercial-marketplace/overview) en la nube para enviar su aplicación para que aparezca en Microsoft AppSource. El acceso al Centro de partners y a la documentación relacionada solo está disponible para los miembros de Microsoft Partner Network.
   
 ## <a name="checklists"></a>Listas de comprobación
 

@@ -2,7 +2,7 @@
 title: Ejecutar operaciones por lotes mediante la API web (Common Data Service)| Microsoft Docs
 description: Las operaciones por lotes le permiten agrupar varias operaciones en una sola solicitud HTTP. Lea cómo ejecutar las operaciones por lotes con la API web
 ms.custom: ''
-ms.date: 07/13/2019
+ms.date: 12/10/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4029b07d07505d15f216279edbfc774026463a4f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 373902e69a6299144954f55067236abcfa5764f0
+ms.sourcegitcommit: 4fb0e2cd9c4bb7d0b83bd7fe6c7c88accfc70390
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753700"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "2907040"
 ---
 # <a name="execute-batch-operations-using-the-web-api"></a>Ejecute las operaciones por lotes mediante API web
 
@@ -219,7 +219,9 @@ Para obtener más información sobre los encabezados de preferencia, consulte [P
 
 ## <a name="reference-uris-in-an-operation"></a>Hacer referencia a URI en una operación
 
-Puede usar `$parameter`, como `$1``$2`, etc. para hacer referencia a URI usados en un conjunto de cambios anterior en una solicitud por lotes. Esta sección muestra diferentes ejemplos sobre cómo `$parameter` se puede usar en el cuerpo de la solicitud de una operación por lotes para hacer referencia a URI.
+Puede usar `$parameter`, como `$1`, `$2`, etc. para hacer referencia a URI devueltos para nuevas entidades creadas anteriormente en el mismo conjunto de cambios en una solicitud por lotes. Para obtener más información, consulte la especificación OData v4.0: [11.7.3.1 Solicitudes de referencia en un conjunto de cambios](http://docs.oasis-open.org/odata/odata/v4.0/os/part1-protocol/odata-v4.0-os-part1-protocol.html#_Toc372793752).
+
+Esta sección muestra diferentes ejemplos sobre cómo `$parameter` se puede usar en el cuerpo de la solicitud de una operación por lotes para hacer referencia a URI.
 
 ### <a name="reference-uris-in-request-body"></a>Hacer referencia a URI en el cuerpo de la solicitud
 

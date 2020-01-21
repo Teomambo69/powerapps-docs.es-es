@@ -8,16 +8,16 @@ ms.topic: article
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 1ffc32fdb1479552d77cd68d858c0d3b43d9b86e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 8d1da235f93f98a8104c69511bb8c50f86ddcbda
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862002"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909286"
 ---
 # <a name="debug-code-components"></a>Depurar componentes de código
 
-Una vez que finalice la implementación de lógica componente de código, puede comenzar a probar y depurar el componente de código utilizando el comando `npm start`. De este modo se compila el componente de código y se abre en el agente de prueba local.
+Después de implementar la lógica del componente de código, puede empezar a probar y depurar el componente de código utilizando el comando `npm start`. Este comando compila el componente de código y lo abre en el agente de prueba local.
 
 > [!div class="mx-imgBorder"]
 > ![Agente de prueba 1](media/test-harness-1.png "Agente de prueba 1")
@@ -68,7 +68,9 @@ El agente de prueba admite el modo `watch` del que se puede aprovechar para proy
 
 ## <a name="debug-code-components-using-native-browsers"></a>Depurar componentes de código mediante exploradores nativos
 
-Puede usar las funcionalidades de depuración del explorador para observar el comportamiento del componente. Cada explorador proporciona una herramienta de depuración para ayudarle a depurar el código nativo en el explorador. Normalmente, puede activar la depuración en el explorador presionando la tecla **F12** para mostrar la herramienta de desarrollo nativa usada para depuración.
+Puede usar las funcionalidades de depuración del explorador para observar el comportamiento del componente. Cada explorador proporciona una herramienta de depuración para ayudarle a depurar el código nativo en el explorador. 
+
+Normalmente, puede activar la depuración en el explorador presionando la tecla **F12** para mostrar la herramienta de desarrollo nativa usada para depuración.
 
 Por ejemplo, en **Microsoft Edge**:
 

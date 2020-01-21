@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ab98ceb55faaefdc015fb969daab844428b7b53a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: dd0bacbd2743100380c67a8e0a0da14bd643465f
+ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753768"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "2922347"
 ---
 # <a name="use-multi-tenant-server-to-server-authentication"></a>Usar autenticación multiempresa entre servidores
 
@@ -171,7 +171,7 @@ En este escenario cualquier inquilino de Common Data Service puede usar potencia
   
     Cuando crea un este usuario los valores de estos campos se recuperarán de Azure AD en función del valor de **Identificador de la aplicación** al guardar el usuario.  
   
-5. Asociar el usuario de la aplicación al rol de seguridad personalizado que creó en [Crear un rol de seguridad para el usuario de la aplicación](#bkmk_CreateSecurityRole). Más información: [Crear usuarios en Dynamics 365 (online) y asignar roles de seguridad](/dynamics365/customer-engagement/admin/create-users-assign-online-security-roles)  
+5. Asociar el usuario de la aplicación al rol de seguridad personalizado que creó en [Crear un rol de seguridad para el usuario de la aplicación](#bkmk_CreateSecurityRole). Más información: [Crear usuarios y asignar roles de seguridad](/dynamics365/customer-engagement/admin/create-users-assign-online-security-roles)  
   
 <a name="bkmk_TestUsingYourTenant"></a>  
  

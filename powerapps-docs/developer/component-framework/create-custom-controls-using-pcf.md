@@ -1,7 +1,7 @@
 ---
 title: Crear y generar un componente de código| Microsoft Docs
 description: Empiece a crear un componente mediante útiles de Power Apps component framework
-keywords: Power Apps component framework, componentes de código, Component Framework
+keywords: Power Apps component framework, componentes de código, component framework
 ms.author: nabuthuk
 author: Nkrb
 manager: kvivek
@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2cbf58a-9112-45c2-b823-2c07a310714c
-ms.openlocfilehash: 8235c8ed0400223a36324a301fdf172a0610efec
-ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
+ms.openlocfilehash: 70532cfb3cc5cfad0f274f123857eedc5d54cae2
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2894998"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909282"
 ---
 # <a name="create-and-build-a-code-component"></a>Crear y generar un componente de código
 
@@ -48,40 +48,7 @@ Para generar el proyecto de componentes abra la carpeta de proyecto que contiene
 > [!TIP]
 > Para depurar el componente durante o después de operaciones de compilación, consulte [Depurar un componente de código](debugging-custom-controls.md).
 
-Cuando finalice la implementación de lógica de componente en TypeScript, deberá agrupar todos los elementos de componente de código en un archivo de solución para que pueda importar la solución en Common Data Service. Más información: [Empaquetar un componente de código](import-custom-controls.md)
-
-## <a name="known-configuration-issues-and-workarounds"></a>Problemas conocidos de configuración y soluciones alternativas
-
-**Msbuild error MSB4036:**
-
-1. El nombre de la tarea en el archivo del proyecto es igual que el nombre de la clase de tarea.
-2. La clase de tarea es pública e implementa la interfaz de Microsoft.Build.Framework.ITask.
-3. La tarea se declara correctamente con *\<UsingTask>* en el archivo de proyecto o en los archivos *.tasks situados en el directorio de la ruta.
-
-**Resolución**
-
-1. Abra Instalador de Visual Studio. 
-1. Para Visual Studio 2017, seleccione **Modificar**. 
-1. Seleccione **Componentes individuales**.
-1. En Herramientas de código, active **Destinos de NuGet y tareas de compilación**.
-
-**Prefijo de publicador**
-
-Si se crea un componente usando útiles Power Apps CLI de una versión menor que 0.4.3, se producirá un error al intentar reimportar el archivo de solución en Common Data Service. Se produce el error porque el nombre del componente recién importado se anexa ahora con el prefijo del editor para garantizar su singularidad y evitar colisiones.
-
-**Solución alternativa**:
-
-- Elimine la solución que contiene el componente relevante de Common Data Service. Si ta está configurado el componente en un formulario o una cuadrícula, deberá quitarse de ahí porque la solución de componente tenía una dependencia en la configuración.  
-- Importe la nueva solución con actualizaciones del componente compilado por la última versión de CLI.
-- Los componentes recién importados ahora pueden configurarse en formularios o cuadrículas.  
-
-
-<!--2. When the components are created with the publisher prefix in mixed or upper case using the new CLI tooling version, it throws an error while importing the solution. This happens because the updated tooling version (0.4.3 and newer) now enforces the platform standard for lower case publisher prefix.
-
-   **Workaround**:
-
-    Update the solution and customizations to ensure that the associated prefix is modified to lower case and import the new solution into Common Data Service.-->
-
+Finalmente, cuando haya terminado de implementar la lógica del componente en TypeScript, debe agrupar todos los elementos del componente de código en un archivo de solución para poder importar la solución en Common Data Service. Más información: [Empaquetar un componente de código](import-custom-controls.md)
 
 ### <a name="see-also"></a>Vea también
 

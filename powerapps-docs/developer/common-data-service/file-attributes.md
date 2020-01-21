@@ -14,19 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 30123b2e89b6c4c4432a7042e7cac26fcd8191cf
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 360194b69e049b7622f1c205c07add069e7f70ba
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861777"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909113"
 ---
 # <a name="file-attributes"></a>Atributos de archivo
 
 Un atributo de archivo se usa para almacenar datos de archivo hasta un tamaño máximo especificado. Una entidad personalizada o personalizable puede tener cero o más atributos de archivo más una colección de notas (anotación) con cero o un dato adjunto en cada nota. El el <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.SchemaName> del atributo de archivo es `EntityFile`.
-
-> [!NOTE]
-> El nuevo atributo de archivo y la capacidad de atributo de imagen mejorada se implementando actualmente en centros de datos de Microsoft a lo largo del tiempo. Es posible que su organización aún no haya recibido la actualización. Puede comprobar periódicamente su organización para obtener soporte de atributos de archivo agregando temporalmente un nuevo campo a una entidad personalizable o personalizada y comprobando si “Archivo” está disponible en la lista de tipos de datos de campos compatibles. Haga esto en Power Apps en **Datos** > **Entidades** en la aplicación web clásica en **Configuración** > **Personalizaciones**.
 
 API web (REST) | .NET API (SOAP)
 ------- | -------

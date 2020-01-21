@@ -1,27 +1,27 @@
 ---
-title: 'Paso 4: Crear un paquete AppSource para la aplicación (Common Data Service) | Microsoft Docs'
+title: 'Paso 3: Crear un paquete AppSource para la aplicación (Common Data Service) | Microsoft Docs'
 description: Obtenga información sobre cómo crear un paquete AppSource (archivo .zip) para incluir los archivos de datos de demostración y de la solución junto con otros archivos necesarios.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: shmcarth
-ms.author: jdaly
-manager: ryjones
+author: KumarVivek
+ms.author: kvivek
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9696ad4bafbd9556203243cb7ba785e3d0d8444c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 43accbf1e1acf8c32e76c5e0c0dab4975cd847a0
+ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753024"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "2922351"
 ---
-# <a name="step-4-create-an-appsource-package-for-your-app"></a>Paso 4: Crear un paquete AppSource para la aplicación
+# <a name="step-3-create-an-appsource-package-for-your-app"></a>Paso 3: Crear un paquete AppSource para la aplicación
 
 Debe crear un paquete AppSource (archivo .zip) para incluir los archivos de datos de demostración y de la solución junto con otros archivos necesarios. Un paquete AppSource consta de los archivos siguientes:
 
@@ -142,4 +142,4 @@ El último paso consiste en agregar todos los componentes que haya creado previa
  
 
 > [!div class="nextstepaction"]
-> [Paso 5: Almacenar el paquete AppSource en Azure Storage](store-appsource-package-azure-storage.md) 
+> [Paso 4: Almacenar el paquete AppSource en Azure Storage](store-appsource-package-azure-storage.md) 

@@ -1,5 +1,5 @@
 ---
-title: Power Apps component framework para aplicaciones de lienzo  | Microsoft Docs
+title: Componentes de código para aplicaciones de lienzo | Microsoft Docs
 description: Crear componentes de código para aplicaciones de lienzo
 keywords: ''
 ms.author: nabuthuk
@@ -11,14 +11,14 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5d100dc3-bd82-4b45-964c-d90eaebc0735
-ms.openlocfilehash: 2008b9d57899697b60e47d24d3acb74a72c9700e
-ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
+ms.openlocfilehash: 300da15802a7132115b91773544792a921f0a827
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2895066"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909290"
 ---
-# <a name="power-apps-component-framework-for-canvas-apps"></a>Power Apps component framework para aplicaciones de lienzo
+# <a name="code-components-for-canvas-apps"></a>Componentes de código para aplicaciones de lienzo
 
 > [!IMPORTANT]
 > Esta característica sigue siendo piloto y está deshabilitada de forma predeterminada. Para obtener más información, consulte [Características en versión preliminar y piloto](../../maker/canvas-apps/working-with-experimental.md).
@@ -63,7 +63,9 @@ Para agregar componentes de código a una aplicación, debe habilitar la caracte
 
 ## <a name="implementing-code-components"></a>Implementar componente de código
 
-Después de habilitar la característica Power Apps component framework en el entorno, puede empezar a implementar la lógica para los componentes de código. El tema [Crear su primer componente de código](implementing-controls-using-typescript.md) muestra el proceso paso a paso para crear componentes de código implementando la lógica personalizada y el archivo de manifiesto, ejecutando el proceso de depuración, creando un archivo zip de la solución e importando la solución a Common Data Service.
+Después de habilitar la característica Power Apps component framework en el entorno, puede empezar a implementar la lógica para los componentes de código.
+
+ El tema [Cree su primer componente de código](implementing-controls-using-typescript.md) demuestra el proceso paso a paso para crear componentes de código.
 
 > [!NOTE]
 > Implementar componentes de código es igual para las aplicaciones basadas en modelo y las aplicaciones de lienzo (vista previa experimental). La única diferencia es agregar los componentes de código. 
@@ -95,11 +97,11 @@ Para agregar componentes de código a una aplicación de lienzo:
 
 ## <a name="delete-a-code-component"></a>Eliminar un componente de código 
 
-Para eliminar un componente de código de una aplicación de lienzo, seleccione el componente de código que desea eliminar y después seleccione el botón **Eliminar** en el menú. Cuando se elimina el componente de código de la aplicación, todos los elementos de componente de código se eliminan de la aplicación y del paquete de la aplicación. 
+Para eliminar un componente de código de una aplicación de lienzo, seleccione el componente de código que desea eliminar y después seleccione el botón **Eliminar** en el menú. Cuando el componente de código se elimina de la aplicación, todos los elementos del componente de código se eliminan de la aplicación y del paquete de la aplicación. 
 
 ## <a name="update-existing-code-components"></a>Actualizar componentes de código existentes
 
-Cuando actualiza los componentes del código, especificamos el atributo *versión* en el archivo de manifiesto, por lo que los últimos cambios se reflejan en tiempo de ejecución. Para aplicaciones de lienzo, cuando actualice los componentes de código existentes, no necesitará actualizar el atributo *versión*. Por diseño, las aplicaciones de lienzo recogen el último componente de código y lo muestran en tiempo de ejecución. Solo una sola versión del mismo componente puede existir en aplicaciones de lienzo.
+Cada vez que actualice los componentes de código y desee ver los cambios en tiempo de ejecución, tiene que saltar el atributo `version` en el archivo de manifiesto. Se recomienda saltar siempre la versión del componente cada vez que haga cambios.
 
 > [!NOTE]
 > Los componentes de código existentes solo se actualizan cuando la aplicación se cierra o vuelve a abrirse en Power Apps Studio. Cuando vuelva a abrir la aplicación, le pedirá que actualice los componentes de código. Si solo elimina los componentes de código o agrega el componente de código de nuevo a la aplicación no se actualizarán los componentes.

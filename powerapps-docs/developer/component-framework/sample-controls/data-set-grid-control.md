@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 356561d0-a36b-4b93-8b76-3e1abf9414e9
-ms.openlocfilehash: 36875f7422d29b761807d61d6cf8e0b903f45ea8
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 216199c227d0fd201d5ce14992a576e689b58296
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861970"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909097"
 ---
 # <a name="implementing-data-set-component"></a>Implementar el componente de conjunto de datos
 
@@ -34,7 +34,7 @@ Aplicaciones basadas en modelos
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest>
-    <control namespace="SampleNamespace" constructor="TSDataSetGrid" version="1.0.0" display-name-key="TS_DataSetGrid_Display_Key" description-key="TSIncrementControl_Desc_Key" control-type="standard">
+    <control namespace="SampleNamespace" constructor="TSDataSetGrid" version="1.0.0" display-name-key="TS_DataSetGrid_Display_Key" description-key="TSDataSetGrid_Desc_Key" control-type="standard">
         <data-set name="dataSetGrid" display-name-key="DataSetGridProperty_Display_Key">
         </data-set>
         <resources>

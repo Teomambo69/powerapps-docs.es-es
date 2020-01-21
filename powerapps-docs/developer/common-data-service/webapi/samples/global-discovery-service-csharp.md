@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 39cfa895ac26dedde2dec4ab97d89937375af81e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 057810ed53433f29b2f514b20b3b20cbbfd3f919
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749756"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909298"
 ---
 # <a name="web-api-global-discovery-service-sample-c"></a>Ejemplo de servicio de detección global de la API web (C#)
 
@@ -66,7 +66,7 @@ El ejemplo dependen del método `GetInstances` y la clae `Instance` a continuaci
       client.Timeout = new TimeSpan(0, 2, 0);
       client.BaseAddress = new Uri(GlobalDiscoUrl);
 
-      HttpResponseMessage response = client.GetAsync("api/discovery/v1.0/Instances", HttpCompletionOption.ResponseHeadersRead).Result;
+      HttpResponseMessage response = client.GetAsync("api/discovery/v2.0/Instances", HttpCompletionOption.ResponseHeadersRead).Result;
 
 
       if (response.IsSuccessStatusCode)

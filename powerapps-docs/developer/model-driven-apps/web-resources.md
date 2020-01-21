@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2053cb6fac411db7528d841cf76ea090ced136c9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 851908a437aac1078986a9d3fd599bac56bef25b
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749606"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909578"
 ---
 # <a name="web-resources-in-model-driven-apps"></a>Recursos web en aplicaciones basadas en modelos
 
@@ -135,9 +135,12 @@ https://MyOrganization.crm.dynamics.com/WebResources/new_/test/test.htm
   
 > [!NOTE]
 >  Incluir el carácter "/" y la extensión de nombre de archivo en el nombre del recurso web es una práctica recomendada opcional.  
-  
-  
  Cuando escriba código para hacer referencia a un recurso web que funciona para Common Data Service, debe usar la función [getClientUrl](clientapi/reference/Xrm-Utility/getGlobalContext/getClientUrl.md).
+
+<a name="BKMK_rendering_differences"></a>
+## <a name="layout-differences-between-the-legacy-web-client-and-unified-interface"></a>Diferencias de diseño entre el cliente web heredado y la Interfaz unificada
+
+Un control de recursos web configurado para usar un determinado número de filas tendrá alturas diferentes en una aplicación de cliente unificada en comparación con una aplicación de cliente web. Esto se debe a que existe una diferencia en la altura de una fila entre la Interfaz unificada y el cliente web. Si se necesita un formulario tanto en el cliente web como en Interfaz unificada, puede usar diferentes formularios en la aplicación de Interfaz unificada y la aplicación de cliente web con el control configurado para usar el número apropiado de filas en cada formulario.
 
 ## <a name="community-tools"></a>Herramientas de la Comunidad
 

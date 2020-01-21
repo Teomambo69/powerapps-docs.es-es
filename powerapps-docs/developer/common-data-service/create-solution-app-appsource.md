@@ -1,27 +1,27 @@
 ---
-title: 'Paso 3: Crear una solución administrada para la aplicación (Common Data Service) | Microsoft Docs'
+title: 'Paso 2: Crear una solución administrada para la aplicación (Common Data Service) | Microsoft Docs'
 description: Obtenga información sobre cómo crear una solución administrada para incluir todos los componentes de su aplicación. Esto es necesario para publicar una aplicación en Appsource.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 12/20/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: shmcarth
-ms.author: jdaly
-manager: ryjones
+author: KumarVivek
+ms.author: kvivek
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8115e17ef999834e2134ef41c2a8472bf539438b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 25b80be0190fa2b520706d72166879e687a30f30
+ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749574"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "2922327"
 ---
-# <a name="step-3-create-a-managed-solution-for-your-app"></a>Paso 3: Crear una solución administrada para la aplicación
+# <a name="step-2-create-a-managed-solution-for-your-app"></a>Paso 2: Crear una solución administrada para la aplicación
 
 Cree una solución administrada para incluir todos los componentes de su aplicación. Estos temas pueden ser útiles cuando planee y cree una solución administrada para empaquetar los componentes de aplicaciones:
 - [Introducción a soluciones](introduction-solutions.md)
@@ -54,5 +54,5 @@ Tendrá un archivo de solución (ejemplo: *SampleSolution.zip*) y opcionalmente 
 
 
 > [!div class="nextstepaction"]
-> [Paso 4: Crear un paquete de AppSource para la aplicación](create-package-app-appsource.md) 
+> [Paso 3: Crear un paquete de AppSource para la aplicación](create-package-app-appsource.md) 
   

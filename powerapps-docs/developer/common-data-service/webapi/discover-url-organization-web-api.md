@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0d4f785d266604d51d099a5b56885b6ad32b6249
-ms.sourcegitcommit: d03915b4e2583327526b448ec10474cedfd7efe0
+ms.openlocfilehash: 7b69f19979b154a08aca23dacab58e4882066495
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "2854125"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909294"
 ---
 # <a name="discover-the-url-for-your-organization-using-the-web-api"></a>Detecte la dirección URL de su organización con la API web.
 
@@ -49,7 +49,7 @@ Además de los servicios de detección específicos del centro de datos, que est
  La información de la organización se almacenan en la entidad `Instance` del servicio de detección.  Para ver el tipo de información incluida en esa entidad, envíe una solicitud HTTP GET al servicio para una de sus instancia.  
   
 ```http  
-GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName='myorg')  
+GET https://globaldisco.crm.dynamics.com/api/discovery/v2.0/Instances(UniqueName='myorg')  
 ```  
   
 En el ejemplo anterior, el servicio de detección global de Common Data Service se utiliza para obtener la información de la organización de la instancia con un nombre único de "myorg". Se tratará con mayor detenimiento más información acerca de esta solicitud más adelante en este tema.  
@@ -93,20 +93,20 @@ La API web del servicio de detección admite la norma CORS para acceso de origen
 -   Obtenga los detalles de una instancia determinada. Si sale del GUID, se devuelven todas las instancias a las que el usuario autenticado tiene acceso.  
   
     ```http      
-    GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(<guid>)
+    GET https://globaldisco.crm.dynamics.com/api/discovery/v2.0/Instances(<guid>)
     GET https://disco.crm.dynamics.com/api/discovery/v9.0/Instances(<guid>)  
     ```  
   
 -   Puede usar el atributo UniqueName como clave alternativa.  
   
     ```http  
-    GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName='myorg')  
+    GET https://globaldisco.crm.dynamics.com/api/discovery/v2.0/Instances(UniqueName='myorg')  
     ```  
   
 -   Recupere una lista de instancias disponible, filtrada por tipo de producción.  
   
     ```http  
-    GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances?$select=DisplayName,Description&$filter=Type+eq+0   
+    GET https://globaldisco.crm.dynamics.com/api/discovery/v2.0/Instances?$select=DisplayName,Description&$filter=Type+eq+0   
     ```  
   
 -   Recupere el valor de la propiedad del id. de la instancia específica.  

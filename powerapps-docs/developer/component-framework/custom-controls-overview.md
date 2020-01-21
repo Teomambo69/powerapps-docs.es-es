@@ -8,12 +8,12 @@ ms.topic: article
 ms.assetid: 135481cd-4583-4e49-8f58-02f32a9b054a
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: afc3f967d8fe93cbd0c5c8d21f67773f970d9ca2
-ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
+ms.openlocfilehash: 93d60cb1e6c00951e51acd4f92d8c62dce84fc28
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2895027"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909081"
 ---
 # <a name="what-are-code-components"></a>Qué son los componentes de código
 
@@ -24,7 +24,7 @@ Puede agregar los componentes de código incluyéndolos en una solución y despu
 Los componentes de código constan de tres elementos:
 
 - [Manifiesto](#manifest)
-- [Biblioteca de implementación del componente](#component-implementation-library)
+- [Implementación del componente](#component-implementation)
 - [Recursos](#resources)
 
 ## <a name="manifest"></a>Manifiesto
@@ -39,9 +39,9 @@ El manifiesto es el archivo de metadatos que define un componente. Es un documen
 
 Cuando un usuario configura un componente de código, los datos del archivo de manifiesto filtran los componentes disponibles para que sólo los componentes válidos para el contexto estén disponibles para configuración. Las propiedades definidas en el archivo de manifiesto para un componente se generan como campos de configuración para que el usuario que configura el componente pueda especificar los valores. Estos valores de propiedad están disponibles entonces para el componente en tiempo de ejecución. Más información: [Referencia de esquema de manifiesto](manifest-schema-reference/index.md)
 
-## <a name="component-implementation-library"></a>Biblioteca de implementación del componente
+## <a name="component-implementation"></a>Implementación del componente
 
-Implementar la biblioteca de componentes es uno de los pasos clave cuando está desarrollando componentes de código con Power Apps component framework. Los desarrolladores pueden implementar una biblioteca de componentes con TypeScript. Cada componente de código debe tener una biblioteca que incluya la definición de una función que devuelva un objeto que implemente los métodos descritos en la interfaz de componentes de código. 
+Implementar el componente es uno de los pasos clave cuando está desarrollando componentes de código con Power Apps component framework. Los desarrolladores pueden implementar un componente con TypeScript. Cada componente de código debe tener un archivo `index.ts` que incluya la definición de una función que devuelva un objeto que implemente los métodos descritos en la interfaz de componentes de código. Este archivo se genera automáticamente a través de herramientas CLI con métodos de stub principales.
 
 El objeto implementa los siguientes métodos:
 

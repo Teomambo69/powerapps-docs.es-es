@@ -1,5 +1,5 @@
 ---
-title: Cree su primer componente usando Power Apps Component Framework | MicrosoftDocs
+title: Cree su primer componente usando Power Apps component framework | MicrosoftDocs
 description: Cómo implementar componentes de código mediante TypeScript
 manager: kvivek
 ms.date: 10/01/2019
@@ -8,24 +8,26 @@ ms.topic: index-page
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: dc71362d9b4076e74b836e9f7aa1603c8c84df47
-ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
+ms.openlocfilehash: b84af344a9057eed6084ca7ac2ef989146230089
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2895074"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909085"
 ---
-# <a name="create-your-first-component-using-power-apps-component-framework"></a>Cree su primer componente usando Power Apps Component Framework
+# <a name="create-your-first-component"></a>Crear el primer componente 
 
-En este tema le guiará por el proceso de crear un nuevo componente de código en Typescript mediante Power Apps CLI. En este tutorial crearemos un componente de código lineal de ejemplo que permita a los usuarios cambiar los valores numéricos mediante un control deslizante visual en lugar de teclear los valores en el campo. 
+ En este tutorial, demostramos cómo crear un componente de código de control deslizante lineal que permita a los usuarios cambiar los valores numéricos mediante un control deslizante visual en lugar de escribiendo los valores en el campo. 
 
-Las artefactos necesarios para crear componentes de código son:
+Los siguientes pasos son necesarios para crear un componente de código deslizante lineal:
 
-1. [Crear un nuevo proyecto de componente](#creating-a-new-component-project)
-2. [Implementar el manifiesto](#implementing-manifest)
-3. [Implementar lógica de componentes con TypeScript](#implementing-component-logic)
-4. [Agregar estilo a los componentes de código](#adding-style-to-the-code-component)
-5. [Empaquetar componentes de código](#packaging-your-code-components)
+- [Crear un nuevo proyecto de componente](#creating-a-new-component-project)
+- [Implementar el manifiesto](#implementing-manifest)
+- [Implementar lógica de componentes con TypeScript](#implementing-component-logic)
+- [Agregar estilo a los componentes de código](#adding-style-to-the-code-component)
+- [Empaquetar componentes de código](#packaging-your-code-components)
+- [Agregar un componente a una aplicación basada en modelos](#adding-code-components-in-model-driven-apps)
+- [Agregar un componente a una aplicación de lienzo](#adding-code-components-to-a-canvas-app)
 
 ## <a name="creating-a-new-component-project"></a>Crear un nuevo proyecto de componente
 
@@ -61,7 +63,7 @@ Realice cambios en el archivo de manifiesto predefinido, como se muestra aquí:
    - **Versión**: Versión del componente. Cada vez que actualice el componente, deberá actualizar la versión para ver los últimos cambios en tiempo de ejecución.
    - **display-name-key**: Nombre del componente de código que se muestra en la interfaz de usuario.
    - **description-name-key**: Descripción del componente de código que se muestra en la interfaz de usuario.
-   - **control-type**: tipo de componente de código. Solo se admite el tipo *estándar* de componentes de código.
+   - **control-type**: tipo de componente de código. Solo se admiten tipos *estándar* de componentes de código.
 
      ```XML
       <?xml version="1.0" encoding="utf-8" ?>
@@ -81,6 +83,7 @@ Realice cambios en el archivo de manifiesto predefinido, como se muestra aquí:
      ```XML
       <property name="sliderValue" display-name-key="sliderValue_Display_Key" description-key="sliderValue_Desc_Key" of-type-group="numbers" usage="bound" required="true" />
       ```
+
 3. El nodo [resources](manifest-schema-reference/resources.md) define la visualización del componente de código. Contiene todos los recursos que crean la visualización y el diseño del componente de código. El [código](manifest-schema-reference/code.md) se especifica como elemento secundario bajo el elemento recursos. Defina los [recursos](manifest-schema-reference/resources.md) como se muestra aquí:
 
    - **code**: Hace referencia a la ruta de acceso donde se ubican todos los archivos de recursos.
@@ -375,7 +378,7 @@ Siga estos pasos para crear e importar un archivo de [solución](https://docs.mi
     > - En **Herramientas de código**, active **Destinos de NuGet y tareas de compilación**.
 
 6. El archivo zip generado de la solución se encuentra en la carpeta `Solution\bin\debug`.
-7. Manualmente [importe la solución a Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) usando el portal web una vez que el archivo zip esté listo o consulte las secciones [Conexión a su entorno](import-custom-controls.md#connecting-to-your-environment) e [Implementación](import-custom-controls.md#deploying-code-components) para realizar importaciones usando los comandos CLI de Power Apps.
+7. [Importe manualmente la solución en Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) con el portal web una vez que el archivo zip esté listo o usando automáticamente la [herramienta de compilación de Power Apps](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerApps-BuildTools).
 
 ## <a name="adding-code-components-in-model-driven-apps"></a>Agregar componentes código en aplicaciones basadas en modelo
 

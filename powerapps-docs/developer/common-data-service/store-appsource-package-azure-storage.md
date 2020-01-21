@@ -1,8 +1,8 @@
 ---
-title: 'Paso 5: Almacenar el paquete AppSource en Azure Storage y generar una dirección URL con clave SAS (Common Data Service) | Microsoft Docs'
+title: 'Paso 4: Almacenar el paquete AppSource en Azure Storage y generar una dirección URL con clave SAS (Common Data Service) | Microsoft Docs'
 description: Para mantener la seguridad de los archivos, todos los desarrolladores de aplicaciones deben almacenar su archivo de paquete AppSource en una cuenta de almacenamiento del objeto binario de Microsoft Azure y usar una clave de firma de acceso compartido (SAS) para compartir el archivo de paquete. El archivo de paquete se recupera de la ubicación de Azure Storage para certificación y, después, para versiones de prueba de AppSource.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 12/20/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -14,14 +14,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b2924e93ed341293b79dada0023c36854df83583
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8eb263efed13149ea8abcce217116783fdb4b598
+ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753776"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "2922339"
 ---
-# <a name="step-5-store-your-appsource-package-on-azure-storage-and-generate-a-url-with-sas-key"></a>Paso 5: Almacenar el paquete AppSource en Azure Storage y generar una dirección URL con clave SAS
+# <a name="step-4-store-your-appsource-package-on-azure-storage-and-generate-a-url-with-sas-key"></a>Paso 4: Almacenar el paquete AppSource en Azure Storage y generar una dirección URL con clave SAS
 
 Microsoft Azure Storage es un servicio de nube administrado por Microsoft que proporciona almacenamiento de gran disponibilidad, seguridad, duración, escalabilidad y es redundante. Más información: [Introducción a Microsoft Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction).
 

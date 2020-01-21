@@ -360,15 +360,13 @@
     - name: Publicar la aplicación en AppSource
       href: publish-app-appsource.md
       items:
-        - name: 'Paso 1: Rellenar el formulario de envío de la aplicación en AppSource'
-          href: fill-app-submission-form-appsource.md
-        - name: 'Paso 2: Registrar una cuenta en Microsoft Partner Network'
+        - name: 'Paso 1: Crear una cuenta del Centro de partners de Microsoft'
           href: register-microsoft-partner-network.md
-        - name: 'Paso 3: Crear una solución administrada para la aplicación'
+        - name: 'Paso 2: Crear una solución administrada para la aplicación'
           href: create-solution-app-appsource.md
-        - name: 'Paso 4: Crear un paquete AppSource para la aplicación'
+        - name: 'Paso 3: Crear un paquete AppSource para la aplicación'
           href: create-package-app-appsource.md
-        - name: 'Paso 5: Almacenar el paquete AppSource en Azure Storage y generar una dirección URL con clave SAS'
+        - name: 'Paso 4: Almacenar el paquete AppSource en Azure Storage y generar una dirección URL con clave SAS'
           href: store-appsource-package-azure-storage.md
         - name: 'Pasos siguientes: enviar la aplicación al Centro de partners'
           href: next-steps-submit-app-cloud-partner-portal.md

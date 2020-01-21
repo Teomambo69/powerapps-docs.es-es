@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2cbf58a-9112-45c2-b823-2c07a310714c
-ms.openlocfilehash: ddbacd01b76a99e385875a0b8af18d28ce24bed8
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0f779dbddedbf76b3c2e7f55d314a9f0fda30332
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861914"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909089"
 ---
 # <a name="update-existing-code-components"></a>Actualizar componentes de código existentes 
 
@@ -143,33 +143,6 @@ Para utilizar el nuevo archivo de escritura:
 3. Cambie el nombre de todas las referencias de **InputsOutputs.IOutputBag** a **IOutputs**.
 4. Compile el proyecto para generar un nuevo archivo **ManifestTypes.d.ts** usando el comando `npm run build`.
 
-## <a name="troubleshooting-and-workarounds"></a>Solución de problemas y soluciones alternativas
-
-1. Si obtiene una notificación 1ES que pregunta cómo se están usando los pcf-scripts, tenga en cuenta que estos scripts se usan solo para crear los componentes del código pero no se empaquetan ni usan por el componente resultante.  
-2. Si ha creado anteriormente un componente de código usando los útiles versión 0.1.817.1 o anterior y desea asegurarse de que se estén utilizando los últimos módulos de compilación y depuración, realice actualizaciones en el package.json como se muestra:
-   
-    ```JSON
-     "dependencies": { "@types/node": "^10.12.18", "@types/powerapps-component-framework": "1.1.0"}, "devDependencies": { "pcf-scripts": "~0", "pcf-start": "~0" } 
-    ```
-3. El usuario recibe el error `Failed to retrieve information about Microsoft.PowerApps.MSBuild.Pcf from remote source <Feed Url>` cuando la compilación produce error por problemas de autorización. Esta es la solución alternativa para esto:
-
-   - Abrir el archivo NuGet.Config de **%APPDATA%\NuGet**. La fuente de la que el usuario obtiene el error debe estar presente en este archivo. 
-   - Quite la fuente del archivo NuGet.Config o genere un símbolo PAT y agréguelo al archivo Nuget.Config. Por ejemplo:
-
-     ```XML
-     <?xml version="1.0" encoding="utf-8"?>  
-     <configuration>  
-     <packageSources>  
-         <add key="CRMSharedFeed" value="https://dynamicscrm.pkgs.visualstudio.com/_packaging/CRMSharedFeed/nuget/v3/index.json" />  
-      </packageSources>  
-     <packageSourceCredentials>  
-      <CRMSharedFeed>  
-      <add key="Username" value="anything" />  
-      <add key="Password" value="User PAT" />  
-    </CRMSharedFeed>  
-     </packageSourceCredentials>  
-   </configuration>
-     ```
 
 ### <a name="see-also"></a>Vea también
 

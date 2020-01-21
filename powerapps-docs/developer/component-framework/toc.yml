@@ -30,6 +30,8 @@
           href: publish-components-app-source.md
     - name: Solución de problemas
       items:
+        - name: Problemas comunes y soluciones alternativas
+          href: issues-and-workarounds.md
         - name: Limitaciones
           href: limitations.md
     - name: Componente de ejemplo
@@ -335,6 +337,6 @@
             - name: uses-feature
               href: manifest-schema-reference/uses-feature.md
     - name: Recursos de la comunidad
-      href: 'https://powerusers.microsoft.com/t5/PowerApps-Component-Framework/Community-content-sample-components-blogs-etc-Link-to-this-page/m-p/280710#M100'
+      href: community-resources.md
     - name: Compartir sus comentarios
       href: share-your-feedback-for-pcf.md

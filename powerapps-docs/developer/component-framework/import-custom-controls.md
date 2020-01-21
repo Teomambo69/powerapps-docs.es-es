@@ -9,12 +9,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.topic: article
 author: Nkrb
-ms.openlocfilehash: 86a9aa247956d86c184d49a58601a6a58e827f6d
-ms.sourcegitcommit: 5e4e51c5c0e16714c5e22e140785d84cc9383f31
+ms.openlocfilehash: b53995a6ce9d7c0e6d19f0f1305a41a0c45a998d
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2895278"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909278"
 ---
 # <a name="package-a-code-component"></a>Empaquete un componente de código
 
@@ -33,7 +33,7 @@ Para crear e importar un archivo de solución:
    > [!NOTE]
    > Los valores `publisher-name` y `publisher-prefix` deben ser únicos a su entorno.
  
-3. Cuando se crea el nuevo proyecto de solución, la carpeta **Solución** debe hacer referencia a la ubicación donde se ubica el componente de ejemplo creado. Puede agregar la referencia usando el comando siguiente. Esta referencia informa al proyecto de la solución sobre qué componentes de código se deben agregar durante la generación. Puede agregar referencias a varios componentes en un solo proyecto de solución.
+3. Cuando se crea el nuevo proyecto de solución, haga referencia a la carpeta **Soluciones** para la ubicación donde se ubica el componente de muestra creado. Puede agregar la referencia usando el comando siguiente. Esta referencia informa al proyecto de la solución sobre qué componentes de código se deben agregar durante la generación. Puede agregar referencias a varios componentes en un solo proyecto de solución.
 
    ```CLI   
     pac solution add-reference --path <path to your Power Apps component framework project>
@@ -105,7 +105,7 @@ Una vez que haya creado correctamente un perfil de autenticación, puede comenza
 Para crear un proyecto de solución basado en una solución existente en Common Data Service, ejecute el comando `pac solution clone`. Para ello:
 
 1. Asegúrese de que tiene un perfil de autenticación válido creado.
-2. Ejecute el comando . 
+2. Ejecute el comando. 
 
    ```CLI
    pac solution clone –name(-n) <name of the solution to be exported> --version(-v) <version of your solution> --include(-i) <settings that should be included>
@@ -115,15 +115,12 @@ Más información: [Opciones de configuración](https://docs.microsoft.com/dotne
 
 ## <a name="create-a-plug-in-project-and-add-a-reference-to-it-in-your-solution"></a>Crear un proyecto de complemento y agregar una referencia al mismo en su solución 
 
-> [!IMPORTANT]
-> - Los comandos del complemento todavía están en la vista previa pública. 
-> - Las vistas previas de características no se han diseñado para un uso de producción y pueden tener una funcionalidad restringida. Estas características están disponibles antes del lanzamiento oficial para que los clientes puedan tener un acceso anticipado y proporcionar comentarios.
-
-Power Apps CLI ahora permite crear un proyecto de complemento y empaquetarlo en una solución agregando una referencia al proyecto de complemento. El comando `pac plugin init` crea los archivos de plantilla (csproj, Plugin.cs & ServiceHelper.cs) en el directorio. Para ello: 
+> [!NOTE]
+> El comando del complemento se encuentra en versión preliminar pública y Power Apps CLI ahora es compatible con la creación de un proyecto de complemento y su empaquetamiento en una solución agregando una referencia al proyecto de complemento. El comando `pac plugin init` crea los archivos de plantilla (csproj, Plugin.cs & ServiceHelper.cs) en el directorio. Para ello: 
 
 1.  Asegúrese de que tiene un perfil de autenticación válido creado.
 2.  Vaya al directorio raíz donde desea que se cree el proyecto.
-3.  Ejecute el comando . 
+3.  Ejecute el comando. 
 
      ```CLI
      pac auth create –url <https://xyz.crm.dynamics.com>

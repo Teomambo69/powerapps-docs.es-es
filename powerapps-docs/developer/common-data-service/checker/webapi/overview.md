@@ -2,7 +2,7 @@
 title: Usar la API web del comprobador de Power Apps | Microsoft Docs
 description: La API web del comprobador de Power Apps proporciona una experiencia de desarrollo que puede usarse en una gran variedad de lenguajes de programación, plataformas, y dispositivos.
 ms.custom: ''
-ms.date: 06/3/2019
+ms.date: 12/12/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,23 +20,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: eed1556726cb947d7eba6b8f94ceed538f669ea3
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 01ef77aba8b6380b39c1514d317567132894c4af
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861813"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909582"
 ---
 # <a name="use-the-power-apps-checker-web-api"></a>Usar la API web del comprobador de Power Apps
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../../../includes/cc-beta-prerelease-disclaimer.md)]
-
 La API web del comprobador de Power Apps proporciona un mecanismo para ejecutar comprobaciones de análisis estático con personalizaciones y extensiones de la plataforma Common Data Service. Está disponible para que fabricantes y desarrolladores realicen comprobaciones de análisis estático de sus soluciones con un conjunto de reglas de prácticas recomendadas para identificar rápidamente patrones problemáticos. El servicio proporciona la lógica para la [característica del comprobador de soluciones](../../../../maker/common-data-service/use-powerapps-checker.md) en el [portal del fabricante de Power Apps](https://make.powerapps.com) y se incluye como parte de la automatización para [solicitudes enviadas a AppSource](../../publish-app-appsource.md). La interacción directamente con el servicio de esta manera permite el análisis de soluciones que se incluyen como parte de entornos locales (todas las versiones admitidas) y en línea.
-
- > [!IMPORTANT]
- >
- > - La API web para el comprobador de Power Apps es una característica de vista previa.
- > - [!INCLUDE[cc_preview_features_definition](../../../../includes/cc-preview-features-definition.md)]
 
 <a name="bkmk_altApproaches"></a>
 
