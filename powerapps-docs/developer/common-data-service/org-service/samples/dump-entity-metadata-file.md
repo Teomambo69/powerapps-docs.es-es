@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 007ac9701350f5b6ae86b411898f5190ad880816
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 500bbd38a24be73909ba297ee5e1149bcaa84c90
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749901"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934324"
 ---
 # <a name="sample-dump-entity-metadata-to-a-file"></a>Ejemplo: volcar metadatos de entidad en un archivo
 
@@ -41,7 +41,7 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="setup"></a>Configuración
 
-1. Comprobaciones para la versión actual de la organización.
+Comprobaciones para la versión actual de la organización.
 
 
 ### <a name="demonstrate"></a>Demostración
@@ -51,6 +51,6 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="clean-up"></a>Limpiar
 
-1. En este ejemplo no crea ningún registro. No es necesario ninguna limpieza.
+En este ejemplo no crea ningún registro. No es necesario ninguna limpieza.
 
 

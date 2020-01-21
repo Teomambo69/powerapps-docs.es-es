@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/18/2019
+ms.date: 12/20/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 80f9cc89b0da2eec5d134f282507e68658e42a96
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.reviewer: tapanm
+ms.openlocfilehash: 2a3f9e6eba00446ce953975c99721d99bbe78338
+ms.sourcegitcommit: 8ba5f6b88dbd71eb3663dfeec5f0b4427c1543c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "2816403"
+ms.lasthandoff: 12/27/2019
+ms.locfileid: "2924307"
 ---
 # <a name="migrate-portal-configuration"></a>Migrar la configuración del portal
 
@@ -45,7 +45,12 @@ El archivo de esquema predeterminado contiene información sobre las entidades, 
 Después de exportar los datos de configuración, debe importarlos en el entorno de destino. Más información: [Importar datos de configuración del portal](#import-portal-configuration-data)
 
 > [!NOTE]
-> Los archivos de esquema se proporcionan para reducir el esfuerzo necesario para crear un esquema desde cero. El esquema se puede adaptar para implementación mediante los métodos estándar que proporciona la herramienta. Los archivos de esquema se pueden cargar en la herramienta Migración de la configuración y modificar para agregar, quitar y modificar entidades, atributos, etc.
+> La herramienta Migración de configuración utiliza un esquema para exportar e importar datos de configuración. La herramienta no migra entidades o esquemas de entidad. La migración puede producir un error con elementos que no están presentes, como entidades y campos, cuando los datos de configuración no coinciden con el esquema seleccionado.
+>
+> Durante la exportación, asegúrese de que el entorno de origen contiene entidades del portal tal como se especifica en el archivo de esquema de la herramienta Migración de configuración. Aún puede modificar los archivos de esquema para agregar, quitar y modificar atributos, etc., para migrar un subconjunto de datos de configuración.
+>
+> Durante la importación, asegúrese de que el entorno de destino contiene el mismo tipo de portal ya instalado con cualquier personalización adicional como entidades, campos, formularios o vistas importadas por separado como soluciones.
+
 
 ## <a name="export-portal-configuration-data"></a>Exportar datos de configuración del portal
 

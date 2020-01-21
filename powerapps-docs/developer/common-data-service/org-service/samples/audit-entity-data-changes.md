@@ -14,18 +14,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 93c441910b7bed967e709ddf4e3566c05f03d1d1
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f6d70ce43942b9012f512fcbce931a616964abb8
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749679"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934424"
 ---
 # <a name="sample-audit-entity-data-changes"></a>Ejemplo: cambios en los datos de la entidad de auditoría
 
 Este ejemplo muestra cómo habilitar y deshabilitar la auditoría en las entidades y los atributos, recuperar el historial de cambios de los datos de la entidad auditada y eliminar los registros de auditoría. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/AuditEntityData).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
+
 [!include[cc-how-to-run-samples](../../includes/cc-how-to-run-samples.md)]
 
 ## <a name="what-this-sample-does"></a>Qué hace este ejemplo
@@ -50,6 +51,4 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="clean-up"></a>Limpiar
 
-1. Muestra una opción para eliminar los datos de ejemplo creados en [Configuración](#setup).
-
-    La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.
+Muestra una opción para eliminar los datos de ejemplo creados en [Configuración](#setup). La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.

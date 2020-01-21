@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 407a5981033d90df15c0f6ba200afd3ad77d6c44
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 73c3e640ed26eceddeecc16cfafa33da2eb293cc
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749675"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934396"
 ---
 # <a name="sample-convert-a-fax-to-a-task"></a>Ejemplo: convertir un fax en una tarea
 
@@ -56,5 +56,4 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="clean-up"></a>Limpiar
 
-1. Muestra una opción para eliminar todos los datos creados en el ejemplo.
-2. La eliminación es opcional en caso de que desee examinar los datos creados por el ejemplo. Puede eliminar manualmente los datos para obtener los mismos resultados.
+Muestra una opción para eliminar todos los datos creados en el ejemplo. La eliminación es opcional en caso de que desee examinar los datos creados por el ejemplo. Puede eliminar manualmente los datos para obtener los mismos resultados.

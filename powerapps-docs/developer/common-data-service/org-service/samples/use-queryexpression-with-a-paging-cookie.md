@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 07d001c5ed8ad20b915ad65caa94fdffb04b35cd
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 88066bb262c92a08a85d55f357505f9f526f6e6c
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749852"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934068"
 ---
 # <a name="sample-use-queryexpression-with-a-paging-cookie"></a>Ejemplo: usar QueryExpression con una cookie de paginación
 
@@ -50,6 +50,4 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="clean-up"></a>Limpiar
 
-1. Muestra una opción para eliminar todos los datos creados en el ejemplo.
-
-La eliminación es opcional en caso de que desee examinar los datos creados por el ejemplo. Puede eliminar manualmente los datos para obtener los mismos resultados.
+Muestra una opción para eliminar todos los datos creados en el ejemplo. La eliminación es opcional en caso de que desee examinar los datos creados por el ejemplo. Puede eliminar manualmente los datos para obtener los mismos resultados.

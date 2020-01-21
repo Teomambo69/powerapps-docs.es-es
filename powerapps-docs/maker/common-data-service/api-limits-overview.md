@@ -2,7 +2,7 @@
 title: Información general sobre límites de la API (Common Data Service) | MicrosoftDocs
 description: Comprender los límites de las solicitudes de la API Common Data Service.
 ms.custom: ''
-ms.date: 11/23/2019
+ms.date: 12/08/2019
 ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 786994fa531698919d1506dc90217f435e43fb8a
-ms.sourcegitcommit: abeedb952afc5e09ae4c158611e4813b63cb49b3
+ms.openlocfilehash: aee2a6b256c991c178506c68a38f4821c341b1b5
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "2854797"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909524"
 ---
 # <a name="common-data-service-api-limits-overview"></a>Información general sobre límites de la API Common Data Service
 
@@ -35,7 +35,7 @@ Estos límites representan la cantidad de solicitudes que los usuarios tienen de
 
 Si un usuario excede su derecho de solicitud, se notificará al administrador y podría asignar capacidad de solicitudes de Power Apps y Power Automate a ese usuario. Los usuarios no se bloquearán para el uso de aplicaciones para excedentes ocasionales y razonables en este momento.
 
-Para Common Data Service, las solicitudes de API incluyen todas las operaciones de datos que interactúan con registros de entidad donde se crean, recuperan, actualizan o eliminan registros (CRUD). Operaciones especiales como *compartir* y *asignar* están incluidas porque se consideran actualizaciones. Estas solicitudes pueden ser de cualquier cliente o aplicación y usar cualquier extremo. Estas incluyen, entre otras, operaciones realizadas por complementos, flujos de trabajo asíncronos y controles personalizados. Hay un pequeño conjunto de operaciones internas del sistema que se excluyen, como operaciones de inicio de sesión, cierre de sesión y metadatos del sistema.
+Para Common Data Service, las solicitudes de API incluyen todas las operaciones de datos que interactúan con registros de entidad donde se crean, recuperan, actualizan o eliminan registros (CRUD). Operaciones especiales como *compartir* y *asignar* están incluidas porque se consideran actualizaciones. Estas solicitudes pueden ser de cualquier cliente o aplicación y usar cualquier extremo. Estas incluyen, entre otras, operaciones realizadas por complementos, flujos de trabajo asincrónicos, controles personalizados y operaciones $batch (ExecuteMultiple). Hay un pequeño conjunto de operaciones internas del sistema que se excluyen, como operaciones de inicio de sesión, cierre de sesión y metadatos del sistema.
 
 > [!IMPORTANT]
 > Las asignaciones de solicitudes de API de Power Platform incluyen el uso de API de Power Automate, AI Builder y conector. Todas las solicitudes a través de un conector que resultan en una solicitud de Common Data Service representarán 1 solicitud de Power Platform.

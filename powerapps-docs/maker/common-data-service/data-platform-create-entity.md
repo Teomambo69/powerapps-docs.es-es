@@ -5,19 +5,19 @@ author: Mattp123
 ms.service: powerapps
 ms.component: cds
 ms.topic: quickstart
-ms.date: 05/01/2018
+ms.date: 12/23/2019
 ms.author: matp
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e24249573f6c7e56ff16de6808e2423acbf3c0cf
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: d5ce493618d5a7b7d736f56714fcfa2a1c6ba068
+ms.sourcegitcommit: da1a13776f3e27d6b3d2157d17196681e6fe3619
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884208"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "2922844"
 ---
 # <a name="create-a-custom-entity"></a>Creación de una entidad personalizada
 En Power Apps, una *entidad* define la información de la que desea realizar un seguimiento en forma de registros, que incluyen normalmente propiedades como el nombre, ubicación, productos, correo electrónico, y teléfono de la compañía. A continuación puede exponer los datos desarrollando una aplicación que haga referencia a la entidad. Power Apps ofrece entidades estándar “listas para usar” que cubren los escenarios típicos de una organización (como citas de seguimiento), pero puede haber ocasiones en las que necesite crear entidades personalizadas para almacenar datos que sean específicos de la organización.
@@ -58,8 +58,17 @@ Iniciar sesión en Power Apps en [https://make.powerapps.com](https://make.power
     Además, observe que el campo principal también tiene su propio cuadro **Nombre** , que funciona semejantemente al nombre de entidad descrito anteriormente. El nombre del campo principal se rellena automáticamente cuando se especifica un nombre para mostrar, usa la misma prefijo que la entidad, y no se puede cambiar después de que se crean a la entidad.
 
     c. Abra la sección **Más valores** y expanda el acordeón **Descripción**. Puede especificar una descripción para la entidad si lo desea (las descripciones son útiles si otras personas usan esta entidad). 
+
+    d. Selecciona la opción de entidad **Actvidad** de la lista desplegable **Elegir tipo de entidad** para habilitar una entidad como una actividad.
+
+    e. Asegúrese de que la casilla **Mostrar en menús de actividades** está seleccionada. Esta opción garantiza que la actividad está disponible en el menú de actividades.
+
+      > [!Note]
+      > Asegúrese de habilitar la opción **Mostrar en menús de actividades** antes de crear la entidad.
+
+    f. Expanda **Crear y actualizar configuración** y seleccione la casilla **Habilitar formularios de creación rápida**. Esta opción garantiza que puede usar el formulario de creación rápida para crear un registro.
     
-    d. Cuando acabe, haga clic en **Crear**.
+    g. Cuando acabe, haga clic en **Crear**.
      
     ![Entidad nueva](./media/data-platform-cds-create-entity/newentitypanel.png "Panel Nueva entidad")
 

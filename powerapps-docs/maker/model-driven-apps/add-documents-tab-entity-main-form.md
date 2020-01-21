@@ -17,12 +17,12 @@ search.audienceType:
 - customizer
 search.app:
 - D365CE
-ms.openlocfilehash: f245d4c2a9272d10f7aefa2b2847adba5ce0f6e5
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: fae464925ea755a1f9fd0cd77426bfdbaad6141c
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2860827"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909348"
 ---
 # <a name="add-the-sharepoint-documents-tab-to-the-main-form-for-an-entity"></a>Agregar la pestaña documentos de SharePoint al formulario principal de una entidad
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
@@ -45,7 +45,7 @@ Agregar una pestaña en un formulario de entidad principal para documentos de Sh
 5. En el diseñador de formularios seleccione **Nueva pestaña** en el lienzo del diseñador de formularios, seleccione **Agregar campo**, y agregue el campo como *Dirección 1: Ciudad* desde el panel izquierdo. Puede usar cualquier campo numérico o de texto para la pestaña. ![Agregar un campo a la pestaña](media/add-field-to-tab.png)
 6. Cambiar el nombre de la etiqueta de la pestaña. Para ello, seleccione **Nueva pestaña** y, en el panel derecho de propiedades reemplace **Nueva pestaña** con algo más descriptivo, como *Archivos*.
 7. Seleccione **Guardar** y **Publicar**, y luego cierre el editor de formularios. 
-8. En la página principal del fabricante de Power Apps, seleccione **Soluciones**, seleccione la solución y seleccione **Exportación** para exportar la solución como una solución no administrada. Más información: [Exportar soluciones](../common-data-service/import-update-export-solutions.md#export-solutions) 
+8. En la página principal del fabricante de Power Apps, seleccione **Soluciones**, seleccione la solución y seleccione **Exportación** para exportar la solución como una solución no administrada. Más información: [Exportar soluciones](../common-data-service/export-solutions.md) 
 9. Extraiga la solución y abra el archivo customization.xml con un editor de XML o texto. 
 10. En customization.xml busque **label description="Files"** (o el nombre que dio a la etiqueta de la pestaña en el paso anterior).
 11. Desplácese hasta el elemento *field name*” del id de control, como **control id="address1_city"** y reemplace el elemento completo con el [Ejemplo de XML](#xml-sample-for-adding-the-documents-tab-to-a-form) en este tema. 

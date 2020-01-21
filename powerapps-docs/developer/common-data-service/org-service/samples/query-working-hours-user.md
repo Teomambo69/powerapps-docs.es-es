@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 89a4d771d198cdffad6f9cde78a48273ae141cd4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5d2426d63e7c8444c22ea0103979ed8a2812724e
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749881"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934248"
 ---
 # <a name="sample-query-the-working-hours-of-a-user"></a>Ejemplo: consultar las horas laborables de un usuario
 
@@ -42,7 +42,7 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="setup"></a>Configuración
 
-1. Comprobaciones para la versión actual de la organización.
+Comprobaciones para la versión actual de la organización.
 
 ### <a name="demonstrate"></a>Demostración
 
@@ -51,5 +51,4 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="clean-up"></a>Limpiar
 
-1. Muestra una opción para eliminar los datos de ejemplo creados en [Configuración](#setup).
-    La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.
+Muestra una opción para eliminar los datos de ejemplo creados en [Configuración](#setup). La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.

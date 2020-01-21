@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d5c5ca8034f515e5e150c71b376c391660f3e920
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7dd9cfec4eff14c8d5575be6c5c2279958242ecb
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749526"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934355"
 ---
 # <a name="sample-create-retrieve-update-and-delete-a-recurring-appointment"></a>Ejemplo: crear, recuperar, actualizar y eliminar una cita periódica
 
@@ -46,7 +46,7 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="setup"></a>Configuración
 
-1. Comprobaciones para la versión actual de la organización.
+Comprobaciones para la versión actual de la organización.
 
 ### <a name="demonstrate"></a>Demostración
 
@@ -58,8 +58,6 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="clean-up"></a>Limpiar
 
-1. Muestra una opción para eliminar los registros creados en la [Configuración](#setup).
-
-    La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.
+Muestra una opción para eliminar los registros creados en la [Configuración](#setup). La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.
 
 

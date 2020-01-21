@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ef1ae352f4d6b02d37c8b1be9629647b187761cf
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8b690bb3a7a27c278c9354073f5e4140dfe33b4d
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749677"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934412"
 ---
 # <a name="sample-bulk-delete-exported-records"></a>Ejemplo: eliminación en masa de los registros exportados
 
@@ -46,10 +46,8 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="demonstrate"></a>Demostración
 
-1. El método `PerformBulkDeleteBackup` realiza la operación de eliminación en masa en las actividades y oportunidades inactivas para quitarlas del sistema.
+El método `PerformBulkDeleteBackup` realiza la operación de eliminación en masa en las actividades y oportunidades inactivas para quitarlas del sistema.
 
 ### <a name="clean-up"></a>Limpiar
 
-1. Muestra una opción para eliminar los datos de ejemplo creados en [Configuración](#setup).
-
-    La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.
+Muestra una opción para eliminar los datos de ejemplo creados en [Configuración](#setup). La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.

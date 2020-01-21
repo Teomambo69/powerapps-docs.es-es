@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ff883ffd2c90da491341a9ea03284c19bc564fab
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c41dfe21ad8a706b5502b637e0a9a3c68317c6a0
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749539"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934440"
 ---
 # <a name="sample-add-a-security-principal-user-or-team-to-a-queue"></a>Ejemplo: Agregar una entidad de seguridad (usuario o equipo) a una cola 
 
@@ -48,9 +48,8 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="demonstrate"></a>Demostración
 
-1. El método `AddPrincipalToQueueRequest` agrega el equipo a la cola.
+El método `AddPrincipalToQueueRequest` agrega el equipo a la cola.
+
 ### <a name="clean-up"></a>Limpiar
 
-1. Muestra una opción para eliminar los datos de ejemplo en [Configuración](#setup).
-
-    La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.
+Muestra una opción para eliminar los datos de ejemplo en [Configuración](#setup). La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d0b91e7020db63d71a0cfa8e2bd5d009dbac2f85
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c38b1709e34ea85f7de84b0c9eaea0a2c9256c2d
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749883"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934256"
 ---
 # <a name="sample-query-connections-by-a-record"></a>Ejemplo: consultar conexiones para un registro 
 
@@ -49,9 +49,8 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="demonstrate"></a>Demostración
 
-1. `QueryExpression` recupera todas las conexiones asociadas al contacto creado en el ejemplo.
+`QueryExpression` recupera todas las conexiones asociadas al contacto creado en el ejemplo.
 
 ### <a name="clean-up"></a>Limpiar
 
-1. Muestra una opción para eliminar los registros creados en [Configuración](#setup).
-    La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.
+Muestra una opción para eliminar los registros creados en [Configuración](#setup). La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.

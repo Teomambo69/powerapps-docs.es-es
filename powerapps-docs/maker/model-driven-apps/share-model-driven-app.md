@@ -10,19 +10,19 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 11/18/2019
+ms.date: 12/17/2019
 ms.author: matp
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f11eebcb220ff877b0cd750f2d94338cadc5ceea
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: bcdc8241692cd1713f4c0f4cd2f4c0d8959dffe4
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884032"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909392"
 ---
 # <a name="share-a-model-driven-app-with-power-apps"></a>Compartir una aplicación controlada por modelos con Power Apps
 
@@ -167,7 +167,11 @@ Estos roles predefinidos están disponibles con un entorno de [!INCLUDE [powerap
 
 *El privilegio es ámbito global salvo que se especifique lo contrario.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="use-azure-active-directory-groups-to-manage-access"></a>Utilizar grupos de Azure Active Directory para administrar acceso
+Los administradores pueden usar los grupos de Azure Active Directory (Azure AD) de su organización para administrar los derechos de acceso para usuarios de Common Data Service con licencia. Ambos tipos de grupos de Azure AD (oficina y seguridad) se pueden usar para proteger los derechos de acceso de usuario a una aplicación. Más información: [Acerca de los equipos de grupo](/power-platform/admin/manage-teams.md#about-group-teams) 
+
+
+### <a name="see-also"></a>Vea también
 [Ejecutar una aplicación controlada por modelos en un dispositivo móvil](../../user/run-app-client-model-driven.md)
 
 

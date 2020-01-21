@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 126d73385a9b3e2aca78f74f7132b87865801d52
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9e97dfc4ab319c30decbc07fa866ab5f6c861e28
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749893"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934276"
 ---
 # <a name="sample-late-bound-entity-operations"></a>Ejemplo: operaciones de entidad en tiempo de ejecución
 
@@ -44,7 +44,7 @@ Para simular el escenario descrito anteriormente, el ejemplo hará lo siguiente:
 
 ### <a name="setup"></a>Configuración
 
-1. Comprobaciones para la versión actual de la organización.
+Comprobaciones para la versión actual de la organización.
 
 
 ### <a name="demonstrate"></a>Demostración
@@ -59,4 +59,4 @@ Para simular el escenario descrito anteriormente, el ejemplo hará lo siguiente:
 
 ### <a name="clean-up"></a>Limpiar
 
-1. No se requiere limpieza, ya que todos los registros de ejemplo que se crean se eliminan en la sección de demostración.
+No se requiere limpieza, ya que todos los registros de ejemplo que se crean se eliminan en la sección de demostración.

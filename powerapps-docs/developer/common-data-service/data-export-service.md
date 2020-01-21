@@ -14,23 +14,23 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a00d4e751452be55c824727af238900e964a649f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: bb782e362692b63e9412493af0fb561846cdd6f1
+ms.sourcegitcommit: c2de40124037825308fbccf71f3a221198a928f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752996"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2944300"
 ---
 # <a name="data-export-service"></a>Servicio de exportación de datos
 
-Exportación de datos es un servicio complementario habilitado como solución de Common Data Service que agrega la capacidad de replicar los datos de Common Data Service en un almacén de Microsoft Azure SQL Database en una suscripción de Microsoft Azure propiedad del cliente. Los objetivos de destinos admitidos son Microsoft Azure SQL Database y Microsoft Azure SQL Server en máquinas virtuales de Microsoft Azure. Exportación de datos sincroniza inteligentemente los esquemas y datos completos de Dynamics 365 inicialmente y después sincroniza de manera continua cuando se producen cambios (cambios delta) en el sistema Dynamics 365 (online).  
+Exportación de datos es un servicio complementario habilitado como solución de Common Data Service que agrega la capacidad de replicar los datos de Common Data Service en un almacén de Microsoft Azure SQL Database en una suscripción de Microsoft Azure propiedad del cliente. Los objetivos de destinos admitidos son Microsoft Azure SQL Database y Microsoft Azure SQL Server en máquinas virtuales de Microsoft Azure. Exportación de datos sincroniza inteligentemente los esquemas y datos completos de Common Data Service inicialmente y después sincroniza de manera continua cuando se producen cambios (cambios delta) en Common Data Service.  
   
- El servicio Exportación de datos proporciona una interfaz para administrar la configuración y la administración continua de este servicio desdeCommon Data Service.  Para obtener más información, vea [Exportación de datos](https://technet.microsoft.com/library/a70feedc-12b9-4a2d-baf0-f489cdcc177d). En este tema se explican la interfaz programática y los problemas correspondientes para este servicio.  
+El servicio Exportación de datos proporciona una interfaz para administrar la configuración y la administración continua de este servicio desdeCommon Data Service.  Para obtener más información, consulte [Replicar datos en Azure SQL Database](https://docs.microsoft.com/power-platform/admin/replicate-data-microsoft-azure-sql-database). En este tema se explican la interfaz programática y los problemas correspondientes para este servicio.  
   
 ## <a name="prerequisites-for-using-the-data-export-service"></a>Los requisitos previos para utilizar el servicio Exportación de datos  
- Puesto que este servicio necesita acceso a una base de datos de Microsoft Azure SQL externa desde Common Data Service, deben cumplirse varios requisitos previos para poder tener acceso correctamente a este servicio. Los siguientes requisitos previos se describen más detalladamente desde el punto de vista de un administrador en la sección [Requisitos previos para usar el servicio de exportación de datos](https://technet.microsoft.com/library/mt744592.aspx).  
+ Puesto que este servicio necesita acceso a una base de datos de Microsoft Azure SQL externa desde Common Data Service, deben cumplirse varios requisitos previos para poder tener acceso correctamente a este servicio. Los siguientes requisitos previos se describen más detalladamente desde el punto de vista de un administrador en la sección [Requisitos previos para usar el servicio de exportación de datos](/power-platform/admin/replicate-data-microsoft-azure-sql-database#prerequisites-for-using-).  
   
- El servicio Common Data Service deben configurarse para que:  
+ Su entorno de Common Data Service deben configurarse para que:  
   
 - Las entidades que se exportarán están habilitadas con seguimiento de cambios. Para obtener más información, consulte [Usar el seguimiento de cambios para sincronizar los datos con sistemas externos](use-change-tracking-synchronize-data-external-systems.md).  
   

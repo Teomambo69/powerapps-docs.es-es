@@ -2,7 +2,7 @@
 title: Establecimiento de propiedades administradas en metadatos de Common Data Service | MicrosoftDocs
 description: Aprenda cómo establecer propiedades administradas para elementos de metadatos en una solución
 ms.custom: ''
-ms.date: 05/30/2018
+ms.date: 12/19/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,37 +22,45 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 287df9ac6daa38022a269177247a5b446bdfa1fa
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4e0c0432626896acdabf89133c86510b651e3859
+ms.sourcegitcommit: 366f0d1b8309ab1fd533ebd7e1b41a69a99fd25a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2870004"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2917933"
 ---
 # <a name="set-managed-properties-in-common-data-service-metadata"></a>Establecer propiedades administradas en metadatos de Common Data Service 
 
 Las propiedades administradas se aplican únicamente al incluir metadatos con una solución administrada e importarlos en otro entorno. Estos valores permiten al responsable de la solución tener un determinado control sobre el nivel de personalización que desea permitir a los usuarios que instalen su solución administrada. 
+
+Para componentes no administrados, puede ver y cambiar las propiedades administradas. Para componentes administrados, puede ver pero no cambiar las propiedades administradas. 
 
 > [!TIP]
 > Normalmente es una buena idea permitir a los usuarios ampliar metadatos en su solución que funcionen con los datos profesionales. Esto les permitirá adaptar su solución a sus necesidades de la misma forma que pueden hacer para entidades estándar.
 >
 >Para los metadatos que ofrecen funcionalidades para admitir la solución pero no contienen datos empresariales, ésta es una buena idea para limitar qué personalizaciones se permiten.
 
-La definición de las propiedades administradas debe hacerse mediante el explorador de soluciones.
-
-[!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
 
 ## <a name="entity-managed-properties"></a>Propiedades administradas de entidad
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y seleccione **Soluciones** en el panel izquierdo. 
+2.  Abra la solución que desee. 
+3.  En la lista de comonentes de la solución, seleccione **...** junto a la entidad no administrada cuyas propiedades administradas desea ver o editar, y luego seleccione **Propiedades administradas**. 
 
-Mientras [visualiza entidades](create-edit-entities-solution-explorer.md#view-entities), seleccione la entidad y seleccione **Propiedades administradas** en la barra de menús.  Se abrirá el cuadro de diálogo **Establecer propiedades administradas**.
+    > [!div class="mx-imgBorder"] 
+    > ![Comando Propiedades administradas de entidad](media/entity-managed-properties.png "Comando Propiedades administradas de entidad")
 
-![Establecer propiedades administradas de entidad](media/set-managed-properties.png)
+    Se muestra la página de propiedades administradas. 
+
+    > [!div class="mx-imgBorder"] 
+    > <img src="media/managed-properties-dialog.png" alt="Managed properties pane" height="572" width="300">
+
+<!-- [Managed properties pane](media/managed-properties-dialog.png "Managed properties pane") -->
   
 Las entidades tienen más propiedades administradas que ningún otro tipo de componente de la solución. Si la entidad es personalizable, puede definir las siguientes opciones:  
 
 |Opción|Descripción|
 |--|--|
-|**Se puede personalizar** |Controla el resto de opciones. Si esta opción es `False`, no se aplicará ninguno de los demás valores. Si es `True`, puede especificar las demás opciones de personalización. Cuando `False`, es equivalente a establecer el resto de opciones en falso.|
+|**Permitir personalizaciones** |Controla el resto de opciones. Si esta opción es `False`, no se aplicará ninguno de los demás valores. Si es `True`, puede especificar las demás opciones de personalización. Cuando `False`, es equivalente a establecer el resto de opciones en falso.|
 |**Se puede modificar el nombre para mostrar**|Si el nombre para mostrar de la entidad puede modificarse.|
 |**Se puede cambiar propiedades adicionales** |Se aplica a cualquier elemento no cubierto por las otras opciones.|
 |**Se pueden crear nuevos formularios**|Si se pueden crear nuevos formularios para la entidad.|

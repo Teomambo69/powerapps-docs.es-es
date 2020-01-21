@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9d7b1f6f3f7d9af82e1b047da2ae760246c8ebdc
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 00461f0edf24e9d35d9e0b97233da34bb6faefd8
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749850"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934084"
 ---
 # <a name="sample-use-rollup-queries-to-track-goals"></a>Ejemplo: usar consultas de informe para realizar un seguimiento de los objetivos
 
@@ -79,6 +79,4 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="clean-up"></a>Limpiar
 
-1. Muestra una opción para eliminar los datos de ejemplo creados en [Configuración](#setup).
-
-    La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.
+Muestra una opción para eliminar los datos de ejemplo creados en [Configuración](#setup). La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.

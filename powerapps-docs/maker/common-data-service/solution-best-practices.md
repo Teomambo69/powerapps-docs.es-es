@@ -22,19 +22,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 810fd536da5236f5ac7490505e82e78179ab61da
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 40c59ccdebe8ee5192510b5d8ac7e825c6b68c58
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865313"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909436"
 ---
 # <a name="best-practices-when-working-with-solutions"></a>Prácticas recomendadas cuando trabaja con soluciones 
 Este tema describe las prácticas recomendadas cuando trabaja con soluciones. 
 
 
 ## <a name="use-a-single-managed-solution-to-manage-a-model-driven-app"></a>Use una sola solución administrada para administrar una aplicación basada en modelo 
-Para actualizar la aplicación que se incluyó en la solución administrada, use actualizar o revisar soluciones. No instale diferentes soluciones administradas en un entorno que tiene la misma aplicación basada en modelos. Más información: [Actualizar soluciones](import-update-export-solutions.md#update-solutions) y [Usar soluciones segmentadas y parches para exportar activos seleccionados de la entidad](use-segmented-solutions-patches-simplify-updates.md) 
+Para actualizar la aplicación que se incluyó en la solución administrada, use actualizar o revisar soluciones. No instale diferentes soluciones administradas en un entorno que tiene la misma aplicación basada en modelos. Más información: [Actualizar soluciones](update-solutions.md) y [Usar soluciones segmentadas y parches para exportar activos seleccionados de la entidad](use-segmented-solutions-patches-simplify-updates.md) 
 
 
 ## <a name="use-security-roles-to-manage-app-access"></a>Use roles de seguridad para gestionar el acceso a aplicaciones

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bb2583ce166564dd2ed8bad515bc2ab46409559e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 721b4da846aaca0433caf8aac8759fb35dd8199d
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749894"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934288"
 ---
 # <a name="sample-import-data-using-complex-data-map"></a>Ejemplo: importar datos mediante la asignación de datos complejos
 
@@ -52,9 +52,7 @@ Para simular el escenario descrito anteriormente, el ejemplo hará lo siguiente:
 
 ### <a name="clean-up"></a>Limpiar
 
-1. Muestra una opción para eliminar los registros creados en la [Configuración](#setup).
-
-    La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.
+Muestra una opción para eliminar los registros creados en la [Configuración](#setup). La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.
 
 
 ### <a name="see-also"></a>Vea también

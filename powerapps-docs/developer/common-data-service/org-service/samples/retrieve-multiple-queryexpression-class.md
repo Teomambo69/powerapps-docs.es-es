@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7f85fe38e5f300d0f5a7a1a2d4e796837054bf9f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 2939a005c5fac49706f6a582a71f0d11a520faac
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749872"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934204"
 ---
 # <a name="sample-retrieve-multiple-with-the-queryexpression-class"></a>Ejemplo: Recuperación múltiple con la clase de QueryExpression
 
@@ -43,11 +43,13 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="setup"></a>Configuración
 
-1. Comprobaciones para la versión actual de la organización.
+Comprobaciones para la versión actual de la organización.
 
 ### <a name="demonstrate"></a>Demostración
+
 1. Crea varias cuentas con contactos principales.
 1. La clase `QueryExpression` crea una expresión de consulta que especifica el alias de la entidad de vínculo y las columnas de entidad de vínculo que desea devolver.
+
 ### <a name="clean-up"></a>Limpiar
 
-1. No es necesaria ninguna limpieza.
+No es necesaria ninguna limpieza.

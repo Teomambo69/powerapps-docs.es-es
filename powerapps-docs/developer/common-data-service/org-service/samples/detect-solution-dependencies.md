@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4f718c8414e76119c53bbb55648ee8b0a1941e1c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 296c325e84b2ac1d74321825ab19f38b88e82ab4
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749902"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934336"
 ---
 # <a name="sample-detect-solution-dependencies"></a>Ejemplo: detectar las dependencias de solución
 
@@ -53,6 +53,4 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 1. `RetrieveDependentComponentsRequest` recupera todas las dependencias para el componente. Si no hay dependencias puede omitir este componente. Si hay dependencias sobre este componente de la solución, y la misma solución se administra, no podrá eliminar la solución.
 ### <a name="clean-up"></a>Limpiar
 
-1. Muestra una opción para eliminar las soluciones creadas en [Configuración](#setup).
-
-    La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.
+Muestra una opción para eliminar las soluciones creadas en [Configuración](#setup). La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.

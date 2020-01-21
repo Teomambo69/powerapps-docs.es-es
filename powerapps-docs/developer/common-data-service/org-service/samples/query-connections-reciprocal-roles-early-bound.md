@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 35237064a89309f2345e92122479ad059369a495
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4025a4da12cb909f0b481a9a821f9a9f77eaf70f
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749884"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934260"
 ---
 # <a name="sample-query-connections-by-reciprocal-roles"></a>Ejemplo: consultar conexiones por roles recíprocos
 
@@ -48,9 +48,8 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="demonstrate"></a>Demostración
 
-1. `QueryExpression` recupera todos los roles de conexión que tienen este rol enumerado como rol recíproco.
+`QueryExpression` recupera todos los roles de conexión que tienen este rol enumerado como rol recíproco.
 
 ### <a name="clean-up"></a>Limpiar
 
-1. Muestra una opción para eliminar los registros creados en [Configuración](#setup).
-    La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.
+Muestra una opción para eliminar los registros creados en [Configuración](#setup). La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.

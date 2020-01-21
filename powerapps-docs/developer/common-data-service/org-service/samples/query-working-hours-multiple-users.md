@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c9c6b691312f9ed46a236e65d6b18b0bfc4f6894
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3694c3180d3183f2fbae44c8e59acbebb6a548b0
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749882"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934252"
 ---
 # <a name="sample-query-the-working-hours-of-multiple-users"></a>Ejemplo: consultar las horas laborables de varios usuarios
 
@@ -53,10 +53,8 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="demonstrate"></a>Demostración
 
-1. El mensaje `QueryMultipleScheduleRequest` recupera las horas laborables del usuario actual y el usuario que ha creado manualmente.
+El mensaje `QueryMultipleScheduleRequest` recupera las horas laborables del usuario actual y el usuario que ha creado manualmente.
 
 ### <a name="clean-up"></a>Limpiar
 
-1. Muestra una opción para eliminar los registros creados en [Configuración](#setup).
-
-    La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.
+Muestra una opción para eliminar los registros creados en [Configuración](#setup). La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.

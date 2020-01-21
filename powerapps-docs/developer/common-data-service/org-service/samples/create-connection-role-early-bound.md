@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9ad3fd39f00d68af3a115c3bed2cc6d984eeeeb0
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d8aebdc81d225369fbe8b964713c145242c6312e
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749739"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934384"
 ---
 # <a name="sample-create-a-connection-role"></a>Ejemplo: crear un rol de conexión
 
@@ -40,7 +40,8 @@ Este ejemplo muestra cómo crear un rol de conexión que puede usarse para cuent
 Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample-does), la muestra hará lo siguiente:
 
 ### <a name="setup"></a>Configuración
-1. Comprobaciones para la versión actual de la organización.
+
+Comprobaciones para la versión actual de la organización.
 
 ### <a name="demonstrate"></a>Demostración
 1. Define algunos tipos anónimos para definir el intervalo de los valores de propiedad de conexión posibles.
@@ -49,5 +50,4 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="clean-up"></a>Limpiar
 
-1. Muestra una opción para eliminar los registros creados en [Configuración](#setup).
-    La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.
+Muestra una opción para eliminar los registros creados en [Configuración](#setup). La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.

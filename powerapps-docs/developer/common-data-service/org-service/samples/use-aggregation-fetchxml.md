@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fe241719b55278d77e2e564bfc55e83b45809aeb
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9ac38c8b53b6950c7bbf69583da1a83a24c1fe63
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749855"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934136"
 ---
 # <a name="sample-use-aggregation-in-fetchxml"></a>Ejemplo: uso de agregación en FetchXML
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-use-aggregation-fetchxml -->
 
-Este ejemplo muestra cómo recuperar datos de registros agregados mediante FetchXML.
+Este ejemplo muestra cómo recuperar datos de registros agregados mediante FetchXML. Puede descargar el ejemplo desde [aquí](https://github.com/microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/UseAggregationInFetchXML).
 
 ## <a name="what-this-sample-does"></a>Qué hace este ejemplo
 
@@ -60,6 +60,4 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="clean-up"></a>Limpiar
 
-1. Muestra una opción para eliminar todos los datos creados en el ejemplo.
-
-La eliminación es opcional en caso de que desee examinar los datos creados por el ejemplo. Puede eliminar manualmente los datos para obtener los mismos resultados.
+Muestra una opción para eliminar todos los datos creados en el ejemplo. La eliminación es opcional en caso de que desee examinar los datos creados por el ejemplo. Puede eliminar manualmente los datos para obtener los mismos resultados.

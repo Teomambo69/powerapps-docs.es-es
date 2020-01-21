@@ -2,7 +2,7 @@
 title: Trabajar con soluciones en Power Apps | Microsoft Docs
 description: Aprenda cómo se distribuyen las soluciones
 ms.custom: ''
-ms.date: 09/30/2019
+ms.date: 12/04/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 286d955bfa0e6b28061d6a73962da25156820c9a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 71ddf991d25f144ce24b078cf73ffc6b971de36f
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2870136"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909195"
 ---
 # <a name="solutions-overview"></a>Información general de las soluciones  
 
@@ -41,73 +41,80 @@ Más información: [Notas del producto: Administración del ciclo de vida de las
 
 <a name="BKMK_SolutionComponents"></a>   
 ### <a name="components"></a>Componentes  
- Un componente representa algo que puede personalizar. Todo lo que se puede incluir en una solución es un componente. La siguiente es una lista de componentes que puede ver en una solución:  
-  
--   Modelo de IA
+ Un componente representa algo que puede personalizar. Todo lo que se puede incluir en una solución es un componente. Para ver los componentes incluidos en una solución, en el explorador de soluciones vaya a **Configuración** > **Soluciones** y luego abra la solución que desee. Los componentes se enumeran en la lista **Componentes**. 
 
--   Cinta de la aplicación  
-  
--   Plantilla de artículo  
-  
--   Regla de negocio  
+> [!div class="mx-imgBorder"] 
+> ![Componentes de la solución](media/components-in-solution.png "Componentes de la solución") 
 
--   Aplicación de lienzo 
-  
--   Gráfico  
-  
--   Rol de conexión  
-  
--   Plantilla de contrato  
+Para ver una lista de los tipos de componentes que se pueden agregar a cualquier solución, vea [Opciones de tipo de componente ](../../developer/common-data-service/reference/entities/solutioncomponent.md#componenttype-options).
 
--   Conector personalizado
+<!-- The following is a list of components that you can view in a solution:  
+  
+-   AI Model
+
+-   Application Ribbon  
+  
+-   Article Template  
+  
+-   Business Rule  
+
+-   Canvas App 
+  
+-   Chart  
+  
+-   Connection Role  
+  
+-   Contract Template  
+
+-   Custom Connector
  
--   Control personalizado
+-   Custom Control
   
--   Panel  
+-   Dashboard  
   
--   Plantilla de correo electrónico  
+-   Email Template  
   
--   Entidad  
+-   Entity  
   
--   Relación de entidad  
+-   Entity Relationship  
 
--   Variable de entorno
+-   Environment variable
   
--   Campo  
+-   Field  
   
--   Perfil de seguridad de campo  
+-   Field Security Profile  
 
--   Flujo
+-   Flow
   
--   Formulario  
+-   Form  
   
--   Plantilla de combinación de correspondencia  
+-   Mail Merge Template  
   
--   Mensaje  
+-   Message  
 
--   Aplicación basada en modelo
+-   Model-driven app
   
--   Conjunto de opciones  
+-   Option Set  
   
--   Ensamblado de complementos  
+-   Plug-in Assembly  
   
--   Proceso  
+-   Process  
 
--   Informe de  
+-   Report  
 
--   Paso de procesamiento del mensaje de SDK  
+-   Sdk Message Processing Step  
   
--   Rol de seguridad  
+-   Security Role  
   
--   Extremo de servicio  
+-   Service Endpoint  
   
--   Mapa del sitio  
+-   Site Map  
 
--   Proveedor de datos de entidad virtual
+-   Virtual Entity Data Provider
 
--   Origen de datos de entidad virtual
+-   Virtual Entity Data Source
   
--   Recurso web  
+-   Web Resource  -->
   
  Algunos componentes se anidan en otros componentes. Por ejemplo, una entidad contiene formularios, vistas, gráficos, campos, relaciones de entidad, mensajes y reglas de negocio. Cada uno de los componentes necesita que exista una entidad. Un campo no puede existir fuera de una entidad. Decimos que el campo depende de la entidad. Existe el doble de tipos de componentes que se muestra en la lista anterior, pero la mayoría de ellos no se anidan en otros componentes y no son visibles en la aplicación.  
   

@@ -2,7 +2,7 @@
 title: Realizar operaciones condicionales mediante la API web (Common Data Service)| Microsoft Docs
 description: Aprenda a crear condiciones que decidan si y cómo realizar ciertas operaciones mediante la API web
 ms.custom: ''
-ms.date: 08/31/2019
+ms.date: 01/08/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f9bc022aadc020ecd46f6665efbd50a5322ac45a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 079aa0d3e55ea72a725023cd155f7269f345a8e2
+ms.sourcegitcommit: c2de40124037825308fbccf71f3a221198a928f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749765"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2944304"
 ---
 # <a name="perform-conditional-operations-using-the-web-api"></a>Realizar operaciones condicionales mediante la API web
 
@@ -54,16 +54,9 @@ Las consultas que expanden propiedades de navegación valorada como colección p
 
 ## <a name="conditional-retrievals"></a>Recuperaciones condicionales
 
-Las Etags le permiten optimizar recuperaciones de registros siempre que tenga acceso al mismo registro varias veces. Si ha recuperado previamente un registro, puede pasar el valor de ETag con el encabezado `If-None-Match` para solicitar que se recuperen datos solo si han cambiado desde la última vez que se recuperaron. Si los datos han cambiado, la solicitud devuelve un estado HTTP de 200 (correcto) con los datos más recientes en el cuerpo de la solicitud. Si los datos no han cambiado, se devuelve el código de estado HTTP 304 (sin modificar) para indicar que la entidad no se ha modificado. El siguiente par de mensajes de ejemplo devuelve datos de una entidad de cuenta con el `accountid` igual a `00000000-0000-0000-0000-000000000001` cuando los datos no se han modificado desde que se recuperaron por última vez.  
+Las Etags le permiten optimizar recuperaciones de registros siempre que tenga acceso al mismo registro varias veces. Si ha recuperado previamente un registro, puede pasar el valor de ETag con el encabezado `If-None-Match` para solicitar que se recuperen datos solo si han cambiado desde la última vez que se recuperaron. Si los datos han cambiado, la solicitud devuelve un estado HTTP de `200 (OK)` con los datos más recientes en el cuerpo de la solicitud. Si los datos no han cambiado, se devuelve el código de estado HTTP `304 (Not Modified)` para indicar que la entidad no se ha modificado. 
 
-> [!NOTE]
-> Obtención condicional funciona solo para las entidades que tienen simultaneidad optimista habilitada. Compruebe si una entidad tiene simultaneidad optimista habilitada mediante la solicitud de API Web que se muestra a continuación. Las entidades que tienen simultaneidad optimista habilitada, tendrán la propiedad <xref href="Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsOptimisticConcurrencyEnabled?text=EntityMetadata.IsOptimisticConcurrencyEnabled" /> para establecer `true`.
-
-> ```HTTP
-> GET [Organization URI]/api/data/v9.0/EntityDefinitions(LogicalName='<Entity Logical Name>')?$select=IsOptimisticConcurrencyEnabled
-> ```
-<!-- TODO:
-> For more information about optimistic concurrency, see [Reduce potential data loss using optimistic concurrency](../org-service/reduce-potential-data-loss-using-optimistic-concurrency.md).   -->
+El siguiente par de mensajes de ejemplo devuelve datos de una entidad de cuenta con el `accountid` igual a `00000000-0000-0000-0000-000000000001` cuando los datos no se han modificado desde que se recuperaron por última vez cuando el valor Etag era `W/"468026"`
 
  **Solicitud**  
 ```http  
@@ -80,6 +73,20 @@ HTTP/1.1 304 Not Modified
 Content-Type: application/json; odata.metadata=minimal  
 OData-Version: 4.0  
 ```  
+
+Las siguientes secciones describen las limitaciones para usar recuperaciones condicionales.
+
+### <a name="entity-must-have-optimistic-concurrency-enabled"></a>La entidad debe tener habilitada la simultaneidad optimista
+
+Compruebe si una entidad tiene simultaneidad optimista habilitada mediante la solicitud de API Web que se muestra a continuación. Las entidades que tienen simultaneidad optimista habilitada, tendrán la propiedad <xref href="Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsOptimisticConcurrencyEnabled?text=EntityMetadata.IsOptimisticConcurrencyEnabled" /> para establecer `true`.
+
+```http
+GET [Organization URI]/api/data/v9.0/EntityDefinitions(LogicalName='<Entity Logical Name>')?$select=IsOptimisticConcurrencyEnabled
+```
+
+### <a name="query-must-not-include-expand"></a>La consulta no debe incluir $expand
+
+El Etag solo puede detectar si ha cambiado el registro único que se está recuperando. Cuando utilice `$expand` en su consulta, pueden devolverse registros adicionales y no es posible detectar si alguno de esos registros ha cambiado o no. Si la consulta incluye `$expand`, nunca devolverá `304 Not Modified`.
   
 <a name="bkmk_limitUpsertOperations"></a>
   

@@ -2,19 +2,19 @@
 title: Habilitar Azure Storage para los portales | MicrosoftDocs
 description: Instrucciones para habilitar Azure Storage para portales para que aproveche la mayor capacidad de almacenamiento de archivos de Azure.
 author: sbmjais
-manager: shujoshi
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/11/2019
+ms.date: 01/07/2020
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 0d9b49857528cf0e55fa2ad3dfcaae2aa88b77c0
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.reviewer: tapanm
+ms.openlocfilehash: 38705c143fdf3e85ec18f60c20423cc404aee043
+ms.sourcegitcommit: df15c909ba27c9ed83197305a4ee1f01e46a826b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "2816024"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2936123"
 ---
 # <a name="enable-azure-storage"></a>Habilitar Azure Storage
 
@@ -55,7 +55,7 @@ En la [aplicación Administración del portal](configure/configure-portal.md), v
 
 También debe agregar la regla de uso compartido de recursos de origen cruzado (CORS) en su cuenta de Azure Storage como sigue; de lo contrario, verá el icono normal de los datos adjuntos en lugar del icono de nube:
 
-- **Orígenes permitidos**: Especifique el dominio. Por ejemplo, `http://contoso.crm.dynamics.com`.
+- **Orígenes permitidos**: Especifique el dominio. Por ejemplo, `https://contoso.crm.dynamics.com`.
 - **Verbos permitidos**: OBTENER, PONER, ELIMINAR, ENCABEZAR, PUBLICAR
 - **Encabezados permitidos**: Especifique los encabezados de solicitud que el dominio de origen puede especificar en la solicitud de CORS. Por ejemplo, x-ms-meta-data\*, x-ms-meta-target\*. 
 - **Encabezados expuestos**: Especifique los encabezados de respuesta que se pueden enviar en la respuesta a la solicitud de CORS y que expone el explorador al emisor de la solicitud. Por ejemplo, x-ms-meta-\*.

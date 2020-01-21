@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e4d8b6b69ab820541b822fc58ce5c079df7b5b19
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 9c4473b0b1cdcb2549b84a100a19c1663f795b2d
+ms.sourcegitcommit: df15c909ba27c9ed83197305a4ee1f01e46a826b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2885350"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2936259"
 ---
 # <a name="use-solutions-in-power-apps"></a>Usar soluciones en Power Apps
 
@@ -93,7 +93,7 @@ En Power Apps, puede ver el explorador de soluciones clásico seleccionando **So
 
 Las siguientes limitaciones se aplican al uso de aplicaciones de lienzo, flujos y conectores personalizados en soluciones. 
 
-- Los flujos desencadenados por aplicaciones del lienzo no están disponibles en soluciones.
+- Los flujos desencadenados por botones de aplicaciones de lienzo no se admiten en soluciones. Cree la aplicación y el flujo fuera de una solución, y exporte el archivo .msapp para migrar aplicaciones de lienzo con un flujo desencadenado por un botón insertado. 
 - Si una aplicación de lienzo se empaqueta en una solución administrada, no puede editarse y volver a publicarse en el entorno de destino. Use soluciones no administradas si las aplicaciones requieren edición en el entorno de destino. 
 - Las conexiones requieren autenticación y consentimiento, que requiere una sesión de usuario interactiva y por tanto no se pueden transportar mediante soluciones. Después de importar la solución, juegue la aplicación para autenticar conexiones. También puede crear las conexiones en el entorno de destino antes de importar la solución. 
 -   Las aplicaciones de lienzo compartidas como copropietario con grupo de seguridad Azure Active Directory (AAD) no se pueden agregar a soluciones. Deje de comaprtir la aplicación antes de agregarla a una solución.

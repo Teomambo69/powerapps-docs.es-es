@@ -2,19 +2,19 @@
 title: Configuración del proveedor Azure AD B2C para portales | MicrosoftDocs
 description: Instrucciones de habilitar los ajustes del proveedor de Azure AD B2C para portales.
 author: sbmjais
-manager: shujoshi
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/18/2019
+ms.date: 01/03/2020
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 5f902dd900e074c2e6b3f08f8848475dcd907ee4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.reviewer: tapanm
+ms.openlocfilehash: e8275fa256b00736501990c3abf127777097d938
+ms.sourcegitcommit: 82eec5da9c97fcb6ed50ae8e582f326af9278aa7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755507"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935224"
 ---
 # <a name="azure-ad-b2c-provider-settings-for-portals"></a>Azure AD B2C configuración del proveedor para portales
 
@@ -40,7 +40,7 @@ Durante la configuración de [!include[Azure](../../../includes/pn-azure-shortes
 4. [Cree la aplicación Azure](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-app-registration#register-a-web-application).
 
    > [!Note]
-   > Debe elegir **Sí** para el campo **Permitir el flujo implícito** y especificar la dirección URL de portal en el campo **Dirección URL de respuesta** . El valor en el campo **Dirección URL de respuesta** debe tener el formato [dominio de portal]/inicio de sesión-[Nombre de la federación]. Por ejemplo, `https://contosocommunity.microsoftcrmportals.com/signin-B2C`.
+   > Debe elegir **Sí** para el campo **Permitir el flujo implícito** y especificar la dirección URL de portal en el campo **Dirección URL de respuesta**. El valor en el campo **Dirección URL de respuesta** debe tener el formato [dominio de portal]/inicio de sesión-[Nombre de la federación]. Por ejemplo, `https://contosocommunity.microsoftcrmportals.com/signin-B2C`.
 
 5. Copie el nombre de la aplicación, e incorpórelo como el valor del nombre de la aplicación en la tabla precedente.
 6. Copie el ID de la aplicación, e incorpórelo como el valor del ID de la aplicación en la tabla precedente.
@@ -110,7 +110,7 @@ Puede crear o configurar la siguiente configuración del sitio en portales para 
 | Authentication/Registration/LocalLoginEnabled                        | Especifica si se necesita un inicio de sesión local. De forma predeterminada, se establece como verdadero.                                                                        |
 | Authentication/Registration/ExternalLoginEnabled                     | Habilita o deshabilita la autenticación externa.       |
 | Authentication/Registration/AzureADLoginEnabled                      | Habilita o deshabilita [!include[Azure](../../../includes/pn-azure-shortest.md)] AD como proveedor de identidad externo. De forma predeterminada, se establece como verdadero.                                                                                                                                                                      |
-| Authentication/OpenIdConnect/[Nombre de federación]/ExternalLogoutEnabled | Habilita o deshabilita el inicio de sesión federado. Si se establece en verdadero, los usuarios se redirigen a la experiencia de usuario de inicio de sesión federado al cerrar sesión en el portal. Si se establece en falso, los usuarios cierran sesión solo del portal. De forma predeterminada, se establece como falso.               |
+| Authentication/OpenIdConnect/[Nombre de federación]/ExternalLogoutEnabled | Habilita o deshabilita el inicio de sesión federado. Si se establece en verdadero, los usuarios se redirigen a la experiencia de usuario de inicio de sesión federado al cerrar sesión en el portal. Si se establece en falso, los usuarios cierran sesión solo del portal. De forma predeterminada, se establece en falso.               |
 | Authentication/LoginTrackingEnabled                                  | Habilita o deshabilita el seguimiento del último inicio de sesión del usuario. Si se establece en verdadero, se muestran la fecha y la hora en el campo **Último inicio de sesión correcto** en el registro de contacto. De manera predeterminada, el valor es falso.                                                            |
 | Authentication/OpenIdConnect/[Nombre de federación]/RegistrationEnabled   | Habilita o deshabilita el requisito de registro para el proveedor de identidad existente. Si se establece en verdadero, se habilita el registro del proveedor existente solo si Authentication/Registration/Enabled también se establece en verdadero. De forma predeterminada, se establece como verdadero. |
 |Authentication/OpenIdConnect/[Nombre de federación]/PostLogoutRedirectUri |Especifica la dirección URL en el portal a la que se va a redirigir a después de que los usuarios cierren sesión. |
@@ -470,7 +470,7 @@ Para obtener una lista completa de otros valores de configuración CORS, consult
 ### <a name="step-5-includeazureincludespn-azure-shortestmd-configuration"></a>Paso 5: Configuración [!include[Azure](../../../includes/pn-azure-shortest.md)]
 
 1. Inicie sesión en su [!include[Azure portal](../../../includes/pn-azure-portal.md)].
-2. Desplácese hasta la hoja **Administración de suscriptores de [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C** .
+2. Desplácese hasta la hoja **Administración de suscriptores de [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C**.
 3. Vaya a **Configuración** > **Directivas de registro e inicio de sesión**. Aparecerá la lista de directivas disponibles.
 4. Seleccione la directiva que desea editar.
 5. Seleccione **Editar**.
@@ -522,4 +522,8 @@ Los clientes que tienen registros de contactos con correos electrónicos asociad
 
 **Nombre**: Authentication/[Protocolo]/[Proveedor]/AllowContactMappingWithEmail
 
-**Descripción**: Especifica si los contactos están asignados al correo electrónico correspondiente. Si se establece en verdadero, el valor se asocia a un registro de contacto único con una dirección de correo electrónico coincidente, y después asigna automáticamente el proveedor de identidad externo al contacto una vez que el usuario ha iniciado sesión correctamente. De forma predeterminada, se establece como falso.
+**Descripción**: Especifica si los contactos están asignados al correo electrónico correspondiente. Si se establece en verdadero, el valor se asocia a un registro de contacto único con una dirección de correo electrónico coincidente, y después asigna automáticamente el proveedor de identidad externo al contacto una vez que el usuario ha iniciado sesión correctamente. De forma predeterminada, se establece en *falso*.
+
+**Nombre**: Authentication/UserManager/UserValidator/RequireUniqueEmail
+
+**Descripción**: Especifica si se necesita un correo electrónico único para validar el usuario. Cuando se utiliza una dirección de correo electrónico de contacto existente para iniciar sesión, la configuración debe establecerse en falso. De manera predeterminada, se establece en *verdadero*, lo que puede causar que los intentos de inicio de sesión fallen para los registros de contacto con la dirección de correo electrónico ya presente.

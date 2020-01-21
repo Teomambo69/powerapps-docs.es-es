@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3a79f28db09a9b8c00d174b8ee1d01253f4a753f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 44455de71df45c02bd22620c9252421a4a68ca89
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749676"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934404"
 ---
 # <a name="sample-clean-up-history-for-a-queue"></a>Ejemplo: limpiar el historial de una cola
 
@@ -48,10 +48,8 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="demonstrate"></a>Demostración
 
-1. Recupera el queueitem con llamadas de teléfono inactivas de una cola con el mensaje [RemoveFromQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.removefromqueuerequest?view=dynamics-general-ce-9).
+Recupera el queueitem con llamadas de teléfono inactivas de una cola con el mensaje [RemoveFromQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.removefromqueuerequest?view=dynamics-general-ce-9).
 
 ### <a name="clean-up"></a>Limpiar
 
-1. Muestra una opción para eliminar los registros creados en [Configuración](#setup).
-
-    La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.
+Muestra una opción para eliminar los registros creados en [Configuración](#setup). La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.

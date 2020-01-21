@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ee1611f564f75d780e488bb4c8d23da264197c36
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: dd99019e867b4bc95540c5bb4c08af768891086b
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749868"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934188"
 ---
 # <a name="sample-retrieve-valid-status-transitions"></a>Ejemplo: recuperar transiciones de estado válidas
 
@@ -49,4 +49,4 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="clean-up"></a>Limpiar
 
-1. Este ejemplo no crea ningún registro. No es necesaria ninguna limpieza.
+Este ejemplo no crea ningún registro. No es necesaria ninguna limpieza.

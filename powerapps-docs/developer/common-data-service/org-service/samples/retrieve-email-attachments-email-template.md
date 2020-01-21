@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9c7ffaa212de51d019794282b12e43bfb0f7388a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f8a073fe96df341bbfba2c48f9c5c3bc14bdf38d
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749874"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934224"
 ---
 # <a name="sample-retrieve-email-attachments-for-an-email-template"></a>Ejemplo: recuperar datos adjuntos de correo electrónico para una plantilla de correo electrónico
 
@@ -47,10 +47,8 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="demonstrate"></a>Demostración
 
-1. La `QueryExpression` recupera todos los datos adjuntos.
+La `QueryExpression` recupera todos los datos adjuntos.
 
 ### <a name="clean-up"></a>Limpiar
 
-1. Muestra una opción para eliminar los datos de ejemplo creados en [Configuración](#setup).
-
-    La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.
+Muestra una opción para eliminar los datos de ejemplo creados en [Configuración](#setup). La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.

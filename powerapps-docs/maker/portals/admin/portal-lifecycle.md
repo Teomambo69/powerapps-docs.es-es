@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 12/26/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 60300176f0a39258bbb7030c9e30d9b2e7711990
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.reviewer: tapanm
+ms.openlocfilehash: 26e02d2b8c8a8d47ed41727e13150875bfa307a4
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874670"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934534"
 ---
 # <a name="about-portal-lifecycle"></a>Acerca del ciclo de vida de portales
 
@@ -69,3 +69,26 @@ Para convertir un portal de prueba a producción:
 
     > [!div class=mx-imgBorder]
     > ![Confirmación de prueba a producción](../media/trial-to-prod-confirm.png "Confirmación de prueba a producción")
+
+## <a name="considerations-for-add-on-portals"></a>Consideraciones para portales de complementos
+
+Las siguientes condiciones se aplican a los portales [aprovisionados mediante un plan de complementos del portal](../provision-portal-add-on.md) adquirido anteriormente:
+
+### <a name="trial-add-on-portal"></a>Portal de complementos de prueba
+
+El portal de complementos de prueba expira después de 30 días. El portal expirado se suspende durante 7 días. El portal se elimina una vez que finalice el periodo de suspensión. El portal de complementos de prueba todavía se puede convertir en producción durante un periodo configurado o suspendido.
+
+### <a name="production-add-on-portal"></a>Portal de complementos de producción
+
+El portal de complementos de producción expira al final del periodo de licencia comprada. El período de suspensión para un portal de complementos de producción puede variar según el plan de licencia adquirido. El portal se elimina una vez que finalice el periodo de suspensión. Puede ampliar la licencia de un portal de complementos de producción mientras el portal está en estado configurado o suspendido. Si está suspendido, el portal se puede convertir al estado configurado después de ampliar el periodo de licencia.
+
+> [!IMPORTANT]
+> La suspensión o eliminación de un portal puede causar una pérdida de funcionalidad. Asegure la extensión oportuna del periodo de licencia del portal de complementos a punto de caducar para evitar la suspensión o eliminación.
+
+### <a name="reset-add-on-portal"></a>Restablecer portal de complementos
+
+Siga los pasos para [restablecer](reset-portal.md) el portal aprovisionado utilizando un plan de complementos del portal más antiguo adquirido previamente.
+
+## <a name="see-also"></a>Vea también
+
+[Preguntas más frecuentes sobre los portales de Power Apps](../faq.md)

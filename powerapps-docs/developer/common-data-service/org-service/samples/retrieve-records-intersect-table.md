@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 49243b6d9dadc9fd9cc8dc35eba29c00f867004e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8ca8e3ec207627eb1b54024f1b05ee4730b70aef
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749871"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934200"
 ---
 # <a name="sample-retrieve-records-from-an-intersect-table"></a>Ejemplo: recuperar registros de una tabla de intersección
 
@@ -51,8 +51,7 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 1. La `QueryExpression` recupera los registros de una tabla de intersección.
 1. La `RetrieveMultipleRequest` crea la solicitud Fetch y obtiene los resultados.
+
 ### <a name="clean-up"></a>Limpiar
 
-1. Muestra una opción para eliminar los registros creados en la [Configuración](#setup).
-
-    La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.
+Muestra una opción para eliminar los registros creados en la [Configuración](#setup). La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.

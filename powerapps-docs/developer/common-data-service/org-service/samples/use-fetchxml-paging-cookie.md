@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e910a6ee5737d7dbcc622b4d854f7799a73c3405
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7325fc94f4a73616dbd679ba0800879dc7c6ea2f
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749853"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934080"
 ---
 # <a name="sample-use-fetchxml-with-a-paging-cookie"></a>Ejemplo: usar FetchXML con una cookie de paginación
 
@@ -47,11 +47,9 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="demonstrate"></a>Demostración
 
-1. La `fetchXml` crea la cadena FetchXML para recuperar todas las cuentas secundarias a una cuenta primaria. Esta consulta de Fetch usa 1 marcador para especificar el Id. de cuenta principal para filtrar las cuentas necesarias.
+La `fetchXml` crea la cadena FetchXML para recuperar todas las cuentas secundarias a una cuenta primaria. Esta consulta de Fetch usa 1 marcador para especificar el Id. de cuenta principal para filtrar las cuentas necesarias.
 
 ### <a name="clean-up"></a>Limpiar
 
-1. Muestra una opción para eliminar todos los datos creados en el ejemplo.
-
-La eliminación es opcional en caso de que desee examinar los datos creados por el ejemplo. Puede eliminar manualmente los datos para obtener los mismos resultados.
+Muestra una opción para eliminar todos los datos creados en el ejemplo. La eliminación es opcional en caso de que desee examinar los datos creados por el ejemplo. Puede eliminar manualmente los datos para obtener los mismos resultados.
 

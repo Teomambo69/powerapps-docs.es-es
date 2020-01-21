@@ -2,19 +2,19 @@
 title: Agregar el recurso de web Azure Storage a un formulario | MicrosoftDocs
 description: Pasos para agregar un recurso web de Azure Storage a un formulario para permitir la carga de adjuntos a Azure Storage.
 author: sbmjais
-manager: shujoshi
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/11/2019
+ms.date: 01/07/2020
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 873f2054856e21b7fbf56247a4234ae2fb2a72c9
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.reviewer: tapanm
+ms.openlocfilehash: b98bce4b3b9d2fae1015250c509df30ec69c7797
+ms.sourcegitcommit: df15c909ba27c9ed83197305a4ee1f01e46a826b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "2816491"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2936215"
 ---
 # <a name="add-the-azure-storage-web-resource-to-a-form"></a>Agregar el recurso de web Azure Storage a un formulario
 
@@ -41,7 +41,7 @@ Tenga en cuenta que el archivo de datos adjuntos ahora está denominado attachme
 
 Para ver e interactuar con el archivo almacenado en Azure, debe agregar el recurso web adx.annotations.html al formulario. Como requisito previo, asegúrese de que sus usuarios obtienen acceso de lectura a adx_setting. De lo contrario, el recurso web no generará representaciones correctamente.
 
-1. En el editor de formularios del formulario relevante, seleccione **Recurso web** en la pestaña **Insertar** .
+1. En el editor de formularios del formulario relevante, seleccione **Recurso web** en la pestaña **Insertar**.
 
 2. En la casilla **Recurso web** , seleccione **adx_annotations/adx.annotations.html**.
 
@@ -49,7 +49,7 @@ Para ver e interactuar con el archivo almacenado en Azure, debe agregar el recur
 
 4. En la casilla **Parámetro personalizado (datos)** introduzca **azureEnabled=true**. <br>También puede usar el recurso web sin habilitar el soporte de Azure de esta forma, en este caso funciona casi completamente del mismo modo que el control predeterminado.</br>
 
-5. En la pestaña **Formato** , elija las reglas de formato que prefiere. Se recomienda desactivar la casilla de verificación **Mostrar el borde** .
+5. En la pestaña **Formato** , elija las reglas de formato que prefiere. Se recomienda desactivar la casilla de verificación **Mostrar el borde**.
 
 6. Seleccione **Aceptar** para guardar el recurso.
 
@@ -67,7 +67,7 @@ El icono de clip de papel se ha reemplazado por un icono de nube para indicar qu
 
 > [!Note]
 > También debe agregar la regla de uso compartido de recursos de origen cruzado (CORS) en su cuenta de Azure Storage como sigue; de lo contrario, verá el icono normal de los datos adjuntos en lugar del icono de nube.
-> - **Orígenes permitidos**: Especifique el dominio. Por ejemplo, `http://contoso.crm.dynamics.com`.
+> - **Orígenes permitidos**: Especifique el dominio. Por ejemplo, `https://contoso.crm.dynamics.com`.
 > - **Verbos permitidos**: OBTENER, PONER, ELIMINAR, ENCABEZAR, PUBLICAR
 > - **Encabezados permitidos**: Especifique los encabezados de solicitud que el dominio de origen puede especificar en la solicitud de CORS. Por ejemplo, x-ms-meta-data\*, x-ms-meta-target\*. En este escenario, debe especificar *, si no el recurso web no generará representaciones correctamente.
 > - **Encabezados expuestos**: Especifique los encabezados de respuesta que se pueden enviar en la respuesta a la solicitud de CORS y que expone el explorador al emisor de la solicitud. Por ejemplo, x-ms-meta-\*.

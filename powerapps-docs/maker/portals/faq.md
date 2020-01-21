@@ -6,21 +6,25 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 12/03/2019
+ms.date: 12/27/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 28df2292d18f38a78e913a9805ac39a33f6aaf54
-ms.sourcegitcommit: 5e6d71967902c463f34a9254f988b9c10e431eb4
+ms.reviewer: tapanm
+ms.openlocfilehash: 35f68ef861ac8908e1eb9227df6768b7a2c2c9f3
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "2890749"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934126"
 ---
 # <a name="power-apps-portals-faq"></a>Preguntas más frecuentes sobre portales de Power Apps
 
 Hemos recopilado una lista de preguntas frecuentes con respuestas breves para que obtenga la información que necesita con rapidez.
 
 ## <a name="general"></a>General
+
+### <a name="when-is-an-add-on-portal-in-suspended-state"></a>¿Cuándo está un portal de complementos en estado suspendido?
+
+Portal [aprovisionado mediante un plan de complementos del portal](provision-portal-add-on.md) adquirido antes de que se suspenda al final de la expiración. Este periodo de expiración es de 30 días para portales de prueba, mientras que puede variar para un portal de complementos en producción con una licencia comprada. El portal de prueba suspendido se elimina después de 7 días, mientras que el periodo de suspensión puede variar para el portal de producción. Para obtener más detalles, lea el [ciclo de vida del portal](./admin/portal-lifecycle.md#considerations-for-add-on-portals) para portales de complementos.
 
 ### <a name="how-do-i-redirect-a-user-to-a-default-page-after-signing-in"></a>¿Cómo redirijo un usuario a una página predeterminada después de firmar?
 
@@ -115,11 +119,7 @@ Los usuarios internos de una organización que usan portales para tener acceso a
 
 ### <a name="how-do-i-get-a-portal-subscription"></a>¿Cómo obtengo una suscripción al portal?
 
-Puede obtener una suscripción al portal de cualquiera de las siguientes maneras:
-
-- Se proporciona un complemento de portal con la compra de determinadas clases y cantidades de licencias de usuario. Los detalles están disponibles en la guía de precios y licencias de Dynamics 365. Es importante observar que solo obtiene un complemento de portal con licencias de usuario aunque haya adquirido distintos tipos o varias licencias válidas.
-
-- Las suscripciones adicionales del portal pueden adquirirse comprando una suscripción de complemento de portal. Esta suscripción es una suscripción complementaria y está disponible para adquirir si tiene licencias de Dynamics 365 adecuadas.
+[Portales de Power Apps](overview.md) están disponibles ahora completamente independientes en Power Apps. Ya no tiene que adquirir una licencia para aprovisionar un portal. El acceso del usuario al portal requiere una licencia según el tipo de persona. Lea más detalles en [Preguntas más frecuentes sobre licencias de portales de Power Apps](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-power-apps-portals-licensing).
 
 ### <a name="how-do-i-change-the-audience-and-type-of-a-portal-after-it-is-provisioned"></a>¿Cómo cambio el público y el tipo de portal después de que se aprovisiona?
 

@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c1f58228cb86ae7415739f5e6ffe4b3175b87b0d
-ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
+ms.openlocfilehash: 03cdea2884f5ae4ac889218c4d9b87a48f1f8d81
+ms.sourcegitcommit: c2de40124037825308fbccf71f3a221198a928f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2895056"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2944363"
 ---
 # <a name="create-and-use-dataflows-in-power-apps"></a>Creación y uso de flujos de datos en Power Apps
 
@@ -51,6 +51,8 @@ Las secciones siguientes examinan cada uno de estos pasos para que pueda estar f
 ## <a name="create-a-dataflow"></a>Crear un flujo de datos
 Los flujos de datos se crean en un entorno. Por lo tanto, solo podrán verlos y administrarlos desde ese entorno. Además, los individuos que desean obtener datos del flujo de datos deben tener acceso al entorno en el que los creó.
 
+> [!NOTE]
+> La creación de flujos de datos no está disponible actualmente con licencias del Plan comunitario de Power Apps.
 
 1.  Inicie sesión en Power Apps, y compruebe en qué entorno está, busque aparece el selector de entorno cerca del lado derecho de la barra de comandos.
 
