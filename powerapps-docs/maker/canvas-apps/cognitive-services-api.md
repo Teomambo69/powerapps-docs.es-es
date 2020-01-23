@@ -1,34 +1,33 @@
 ---
-title: Uso de Cognitive Services en Power apps | Microsoft Docs
-description: Cree una aplicación de lienzo básica que use el Text Analytics API de Cognitive Services de Azure para analizar el texto.
+title: Uso de Cognitive Services en Power Apps | Microsoft Docs
+description: Cree una aplicación de lienzo básica que use Text Analytics API de Azure Cognitive Services para analizar texto.
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: ''
-ms.date: 12/08/2017
+ms.reviewer: tapanm
+ms.date: 01/17/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c1860320715798d1e3acc72af7f158f91b8f3cd0
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: 4f8f4694b1ffdf6f415ae5f8a9275976b7dd20d7
+ms.sourcegitcommit: db62bf0f8210b5ba2d1d5fc2c7d362ab23ec8c63
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74724367"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76315386"
 ---
-# <a name="use-cognitive-services-in-power-apps"></a>Uso de Cognitive Services en Power apps
-En este artículo se muestra cómo compilar una aplicación de lienzo básica que usa el [Text Analytics API de Cognitive Services de Azure](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) para analizar el texto. Le mostraremos cómo configurar Text Analytics API y cómo conectarse a ella con el [conector de Text Analytics](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/). Luego se muestra cómo crear una aplicación de lienzo que llama a la API.
+# <a name="use-cognitive-services-in-power-apps"></a>Uso de Cognitive Services en Power Apps
+En este artículo se muestra cómo compilar una aplicación de lienzo básica que use [Text Analytics API de Azure Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) para analizar texto. Le mostraremos cómo configurar Text Analytics API y cómo conectarse a ella con el [conector de Text Analytics](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/). Luego se muestra cómo crear una aplicación de lienzo que llama a la API.
 
 > [!NOTE]
-> Si no está familiarizado con la creación de aplicaciones en Power Apps, le recomendamos que lea [creación de una aplicación desde cero antes de](get-started-create-from-blank.md) profundizar en este artículo.
+> Si acaba de empezar con la compilación de aplicaciones en Power Apps, es aconsejable que lea el artículo [Creación de una aplicación de lienzo desde cero](get-started-create-from-blank.md) antes de profundizar en este.
 
 ## <a name="introduction-to-azure-cognitive-services"></a>Introducción a Azure Cognitive Services
-Azure Cognitive Services son un conjunto de API, SDK y servicios disponibles para que sus aplicaciones sean más inteligentes, atractivas y reconocibles. Estos servicios permiten agregar fácilmente a sus aplicaciones características inteligentes tales como detección de emociones y vídeo; reconocimiento facial, visual y de voz; y comprensión de narración y lenguaje.
+Azure Cognitive Services es un conjunto de API, SDK y servicios disponibles para hacer que sus aplicaciones sean más inteligentes, atractivas y detectables. Estos servicios permiten agregar fácilmente a sus aplicaciones características inteligentes tales como detección de emociones y vídeo; reconocimiento facial, visual y de voz; y comprensión de narración y lenguaje.
 
 Nos centraremos en la "comprensión del lenguaje" en este artículo, y trabajaremos con la API Text Analytics. La API permite detectar la opinión, las frases clave, los temas y el idioma del texto. Para empezar, vamos a probar una demostración de la API; regístrese para obtener una versión preliminar.
 
@@ -41,14 +40,14 @@ La API tiene una demostración en línea, en la que puede ver cómo funciona y v
    
     ![Demostración de Text Analytics API](./media/cognitive-services-api/text-analytics-demo.png)
 
-3. En la página se muestran los resultados con formato en la pestaña **texto analizado** y la respuesta JSON en la pestaña **JSON** . [JSON](https://json.org/) es una forma de representar los datos; en este caso, los datos devueltos por el Text Analytics API.
+3. La página muestra los resultados con formato en la pestaña **Texto analizado**, y la respuesta JSON en la pestaña **JSON**. [JSON](https://json.org/) es una forma de representar los datos; en este caso, los datos devueltos por Text Analytics API.
 
 ## <a name="sign-up-for-the-text-analytics-api"></a>Registro para Text Analytics API
 La API está disponible como versión preliminar gratuita y está asociada con una suscripción de Azure. La API se administra en Azure Portal.
 
 1. Si aún no tiene una suscripción de Azure, [regístrese para obtener una suscripción gratuita](https://azure.microsoft.com/free/).
 
-2. En [esta página](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesTextAnalytics), escriba la información del Text Analytics API, tal como se muestra en esta imagen. Seleccione la tarifa **F0** (gratuita).
+2. En [esta página](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesTextAnalytics), escriba la información de Text Analytics API, como se muestra en esta imagen. Seleccione la tarifa **F0** (gratuita).
    
     ![Creación de Text Analytics API](./media/cognitive-services-api/azure-create.png)
 
@@ -67,16 +66,16 @@ La API está disponible como versión preliminar gratuita y está asociada con u
     ![Claves de API](./media/cognitive-services-api/azure-keys.png)
 
 ## <a name="build-the-app"></a>Creación de la aplicación
-Ahora que tiene el Text Analytics API en funcionamiento, puede conectarse a él desde Power apps y compilar una aplicación que llame a la API. Es una aplicación de una sola pantalla que proporciona una funcionalidad similar a la demostración de la página Text Analytics API. Vamos a empezar a trabajar.
+Ahora que Text Analytics API está en funcionamiento, puede conectarse a ella desde Power Apps y compilar una aplicación que llame a la API. Es una aplicación de una sola pantalla que proporciona una funcionalidad similar a la demostración de la página Text Analytics API. Vamos a empezar a trabajar.
 
 ### <a name="create-the-app-and-add-a-connection"></a>Creación de la aplicación y adición de una conexión
-En primer lugar, cree una aplicación de teléfono vacía y agregue una conexión con el conector de **Text Analytics**. Si necesita más información sobre estas tareas, consulte [creación de una aplicación desde cero](get-started-create-from-blank.md) y [Administración de las conexiones en Power apps](add-manage-connections.md).
+En primer lugar, cree una aplicación de teléfono vacía y agregue una conexión con el conector de **Text Analytics**. Si necesita más información sobre estas tareas, consulte [Creación de una aplicación de lienzo desde cero](get-started-create-from-blank.md) y [Administración de conexiones de la aplicación de lienzo en Power Apps](add-manage-connections.md).
 
 1. En [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), elija **Iniciar desde cero** > ![Icono de aplicación para teléfono](./media/cognitive-services-api/icon-phone-app.png) (teléfono) > **Crear esta aplicación**.
 
     ![Iniciar desde cero](./media/cognitive-services-api/start-from-blank.png)
 
-2. En el panel central de Power apps Studio, elija **conectar a datos**.
+2. En el panel central de Power Apps Studio, elija **Conectar con datos**.
 
 3. En el panel **Datos**, haga clic o pulse en **Nueva conexión** > **Text Analytics**.
 
@@ -128,34 +127,33 @@ Ya tiene una aplicación bonita, pero aún no hace nada. Eso se solucionará en 
 
 Con esa información, vamos a agregar la fórmula de la propiedad **AlSeleccionar** del botón. Aquí es donde se produce la magia.
 
-```powerapps-comma
-If( chkLanguage.Value = true;
-    ClearCollect( languageCollect; 
-        TextAnalytics.DetectLanguage(
+```powerapps-dot
+If( chkLanguage.Value = true,
+    ClearCollect( languageCollect, 
+        TextAnalytics.DetectLanguageV2(
             {
-                numberOfLanguagesToDetect: 1; 
                 text: tiTextToAnalyze.Text
             }
         ).detectedLanguages.name
     )
-);;
+);
 
-If( chkPhrases.Value = true;
-    ClearCollect( phrasesCollect; 
-        TextAnalytics.KeyPhrases(
+If( chkPhrases.Value = true,
+    ClearCollect( phrasesCollect, 
+        TextAnalytics.KeyPhrasesV2(
             {
-                language: "en"; 
+                language: "en", 
                 text: tiTextToAnalyze.Text
             }
         ).keyPhrases
     )
-);;
+);
 
-If( chkSentiment.Value = true;
-    ClearCollect( sentimentCollect; 
-        TextAnalytics.DetectSentiment(
+If( chkSentiment.Value = true,
+    ClearCollect( sentimentCollect, 
+        TextAnalytics.DetectSentimentV2(
             {
-                language: "en"; 
+                language: "en", 
                 text: tiTextToAnalyze.Text
             }
         ).score
@@ -173,7 +171,7 @@ Vamos a ver con detalle lo que sucede:
 
   * En **DetectLanguage()** , se codifica **numberOfLanguagesToDetect** de forma rígida como 1, pero puede pasar este parámetro en función de alguna lógica de la aplicación.
 
-  * En **frases clave ()** y **DetectSentiment ()** , **Language** está codificado de forma rígida como "en", pero podría pasar este parámetro en función de alguna lógica de la aplicación. Por ejemplo, puede detectar primero el idioma y luego establecer este parámetro en función de lo que devuelva **DetectLanguage()** .
+  * En **KeyPhrases()** y **DetectSentiment()** , **language** se codifica de forma rígida como "en", pero puede pasar este parámetro en función de alguna lógica de la aplicación. Por ejemplo, puede detectar primero el idioma y luego establecer este parámetro en función de lo que devuelva **DetectLanguage()** .
 
 * Para cada llamada que se realiza, agregue los resultados a la colección correspondiente:
 
@@ -190,7 +188,7 @@ Para mostrar los resultados de las llamadas a la API, haga referencia a la colec
    
     La función **First()** devuelve el primer registro (y único en este caso) de **languageCollect** y la aplicación muestra el valor de **name** (el único campo) asociado con ese registro.
 
-2. Establezca la propiedad **Text** de la etiqueta de opinión en: `"The sentiment score is " & Round(First(sentimentCollect.Value).Value; 3)\*100 & "% positive."`.
+2. Establezca la propiedad **Text** de la etiqueta de opinión en: `"The sentiment score is " & Round(First(sentimentCollect.Value).Value, 3)*100 & "% positive."`.
    
     Esta fórmula utiliza también la función **First()** , obtiene el valor de **Value** (0-1) del primer y único registro y, a continuación, le da formato como un porcentaje.
 

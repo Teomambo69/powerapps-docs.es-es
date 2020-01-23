@@ -1,6 +1,6 @@
 ---
-title: Problemas comunes y soluciones para Power apps | Microsoft Docs
-description: Una lista de problemas comunes y soluciones en Power apps.
+title: Problemas habituales de Power Apps y soluciones | Microsoft Docs
+description: Lista de problemas habituales de Power Apps y soluciones.
 author: KumarVivek
 manager: kvivek
 ms.service: powerapps
@@ -13,47 +13,59 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b578d34217647658bb872ed22cd7ee8b3cc4a1cd
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: 254034d608e5824f2e6358bfa84bb7f7fe9f178c
+ms.sourcegitcommit: db62bf0f8210b5ba2d1d5fc2c7d362ab23ec8c63
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74723854"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76315321"
 ---
-# <a name="common-issues-and-resolutions-for-power-apps"></a>Problemas comunes y soluciones para Power apps
+# <a name="common-issues-and-resolutions-for-power-apps"></a>Problemas habituales de Power Apps y soluciones
 
-En este artículo se enumeran algunos problemas comunes que pueden surgir al usar Power apps. Si procede, se proporcionan soluciones alternativas.
+En este artículo se enumeran algunos de los problemas habituales que puede experimentar al usar Power Apps. Si procede, se proporcionan soluciones alternativas.
 
-1. **Problema de inicio de sesión en determinados dispositivos móviles Android cuando se usa el autenticador** (21 de agosto de 2019)
+1. **Imágenes de la cámara volteadas al importarlas mediante Edge** (20 de enero de 2020)
 
-    En ciertos dispositivos y escenarios, puede experimentar errores de inicio de sesión al usar el autenticador. Esto se debe a que el OEM limita esta funcionalidad. Para obtener más información sobre el error y las posibles mitigaciones, vea [aquí](https://github.com/AzureAD/azure-activedirectory-library-for-android/wiki/ADALError:-BROKER_AUTHENTICATOR_NOT_RESPONDING).    
+    Al usar la cámara y el explorador Edge, es posible que las imágenes queden volteadas.  Esto se debe a un defecto de Edge.  Para mitigar el problema, use el nuevo Edge Chromium u otro explorador.
+    
+1. **Imágenes de la cámara sin la información de los metadatos** (20 de enero de 2020)
 
-1. **Problema de cámara en dispositivos móviles Android** (1 de enero de 2019)
+    Al usar el control de cámara, la imagen no contiene la información de los metadatos. Esto se debe a una limitación del modo en el que tomamos las imágenes con la cámara. Para mitigar el problema, use el [control Agregar imagen](controls/control-add-picture.md).
 
-    Si el control de cámara deja de funcionar en un dispositivo Android, vuelva a publicar la aplicación y vuelva a abrirla en el dispositivo. El control de cámara se actualizó en respuesta a un cambio en el sistema operativo Android y la aplicación se beneficiará de la actualización cuando vuelva a publicarla.
+1. **Imágenes agregadas desde iOS sin la información de los metadatos** (20 de enero de 2020)
+
+    Al usar el control Agregar imagen en iOS, las imágenes importadas mediante la cámara o la galería no contienen los metadatos.  
+
+1. **Problema de inicio de sesión en determinados dispositivos Android al usar un autenticador** (21 de agosto de 2019)
+
+    En ciertos dispositivos y escenarios, es posible que experimente errores de inicio de sesión al usar un autenticador. Esto se debe a que el OEM limita esta funcionalidad. Para obtener más información sobre el error y posibles formas de mitigarlo, consulte [este vínculo](https://github.com/AzureAD/azure-activedirectory-library-for-android/wiki/ADALError:-BROKER_AUTHENTICATOR_NOT_RESPONDING).    
+
+1. **Problema de la cámara en dispositivos móviles Android** (1 de enero de 2019)
+
+    Si el control de cámara deja de funcionar en un dispositivo Android, vuelva a publicar la aplicación y ábrala de nuevo en el dispositivo. El control de cámara se actualizó en respuesta a un cambio en el sistema operativo Android, por lo que, para que la aplicación se beneficie de dicha actualización, es necesario volver a publicarla.
 
 1. **Desplazamiento en galerías de alto flexible** (27 de noviembre de 2018)
 
-    Si tiene una limitación al desplazarse con el dedo, levante el dedo y empiece a desplazarse de nuevo.
+    Si se encuentra con algún tipo de limitación al usar el dedo para desplazarse, levántelo y vuelva a intentarlo.
 
-1. **Dibujar con mouse o entrada táctil no es suave en Power apps para Windows** (Sep. 24, 2018)
+1. **Dificultad para dibujar con el mouse o una entrada táctil en Power Apps para Windows** (24 de septiembre de 2018)
 
-    El control Pen solo tiene compatibilidad parcial con el dibujo mediante el mouse o la entrada táctil en la aplicación de Windows. Los trazos pueden ser intermitentes. Para suavizar el dibujo, use un lápiz o ejecute la aplicación en un explorador.
+    En la aplicación para Windows, el control del lápiz únicamente permite dibujar con el mouse o una entrada táctil de forma parcial. Es posible que los trazos sean intermitentes. Para dibujar de forma más suave, use un lápiz o ejecute la aplicación en un explorador.
 
-1. **Varios controles multimedia en Power apps Mobile** (2 de agosto de 2018)
+1. **Varios controles de medios en Power Apps Mobile** (2 de agosto de 2018)
 
-    Power apps Mobile se ejecuta en varios tipos de dispositivos y algunos tienen limitaciones específicas de esa plataforma:
+    Power Apps Mobile se ejecuta en diversos tipos de dispositivos y, algunos de ellos, tienen limitaciones específicas de esa plataforma:
 
     - Puede reproducir vídeos en varios controles de **vídeo** al mismo tiempo en todas las plataformas, excepto en dispositivos iPhone.
     - Puede grabar audio con varios controles de **micrófono** al mismo tiempo en todas las plataformas, excepto en el reproductor de web.
 
 1. **Volver a publicar aplicaciones** (2 de agosto de 2018)
 
-    Si no ha actualizado la aplicación en varios meses, vuelva a publicarla para sincronizarla con la versión más reciente de Power Apps, lo que incluye mejoras de rendimiento y otras correcciones.
+    Si no ha actualizado la aplicación en varios meses, vuelva a publicarla para sincronizarla con la versión más reciente de Power Apps, que incluye mejoras de rendimiento y otras correcciones.
 
 1. <a name="out-of-memory"></a>**Memoria insuficiente del explorador** (23 de julio de 2018)
 
-    Si se queda sin memoria mientras usa Power Apps, considere la posibilidad de descargar una versión de 64 bits de Chrome, Microsoft Edge o Internet Explorer.
+    Si se queda sin memoria al usar Power Apps, valore la posibilidad de descargar una versión de 64 bits de Chrome, Microsoft Edge o Internet Explorer.
 
 1. **Iniciar un sitio web desde una aplicación insertada** (10 de mayo de 2018)
 
@@ -65,7 +77,7 @@ En este artículo se enumeran algunos problemas comunes que pueden surgir al usa
 
 1. **Usar una imagen personalizada como icono de aplicación** (11 de abril de 2018)
 
-    En Power apps Studio para Windows, versión 3,18043, no se puede cargar una imagen personalizada para usarla como icono de aplicación. Para solucionar este problema, use [Power apps Studio para web](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) para cargar una imagen personalizada. Como alternativa, puede usar uno de los iconos que se incluyen con Power apps Studio para Windows y personalizar el color de fondo.
+    En la versión 3.18043 de Power Apps Studio para Windows, no se puede cargar una imagen personalizada para usarla como icono de la aplicación. Para solucionar este problema y poder cargar una imagen personalizada, use [Power Apps Studio en la Web](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Como alternativa, puede usar uno de los iconos que se incluyen con Power Apps Studio para Windows y personalizar el color de fondo.
 
 1. **Copiar y pegar pantallas entre aplicaciones** (4 de abril de 2018)
 
@@ -79,33 +91,33 @@ En este artículo se enumeran algunos problemas comunes que pueden surgir al usa
 
     Si copia y pega un control **Data Table** en el que la propiedad **Elementos** se ha establecido en una fórmula que contenga una función **Filter**, la fórmula de la propiedad  **Elementos** del nuevo control **Data Table** termina una con nombres de campo que contienen el sufijo **_1**. Esto hace que los nombres de campo no sean válidos y que no se muestren datos en la tabla de datos. Para solucionar este problema, antes de copiar el control, confirme que la función **Filter** no hace referencia a ningún campo del origen de datos que se llame igual que alguna columna del control **Data Table**. En caso de que haga referencia, cambie el nombre de la columna en el control **Data Table**. O bien, quite el sufijo **_1** sufijo de los nombres de campo no válidos para que coincidan con los nombres de la entidad.
 
-1. **Controles de cámara en Power apps Studio para Windows**
+1. **Controles de cámara en Power Apps Studio para Windows**
 
-    Power apps Studio para Windows puede bloquearse si agrega un control de cámara o abre una aplicación que usa un control de cámara. Para evitar este problema, use [Power apps Studio para web](create-app-browser.md) al agregar o usar un control de cámara.
+    Si agrega un control de cámara o abre una aplicación que utilice uno de este tipo, es posible que Power Apps Studio para Windows se bloquee. Para evitar este problema, use [Power Apps Studio en la Web](create-app-browser.md) al agregar o usar un control de cámara.
 
 1. **Versión 2.0.700 en dispositivos Android**
 
-    Si instala la versión 2.0.700 en un dispositivo Android y no puede abrir aplicaciones (o una aplicación deja de responder), desinstale Power Apps, reinicie el dispositivo y, a continuación, vuelva a instalar Power apps.
+    Si instala la versión 2.0.700 en un dispositivo Android y no puede abrir aplicaciones (o una aplicación deja de responder), desinstale Power Apps, reinicie el dispositivo y vuelva a instalar Power Apps.
 
 1. **Galería "vacía" al abrir una aplicación**
 
     Si genera una aplicación automáticamente a partir de datos, guarda la aplicación y, a continuación, vuelve a abrirla, la galería podría no mostrar datos inmediatamente. Para resolver este problema, escriba al menos un carácter en el cuadro de búsqueda y, a continuación, elimine el texto que ha escrito. La galería mostrará los datos según lo previsto.
 
-1. **Actualización de Power Apps en Windows 8.1**
+1. **Actualización de Power Apps en Windows 8.1**
 
-    Si instala Power Apps en un equipo que ejecuta Windows 8 o Windows 8.1, mantenga la aplicación de la tienda Windows abierta y activa, use el acceso a configuración para comprobar si hay actualizaciones y, a continuación, instálelos.
+    Si instala Power Apps en un equipo que ejecuta Windows 8 o Windows 8.1, mantenga la aplicación de la Tienda Windows abierta y activa, use el acceso a Configuración para comprobar si hay actualizaciones y, a continuación, instálelas.
 
 1. **Conectores personalizados y Common Data Service**
 
-    Si una aplicación creada con Power apps Build 2.0.540 o una versión anterior se basa en una base de datos en el Common Data Service y al menos un conector personalizado en un entorno diferente, tendrá que implementar el conector en el mismo entorno que la base de datos y actualizar la aplicación para que use TH e nuevo conector. De lo contrario, un cuadro de diálogo notificará a los usuarios de que no se encontró la API. Para más información, consulte [Environments overview](../../administrator/environments-overview.md) (Información general de los entornos).
+    Si una aplicación creada con la compilación 2.0.540 (u otra posterior) de Power Apps depende de una base de datos de Common Data Service y por lo menos un conector personalizado en un entorno diferente, tendrá que implementar el conector en el mismo entorno que la base de datos y actualizar la aplicación para usar el nuevo conector. De lo contrario, un cuadro de diálogo notificará a los usuarios de que no se encontró la API. Para más información, consulte [Environments overview](../../administrator/environments-overview.md) (Información general de los entornos).
 
 1. **Ejecución de una aplicación en Windows 8.1**
 
-    Si instala [esta actualización para Windows 8.1](https://technet.microsoft.com/library/security/ms16-118), no puede ejecutar aplicaciones que abra en Power apps Studio en ese sistema operativo. Sin embargo, todavía puede ejecutar aplicaciones que abra en [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) o con Power apps Mobile.
+    Si instala [esta actualización para Windows 8.1](https://technet.microsoft.com/library/security/ms16-118), no podrá ejecutar aplicaciones que se abran en Power Apps Studio en ese sistema operativo. Sin embargo, seguirá pudiendo ejecutar las aplicaciones que abra en [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) o con Power Apps Mobile.
 
 1. **Nombres de columna con espacios**
 
-    Si usa una lista de SharePoint o una tabla de Excel en la que un nombre de columna contiene un espacio, Power apps lo reemplazará por **"\_x0020\_"** . Por ejemplo, **"nombre de columna"** en SharePoint o Excel aparecerá como **"Column_x0020_Name"** en Power apps cuando se muestre en el diseño de datos o se use en una fórmula.
+    Si usa una lista de SharePoint o una tabla de Excel en la que un nombre de columna contenga un espacio, Power Apps lo reemplazará por **"\_x0020\_"**. Por ejemplo, **"Nombre columna"** en SharePoint o Excel aparecerá como **"Nombre_x0020_columna"** en Power Apps cuando se muestre en el diseño de datos o se use en una fórmula.
 
 1. **Cambio de un flujo en una aplicación compartida**
 
@@ -131,7 +143,7 @@ En este artículo se enumeran algunos problemas comunes que pueden surgir al usa
 
 1. **Creación y modificación de aplicaciones en un explorador**
 
-    Puede realizar muchas de las mismas cosas, pero no todas, en Power apps Studio para web como en Power apps Studio para Windows. Para más información, consulte [Create an app in a browser](create-app-browser.md) (Crear una aplicación en un explorador).
+    En la versión web de Power Apps Studio puede hacer casi lo mismo que en Power Apps Studio para Windows, pero no todo. Para más información, consulte [Create an app in a browser](create-app-browser.md) (Crear una aplicación en un explorador).
 
 1. **Cambio de un campo de título en una entidad**
 
@@ -139,15 +151,15 @@ En este artículo se enumeran algunos problemas comunes que pueden surgir al usa
 
 1. **Aplicaciones que se conectan a SharePoint local**
 
-    Si comparte una aplicación que se basa en conexiones que no se comparten automáticamente (por ejemplo, un sitio de SharePoint local), los usuarios que abran la aplicación en un explorador verán un cuadro de diálogo sin texto al hacer clic o pulsar en **Iniciar sesión**. Para cerrar el cuadro de diálogo, haga clic o pulse en el icono Cerrar (X) en la esquina superior derecha. El cuadro de diálogo no aparece si abre la aplicación en Power apps Studio o en Power apps Mobile. Para más información acerca de las conexiones compartidas, consulte [Share app resources](share-app-resources.md) (Uso compartido de recursos de la aplicación).
+    Si comparte una aplicación que se basa en conexiones que no se comparten automáticamente (por ejemplo, un sitio de SharePoint local), los usuarios que abran la aplicación en un explorador verán un cuadro de diálogo sin texto al hacer clic o pulsar en **Iniciar sesión**. Para cerrar el cuadro de diálogo, haga clic o pulse en el icono Cerrar (X) en la esquina superior derecha. El cuadro de diálogo no aparece si se abre la aplicación en Power Apps Studio o Power Apps Mobile. Para más información acerca de las conexiones compartidas, consulte [Share app resources](share-app-resources.md) (Uso compartido de recursos de la aplicación).
 
-1. **Cuando Power apps genera una aplicación a partir de datos, el campo usado para ordenar y buscar no se configura automáticamente**.
+1. **Cuando Power Apps genera una aplicación a partir de datos, el campo utilizado para ordenar y buscar no se configura automáticamente**.
 
    Para configurar este campo, modifique la fórmula **[Elementos](controls/properties-core.md)** de la galería, tal como se describe en las secciones para filtrar y ordenar en [Add a gallery](add-gallery.md) (Agregar una galería).
 
 1. **Para las aplicaciones que se crean a partir de datos, solo se puede acceder a los 500 primeros registros de un origen de datos**.
 
-     En general, Power apps funciona con cualquier origen de datos de tamaño mediante la delegación de las operaciones en el origen de datos. En el caso de las operaciones que no se pueden delegar, Power apps emitirá una advertencia en el momento de la creación y operará solo en los primeros 500 registros del origen de datos.  Consulte el artículo [Filter function](functions/function-filter-lookup.md) (Función de filtro) para más información acerca de la delegación.
+     En general, Power Apps funciona con orígenes de datos de cualquier tamaño mediante la delegación de operaciones al origen de datos en cuestión. Para las operaciones que no se pueden delegar, Power Apps mostrará una advertencia en el momento de la creación y operará solo en los 500 primeros registros del origen de datos.  Consulte el artículo [Filter function](functions/function-filter-lookup.md) (Función de filtro) para más información acerca de la delegación.
 
 1. **Se debe dar un formato de tabla a los datos de Excel**.
 
@@ -157,7 +169,7 @@ En este artículo se enumeran algunos problemas comunes que pueden surgir al usa
 
      Para más información, consulte [SharePoint Online](connections/connection-sharepoint-online.md#known-issues).
 
-1. **No se admite la co-autoría. Un autor a la vez, por favor**.
+1. **No se admite la co-autoría. Solo un autor a la vez, por favor**.
 
      Puede dañar una aplicación o sobrescribir los cambios de otros usuarios si más de una persona está modificando a la vez la misma aplicación. Cierre la aplicación antes de que otra persona la edite.
 
@@ -185,4 +197,4 @@ En este artículo se enumeran algunos problemas comunes que pueden surgir al usa
 
 1. **La galería de tarjetas está en desuso**.
 
-     Las aplicaciones existentes que utilizan esta característica seguirán ejecutándose por el momento pero no puede agregar una galería de tarjetas. Reemplace las galerías de tarjetas por los nuevos controles **[Editar formulario](controls/control-form-detail.md)** y **[Mostrar formulario](controls/control-form-detail.md)** .
+     Las aplicaciones existentes que utilizan esta característica seguirán ejecutándose por el momento pero no puede agregar una galería de tarjetas. Reemplace las galerías de tarjetas por los nuevos controles **[Editar formulario](controls/control-form-detail.md)** y **[Mostrar formulario](controls/control-form-detail.md)**.
