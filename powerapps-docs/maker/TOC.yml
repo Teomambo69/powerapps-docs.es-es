@@ -418,6 +418,8 @@
                   href: ./canvas-apps/functions/object-app.md
                 - name: Asin
                   href: ./canvas-apps/functions/function-trig.md
+                - name: Assert
+                  href: ./canvas-apps/functions/function-assert.md
                 - name: AsType
                   href: ./canvas-apps/functions/function-astype-istype.md
                 - name: Atan
@@ -660,6 +662,8 @@
                   href: ./canvas-apps/functions/function-set.md
                 - name: SetFocus
                   href: ./canvas-apps/functions/function-setfocus.md
+                - name: SetProperty
+                  href: ./canvas-apps/functions/function-setproperty.md
                 - name: ShowColumns
                   href: ./canvas-apps/functions/function-table-shaping.md
                 - name: Shuffle
@@ -698,8 +702,10 @@
                   href: ./canvas-apps/functions/function-datevalue-timevalue.md
                 - name: TimeZoneOffset
                   href: ./canvas-apps/functions/function-dateadd-datediff.md
-                - name: Today
+                - name: Hoy
                   href: ./canvas-apps/functions/function-now-today-istoday.md
+                - name: Seguimiento
+                  href: ./canvas-apps/functions/function-trace.md
                 - name: Trim
                   href: ./canvas-apps/functions/function-trim.md
                 - name: TrimEnds
@@ -792,6 +798,12 @@
               href: ./canvas-apps/set-aspect-ratio-portrait-landscape.md
             - name: Creación de un diseño dinámico
               href: ./canvas-apps/create-responsive-layout.md
+    - name: Prueba de una aplicación con Test Studio
+      items:
+        - name: Información general de Test Studio
+          href: ./canvas-apps/test-studio.md
+        - name: Trabajo con Test Studio
+          href: ./canvas-apps/working-with-test-studio.md
     - name: Personalizar un formulario de lista de SharePoint
       items:
         - name: Realización de cambios básicos
