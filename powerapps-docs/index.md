@@ -9,17 +9,17 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - PowerApps-hub
-ms.openlocfilehash: 707f714ca658faa6255ee2e79c08184cb6f2a2fb
-ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
+ms.openlocfilehash: 8374df8f8e440fb7ae3e2c481d201f3d1cfeaf23
+ms.sourcegitcommit: 2fd8b682e2d4c1e6a45c851b56f37f842ef18224
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74959573"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76708791"
 ---
 <div id="main"
    class="v2">
    <div class="container">
-      <h1>Documentación de PowerApps</h1>
+      <h1>Documentación de Power Apps</h1>
       <ul class="pivots">
          <li>
             <a href="#home"></a>
@@ -81,7 +81,7 @@ ms.locfileid: "74959573"
                                           </div>
                                           <div class="cardText">
                                              <h3>Aprendizaje sobre Power Apps</h3>
-                                             <p>Eche un vistazo a las rutas de aprendizaje de Microsoft Learn que ofrecen instrucciones paso a paso para aprender más sobre Power Apps. Es gratuito.</p>
+                                             <p>Eche un vistazo a las rutas de aprendizaje de Microsoft Learn que ofrecen instrucciones paso a paso para aprender más sobre Power Apps. Es gratuito</p>
                                           </div>
                                        </div>
                                     </div>
@@ -287,7 +287,7 @@ ms.locfileid: "74959573"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">Portals</h3>
+                                    <h3 style="font-size: 1.15rem">Portales</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">¿Qué son los portales de Power Apps?</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/create-portal">Creación de un portal</a></p>
@@ -318,7 +318,7 @@ ms.locfileid: "74959573"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/cds-processes">Aplicar lógica de negocios</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/solutions-overview">Soluciones</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/wp-security">Seguridad de Common Data Service</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">Notas del producto: Uso de soluciones ALM</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">Whitepaper: Uso de soluciones ALM</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-powerbi-connector">Generación de informes de Power BI a partir de los datos de Common Data Service</a></p>
                                  </div>
                               </div>
@@ -354,6 +354,7 @@ ms.locfileid: "74959573"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/get-help-support">Ayuda y soporte técnico</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/preview-april-2019-updates">Participar en la Release Wave 2 de 2019</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-settings">Administrar la configuración</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://aka.ms/powerappsadminwhitepaper">Whitepaper: Administración de una plataforma de desarrollo de código bajo</a></p>
                                  </div>
                               </div>
                            </div>
@@ -441,7 +442,7 @@ ms.locfileid: "74959573"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">Introducción</h3>
+                                    <h3 style="font-size: 1.15rem">Comenzar</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/overview">Common Data Service: información general para desarrolladores</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/overview">Aplicaciones basadas en modelos: información general para desarrolladores</a></p>
@@ -607,7 +608,7 @@ ms.locfileid: "74959573"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/checker/webapi/overview">Uso del Comprobador de Power Apps</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/isv-app-management">Supervisión y administración de aplicaciones ISV</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/publish-app-appsource">Publicar la aplicación en AppSource</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">Notas del producto: Uso de soluciones ALM</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">Whitepaper: Uso de soluciones ALM</a></p>
                                  </div>
                               </div>
                            </div>

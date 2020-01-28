@@ -1,4 +1,4 @@
-- name: Comenzar
+- name: Introducción
   items:
     - name: ¿Qué es Power Apps?
       href: ../powerapps-overview.md
@@ -41,7 +41,7 @@
               href: ../user/set-personal-options.md
             - name: Usar el lector de pantalla
               href: ../user/screen-reader.md
-            - name: Métodos abreviados de teclado
+            - name: Accesos directos del teclado
               href: ../user/keyboard-shortcuts.md
         - name: Trabajar con registros
           items:
@@ -126,7 +126,7 @@
       href: ./canvas-apps/getting-started.md
     - name: 'Requisitos del sistema, límites y configuración'
       href: ./canvas-apps/limits-and-config.md
-    - name: Métodos abreviados de teclado
+    - name: Accesos directos del teclado
       href: ./canvas-apps/keyboard-shortcuts.md
     - name: Explorar las aplicaciones de ejemplo
       items:
@@ -138,7 +138,7 @@
           href: ./canvas-apps/help-desk-install.md
         - name: Aplicación Meeting Capture
           href: ./canvas-apps/sample-meeting-capture.md
-    - name: Crear su primera aplicación
+    - name: Creación de la primera aplicación
       items:
         - name: 1 - Crear una aplicación a partir de una plantilla
           href: ./canvas-apps/get-started-test-drive.md
@@ -192,17 +192,17 @@
                   href: canvas-apps/connections/connection-office365-users.md
                 - name: Oracle Database
                   href: canvas-apps/connections/connection-oracledb.md
-                - name: "Power\_BI"
+                - name: Power BI
                   href: canvas-apps/connections/connection-powerbi.md
                 - name: SharePoint
                   href: canvas-apps/connections/connection-sharepoint-online.md
-                - name: "SQL\_Server"
+                - name: SQL Server
                   href: canvas-apps/connections/connection-azure-sqldatabase.md
                 - name: Twitter
                   href: canvas-apps/connections/connection-twitter.md
             - name: Agregar una conexión
               href: ./canvas-apps/add-data-connection.md
-            - name: Administrar conexiones
+            - name: Administración de conexiones
               href: ./canvas-apps/add-manage-connections.md
             - name: Preparación de datos de Excel
               href: ./canvas-apps/how-to-excel-tips.md
@@ -292,7 +292,7 @@
                   href: ./canvas-apps/controls/control-button.md
                 - name: Cámara
                   href: ./canvas-apps/controls/control-camera.md
-                - name: Tarjeta
+                - name: Card
                   href: ./canvas-apps/controls/control-card.md
                 - name: Casilla
                   href: ./canvas-apps/controls/control-check-box.md
@@ -314,7 +314,7 @@
                   href: ./canvas-apps/controls/control-drop-down.md
                 - name: Formulario de edición
                   href: ./canvas-apps/controls/control-form-detail.md
-                - name: Exportar
+                - name: Exportación
                   href: ./canvas-apps/controls/control-export-import.md
                 - name: Galería
                   href: ./canvas-apps/controls/control-gallery.md
@@ -324,7 +324,7 @@
                   href: ./canvas-apps/controls/control-shapes-icons.md
                 - name: Imagen
                   href: ./canvas-apps/controls/control-image.md
-                - name: Importación
+                - name: Importar
                   href: ./canvas-apps/controls/control-export-import.md
                 - name: Gráfico de líneas
                   href: ./canvas-apps/controls/control-column-line-chart.md
@@ -342,7 +342,7 @@
                   href: ./canvas-apps/controls/control-power-bi-tile.md
                 - name: Radio
                   href: ./canvas-apps/controls/control-radio.md
-                - name: Clasificación
+                - name: Rating
                   href: ./canvas-apps/controls/control-rating.md
                 - name: Editor de texto enriquecido
                   href: ./canvas-apps/controls/control-richtexteditor.md
@@ -352,7 +352,9 @@
                   href: ./canvas-apps/controls/control-shapes-icons.md
                 - name: Control deslizante
                   href: ./canvas-apps/controls/control-slider.md
-                - name: Etiquetas
+                - name: Streaming de vídeo
+                  href: ./canvas-apps/controls/control-stream-video.md
+                - name: Etiqueta
                   href: ./canvas-apps/controls/control-text-box.md
                 - name: Entrada de texto
                   href: ./canvas-apps/controls/control-text-input.md
@@ -370,7 +372,7 @@
                   href: ./canvas-apps/controls/properties-accessibility.md
                 - name: Color y borde
                   href: ./canvas-apps/controls/properties-color-border.md
-                - name: Núcleo
+                - name: Core
                   href: ./canvas-apps/controls/properties-core.md
                 - name: Imagen
                   href: ./canvas-apps/controls/properties-visual.md
@@ -388,7 +390,7 @@
               href: ./canvas-apps/working-with-formulas-in-depth.md
             - name: Mostrar fechas y horas
               href: ./canvas-apps/show-text-dates-times.md
-            - name: Crear una colección
+            - name: Creación de una colección
               href: ./canvas-apps/create-update-collection.md
             - name: Mostrar el usuario actual
               href: ./canvas-apps/show-current-user.md
@@ -528,7 +530,7 @@
                   href: ./canvas-apps/functions/function-first-last.md
                 - name: ForAll
                   href: ./canvas-apps/functions/function-forall.md
-                - name: GroupBy
+                - name: GROUP BY
                   href: ./canvas-apps/functions/function-groupby.md
                 - name: GUID
                   href: ./canvas-apps/functions/function-guid.md
@@ -562,7 +564,7 @@
                   href: ./canvas-apps/functions/function-first-last.md
                 - name: Launch
                   href: ./canvas-apps/functions/function-param.md
-                - name: Izquierda
+                - name: Left
                   href: ./canvas-apps/functions/function-left-mid-right.md
                 - name: Len
                   href: ./canvas-apps/functions/function-len.md
@@ -570,7 +572,7 @@
                   href: ./canvas-apps/functions/function-numericals.md
                 - name: LoadData
                   href: ./canvas-apps/functions/function-savedata-loaddata.md
-                - name: Ubicación
+                - name: Location
                   href: ./canvas-apps/functions/signals.md
                 - name: LookUp
                   href: ./canvas-apps/functions/function-filter-lookup.md
@@ -590,7 +592,7 @@
                   href: ./canvas-apps/functions/function-datetime-parts.md
                 - name: Mod
                   href: ./canvas-apps/functions/function-mod.md
-                - name: Mes
+                - name: Month
                   href: ./canvas-apps/functions/function-datetime-parts.md
                 - name: Navigate
                   href: ./canvas-apps/functions/function-navigate.md
@@ -626,7 +628,7 @@
                   href: ./canvas-apps/functions/function-refresh.md
                 - name: Relate
                   href: ./canvas-apps/functions/function-relate-unrelate.md
-                - name: Quitar
+                - name: Remove
                   href: ./canvas-apps/functions/function-remove-removeif.md
                 - name: RemoveIf
                   href: ./canvas-apps/functions/function-remove-removeif.md
@@ -696,7 +698,7 @@
                   href: ./canvas-apps/functions/function-trig.md
                 - name: Text
                   href: ./canvas-apps/functions/function-text.md
-                - name: Hora
+                - name: Time
                   href: ./canvas-apps/functions/function-date-time.md
                 - name: TimeValue
                   href: ./canvas-apps/functions/function-datevalue-timevalue.md
@@ -732,11 +734,11 @@
                   href: ./canvas-apps/functions/function-aggregates.md
                 - name: ViewForm
                   href: ./canvas-apps/functions/function-form.md
-                - name: Weekday
+                - name: Día de la semana
                   href: ./canvas-apps/functions/function-datetime-parts.md
-                - name: Con
+                - name: With
                   href: ./canvas-apps/functions/function-with.md
-                - name: Año
+                - name: Year
                   href: ./canvas-apps/functions/function-datetime-parts.md
         - name: Crear una aplicación en una solución
           href: ./canvas-apps/add-app-solution.md
@@ -1214,7 +1216,7 @@
               href: ./portals/configure/configure-saml2-settings.md
             - name: "Migración de los proveedores de identidades a Azure\_AD\_B2C"
               href: ./portals/configure/migrate-identity-providers.md
-        - name: Buscar
+        - name: Search
           items:
             - name: Acerca de la búsqueda
               href: ./portals/configure/search.md
@@ -1470,7 +1472,7 @@
           href: ./common-data-service/set-managed-properties-for-field.md
         - name: Comportamiento y formato del campo Fecha y hora
           href: ./common-data-service/behavior-format-date-time-field.md
-        - name: 'Guías de procedimientos: Campos'
+        - name: 'Guías de procedimientos: Fields'
           items:
             - name: Cómo crear campos
               href: ./common-data-service/create-edit-fields.md
@@ -1530,7 +1532,7 @@
           href: ./common-data-service/change-solution-publisher-prefix.md
         - name: Establecer propiedades administradas en metadatos
           href: ./common-data-service/set-managed-properties-metadata.md
-        - name: Publicar cambios
+        - name: Publicación de cambios
           href: ./common-data-service/publish-changes-for-use-customer-service-hub.md
         - name: Procedimientos recomendados
           href: ./common-data-service/solution-best-practices.md
@@ -1578,7 +1580,7 @@
       href: 'https://powerapps.microsoft.com/blog/'
     - name: Foros
       href: 'https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1'
-- name: Solucionar problemas
+- name: Solución de problemas
   items:
     - name: Sugerencias de rendimiento de las aplicaciones de lienzo
       href: ./canvas-apps/performance-tips.md
@@ -1588,7 +1590,7 @@
       href: ./canvas-apps/get-sessionid.md
     - name: Solución de problemas de inicio de Power Apps
       href: troubleshooting-startup-issues.md
-    - name: Solucionar problemas de Power Query
+    - name: Solución de problemas de Power Query
       href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
     - name: Soporte técnico
       href: 'https://powerapps.microsoft.com/support/'
