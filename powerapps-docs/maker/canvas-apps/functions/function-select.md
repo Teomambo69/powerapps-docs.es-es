@@ -19,6 +19,7 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/22/2020
 ms.locfileid: "76315432"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="select-function-in-power-apps"></a>Función Select en Power Apps
 Simula una acción de selección en un control, lo que provoca la evaluación de la fórmula **OnSelect**.
@@ -47,7 +48,7 @@ La función Select también se puede usar con una galería. Por ejemplo, se pued
 
 * *Control* (se requiere).  El control para seleccionar en nombre del usuario.
 
-**Select**( *Control, fila o columna, control secundario* )
+**Select**( *Control; fila o columna; control secundario* )
 
 - *Control* (se requiere). El control para seleccionar en nombre del usuario.
 - *Fila o columna* (no se requiere). Número de fila o columna (empezando por 1) en un control de galería que se quiere seleccionar en nombre del usuario.
@@ -61,13 +62,13 @@ La función Select también se puede usar con una galería. Por ejemplo, se pued
 
 - *Galería* 
 
-    ```Select(Gallery1, 1)```
+    ```Select(Gallery1; 1)```
 
     Simula un usuario que selecciona la fila 1 o la columna 1 en Gallery1. 
 
 - *Galería* 
 
-    ```Select(Gallery1, 1, ChildControl1)```
+    ```Select(Gallery1; 1; ChildControl1)```
 
     Simula un usuario que selecciona ChildConttrol1 en la fila 1 o la columna 1 de Gallery1.
 
@@ -107,7 +108,7 @@ La función Select también se puede usar con una galería. Por ejemplo, se pued
 
 5. Establezca la propiedad **OnSelect** del control de imagen en esta fórmula:
 
-    **Notify( "Imagen seleccionada", operación correcta)**
+    **Notify( "Imagen seleccionada"; operación correcta)**
 
 6. Mientras mantiene presionada la tecla Alt, haga clic en los distintos elementos de la galería o púlselos.
 
@@ -119,7 +120,7 @@ La función Select también se puede usar con una galería. Por ejemplo, se pued
 
 7. En la misma pestaña, agregue un control **Botón** y establezca su propiedad **OnSelect** en esta fórmula:
 
-    **Select( Gallery1,2,Image1 )**
+    **Select( Gallery1;2;Image1 )**
 
 8. Mientras mantiene presionada la tecla Alt, seleccione el botón.
    
