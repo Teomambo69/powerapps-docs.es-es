@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 7/22/2019
+ms.date: 1/20/2020
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9091121e874726681e062ef3bb09fc4f561a8a18
-ms.sourcegitcommit: 8f27a61ce2ec32b8d911845dd00708e3c87b86bb
+ms.openlocfilehash: 81a6513f98351f656fdac3fd0ccc24a10061ca85
+ms.sourcegitcommit: d0f02fdaa125feaea884932e1ef31b8fea1bd10c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68428901"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886513"
 ---
 # <a name="assign-or-share-records"></a>Asignar o compartir registros
 
@@ -51,7 +51,7 @@ Use la opción **compartir** si desea mantener la propiedad del registro pero de
 
 ## <a name="use-advanced-find-to-reassign-records"></a>Usar búsqueda avanzada para reasignar registros
 
-Use la búsqueda avanzada para buscar registros y reasignarlos a otra persona. Para obtener más información sobre la búsqueda avanzada, vea [crear, editar o guardar una búsqueda avanzada](create-edit-or-save-advanced-find-search.md).
+Use la búsqueda avanzada para buscar registros y reasignarlos a otra persona. Para obtener más información sobre la búsqueda avanzada, vea [crear, editar o guardar una búsqueda avanzada](advanced-find.md).
 
 
 1. En la barra de comandos, seleccione **búsqueda avanzada**.
@@ -79,7 +79,7 @@ Use la búsqueda avanzada para buscar registros y reasignarlos a otra persona. P
  4. En el cuadro de diálogo **reasignar registros** , elija cómo desea reasignar todos los registros y, después, seleccione **Aceptar**.
  
   > [!NOTE]
-   > La opción **reasignar registros** reasignará todos los registros independientemente de su estado. Los registros inactivos y activos se reasignarán al otro usuario o equipo.
+   > La opción **reasignar registros** reasignará todos los registros independientemente de su estado. Los registros inactivos y activos se reasignarán al otro usuario o equipo. Esto también desactivará todos los procesos activados, incluidos los flujos de trabajo y las reglas de negocios, cuando se reasigne el registro a otro usuario o equipo. El nuevo propietario debe activar los procesos que se deben usar.
  
    > [!div class="mx-imgBorder"]
    > ![Reasignar todos los registros a un usuario o equipo](media/assign6.png "Reasignar todos los registros a un usuario o equipo")
