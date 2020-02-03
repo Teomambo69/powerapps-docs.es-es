@@ -1562,8 +1562,10 @@
       href: ./common-data-service/data-platform-powerbi-connector.md
     - name: Traducir texto de campos y entidades personalizado
       href: ./common-data-service/export-customized-entity-field-text-translation.md
-    - name: Importar texto de campos y entidades traducido a una aplicación
+    - name: Importación de texto traducido de entidades y campos
       href: ./common-data-service/import-translated-entity-field-text.md
+    - name: Exportación en un lago de datos
+      href: ./common-data-service/export-to-data-lake.md
     - name: Seguridad de Common Data Service
       href: /power-platform/admin/wp-security
     - name: Información general sobre los límites de API
