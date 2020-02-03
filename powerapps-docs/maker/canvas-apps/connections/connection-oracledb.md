@@ -1,27 +1,27 @@
 ---
 title: Conexión a Oracle Database | Microsoft Docs
-description: Obtenga información sobre cómo conectarse a Oracle Database y usarlo para compilar aplicaciones en Power apps.
+description: Obtenga información sobre cómo conectarse a Oracle Database y usarlo para compilar aplicaciones en Power Apps.
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/14/2017
+ms.date: 01/29/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b742193e2d127993779e2bba94f35c0c24ecfd7b
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: b60ab00d4f4fecca7ead1cac629e0e34f26f302b
+ms.sourcegitcommit: d0f02fdaa125feaea884932e1ef31b8fea1bd10c
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74728411"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886289"
 ---
-# <a name="connect-to-an-oracle-database-from-power-apps"></a>Conexión a una base de datos de Oracle desde Power apps
-Enumerar las tablas y crear, leer, actualizar y eliminar filas de tabla en una base de datos de Oracle después de crear una conexión y compilar una aplicación en Power apps. La conexión de Oracle Database admite la delegación completa del filtrado, ordenación y otras funciones, pero no los desencadenadores ni los procedimientos almacenados.
+# <a name="connect-to-an-oracle-database-from-power-apps"></a>Conexión a una instancia de Oracle Database desde Power Apps
+Enumere tablas y cree, lea, actualice y elimine filas de una tabla en una instancia de Oracle Database después de crear una conexión y compilar una aplicación en Power Apps. La conexión de Oracle Database admite la delegación completa del filtrado, ordenación y otras funciones, pero no los desencadenadores ni los procedimientos almacenados.
 
 ## <a name="prerequisites"></a>Requisitos previos
 * Oracle 9 y versiones posteriores
@@ -32,13 +32,13 @@ Enumerar las tablas y crear, leer, actualizar y eliminar filas de tabla en una b
 ### <a name="install-an-on-premises-data-gateway"></a>Instalar una puerta de enlace de datos local
 Para instalar una puerta de enlace, siga los pasos de [este tutorial](../gateway-management.md).
 
-Una puerta de enlace de datos local actúa como un puente, proporcionando una transferencia de datos rápida y segura entre los datos locales (datos que no están en la nube) y los servicios de Power BI, automatización, Logic Apps y Power apps. Puede usar la misma puerta de enlace con varios servicios y orígenes de datos. Para más información, consulte [Puertas de enlace](../gateway-reference.md).
+Una puerta de enlace de datos local actúa como un puente, proporcionando una transferencia de datos rápida y segura entre los datos locales (los datos que no se encuentran en la nube) y los servicios de Power BI, Power Automate, Logic Apps y Power Apps. Puede usar la misma puerta de enlace con varios servicios y orígenes de datos. Para más información, consulte [Puertas de enlace](../gateway-reference.md).
 
 ### <a name="install-oracle-client"></a>Instalar el cliente de Oracle
 En el mismo equipo que la puerta de enlace de datos local, instale [64-bit ODAC 12c Release 4 (12.1.0.2.4) for Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html). De lo contrario, aparecerá un error si intenta crear o usar la conexión, como se describe en la lista de problemas conocidos.
 
 ## <a name="create-an-app-from-a-table-in-an-oracle-database"></a>Crear una aplicación desde una tabla de una instancia de Oracle Database
-1. En Power apps Studio, haga clic o pulse en **nuevo** en el menú **archivo** (cerca del borde izquierdo).
+1. En Power Apps Studio, pulse o haga clic en **Nuevo** en el menú **Archivo** (cerca del borde izquierdo).
    
    ![Nueva opción](./media/connection-oracledb/new-app.png)
 2. En **Comenzar con los datos**, haga clic o pulse la flecha.
@@ -74,7 +74,7 @@ En el mismo equipo que la puerta de enlace de datos local, instale [64-bit ODAC 
     
     ![Nuevo](./media/connection-oracledb/connect-button.png)
 
-Power apps crea una aplicación que tiene tres pantallas y muestra los datos de la tabla seleccionada:
+Power Apps crea una aplicación que tiene tres pantallas y muestra los datos de la tabla que ha seleccionado:
 
 * **BrowseScreen1**, que enumera todas las entradas de la tabla.
 * **DetailScreen1**, que proporciona más información acerca de una sola entrada.
@@ -99,5 +99,5 @@ Power apps crea una aplicación que tiene tres pantallas y muestra los datos de 
 3. La tabla '[Tablename]' no define ninguna columna de clave.
    
     Este error aparece si se está conectando a una tabla que no tiene una clave principal que necesita la conexión de Oracle Database.
-4. En el momento de escribir este artículo, no se admiten los procedimientos almacenados, las tablas con claves compuestas ni los tipos de objeto anidados en tablas.
+4. En el momento de escribir este artículo, los procedimientos almacenados, las tablas con claves compuestas ni los tipos de objeto anidados en tablas no se admiten directamente en Power Apps. Sin embargo, sí se admiten los procedimientos almacenados que usan Power Automate.
 

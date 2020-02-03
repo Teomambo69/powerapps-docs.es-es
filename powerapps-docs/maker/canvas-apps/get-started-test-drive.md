@@ -1,50 +1,57 @@
 ---
-title: Crear una aplicación a partir de una plantilla | Microsoft Docs
-description: Instrucciones paso a paso para crear una aplicación de lienzo automáticamente basada en una plantilla de Power apps.
+title: Creación de una aplicación a partir de una plantilla | Microsoft Docs
+description: Instrucciones paso a paso para crear una aplicación de lienzo automáticamente a partir de una plantilla de Power Apps.
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 03/19/2018
+ms.date: 01/29/2020
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 682657a62db520c431bd0f594a87ae50c5e3ac0c
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: d64b1ef3f6d885093fc9f89ecf31b785c07ea6bd
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732173"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76918722"
 ---
-# <a name="create-a-canvas-app-from-a-template-in-power-apps"></a>Creación de una aplicación de lienzo a partir de una plantilla en Power apps
+# <a name="create-a-canvas-app-from-a-template-in-power-apps"></a>Creación de una aplicación a partir de una plantilla en Power Apps
 
 Cree automáticamente una aplicación de lienzo a partir de una plantilla para un escenario concreto, como el seguimiento de presupuestos y la programación de vacaciones, y luego ejecute la aplicación para reconocer su comportamiento predeterminado.
 
 Para crear una aplicación a partir de una plantilla, se necesita una cuenta de almacenamiento en la nube (por ejemplo, DropBox, OneDrive o Google Drive) para almacenar los datos de ejemplo de la plantilla.
 
-Si no tiene una licencia de Power Apps, puede [registrarse de forma gratuita](../signup-for-powerapps.md).
+Si no tiene una licencia para Power Apps, puede [registrarse gratuitamente](../signup-for-powerapps.md).
 
 ## <a name="create-an-app"></a>Crear una aplicación
 
-1. Inicie sesión en [Power apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Inicie sesión en [Power Apps](https://make.powerapps.com).
 
-1. En **Cree su propia aplicación**, mantenga el puntero sobre **Iniciar a partir de datos** y pulse la opción **Crear esta aplicación** o haga clic en ella.
+1. Seleccione **Aplicaciones** en el menú de navegación de la izquierda. Seleccione el menú desplegable **Nueva aplicación** y, a continuación, **Lienzo**.
 
-    ![Icono Crear esta aplicación](./media/get-started-test-drive/make-this-app.png)
+    ![Nueva aplicación de lienzo](./media/get-started-test-drive/new-canvas-app.png)
 
-1. En el icono **Plantillas de aplicación**, pulse o haga clic en **Diseño de teléfono** o **Diseño de tableta**.
+    Se abrirá [Power Apps Studio](https://docs.microsoft.com/powerapps/powerapps-overview#power-apps-for-app-makerscreators) en una nueva pestaña.
+
+1. En el icono **Plantillas de aplicación**, seleccione **Diseño de teléfono** o **Diseño de tableta**.
 
     ![Icono Aplicación desde una plantilla](./media/get-started-test-drive/template-tile.png)
 
-4. En la lista de plantillas, haga clic o pulse en una plantilla y, a continuación, haga clic o pulse en **Usar** (cerca de la esquina inferior derecha).
+1. En la lista de plantillas, seleccione una plantilla y, a continuación, **Usar**, cerca de la esquina inferior derecha.
 
-    ![Abrir una plantilla de Power apps](./media/get-started-test-drive/open-template.png)
+    ![Apertura de una plantilla de Power Apps](./media/get-started-test-drive/open-template.png)
 
-    Los datos de ejemplo se copian en su cuenta de almacenamiento en la nube, se crea la aplicación y aparece la página principal.
+    Power Apps Studio se abre en una nueva pestaña y se crea la aplicación.
+
+    > [!NOTE]
+    > Si el botón **Usar** está deshabilitado, asegúrese de haber seleccionado un origen de datos para la aplicación. Para hacerlo, seleccione **Elegir** en la parte inferior.
+    >
+    > ![Elegir origen de datos](./media/get-started-test-drive/choose-data-source.png)
 
 ## <a name="run-the-app"></a>Ejecutar la aplicación
 Una aplicación creada a partir de una plantilla se abre en el área de trabajo predeterminada en la que pasará la mayor parte del tiempo personalizándola. Antes de realizar cualquier cambio en la aplicación, explore cómo funciona la aplicación en el modo **Vista previa**.
