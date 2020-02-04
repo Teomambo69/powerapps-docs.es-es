@@ -33,6 +33,8 @@
           items:
             - name: Navegación básica
               href: ../user/navigation.md
+            - name: Uso de filtros de cuadrícula
+              href: ../user/grid-filters.md
             - name: Ver su perfil
               href: ../user/view-your-user-profile.md
             - name: Búsqueda del administrador o encargado de soporte técnico
@@ -43,15 +45,20 @@
               href: ../user/screen-reader.md
             - name: Métodos abreviados de teclado
               href: ../user/keyboard-shortcuts.md
-        - name: Trabajar con registros
+        - name: Trabajo con registros y actividades
           items:
             - name: Creación de un registro
               href: ../user/create-a-record.md
             - name: Agregar actividades a la escala de tiempo
               href: ../user/add-activities.md
-              items:
-                - name: Preguntas más frecuentes acerca de actividades
-                  href: ../user/faq-for-timeline-and-activity.md
+            - name: Preguntas más frecuentes acerca de actividades
+              href: ../user/faq-for-timeline-and-activity.md
+            - name: Vista y creación de correos electrónicos mediante la cuadrícula Actividades
+              href: ../user/view-create-email.md
+            - name: Envío de correo electrónico con la experiencia de correo electrónico mejorada
+              href: ../user/enhanced-email.md
+            - name: Inserción de una plantilla de correo electrónico
+              href: ../user/insert-email-template.md
             - name: Uso del campo de búsqueda en un registro
               href: ../user/lookup-field.md
             - name: Vista de una tarjeta de perfil
