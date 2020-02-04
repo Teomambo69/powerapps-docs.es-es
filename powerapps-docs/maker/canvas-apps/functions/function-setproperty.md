@@ -19,6 +19,7 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/23/2020
 ms.locfileid: "76541161"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="setproperty-function-in-power-apps-test-studio"></a>Función SetProperty en Power Apps Test Studio
 
@@ -35,21 +36,21 @@ La función SetProperty simula interacciones con controles de entrada como si el
 
 | Controlar   | Propiedad  | Expresión de ejemplo
 | :- | :- | :-
-| TextInput | Texto  | ```SetProperty(TextInput1.Text, "Sample text")```
-| RichTextEditor    | HtmlText  | ```SetProperty(RichTextEditor1.HtmlText, "<p>Sample text</p>")```
-| Alternancia    | Valor | ```SetProperty(Toggle1.Value, false)```
-| Casilla de verificación  | Valor | ```SetProperty(Checkbox1.Value, false)```
-| Control deslizante    | Valor | ```SetProperty(Slider1.Value, 10)```
-| Clasificación    | Valor | ```SetProperty(Rating1.Value, 5)```
-| DatePicker    | SelectedDate  | ```SetProperty(DatePicker1.SelectedDate, Date(2020,3,10))```
-| Radio | Seleccionado  | ```SetProperty(Radio1.Selected, "Yes")```
-| Radio | SelectedText | ```SetProperty(Radio1.SelectedText, "Yes")```
-| Desplegable | Seleccionado | ```SetProperty(Dropdown1.Selected, {Value:"Sample value"})```
-| Desplegable | SelectedText | ```SetProperty(Dropdown1.SelectedText, {Value:"Sample value"})```
-| ComboBox | Seleccionado | ```SetProperty(Dropdown1.Selected, {Value:"Sample value"})```
-| ComboBox | SelectedItems | ```SetProperty(ComboBox1.SelectedItems, Table({Value:"Sample value"},({Value:"Sample value"}))```
-| ListBox | Seleccionado | ```SetProperty(Listbox1.Selected, {'Value':"Sample value"})```
-| ListBox | SelectedItems | ```SetProperty(Listbox1.SelectedItems, Table({Value:"Sample value"},({Value:"Sample value"}))```
+| TextInput | Texto  | ```SetProperty(TextInput1.Text; "Sample text")```
+| RichTextEditor    | HtmlText  | ```SetProperty(RichTextEditor1.HtmlText; "<p>Sample text</p>")```
+| Alternancia    | Valor | ```SetProperty(Toggle1.Value; false)```
+| Casilla de verificación  | Valor | ```SetProperty(Checkbox1.Value; false)```
+| Control deslizante    | Valor | ```SetProperty(Slider1.Value; 10)```
+| Clasificación    | Valor | ```SetProperty(Rating1.Value; 5)```
+| DatePicker    | SelectedDate  | ```SetProperty(DatePicker1.SelectedDate; Date(2020;3;10))```
+| Radio | Seleccionado  | ```SetProperty(Radio1.Selected; "Yes")```
+| Radio | SelectedText | ```SetProperty(Radio1.SelectedText; "Yes")```
+| Desplegable | Seleccionado | ```SetProperty(Dropdown1.Selected; {Value:"Sample value"})```
+| Desplegable | SelectedText | ```SetProperty(Dropdown1.SelectedText; {Value:"Sample value"})```
+| ComboBox | Seleccionado | ```SetProperty(Dropdown1.Selected; {Value:"Sample value"})```
+| ComboBox | SelectedItems | ```SetProperty(ComboBox1.SelectedItems; Table({Value:"Sample value"};({Value:"Sample value"}))```
+| ListBox | Seleccionado | ```SetProperty(Listbox1.Selected; {'Value':"Sample value"})```
+| ListBox | SelectedItems | ```SetProperty(Listbox1.SelectedItems; Table({Value:"Sample value"};({Value:"Sample value"}))```
 
 ### <a name="see-also"></a>Vea también
 
