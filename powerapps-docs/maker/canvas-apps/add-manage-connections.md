@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/09/2017
+ms.date: 02/05/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 503ab33c2c31854bb39baa8d523dda41f085ae2a
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 9b25eef7460098139c32fba5606b682baae2ada9
+ms.sourcegitcommit: dc379bede57da58b5787eda5437eb94b662e21ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74724390"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77037505"
 ---
 # <a name="manage-canvas-app-connections-in-power-apps"></a>Administración de conexiones de la aplicación de lienzo en Power apps
 En [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), cree una conexión con uno o varios orígenes de datos, elimine una conexión o actualice las credenciales.
@@ -28,15 +28,15 @@ La conexión de datos de la aplicación de lienzo puede establecerse con SharePo
 Lo siguiente que haremos en este artículo es mostrar y administrar la información del origen de datos de la aplicación, como en estos ejemplos:
 
 * Conéctese a OneDrive para la Empresa y administre los datos de un libro de Excel en la aplicación.
-* Actualice una lista en un sitio de SharePoint.
+* Actualizar una lista en un sitio de SharePoint.
 * Conéctese a SQL Server y actualice una tabla desde la aplicación.
-* Envíe correo electrónico en Office 365.
-* Envíe un tweet.
+* Enviar correo electrónico en Office 365.
+* Enviar un tweet.
 * Conéctese a Twilio y envíe un mensaje SMS desde la aplicación.
 
 ## <a name="prerequisites"></a>Requisitos previos
 1. [Regístrese](../signup-for-powerapps.md) en Power apps.
-2. Inicie sesión en [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que utilizó para suscribirse.
+2. Inicie sesión en [make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) con las mismas credenciales que usó para suscribirse.
 
 ## <a name="background-on-data-connections"></a>Información general sobre las conexiones de datos
 La mayoría de las aplicaciones de Power apps usan información externa denominada **orígenes de datos** que se almacenan en Cloud Services. Uno de los ejemplos más frecuentes son tablas que pertenecen a archivos de Excel guardados en OneDrive para la Empresa. Las aplicaciones pueden acceder a estos orígenes de datos a través de las **conexiones**.
@@ -57,17 +57,17 @@ Además de crear y administrar conexiones en [powerapps.com](https://make.powera
 > Si desea usar Power apps Studio en su lugar, abra el menú **archivo** y, a continuación, haga clic o pulse en **conexiones**, [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) se abrirá para que pueda crear y administrar las conexiones allí.
 
 ## <a name="create-a-new-connection"></a>Creación de una nueva conexión
-1. Si aún no lo ha hecho, inicie sesión en [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
-2. En la barra de navegación izquierda, pulse o haga clic en **Conexiones**.
+1. Si todavía no lo ha hecho, inicie sesión en [make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+2. En el panel de navegación izquierdo, expanda **datos** y seleccione **conexiones**.
    
     ![Administración de conexiones](./media/add-manage-connections/open-connections.png)
-3. En la esquina superior derecha, pulse o haga clic en **Nueva conexión**.
+3. Seleccione **nueva conexión**.
    
     ![Adición de conexiones](./media/add-manage-connections/add-connection.png)
-4. Pulse o haga clic en un conector de la lista que aparece y siga las instrucciones.
+4. Seleccione un conector en la lista que aparece y, a continuación, siga las indicaciones.
    
    ![Adición de conexiones](./media/add-manage-connections/choose-connection.png)
-5. Pulse o haga clic en el botón **Crear**.
+5. Seleccione el botón **crear** .
    
    ![Adición de conexiones](./media/add-manage-connections/create-connection.png)
 6. Siga las instrucciones. Algunos conectores le solicitarán que escriba las credenciales, que especifique un conjunto de datos o que realice otros pasos. Esto no ocurre con otros conectores, como **Microsoft Translator**.
@@ -80,11 +80,11 @@ Además de crear y administrar conexiones en [powerapps.com](https://make.powera
 Aparecerá el nuevo conector en **Conexiones** y podrá [agregarlo a una aplicación](add-data-connection.md).
 
 ## <a name="update-or-delete-a-connection"></a>Actualizar o eliminar una conexión
-En la lista de conexiones, pulse o haga clic en la conexión que desea actualizar o eliminar y en el botón de puntos suspensivos (tres puntos) que encontrará a la derecha de la conexión.
+En la lista de conexiones, busque la conexión que desea actualizar o eliminar y, a continuación, seleccione los puntos suspensivos (...) a la derecha de la conexión.
 
 ![Actualización de la conexión](./media/add-manage-connections/auth-or-delete.png)
 
-* Para actualizar las credenciales de una conexión, pulse o haga clic en el icono con forma de llave y especifique las credenciales de dicha conexión.
-* Para eliminar la conexión, pulse o haga clic en el icono de papelera.
-* Pulse o haga clic en el icono de información para ver los detalles de la conexión.
+* Para actualizar las credenciales de una conexión, seleccione el icono de clave y, a continuación, proporcione las credenciales para esa conexión.
+* Para eliminar la conexión, seleccione eliminar.
+* Seleccione el icono de información para ver los detalles de la conexión.
 

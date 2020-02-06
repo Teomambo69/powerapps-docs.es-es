@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 11/18/2019
+ms.date: 02/05/2020
 ms.author: aheaney
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: afd2427a0c24461fa79e363787a7ec6c28bb4038
-ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
-ms.translationtype: HT
+ms.openlocfilehash: 79ae7206c729a9628ee183e0c64c395f6a235b7c
+ms.sourcegitcommit: 86c81c9efb105d11f4def49eef823af6c69059a4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76541621"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77034405"
 ---
 # <a name="working-with-test-studio-experimental"></a>Trabajo con Test Studio (experimental)
 
@@ -47,6 +46,9 @@ No es necesario habilitar esto en la aplicación como otras características exp
 
     ![Apertura de Test Studio](./media/working-with-test-studio/open-tests.png)
 
+> [!NOTE]
+> Las pruebas se publican y almacenan en el paquete de la aplicación. Exportar e importar un paquete de aplicación de lienzo en otro entorno también incluirá todas las definiciones de prueba, como conjuntos de pruebas y casos de prueba que haya creado. 
+
 ## <a name="create-a-test-suite"></a>Creación de un conjunto de pruebas
 
 De forma predeterminada, en Test Studio se crean un conjunto de pruebas y un caso de prueba. Los conjuntos de pruebas se usan para organizar los casos de prueba. Una aplicación puede contener uno o más conjuntos de pruebas. Puede usar el conjunto y el caso de pruebas predeterminados para empezar a escribir las pruebas inmediatamente o crear un nuevo conjunto de pruebas.
@@ -56,7 +58,7 @@ De forma predeterminada, en Test Studio se crean un conjunto de pruebas y un ca
 
     ![Nuevo conjunto de pruebas](./media/working-with-test-studio/new-test-suite.png)
 
-## <a name="create-a-test-case"></a>Creación de un caso de prueba
+## <a name="create-a-test-case"></a>Crear un caso de prueba
 
 En función de cómo quiera organizar o agrupar las pruebas, puede crear varios casos de prueba en un conjunto de pruebas. Cada caso puede probar una característica específica o un subconjunto de funcionalidades de la aplicación.
 
@@ -107,7 +109,7 @@ Para agregar pasos de prueba y probar aserciones en la aplicación Kudos:
 
 2. Seleccione **Insertar un paso anterior** en el menú superior o seleccione la opción en la fila activa. Esto crea un paso vacío.
 
-    ![Inserción de un paso](./media/working-with-test-studio/insert-step-above.png)
+    ![Insertar paso](./media/working-with-test-studio/insert-step-above.png)
 
     > [!NOTE]
     > Al seleccionar **Insertar paso anterior**, se agrega un nuevo paso en blanco sobre el paso actual. También puede usar las acciones **Assert**, **SetProperty**, **Select** o **Trace** en su lugar. Esto agrega el paso con la fórmula de acción correspondiente que se puede editar.
@@ -118,7 +120,7 @@ Para agregar pasos de prueba y probar aserciones en la aplicación Kudos:
 
     Puede usar cualquier expresión admitida. También puede consultar cualquier origen de datos, colecciones, variables o flujos de ejecución que contenga la aplicación, así como crear nuevas variables globales o colecciones para usarlas en las pruebas.
 
-    ```Set(kudosBeforeTest; CountRows(Filter(Kudos; Receiver.Email = "someone@example.com")))```
+    ```Set(kudosBeforeTest, CountRows(Filter(Kudos, Receiver.Email = "someone@example.com")))```
 
 5. Seleccione el paso 2 o el paso sobre el que quiera insertar un nuevo paso.
 
@@ -126,17 +128,17 @@ Para agregar pasos de prueba y probar aserciones en la aplicación Kudos:
 
 7. Escriba una expresión o una fórmula en la entrada de acción para [Seguimiento](./functions/function-trace.md) y escriba el valor *kudosBeforeTest* en el registro de resultados de las pruebas.
 
-    ```Trace("kudosBeforeTest : " & kudosBeforeTest);;```
+    ```Trace("kudosBeforeTest : " & kudosBeforeTest);```
 
     ![Kudos antes de la prueba](./media/working-with-test-studio/kudos-before-test.png)
 
 8. Vaya a la parte inferior del caso de prueba e inserte un nuevo paso para contar los registros de la base de datos una vez completada la prueba.
 
-    ```Set(kudosAfterTest; CountRows(Filter(Kudos; Receiver.Email = "someone@example.com")))```
+    ```Set(kudosAfterTest, CountRows(Filter(Kudos, Receiver.Email = "someone@example.com")))```
 
 9. Agregue un paso final para validar que el número de registros en la base de datos haya aumentado en 1 y escriba la siguiente acción de aserción para comprobarlo:
 
-    ```Assert(kudosAfterTest = kudosBeforeTest + 1; "Kudos count incorrect. Expected : " & kudosBeforeTest + 1  & " Actual :" & kudosAfterTest)```
+    ```Assert(kudosAfterTest = kudosBeforeTest + 1, "Kudos count incorrect. Expected : " & kudosBeforeTest + 1  & " Actual :" & kudosAfterTest)```
 
     ![Kudos después de la aserción de prueba](./media/working-with-test-studio/kudos-after-test-assert.png)
 
@@ -173,11 +175,11 @@ En esta sección, cambiará la aserción de prueba para experimentar una prueba 
 
 2. Actualice ```+ 1``` a ```+ 2``` en la acción de prueba. Esto significa que la prueba espera que se creen 2 registros, lo cual es incorrecto. Si la prueba se realiza correctamente, solo se debe crear un registro en la base de datos.
 
-    ```Assert(kudosAfterTest = kudosBeforeTest + 2; "Kudos count incorrect. Expected : " & kudosBeforeTest + 2  & " Actual :" & kudosAfterTest)```
+    ```Assert(kudosAfterTest = kudosBeforeTest + 2, "Kudos count incorrect. Expected : " & kudosBeforeTest + 2  & " Actual :" & kudosAfterTest)```
 
     ![Actualización del recuento de aserciones](./media/working-with-test-studio/assert-count-update.png)
 
-3. Haga clic en **Publicar**.
+3. Seleccione **Publicar**.
 
 4. Seleccione **Iniciar**.
 
@@ -309,7 +311,7 @@ Otro ejemplo de expresiones que podría usar en estas propiedades es:
 
 - Envío por correo electrónico de los resultados:
 
-    ```Office365.SendMailV2(“someone@example.com”; “Test case results”; JSON(TestCaseResult; JSONFormat.IndentFour))```
+    ```Office365.SendMailV2(“someone@example.com”, “Test case results”, JSON(TestCaseResult, JSONFormat.IndentFour))```
 
 - Recepción de una notificación de la aplicación del resultado de la prueba:
 
@@ -332,5 +334,5 @@ Además de las [funciones](formula-reference.md) disponibles en Power Apps, a c
 
 - [Seleccionar](./functions/function-select.md)
 - [SetProperty](./functions/function-setproperty.md)
-- [Assert](./functions/function-assert.md)
+- [Declarar](./functions/function-assert.md)
 - [Seguimiento](./functions/function-trace.md)

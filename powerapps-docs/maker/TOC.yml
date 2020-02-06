@@ -1537,7 +1537,7 @@
           href: ./common-data-service/common-issues-resolutions-solution-checker.md
         - name: Usar soluciones segmentadas
           href: ./common-data-service/use-segmented-solutions-patches-simplify-updates.md
-        - name: Cambiar el prefijo del editor de soluciones
+        - name: Introducción al editor de soluciones
           href: ./common-data-service/change-solution-publisher-prefix.md
         - name: Establecer propiedades administradas en metadatos
           href: ./common-data-service/set-managed-properties-metadata.md
