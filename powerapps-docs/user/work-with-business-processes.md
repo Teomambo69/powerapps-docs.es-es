@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6b1e53d95145cc947681971264c0b160d0510e92
-ms.sourcegitcommit: d0f02fdaa125feaea884932e1ef31b8fea1bd10c
+ms.openlocfilehash: 7dd0d9a3dc9b78b693565d66f1894484b686b946
+ms.sourcegitcommit: dc379bede57da58b5787eda5437eb94b662e21ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886415"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77037376"
 ---
 # <a name="work-with-business-processes"></a>Trabajar con procesos de negocio
 
@@ -47,4 +47,4 @@ La barra de proceso también se puede acoplar en el lado derecho de la pantalla 
 El sistema tiene dos procesos de negocio para tareas comunes. Pero la mayoría de las organizaciones personalizan estos procesos para que coincidan con su método de trabajo. También puede haber agregado procesos al sistema que ya se hayan personalizado para su sector o sus objetivos empresariales. En otras palabras, es posible que lo que vea aquí no coincida exactamente con las barras de procesos que vea en su sistema. En cualquier caso, las barras de procesos funcionan de la misma forma para todos los usuarios. Indique datos en los campos y después mueva al cliente a la siguiente fase.
 
 
-Para obtener más información sobre cómo crear y administrar flujos de procesos empresariales, vea [crear una regla de negocios para una entidad](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-create-business-rule).
+Para más información sobre cómo aplicar la lógica de negocios personalizada con las reglas de negocios y los flujos, consulte [aplicación de lógica de negocios personalizada con reglas de negocios y flujos en una aplicación controlada por modelos](https://docs.microsoft.com/powerapps/maker/model-driven-apps/guide-staff-through-common-tasks-processes).

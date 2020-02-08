@@ -1,5 +1,5 @@
 ---
-title: ¿Qué es Power apps? | Microsoft Docs
+title: ¿Qué es Power Apps? | Microsoft Docs
 description: Proporciona información general sobre las aplicaciones de energía y habla sobre cómo los usuarios finales, los responsables de aplicaciones, los administradores y los desarrolladores profesionales pueden usar Power apps.
 author: KumarVivek
 manager: annbe
@@ -12,20 +12,20 @@ ms.reviewer: kvivek
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: 70086d5ec6e30a917f817a2d3f4012745949c99e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 91f785582c2595043fe9de78c4a35a4b9e02dc9d
+ms.sourcegitcommit: 68a31e3fa4d1635ccf4cd8bd9da5fba1bfecefa4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680659"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77051876"
 ---
-# <a name="what-is-power-apps"></a>¿Qué es Power apps?
+# <a name="what-is-power-apps"></a>¿Qué es Power Apps?
 
 Power apps es un conjunto de aplicaciones, servicios, conectores y plataforma de datos que proporciona un entorno de desarrollo de aplicaciones rápido para crear aplicaciones personalizadas para sus necesidades empresariales. Con Power Apps, puede crear rápidamente aplicaciones empresariales personalizadas que se conectan a los datos empresariales *almacenados en* la plataforma de datos subyacente ([Common Data Service](/powerapps/maker/common-data-service/data-platform-intro)) *o* en varios orígenes de datos en línea y locales (SharePoint, Excel, Office 365, Dynamics 365, SQL Server, etc.). 
 
 Las aplicaciones compiladas con Power apps proporcionan funcionalidades de flujo de trabajo y lógica de negocios enriquecidas para transformar los procesos de negocio manuales en procesos digitales y automatizados. Además, las aplicaciones compiladas con Power apps tienen un diseño dinámico y se pueden ejecutar sin problemas en el explorador o en dispositivos móviles (teléfono o tableta). Power apps "democratiza" es la experiencia de creación de aplicaciones empresariales personalizadas, ya que permite a los usuarios crear aplicaciones empresariales personalizadas enriquecidas con características sin necesidad de escribir código.
 
-Power Apps también proporciona una plataforma extensible que permite a los desarrolladores profesionales interactuar mediante programación con datos y metadatos, aplicar la lógica empresarial, crear conectores personalizados e integrarse con datos externos.
+Power apps también proporciona una plataforma extensible que permite a los desarrolladores de Pro interactuar mediante programación con datos y metadatos, aplicar lógica de negocios, crear conectores personalizados e integrarlos con datos externos.
 
 Para obtener más información, consulte el [canal de Power apps](https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg) en YouTube.
 
@@ -68,3 +68,7 @@ Puede probar Power apps gratis si se suscribe para una [prueba de 30 días](make
 ## <a name="purchase-power-apps"></a>Comprar aplicaciones de energía
 
 Si ha decidido comprar aplicaciones de energía, consulte aquí para obtener información detallada: [comprar aplicaciones de energía](/power-platform/admin/signup-for-powerapps-admin).
+
+## <a name="power-apps-us-government-plans"></a>Planes de Power apps para el gobierno de EE. UU.
+
+Power Apps, gobierno de EE. UU., se compone de varios planes para que las organizaciones gubernamentales de EE. UU. se solucionen de los requisitos únicos y en constante evolución de la Estados Unidos sector público. El entorno GCC de Power apps proporciona compatibilidad con los requisitos federales de Cloud Services, incluidos FedRAMP High, DoD DISA IL2 y los requisitos de los sistemas de Justicia Penal (tipos de datos CJI). Más información: [Power Apps, gobierno de EE. UU.](/power-platform/admin/powerapps-us-government)

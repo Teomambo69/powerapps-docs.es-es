@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 10/03/2019
+ms.date: 02/03/2020
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7f437b649111c4ff51d21f35e73dabb442c57112
-ms.sourcegitcommit: e3d3a608ef74e1d90ca74ed38de3e5aebc624713
+ms.openlocfilehash: 1a721f5dfa0a07d270e6b1d9d310236bebb21023
+ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "75333642"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76973397"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>Agregue una actividad de cita, correo electrónico, llamada telefónica, nota o tarea a la escala de tiempo. 
 
@@ -34,7 +34,16 @@ Agregue **Actividades** al muro de la **Escala de tiempo** para realizar un segu
 - Se mostrará un mensaje de correo electrónico con una imagen adjunta insertada con el cuerpo del correo electrónico.
 
   > [!div class="mx-imgBorder"]
-  > ![Vista de escala de tiempo de las actividades en Power apps](media/TimelineViewOfActivity.png "Vista de escala de tiempo de las actividades en Power apps")  
+  > ![Vista de escala de tiempo de las actividades en Power apps](media/TimelineViewOfActivity.png "Vista de escala de tiempo de las actividades en Power apps")
+
+  1. Buscar registros
+  2. Tomar notas
+  3. Agregar información y actividades
+  4. Filtro
+  5. Más comandos
+  6. Estado de actividad
+  7. Iconos de actividad
+  8. Fecha y hora
  
 ## <a name="add-an-activity-from-the-nav-bar"></a>Adición de una actividad desde la barra de navegación
  
@@ -68,7 +77,7 @@ La forma más rápida de agregar una actividad es usar el acceso directo en la b
   
      El campo **Llamar a** se rellena automáticamente con el registro al que agregó la actividad de llamada telefónica. Puede seleccionar un registro diferente si es necesario.  
   
-4. De forma predeterminada, la dirección se establece en **Saliente**. Puede cambiarla a **Entrante** seleccionando **Saliente**. 
+4. De forma predeterminada, la dirección se establece en **Saliente**. Puede cambiarla a **Entrante** seleccionando **Saliente**.
   
 5. Cuando haya terminado de rellenar el formulario, seleccione **Guardar** para guardar la actividad.  
   
@@ -94,19 +103,21 @@ Para agregar una actividad de correo electrónico a un registro, primero debe gu
   
 4. Para agregar datos adjuntos al correo electrónico, guárdelo. A continuación, en la sección **Datos adjuntos**, seleccione **+** para agregar datos adjuntos.  
   
-5. Para usar una plantilla para el cuerpo del correo electrónico, en la barra de comandos, haga clic en **Insertar plantilla** y, a continuación, seleccione la plantilla.   
+5. Para usar una plantilla para el cuerpo del correo electrónico, en la barra de comandos, seleccione **Insertar plantilla**y, a continuación, seleccione la plantilla. Para obtener más información sobre la inserción de una plantilla de correo electrónico, consulte [inserción de una plantilla de correo electrónico](insert-email-template.md). 
   
 6. Cuando haya terminado de rellenar el formulario, seleccione **Enviar**. 
 
 
-    > [!NOTE]
-    > Para enumerar los correos electrónicos en una vista de conversación, vaya a **configuración** > **configuración de personalización** > pestaña **correo electrónico** y, a continuación, seleccione **Mostrar correo electrónico como conversación en escala de tiempo**. Para obtener más información sobre la configuración personal, consulte [set personal Options](https://docs.microsoft.com/powerapps/user/set-personal-options#email-tab-options). Una vez habilitada, puede abrir cualquier formulario que tenga una escala de tiempo y los correos electrónicos se agruparán en subprocesos de conversación con el correo electrónico más reciente en la parte superior.
+
+### <a name="list-emails-in-a-conversation-view"></a>Enumerar correos electrónicos en una vista de conversación
+
+Para enumerar los correos electrónicos en una vista de conversación, vaya a **configuración** > **configuración de personalización** > pestaña **correo electrónico** y, a continuación, seleccione **Mostrar correo electrónico como conversación en escala de tiempo**. Para obtener más información sobre la configuración personal, consulte [set personal Options](https://docs.microsoft.com/powerapps/user/set-personal-options#email-tab-options). Una vez habilitada, puede abrir cualquier formulario que tenga una escala de tiempo y los correos electrónicos se agruparán en subprocesos de conversación con el correo electrónico más reciente en la parte superior.
 
    > [!div class="mx-imgBorder"]
    > ![Establecer opciones personales](media/emailsettings1.png "Establecer las opciones personales")
    
-    > [!div class="mx-imgBorder"]
-    > ![Establecer correo electrónico de opciones personales](media/emailsettings2.png "Establecer opciones personales para el correo electrónico")
+   > [!div class="mx-imgBorder"]
+   > ![Establecer correo electrónico de opciones personales](media/emailsettings2.png "Establecer opciones personales para el correo electrónico")
 
   
 ## <a name="add-an-appointment"></a>Adición de una cita  
@@ -141,7 +152,7 @@ También puede agregar notas fácilmente en el área de actividades.
    > [!div class="mx-imgBorder"]
    > ![Agregar una nota](media/addnote.png "Agregar una nota")
 
-Una vez que se haya agregado la nota, puede eliminarla o editarla.
+Una vez que se haya agregado la nota, puede eliminarla o editarla. Seleccione la nota o mantenga el cursor sobre la nota para ver los iconos de edición y eliminación.
 
 
 > [!div class="mx-imgBorder"]
@@ -178,16 +189,14 @@ Filtre rápidamente las actividades, notas o publicaciones del muro de la escala
 
 - En el plano de la **escala de tiempo** , seleccione Abrir el icono de embudo del **Panel de filtros** .
 
-> [!div class="mx-imgBorder"]
-> ![Panel de filtro de la escala de tiempo](media/filterpane.png "Panel de filtro de la escala de tiempo")
+
+![Panel filtro del](media/timeline-filter2.png "Panel de filtro de la escala de tiempo") ![Panel filtro de la escala de tiempo en la escala de tiempo](media/timeline-filter5.png "Panel de filtro de la escala de tiempo")
 
 
 ## <a name="manage-activities"></a>Administración de actividades
 Administre actividades directamente desde el muro de la escala de tiempo, incluida la asignación de una actividad a otra persona, la eliminación o el cierre de una actividad, la adición de una actividad a una cola, la apertura un registro asociado o la edición de notas y publicaciones.
 
-
-> [!div class="mx-imgBorder"]
-> ![Administrar Activities. png](media/ManageActivities.png "ManageActivities. png")
+  ![Opciones](media/timeline-options1.png "Opciones de la barra de comandos de escala de tiempo") de la barra de comandos de escala de tiempo opciones ![de barra de](media/timeline-options2.png "Opciones de la barra de comandos de escala de tiempo") comandos escala de ![tiempo opciones de](media/timeline-options3.png "Opciones de la barra de comandos de escala de tiempo") la barra de ![comandos escala de](media/timeline-options4.png "Opciones de la barra de comandos de escala de tiempo") comandos
 
 ## <a name="see-also"></a>Vea también
 

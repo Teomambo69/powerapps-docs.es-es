@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 10/03/2019
+ms.date: 02/03/2020
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,14 +15,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a4d81b9adff165267fe3e3d4d08384133aeae032
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: bf8ee15b37e9fcae5027bb91e89ceb225325dcc5
+ms.sourcegitcommit: 4f2e9e8f9bd3204ca9eee9e2a46f797c957c55ec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71924432"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77054869"
 ---
-# <a name="create-a-new-record"></a>Creación de un registro
+# <a name="create-a-new-record"></a>Crear un nuevo registro
 
 ## <a name="create-a-new-record-using-the--option-on-the-command-bar"></a>Cree un nuevo registro mediante la opción + en la barra de comandos.
 
@@ -57,8 +57,26 @@ El comando **Crear un registro** o **Creación rápida** facilita y agiliza el p
   
 3. Rellene los detalles adecuados para nuevo contacto y, a continuación, seleccione **Guardar y cerrar**.
 
+    > [!NOTE]
+    > Si tiene cambios sin guardar e intenta ir a otro registro o formulario, aparecerá un cuadro de diálogo **cambios no guardados** . Si selecciona **Guardar y continuar**, se intentará guardar la información y abrir la página a la que desea ir. Si decide guardar y continuar y hay un error en un campo, el cuadro de diálogo se cerrará y permanecerá en la página para corregir el error antes de salir.
+
     > [!div class="mx-imgBorder"] 
     > ![Botón Crear nuevo](media/newrecord3.png "Botón Crear nuevo")
 
-    > [!NOTE]
-    > Si tiene cambios sin guardar e intenta ir a otro registro o formulario, aparecerá un cuadro de diálogo **cambios no guardados** . Si selecciona **Guardar y continuar**, se intentará guardar la información y abrir la página a la que desea ir. Si decide guardar y continuar y hay un error en un campo, el cuadro de diálogo se cerrará y permanecerá en la página para corregir el error antes de salir.
+ 
+ ## <a name="preview-use-the-save-or-save--close-option-when-editing-a-record"></a>Vista previa: usar la opción Guardar o guardar & cerrar al editar un registro 
+ 
+Use el botón **Guardar** o **Guardar & cerrar** de la barra de comandos cuando edite un registro existente. Antes de esta versión, la opción **Guardar** solo estaba disponible en la esquina inferior derecha.
+
+> [!NOTE]
+> Se trata de una característica de acceso temprano. Puede participar pronto para habilitar esta característica en su entorno, lo que le permitirá probar estas características y después adoptarlas en sus entornos. Para obtener información sobre cómo habilitar estas características, consulte [participación en las actualizaciones de la versión 1 de 2020](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates).
+
+
+1. En el panel de navegación izquierdo, seleccione el tipo de registro que desee editar. Por ejemplo, seleccione **cuentas**.
+2. Abra el registro de cuenta que desea editar y realice los cambios en el registro.
+3. Para guardar los cambios, en la barra de comandos, seleccione **Guardar** o **Guardar & cerrar**. La opción **Guardar** sigue estando disponible en la esquina inferior derecha.
+
+    > [!div class="mx-imgBorder"] 
+    > ![Opción de guardar en un registro](media/saveoptionalwaysvisible.png "Opción de guardar en un registro")
+
+

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 01/29/2019
+ms.date: 02/03/2020
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,18 +15,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 78b4e997a398bfb806a4e89a70c0ed3e466be381
-ms.sourcegitcommit: e3d3a608ef74e1d90ca74ed38de3e5aebc624713
+ms.openlocfilehash: ff83a238715ef6f78650eeb03b087088cb5f0c1e
+ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "75333619"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76973187"
 ---
 # <a name="frequently-asked-questions-about-activities-and-the-timeline-wall"></a>Preguntas frecuentes sobre las actividades y la pared de escala de tiempo  
 
 ## <a name="is-a-title-required-when-adding-a-new-note"></a>¿Es necesario un título al agregar una nueva nota?
 
-Núm. Al agregar una nota a una actividad, el campo de título se marca como campo obligatorio, aunque no lo es. Se trata de un problema conocido en el cliente web heredado.
+No. Al agregar una nota a una actividad, el campo de título se marca como campo obligatorio, aunque no lo es. Se trata de un problema conocido en el cliente web heredado.
 
 ## <a name="for-an-appointment-when-i-choose-the-option-to-save-as-draft-it-doesnt-show-that-the-appointment-has-been-saved-as-a-draft"></a>En una cita, cuando elijo la opción *Guardar como borrador*, no se muestra que la cita se haya guardado como tal.
 
@@ -38,7 +38,7 @@ Sí. Puede agregar actividades a entidades que son de solo lectura, como notas, 
 
 ## <a name="are-html-tags-supported-in-notes"></a>¿Se admiten etiquetas HTML en **Notas**?
 
-Núm. Al crear una actividad de nota para cualquier registro o entidad, no se admiten etiquetas HTML. Por ejemplo, si agrega `<TAG> </TAG>` a un campo de nota, se mostrará como `<TAG_XXX="XX"> </TAG>`.
+No. Al crear una actividad de nota para cualquier registro o entidad, no se admiten etiquetas HTML. Por ejemplo, si agrega `<TAG> </TAG>` a un campo de nota, se mostrará como `<TAG_XXX="XX"> </TAG>`.
 
 ## <a name="how-can-i-improve-performance-on-timeline-wall"></a>¿Cómo puedo mejorar el rendimiento en la pared de escala de tiempo?
 
@@ -50,6 +50,10 @@ El rendimiento de la pared de escala de tiempo se puede mejorar mediante la opti
 ## <a name="activity-wall-is-not-supported-in-print-preview"></a>No se admite la pared de actividad en la vista previa de impresión.
 
 Cuando se selecciona la opción **Vista previa de impresión** de Dynamics 365, la **pared de escala de tiempo** no se mostrará en la lista de elementos disponibles. Verá **Notas**, pero no se mostrarán las tareas ni los mensajes de correo electrónico.
+
+## <a name="why-i-cant-see-other-users-activities-and-records-in-the-my-activities-stream-in-the-dashboard"></a>¿Por qué no veo otras actividades y registros de usuarios en el flujo mis actividades del panel?
+
+La secuencia **mis actividades** del panel muestra los registros y las actividades que posee (usuario). Por ejemplo, **el usuario A** ve registros y actividades que son propiedad de un, y **el**usuario **B** ve registros y actividades que pertenecen a **B**.
 
 ## <a name="see-also"></a>Vea también
 

@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 23152da4aa8d50247f4132399c25861dbc7a66ac
-ms.sourcegitcommit: 4d858e628c89d245317d6192801d136f3591ea52
+ms.openlocfilehash: 42691193a90d56f773de5723c4c27e883b3216ad
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76832342"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76918622"
 ---
 # <a name="using-quick-find-to-search-for-records"></a>Uso de búsqueda rápida para buscar registros
 
@@ -31,28 +31,28 @@ La búsqueda rápida de una sola entidad se usa para buscar registros de un solo
    > [!div class="mx-imgBorder"]
    > ![Búsqueda rápida de una sola entidad](media/single-quick-find-search-box.png "Cuadro de búsqueda de búsqueda rápida de una sola entidad") 
 
-## <a name="multi-entity-quick-find-categorized-search"></a>Búsqueda rápida de varias entidades (búsqueda por categorías)
+## <a name="multiple-entity-quick-find-categorized-search"></a>Búsqueda rápida de varias entidades (búsqueda por categorías)
 
 La búsqueda rápida en varias entidades también se conoce como búsqueda por categorías. 
 
-1.  Para iniciar una búsqueda por categorías, en la barra de navegación superior, seleccione el botón **Buscar** .  
+1.  Para iniciar una búsqueda por categorías, en la barra de navegación superior, seleccione **Buscar**.  
 
      > [!div class="mx-imgBorder"]
-     > ![Botón de búsqueda global](media/global-search-button.png "Botón de búsqueda global")   
+     > ![Botón de búsqueda global](media/global-search-button.png "Búsqueda global")
   
-2.  Escriba las palabras de búsqueda en el cuadro de búsqueda y, a continuación, seleccione el botón **Buscar** . La búsqueda por categorías devuelve los resultados agrupados por tipos de entidad, como cuentas o contactos.
+2.  Escriba las palabras de búsqueda en el cuadro de búsqueda y, a continuación, seleccione **Buscar**. La búsqueda por categorías devuelve los resultados agrupados por tipos de entidad, como cuentas o contactos.
 
      > [!div class="mx-imgBorder"]
      > ![Resultados de la búsqueda por categorías](media/categorized-search-results.png "Página de resultados de búsqueda por categorías") 
 
-Con la búsqueda por categorías, puede buscar registros que comienzan por una palabra específica o utilizan un carácter comodín.
+Con la búsqueda por categorías, puede buscar registros que comienzan por una palabra específica o que usan un carácter comodín.
   
 - **Comienza por**: los resultados incluyen registros que comienzan con una palabra específica. Por ejemplo, si desea buscar "Alpine Ski House", escriba **Alp** en el cuadro de búsqueda; Si escribe **Ski**, el registro no se mostrará.  
   
 - **Carácter comodín**: por ejemplo, * ski o * Ski\*. 
 
   > [!NOTE]
-  >  El uso de un carácter comodín al principio de la consulta de búsqueda de búsqueda rápida (de una o varias entidades) puede dar lugar a un rendimiento más lento.
+  >  El uso de un carácter comodín al principio de la consulta de búsqueda de búsqueda rápida (una o varias entidades) puede dar lugar a un rendimiento más lento.
   
 ## <a name="filter-categorized-search-results"></a>Filtrar los resultados de la búsqueda por categorías 
   
@@ -63,5 +63,3 @@ Con la búsqueda por categorías, puede buscar registros que comienzan por una p
 
   
 -   Para buscar en todos los tipos de registro, seleccione **ninguno** en la lista **filtrar con** .  
-
-
