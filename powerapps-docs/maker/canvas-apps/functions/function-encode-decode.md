@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fe02683e0b420a97fe674543a2f0d16bb076f266
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 259ab99ca38a472fda5c8cd8cdf99533a5f5dfc2
+ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731030"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77089751"
 ---
 # <a name="encodeurl-and-plaintext-functions-in-power-apps"></a>Funciones EncodeUrl y PlainText en Power apps
 Codifica y descodifica las cadenas.
@@ -42,11 +42,11 @@ El valor devuelto de estas funciones es la cadena codificada o descodificada. Es
 
 * *String*: requerido. Cadena de la que se van a quitar las etiquetas HTML y XML.
 
-## <a name="examples"></a>Ejemplos
+## <a name="examples"></a>Ejemplos:
 Si muestra una fuente RSS en una galería de texto y, después, establece la propiedad **[Text](../controls/properties-core.md)** de una etiqueta de esa galería en **ThisItem.description**, la etiqueta podría mostrar el código HTML o XML sin formato, como en este ejemplo:
 
 ```html
-    <p>We have done an unusually&nbsp;&quot;deep&quot; globalization and localization.<p>
+    <p>We have done an unusually&nbsp;&quot;deep&quot; globalization and localization.</p>
 ```
 
 Si establece la propiedad **[Text](../controls/properties-core.md)** de la etiqueta en **PlainText(ThisItem.description)** , el texto aparece como en este ejemplo:

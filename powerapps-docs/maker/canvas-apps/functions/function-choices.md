@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2ebe6b2019652b1f2e59419c718136aced81c62e
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: ab805ec283ca43c96982eb04357ded9aed934a03
+ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731402"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77089889"
 ---
 # <a name="choices-function-in-power-apps"></a>Función Choices en Power apps
 Devuelve una tabla de posibles valores para una columna de búsqueda.
@@ -32,7 +32,7 @@ En una búsqueda, la tabla que devuelve **Choices** coincide con la tabla extern
 
 Dado que **Choices** devuelve una tabla, puede usar [**Filter**](function-filter-lookup.md), [**Sort**](function-sort.md), [**AddColumns**](function-table-shaping.md) y todas las demás funciones de manipulación de tablas para filtrar, ordenar y dar forma a la tabla. 
 
-De momento no es posible [delegar](../delegation-overview.md) **Choices**. Si esta limitación plantea un problema en la aplicación, agregue la entidad externa como origen de datos y úsela directamente. 
+En este momento, no se pueden [delegar](../delegation-overview.md) **Opciones**. Si esta limitación plantea un problema en la aplicación, agregue la entidad externa como origen de datos y úsela directamente. 
 
 **Choices** no exige que los nombres de columna sean cadenas ni se incluyan entre comillas dobles, a diferencia de [**ShowColumns**](function-table-shaping.md), [**Search**](function-filter-lookup.md) y otras funciones de tabla. Proporcione la fórmula como si estuviera haciendo referencia a la columna directamente.
 
@@ -45,7 +45,7 @@ En este momento, solo puede usar las columnas de búsqueda con SharePoint y Comm
 
 * *column-reference*: requerido.  Columna de búsqueda de un origen de datos. No incluya el nombre de columna entre comillas dobles. La referencia debe ser directa a la columna del origen de datos y no pasarse a través de una función o un control.
 
-## <a name="examples"></a>Ejemplos
+## <a name="examples"></a>Ejemplos:
 
 #### <a name="choices-for-a-lookup"></a>Choices para una búsqueda
 
@@ -92,7 +92,7 @@ En este momento, solo puede usar las columnas de búsqueda con SharePoint y Comm
 
      ![Pantalla de lienzo con un control de formulario. Se selecciona el control de cuadro combinado dentro de la tarjeta de contacto principal y aparece la propiedad items con las opciones de la fórmula (accounts. ' Primary contact ')](media/function-choices/accounts-primary-contact.png)
 
-1. En la pestaña **Inicio**, seleccione **Nueva pantalla** y luego **En blanco**.
+1. A efectos de Ilustración, podemos ver la tabla completa devuelta por la función **Choices** en un control **tabla de datos** .  En la pestaña **Inicio**, seleccione **Nueva pantalla** y luego **En blanco**.
 
 1. En la pestaña **Insertar**, seleccione **Tabla de datos**.
 

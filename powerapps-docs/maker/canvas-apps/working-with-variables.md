@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 02/28/2019
+ms.date: 02/07/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4dcc00f20de3a16f1f3125e8840f2f6d74feff32
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: d7fb0e386309f207809204d4f9f582aa3aedfe7e
+ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74733147"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77089935"
 ---
 # <a name="understand-canvas-app-variables-in-power-apps"></a>Descripción de las variables de la aplicación Canvas en Power apps
 
@@ -59,7 +58,7 @@ La fórmula de **Label1** se ha recalculado automáticamente y muestra el nuevo 
 
 En Power Apps, puede usar fórmulas para determinar no solo el valor principal de un control, sino también propiedades como el formato. En el ejemplo siguiente, una fórmula para la propiedad **[Color](controls/properties-color-border.md)** de la etiqueta mostrará automáticamente los valores negativos en rojo. El aspecto de la función **[If](functions/function-if.md)** debería resultarle familiar de Excel:
 
-`If( Value(Label1.Text) < 0; Red; Black )`
+`If( Value(Label1.Text) < 0, Red, Black )`
 
 ![Animación de formato condicional](media/working-with-variables/recalc-color.gif)
 
@@ -83,7 +82,7 @@ En general, si puede conseguir un efecto mediante una fórmula, lo mejor es que 
 
 Vamos a cambiar el sumador simple para que actúe como una máquina de sumar antigua, con un total acumulado. Si selecciona el botón **Sumar**, sumará un número al total acumulado. Si selecciona el botón **Borrar**, restablecerá en cero el total acumulado.
 
-| Muestra | Descripción |
+| Display | Descripción |
 |----|----|
 | <style>IMG {Max-width: None}</style> ![aplicación con un control de entrada de texto, una etiqueta y dos botones](media/working-with-variables/button-changes-state-1.png) | Cuando se inicia la aplicación, el total en ejecución es 0.<br><br>El punto rojo representa el dedo del usuario en el cuadro de entrada de texto, donde el usuario escribe **77**. |
 | ![El control entrada de texto contiene 77 y se está presionando el botón Agregar.](media/working-with-variables/button-changes-state-2.png) | El usuario selecciona el botón **Agregar** . |
@@ -105,7 +104,7 @@ Para crear la máquina de sumar, necesitamos una variable que contenga el total 
 
 Cómo funcionan las variables globales:
 
-* Establezca el valor de la variable global con la función **[Set](functions/function-set.md)** .  **Set( MyVar; 1 )** establece la variable global **MyVar** en un valor de **1**.
+* Establezca el valor de la variable global con la función **[Set](functions/function-set.md)** .  **Set( MyVar, 1 )** establece la variable global **MyVar** en un valor de **1**.
 * Use la variable global mediante la referencia al nombre usado con la función **Set**.  En este caso, **MyVar** devolverá **1**.
 * Las variables globales pueden contener cualquier valor, como cadenas, números, registros y [tablas](working-with-tables.md).
 
@@ -127,7 +126,7 @@ Vamos a recompilar la máquina de sumar mediante el uso de una variable de globa
 
 4. Para establecer el total acumulado en **0** cada vez que el usuario seleccione el botón **Borrar**, establezca su propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:
 
-    **Set( RunningTotal; 0 )**
+    **Set( RunningTotal, 0 )**
 
     ![La propiedad alseleccionar del botón Clear está establecida en Set function](media/working-with-variables/global-variable-2.png)
 
@@ -181,13 +180,13 @@ Cuando el usuario abre la aplicación, todas las variables tienen el valor inici
 
 Use el nombre de la variable para leer su valor. Por ejemplo, puede definir una variable con esta fórmula:
 
-`Set( Radius; 12 )`
+`Set( Radius, 12 )`
 
 A continuación, puede usar simplemente **RADIUS** en cualquier lugar en el que pueda usar un número y se reemplazará por **12**:
 
-`Pi() * Power( Radius; 2 )`
+`Pi() * Power( Radius, 2 )`
 
-Si asigna a una variable de contexto el mismo nombre que una variable global o una colección, la variable de contexto tiene prioridad. Sin embargo, todavía puede hacer referencia a la variable global o colección si utiliza el [operador de desambiguación](functions/operators.md#disambiguation-operator) **@ [RADIUS]** .
+Si asigna a una variable de contexto el mismo nombre que una variable global o una colección, la variable de contexto tiene prioridad. Sin embargo, todavía puede hacer referencia a la variable global o colección si utiliza el [operador de desambiguación](functions/operators.md#disambiguation-operator) **[@Radius]** .
 
 ## <a name="use-a-context-variable"></a>Usar una variable de contexto
 
@@ -237,7 +236,7 @@ Vamos a volver a compilar la máquina de sumar mediante el uso de una variable d
 
 7. Puede establecer el valor de una variable de contexto mientras se desplaza a una pantalla. Esto resulta útil a la hora de pasar "contexto" o "parámetros" de una pantalla a otra. Para mostrar esta técnica, inserte una pantalla, inserte un botón y establezca su propiedad **alseleccionar** en esta fórmula:
 
-    **Navegar( Screen1; None; { RunningTotal: -1000 } )**
+    **Navegar( Screen1, None, { RunningTotal: -1000 } )**
 
     ![Propiedad alseleccionar de un botón](media/working-with-variables/context-variable-5.png)
 
@@ -261,7 +260,7 @@ Cómo funcionan las colecciones:
 
 * Para crear y establecer colecciones, use la función **[ClearCollect](functions/function-clear-collect-clearcollect.md)** .  También puede usar la función **[Collect](functions/function-clear-collect-clearcollect.md)** , pero requerirá otra variable en vez de reemplazar la anterior.  
 * Una colección es una clase de origen de datos y, por lo tanto, una tabla. Para obtener acceso a un valor único de una colección, use la función **[First](functions/function-first-last.md)** y extraiga un campo del registro resultante. Si ha usado un solo valor con **[ClearCollect](functions/function-clear-collect-clearcollect.md)** , este será el campo **Value**, como en este ejemplo:<br>
-**First(** *VariableName* **).Value**
+**Primero (** *VariableName* **). Valor** de
 
 Vamos a recrear la máquina de sumar mediante una colección:
 
@@ -271,7 +270,7 @@ Vamos a recrear la máquina de sumar mediante una colección:
 
 3. Para actualizar el total acumulado cada vez que un usuario seleccione el botón **Sumar**, establezca su propiedad **[OnSelect](controls/properties-core.md)** en esta fórmula:
 
-    **Collect( PaperTape; TextInput1.Text )**
+    **Collect( PaperTape, TextInput1.Text )**
 
     La mera existencia de esta fórmula establece **PaperTape** como una colección que contiene una tabla de cadenas de texto de una sola columna. Puede hacer referencia a **PaperTape** en cualquier parte de esta aplicación. Cada vez que un usuario abre esta aplicación, **PaperTape** es una tabla vacía.
 
@@ -287,7 +286,7 @@ Vamos a recrear la máquina de sumar mediante una colección:
 
 5. Para mostrar el total acumulado, agregue una etiqueta y establezca su propiedad **[Texto](controls/properties-core.md)** en esta fórmula:
 
-    **Sum( PaperTape; Value )**
+    **Sum( PaperTape, Value )**
 
     ![Propiedad texto de la etiqueta](media/working-with-variables/papertape-3.png)
 
@@ -311,7 +310,7 @@ Vamos a recrear la máquina de sumar mediante una colección:
 
 10. Para almacenar y recuperar la colección, agregue dos controles de botón adicionales y establezca sus propiedades de **texto** para **cargar** y **Guardar**. Establezca la propiedad **alseleccionar** del botón **cargar** en esta fórmula:
 
-     **Clear( PaperTape );; LoadData( PaperTape; "StoredPaperTape"; true )**
+     **Clear( PaperTape ); LoadData( PaperTape, "StoredPaperTape", true )**
 
      Primero debe borrar la colección porque **LoadData** anexará los valores almacenados al final de la colección.
 
@@ -319,7 +318,7 @@ Vamos a recrear la máquina de sumar mediante una colección:
 
 11. Establezca la propiedad **alseleccionar** del botón **Guardar** en esta fórmula:
 
-     **SaveData( PaperTape; "StoredPaperTape" )**
+     **SaveData( PaperTape, "StoredPaperTape" )**
 
      ![Propiedad alseleccionar * del botón Guardar](media/working-with-variables/papertape-6.png)
 
