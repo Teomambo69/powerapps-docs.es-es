@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/08/2020
 ms.locfileid: "77089728"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="with-function-in-power-apps"></a>Con la función en Power apps
 Calcula valores y realiza acciones para un único [registro](../working-with-tables.md#records), incluidos los registros insertados de valores con nombre.
@@ -36,21 +37,21 @@ Use **con** para tener acceso a los campos del registro devueltos por funciones 
 Si el argumento de *registro* en **with** es un error, la función devolverá ese error y no se evaluará la *fórmula* .
 
 ## <a name="syntax"></a>Sintaxis
-**With**( *registro*, *fórmula* )
+**With**( *registro*; *fórmula* )
 
-* *Registro* : requerido. Registro sobre el que se va a actuar.  En el caso de los valores de nombre, use la sintaxis en línea `{ name1: value1, name2: value2, ... }`
+* *Registro* : requerido. Registro sobre el que se va a actuar.  En el caso de los valores de nombre, use la sintaxis en línea `{ name1: value1; name2: value2; ... }`
 * *Fórmula* : requerido.  Fórmula que se va a evaluar para el *registro*.  La fórmula puede hacer referencia a cualquiera de los campos de *registro* directamente como un ámbito de registro.
 
 ## <a name="examples"></a>Ejemplos:
 
 ### <a name="simple-named-values"></a>Valores con nombre simples
 
-```powerapps-dot
-With( { radius: 10, 
-        height: 15 },
+```powerapps-comma
+With( { radius: 10; 
+        height: 15 };
     Pi() * (radius*radius) * height
 )
-// Result: 4712.38898038 (as shown in a label control)
+// Result: 4712,38898038 (as shown in a label control)
 ```
 
 En este ejemplo se usa un registro de valores con nombre para calcular el volumen de un cilindro.  **With** se usa para capturar todos los valores de entrada de forma conjunta, lo que facilita su separación del propio cálculo.  
@@ -59,14 +60,14 @@ En este ejemplo se usa un registro de valores con nombre para calcular el volume
 
 ![Calculadora de interés con la función with](media/function-with/interest-calculator.gif)
 
-```powerapps-dot
-With( { AnnualRate: RateSlider/8/100,        // slider moves in 1/8th increments and convert to decimal
-        Amount: AmountSlider*10000,          // slider moves by 10,000 increment
-        Years: YearsSlider,                  // slider moves in single year increments, no adjustment required
-        AnnualPayments: 12 },                // number of payments per year
-      With( { r: AnnualRate/AnnualPayments,  // interest rate
-              P: Amount,                     // loan amount
-              n: Years*AnnualPayments },     // number of payments
+```powerapps-comma
+With( { AnnualRate: RateSlider/8/100;        // slider moves in 1/8th increments and convert to decimal
+        Amount: AmountSlider*10000;          // slider moves by 10;000 increment
+        Years: YearsSlider;                  // slider moves in single year increments; no adjustment required
+        AnnualPayments: 12 };                // number of payments per year
+      With( { r: AnnualRate/AnnualPayments;  // interest rate
+              P: Amount;                     // loan amount
+              n: Years*AnnualPayments };     // number of payments
             r*P / (1 - (1+r)^-n)             // standard interest calculation
       )
 )  
@@ -94,12 +95,12 @@ Estas son las instrucciones detalladas para crear esta aplicación:
 
 ### <a name="primary-key-returned-from-patch"></a>Clave principal devuelta por la revisión
 
-```powerapps-dot
-With( Patch( Orders, Defaults( Orders ), { OrderStatus: "New" } ),
-      ForAll( NewOrderDetails, 
-              Patch( OrderDetails, Defaults( OrderDetails ), 
-                     { Order: OrderID,          // from With's first argument, primary key of Patch result
-                       Quantity: Quantity,      // from ForAll's NewOrderDetails table
+```powerapps-comma
+With( Patch( Orders; Defaults( Orders ); { OrderStatus: "New" } );
+      ForAll( NewOrderDetails; 
+              Patch( OrderDetails; Defaults( OrderDetails ); 
+                     { Order: OrderID;          // from With's first argument; primary key of Patch result
+                       Quantity: Quantity;      // from ForAll's NewOrderDetails table
                        ProductID: ProductID }   // from ForAll's NewOrderDetails table
               )
       )
@@ -110,12 +111,12 @@ En este ejemplo se agrega un registro a la tabla **Order** de SQL Server.  A con
 
 ### <a name="extracted-values-with-a-regular-expression"></a>Valores extraídos con una expresión regular
 
-```powerapps-dot
+```powerapps-comma
 With( 
-    Match( "PT2H1M39S", "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
-    Time( Value( hours ), Value( minutes ), Value( seconds ) )
+    Match( "PT2H1M39S"; "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" );
+    Time( Value( hours ); Value( minutes ); Value( seconds ) )
 )
-// Result: 2:01 AM (as shown in a label control, use the Text function to see the seconds)
+// Result: 2:01 AM (as shown in a label control; use the Text function to see the seconds)
 ```
 
 En este ejemplo se extraen las horas, los minutos y los segundos de un valor de duración ISO 8601 y, a continuación, se usan estas subcoincidencias para crear un valor de fecha y hora. 

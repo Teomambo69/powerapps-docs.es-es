@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/08/2020
 ms.locfileid: "77089912"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="update-and-updateif-functions-in-power-apps"></a>Funciones Update y UpdateIf en Power apps
 Actualiza los [registros](../working-with-tables.md#records) de un [origen de datos](../working-with-data-sources.md).
@@ -44,14 +45,14 @@ Tanto **Update** como **UpdateIf** devuelven el origen de datos modificado como 
 [!INCLUDE [delegation-no](../../../includes/delegation-no.md)]
 
 ## <a name="syntax"></a>Sintaxis
-**Update**( *DataSource*, *OldRecord*, *NewRecord* [, **All** ] )
+**Update**( *DataSource*; *OldRecord*; *NewRecord* [; **All** ] )
 
 * *DataSource*: requerido. Origen de datos que contiene el registro que desea reemplazar.
 * *OldRecord*: requerido. Registro que se va a reemplazar.
 * *NewRecord*: requerido. Registro de reemplazo. No es un registro de cambio. Se reemplaza todo el registro y propiedades que faltan contendrán *blank*.
 * **Todo**: opcional. En una colección, el mismo registro puede aparecer más de una vez. Especifique el argumento **All** para quitar todas las copias del registro.
 
-**UpdateIf**( *DataSource*, *Condition1*, *ChangeRecord1* [, *Condition2*, *ChangeRecord2*, ... ] )
+**UpdateIf**( *DataSource*; *Condition1*; *ChangeRecord1* [; *Condition2*; *ChangeRecord2*; ... ] )
 
 * *DataSource*: requerido. Origen de datos que contiene el registro o los registros que desea modificar.
 * *Condition(s)* : requerido. Fórmula que se evalúa como **true** para el registro o los registros que desea modificar.  Puede usar nombres de columna de *DataSource* en la fórmula.  
@@ -64,16 +65,16 @@ En estos ejemplos, va a reemplazar o modificar registros de un origen de datos l
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Update(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;), {&nbsp;ID:&nbsp;1,&nbsp;Flavor:&nbsp;"Mint&nbsp;Chocolate",&nbsp;Quantity:150&nbsp;} )** |Reemplaza un registro del origen de datos. |<style>IMG {Max-width: None}</style> ![](media/function-update-updateif/icecream-mint.png)<br><br>El origen de datos **IceCream** se ha modificado. |
-| **UpdateIf(&nbsp;IceCream, Quantity > 175, {&nbsp;Quantity:&nbsp;Quantity&nbsp;+&nbsp;10&nbsp;} )** |Modifica los registros que tienen una **cantidad** mayor que **175**.  El campo **Quantity** se incrementa en 10, y no se modifica ningún otro campo. |![](media/function-update-updateif/icecream-mint-plus10.png)<br><br>El origen de datos **IceCream** se ha modificado. |
-| **Update(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream, Flavor="Strawberry"&nbsp;)&nbsp;),<br>{&nbsp;ID:&nbsp;3, Flavor:&nbsp;"Strawberry Swirl"} )** |Reemplaza un registro del origen de datos. El registro de reemplazo no contiene la propiedad **Quantity**, por lo que el valor de esta propiedad será *blank* en el resultado. |![](media/function-update-updateif/icecream-mint-swirl.png)<br><br>El origen de datos **IceCream** se ha modificado. |
-| **UpdateIf(&nbsp;IceCream, true, {&nbsp;Quantity:&nbsp;0&nbsp;} )** |Establece en 0 el valor de la propiedad **Quantity** de todos los registros del origen de datos. |![ ](./media/function-update-updateif/icecream-mint-zero.png)<br> <br>El origen de datos **IceCream** se ha modificado. |
+| **Update(&nbsp;IceCream;<br>First(&nbsp;Filter(&nbsp;IceCream;&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;); {&nbsp;ID:&nbsp;1;&nbsp;Flavor:&nbsp;"Mint&nbsp;Chocolate";&nbsp;Quantity:150&nbsp;} )** |Reemplaza un registro del origen de datos. |<style>IMG {Max-width: None}</style> ![](media/function-update-updateif/icecream-mint.png)<br><br>El origen de datos **IceCream** se ha modificado. |
+| **UpdateIf(&nbsp;IceCream; Quantity > 175; {&nbsp;Quantity:&nbsp;Quantity&nbsp;+&nbsp;10&nbsp;} )** |Modifica los registros que tienen una **cantidad** mayor que **175**.  El campo **Quantity** se incrementa en 10, y no se modifica ningún otro campo. |![](media/function-update-updateif/icecream-mint-plus10.png)<br><br>El origen de datos **IceCream** se ha modificado. |
+| **Update(&nbsp;IceCream;<br>First(&nbsp;Filter(&nbsp;IceCream; Flavor="Strawberry"&nbsp;)&nbsp;);<br>{&nbsp;ID:&nbsp;3; Flavor:&nbsp;"Strawberry Swirl"} )** |Reemplaza un registro del origen de datos. El registro de reemplazo no contiene la propiedad **Quantity**, por lo que el valor de esta propiedad será *blank* en el resultado. |![](media/function-update-updateif/icecream-mint-swirl.png)<br><br>El origen de datos **IceCream** se ha modificado. |
+| **UpdateIf(&nbsp;IceCream; true; {&nbsp;Quantity:&nbsp;0&nbsp;} )** |Establece en 0 el valor de la propiedad **Quantity** de todos los registros del origen de datos. |![ ](./media/function-update-updateif/icecream-mint-zero.png)<br> <br>El origen de datos **IceCream** se ha modificado. |
 
 ### <a name="step-by-step"></a>Paso a paso
 1. Importe o cree una colección denominada **Inventory** y muéstrela en una galería, como se describe en el artículo sobre la [visualización de datos en una galería](../show-images-text-gallery-sort-filter.md).
 2. Asigne el nombre **ProductGallery** a la galería.
 3. Agregue un control deslizante llamado **UnitsSold** y establezca su propiedad **Max** en esta expresión:<br>**ProductGallery.Selected.UnitsInStock**
-4. Agregue un botón y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:<br>**UpdateIf(Inventory, ProductName = ProductGallery.Selected.ProductName, {UnitsInStock:UnitsInStock-UnitsSold.Value})**
+4. Agregue un botón y establezca su propiedad **[OnSelect](../controls/properties-core.md)** en esta fórmula:<br>**UpdateIf(Inventory; ProductName = ProductGallery.Selected.ProductName; {UnitsInStock:UnitsInStock-UnitsSold.Value})**
 5. Presione F5, seleccione un producto de la galería, especifique un valor con el control deslizante y, a continuación, seleccione el botón.
    
     El número de unidades en existencias del producto se reduce en la cantidad especificada.

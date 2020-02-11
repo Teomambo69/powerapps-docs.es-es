@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/05/2020
 ms.locfileid: "77034405"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="working-with-test-studio-experimental"></a>Trabajo con Test Studio (experimental)
 
@@ -120,7 +121,7 @@ Para agregar pasos de prueba y probar aserciones en la aplicación Kudos:
 
     Puede usar cualquier expresión admitida. También puede consultar cualquier origen de datos, colecciones, variables o flujos de ejecución que contenga la aplicación, así como crear nuevas variables globales o colecciones para usarlas en las pruebas.
 
-    ```Set(kudosBeforeTest, CountRows(Filter(Kudos, Receiver.Email = "someone@example.com")))```
+    ```Set(kudosBeforeTest; CountRows(Filter(Kudos; Receiver.Email = "someone@example.com")))```
 
 5. Seleccione el paso 2 o el paso sobre el que quiera insertar un nuevo paso.
 
@@ -128,17 +129,17 @@ Para agregar pasos de prueba y probar aserciones en la aplicación Kudos:
 
 7. Escriba una expresión o una fórmula en la entrada de acción para [Seguimiento](./functions/function-trace.md) y escriba el valor *kudosBeforeTest* en el registro de resultados de las pruebas.
 
-    ```Trace("kudosBeforeTest : " & kudosBeforeTest);```
+    ```Trace("kudosBeforeTest : " & kudosBeforeTest);;```
 
     ![Kudos antes de la prueba](./media/working-with-test-studio/kudos-before-test.png)
 
 8. Vaya a la parte inferior del caso de prueba e inserte un nuevo paso para contar los registros de la base de datos una vez completada la prueba.
 
-    ```Set(kudosAfterTest, CountRows(Filter(Kudos, Receiver.Email = "someone@example.com")))```
+    ```Set(kudosAfterTest; CountRows(Filter(Kudos; Receiver.Email = "someone@example.com")))```
 
 9. Agregue un paso final para validar que el número de registros en la base de datos haya aumentado en 1 y escriba la siguiente acción de aserción para comprobarlo:
 
-    ```Assert(kudosAfterTest = kudosBeforeTest + 1, "Kudos count incorrect. Expected : " & kudosBeforeTest + 1  & " Actual :" & kudosAfterTest)```
+    ```Assert(kudosAfterTest = kudosBeforeTest + 1; "Kudos count incorrect. Expected : " & kudosBeforeTest + 1  & " Actual :" & kudosAfterTest)```
 
     ![Kudos después de la aserción de prueba](./media/working-with-test-studio/kudos-after-test-assert.png)
 
@@ -175,7 +176,7 @@ En esta sección, cambiará la aserción de prueba para experimentar una prueba 
 
 2. Actualice ```+ 1``` a ```+ 2``` en la acción de prueba. Esto significa que la prueba espera que se creen 2 registros, lo cual es incorrecto. Si la prueba se realiza correctamente, solo se debe crear un registro en la base de datos.
 
-    ```Assert(kudosAfterTest = kudosBeforeTest + 2, "Kudos count incorrect. Expected : " & kudosBeforeTest + 2  & " Actual :" & kudosAfterTest)```
+    ```Assert(kudosAfterTest = kudosBeforeTest + 2; "Kudos count incorrect. Expected : " & kudosBeforeTest + 2  & " Actual :" & kudosAfterTest)```
 
     ![Actualización del recuento de aserciones](./media/working-with-test-studio/assert-count-update.png)
 
@@ -311,7 +312,7 @@ Otro ejemplo de expresiones que podría usar en estas propiedades es:
 
 - Envío por correo electrónico de los resultados:
 
-    ```Office365.SendMailV2(“someone@example.com”, “Test case results”, JSON(TestCaseResult, JSONFormat.IndentFour))```
+    ```Office365.SendMailV2(“someone@example.com”; “Test case results”; JSON(TestCaseResult; JSONFormat.IndentFour))```
 
 - Recepción de una notificación de la aplicación del resultado de la prueba:
 
