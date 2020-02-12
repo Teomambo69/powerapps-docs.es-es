@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 06/17/2017
+ms.date: 02/10/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dbc33f1a1e4ff0434ee69ad9f7c34ead441f6776
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 6c2024059c5e549d93c8195afbdc0c6272c912b2
+ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74733163"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77145453"
 ---
 # <a name="understand-data-form-layout-for-canvas-apps-in-power-apps"></a>Descripción del diseño de formularios de datos para aplicaciones de lienzo en Power apps
 
@@ -28,7 +28,7 @@ Cree fácilmente un formulario atractivo y eficaz al compilar una aplicación de
 
 En este tutorial, se le guiará por los pasos necesarios para crear un formulario. También se examinarán algunos temas avanzados como el cambio de tamaño dinámico de campos para llenar el espacio disponible.
 
-## <a name="before-you-start"></a>Antes de comenzar
+## <a name="before-you-start"></a>Antes de empezar
 
 Si no está familiarizado con las aplicaciones de Power apps (o si solo las ha generado automáticamente), deberá [compilar una aplicación desde cero antes de](get-started-create-from-blank.md) profundizar en este tema. Mediante la compilación de una aplicación desde cero, se familiarizará con los conceptos necesarios, como agregar orígenes de datos y controles, que se mencionan, pero no se explican, en este tema.
 
@@ -178,13 +178,9 @@ El resultado de la tercera línea de dirección:
 Tenga en cuenta que muchas de las tarjetas empiezan con fórmulas dinámicas para las propiedades. Por ejemplo, el control Entrada de texto cuyo tamaño hemos cambiado y encima del que nos hemos movido tenía una propiedad **Ancho** basada en el ancho de su control principal. Cuando se mueve o se cambia el tamaño de un control, estas fórmulas dinámicas se reemplazan por valores estáticos. Si lo desea, puede restaurar las fórmulas dinámicas mediante la barra de fórmulas.
 
 ## <a name="turning-off-snap-to-columns"></a>Desactivar Ajustar en columnas
-A veces es conveniente proporcionar un control más preciso que el pueden hacerlo las 12 columnas estándar. Para estos casos, puede desactivar **Ajustar en columnas** y colocar las tarjetas manualmente. El formulario seguirá ajustándose a 12 columnas, pero también es posible mantener presionada la tecla Alt para colocar una tarjeta y cambiarla de tamaño manualmente como desee.
+A veces es conveniente proporcionar un control más preciso que el pueden hacerlo las 12 columnas estándar. Para estos casos, puede desactivar **Ajustar en columnas** y colocar las tarjetas manualmente. El formulario seguirá ajustándose a 12 columnas, pero también puede mantener presionadas las teclas Alt o Ctrl + Mayús después de iniciar un cambio de tamaño o una posición para invalidar los puntos de acoplamiento.  Para obtener más información, consulte [métodos abreviados de teclado de comportamiento alternativo](keyboard-shortcuts.md#alternate-behavior). 
 
-En este ejemplo, los cuatro componentes que constituyen la tercera línea de la dirección tienen exactamente la misma anchura. Pero es posible que éste no sea el diseño óptimo, ya que los nombres de ciudad son más largos que los nombres de estado y el cuadro de entrada de texto para países o regiones es corto debido a la longitud de la etiqueta.
-
-Para optimizar este espacio, desactive **Ajustar en columnas** en el panel derecho y, después, mantenga presionada la tecla Alt mientras ajusta el tamaño y coloca estas tarjetas. Cada vez que mantenga presionada la tecla Alt, todos los controles mostrarán subtítulos negros. Este comportamiento es por diseño para mostrar los nombres de los controles.
-
-![Posición y cambio de tamaño con la tecla ALT presionada](./media/working-with-form-layout/delivery-address-alt-resize.png)
+En este ejemplo, los cuatro componentes que constituyen la tercera línea de la dirección tienen exactamente la misma anchura. Pero es posible que éste no sea el diseño óptimo, ya que los nombres de ciudad son más largos que los nombres de estado y el cuadro de entrada de texto para países o regiones es corto debido a la longitud de la etiqueta.  Para optimizar este espacio, desactive la opción **ajustar a las columnas** en el panel derecho y, después, mantenga presionadas las teclas Alt o Ctrl + Mayús después de empezar a ajustar el tamaño y colocar estas tarjetas. For
 
 Después de colocarlas con cuidado, se logran tamaños adecuados para cada campo y un espaciado horizontal uniforme entre los campos:
 
@@ -195,7 +191,7 @@ En resumen, ¿cuáles son las diferencias cuando la opción **Ajustar en columna
 | Comportamiento | Ajustar en columnas activada | Ajustar en columnas desactivada |
 | --- | --- | --- |
 | El cambio de tamaño se ajusta a |Número de columnas que selecciona:<br>1, 2, 3, 4, 6 o 12 |12 columnas |
-| Se puede invalidar el ajuste de cambio de tamaño |No |Sí, con la tecla Alt |
+| Se puede invalidar el ajuste de cambio de tamaño |No |Sí, con las teclas Alt o Ctrl + Mayús después de iniciar el cambio de tamaño |
 | Se cambia el diseño de las tarjetas automáticamente entre filas (se explica más adelante) |Sí |No |
 
 ## <a name="set-width-and-height"></a>Establecer ancho y alto

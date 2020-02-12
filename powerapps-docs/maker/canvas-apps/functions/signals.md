@@ -1,5 +1,5 @@
 ---
-title: Señales Acceleration, App, Compass, Connection y Location | Microsoft Docs
+title: Señales Aceleración, Aplicación, Brújula, Conexión y Ubicación | Microsoft Docs
 description: Información de referencia, con sintaxis y ejemplos, para los sensores de aceleración, aplicación, brújula, conexión y ubicación en Power apps
 author: gregli-msft
 manager: kvivek
@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 05/29/2019
+ms.date: 02/07/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9cd0470d6911452b38040531ec17060b3bc69fa0
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 1cd90e345b41f8316e8cd8c50f4077ee1f64ee91
+ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729577"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77145389"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-power-apps"></a>Señales de aceleración, aplicación, brújula, conexión y ubicación en Power apps
 
@@ -60,7 +60,7 @@ La señal **Compass** devuelve el encabezado de brújula de la parte superior de
 | --- | --- |
 | **Compass.Heading** |Encabezado en grados.  Devuelve que un número de 0 a 360, y 0 es el norte. |
 
-### <a name="connection"></a>Connection
+### <a name="connection"></a>Conexión
 La señal **Connection** devuelve información acerca de la conexión de red. Cuando está en una conexión medida, puede que desee limitar la cantidad de datos que envíe o reciba a través de la red.
 
 | Propiedad | Descripción |
@@ -78,10 +78,10 @@ A medida que cambia la ubicación, las dependencias de la ubicación se recalcul
 | Propiedad | Descripción |
 | --- | --- |
 | **Location.Altitude** |Devuelve un número que indica la altitud, medida en metros, por encima del nivel del mar. |
-| **Location.Latitude** |Devuelve un número, de -90 y 90, que indica la latitud, que se mide en grados desde el Ecuador. Un número positivo indica una ubicación que sea al norte del ecuador. |
-| **Location.Longitude** |Devuelve un número, de 0 y 180, que indica la longitud, que se mide en grados oeste desde Greenwich, Inglaterra. |
+| **Location.Latitude** |Devuelve un número, de – 90 a 90, que indica la latitud, medida en grados desde el Ecuador. Un número positivo indica una ubicación que sea al norte del ecuador. |
+| **Location.Longitude** |Devuelve un número, de – 180 a 180, que indica la longitud, medida en grados de Greenwich, Inglaterra.  Un número positivo indica una ubicación que es el este de Greenwhich. |
 
-## <a name="examples"></a>Ejemplos
+## <a name="examples"></a>Ejemplos:
 En un campo de béisbol, un lanzador lanza un teléfono desde el montículo del jarra a un captador en la placa de inicio. El teléfono se encuentra situado horizontalmente con respecto a la tierra, la parte superior de la pantalla está orientada al lanzador, y el lanzador no hace ningún giro. En esta ubicación, el teléfono tiene una cobertura medida, pero no tiene Wi-Fi. Se muestra la pantalla **PlayBall**.   
 
 | Fórmula | Descripción | Resultado |

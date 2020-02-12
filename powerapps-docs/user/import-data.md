@@ -18,7 +18,7 @@ search.app:
 - D365CE
 ms.openlocfilehash: 8f1105fc88fe87aabceaa10160b96e2d7299cbe0
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74733211"
@@ -100,7 +100,7 @@ Cuando finalice el asistente, compruebe los datos (por ejemplo, la lista de cont
 
 ## <a name="import-double-byte-characters"></a>Importación de caracteres de doble byte 
 
-Si va a importar datos que incluyen caracteres de doble byte de idiomas de Asia oriental, asegúrese de que el archivo está codificado como UTF-8 BOM. La codificación UTF-8 estándar podría no ser suficiente.
+Si va a importar datos que incluyen caracteres de doble byte de idiomas de Este de Asia, asegúrese de que el archivo está codificado como UTF-8 BOM. La codificación UTF-8 estándar podría no ser suficiente.
 
 1. Abra el archivo CSV utilizando Visual Studio Code.
 2. En la barra inferior, haga clic en la etiqueta **UTF-8** (se abre una ventana emergente). 
