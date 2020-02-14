@@ -17,7 +17,7 @@ search.app:
 - Powerplatform
 ms.openlocfilehash: ce01bf68e892b60fa1401ee9366d9d1d0acaecaf
 ms.sourcegitcommit: 6984ce43cc5653ccb957219d2a687907ebb5520c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/18/2019
 ms.locfileid: "72560946"

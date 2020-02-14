@@ -17,7 +17,7 @@ search.app:
 - D365CE
 ms.openlocfilehash: 7dd418db04f72310210925345611bc1a0b2a6f17
 ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/19/2019
 ms.locfileid: "63318529"
