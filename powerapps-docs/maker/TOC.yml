@@ -1018,6 +1018,8 @@
                   href: ./model-driven-apps/create-edit-views-app-designer.md
                 - name: Elegir y configurar columnas en vistas
                   href: ./model-driven-apps/choose-and-configure-columns.md
+                - name: Creación o edición de filtros en vistas de aplicaciones
+                  href: ./model-driven-apps/create-edit-view-filters.md
                 - name: 'Guías de procedimientos: Vistas'
                   items:
                     - name: Cómo hacer que las cuadrículas sean editables
