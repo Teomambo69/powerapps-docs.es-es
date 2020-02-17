@@ -15,7 +15,7 @@ search.app:
 - PowerApps
 ms.openlocfilehash: 254034d608e5824f2e6358bfa84bb7f7fe9f178c
 ms.sourcegitcommit: db62bf0f8210b5ba2d1d5fc2c7d362ab23ec8c63
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/22/2020
 ms.locfileid: "76315321"
@@ -24,9 +24,9 @@ ms.locfileid: "76315321"
 
 En este artículo se enumeran algunos de los problemas habituales que puede experimentar al usar Power Apps. Si procede, se proporcionan soluciones alternativas.
 
-1. **Imágenes de la cámara volteadas al importarlas mediante Edge** (20 de enero de 2020)
+1. **Imágenes de la cámara volteadas al importarlas mediante Microsoft Edge** (20 de enero de 2020)
 
-    Al usar la cámara y el explorador Edge, es posible que las imágenes queden volteadas.  Esto se debe a un defecto de Edge.  Para mitigar el problema, use el nuevo Edge Chromium u otro explorador.
+    Al usar la cámara y el explorador Microsoft Edge, es posible que las imágenes queden volteadas.  Esto se debe a un defecto de Edge.  Para mitigar el problema, use el nuevo Microsoft Edge Chromium u otro explorador.
     
 1. **Imágenes de la cámara sin la información de los metadatos** (20 de enero de 2020)
 
@@ -117,7 +117,7 @@ En este artículo se enumeran algunos de los problemas habituales que puede expe
 
 1. **Nombres de columna con espacios**
 
-    Si usa una lista de SharePoint o una tabla de Excel en la que un nombre de columna contenga un espacio, Power Apps lo reemplazará por **"\_x0020\_"**. Por ejemplo, **"Nombre columna"** en SharePoint o Excel aparecerá como **"Nombre_x0020_columna"** en Power Apps cuando se muestre en el diseño de datos o se use en una fórmula.
+    Si usa una lista de SharePoint o una tabla de Excel en la que un nombre de columna contenga un espacio, Power Apps lo reemplazará por **"\_x0020\_"** . Por ejemplo, **"Nombre columna"** en SharePoint o Excel aparecerá como **"Nombre_x0020_columna"** en Power Apps cuando se muestre en el diseño de datos o se use en una fórmula.
 
 1. **Cambio de un flujo en una aplicación compartida**
 
@@ -197,4 +197,4 @@ En este artículo se enumeran algunos de los problemas habituales que puede expe
 
 1. **La galería de tarjetas está en desuso**.
 
-     Las aplicaciones existentes que utilizan esta característica seguirán ejecutándose por el momento pero no puede agregar una galería de tarjetas. Reemplace las galerías de tarjetas por los nuevos controles **[Editar formulario](controls/control-form-detail.md)** y **[Mostrar formulario](controls/control-form-detail.md)**.
+     Las aplicaciones existentes que utilizan esta característica seguirán ejecutándose por el momento pero no puede agregar una galería de tarjetas. Reemplace las galerías de tarjetas por los nuevos controles **[Editar formulario](controls/control-form-detail.md)** y **[Mostrar formulario](controls/control-form-detail.md)** .
