@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/11/2020
 ms.locfileid: "77145438"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="data-types-in-canvas-apps"></a>Tipos de datos en aplicaciones de lienzo
 
@@ -39,9 +40,9 @@ En este artículo se proporcionan detalles sobre los tipos de datos que admiten 
 | **Multimedia** | Una cadena de texto de URI en una grabación de vídeo o audio. | El **vídeo** se ha agregado como un recurso de la aplicación<br>**"https://northwindtraders.com/intro.mp4"**<br>**"appres://blobmanager/3ba411c..."** |
 | **Números** | Número de punto flotante. | **123**<br>**-4,567**<br>**8.903e121** |
 | **Conjunto de opciones** | Una opción de un conjunto de opciones, respaldado por un número. Este tipo de datos combina una etiqueta de texto traducible con un valor numérico. La etiqueta aparece en la aplicación y el valor numérico se almacena y se usa para las comparaciones. | **ThisItem. OrderStatus** |
-| **Registro** | Un registro de valores de datos. Este tipo de datos compuesto contiene instancias de otros tipos de datos que se enumeran en este tema. Más información: [trabajar con tablas](../working-with-tables.md). | **{Company: "Northwind Traders",<br>personal: 35, <br>sin ánimo de lucro: false}** |
+| **Registro** | Un registro de valores de datos. Este tipo de datos compuesto contiene instancias de otros tipos de datos que se enumeran en este tema. Más información: [trabajar con tablas](../working-with-tables.md). | **{Company: "Northwind Traders";<br>personal: 35; <br>sin ánimo de lucro: false}** |
 | **Referencia de registro** | Referencia a un registro de una entidad. Estas referencias se suelen usar con búsquedas polimórficas. Más información: [trabajar con referencias](../working-with-references.md).| **Primero (cuentas). Propietario** |
-| **Tabla** | Una tabla de registros.  Todos los registros deben tener los mismos nombres para sus campos con los mismos tipos de datos y los campos omitidos se tratan como *en blanco*. Este tipo de datos compuesto contiene instancias de otros tipos de datos que se enumeran en este tema. Más información: [trabajar con tablas](../working-with-tables.md). | **Tabla ({FirstName: "Sidney",<br>LastName: "Higa"}, <br>{FirstName: "Nancy",<br>LastName: "Anderson"})**
+| **Tabla** | Una tabla de registros.  Todos los registros deben tener los mismos nombres para sus campos con los mismos tipos de datos y los campos omitidos se tratan como *en blanco*. Este tipo de datos compuesto contiene instancias de otros tipos de datos que se enumeran en este tema. Más información: [trabajar con tablas](../working-with-tables.md). | **Tabla ({FirstName: "Sidney";<br>LastName: "Higa"}; <br>{FirstName: "Nancy";<br>LastName: "Anderson"})**
 | **Texto** | Cadena de texto Unicode. | **"Hello, World"** |
 | **Tiempo** | Una hora sin fecha, en la zona horaria del usuario de la aplicación. | **Hora (11, 23, 45)** |
 | **Dos opciones** | Una opción de un conjunto de dos opciones, respaldada por un valor booleano. Este tipo de datos combina una etiqueta de texto traducible con un valor booleano. La etiqueta aparece en la aplicación y el valor booleano se almacena y se usa para las comparaciones. | **ThisItem. gravable** |
@@ -66,7 +67,7 @@ Los cuatro tipos de datos se basan en una cadena de texto [Unicode](https://en.w
 
 Las cadenas de texto incrustadas en una fórmula se incluyen entre comillas dobles.  Use dos comillas dobles para representar una sola comilla doble en la cadena de texto.  Por ejemplo, con la fórmula siguiente en la propiedad **alseleccionar** de un control de [**botón**](../controls/control-button.md) :
 
-```powerapps-dot
+```powerapps-comma
 Notify( "Jane said ""Hello, World!""" )
 ```
 
@@ -96,7 +97,7 @@ Las aplicaciones de lienzo hacen referencia a cada imagen u otro archivo multime
 
 Por ejemplo, la propiedad **imagen** de un control imagen acepta no solo los recursos de la aplicación, sino también los vínculos a las imágenes en la web, como "https://northwindtraders.com/logo.jpg". La propiedad también acepta imágenes insertadas que usan el [esquema de URI de datos](https://en.wikipedia.org/wiki/Data_URI_scheme), como en este ejemplo:
 
-```powerapps-dot
+```powerapps-comma
 "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFAQMAAACtnVQoAAAABlBMVEUAAAB0J3UMNU6VAAAAAXRSTlMAQObYZgAAABRJREFUCNdjUGJgCGVg6GgAkkA2AA8/AffqCEBsAAAAAElFTkSuQmCC"
 ```
 
@@ -158,7 +159,7 @@ Cuando una aplicación de lienzo Lee un valor independiente de la **zona horaria
 
 Puede observar este comportamiento más detenidamente mediante el uso de la función [**Value**](function-value.md) para tener acceso al valor numérico subyacente de un valor de fecha y hora. Esta función devuelve el valor de fecha y hora como el número de milisegundos transcurridos desde el 1 de enero de 1970 00:00:00.000 UTC.
 
-Dado que cada valor de fecha y hora se mantiene en UTC, el valor de la fórmula **(fecha (1970, 1, 1))** no devolverá cero en la mayoría de las partes del mundo porque la función **Date** devuelve una fecha en formato UTC. Por ejemplo, la fórmula devolverá 28,8 millones en una zona horaria en la que se desplace la hora UTC en ocho horas. Ese número refleja el número de milisegundos en ocho horas.
+Dado que cada valor de fecha y hora se mantiene en UTC, el valor de la fórmula **(fecha (1970; 1; 1))** no devolverá cero en la mayoría de las partes del mundo porque la función **Date** devuelve una fecha en formato UTC. Por ejemplo, la fórmula devolverá 28,8 millones en una zona horaria en la que se desplace la hora UTC en ocho horas. Ese número refleja el número de milisegundos en ocho horas.
 
 Volviendo al ejemplo anterior:
 
@@ -171,7 +172,7 @@ Volviendo al ejemplo anterior:
 
 Los tiempos UNIX reflejan el número de segundos transcurridos desde el 1 de enero de 1970 00:00:00 UTC. Dado que las aplicaciones de canvas usan milisegundos en lugar de segundos, puede convertir entre los dos multiplicando o dividiendo por 1.000.
 
-Por ejemplo, la hora de UNIX muestra el 9 de septiembre de 2001, a las 01:46:40 UTC como 1 mil millones. Para mostrar ese valor de fecha y hora en una aplicación de lienzo, multiplique ese número por 1.000 para convertirlo en milisegundos y usarlo en una función de [**texto**](function-text.md) . El texto de la fórmula **(1 mil millones * 1000, DateTimeFormat. UTC)** devuelve la cadena **2001-09-09T01:46:40.000 z**.
+Por ejemplo, la hora de UNIX muestra el 9 de septiembre de 2001, a las 01:46:40 UTC como 1 mil millones. Para mostrar ese valor de fecha y hora en una aplicación de lienzo, multiplique ese número por 1.000 para convertirlo en milisegundos y usarlo en una función de [**texto**](function-text.md) . El texto de la fórmula **(1 mil millones * 1000; DateTimeFormat. UTC)** devuelve la cadena **2001-09-09T01:46:40.000 z**.
 
 Sin embargo, esa función devuelve el **sábado, 8 de septiembre de 2001 18:46:40** si usa el formato **DateTimeFormat. LongDateTime24** en una zona horaria con una diferencia de 7 horas con respecto a la hora UTC (7 horas oeste de UTC). Este resultado muestra el valor **DateTime** correctamente basado en la zona horaria local.
 
@@ -189,12 +190,12 @@ Las aplicaciones de lienzo usan la información de zona horaria incluida en camp
 
 Las aplicaciones de lienzo leen y escriben los valores del tipo de datos [**Time**](https://docs.microsoft.com/sql/t-sql/data-types/time-transact-sql) en SQL Server como cadenas de texto en el [formato de duración ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#Durations). Por ejemplo, debe analizar este formato de cadena y usar la función [**Time**](function-date-time.md) para convertir la cadena de texto **"PT2H1M39S"** en un valor de **hora** :
 
-```powerapps-dot
+```powerapps-comma
 With( 
-    Match( "PT2H1M39S", "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
-    Time( Value( hours ), Value( minutes ), Value( seconds ) )
+    Match( "PT2H1M39S"; "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" );
+    Time( Value( hours ); Value( minutes ); Value( seconds ) )
 )
-// Result: 2:01 AM (as shown in a label control, use the Text function to see the seconds)
+// Result: 2:01 AM (as shown in a label control; use the Text function to see the seconds)
 
 ```
 
@@ -216,18 +217,18 @@ Cuando un usuario de la aplicación selecciona una opción y guarda ese cambio, 
 
 Las etiquetas solo son para fines de presentación. No se pueden realizar comparaciones directas con las etiquetas porque son específicas de un idioma. En su lugar, cada conjunto de opciones tiene una enumeración que funciona con el número o valor booleano subyacente. Por ejemplo, no puede usar esta fórmula:
 
-`If( ThisItem.OrderStatus = "Active", ...`
+`If( ThisItem.OrderStatus = "Active"; ...`
 
 Pero puede usar esta fórmula:
 
-`If( ThisItem.OrderStatus = OrderStatus.Active, ...`
+`If( ThisItem.OrderStatus = OrderStatus.Active; ...`
 
 En el caso de los conjuntos de opciones globales (que comparten las entidades), el nombre de la enumeración de conjuntos de opciones coincide con el nombre del conjunto de opciones global. En el caso de los conjuntos de opciones locales (cuyo ámbito es una entidad), el nombre puede contener el nombre de la entidad. Este comportamiento evita conflictos si varias entidades tienen conjuntos de opciones con el mismo nombre. Por ejemplo, la entidad **accounts** puede tener una opción **OrderStatus** establecida y su nombre podría ser **OrderStatus (accounts)** . Ese nombre contiene uno o varios espacios y paréntesis, por lo que debe encerrarlo con comillas simples si hace referencia a él en una fórmula.
 
 Además, los valores de dos opciones también pueden comportarse como valores booleanos. Por ejemplo, un valor de dos opciones denominado **TaxStatus** podría tener las etiquetas **gravable** y **No gravable**, que corresponden a *true* y *false* respectivamente. Para mostrarlo, puede usar esta fórmula:
 
-`If( ThisItem.Taxable = TaxStatus.Taxable, ...`
+`If( ThisItem.Taxable = TaxStatus.Taxable; ...`
 
 También puede usar esta fórmula equivalente:
 
-`If( ThisItem.Taxable, ...`
+`If( ThisItem.Taxable; ...`
