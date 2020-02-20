@@ -1,5 +1,5 @@
 ---
-title: Exportar los datos a Excel online en una aplicación controlada por modelos | MicrosoftDocs
+title: Exportación de datos a Excel Online en una aplicación basada en modelos | Microsoft Docs
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -18,16 +18,16 @@ search.app:
 - D365CE
 ms.openlocfilehash: 6cb8fe650db464f41c63af87c3fcb34bb2203cf2
 ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/19/2019
 ms.locfileid: "61544796"
 ---
-# <a name="export-your-data-to-excel-online"></a>Exportar los datos a Excel online 
+# <a name="export-your-data-to-excel-online"></a>Exportación de datos a Excel Online 
 
-Puede realizar rápidamente un análisis ad hoc de los datos que se encuentra en la aplicación mediante la exportación de los datos de la aplicación a Excel online.
+Para realizar rápidamente un análisis ad hoc de los datos que están en la aplicación, puede exportar esos datos a Excel Online.
   
-Cuando realice cambios en los datos en Excel online, puede guardar la información actualizada en la aplicación. Recuerde mantener el formato existente de las celdas de Excel para evitar problemas durante la importación. Cualquier información que se agregue a la hoja de cálculo, como gráficos, gráficos o colores, no se guardará.  
+Cuando haga cambios en los datos en Excel Online, puede guardar esa información actualizada en la aplicación. Recuerde mantener el formato existente de las celdas de Excel para evitar problemas durante la importación. Cualquier información que se agregue a la hoja de cálculo (como gráficos o colores) no se guardará.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
   
@@ -35,17 +35,17 @@ Cuando realice cambios en los datos en Excel online, puede guardar la informaci�
   
 - Necesita una cuenta de Microsoft.    
   
-## <a name="open-app-data-in-excel-online"></a>Abrir datos de la aplicación en Excel online  
+## <a name="open-app-data-in-excel-online"></a>Abrir datos de la aplicación en Excel Online  
 
-La opción para abrir datos en Excel online no está disponible en todos los tipos de registro. Si no ve la opción, no está disponible para ese registro.  
+La opción para abrir datos en Excel Online no está disponible en todos los tipos de registro. Si no la ve, quiere decir que no está disponible para ese registro.  
   
 > [!NOTE]
-> Los datos actualizados en una aplicación no se reflejarán inmediatamente en Excel online si la misma vista se abrió en los últimos dos minutos en Excel online. Después de ese período de tiempo, los datos actualizados deben mostrarse en Excel online.
+> Los datos actualizados de una aplicación no se reflejarán inmediatamente en Excel Online si la misma vista se abrió en los últimos dos minutos en Excel Online. Transcurrido ese tiempo, los datos actualizados sí deben aparecer en Excel Online.
   
-Para abrir una lista de registros en una aplicación, en la barra de comandos Seleccione el menú **exportar a Excel** y, a continuación, seleccione **abrir en Excel online**. 
+Para abrir una lista de registros de una aplicación, seleccione el menú **Exportar a Excel** en la barra de comandos y, después, seleccione **Abrir en Excel Online**. 
 
 > [!div class="mx-imgBorder"] 
-> ![Exportar a Excel online](media/exportexcelonline.png "Exportar a Excel online")  
+> ![Exportar a Excel Online](media/exportexcelonline.png "Export to Excel Online")  
 
   
 ## <a name="save-your-data-and-import-it-back-to-the-app"></a>Guardar los datos e importarlos de nuevo a la aplicación  
@@ -53,12 +53,12 @@ Para abrir una lista de registros en una aplicación, en la barra de comandos Se
 1. Cuando haya terminado de realizar los cambios, seleccione **Guardar**.  
   
    > [!NOTE]
-   > - Los datos para el análisis *ad hoc* con Excel online se almacenan de forma temporal. Cualquier adición, como gráficos, cálculos y columnas, no se guardará en la aplicación desde el análisis ad hoc en Excel online.  
+   > - Los datos seleccionados para el análisis *ad hoc* con Excel Online se almacenan de forma temporal. Ninguna de las adiciones que se haga (como gráficos, cálculos y columnas) se guardará en la aplicación desde el análisis ad hoc en Excel Online.  
    > 
-   > - Es posible que se produzca un error en la importación de archivos si realiza muchos cambios. Si tiene que realizar muchos cambios en los datos y volver a importarlos en la aplicación, se recomienda que exporte la hoja de cálculo en Excel en su lugar.  
+   > - Si se hacen muchos cambios, es posible que el archivo no pueda importarse. Si tiene que realizar muchos cambios en los datos y volver a importarlos a la aplicación, se recomienda exportar la hoja de cálculo a Excel en su lugar.  
    > 
-   > - Por diseño, no se puede guardar un **archivo** > **como** en Excel online. Si lo hace, obtendrá un mensaje de error **no se puede guardar el libro** .   
-2. En el cuadro de diálogo **datos enviados para importar** , seleccione **cerrar**.  
+   > - Por su diseño, Excel Online no permite usar las opciones **Archivo** > **Guardar como**. Si lo hace, aparecerá un mensaje de error **No se puede guardar el libro**.   
+2. En el cuadro de diálogo **Datos enviados para la importación**, seleccione **Cerrar**.  
   
 
   

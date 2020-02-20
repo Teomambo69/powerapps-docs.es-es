@@ -17,7 +17,7 @@ search.app:
 - D365CE
 ms.openlocfilehash: ff83a238715ef6f78650eeb03b087088cb5f0c1e
 ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/03/2020
 ms.locfileid: "76973187"
@@ -51,9 +51,9 @@ El rendimiento de la pared de escala de tiempo se puede mejorar mediante la opti
 
 Cuando se selecciona la opción **Vista previa de impresión** de Dynamics 365, la **pared de escala de tiempo** no se mostrará en la lista de elementos disponibles. Verá **Notas**, pero no se mostrarán las tareas ni los mensajes de correo electrónico.
 
-## <a name="why-i-cant-see-other-users-activities-and-records-in-the-my-activities-stream-in-the-dashboard"></a>¿Por qué no veo otras actividades y registros de usuarios en el flujo mis actividades del panel?
+## <a name="why-i-cant-see-other-users-activities-and-records-in-the-my-activities-stream-in-the-dashboard"></a>¿Por qué no veo otras actividades y registros de usuarios en el flujo Mis actividades del panel?
 
-La secuencia **mis actividades** del panel muestra los registros y las actividades que posee (usuario). Por ejemplo, **el usuario A** ve registros y actividades que son propiedad de un, y **el**usuario **B** ve registros y actividades que pertenecen a **B**.
+En el flujo **Mis actividades** del panel se muestran los registros y las actividades que le pertenecen (usuario). Por ejemplo, el usuario **A** ve los registros y las actividades que pertenecen a **A** y el usuario **B** ve los registros y las actividades que pertenecen a **B**.
 
 ## <a name="see-also"></a>Vea también
 
@@ -61,6 +61,6 @@ La secuencia **mis actividades** del panel muestra los registros y las actividad
 
 [Preguntas más frecuentes sobre el control de escala de tiempo](../maker/model-driven-apps/faqs-timeline-control.md)
 
-[Agregar una cita, un correo electrónico, una llamada de teléfono, una nota o una actividad de tarea a la escala de tiempo](add-activities.md)
+[Adición de una actividad de cita, correo electrónico, llamada telefónica, nota o tarea a la escala de tiempo](add-activities.md)
 
-[Sección de escala de tiempo en la aplicación del centro de atención al cliente](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)
+[Sección Escala de tiempo en la aplicación Centro de servicio al cliente](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)

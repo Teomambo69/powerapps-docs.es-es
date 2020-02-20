@@ -17,7 +17,7 @@ search.app:
 - D365CE
 ms.openlocfilehash: ad34f7daacf07ebc8ecde2a8ce29c163d0c28e95
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74733337"
@@ -25,10 +25,10 @@ ms.locfileid: "74733337"
 # <a name="run-a-canvas-app-on-a-mobile-device"></a>Ejecución de una aplicación de lienzo en un dispositivo móvil
 Cuando crea una aplicación o alguien comparte una aplicación con usted, puede ejecutar la aplicación en Windows, iOS, Android o en un explorador web. En este tema aprenderá a ejecutar una aplicación de lienzo en un dispositivo móvil. Las aplicaciones que se ejecutan en un dispositivo móvil pueden aprovechar las funcionalidades del dispositivo, como los servicios de ubicación y la cámara.
 
-Para seguir este procedimiento, si no se ha registrado en Power Apps, [Regístrese gratuitamente](https://make.powerapps.com/signup?redirect=marketing&email=) antes de empezar y, a continuación, descargue Power apps desde [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) o [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) en un dispositivo iPhone, iPad o Android que ejecute un [sistema operativo compatible](../maker/canvas-apps/limits-and-config.md). Además, asegúrese de que tiene acceso a una aplicación de lienzo que ha creado o que otra persona ha creado y compartido con usted.
+Para seguir este procedimiento, si no está registrado en Power Apps, [regístrese gratuitamente](https://make.powerapps.com/signup?redirect=marketing&email=) antes de empezar y, después, descargue Power Apps desde [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) o [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) en dispositivos iPhone, iPad o Android que ejecuten un [sistema operativo compatible](../maker/canvas-apps/limits-and-config.md). Además, asegúrese de que tiene acceso a una aplicación de lienzo que ha creado o que otra persona ha creado y compartido con usted.
 
-## <a name="open-power-apps-and-sign-in"></a>Abrir Power apps e iniciar sesión
-Abra Power Apps en el dispositivo móvil e inicie sesión con sus credenciales de Azure Active Directory.
+## <a name="open-power-apps-and-sign-in"></a>Abrir Power Apps e iniciar sesión
+Abra Power Apps en el dispositivo móvil e inicie sesión con sus credenciales de Azure Active Directory.
 
 ![Usuario de inicio de sesión](./media/run-app-client/run-client-login.png)
 
@@ -41,37 +41,37 @@ Para que sea más fácil encontrar la aplicación, abra el menú **PowerApps** y
 
 Los siguientes filtros están disponibles:
 
-* **Todas las aplicaciones**: todas las aplicaciones a las que tiene acceso, incluidas las aplicaciones que creó y las que otros compartieron con usted.
+* **Todas las aplicaciones**: muestra todas las aplicaciones a las que tiene acceso, incluidas las aplicaciones que creó y las aplicaciones que otros compartieron con usted.
 
-* **Mis aplicaciones**: las aplicaciones que ha ejecutado al menos una vez.
+* **Mis aplicaciones**: muestra las aplicaciones que ha ejecutado al menos una vez.
 
-* **Aplicaciones de ejemplo**: aplicaciones de ejemplo de Microsoft que muestran escenarios de aplicaciones reales con datos ficticios para ayudar a explorar las posibilidades de diseño.
+* **Aplicaciones de ejemplo**: muestra las aplicaciones de ejemplo de Microsoft que muestran escenarios de aplicaciones reales con datos ficticios para ayudar a explorar las posibilidades de diseño.
 
 * **Favoritos**: muestra las aplicaciones que se han marcado haciendo clic en los puntos suspensivos (...) en el icono de la aplicación y, después, en **Favoritos**. Para quitar una aplicación de esta lista, pulse los puntos suspensivos (...) en el icono de la aplicación y, después, pulse **Quitar de Favoritos**.
 
     ![Marcar como favorito](./media/run-app-client/favorite.png)
 
-Después de filtrar las aplicaciones, puede ordenar la lista filtrada por la fecha de la última vez que se abrieron o modificaron, o bien alfabéticamente por nombre. Estas preferencias se conservan al cerrar y volver a abrir Power apps.
+Después de filtrar las aplicaciones, puede ordenar la lista filtrada por la fecha de la última vez que se abrieron o modificaron, o bien alfabéticamente por nombre. Estas preferencias se conservan cuando cierra y vuelve a abrir Power Apps.
 
 ![Menú Ordenar](./media/run-app-client/sort-menu.png)
 
 Si conoce el nombre de la aplicación que quiere ejecutar, pulse el icono de búsqueda en la parte superior de Powerapps y, después, escriba parte del nombre en el cuadro de búsqueda.
 
-![Search](./media/run-app-client/search.png)
+![Buscar](./media/run-app-client/search.png)
 
 Si filtró las aplicaciones, se buscará en la lista filtrada.
 
 ## <a name="run-an-app"></a>Ejecutar una aplicación
 Para ejecutar una aplicación de lienzo en un dispositivo móvil, pulse el icono de la aplicación. Si otro usuario creó la aplicación de lienzo y la compartió con usted en un correo electrónico, puede ejecutar la aplicación, si pulsa el vínculo del correo electrónico.
 
-Si es la primera vez que usa Power Apps, una pantalla muestra el gesto de deslizar rápidamente para cerrar la aplicación.
+Si es la primera vez que usa Power Apps, en una pantalla se muestra el gesto de deslizar rápidamente para cerrar la aplicación.
 
 ![Iniciar aplicación](./media/run-app-client/run-client-app.png)
 
 ## <a name="give-consent"></a>Dar consentimiento
 Si una aplicación requiere una conexión a un origen de datos o permiso para usar las funcionalidades del dispositivo (como la cámara o los servicios de ubicación), debe dar su consentimiento antes de usar la aplicación. Habitualmente, solo se le solicitará la primera vez.
 
-![Connection](./media/run-app-client/app-connection.png)
+![Conexión](./media/run-app-client/app-connection.png)
 
 ## <a name="pin-an-app-to-the-home-screen"></a>Anclar una aplicación a la pantalla de inicio
 Puede anclar una aplicación a la pantalla de inicio del dispositivo para un acceso rápido. Pulse los puntos suspensivos (...) del icono de la aplicación, pulse **Anclar a página principal** y, luego, siga las instrucciones que aparecen.

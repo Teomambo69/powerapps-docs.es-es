@@ -1,5 +1,5 @@
 ---
-title: Asignar o compartir registros | MicrosoftDocs
+title: Asignación o uso compartido de registros | Microsoft Docs
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -17,71 +17,71 @@ search.app:
 - D365CE
 ms.openlocfilehash: 81a6513f98351f656fdac3fd0ccc24a10061ca85
 ms.sourcegitcommit: d0f02fdaa125feaea884932e1ef31b8fea1bd10c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/30/2020
 ms.locfileid: "76886513"
 ---
 # <a name="assign-or-share-records"></a>Asignar o compartir registros
 
-Si desea que otra persona de su organización controle un registro de cliente, puede asignar el registro a esa persona. También puede asignar un registro a un equipo o a usted mismo.  
+Si quiere que otra persona de la organización use un registro de cliente, puede asignar el registro a esa persona. También puede asignar un registro a un equipo o a sí mismo.  
 
-Use la opción **compartir** si desea mantener la propiedad del registro pero deje que otra persona trabaje con él. 
+Use la opción **Compartir** si quiere mantener la propiedad del registro, pero dejar que otra persona trabaje en él. 
 
-1. En el panel de navegación izquierdo, seleccione un tipo de registro. Por ejemplo, **contactos**.
+1. En el panel de navegación izquierdo, seleccione un tipo de registro. Por ejemplo, **Contactos**.
 
-2. En la lista de registros, seleccione el registro que desea reasignar.  
+2. En la lista de registros, seleccione el registro que quiera reasignar.  
   
-3. En la barra de comandos, seleccione **asignar**.
+3. En la barra de comandos, seleccione **Asignar**.
 
    > [!div class="mx-imgBorder"]
-   > ![Reasignar un registro](media/assign1.png "Reasignar un registro")
+   > ![Reasignación de un registro](media/assign1.png "Reasignación de un registro")
 
    > [!NOTE]
-   > Si desea mantener la propiedad del registro pero dejar que otra persona trabaje con él, seleccione **compartir**. A continuación, use la información sobre herramientas para guiarle a través de la opción de **uso compartido** . 
+   > Si quiere mantener la propiedad del registro pero dejar que otra persona trabaje en él, seleccione **Compartir**. Después, use la información sobre herramientas para guiarle por la opción **Compartir**. 
    
-4. En el cuadro de diálogo asignar, en el área **asignar a** , elija **mí** o **usuario o equipo**.
+4. En el área **Asignar a** del cuadro de diálogo Asignar, elija **Yo** o **Usuario o equipo**.
 
    > [!div class="mx-imgBorder"]
-   > ![Reasignación de un registro a mí o equipo](media/assign2.png "Reasignar un equipo de registro me")
+   > ![Reasignación de un registro a mí o a un equipo](media/assign2.png "Reasignación de un registro a mí o a un equipo")
   
-   Si selecciona **usuario o equipo**, en el cuadro **buscar registros** , escriba el nombre del usuario o equipo. Si necesita crear un nuevo registro, seleccione **+ nuevo**.
+   Si selecciona **Usuario o equipo**, escriba el nombre del usuario o del equipo en el cuadro **Buscar registros**. Si necesita crear un registro, seleccione **+ Nuevo**.
   
-5. Cuando haya terminado, seleccione **asignar**.
+5. Cuando termine, seleccione **Asignar**.
 
-## <a name="use-advanced-find-to-reassign-records"></a>Usar búsqueda avanzada para reasignar registros
+## <a name="use-advanced-find-to-reassign-records"></a>Uso de la búsqueda avanzada para reasignar registros
 
-Use la búsqueda avanzada para buscar registros y reasignarlos a otra persona. Para obtener más información sobre la búsqueda avanzada, vea [crear, editar o guardar una búsqueda avanzada](advanced-find.md).
+Use la búsqueda avanzada para encontrar registros y reasignarlos a otra persona. Para obtener más información sobre la búsqueda avanzada, vea [Crear, editar o guardar búsquedas avanzadas](advanced-find.md).
 
 
-1. En la barra de comandos, seleccione **búsqueda avanzada**.
+1. En la barra de comandos, seleccione **Búsqueda avanzada**.
 
    > [!div class="mx-imgBorder"]
-   > ![Búsqueda avanzada](media/assign3.png "advacned buscar")
+   > ![Búsqueda avanzada](media/assign3.png "Búsqueda avanzada")
    
-2. En la lista de registros, seleccione los registros que desea reasignar y, a continuación, seleccione la opción asignar.
+2. En la lista de registros, seleccione los registros que quiera reasignar y, luego, seleccione la opción Asignar.
 
    > [!div class="mx-imgBorder"]
-   > ![Reasignación de un registro mediante la búsqueda avanzada](media/assign4.png "Reasignación de un registro mediante advacned Find")
+   > ![Reasignación de un registro mediante la búsqueda avanzada](media/assign4.png "Reasignación de un registro mediante la búsqueda avanzada")
    
  
- ## <a name="reassign-all-records-for-admins"></a>Reasignar todos los registros (para administradores)
+ ## <a name="reassign-all-records-for-admins"></a>Reasignación de todos los registros (administradores)
  
- Un administrador puede reasignar todos los registros de un usuario desde el área de configuración de administrador.
+ Un administrador puede reasignar todos los registros de un usuario desde el área Configuración del administrador.
  
  1. Vaya a **Configuración** > **Seguridad**.
- 2. Seleccione **usuarios** y seleccione un nombre de usuario para abrir el perfil del usuario.
- 3. En la barra de comandos, seleccione **REASIGNAR registros**.
+ 2. Seleccione **Usuarios** y seleccione un nombre de usuario para abrir su perfil.
+ 3. En la barra de comandos, seleccione **REASIGNAR REGISTROS**.
  
    > [!div class="mx-imgBorder"]
-   > ![Reasignar todos los registros](media/assign5.png "Reasignar todos los registros")
+   > ![Reasignación de todos los registros](media/assign5.png "Reasignación de todos los registros")
    
- 4. En el cuadro de diálogo **reasignar registros** , elija cómo desea reasignar todos los registros y, después, seleccione **Aceptar**.
+ 4. En el cuadro de diálogo **Reasignar registros**, elija cómo quiere reasignar todos los registros y, luego, seleccione **Aceptar**.
  
   > [!NOTE]
-   > La opción **reasignar registros** reasignará todos los registros independientemente de su estado. Los registros inactivos y activos se reasignarán al otro usuario o equipo. Esto también desactivará todos los procesos activados, incluidos los flujos de trabajo y las reglas de negocios, cuando se reasigne el registro a otro usuario o equipo. El nuevo propietario debe activar los procesos que se deben usar.
+   > La opción **Reasignar registros** reasignará todos los registros, sea cual sea su estado. Los registros inactivos y activos se reasignarán al otro usuario o equipo. Esto también hará que se desactiven todos los procesos activados (reglas de negocio y flujos de trabajo incluidos) cuando el registro se reasigne a otro usuario o equipo. El nuevo propietario deberá activar los procesos que deban usarse.
  
    > [!div class="mx-imgBorder"]
-   > ![Reasignar todos los registros a un usuario o equipo](media/assign6.png "Reasignar todos los registros a un usuario o equipo")
+   > ![Reasignación de todos los registros a un usuario o un equipo](media/assign6.png "Reasignación de todos los registros a un usuario o un equipo")
  
 

@@ -1,5 +1,5 @@
 ---
-title: Busque el administrador o el personal de soporte técnico | MicrosoftDocs
+title: Búsqueda de un administrador o una persona de soporte técnico| Microsoft Docs
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -17,31 +17,31 @@ search.app:
 - D365CE
 ms.openlocfilehash: 56b7b8e2b63b497d18470968ebe21edb7a280293
 ms.sourcegitcommit: 79ac9decef3d5aab40fbf3bc95f8f4ba03f9b3df
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/26/2019
 ms.locfileid: "72959310"
 ---
-# <a name="find-your-administrator-or-support-person"></a>Busque el administrador o el personal de soporte técnico 
+# <a name="find-your-administrator-or-support-person"></a>Búsqueda de un administrador o una persona de soporte técnico 
 
-En ocasiones, es posible que se ejecuten varios problemas que requieran consulta al administrador. Si no sabe quién es el administrador, puede usar la búsqueda avanzada para buscar el administrador.  
+A veces puede experimentar problemas que exijan una consulta al administrador. Si no sabe quién es el administrador, puede usar Búsqueda avanzada para buscarlo.  
   
 1. Abra la aplicación.  
   
-2. En la barra de comandos, seleccione el botón **búsqueda avanzada** .
+2. En la barra de comandos, seleccione el botón **Búsqueda avanzada**.
   
-3. En la página Búsqueda avanzada, en la lista **Buscar** , seleccione **usuarios**.  
+3. En la página Búsqueda avanzada, en la lista **Buscar**, seleccione **Usuarios**.  
   
-4. Seleccione **seleccionar**y, a continuación, seleccione **roles de seguridad** en la lista.  
+4. Seleccione **Seleccionar** y luego **Roles de seguridad** en la lista.  
   
-5. En **campos**, seleccione **nombres**.  
+5. En **Campos**, seleccione **Nombres**.  
   
-6. Escriba **Administrador del sistema** en el cuadro que indica **escribir texto**. En este punto, la pantalla debe ser similar a la siguiente:  
+6. Escriba **Administrador del sistema** en el cuadro que indica **Escribir texto**. En este momento, la pantalla debe tener este aspecto:  
      
    > [!div class="mx-imgBorder"]
-   > ![Cuadro de diálogo búsqueda avanzada](media/find-admnistrator-advanced-find-complete.png "Cuadro de diálogo búsqueda avanzada")  
+   > ![Cuadro de diálogo Búsqueda avanzada](media/find-admnistrator-advanced-find-complete.png "Cuadro de diálogo Búsqueda avanzada")  
   
-7. Elija el botón **resultados** en la cinta de opciones.  
+7. Seleccione el botón **Resultados** de la cinta de opciones.  
   
-   Debería ver una lista de uno o más administradores del sistema.  
+   Debe ver una lista de uno o más administradores del sistema.  
   

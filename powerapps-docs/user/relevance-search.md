@@ -1,5 +1,5 @@
 ---
-title: Búsqueda de relevancia | MicrosoftDocs
+title: Búsqueda por relevancia | Microsoft Docs
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -17,164 +17,164 @@ search.app:
 - D365CE
 ms.openlocfilehash: 3a78e555c8818144b41935715ab9f983c7d9714b
 ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/01/2020
 ms.locfileid: "76918788"
 ---
-# <a name="using-relevance-search-to-search-for-records"></a>Uso de la búsqueda de relevancia para buscar registros
+# <a name="using-relevance-search-to-search-for-records"></a>Uso de la búsqueda por relevancia para buscar registros
 
-## <a name="what-is-relevance-search"></a>¿Qué es la búsqueda de relevancia?
+## <a name="what-is-relevance-search"></a>¿En qué consiste la búsqueda por relevancia?
 
-La búsqueda de relevancia ofrece resultados rápidos y completos en varias entidades, en una sola lista, ordenadas por relevancia. Utiliza un servicio de búsqueda dedicado externo a Common Data Service (con tecnología [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)]) para mejorar el rendimiento de la búsqueda.
+La búsqueda por relevancia ofrece resultados rápidos y completos de varias entidades en una sola lista ordenados por relevancia. Usa un servicio de búsqueda dedicado ajeno a Common Data Service (con tecnología de [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)]) para mejorar el rendimiento de la búsqueda.
   
-La búsqueda de relevancia ofrece las siguientes mejoras y ventajas:  
+La búsqueda por relevancia aporta las siguientes mejoras y ventajas:  
 <!--note from editor: Edits to these list items are suggested, so they can be parallel throughout this section.-->  
 - Mejora el rendimiento mediante la indexación externa y la tecnología de búsqueda de [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)].  
   
 - Busca coincidencias con cualquier palabra del término de búsqueda en cualquier campo de la entidad, en comparación con la búsqueda rápida, donde todas las palabras del término de búsqueda se deben encontrar en un campo. 
 
-- Busca coincidencias que incluyen palabras con inflexión como **Stream**, **streaming**o **streaming**.  
+- Busca coincidencias que incluyen palabras flexionadas como **transmitir**, **transmisión** o **transmitido**.  
   
-- Devuelve los resultados de todas las entidades en las que se pueden realizar búsquedas en una única lista ordenada por relevancia, por lo que cuanto mejor sea la coincidencia, mayor será el resultado de la lista. Una coincidencia tiene una mayor relevancia si se encuentran más palabras del término de búsqueda en estrecha proximidad entre sí. Cuanto menor sea la cantidad de texto donde se encuentren las palabras de búsqueda, mayor será la relevancia. Por ejemplo, si encuentra las palabras de búsqueda en el nombre y la dirección de la empresa, podría ser una mejor coincidencia que encontrar las mismas palabras en un artículo largo, separadas entre sí.
+- Devuelve resultados de todas las entidades que permiten búsquedas en una sola lista ordenados por relevancia, lo que significa que cuanto mejor es la coincidencia, el resultado aparecerá más arriba en la lista. Una coincidencia tiene una mayor relevancia si se encuentran más palabras del término de búsqueda en estrecha proximidad entre sí. Cuanto menor sea la cantidad de texto donde se encuentran las palabras de búsqueda, mayor es la relevancia. Por ejemplo, si encuentra las palabras de búsqueda en el nombre y la dirección de una empresa, sería una mejor coincidencia que encontrar las mismas palabras en un artículo largo, muy separadas entre sí.
   
-- Resalta las coincidencias en la lista de resultados. Cuando un término de búsqueda coincide con un término en un registro, el término aparece como texto en negrita y en cursiva en los resultados de la búsqueda. 
+- Resalta las coincidencias en la lista de resultados. Cuando un término de búsqueda coincide con un término de un registro, el término aparece como texto en negrita y cursiva en los resultados de la búsqueda. 
 
     > [!NOTE]
-    > - Ciertas palabras que se usan con frecuencia en un lenguaje ( **como o)** se omiten durante **la** búsqueda, ya que no ayudan a identificar los registros de forma exclusiva. Dado que se omiten durante la búsqueda, estas palabras tampoco se resaltan en los resultados.
-    > - Los términos resaltados se devuelven a menudo como parte del valor completo en un campo, ya que solo se resaltan los términos coincidentes.  
+    > - Determinadas palabras de uso muy común en un idioma (como **el** o **un**) se omiten durante la búsqueda, ya que no ayudan a identificar los registros de forma exclusiva. Puesto que se omiten durante la búsqueda, tampoco se resaltan en los resultados.
+    > - Los términos resaltados suelen devolverse como parte del valor completo de un campo, ya que solo se resaltan los términos coincidentes.  
 
-- Incluye resultados de búsqueda de texto en un documento almacenado en Common Data Service, incluido texto en notas, datos adjuntos de correo electrónico o citas. Los siguientes formatos de archivo son compatibles con la búsqueda: PDF, Microsoft Office documentos, HTML, XML, ZIP, EML, texto sin formato y JSON.  
+- Incluye resultados de búsqueda del texto de un documento almacenado en Common Data Service, lo que incluye texto en notas, datos adjuntos de correo electrónico o citas. En la búsqueda se admiten los siguientes formatos de archivo: PDF, documentos de Microsoft Office, HTML, XML, ZIP, EML, texto sin formato y JSON.  
   
-- Permite buscar los registros que se comparten con usted y los registros de su propiedad.  
-  
-  > [!NOTE]
-  >  No se admiten los modelos de seguridad jerárquica. Incluso si ve una fila en Common Data Service porque tiene acceso a ella a través de la seguridad jerárquica, no verá el resultado en la búsqueda de relevancia.  
-  
-- También permite buscar conjuntos de opciones y búsquedas. Por ejemplo, supongamos que desea buscar una cuenta de tienda que tenga **farmacéuticos** en el nombre. Al buscar una venta al por **menor**, verá el resultado porque hay una coincidencia con el campo del sector, que es un conjunto de opciones de búsqueda.
-
-  > [!NOTE]
-  > - La búsqueda de relevancia está basada en texto y solo puede buscar en campos de tipo una línea de texto, varias líneas de texto, conjuntos de opciones o búsquedas. No admite la búsqueda en campos de tipos de datos numéricos o de fecha.
-  
-- Permite usar la sintaxis en el término de búsqueda para obtener los resultados deseados. Por ejemplo, escriba **Car Silver 2-Door** para incluir coincidencias de cualquier palabra en el término de búsqueda en los resultados de la búsqueda. Escriba **Car + Silver +2-Door** para buscar solo coincidencias que incluyan las tres palabras. Escriba **Car&#124;Silver&#124;2-Door** para obtener resultados que contengan **coches** o **Silver** o **de 2 puertas**, o las tres palabras. Para obtener más información sobre la sintaxis que puede usar en las consultas de búsqueda, consulte [Sintaxis de consulta simple en Azure Cognitive Search](https://docs.microsoft.com/rest/api/searchservice/simple-query-syntax-in-azure-search).<!--note from editor: The "More information:" pattern is good when there aren't any additional modifiers, which you have here. -->
+- Permite buscar registros compartidos con usted y otros de los que es propietario.  
   
   > [!NOTE]
-  > La búsqueda de relevancia se configura para requerir coincidencias en cualquier (en lugar de todos) de los criterios de una consulta, lo que puede dar lugar a resultados diferentes de sus expectativas. Esto es especialmente cierto cuando se incluyen operadores booleanos en la consulta.<!--note from editor: Via style guide, it's always capital "Boolean," and it's "might" instead of "may.-->
+  >  No se admiten modelos de seguridad jerárquica. Aunque vea una fila de Common Data Service porque tiene acceso a ella por medio de la seguridad jerárquica, no ve el resultado en la búsqueda por relevancia.  
+  
+- También permite buscar conjuntos de opciones y búsquedas. Por ejemplo, imagine que quiere buscar una cuenta de tienda que tenga **Farmacéutica** en el nombre. Al buscar **Tienda farmacéutica**, encuentra el resultado, ya que hay una coincidencia con el campo Sector, que es un conjunto de opciones que permite búsquedas.
 
-## <a name="enable-relevance-search"></a>Habilitar la búsqueda de relevancia
+  > [!NOTE]
+  > - La búsqueda por relevancia está basada en texto y solo permite buscar en campos de tipo Una línea de texto, Varias líneas de texto, Conjuntos de opciones o Búsquedas. No admite la búsqueda en campos con tipos de datos numéricos o de fecha.
+  
+- Permite usar sintaxis en el término de búsqueda para obtener los resultados deseados. Por ejemplo, escriba **coche plata todoterreno** para incluir coincidencias de cualquier palabra del término de búsqueda en los resultados de la búsqueda. Escriba **coche+plata+todoterreno** para buscar solo coincidencias que incluyan las tres palabras. Escriba **coche&#124;plata&#124;todoterreno** para obtener resultados que contengan **coche**, **plata**, **todoterreno** o las tres palabras. Para obtener más información sobre la sintaxis que se puede usar en las consultas de búsqueda, vea [Sintaxis de consulta simple en Azure Cognitive Search](https://docs.microsoft.com/rest/api/searchservice/simple-query-syntax-in-azure-search).<!--note from editor: The "More information:" pattern is good when there aren't any additional modifiers, which you have here. -->
+  
+  > [!NOTE]
+  > La búsqueda por relevancia está configurada para requerir coincidencias con cualquiera (en lugar de todos) de los criterios de una consulta, lo que puede dar lugar a resultados diferentes a sus expectativas. Esto es especialmente cierto cuando se incluyen operadores booleanos en la consulta.<!--note from editor: Via style guide, it's always capital "Boolean," and it's "might" instead of "may.-->
 
-La búsqueda de relevancia está deshabilitada de forma predeterminada. El administrador debe habilitarla para la organización, lo que permite a todos los usuarios de la organización usarla. Después de habilitar la búsqueda de relevancia, es posible que tenga que esperar hasta una hora o más, en función del tamaño de la organización, antes de empezar a ver los resultados de la búsqueda de relevancia para las aplicaciones. Los cambios más pequeños en los datos indizados pueden tardar hasta 15 minutos en aparecer en el sistema.
+## <a name="enable-relevance-search"></a>Habilitación de la búsqueda por relevancia
 
-## <a name="switch-between-relevance-search-and-categorized-search"></a>Cambiar entre la búsqueda por relevancia y la búsqueda por categorías
+La búsqueda por relevancia está deshabilitada de forma predeterminada. El administrador debe habilitarla para la organización, lo que permite a todos los usuarios de esta usarla. Después de habilitar la búsqueda por relevancia, es posible que tenga que esperar hasta una hora o más, en función del tamaño de la organización, para empezar a ver resultados de la búsqueda por relevancia para las aplicaciones. Los cambios más pequeños en los datos indexados pueden tardar hasta 15 minutos en aparecer en el sistema.
 
-Si su organización ha activado ambas opciones de búsqueda (búsqueda de relevancia y búsqueda por categorías), puede cambiar entre las dos.
+## <a name="switch-between-relevance-search-and-categorized-search"></a>Cambio entre búsqueda por relevancia y búsqueda categorizada
 
-1. Para cambiar entre los tipos de búsqueda, en la barra de navegación, seleccione **Buscar**.
+Si la organización ha activado ambas opciones de búsqueda (búsqueda por relevancia y búsqueda categorizada), puede cambiar entre las dos.
 
-2. A la izquierda, seleccione el menú desplegable para cambiar entre la búsqueda por **relevancia** o la **búsqueda por categorías**.
+1. Para cambiar entre tipos de búsqueda, en la barra de navegación, seleccione **Buscar**.
+
+2. A la izquierda, seleccione el menú desplegable para cambiar entre **Búsqueda por relevancia** o **Búsqueda categorizada**.
 
    > [!div class="mx-imgBorder"]
-   > ![Cambiar entre la búsqueda por relevancia y por categorías](media/switch-global-search.png "Cambiar entre la búsqueda por relevancia y la búsqueda por categorías") 
+   > ![Cambio entre la búsqueda por relevancia y categorizada](media/switch-global-search.png "Cambio entre búsqueda por relevancia y búsqueda categorizada") 
     
-## <a name="set-a-default-search-experience"></a>Establecer una experiencia de búsqueda predeterminada
+## <a name="set-a-default-search-experience"></a>Establecimiento de una experiencia de búsqueda predeterminada
 
-Si su organización ha activado ambas opciones de búsqueda, puede seleccionar una experiencia de búsqueda predeterminada en su configuración personal.
+Si la organización ha activado ambas opciones de búsqueda, puede seleccionar una experiencia de búsqueda predeterminada en la configuración personal.
 
-1. En la esquina superior derecha de la página, seleccione **configuración**y, a continuación, seleccione **configuración de personalización**.  
+1. En la esquina superior derecha de la página, seleccione **Configuración** y después **Configuración de personalización**.  
   
    > [!div class="mx-imgBorder"]
    > ![Configuración de personalización](media/personalization-settings.png "Configuración de personalización")  
 
-2. En la pestaña **General** , en la sección **seleccionar la experiencia de búsqueda predeterminada** , para la **experiencia de búsqueda predeterminada**, seleccione su experiencia predeterminada. 
+2. En la pestaña **General**, en la sección **Seleccione la experiencia de búsqueda predeterminada**, en **Experiencia de búsqueda predeterminada**, seleccione la experiencia predeterminada. 
 
    > [!div class="mx-imgBorder"]
-   > ![Seleccionar experiencia de búsqueda predeterminada](media/default-search-experience.png "Seleccionar una experiencia de búsqueda predeterminada")  
+   > ![Selección de la experiencia de búsqueda predeterminada](media/default-search-experience.png "Selección de una experiencia de búsqueda predeterminada")  
 
-## <a name="start-a-search"></a>Iniciar una búsqueda 
+## <a name="start-a-search"></a>Inicio de una búsqueda 
  
 1.  En la barra de navegación superior, seleccione **Buscar**.  
 
     > [!div class="mx-imgBorder"]
     > ![Botón de búsqueda global](media/global-search-button.png "Búsqueda global") 
   
-2.  Escriba las palabras de búsqueda en el cuadro de búsqueda y, a continuación, seleccione **Buscar**.
+2.  Escriba las palabras de búsqueda en el cuadro de búsqueda y seleccione **Buscar**.
 
     > [!div class="mx-imgBorder"]
-    > ![Cuadro de búsqueda de relevancia](media/relevance-search-box.png "Cuadro de búsqueda de relevancia")   
+    > ![Cuadro de búsqueda por relevancia](media/relevance-search-box.png "Cuadro de búsqueda por relevancia")   
 
-## <a name="filter-records-with-facets"></a>Filtrar registros con aspectos
+## <a name="filter-records-with-facets"></a>Filtrado de registros con facetas
 
-Con Common Data Service, ahora puede refinar los resultados de la búsqueda mediante el uso de aspectos y filtros. Las caras y los filtros permiten profundizar y explorar los resultados de la búsqueda actual sin tener que refinar los términos de la búsqueda.
+Con Common Data Service, puede refinar los resultados de búsqueda mediante facetas y filtros. Las facetas y los filtros permiten aumentar el detalle de los resultados de la búsqueda actual y examinarlos sin necesidad de refinar de forma repetida los términos de búsqueda.
 
-Las caras están disponibles en el panel izquierdo. Inmediatamente después de realizar una búsqueda, están disponibles las siguientes caras globales para cuatro campos comunes:  
+Las facetas están disponibles en el panel izquierdo. Inmediatamente después de realizar una búsqueda, están disponibles las siguientes facetas globales para cuatro campos comunes:  
   
 -   Tipo de registro  
   
 -   Propietario  
   
--   Creado el  
+-   Creada el  
   
--   Modificado el  
+-   Fecha de modificación  
   
-### <a name="record-type-facets"></a>Aspectos del tipo de registro
+### <a name="record-type-facets"></a>Facetas de Tipo de registro
 
-Para restringir los resultados de la búsqueda a una entidad específica, seleccione la entidad en la sección **tipo de registro** .  
+Para restringir los resultados de búsqueda a una entidad concreta, seleccione la entidad en la sección **Tipo de registro**.  
  
   > [!div class="mx-imgBorder"]
-  > ![Faceta de tipo de registro para restringir los resultados de la búsqueda](media/relevance-search-record-type-facet.png "Faceta de tipo de registro que se usa para restringir los resultados de búsqueda")  
+  > ![Faceta de Tipo de registro para restringir los resultados de búsqueda](media/relevance-search-record-type-facet.png "Faceta de Tipo de registro usada para restringir los resultados de búsqueda")  
   
-Al filtrar por un tipo de registro específico, puede incluir actividades y notas relacionadas con el registro seleccionado en los resultados de la búsqueda. Para ello, active la casilla **notas relacionadas & actividades** . Las actividades y las notas aparecerán en los resultados de nivel superior.
+Al filtrar por un tipo de registro específico, puede incluir actividades y notas relacionadas con el registro seleccionado en los resultados de la búsqueda. Para ello, active la casilla **Actividades y notas relacionadas**. Las actividades y las notas aparecen en los resultados de nivel superior.
  
   > [!div class="mx-imgBorder"]
-  > ![Incluir notas y actividades relacionadas con un tipo de registro en los resultados de la búsqueda](media/relevance-search-record-type-facet-related-notes-activities.png "Incluir notas y actividades relacionadas con un tipo de registro en los resultados de la búsqueda")  
+  > ![Inclusión de notas y actividades relacionadas con un tipo de registro en los resultados de la búsqueda](media/relevance-search-record-type-facet-related-notes-activities.png "Inclusión de notas y actividades relacionadas con un tipo de registro en los resultados de la búsqueda")  
   
-Los resultados de la búsqueda que se encuentran en datos adjuntos de correo electrónico o entidades de cita se muestran en los resultados de búsqueda bajo su registro primario, ya sea correo electrónico o cita.  
+Los resultados de búsqueda que se encuentran en entidades de datos adjuntos de correo electrónico o de cita se muestran en los resultados de búsqueda bajo su registro primario, ya sea Correo electrónico o Cita.  
   
-Al refinar por tipo de registro, el ámbito de la faceta cambia a la entidad seleccionada y se muestran hasta cuatro facetas que son específicas de la entidad. Por ejemplo, si selecciona la entidad cuenta, verá la faceta **contacto principal** además de las facetas globales.  
+Al refinar por tipo de registro, el ámbito de la faceta cambia a la entidad seleccionada y se muestran hasta cuatro facetas específicas de la entidad. Por ejemplo, si selecciona la entidad Cuenta, ve la faceta **Contacto principal** además de las facetas globales.  
   
-En el cuadro de diálogo **establecer opciones personales** , también puede elegir otras caras de las que el administrador del sistema o el cliente han puesto a su disposición. La configuración de usuario invalida la configuración predeterminada. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [configurar las caras y los filtros de la búsqueda](#BKMK_ConfigureFacets)  
+En el cuadro de diálogo **Definir opciones personales**, también puede elegir otras facetas entre las que el administrador del sistema o el cliente han puesto a su disposición. La configuración del usuario invalida a la predeterminada. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Configuración de facetas y filtros para la búsqueda](#BKMK_ConfigureFacets)  
   
-### <a name="text-based-facets"></a>Aspectos basados en texto
+### <a name="text-based-facets"></a>Facetas basadas en texto
 
-Todas las búsquedas, los conjuntos de opciones y los tipos de registro son aspectos basados en texto. Por ejemplo, el propietario de la faceta basada en texto se compone de una lista de valores de campo y sus recuentos correspondientes.  
+Todas las búsquedas, los conjuntos de opciones y los tipos de registro son facetas basadas en texto. Por ejemplo, la faceta basada en texto Propietario se compone de una lista de valores de campo y sus recuentos correspondientes.  
  
   > [!div class="mx-imgBorder"]
-  > ![Faceta basada en texto en la búsqueda de relevancia](media/relevance-search-text-based-facets.png "Faceta basada en texto en la búsqueda de relevancia")  
+  > ![Faceta basada en texto en búsqueda por relevancia](media/relevance-search-text-based-facets.png "Faceta basada en texto en búsqueda por relevancia")  
   
-Los filtros de estas caras se ordenan en orden descendente por recuento. De forma predeterminada, se muestran los cuatro valores principales de faceta. Cuando haya más de cuatro valores de faceta, verá un vínculo **Mostrar más** que puede seleccionar para expandir la lista y ver hasta quince valores de faceta superior. Seleccione cada valor para filtrar los resultados de la búsqueda y mostrar solo los registros en los que el campo tenga el valor seleccionado. Por ejemplo, si selecciona **Jim Glynn**, los resultados de la búsqueda mostrarán todos los registros en los que el propietario es Jim Glynn. Al seleccionar un valor de faceta búsqueda o conjunto de opciones, los resultados de la búsqueda se filtran para incluir solo los registros con el valor especificado.  
+Los filtros de estas facetas se organizan en orden descendente por recuento. De forma predeterminada, se muestran los cuatro valores de faceta superiores. Si hay más de cuatro valores de faceta, se ve un vínculo **MOSTRAR MÁS** que se puede seleccionar para expandir la lista y ver hasta quince valores de faceta superiores. Seleccione cada valor para filtrar los resultados de búsqueda y mostrar solo los registros cuyo campo tenga el valor seleccionado. Por ejemplo, si selecciona **Jim Glynn**, los resultados de búsqueda muestran todos los registros cuyo propietario es Jim Glynn. Al seleccionar un valor de faceta de búsqueda o conjunto de opciones, los resultados de búsqueda se filtran para incluir únicamente los registros con el valor especificado.  
   
-### <a name="date-and-time-facets"></a>Aspectos de fecha y hora
+### <a name="date-and-time-facets"></a>Facetas de fecha y hora
 
-Al igual que otras caras, puede usar las caras de fecha y hora para filtrar y ver los resultados de la búsqueda para un momento concreto. Para seleccionar un intervalo de valores, arrastre el control deslizante o seleccione una de las columnas verticales.  
+Al igual que ocurre con otras facetas, puede usar las facetas de fecha y hora para filtrar y ver resultados de búsqueda de un momento concreto. Para seleccionar un intervalo de valores, arrastre el control deslizante o seleccione una de las columnas verticales.  
  
   > [!div class="mx-imgBorder"]
-  > ![Aspectos de fecha y hora para la búsqueda de relevancia](media/relevance-search-date-time-facets.png "Aspectos de fecha y hora para la búsqueda de relevancia")  
+  > ![Facetas de fecha y hora para búsqueda por relevancia](media/relevance-search-date-time-facets.png "Facetas de fecha y hora para búsqueda por relevancia")  
 
 <a name="BKMK_ConfigureFacets"></a>
 
-## <a name="configure-facets-and-filters"></a>Configurar aspectos y filtros
+## <a name="configure-facets-and-filters"></a>Configuración de facetas y filtros
   
 > [!NOTE]
->  Un Personalizador del sistema puede establecer la experiencia predeterminada para todas las entidades, pero puede configurar sus propias caras y filtros.  
+>  Un personalizador del sistema puede establecer la experiencia predeterminada para todas las entidades, pero el usuario puede configurar sus propias facetas y filtros.  
   
-1. En la esquina superior derecha, seleccione **configuración**y, a continuación, seleccione **configuración de personalización**.  
+1. En la esquina superior derecha, seleccione **Configuración** y después **Configuración de personalización**.  
   
    > [!div class="mx-imgBorder"]
    > ![Configuración de personalización](media/personalization-settings.png "Configuración de personalización")
   
-2. En la pestaña **General** , en la sección **seleccionar la experiencia de búsqueda predeterminada** , en el campo **aspectos y filtros** , seleccione **configurar**.  
+2. En la pestaña **General**, en la sección **Seleccione la experiencia de búsqueda predeterminada**, en el campo **Facetas y filtros**, seleccione **Configurar**.  
 
    > [!div class="mx-imgBorder"]
-   > ![Configurar aspectos y filtros](media/configure-facets-filters.png "Configurar aspectos y filtros")  
+   > ![Configuración de facetas y filtros](media/configure-facets-filters.png "Configuración de facetas y filtros")  
   
-3. En el cuadro de diálogo **configurar aspectos y filtros** , especifique las caras que le gustaría ver para una entidad. El administrador del sistema o el personalizador pueden establecer una experiencia predeterminada para todas las entidades, pero aquí puede establecer las suyas propias.  
+3. En el cuadro de diálogo **Configurar facetas y filtros**, especifique las facetas que quiere ver para una entidad. El administrador del sistema o el personalizador pueden establecer una experiencia predeterminada para todas las entidades, pero aquí puede establecer una propia.  
   
-   - En la lista desplegable **seleccionar entidad** , seleccione una entidad para la que desee configurar las caras. Esta lista desplegable contiene solo las entidades que están habilitadas para la búsqueda de relevancia.  
+   - En la lista desplegable **Seleccionar entidad**, seleccione una entidad para la que quiera configurar facetas. Esta lista desplegable contiene solo las entidades que están habilitadas para la búsqueda por relevancia.  
   
-   - En la entidad seleccionada, seleccione hasta cuatro campos de faceta. De forma predeterminada, los cuatro primeros campos de "facetas" de la vista **búsqueda rápida** de la entidad seleccionada se seleccionan en la lista. En cualquier momento, solo puede tener cuatro campos seleccionados como aspectos.  
+   - En la entidad seleccionada, seleccione hasta cuatro campos de faceta. De forma predeterminada, en la lista se seleccionan los cuatro primeros campos a los que se pueden aplicar facetas de la vista **Búsqueda rápida** de la entidad seleccionada. En todo momento solo se pueden tener cuatro campos seleccionados como facetas.  
   
-   Puede actualizar varias entidades al mismo tiempo. Al seleccionar **Aceptar**, se guardan los cambios de todas las entidades que ha configurado. Para revertir al comportamiento predeterminado de una entidad que configuró anteriormente, seleccione **predeterminado**.  
+   Puede actualizar varias entidades a la vez. Al seleccionar **Aceptar**, se guardan los cambios de todas las entidades configuradas. Para revertir al comportamiento predeterminado de una entidad que se ha configurado previamente, seleccione **Predeterminado**.  
   
    > [!NOTE]
-   > - Si un Personalizador del sistema elimina un campo o hace que ya no se puede buscar y ha guardado una faceta para ese campo, ya no aparecerá como una faceta.  
-   >   -   Solo verá los campos que existen en la solución predeterminada y que están configurados como que el personalizador del sistema puede buscar.  
+   > - Si un personalizador del sistema elimina un campo o lo convierte en un campo que no permite búsquedas, y ha guardado una faceta para ese campo, ya no aparece como una faceta.  
+   >   -   Solo se ven los campos que existen en la solución predeterminada y que el personalizador del sistema ha configurado como campos que permiten búsquedas.  

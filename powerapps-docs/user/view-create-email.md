@@ -1,6 +1,6 @@
 ---
-title: Ver y crear correo electrónico en aplicaciones controladas por modelos | MicrosoftDocs
-description: Ver y crear correo electrónico mientras se usa una aplicación controlada por modelos.
+title: Visualización y creación de correo electrónico en aplicaciones basadas en modelos | Microsoft Docs
+description: Vea y cree correo electrónico mientras usa una aplicación basada en modelo.
 ms.date: 02/03/2020
 ms.service:
 - dynamics-365
@@ -10,83 +10,83 @@ ms.author: lalexms
 manager: shujoshi
 ms.openlocfilehash: 7a0dee04334f52518c1746b6650f75ebfb67634d
 ms.sourcegitcommit: 68a31e3fa4d1635ccf4cd8bd9da5fba1bfecefa4
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/06/2020
 ms.locfileid: "77051922"
 ---
-# <a name="preview-view-and-create-email-through-the-activities-grid"></a>Vista previa: ver y crear correo electrónico a través de la cuadrícula de actividades
+# <a name="preview-view-and-create-email-through-the-activities-grid"></a>Versión preliminar: Vista y creación de correos electrónicos mediante la cuadrícula Actividades
 
-Ver y crear correo electrónico a través de la cuadrícula de actividades es una característica de acceso temprano. Puede participar pronto para habilitar estas características en su entorno. Esto le permitirá probar estas características y después adoptarlas en sus entornos. Para obtener información sobre cómo habilitar estas características, consulte [participación en las actualizaciones de la versión 1 de 2020](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates).
+La visualización y creación de correo electrónico mediante la cuadrícula Actividades es una característica de acceso anticipado. Puede optar por la habilitación anticipada de estas características en el entorno. Esto le permite probar estas características y después adoptarlas en los entornos. Para obtener más información sobre cómo habilitar estas características, vea [Participación en actualizaciones de acceso anticipado](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates).
 
-Las aplicaciones controladas por modelos de Dynamics 365 permiten interactuar con los clientes a través del correo electrónico. La funcionalidad de correo electrónico le permite:
+Las aplicaciones basadas en modelos de Dynamics 365 permiten interactuar con los clientes a través del correo electrónico. La funcionalidad de correo electrónico permite:
 
-- Ver y responder a correos electrónicos. 
+- Ver correos electrónicos y responder a ellos. 
 
-- Use la funcionalidad común de la barra de herramientas de correo electrónico y controles de editor de texto enriquecido. 
+- Usar la funcionalidad común de la barra de herramientas de correo electrónico y los controles del editor de texto enriquecido. 
 
 - Ver e insertar imágenes alineadas con la funcionalidad de arrastrar y colocar o de copiar y pegar. 
 
-- Cree el correo electrónico en una ventana emergente.  
+- Crear correo electrónico en una ventana emergente.  
 
-- Plantillas de vista previa antes de aplicarlas. 
+- Obtener una vista previa de las plantillas antes de aplicarlas. 
 
 
 
-## <a name="view-your-email"></a>Ver el correo electrónico
+## <a name="view-your-email"></a>Visualización del correo electrónico
 
 Para ver el correo electrónico:
 
-1. En el mapa del sitio de la aplicación controlada por modelos, seleccione **actividades**. 
+1. En el mapa del sitio de la aplicación basada en modelo, seleccione  **Actividades**. 
 
-2. Seleccione la lista desplegable **todas las actividades** y, a continuación, seleccione **mis correos electrónicos recibidos**.
+2. Seleccione la lista desplegable **Todas las actividades** y luego **Mis correos electrónicos recibidos**.
 
-    ![Ver correo electrónico](media/view-email.png "Mostrar correos electrónicos recibidos")
+    ![Visualización de correo electrónico](media/view-email.png "Visualización de correos electrónicos recibidos")
 
-3. Seleccione el correo electrónico que desea ver para abrirlo. Se abrirá el correo electrónico, donde podrá responder al remitente y a los destinatarios o reenviarlo.
+3. Seleccione el correo electrónico que quiere ver para abrirlo. Se abre el correo electrónico para que pueda responder al remitente y a los destinatarios o reenviarlo.
 
-## <a name="create-email"></a>Crear correo electrónico
+## <a name="create-email"></a>Creación de correo electrónico
 
 En los pasos siguientes se detalla cómo crear un correo electrónico.
 
-1. En el mapa del sitio de la aplicación controlada por modelos, seleccione **actividades**.
+1. En el mapa del sitio de la aplicación basada en modelo, seleccione **Actividades**.
 
-2. En la barra de comandos, seleccione **correo electrónico**. Se abre una nueva ventana de correo electrónico.
+2. En la barra de comandos, seleccione **Correo electrónico**. Se abre una nueva ventana de correo electrónico.
 
-    ![crear: correo electrónico](media/create-email.png "Crear un nuevo correo electrónico")
+    ![Creación de correo electrónico](media/create-email.png "Creación de un nuevo correo electrónico")
 
-    El campo **desde** se rellena automáticamente en función del usuario que ha iniciado la sesión actual.
+    El campo **De** se rellena automáticamente en función del usuario que haya iniciado sesión.
 
-3. Escriba el correo electrónico directamente en el compositor o seleccione **Insertar plantilla** para buscar y aplicar una plantilla. Para obtener más información sobre la inserción de una plantilla de correo electrónico, consulte [inserción de una plantilla de correo electrónico](insert-email-template.md).
+3. Escriba el correo electrónico directamente en el compositor o seleccione **Insertar plantilla** para buscar y aplicar una plantilla. Para obtener más información sobre cómo insertar una plantilla de correo electrónico, vea [Inserción de una plantilla de correo electrónico](insert-email-template.md).
 
-4. Para redactar el correo electrónico en una ventana de pantalla completa, seleccione el icono de expandir.
+4. Para redactar el correo electrónico en una ventana de pantalla completa, seleccione el icono Expandir.
 
-    ![correo electrónico-expandir-ventana](media/email-expand-window.png "Expandir la ventana correo electrónico")
+    ![Expansión de la ventana de correo electrónico](media/email-expand-window.png "Expansión de la ventana de correo electrónico")
 
-    El cuadro de mensaje tiene un editor de texto enriquecido que le permite crear contenido enriquecido y con formato correcto para los mensajes de correo electrónico con énfasis. El editor aporta características comunes del procesador de texto como: 
+    El cuadro de mensaje tiene un editor de texto enriquecido que permite crear contenido enriquecido y de formato correcto para los correos electrónicos con énfasis. El editor ofrece características comunes de procesamiento de texto como: 
 
-    - Copiar formato
+    - Copia de formato
     - Fuente y tamaño
     - Negrita, cursiva y subrayado
-    - Color de fondo para el texto y el color del texto
+    - Color de fondo para texto y color de texto
     - Lista numerada y con viñetas
-    - Reducir y aumentar sangría
-    - Comilla de bloque
-    - Alineación del texto (alinear a la izquierda, centro y derecha)
-    - Vincular y desvincular
+    - Reducción y aumento de sangría
+    - Comillas de bloque
+    - Alineación de texto (izquierda, centro y derecha)
+    - Vinculación y desvinculación
     - Tachado de texto
     - Imagen
-    - Dirección del texto de derecha a izquierda y de izquierda a derecha
+    - Dirección de texto de derecha a izquierda y de izquierda a derecha
     - Deshacer y rehacer
-    - Quitar formato
-    - Table
+    - Eliminación de formato
+    - Tabla
 
-    ![correo electrónico-barra de herramientas](media/email-toolbar.png "Usar las características del editor de texto enriquecido")
+    ![Barra de herramientas de correo electrónico](media/email-toolbar.png "Uso de características del editor de texto enriquecido")
 
-5. Cuando haya terminado, seleccione **Enviar**.
+5. Cuando termine, seleccione **Enviar**.
 
 
 ### <a name="see-also"></a>Vea también
 
-[Configuración del correo electrónico mejorado](https://docs.microsoft.com/power-platform/admin/system-settings-dialog-box-email-tab)<br>
-[Insertar una plantilla de correo electrónico](insert-email-template.md)
+[Configuración de correo electrónico mejorado](https://docs.microsoft.com/power-platform/admin/system-settings-dialog-box-email-tab)<br>
+[Inserción de una plantilla de correo electrónico](insert-email-template.md)

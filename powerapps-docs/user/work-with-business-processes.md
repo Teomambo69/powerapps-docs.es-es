@@ -17,28 +17,28 @@ search.app:
 - D365CE
 ms.openlocfilehash: 7dd0d9a3dc9b78b693565d66f1894484b686b946
 ms.sourcegitcommit: dc379bede57da58b5787eda5437eb94b662e21ed
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/06/2020
 ms.locfileid: "77037376"
 ---
 # <a name="work-with-business-processes"></a>Trabajar con procesos de negocio
 
-Los procesos empresariales ayudan a todos los usuarios a seguir los procedimientos recomendados, incluso en situaciones que no se producen con mucha frecuencia. Si está disponible, los procesos empresariales proporcionan una escala de tiempo paso a paso para las fases de un proceso en la parte superior del registro pertinente. Abra el menú de la fase activa, escriba cada campo de datos necesarios y críticos para la empresa y, después, seleccione la fase siguiente cuando esté listo para trabajar con ella. Algunos procesos empresariales se pueden completar en el tiempo que se tarda en realizar una sola llamada de teléfono, mientras que otros pueden tardar varias semanas.
+Los procesos de negocio ayudan a todos el mundo a seguir los procedimientos recomendados, incluso en situaciones que no se producen con mucha frecuencia. Cuando es posible, los procesos de negocio proporcionan una escala de tiempo por pasos que se corresponden con las fases de un proceso en la parte superior del registro pertinente. Hay que abrir el menú de la fase que esté activa, rellenar cada campo de datos necesarios y críticos para la empresa y, después, seleccionar la siguiente fase cuando esté listo para centrarse en ella. Algunos procesos de negocio se pueden completar en el tiempo que se tarda en realizar una sola llamada de teléfono, mientras que otros pueden tardar varias semanas.
 
 
-A medida que trabaja en un nuevo registro de cliente, el flujo de procesos empresariales le ayuda a ver cada paso que debe realizar para crear el nuevo registro y rellenar la información necesaria según el proceso empresarial de su organización. 
+Cuando se trabaja en un nuevo registro de cliente, el flujo del proceso de negocio ayuda a ver los pasos que se deben seguir para crear un registro y completar la información necesaria según el proceso de negocio de su organización. 
 
 
 > [!div class="mx-imgBorder"]
-> ![Barra de procesos empresariales](media/business-process.png "Barra de procesos empresariales")
+> ![Barra del proceso de negocio](media/business-process.png "Barra del proceso de negocio")
 
 
 
-La barra de proceso también se puede acoplar en el lado derecho de la pantalla para facilitar la referencia a medida que se trabaja con un registro de cliente. 
+La barra de procesos se puede acoplar también a la parte derecha de la pantalla para poder consultarla fácilmente mientras trabaja con un registro de cliente. 
 
 > [!div class="mx-imgBorder"]
-> ![Barra de procesos empresariales](media/bpdock.gif "Barra de procesos empresariales")
+> ![Barra del proceso de negocio](media/bpdock.gif "Barra del proceso de negocio")
  
   
  
@@ -47,4 +47,4 @@ La barra de proceso también se puede acoplar en el lado derecho de la pantalla 
 El sistema tiene dos procesos de negocio para tareas comunes. Pero la mayoría de las organizaciones personalizan estos procesos para que coincidan con su método de trabajo. También puede haber agregado procesos al sistema que ya se hayan personalizado para su sector o sus objetivos empresariales. En otras palabras, es posible que lo que vea aquí no coincida exactamente con las barras de procesos que vea en su sistema. En cualquier caso, las barras de procesos funcionan de la misma forma para todos los usuarios. Indique datos en los campos y después mueva al cliente a la siguiente fase.
 
 
-Para más información sobre cómo aplicar la lógica de negocios personalizada con las reglas de negocios y los flujos, consulte [aplicación de lógica de negocios personalizada con reglas de negocios y flujos en una aplicación controlada por modelos](https://docs.microsoft.com/powerapps/maker/model-driven-apps/guide-staff-through-common-tasks-processes).
+Para obtener más información sobre cómo aplicar lógica de negocio personalizada con reglas de negocio y flujos, vea [Aplicar la lógica empresarial personalizada con reglas de negocio y flujos en aplicaciones basadas en modelos](https://docs.microsoft.com/powerapps/maker/model-driven-apps/guide-staff-through-common-tasks-processes).

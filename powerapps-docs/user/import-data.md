@@ -27,7 +27,7 @@ ms.locfileid: "74733211"
 
 Si sus datos están almacenados en una hoja de cálculo, en el teléfono o en un programa de correo electrónico, en este artículo sabrá cómo importar los datos en su aplicación. Por ejemplo, importar su lista de contactos de clientes desde una hoja de cálculo de Excel en la aplicación para poder realizar un seguimiento de toda la información de los clientes en un mismo lugar.
   
-## <a name="step-1-get-your-import-file-ready"></a>Paso 1: preparar el archivo de importación  
+## <a name="step-1-get-your-import-file-ready"></a>Paso 1: Prepárese el archivo de importación  
 En primer lugar, exporte los datos a un archivo de Excel. Se admiten estos formatos de archivo:
  - Libro de Excel (.xlsx)
  - Valores separados por comas (.csv)
@@ -53,7 +53,7 @@ El tamaño máximo de archivo permitido para archivos .zip es de 32 MB. Para el
 
     |**Nombre de columna en la hoja de cálculo (la ortografía debe coincidir exactamente)**|
     |---------|
-    |Nombre de pila|  
+    |Nombre|  
     |Segundo nombre|  
     |Apellidos|  
     |Teléfono del trabajo|  
@@ -76,12 +76,12 @@ Para buscar los pasos específicos sobre cómo exportar los contactos de su marc
   
 Para buscar una aplicación, busque en la tienda en línea del teléfono.  
   
-## <a name="step-2-import-the-file"></a>Paso 2: importar el archivo 
+## <a name="step-2-import-the-file"></a>Paso 2: Importe el archivo. 
   
 1. En la barra de comandos, seleccione **Importar desde Excel** o **Importar desde archivo CSV**.
 
    > [!div class="mx-imgBorder"]
-   > ![Menú principal en Power apps](media/import.png "Menú principal en Power apps")
+   > ![Menú principal de Power Apps](media/import.png "Menú principal de Power Apps")
   
 2. Vaya a la carpeta donde guardó el archivo que contiene la exportación de los contactos. Seleccione el archivo, elija **Abrir** y, a continuación, seleccione **Siguiente**.  
   
@@ -90,7 +90,7 @@ Para buscar una aplicación, busque en la tienda en línea del teléfono.
    
 3. Revise el nombre de archivo y compruebe que los delimitadores de campos y datos son correctos mediante la opción **Revisar asignación**. Si todo parece correcto, seleccione **Finalizar importación**.  
  
-## <a name="step-3-check-that-the-import-is-successful"></a>Paso 3: comprobar que la importación se realizó correctamente
+## <a name="step-3-check-that-the-import-is-successful"></a>Paso 3: Compruebe que la importación es correcta
 
 Cuando finalice el asistente, compruebe los datos (por ejemplo, la lista de contactos) para asegurarse de que se han importado correctamente.  
   

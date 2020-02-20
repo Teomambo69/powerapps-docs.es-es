@@ -18,26 +18,26 @@ search.app:
 - D365CE
 ms.openlocfilehash: 97be49797df13b82901425ae9389e85538068f5d
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74726216"
 ---
 # <a name="add-an-app-to-microsoft-teams"></a>Adición de una aplicación a Microsoft Teams
 
-Microsoft Teams es una plataforma de colaboración basada en chat creada sobre tecnologías de Office 365. Puede personalizar la experiencia de los equipos agregando aplicaciones de lienzo de Power apps a los canales en Teams. En este tema aprenderá a agregar la aplicación de ejemplo Presentación de productos a un canal de Teams y abrirla luego desde ese canal. 
+Microsoft Teams es una plataforma de colaboración basada en chat creada sobre tecnologías de Office 365. La experiencia de Teams se puede personalizar agregando aplicaciones de lienzo de Power Apps a los canales de Teams. En este tema aprenderá a agregar la aplicación de ejemplo Presentación de productos a un canal de Teams y abrirla luego desde ese canal. 
 
 ![Aplicación insertada en Microsoft Teams](./media/open-app-embedded-in-teams/embedded-app.png)
 
-Si no se ha registrado en Power Apps, [Regístrese gratuitamente](https://make.powerapps.com/signup?redirect=marketing&email=) antes de empezar.
+Si no está registrado en Power Apps, [regístrese gratuitamente](https://make.powerapps.com/signup?redirect=marketing&email=) antes de empezar.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
 Para seguir este procedimiento, necesita una [suscripción a Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) y un [canal en Teams](https://www.youtube.com/watch?v=he2f1quaR7M).
 
-## <a name="sign-in-to-power-apps"></a>Inicio de sesión en Power apps
+## <a name="sign-in-to-power-apps"></a>Iniciar sesión en Power Apps
 
-Inicie sesión en Power Apps en [https://make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+Inicie sesión en Power Apps en [https://make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ## <a name="add-an-app"></a>Incorporación de una aplicación
 
@@ -84,15 +84,15 @@ En la aplicación de escritorio de Microsoft Teams:
 
 * Las aplicaciones tienen que cargar contenido, como imágenes y archivos .pdf a través de una conexión segura (https).
 * No todos los sensores, como **Aceleración**, **Brújula**, y **Ubicación**, son compatibles.
-* Se admiten únicamente estos formatos de audio: AAC, H264, OGG Vorbis y WAV.
+* Solo se admiten estos formatos de audio: AAC, H264, OGG Vorbis y WAV.
 
-## <a name="clean-up-resources"></a>Limpiar los recursos
+## <a name="clean-up-resources"></a>Limpieza de recursos
 
 Para quitar la aplicación del canal, haga clic en la pestaña **Presentación de productos** > **Quitar**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-En este tema ha agregado la aplicación de ejemplo Presentación de productos a un canal de Teams y luego la ha abierto en ese canal. Para más información sobre Power Apps, continúe con los tutoriales de Power apps.
+En este tema ha agregado la aplicación de ejemplo Presentación de productos a un canal de Teams y luego la ha abierto en ese canal. Para obtener más información sobre Power Apps, continúe con los tutoriales de Power Apps.
 
 > [!div class="nextstepaction"]
-> [Tutoriales de Power apps](../maker/canvas-apps/get-started-create-from-blank.md)
+> [Tutoriales de Power Apps](../maker/canvas-apps/get-started-create-from-blank.md)

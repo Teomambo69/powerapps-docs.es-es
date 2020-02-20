@@ -1,6 +1,6 @@
 ---
-title: Trabajar con informes | Microsoft Docs
-description: Trabajar con informes en Power apps
+title: Trabajo con informes | Microsoft Docs
+description: Trabajo con informes en Power Apps
 author: mduelae
 manager: kvivek
 ms.service: powerapps
@@ -18,74 +18,74 @@ search.app:
 - D365CE
 ms.openlocfilehash: c16a589ddcd1e7beb0be1ce28bc9f6df6a8c8b83
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74733296"
 ---
 # <a name="work-with-reports"></a>Trabajo con los informes
 
-Los informes le ayudan a supervisar su progreso hacia sus objetivos de negocio ayudando a ver cómo lo está haciendo. También puede realizar un seguimiento de las tendencias, lo que le ofrece una ventaja sobre sus competidores.  
+Los informes le ayudan a supervisar su progreso para conseguir sus objetivos empresariales, ya que le ayudan a comprobar cómo lo está haciendo. También puede hacer un seguimiento de las tendencias, lo que le ofrece una ventaja sobre sus competidores.  
 
-Para obtener más información sobre la organización y la creación de informes, vea: [personalizar y organizar informes](https://docs.microsoft.com/powerapps/maker/model-driven-apps/add-reporting-to-app).
+Para obtener más información sobre cómo organizar y crear informes, vea: [Personalización y organización de informes](https://docs.microsoft.com/powerapps/maker/model-driven-apps/add-reporting-to-app).
   
-## <a name="run-a-report"></a>Ejecutar un informe  
+## <a name="run-a-report"></a>Ejecución de un informe  
   
-1. En el panel de navegación izquierdo, seleccione el área informes. 
-2. Elija el informe que desea > **Ejecutar Informe**.  
+1. En el panel de navegación izquierdo, seleccione el área de informes. 
+2. Elija el informe que quiera y después **Ejecutar informe**.  
   
    > [!NOTE]
-   >  En el cuadro de diálogo **visor de informes** , puede dejar los criterios de búsqueda tal cual o cambiarlos según sea necesario.  
+   >  En el cuadro de diálogo **Visor de informes**, puede dejar los criterios de búsqueda tal cual o cambiarlos si es necesario.  
    
    > [!div class="mx-imgBorder"]
-   > ![Ejecutar un informe](media/report-run.png "Ejecutar un informe")
+   > ![Ejecución de un informe](media/report-run.png "Ejecución de un informe")
  
   
-## <a name="share-a-report-with-other-users-or-teams"></a>Compartir un informe con otros usuarios o equipos    
+## <a name="share-a-report-with-other-users-or-teams"></a>Uso compartido de un informe con otros usuarios o equipos    
 
-1. En el panel de navegación izquierdo, seleccione el área informes.  
-2. En la lista de informes, seleccione el informe que desea compartir.  
-3. En la barra de comandos, seleccione **compartir**.
+1. En el panel de navegación izquierdo, seleccione el área de informes.  
+2. En la lista de informes, seleccione el que quiera compartir.  
+3. En la barra de comandos, seleccione **Compartir**.
 
    > [!div class="mx-imgBorder"]
-   > ![compartir un informe](media/report-share.png "compartir un informe")
+   > ![uso compartido de un informe](media/report-share.png "Uso compartido de un informe")
   
-4. En el cuadro de diálogo **compartir Informe** , seleccione **Agregar usuario o equipo**.    
-5. En el cuadro de diálogo **buscar registros** , busque los usuarios o el registro del equipo con el que desea compartir el informe y active la casilla que hay al lado del registro.
+4. En el cuadro de diálogo **Compartir informe**, seleccione **Agregar usuario o equipo**.    
+5. En el cuadro de diálogo **Buscar registros**, busque los usuarios o el registro del equipo con el que quiera compartir el informe y seleccione la casilla situada junto al registro.
 
    > [!div class="mx-imgBorder"]
-   > ![Seleccionar el usuario para compartir un informe](media/report-share1.png "Seleccionar un usuario para compartir el informe")
+   > ![Selección del usuario para compartir un informe](media/report-share1.png "Selección de un usuario para compartir el informe")
 
-6. Elija **seleccionar** para agregar el registro de usuario o de equipo al cuadro **registros seleccionados** y, después, seleccione **Agregar**.
+6. Elija **Seleccionar** para agregar el registro del usuario o el equipo al cuadro **Registros seleccionados** y después seleccione **Agregar**.
 
    > [!div class="mx-imgBorder"]
-   > ![Agregar un usuario para compartir un informe](media/report-share2.png "Agregar usuario para compartir informe")
+   > ![Adición del usuario para compartir un informe](media/report-share2.png "Adición del usuario para compartir el informe")
   
-7. En el cuadro de diálogo **compartir Informe** , seleccione el tipo de acceso de recurso compartido que desee. Los permisos disponibles son: lectura, escritura, eliminación, anexión, asignación o recurso compartido. Esto agregará el registro de usuario o de equipo al cuadro **registros seleccionados** .
+7. En el cuadro de diálogo **Compartir informe**, seleccione el tipo de acceso de recurso compartido que quiera. Los permisos disponibles son los siguientes: Lectura, Escritura, Eliminación, Anexo, Asignación o Uso compartido. De esta forma, se agregará el registro del usuario o el equipo al cuadro **Registros seleccionados**.
 
    > [!div class="mx-imgBorder"]
-   > ![Elección del acceso compartido](media/report-share3.png "Elección del acceso compartido")
+   > ![Elección del acceso de recurso compartido](media/report-share3.png "Elección del acceso de recurso compartido")
   
 
-## <a name="share-a-report-with-your-organization-for-admins"></a>Compartir un informe con su organización (para administradores)
- Si el informe sería útil para todos los usuarios, haga que esté disponible para la organización.  
+## <a name="share-a-report-with-your-organization-for-admins"></a>Uso compartido de un informe con la organización (para administradores)
+ Si el informe es útil para todos los usuarios, póngalo a disposición de la organización.  
 
-1. En el panel de navegación izquierdo, seleccione el área informes.  
-2. En la lista de informes, seleccione el informe que desea compartir.  
-3. En la barra de comandos, seleccione seleccionar **Editar**.  
-4. En el menú **acciones** , seleccione **poner el informe a disposición de la organización**.  
+1. En el panel de navegación izquierdo, seleccione el área de informes.  
+2. En la lista de informes, seleccione el que quiera compartir.  
+3. En la barra de comandos, seleccione **Editar**.  
+4. En el menú **Acciones**, seleccione **Informe disponible para la organización**.  
   
    > [!div class="mx-imgBorder"]
-   > ![Compartir informe con organización](media/report-share4.png "Compartir informe con organización")
+   > ![Uso compartido de un informe con la organización](media/report-share4.png "Uso compartido de un informe con la organización")
 
-## <a name="download-a-report"></a>Descargar un informe
+## <a name="download-a-report"></a>Descarga de un informe
 
-1. En el panel de navegación izquierdo, seleccione el área informes. 
-2. En la lista de informes, seleccione el informe que desea compartir.  
-3. En la barra de comandos, seleccione seleccionar **Editar**.  
-4. En el menú **acciones** , seleccione **Descargar Informe**.  
-El archivo RDL contiene el fetchXML en el que se basa el informe.
-5. Abra el informe una vez completada la descarga.
+1. En el panel de navegación izquierdo, seleccione el área de informes. 
+2. En la lista de informes, seleccione el que quiera compartir.  
+3. En la barra de comandos, seleccione **Editar**.  
+4. En el menú **Acciones**, seleccione **Descargar informe**.  
+El archivo RDL contiene el esquema fetchXML en el que se basa el informe.
+5. Abra el informe cuando termine la descarga.
 
 
 
@@ -93,12 +93,12 @@ El archivo RDL contiene el fetchXML en el que se basa el informe.
 
 ### <a name="see-also"></a>Vea también
 
-[Crear un informe mediante el Asistente para informes](create-report-with-wizard.md)
+[Creación de un informe mediante el Asistente para informes](create-report-with-wizard.md)
 
-[Agregar un informe existente](add-existing-report.md)
+[Adición de un informe existente](add-existing-report.md)
 
-[Editar filtro de informe](edit-report-filter.md)
+[Edición del filtro de informe](edit-report-filter.md)
 
-[Solucionar problemas de datos que no se muestran en un informe](troubleshoot-reports.md)
+[Solución de problemas de datos que no se muestran en un informe](troubleshoot-reports.md)
 
 

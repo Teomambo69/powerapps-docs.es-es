@@ -17,7 +17,7 @@ search.app:
 - D365CE
 ms.openlocfilehash: 1a721f5dfa0a07d270e6b1d9d310236bebb21023
 ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/03/2020
 ms.locfileid: "76973397"
@@ -34,14 +34,14 @@ Agregue **Actividades** al muro de la **Escala de tiempo** para realizar un segu
 - Se mostrará un mensaje de correo electrónico con una imagen adjunta insertada con el cuerpo del correo electrónico.
 
   > [!div class="mx-imgBorder"]
-  > ![Vista de escala de tiempo de las actividades en Power apps](media/TimelineViewOfActivity.png "Vista de escala de tiempo de las actividades en Power apps")
+  > ![Vista de escala de tiempo de las actividades en Power Apps](media/TimelineViewOfActivity.png "Vista de escala de tiempo de las actividades en Power Apps")
 
   1. Buscar registros
   2. Tomar notas
   3. Agregar información y actividades
-  4. Filtro
+  4. Filtrar
   5. Más comandos
-  6. Estado de actividad
+  6. Estado de la actividad
   7. Iconos de actividad
   8. Fecha y hora
  
@@ -49,10 +49,10 @@ Agregue **Actividades** al muro de la **Escala de tiempo** para realizar un segu
  
 La forma más rápida de agregar una actividad es usar el acceso directo en la barra de navegación y, a continuación, vincularla a un registro. Por ejemplo, puede crear una actividad de llamada telefónica y, luego, vincularla a un contacto en el sistema mediante el campo **Referente a**.
 
-1. En la barra de navegación, seleccione el ![botón de crear registro](media/create-record-button.png "Botón crear registro")de signo **más** y, a continuación, seleccione **actividades**. 
+1. En la barra de navegación, seleccione el **signo más** ![botón Crear registro](media/create-record-button.png "Botón Crear registro") y luego **Actividades**. 
 
    > [!div class="mx-imgBorder"]
-   > ![Acceso directo para agregar una actividad en Power apps](media/QuickCreate.png "Acceso directo para agregar una actividad en Power apps")  
+   > ![Acceso directo para agregar una actividad en Power Apps](media/QuickCreate.png "Acceso directo para agregar una actividad en Power Apps")  
  
 2. Elija el tipo de actividad que desea agregar.
 
@@ -69,7 +69,7 @@ La forma más rápida de agregar una actividad es usar el acceso directo en la b
 
 
    > [!div class="mx-imgBorder"]
-   > ![Agregar una actividad de teléfono en Power apps](media/addphonecall.png "Agregar una actividad de teléfono en Power apps")
+   > ![Adición de una actividad de teléfono en Power Apps](media/addphonecall.png "Adición de una actividad de teléfono en Power Apps")
   
 3. Rellene el **Asunto** de la llamada.
 
@@ -103,21 +103,21 @@ Para agregar una actividad de correo electrónico a un registro, primero debe gu
   
 4. Para agregar datos adjuntos al correo electrónico, guárdelo. A continuación, en la sección **Datos adjuntos**, seleccione **+** para agregar datos adjuntos.  
   
-5. Para usar una plantilla para el cuerpo del correo electrónico, en la barra de comandos, seleccione **Insertar plantilla**y, a continuación, seleccione la plantilla. Para obtener más información sobre la inserción de una plantilla de correo electrónico, consulte [inserción de una plantilla de correo electrónico](insert-email-template.md). 
+5. Para usar una plantilla en el cuerpo del correo electrónico, seleccione **Insertar plantilla** en la barra de comandos y después seleccione la plantilla. Para obtener más información sobre cómo insertar una plantilla de correo electrónico, vea [Inserción de una plantilla de correo electrónico](insert-email-template.md). 
   
 6. Cuando haya terminado de rellenar el formulario, seleccione **Enviar**. 
 
 
 
-### <a name="list-emails-in-a-conversation-view"></a>Enumerar correos electrónicos en una vista de conversación
+### <a name="list-emails-in-a-conversation-view"></a>Enumeración de los correos electrónicos de una vista de conversación
 
-Para enumerar los correos electrónicos en una vista de conversación, vaya a **configuración** > **configuración de personalización** > pestaña **correo electrónico** y, a continuación, seleccione **Mostrar correo electrónico como conversación en escala de tiempo**. Para obtener más información sobre la configuración personal, consulte [set personal Options](https://docs.microsoft.com/powerapps/user/set-personal-options#email-tab-options). Una vez habilitada, puede abrir cualquier formulario que tenga una escala de tiempo y los correos electrónicos se agruparán en subprocesos de conversación con el correo electrónico más reciente en la parte superior.
+Para enumerar los correos electrónicos de una vista de conversación, vaya a la pestaña **Configuración** > **Configuración de personalización** > **Correo electrónico** y después seleccione **Show email as a conversation on Timeline** (Mostrar correo electrónico como conversación en la escala de tiempo). Para obtener más información sobre la configuración personal, vea [Establecer las opciones personales](https://docs.microsoft.com/powerapps/user/set-personal-options#email-tab-options). Una vez que haya habilitado esta configuración, puede abrir cualquier formulario que tenga una escala de tiempo y los correos electrónicos se agruparán en conversaciones con el correo electrónico más reciente en la parte superior.
 
    > [!div class="mx-imgBorder"]
-   > ![Establecer opciones personales](media/emailsettings1.png "Establecer las opciones personales")
+   > ![Establecimiento de las opciones personales](media/emailsettings1.png "Establecer las opciones personales")
    
    > [!div class="mx-imgBorder"]
-   > ![Establecer correo electrónico de opciones personales](media/emailsettings2.png "Establecer opciones personales para el correo electrónico")
+   > ![Establecimiento de las opciones personales en el correo electrónico](media/emailsettings2.png "Establecimiento de las opciones personales en el correo electrónico")
 
   
 ## <a name="add-an-appointment"></a>Adición de una cita  
@@ -125,7 +125,7 @@ Para enumerar los correos electrónicos en una vista de conversación, vaya a **
 Para agregar una actividad de cita a un registro, primero debe guardar el registro al que está agregando la actividad.  
 
 > [!NOTE]
-> No se admiten citas recurrentes en la aplicación Dynamics 365 para Outlook, Dynamics 365 para teléfonos y, al ejecutar el cliente web de aplicaciones controladas por modelos en el explorador Web del teléfono móvil.
+> No se admiten las citas periódicas en la aplicación Dynamics 365 para Outlook, en la aplicación Dynamics 365 para teléfonos ni al ejecutar el cliente web de aplicaciones basadas en modelo en el explorador web del teléfono móvil.
   
 1. Abra el registro al que desea agregar la actividad. Por ejemplo, un registro de contacto.
   
@@ -150,13 +150,13 @@ También puede agregar notas fácilmente en el área de actividades.
 > También puede agregar una nota con el **signo más** en la sección superior del muro de la **escala de tiempo**.
 
    > [!div class="mx-imgBorder"]
-   > ![Agregar una nota](media/addnote.png "Agregar una nota")
+   > ![Adición de una nota](media/addnote.png "Adición de una nota")
 
-Una vez que se haya agregado la nota, puede eliminarla o editarla. Seleccione la nota o mantenga el cursor sobre la nota para ver los iconos de edición y eliminación.
+Una vez que se haya agregado la nota, puede eliminarla o editarla. Seleccione la nota o mantenga el puntero sobre la nota para ver los iconos de edición y eliminación.
 
 
 > [!div class="mx-imgBorder"]
-> ![Actualizar una nota](media/addnote2.png "Actualizar una nota")
+> ![Actualización de una nota](media/addnote2.png "Actualización de una nota")
 
 ## <a name="add-a-post"></a>Adición de una publicación 
 
@@ -169,7 +169,7 @@ Una vez que se haya agregado la nota, puede eliminarla o editarla. Seleccione la
 4. Cuando haya terminado de rellenar el formulario, seleccione **Agregar** para guardar la publicación.
 
 > [!div class="mx-imgBorder"]
-> ![Actualizar una publicación](media/post.png "Adición de una publicación")
+> ![Actualización de una publicación](media/post.png "Adición de una publicación")
   
   Una vez que guarde la publicación, aparecerá en la parte superior del muro de la escala de tiempo.
   
@@ -177,7 +177,7 @@ Una vez que se haya agregado la nota, puede eliminarla o editarla. Seleccione la
 
 Puede actualizar el muro de la escala de tiempo para ver la información más actualizada.
 
-En el muro de la **escala de tiempo** , seleccione el ![botón más](media/MoreButton.png "Botón más") y, a continuación, seleccione **Actualizar escala de tiempo**.
+En el muro de la **escala de tiempo**, seleccione ![botón Más ](media/MoreButton.png "Botón Más") y luego **Actualizar escala de tiempo**.
 
 > [!div class="mx-imgBorder"]
 > ![Actualización de la escala de tiempo](media/refresh.png "Actualización de la escala de tiempo")
@@ -185,25 +185,25 @@ En el muro de la **escala de tiempo** , seleccione el ![botón más](media/MoreB
 
 ## <a name="use-the-filter-pane"></a>Uso del panel de filtros
 
-Filtre rápidamente las actividades, notas o publicaciones del muro de la escala de tiempo por tipo de registro o tipo de actividad y fecha con el panel de filtro. Puede seleccionar varios filtros y opciones de filtro al mismo tiempo. Puede filtrar y ver la fecha de vencimiento de la actividad, la fecha de modificación o el estado de la actividad.
+Filtre rápidamente las actividades, notas o publicaciones del muro de la escala de tiempo por tipo de registro o tipo de actividad y fecha con el panel de filtro. Puede seleccionar varios filtros y opciones de filtro a la vez. Puede ver la fecha de vencimiento, la fecha de modificación o el estado de la actividad, así como filtrar por estas opciones.
 
-- En el plano de la **escala de tiempo** , seleccione Abrir el icono de embudo del **Panel de filtros** .
+- En el muro de la **escala de tiempo**, seleccione el icono de embudo **Abrir panel de filtro**.
 
 
-![Panel filtro del](media/timeline-filter2.png "Panel de filtro de la escala de tiempo") ![Panel filtro de la escala de tiempo en la escala de tiempo](media/timeline-filter5.png "Panel de filtro de la escala de tiempo")
+![Panel de filtro en la escala de tiempo](media/timeline-filter2.png "Panel de filtro de la escala de tiempo") ![Panel de filtro en la escala de tiempo](media/timeline-filter5.png "Panel de filtro de la escala de tiempo")
 
 
 ## <a name="manage-activities"></a>Administración de actividades
 Administre actividades directamente desde el muro de la escala de tiempo, incluida la asignación de una actividad a otra persona, la eliminación o el cierre de una actividad, la adición de una actividad a una cola, la apertura un registro asociado o la edición de notas y publicaciones.
 
-  ![Opciones](media/timeline-options1.png "Opciones de la barra de comandos de escala de tiempo") de la barra de comandos de escala de tiempo opciones ![de barra de](media/timeline-options2.png "Opciones de la barra de comandos de escala de tiempo") comandos escala de ![tiempo opciones de](media/timeline-options3.png "Opciones de la barra de comandos de escala de tiempo") la barra de ![comandos escala de](media/timeline-options4.png "Opciones de la barra de comandos de escala de tiempo") comandos
+  ![Opciones de la barra de comandos de la escala de tiempo](media/timeline-options1.png "Opciones de la barra de comandos de la escala de tiempo") ![Opciones de la barra de comandos de la escala de tiempo](media/timeline-options2.png "Opciones de la barra de comandos de la escala de tiempo") ![Opciones de la barra de comandos de la escala de tiempo](media/timeline-options3.png "Opciones de la barra de comandos de la escala de tiempo") ![Opciones de la barra de comandos de la escala de tiempo](media/timeline-options4.png "Opciones de la barra de comandos de la escala de tiempo")
 
 ## <a name="see-also"></a>Vea también
 
 [Configurar el control de escala de tiempo](../maker/model-driven-apps/set-up-timeline-control.md)
 
-[Preguntas más frecuentes sobre el control de escala de tiempo](../maker/model-driven-apps/faqs-timeline-control.md)
+[Preguntas más frecuentes para el control de escala de tiempo](../maker/model-driven-apps/faqs-timeline-control.md)
 
-[Preguntas más frecuentes sobre las actividades y la pared de la escala de tiempo](faq-for-timeline-and-activity.md)
+[Preguntas frecuentes sobre las actividades y el muro de escala de tiempo](faq-for-timeline-and-activity.md)
 
-[Sección de escala de tiempo en la aplicación del centro de atención al cliente](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)
+[Sección Escala de tiempo en la aplicación Centro de servicio al cliente](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)
