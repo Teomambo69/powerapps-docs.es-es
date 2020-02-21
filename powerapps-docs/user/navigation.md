@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7bf1b81047cc9ebb9e2812d08c84245b7f83c5a9
-ms.sourcegitcommit: 4728372a4a467f65bab9ae17e91738f420e17374
+ms.openlocfilehash: b05b3220c4e67565a6055a23915cc65f5d434eb2
+ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77067488"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77282434"
 ---
 #  <a name="basic-navigation-in-a-model-driven-app"></a>Navegación básica en una aplicación controlada por modelos 
 
@@ -53,11 +53,11 @@ Es fácil desplazarse por sus registros favoritos o más usados y volver a ellos
 Leyenda:
 
 1. **Selector de aplicaciones**: abra este menú para desplazarse por las aplicaciones.
-1. **Botón para contraer o expandir**: selecciónelo para contraer el navegador y que haya más espacio en la parte principal de la página. Si el navegador ya está contraído, seleccione este botón para volver a expandirlo.
-1. **Registros recientes**: expanda esta entrada para ver una lista de los registros que ha usado recientemente. Seleccione un registro para abrirlo. Seleccione el icono de alfiler situado junto a uno de los registros que aparecen aquí para agregarlo a los favoritos (registros anclados).
-1. **Registros favoritos**: expanda esta entrada para ver y abrir sus registros favoritos (anclados). Use la lista **Registros recientes** para agregar registros aquí. Seleccione el icono de quitar alfiler situado junto a uno de los registros que aparecen aquí para eliminarlo de la lista.
-1. **Navegador de entidades**: en esta área se enumeran todas las entidades y paneles disponibles del área de trabajo actual. Seleccione cualquiera de estas entradas para abrir el panel con nombre o la vista de lista de dicha entidad.
-1. **Selector de áreas de trabajo**: abra este menú para ir a otra área de trabajo. El área de trabajo actual aparece aquí.
+2. **Botón para contraer o expandir**: selecciónelo para contraer el navegador y para que haya más espacio en la parte principal de la página. Si el navegador ya está contraído, seleccione este botón para volver a expandirlo.
+3. **Registros recientes**: expanda esta entrada para ver una lista de los registros que ha usado recientemente. Seleccione un registro para abrirlo. Seleccione el icono de alfiler situado junto a uno de los registros que aparecen aquí para agregarlo a los favoritos (registros anclados).
+4. **Registros favoritos**: expanda esta entrada para ver y abrir sus registros favoritos (anclados). Use la lista **Registros recientes** para agregar registros aquí. Seleccione el icono de quitar alfiler situado junto a uno de los registros que aparecen aquí para eliminarlo de la lista.
+5. **Navegador de entidades**: en esta área se enumeran todas las entidades y paneles disponibles del área de trabajo actual. Seleccione cualquiera de estas entradas para abrir el panel con nombre o la vista de lista de dicha entidad.
+6. **Selector de áreas de trabajo**: abra este menú para ir a otra área de trabajo. El área de trabajo actual aparece aquí.
 
 ## <a name="working-with-list-views"></a>Trabajo con vistas de lista
 
