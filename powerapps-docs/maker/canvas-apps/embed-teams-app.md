@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/29/2019
+ms.date: 02/18/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a12cd7c17a6aca93f254cc2e2cb89cb848245392
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 7f98025fbc3a2f392b45cce22af41d075a3bfaac
+ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731523"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77530885"
 ---
 # <a name="embed-an-app-in-teams"></a>Insertar una aplicación en Teams
 
@@ -34,7 +34,7 @@ Un administrador puede cargar la aplicación para que se muestre a **todos los**
 - Necesita una licencia de [Power apps](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)válida.
 - Para insertar una aplicación en Teams, necesita una aplicación existente [creada con Power apps](data-platform-create-app.md).
 
-## <a name="download-the-app"></a>Descarga de la aplicación
+## <a name="download-the-app"></a>Descargar la aplicación
 
 1. Inicie sesión en [make.powerapps.com](https://make.powerapps.com)y, a continuación, seleccione **aplicaciones** en el menú.
 
@@ -62,6 +62,21 @@ Un administrador puede cargar la aplicación para que se muestre a **todos los**
 ## <a name="publish-the-app-to-the-teams-catalogue"></a>Publicar la aplicación en el catálogo de equipos
 
 Si es un administrador, también puede [publicar la aplicación](https://docs.microsoft.com/microsoftteams/tenant-apps-catalog-teams) en el catálogo de Microsoft Teams.
+
+## <a name="improve-the-performance-of-your-app"></a>Mejorar el rendimiento de la aplicación
+
+Opcionalmente, puede cargar previamente la aplicación dentro de los equipos para aumentar el rendimiento.
+
+1. Inicie sesión en [make.powerapps.com](https://make.powerapps.com)y, a continuación, seleccione **aplicaciones** en el menú.
+
+2. Seleccione **más acciones** (...) para la aplicación que desea compartir en Teams y, después, seleccione **configuración**.
+
+3. En el panel Configuración, active la opción **precargar aplicación para mejorar el rendimiento** a **sí**. Las aplicaciones de energía cargarán después la aplicación cada vez que se insertan en los equipos.
+
+    ![Detalles de la aplicación](./media/embed-teams-app/preload-app.png "Carga previa de la aplicación para mejorar el rendimiento")
+
+4. Para que los cambios surtan efecto, vuelva a importar la aplicación en Teams.
+
 
 ### <a name="see-also"></a>Vea también
 

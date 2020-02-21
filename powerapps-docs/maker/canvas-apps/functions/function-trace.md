@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 86d28400e0eaea89b59286df173d0e67655bb7a5
-ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
-ms.translationtype: HT
+ms.openlocfilehash: 23bfbb3b97764a427d5422e4ad207d4af7cc1589
+ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76541253"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77530797"
 ---
 # <a name="trace-function"></a>Función Trace 
 
 Cuando se usa con Test Studio, Trace es una expresión opcional que se puede usar para proporcionar información adicional en los resultados de las pruebas del evento **OnTestCaseComplete**. Los mensajes de eventos de seguimiento, así como los mensajes de las aserciones superadas y con errores, se encuentran en la tabla Seguimientos, en el registro TestCaseResult. La tabla Seguimientos tiene dos propiedades, mensaje y marca de tiempo. 
 
-Si ha permitido que la aplicación envíe datos de telemetría a Azure Application Insights, la función Trace también se puede usar para enviar información de diagnóstico o eventos personalizados a su recurso de Application Insights. Puede inspeccionar estos datos en Application Insights para ayudar a diagnosticar problemas o comprender el uso de las aplicaciones y las características. La información de seguimiento utilizada en Pruebas también se registrará en Application Insights. También se pueden ver todos los mensajes de Seguimiento en la herramienta Power Apps Monitor, que le ayudará a depurar o identificar problemas en las sesiones de diagnóstico en tiempo real de la aplicación.   
+También se pueden definir mensajes de seguimiento en la aplicación. Se pueden ver en la herramienta Monitor de Power apps junto con otras actividades de la aplicación para ayudar a depurar o identificar problemas con la información de diagnóstico en tiempo real de la aplicación. Si ha permitido que la aplicación envíe datos de telemetría a Azure Application Insights, la función Trace también se puede usar para enviar información de diagnóstico o eventos personalizados a su recurso de Application Insights. Puede inspeccionar estos datos en Application Insights para ayudar a diagnosticar problemas o comprender el uso de las aplicaciones y las características. La información de seguimiento utilizada en Pruebas también se registrará en Application Insights. La información de seguimiento de prueba no estará disponible en la herramienta de supervisión, ya que el monitor está conectado a la aplicación cuando se reproduce desde Canvas Studio. 
 
 ## <a name="syntax"></a>Sintaxis
 
