@@ -8,18 +8,18 @@ ms.topic: article
 author: shubhadaj
 ms.author: shujoshi
 manager: annbe
-ms.openlocfilehash: 6f3c603284e5f5d53380f5caa932cafac11e2d7a
-ms.sourcegitcommit: 68a31e3fa4d1635ccf4cd8bd9da5fba1bfecefa4
+ms.openlocfilehash: 546f94f67608ab735d2c2eb6bb39f105335549f7
+ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77051945"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77282587"
 ---
 # <a name="preview-send-email-using-the-enhanced-email-experience"></a>Versión preliminar: Envío de correo electrónico con la experiencia de correo electrónico mejorada
 
-El envío de correo electrónico mediante la experiencia de correo electrónico mejorada es una característica de acceso anticipado. Puede optar por la habilitación anticipada de estas características en el entorno. Esto le permite probar estas características y después adoptarlas en los entornos. Para obtener más información sobre cómo habilitar estas características, vea [Participación en actualizaciones de acceso anticipado](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates).
+El envío de correo electrónico mediante la experiencia de correo electrónico mejorada es una característica de acceso anticipado. Puede optar por la habilitación anticipada de estas características en el entorno. Esto le permite probar estas características y después adoptarlas en los entornos. Para obtener más información sobre cómo habilitar estas características, vea [Optar por usar actualizaciones de oleada 1 de la versión 2020](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates).
 
-La experiencia de correo electrónico mejorada en aplicaciones basadas en modelos permite redactar un correo electrónico sin abandonar el registro en el que se está trabajando. Con la experiencia de correo electrónico mejorada se puede:
+La experiencia de correo electrónico mejorada en aplicaciones basadas en modelos permite redactar un correo electrónico sin abandonar el registro en el que está trabajando. Con la experiencia de correo electrónico mejorada se puede:
 
 - Ir a diferentes páginas sin perder el contenido del correo electrónico.
 - Minimizar la ventana de correo electrónico para volver a los registros en los que se está trabajando.

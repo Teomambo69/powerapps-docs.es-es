@@ -7,7 +7,7 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.reviewer: ''
-ms.date: 11/26/2019
+ms.date: 02/18/2020
 ms.author: kvivek
 search.audienceType:
 - maker
@@ -19,12 +19,12 @@ search.app:
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: f3eaab5226946c3a5cfbb99c7b4029d587fca247
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d07cec7afb328917b7fe8e01038fad0fa5d3d516
+ms.sourcegitcommit: 1137abc4660ffb3432adbc702b1c5dae3293aa58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680360"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77479160"
 ---
 # <a name="whats-new-in-power-apps"></a>Novedades de Power Apps
 
@@ -41,7 +41,9 @@ Para obtener más detalles sobre cómo buscar información en las notas de la ve
 
 ## <a name="release-plan"></a>Plan de lanzamiento
 
-Para obtener información sobre las nuevas características que se van a publicar durante los próximos meses y que puede usar para el planeamiento, vea el [plan de las actualizaciones de acceso anticipado 2 de 2019](https://docs.microsoft.com/power-platform-release-plan/2019wave2/microsoft-powerapps/planned-features).
+Para información sobre las características nuevas que se van a publicar en los próximos meses y que puede usar para el planeamiento, consulte:
+- [Plan de las actualizaciones de acceso anticipado 2 de 2019](https://docs.microsoft.com/power-platform-release-plan/2019wave2/microsoft-powerapps/planned-features)
+- [Plan de las actualizaciones de acceso anticipado 1 de 2020](https://docs.microsoft.com/power-platform-release-plan/2020wave1/microsoft-powerapps/planned-features)
 
 ## <a name="known-limitations"></a>Limitaciones conocidas
 
