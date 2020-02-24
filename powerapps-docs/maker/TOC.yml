@@ -8,6 +8,22 @@
       href: dev-community-plan.md
     - name: Novedades
       href: ../whats-new.md
+    - name: Catálogo de cursos
+      items:
+        - name: Catálogo de cursos
+          href: ../learning-catalog/get-started.md
+        - name: Responsable de toma de decisiones empresariales
+          href: ../learning-catalog/bdm.md
+        - name: Creador de aplicaciones
+          href: ../learning-catalog/app-maker.md
+        - name: Desarrollador
+          href: ../learning-catalog/developer.md
+        - name: Administrador
+          href: ../learning-catalog/administrator.md
+        - name: Consultor de funciones
+          href: ../learning-catalog/functional-consultant.md
+        - name: Arquitecto de soluciones
+          href: ../learning-catalog/solution-architect.md
 - name: Buscar y ejecutar aplicaciones
   href: ../user/index.md
   items:
