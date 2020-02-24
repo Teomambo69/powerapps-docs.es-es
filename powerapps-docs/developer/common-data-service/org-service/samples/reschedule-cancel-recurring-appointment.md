@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2d59aa35a81ed776f712b55e7f7179087dfaf061
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: fe900da6db667d4ffb5ceffc61430b7acab9befe
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934240"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956175"
 ---
 # <a name="sample-reschedule-and-cancel-a-recurring-appointment"></a>Ejemplo: reprogramar y cancelar una cita periódica
 
@@ -49,8 +49,8 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 ### <a name="demonstrate"></a>Demostración
 
 1. El mensaje `QueryExpression` consulta la instancia de cita individual que corresponde a hoy o 10 días después. Básicamente será la segunda instancia de la serie de citas periódicas.
-3. El mensaje `RescheduleRequest` actualiza las fechas de inicio y finalización de la programación de la cita.
-4. El mensaje `SetStateRequest` cancela la última instancia de la cita. El estado de esta instancia de cita se establece como `canceled`. Puede ver esta instancia de cita en la vista `All Activities`.
+2. El mensaje `RescheduleRequest` actualiza las fechas de inicio y finalización de la programación de la cita.
+3. El mensaje `SetStateRequest` cancela la última instancia de la cita. El estado de esta instancia de cita se establece como `canceled`. Puede ver esta instancia de cita en la vista `All Activities`.
 
 ### <a name="clean-up"></a>Limpiar
 

@@ -1,6 +1,6 @@
 ---
 title: Aproximación a la experiencia de usuario y transición a la interfaz unificada | MicrosoftDocs
-description: Aprenda a planear y ejecutar la transición del cliente web heredado a la interfaz unificada
+description: Aprenda a planear y ejecutar la transición desde el cliente web heredado a la Interfaz unificada
 ms.custom: ''
 ms.date: 07/24/2019
 ms.reviewer: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 934aae075d185551cd1e3025880887b10689cc6d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 3c170168a15680878986b132485531054b931750
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2869367"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004810"
 ---
 # <a name="approaching-a-user-experience-and-unified-interface-transition"></a>Aproximación a la experiencia de usuario y transición a la interfaz unificada
 

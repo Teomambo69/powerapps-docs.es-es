@@ -26,7 +26,7 @@
       href: use-editable-grids.md
     - name: Consultar y editar un tema de organización
       href: query-and-edit-an-organization-theme.md
-    - name: Compilar componentes personalizados mediante Power Apps Component Framework
+    - name: Crear componentes de código utilizando Power Apps component framework
       href: /powerapps/developer/component-framework/overview
 - name: Aplicar las visualizaciones de datos con código
   href: customize-visualizations-dashboards.md

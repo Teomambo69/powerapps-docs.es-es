@@ -1,20 +1,20 @@
 ---
 title: Migrar la configuración del portal | MicrosoftDocs
 description: Aprenda a migrar la configuración del portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 12/20/2019
-ms.author: shjais
+ms.date: 01/08/2020
+ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 2a3f9e6eba00446ce953975c99721d99bbe78338
-ms.sourcegitcommit: 8ba5f6b88dbd71eb3663dfeec5f0b4427c1543c0
+ms.openlocfilehash: cb0e92db15cf3f33ca89975ec3bd8750ca8ee6e2
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2019
-ms.locfileid: "2924307"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978521"
 ---
 # <a name="migrate-portal-configuration"></a>Migrar la configuración del portal
 
@@ -86,9 +86,6 @@ Puede exportar los datos de configuración del portal desde un sistema de origen
 
     > [!div class=mx-imgBorder]
     > ![Progreso de la exportación de datos de configuración](../media/export-config-status.png "Progreso de la exportación de datos de configuración")
-
-    > [!IMPORTANT]
-    > La herramienta Configuration Migration no admite el filtrado de registros en una entidad. De forma predeterminada, se exportarán todos los registros de la entidad seleccionada. Por tanto, si ha creado más de un registro de sitio web, todos los registros de sitio web se exportarán.
 
 9.  Seleccione **Salir** para cerrar la herramienta.
 

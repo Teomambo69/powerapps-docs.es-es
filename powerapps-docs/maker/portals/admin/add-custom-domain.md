@@ -1,20 +1,20 @@
 ---
 title: Agregar un nombre de dominio personalizado | MicrosoftDocs
 description: Instrucciones para agregar un nombre de dominio personalizado.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: c36a077233a83b6246634cfc456d51deec14cf40
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4c657afc77e710769a803d313b36a7437c3e3f9a
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2867409"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977587"
 ---
 # <a name="add-a-custom-domain-name"></a>Agregue un nombre de dominio personalizado
 

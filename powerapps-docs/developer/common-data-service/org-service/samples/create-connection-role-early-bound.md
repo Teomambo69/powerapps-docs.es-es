@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d8aebdc81d225369fbe8b964713c145242c6312e
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: ab669bca920aee564a2ad0b8fe3fee06ad06165e
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934384"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956219"
 ---
 # <a name="sample-create-a-connection-role"></a>Ejemplo: crear un rol de conexión
 
@@ -44,6 +44,7 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 Comprobaciones para la versión actual de la organización.
 
 ### <a name="demonstrate"></a>Demostración
+
 1. Define algunos tipos anónimos para definir el intervalo de los valores de propiedad de conexión posibles.
 2. Crea un rol de conexión para la cuenta y la entidad de contacto.
 3. Crea un registro de código de tipo de objeto de rol de conexión para cuenta y la entidad Contacto.

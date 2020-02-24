@@ -14,14 +14,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3b374c45f47ccab933989e80fab6ddd5adf93f7c
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 76ddf413a7d2d88b252697282ff585fc69c33633
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934340"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956159"
 ---
-# <a name="delete-a-queue"></a>Eliminar una cola
+# <a name="delete-a-queue-early-bound"></a>Eliminar una cola (enlace de compilación)
 
 En este ejemplo se muestra cómo eliminar una cola simple usando el mensaje [IOrganizationService.Delete](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.delete?view=dynamics-general-ce-9).
 

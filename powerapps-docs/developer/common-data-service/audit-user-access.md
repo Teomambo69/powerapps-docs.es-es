@@ -2,7 +2,7 @@
 title: Auditoría de acceso de usuario (Common Data Service) | Microsoft Docs
 description: Compatibilidad con la capacidad de auditar el acceso de usuario, incluida la identificación de usuario, la hora de acceso y el tipo de cliente.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 01/27/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c0cf65855d669934db614b83c525055a337d90de
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3f13813b0f6e6c5cde945e5a2b8fcdf1590a62db
+ms.sourcegitcommit: 5bfd0448f1d5ca3d938e3bd928d1dd3d4042afff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749405"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "2992805"
 ---
 # <a name="audit-user-access"></a>Auditoría de acceso de usuario
 
@@ -43,10 +43,10 @@ Common Data Service es compatible con la capacidad de auditar el acceso de usuar
   
 -   `AuditAction.UserAccessAuditStopped`  
   
- `UserAccessviaWeb` indica el acceso desde la aplicación web de Common Data Service o Dynamics 365 for Outlook. `UserAccessviaWebServices` indica una solicitud de servicio web desde el SDK. La enumeración de `AuditAction` está disponible para el código al incluir `OptionSets.cs` o `OptionSets.vb` en el proyecto de la aplicación.  
+ `UserAccessviaWeb` indica el acceso desde la aplicación web de Common Data Service o Dynamics 365 for Outlook. `UserAccessviaWebServices` indica una solicitud de servicio web desde el SDK. La enumeración `AuditAction` está disponible para el código al incluir `OptionSets.cs` en el proyecto de la aplicación.  
   
 ### <a name="see-also"></a>Vea también  
- [Auditar cambios de datos de entidad en Dynamics 365](/dynamics365/customer-engagement/developer/audit-entity-data-changes)   
- [Configurar entidades y atributos para auditoría](/dynamics365/customer-engagement/developer/configure-entities-attributes-auditing)     
- [Ejemplo: Auditar cambios de datos de entidad](/dynamics365/customer-engagement/developer/sample-audit-entity-data-changes)   
- [Ejemplo: Auditoría de acceso de usuario](/dynamics365/customer-engagement/developer/sample-audit-user-access)
+ [Auditar cambios de los datos](/powerapps/developer/common-data-service/auditing-overview)   
+ [Configurar entidades y atributos para auditoría](/powerapps/developer/common-data-service/configure-entities-attributes-auditing)     
+ [Ejemplo: cambios en los datos de la entidad de auditoría](/powerapps/developer/common-data-service/org-service/samples/audit-entity-data-changes)   
+ [Ejemplo: acceso de usuario de auditoría](/powerapps/developer/common-data-service/org-service/samples/audit-user-access)

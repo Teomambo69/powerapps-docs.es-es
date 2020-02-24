@@ -1,20 +1,20 @@
 ---
 title: Configurar ajustes del proveedor de OpenID Connect para un portal | MicrosoftDocs
 description: Instrucciones para agregar y configurar las opciones del proveedor de OpenID Connect para un portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/18/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 2b4d31165ccd12b2cb5c8c2a4c8ec6f9dd04a7c7
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: b36150e7193975305fb8a478852070628268d4ee
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755375"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979225"
 ---
 # <a name="configure-open-id-connect-provider-settings-for-portals"></a>Configurar proveedor Open ID Connect para portales
 
@@ -30,7 +30,7 @@ Cada proveedor de OpenID Connect también implica registrar una aplicación (sim
 > [!Note]
 > El extremo Google OpenID Connect actualmente no es compatible porque las bibliotecas subyacentes aún se encuentran en las fases tempranas de lanzamiento con problemas de compatibilidad que resolver. En su lugar puede utilizarse el extremo de [configuración de proveedor OAuth2 para portales](configure-oauth2-settings.md).
 
-## <a name="openid-settings-for-includepn-azure-active-directoryincludespn-azure-active-directorymd"></a>Configuración de OpenID para [!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)]
+## <a name="openid-settings-for-pn-azure-active-directory"></a>Configuración de OpenID para [!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)]
 
 Para empezar, inicie sesión en el Portal de administración de [[!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)]](https://msdn.microsoft.com/library/azure/hh967611.aspx#bkmk_azureportal) y cree o seleccione un directorio existente. Cuando un directorio está disponible siga las instrucciones para [agregar una aplicación](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) al directorio.  
 

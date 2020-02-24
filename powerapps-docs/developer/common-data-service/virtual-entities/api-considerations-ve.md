@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cbd3da97fcf4e2f8d21f5475221eb39455c09050
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: fed9bc722c09b157dfd1f62b6ea27d2603bcc969
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749657"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005091"
 ---
 # <a name="api-considerations-of-virtual-entities"></a>Consideraciones sobre API para entidades virtuales
 
@@ -72,7 +72,7 @@ Se agregaron dos nuevas propiedades a la clase <xref:Microsoft.Xrm.Sdk.Metadata.
 |<xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.ExternalName>|Nombre del tipo en el origen de datos externos|
 |<xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.IsDataSourceSecret>|Indica si el campo contiene información confidencial|
 
-La propiedad `ExternalName` también se agregó a las clases <xref:Microsoft.Xrm.Sdk.Metadata.OptionMetadata> y <xref:Microsoft.Xrm.Sdk.Metadata.OptionSetMetadata>. Estos nombres externos ayudan en la asignación de orígenes de datos externos, mediante la especificación del nombre del tipo asociado en el origen de datos externos. Estas propiedades solo se usan para entidades virtuales; para un tipo de entidad personalizada estándar o integrada, estos nombres externos deben ser `null`.
+La propiedad `ExternalName` también se agregó a las clases <xref:Microsoft.Xrm.Sdk.Metadata.OptionMetadata> y <xref:Microsoft.Xrm.Sdk.Metadata.OptionSetMetadata>. Estos nombres externos ayudan en la asignación de orígenes de datos externos, especificando el nombre del tipo asociado en el origen de datos externos. Estas propiedades solo se usan para entidades virtuales; para un tipo de entidad personalizada estándar o integrada, estos nombres externos deben ser `null`.
 
 
 ### <a name="virtual-entity-creation"></a>Creación de una entidad virtual

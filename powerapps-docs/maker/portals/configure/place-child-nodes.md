@@ -1,20 +1,20 @@
 ---
 title: Colocar los nodos secundarios mediante accesos directos para un portal | MicrosoftDocs
 description: Instrucciones para colocar los nodos secundarios mediante accesos directos de portales.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 2a9bd271c8aaa2f1dbc0278078868606fb4c64de
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e438803fa817d1b02a303a6a6e4873f2ba1e295f
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2864982"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2980589"
 ---
 # <a name="place-child-nodes-by-using-shortcuts-for-portals"></a>Colocar los nodos secundarios mediante accesos directos para portales
 Utilice accesos directos para colocar nodos secundarios en el mapa del sitio del portal que simplemente apuntan a otros nodos que existen en el mapa del sitio, o a direcciones URL externas al portal. Es decir, páginas web, archivos web, eventos, y foros se pueden considerar nodos “sólidos” del mapa del sitio del portal: se agregan al mapa del sitio y cuando se navega a ellos, se ve el contenido real de los nodos directamente. Los accesos directos, por otra parte, se pueden considerar nodos 'intangibles': también se agregan al mapa del sitio (a diferencia de vínculos web, que no), pero cuando usted se desplaza a ellos, ve el contenido del nodo "sólido" de destino al que apunta el acceso directo, y ese contenido es representado por la plantilla de página para ese nodo.

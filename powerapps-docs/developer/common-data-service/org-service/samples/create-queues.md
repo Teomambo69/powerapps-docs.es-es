@@ -14,14 +14,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0850108fdc3eb45a8f6c585b7a16fff870cc22e0
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 3b980f388c8ea9227ad18d66548e8e2992281a6e
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934372"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956215"
 ---
-# <a name="create-a-queue"></a>Crear una cola
+# <a name="create-a-queue-early-bound"></a>Crear una cola (con enlace en tiempo de compilación)
 
 En este ejemplo se muestra cómo crear una cola simple y establece los atributos requeridos utilizando el mensaje [IOrganizationService.Create](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.create?view=dynamics-general-ce-9).
 

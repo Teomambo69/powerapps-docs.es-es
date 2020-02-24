@@ -1,20 +1,20 @@
 ---
 title: Administrar vínculos web en un portal | MicrosoftDocs
 description: Instrucciones para administrar vínculos web.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: d8e2421545247f72b5b164e08b4ac210466048c1
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: a466c47b9349e7fb2692ff509ecb61f54779e1be
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866859"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2980012"
 ---
 # <a name="manage-web-links"></a>Administrar vínculos web
 

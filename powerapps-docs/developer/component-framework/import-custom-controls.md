@@ -9,12 +9,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.topic: article
 author: Nkrb
-ms.openlocfilehash: b53995a6ce9d7c0e6d19f0f1305a41a0c45a998d
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 46bfdf070970e89cbe6eeb9aa4d3864ab493794b
+ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909278"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012661"
 ---
 # <a name="package-a-code-component"></a>Empaquete un componente de código
 
@@ -73,7 +73,7 @@ Puede implementar los componentes del código directamente desde Power Apps CLI 
 3. Para cambiar entre los perfiles de autenticación creados previamente, use el comando: 
    
    ```CLI
-    Pac auth select --index <index of the active profile>
+    pac auth select --index <index of the active profile>
     ``` 
 
 4. Para obtener la información básica sobre el entorno, use el siguiente comando. La conexión se establecerá mediante el perfil predeterminado de autenticación. 
@@ -82,7 +82,7 @@ Puede implementar los componentes del código directamente desde Power Apps CLI 
     pac org who 
     ```
  
-5. Para eliminar un perfil de autenticación determinado, use el comando `pac auth delete --index < index of the profile >`. 
+5. Para eliminar un perfil de autenticación determinado, use el comando `pac auth delete --index <index of the profile>`. 
 6. Si desea borrar todos los perfiles de autenticación del equipo local, use el comando `pac auth clear`. Esta acción es irreversible porque elimina completamente el archivo `authprofile.json` y el archivo caché del símbolo del equipo local. 
 
 ## <a name="deploying-code-components"></a>Implementar componentes de código 

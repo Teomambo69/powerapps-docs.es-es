@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9ffdcf4e38aa735a5c7377ad9f239f4c9ab3c250
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 27bf02f8b050e9638b281f74018c9e914364fa94
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749807"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005101"
 ---
 # <a name="register-a-webhook"></a>Registrar un webhook
 

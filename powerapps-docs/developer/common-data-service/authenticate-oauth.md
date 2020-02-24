@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a0777bcb4f67a01a894600176bd68ec3793034c4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: bfd90a4b16bc420933e36a4a4ab7d1b4a2de37d9
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753068"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005054"
 ---
 # <a name="use-oauth-with-common-data-service"></a>Usar OAuth con Common Data Service
 
@@ -167,7 +167,7 @@ A continuación se presenta un ejemplo de una clase personalizada derivada de <x
 
 ```csharp
   /// <summary>  
-  ///Custom HTTP message handler that uses OAuth authentication thru ADAL.  
+  ///Custom HTTP message handler that uses OAuth authentication through ADAL.  
   /// </summary>  
   class OAuthMessageHandler : DelegatingHandler
   {

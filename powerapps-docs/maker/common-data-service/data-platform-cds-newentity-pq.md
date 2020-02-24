@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cc5ce204047810704f01562a9a00668e51784769
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 923797d7781ef64da4193d0114d50a3bda6b0b66
+ms.sourcegitcommit: 86c81c9efb105d11f4def49eef823af6c69059a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872933"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027375"
 ---
 # <a name="add-data-to-an-entity-in-common-data-service-by-using-power-query"></a>Agregar datos a una entidad en Common Data Service con Power Query
 En este procedimiento, creará una entidad en [Common Data Service](data-platform-intro.md) y la rellenará con datos de una fuente de OData usando Power Query. Puede usar las mismas técnicas para integrar datos desde estos orígenes en línea y locales, entre otros:
@@ -38,7 +38,9 @@ También puede filtrar, transformar y combinar datos antes de cargarlos en una e
 Si no tiene una licencia de Power Apps, puede [suscribirse para obtener una gratuita](../signup-for-powerapps.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
-Para seguir este tema, debe cambiar a un [entorno](../canvas-apps/working-with-environments.md) en el que pueda crear entidades.
+Antes de comenzar a seguir este tema:
+- Cambie a un [entorno](../canvas-apps/working-with-environments.md) en el que pueda crear entidades.
+- Debe tener una Power Apps por plan de usuario o Power Apps por plan de aplicación.
 
 ## <a name="specify-the-source-data"></a>Especificar los datos de origen
 

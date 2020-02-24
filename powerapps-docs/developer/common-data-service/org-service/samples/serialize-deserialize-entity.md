@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6bc85049df107821dd8cdaba0a33b1ec0f15a979
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 5e37ef6f9fb64cd8e9ed29f4a4b2a6d0adf3fa03
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934577"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956139"
 ---
 # <a name="serialize-and-deserialize-an-entity-instance"></a>Serializar y deserializar una instancia de entidad 
 
@@ -29,7 +29,7 @@ Puede descargar el ejemplo desde [aquí](https://github.com/microsoft/PowerApps-
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 
-Vea [Cómo ejecutar ejemplos](https://github.com/microsoft/PowerApps-Samples/blob/master/cds/README.md) para obtener información sobre cómo ejecutar este ejemplo.
+[!include[cc-how-to-run-samples](../../includes/cc-how-to-run-samples.md)]
 
 ## <a name="what-this-sample-does"></a>Qué hace este ejemplo
 
@@ -52,4 +52,3 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 ### <a name="clean-up"></a>Limpiar
 
 Muestra una opción para eliminar los registros creados en la [Configuración](#setup). La eliminación es opcional en caso de que desee examinar las entidades y los datos creados por el ejemplo. Puede eliminar manualmente los registros para obtener el mismo resultado.
-

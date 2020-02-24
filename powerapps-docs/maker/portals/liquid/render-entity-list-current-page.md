@@ -1,20 +1,20 @@
 ---
 title: Representar la lista de entidades asociada a la página actual en un portal | MicrosoftDocs
 description: Código de ejemplo para representar la lista de entidades asociada a la página actual en un portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 73b8af19419bb59fe63e7ecea92188d6cff4c180
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 73149bc45d61f344b62f7a5e733848f11287c369
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866375"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2980897"
 ---
 # <a name="render-the-entity-list-associated-with-the-current-page"></a>Representar la lista de entidades asociada a la página actual
 

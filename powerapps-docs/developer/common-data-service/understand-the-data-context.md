@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a9efd1886e455241983bd43fa072ae71f40ea444
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 1dc8ccd46cf6c6e072e5bb32e040e62855ef5cba
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749783"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004911"
 ---
 # <a name="understand-the-execution-context"></a>Entender el contexto de ejecución
 

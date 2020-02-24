@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Consolidar datos de objetivos para un período fiscal en comparación con el recuento de destino extendido (Common Data Service) | Microsoft Docs'
+title: 'Ejemplo: Datos de objetivos consolidados para un período fiscal en comparación con el recuento de destino extendido(Common Data Service) | Microsoft Docs'
 description: Este ejemplo muestra cómo consolidar datos de objetivos para un período fiscal en comparación con el recuento de destino extendido.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a363f45d2e71b993557e8f940f6888143add8e2c
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: a99f10644768cf5d9f7cba07460b673c3e198786
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934180"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956151"
 ---
 # <a name="sample-rollup-goal-data-for-a-fiscal-period-against-the-stretch-target-count"></a>Ejemplo: Datos de objetivos consolidados para un período fiscal en comparación con el recuento de destino extendido
 

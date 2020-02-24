@@ -8,18 +8,18 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: f93574f9a994d7363129f99fec9b33d4c9ee66ad
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f5c3fe93939ae2eb37457490c45689fc967df590
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861950"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017446"
 ---
 # <a name="implementing-increment-component"></a>Implementar componente de incremento
 
 Este componente de ejemplo muestra cómo enlazar datos con Power Apps component framework y el control de errores. Este componente se representa como cuadro de texto con un botón `Increment` en el tiempo de ejecución. El cuadro de texto muestra el valor actual y es posible hacer clic en el botón `Increment`. Cada vez que haga clic en el botón, el valor del cuadro de texto aumenta en 1. El valor del incremento se puede cambiar a cualquier número que desee.
 
-Para implementar este componente, lo primero que necesita es definir el archivo de [Manifiesto](../manifest-schema-reference/manifest.md) y, a continuación, implementar la lógica personalizada en TypeScript.
+Para implementar este componente, lo primero que necesita es definir el archivo de [Manifiesto](../manifest-schema-reference/manifest.md) y, a continuación, implementar la lógica personalizada en TypeScript. Puede descargar el componente de ejemplo desde [aquí](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_IncrementControl).
 
 > [!div class="mx-imgBorder"]
 > ![Componente de incremento|](../media/increment-control.png "Componente de incremento")

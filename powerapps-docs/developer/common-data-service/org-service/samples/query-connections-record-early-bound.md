@@ -14,14 +14,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c38b1709e34ea85f7de84b0c9eaea0a2c9256c2d
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 8e588c6dedf4326e5a5bb38793d1de6d588e74d8
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934256"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956183"
 ---
-# <a name="sample-query-connections-by-a-record"></a>Ejemplo: consultar conexiones para un registro 
+# <a name="sample-query-connections-by-a-record-early-bound"></a>Ejemplo: conexiones de consulta de un registro (enlace en tiempo de ejecución)
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-query-connections-record-early-bound -->
 

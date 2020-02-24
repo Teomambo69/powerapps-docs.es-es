@@ -8,12 +8,12 @@ ms.topic: index-page
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: b84af344a9057eed6084ca7ac2ef989146230089
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: e2a9ceb90ec91e7c13c50b966b3a2808d988cf31
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909085"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017370"
 ---
 # <a name="create-your-first-component"></a>Crear el primer componente 
 
@@ -392,5 +392,6 @@ Para agregar los componentes de código a una aplicación de lienzo, siga los pa
 
 [Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
 [Actualizar componentes existentes de Power Apps component framework](updating-existing-controls.md)<br/>
+[Power Apps build tools](https://docs.microsoft.com/powerapps/developer/common-data-service/build-tools-overview)<br/>
 [Referencia de la API de Power Apps component framework](reference/index.md)<br/>
 [Información general sobre Power Apps component framework](overview.md)

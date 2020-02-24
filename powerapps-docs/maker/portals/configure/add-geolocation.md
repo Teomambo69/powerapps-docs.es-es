@@ -1,20 +1,20 @@
 ---
 title: Agregar ubicación geográfica a un formulario administrado en un portal | MicrosoftDocs
 description: Instrucciones para agregar ubicación geográfica a un formulario administrado.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: a3c583658a5593d8e6c5f6c139a5c967e9581626
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 44619bfdb6d09221a6a23164a9627b4e06ebb0d7
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2761090"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979485"
 ---
 # <a name="add-geolocation"></a>Agregar ubicación geográfica
 

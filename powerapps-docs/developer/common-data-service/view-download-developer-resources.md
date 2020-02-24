@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d0d3a36795506c7127be61657fee8d46baaae28e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 52c4b3217b9520db99679ddad0e773d17705fdb4
+ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862030"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2975723"
 ---
 # <a name="view-or-download-developer-resources"></a>Visualización o descarga de recursos para programadores
 
@@ -81,7 +81,7 @@ Más información: [Integración de Azure](/powerapps/developer/common-data-serv
 
 Puesto que los usuarios pueden acceder a varios entornos de Common Data Service, los servicios de detección permiten recuperar los entornos disponibles a los que puede acceder un usuario en función de sus credenciales.
 
-### <a name="discovery-web-api"></a>API web de detección
+### <a name="discovery-restful-api"></a>API RESTful de detección
 
 Es la dirección del extremo para la versión v4 de RESTful OData del servicio de detección que se usará para su instancia. También puede descargar el documento de servicio aquí.
 Más información: [Documentación para desarrolladores: Detectar la dirección URL de su organización con la API web](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api)

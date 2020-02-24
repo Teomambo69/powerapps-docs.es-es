@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6f9617f1320de9f9e1ad3d0dc807e76797d98623
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: e5c0d2697037852bdd12986bc56b55fb7e445009
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934296"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956203"
 ---
 # <a name="sample-execute-multiple-requests"></a>Ejemplo: ejecutar varias solicitudes
 
@@ -41,7 +41,7 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 
 ### <a name="setup"></a>Configuración
 
-1. Comprobaciones para la versión actual de la organización.
+Comprobaciones para la versión actual de la organización.
 
 ### <a name="demonstrate"></a>Demostración
 

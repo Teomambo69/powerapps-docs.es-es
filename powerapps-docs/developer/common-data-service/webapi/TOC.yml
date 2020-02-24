@@ -80,6 +80,8 @@
   items:
     - name: Introducción
       href: discover-url-organization-web-api.md
+    - name: Modificar su código para usar el servicio de detección global
+      href: discovery-orgsdk-to-webapi.md
     - name: 'Ejemplo de servicio de detección global (C#)'
       href: samples/global-discovery-service-csharp.md
 - name: Versiones y limitaciones de la API web

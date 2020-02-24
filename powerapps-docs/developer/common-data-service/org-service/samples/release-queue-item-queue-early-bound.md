@@ -14,19 +14,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9b773c8493b1305cea9b40f26499cc8f152f51d1
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 91f24e217d6945675dce4ed0cd926b48760a43bc
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934244"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956179"
 ---
 # <a name="sample-release-a-queue-item-to-the-queue"></a>Ejemplo: Liberar un elemento en la cola
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-release-queue-item-queue-early-bound
 Couldn't each of the operations in this series of samples be added to just one sample?
  -->
- Este ejemplo muestra cómo usar [ReleaseToQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.releasetoqueuerequest?view=dynamics-general-ce-9) para anular la asociación de un usuario de un elemento de cola con el que trabajó y devolver un elemento de cola a la cola. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ReleaseQueueItems).
+Este ejemplo muestra cómo usar [ReleaseToQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.releasetoqueuerequest?view=dynamics-general-ce-9) para anular la asociación de un usuario de un elemento de cola con el que trabajó y devolver un elemento de cola a la cola. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ReleaseQueueItems).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

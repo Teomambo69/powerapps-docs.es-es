@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2b5a84179a4d9c6598331a6e728326a2318f9a9a
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 8e7bb5e6ac623b1fc3cbf9a496746ebf2bbf71c7
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883636"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004882"
 ---
 # <a name="what-is-common-data-service"></a>¿Qué es Common Data Service?
 Common Data Service le permite almacenar y administrar de forma segura los datos que usan las aplicaciones empresariales. Los datos de Common Data Service se almacenan en un conjunto de entidades. Una *entidad* es un conjunto de registros que se usa para almacenar datos, similar a cómo una tabla almacena los datos en una base de datos. Common Data Service incluye un conjunto base de entidades estándar que cubren escenarios típicos, pero también puede crear entidades personalizadas específicas para su organización y rellenarlas con datos usando Power Query. Los creadores de aplicaciones pueden usar Power Apps para crear aplicaciones completas usando estos datos.
@@ -47,7 +47,7 @@ Las aplicaciones de Dynamics 365, como Dynamics 365 Sales, Dynamics 365 Customer
 * **Habilidades reutilizables en Dynamics 365 y Power Apps** &ndash; Los usuarios con habilidades anteriores en Power Apps o Dynamics 365 ahora pueden aprovecharlas en la nueva plataforma de Common Data Service. La creación de entidades, formularios, gráficos, etcétera ahora son funciones comunes en sus aplicaciones.
 
     > [!NOTE]
-    > Las aplicaciones Finance and Operations requiere actualmente la configuración del [integrador de datos](/power-platform/admin/data-integrator) para que los datos profesionales de las aplicaciones Finance and Operations estén disponibles en Common Data Service.
+    > La aplicación Finance and Operations requiere actualmente la configuración del [integrador de datos](/power-platform/admin/data-integrator) para que los datos profesionales de la aplicación Finance and Operations estén disponibles en Common Data Service.
 
 ## <a name="integrating-data-into-the-common-data-service"></a>Integrar datos en Common Data Service
 

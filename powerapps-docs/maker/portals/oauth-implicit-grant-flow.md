@@ -1,26 +1,34 @@
 ---
 title: Use flujo de concesión implícito de OAuth 2.0 en el portal | MicrosoftDocs
 description: Aprenda a realizar llamadas del lado del cliente a API externas y protegerlas mediante flujo de concesión implícito de OAuth en el portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
-ms.author: shjais
+ms.date: 01/24/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 9c4ea4e34dacf70a9bb51c28c5761700904a3053
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: a69d77122a6beb657a322da156e3cf895b5bec36
+ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862249"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2988054"
 ---
 # <a name="use-oauth-20-implicit-grant-flow-within-your-portal"></a>Use flujo de concesión implícito de OAuth 2.0 en el portal 
 
 Esta característica permite que un cliente realice llamadas del lado del cliente a API externas y las proteja mediante flujo de concesión implícito de OAuth. Proporciona un extremo para obtener tokens de acceso seguro que contendrán información de identidad de usuario para uso de API externas para autorización después de flujo de concesión implícito de OAuth 2.0. La información de identidad de un usuario que ha iniciado sesión se pasa de forma segura a llamadas AJAX externas. Esto no solo ayudará a los desarrolladores a pasar contexto de autenticación sino también ayudará a los usuarios a proteger sus API mediante este mecanismo.
 
 El flujo de concesión implícito de OAuth 2.0 admite extremos a los que un cliente puede llamar para obtener un token de Id. Dos extremos se usan con este fin: [autorizar](#authorize-endpoint-details) y [token](#token-endpoint-details).
+
+> [!NOTE]
+> Los portales de Power Apps admiten los siguientes flujos y tipos de respuesta de OpenIdConnect:
+>
+> - **Flujo implícito**, con tipo de respuesta *id_token* o *token id_token*.
+> - **Flujo híbrido**, con tipo de respuesta *code id_token*.
+>
+> **Flujo de código de autorización**, con tipo de respuesta *code is* **not supported**. Para obtener más información, lea la documentación de [OpenID Connect](https://openid.net/specs/openid-connect-core-1_0.html#Authentication) para la autenticación.
 
 ## <a name="authorize-endpoint-details"></a>Autorizar detalles del extremo 
 

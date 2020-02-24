@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bbf96b3d9dbe1daa1b0d4538a0dc58dda8dfb9cd
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: fa1c5e62abfa63e3a5c11f0498dab54a3b4eaeec
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749796"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005096"
 ---
 # <a name="scalable-customization-design-transaction-design-patterns"></a>Diseño de la personalización escalable: Patrones de diseño de transacciones
 

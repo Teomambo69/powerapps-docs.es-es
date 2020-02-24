@@ -1,20 +1,20 @@
 ---
 title: Información general sobre la aplicación Administración del portal | MicrosoftDocs
 description: Información sobre aplicación Administración del portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 36c6657e8f565b38495dded1f408c21cc0414356
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 2a0cc4506673ba8b11e5b1df7103cd02047acab1
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866991"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979093"
 ---
 # <a name="portal-management-app"></a>Aplicación Administración del portal
 

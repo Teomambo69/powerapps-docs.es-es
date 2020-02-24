@@ -9,16 +9,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: grhurl
 ms.reviewer: nkrb
-ms.openlocfilehash: 7fdade7a1476c05214483eaa9b766c9c709fc9cf
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6c9b0cffa65d4a43adb7dc2db81ac6f13e12c151
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861934"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017400"
 ---
 # <a name="implementing-the-facepile-component"></a>Implementar el componente FacePile
 
-En este ejemplo se muestra cómo usar React para crear componentes utilizando Power Apps Component Framework.  El componente de ejemplo facepile se implementa en función de los componentes React y Office UI Fabric React. El código puede no revelar las prácticas recomendadas para las bibliotecas de terceros mencioinadas.
+En este ejemplo se muestra cómo usar React para crear componentes utilizando Power Apps Component Framework.  El componente de ejemplo facepile se implementa en función de los componentes React y Office UI Fabric React. El código puede no revelar las prácticas recomendadas para las bibliotecas de terceros mencioinadas. Puede descargar el componente de ejemplo desde [aquí](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_ReactStandardControl).
 
 > [!div class="mx-imgBorder"]
 > ![React Facepile](../media/react-facepile.png "React Facepile")

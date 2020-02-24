@@ -1,7 +1,7 @@
 ---
 title: Preguntas más frecuentes para el control de escala de tiempo (sección) en Power Apps | MicrosoftDocs
 description: Preguntas más frecuentes para el control de escala de tiempo (sección) en Power Apps
-ms.date: 12/23/2019
+ms.date: 02/03/2020
 ms.service: powerapps
 author: kabala123
 ms.assetid: 7F495EE1-1208-49DA-9B02-17855CEB2FDF
@@ -12,12 +12,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4851f4e5dc173f8861db0ba0b761e01f2537b0e8
-ms.sourcegitcommit: 8ba5f6b88dbd71eb3663dfeec5f0b4427c1543c0
+ms.openlocfilehash: 6556ee415f2ee3340f6e36f417a25299871c1860
+ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2019
-ms.locfileid: "2924424"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3013077"
 ---
 # <a name="faqs-for-timeline-control"></a>Preguntas más frecuentes para control de escala de tiempo
 
@@ -93,6 +93,11 @@ Si utiliza la regla **HideCustomActions** para ocultar botones, como **Asignar**
 **No tiene permiso para realizar esta acción. Póngase en contacto con el administrador del sistema.**
 
 Para mitigar el problema, muestre los botones en las definiciones de la barra de comandos.
+
+
+## <a name="why-my-users-see-different-activities-and-records-in-their-my-activities-stream-in-the-dashboard"></a>¿Por qué mis usuarios ven actividades y registros diferentes en su secuencia Mis actividades en el panel?
+
+La secuencia **Mis actividades** en el panel muestra los registros y las actividades que son propiedad de un usuario determinado. Por ejemplo, el usuario **A** ve registros y actividades que son propiedad de **A** y el usuario **B** ve registros y actividades que son propiedad de **B**.
 
 ## <a name="see-also"></a>Vea también
 

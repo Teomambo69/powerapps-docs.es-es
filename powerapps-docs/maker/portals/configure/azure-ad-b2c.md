@@ -1,20 +1,20 @@
 ---
 title: Configuración del proveedor Azure AD B2C para portales | MicrosoftDocs
 description: Instrucciones de habilitar los ajustes del proveedor de Azure AD B2C para portales.
-author: sbmjais
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 01/03/2020
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: e8275fa256b00736501990c3abf127777097d938
-ms.sourcegitcommit: 82eec5da9c97fcb6ed50ae8e582f326af9278aa7
+ms.openlocfilehash: 5328415e8f55d9997bbe14a9ecca271b12a9ae31
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935224"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979577"
 ---
 # <a name="azure-ad-b2c-provider-settings-for-portals"></a>Azure AD B2C configuración del proveedor para portales
 
@@ -124,7 +124,7 @@ Si el registro está deshabilitado para un usuario después de que el usuario ha
 
 **Valor**: El registro se ha deshabilitado.
 
-## <a name="customize-the-includeazureincludespn-azure-shortestmd-ad-b2c-user-interface"></a>Personalizar la interfaz de usuario de [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C
+## <a name="customize-the-includeazure-ad-b2c-user-interface"></a>Personalizar la interfaz de usuario de [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C
 
 [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C admite la personalización de la interfaz de usuario. Puede personalizar la experiencia del usuario para el registro y el inicio de sesión.
 
@@ -467,7 +467,7 @@ La configuración de sitio es necesaria para configurar el uso compartido de rec
 
 Para obtener una lista completa de otros valores de configuración CORS, consulte [Soporte de protocolo CORS](../add-web-resource.md#cors-protocol-support).
 
-### <a name="step-5-includeazureincludespn-azure-shortestmd-configuration"></a>Paso 5: Configuración [!include[Azure](../../../includes/pn-azure-shortest.md)]
+### <a name="step-5-includeazure-configuration"></a>Paso 5: Configuración [!include[Azure](../../../includes/pn-azure-shortest.md)]
 
 1. Inicie sesión en su [!include[Azure portal](../../../includes/pn-azure-portal.md)].
 2. Desplácese hasta la hoja **Administración de suscriptores de [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C**.
@@ -483,7 +483,7 @@ Para obtener una lista completa de otros valores de configuración CORS, consult
 
 Cuando los usuarios inicien sesión, por primera vez o posteriormente, el proveedor de identidad federado proporciona notificaciones según su base de datos sobre el inicio de sesión de los usuarios. Estas notificaciones se pueden configurar en el proveedor de identidad.
 
-### <a name="includeazureincludespn-azure-shortestmd-ad-b2c-email-claims"></a>Notificaciones de correo electrónico de [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C
+### <a name="includeazure-ad-b2c-email-claims"></a>Notificaciones de correo electrónico de [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C
 
 [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C envía la notificación de correo electrónico como una recopilación. El portal acepta el primer correo electrónico de la recopilación como la dirección de correo electrónico principal del contacto.
 

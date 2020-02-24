@@ -1,20 +1,20 @@
 ---
 title: Configurar los pasos de un formulario web para un portal | MicrosoftDocs
 description: Instrucciones para crear un paso de formulario web para un formulario web en un portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: c81cddb771c98ccecf2be206ab45a8271ff3559d
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 618a0d83fbdb851b7b30b46e021654b003b4d63b
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2761099"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2980193"
 ---
 # <a name="define-web-form-steps-for-portals"></a>Definir pasos de formulario web para portales
 

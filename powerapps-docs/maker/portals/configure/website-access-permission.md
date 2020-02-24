@@ -1,20 +1,20 @@
 ---
 title: Crear permisos de acceso al sitio web en portales de Power Apps | MicrosoftDocs
 description: Aprenda cómo crear y asociar los permisos de acceso al sitio web a elementos en un portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: ab85eb4feca871089366c8675305b4f6c741f0af
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: c333039eddb7e0e8bb376a8b6850b18f9d1a46ad
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2873482"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977861"
 ---
 # <a name="create-website-access-permissions"></a>Crear permisos de acceso al sitio web
 

@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 637ee2f171eaae493a219e245c2bf1147cd13bd2
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 54a2aeed489cf3e3621bcf21f5f6e0f12b15deff
+ms.sourcegitcommit: 2d21c2c65875f97dff6d5843611d4221a4282f22
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2867519"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027606"
 ---
 # <a name="show-or-hide-model-driven-app-form-elements"></a>Mostrar u ocultar elementos de formularios de aplicaciones controladas por modelos
 
@@ -36,7 +36,10 @@ ms.locfileid: "2867519"
 > [!NOTE]
 >  Ocultar elementos de formulario no es una forma recomendada para imponer la seguridad. Existen varias formas en que los usuarios pueden ver todos los elementos y datos en el formulario cuando los elementos están ocultos. 
   
- En lugar de diseñar formularios que dependen de scripts para controlar la visibilidad de opciones, piense si flujo de proceso de negocio, un diálogo o el cambio a otro formulario pueden ajustarse mejor a sus requisitos. Si usa scripts, asegúrese de que los elementos que puedan estar ocultos estén ocultos de forma predeterminada. Muéstrelo solo con scripts cuando su lógica lo exija. De esta forma no se mostrará en las presentaciones que no admiten scripts.  
+ En lugar de diseñar formularios que dependen de scripts para controlar la visibilidad de opciones, piense si flujo de proceso de negocio, un diálogo o el cambio a otro formulario pueden ajustarse mejor a sus requisitos. Si usa scripts, asegúrese de que los elementos que puedan estar ocultos estén ocultos de forma predeterminada. Muéstrelo solo con scripts cuando su lógica lo exija. De esta forma no se mostrará en las presentaciones que no admiten scripts.
+ 
+ > [!NOTE]
+> En la Interfaz unificada, para las secciones donde los campos no abarcan más de una columna, al ocultar un campo en la sección se moverá el campo de debajo hacia arriba en el formulario. Si un campo abarca más de dos columnas en una sección, al ocultar un campo en la sección que tiene un control frente a él no se moverá el campo de debajo de él hacia arriba en el formulario. Verá un espacio en blanco adicional donde está el campo oculto en la sección.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

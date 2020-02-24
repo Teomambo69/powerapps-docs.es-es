@@ -28,6 +28,8 @@
           href: business-logic/set-timeout-for-external-calls-from-plug-ins.md
         - name: Utilizar InvalidPluginExecutionException en actividades de complementos y de flujo de trabajo
           href: business-logic/use-invalidpluginexecutionexception-plugin-workflow-activities.md
+        - name: Verificar dependencias de certificación para complementos que realizan llamadas salientes
+          href: business-logic/verify-certification-dependencies.md
     - name: Trabajar con datos mediante código
       href: work-with-data/index.md
       items:

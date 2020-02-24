@@ -1,20 +1,20 @@
 ---
 title: Agregar un gráfico a una página web en un portal | MicrosoftDocs
 description: Instrucciones para agregar un gráfico creado en una aplicación modelo basada en modelo para una página web en el portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/04/2019
-ms.author: shjais
+ms.date: 01/29/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 3cc2e390b988689e9a21317d80aa7d94d2ea9e6d
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3d9a2ec3ef4e2589c51717629213dfe73d3418eb
+ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2761091"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012595"
 ---
 # <a name="add-a-chart-created-in-a-model-driven-app-to-a-webpage-in-portal"></a>Agregar un gráfico creado en una aplicación modelo basada en modelo para una página web en el portal
 
@@ -52,21 +52,20 @@ También puede especificar el identificador de una vista (consulta guardada) par
 
 Debe abrir el editor de vistas para obtener el identificador de la vista que se usará con la etiqueta de Liquid del gráfico.
  
-1.  Vaya a la entidad de destino, por ejemplo, **Ventas** > **Clientes potenciales**.
-2.  Seleccione la vista que desee del encabezado desplegable de vistas.
-3.  Seleccione **Vista** de la barra de herramientas. Se abrirá la ventana Ver.
+1. Vaya a make.powerapps.com y seleccione el entorno apropiado.
+1. En la barra de navegación izquierda, seleccione Datos > Entidades.
+1. Seleccione la entidad apropiada y vaya a la pestaña 'Vistas'.
+1. Puedes ver la lista de vistas. Vaya a las opciones (...) y seleccione 'Editar vista'.
+1. Copie el valor id de la barra de direcciones de la ventana Ver.
 
-    ![Ver los clientes potenciales en el editor de vistas](../media/dynamics365-chart-view.png "Ver los clientes potenciales en el editor de vistas")
+    ![Ver Id. del formulario móvil](../media/dynamics365-chart-viewid.png)
 
-4. Copie el valor **id** de la dirección URL de la ventana de Ver.
+1. Pegue este id. en la declaración de la etiqueta de Liquid del gráfico para el parámetro viewid, por ejemplo:
 
-    ![Obtener el Id. de vista del editor de vistas](../media/dynamics365-chart-viewid.png "Obtener el Id. de vista del editor de vistas")
-
-5. Pegue este id. en la declaración de la etiqueta de Liquid del gráfico para el parámetro viewid, por ejemplo:
-
+    ```
     <!—Leads by Source – Open Leads -->
-
-    {% chart id:"EE3C733D-5693-DE11-97D4-00155DA3B01E" viewid:"00000000-0000-0000-00AA-000010001006" %}
+    {% chart id:"EE3C733D-5693-DE11-97D4-00155DA3B01E" viewid:"00000000-0000-0000-00AA-000010001004" %}
+    ```
 
 ## <a name="entity-permission-requirement"></a>Requisito de permiso de entidad
 

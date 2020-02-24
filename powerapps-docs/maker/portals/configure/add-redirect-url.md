@@ -1,20 +1,20 @@
 ---
 title: Redireccionar a una nueva dirección URL en un portal | MicrosoftDocs
 description: Instrucciones para crear una dirección URL de redireccionamiento para redirigir a un usuario a otra página en un sitio.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 63cec47042cee4c29e225f33f1678261da3a01ca
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2bb180ec705464d4c6314fc60973c2bd5fe15be8
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2761098"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979480"
 ---
 # <a name="add-a-redirect-url-to-a-new-url-on-a-portal"></a>Agregar una URL de direccionamiento a una nueva dirección URL en un portal
 

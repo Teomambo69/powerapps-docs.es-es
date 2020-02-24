@@ -14,14 +14,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 640f0fe624b6652d7d590b24eef747b89d69f850
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: d354f49535b8afe0bcc7a246879bbd25c2ad7bc6
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934579"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956195"
 ---
-#  <a name="merge-two-record"></a>Combinar dos registros
+# <a name="merge-two-record"></a>Combinar dos registros
 
 En este ejemplo se muestra cómo combinar dos registros. Puede descargar el ejemplo desde [aquí](https://github.com/microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/MergeTwoRecords).
 

@@ -1,24 +1,90 @@
 ---
 title: Usar etiquetas de plantilla para un portal | MicrosoftDocs
 description: Obtenga información sobre las etiquetas de plantilla disponibles en el portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
-ms.author: shjais
+ms.date: 01/24/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 951b4055aa47a6fba31df5473bd517ed67c8f17d
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: a152fc23b71b2e564bad28a9f1717c15acfe9a60
+ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2873241"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2988007"
 ---
 # <a name="template-tags"></a>Etiquetas de plantilla
 
 Las etiquetas de plantilla controlan el resultado de una plantilla de varias formas, y permiten combinar varias plantillas en una sola.
+
+## <a name="fetchxml"></a>fetchxml
+
+Permite al usuario consultar datos de CDS y representar los resultados en una página.
+
+> [!NOTE]
+> Puede obtener más información sobre cómo consultar los datos utilizando fetchxml en [usar FetchXML para consultar datos](https://docs.microsoft.com/powerapps/developer/common-data-service/use-fetchxml-construct-query).
+
+```
+{% fetchxml resultVariable %}
+<!— Fetchxml query -->
+...
+{% endfetchxml %}
+```
+
+### <a name="results-attribute"></a>Atributo de resultados
+
+El atributo de resultados en la variable proporcionada (como 'resultVariable' en el ejemplo anterior) contiene los resultados de la consulta FetchXML y otros atributos.
+
+- *Entidades*
+
+    Este atributo contiene el resultado de la consulta fetchxml. Puede iterar el resultado y usarlo en su plantilla web.
+
+    ```
+    <table> 
+    {% for entityVariable in resultVariable.results.entities %} 
+    <tr> 
+    <td>Attribut-1: {{ entityVariable.attribute1 }}</td> 
+    <td>Attribut-2: {{ entityVariable.attribute2 }}</td> 
+    </tr> 
+    {% endfor %} 
+    </table> 
+    ```
+
+- *EntityName*
+
+    Obtiene el nombre lógico de la entidad.
+
+- *ExtensionData*
+
+    Obtiene la estructura que contiene datos adicionales.
+
+- *MinActiveRowVersion*
+
+    Obtiene el valor de versión de fila activa más bajo.
+
+- *MoreRecords*
+
+    Obtiene si hay más registros disponibles.
+
+- *PagingCookie*
+
+    Obtiene la información de paginación actual.
+
+- *TotalRecordCount*
+
+    Obtiene el número total de registros de la colección. <br/>
+    ReturnTotalRecordCount era verdadero cuando se ejecutó la consulta.
+
+- *TotalRecordCountLimitExceeded*
+
+    Obtiene si los resultados de la consulta exceden el recuento total de registros.
+
+### <a name="xml-attribute"></a>Atributo XML
+
+El atributo XML en la variable proporcionada (como 'resultVariable' en el ejemplo anterior) contiene la consulta resultante que se puede usar para obtener datos de Common Data Service. Este atributo es útil para fines de depuración cuando desea comprender cómo se aplica el permiso de entidad en esta etiqueta *fetchxml*.  
 
 ## <a name="include"></a>include
 

@@ -1,20 +1,20 @@
 ---
 title: Configurar un contacto para su uso en un portal | MicrosoftDocs
 description: Instrucciones para agregar y configurar un contacto para usarse en un portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 4a8c70304385007c132f2c13ec0ddca4b68e2231
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 436446440bda18ffda460c2f27c568fe0cfe5609
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2761116"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979357"
 ---
 # <a name="configure-a-contact-for-use-on-a-portal"></a>Configurar un contacto para su uso en un portal
 

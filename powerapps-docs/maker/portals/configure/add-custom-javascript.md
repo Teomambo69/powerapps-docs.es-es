@@ -1,20 +1,20 @@
 ---
 title: Use JavaScript personalziado para un portal | MicrosoftDocs
 description: Instrucciones de agregar código JavaScript personalizado a un formulario en un portal
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 42e31fc2ecb18d4f26327f8ccbeabe034d7a1700
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fca222555a4a19b511e3b2a140586d20a668ec85
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2761097"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979401"
 ---
 # <a name="add-custom-javascript"></a>Agregar JavaScript personalizado
 

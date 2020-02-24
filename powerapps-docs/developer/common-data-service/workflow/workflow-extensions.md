@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4abc6f224651e4e42bc9f4e40dd74341580274a9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: bc09f59223164a7c044a1a19894245eb68fd298f
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749482"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005064"
 ---
 # <a name="workflow-extensions"></a>Extensiones de flujo de trabajo
 

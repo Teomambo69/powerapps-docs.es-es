@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3f707eef358454053436d633c4ad48e30348ea17
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d33f6cedbbfdaa22f4de7da6348c22c1e25cbc53
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749540"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956295"
 ---
 # <a name="sample-access-the-discovery-service"></a>Ejemplo: Acceder al servicio de detección
 
@@ -29,7 +29,7 @@ Este código de muestra enseña cómo usar los servicios de detección con ensam
 
 En este ejemplo no se abrirá un diálogo para pedirle información de conexión.
 
-Si ha establecido los valores de `Username` y `Password` en la aplicación, las cadenas de conexión los utilizarán. De lo contrario, establezca las variables `username` y `password` en el método `SampleProgram.Main`.
+Si ha establecido valores en las cadenas de conexión App.config, los utilizarán. De lo contrario, establezca las variables `username` y `password` en el método `SampleProgram.Main`.
 
 ## <a name="what-this-sample-does"></a>Qué hace este ejemplo
 

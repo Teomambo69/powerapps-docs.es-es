@@ -1,20 +1,20 @@
 ---
 title: Habilitar modo de mantenimiento para un portal | MicrosoftDocs
 description: Aprenda a habilitar el modo de mantenimiento con el portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/11/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: cc2c7aae9b2329bfa7b24d45049d7cbbab399e28
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 2731c421b9c8c7bc509352dc050ffc133451bc83
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862728"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978081"
 ---
 # <a name="maintenance-mode-for-a-portal"></a>Modo de mantenimiento para un portal
 

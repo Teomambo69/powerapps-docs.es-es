@@ -1,20 +1,20 @@
 ---
 title: Crear y administrar plantillas de página en el portales de Power Apps | MicrosoftDocs
 description: Aprenda a crear y administrar plantillas de página en portales de Power Apps.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 435270ec5c996b90d5633650ed3813e6344a2db6
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 26d9799425d561e4fb6a5f9f6c368fa6162ecb6d
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866815"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2980633"
 ---
 # <a name="create-and-manage-page-templates"></a>Crear y administrar plantillas de página
 

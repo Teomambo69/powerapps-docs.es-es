@@ -1,20 +1,20 @@
 ---
 title: Representar una fuente RSS a través de la plantilla de página personalizada para un portal | MicrosoftDocs
 description: Instrucciones para crear una plantilla de página personalizada y usarla para representar una fuente de RSS.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 998a233f5051c1445d56dbeeba1f2d7faff5811d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d2c4956bd6d5e1a15e6308b4e40442ef15502178
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862332"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2981029"
 ---
 # <a name="create-a-custom-page-template-to-render-an-rss-feed"></a>Crear una plantilla de página personalizada para representar una fuente RSS
 En este ejemplo, crearemos una plantilla de página personalizada para representar una [fuente RSS](https://en.wikipedia.org/wiki/RSS) de artículos de noticias, utilizando Liquid y una plantilla de página web. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)][Almacenar contenido de origen con plantillas web](store-content-web-templates.md).  

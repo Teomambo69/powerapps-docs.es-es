@@ -1,20 +1,20 @@
 ---
 title: Publicar actualizaciones en los portales de Power Apps | MicrosoftDocs
 description: Obtenga información sobre las actualizaciones de las versiones de los portales de Power Apps.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/22/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: bbdc9a775c4bfaacc6f99217f6f24ce32db06bca
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: d775b383116f28df8a584a4943e64989e9ca0f76
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884493"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2981381"
 ---
 # <a name="release-updates"></a>Lanzamiento de actualizaciones
 

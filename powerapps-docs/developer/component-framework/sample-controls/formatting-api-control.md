@@ -11,16 +11,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3b875f06-0fd9-49fa-bc34-939d00e17185
-ms.openlocfilehash: 9b19028b8daa24d9a76692baf59121e6089b46f0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: bc22e8dd153396d4cbcac8715c0b04c49b246ac5
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861966"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017441"
 ---
 # <a name="implementing-formatting-api-component"></a>Implementar el formato del componente API
 
-Este componente de ejemplo explora los distintos métodos disponibles como parte de la API de formato de Power Apps component framework.En este ejemplo, usted crea una serie de elementos de entrada que llaman a los métodos respectivos de la API de formato que coincide con el valor mostrado.
+Este componente de ejemplo explora los distintos métodos disponibles como parte de la API de formato de Power Apps component framework.En este ejemplo, usted crea una serie de elementos de entrada que llaman a los métodos respectivos de la API de formato que coincide con el valor mostrado. Puede descargar el componente de ejemplo desde [aquí](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_FormattingAPI).
 
 > [!div class="mx-imgBorder"]
 > ![Formato del componente API](../media/formatting-api.png "Formato del componente API")

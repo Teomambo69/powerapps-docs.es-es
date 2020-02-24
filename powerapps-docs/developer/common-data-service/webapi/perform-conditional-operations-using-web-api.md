@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 079aa0d3e55ea72a725023cd155f7269f345a8e2
-ms.sourcegitcommit: c2de40124037825308fbccf71f3a221198a928f9
+ms.openlocfilehash: beadf1822a46067efaa6b5a113338d85f40d153c
+ms.sourcegitcommit: 5e23beed96cc14efae9ff264405956d59fae1e7c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "2944304"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2944977"
 ---
 # <a name="perform-conditional-operations-using-the-web-api"></a>Realizar operaciones condicionales mediante la API web
 
@@ -44,8 +44,6 @@ Common Data Service genera una propiedad `@odata.etag` de validación débil par
 ## <a name="if-match-and-if-none-match-headers"></a>Encabezados If-Match e If-None-Match
 
 Use los encabezados [If-Match](https://tools.ietf.org/html/rfc7232#section-3.1) e [If-None-Match](https://tools.ietf.org/html/rfc7232#section-3.2) con valores ETag para comprobar si la versión actual de un recurso coincide con la recuperada por última vez, coincide con cualquier versión anterior o no coincide con ninguna versión.  Estas comparaciones conforman la base de la compatibilidad de operaciones condicional. Common Data Service proporciona ETags para admitir las recuperaciones condicionales, la simultaneidad optimista y las operaciones upsert limitadas.
- 
-Las consultas que expanden propiedades de navegación valorada como colección pueden devolver datos en caché para las propiedades que no reflejan cambios recientes. Se recomienda usar el encabezado `If-None-Match` con valor `null` para reemplazar el almacenamiento en la memoria caché del explorador. Consulte [Encabezados HTTP](compose-http-requests-handle-errors.md#bkmk_headers) para obtener más información. Utilice el encabezado `If-None-Match` con un valor ETag específico para asegurarse de que solo se devuelven los datos modificados.
   
 > [!WARNING]
 > El código de cliente no debe proporcionar ningún significado al valor específico de una ETag, ni a ninguna relación aparente entre las ETags más allá de la igualdad o la desigualdad. Por ejemplo, no se garantiza que un valor de ETag para una versión más reciente de un recurso sea mayor que el valor de ETag para una versión anterior. Además, el algoritmo usado para generar nuevos valores de ETag puede cambiar desigualdad entre las versiones de un servicio.  

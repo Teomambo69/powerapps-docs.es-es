@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 85f8f71c633d1a89aa20b5325123ce6e57b6298b
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 71f39d432e551df456f3d339155d1f3105d6891b
+ms.sourcegitcommit: 5bfd0448f1d5ca3d938e3bd928d1dd3d4042afff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753076"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "2992810"
 ---
 # <a name="auditing-overview"></a>Información general de auditoría
 
@@ -81,7 +81,5 @@ Las organizaciones a menudo deben cumplir varias normativas para garantizar la d
  La habilitación o deshabilitación de la seguridad a nivel de campo estableciendo el atributo <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.IsSecured> no se puede auditar.  
   
 ### <a name="see-also"></a>Vea también
- [Administración de datos en Dynamics 365](/dynamics365/customer-engagement/developer/manage-data)   
- [Cambios de los datos de la entidad de auditoría](/dynamics365/customer-engagement/developer/audit-entity-data-changes)   
- [Configurar entidades y atributos para auditoría](configure-entities-attributes-auditing.md)       
- [Blog: Recuperar los datos de CRM eliminados y volver a crearlos utilizando la API de CRM](https://blogs.msdn.com/b/crm/archive/2011/05/23/recover-your-deleted-crm-data-and-recreate-them-using-crm-api.aspx)
+   
+ [Configurar entidades y atributos para auditoría](configure-entities-attributes-auditing.md) 

@@ -1,20 +1,20 @@
 ---
 title: Controlar el acceso a páginas web para un portal | MicrosoftDocs
 description: Instrucciones para crear reglas de control de acceso a una página web para un portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 5046f136d62a4a44618f66f60f72ab5166274264
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 894c06982084e2f9b4a96d5cd0189dd3a763b97e
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2761100"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978125"
 ---
 # <a name="control-webpage-access-for-portals"></a>Controlar el acceso a páginas web para los portales
 

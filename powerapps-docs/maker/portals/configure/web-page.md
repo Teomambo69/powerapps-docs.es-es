@@ -1,20 +1,20 @@
 ---
 title: Administrar páginas web en los portales Power Apps | MicrosoftDocs
 description: Aprenda a administrar páginas web en un portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/12/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 06c1acb259862ff82b4e392b7dd474833d2cc89e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 077d87c3636ae809ed63fc016df77402f52ebe89
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2864889"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978169"
 ---
 # <a name="manage-web-pages"></a>Administrar páginas web
 

@@ -1,20 +1,20 @@
 ---
 title: Crear un portal en un entorno que contiene aplicaciones basadas en modelo en Dynamics 365 | Microsoft Docs
 description: Instrucciones para crear un portal en un entorno que contiene aplicaciones basadas en modelo en Dynamics 365.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 896f6cfe9fabf08606e69b68b9957835a0147aee
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 98fab91cb8be63ec307977e89fb7147f5561fcc8
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2873417"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977509"
 ---
 # <a name="create-a-portal-in-an-environment-containing-model-driven-apps-in-dynamics-365"></a>Crear un portal en un entorno que contiene aplicaciones basadas en modelo en Dynamics 365
 

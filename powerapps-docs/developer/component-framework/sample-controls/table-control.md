@@ -8,16 +8,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: a37efda1dd6593f30e90ade7e11f7e762d67b932
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f20285b882e3505a1464f7801b8808eef5a08f7c
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861930"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017405"
 ---
 # <a name="implementing-table-component"></a>Implementar componente de tabla
 
-Este componente de ejemplo genera una tabla con dos columnas. La columna de la izquierda muestra el nombre del método o la propiedad API, y la columna derecha muestra el valor devuelto por la API. Puede abrir este componente en el tipo diferente de dispositivos o modificar el idioma o la configuración de usuario para ver cómo los valores se ajustan correctamente en la tabla.
+Este componente de ejemplo genera una tabla con dos columnas. La columna de la izquierda muestra el nombre del método o la propiedad API, y la columna derecha muestra el valor devuelto por la API. Puede abrir este componente en el tipo diferente de dispositivos o modificar el idioma o la configuración de usuario para ver cómo los valores se ajustan correctamente en la tabla. Puede descargar el componente de ejemplo desde [aquí](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_TableControl).
 
 > [!div class="mx-imgBorder"]
 > ![Componente de tabla](../media/table-control.png "Componente de tabla")
@@ -26,7 +26,7 @@ Este componente de ejemplo genera una tabla con dos columnas. La columna de la i
 
 Aplicaciones basadas en modelos
 
-> ![!NOTE]
+> [!NOTE]
 > Cuando depura el componente de tabla usando el comando `npm start`, el componente no se representa en el arnés de prueba. Esto se debe a que el componente utiliza el método `context.utils.getEntityMetadata` que no es compatible con las herramientas de Power Apps CLI todavía.
 
 ## <a name="manifest"></a>Manifiesto
@@ -434,15 +434,15 @@ export class TSTableControl
 }
 ```
 
-Este ejemplo proporciona ejemplos de cómo usar métodos de las `IClient, IUserSettings, IUtility, IFormatting interfaces`.
+Este ejemplo proporciona ejemplos de cómo usar métodos de las interfaces de `Client`, `UserSettings`, `Utility`, `Formatting`.
 
 Este componente también muestra dos funciones de utilidad, `setFullScreen` y `lookupObjects`. Estas funciones son invocadas haciendo clic en el botón generado como parte del componente de código. El botón `setFullScreen` activa y desactiva el modo de pantalla completa del componente. El botón `lookupObjects` abre un diálogo de búsqueda y, a continuación inserta el registro seleccionado como texto en div.
 
-En este ejemplo, generamos un botón HTML y adjuntamos un controlador de eventos `onClick` de JavaScript `onLookupObjectsButtonClick` al botón. Al hacer clic en este botón, invocamos el método `context.utils.lookupObjects()` y pasamos como parámetro una matriz de nombres de entidad. 
+En este ejemplo, generamos un botón HTML y adjuntamos un controlador de eventos `onClick` `onLookupObjectsButtonClick` al botón. Al hacer clic en este botón, invocamos el método `context.utils.lookupObjects()` y pasamos como parámetro una matriz de nombres de entidad. 
 
-Este método devuelve un objeto de Promesa de JavaScript, representando la realización o el error de la llamada al diálogo de búsqueda. Si la promesa se resuelve correctamente, el objeto de búsqueda que el usuario seleccionó se pasa como parámetro al método de devolución de llamada y se pueden hacer referencia a él como data.id, data.name, data.entityType.
+Este método devuelve un objeto `Promise`, representando la realización o el error de la llamada al diálogo de búsqueda. Si `Promise` se resuelve correctamente, el objeto de búsqueda que el usuario seleccionó se pasa como parámetro al método de devolución de llamada y se pueden hacer referencia a él como `data.id`, `data.name`, `data.entityType`.
 
-El método de devolución de llamada inserta esta información como HTML en un div generado en el componente de código para mostrar los resultados seleccionados al usuario. Si se rechaza la promesa, se invoca el método de devolución de llamada de error donde el componente puede administrar el escenario de error en consecuencia.
+El método de devolución de llamada inserta esta información como HTML en un div generado en el componente de código para mostrar los resultados seleccionados al usuario. Si se rechaza `Promise`, se invoca el método de devolución de llamada de error donde el componente puede administrar el escenario de error en consecuencia.
 
 ### <a name="related-topics"></a>Temas relacionados
 

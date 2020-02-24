@@ -1,7 +1,7 @@
 ---
 title: Crear y diseñar formularios de aplicaciones controladas por modelos | MicrosoftDocs
 ms.custom: ''
-ms.date: 12/06/2018
+ms.date: 01/30/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d052e981d80578a2db844f3e8ff3f70ff0c07c2c
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 2e64771257519bded104aa49bde84ac993e1b361
+ms.sourcegitcommit: 60a721432b3fa2abd14ccb3bd16a6b34e13ada85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884933"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026445"
 ---
 # <a name="create-and-design-model-driven-app-forms"></a>Crear y diseñar formularios de aplicaciones controladas por modelos 
 
@@ -42,6 +42,8 @@ Si está viendo una solución administrada, aquí no se pueden crear nuevos form
 ## <a name="type-of-forms"></a>Tipos de formularios
 Hay diferentes tipos de formularios y cada tipo tiene una funcionalidad o uso específico. Más información: [Tipo de formularios en Power Apps](types-forms.md).  
 
+## <a name="main-form-dialogs-preview"></a>Diálogos de formulario principal (vista previa)
+Con la API del cliente, puede usar los cuadros de diálogo del formulario principal para que los usuarios puedan abrir una entidad de registro relacionada en un formulario base sin tener que salir del formulario. Más información: [Abrir el formulario principal en un cuadro de diálogo utilizando la API del cliente](../../developer/model-driven-apps/customize-entity-forms.md#open-main-form-in-a-dialog-using-client-api) 
   
 <a name="BKMK_FormDifferencesByEntity"></a>   
 ## <a name="updated-versus-classic-entities"></a>Actualización frente a entidades clásicas  
@@ -57,6 +59,7 @@ Todavía existen varias entidades, referidas aquí como entidades clásicas, que
 |Lista de precios|Elemento de cola|Producto de oferta|Campo informe|Consulta de consolidación|  
 |Vista guardada|Servicio|Actividad de servicio|Sitio de SharePoint|Ubicación|  
 |Zona de ventas|Unidad|Unidad de venta|||  
+
   
 ## <a name="form-display-faq"></a>Preguntas frecuentes de visualización de formularios
 

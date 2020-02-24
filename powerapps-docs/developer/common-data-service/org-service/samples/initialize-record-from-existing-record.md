@@ -14,14 +14,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dbc1e734459ccfdd1a541e850d9c798f45297eee
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 17dd5e9d6b3699d8bbc0b931da360e5219012109
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934580"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956199"
 ---
-# <a name="initailize-a-record-from-existing-record"></a>Inicializar un registro desde registro existente
+# <a name="initialize-a-record-from-existing-record"></a>Inicializar un registro de un registro existente
 
 Este ejemplo muestra cómo usar el mensaje [IOrganizationService.InitializeFromRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.initializefromrequest?view=dynamics-general-ce-9) para crear nuevos registros a partir de un registro existente. Puede descargar el ejemplo desde [aquí](https://github.com/microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/InitializeRecordFromExisting).
 

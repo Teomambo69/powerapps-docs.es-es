@@ -1,20 +1,20 @@
 ---
 title: Comportamiento y formato del campo Fecha y hora en Common Data Service | MicrosoftDocs
 description: Comportamiento y formato de los campos de fecha y hora que se usan en un portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 785b5fa7def4a5b8e4964e888567d64643405708
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fe9a2e6e8cef5f2199eb4bd5aa98aacea8d14e67
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2761094"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979313"
 ---
 # <a name="behavior-and-format-of-the-date-and-time-field"></a>Comportamiento y formato del campo de fecha y hora
 

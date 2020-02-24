@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 893e10844ee6e4c5f4e35b228d23ddf06e3c90e7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: bba0a473d76fc69832e05ec316a6ed6da6ad899d
+ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749809"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2975743"
 ---
 # <a name="register-a-plug-in"></a>Registrar un complemento
 
@@ -77,7 +77,7 @@ Puede ver información sobre los ensamblados registrados en el explorador de sol
 
 ![Todas las soluciones internas](media/all-solutions-internal-view.png)
 
-Aquí puede buscar todos los ensamblados que están registrados para este entorno.
+Después de seleccionar el nombre de la Solución predeterminada en la lista de soluciones internas, puede encontrar todos los ensamblados registrados para este entorno.
 
 ![Ver todos los ensamblados registrados](media/view-plug-in-assemblies-default-solution.png)
 
@@ -134,7 +134,7 @@ Más información: [Uso de FetchXML con FetchExpression](org-service/entity-oper
 
 Como se describe en [Ver ensamblados registrados](#view-registered-assemblies), el registro de ensamblados que ha creado se agregó a la **Solución predeterminada** del sistema. Debe agregar el ensamblado a una solución no administrada para poder distribuirla a otras organizaciones.
 
-En la solución no administrada que está usando, use el explorador de soluciones para navegar a **Ensamblados de complementos**. En el menú de lista, seleccione **Agregar existente**.
+En la solución no administrada que está usando, use el explorador de soluciones para navegar a **Ensamblados de complementos**. En el menú de lista, seleccione **Agregar existente**. Tenga en cuenta que en las siguientes figuras se utiliza una solución personalizada llamada Solución predeterminada de Common Data Service.
 
 ![Agregar ensamblado de complementos existente](media/add-existing-plug-in-assembly.png)
 
@@ -294,7 +294,7 @@ PRT proporciona comandos para anular el registro de ensamblados, tipos, pasos e 
 
 Éstas son operaciones de eliminación en las entidades [PluginAssembly](reference/entities/pluginassembly.md), [PluginType](reference/entities/plugintype.md), [SdkMessageProcessingStep](reference/entities/sdkmessageprocessingstep.md) y [SdkMessageProcessingStepImage](reference/entities/sdkmessageprocessingstepimage.md).
 
-También puede eliminar **Ensamblados de complementos** y **Pasos de procesamiento de mensajes de SDK** en el explorador de soluciones para lograr los mismos resultados.
+También puede eliminar **Ensamblados de complementos** y **Pasos de procesamiento de mensajes de SDK** en el explorador de soluciones para lograr los mismos resultados. En la figura siguiente se muestra una solución personalizada llamada Solución predeterminada de Common Data Service.
 
 ![Eliminar el paso en el Explorador de soluciones](media/delete-sdk-message-processing-step.png)
 

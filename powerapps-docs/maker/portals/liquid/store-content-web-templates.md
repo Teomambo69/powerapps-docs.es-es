@@ -1,20 +1,20 @@
 ---
 title: Almacenar contenido de origen utilizando plantillas web en un portal | MicrosoftDocs
 description: Instrucciones para almacenar contenido mediante las plantillas web en un portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: d75a8afd6b269078a4be3c0c7cc9b370cb9fe9f5
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0738813d9836803ba9e0826da4314d95bd4a2a3f
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866466"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977333"
 ---
 # <a name="store-source-content-by-using-web-templates"></a>Almacenar contenido de origen con plantillas web
 

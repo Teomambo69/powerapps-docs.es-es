@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 77d3e219adadec3baa01f1eacf014318062e3735
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 5e2f07225b842821a32ad6818842c8e08f1ab198
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934420"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956227"
 ---
 # <a name="sample-audit-user-access"></a>Ejemplo: acceso de usuario de auditoría
 

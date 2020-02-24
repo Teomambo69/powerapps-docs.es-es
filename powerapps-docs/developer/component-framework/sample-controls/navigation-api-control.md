@@ -8,16 +8,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 8a6db9ca3f6eb34cee3c9d45d1d9917f4b33115d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e17ad5f8e792b6759e917017a8c2b2b056727d46
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861938"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017410"
 ---
 # <a name="implementing-navigation-api-component"></a>Implementar componente API de navegación
 
-Este componente de ejemplo explora los distintos métodos disponibles como parte de la API de navegación de Power Apps component framework. En este ejemplo, usted crea una serie de elementos de entrada de botones de tipo que llaman a los métodos respectivos de la API de navegación que coincide con el valor mostrado.  
+Este componente de ejemplo explora los distintos métodos disponibles como parte de la API de navegación de Power Apps component framework. En este ejemplo, usted crea una serie de elementos de entrada de botones de tipo que llaman a los métodos respectivos de la API de navegación que coincide con el valor mostrado. Puede descargar el componente de ejemplo desde [aquí](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_NavigationAPI).
 
 > [!div class="mx-imgBorder"]
 > ![Componente de API de navegación](../media/navigation-api-control.png "Componente de API de navegación")

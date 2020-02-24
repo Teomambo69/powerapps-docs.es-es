@@ -8,18 +8,18 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 131ca8fecf58477d9e51d2a31b53ad894c851f7f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 3be35f54e4f4371208bb521fcf9927c53b993b2c
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861954"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017420"
 ---
 # <a name="implementing-linear-input-component"></a>Implementar componente de entrada lineal
 
 Este componente de ejemplo cambia la experiencia de usuario de interactuar con tipos numéricos del formulario. En vez de escribir los números, el componente de entrada lineal proporciona un control deslizante lineal con el que el valor del atributo se puede establecer en el formulario.  
 
-Para implementar este componente, lo primero que necesita es definir el archivo de [Manifiesto](../manifest-schema-reference/manifest.md) y, a continuación, implementar la lógica personalizada en TypeScript.
+Para implementar este componente, lo primero que necesita es definir el archivo de [Manifiesto](../manifest-schema-reference/manifest.md) y, a continuación, implementar la lógica personalizada en TypeScript. Puede descargar el componente de ejemplo desde [aquí](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_LinearInputControl).
 
 > [!div class="mx-imgBorder"]
 > ![Componente de entrada lineal](../media/linear-input-control.png "Componente de entrada lineal")

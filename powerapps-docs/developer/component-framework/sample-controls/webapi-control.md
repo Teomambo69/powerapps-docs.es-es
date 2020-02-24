@@ -8,16 +8,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: nkrb
-ms.openlocfilehash: 15a0314f043d130ac5afabf1591dbd4b0b789d1e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: bb2af534bbe6484a9b16ec0a165727456e06c18f
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861922"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017390"
 ---
 # <a name="implementing-web-api-component"></a>Implementar componente de API web
 
-El componente de API web está diseñado para realizar crear, recuperar, actualizar y eliminar acciones. El componente genera cuatro botones, en los que se puede hacer clic para invocar distintas acciones de la API web. El resultado de la llamada de la API web se inserta en un elemento div HTML en la parte inferior del componente de código.  
+El componente de API web está diseñado para realizar crear, recuperar, actualizar y eliminar acciones. El componente genera cuatro botones, en los que se puede hacer clic para invocar distintas acciones de la API web. El resultado de la llamada de la API web se inserta en un elemento div HTML en la parte inferior del componente de código. Puede descargar el componente de ejemplo desde [aquí](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_WebAPI).
 
 > [!div class="mx-imgBorder"]
 > ![Componente de API web](../media/web-api-control.png "Componente de API web")

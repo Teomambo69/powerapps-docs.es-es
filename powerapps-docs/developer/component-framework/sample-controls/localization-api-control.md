@@ -8,18 +8,18 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 43be87e84ea321db6f5df6919914bbccb48e0130
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 5a60884e6cefab9b4bfa0735e03b5d5eb4761523
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861946"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017425"
 ---
 # <a name="implementing-localization-api-component"></a>Implementar componente API de localización
 
-Este ejemplo muestra cómo se realiza la localización para controles personalizados. En este ejemplo, usamos [Incrementar componente](increment-control.md) para localizar el texto que se muestra en el botón de incremento basado en el idioma seleccionado del usuario. 
+Este ejemplo muestra cómo se realiza la localización para componentes de código. En este ejemplo, usamos [Incrementar componente](increment-control.md) para localizar el texto que se muestra en el botón de incremento basado en el idioma seleccionado del usuario. 
 
-Power Apps component framework usa el concepto de implementar recursos web String(resx) que se usa para administrar las cadenas localizadas mostradas en cualquier interfaz de usuario. Más información: [String(Resx) Webresources](https://docs.microsoft.com/dynamics365/customer-engagement/developer/resx-web-resources). 
+Power Apps component framework usa el concepto de implementar recursos web String(resx) que se usa para administrar las cadenas localizadas mostradas en cualquier interfaz de usuario. Más información: [String(Resx) Webresources](https://docs.microsoft.com/dynamics365/customer-engagement/developer/resx-web-resources). Puede descargar el componente de ejemplo desde [aquí](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_LocalizationAPI).
 
 > [!div class="mx-imgBorder"]
 > ![Componente API de localización](../media/localization-api-control.png "Componente API de localización")

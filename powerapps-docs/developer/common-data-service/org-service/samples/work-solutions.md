@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cd2ebd7516adcbf036529880b20457d064f8eeb3
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 807cd14c385fecddb03f783b9fa7acab6c535ac7
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934076"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956163"
 ---
 # <a name="sample-work-with-solutions"></a>Ejemplo: trabajar con soluciones
 
@@ -60,11 +60,11 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 1. El método `ExportSolutionRequest` exporta la solución creada en [Configuración](#setup).
 1. El método `DeleteSolutionRequest` elimina la solución y los componentes.
 
-
 ### <a name="demonstrate"></a>Demostración
+
 1. El método `querySDKSamplePublisher` comprueba si el editor está ya en el sistema.
 1. El método `querySampleSolutionResults` comprueba si la solución está ya en el sistema.
-1. El método `ExportSolutionRequest` exporta la solución. 
+1. El método `ExportSolutionRequest` exporta la solución.
 1. El método `ImportSolutionRequest` importa la solución.
 
 ### <a name="clean-up"></a>Limpiar

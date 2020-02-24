@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dc96ff4b84bf7f43c6a7bed32837000096f612a9
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 3a2d39ee12b098698115c77ee78a6ae71107f755
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934088"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005049"
 ---
 # <a name="sample-use-duplicate-detection-when-creating-and-updating-records"></a>Ejemplo: Uso de detección de duplicados para crear y actualizar registros
 

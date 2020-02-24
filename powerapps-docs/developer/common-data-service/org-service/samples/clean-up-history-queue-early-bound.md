@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 44455de71df45c02bd22620c9252421a4a68ca89
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 07e6849d7888550338206fd76fec174a0d25fade
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934404"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956223"
 ---
 # <a name="sample-clean-up-history-for-a-queue"></a>Ejemplo: limpiar el historial de una cola
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-clean-up-history-queue-early-bound -->
 
- Este ejemplo muestra cómo limpiar el historial de la cola mediante [RemoveFromQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.removefromqueuerequest?view=dynamics-general-ce-9) con elementos inactivos. Encuentra las llamadas de teléfono completadas en la cola y quita los elementos asociados de la cola. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CleanHistoryQueue).
+Este ejemplo muestra cómo limpiar el historial de la cola mediante [RemoveFromQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.removefromqueuerequest?view=dynamics-general-ce-9) con elementos inactivos. Encuentra las llamadas de teléfono completadas en la cola y quita los elementos asociados de la cola. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CleanHistoryQueue).
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 

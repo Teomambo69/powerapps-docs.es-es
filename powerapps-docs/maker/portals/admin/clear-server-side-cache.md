@@ -1,20 +1,20 @@
 ---
 title: Borrar la memoria caché del servidor para un portal | MicrosoftDocs
 description: Instrucciones para forzar el portal para que actualice la memoria caché inmediatamente.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 8351ca8d3befec80a9e97da03ca62980383b01b1
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: ab1e3a278127105b338893bbbc989774756d3fca
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2709911"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978301"
 ---
 # <a name="clear-the-server-side-cache-for-a-portal"></a>Borrar la memoria caché del servidor para un portal
 

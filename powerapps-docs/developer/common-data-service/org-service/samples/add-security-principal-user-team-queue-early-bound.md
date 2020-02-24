@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c41dfe21ad8a706b5502b637e0a9a3c68317c6a0
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: cc5c62686b936053099ab2d70673894d2ee283fe
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934440"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956247"
 ---
 # <a name="sample-add-a-security-principal-user-or-team-to-a-queue"></a>Ejemplo: Agregar una entidad de seguridad (usuario o equipo) a una cola 
 

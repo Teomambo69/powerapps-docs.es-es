@@ -1,32 +1,36 @@
 ---
 title: Uso del servicio de detección con las ensamblados SDK (Common Data Service) | Microsoft Docs
-description: Describe cómo usar los servicios de detección con ensamblados SDK de .NET.
+description: Describe cómo usar los servicios de detección con las API disponibles en los ensamblados SDK.
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 1/16/2020
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
 ms.author: jdaly
-manager: ryjones
+manager: kvivek
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e4790ae64c38cbf89a9af90822ff5b5910f64634
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 1eaf51018a94a226a5fa240a6f18f6107dc833dd
+ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749552"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2975687"
 ---
 # <a name="use-the-discovery-service-with-the-sdk-assemblies"></a>Uso del servicio de detección con las ensamblados SDK
 
+> [!IMPORTANT]
+> A partir del 2 de marzo de 2020, el servicio de detección *regional* [quedará obsoleto](/power-platform/important-changes-coming#regional-discovery-service-is-deprecated).
+> 
+> Para obtener información sobre cómo hacer la transición para usar el servicio de detección *global*, consulte [Modificar su código para usar el servicio de detección global](../webapi/discovery-orgsdk-to-webapi.md).
+
 [!INCLUDE [cc-discovery-service-description](../includes/cc-discovery-service-description.md)]
 
-
-Para usar el servicio de detección con los ensamblados SDK, agregue una referencia al ensamblado `Microsoft.Xrm.Sdk.dll` al proyecto de Visual Studio. A continuación, agregue una instrucción `using` para acceder al espacio de nombres <xref:Microsoft.Xrm.Sdk.Discovery>. 
+Para acceder al servicio de detección con las API de los ensamblados SDK, agregue una referencia al ensamblado `Microsoft.Xrm.Sdk.dll` al proyecto de Visual Studio. A continuación, agregue una instrucción `using` para acceder al espacio de nombres <xref:Microsoft.Xrm.Sdk.Discovery>.
 
 <xref:Microsoft.Xrm.Sdk.WebServiceClient.DiscoveryWebProxyClient> implementa la interfaz <xref:Microsoft.Xrm.Sdk.Discovery.IDiscoveryService>.
 
@@ -39,7 +43,7 @@ Cuando crea un instancia de <xref:Microsoft.Xrm.Sdk.WebServiceClient.DiscoveryWe
 [!INCLUDE [regional-discovery-services](../../../includes/regional-discovery-services.md)]
 
 > [!NOTE]
-> Si no conoce la región del usuario, debe recorrer las regiones disponibles hasta obtener resultados. La API web ofrece un único servicio de detección global. Más información: [Detectar la dirección URL de su organización con la API web](../webapi/discover-url-organization-web-api.md).
+> Si no conoce la región del usuario, debe recorrer las regiones disponibles hasta obtener resultados. Un único servicio de detección global también está disponible. Más información: [Detectar la URL de su organización](../webapi/discover-url-organization-web-api.md).
 
 ## <a name="discovery-service-messages"></a>Mensajes del servicio de detección
 
@@ -166,4 +170,4 @@ Endpoints:
 ### <a name="see-also"></a>Vea también
 
 [Servicios de detección](../discovery-service.md)<br />
-[Detecte la dirección URL de su organización con la API web.](../webapi/discover-url-organization-web-api.md)
+[Detectar la URL de su organización](../webapi/discover-url-organization-web-api.md)

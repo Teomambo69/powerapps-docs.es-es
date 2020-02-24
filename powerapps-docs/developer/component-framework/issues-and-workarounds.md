@@ -10,12 +10,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: d9a5d345204d82a1e5f6629a3f0bb7cf2159ddd7
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 5f8be754e8042001fa331183e39df61eb4db2226
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914487"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956231"
 ---
 # <a name="common-issues-and-workarounds"></a>Problemas comunes y soluciones alternativas
 
@@ -78,3 +78,12 @@ Si se crea un componente utilizando la versión de CLI anterior a 0.4.3, encontr
         </packageSourceCredentials>  
        </configuration>
      ```
+
+**El tamaño del recurso web es excesivo**
+
+Error  **Error en la importación de la solución: el tamaño del contenido de recursos web es demasiado grande**.
+
+**Solución alternativa**
+
+1. Cuando crea el archivo `bundle.js` desde las herramientas de CLI, agrupa muchos componentes que hacen que el archivo sea grande. Elimine algunos de los componentes que no son necesarios. 
+2. Cree el componente en modo `production` modificando el archivo `node_modules/pcf-scripts/webpackconfig.js`.

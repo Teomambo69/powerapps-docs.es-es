@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dd99019e867b4bc95540c5bb4c08af768891086b
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: e4e69e22dbe8a4e9ec59866bc60026e998779a8b
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934188"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956167"
 ---
 # <a name="sample-retrieve-valid-status-transitions"></a>Ejemplo: recuperar transiciones de estado válidas
 
- Este ejemplo muestra cómo recuperar transiciones de estado válidas independientemente de si las transiciones de estado personalizadas se han definido para la entidad. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveValidTransitions).
+Este ejemplo muestra cómo recuperar transiciones de estado válidas independientemente de si las transiciones de estado personalizadas se han definido para la entidad. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveValidTransitions).
  
- ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
+## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 
 [!include[cc-how-to-run-samples](../../includes/cc-how-to-run-samples.md)]
 
@@ -43,6 +43,7 @@ Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample
 1. El método `MetadataFilterExpression` comprueba los metadatos de la entidad.
 
 ### <a name="demonstrate"></a>Demostración
+
 1. El método `MetadataFilterExpression` recupera las opciones de estado para la entidad `Incident`.
 1. El método `RetrieveMetadataChangeRequest` recupera los metadatos.
 1. El método `GetValidStatusOptions` obtiene las transiciones de estado válidas para cada opción de estado.

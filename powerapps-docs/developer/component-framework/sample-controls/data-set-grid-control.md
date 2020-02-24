@@ -11,16 +11,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 356561d0-a36b-4b93-8b76-3e1abf9414e9
-ms.openlocfilehash: 216199c227d0fd201d5ce14992a576e689b58296
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: c879f6d73e8ae8d2244e20080fdf64d376ff9bfd
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909097"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017451"
 ---
 # <a name="implementing-data-set-component"></a>Implementar el componente de conjunto de datos
 
-Este componente de ejemplo muestra cómo cambiar la experiencia de usuario de interactuar con el conjunto de datos. Por ejemplo, usted solo ve la cuadrícula de la página principal en una página principal de entidad como tabla. Puede crear su componente de código que puede mostrar los datos según sus preferencias. Este ejemplo muestra los registros como ventanas en lugar de la cuadrícula tabular regular.
+Este componente de ejemplo muestra cómo cambiar la experiencia de usuario de interactuar con el conjunto de datos. Por ejemplo, usted solo ve la cuadrícula de la página principal en una página principal de entidad como tabla. Puede crear su componente de código que puede mostrar los datos según sus preferencias. Este ejemplo muestra los registros como ventanas en lugar de la cuadrícula tabular regular. Puede descargar el componente de ejemplo desde [aquí](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_DataSetGrid).
 
 > [!div class="mx-imgBorder"]
 > ![Componente de cuadrícula de conjunto de datos](../media/data-set-grid.png "Componente de cuadrícula de conjunto de datos")

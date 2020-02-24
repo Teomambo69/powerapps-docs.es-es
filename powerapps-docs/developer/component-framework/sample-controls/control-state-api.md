@@ -10,18 +10,18 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4a77bf37-8ea0-4fe3-9fe7-2769387167c3
-ms.openlocfilehash: 507a2f68c331556d7085f3add597996175130572
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: fa21dbb8d141f06066a2d7d61ad68cadcd77124a
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861974"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017456"
 ---
 # <a name="implementing-control-state-api-component"></a>Implementar el componente API de estado de control
 
 Power Apps component framework le permite mantener el estado del componente a través de varias representaciones del componente en la misma sesión. Proporciona la posibilidad de crear componentes que puedan mantener el estado de usuario a lo largo de la sesión del usuario mientras el usuario navega a y desde el componente.
 
-Por ejemplo, si el componente de código es una lista larga por la que el usuario puede desplazarse, puede aprovechar la funcionalidad **_SetControlState_** para recordar el punto de la lista que el usuario está mirando cuando sale del formulario. A continuación puede agregar lógica en la inicialización del componente para comprobar el estado almacenado y generar la lista del componente en el punto donde el usuario estaba leyendo anteriormente.
+Por ejemplo, si el componente de código es una lista larga por la que el usuario puede desplazarse, puede aprovechar la funcionalidad **_SetControlState_** para recordar el punto de la lista que el usuario está mirando cuando sale del formulario. A continuación puede agregar lógica en la inicialización del componente para comprobar el estado almacenado y generar la lista del componente en el punto donde el usuario estaba leyendo anteriormente. Puede descargar el componente de ejemplo desde [aquí](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_ControlStateAPI).
 
 > [!div class="mx-imgBorder"] 
 > ![API de estado de control](../media/control-state-api.png "API de estado de control")

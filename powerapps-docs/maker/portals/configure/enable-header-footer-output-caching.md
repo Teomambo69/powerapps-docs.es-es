@@ -1,20 +1,20 @@
 ---
 title: Habilitar el almacenamiento en caché de resultados del encabezado y el pie de página en un portal | MicrosoftDocs
 description: Instrucciones para habilitar el almacenamiento en caché de resultados del encabezado y el pie de página en un portal de usuarios existentes.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/11/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 705035ef04fd728f9e9e99462b32c62985db2a23
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.openlocfilehash: e7a112c722e284f9060696d0fac5a3389b47b0d3
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "2817983"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977113"
 ---
 # <a name="enable-header-and-footer-output-caching-on-a-portal"></a>Habilitar el almacenamiento en caché de resultados del encabezado y el pie de página en un portal
 

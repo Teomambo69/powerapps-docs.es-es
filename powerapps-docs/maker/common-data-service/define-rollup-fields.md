@@ -2,7 +2,7 @@
 title: Definir campos consolidados con Power Apps | MicrosoftDocs
 description: Aprenda a definir campos consolidados
 ms.custom: ''
-ms.date: 05/23/2018
+ms.date: 01/23/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e0c254635d6d51ee037ef7865f4b67b72710f319
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: ee3e6b75202e901e72af7bc353770add253f2038
+ms.sourcegitcommit: 2fd8b682e2d4c1e6a45c851b56f37f842ef18224
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2864012"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "2982477"
 ---
 # <a name="define-rollup-fields-that-aggregate-values"></a>Definir campos consolidados que agregan valores
 
@@ -81,7 +81,7 @@ Las consolidaciones son calculadas por los trabajos del sistema programados que 
 Para ver los trabajos consolidados:
 
 1. Mientras visualiza la **Solución predeterminada de Common Data Service**, edite la dirección URL, quitando todo lo que hay después de `dynamics.com` y actualizado la página.
-2. En el área **Configuración** seleccione **Sistema** > **Trabajos del sistema**.<br />![Navegar a trabajos del sistema](media/navigate-system-jobs.png)
+2. En el área **Configuración**, seleccione **Sistema** > **Trabajos del sistema**.<br />![Navegar a trabajos del sistema](media/navigate-system-jobs.png)
 1. En el selector de vistas, elija **Trabajos del sistema periódicos**.
 2. Para buscar rápidamente un trabajo relevante, puede filtrar por el tipo de trabajo del sistema: **Cálculo masivo de campos consolidados** o **Calcular campo consolidado**.
  
@@ -94,9 +94,10 @@ El **Cálculo masivo de campos consolidados** es un trabajo periódico, creado p
 **Calcular campo consolidado** es un trabajo periódico que realiza cálculos incrementales de todos los campos consolidados en los registros existentes para una entidad especificada. Solo hay un trabajo de **Calcular campo consolidado** por entidad. Los cálculos incrementales suponen que el trabajo **Calcular campo consolidado** procesa los registros creados, actualizados o eliminados después de la última ejecución terminada del trabajo de **Cálculo masivo de campos consolidados**. El valor de periodicidad predeterminado máximo es una hora. El trabajo se crea automáticamente cuando el primer campo consolidado de una entidad se crea y elimina cuando se elimina el último campo consolidado.  
 
 ## <a name="online-recalculation-option"></a>Opción de recálculo en línea
-Si coloca el mouse sobre el campo consolidados del formulario, puede ver la hora de la última consolidación y puede actualizar el valor de consolidación seleccionando el icono Actualizar junto al campo, como se muestra a continuación:  
+El campo consolidado en el formulario muestra una imagen de la calculadora, el valor de informe y la hora del último cálculo. Para recalcular, seleccione la imagen de la calculadora y luego seleccione el botón **Recalcular** que aparece. 
 
-![Campo consolidado en el formulario de cuenta](media/rollup-field-on-account-form.png)
+> [!div class="mx-imgBorder"] 
+> ![Campo consolidado en el formulario de cuenta](media/rollup-field-on-account-form.png)
   
 
 Existen algunas consideraciones que debe tener presentes cuando usa la opción recálculo en línea (actualización manual en el formulario):  

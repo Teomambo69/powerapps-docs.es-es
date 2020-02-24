@@ -1,20 +1,20 @@
 ---
 title: Trabajar con plantillas | Microsoft Docs
 description: Instrucciones de trabajar con plantillas en portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 76e0f5cceedb2e2b1ba1bf7c5d0d7f338af920fd
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: bbf71a5301ef1f3546c8817c24c73b0260764f6a
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862068"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2981249"
 ---
 # <a name="work-with-templates"></a>Trabajar con plantillas
 

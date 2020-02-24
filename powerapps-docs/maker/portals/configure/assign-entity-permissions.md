@@ -1,20 +1,20 @@
 ---
 title: Agregar seguridad basada en registros mediante permisos de entidad para un portal en | MicrosoftDocs
 description: Instrucciones para agregar un permiso de entidad y asignarle roles web.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: c92b664c2c40c6bb6354e2666d583d5c7ed7aead
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 082ed3fe584c9812482928c2c1d9a67d9690a569
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874450"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979533"
 ---
 # <a name="add-record-based-security-by-using-entity-permissions-for-portals"></a>Agregar seguridad basada en registros utilizando los permisos de entidad para portales
 

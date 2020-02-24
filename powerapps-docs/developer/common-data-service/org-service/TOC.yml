@@ -43,8 +43,8 @@
               href: page-large-result-sets-with-queryexpression.md
             - name: Usar una combinación externa izquierda en QueryExpression para consultar los registros "no en"
               href: use-left-outer-join-queryexpression-query-records-not-in.md
-            - name: Usar la clase QueryByAttribute
-              href: use-querybyattribute-class.md
+        - name: Usar la clase QueryByAttribute
+          href: use-querybyattribute-class.md
     - name: Crear entidades
       href: entity-operations-create.md
     - name: Recuperar una entidad

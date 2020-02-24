@@ -1,20 +1,20 @@
 ---
 title: Agregar una página web para representar una lista de registros en un portal | MicrosoftDocs
 description: Instrucciones para agregar y configurar listas de entidades para representar una lista de registros en un portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/18/2019
-ms.author: shjais
+ms.date: 02/05/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 4fa68ace39f9a1b2dbcb2d9111e71364fde49fbc
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 96c5ede672a57b6f01a87cf8aacf093db57ab234
+ms.sourcegitcommit: 2d21c2c65875f97dff6d5843611d4221a4282f22
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874406"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027705"
 ---
 # <a name="about-entity-lists"></a>Acerca de listas de entidades
 
@@ -284,6 +284,10 @@ El acto de proteger una lista de entidades asegurará que para cualquier usuario
 Además, las acciones se definan para la lista respetarán los permisos correspondientes para dicha acción, registro a registro. Es decir, si tiene el permiso Editar para un registro, la acción Editar se habilitará para ese registro. Lo mismo se aplica a Eliminar, Crear, etc. Tenga en cuenta que si no hay ningún registro disponible, un mensaje que indica esto aparecerá cuando la lista se cargue.
 
 Sin embargo, un buen diseño de la página web requiere que, si el usuario no tiene un rol con permisos para la entidad (es decir, nunca habrá una situación en la que no vea ningún registro), no debe obtener acceso a la página en absoluto. Idealmente, la página debe protegerse con permisos de acceso de página web.
+
+Si ha asegurado una lista de entidades seleccionando **Habilitar permisos de entidad** y desea mostrar las acciones de nivel de registro que son aplicables al usuario conectado, debe establecer el valor de la página **EntityList/ShowRecordLevelActions** en **verdadero**. Por ejemplo, hay dos usuarios: Preston y Teddy. Preston tiene acceso de nivel de contacto completo en la entidad Caso, mientras que Teddy tiene acceso de lectura global. Si se crea una lista de entidades para mostrar todos los registros de casos, Preston vería todas las acciones (Ver, Editar y Eliminar) en los registros relacionados con su contacto. En otros registros, solo vería la acción **Ver**. Por otro lado, Teddy solo vería la acción **Ver** en todos los registros.
+
+Si la configuración del sitio **EntityList/ShowRecordLevelActions** está establecida en **falso** y la entidad tiene múltiples permisos, todas las acciones de nivel de registro son visibles. Pero, cuando un usuario intenta realizar una acción para la cual no está autorizado, se muestra un error.
 
 ## <a name="adding-a-view-details-page"></a>Agregar una página de detalles de vista
 

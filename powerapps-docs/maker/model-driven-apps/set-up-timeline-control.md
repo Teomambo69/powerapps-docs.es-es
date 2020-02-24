@@ -1,7 +1,7 @@
 ---
 title: Configurar el control de escala de tiempo (sección) en PowerApps | MicrosoftDocs
 description: Aprender a configurar el control de escala de tiempo (sección) en PowerApps
-ms.date: 12/23/2019
+ms.date: 02/03/2020
 ms.service: powerapps
 author: kabala123
 ms.assetid: 7F495EE1-1208-49DA-9B02-17855CEB2FDF
@@ -12,19 +12,28 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 10c526c8e8df192b6f5b4e7fb31224e0742bf90a
-ms.sourcegitcommit: 8ba5f6b88dbd71eb3663dfeec5f0b4427c1543c0
+ms.openlocfilehash: 8afb5427a74b879b0e407b1038705a0bbc15920b
+ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2019
-ms.locfileid: "2924468"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3013122"
 ---
 # <a name="set-up-timeline-section-control"></a>Configurar la sección de escala de tiempo (control)
 
 Las actividades que utiliza en Escala de tiempo para realizar un seguimiento de todas sus comunicaciones con un cliente o contacto se pueden personalizar de acuerdo con los requisitos de su empresa u organización.
 
   > [!div class="mx-imgBorder"]
-  > ![Vista de escala de tiempo de actividades en PowerApps](../../user/media/TimelineViewOfActivity.png "Vista de escala de tiempo de actividades en PowerApps")  
+  > ![Vista de escala de tiempo de actividades en PowerApps](../../user/media/TimelineViewOfActivity.png "Vista de escala de tiempo de actividades en PowerApps")
+
+  1. Buscar registros
+  2. Tomar notas
+  3. Agregar datos y actividades
+  4. Filter
+  5. Más comandos
+  6. Estado de la actividad
+  7. Iconos de actividad
+  8. Fecha y hora
 
 Para obtener más información, vea [Agregar una cita, correo electrónico, llamada de teléfono, nota o actividad de tarea a la línea de tiempo ](../../user/add-activities.md).
 
@@ -68,7 +77,7 @@ Los módulos son Actividades, Publicaciones y Notas. Como personalizador, puede 
 
 8.  Seleccione la opción **Mostrar lo seleccionado** para el campo **Mostrar estos módulos** en el contenedor **Filtrado por**.
 
-9.  Seleccione los módulos que desea mostrar a los usuarios.
+9.  Seleccione los módulos que desea mostrar a los usuarios. Seleccione solo los módulos que necesita su organización.
 
 10. Especifique lo siguiente en el contenedor **Opciones adicionales**.
 
@@ -78,7 +87,7 @@ Los módulos son Actividades, Publicaciones y Notas. Como personalizador, puede 
     | Módulo predeterminado para la experiencia de creación | Seleccione el módulo para el que desea la experiencia de creación predeterminada en la escala de tiempo. <br><br> El valor predeterminado es **Notas**.  | Notas |
     | Mostrar panel de filtro | Seleccione la casilla si desea mostrar el icono de filtro para los usuarios. Si deja la casilla vacía, no habrá filtros para los usuarios. |  |
     | Expandir panel del filtro de forma predeterminada | Seleccione la casilla, de forma predeterminada, si desea mostrar el panel de filtro en el modo expandido. |
-    | Sort | Seleccione el orden de clasificación en función del cual se muestran los registros en la escala de tiempo. La ordenación se basa en el campo que elija para Actividades. Si no existe un campo para la publicación, las notas o la actividad, la ordenación se realiza en función del campo **Última actualización**. <br><br>El criterio de ordenación predeterminado es **Descendente**.  | Descendente |
+    | Sort | Seleccione el orden de clasificación en función del cual se muestran los registros en la escala de tiempo. La ordenación se basa en el campo que elija para Actividades. Si no existe un campo para la publicación, las notas o la actividad, la ordenación se realiza en función del campo **Última actualización**. <br><br> El criterio de ordenación predeterminado es **Descendente**.  <br><br> **Nota:** cambiar el orden de clasificación no cambiará la propiedad de tiempo visualizada en el control de la escala de tiempo. Para personalizar el formulario de tarjeta de escala de tiempo, consulte [Personalizar el formulario de tarjeta](#customize-the-card-form).  | Descendente |
     | Número de resultados | El número máximo de registros que se muestran en la escala de tiempo antes de seleccionar la opción **Más**. Cada vez que selecciona la opción **Más**, la escala de tiempo muestra el número configurado de registros. Puede configurar un valor de 1 a 50. <br><br> El valor predeterminado es **10**. | 10 |
 
     > [!div class=mx-imgBorder] 
@@ -90,7 +99,7 @@ Los módulos son Actividades, Publicaciones y Notas. Como personalizador, puede 
 
 ## <a name="customize-activity"></a>Personalizar actividad
 
-Como personalizador, puede elegir de qué entidades desea mostrar actividades a los usuarios según los requisitos de su empresa.
+Como personalizador, puede elegir qué entidades desea mostrar actividades a los usuarios según los requisitos de su empresa. Para un mejor rendimiento, seleccione solo las actividades que son específicas de la empresa y anule la selección de las actividades que no se utilizan.
 
 1.  Inicie sesión en el entorno de `https://<YourOrgURL>.dynamics.com/apps`.
 
@@ -158,6 +167,8 @@ Dado que el ejemplo considerado en este procedimiento es **Cuenta**, veamos la a
    1. Correo electrónico de \<propietario\>
    2. Asunto
    3. Descripción
+   4. Estado de la actividad
+   5. Fecha y hora
 
 Después de modificar el formulario **Tarjeta de correo electrónico** (de la entidad **Correo electrónico**) y actualizar las opciones en el formulario **Cuenta para experiencia interactiva** en la entidad **Cuenta**, puede ver los cambios.
 
@@ -176,6 +187,7 @@ Después de modificar el formulario **Tarjeta de correo electrónico** (de la en
    1. \<Nombre\> del propietario
    2. Prioridad
    3. Descripción
+   4. Estado de la actividad
 
 La cadena predeterminada para las actividades es la siguiente:
 
@@ -191,14 +203,20 @@ La cadena predeterminada para las actividades es la siguiente:
 
 ## <a name="customize-field-sections"></a>Personalizar secciones de campo
 
-En la sección de la escala de tiempo, los usuarios ven una tarjeta para cada actividad (en función de las actividades habilitadas). Cada tarjeta muestra ciertos campos en el modo contraído y expandido. Por ejemplo, vea la tarjeta de actividad **Correo electrónico** en modo contraído y modo expandido. 
+En la sección de la escala de tiempo, los usuarios ven una tarjeta para cada actividad (en función de las actividades habilitadas). Cada tarjeta muestra ciertos campos en el modo contraído y expandido. Por ejemplo, vea tarjeta de actividad **Correo electrónico** en modo contraído, modo de desplazamiento y modo expandido. 
 
-Modo contraído de la tarjeta de correo electrónico:
+**Modo contraído de tarjeta de correo electrónico**: De forma predeterminada, las tarjetas de actividad están en modo contraído.
+
 
    > [!div class=mx-imgBorder] 
    > ![Tarjeta de escala de tiempo en modo contraído](media/email.png "Tarjeta de escala de tiempo en modo contraído")
 
-Modo expandido de la tarjeta de escala de tiempo:
+**Modo de desplazamiento de tarjeta de correo electrónico**: Cuando pasa el cursor puede ver algunos comandos que son específicos de cada uno de los tipos de tarjeta de actividad.
+
+   > [!div class=mx-imgBorder] 
+   > ![Tarjeta de escala de tiempo en modo contraído](media/email-hover.png "Tarjeta de escala de tiempo en modo contraído")
+
+**Modo expandido de tarjeta de escala de tiempo**: Cuando selecciona la tarjeta, se expande con algunos comandos específicos de cada tipo de tarjeta de actividad.
 
    > [!div class=mx-imgBorder] 
    > ![Tarjeta de escala de tiempo en modo expandido](media/email-expanded.png "Tarjeta de escala de tiempo en modo expandido")
@@ -230,9 +248,16 @@ Los campos **1** y **2** de la sección **Encabezado** y los campos **3** y **4*
    > [!div class=mx-imgBorder] 
    > ![Tarjeta de correo electrónico en modo contraído](media/email-card-collapsed.png "Tarjeta de correo electrónico en modo contraído")
 
+**Modo de desplazamiento de tarjeta de correo electrónico**
+
+Los campos **1** y **2** de la sección **Encabezado** y los campos **3** y **4** de la sección **Detalles** se muestran en el modo de desplazamiento.
+
+   > [!div class=mx-imgBorder] 
+   > ![Tarjeta de correo electrónico en modo contraído](media/email-card-hover.png "Tarjeta de correo electrónico en modo contraído")
+
 **Modo expandido de la tarjeta de correo electrónico**
 
-El campo **5** de la sección **Detalles** se muestra en el modo contraído.
+El campo **5** de la sección **Detalles** se muestra en el modo expandido.
 
    > [!div class=mx-imgBorder] 
    > ![Tarjeta de correo electrónico en modo expandido](media/email-card-expanded.png "Tarjeta de correo electrónico en modo expandido")
@@ -247,9 +272,9 @@ Para personalizar el formulario de tarjeta, siga estos pasos:
 
 4.  Expanda **Entidades** en **Componentes** en el panel de la solución predeterminada.
 
-5.  Seleccione una entidad y seleccione **Formularios**. Por ejemplo, seleccione la entidad **Tarea**.
+5.  Seleccione una entidad y seleccione **Formularios**. Por ejemplo, seleccione la entidad **Correo electrónico**.
 
-6.  Seleccione el registro **Formulario de tarjeta de tarea** de la lista. El **Formulario de tarjeta de tarea** se abre en una nueva ventana del navegador.
+6.  Selecciona el registro **Formulario de tarjeta de correo electrónico** de la lista. El **Formulario de tarjeta de correo electrónico** se abre en una nueva ventana del navegador.
 
 7.  Agregar, mover o eliminar los campos. Para más información, consulte [Agregar, configurar, mover o eliminar campos de un formulario](add-move-or-delete-fields-on-form.md).
 
@@ -383,7 +408,7 @@ Cuando tiene actividades personalizadas que desea mostrar a los usuarios que usa
 
 1.  Inicie sesión en el entorno de `https://<YourOrgURL>.dynamics.com/apps`.
 
-2.  Abra una aplicación basada en modelo y en la barra de comandos seleccione **Configuración** ![Configuración](../model-driven-apps/media/powerapps-gear.png) > **Configuración avanzada**.
+2. Abra una aplicación basada en modelo y en la barra de comandos seleccione **Configuración** ![Configuración](../model-driven-apps/media/powerapps-gear.png) > **Configuración avanzada**.
 
 3.  Vaya a **Personalizaciones** > **Personalización** > **Personalización del sistema**. La página del explorador de soluciones se abre en una nueva ventana del navegador.  
 
@@ -407,6 +432,25 @@ Siga los pasos 1-8 descritos en la sección [Personalizar módulos](#customize-m
 
    > [!div class=mx-imgBorder] 
    > ![Seleccione los módulos de escala de tiempo que desea mostrar](media/timeline-activity.png "Seleccione los módulos de escala de tiempo que desea mostrar")
+
+## <a name="enable-or-disable-rich-text-editor-for-notes-in-timeline"></a>Habilitar deshabilitar el editor de texto enriquecido para notas en la escala de tiempo
+
+El editor de texto enriquecido permite a los usuarios crear contenido completo y bien formateado para las notas con énfasis. El editor incluye características comunes de procesador de textos. Para obtener más información, consulte [Tomar notas](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#take-a-note).
+
+De forma predeterminada, la característica está habilitada. Si desea deshabilitarla y habilitarla más tarde para sus usuarios, siga los pasos:
+
+1.  Inicie sesión en el entorno de `https://<YourOrgURL>.dynamics.com/apps`.
+
+2. Abra una aplicación basada en modelos y luego, en la barra de comandos, seleccione **Configuración** ![Configuración](../model-driven-apps/media/powerapps-gear.png) > **Administración** > **Configuración del sistema**.
+
+3. En el diálogo **Configuración del sistema**, en la pestaña **General**, desplácese hacia abajo y seleccione o anule la selección de la casilla para el campo **Use texto enriquecido para que sea más fácil dar formateo a las notas creadas en Escala de tiempo.** .
+
+4. Seleccione **Aceptar**.
+
+    > [!div class=mx-imgBorder] 
+    > ![Habilitar editor de texto enriquecido](media/timeline-note-enable-rich-text-editor.png "Habilitar editor de texto enriquecido")
+
+El editor de texto enriquecido está habilitado o deshabilitado para sus usuarios en función de la selección de la casilla de verificación. 
 
 ## <a name="see-also"></a>Vea también
 

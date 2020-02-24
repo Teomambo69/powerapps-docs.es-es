@@ -2,7 +2,7 @@
 title: Recuperar registros de entidades relacionadas con una consulta (Common Data Service)| Microsoft Docs
 description: Lea cómo recuperar registros de entidades relacionadas para una entidad ampliando las propiedades de navegación.
 ms.custom: ''
-ms.date: 07/15/2019
+ms.date: 01/08/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1119734dd8d61aacdbb3dc553b65c12b4d6c20a9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9c91d3c0b4bf3eed9757f75c763519eab73b08c3
+ms.sourcegitcommit: 5e23beed96cc14efae9ff264405956d59fae1e7c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749764"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2944993"
 ---
 # <a name="retrieve-related-entity-records-with-a-query"></a>Recuperar registros de entidades relacionadas con una consulta
 
@@ -37,7 +37,9 @@ Use la opción de consulta del sistema `$expand` en las propiedades de navegaci�
 Si incluye solo el nombre de la propiedad de navegación, recibirá todas las propiedades de registros relacionados. Puede limitar las propiedades devueltas para registros relacionados con la opción de la consulta del sistema `$select` entre paréntesis después del nombre de propiedad de navegación. Use esta opción para las propiedades de navegación de un solo valor y valoradas como colección.  
 
 > [!NOTE]
->  Para recuperar entidades relacionadas de una instancia de entidad, vea [Recuperar entidades relacionadas para una entidad expandiendo las propiedades de navegación](retrieve-entity-using-web-api.md#bkmk_expandRelated).  
+>  - Para recuperar entidades relacionadas de una instancia de entidad, vea [Recuperar entidades relacionadas para una entidad expandiendo las propiedades de navegación](retrieve-entity-using-web-api.md#bkmk_expandRelated). 
+> - Las consultas que expanden propiedades de navegación valorada como colección pueden devolver datos en caché para las propiedades que no reflejan cambios recientes. Se recomienda usar el encabezado `If-None-Match` con valor `null` para reemplazar el almacenamiento en la memoria caché del explorador. Consulte [Encabezados HTTP](compose-http-requests-handle-errors.md#bkmk_headers) para obtener más información.
+> 
 
 <a bkmk="bkmk_retrieverelatedentityexpandsinglenavprop"></a>
 

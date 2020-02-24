@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 468f31eeb48a3e79f79db9188be78a7fa6d28c18
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: a3c9916cf6520dc1b271006b68d0c9fad61918bf
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883592"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005033"
 ---
 # <a name="create-a-relationship-between-entities"></a>Crear una relación entre entidades
 Los datos de una entidad suelen estar relacionados con los datos de otra entidad. Por ejemplo, podría tener una entidad **Profesores** y una entidad **Clase**, y la entidad **Clase** podría tener una relación de búsqueda con la entidad **Profesores** para indicar qué profesor da la clase. Puede usar un campo de búsqueda para mostrar los datos de la entidad **Profesores**. Se le suele denominar campo de búsqueda.

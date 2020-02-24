@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2a1e27dea75ba2e15ee7b96be2b7597430f89cba
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 04c083624b8f9d971698c97d133cdd209a8a6e5c
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2885065"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004950"
 ---
 # <a name="build-your-first-model-driven-app-from-scratch"></a>Crear la primera aplicación controlada por modelos desde cero
 El diseño de una aplicación controlada por modelos es un enfoque centrado en los componentes para el desarrollo de la aplicación. En este tema, simplificará el modo de crear una aplicación controlada por modelos usando una de las entidades estándar que esté disponible en el entorno de Power Apps.
@@ -45,7 +45,7 @@ Inicie sesión en [Power Apps](https://make.powerapps.com/). Si aún no tiene un
 
 3.  En la página **Crear una nueva aplicación**, especifique los siguientes detalles y, a continuación, seleccione **Hecho**: 
   - **Nombre**: escriba un nombre para la aplicación, como *Mi primera aplicación*. 
-  - **Nombre único**: de forma predeterminada, el nombre único usa el nombre que especifica en la casilla **Nombre** sin espacios y precedida por el prefijo del editor y un guión bajo (_). Por ejemplo, *crecf_Myfirstapp*. Más información: [Cambiar el prefijo del editor de soluciones](../common-data-service/change-solution-publisher-prefix.md)
+  - **Nombre único**: de forma predeterminada, el nombre único usa el nombre que especifique en la casilla **Nombre**, sin espacios y precedida por el prefijo del editor y un guión bajo (_). Por ejemplo, *crecf_Myfirstapp*. Más información: [Cambiar el prefijo del editor de soluciones](../common-data-service/change-solution-publisher-prefix.md)
   - **Descripción**: escriba una breve descripción de lo que es o hace la aplicación, como *Esta es mi primera aplicación*.
 Para obtener información acerca de las propiedades adicionales de la aplicación, consulte [Crear una aplicación](create-edit-app.md#create-an-app).
 

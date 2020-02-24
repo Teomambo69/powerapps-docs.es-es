@@ -1,29 +1,29 @@
 ---
-title: Ejemplo de servicio de detección global de la API web (C#) (Common Data Service) | Microsoft Docs
-description: Este ejemplo muestra cómo usar los servicios de detección global de la API web
+title: Ejemplo de servicio de detección global (C#) (Common Data Service) | Microsoft Docs
+description: En este ejemplo se muestra cómo acceder al servicio de detección global utilizando la API OData v4 RESTful
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 1/16/2020
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
-manager: ryjones
+manager: kvivek
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 057810ed53433f29b2f514b20b3b20cbbfd3f919
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 11c2d71263ac9c60e9dc88b00f78da81755d40f0
+ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909298"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2975715"
 ---
-# <a name="web-api-global-discovery-service-sample-c"></a>Ejemplo de servicio de detección global de la API web (C#)
+# <a name="global-discovery-service-sample-c"></a>Ejemplo de servicio de detección global (C#)
 
-Este ejemplo muestra cómo usar los servicios de detección global de la API web
+En este ejemplo se muestra cómo acceder al servicio de detección utilizando la API OData v4 RESTful.
 
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 
@@ -40,13 +40,13 @@ En su lugar, solo usará las credenciales de usuario y el identificador de clien
 
 ### <a name="demonstrates"></a>Demostraciones
 
-Este ejemplo usa un HttpClient para autenticar mediante ADAL (v2.29) e invocar al servicio de detección global para que devuelva información sobre las instancias disponibles a las que se puede conectar el usuario.
+Este ejemplo usa un HttpClient para autenticar mediante ADAL (v2.29) e invocar al servicio de detección para que devuelva información sobre las instancias disponibles a las que se puede conectar el usuario.
 
 El ejemplo dependen del método `GetInstances` y la clae `Instance` a continuación:
 
 ```csharp
     /// <summary>
-    /// Uses the global web api discovery service to return instances
+    /// Uses the Discovery Service to return organization instances.
     /// </summary>
     /// <param name="clientId">The Azure AD client (app) registration</param>
     /// <param name="username">The user name</param>
@@ -93,7 +93,7 @@ El ejemplo dependen del método `GetInstances` y la clae `Instance` a continuaci
 
 ```csharp
 /// <summary>
-  /// Object returned by the discovery service
+  /// Object returned from the Discovery Service.
   /// </summary>
   class Instance
   {

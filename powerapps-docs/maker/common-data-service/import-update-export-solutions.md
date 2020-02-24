@@ -2,7 +2,7 @@
 title: Importar soluciones | MicrosoftDocs
 description: Aprenda cómo importar una solución en Power Apps
 ms.custom: ''
-ms.date: 09/30/2019
+ms.date: 01/30/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,29 +22,29 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0eb65eb9ac1240769ba0cc885cb9c2e30a8f83f9
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 504e66801c122810da12810d9b19e5069136f7d6
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909482"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017641"
 ---
 # <a name="import-solutions"></a>Importar soluciones 
 
  Puede importar soluciones manualmente usando los pasos siguientes. Importe únicamente las soluciones que se obtengan de una fuente de confianza. Es posible que las personalizaciones incluyan un código que puede enviar datos a orígenes externos.   
   
-1.  Seleccione **Soluciones** en la barra de navegación izquierda.  
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y seleccione **Soluciones** en el panel de navegación de la izquierda.  
   
-2.  En el menún de la lista de soluciones, seleccione **Importar**.  
+2.  Seleccione **Importar** en la barra de comandos.  
 
     > [!div class="mx-imgBorder"]  
     > ![Importar solución](media/solution-import.png "Importar solución") 
   
-3.  En el cuadro de diálogo **Importar solución**, en el paso **Seleccionar paquete de solución**, seleccione **Elegir archivo** y busque el archivo comprimido (.zip o .cab) que contiene la solución que desea importar. 
+3.  En la página **Seleccionar paquete de solución**, seleccione **Examinar** para buscar el archivo comprimido (.zip o .cab) que contiene la solución que desea importar. 
   
 4.  Seleccione **Siguiente**.  
   
-5.  Ver información acerca de la solución. Seleccione **importar**.  
+5.  Información sobre cómo se muestra la solución. Seleccione **importar**.  
   
 6. Es posible que tenga que esperar unos momentos mientras la importación se completa. Vea los resultados y, a continuación, seleccione **Cerrar**.  
   

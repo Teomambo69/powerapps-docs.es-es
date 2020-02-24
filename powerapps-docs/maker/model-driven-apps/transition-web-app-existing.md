@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 75175b34b158be75165c6bcdae5826060fb47f38
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 4c0b7f3e477990accf3b92e9e3964fc2751deb19
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884384"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005191"
 ---
 # <a name="quick-start-for-using-an-existing-environment-to-validate-your-legacy-web-client-app-with-the-unified-interface"></a>Inicio rápido para usar un entorno existente para validar la antigua aplicación de cliente web heredada con la interfaz unificada
 Este tema de inicio rápido muestra cómo usar un entorno existente para crear una aplicación de interfaz unificada basada en la configuración actual o la configuración predeterminada. Esto le permite explorar y comprobar la interfaz unificada mientras ejecuta aplicaciones de cliente web heredadas existentes paralelamente. Un usuario a continuación puede cambiar entre entornos para obtener una vista lado a lado. 

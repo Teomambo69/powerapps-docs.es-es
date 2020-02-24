@@ -1,20 +1,20 @@
 ---
 title: Búsqueda global en portales de Power Apps | MicrosoftDocs
 description: Aprenda cómo funciona la búsqueda global en un portal
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/04/2019
-ms.author: shjais
+ms.date: 01/30/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 71a06d24e628ddae508af031aa80b8a08b380905
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9b2a2333c3e8422470521a7af135ea2c7d7040f2
+ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866727"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012646"
 ---
 # <a name="search"></a>Search
 
@@ -222,35 +222,23 @@ En el siguiente ejemplo, quitaremos la entidad Caso de la búsqueda global de po
 
 Para evitar que la entidad Case se indexe, debe cambiar el nombre de la vista de la entidad Case que define el conjunto de registros a indexar por el portal (definido por la configuración del sitio Search / IndexQueryName). De manera predeterminada, el nombre de esa vista es Portal Search.
 
-1.  Abra la aplicación [Administración del portal](configure-portal.md).
+1.  Vaya a https://make.powerapps.com y seleccione Soluciones. 
 
-2.  Seleccione el icono **Configuración** en la barra de herramientas de la parte superior derecha de la página y después seleccione **Configuración avanzada**.
+    ![Soluciones](../media/solutions-page.png)
 
-2.  Vaya a **Personalizaciones** > **Personalización** > **Personalización del sistema**.
+1. Busque **Solución predeterminada** y seleccione Editar para abrir.
 
-    ![Personalizar el sistema](../media/customize-system.png "Personalizar el sistema")
+    ![Editar solución](../media/edit-solution.png)
 
-3.  En el cuadro de diálogo de personalización, vaya **Componentes** > **Entidades** > **Caso** en el panel de navegación de la izquierda. 
+1. Busque y edite la entidad **Caso** para ver sus componentes. 
 
-4.  Expanda  **Caso** y selecciona **Vistas**.
+1. Seleccione la pestaña **Vistas** y luego seleccione **Búsqueda del portal** para abrirlo en un editor de vistas.
 
-5.  Seleccione el vista **Buscar portal** de la lista y abren él en editor de la vista.
+1. En el editor de vistas, cambie el nombre de la vista según sus requisitos. Asegurarse de que el nuevo nombre no tenga el término *Portal Search*. 
 
-    ![Vista de caso](../media/case-view.png "Vista de caso")
+1. Guarde y publique los cambios y cierre el editor de gráficos.
 
-6.  En la vista del editor, seleccione **Ver propiedades**.
-
-    ![Editor de vistas](../media/view-editor.png "Editor de vistas")
-
-7.  Cambie el nombre de la vista según el requisito. Asegurarse de que el nuevo nombre no tenga el término “Portal Search".
-
-    ![Ver propiedades](../media/view-properties.png "Ver propiedades")
-
-8.  Guarde los cambios y cierre el editor de gráficos
-
-9.  Seleccione **Publicar todas las personalizaciones**.
-
-10. Reconstruya el índice completo como se describe en la sección [Reconstruya el índice completo de búsqueda](#rebuild-full-search-index).
+1. Reconstruya el índice completo como se describe en la sección [Reconstruya el índice completo de búsqueda](#rebuild-full-search-index).
 
 > [!NOTE]
 > En este ejemplo, vamos realizar cambios en un nivel no administrado editando directamente la vista. También puede realizar esto a través de una solución administrada.

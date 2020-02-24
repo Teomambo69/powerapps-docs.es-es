@@ -1,20 +1,20 @@
 ---
 title: Usar tipos de Liquid para un portal | MicrosoftDocs
 description: Obtenga información acerca de los tipos de Liquid disponibles en un portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: dd6da4788f6563c2026f57914c8156caedfadad3
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e84ec3363f492231c218e0bb9f6e8a8d8b45fce6
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2708107"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2980985"
 ---
 # <a name="available-liquid-types"></a>Tipos de Liquid disponibles
 

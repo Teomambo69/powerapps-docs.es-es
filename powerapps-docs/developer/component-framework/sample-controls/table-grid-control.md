@@ -8,17 +8,17 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: d466c748a6ad46cef37094f3413acdcaf61f1992
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f2cd6ca1e1d534cd15b65998edb965753777669b
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861926"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017395"
 ---
 # <a name="implementing-table-grid-component"></a>Implementar el componente de cuadrícula de tabla
 
 Este ejemplo muestra cómo crear un componente de conjunto de datos simple, un enlace de metadatos de columna de la vista, un enlace de registro, más registros de paginación y navegación de registros al formulario.
-Las columnas de encabezado de componentes y los valores de registros internos están enlazados a las vistas existentes.
+Las columnas de encabezado de componentes y los valores de registros internos están enlazados a las vistas existentes. Puede descargar el componente de ejemplo desde [aquí](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_TableGrid).
 
 > [!div class="mx-imgBorder"]
 > ![Componente de la cuadrícula de tabla](../media/table-grid-control.png "Componente de la cuadrícula de tabla")

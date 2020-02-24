@@ -1,20 +1,20 @@
 ---
 title: Limitar el acceso a un portal mediante dirección IP | MicrosoftDocs
 description: Instrucciones para limitar el acceso al portal mediante la dirección IP.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: efc0ea8449e387d292063f16ee6e38f69863267c
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0916ec5899c347012c23e87cefcf34edd282e566
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2867255"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978477"
 ---
 # <a name="restrict-portal-access-by-ip-address"></a>Limitar el acceso al portal mediante la dirección IP
 

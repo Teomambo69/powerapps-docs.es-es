@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 85bf3eb290b1079d660a99acacecce6a4fa6c098
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 909105a7659be0fc2ade1085592a43ffa4a51544
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934444"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956147"
 ---
 # <a name="sample-add-a-record-to-a-queue"></a>Ejemplo: agregar un registro a una cola
 
 Este ejemplo muestra cómo agregar registros a una cola. Crea colas de origen y de destino. Agrega una actividad de carta a la cola de origen y luego la traslada a la cola de destino. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RecordToQueue).
 
-Este ejemplo requiere usuarios adicionales que no están en el sistema. Cree los usuarios manualmente en **Office 365** para ejecutar el ejemplo sin errores. Para este ejemplo cree un perfil de usuario **tal cual** se muestra abajo. 
+Este ejemplo requiere usuarios adicionales que no están en el sistema. Cree los usuarios manualmente en **Office 365** para ejecutar el ejemplo sin errores. Para este ejemplo, cree un perfil de usuario **tal cual** se muestra abajo. 
 
 **Nombre**: Kevin<br/>
 **Apellidos**: Cook<br/>

@@ -14,19 +14,21 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 91d619ad798c8911c50c5397eab093ae23f297b4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 1b7bec1539b2b3e45df4465cc28fa9a9ba7eb357
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749545"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017385"
 ---
 # <a name="customize-option-sets"></a>Conjunto de opciones personalizadas
 
 Normalmente, usa conjuntos de opciones *globales* para definir campos de manera que los campos diferentes puedan compartir el mismo conjunto de opciones, que se mantiene en una ubicación. A diferencia de conjuntos de opciones *locales* que se definen solo para un atributo específico, puede volver a usar conjuntos de opciones globales. También los verá usados en los parámetros de solicitudes de manera similar a una enumeración.  
   
 Cuando define un conjunto de opciones glogal mediante <xref:Microsoft.Xrm.Sdk.Messages.CreateOptionSetRequest>, se recomienda dejar que el sistema asigne un valor. Realice esta acción al pasar un valor **null** al crear la nueva instancia de `OptionMetadata`. Al definir una opción, contendrá un determinada prefijo de valor de opción específico del contexto del editor establecido para la solución en la que se crea el conjunto de opciones. Este prefijo ayuda a reducir la oportunidad de crear conjuntos de opciones duplicados para una solución administrada, y en cualquier conjunto de opciones que están definidos en organizaciones donde está instalada la solución administrada. Para obtener más información, consulte [Combinar opciones del conjunto de opciones](../understand-managed-solutions-merged.md#merge-option-set-options).  
- 
+
+Puede descargar el ejemplo desde [aquí](https://github.com/microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/WorkWithOptionSets).
+
 ## <a name="messages-request-classes"></a>Clases de solicitud de mensajes  
 
 Use las siguientes clases de solicitud de mensajes para trabajar con conjuntos de opciones globales

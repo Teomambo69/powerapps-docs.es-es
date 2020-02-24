@@ -8,16 +8,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 9901f69f1d3ecbcfc1c53d3bd2a6d25fbdaf7569
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: a304ace5ed62bf831aafb2ae41d4e615213c84a6
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861942"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017415"
 ---
 # <a name="implementing-map-component"></a>Implementar componente de mapa
 
-Este componente de ejemplo cambia la experiencia de usuario de interactuar con campos de dirección del formulario. Además de los valores de texto de la dirección, este componente proporciona la capacidad de identificar visualmente una dirección específica en un mapa sin navegar a otra pestaña o pantalla. 
+Este componente de ejemplo cambia la experiencia de usuario de interactuar con campos de dirección del formulario. Además de los valores de texto de la dirección, este componente proporciona la capacidad de identificar visualmente una dirección específica en un mapa sin navegar a otra pestaña o pantalla. Puede descargar el componente de ejemplo desde [aquí](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_MapControl).
 
 > [!div class="mx-imgBorder"]
 > ![Componente de asignación](../media/map-control.png "Componente de asignación")

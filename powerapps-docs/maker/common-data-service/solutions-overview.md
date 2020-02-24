@@ -2,7 +2,7 @@
 title: Trabajar con soluciones en Power Apps | Microsoft Docs
 description: Aprenda cómo se distribuyen las soluciones
 ms.custom: ''
-ms.date: 12/04/2019
+ms.date: 01/21/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 71ddf991d25f144ce24b078cf73ffc6b971de36f
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 309b6721d60d06e81926bfc0f97ff192f936686a
+ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909195"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2975825"
 ---
 # <a name="solutions-overview"></a>Información general de las soluciones  
 
@@ -40,8 +40,8 @@ Más información: [Notas del producto: Administración del ciclo de vida de las
   
 
 <a name="BKMK_SolutionComponents"></a>   
-### <a name="components"></a>Componentes  
- Un componente representa algo que puede personalizar. Todo lo que se puede incluir en una solución es un componente. Para ver los componentes incluidos en una solución, en el explorador de soluciones vaya a **Configuración** > **Soluciones** y luego abra la solución que desee. Los componentes se enumeran en la lista **Componentes**. 
+## <a name="components"></a>Componentes  
+ Un componente representa algo que puede personalizar. Todo lo que se puede incluir en una solución es un componente. Para ver los componentes incluidos en una solución, en el explorador de soluciones vaya a **Configuración** > **Soluciones** y luego abra la solución que desee. Los componentes se enumeran en la lista **Componentes**. Tenga en cuenta que no puede editar los componentes contenidos en un solución administrada. 
 
 > [!div class="mx-imgBorder"] 
 > ![Componentes de la solución](media/components-in-solution.png "Componentes de la solución") 
@@ -121,7 +121,7 @@ Para ver una lista de los tipos de componentes que se pueden agregar a cualquier
  El objetivo de tener componentes es mantener un seguimiento de las limitaciones sobre lo que se puede personalizar mediante propiedades administradas y todas las dependencias para que se pueda exportar, importar y (en las soluciones administradas) eliminar sin dejar nada atrás.  
   
 <a name="BKMK_ManagedAndUnmanagedSolutions"></a>   
-### <a name="managed-and-unmanaged-solutions"></a>Soluciones administradas y no administradas  
+## <a name="managed-and-unmanaged-solutions"></a>Soluciones administradas y no administradas  
  Hay soluciones **administradas** y **no administradas**. Una solución **administrada** no se puede modificar y puede desinstalarse una vez importada. Todos los componentes de la solución se eliminan al desinstalar la solución.  
   
  Cuando importa una solución **no administrada**, debe agregar todos los componentes de la solución a su entorno. No puede eliminar componentes desinstalando la solución.  
@@ -156,17 +156,22 @@ Para ver una lista de los tipos de componentes que se pueden agregar a cualquier
  Esto es lo que se ve realmente en su entorno. La solución predeterminada del sistema más todas las soluciones administradas, más todas las personalizaciones no administradas que ha aplicado.  
   
 <a name="BKMK_ManagedProperties"></a>   
-### <a name="managed-properties"></a>Propiedades administradas  
+## <a name="managed-properties"></a>Propiedades administradas  
  Algunos componentes no se pueden personalizar. Estos componentes en la solución del sistema tienen metadatos que impiden personalizarlos. Se denominan **propiedades administradas**. El editor de una solución administrada también puede establecer las propiedades administradas para evitar que personalice su solución de formas que no desea.  
   
 <a name="BKMK_Dependencies"></a>   
-### <a name="solution-dependencies"></a>Dependencias de soluciones  
+## <a name="solution-dependencies"></a>Dependencias de soluciones  
  Debido al modo en que las soluciones administradas se estructuran, algunas soluciones administradas pueden ser dependientes de los componentes de la solución en otras soluciones administradas. Algunos editores de soluciones aprovecharán esta característica para crear soluciones modulares. Es posible que tenga que instalar una solución administrada "base" primero y luego puede instalar una segunda solución administrada que personalice aún más los componentes de la solución administrada base. La segunda solución administrada depende de los componentes de la solución que forman parte de la primera solución.  
   
  El sistema sigue estas dependencias entre las soluciones. Si intenta instalar una solución que requiere una solución base que no está instalada, no podrá instalar la solución. Recibirá un mensaje que indica que la solución requiere que se instale otra solución primero. De forma similar, debido a las dependencias, no puede desinstalar la solución base mientras una solución que depende de esta aún está instalada. Es necesario desinstalar la solución dependiente antes de desinstalar la solución base.  
+ 
+## <a name="solution-publisher-prefix"></a>Prefijo del editor de soluciones 
+
+De forma predeterminada, la solución con la que trabajará en Power Apps será la **Solución predeterminada de Common Data Service** que está asociado con el **Editor predeterminado de Common Data Service**. El prefijo de personalización predeterminado se asignará aleatoriamente para este editor, por ejemplo, podría ser `cr8a3`. Esto significa que el nombre de cada nuevo elemento de metadatos creado para su organización tendrá que anexarse a los nombres usados para identificar los elementos. 
+
+Recomendamos que cambie el prefijo del editor de soluciones para que sea más significativo. Más información: [Cambiar el prefijo del editor de soluciones](change-solution-publisher-prefix.md)
   
-  
-## <a name="next-steps"></a>Pasos siguientes  
+### <a name="next-steps"></a>Pasos siguientes  
 [Importar, actualizar y exportar soluciones](import-update-export-solutions.md) <br/>
 [Navegar a una solución específica](navigate-specific-solution.md)
  

@@ -1,20 +1,20 @@
 ---
 title: Configurar ajustes del proveedor de WS-Federation para un portal | MicrosoftDocs
 description: Instrucciones para agregar y configurar las opciones del proveedor de WS-Federation para un portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/18/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 2a668f501a54472da0335344997c049794794783
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f210a5c806ce3ac894e647fc882a4e3d8f4c0167
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759620"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977685"
 ---
 # <a name="configure-ws-federation-provider-settings-for-portals"></a>Configurar valores de proveedor de WS-Federation para portales
 
@@ -107,7 +107,7 @@ Get-ADFSEndpoint -AddressPath /FederationMetadata/2007-06/FederationMetadata.xml
 |  Authentication/WsFederation/ADFS/ValidateIssuerSigningKey  |                                                                                                                                                         Un valor booleano que controla si se llama a la validación de System.IdentityModel.Tokens.SecurityKey que firmó el securityToken xmlns=<https://ddue.schemas.microsoft.com/authoring/2003/5>.                                                                                                                                                          |
 |            Authentication/WsFederation/ADFS/Whr             |                                                                                                                                       Especifica un parámetro "whr" en la dirección URL de redirección del proveedor de identidad. Para obtener más información: [wsFederation](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/windows-identity-foundation/wsfederation).                                                                                                                                       |
 
-## <a name="ws-federation-settings-for-includepn-azure-active-directoryincludespn-azure-active-directorymd"></a>Configuración de WS-Federation para [!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)]
+## <a name="ws-federation-settings-for-pn-azure-active-directory"></a>Configuración de WS-Federation para [!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)]
 
 La sección anterior que describe AD FS también puede ser aplicada a [!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)] ([[!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)] AD](https://msdn.microsoft.com/library/azure/mt168838.aspx)) dado que [!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)] AD se comporta como un servicio de token de seguridad compatible con [WS-Federation](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide). Para empezar, inicie sesión en el Portal de administración de [[!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)]](https://msdn.microsoft.com/library/azure/hh967611.aspx#bkmk_azureportal) y cree o seleccione un directorio existente. Cuando un directorio está disponible siga las instrucciones para [agregar una aplicación](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) al directorio.
 

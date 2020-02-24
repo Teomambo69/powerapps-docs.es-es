@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a2e1bea56c0fa13a3a0d1d5c1bf7c2e55caf791f
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 578cb901780699dd7141567bdeeda72221da86e5
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934584"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956243"
 ---
 # <a name="assign-a-record-to-a-team"></a>Asignación de registros a un equipo
 
@@ -30,6 +30,7 @@ Puede descargar el ejemplo desde [aquí](https://github.com/microsoft/PowerApps-
 ## <a name="how-to-run-this-sample"></a>Cómo ejecutar esta muestra
 
 [!include[cc-how-to-run-samples](../../includes/cc-how-to-run-samples.md)]
+
 ## <a name="what-this-sample-does"></a>Qué hace este ejemplo
 
 El mensaje [AssignRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.assignrequest?view=dynamics-general-ce-9) está diseñado para usarse en un escenario que contiene los datos que son necesarios para asignar el registro especificado a un nuevo propietario (usuario o equipo) cambiando el atributo OwnerId del registro.

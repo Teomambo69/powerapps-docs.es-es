@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4fc01c10bd55a68078683f1b1f7af76a8d9573ff
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 86699593824ac4c4507e4a313eb15747a9e007c6
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934196"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956171"
 ---
 # <a name="retrieve-the-roles-for-an-organization"></a>Recuperar los roles de una organización
 

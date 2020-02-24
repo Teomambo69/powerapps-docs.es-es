@@ -14,14 +14,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4025a4da12cb909f0b481a9a821f9a9f77eaf70f
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 86cd5b567d6db0ede136530a51511beb8febb07e
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934260"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956187"
 ---
-# <a name="sample-query-connections-by-reciprocal-roles"></a>Ejemplo: consultar conexiones por roles recíprocos
+# <a name="sample-query-connections-by-reciprocal-roles-early-bound"></a>Ejemplo: conexiones de consulta por roles recíprocos (con enlace en tiempo de ejecución)
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-query-connections-reciprocal-roles-early-bound -->
 
@@ -40,6 +40,7 @@ Este ejemplo muestra cómo crear roles coincidentes y después encontrar un rol 
 Para simular el escenario descrito en [Qué hace este ejemplo](#what-this-sample-does), la muestra hará lo siguiente:
 
 ### <a name="setup"></a>Configuración
+
 1. Comprobaciones para la versión actual de la organización.
 2. Define algunos tipos anónimos para definir el intervalo de los valores de propiedad de conexión posibles.
 3. `ConnectionRole` crea de la instancia de conexión el rol primaria.

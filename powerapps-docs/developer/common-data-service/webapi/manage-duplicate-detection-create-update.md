@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e563b0bb6800f6c9028cb29993fd7b79908975c3
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 73cfe1f28eb95e87e4aedf7eed9e51710ba9b8b2
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749767"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005071"
 ---
 # <a name="detect-duplicate-data-using-the-web-api"></a>Detección de datos duplicados con la API web
 
@@ -85,7 +85,7 @@ OData-Version: 4.0
         "innererror": {
             "message": "A record was not created or updated because a duplicate of the current record already exists.",
             "type": "Microsoft.Crm.CrmException",
-            [ Stack Trace and internal exception details ommitted for brevity]
+            [ Stack Trace and internal exception details omitted for brevity]
         }
     }
 }
@@ -132,7 +132,7 @@ OData-Version: 4.0
         "innererror": {
             "message": "A record was not created or updated because a duplicate of the current record already exists.",
             "type": "Microsoft.Crm.CrmException",
-            [ Stack Trace and internal exception details ommitted for brevity]
+            [ Stack Trace and internal exception details omitted for brevity]
         }
     }
 }

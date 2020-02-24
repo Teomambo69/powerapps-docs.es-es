@@ -1,20 +1,20 @@
 ---
 title: Preguntas más frecuentes de Adxstudio Portals v7 heredado | MicrosoftDocs
 description: Preguntas más frecuentes de Adxstudio Portals v7 heredado
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/22/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 5b64cf485fad0251097e7b3b00934e27c749d383
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 239dfa66c2532b4859c35dafe811f634f699dd7c
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2875875"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977465"
 ---
 # <a name="legacy-adxstudio-portals-v7-faq"></a>Preguntas más frecuentes de Adxstudio Portals v7 heredado
 

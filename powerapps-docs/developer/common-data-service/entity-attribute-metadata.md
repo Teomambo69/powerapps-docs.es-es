@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 51f75af11ca276d96611fcaef29cc65db72e4c7c
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0223157f7b37218f36c7eab969d6ec70cf98add5
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861785"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005044"
 ---
 <!-- This topic was not migrated it was written for Power Apps 
 Was Mike Carter

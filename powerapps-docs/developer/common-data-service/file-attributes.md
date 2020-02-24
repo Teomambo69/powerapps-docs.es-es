@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 360194b69e049b7622f1c205c07add069e7f70ba
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 73858109ed8e43c5693061a2141e8e30e68f8623
+ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909113"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2987923"
 ---
 # <a name="file-attributes"></a>Atributos de archivo
 
@@ -27,7 +27,7 @@ Un atributo de archivo se usa para almacenar datos de archivo hasta un tamaño m
 
 API web (REST) | .NET API (SOAP)
 ------- | -------
-[FieAttributeMetadata](/dynamics365/customer-engagement/web-api/fileattributemetadata) | <xref:Microsoft.Xrm.Sdk.Metadata.FileAttributeMetadata>
+FileAttributeMetadata | <xref:Microsoft.Xrm.Sdk.Metadata.FileAttributeMetadata>
 
 Para obtener información sobre los tipos de archivos que no están permitidos, consulte [Pestaña General Configuración del sistema](/power-platform/admin/system-settings-dialog-box-general-tab) en la configuración **Definir las extensiones de archivo bloqueadas para datos adjuntos**.
 

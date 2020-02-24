@@ -1,6 +1,6 @@
 ---
 title: 'Ejemplo: consulta de rol de conexión por el código de tipo de entidad (Common Data Service) | Microsoft Docs'
-description: En este ejemplo se muestra cómo hacer una consulta a una conexión
+description: En este ejemplo se muestra cómo hacer una consulta a un rol de conexión
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -14,14 +14,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fe9e2d9ec06a6248bbe8f2d432fcee3decaf9e4c
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 25432f43350b6c32dc31a87f913233c3e71bd427
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934264"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956191"
 ---
-# <a name="sample-query-connection-roles-by-entity-type-code"></a>Ejemplo: consulta de roles de conexión por código de tipo de entidad
+# <a name="sample-query-connection-roles-by-entity-type-code-early-bound"></a>Ejemplo: roles de conexión de consulta por código de tipo de entidad (enlace en tiempo de compilación)
 
 Este ejemplo muestra cómo usar una consulta para buscar un rol de conexión para una entidad cuenta mediante la especificación de un código de tipo de entidad. Puede descargar el ejemplo desde [aquí](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/QueryRoleByEntityType).
 
