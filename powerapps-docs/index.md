@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - PowerApps-hub
-ms.openlocfilehash: c32a87a38029f4a01750f04ecc2f9c0d0314ac66
-ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
+ms.openlocfilehash: 113f2f25016ba7470264f66380a1955c6fda3d08
+ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77282395"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77530843"
 ---
 <div id="main"
    class="v2">
@@ -70,7 +70,7 @@ ms.locfileid: "77282395"
                               </a>
                            </li>
                            <li>
-                              <a href="https://docs.microsoft.com/learn/browse/?products=powerapps&resource_type=learning%20path">
+                              <a href="/powerapps/learning-catalog/get-started">
                                  <div class="cardSize">
                                     <div class="cardPadding">
                                        <div class="card">
@@ -80,8 +80,8 @@ ms.locfileid: "77282395"
                                              </div>
                                           </div>
                                           <div class="cardText">
-                                             <h3>Aprendizaje sobre Power Apps</h3>
-                                             <p>Eche un vistazo a las rutas de aprendizaje de Microsoft Learn que ofrecen instrucciones paso a paso para aprender más sobre Power Apps. Es gratuito</p>
+                                             <h3>Catálogo de cursos</h3>
+                                             <p>Busque el curso en línea, el taller presencial y los eventos adecuados para su rol como usuario de Power Apps.</p>
                                           </div>
                                        </div>
                                     </div>
