@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6c6f033027fb9ce29ba443efab2b5c14ec5ea013
-ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
+ms.openlocfilehash: 2f41edb15bec061887ebe41f375cb1498280857c
+ms.sourcegitcommit: 0e41cc0c944e6b0ee22a7e183e40c52fd553b7be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77145342"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77563660"
 ---
 # <a name="keyboard-shortcuts-for-canvas-apps"></a>Métodos abreviados de teclado para aplicaciones de Canvas
 
@@ -32,6 +32,7 @@ ms.locfileid: "77145342"
 | Ctrl + O (o Alt + F) | Abra un archivo. |
 | Ctrl + Mayús + S (o Alt + P) | Guarde la aplicación con un nombre diferente. |
 | Ctrl+S | Guarde la aplicación con el mismo nombre o por primera vez. |
+| Ctrl+Mayús+P | Guarde la aplicación y active el cuadro de diálogo publicar. |
 | F12 | Descargue el archivo de aplicación (. msapp). |
 | Alt+F | Abra el menú **archivo** . |
 
@@ -40,9 +41,9 @@ ms.locfileid: "77145342"
 | Método abreviado | Acción |
 |--|--|
 | Escribir | Ejecutar el comando seleccionado. |
-| Tabulador | Desplazarse entre los comandos de la pestaña seleccionada y, a continuación, a la pestaña siguiente. |
+| Pestaña | Desplazarse entre los comandos de la pestaña seleccionada y, a continuación, a la pestaña siguiente. |
 | Ctrl+F6 | Navegue hasta el punto de referencia siguiente. |
-| Ctrl + Mayús + F6 | Navegue hasta el punto de referencia anterior. |
+| Ctrl+Mayús+F6 | Navegue hasta el punto de referencia anterior. |
 | Alt+I | Seleccione la pestaña **Insertar** . |
 
 ## <a name="editing"></a>Editar
@@ -72,7 +73,7 @@ ms.locfileid: "77145342"
 
 | Método abreviado | Acción |
 |--|--|
-| Tabulador | Seleccione el control siguiente. |
+| Pestaña | Seleccione el control siguiente. |
 | Ctrl + clic o Mayús + clic | Seleccionar varios objetos a la vez. |
 | Flecha hacia la derecha | Desplazar el control seleccionado a la derecha. |
 | Flecha izquierda | Desplazar el control seleccionado a la izquierda. |

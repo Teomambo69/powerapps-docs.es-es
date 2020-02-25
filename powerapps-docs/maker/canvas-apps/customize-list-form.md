@@ -13,22 +13,23 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 61cf2ad5926daf8b1b5bea6310b9fb29563208e2
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 9e8a7fe44c10d4f189136e05013b68fbd407fe9c
+ms.sourcegitcommit: 0e41cc0c944e6b0ee22a7e183e40c52fd553b7be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731694"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77563714"
 ---
-# <a name="customize-a-sharepoint-list-form-by-using-power-apps"></a>Personalización de un formulario de lista de SharePoint mediante Power apps
+# <a name="customize-a-sharepoint-list-or-library-form-by-using-power-apps"></a>Personalización de un formulario de biblioteca o lista de SharePoint con Power apps
 
-Puede personalizar fácilmente el formulario para una lista de SharePoint abriendo Power Apps en un explorador. No es necesario escribir código tradicional, como C#, ni descargar otra aplicación, como InfoPath. Al publicar los cambios, el formulario se inserta en la lista de SharePoint para su uso por parte de todos sus usuarios. En Power Apps, también puede revisar los informes de análisis, crear fácilmente formato condicional y conectarse a otros orígenes de datos.
+Puede personalizar fácilmente el formulario para una lista de SharePoint o una biblioteca de documentos de SharePoint abriendo Power Apps en un explorador. No es necesario escribir código tradicional, como C#, ni descargar otra aplicación, como InfoPath. Al publicar los cambios, el formulario se inserta en la lista de SharePoint para su uso por parte de todos sus usuarios. En Power Apps, también puede revisar los informes de análisis, crear fácilmente formato condicional y conectarse a otros orígenes de datos.
 
 Para seguir los pasos de este tema, tiene que crear una lista simple para que pueda ver cómo funciona la personalización y luego pueda aplicar los mismos conceptos a su propia lista.
 
 > [!NOTE]
 > - Si la opción **personalizar formularios** no está disponible o no funciona correctamente para la lista, puede que contenga tipos de datos que las [aplicaciones de Power apps no admitan](connections/connection-sharepoint-online.md#known-issues). Además, no se puede mover el formulario a otra lista o [entorno](working-with-environments.md). 
 > - Los formularios personalizados para listas solo se admiten en listas genéricas. Próximamente estará disponible la compatibilidad con las bibliotecas de documentos genéricos. La lista personalizada y las plantillas de biblioteca no se admiten actualmente; incluye, entre otras, listas, como anuncios, contactos y tareas.
+> - Los formularios personalizados de las bibliotecas de documentos solo admiten la edición de metadatos personalizados. No se admite la edición o la administración de archivos.
 
 ## <a name="create-a-list"></a>Crear una lista
 
@@ -130,7 +131,7 @@ Puede configurar que los campos **Precio**, **Disponibilidad** y **Color** solo 
 
     ![Eliminación del formulario personalizado](./media/customize-list-form/use-default-sharepoint.png)
 
-## <a name="q--a"></a>Q & A
+## <a name="q--a"></a>Preguntas y respuestas
 
 ### <a name="forms-vs-apps"></a>Formularios frente a aplicaciones
 
