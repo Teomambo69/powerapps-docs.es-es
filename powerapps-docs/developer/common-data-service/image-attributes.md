@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6f18141c5937d5ca46013e8865c9fb50bc2a6f5b
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f05345c50f5f1e907f17147a9006ca9eed29c09d
+ms.sourcegitcommit: 1c4ab1859febccf79a835bd2f168e7e12a953a18
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752972"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "2957602"
 ---
 # <a name="image-attributes"></a>Atributos de imagen
 
@@ -262,8 +262,7 @@ byte[]
 En la solicitud anterior, el siguiente bloque de datos está siendo cargado. Después de que todos los datos de imagen han sido recibidos por el servicio web, una imagen en miniatura es creada automáticamente por el servicio web.
 
 ### <a name="see-also"></a>Vea también  
-[Ejemplo: establecer y recuperar imágenes de entidad](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images)
 [Atributos de archivo](file-attributes.md)  
 [Introducción a las entidades en Dynamics 365](/dynamics365/customer-engagement/developer/introduction-entities)   
- [Introducción a los atributos de entidad en Dynamics 365](/dynamics365/customer-engagement/developer/introduction-entity-attributes)   
- [Ejemplo: establecer y recuperar imágenes de entidad](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images)
+[Introducción a los atributos de entidad en Dynamics 365](/dynamics365/customer-engagement/developer/introduction-entity-attributes)   
+[Ejemplo: establecer y recuperar imágenes de entidad](/dynamics365/customerengagement/on-premises/developer/sample-set-retrieve-entity-images)

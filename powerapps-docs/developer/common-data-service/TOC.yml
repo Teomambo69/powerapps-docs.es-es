@@ -430,6 +430,8 @@
       items:
         - name: Descargar herramientas de NuGet
           href: download-tools-nuget.md
+        - name: Instalar Power Apps CLI
+          href: powerapps-cli.md
     - name: Herramientas de la Comunidad
       href: community-tools.md
     - name: Herramientas de prueba

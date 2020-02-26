@@ -10,10 +10,10 @@
       href: promote-email-message.md
     - name: Recuperar datos adjuntos de correo electrónico para una plantilla de correo electrónico
       href: retrieve-email-attachments-email-template.md
-    - name: Enviar un mensaje de correo electrónico usando una plantilla
-      href: send-email-template.md
     - name: Enviar un mensaje de correo electrónico
       href: send-email.md
+    - name: Enviar un mensaje de correo electrónico usando una plantilla
+      href: send-email-template.md
     - name: Enviar los resultados de supervisión y correo electrónico en masa
       href: send-bulk-email-monitor-results.md
     - name: 'Cargar, recuperar y descargar datos adjuntos'
@@ -22,10 +22,14 @@
       href: work-activity-party-records.md
 - name: Administración y seguridad
   items:
-    - name: Asociar rol de seguridad a un equipo
+    - name: Asignar rol de seguridad a equipo
       href: associate-security-role-team.md
+    - name: Asociar un rol de seguridad a un usuario
+      href: associate-security-role-user.md
     - name: Determinar si un usuario tiene un rol
       href: determine-whether-user-has-role.md
+    - name: Deshabilitar o habilitar un usuario
+      href: disable-a-user.md
     - name: Eliminar un rol para un usuario
       href: remove-role-for-user.md
     - name: Recuperar información de licencia
@@ -108,6 +112,8 @@
       href: query-connection-roles-entity-type-code-early-bound.md
     - name: Consultar conexiones por roles recíprocos
       href: query-connections-reciprocal-roles-early-bound.md
+    - name: Actualizar un rol de conexión
+      href: update-connection-role.md
 - name: Divisa
   items:
     - name: Recuperar el tipo de cambio de divisas
@@ -116,6 +122,12 @@
   items:
     - name: Crear una actividad personalizada
       href: create-custom-activity.md
+    - name: Crear y recuperar relaciones entre entidades
+      href: create-retrieve-entity-relationships.md
+    - name: Crear y actualizar una entidad apta para correo electrónico
+      href: create-update-emailable-entity.md
+    - name: Crear y actualizar metadatos de entidad
+      href: create-update-entity-metadata.md
     - name: Volcar metadatos de atributo en un archivo
       href: dump-attribute-metadata.md
     - name: Volcar metadatos de entidad en un archivo
@@ -126,8 +138,16 @@
       href: dump-entity-relationships.md
     - name: Volcar información de lista desplegable a un archivo
       href: dump-picklist-information.md
+    - name: Volcar la información del conjunto de opciones globales a un archivo
+      href: dump-global-option-set.md
+    - name: Exportar definiciones de cinta de opciones
+      href: export-ribbon-definitions.md
     - name: Recuperar transiciones de estado válidas
       href: retrieve-valid-status-transitions.md
+    - name: Trabajar con atributos
+      href: work-with-attributes.md
+    - name: Trabajar con conjuntos de opciones
+      href: work-with-option-sets.md
 - name: Detección de duplicados
   items:
     - name: Detectar varios registros duplicados
@@ -138,6 +158,8 @@
       href: use-duplicate-detection-when-creating-and-updating-records.md
 - name: Registros de entidad
   items:
+    - name: Asignar un registro a un nuevo propietario
+      href: assign-record-to-new-owner.md
     - name: Asignación de registros a un equipo
       href: assign-records-to-team.md
     - name: Crear y actualizar registros con registros relacionados
@@ -168,12 +190,12 @@
       href: use-optimistic-concurrency-update-delete-operations.md
 - name: Seguridad de nivel de campo
   items:
+    - name: Habilitar la seguridad de campo para una entidad
+      href: enable-field-security-entity.md
     - name: Recuperar permisos de campo
       href: retrieve-field-permissions.md
     - name: Recuperar los registros de uso compartido de campo
       href: retrieve-field-sharing-records.md
-    - name: Habilitar la seguridad de campo para una entidad
-      href: enable-field-security-entity.md
 - name: Administración de objetivos
   items:
     - name: Datos de objetivos consolidados para un período personalizado en comparación con los ingresos de destino
@@ -190,6 +212,10 @@
       href: export-import-data-map.md
     - name: Importar datos mediante la asignación de datos complejos
       href: import-data-complex-data-map.md
+- name: Outlook
+  items:
+    - name: Crear y recuperar filtros de Outlook
+      href: create-retrieve-outlook-filters.md
 - name: Complementos
   items:
     - name: Crear un complemento básico
@@ -212,8 +238,18 @@
       href: delete-queues.md
     - name: Liberar un elemento en la cola
       href: release-queue-item-queue-early-bound.md
+    - name: Compartir una cola
+      href: share-queue.md
     - name: Especificar un elemento de cola en el que trabajar
       href: specify-queue-item-work-early-bound.md
+- name: Informes
+  items:
+    - name: Obtener límite del historial de informes
+      href: get-report-history-limit.md
+    - name: Hacer que un informe esté disponible o no disponible para la organización
+      href: make-report-available-to-organization.md
+    - name: Publicar un informe
+      href: publish-report.md
 - name: SharePoint
   items:
     - name: Recuperar una dirección URL absoluta y una dirección URL de colección de sitios de un registro de ubicación
@@ -222,6 +258,8 @@
   items:
     - name: Ejecutar varias solicitudes
       href: execute-multiple-requests.md
+    - name: Ejecutar varias solicitudes en una transacción
+      href: execute-multiple-transaction.md
 - name: Soluciones
   items:
     - name: Trabajar con soluciones
@@ -250,9 +288,11 @@
       href: use-aggregation-fetchxml.md
     - name: Usar FetchXML con una cookie de paginación
       href: use-fetchxml-paging-cookie.md
-- name: Webresources
+- name: Recursos web
   items:
     - name: Importar archivos como recursos web
       href: import-files-as-web-resources.md
+- name: Operaciones de flujo de trabajo
+  href: workflow-operations.md
 - name: Acceso al servicio de detección
   href: access-discovery-service.md

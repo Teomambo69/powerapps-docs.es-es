@@ -1,20 +1,20 @@
 ---
 title: Agregar el recurso de web Azure Storage a un formulario | MicrosoftDocs
 description: Pasos para agregar un recurso web de Azure Storage a un formulario para permitir la carga de adjuntos a Azure Storage.
-author: sbmjais
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 01/07/2020
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: b98bce4b3b9d2fae1015250c509df30ec69c7797
-ms.sourcegitcommit: df15c909ba27c9ed83197305a4ee1f01e46a826b
+ms.openlocfilehash: 32bde2ec2c97f33c426a57b17216a7086930eaca
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "2936215"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977949"
 ---
 # <a name="add-the-azure-storage-web-resource-to-a-form"></a>Agregar el recurso de web Azure Storage a un formulario
 

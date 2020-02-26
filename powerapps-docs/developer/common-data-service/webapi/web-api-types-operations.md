@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 714ac2ede999e423ef310a2d0fe738bc6bad97da
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a029fa57a3caf02414e20127ba24dc961c85551b
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753644"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004962"
 ---
 # <a name="web-api-types-and-operations"></a>Tipos y operaciones de API web
 
@@ -270,7 +270,7 @@ OData admite una gran variedad de tipos de datos pero Common Data Service no los
  
 ### <a name="lookup-properties"></a>Propiedades de búsqueda
 
-Para la mayoría de las propiedades de navegación de un solo valor encontrará una propiedad calculada de sólo lectura que use la convención de nomenclatura siguiente: `_<name>_value` donde `<name>` coincide con el nombre de la propiedad de navegación de un solo valor. La excepción a este patrón es cuando un atributo de búsqueda de la entidad puede aceptar varios tipos de referencias de entidad. Un ejemplo común es cómo el atributo `customerid` de la entidad `incident` se puede establecer en una referencia que sea una entidad `contact` o `account`. En las <xref href="Microsoft.Dynamics.CRM.incident?text=incident EntityType" /> [Propiedades de navegación de valor único](/dynamics365/customer-engagement/web-api/incident?view=dynamics-ce-odata-9#Single-valued_navigation_properties) encontrará  `customerid_account` y `customerid_contact` como propiedades de navegación de un solo valor aparte para reflejar el cliente asociado a una oportunidad. Si establece una de estas propiedades de navegación de un solo valor, la otra se establecerá como nula porque ambas están enlazadas al atributo `customerid`. En las [<xref href="Microsoft.Dynamics.CRM.incident?text=incident EntityType" /> [Propiedades](/dynamics365/customer-engagement/web-api/incident?view=dynamics-ce-odata-9#Properties) encontrará una propiedad de búsqueda `_customerid_value` que contiene el mismo valor que está establecido para cualquiera de las propiedades de navegación de un solo valor que contenga un valor.  
+Para la mayoría de las propiedades de navegación de un solo valor encontrará una propiedad calculada de sólo lectura que use la convención de nomenclatura siguiente: `_<name>_value` donde `<name>` coincide con el nombre de la propiedad de navegación de un solo valor. La excepción a este patrón es cuando un atributo de búsqueda de la entidad puede aceptar varios tipos de referencias de entidad. Un ejemplo común es cómo el atributo `customerid` de la entidad `incident` se puede establecer en una referencia que sea una entidad `contact` o `account`. En las <xref href="Microsoft.Dynamics.CRM.incident?text=incident EntityType" /> [Propiedades de navegación de valor único](/dynamics365/customer-engagement/web-api/incident?view=dynamics-ce-odata-9#Single-valued_navigation_properties) encontrará  `customerid_account` y `customerid_contact` como propiedades de navegación de un solo valor aparte para reflejar el cliente asociado a una oportunidad. Si establece una de estas propiedades de navegación de un solo valor, la otra se establecerá como nula porque ambas están enlazadas al atributo `customerid`. En las <xref href="Microsoft.Dynamics.CRM.incident?text=incident EntityType" /> [Propiedades](/dynamics365/customer-engagement/web-api/incident?view=dynamics-ce-odata-9#Properties) encontrará una propiedad de búsqueda `_customerid_value` que contiene el mismo valor que está establecido para cualquiera de las propiedades de navegación de un solo valor que contenga un valor.  
   
 Generalmente, debe evitar el uso de propiedades de búsqueda y usar las propiedades de navegación de un solo valor correspondientes en su lugar. Estas propiedades se han incluido porque pueden ser útiles para determinados escenarios de integración. Estas propiedades son de solo lectura y calculadas porque simplemente reflejarán los cambios aplicados mediante la correspondiente propiedad de navegación de un solo valor.  
   

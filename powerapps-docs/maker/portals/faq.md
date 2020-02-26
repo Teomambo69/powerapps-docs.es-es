@@ -1,26 +1,49 @@
 ---
 title: Preguntas más frecuentes | Documentos de Microsoft
 description: Preguntas más frecuentes en portales de Power Apps.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 12/27/2019
-ms.author: shjais
-ms.reviewer: tapanm
-ms.openlocfilehash: 35f68ef861ac8908e1eb9227df6768b7a2c2c9f3
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.date: 01/17/2020
+ms.author: tapanm
+ms.reviewer: ''
+ms.openlocfilehash: bf76d2a8a3e91d9e20de9d70543af0bda4a57040
+ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934126"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2988099"
 ---
 # <a name="power-apps-portals-faq"></a>Preguntas más frecuentes sobre portales de Power Apps
 
 Hemos recopilado una lista de preguntas frecuentes con respuestas breves para que obtenga la información que necesita con rapidez.
 
 ## <a name="general"></a>General
+
+### <a name="what-is-the-difference-between-power-apps-portals-dynamics-365-portals-and-add-on-portals"></a>¿Cuál es la diferencia entre los portales de Power Apps, los portales de Dynamics 365 y los portales de complementos?
+
+Con el lanzamiento de portales de Power Apps el 1 de octubre de 2019, los portales de Dynamics 365 se denominan portales de Power Apps. En otras palabras, todos los portales se denominan **portales de Power Apps**.
+
+Uno de los principales cambios introducidos en los portales después del 1 de octubre de 2019 es el modelo de licencia. Anteriormente, los portales eran complementos con licencia para aplicaciones de Dynamics 365, mientras que determinadas licencias de Dynamics 365 incluían un complemento de portal predeterminado. Después del 1 de octubre de 2019, los portales tienen [licencia en función del uso](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-power-apps-portals-licensing). Todos los portales existentes serán parte de un período de transición basado en el contrato actual del cliente, después del cual deberán convertirse en un nuevo modelo de licencia.
+
+Puede comprobar el tipo de portal desde el [Centro de administración de portales de Power Apps](./admin/admin-overview.md):
+
+![Tipo de portales de Power Apps](./media/power-apps-portals-type.png)
+
+Para los portales de complementos, el tipo de portal tiene agregado un sufijo de 'complemento'. Por ejemplo, un tipo de portal de complemento de producción aparece como 'Producción (complemento)'.
+
+No hay diferencia en la funcionalidad entre portales de Power Apps con licencias basadas en capacidad y licencias basadas en complemento. Sin embargo, el método de aprovisionamiento para portales con licencias basadas en capacidad y licencias basadas en complemento es diferente.
+
+Puede crear un portal de Power Apps con licencia basada en capacidad utilizando los pasos descritos en los siguientes artículos:
+
+- [Crear un portal de inicio de Common Data Service](create-portal.md)
+- [Crear un portal con un entorno de Dynamics 365](create-dynamics-portal.md)
+
+Para crear un portal de Power Apps con licencia basada en complementos, consulte [aprovisionamiento de un portal mediante un complemento de portal](provision-portal-add-on.md).
+
+Consulte [Preguntas más frecuentes sobre licencias de portales de Power Apps](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#what-is-the-difference-between-power-apps-portals-and-dynamics-365-portals-in-terms-of-licensing) para ver las diferencias entre licencias basadas en complemento y licencias basadas en capacidad.
 
 ### <a name="when-is-an-add-on-portal-in-suspended-state"></a>¿Cuándo está un portal de complementos en estado suspendido?
 
@@ -204,6 +227,15 @@ Se recomienda hacerlo solo cuando está desarrollando un portal. Una vez que el 
 Al habilitar el registro de diagnóstico puede buscar los errores determinados que los usuarios destaquen mediante el Id. de actividad que se muestra en la página de errores genérica. El Id. de actividad se registra junto con los detalles del error y es muy útil para encontrar el problema real.
 
 ## <a name="portal-administration-and-management"></a>Administración y gestión del portal
+
+### <a name="do-portals-use-any-static-content-from-cdns-content-delivery-network-that-i-need-to-whitelist"></a>¿Los portales usan algún contenido estático de CDN (Content Delivery Network) que necesito incluir en la lista blanca?
+
+Sí. Los portales de Power Apps utilizan activos estáticos del portal listos para usar de Azure CDN que incluyen archivos JavaScript y CSS predeterminados para la presentación que se representaron que antes se representaba como parte de la aplicación del portal. Debe incluir en la lista blanca la siguiente URL de CDN para representar portales con éxito:
+
+    https://content.powerapps.com/resource/powerappsportal
+
+> [!NOTE]
+> Los portales de Power Apps hospedados en Microsoft Government Cloud no utilizan CDN.
 
 ### <a name="how-do-i-use-a-custom-login-provider-on-my-portal"></a>¿Cómo uso un proveedor de inicio de sesión personalizado en mi portal?
 

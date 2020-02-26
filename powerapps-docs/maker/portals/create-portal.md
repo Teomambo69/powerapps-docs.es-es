@@ -1,20 +1,20 @@
 ---
 title: Crear un portal en Power Apps | Microsoft Doc
 description: Instrucciones para crear un portal en Power Apps.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: b0482a5005f1cc0ca0b6e61636570b313dbd8a9c
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: fb5799514de32d3046ccba7479b3019da64bf4aa
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884625"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977025"
 ---
 # <a name="create-a-common-data-service-starter-portal"></a>Crear un portal de inicio de Common Data Service
 

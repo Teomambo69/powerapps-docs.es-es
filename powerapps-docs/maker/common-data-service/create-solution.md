@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c917314137580ffee9d70f702c87bfb265a55810
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 25ea1db66e61d3e0b03090a0a91f35bd90d7b649
+ms.sourcegitcommit: b746aad895b152259680f5179dcee0281c951d0a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872977"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "2948852"
 ---
 # <a name="create-a-solution"></a>Crear una solución
 
@@ -43,7 +43,7 @@ Puesto que la solución predeterminada contiene todos los componentes de solucio
     |-----------|-----------------|  
     |**Nombre para mostrar**|Nombre que se muestra en la lista de soluciones. Puede cambiarlo más adelante.|  
     |**Nombre**|Nombre único de la solución. Este se genera con el valor especificado en el campo Nombre para mostrar. Puede modificarlo antes de guardar la solución, pero no podrá hacerlo una vez haya guardado la solución.|  
-    |**Editor**|Puede seleccionar el editor predeterminado o crear un nuevo editor. A menos que tenga previsto distribuir la solución, debe usar únicamente al editor predeterminado para la organización.|  
+    |**Editor**|Puede seleccionar el editor predeterminado o crear un nuevo editor. Le recomendamos que cree un editor para que su organización lo use de manera consistente en todos los entornos en los que usará la solución. Más información: [Cambiar el prefijo del editor de soluciones de cualquier editor](change-solution-publisher-prefix.md#change-the-solution-publisher-prefix-for-any-publisher) |  
     |**Versión**|Escriba un número para la versión de la solución. Solo es importante si exporta la solución. El número de versión se incluirá en el nombre de archivo cuando exporte la solución.|  
   
 3.  Seleccione **Guardar**.  
