@@ -1,31 +1,30 @@
 ---
-title: Función ShowError | Microsoft Docs
-description: Información de referencia para la función ShowError en Power Apps, incluidos ejemplos y sintaxis
+title: Función Notify | Microsoft Docs
+description: Información de referencia para la función Notify en Power Apps, incluidos ejemplos y sintaxis
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 06/05/2018
+ms.date: 02/28/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 02881fdf284a174f5118e7ee0ae185cca61578f8
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: bc3a27960a95b47115e1b7a43863572ce0c44334
+ms.sourcegitcommit: ed583eb94720a9645bfd79776311792a958077b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74730182"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/01/2020
+ms.locfileid: "78204401"
 ---
 # <a name="notify-function-in-power-apps"></a>Función Notify en Power apps
 Muestra un mensaje de pancarta al usuario.
 
 ## <a name="description"></a>Descripción
-La función **Notify** muestra un mensaje de pancarta al usuario en la parte superior de la pantalla, superpuesto sobre lo que se muestre actualmente.  
+La función **Notify** muestra un mensaje de pancarta al usuario en la parte superior de la pantalla, superpuesto sobre lo que se muestre actualmente.  La notificación permanecerá hasta que el usuario la descarte, otra notificación la reemplace o se agote el tiempo de espera, que se establece de forma predeterminada en 10 segundos.
 
 Se usa el color y el icono adecuados según el tipo del mensaje.   El tipo se especifica mediante el segundo argumento de la función:
 
@@ -49,12 +48,13 @@ Power apps también puede enviar notificaciones de envío mediante un mecanismo 
 Nota: Esta función se denominaba anteriormente **ShowError** cuando solo podía mostrar mensajes de error.
 
 ## <a name="syntax"></a>Sintaxis
-**Notify**( *Message*; [ *NotificationType* ] )
+**Notify**( *Message* [, *NotificationType* [, *timeout* ]])
 
 * *Mensaje*: es necesario.  Mensaje que se va a mostrar al usuario.
-* *NotificationType*: opcional.  El tipo de mensaje que se va a mostrar de la tabla anterior.  El valor predeterminado es **NotificationType.Information**.  
+* *TipoDeNotificación*: es opcional.  El tipo de mensaje que se va a mostrar de la tabla anterior.  El valor predeterminado es **NotificationType.Information**.  
+* *Tiempo de espera* : opcional.  Número de milisegundos que se va a esperar antes de que se descarte automáticamente la notificación.  El valor predeterminado es 10 segundos (o 10.000 milisegundos).  La notificación se mostrará indefinidamente con un *tiempo de espera* de 0.
 
-## <a name="examples"></a>Ejemplos
+## <a name="examples"></a>Ejemplos:
 
 ### <a name="step-by-step"></a>Paso a paso
 
@@ -66,36 +66,36 @@ Nota: Esta función se denominaba anteriormente **ShowError** cuando solo podía
 
 3. Haga clic o presione el botón.  
 
-    Cada vez que se hace clic en el botón, se muestra el mensaje **Hello, World** al usuario como una información.
+    Cada vez que se hace clic en el botón, se muestra el mensaje **Hello, World** al usuario como una información.  Se descartará automáticamente en 10 segundos (tiempo de espera predeterminado) si el usuario no lo descarta o vuelve a presionar el botón.
 
     ![En el entorno de creación se muestra Button.OnSelect, se llama a Notify y se muestra al usuario el mensaje resultante "Hello, World" en forma de mensaje de color azul](media/function-showerror/hello-world.png)
 
 4. Cambie el tipo de mensaje para indicar un error.  Agregue un segundo argumento a la fórmula:
 
-    **Notify( "Hello, World"; NotificationType.Error )**
+    **Notify( "Hello, World", NotificationType.Error )**
 
 5. Haga clic o presione el botón.
 
-    Ahora, cada vez que se hace clic en el botón, se muestra el mensaje **Hello, World** al usuario como un error.
+    Ahora, cada vez que se hace clic en el botón, se muestra el mensaje **Hello, World** al usuario como un error.  Se descartará automáticamente en 10 segundos (tiempo de espera predeterminado) si el usuario no lo descarta o vuelve a presionar el botón.
 
     ![En el entorno de creación se muestra Button.OnSelect, se llama a Notify y se muestra al usuario el mensaje resultante "Hello, World" en forma de mensaje de color rojo](media/function-showerror/hello-world-error.png)
 
 4. Cambie el tipo de mensaje para indicar una advertencia.  Cambie el segundo argumento de la fórmula:
 
-    **Notify( "Hello, World"; NotificationType.Warning )**
+    **NOTIFY ("Hello, World", NotificationType. warning, 4000)**
 
 5. Haga clic o presione el botón.
 
-    Ahora, cada vez que se hace clic en el botón, se muestra el mensaje **Hello, World** al usuario como una advertencia.
+    Ahora, cada vez que se hace clic en el botón, se muestra el mensaje **Hello, World** al usuario como una advertencia.  Se descartará automáticamente en 4 segundos (4.000 milisegundos) si el usuario no lo descarta o vuelve a presionar el botón.
 
     ![En el entorno de creación se muestra Button.OnSelect, se llama a Notify y se muestra al usuario el mensaje resultante "Hello, World" en forma de mensaje de color naranja](media/function-showerror/hello-world-warning.png)
 
 4. Cambie el tipo de mensaje para indicar que es correcto.  Cambie el segundo argumento de la fórmula:
 
-    **Notify( "Hello, World"; NotificationType.Success )**
+    **NOTIFY ("Hello, World", NotificationType. Success, 0)**
 
 5. Haga clic o presione el botón.
 
-    Ahora, cada vez que se hace clic en el botón, se muestra el mensaje **Hello, World** al usuario como una operación correcta.
+    Ahora, cada vez que se hace clic en el botón, se muestra el mensaje **Hello, World** al usuario como una operación correcta.  Con un tiempo de espera de **0** , la notificación solo la descartará el usuario o volverá a presionar el botón.
 
     ![En el entorno de creación se muestra Button.OnSelect, se llama a Notify y se muestra al usuario el mensaje resultante "Hello, World" en forma de mensaje de color verde](media/function-showerror/hello-world-success.png)
