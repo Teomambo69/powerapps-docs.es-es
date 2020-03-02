@@ -879,8 +879,10 @@
           href: ./canvas-apps/dev-appsource-test-drive.md
         - name: Crear un componente
           items:
-            - name: Información general
+            - name: Información general sobre componentes
               href: ./canvas-apps/create-component.md
+            - name: Biblioteca de componentes
+              href: ./canvas-apps/component-library.md
             - name: Fórmulas de comportamiento
               href: ./canvas-apps/component-behavior.md
         - name: Incrustación de aplicaciones de lienzo en otras aplicaciones
@@ -1531,18 +1533,20 @@
       items:
         - name: Usar soluciones
           href: ./common-data-service/use-solution-explorer.md
-        - name: Usar la solución predeterminada de Common Data Service
+        - name: Usar una solución para personalizar
           href: ./common-data-service/use-solutions-for-your-customizations.md
+        - name: Introducción al editor de soluciones
+          href: ./common-data-service/change-solution-publisher-prefix.md
+        - name: Creación de una solución
+          href: ./common-data-service/create-solution.md
         - name: Importar soluciones
           href: ./common-data-service/import-update-export-solutions.md
         - name: Actualización de soluciones
           href: ./common-data-service/update-solutions.md
         - name: Exportación de soluciones
           href: ./common-data-service/export-solutions.md
-        - name: Navegación a una solución específica
-          href: ./common-data-service/navigate-specific-solution.md
-        - name: Creación de una solución
-          href: ./common-data-service/create-solution.md
+        - name: Cómo se combinan las soluciones administradas
+          href: ./common-data-service/how-managed-solutions-merged.md
         - name: Uso de variables de entorno
           href: ./common-data-service/EnvironmentVariables.md
         - name: Visualización de las capas de la solución
@@ -1555,12 +1559,8 @@
           href: ./common-data-service/common-issues-resolutions-solution-checker.md
         - name: Usar soluciones segmentadas
           href: ./common-data-service/use-segmented-solutions-patches-simplify-updates.md
-        - name: Introducción al editor de soluciones
-          href: ./common-data-service/change-solution-publisher-prefix.md
         - name: Establecer propiedades administradas en metadatos
           href: ./common-data-service/set-managed-properties-metadata.md
-        - name: Publicar cambios
-          href: ./common-data-service/publish-changes-for-use-customer-service-hub.md
         - name: Procedimientos recomendados
           href: ./common-data-service/solution-best-practices.md
     - name: Trabajo con flujos de datos
