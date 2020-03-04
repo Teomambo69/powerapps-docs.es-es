@@ -7,29 +7,30 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 01/31/2019
+ms.date: 02/29/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1dbf192664f2c8a812650b487a9931de0160eeab
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6ec1a55713b3cce0a98c02058124b5b3d159b376
+ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675532"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78265560"
 ---
 # <a name="develop-offline-capable-canvas-apps"></a>Desarrollo de aplicaciones de lienzo que puedan ejecutarse sin conexión
 
 Los usuarios móviles a menudo necesitan ser productivos, incluso cuando tienen conectividad limitada. Al compilar una aplicación de lienzo, puede realizar estas tareas:
 
 - Abra Power apps Mobile y ejecute aplicaciones sin conexión.
-- Determinar si una aplicación está sin conexión, en línea o en una conexión de uso medido mediante el objeto de señal [conexión](../canvas-apps/functions/signals.md#connection).
-- Usar [colecciones](../canvas-apps/create-update-collection.md) y aprovechar funciones como [LoadData y SaveData](../canvas-apps/functions/function-savedata-loaddata.md) para el almacenamiento de datos básico cuando esté sin conexión.
+- Determinar si una aplicación está sin conexión, en línea o en una conexión de uso medido mediante el objeto de señal [conexión](functions/signals.md#connection).
+- Use [colecciones](create-update-collection.md) y aproveche las funciones [ **LoadData** y **savedata** ](functions/function-savedata-loaddata.md) para el almacenamiento de datos básico cuando esté sin conexión.
 
-## <a name="limitations"></a>Límite
+En este artículo se incluye un ejemplo del uso de datos de Twitter.  Un ejemplo más sencillo que no requiere una conexión se incluye en la referencia de la [función **LoadData** y **savedata** ](functions/function-savedata-loaddata.md).
+
+## <a name="limitations"></a>Limitaciones
 
 **LoadData** y **savedata** se combinan para formar un mecanismo sencillo para almacenar pequeñas cantidades de datos en un dispositivo local. Mediante el uso de estas funciones, puede agregar funcionalidades sin conexión sencillas a la aplicación.
 
@@ -79,14 +80,14 @@ En un nivel alto, la aplicación realiza estas tareas:
 
 1. En el panel **vista de árbol** , seleccione **aplicación**y, a continuación, establezca su propiedad **OnStart** en esta fórmula:
 
-    ```powerapps-comma
-    If( Connection.Connected;
-        ClearCollect( LocalTweets; Twitter.SearchTweet( "PowerApps"; {maxResults: 10} ) );;
-            Set( statusText; "Online data" );
-        LoadData( LocalTweets; "LocalTweets"; true );;
-            Set( statusText; "Local data" )
-    );;
-    SaveData( LocalTweets; "LocalTweets" );;
+    ```powerapps-dot
+    If( Connection.Connected,
+        ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 10} ) );
+            Set( statusText, "Online data" ),
+        LoadData( LocalTweets, "LocalTweets", true );
+            Set( statusText, "Local data" )
+    );
+    SaveData( LocalTweets, "LocalTweets" );
     ```
 
     > [!div class="mx-imgBorder"]
@@ -114,7 +115,7 @@ Esta fórmula comprueba si el dispositivo está en línea:
 1. En la plantilla Galería, agregue tres controles [**etiqueta**](controls/control-text-box.md) y establezca la propiedad **texto** de cada etiqueta en uno de estos valores:
 
     - `ThisItem.UserDetails.FullName & " (@" & ThisItem.UserDetails.UserName & ")"`
-    - `Text(DateTimeValue(ThisItem.CreatedAtIso); DateTimeFormat.ShortDateTime)`
+    - `Text(DateTimeValue(ThisItem.CreatedAtIso), DateTimeFormat.ShortDateTime)`
     - `ThisItem.TweetText`
 
 1. Haga que el texto de la última etiqueta esté en negrita para que la galería se asemeje a este ejemplo.
@@ -128,7 +129,7 @@ Esta fórmula comprueba si el dispositivo está en línea:
 
 1. Establezca la propiedad **texto** de la etiqueta más reciente en esta fórmula:
 
-    `If( Connection.Connected; "Connected"; "Offline" )`
+    `If( Connection.Connected, "Connected", "Offline" )`
 
 Esta fórmula determina si el dispositivo está en línea. Si es así, la etiqueta muestra **conectado**; de lo contrario, se muestra **sin conexión**.
 
@@ -149,26 +150,26 @@ Esta fórmula determina si el dispositivo está en línea. Si es así, la etique
 
 1. Establezca la propiedad **alseleccionar** del botón en esta fórmula:
 
-    ```powerapps-comma
-    If( Connection.Connected;
-        Twitter.Tweet( ""; {tweetText: NewTweetTextInput.Text} );
-        Collect( LocalTweetsToPost; {tweetText: NewTweetTextInput.Text} );;
-            SaveData( LocalTweetsToPost; "LocalTweetsToPost" )
-    );;
-    Reset( NewTweetTextInput );;
+    ```powerapps-dot
+    If( Connection.Connected,
+        Twitter.Tweet( "", {tweetText: NewTweetTextInput.Text} ),
+        Collect( LocalTweetsToPost, {tweetText: NewTweetTextInput.Text} );
+            SaveData( LocalTweetsToPost, "LocalTweetsToPost" )
+    );
+    Reset( NewTweetTextInput );
     ```  
 
 1. En la propiedad **OnStart** de la **aplicación**, agregue una línea al final de la fórmula:
 
-    ```powerapps-comma
-    If( Connection.Connected;
-        ClearCollect( LocalTweets; Twitter.SearchTweet( "PowerApps"; {maxResults: 100} ) );;
-            Set( statusText; "Online data" );
-        LoadData( LocalTweets; "LocalTweets"; true );;
-            Set( statusText; "Local data" )
-    );;
-    SaveData( LocalTweets; "LocalTweets" );;
-    LoadData( LocalTweetsToPost; "LocalTweetsToPost"; true );;  // added line
+    ```powerapps-dot
+    If( Connection.Connected,
+        ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 100} ) );
+            Set( statusText, "Online data" ),
+        LoadData( LocalTweets, "LocalTweets", true );
+            Set( statusText, "Local data" )
+    );
+    SaveData( LocalTweets, "LocalTweets" );
+    LoadData( LocalTweetsToPost, "LocalTweetsToPost", true );  // added line
     ```
 
     > [!div class="mx-imgBorder"]
@@ -194,12 +195,12 @@ A continuación, la fórmula restablece el texto en el cuadro de entrada de text
 
 1. Establezca el **alfinalizartemporizador** del temporizador en esta fórmula:
 
-    ```powerapps-comma
-    If( Connection.Connected;
-        ForAll( LocalTweetsToPost; Twitter.Tweet( ""; {tweetText: tweetText} ) );;
-        Clear( LocalTweetsToPost );;
-        ClearCollect( LocalTweets; Twitter.SearchTweet( "PowerApps"; {maxResults: 10} ) );;
-        SaveData( LocalTweets; "LocalTweets" );;
+    ```powerapps-dot
+    If( Connection.Connected,
+        ForAll( LocalTweetsToPost, Twitter.Tweet( "", {tweetText: tweetText} ) );
+        Clear( LocalTweetsToPost );
+        ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 10} ) );
+        SaveData( LocalTweets, "LocalTweets" );
    )
     ```
 

@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bc3a27960a95b47115e1b7a43863572ce0c44334
-ms.sourcegitcommit: ed583eb94720a9645bfd79776311792a958077b8
+ms.openlocfilehash: 9a4facf4689ed09e7628411f1c55739f8980336f
+ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2020
-ms.locfileid: "78204401"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78265540"
 ---
 # <a name="notify-function-in-power-apps"></a>Función Notify en Power apps
 Muestra un mensaje de pancarta al usuario.
@@ -49,7 +48,7 @@ Power apps también puede enviar notificaciones de envío mediante un mecanismo 
 Nota: Esta función se denominaba anteriormente **ShowError** cuando solo podía mostrar mensajes de error.
 
 ## <a name="syntax"></a>Sintaxis
-**Notify**( *Message* [; *NotificationType* [; *timeout* ]])
+**Notify**( *Message* [, *NotificationType* [, *timeout* ]])
 
 * *Mensaje*: es necesario.  Mensaje que se va a mostrar al usuario.
 * *TipoDeNotificación*: es opcional.  El tipo de mensaje que se va a mostrar de la tabla anterior.  El valor predeterminado es **NotificationType.Information**.  
@@ -61,9 +60,11 @@ Nota: Esta función se denominaba anteriormente **ShowError** cuando solo podía
 
 1. Agregue un control **Botón** a la pantalla.
 
-2. Establezca la propiedad **OnSelect** del control **Botón** en:
+2. Establezca la propiedad **alseleccionar** del **botón** en la fórmula:
 
-    **Notify( "Hello, World" )**
+    ```powerapps-dot
+    Notify( "Hello, World" )
+    ```
 
 3. Haga clic o presione el botón.  
 
@@ -73,7 +74,9 @@ Nota: Esta función se denominaba anteriormente **ShowError** cuando solo podía
 
 4. Cambie el tipo de mensaje para indicar un error.  Agregue un segundo argumento a la fórmula:
 
-    **Notify( "Hello, World"; NotificationType.Error )**
+    ```powerapps-dot
+    Notify( "Hello, World", NotificationType.Error )
+    ```
 
 5. Haga clic o presione el botón.
 
@@ -83,7 +86,9 @@ Nota: Esta función se denominaba anteriormente **ShowError** cuando solo podía
 
 4. Cambie el tipo de mensaje para indicar una advertencia.  Cambie el segundo argumento de la fórmula:
 
-    **NOTIFY ("Hello, World", NotificationType. warning, 4000)**
+    ```powerapps-dot
+    Notify( "Hello, World", NotificationType.Warning, 4000 )
+    ```
 
 5. Haga clic o presione el botón.
 
@@ -93,7 +98,9 @@ Nota: Esta función se denominaba anteriormente **ShowError** cuando solo podía
 
 4. Cambie el tipo de mensaje para indicar que es correcto.  Cambie el segundo argumento de la fórmula:
 
-    **NOTIFY ("Hello, World", NotificationType. Success, 0)**
+    ```powerapps-dot
+    Notify( "Hello, World", NotificationType.Success, 0 )
+    ```
 
 5. Haga clic o presione el botón.
 
