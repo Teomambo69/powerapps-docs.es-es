@@ -11,12 +11,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: af43eeb3cfa5b2b99bc302360af150f662e1c0af
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: ae1b1b7bc7657d513921ddc2513696af9a808299
+ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77911454"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78293141"
 ---
 # <a name="component-library"></a>Biblioteca de componentes
 
