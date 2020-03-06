@@ -7,28 +7,31 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/16/2016
+ms.date: 03/05/2020
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 15351f3fcfa166c281a1bc4d3213eace8f881d11
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: b5ba55bc48976c08eb79f527adedbe3ecabeeea8
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732757"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403322"
 ---
 # <a name="restore-a-canvas-app-to-a-previous-version-in-power-apps"></a>Restauración de una aplicación de lienzo a una versión anterior en Power apps
 En este artículo se muestra cómo restaurar una aplicación de lienzo a una versión anterior que se guardó en la nube desde la cuenta de Power apps.
 
+> [!NOTE]
+> Solo se pueden restaurar las versiones de aplicaciones creadas en los últimos seis meses.
+
 ## <a name="restore-an-app-from-your-account"></a>Restaurar una aplicación desde su cuenta
-1. Abra [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y pulse o haga clic en **Aplicaciones** en la barra de navegación izquierda.
+1. Abra [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y haga clic o pulse **Aplicaciones** en la barra de navegación izquierda.
 
     ![Barra de navegación izquierda](./media/restore-an-app/file-apps.png)
 
-2. (opcional) Cerca de la esquina superior izquierda, filtre la lista de aplicaciones para mostrar solo las aplicaciones de las que sea propietario o aquellas aplicaciones a las que contribuya.
+2. (opcional) Cerca de la esquina superior izquierda, filtre la lista de aplicaciones para mostrar solo aquellas de las que sea el propietario o en las que contribuya.
 
     ![Filtrar por aplicaciones de las que sea propietario](./media/restore-an-app/filter-list.png)
 
@@ -51,5 +54,5 @@ En este artículo se muestra cómo restaurar una aplicación de lienzo a una ver
 
 ## <a name="more-resources"></a>Más recursos
 [Share an app](share-app.md) (Compartir una aplicación)  
-[Cambiar el nombre y el icono de la aplicación](set-name-tile.md)  
+[Cambiar el nombre e icono de la aplicación](set-name-tile.md)  
 [Delete an app](delete-app.md) (Eliminar una aplicación)
