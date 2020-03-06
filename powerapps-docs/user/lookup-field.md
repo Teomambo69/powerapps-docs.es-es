@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4ef67695603f3badeba92f46c6da90e21715c98b
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.openlocfilehash: 482d06a91d3cb3a7c22e41e4e880aa72294d2b3f
+ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74177843"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78264973"
 ---
 #  <a name="use-the-lookup-field-on-a-record"></a>Uso del campo de búsqueda en un registro
 
@@ -54,9 +54,9 @@ Para realizar una búsqueda, seleccione el cuadro de texto y escriba los criteri
   > ![Examen de un campo de búsqueda](media/MRU.png "Examen de un campo de búsqueda")  
   
 >[!NOTE]   
-> El resultado de búsqueda predeterminado de la búsqueda es "empieza por". Esto significa que los resultados incluyen registros que empiezan por una palabra determinada. Por ejemplo, si quiere buscar **Alpine Ski House**, escriba **alp** en el cuadro de búsqueda; si escribe **ski**, el registro no se muestra en el resultado de la búsqueda.
+> El resultado de búsqueda predeterminado de la búsqueda es **empieza por**. Esto significa que los resultados incluyen registros que empiezan por una palabra determinada. Por ejemplo, si quiere buscar **Alpine Ski House**, escriba **alp** en el cuadro de búsqueda; si escribe **ski**, el registro no se muestra en el resultado de la búsqueda.
 >
-> Para una búsqueda con caracteres comodín, use asteriscos: por ejemplo, escriba: *ski o *ski.
+> Para una búsqueda con caracteres comodín, use asteriscos: Por ejemplo, escriba \*ski o \*ski\*.
 
 ## <a name="browse-in-a-lookup-field"></a>Examen de un campo de búsqueda
 Para examinar una búsqueda, seleccione el icono de búsqueda (lupa). En el menú desplegable se muestra una lista completa de elementos.
