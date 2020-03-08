@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1d98f01920dbcbf960b1e2bb21159586318e0386
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679601"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403551"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>Descripción de la delegación en una aplicación de lienzo
 Power Apps incluye un eficaz conjunto de funciones para filtrar, ordenar y dar forma a tablas de datos en una aplicación de lienzo **[: funciones de filtrado,](functions/function-filter-lookup.md)** **[ordenación](functions/function-sort.md)** y **[AddColumns](functions/function-table-shaping.md)** por nombrar solo algunas. Con estas funciones puede proporcionar a los usuarios acceso a la información que necesitan. Para quienes conozcan bien las bases de datos, el uso de estas funciones es como escribir una consulta de base de datos.
@@ -82,7 +81,7 @@ La lista anterior no incluye estos elementos importantes:
 En **Ordenar**, la fórmula solo puede ser el nombre de una columna individual y no puede incluir otros operadores o funciones.
 
 ### <a name="aggregate-functions"></a>Funciones de agregado
-**[Suma](functions/function-aggregates.md)** ,  **[Promedio](functions/function-aggregates.md)** ,  **[Min](functions/function-aggregates.md)** y **[Max](functions/function-aggregates.md)** pueden delegarse. En este momento, solo un número limitado de orígenes de datos admite esta delegación. Para obtener más detalles, vea la [lista de delegación](delegation-list.md).
+**[Suma](functions/function-aggregates.md)** , **[Promedio](functions/function-aggregates.md)** , **[Min](functions/function-aggregates.md)** y **[Max](functions/function-aggregates.md)** pueden delegarse. En este momento, solo un número limitado de orígenes de datos admite esta delegación. Para obtener más detalles, vea la [lista de delegación](delegation-list.md).
 
 Las funciones de recuento como **[CountRows](functions/function-table-counts.md)** , **[CountA](functions/function-table-counts.md)** y **[Count](functions/function-table-counts.md)** no se pueden delegar.
 
@@ -94,10 +93,10 @@ Otras funciones de agregado, como **[StdevP](functions/function-aggregates.md)**
 
 Como en este ejemplo, los responsables suelen usar **AddColumns** y **Buscar** para combinar información de una tabla en otra, lo que se conoce comúnmente como una combinación en el lenguaje de la base de datos:
 
-```powerapps-comma
-AddColumns( Products; 
-    "Supplier Name"; 
-    LookUp( Suppliers; Suppliers.ID = Product.SupplierID ).Name 
+```powerapps-dot
+AddColumns( Products, 
+    "Supplier Name", 
+    LookUp( Suppliers, Suppliers.ID = Product.SupplierID ).Name 
 )
 ```
 
@@ -139,7 +138,7 @@ Para que sea más fácil saber qué es y qué no se está delegando, Power apps 
 
 Las advertencias de delegación solo aparecen en las fórmulas que operan en orígenes de datos delegables. Si no ve una advertencia y cree que la fórmula no se delega correctamente, compruebe el tipo de origen de datos en la lista anterior de [orígenes de datos que se pueden delegar](delegation-overview.md#delegable-data-sources) de este tema.
 
-## <a name="examples"></a>Ejemplos
+## <a name="examples"></a>Ejemplos:
 En este ejemplo se genera automáticamente una aplicación de tres pantallas basada en una tabla de SQL Server denominada **[dbo].[Fruit]** . Para obtener información sobre cómo generar la aplicación, puede aplicar principios similares en el [tema sobre Common Data Service](data-platform-create-app.md) a SQL Server.
 
 ![Aplicación de tres pantallas](./media/delegation-overview/products-afd.png)

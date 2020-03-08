@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 0c0f4744e7b323e3262a63278e7c12348142a99b
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74727719"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403393"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>Conectarse a SharePoint desde una aplicación de lienzo
 
@@ -178,7 +178,7 @@ Cuando encuentre el archivo que desea, selecciónelo para mostrarlo en el contro
 
 ## <a name="known-issues"></a>Problemas conocidos
 
-### <a name="lists"></a>Coge
+### <a name="lists"></a>Listas
 
 Power apps puede leer nombres de columna que contienen espacios, pero los espacios se reemplazan por el código de escape hexadecimal **"\_x0020\_"** . Por ejemplo, **"nombre de columna"** en SharePoint aparecerá como **"Column_x0020_Name"** en Power apps cuando se muestre en el diseño de datos o se use en una fórmula.
 
@@ -188,11 +188,11 @@ No se admiten todos los tipos de columnas y no todos los tipos de columnas admit
 | --- | --- | --- |
 | Una línea de texto |Sí |Ver texto |
 | Varias líneas de texto |Sí |Ver texto |
-| Opción |Sí |Ver búsqueda<br>Editar consulta<br>Ver la selección múltiple<br>Editar selección múltiple |
+| Elección |Sí |Ver búsqueda<br>Editar consulta<br>Ver la selección múltiple<br>Editar selección múltiple |
 | Número |Sí |Ver porcentaje<br>Ver clasificación<br>Ver texto |
 | Divisa |Sí |Ver porcentaje<br>Ver clasificación<br>Ver texto |
 | Fecha y hora |Sí |Ver texto |
-| Búsqueda |Sí |Ver búsqueda<br>Editar consulta<br>Ver la selección múltiple<br>Editar selección múltiple |
+| Buscar |Sí |Ver búsqueda<br>Editar consulta<br>Ver la selección múltiple<br>Editar selección múltiple |
 | Booleano (Sí/No) |Sí |Ver texto<br>Alternar vista |
 | Persona o grupo |Sí |Ver búsqueda<br>Editar consulta<br>Ver la selección múltiple<br>Editar selección múltiple |
 | Hipervínculo |Sí |Ver URL<br>Ver texto |
@@ -202,9 +202,9 @@ No se admiten todos los tipos de columnas y no todos los tipos de columnas admit
 | Resultado de la tarea |No | |
 | Datos externos |No | |
 | Metadatos administrados |Sí (solo lectura) | |
-| Clasificación |No | |
+| Rating |No | |
 
-### <a name="libraries"></a>Libre
+### <a name="libraries"></a>Bibliotecas
 
 - No se pueden cargar archivos de Power Apps en una biblioteca.
 - No se pueden mostrar archivos PDF de una biblioteca en un control de PDF Viewer.

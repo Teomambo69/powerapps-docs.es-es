@@ -1,5 +1,5 @@
 ---
-title: Función Language | Microsoft Docs
+title: Función Idioma | Microsoft Docs
 description: Información de referencia para la función Language en Power Apps, con sintaxis y ejemplos
 author: gregli-msft
 manager: kvivek
@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a7e41f9becc6cf974bffdeca127e549191ee9379
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74730680"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403280"
 ---
 # <a name="language-function-in-power-apps"></a>Función de lenguaje en Power apps
 Devuelve la etiqueta de idioma del usuario actual.
@@ -40,14 +39,14 @@ Las *etiquetas de idioma* pueden presentar uno de estos tres formatos:
 
 Power apps usa el formato de [etiqueta de idioma IETF BCP-47](https://tools.ietf.org/html/bcp47) .  
 
-Para ver la lista de etiquetas de idioma compatibles, escriba **Value( "1"; )** en la barra de fórmulas o en la vista avanzada, y desplácese por la lista de configuraciones regionales sugeridas para el segundo argumento.  
+Para ver la lista de etiquetas de idioma compatibles, escriba **Value( "1", )** en la barra de fórmulas o en la vista avanzada, y desplácese por la lista de configuraciones regionales sugeridas para el segundo argumento.  
 
 Las funciones **[Text](function-text.md)** y **[Value](function-value.md)** también usan etiquetas de idioma.  Use estas funciones para traducir desde y hacia cadenas de texto teniendo en cuenta el contexto global.  Cuando pasar una etiqueta de idioma a estas funciones y la región no suponga una diferencia, puede usar solo la porción de idioma de la etiqueta.
 
 ## <a name="syntax"></a>Sintaxis
 **Language**()
 
-## <a name="examples"></a>Ejemplos
+## <a name="examples"></a>Ejemplos:
 ### <a name="users-locale"></a>Configuración regional del usuario
 Se supone que el sistema operativo host o el explorador usan la configuración regional predeterminada para la ubicación.
 
@@ -79,7 +78,7 @@ Un enfoque sencillo para la localización consiste en crear una hoja de cálculo
 
 En la aplicación, en los casos en los que antes habría usado el texto **"Hello"** , use la siguiente fórmula en su lugar:
 
-* **LookUp( Table1; TextID = "Hello" && (LanguageTag = Left( Language(); 2 ) || IsBlank( LanguageTag ))).LocalizedText**  
+* **LookUp( Table1, TextID = "Hello" && (LanguageTag = Left( Language(), 2 ) || IsBlank( LanguageTag ))).LocalizedText**  
 
 Esta fórmula buscará el valor adecuado de **LocalizedText** para el idioma del usuario y, si no lo encuentra, recurrirá a la versión predeterminada *blank*. 
 
@@ -93,7 +92,7 @@ Puede traducir texto a petición con un servicio de traducción, como el servici
 
 En la aplicación, en los casos en los que antes habría usado el texto **"Hello"** , use la siguiente fórmula en su lugar:
 
-* **MicrosoftTranslator.Translate( "Hello"; Language() )**
+* **MicrosoftTranslator.Translate( "Hello", Language() )**
 
 El servicio Microsoft Translator usa las mismas etiquetas de idioma que devuelve la función **Language**.
 

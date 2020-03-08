@@ -1,5 +1,5 @@
 ---
-title: Señales Aceleración, Aplicación, Brújula, Conexión y Ubicación | Microsoft Docs
+title: Señales Acceleration, App, Compass, Connection y Location | Microsoft Docs
 description: Información de referencia, con sintaxis y ejemplos, para los sensores de aceleración, aplicación, brújula, conexión y ubicación en Power apps
 author: gregli-msft
 manager: kvivek
@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1cd90e345b41f8316e8cd8c50f4077ee1f64ee91
-ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77145389"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403433"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-power-apps"></a>Señales de aceleración, aplicación, brújula, conexión y ubicación en Power apps
 
@@ -43,7 +43,7 @@ La señal **Acceleration** devuelve la aceleración del dispositivo en tres dime
 | **Acceleration.Y** |Hacia delante y atrás.  El valor hacia delante es un número positivo. |
 | **Acceleration.Z** |Arriba y abajo.  El valor de arriba es un número positivo. |
 
-### <a name="app"></a>App
+### <a name="app"></a>de Power BI
 
 Entre otras propiedades, el objeto de **aplicación** incluye una señal que indica la pantalla que se muestra.
 
@@ -88,7 +88,7 @@ En un campo de béisbol, un lanzador lanza un teléfono desde el montículo del 
 | --- | --- | --- |
 | **Location.Latitude** |Devuelve la latitud de la ubicación actual. El campo se encuentra en las coordenadas de mapa 47,591 N, 122,333 W. |47.591<br><br>La latitud cambiará continuamente a medida que la pelota se mueva entre el lanzador y el receptor. |
 | **Location.Longitude** |Devuelve la longitud de la ubicación actual. |122.333<br><br>La longitud cambiará continuamente a medida que la pelota se mueva entre el lanzador y el receptor. |
-| **Location** |Devuelve la latitud y longitud de la ubicación actual, como un registro. |{&nbsp;Latitud:&nbsp;47.591, Longitud:&nbsp;122.333&nbsp;} |
+| **Ubicación** |Devuelve la latitud y longitud de la ubicación actual, como un registro. |{&nbsp;Latitud:&nbsp;47.591, Longitud:&nbsp;122.333&nbsp;} |
 | **Compass.Heading** |Devuelve el encabezado de brújula de la parte superior de la pantalla. En este campo, la placa de inicio es aproximadamente suroeste del montículo del jarra. |230.25 |
 | **Acceleration.X** |Devuelve la aceleración del dispositivo de lado a lado. El lanzador está lanzando el teléfono en línea recta con respecto a la parte superior de la pantalla, por lo que el dispositivo no cuenta con una aceleración de lado a lado. |0 |
 | **Acceleration.Y** |Devuelve la aceleración del dispositivo de la parte delantera a la trasera. El lanzador inicialmente ofrece al dispositivo una gran aceleración al lanzar el dispositivo, que pasa de 0 a 144 km por hora (40 metros por segundo) en medio segundo. Después de que el dispositivo esté en el aire, sin tener en cuenta la fricción del aire, no se acelera más. El dispositivo deja de acelerarse cuando el receptor lo atrapa, hasta que para. |8,2, cuando el lanzador lanza el dispositivo.<br><br>0, cuando el dispositivo está en el aire.<br><br>-8,2, cuando el receptor atrapa el dispositivo. |
