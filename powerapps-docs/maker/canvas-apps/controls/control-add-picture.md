@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d7c1361593595c89bb67781f78a8f67e23f97cac
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 37c98470d3239cefa008235f295aaf9af2db3f5a
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74723139"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403981"
 ---
 # <a name="add-picture-control-in-power-apps"></a>Agregar el control imagen en Power apps
 Toma una fotografía o carga imágenes desde el dispositivo local.
@@ -27,11 +26,11 @@ Toma una fotografía o carga imágenes desde el dispositivo local.
 ## <a name="description"></a>Descripción
 Con este control los usuarios pueden tomar fotografías o cargar archivos de imagen desde su dispositivo y actualizar el origen de datos con este contenido. En un dispositivo móvil se presenta al usuario el cuadro de diálogo de elección del dispositivo para que elija entre tomar una foto o seleccionar una ya disponible.
 
-Este control es un control agrupado que contiene dos controles: un control **Imagen** y un control **Add media button** (Agregar botón multimedia). El control **Imagen** muestra la imagen cargada o un marcador de posición si no se ha cargado ninguna imagen. El control **Add media button** (Agregar botón multimedia) le solicita una imagen para cargar.
+Este control es un control agrupado que contiene dos controles: una **imagen** y un **botón Agregar imagen**. El control **Imagen** muestra la imagen cargada o un marcador de posición si no se ha cargado ninguna imagen. El **botón Agregar imagen** solicita una imagen que se va a cargar.
 
 Consulte la [referencia del control Imagen](control-image.md) para conocer las propiedades de **Imagen**.
 
-## <a name="add-media-button-properties"></a>Propiedades de Add media button (Agregar botón multimedia)
+## <a name="add-picture-button-properties"></a>Propiedades del botón Agregar imagen
 **[AccessibleLabel](properties-accessibility.md)** : etiqueta para lectores de pantalla. Debe describir el fin de agregar una imagen.
 
 **[Align](properties-text.md)** : la ubicación del texto respecto al centro horizontal de su control.
@@ -115,7 +114,7 @@ Consulte la [referencia del control Imagen](control-image.md) para conocer las p
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="examples"></a>Ejemplos
 ### <a name="add-images-to-an-image-gallery-control"></a>Agregar imágenes a un control Galería de imágenes
@@ -124,7 +123,7 @@ Consulte la [referencia del control Imagen](control-image.md) para conocer las p
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 2. En el cuadro de diálogo **Abrir**, pulse o haga clic en un archivo de imagen y luego pulse o haga clic en **Abrir**.
 3. Agregue un control **[Botón](control-button.md)** , muévalo al control **Agregar imagen** y establezca la propiedad **[AlSeleccionar](properties-core.md)** del control **[Botón](control-button.md)** en esta fórmula:<br>
-   **Collect(MyPix; AddMediaButton1.Media)**
+   **Collect(MyPix, AddMediaButton1.Media)**
    
     ¿Desea más información sobre la función **[Recopilar](../functions/function-clear-collect-clearcollect.md)** u [otras funciones](../formula-reference.md)?
 4. Agregue un control **Galería de imágenes** y establezca su propiedad **[Elementos](properties-core.md)** en **MyPix**.
@@ -143,12 +142,12 @@ Use la función **[SaveData](../functions/function-savedata-loaddata.md)** para 
 Se aplican las mismas directrices para **[Botón](control-button.md)** e **[Imagen](control-image.md)** . Además, tenga en cuenta lo siguiente:
 
 ### <a name="color-contrast"></a>Contraste de color
-* El control **Add media button** (Agregar botón multimedia) debe tener el contraste adecuado entre su texto y el fondo. Dado que la imagen cargada puede tener diversos colores, use una propiedad **[Fill](properties-color-border.md)** opaca en el control **Add media button** (Agregar botón multimedia) para garantizar un contraste uniforme.
+* El **botón Agregar imagen** debe tener un contraste adecuado entre el texto y el fondo. Dado que la imagen cargada puede tener distintos colores, use un **[relleno](properties-color-border.md)** opaco en el **botón Agregar imagen** para garantizar un contraste coherente.
 
 ### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
-* El control **Add media button** (Agregar botón multimedia) debe tener las propiedades **Text** y **ChangePictureText** que soliciten al usuario que agregue o cambie una imagen.
+* El **botón Agregar imagen** debe tener **texto** y **ChangePictureText** que pida al usuario que agregue o cambie una imagen.
 
 ### <a name="keyboard-support"></a>Compatibilidad con el teclado
-* **Add media button** (Agregar botón multimedia) debe tener la propiedad **[TabIndex](properties-accessibility.md)** igual a cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
-* **Add media button** (Agregar botón multimedia) debe tener claramente visibles los indicadores de enfoque. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
+* El **botón Agregar imagen** debe tener un valor de **[TabIndex](properties-accessibility.md)** igual a cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
+* El **botón Agregar imagen** debe tener indicadores de enfoque claramente visibles. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
  
