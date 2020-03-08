@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a1385e45fbbd932e0575c5c5b69b051dc292c824
-ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
+ms.openlocfilehash: 77ccf02395c4d697a6d2054dd1a6dedda26d6e6e
+ms.sourcegitcommit: 56c8c7cc64695ccb00e0d021c9f98cf70b69b4a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77282333"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78845185"
 ---
 # <a name="share-canvas-app-resources-in-power-apps"></a>Uso compartido del lienzo: recursos de la aplicación en Power apps
 
@@ -40,7 +40,7 @@ También puede compartir las conexiones, los conectores personalizados y la puer
 
 ## <a name="connections"></a>Conexiones
 
-Algunas conexiones (como SQL Server con autenticación de Windows o SQL) se [comparten implícitamente](share-app-resources.md#implicit-sharing) con la aplicación cuando se comparte con otros usuarios. Otras conexiones requieren que los usuarios creen sus propias conexiones (como OneDrive para la empresa o SQL Server con la autenticación de Azure AD).
+Algunas conexiones (como SQL Server con autenticación de Windows o SQL) se [comparten implícitamente](share-app-resources.md#implicit-sharing) con la aplicación cuando se comparte con otros usuarios. Otras conexiones requieren que los usuarios creen sus propias conexiones y concedan explícitamente privleges de seguridad (por ejemplo, roles de seguridad para el Common Data Service, OneDrive para la empresa SQL Server con autenticación de Azure AD).
 
 Puede determinar si una conexión se comparte automáticamente como parte de la aplicación cuando se comparte con otros usuarios. permite actualizar los permisos de uso compartido. Para ello, vaya a make.powerapps.com y seleccione **datos** -> **conexiones** desde el panel de navegación izquierdo. A continuación, seleccione la conexión necesaria. Si el botón **compartir** aparece en la navegación superior o si se muestra la opción **compartir** al seleccionar *más comandos* (...), la conexión seleccionada puede compartirse con otros usuarios.
 

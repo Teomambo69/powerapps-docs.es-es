@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/04/2020
+ms.date: 03/06/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a547eac25e71467fb751e0a0c6eb30eccdac48ec
-ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
+ms.openlocfilehash: afd7875b804822aa264b134764ed6c35349a3dcf
+ms.sourcegitcommit: b65d5a0cbd5f97a5fa9137c44fe146fb900fd1b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78293474"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78909583"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>Configuración y información sobre la plantilla de ejemplo de comunicación de crisis en Power apps
 
@@ -153,6 +153,9 @@ Ahora que se han creado todas las listas de SharePoint, ahora puede importar la 
 1. Seleccione **importar** en la barra de comandos.
 1. Cargue el archivo **CrisisCommunication. zip** del repositorio de github:
 
+    > [!NOTE]
+    > Si el inquilino está en el entorno GCC, use **CrisisCommunicationGCC. zip**.
+
     ![Importar paquete de aplicación](media/sample-crisis-communication-app/31-Import-App.png)
 
 1. Seleccione **Importar**.
@@ -220,18 +223,31 @@ Antes de completar el paso siguiente, cree primero un equipo de equipos para el 
 1. Extraiga el identificador del canal, que es todo después `https://teams.microsoft.com/l/channel/` y antes de `/General`. <br> Por ejemplo, en la siguiente dirección URL, el ID. de canal sería `19%3ab2fa9fc20f3042a9b63fc5890e1813f8%40thread.tacv2`:
    
    `https://teams.microsoft.com/l/channel/19%3ab2fa9fc20f3042a9b63fc5890e1813f8%40thread.tacv2/General?groupId=8bc7c0c2-0d4c-4fb8-af99-32da74c9237b&tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47`.
-   
+
 1. Vaya a [Flow.Microsoft.com](https://flow.microsoft.com).
+
 1. Seleccione **Mis flujos** en el panel de navegación izquierdo.
-1. Seleccionar **más comandos** (...)  para **CrisisCommunication. RequestHelp** y seleccione **Editar**.
-    ![editar](media/sample-crisis-communication-app/20-Edit-Flow.png) de la aplicación
+
+1. Seleccionar **más comandos** (...)  para **CrisisCommunication. request** y seleccione **Editar**.
+
+    ![Editar la aplicación](media/sample-crisis-communication-app/20-Edit-Flow.png)
+
 1. Abra la tarjeta ID. del **equipo** .
+
 1. Pegue el identificador del equipo en el campo **valor** .
+
 1. Abra la tarjeta ID. de **canal** .
+
 1. Pegue el identificador de canal en el campo **valor** .
-    ![establecer los identificadores de equipo](media/sample-crisis-communication-app/22-Set-Team-IDs.png)
+
+    ![Establecer identificadores de equipo](media/sample-crisis-communication-app/22-Set-Team-IDs.png)
+
+1. Desplácese hacia abajo hasta las acciones **obtener tiempo** y actualice la acción de **convertir zona horaria** con la opción de horas de origen y destino:
+
+    ![Convertir zona horaria](media/sample-crisis-communication-app/convert-time-zone.png)
 
 ## <a name="import-and-set-up-the-admin-app"></a>Importación y configuración de la aplicación de administración
+
 Para administrar la aplicación que ha importado, querrá repetir los mismos pasos para la aplicación de administración.
 
 1. Inicie sesión en [Power Apps](https://make.powerapps.com).
@@ -417,6 +433,9 @@ La aplicación usa un flujo para enviar notificaciones a los usuarios finales ca
 1. Seleccione el botón **importar** en la barra de comandos.
 1. Cargue el paquete **CrisisCommunicationNewsNotification. zip** del repositorio de github:
 
+    > [!NOTE]
+    > Si el inquilino está en el entorno GCC, use **CrisisCommunicationNewsNotificationGCC. zip**.
+
     ![Carga de CrisisCommunicationNewsNotification. zip](media/sample-crisis-communication-app/upload-news-notification.png)
 
 1. Agregue conexiones para el nuevo flujo seleccionando el vínculo **seleccionar durante la importación** para cada conexión y rellenando el formulario:
@@ -460,6 +479,10 @@ La aplicación usa un flujo para enviar notificaciones a los usuarios finales ca
 
 1. Una vez finalizada la importación, vuelva a **Mis flujos**.
 1. Seleccione el flujo recién importado **para notificar a los usuarios sobre nuevas noticias sobre la comunicación de crisis**.
+
+    > [!NOTE]
+    > Si cargó el paquete GCC, el nombre de flujo es **notificar a los usuarios sobre las novedades de la comunicación de crisis GCC**.
+
 1. Seleccione **Editar** en la barra de comandos.
 1. Abra la tarjeta a la que **se llama cuando se publica un nuevo elemento**.
 1. Cambie la **dirección del sitio** al nombre de su sitio de SharePoint.
@@ -511,6 +534,20 @@ Aquí es donde usaremos el nombre del sitio y el ID. de lista de la lista de Sha
 
 ![Power Query actualizaciones de Editor avanzado](media/sample-crisis-communication-app/005-PowerQuery-AdvancedEditorUpdates-nolines.PNG)
 
+Si ve algún error de conexión después de actualizar la información de conexión, es posible que tenga que actualizar las credenciales usadas para conectarse a la lista de SharePoint. Siga estos pasos para actualizar la conexión:
+
+1. Seleccione el menú **archivo** , **Opciones y configuración** y, a continuación, seleccione **configuración de origen de datos**:
+
+    ![Configuración de origen de datos](media/sample-crisis-communication-app/PBI-1-DataSourceSettings.PNG)
+
+1. Seleccione **Editar permisos**:
+
+    ![Editar permisos](media/sample-crisis-communication-app/PBI-2-DataSourceSettings-EditPermissions.PNG)
+
+1. Asegúrese de que el tipo de *credenciales* está establecido en *cuenta de organización*y use las credenciales para tener acceso a la lista de SharePoint.
+
+    ![Editar permisos](media/sample-crisis-communication-app/PBI-3-OrganizationalAccount.PNG)
+
 Seleccione **cerrar & aplicar** para actualizar el informe y extraer los datos de la lista de SharePoint.
 
 ![Power Query cerrar y aplicar](media/sample-crisis-communication-app/006-PowerQuery-CloseAndApply-nolines.PNG)
@@ -518,6 +555,8 @@ Seleccione **cerrar & aplicar** para actualizar el informe y extraer los datos d
 Ahora tenemos un informe de Power BI que muestra la información geográfica de las ausencias de Office para el día actual y una tendencia de esas ausencias en muchos días. Ahora podemos publicar el informe para que otras personas de la organización puedan verlo.
 
 ![Power BI publicar informe](media/sample-crisis-communication-app/007-PowerBI-Publish-nolines.PNG)
+
+El informe ya está publicado. Puede compartirlo con otros usuarios de su organización. También puede [programar la frecuencia de actualización del informe](https://docs.microsoft.com/power-bi/refresh-scheduled-refresh).
 
 ## <a name="integrate-your-app-into-teams"></a>Integre su aplicación en Teams
 
@@ -596,6 +635,9 @@ Para agregar el informe Power BI:
 1. Busque y seleccione el informe de Power BI.
 1. Seleccione **Guardar**.
 
+***Declinación de responsabilidades:*** *esta aplicación es un ejemplo y se puede usar con Microsoft Power apps y los equipos para la diseminación de información de referencia únicamente. Esta aplicación no está prevista ni está disponible para su uso como dispositivo médico, soporte clínico, herramienta de diagnóstico u otra tecnología pensada para usarse en el diagnóstico, la cura, la mitigación, el tratamiento o la prevención de la enfermedad o en otras condiciones, y Microsoft no concede ninguna licencia o derecho para usar esta aplicación con este fin.  Esta aplicación no está diseñada ni pretende ser un sustituto de asesoramiento médico profesional, diagnóstico, tratamiento o valoración y no debe usarse como tal.  El cliente asume el único riesgo y responsabilidad de cualquier uso de esta aplicación.  Microsoft no garantiza que la aplicación o los materiales proporcionados en la conexión serán suficientes para fines médicos o para cumplir los requisitos sanitarios de cualquier persona.*  
+
 ## <a name="next-steps"></a>Pasos siguientes
+
 - [Referencia sobre fórmulas](https://docs.microsoft.com/powerapps/maker/canvas-apps/formula-reference)
 - [Referencia sobre controles](https://docs.microsoft.com/powerapps/maker/canvas-apps/reference-properties)
