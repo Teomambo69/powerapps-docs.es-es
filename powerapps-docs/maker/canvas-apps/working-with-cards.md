@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 4b159bbfe568e4f3a6501a0d98af83ac062b8c19
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732939"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404265"
 ---
 # <a name="understand-data-cards-in-power-apps"></a>Descripción de las tarjetas de datos en Power apps
 
@@ -142,7 +142,7 @@ En este gráfico, los controles de la tarjeta de datos tienen la etiqueta:
 
 Cuatro controles hacen que esta tarjeta funcione:
 
-| Nombre | Tipo | Descripción |
+| Name | Tipo | Descripción |
 | --- | --- | --- |
 | **TextRequiredStar** |Control **[Etiqueta](controls/control-text-box.md)** |Muestra una estrella, que se utiliza habitualmente en los formularios de entrada de datos para indicar que un campo es obligatorio. |
 | **TextFieldDisplayName** |Control **[Etiqueta](controls/control-text-box.md)** |Muestra el nombre descriptivo de este campo. Este nombre puede diferir de lo que aparece en el esquema del origen de datos. |

@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: f5f09bab44f3f229b47d9a801703b3aa10cba06d
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729755"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404357"
 ---
 # <a name="app-object-in-power-apps"></a>Objeto de aplicación en Power apps
 
@@ -102,7 +101,7 @@ En un explorador, el cuadro de diálogo de confirmación podría aparecer con un
 
 1. Establezca la propiedad **ConfirmExit** del objeto de **aplicación** en esta expresión:
 
-    ```powerapps-comma
+    ```powerapps-dot
     AccountForm.Unsaved Or ContactForm.Unsaved
     ```
 
@@ -113,9 +112,9 @@ En un explorador, el cuadro de diálogo de confirmación podría aparecer con un
 
 1. Establezca la propiedad **ConfirmExitMessage** del objeto de **aplicación** en esta fórmula:
 
-    ```powerapps-comma
-    If( AccountsForm.Unsaved;
-        "Accounts form has unsaved changes.";
+    ```powerapps-dot
+    If( AccountsForm.Unsaved,
+        "Accounts form has unsaved changes.",
         "Contacts form has unsaved changes."
     )
     ```
