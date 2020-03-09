@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: dd5135aa04a552fc5606918a8158b40457a6eb6f
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74724009"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404244"
 ---
 # <a name="connect-to-cloud-storage-from-power-apps"></a>Conexión al almacenamiento en la nube desde Power apps
 Power Apps ofrece varias conexiones de almacenamiento en la nube. Con cualquiera de estas conexiones, puede almacenar un archivo de Excel y usar la información almacenada en él en toda la aplicación. Estas conexiones incluyen las siguientes:  
@@ -70,7 +70,7 @@ Power Apps ofrece varias conexiones de almacenamiento en la nube. Con cualquiera
    
     ![Tercera etiqueta](./media/cloud-storage-blob-connections/items-thirdtextbox.png)  
    
-    Salida de ejemplo:  
+    Resultados del ejemplo:  
     ![Segunda y tercera etiqueta](./media/cloud-storage-blob-connections/secondthirdtextboxes.png)
    
 > [!NOTE]
