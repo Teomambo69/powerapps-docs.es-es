@@ -208,7 +208,11 @@
             - name: Conectores populares
               items:
                 - name: Common Data Service
-                  href: canvas-apps/connections/connection-common-data-service.md
+                  items:
+                    - name: Información general
+                      href: canvas-apps/connections/connection-common-data-service.md
+                    - name: Mejoras
+                      href: canvas-apps/use-native-cds-connector.md
                 - name: Almacenamiento en la nube
                   href: canvas-apps/connections/cloud-storage-blob-connections.md
                 - name: Dynamics 365
@@ -1555,6 +1559,8 @@
           href: ./common-data-service/update-solutions.md
         - name: Exportación de soluciones
           href: ./common-data-service/export-solutions.md
+        - name: Creación de revisiones de soluciones
+          href: ./common-data-service/solution-patches.md
         - name: Cómo se combinan las soluciones administradas
           href: ./common-data-service/how-managed-solutions-merged.md
         - name: Uso de variables de entorno
