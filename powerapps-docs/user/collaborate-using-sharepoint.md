@@ -2,7 +2,7 @@
 title: Colaboración mediante SharePoint | Microsoft Docs
 description: Aprenda a colaborar mediante SharePoint en una aplicación basada en modelo
 documentationcenter: ''
-author: Mattp123
+author: mduelae
 manager: kvivek
 editor: ''
 tags: ''
@@ -10,85 +10,140 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 11/20/2019
+ms.date: 03/02/2020
 ms.author: matp
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 428291712f91e90cea515723a93e1871ec94de2e
-ms.sourcegitcommit: 8f32eed48adf4b24b9ca607bbf6db3d19749c46f
+ms.openlocfilehash: 3491468724662edcac932cf37345730defd6a006
+ms.sourcegitcommit: 5b6e6b41a3fc4d7f1aea46ec66c086b784efacac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74418290"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78236139"
 ---
 # <a name="collaborate-using-sharepoint"></a>Colaboración con SharePoint 
 
-Administre tipos de documentos comunes, como Word, Excel y PowerPoint, y cree carpetas para guardar y administrar esos documentos que se almacenan sin problemas en SharePoint desde una aplicación basada en modelo. 
+Con Common Data Service, puede almacenar documentos en SharePoint y administrarlos desde su aplicación. Los documentos que cree en la aplicación se almacenarán en SharePoint y se sincronizarán automáticamente con sus dispositivos móviles y de escritorio.
 
-> [!NOTE]
-> Esta característica requiere que el administrador del sistema habilite la administración de documentos de SharePoint. Más información: [Administrar los documentos con SharePoint](/power-platform/admin/manage-documents-using-sharepoint)
+Para poder usar SharePoint para almacenar documentos, el administrador del sistema debe habilitar la opción correspondiente. Más información:
 
-En el caso de los registros de cuenta y contacto, se crea automáticamente una carpeta de ubicación de documentos predeterminada en SharePoint la primera vez que se va a la pestaña **Archivos**. En el caso de otros registros de entidad estándar o personalizada, vaya a la pestaña **Relacionados** > **Documentos**. El nombre de la ubicación de documentos tiene este formato: <nombre_registro>_<id._registro>.
+-   [Búsqueda de un administrador o una persona de soporte técnico](find-admin.md)  
 
-De forma predeterminada, la ubicación se establece en Documentos en Sitio predeterminado 1.
+-   [Administrar los documentos con SharePoint](https://docs.microsoft.com/power-platform/admin/manage-documents-using-sharepoint)  
 
-## <a name="add-a-document"></a>Incorporación de un documento
-1.  Abra un registro de cuenta o contacto y seleccione la pestaña **Archivos**. En el caso de otras entidades estándar o personalizadas habilitadas para la administración de documentos, seleccione la pestaña **Relacionados** y luego **Documentos**.
-2.  Elija entre las siguientes opciones. 
-    - Para crear un nuevo documento, seleccione **Nuevo**, seleccione el tipo de documento que quiere, como Word, Excel o OneNote, y escriba un nombre. Seleccione **Guardar**. El documento en blanco se abre en una nueva pestaña. 
-    - Para agregar un documento existente, seleccione **Cargar**, **Elegir archivo**, busque y seleccione el archivo que quiere y seleccione **Abrir**. Seleccione **Aceptar**. 
+## <a name="where-do-you-access-the-documents-from"></a>¿Desde dónde se accede a los documentos?
 
-El archivo del documento aparece en la vista **Cuadrícula asociada al documento**. 
+1. Para los tipos de registro que son compatibles con la administración de documentos, abra el registro en cuestión, seleccione la pestaña **Relacionados** y, después, **Documentos**.
 
-> [!div class="mx-imgBorder"] 
-> ![](media/add-doc-sharepoint.png "Add document to SharePoint")
+   > [!div class="mx-imgBorder"]
+   > ![Apertura de la pestaña Documentos en un registro ](media/onedrive_nav.png "Apertura de la pestaña Documentos en un registro")
 
-El documento también aparece en la ubicación de la carpeta del sitio de SharePoint. 
+2. Seleccione **Ubicación del documento** > **Documentos en Ubicación predeterminada 1**. De forma predeterminada, cuando SharePoint está habilitado, la ubicación se establece en **Documentos en Ubicación predeterminada 1**.
 
-> [!div class="mx-imgBorder"] 
-> ![](media/doc-on-sharepoint.png "Document on SharePoint")
+   > [!div class="mx-imgBorder"]
+   > ![Ubicación predeterminada](media/sharepoint_defualtsite.png "Ubicación predeterminada")
+
+
+## <a name="create-a-new-document-and-save-it-to-sharepoint"></a>Creación de un documento nuevo y guardado en SharePoint
+
+1. Abra un registro y vaya a la vista **Cuadrícula asociada al documento**. Por ejemplo, abra un registro de contacto.
+
+2. En el registro abierto, seleccione la pestaña **Relacionados** y, después, **Documentos**.
+ 
+    > [!div class="mx-imgBorder"]
+    > ![Apertura de la pestaña Documentos en un registro](media/onedrive_nav.png "Apertura de la pestaña Documentos en un registro")
+
+2. Seleccione **Ubicación del documento** y cambie la ubicación a **Documentos en Ubicación predeterminada 1**.
+
+3. Seleccione **Nuevo** y, después, elija un tipo de documento, como Word, Excel o PowerPoint.
+
+    > [!div class="mx-imgBorder"]
+    > ![Creación de un documento](media/onedrive_new_doc.png "Creación de un documento")
+
+4. Escriba un nombre para el documento y seleccione **Guardar**.  
+
+## <a name="create-a-new-folder-in-the-default-sharepoint-site-location"></a>Creación de una carpeta nueva en la ubicación predeterminada del sitio de SharePoint
+
+1. Abra un registro y vaya a la vista **Cuadrícula asociada al documento**. Por ejemplo, abra un registro de contacto.
+
+2. En el registro abierto, seleccione la pestaña **Relacionados** y, después, **Documentos**.
+ 
+    > [!div class="mx-imgBorder"]
+    > ![Apertura de la pestaña Documentos en un registro](media/onedrive_nav.png "Apertura de la pestaña Documentos en un registro")
+
+2. Seleccione **Ubicación del documento** y cambie la ubicación a **Documentos en Ubicación predeterminada 1**.
+
+3. Seleccione **Nuevo** y elija **Carpeta**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Creación de una carpeta](media/Sharepoint_new_folder.png "Crear una carpeta")
+    
+ 4. Escriba un nombre para la carpeta y seleccione **Guardar**.  
+ 
+ 
+ ## <a name="upload-an-existing-document-to-sharepoint-from-your-app"></a>Carga de un documento a SharePoint desde la aplicación
+
+1. Vaya al registro para el que quiere crear un documento, seleccione la pestaña **Relacionados** y, después, **Documentos**.
+ 
+2. Seleccione **Cargar**.
+
+   > [!div class="mx-imgBorder"]
+   > ![Carga de documentos](media/upload_doc.png "Cargar documentos")
+
+3. Elija el archivo que quiera cargar. Solo puede elegir un archivo a la vez.
+
+   El documento se creará en la ubicación en la que se encuentre.
+
+   > [!Note]
+   > Se pueden cargar archivos de hasta 50 MB. Si la conexión a Internet es lenta, es posible que se produzca un error al cargar archivos grandes.
+
+4. Si hay archivos con el mismo nombre en SharePoint, seleccione si quiere sobrescribirlos.
+
+5. Seleccione **Aceptar**.
 
 ## <a name="manage-sharepoint-locations"></a>Administración de ubicaciones de SharePoint
-Puede crear ubicaciones nuevas de SharePoint o editar las existentes desde una aplicación basada en modelo.
 
-1. En la lista **Archivos** de la barra de comandos, seleccione **Abrir ubicación** y luego seleccione la ubicación.
-2. Para editar la ubicación, en la barra de comandos, seleccione **Editar ubicación** <location name>.
-Aparece el cuadro de diálogo **Editar ubicación**.
+Puede crear ubicaciones de SharePoint nuevas o editar las existentes desde su aplicación en Common Data Service.
+
+### <a name="edit-a-location"></a>Edición de una ubicación
+
+1. Abra un registro, seleccione la pestaña **Relacionados** y, después, **Documentos**.
+
+2. Seleccione **Editar ubicación** y, después, seleccione una ubicación para el sitio de SharePoint.
+
+   Aparece el cuadro de diálogo **Editar ubicación**.
+
+   > [!div class="mx-imgBorder"]
+   > ![Editar ubicación](media/edit_location.png "Editar ubicación")
+
 3. El nombre para mostrar, el sitio primario y el nombre de carpeta se rellenan automáticamente. Escriba los detalles sobre la nueva ubicación y seleccione **Guardar**.
-4. Para agregar una ubicación, en la barra de comandos, seleccione **Agregar ubicación**.
-5. Aparece el cuadro de diálogo **Agregar ubicación**.
 
-    > [!div class="mx-imgBorder"] 
-    > ![](media/add-location-dialog-box.png "Add location dialog box")
-6. El nombre para mostrar, el sitio primario y el nombre de carpeta se rellenan automáticamente. Cambie los detalles si es necesario y seleccione **Guardar**.
+### <a name="add-a-new-location"></a>Adición de una nueva ubicación
 
-## <a name="actions-on-documents"></a>Operaciones en documentos
-Al seleccionar uno o más documentos de la lista Documentos, puede realizar estas otras operaciones comunes de SharePoint en ellos:
-- Editar
-- Eliminar
-- Proteger
-- Consulte
-- Descartar la desprotección
-- Modificar propiedades
+1. Abra un registro, seleccione la pestaña **Relacionados** y, después, **Documentos**.
+
+2. Seleccione **Agregar ubicación**. 
+
+   Aparece el cuadro de diálogo **Agregar ubicación**.
+
+   > [!div class="mx-imgBorder"]
+   > ![Agregar ubicación](media/add_location.png "Agregar ubicación")
+
+3. El nombre para mostrar, el sitio primario y el nombre de carpeta se rellenan automáticamente. Cambie los detalles si es necesario y seleccione **Guardar**.
 
 ## <a name="files-tab-faq"></a>Preguntas frecuentes sobre la pestaña Archivos
+
 *¿Por qué se ha movido la ubicación para acceder a los documentos?* 
 - Se ha movido el comando para que resulte más fácil encontrar los documentos con menos clics.
 
 *¿La pestaña Documentos ha desaparecido?*
-- No, no ha desaparecido. Los usuarios pueden seguir accediendo a los documentos asociados al registro en cuestión igual que antes, simplemente con hacer clic en el menú Relacionados y luego en el vínculo Documentos.
+- No, no ha desaparecido. Los usuarios pueden seguir accediendo a los documentos asociados al registro en cuestión igual que antes. Solo tienen que seleccionar el menú **Relacionados** y, después, el vínculo **Documentos**.
 
 *Con el cambio, ¿las subcarpetas de SharePoint se siguen creando automáticamente?*
 - Sí. El comportamiento es similar al del vínculo **Documentos** del menú **Relacionados**. Cuando un usuario selecciona la pestaña **Archivos** por primera vez, el sistema crea la subcarpeta de SharePoint correspondiente. 
 
 *¿Hay alguna manera de agregar la pestaña Archivos a otras entidades o de quitarla?*
-- Sí. Para agregar o quitar la pestaña Archivos, siga los pasos de este artículo. [Agregar la pestaña documentos de SharePoint al formulario principal de una entidad](../maker/model-driven-apps/add-documents-tab-entity-main-form.md)  
-
-*¿A dónde puedo enviar comentarios sobre este cambio?*
-- Puede enviar sus comentarios al equipo de Dynamics 365 Sales Office and Teams Integration a esta dirección de correo electrónico: d365_ot_crew@microsoft.com
-
-### <a name="see-also"></a>Vea también
-[Integración de SharePoint, OneNote y OneDrive con Common Data Service](../maker/common-data-service/sharepoint-onedrive-onenote-intro.md)
+- Sí. Para agregar o quitar la pestaña **Archivos**, siga los pasos que se indican en este artículo: [Agregar la pestaña documentos de SharePoint al formulario principal de una entidad](../maker/model-driven-apps/add-documents-tab-entity-main-form.md)  
