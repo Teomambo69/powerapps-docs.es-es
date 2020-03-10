@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/06/2020
 ms.locfileid: "78403981"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="add-picture-control-in-power-apps"></a>Agregar el control imagen en Power apps
 Toma una fotografía o carga imágenes desde el dispositivo local.
@@ -114,7 +115,7 @@ Consulte la [referencia del control Imagen](control-image.md) para conocer las p
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="examples"></a>Ejemplos
 ### <a name="add-images-to-an-image-gallery-control"></a>Agregar imágenes a un control Galería de imágenes
@@ -123,7 +124,7 @@ Consulte la [referencia del control Imagen](control-image.md) para conocer las p
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 2. En el cuadro de diálogo **Abrir**, pulse o haga clic en un archivo de imagen y luego pulse o haga clic en **Abrir**.
 3. Agregue un control **[Botón](control-button.md)** , muévalo al control **Agregar imagen** y establezca la propiedad **[AlSeleccionar](properties-core.md)** del control **[Botón](control-button.md)** en esta fórmula:<br>
-   **Collect(MyPix, AddMediaButton1.Media)**
+   **Collect(MyPix; AddMediaButton1.Media)**
    
     ¿Desea más información sobre la función **[Recopilar](../functions/function-clear-collect-clearcollect.md)** u [otras funciones](../formula-reference.md)?
 4. Agregue un control **Galería de imágenes** y establezca su propiedad **[Elementos](properties-core.md)** en **MyPix**.

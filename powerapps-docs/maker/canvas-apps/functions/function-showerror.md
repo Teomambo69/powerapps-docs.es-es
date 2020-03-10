@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/04/2020
 ms.locfileid: "78265540"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="notify-function-in-power-apps"></a>Función Notify en Power apps
 Muestra un mensaje de pancarta al usuario.
@@ -48,7 +49,7 @@ Power apps también puede enviar notificaciones de envío mediante un mecanismo 
 Nota: Esta función se denominaba anteriormente **ShowError** cuando solo podía mostrar mensajes de error.
 
 ## <a name="syntax"></a>Sintaxis
-**Notify**( *Message* [, *NotificationType* [, *timeout* ]])
+**Notify**( *Message* [; *NotificationType* [; *timeout* ]])
 
 * *Mensaje*: es necesario.  Mensaje que se va a mostrar al usuario.
 * *TipoDeNotificación*: es opcional.  El tipo de mensaje que se va a mostrar de la tabla anterior.  El valor predeterminado es **NotificationType.Information**.  
@@ -62,7 +63,7 @@ Nota: Esta función se denominaba anteriormente **ShowError** cuando solo podía
 
 2. Establezca la propiedad **alseleccionar** del **botón** en la fórmula:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Notify( "Hello, World" )
     ```
 
@@ -74,8 +75,8 @@ Nota: Esta función se denominaba anteriormente **ShowError** cuando solo podía
 
 4. Cambie el tipo de mensaje para indicar un error.  Agregue un segundo argumento a la fórmula:
 
-    ```powerapps-dot
-    Notify( "Hello, World", NotificationType.Error )
+    ```powerapps-comma
+    Notify( "Hello, World"; NotificationType.Error )
     ```
 
 5. Haga clic o presione el botón.
@@ -86,8 +87,8 @@ Nota: Esta función se denominaba anteriormente **ShowError** cuando solo podía
 
 4. Cambie el tipo de mensaje para indicar una advertencia.  Cambie el segundo argumento de la fórmula:
 
-    ```powerapps-dot
-    Notify( "Hello, World", NotificationType.Warning, 4000 )
+    ```powerapps-comma
+    Notify( "Hello, World"; NotificationType.Warning; 4000 )
     ```
 
 5. Haga clic o presione el botón.
@@ -98,8 +99,8 @@ Nota: Esta función se denominaba anteriormente **ShowError** cuando solo podía
 
 4. Cambie el tipo de mensaje para indicar que es correcto.  Cambie el segundo argumento de la fórmula:
 
-    ```powerapps-dot
-    Notify( "Hello, World", NotificationType.Success, 0 )
+    ```powerapps-comma
+    Notify( "Hello, World"; NotificationType.Success; 0 )
     ```
 
 5. Haga clic o presione el botón.

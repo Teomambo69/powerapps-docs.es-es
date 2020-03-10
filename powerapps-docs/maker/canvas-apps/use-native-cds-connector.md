@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/06/2020
 ms.locfileid: "78845385"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="common-data-service-and-the-improved-data-source-experience"></a>Common Data Service y la mejor experiencia de origen de datos
 
@@ -89,10 +90,10 @@ Active la sección *características en desuso* en *Configuración avanzada*.  S
     
     Es posible que se produzcan errores en esta fase si usa un campo de conjunto de opciones o valores de texto GUID codificados de forma rígida.  <br><br> 
     
-    - *Valores de conjunto de opciones*: Si usa un campo de conjunto de opciones con un identificador de texto para el valor del conjunto de opciones, use la notación de puntos en su lugar para hacer referencia al valor del conjunto de opciones. Por ejemplo, cambie `Patch(Accounts, OptionSet1 = “12345”)` a `Patch(Accounts, OptionSet.Item1)` donde `Item1` corresponde al valor de `12345`. <br>
+    - *Valores de conjunto de opciones*: Si usa un campo de conjunto de opciones con un identificador de texto para el valor del conjunto de opciones, use la notación de puntos en su lugar para hacer referencia al valor del conjunto de opciones. Por ejemplo, cambie `Patch(Accounts; OptionSet1 = “12345”)` a `Patch(Accounts; OptionSet.Item1)` donde `Item1` corresponde al valor de `12345`. <br>
     Vea la sección [ejemplos detallados](#detailed-examples) para obtener más información.
     - *GUID*: Si utiliza una cadena de GUID estática como `015e45e1044e49f388115be07f2ee116`, conviértala en una función que devuelva un objeto GUID. por ejemplo `GUID(“015e45e1044e49f388115be07f2ee116”)`. 
-    - *Búsquedas*: Si utiliza funciones de búsqueda para obtener valores de búsqueda de primer nivel, como `Lookup(Contacts, ‘contactID’ = ThisItem.ContactID”)`, considere la posibilidad de usar `ThisItem.PrimaryContacts` (donde PrimaryContacts es el nombre de la entidad).
+    - *Búsquedas*: Si utiliza funciones de búsqueda para obtener valores de búsqueda de primer nivel, como `Lookup(Contacts; ‘contactID’ = ThisItem.ContactID”)`, considere la posibilidad de usar `ThisItem.PrimaryContacts` (donde PrimaryContacts es el nombre de la entidad).
 
 ### <a name="improve-data-source-experience-and-common-data-service-views-is-off"></a>*Mejorar la experiencia de origen de datos y las vistas de Common Data Service* está desactivada:
 
@@ -124,10 +125,10 @@ Es posible que se produzcan errores al realizar la conversión si: no está util
 
 - Si hay conflictos de nombres de control, cambie el nombre del control para que sea diferente y único. 
 - En el caso de conflictos de nombres para mostrar de campos y entidades, es posible que vea una fórmula que espera una entidad pero que se resuelve en un nombre de campo con ámbito más local. Use el corchete con un símbolo de *@* para indicar un ámbito global, de modo que se resuelva en la entidad; por ejemplo, **[@entityName]** .
-- *Valores de conjunto de opciones*: Si usa un campo de conjunto de opciones con un identificador de texto para el valor del conjunto de opciones, use la notación de puntos en su lugar para hacer referencia al valor del conjunto de opciones. Por ejemplo, cambie `Patch(Accounts, OptionSet1 = “12345”)` a `Patch(Accounts, OptionSet.Item1)` donde `Item1` corresponde al valor de `12345`. <br>
+- *Valores de conjunto de opciones*: Si usa un campo de conjunto de opciones con un identificador de texto para el valor del conjunto de opciones, use la notación de puntos en su lugar para hacer referencia al valor del conjunto de opciones. Por ejemplo, cambie `Patch(Accounts; OptionSet1 = “12345”)` a `Patch(Accounts; OptionSet.Item1)` donde `Item1` corresponde al valor de `12345`. <br>
 Vea la sección [ejemplos detallados](#detailed-examples) para obtener más información.
 - *GUID*: Si usa una cadena de GUID estática como `015e45e1044e49f388115be07f2ee116`, conviértala en una función que devuelva un objeto GUID. por ejemplo `GUID(“015e45e1044e49f388115be07f2ee116”)`. 
-- *Búsquedas*: Si usa funciones de búsqueda para obtener valores de búsqueda de primer nivel, como `Lookup(Contacts, ‘contactID’ = ThisItem.ContactID”)`, considere la posibilidad de usar `ThisItem.PrimaryContacts` (donde PrimaryContacts es el nombre de la entidad).
+- *Búsquedas*: Si usa funciones de búsqueda para obtener valores de búsqueda de primer nivel, como `Lookup(Contacts; ‘contactID’ = ThisItem.ContactID”)`, considere la posibilidad de usar `ThisItem.PrimaryContacts` (donde PrimaryContacts es el nombre de la entidad).
 - Para obtener referencias polimórficas, consulte la sección ejemplos detallados a continuación. 
 
 ## <a name="detailed-examples"></a>Ejemplos detallados
@@ -152,14 +153,14 @@ Con la nueva característica de vistas de la *experiencia de orígenes de datos 
 
 Anteriormente, si quisiera utilizar un valor de conjunto de opciones en una expresión de filtro, tendría que usar el campo *valor* . Por ejemplo:
 
-```powerapps-dot
-Filter(Account,'Category Value' = "1")
+```powerapps-comma
+Filter(Account;'Category Value' = "1")
 ```
 
 Deberá editar esta fórmula. El identificador de texto del conjunto de opciones ya no se utiliza para el valor. Esta expresión debe actualizarse para que tenga el aspecto siguiente:
 
-```powerapps-dot
-Filter(Account, Category= ‘Category (Accounts)’.’Preferred Customer’)
+```powerapps-comma
+Filter(Account; Category= ‘Category (Accounts)’.’Preferred Customer’)
 ```
 
 ' Category (accounts) ' es el nombre de la enumeración que se usa en el campo Category de la entidad accounts. Se trata de un conjunto de opciones local.  Puede leer más sobre los conjuntos de opciones locales y globales aquí: [conjuntos de opciones globales.](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-global-option-sets)
@@ -168,22 +169,22 @@ Filter(Account, Category= ‘Category (Accounts)’.’Preferred Customer’)
 
 El siguiente es un ejemplo de una instrucción patch anterior del conjunto de opciones:
 
-```powerapps-dot
-Patch( Accounts, First(Accounts), { ‘Category Value’: 1 } ) )
+```powerapps-comma
+Patch( Accounts; First(Accounts); { ‘Category Value’: 1 } ) )
 ```
 
 Tendrá que actualizar las instrucciones para seguir este formulario:
 
-```powerapps-dot
-Patch( Accounts, First(Accounts), { Category: ‘Category (Accounts)’.’Preferred Customer’ } )
+```powerapps-comma
+Patch( Accounts; First(Accounts); { Category: ‘Category (Accounts)’.’Preferred Customer’ } )
 ```
 
 #### <a name="option-set-disambiguation"></a>Desambiguación de conjunto de opciones
 
 Si el nombre para mostrar de un **campo** de conjunto de opciones y el nombre del conjunto de opciones son los mismos, deberá eliminar la ambigüedad de la fórmula. Para seguir usando el ejemplo de código de categoría cuentas, el **@** implica usar el conjunto de opciones, no el campo.
 
-```powerapps-dot
-Filter(Accounts, 'Category Code' = [@’Category Code’].'Preferred Customer')
+```powerapps-comma
+Filter(Accounts; 'Category Code' = [@’Category Code’].'Preferred Customer')
 ```
 
 ### <a name="two-options"></a>Dos opciones
@@ -200,12 +201,12 @@ Con la nueva característica de *vistas de Common Data Service y la experiencia 
 
 Si prefiere el modificador de alternancia para el campo booleano, puede desbloquear la tarjeta de datos y reemplazar el control en la tarjeta de datos con un comando de alternancia.  También deberá establecer estas propiedades en el control de alternancia.
 
-```powerapps-dot
+```powerapps-comma
 Toggle1.Default = ThisItem.’Do not allow Bulk Emails’
 Toggle1.TrueText = ‘Do not allow Bulk Emails (Accounts)’.’Do Not Allow’
 Toggle1.FalseText = ‘Do not allow Bulk Emails (Accounts)’.Allow
-DataCard.Value = If( Toggle1.Value,
-    ‘Do not allow Bulk Emails (Accounts)’.’Do Not Allow’,
+DataCard.Value = If( Toggle1.Value;
+    ‘Do not allow Bulk Emails (Accounts)’.’Do Not Allow’;
     ‘Do not allow Bulk Emails (Accounts)’.Allow )
 ```
 
@@ -229,9 +230,9 @@ Por ejemplo, el campo propietario de una entidad puede hacer referencia a un reg
 
 Las referencias de registro se pueden usar como un registro completo:
 
-```powerapps-dot
-Filter( Accounts, Owner = First( Teams ) )
-Patch( Accounts, First( Accounts ), { Owner: First( Users ) })
+```powerapps-comma
+Filter( Accounts; Owner = First( Teams ) )
+Patch( Accounts; First( Accounts ); { Owner: First( Users ) })
 ```
 
 ##### <a name="polymorphic-with-a-gallery-displaying-owner-name"></a>Polimórficos con una galería que muestra el nombre del propietario
@@ -250,10 +251,10 @@ Hay dos nuevas funciones que puede usar:
 
 Con estas funciones, puede escribir una fórmula que muestre el nombre del propietario tomado de dos campos con nombre diferentes, en función del tipo de entidad del propietario:
 
-```powerapps-dot
-If( IsType( ThisItem.Owner,  [@Teams]), 
-    AsType( ThisItem.Owner, [@Teams]).'Team Name', 
-    AsType( ThisItem.Owner, [@Users]).'Full Name' )
+```powerapps-comma
+If( IsType( ThisItem.Owner;  [@Teams]); 
+    AsType( ThisItem.Owner; [@Teams]).'Team Name'; 
+    AsType( ThisItem.Owner; [@Users]).'Full Name' )
 ```
 
 ![Galería con as Type](./media/use-native-cds-connector/Polymorphic-And-AsType-in-Gallery.png)
@@ -268,12 +269,12 @@ El campo de búsqueda de clientes es otra búsqueda polimórfica similar a Owner
 
 Las búsquedas polimórficas no se limitan a las cuentas y los contactos. La lista de entidades es extensible con entidades personalizadas. Por ejemplo, la entidad faxes tiene una polimórfico relacionada con el campo de búsqueda, que puede hacer referencia a cuentas, contactos y otras entidades. Si tiene una galería con el origen de datos establecido en faxes, puede usar la siguiente fórmula para mostrar el nombre asociado con el campo de búsqueda referente a. 
  
- ```powerapps-dot
-If( IsBlank( ThisItem.Regarding ), "",
-    IsType( ThisItem.Regarding, [@Accounts] ),
-        "Account: " & AsType( ThisItem.Regarding, [@Accounts] ).'Account Name',
-    IsType( ThisItem.Regarding, [@Contacts] ),
-        "Contacts: " & AsType( ThisItem.Regarding, [@Contacts] ).'Full Name',
+ ```powerapps-comma
+If( IsBlank( ThisItem.Regarding ); "";
+    IsType( ThisItem.Regarding; [@Accounts] );
+        "Account: " & AsType( ThisItem.Regarding; [@Accounts] ).'Account Name';
+    IsType( ThisItem.Regarding; [@Contacts] );
+        "Contacts: " & AsType( ThisItem.Regarding; [@Contacts] ).'Full Name';
     "" )
 ```
 
@@ -297,11 +298,11 @@ Los registros se muestran en la entidad de actividad. Sin embargo, puede seguir 
  
 Con esta fórmula, puede mostrar el tipo de registro en un control etiqueta dentro de la Galería:
 
- ```powerapps-dot
-If( IsType( ThisItem, [@Faxes] ), "Fax",
-    IsType( ThisItem, [@'Phone Calls'] ), "Phone Call",
-    IsType( ThisItem, [@'Email Messages'] ), "Email Message",
-    IsType( ThisItem, [@Chats] ), "Chat",
+ ```powerapps-comma
+If( IsType( ThisItem; [@Faxes] ); "Fax";
+    IsType( ThisItem; [@'Phone Calls'] ); "Phone Call";
+    IsType( ThisItem; [@'Email Messages'] ); "Email Message";
+    IsType( ThisItem; [@Chats] ); "Chat";
     "Unknown")
 ```
 
@@ -317,7 +318,7 @@ Al crear una entidad, puede habilitar los datos adjuntos. Si activa la casilla p
 
 No se puede leer ni filtrar según el campo referente a. Sin embargo, la relación de notas inversas uno a varios está disponible. Para enumerar todas las notas asociadas a una entidad de cuenta, puede usar la fórmula siguiente:
 
-```powerapps-dot
+```powerapps-comma
 First( Accounts ).Notes
 ```
 
@@ -325,8 +326,8 @@ First( Accounts ).Notes
 
 No se puede establecer el campo notas en una entidad mediante patch. Para agregar un registro a la tabla de notas de una entidad, puede usar la función Relate. Cree primero la nota, como en este ejemplo:
 
-```powerapps-dot
-Relate( ThisItem.Notes, Patch( Notes, Defaults( Notes ), { Title: "A new note", isdocument:'Is Document (Notes)'.No } ) )
+```powerapps-comma
+Relate( ThisItem.Notes; Patch( Notes; Defaults( Notes ); { Title: "A new note"; isdocument:'Is Document (Notes)'.No } ) )
 ```
 
 ## <a name="next-steps"></a>Pasos siguientes

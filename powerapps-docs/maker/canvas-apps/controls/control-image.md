@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/06/2020
 ms.locfileid: "78404130"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="image-control-in-power-apps"></a>Control de imagen en Power apps
 Un control que muestra una imagen desde, por ejemplo, un archivo local o un origen de datos.
@@ -111,7 +112,7 @@ Si agrega uno o varios controles **Imagen** controles a la aplicación, puede mo
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Quitar**( *DataSource*, EsteElemento)](../functions/function-remove-removeif.md)
+[**Quitar**( *DataSource*; EsteElemento)](../functions/function-remove-removeif.md)
 
 ## <a name="examples"></a>Ejemplos:
 ### <a name="show-an-image-from-a-local-file"></a>Mostrar una imagen desde un archivo local
