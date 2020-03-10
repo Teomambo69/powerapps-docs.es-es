@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d1397f9fd2859611a3cd54023210a27cd5977834
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74724944"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404595"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-power-apps"></a>Agregar una conexión de datos a una aplicación de lienzo en Power apps
 

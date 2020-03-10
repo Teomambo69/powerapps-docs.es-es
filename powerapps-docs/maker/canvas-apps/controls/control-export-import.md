@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/25/2016
+ms.date: 03/09/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1fe22d1503193c7c26f0ac8532085bb9b7db2eac
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 5d5144db3147defa43c5e11cb169a6ebc9b02105
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74727303"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78970964"
 ---
 # <a name="export-control-and-import-control-in-power-apps"></a>Control de exportación e importación de control en Power apps
 Controla la exportación de datos a un archivo local y la importación de los datos en otra aplicación de Power apps.
@@ -27,10 +26,10 @@ Controla la exportación de datos a un archivo local y la importación de los da
 ## <a name="description"></a>Descripción
 Si desea crear más de una aplicación que utiliza los mismos datos, pero no quiere compartir esos datos fuera de esas aplicaciones, puede exportarlos e importarlos mediante un control **Exportar** y un control **Importar**. Cuando se exportan datos, se crea un archivo comprimido que se puede copiar en otro equipo, pero no se puede leer en ningún programa que no sea Power apps.
 
-## <a name="warning"></a>Advertencia
+## <a name="warning"></a>advertencia
 Al habilitar esta funcionalidad en la aplicación, puede exponerla a vulnerabilidades de seguridad y pérdida de datos.  Se recomienda aconsejar a los usuarios que importen solo los archivos reconocidos y de confianza y que exporten únicamente los datos que no sean confidenciales.
 
-## <a name="limitations"></a>Límite
+## <a name="limitations"></a>Limitaciones
 La funcionalidad de exportación no es compatible con los navegadores web.
 
 ## <a name="key-properties"></a>Propiedades principales
@@ -116,20 +115,19 @@ La funcionalidad de exportación no es compatible con los navegadores web.
 **[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="example"></a>Ejemplo
-1. Agregue un control **[Botón](control-button.md)** y establezca su propiedad **[OnSelect](properties-core.md)** en esta fórmula:
-   <br>**ClearCollect(Products; {Name:"Europa"; Price:"10.99"}; {Name:"Ganymede"; Price:"12.49"}; {Name:"Callisto"; Price:"11.79"})**
-   
-    ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
-   
-    ¿Desea más información sobre la función **[ClearCollect](../functions/function-clear-collect-clearcollect.md)** u [otras funciones](../formula-reference.md)?
-2. Presione F5, haga clic o pulse el control **[Botón](control-button.md)** y luego presione Esc.
+1. Agregue un control **[Botón](control-button.md)** y establezca su propiedad **[OnSelect](properties-core.md)** en esta fórmula: <br>
+   ```
+   ClearCollect(Products, {Name:"Europa", Price:"10.99"}, {Name:"Ganymede", Price:"12.49"}, {Name:"Callisto", Price:"11.79"})
+   ```
+   Para obtener más información, lea [Agregar, asignar nombres y configurar un control](../add-configure-controls.md), **[ClearCollect](../functions/function-clear-collect-clearcollect.md)** y [otras funciones](../formula-reference.md).
+2. Presione F5 y seleccione control de **[botón](control-button.md)** y, a continuación, presione ESC.
 3. Agregue un control **Exportar** y establezca su propiedad **Data** en **Productos**.
-4. Presione F5, haga clic o pulse el control **Exportar** y luego especifique el nombre del archivo en el que desea exportar los datos.
-5. Haga clic o pulse **Guardar** y luego presione Esc para volver al área de trabajo predeterminada.
+4. Presione F5 y seleccione el control **exportar** para descargar el archivo *Data. zip*.
+5. Seleccione **Guardar**y, a continuación, presione ESC para volver al área de trabajo predeterminada.
 6. En una aplicación nueva o existente, agregue un control **Importar**, asígnele el nombre **MyData** y establezca su propiedad **[OnSelect](properties-core.md)** en esta fórmula:<br>
-   **Collect(ImportedProducts; MyData.Data)**
-7. Presione F5, haga clic o pulse **MyData**, haga clic o pulse el archivo exportado y luego haga clic o pulse **Abrir**.
-8. Presione Esc, haga clic o pulse **Colecciones** en el menú **Archivo** y confirme que la aplicación actual tiene los datos que ha exportado.
+   **Collect(ImportedProducts, MyData.Data)**
+7. Presione F5 y seleccione mis **datos**, luego seleccione el archivo que ha exportado y, a continuación, seleccione **abrir**.
+8. Presione ESC y seleccione **colecciones** en el menú **archivo** y confirme que la aplicación actual tiene los datos exportados.
 
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad

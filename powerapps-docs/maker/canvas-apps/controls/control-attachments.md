@@ -6,24 +6,24 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.date: 04/23/2018
+ms.date: 03/09/2020
 ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f5288e6a8ee655cf24479a7de3a5904b7f1a4e07
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 35e4107934134a229817deb258bacf5e36c9dbb6
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75204051"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78970982"
 ---
 # <a name="attachments-control-in-power-apps"></a>Control de datos adjuntos en Power apps
 Un control que permite a los usuarios descargar archivos en su dispositivo, así como cargar y eliminar archivos de una lista de SharePoint o una entidad Common Data Service.
 
-## <a name="limitations"></a>Límite
+## <a name="limitations"></a>Limitaciones
 El control de datos adjuntos presenta estas limitaciones:
 1. Los datos adjuntos son compatibles con las listas de SharePoint y Common Data Service entidades.
 
@@ -35,7 +35,7 @@ El control de datos adjuntos presenta estas limitaciones:
 Un control de **datos adjuntos** le permite abrir, agregar y eliminar archivos de una lista de SharePoint o una entidad Common Data Service.
 
 ## <a name="key-properties"></a>Propiedades principales
-**[Items](properties-core.md) **: el origen de donde se describen los archivos que se pueden descargar.
+**[Items](properties-core.md)** : el origen de donde se describen los archivos que se pueden descargar.
 
 **MaxAttachments**: el número máximo de archivos que acepta el control.
 
@@ -45,50 +45,52 @@ Un control de **datos adjuntos** le permite abrir, agregar y eliminar archivos d
 
 **OnRemove**: cómo responde la aplicación cuando el usuario elimina datos adjuntos existentes.
 
-**[OnSelect](properties-core.md)**: cómo responde la aplicación cuando el usuario hace clic en unos datos adjuntos.
+**[OnSelect](properties-core.md)** : cómo responde la aplicación cuando el usuario hace clic en unos datos adjuntos.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
-**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla. Debe describir el fin de los datos adjuntos.
+**[AccessibleLabel](properties-accessibility.md)** : etiqueta para lectores de pantalla. Debe describir el fin de los datos adjuntos.
 
 **AddAttachmentText**: el texto de la etiqueta del vínculo que se usa para agregar nuevos datos adjuntos.
 
-**[BorderColor](properties-color-border.md)**: el color de un borde del control.
+**[BorderColor](properties-color-border.md)** : el color de un borde del control.
 
-**[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
+**[BorderStyle](properties-color-border.md)** : si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
-**[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
+**[BorderThickness](properties-color-border.md)** : el grosor de un borde del control.
 
-**[DisplayMode](properties-core.md)**: indica si el control permite agregar y eliminar archivos (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+**[DisplayMode](properties-core.md)** : indica si el control permite agregar y eliminar archivos (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
-**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+**[FocusedBorderColor](properties-color-border.md)** : el color del borde de un control cuando el control recibe el foco.
 
-**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
+**[FocusedBorderThickness](properties-color-border.md)** : el grosor del borde de un control cuando el control recibe el foco.
 
-**[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
+**[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
 
 **MaxAttachmentsText**: el texto que reemplaza al vínculo de "Adjuntar archivo" cuando el control contiene el número máximo de archivos permitidos.
 
 **NoAttachmentsText**: texto informativo que se muestra al usuario cuando no hay archivos adjuntos.
 
-**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
+**[TabIndex](properties-accessibility.md)** : orden de navegación del teclado en relación con otros controles.
 
-**[Visible](properties-core.md) **: indica si un control está visible u oculto.
+**[Visible](properties-core.md)** : indica si un control está visible u oculto.
 
-**[Width](properties-size-location.md)**: la distancia entre los bordes derecho e izquierdo de un control.
+**[Width](properties-size-location.md)** : la distancia entre los bordes derecho e izquierdo de un control.
 
-**[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[X](properties-size-location.md)** : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
 
-**[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 
 ## <a name="example"></a>Ejemplo
-1. Cree una aplicación de datos usando una lista de SharePoint como origen de datos. Como alternativa, puede agregar un formulario a la aplicación y establecer una lista de SharePoint como su origen de datos.
+1. Agregue un formulario a la aplicación y establezca una lista de SharePoint como origen de datos.
 
-2. Seleccione el control **Formulario** en la vista de árbol del lado izquierdo.
+2. Seleccione el control **Mostrar formulario** en la vista de árbol del lado izquierdo. También puede usar **Editar formulario** en su lugar.
 
-3. Haga clic en **Datos** en la pestaña Propiedades en el panel de opciones de la derecha.
+3. Seleccione **origen de datos** en la pestaña propiedades en el panel de opciones de la derecha y, a continuación, seleccione la lista de SharePoint a la que se conectó.
 
-4. En **Campos**, habilite el campo **Datos adjuntos**.
+4. Seleccione **Editar campos** en la sección de *campos* y seleccione **Agregar campo**. 
+
+5. Seleccione el campo **datos adjuntos** y seleccione **Agregar**.
 
     El campo de datos adjuntos asociado a la lista de SharePoint aparecerá en el formulario.
 

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 351e6cd6c680d4d5dc89f4e77c98bdd520f4c2ee
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732331"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403504"
 ---
 # <a name="understand-data-sources-for-canvas-apps-in-power-apps"></a>Descripción de los orígenes de datos para aplicaciones de lienzo en Power apps
 
@@ -60,16 +60,16 @@ Puede usar orígenes de datos de tabla de la misma manera que usa una tabla de a
 * El origen de datos tiene la mismos nombres de columna y tipos de datos que la tabla subyacente de la conexión.
   
     > [!NOTE]
-  > En el caso de los orígenes de datos de SharePoint y Excel que contienen nombres de columna con espacios, Power apps reemplazará los espacios por **"\_x0020\_"** . Por ejemplo, **"nombre de columna"** en SharePoint o Excel aparecerá como **"Column_x0020_Name"** en Power apps cuando se muestre en el diseño de datos o se use en una fórmula.
+  > En el caso de los orígenes de datos de SharePoint y Excel que contienen nombres de columna con espacios, Power apps reemplazará los espacios por **"\_x0020\_"** . Por ejemplo, **"Nombre columna"** en SharePoint o Excel aparecerá como **"Nombre_x0020_columna"** en Power Apps cuando se muestre en el diseño de datos o se use en una fórmula.
 * El origen de datos se carga desde el servicio automáticamente cuando se carga la aplicación.  Con la función **[Actualizar](functions/function-refresh.md)** se puede forzar la actualización de los datos.
 * Cuando los usuarios ejecutan una aplicación, pueden crear, modificar y eliminar registros, y aplicar esos cambios posteriormente a la tabla subyacente del servicio.
   * Los registros se pueden crear con las funciones **[Patch](functions/function-patch.md)** y **[Recopilar](functions/function-clear-collect-clearcollect.md)** .  
   * Los registros se pueden modificar con las funciones **[Patch](functions/function-patch.md)** , **[Actualizar](functions/function-update-updateif.md)** y **[UpdateIf](functions/function-update-updateif.md)** .
-  * Los registros se pueden quitar con las funciones **[Quitar](functions/function-remove-removeif.md)**  y **[RemoveIf](functions/function-remove-removeif.md)** .
+  * Los registros se pueden quitar con las funciones **[Quitar](functions/function-remove-removeif.md)** y **[RemoveIf](functions/function-remove-removeif.md)** .
   * Los errores que se producen al trabajar con un origen de datos están disponibles a través de la función **[Errores](functions/function-errors.md)** .
 * Las funciones **[DataSourceInfo](functions/function-datasourceinfo.md)** , **[Defaults](functions/function-defaults.md)** y **[Validate](functions/function-validate.md)** proporcionan información acerca del origen de datos que se puede usar para optimizar la experiencia del usuario.
 
-### <a name="creating-data-sources"></a>Creación de orígenes de datos
+### <a name="creating-data-sources"></a>Crear orígenes de datos
 Power apps no se puede usar para crear un origen de datos conectado o modificar su estructura; el origen de datos ya debe existir en un servicio en alguna parte. Por ejemplo, para crear una tabla en un libro de Excel almacenado en OneDrive, primero es preciso usar Excel Online en OneDrive para crear un libro. Después, se crea una conexión a él desde la aplicación.  
 
 Sin embargo, los orígenes de datos de la colección se *pueden* crear y modificar dentro de una aplicación, pero son temporales.
@@ -93,10 +93,10 @@ Tenga en cuenta que, para modificar un registro existente de un origen de datos,
 * Un control **[Formulario de edición](controls/control-form-detail.md)** proporciona un contenedor para las tarjetas de entrada, que se componen de controles de entrada de usuario, como un control de entrada de texto o un control deslizante.  Las propiedades **[DataSource](controls/control-form-detail.md)** y **[Elemento](controls/control-form-detail.md)** se utilizan para identificar el registro que se va a editar.
 * Cada tarjeta de entrada tiene una propiedad **[Default](controls/properties-core.md)** , que normalmente se establece en el campo del registro **EsteElemento** del formulario.  Luego, los controles de la tarjeta de entrada tomarán sus valores de entrada de **[Default](controls/properties-core.md)** .  Normalmente este comportamiento no es preciso modificarlo.
 * Cada tarjeta de entrada expone una propiedad **[Actualizar](controls/control-card.md)** .  Dicha propiedad asigna la entrada del usuario a un campo específico del registro reescribir en el origen de datos.  Normalmente este comportamiento no es preciso modificarlo.
-* Un botón o un control de imagen de la pantalla permite al usuario guardar los cambios en el registro.  La fórmula **[AlSeleccionar](controls/properties-core.md)** del control llama a la función **[SubmitForm](functions/function-form.md)** para realizar este trabajo.  **[SubmitForm](functions/function-form.md)**  lee todas las propiedades **[Actualizar](controls/control-card.md)** de las tarjetas y lo utiliza para reescribir en el origen de datos.
+* Un botón o un control de imagen de la pantalla permite al usuario guardar los cambios en el registro.  La fórmula **[AlSeleccionar](controls/properties-core.md)** del control llama a la función **[SubmitForm](functions/function-form.md)** para realizar este trabajo.  **[SubmitForm](functions/function-form.md)** lee todas las propiedades **[Actualizar](controls/control-card.md)** de las tarjetas y lo utiliza para reescribir en el origen de datos.
 * A veces surgirán problemas.  Una conexión de red puede estar inactiva o el servicio realiza una comprobación de validación sin que lo sepa la aplicación.  Las propiedades **Error** y **[ErrorKind](controls/control-form-detail.md)** del control del formulario hacen que esta información está disponible, por lo que se puede mostrar al usuario.  
 
-Para lograr un mayor control sobre el proceso, también se pueden usar las funciones  **[Patch](functions/function-patch.md)** y **[Errores](functions/function-errors.md)** .  El control **[Formulario de edición](controls/control-form-detail.md)** expone una propiedad **[Actualizaciones](controls/control-form-detail.md)** para que pueda leer los valores de los campos del formulario.  Esta propiedad también se puede utilizar para llamar a un conector personalizado en una conexión, omitiendo completamente las funciones **Patch** y **SubmitForm**.
+Para lograr un mayor control sobre el proceso, también se pueden usar las funciones **[Patch](functions/function-patch.md)** y **[Errores](functions/function-errors.md)** .  El control **[Formulario de edición](controls/control-form-detail.md)** expone una propiedad **[Actualizaciones](controls/control-form-detail.md)** para que pueda leer los valores de los campos del formulario.  Esta propiedad también se puede utilizar para llamar a un conector personalizado en una conexión, omitiendo completamente las funciones **Patch** y **SubmitForm**.
 
 ### <a name="validation"></a>Validación
 Antes de realizar cualquier cambio en un registro, la aplicación debe hacer todo lo posible por asegurarse de que el cambio será aceptable.  Hay dos motivos para ello:
@@ -132,7 +132,7 @@ Las colecciones son un tipo especial de origen de datos.  Se encuentran en la pr
 
 * Las colecciones se pueden crear dinámicamente con la función **[Recopilar](functions/function-clear-collect-clearcollect.md)** .  No es preciso establecerse con antelación, como debe hacerse con orígenes de datos basados en conexión.
 * Las columnas de una colección pueden modificarse en cualquier momento mediante la función **[Recopilar](functions/function-clear-collect-clearcollect.md)** .
-* Las recopilaciones permiten duplicar registros.  En una colección puede haber más de una copia del mismo registro.  Las funciones como **[Quitar](functions/function-remove-removeif.md)**  operarán en la primera coincidencia que encuentran, salvo que se haya usado el argumento **Todos**.
+* Las recopilaciones permiten duplicar registros.  En una colección puede haber más de una copia del mismo registro.  Las funciones como **[Quitar](functions/function-remove-removeif.md)** operarán en la primera coincidencia que encuentran, salvo que se haya usado el argumento **Todos**.
 * Puede usar las funciones **[SaveData](functions/function-savedata-loaddata.md)** y **[LoadData](functions/function-savedata-loaddata.md)** para guardar y volver a cargar una copia de la colección.  La información se almacena en una ubicación privada a la que no pueden acceder otros usuarios, aplicaciones o dispositivos.
 * Puede usar los controles **[Export](controls/control-export-import.md)** e **[Import](controls/control-export-import.md)** para guardar y volver a cargar una copia de la colección en un archivo con el que el usuario puede interactuar.  
 

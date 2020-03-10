@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1322fd34f4e3a59a62a414fc0e2e7ccca48fc99f
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731968"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403912"
 ---
 # <a name="text-input-control-in-power-apps"></a>Control de entrada de texto en Power apps
 Un cuadro en el que el usuario puede escribir texto, números y otros datos.
@@ -83,7 +82,7 @@ El usuario puede especificar datos escribiendo en un control Entrada de texto. D
 
 **[Italic](properties-text.md)** : indica si el texto de un control está en cursiva.
 
-**[AlturaDeLínea](properties-text.md)** : distancia entre, por ejemplo, líneas de texto o elementos de una lista.
+**[AlturaDeLínea](properties-text.md)** : distancia entre, por ejemplo, las líneas de texto o los elementos de una lista.
 
 **MaxLength**: el número de caracteres que el usuario puede escribir en un control Entrada de texto.
 
@@ -146,7 +145,7 @@ El usuario puede especificar datos escribiendo en un control Entrada de texto. D
    
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 2. Agregue un botón, establezca su propiedad **[Texto](properties-core.md)** en **Agregar** y establezca su propiedad **[AlSeleccionar](properties-core.md)** en esta fórmula:<br>
-   **Collect(Names; {FirstName:inputFirst.Text; LastName:inputLast.Text})**
+   **Collect(Names, {FirstName:inputFirst.Text, LastName:inputLast.Text})**
    
     ¿Desea más información sobre la función **[Recopilar](../functions/function-clear-collect-clearcollect.md)** u [otras funciones](../formula-reference.md)?
 3. Agregue una galería de texto en orientación vertical, establezca su propiedad **[Elementos](properties-core.md)** en **Names** y establezca la propiedad **[Texto](properties-core.md)** de **Subtitle1** en **ThisItem.FirstName**.
@@ -158,8 +157,8 @@ El usuario puede especificar datos escribiendo en un control Entrada de texto. D
 
 1. Agregue un control Entrada de texto, llámelo **inputPassword**y establezca su propiedad **Mode** en **Password**.
 
-1. Agregue una etiqueta y establezca su propiedad **[Text](properties-core.md)** en esta fórmula:<br>
-   **If(inputPassword.Text = "P@ssw0rd"; "Access granted"; "Access denied")**
+1. Agregue una etiqueta y establezca su propiedad **[Texto](properties-core.md)** en esta fórmula:<br>
+   **If(inputPassword.Text = "P@ssw0rd", "Access granted", "Access denied")**
 
     ¿Desea más información sobre la función **[If](../functions/function-if.md)** u [otras funciones](../formula-reference.md)?
 

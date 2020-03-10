@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 624dd66a2f0574a33f4bb796b88e3e4d5845c973
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74709563"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403895"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Creación de una aplicación de lienzo desde cero con Common Data Service
 
@@ -35,7 +34,7 @@ Al compilar una aplicación desde Common Data Service, no es necesario crear una
 
 ## <a name="open-a-blank-app"></a>Abra una aplicación en blanco
 
-1. Inicie sesión en [Power apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Inicie sesión en [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 1. En **Cree su propia aplicación**, seleccione **Aplicación de lienzo en blanco**.
 
@@ -61,7 +60,7 @@ Al compilar una aplicación desde Common Data Service, no es necesario crear una
 
 1. En la barra de navegación izquierda, seleccione **BrowseGallery1** y establezca el valor de la propiedad **Items** en esta fórmula:
 
-    `SortByColumns(Search(Accounts; TextSearchBox1.Text; "name"); "name"; If(SortDescending1; SortOrder.Descending; SortOrder.Ascending))`
+    `SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))`
 
     Esta fórmula especifica que:
 
@@ -127,25 +126,25 @@ Al compilar una aplicación desde Common Data Service, no es necesario crear una
 
 1. Establezca la propiedad **OnSelect** del icono "más" en esta fórmula:
 
-    `NewForm(EditForm1);; Navigate(FormScreen; ScreenTransition.None)`
+    `NewForm(EditForm1); Navigate(FormScreen, ScreenTransition.None)`
 
     ![Icono Agregar](./media/data-platform-create-app-scratch/plus-icon.png)
 
 1. Establezca la propiedad **OnSelect** de la primera flecha que apunta a la derecha en esta fórmula:
 
-    `EditForm(EditForm1);; Navigate(FormScreen; ScreenTransition.None)`
+    `EditForm(EditForm1); Navigate(FormScreen, ScreenTransition.None)`
 
-    ![Icono Siguiente](./media/data-platform-create-app-scratch/next-icon.png)
+    ![Icono de siguiente](./media/data-platform-create-app-scratch/next-icon.png)
 
 1. En **FormScreen**, establezca la propiedad **OnSelect** del icono Cancelar en esta fórmula:
 
-    `ResetForm(EditForm1);;Navigate(BrowseScreen; ScreenTransition.None)`
+    `ResetForm(EditForm1);Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![Icono Cancelar](./media/data-platform-create-app-scratch/cancel-icon.png)
 
 1. Establezca la propiedad **OnSelect** del icono de marca de verificación en esta fórmula:
 
-    `SubmitForm(EditForm1);; Navigate(BrowseScreen; ScreenTransition.None)`
+    `SubmitForm(EditForm1); Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![Icono de marca de verificación](./media/data-platform-create-app-scratch/checkmark-icon.png)
 
@@ -153,7 +152,7 @@ Al compilar una aplicación desde Common Data Service, no es necesario crear una
 
 1. Establezca la propiedad **Color** del icono **Papelera** en **White** y su propiedad **OnSelect** en esta fórmula:
 
-    `Remove(Accounts; BrowseGallery.Selected);; Navigate(BrowseScreen; ScreenTransition.None)`
+    `Remove(Accounts, BrowseGallery.Selected); Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![Icono de la papelera](./media/data-platform-create-app-scratch/trash-icon.png)
 

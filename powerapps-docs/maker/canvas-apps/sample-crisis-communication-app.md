@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: afd7875b804822aa264b134764ed6c35349a3dcf
-ms.sourcegitcommit: b65d5a0cbd5f97a5fa9137c44fe146fb900fd1b9
+ms.openlocfilehash: 7dd989bcd87e910812bf41509585c31c1fc107a9
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78909583"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78970998"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>Configuración y información sobre la plantilla de ejemplo de comunicación de crisis en Power apps
 
@@ -158,6 +158,7 @@ Ahora que se han creado todas las listas de SharePoint, ahora puede importar la 
 
     ![Importar paquete de aplicación](media/sample-crisis-communication-app/31-Import-App.png)
 
+1. Complete la conexión **importar configuración** para la **conexión de Microsoft Teams** y **los usuarios de Office 365** seleccionando las conexiones adecuadas mediante *seleccionar durante la importación* . Es posible que tenga que crear una [nueva conexión](add-data-connection.md) si ya no existe.
 1. Seleccione **Importar**.
 
 ### <a name="update-the-sharepoint-connections"></a>Actualizar las conexiones de SharePoint
@@ -197,6 +198,81 @@ Ahora que se han creado todas las listas de SharePoint, ahora puede importar la 
     ![Conexión a listas de SharePoint](media/sample-crisis-communication-app/sharepoint-lists.png)
 
 1. **Guarde** y **publique** la aplicación.
+
+#### <a name="disable-location-updates"></a>Deshabilitar actualizaciones de ubicación
+
+Esta aplicación registra una ubicación de usuarios y la almacena en el sitio de SharePoint cada vez que un usuario establece su estado. Esto permite al equipo de administración de crisis ver estos datos en un informe de Power BI.
+
+Para deshabilitar esta funcionalidad, siga estos pasos:
+
+  1. Busque el control **btnDateRange**
+  1. Abra la propiedad **alseleccionar** del control **btnDateRante** en la barra de fórmulas.
+  1. Copie y pegue el siguiente fragmento de código en la barra de fórmulas de la propiedad **alseleccionar** :
+
+  ```
+  UpdateContext({locSaveDates: true});
+
+// Store the output properties of the calendar in static variables and collections.
+Set(varStartDate,First(Sort(Filter(selectedDates,ComponentId=CalendarDatePicker_1.Id),Date,Ascending)).Date);
+Set(varEndDate,First(Sort(Filter(selectedDates,ComponentId=CalendarDatePicker_1.Id),Date,Descending)).Date);
+
+// Create a new record for work status for each date selected in the date range.
+ForAll(
+    Filter(
+        RenameColumns(selectedDates,"Date","DisplayDate"),
+        ComponentId=CalendarDatePicker_1.Id,
+        !(DisplayDate in colDates.Date)
+    ),
+    Patch('CI_Employee Status',Defaults('CI_Employee Status'),
+        {
+            Title: varUser.userPrincipalName,
+            Date: DisplayDate,
+            Notes: "",
+            PresenceStatus: LookUp(Choices('CI_Employee Status'.PresenceStatus),Value=WorkStatus_1.Selected.Value),
+            
+             
+            Latitude: Blank(),
+            Longitude: Blank()
+        }
+    )
+);
+
+// Update existing dates with the new status.
+ForAll(
+    AddColumns(
+        Filter(
+            RenameColumns(selectedDates,"Date","DisplayDate"),
+            ComponentId=CalendarDatePicker_1.Id,
+            DisplayDate in colDates.Date
+        ),
+        
+        // Get the current record for each existing date.
+        "LookUpId",LookUp(RenameColumns(colDates,"ID","DateId"),And(Title=varUser.userPrincipalName,Date=DisplayDate)).DateId
+    ),
+    Patch('CI_Employee Status',LookUp('CI_Employee Status',ID=LookUpId),
+        {
+            PresenceStatus: LookUp(Choices('CI_Employee Status'.PresenceStatus),Value=WorkStatus_1.Selected.Value)
+        }
+    )
+);
+
+If(
+    IsEmpty(Errors('CI_Employee Status')),
+    Notify("You successfully submitted your work status.",NotificationType.Success,5000);
+    
+    // Update the list of work status for the logged-in user.
+    ClearCollect(colDates,Filter('CI_Employee Status',Title=varUser.userPrincipalName));
+    
+    Navigate('Share to Team Screen',LookUp(colStyles,Key="navigation_transition").Value),
+    
+    Notify(
+        LookUp(colTranslations,Locale=varLanguage).WorkStatusError,
+        NotificationType.Warning
+    )
+);
+
+UpdateContext({locSaveDates: false})
+```
 
 ### <a name="update-the-request-help-flow"></a>Actualizar el flujo de ayuda de la solicitud
 

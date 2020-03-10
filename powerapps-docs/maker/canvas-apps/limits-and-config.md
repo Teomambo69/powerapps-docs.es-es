@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ed59b379b55a38a1e5a3454d26d07ae93d106e4f
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 18abbc91426c74b48aefd51f1867d8bff806d718
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75204120"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404579"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Requisitos del sistema, límites y valores de configuración para aplicaciones de lienzo
 Este tema contiene los requisitos de la plataforma del dispositivo y del explorador Web, así como los límites y los valores de configuración de las aplicaciones de canvas.
@@ -38,24 +38,24 @@ Este tema contiene los requisitos de la plataforma del dispositivo y del explora
 
 | **Explorador** | **Sistema operativo** |
 | --- | --- |
-| Google Chrome (versión más reciente)<br>(se recomienda) |Windows 7 SP1, 8.1 y 10 <br>Android 5 o posterior <br>iOS 8 o posterior<br>MacOS |
-| Microsoft Edge (versión más reciente)<br>(se recomienda) |Windows 10 |
+| Google Chrome (versión más reciente)<br>(recomendado) |Windows 7 SP1, 8.1 y 10 <br>Android 5 o posterior <br>iOS 8 o posterior<br>macOS |
+| Microsoft Edge (versión más reciente)<br>(recomendado) |Windows 10 |
 | Microsoft Internet Explorer 11 (con la función Vista de compatibilidad desactivada) |Windows 7 SP1, 8.1 y 10 |
-| Mozilla Firefox (versión más reciente) |Windows 7 SP1, 8.1 y 10 <br> Android 5 o posterior <br>iOS 8 o posterior <br>MacOS |
-| Apple Safari (versión más reciente) |iOS 8 o posterior <br>MacOS |
+| Mozilla Firefox (versión más reciente) |Windows 7 SP1, 8.1 y 10 <br> Android 5 o posterior <br>iOS 8 o posterior <br>macOS |
+| Apple Safari (versión más reciente) |iOS 8 o posterior <br>macOS |
 
 ## <a name="supported-browsers-for-power-apps-studio"></a>Exploradores admitidos para Power apps Studio
 
 | **Explorador** | **Sistema operativo** |
 | --- | --- |
-| Google Chrome (versión más reciente)<br>(se recomienda) |Windows 7 SP1, 8.1 y 10 <br>MacOS |
-| Microsoft Edge (versión más reciente)<br>(se recomienda) |Windows 10 |
+| Google Chrome (versión más reciente)<br>(recomendado) |Windows 7 SP1, 8.1 y 10 <br>macOS |
+| Microsoft Edge (versión más reciente)<br>(recomendado) |Windows 10 |
 | Microsoft Internet Explorer 11 (con la función Vista de compatibilidad desactivada) |Windows 7 SP1, 8.1 y 10 |
 
 ## <a name="request-limits"></a>Límites de solicitudes
 Estos límites se aplican a todas y cada una de las solicitudes de salida:
 
-| Nombre | Límite |
+| Name | Límite |
 | --- | --- |
 | Tiempo de espera |180 segundos |
 | Número de reintentos |4 |
@@ -63,34 +63,34 @@ Estos límites se aplican a todas y cada una de las solicitudes de salida:
 > [!NOTE]
 > El valor de reintento puede variar. Para ciertas condiciones de error, no es necesario volver a intentarlo.
 
-## <a name="ip-addresses"></a>Direcciones IP
+## <a name="ip-addresses"></a>direcciones IP
 Las solicitudes de Power apps usan direcciones IP que dependen de la región del [entorno](../../administrator/environments-overview.md) en el que se encuentra la aplicación. No publicamos los nombres de dominio completos disponibles para los escenarios de Power apps.
 
 Las llamadas realizadas desde una API conectada a través de una aplicación (por ejemplo, la API de SQL o la API de SharePoint) proceden de la dirección IP que se especificará más adelante en este mismo tema.
 
-Estas direcciones se deben usar si, por ejemplo, se deben incluir en la lista blanca las direcciones IP de una instancia de Azure SQL Database.
+Estas direcciones se deben usar si, por ejemplo, se deben incluir en la lista de permitidos las direcciones IP de una instancia de Azure SQL Database.
 
 > [!IMPORTANT]
 >   Si tiene configuraciones existentes, actualícelo tan pronto como sea posible antes del 30 de septiembre de 2018 para que incluyan y coincidan con las direcciones IP de esta lista para las regiones donde existen las aplicaciones de Power apps.
 
 | Región | IP de salida |
 | --- | --- |
-| Asia | 13.75.36.64 - 13.75.36.79, 13.67.8.240 - 13.67.8.255, 52.175.23.169, 52.187.68.19 |
-| Australia  | 13.70.72.192 - 13.70.72.207, 13.72.243.10, 13.77.50.240 - 13.77.50.255, 13.70.136.174 |
-| Brasil | 191.233.203.192 - 191.233.203.207, 104.214.19.48 - 104.214.19.63, 13.65.86.57, 104.41.59.51 |
-| Canadá | 13.71.170.208 - 13.71.170.223, 13.71.170.224 - 13.71.170.239, 52.237.24.126, 40.69.106.240 - 40.69.106.255, 52.242.35.152|
-| Europa | 13.69.227.208 - 13.69.227.223, 52.178.150.68, 13.69.64.208 - 13.69.64.223, 52.174.88.118, 137.117.161.181|
-| India  | 104.211.81.192 - 104.211.81.207, 52.172.211.12, 40.78.194.240 - 40.78.194.255, 13.71.125.22, 104.211.146.224 - 104.211.146.239, 104.211.189.218 |
-| Japón | 13.78.108.0 - 13.78.108.15, 13.71.153.19, 40.74.100.224 - 40.74.100.239, 104.215.61.248 |
-| Sudamérica | 191.233.203.192 - 191.233.203.207, 104.214.19.48 - 104.214.19.63, 13.65.86.57, 104.41.59.51 |
-| Reino Unido | 51.140.148.0 - 51.140.148.15, 51.140.80.51, 51.140.211.0 - 51.140.211.15, 51.141.47.105 |
-| Estados Unidos | 13.89.171.80 - 13.89.171.95, 52.173.245.164, 40.71.11.80 - 40.71.11.95, 40.71.249.205, 40.70.146.208 - 40.70.146.223, 52.232.188.154, 52.162.107.160 - 52.162.107.175, 52.162.242.161, 40.112.243.160 - 40.112.243.175, 104.42.122.49 |
-| Estados Unidos (acceso anticipado)  | 13.71.195.32 - 13.71.195.47, 52.161.102.22, 13.66.140.128 - 13.66.140.143, 52.183.78.157 |
+| Asia | 13.75.36.64-13.75.36.79, 13.67.8.240-13.67.8.255, 52.175.23.169, 52.187.68.19, 127.0.0.1 |
+| Australia  | 13.70.72.192-13.70.72.207, 13.72.243.10, 13.77.50.240-13.77.50.255, 13.70.136.174, 127.0.0.1 |
+| Brasil | 191.233.203.192-191.233.203.207, 104.214.19.48-104.214.19.63, 13.65.86.57, 104.41.59.51, 127.0.0.1 |
+| Canadá | 13.71.170.208-13.71.170.223, 13.71.170.224-13.71.170.239, 52.237.24.126, 40.69.106.240-40.69.106.255, 52.242.35.152, 127.0.0.1|
+| Europa | 13.69.227.208-13.69.227.223, 52.178.150.68, 13.69.64.208-13.69.64.223, 52.174.88.118, 137.117.161.181, 127.0.0.1|
+| India  | 104.211.81.192-104.211.81.207, 52.172.211.12, 40.78.194.240-40.78.194.255, 13.71.125.22, 104.211.146.224-104.211.146.239, 104.211.189.218, 127.0.0.1 |
+| Japan | 13.78.108.0-13.78.108.15, 13.71.153.19, 40.74.100.224-40.74.100.239, 104.215.61.248, 127.0.0.1 |
+| Sudamérica | 191.233.203.192-191.233.203.207, 104.214.19.48-104.214.19.63, 13.65.86.57, 104.41.59.51, 127.0.0.1 |
+| Reino Unido | 51.140.148.0-51.140.148.15, 51.140.80.51, 51.140.211.0-51.140.211.15, 51.141.47.105, 127.0.0.1 |
+| Estados Unidos | 13.89.171.80-13.89.171.95, 52.173.245.164, 40.71.11.80-40.71.11.95, 40.71.249.205, 40.70.146.208-40.70.146.223, 52.232.188.154, 52.162.107.160-52.162.107.175, 52.162.242.161, 40.112.243.160-40.112.243.175, 104.42.122.49, 127.0.0.1 |
+| Estados Unidos (acceso anticipado)  | 13.71.195.32-13.71.195.47, 52.161.102.22, 13.66.140.128-13.66.140.143, 52.183.78.157, 127.0.0.1 |
 
-## <a name="required-services"></a>Servicios requeridos
+## <a name="required-services"></a>Servicios necesarios
 Esta lista identifica todos los servicios a los que se comunica Power apps Studio y sus usos. La red **no** debe bloquear estos servicios.
 
-| Dominios | Protocolos | Usa |
+| Dominios | Protocolos | Usos |
 | --- | --- | --- |
 | management.azure.com |https |RP |
 | msmanaged-na.azure-apim.net |https |Runtime de conectores/API |
@@ -104,7 +104,7 @@ Esta lista identifica todos los servicios a los que se comunica Power apps Studi
 | \*. flow.microsoft.com | https | create.powerapps.com, make.powerapps.com, content.powerapps.com y make.powerapps.com |
 | *. dynamics.com | https | Common Data Service |
 | vortex.data.microsoft.com |https |Telemetría |
-| host | https | Power apps Mobile
+| localhost | https | Power apps Mobile
 
 > [!NOTE]
 > Si usa una VPN, debe configurarse para excluir localhost de la tunelización de Power apps Mobile.

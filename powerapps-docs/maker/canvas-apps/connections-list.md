@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d78ce9b571ed925e68747f2307d59f5f143e13eb
-ms.sourcegitcommit: 366f0d1b8309ab1fd533ebd7e1b41a69a99fd25a
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75302906"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403371"
 ---
 # <a name="overview-of-canvas-app-connectors-for-power-apps"></a>Información general de los conectores de canvas-app para Power apps
 Los datos son el núcleo de la mayoría de las aplicaciones, incluidas las que se crean en Power apps. Los datos se almacenan en un *origen de datos* y para enviarlos a una aplicación se crea una *conexión*. La conexión utiliza un *conector* concreto para comunicarse con el origen de datos. Power apps tiene conectores para muchos servicios populares y orígenes de datos locales, entre los que se incluyen SharePoint, SQL Server, Office 365, Salesforce y Twitter. Para empezar a agregar datos a una aplicación de lienzo, consulte [Agregar una conexión de datos en Power apps](add-data-connection.md).
@@ -45,7 +45,7 @@ Para obtener más información sobre cómo personalizar la fórmula con tablas, 
   > [!NOTE]
   > Para conectarse a datos en un libro de Excel, este ha de estar hospedado en un servicio de almacenamiento en la nube como OneDrive. Para más información, consulte [conexión a almacenamiento en la nube desde Power apps](connections/cloud-storage-blob-connections.md).
 
-## <a name="actions"></a>Operaciones
+## <a name="actions"></a>Acciones
 
 Si el conector facilita acciones, tiene que seleccionar el origen de datos del mismo modo que antes. En lugar de seleccionar una tabla como siguiente paso, conecte manualmente un control a una acción editando la propiedad **Items** del control que va a mostrar los datos. La fórmula en la que se establece la propiedad **Items** especifica la acción que recupera los datos. Por ejemplo, la aplicación no recuperará los datos si se conecta a Yammer y luego establece la propiedad **Items** en el nombre del origen de datos. Para rellenar un control con datos, especifique una acción como **GetMessagesInGroup(5033622).messages**.
 
@@ -66,7 +66,7 @@ La tabla siguiente contiene vínculos a más información sobre nuestros conecto
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 | --- | --- | --- | --- | --- |
-| ![Common Data Service](./media/connections-list/cdm.png) |[**Common Data Service**](connections/connection-common-data-service.md) |&nbsp; |![Almacenamiento en nube](./media/connections-list/onedrive.png) | ** de [**almacenamiento en la nube**](connections/cloud-storage-blob-connections.md) |
+| ![Common Data Service](./media/connections-list/cdm.png) |[**Common Data Service**](connections/connection-common-data-service.md) |&nbsp; |![El almacenamiento en la nube](./media/connections-list/onedrive.png) | ** de [**almacenamiento en la nube**](connections/cloud-storage-blob-connections.md) |
 | ![Dynamics 365](./media/connections-list/dynamics-365.png) |[**Dynamics 365**](connections/connection-dynamics-crmonline.md) |&nbsp; | ![Dynamics AX](./media/connections-list/dynamics-ax.png) |[**Dynamics AX**](connections/connection-dynamicsax.md) |
 |![Excel](./media/connections-list/excel.png) |[**Excel**](connections/connection-excel.md) |&nbsp; |![Traductor de Microsoft](./media/connections-list/microsoft-translator.png) |[**Microsoft Translator**](connections/connection-microsoft-translator.md) |
 |![Office 365 Outlook](./media/connections-list/office365.png) |[**Office 365 Outlook**](connections/connection-office365-outlook.md) |&nbsp; | ![Usuarios de Office 365](./media/connections-list/office365.png) |[**Usuarios de Office 365**](connections/connection-office365-users.md) |
@@ -74,7 +74,7 @@ La tabla siguiente contiene vínculos a más información sobre nuestros conecto
 | ![SharePoint](./media/connections-list/sharepoint.png) |[**SharePoint**](connections/connection-sharepoint-online.md) |&nbsp; | ![SQL Server](./media/connections-list/sql.png) |[**SQL Server**](connections/connection-azure-sqldatabase.md) 
 |![Twitter](./media/connections-list/twitter.png) |[**Twitter**](connections/connection-twitter.md)
 
-* * Se aplica a Azure BLOB, Box, Dropbox, Google Drive, OneDrive y OneDrive para la empresa
+\* * Se aplica a Azure BLOB, Box, Dropbox, Google Drive, OneDrive y OneDrive para la empresa
 
 ## <a name="standard-and-custom-connectors"></a>Conectores estándar y personalizados
 Power apps proporciona conectores *estándar* para muchos orígenes de datos de uso común, como los mencionados anteriormente. Si Power apps tiene un conector estándar para el tipo de origen de datos que desea usar, debe usar dicho conector. Si tiene que conectarse a otros tipos de orígenes de datos, como un servicio que haya creado, vea [Conectores personalizados en PowerApps](../canvas-apps/register-custom-api.md).
