@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 23bfbb3b97764a427d5422e4ad207d4af7cc1589
-ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
+ms.openlocfilehash: 927b8dae59a4dc6fc55d74c1998b0d434eb8356c
+ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77530797"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133564"
 ---
 # <a name="trace-function"></a>Función Trace 
 
@@ -28,10 +28,10 @@ También se pueden definir mensajes de seguimiento en la aplicación. Se pueden 
 
 ## <a name="syntax"></a>Sintaxis
 
-*Trace(mensaje, gravedad, registro_personalizado)*
+*Seguimiento (mensaje, trace_severity, custom_record)*
 
 - *Mensaje*: es necesario. Información de la que se realizará un seguimiento. En las pruebas, se crea un registro en la tabla Seguimientos, en el registro TestCaseResult. 
-- *Gravedad*: opcional. Nivel de gravedad del seguimiento registrado en Application Insights. Las opciones son Información, Advertencia o Error. 
+- *Trace_severity* : opcional. Nivel de gravedad del seguimiento registrado en Application Insights. Las opciones son TraceSeverity. Information, TraceSeverity. WARNING o TraceSeverity. error. 
 - *Registro_personalizado*: opcional. Un registro que contiene los datos personalizados que se registrarán en Application Insights. 
   
 

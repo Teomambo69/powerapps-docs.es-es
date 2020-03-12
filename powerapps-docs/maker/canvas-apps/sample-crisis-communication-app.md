@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/06/2020
+ms.date: 03/11/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7dd989bcd87e910812bf41509585c31c1fc107a9
-ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
+ms.openlocfilehash: 742d33b2d87969df19fe6c0e82f96ecfa9da27e4
+ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "78970998"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133626"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>Configuración y información sobre la plantilla de ejemplo de comunicación de crisis en Power apps
 
@@ -37,12 +37,20 @@ En este tutorial, aprenderá a:
 - Importar flujos para enviar notificaciones a los usuarios
 - Crear un equipo de equipos administrados centralmente para agregar datos y responder eficazmente a los problemas
 
+> [!NOTE]
+> La plantilla de ejemplo de comunicación de crisis también está disponible para los planes Power apps y Power automatice US Government. Las direcciones URL de servicio para Power apps y Power automatice la versión de la administración pública de EE. UU. son diferentes de la versión comercial. Más información: las [direcciones URL del servicio de administración pública de EE. UU.](https://docs.microsoft.com/power-platform/admin/powerapps-us-government#power-apps-us-government-service-urls) y la potencia de las [direcciones URL del servicio gobierno de EE. UU.](https://docs.microsoft.com/power-automate/us-govt#power-automate-us-government-service-urls)
+
 ## <a name="prerequisites"></a>Requisitos previos
 
 - [Regístrese](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) para Power apps.
 - Debe tener una licencia de SharePoint Online válida y permisos para crear listas.
 - Debe tener un sitio de SharePoint público en el que pueda almacenar los datos de la aplicación.
 - Descargue los recursos de [aka.ms/CrisisCommunicationSolution](https://aka.ms/CrisisCommunicationSolution).
+
+> [!IMPORTANT]
+> Para cualquier comentario o problema relacionado con la **aplicación de comunicación de crisis**, use los vínculos siguientes:
+> - **[Los](https://aka.ms/crisis-communication-feedback)**
+> - **[Problemas](https://aka.ms/crisis-communication-issues)**
 
 ## <a name="create-a-home-for-your-data"></a>Crear un hogar para los datos
 
@@ -119,7 +127,7 @@ La aplicación requiere varias listas que almacenan todos los datos. Para automa
 
 > [!NOTE]
 > Es posible que reciba un error que indica que se requieren servicios de ubicación.
-Si esto ocurre, permita que los servicios de ubicación alimenten la automatización y actualice la página antes de intentarlo de nuevo.
+Si esto ocurre, permita que los servicios de ubicación alimenten y actualicen la página antes de volver a intentarlo.
 
 A continuación, el flujo creará las siguientes listas de SharePoint en el sitio de SharePoint:
 
@@ -136,7 +144,7 @@ A continuación, el flujo creará las siguientes listas de SharePoint en el siti
 
 > [!NOTE]
 > - Todas las columnas de la lista enumeradas anteriormente se deben considerar como dependencias.
-    Proteja las listas de los cambios de esquema accidentales (por ejemplo, se permite agregar nuevas columnas, pero eliminar columnas puede interrumpir la aplicación).
+    Proteja las listas de cambios de esquemas accidentales (por ejemplo, se permite agregar nuevas columnas, pero eliminar columnas puede interrumpir la aplicación).
 > - Tenga cuidado al eliminar elementos de lista; la eliminación de elementos de lista elimina los registros históricos. Puede alternar el valor de desuso de *no* a *sí* para quitar registros de contactos, noticias, preguntas más frecuentes o vínculos.
 
 ## <a name="import-and-set-up-the-crisis-communication-app"></a>Importación y configuración de la aplicación de comunicación de crisis
@@ -169,9 +177,7 @@ Ahora que se han creado todas las listas de SharePoint, ahora puede importar la 
 
     ![Editar la aplicación](media/sample-crisis-communication-app/05-Edit-App.png)
 
-1. **Inicie sesión** o cree las conexiones necesarias y seleccione **permitir**:
-
-    ![Permitir conexiones](media/sample-crisis-communication-app/allow-connections.png)
+1. **Inicie sesión** o cree las conexiones necesarias y seleccione **permitir**.
 
 1. Navegue a los orígenes de datos en el panel izquierdo:
 
@@ -199,11 +205,11 @@ Ahora que se han creado todas las listas de SharePoint, ahora puede importar la 
 
 1. **Guarde** y **publique** la aplicación.
 
-#### <a name="disable-location-updates"></a>Deshabilitar actualizaciones de ubicación
+#### <a name="enable-location-updates"></a>Habilitar actualizaciones de ubicación
 
-Esta aplicación registra una ubicación de usuarios y la almacena en el sitio de SharePoint cada vez que un usuario establece su estado. Esto permite al equipo de administración de crisis ver estos datos en un informe de Power BI.
+Esta aplicación permite registrar la ubicación de un usuario y almacenarla en el sitio de SharePoint cada vez que un usuario establece su estado. El equipo de administración de crisis puede ver estos datos en un informe de Power BI.
 
-Para deshabilitar esta funcionalidad, siga estos pasos:
+Para habilitar esta funcionalidad, siga estos pasos:
 
   1. Busque el control **btnDateRange**
   1. Abra la propiedad **alseleccionar** del control **btnDateRante** en la barra de fórmulas.
@@ -231,8 +237,8 @@ ForAll(
             PresenceStatus: LookUp(Choices('CI_Employee Status'.PresenceStatus),Value=WorkStatus_1.Selected.Value),
             
              
-            Latitude: Blank(),
-            Longitude: Blank()
+            Latitude: Location.Latitude,
+            Longitude: Location.Longitude
         }
     )
 );
@@ -329,7 +335,7 @@ Para administrar la aplicación que ha importado, querrá repetir los mismos pas
 1. Inicie sesión en [Power Apps](https://make.powerapps.com).
 1. Seleccione **aplicaciones** en el panel de navegación izquierdo.
 1. Seleccione **importar** en la barra de comandos.
-1. Cargue el archivo **CrisisCommunicationAdminApp. zip** del repositorio de github:
+1. Cargue el archivo **CrisisCommunicationAdmin. zip** del repositorio de github:
 
     ![Importar paquete de aplicación](media/sample-crisis-communication-app/import-app.png)
 
@@ -390,15 +396,19 @@ Para inicializar la aplicación, debe proporcionar todos los campos obligatorios
 
 Complete todos los campos y seleccione **Guardar**.
 
-| **Nombre del campo** | **Nombre lógico en SharePoint** | **Propósito** |
-|-|-|-|
-| Correo electrónico de administrador | AdminContactEmail | Se usa para notificar a otras personas que administran la aplicación. |
-| URL del logotipo | Logotipo | El logotipo de la aplicación que aparecerá en la esquina superior izquierda. |
-| IDENTIFICADOR de grupo de AAD | AADGroupID | Se usa para enviar notificaciones a los usuarios finales acerca de las actualizaciones internas de la empresa mediante el flujo *de noticias notificar a los usuarios sobre nuevas novedades en la comunicación de crisis* . |  
-| URL DE APLICACIÓN | AppURL | La ubicación de la aplicación para que el flujo de *noticias notificar a los usuarios sobre nuevas comunicaciones de crisis* puede redirigir a los usuarios después de seleccionar **leer más**. | 
-| Fuente RSS de gobierno | GovernmentRSSFeed | Se usa para rellenar la característica de noticias mundiales dentro de la aplicación. Resulta útil si desea proporcionar información adicional a sus empleados desde una fuente de confianza. |
-| Método de notificación | PreferredSentNotification | Lo usa el flujo *de noticias notificar a los usuarios sobre nuevas comunicaciones de crisis* para determinar qué canal de distribución debe usar al enviar notificaciones. |
-| Marcas de características | Feature1... 203 | Se usa para deshabilitar o habilitar cada característica dentro de la aplicación. |
+| **Nombre del campo** | **Nombre lógico en SharePoint** | **Propósito** | **Ejemplo** |
+|-|-|-|-|
+| Correo electrónico de administrador | AdminContactEmail | Se usa para notificar a otras personas que administran la aplicación.  | admin@contoso.com |
+| URL del logotipo | Logotipo | El logotipo de la aplicación que aparecerá en la esquina superior izquierda. | https://contoso.com/logo.png |
+| IDENTIFICADOR de grupo de AAD | AADGroupID | Se usa para enviar notificaciones a los usuarios finales acerca de las actualizaciones internas de la empresa mediante el flujo *de noticias notificar a los usuarios sobre nuevas novedades en la comunicación de crisis* . Siga las instrucciones siguientes para obtener el ID. de AAD de su grupo. | c0ddf873-b4fe-4602-b3a9-502dd944c8d5 |
+| URL DE APLICACIÓN | AppURL | La ubicación de la aplicación de usuario final para que el flujo de *noticias notificar a los usuarios sobre nuevas comunicaciones de crisis* puede redirigir a los usuarios después de seleccionar **leer más**. | https://apps.preview.powerapps.com/play/<app URL>? tenantId =<tenant ID>
+| Fuente RSS de gobierno | GovernmentRSSFeed | Se usa para rellenar la característica de noticias mundiales dentro de la aplicación. Resulta útil si desea proporcionar información adicional a sus empleados desde una fuente de confianza. | https://www.who.int/rss-feeds/news-english.xml |
+| Método de notificación | PreferredSentNotification | Lo usa el flujo *de noticias notificar a los usuarios sobre nuevas comunicaciones de crisis* para determinar qué canal de distribución debe usar al enviar notificaciones. Este campo es obligatorio. | Correo electrónico, notificación de equipos, notificación de extracción |
+| Marcas de características | Feature1... 203 | Se usa para deshabilitar o habilitar cada característica dentro de la aplicación. |  |
+
+> [!NOTE]
+> La notificación de equipos y las notificaciones de extracción no se admiten actualmente en GCC.
+
 
 #### <a name="finding-the-aad-of-your-distribution-group"></a>Búsqueda del AAD del grupo de distribución
 1. Vaya a [AAD.portal.Azure.com](https://aad.portal.azure.com)
@@ -587,7 +597,7 @@ Más adelante, todos los usuarios de la lista de distribución recibirán una ac
 
 ## <a name="monitor-office-absences-with-power-bi"></a>Supervisar las ausencias de Office con Power BI
 
-Una vez que haya implementado la aplicación y los usuarios empiecen a notificar que están fuera de la oficina por diversos motivos (por ejemplo, por enfermedad o trabajando desde casa), ahora puede usar un informe de Power BI para realizar un seguimiento de la cantidad y el lugar donde se encuentran esas personas.
+Una vez que haya implementado la aplicación y los usuarios empiecen a notificar que están fuera de la oficina por diversos motivos (por ejemplo, por enfermedad o trabajando desde casa), ahora puede usar un informe de Power BI para realizar un seguimiento de la cantidad y el lugar donde se encuentran esas personas. Tenga en cuenta que debe [Habilitar el seguimiento de ubicación](#enable-location-updates) para que el control de mapa funcione.
 
 Para empezar, puede utilizar el informe de ejemplo ' informe de estado de presencia. pbix ' disponible en el [paquete de recursos](#prerequisites)descargados.
 Si es necesario, descargue [Power BI Desktop](https://powerbi.microsoft.com/downloads). También se necesitará parte de la información de la lista de SharePoint de **Estado de CI_Employee** creada antes, así que vamos a obtenerla primero. Abra la lista en el sitio y seleccione Configuración de la lista en el icono de configuración:
@@ -710,6 +720,25 @@ Para agregar el informe Power BI:
 1. Busque y seleccione **Power BI**.
 1. Busque y seleccione el informe de Power BI.
 1. Seleccione **Guardar**.
+
+## <a name="faq"></a>Preguntas más frecuentes
+
+1. **¿Qué licencias necesito para ejecutar esta solución?**
+
+    - La solución de esta aplicación usa conectores de Office. Por lo tanto, una licencia de Power apps inicializada de Office es suficiente para ejecutar y reproducir las aplicaciones de usuario y de administración. Obtenga más [información en Introducción a licencias de Power Platform](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus). 
+    - Si desea usar el informe de Power BI (empaquetado como parte de la solución), deberá tener una licencia de Power BI. Obtenga más información en [Power BI precios](https://powerbi.microsoft.com/pricing/).
+
+1. **¿Dónde debo ir si tengo comentarios sobre la solución?**
+
+    Nos encantaría conocer la experiencia de implementación y personalización de la solución. Para compartir su experiencia, vaya a [aka.ms/crisis-Communication-feedback](https://aka.ms/crisis-communication-feedback).
+
+1. **Parece que he encontrado un error con la aplicación; ¿Dónde debo ir?**
+
+   Para archivar un error con la solución, vaya a [aka.ms/crisis-Communication-issues](https://aka.ms/crisis-communication-issues).
+
+1. **¿Qué características no se admiten actualmente en GCC?**
+
+    El conector Power Automate de robot para equipos y el conector de notificaciones de extracción no están disponibles actualmente para GCC. Use la opción correo electrónico para alertar a los usuarios acerca de las actualizaciones de noticias internas de GCC.
 
 ***Declinación de responsabilidades:*** *esta aplicación es un ejemplo y se puede usar con Microsoft Power apps y los equipos para la diseminación de información de referencia únicamente. Esta aplicación no está prevista ni está disponible para su uso como dispositivo médico, soporte clínico, herramienta de diagnóstico u otra tecnología pensada para usarse en el diagnóstico, la cura, la mitigación, el tratamiento o la prevención de la enfermedad o en otras condiciones, y Microsoft no concede ninguna licencia o derecho para usar esta aplicación con este fin.  Esta aplicación no está diseñada ni pretende ser un sustituto de asesoramiento médico profesional, diagnóstico, tratamiento o valoración y no debe usarse como tal.  El cliente asume el único riesgo y responsabilidad de cualquier uso de esta aplicación.  Microsoft no garantiza que la aplicación o los materiales proporcionados en la conexión serán suficientes para fines médicos o para cumplir los requisitos sanitarios de cualquier persona.*  
 

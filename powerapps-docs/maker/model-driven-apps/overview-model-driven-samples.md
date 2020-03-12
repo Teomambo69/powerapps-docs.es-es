@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 13ec511c692af8694012f94f881cb02ee1280ee2
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 65a650b979c4196eff8c103717a63aea5309ec57
+ms.sourcegitcommit: 551af7e0273862b28d9b2387671a4eeaf719eb37
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404388"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79084641"
 ---
 # <a name="model-driven-sample-apps"></a>Aplicaciones de ejemplo controladas por modelos
 
@@ -33,10 +33,10 @@ No olvide consultar la documentación específica de cada aplicación de ejemplo
 
 ## <a name="get-sample-apps"></a>Obtener aplicaciones de ejemplo
 
-Para reproducir o modificar las aplicaciones de ejemplo controladas por modelos, primero se deben aprovisionar en una base de datos de Common Data Service. En primer lugar, cree un entorno y una base de datos de prueba y no olvide activar **Include sample apps and data** (Incluir aplicaciones y datos de ejemplo).
+Para reproducir o modificar las aplicaciones de ejemplo controladas por modelos, primero se deben aprovisionar en una base de datos de Common Data Service. En primer lugar, cree un entorno de prueba y una base de datos y asegúrese de seleccionar **despolir aplicaciones y datos de ejemplo**.
 
-![Crear base de datos](media/overview-model-driven-samples/create-database1.png)
-
+> [!div class="mx-imgBorder"] 
+> ![crear base de datos](media/overview-model-driven-samples/create-database1.png)
 
 > [!IMPORTANT]
 > Esta opción instala todas las aplicaciones de ejemplo disponibles en la base de datos. Las aplicaciones de ejemplo son para fines educativos y de demostración, y no se recomienda su instalación en bases de datos de producción. 
@@ -45,13 +45,13 @@ Para reproducir o modificar las aplicaciones de ejemplo controladas por modelos,
 
 1. Iniciar sesión en [powerapps.com](https://powerapps.com)  
 
-    
+2. En la página **crear** , seleccione la aplicación de ejemplo y haga clic en **crear**.
 
-2. En la página **crear** , mantenga el mouse sobre la aplicación de ejemplo y haga clic en **crear esta aplicación**.
+> [!div class="mx-imgBorder"] 
+> ![modelo de aplicación de ejemplo](media/overview-model-driven-samples/model-driven-create-page-sample.png)
 
-![Aplicación de ejemplo de modelo](media/overview-model-driven-samples/model-driven-create-page-sample.png)
+3. Se abrirá el Diseñador de aplicaciones con varias opciones para personalizar la aplicación.
 
-3. Se abrirá el Diseñador de aplicaciones con varias opciones para personalizar la aplicación. 
 4. Para opciones de personalización adicionales, haga clic en **Opciones avanzadas** en el panel de navegación izquierdo del portal.
 
 ## <a name="remove-sample-apps-and-data"></a>Quitar datos y aplicaciones de ejemplo 
