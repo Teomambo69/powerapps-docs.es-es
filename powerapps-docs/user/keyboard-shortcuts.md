@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7fbcbe315f3af9554d53329f35469af4ca236181
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: b5f273fcc14b7c8bd9cbde947133fd70d4a2a432
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74733193"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79035625"
 ---
 # <a name="use-keyboard-shortcuts-in-power-apps"></a>Uso de métodos abreviados de teclado en Power Apps
 
@@ -31,7 +31,7 @@ Los métodos abreviados de teclado le proporcionan una forma alternativa de real
 
 ## <a name="form-shortcuts"></a>Accesos directos del formulario
 
-<!--does the N/A mean not available? If so, why include them? -->
+
 
 
 |Tarea  | Interfaz unificada |
@@ -152,8 +152,6 @@ Los paneles interactivos habilitan nuevas funciones, como el filtrado, la ordena
 |Ir al primer elemento de un gráfico | Pestaña |
 |Ir al siguiente punto de datos | Tecla de flecha derecha (→) **O** tecla de flecha abajo (↓)|
 |Ir al punto de datos anterior | Tecla de flecha izquierda (←) **O** tecla de flecha arriba (↑)|
-|Ir al primer punto de datos | Inicio |
-|Ir al último punto de datos | Fin |
 |Ir al botón **Ver más** en un gráfico de etiquetas | Pestaña |
 |Volver del botón **Ver más** a las etiquetas de un gráfico de etiquetas | Mayús+Tab |
 |Filtrar el panel si el foco se encuentra en un punto de datos de un panel interactivo | Entrar **O** barra espaciadora |
