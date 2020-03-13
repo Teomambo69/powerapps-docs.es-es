@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 2f41edb15bec061887ebe41f375cb1498280857c
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404618"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211489"
 ---
 # <a name="keyboard-shortcuts-for-canvas-apps"></a>Métodos abreviados de teclado para aplicaciones de Canvas
 

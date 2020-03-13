@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 777dd5452af8662569e2e51452142a1bbce3f619
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403424"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212777"
 ---
 # <a name="understand-canvas-app-tables-and-records-in-power-apps"></a>Descripción de las tablas y los registros de la aplicación de lienzo en Power apps
 
@@ -31,8 +31,8 @@ En la aplicación, usará [fórmulas](working-with-formulas.md) para crear, actu
 
 Puede crear una variedad de fórmulas que usan el nombre de una tabla como argumento, al igual que las fórmulas de Excel consideran una o varias referencias de celda como argumentos. Algunas fórmulas de Power apps devuelven una tabla que refleja los demás argumentos que especifique. Por ejemplo, podría crear una fórmula:
 
-* para actualizar un registro en una tabla mediante la especificación de esa tabla como uno de varios argumentos para la función **[Revisión](functions/function-patch.md)** ,
-* para agregar, quitar y cambiar el nombre de las columnas de una tabla mediante la especificación de esa tabla como un argumento para la función **[AgregarColumnas](functions/function-table-shaping.md)** , **[EliminarColumnas](functions/function-table-shaping.md)** o **[CambiarNombreColumnas](functions/function-table-shaping.md)** . Ninguna de esas funciones modifica la tabla original. En su lugar, la función devuelve otra tabla basada en el resto de los argumentos que se especifiquen.
+* para actualizar un registro en una tabla mediante la especificación de esa tabla como uno de varios argumentos para la función **[Revisión](functions/function-patch.md)**,
+* para agregar, quitar y cambiar el nombre de las columnas de una tabla mediante la especificación de esa tabla como un argumento para la función **[AgregarColumnas](functions/function-table-shaping.md)**, **[EliminarColumnas](functions/function-table-shaping.md)** o **[CambiarNombreColumnas](functions/function-table-shaping.md)**. Ninguna de esas funciones modifica la tabla original. En su lugar, la función devuelve otra tabla basada en el resto de los argumentos que se especifiquen.
 
 ## <a name="elements-of-a-table"></a>Elementos de una tabla
 ![](media/working-with-tables/elements-of-a-table.png)
@@ -45,9 +45,9 @@ En una fórmula, puede hacer referencia a un registro por sí mismo, fuera del c
 ### <a name="fields"></a>Fields
 Un campo es un elemento individual de información de un registro. Puede visualizar este tipo de campo como un valor de una columna para un registro concreto.
 
-Igual que con un control, puede hacer referencia a un campo de un registro mediante **.** , que es el [operador](functions/operators.md) en el registro.  Por ejemplo, **Primero(Productos).Nombre** devuelve el campo **Nombre** para el primer registro de la tabla **Productos**.
+Igual que con un control, puede hacer referencia a un campo de un registro mediante **.**, que es el [operador](functions/operators.md) en el registro.  Por ejemplo, **Primero(Productos).Nombre** devuelve el campo **Nombre** para el primer registro de la tabla **Productos**.
 
-Un campo puede contener otro registro o tabla, como muestra el ejemplo de la función **[AgruparPor](functions/function-groupby.md)** . Puede anidar tantos niveles de registros y tablas como desee.
+Un campo puede contener otro registro o tabla, como muestra el ejemplo de la función **[AgruparPor](functions/function-groupby.md)**. Puede anidar tantos niveles de registros y tablas como desee.
 
 ### <a name="columns"></a>Columnas
 Una columna hace referencia al mismo campo de uno o varios registros de una tabla. En el ejemplo anterior, cada producto tiene un campo de precio, y el precio está en la misma columna para todos los productos.  La tabla anterior tiene cuatro columnas, que se muestran horizontalmente en la parte superior:
@@ -64,7 +64,7 @@ Todos los valores de una columna son del mismo tipo de datos. En el ejemplo ante
 Es posible que en otras herramientas haya hecho referencia a las columnas con el término "campos".
 
 > [!NOTE]
-> En el caso de los orígenes de datos de SharePoint y Excel que contienen nombres de columna con espacios, Power apps reemplazará los espacios por **"\_x0020\_"** . Por ejemplo, **"Nombre columna"** en SharePoint o Excel aparecerá como **"Nombre_x0020_columna"** en Power Apps cuando se muestre en el diseño de datos o se use en una fórmula.
+> En el caso de los orígenes de datos de SharePoint y Excel que contienen nombres de columna con espacios, Power apps reemplazará los espacios por **"\_x0020\_"**. Por ejemplo, **"Nombre columna"** en SharePoint o Excel aparecerá como **"Nombre_x0020_columna"** en Power Apps cuando se muestre en el diseño de datos o se use en una fórmula.
 
 ### <a name="table"></a>Table
 Una tabla consta de uno o varios registros, cada uno con varios campos que tienen nombres coherentes entre los registros.
@@ -87,7 +87,7 @@ En Excel y Power Apps, se usan fórmulas para manipular números y cadenas de te
 
 En ambos casos, el valor calculado cambia automáticamente si modifica los valores de los argumentos (por ejemplo, el número de la celda **A1** o el valor de **Slider1**).
 
-Del mismo modo, puede usar fórmulas para acceder a datos de tablas y registros y manipularlos. Puede usar nombres de tablas como argumentos en algunas fórmulas, como **Min(Catálogo, Precio)** , para mostrar el valor mínimo en la columna **Precio** de la tabla **Catálogo**. Otras fórmulas proporcionan tablas completas como valores devueltos, como **CambiarNombreColumnas(Catálogo, "Precio", "Coste")** , que devuelve todos los registros de la tabla **Catálogo**, pero cambia el nombre de la columna **Precio** a **Coste**.
+Del mismo modo, puede usar fórmulas para acceder a datos de tablas y registros y manipularlos. Puede usar nombres de tablas como argumentos en algunas fórmulas, como **Min(Catálogo, Precio)**, para mostrar el valor mínimo en la columna **Precio** de la tabla **Catálogo**. Otras fórmulas proporcionan tablas completas como valores devueltos, como **CambiarNombreColumnas(Catálogo, "Precio", "Coste")**, que devuelve todos los registros de la tabla **Catálogo**, pero cambia el nombre de la columna **Precio** a **Coste**.
 
 Al igual que con los números, las fórmulas relacionadas con tablas y registros se recalculan automáticamente a medida que el registro o la tabla subyacentes cambian. Si el coste de un producto de la tabla **Catálogo** está muy por debajo del mínimo anterior, el valor devuelto de la fórmula **[Min](functions/function-aggregates.md)** cambiará automáticamente para establecer la coincidencia.
 
@@ -106,7 +106,7 @@ Se van a analizar algunos ejemplos sencillos.
 
     `Sort(CustomGallerySample, SampleHeading, Descending)`
 
-    Esta fórmula incorpora la función **[Ordenar](functions/function-sort.md)** , que considera el nombre de una tabla como su primer argumento y el nombre de una columna de dicha tabla como su segundo argumento. La función también admite un tercer argumento opcional, que estipula que desea ordenar los datos en orden descendente.
+    Esta fórmula incorpora la función **[Ordenar](functions/function-sort.md)**, que considera el nombre de una tabla como su primer argumento y el nombre de una columna de dicha tabla como su segundo argumento. La función también admite un tercer argumento opcional, que estipula que desea ordenar los datos en orden descendente.
 
     ![](media/working-with-tables/gallery-items-sort.png)
 
@@ -122,25 +122,25 @@ Se van a analizar algunos ejemplos sencillos.
 
 ## <a name="table-functions-and-control-properties"></a>Funciones de tabla y propiedades de control
 
-Considere la función **Lower** . Si la **Página principal** contiene la cadena de **texto "Hello, World"** , la fórmula **Lower (Welcome)** devuelve **"Hello, World"** .  En cualquier caso, esta función no cambia el valor de esa variable. **Lower** es una función pura en la que solo procesa la entrada y genera resultados. Eso es todo; no tiene efectos secundarios. Todas las funciones de Excel y la mayoría de las funciones de Power apps son funciones puras, que permiten que el libro o la aplicación se vuelvan a calcular automáticamente.
+Considere la función **Lower** . Si la **Página principal** contiene la cadena de **texto "Hello, World"**, la fórmula **Lower (Welcome)** devuelve **"Hello, World"**.  En cualquier caso, esta función no cambia el valor de esa variable. **Lower** es una función pura en la que solo procesa la entrada y genera resultados. Eso es todo; no tiene efectos secundarios. Todas las funciones de Excel y la mayoría de las funciones de Power apps son funciones puras, que permiten que el libro o la aplicación se vuelvan a calcular automáticamente.
 
 Power Apps ofrece un conjunto de funciones que operan en tablas de la misma manera. Estas funciones toman las tablas como entrada y filtran, ordenan, transforman, reducen y resumen todas las tablas de datos. De hecho, las funciones **inferiores** y muchas otras que normalmente toman un único valor también pueden tomar una tabla de una sola columna como entrada.
 
-* **[Ordenar](functions/function-sort.md)** , **[Filtrar](functions/function-filter-lookup.md)** : ordena y filtra registros.
-* **[FirstN](functions/function-first-last.md)** , **[LastN](functions/function-first-last.md)** : devuelve los primeros o últimos registros N de la tabla.
-* **[Abs](functions/function-numericals.md)** , **[Raíz](functions/function-numericals.md)** , **[Redondear](functions/function-round.md)** , **[Redondear.Mas](functions/function-round.md)** , **[Redondear.Menos](functions/function-round.md)** : operaciones aritméticas de cada registro de una tabla con sola columna, que resulta en una tabla de resultados con una sola columna.
-* **[Izquierda](functions/function-left-mid-right.md)** , **[Medio](functions/function-left-mid-right.md)** , **[Derecha](functions/function-left-mid-right.md)** , **[Reemplazar](functions/function-replace-substitute.md)** , **[Sustituir](functions/function-replace-substitute.md)** , **[Espacios](functions/function-trim.md)** , **[Minusc](functions/function-lower-upper-proper.md)** , **[Mayusc](functions/function-lower-upper-proper.md)** , **[NomPropio](functions/function-lower-upper-proper.md)** : manipulaciones de cadena en cada registro de una tabla con una sola columna, que resultan en una tabla de cadenas de una sola columna.
-* **[Largo](functions/function-len.md)** : para una columna de cadenas, devuelve una tabla de una sola columna que contiene la longitud de cada cadena.
-* **[Concatenar](functions/function-concatenate.md)** : concatena varias columnas de cadenas, que resultan en una tabla de cadenas de una sola columna.
-* **[AgregarColumnas](functions/function-table-shaping.md)** , **[EliminarColumnas](functions/function-table-shaping.md)** , **[CambiarNombreColumnas](functions/function-table-shaping.md)** , **[MostrarColumnas](functions/function-table-shaping.md)** : manipulación de columnas de la tabla, que resulta en una tabla nueva con columnas distintas.
-* **[Distinto](functions/function-distinct.md)** : elimina registros duplicados.
-* **[Aleatorio](functions/function-shuffle.md)** : ordena los registros de forma aleatoria.
-* **[HashTags](functions/function-hashtags.md)** : busca hashtags en una cadena.
-* **[Errores](functions/function-errors.md)** : proporciona información de errores cuando se trabaja con un origen de datos.
+* **[Ordenar](functions/function-sort.md)**, **[Filtrar](functions/function-filter-lookup.md)**: ordena y filtra registros.
+* **[FirstN](functions/function-first-last.md)**, **[LastN](functions/function-first-last.md)**: devuelve los primeros o últimos registros N de la tabla.
+* **[Abs](functions/function-numericals.md)**, **[Raíz](functions/function-numericals.md)**, **[Redondear](functions/function-round.md)**, **[Redondear.Mas](functions/function-round.md)**, **[Redondear.Menos](functions/function-round.md)**: operaciones aritméticas de cada registro de una tabla con sola columna, que resulta en una tabla de resultados con una sola columna.
+* **[Izquierda](functions/function-left-mid-right.md)**, **[Medio](functions/function-left-mid-right.md)**, **[Derecha](functions/function-left-mid-right.md)**, **[Reemplazar](functions/function-replace-substitute.md)**, **[Sustituir](functions/function-replace-substitute.md)**, **[Espacios](functions/function-trim.md)**, **[Minusc](functions/function-lower-upper-proper.md)**, **[Mayusc](functions/function-lower-upper-proper.md)**, **[NomPropio](functions/function-lower-upper-proper.md)**: manipulaciones de cadena en cada registro de una tabla con una sola columna, que resultan en una tabla de cadenas de una sola columna.
+* **[Largo](functions/function-len.md)**: para una columna de cadenas, devuelve una tabla de una sola columna que contiene la longitud de cada cadena.
+* **[Concatenar](functions/function-concatenate.md)**: concatena varias columnas de cadenas, que resultan en una tabla de cadenas de una sola columna.
+* **[AgregarColumnas](functions/function-table-shaping.md)**, **[EliminarColumnas](functions/function-table-shaping.md)**, **[CambiarNombreColumnas](functions/function-table-shaping.md)**, **[MostrarColumnas](functions/function-table-shaping.md)**: manipulación de columnas de la tabla, que resulta en una tabla nueva con columnas distintas.
+* **[Distinto](functions/function-distinct.md)**: elimina registros duplicados.
+* **[Aleatorio](functions/function-shuffle.md)**: ordena los registros de forma aleatoria.
+* **[HashTags](functions/function-hashtags.md)**: busca hashtags en una cadena.
+* **[Errores](functions/function-errors.md)**: proporciona información de errores cuando se trabaja con un origen de datos.
 
 Muchas de estas funciones toman una tabla de una sola columna como entrada. Si toda una tabla solo tiene una columna, puede especificarla por su nombre. Si una tabla tiene varias columnas, puede especificar una de esas columnas mediante la sintaxis de *TABLE. Column* . Por ejemplo, **Products.Name** devuelve la tabla de una sola columna con solo los valores de **nombre** de la tabla **Products** .
 
-Puede cambiar completamente la forma de una tabla con las funciones **[AddColumns](functions/function-table-shaping.md)** , **[cambiarnombrecolumnas](functions/function-table-shaping.md)** , **[mostrarcolumnas](functions/function-table-shaping.md)** o **[DropColumns](functions/function-table-shaping.md)** . De nuevo, estas funciones solo cambian su salida, no su origen.
+Puede cambiar completamente la forma de una tabla con las funciones **[AddColumns](functions/function-table-shaping.md)**, **[cambiarnombrecolumnas](functions/function-table-shaping.md)**, **[mostrarcolumnas](functions/function-table-shaping.md)** o **[DropColumns](functions/function-table-shaping.md)** . De nuevo, estas funciones solo cambian su salida, no su origen.
 
 Las propiedades de los controles también pueden ser tablas:
 
@@ -151,10 +151,10 @@ Las propiedades de los controles también pueden ser tablas:
 
 Otras funciones están diseñadas específicamente para modificar datos y tienen efectos secundarios. Dado que estas funciones no son puras, debe crearlas con cuidado y no pueden participar en el recálculo automático de los valores de la aplicación. Estas funciones solo se pueden usar dentro de [fórmulas de comportamiento](working-with-formulas-in-depth.md).
 
-* **[Collect](functions/function-clear-collect-clearcollect.md)** , **[Clear](functions/function-clear-collect-clearcollect.md)** , **[ClearCollect](functions/function-clear-collect-clearcollect.md)** crea colecciones, las borra y les agrega datos.
+* **[Collect](functions/function-clear-collect-clearcollect.md)**, **[Clear](functions/function-clear-collect-clearcollect.md)**, **[ClearCollect](functions/function-clear-collect-clearcollect.md)** crea colecciones, las borra y les agrega datos.
 * **[Patch](functions/function-patch.md)** : modifica uno o varios campos de un registro.
-* **[Actualizar](functions/function-update-updateif.md)** , **[ActualizarSi](functions/function-update-updateif.md)** : actualiza registros que reúnen uno o varios criterios especificados.
-* **[Eliminar](functions/function-remove-removeif.md)** , **[EliminarSi](functions/function-remove-removeif.md)** : elimina registros que reúnen uno o varios criterios especificados.
+* **[Actualizar](functions/function-update-updateif.md)**, **[ActualizarSi](functions/function-update-updateif.md)**: actualiza registros que reúnen uno o varios criterios especificados.
+* **[Eliminar](functions/function-remove-removeif.md)**, **[EliminarSi](functions/function-remove-removeif.md)**: elimina registros que reúnen uno o varios criterios especificados.
 
 ## <a name="record-formulas"></a>Fórmulas de registro
 
@@ -187,7 +187,7 @@ Ha usado la propiedad **Selected**, que es un registro, y ha extraído la propie
 
 También puede usar un registro como un contenedor de uso general para los valores con nombre relacionados.
 
-* Si crea una fórmula a partir de las funciones **[ActualizarContexto](functions/function-updatecontext.md)** y **[Navegar](functions/function-navigate.md)** , use un registro para recopilar las [variables de contexto](working-with-variables.md#use-a-context-variable) que desea actualizar.
+* Si crea una fórmula a partir de las funciones **[ActualizarContexto](functions/function-updatecontext.md)** y **[Navegar](functions/function-navigate.md)**, use un registro para recopilar las [variables de contexto](working-with-variables.md#use-a-context-variable) que desea actualizar.
 * Use la propiedad **[Actualizaciones](controls/control-form-detail.md)** en un control **[Editar formulario](controls/control-form-detail.md)** para recopilar los cambios que el usuario ha realizado en un formulario.
 * Use la función **[Revisión](functions/function-patch.md)** para actualizar un origen de datos, pero también para combinar registros.
 
@@ -196,16 +196,16 @@ En estos casos, el registro nunca formaba parte de una tabla.
 ## <a name="record-functions-and-control-properties"></a>Funciones de registro y propiedades de control
 Funciones que devuelven registros:
 
-* **[FirstN](functions/function-first-last.md)** , **[LastN](functions/function-first-last.md)** : devuelve el o los primeros o últimos registros de la tabla.
-* **[Búsqueda](functions/function-filter-lookup.md)** : devuelve el primer registro de una tabla que coincide con uno o varios criterios.
-* **[Revisión](functions/function-patch.md)** : actualiza un origen de datos o combina registros.
-* **[Predeterminado](functions/function-defaults.md)** : devuelve los valores predeterminados para un origen de datos.
+* **[FirstN](functions/function-first-last.md)**, **[LastN](functions/function-first-last.md)**: devuelve el o los primeros o últimos registros de la tabla.
+* **[Búsqueda](functions/function-filter-lookup.md)**: devuelve el primer registro de una tabla que coincide con uno o varios criterios.
+* **[Revisión](functions/function-patch.md)**: actualiza un origen de datos o combina registros.
+* **[Predeterminado](functions/function-defaults.md)**: devuelve los valores predeterminados para un origen de datos.
 
 Propiedades que devuelven registros:
 
 * **Seleccionado**: se aplica a galerías y cuadros de lista. Devuelve el registro seleccionado actualmente.
 * **Actualizaciones**: se aplica a las galerías.  Reúne todos los cambios que realiza un usuario en un formulario de entrada de datos.
-* **[Actualizar](functions/function-update-updateif.md)** : se aplica a los controles de entrada, como controles deslizantes y controles de entrada de texto. Configura las propiedades individuales para que se recopilen en la galería.
+* **[Actualizar](functions/function-update-updateif.md)**: se aplica a los controles de entrada, como controles deslizantes y controles de entrada de texto. Configura las propiedades individuales para que se recopilen en la galería.
 
 ## <a name="record-scope"></a>Ámbito del informe
 
@@ -279,24 +279,24 @@ Tenga en cuenta que en la fórmula anterior, se han usado comillas dobles (") en
 
 ## <a name="disambiguation"></a>Anulación de ambigüedades
 
-Los nombres de campo agregados con el ámbito de registro anulan los mismos nombres de los restantes lugares de la aplicación.  Cuando esto sucede, para acceder a los valores desde fuera del ámbito de registro hay que utilizar el operador [ **@** de anulación de ambigüedades](functions/operators.md):
+Los nombres de campo agregados con el ámbito de registro anulan los mismos nombres de los restantes lugares de la aplicación.  Cuando esto sucede, para acceder a los valores desde fuera del ámbito de registro hay que utilizar el operador [**@** de anulación de ambigüedades](functions/operators.md):
 
-* Para acceder a valores de ámbitos de registro anidados, use el operador **@** con el nombre de la tabla en la que opera mediante este modelo:<br>_Table_ **[@** _FieldName_ **]**
-* Para acceder a valores globales, como orígenes de datos, colecciones y variables de contexto, use el modelo **[@** _ObjectName_ **]** (sin designación de tabla).
+* Para acceder a valores de ámbitos de registro anidados, use el operador **@** con el nombre de la tabla en la que opera mediante este modelo:<br>_Table_**[@**_FieldName_**]**
+* Para acceder a valores globales, como orígenes de datos, colecciones y variables de contexto, use el modelo **[@**_ObjectName_**]** (sin designación de tabla).
 
-Si la tabla en la que se opera es una expresión, como **filtro (** _tabla_ **,** ... **)** , no se puede usar el operador de anulación de ambigüedades.  Solo el ámbito de registro más interno puede acceder a los campos de esta expresión de tabla, pero sin usar el operador de anulación de ambigüedades.
+Si la tabla en la que se opera es una expresión, como **filtro (** _tabla_**,** ... **)**, no se puede usar el operador de anulación de ambigüedades.  Solo el ámbito de registro más interno puede acceder a los campos de esta expresión de tabla, pero sin usar el operador de anulación de ambigüedades.
 
 Por ejemplo, imagine que tiene una colección **X**:
 
 ![](media/working-with-tables/X.png)
 
-Puede crear esta colección con **BorrarColección( X, \[1, 2\] )** .
+Puede crear esta colección con **BorrarColección( X, \[1, 2\] )**.
 
 Y otra colección **Y**:
 
 ![](media/working-with-tables/Y.png)
 
-Puede crear esta colección con **BorrarColección( Y, ["A", "B"] )** .
+Puede crear esta colección con **BorrarColección( Y, ["A", "B"] )**.
 
 Además, defina una variable de contexto denominada **Valor** con esta fórmula: **ActualizarContexto( {Valor: "!"} )**
 
@@ -317,7 +317,7 @@ genera esta tabla:
 
 ![](media/working-with-tables/XY.png)
 
-¿Qué sucede aquí?  La función **ParaTodo** más externa define un ámbito de registro para **X**, que permite acceder al campo **Valor** de cada registro a medida que se procesa.  Puede acceder a él con tan solo usar la palabra **Valor** o **X[@Value]** .
+¿Qué sucede aquí?  La función **ParaTodo** más externa define un ámbito de registro para **X**, que permite acceder al campo **Valor** de cada registro a medida que se procesa.  Puede acceder a él con tan solo usar la palabra **Valor** o **X[@Value]**.
 
 La función **forall** más interna define otro ámbito de registro para **Y**.  Como esta tabla también tiene un campo de **valor** definido, el uso de **Value** aquí hace referencia al campo del registro **de y y ya no es el**de **X**.  Aquí, para tener acceso al campo de **valor** de **X**, debemos usar la versión más larga con el operador de anulación de ambigüedades.
 
@@ -334,7 +334,7 @@ Ungroup(
 )
 ```
 
-Todos los ámbitos de registro **ParaTodo** invalidan el ámbito global. La variable de contexto de **valor** que definimos no está disponible por el nombre sin el operador de desambiguación. Para obtener acceso a este valor, use **[@Value]** .
+Todos los ámbitos de registro **ParaTodo** invalidan el ámbito global. La variable de contexto de **valor** que definimos no está disponible por el nombre sin el operador de desambiguación. Para obtener acceso a este valor, use **[@Value]**.
 
 **Ungroup** reduce el resultado porque las funciones de **forall** anidadas dan como resultado una tabla de resultados anidada.
 

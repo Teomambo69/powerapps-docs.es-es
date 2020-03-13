@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 740107af85e59baf44c6cfbe89eb62a42daa08a2
-ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
-ms.translationtype: HT
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "76750745"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211995"
 ---
 # <a name="save-and-publish-a-canvas-app-in-power-apps"></a>Almacenamiento y publicación de una aplicación de lienzo en Power Apps
 Siempre que guarde cambios en una aplicación de lienzo, se publican automáticamente solo para usted y para quien tenga permisos para modificar la aplicación. Cuando termine de realizar cambios, publíquelos explícitamente para que estén disponibles para todos los usuarios con los que se comparta la aplicación.
@@ -57,7 +57,7 @@ La versión **Activa** está publicada para todos los usuarios con quien se comp
 
 ![Publicar desde el portal](./media/save-publish-app/publish-portal.png)
 
-Para publicar la versión más reciente, resáltela y seleccione los puntos suspensivos (...). Después, seleccione **Publicar esta versión** en el menú desplegable.
+Para publicar la versión más reciente, resalte la versión y seleccione puntos suspensivos (...). Después, seleccione **publicar esta versión** en el menú desplegable.
 
 ## <a name="next-steps"></a>Pasos siguientes
 * Busque y ejecute la aplicación en un [explorador](../../user/run-app-browser.md) o [teléfono](../../user/run-app-client.md).

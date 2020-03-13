@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1322fd34f4e3a59a62a414fc0e2e7ccca48fc99f
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403912"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212340"
 ---
 # <a name="text-input-control-in-power-apps"></a>Control de entrada de texto en Power apps
 Un cuadro en el que el usuario puede escribir texto, números y otros datos.
@@ -27,119 +27,119 @@ Un cuadro en el que el usuario puede escribir texto, números y otros datos.
 El usuario puede especificar datos escribiendo en un control Entrada de texto. Dependiendo de cómo configure la aplicación, puede que esos datos se agreguen a un origen de datos, usado para calcular un valor temporal, o que se incorporen de alguna otra manera.
 
 ## <a name="key-properties"></a>Propiedades principales
-**[Predeterminado](properties-core.md)** : el valor inicial de un control antes de que lo cambie el usuario.
+**[Predeterminado](properties-core.md)**: el valor inicial de un control antes de que lo cambie el usuario.
 
-**[Text](properties-core.md)** : texto que aparece en un control o que el usuario escribe en un control.
+**[Text](properties-core.md)**: texto que aparece en un control o que el usuario escribe en un control.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
-**[AccessibleLabel](properties-accessibility.md)** : etiqueta para lectores de pantalla.
+**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla.
 
-**[Align](properties-text.md)** : la ubicación del texto respecto al centro horizontal de su control.
+**[Align](properties-text.md)**: la ubicación del texto respecto al centro horizontal de su control.
 
-**[BorderColor](properties-color-border.md)** : el color de un borde del control.
+**[BorderColor](properties-color-border.md)**: el color de un borde del control.
 
-**[BorderStyle](properties-color-border.md)** : si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
+**[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
-**[BorderThickness](properties-color-border.md)** : el grosor de un borde del control.
+**[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
 
 **Clear**: indica si un control Entrada de texto muestra una "X" sobre la que el usuario puede pulsar o hacer clic para borrar el contenido de ese control.
 
-**[Color](properties-color-border.md)** : el color del texto en un control.
+**[Color](properties-color-border.md)**: el color del texto en un control.
 
 **DelayOutput**: cuando se establece en true, la entrada del usuario se registra después de un retraso de medio segundo.  Resulta útil para retrasar operaciones costosas hasta que el usuario completa la entrada de texto (es decir, para el filtrado cuando la entrada se utiliza en otras fórmulas).
 
-**[DisplayMode](properties-core.md)** : indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+**[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
-**[DisabledBorderColor](properties-color-border.md)** : el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
+**[DisabledBorderColor](properties-color-border.md)**: el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
 
-**[DisabledColor](properties-color-border.md)** : el color del texto en un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
+**[DisabledColor](properties-color-border.md)**: el color del texto en un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
 
-**[DisabledFill](properties-color-border.md)** : el color de fondo de un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
+**[DisabledFill](properties-color-border.md)**: el color de fondo de un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
 
 **EnableSpellCheck** : indica si un control de entrada de texto debe usar la función de corrector ortográfico del explorador. Power apps para Windows no admite esta propiedad.
 
-**[Fill](properties-color-border.md)** : el color de fondo de un control.
+**[Fill](properties-color-border.md)**: el color de fondo de un control.
 
-**[FocusedBorderColor](properties-color-border.md)** : el color del borde de un control cuando el control recibe el foco.
+**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
 
-**[FocusedBorderThickness](properties-color-border.md)** : el grosor del borde de un control cuando el control recibe el foco.
+**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
 
-**[Font](properties-text.md)** : el nombre de la familia de fuentes en la que aparece el texto.
+**[Font](properties-text.md)**: el nombre de la familia de fuentes en la que aparece el texto.
 
-**[FontWeight](properties-text.md)** : el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
+**[FontWeight](properties-text.md)**: el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
 
 **Formato**: indica si se han restringido las entradas de usuario a solo números o a cualquier tipo de texto.
 
-**[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
+**[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
 **TextoDeSugerencia**: texto de color gris claro que aparece en un control Entrada de texto si está vacío.
 
-**[HoverBorderColor](properties-color-border.md)** : el color de un borde del control cuando el usuario mantiene el puntero del mouse sobre ese control.
+**[HoverBorderColor](properties-color-border.md)**: el color de un borde del control cuando el usuario mantiene el puntero del mouse sobre ese control.
 
-**[HoverColor](properties-color-border.md)** : el color del texto de un control cuando el usuario mantiene el puntero del mouse sobre él.
+**[HoverColor](properties-color-border.md)**: el color del texto de un control cuando el usuario mantiene el puntero del mouse sobre él.
 
-**[HoverFill](properties-color-border.md)** : el color de fondo de un control cuando el usuario mantiene el puntero del mouse sobre él.
+**[HoverFill](properties-color-border.md)**: el color de fondo de un control cuando el usuario mantiene el puntero del mouse sobre él.
 
-**[Italic](properties-text.md)** : indica si el texto de un control está en cursiva.
+**[Italic](properties-text.md)**: indica si el texto de un control está en cursiva.
 
-**[AlturaDeLínea](properties-text.md)** : distancia entre, por ejemplo, las líneas de texto o los elementos de una lista.
+**[AlturaDeLínea](properties-text.md)**: distancia entre, por ejemplo, las líneas de texto o los elementos de una lista.
 
 **MaxLength**: el número de caracteres que el usuario puede escribir en un control Entrada de texto.
 
 **Mode**: el control se encuentra en modo **SingleLine**, **MultiLine** o **Password**.
 
-**[AlCambiar](properties-core.md)** : indica cómo responde la aplicación cuando el usuario cambia el valor de un control (por ejemplo, mediante el ajuste de un control deslizante).
+**[AlCambiar](properties-core.md)**: indica cómo responde la aplicación cuando el usuario cambia el valor de un control (por ejemplo, mediante el ajuste de un control deslizante).
 
-**[OnSelect](properties-core.md)** : indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
+**[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
 
-**[RellenoInferior](properties-size-location.md)** : distancia entre el texto de un control y el borde inferior de ese control.
+**[RellenoInferior](properties-size-location.md)**: distancia entre el texto de un control y el borde inferior de ese control.
 
-**[RellenoIzquierdo](properties-size-location.md)** : distancia entre el texto de un control y el borde izquierdo de ese control.
+**[RellenoIzquierdo](properties-size-location.md)**: distancia entre el texto de un control y el borde izquierdo de ese control.
 
-**[RellenoDerecho](properties-size-location.md)** : distancia entre el texto de un control y el borde derecho de ese control.
+**[RellenoDerecho](properties-size-location.md)**: distancia entre el texto de un control y el borde derecho de ese control.
 
-**[RellenoSuperior](properties-size-location.md)** : distancia entre el texto de un control y el borde superior de ese control.
+**[RellenoSuperior](properties-size-location.md)**: distancia entre el texto de un control y el borde superior de ese control.
 
-**[PressedBorderColor](properties-color-border.md)** : el color de un borde del control cuando el usuario toca o hace clic en ese control.
+**[PressedBorderColor](properties-color-border.md)**: el color de un borde del control cuando el usuario toca o hace clic en ese control.
 
-**[PressedColor](properties-color-border.md)** : el color de texto de un control cuando el usuario toca o hace clic en ese control.
+**[PressedColor](properties-color-border.md)**: el color de texto de un control cuando el usuario toca o hace clic en ese control.
 
-**[PressedFill](properties-color-border.md)** : el color de fondo de un control cuando el usuario toca o hace clic en ese control.
+**[PressedFill](properties-color-border.md)**: el color de fondo de un control cuando el usuario toca o hace clic en ese control.
 
-**[RadiusBottomLeft](properties-size-location.md)** : el grado al que se redondea la esquina inferior izquierda de un control.
+**[RadiusBottomLeft](properties-size-location.md)**: el grado al que se redondea la esquina inferior izquierda de un control.
 
-**[RadiusBottomRight](properties-size-location.md)** : el grado al que se redondea la esquina inferior derecha de un control.
+**[RadiusBottomRight](properties-size-location.md)**: el grado al que se redondea la esquina inferior derecha de un control.
 
-**[RadiusTopLeft](properties-size-location.md)** : el grado al que se redondea la esquina superior izquierda de un control.
+**[RadiusTopLeft](properties-size-location.md)**: el grado al que se redondea la esquina superior izquierda de un control.
 
-**[RadiusTopRight](properties-size-location.md)** : el grado al que se redondea la esquina superior derecha de un control.
+**[RadiusTopRight](properties-size-location.md)**: el grado al que se redondea la esquina superior derecha de un control.
 
-**[Reset](properties-core.md)** : indica si un control vuelve a su valor predeterminado.
+**[Reset](properties-core.md)**: indica si un control vuelve a su valor predeterminado.
 
-**[Size](properties-text.md)** : el tamaño de la fuente del texto que aparece en un control.
+**[Size](properties-text.md)**: el tamaño de la fuente del texto que aparece en un control.
 
-**[Strikethrough](properties-text.md)** : indica si aparece una línea sobre el texto de un control.
+**[Strikethrough](properties-text.md)**: indica si aparece una línea sobre el texto de un control.
 
-**[TabIndex](properties-accessibility.md)** : orden de navegación del teclado en relación con otros controles.
+**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
 
-**[Información sobre herramientas](properties-core.md)** : texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
+**[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
 
-**[Underline](properties-text.md)** : indica si aparece una línea debajo del texto de un control.
+**[Underline](properties-text.md)**: indica si aparece una línea debajo del texto de un control.
 
 **VirtualKeyboardMode** : tipo de teclado virtual, texto o numérico que aparece en la pantalla táctil de un usuario de la aplicación. La propiedad **Format** determina el valor predeterminado. La compatibilidad con dispositivos varía. Los dispositivos que ejecutan iOS deben tener al menos la versión 12,2. La versión recomendada de Android es 9,0 y las capacidades de los teclados numéricos varían en los dispositivos Android. Windows 10 no admite esta propiedad.  
 
-**[Visible](properties-core.md)** : indica si un control aparece o está oculto.
+**[Visible](properties-core.md)**: indica si un control aparece o está oculto.
 
-**[Width](properties-size-location.md)** : la distancia entre los bordes derecho e izquierdo de un control.
+**[Width](properties-size-location.md)**: la distancia entre los bordes derecho e izquierdo de un control.
 
-**[X](properties-size-location.md)** : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
 
-**[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
 [**DateTimeValue**( *String* )](../functions/function-datevalue-timevalue.md)
 
-## <a name="examples"></a>Ejemplos
+## <a name="examples"></a>Ejemplos:
 ### <a name="collect-data"></a>Recopilación de datos
 1. Agregue dos controles Entrada de texto y llámelos **inputFirst** y **inputLast**.
    

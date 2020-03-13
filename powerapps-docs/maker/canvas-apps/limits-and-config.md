@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 18abbc91426c74b48aefd51f1867d8bff806d718
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404579"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211512"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Requisitos del sistema, límites y valores de configuración para aplicaciones de lienzo
 Este tema contiene los requisitos de la plataforma del dispositivo y del explorador Web, así como los límites y los valores de configuración de las aplicaciones de canvas.
@@ -38,17 +38,17 @@ Este tema contiene los requisitos de la plataforma del dispositivo y del explora
 
 | **Explorador** | **Sistema operativo** |
 | --- | --- |
-| Google Chrome (versión más reciente)<br>(recomendado) |Windows 7 SP1, 8.1 y 10 <br>Android 5 o posterior <br>iOS 8 o posterior<br>macOS |
+| Google Chrome (versión más reciente)<br>(recomendado) |Windows 7 SP1, 8.1 y 10 <br>Android 5 o posterior <br>iOS 8 o posterior<br>MacOS |
 | Microsoft Edge (versión más reciente)<br>(recomendado) |Windows 10 |
 | Microsoft Internet Explorer 11 (con la función Vista de compatibilidad desactivada) |Windows 7 SP1, 8.1 y 10 |
-| Mozilla Firefox (versión más reciente) |Windows 7 SP1, 8.1 y 10 <br> Android 5 o posterior <br>iOS 8 o posterior <br>macOS |
-| Apple Safari (versión más reciente) |iOS 8 o posterior <br>macOS |
+| Mozilla Firefox (versión más reciente) |Windows 7 SP1, 8.1 y 10 <br> Android 5 o posterior <br>iOS 8 o posterior <br>MacOS |
+| Apple Safari (versión más reciente) |iOS 8 o posterior <br>MacOS |
 
 ## <a name="supported-browsers-for-power-apps-studio"></a>Exploradores admitidos para Power apps Studio
 
 | **Explorador** | **Sistema operativo** |
 | --- | --- |
-| Google Chrome (versión más reciente)<br>(recomendado) |Windows 7 SP1, 8.1 y 10 <br>macOS |
+| Google Chrome (versión más reciente)<br>(recomendado) |Windows 7 SP1, 8.1 y 10 <br>MacOS |
 | Microsoft Edge (versión más reciente)<br>(recomendado) |Windows 10 |
 | Microsoft Internet Explorer 11 (con la función Vista de compatibilidad desactivada) |Windows 7 SP1, 8.1 y 10 |
 

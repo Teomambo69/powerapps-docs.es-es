@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1d98f01920dbcbf960b1e2bb21159586318e0386
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403551"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211581"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>Descripción de la delegación en una aplicación de lienzo
 Power Apps incluye un eficaz conjunto de funciones para filtrar, ordenar y dar forma a tablas de datos en una aplicación de lienzo **[: funciones de filtrado,](functions/function-filter-lookup.md)** **[ordenación](functions/function-sort.md)** y **[AddColumns](functions/function-table-shaping.md)** por nombrar solo algunas. Con estas funciones puede proporcionar a los usuarios acceso a la información que necesitan. Para quienes conozcan bien las bases de datos, el uso de estas funciones es como escribir una consulta de base de datos.
@@ -50,30 +49,30 @@ El siguiente paso es usar solo aquellas fórmulas que se puedan delegar. Aquí s
 Estas listas cambiarán con el tiempo, ya que en el futuro habrá más funciones y operadores que admitan la delegación.
 
 ### <a name="filter-functions"></a>Funciones de filtro
-**[Filtrar](functions/function-filter-lookup.md)** , **[Buscar](functions/function-filter-lookup.md)** y **[Búsqueda](functions/function-filter-lookup.md)** se pueden delegar.  
+**[Filtrar](functions/function-filter-lookup.md)**, **[Buscar](functions/function-filter-lookup.md)** y **[Búsqueda](functions/function-filter-lookup.md)** se pueden delegar.  
 
 Las funciones **Filter** y **LookUp** se pueden usar con columnas de la tabla para seleccionar los registros apropiados:
 
-* **[And](functions/function-logicals.md)** (incluyendo **[&&](functions/operators.md)** ), **[Or](functions/function-logicals.md)** (incluyendo **[||](functions/operators.md)** ), **[Not](functions/function-logicals.md)** (incluyendo **[!](functions/operators.md)** )
+* **[And](functions/function-logicals.md)** (incluyendo **[&&](functions/operators.md)**), **[Or](functions/function-logicals.md)** (incluyendo **[||](functions/operators.md)**), **[Not](functions/function-logicals.md)** (incluyendo **[!](functions/operators.md)**)
 * **[In (En)](functions/operators.md)**
-* **[=](functions/operators.md)** , **[<>](functions/operators.md)** , **[>=](functions/operators.md)** , **[<=](functions/operators.md)** , **[>](functions/operators.md)** , **[<](functions/operators.md)**
-* **[+](functions/operators.md)** , **[-](functions/operators.md)**
+* **[=](functions/operators.md)**, **[<>](functions/operators.md)**, **[>=](functions/operators.md)**, **[<=](functions/operators.md)**, **[>](functions/operators.md)**, **[<](functions/operators.md)**
+* **[+](functions/operators.md)**, **[-](functions/operators.md)**
 * **[TrimEnds (RecortarExtr)](functions/function-trim.md)**
 * **[EsBlanco](functions/function-isblank-isempty.md)**
-* **[StartsWith](functions/function-startswith.md)** ,  **[EndsWith](functions/function-startswith.md)**
+* **[StartsWith](functions/function-startswith.md)**, ** [EndsWith](functions/function-startswith.md)**
 * Valores constantes que son iguales en todos los registros, como las propiedades del control y [las variables globales y de contexto](working-with-variables.md).
 
-También se pueden usar partes de la fórmula que se evalúen en un valor constante para todos los registros. Por ejemplo, **left (Language (), 2)** , **Date (2019, 3, 31)** y **hoy ()** no dependen de ninguna columna del registro y, por tanto, devuelven el mismo valor para todos los registros. Estos valores se pueden enviar al origen de datos como una constante y no bloquearán la delegación. 
+También se pueden usar partes de la fórmula que se evalúen en un valor constante para todos los registros. Por ejemplo, **left (Language (), 2)**, **Date (2019, 3, 31)** y **hoy ()** no dependen de ninguna columna del registro y, por tanto, devuelven el mismo valor para todos los registros. Estos valores se pueden enviar al origen de datos como una constante y no bloquearán la delegación. 
 
 La lista anterior no incluye estos elementos importantes:
 
 * **[If (Si)](functions/function-if.md)**
-* **[*](functions/operators.md)** , **[/](functions/operators.md)** , **[Mod](functions/function-mod.md)**
-* **[Concatenar](functions/function-concatenate.md)** (incluyendo **[&](functions/operators.md)** )
+* **[*](functions/operators.md)**, **[/](functions/operators.md)**, **[Mod](functions/function-mod.md)**
+* **[Concatenar](functions/function-concatenate.md)** (incluyendo **[&](functions/operators.md)**)
 * **[ExactIn (ExactoEn)](functions/operators.md)**
-* Funciones de manipulación de cadenas: **[Minusc](functions/function-lower-upper-proper.md)** , **[Mayusc](functions/function-lower-upper-proper.md)** , **[Izquierda](functions/function-left-mid-right.md)** , **[Extrae](functions/function-left-mid-right.md)** , **[Largo](functions/function-left-mid-right.md)** , ...
-* Señales: **[Ubicación](functions/signals.md)** , **[Aceleración](functions/signals.md)** , **[Brújula](functions/signals.md)** , ...
-* Volatiles: **[Rand](functions/function-rand.md)** ,...
+* Funciones de manipulación de cadenas: **[Minusc](functions/function-lower-upper-proper.md)**, **[Mayusc](functions/function-lower-upper-proper.md)**, **[Izquierda](functions/function-left-mid-right.md)**, **[Extrae](functions/function-left-mid-right.md)**, **[Largo](functions/function-left-mid-right.md)**, ...
+* Señales: **[Ubicación](functions/signals.md)**, **[Aceleración](functions/signals.md)**, **[Brújula](functions/signals.md)**, ...
+* Volatiles: **[Rand](functions/function-rand.md)**,...
 * [Colecciones](working-with-variables.md)
 
 ### <a name="sorting-functions"></a>Funciones de ordenación
@@ -82,22 +81,22 @@ La lista anterior no incluye estos elementos importantes:
 En **Ordenar**, la fórmula solo puede ser el nombre de una columna individual y no puede incluir otros operadores o funciones.
 
 ### <a name="aggregate-functions"></a>Funciones de agregado
-**[Suma](functions/function-aggregates.md)** , **[Promedio](functions/function-aggregates.md)** , **[Min](functions/function-aggregates.md)** y **[Max](functions/function-aggregates.md)** pueden delegarse. En este momento, solo un número limitado de orígenes de datos admite esta delegación. Para obtener más detalles, vea la [lista de delegación](delegation-list.md).
+**[Suma](functions/function-aggregates.md)**, **[Promedio](functions/function-aggregates.md)**, **[Min](functions/function-aggregates.md)** y **[Max](functions/function-aggregates.md)** pueden delegarse. En este momento, solo un número limitado de orígenes de datos admite esta delegación. Para obtener más detalles, vea la [lista de delegación](delegation-list.md).
 
-Las funciones de recuento como **[CountRows](functions/function-table-counts.md)** , **[CountA](functions/function-table-counts.md)** y **[Count](functions/function-table-counts.md)** no se pueden delegar.
+Las funciones de recuento como **[CountRows](functions/function-table-counts.md)**, **[CountA](functions/function-table-counts.md)** y **[Count](functions/function-table-counts.md)** no se pueden delegar.
 
-Otras funciones de agregado, como **[StdevP](functions/function-aggregates.md)** y **[VarP](functions/function-aggregates.md)** , no se pueden delegar.
+Otras funciones de agregado, como **[StdevP](functions/function-aggregates.md)** y **[VarP](functions/function-aggregates.md)**, no se pueden delegar.
 
 ### <a name="table-shaping-functions"></a>Funciones de modelado de tabla
 
-**[AddColumns](functions/function-table-shaping.md)** , **[DropColumns](functions/function-table-shaping.md)** , **[cambiarnombrecolumnas](functions/function-table-shaping.md)** y **[mostrarcolumnas](functions/function-table-shaping.md)** admiten parcialmente la delegación.  Las fórmulas de sus argumentos se pueden delegar.  Sin embargo, el resultado de estas funciones está sujeto al límite de registros que no son de delegación.
+**[AddColumns](functions/function-table-shaping.md)**, **[DropColumns](functions/function-table-shaping.md)**, **[cambiarnombrecolumnas](functions/function-table-shaping.md)** y **[mostrarcolumnas](functions/function-table-shaping.md)** admiten parcialmente la delegación.  Las fórmulas de sus argumentos se pueden delegar.  Sin embargo, el resultado de estas funciones está sujeto al límite de registros que no son de delegación.
 
 Como en este ejemplo, los responsables suelen usar **AddColumns** y **Buscar** para combinar información de una tabla en otra, lo que se conoce comúnmente como una combinación en el lenguaje de la base de datos:
 
-```powerapps-comma
-AddColumns( Products; 
-    "Supplier Name"; 
-    LookUp( Suppliers; Suppliers.ID = Product.SupplierID ).Name 
+```powerapps-dot
+AddColumns( Products, 
+    "Supplier Name", 
+    LookUp( Suppliers, Suppliers.ID = Product.SupplierID ).Name 
 )
 ```
 
@@ -108,12 +107,12 @@ Si utiliza **AddColumns** de esta manera, la **búsqueda** debe realizar llamada
 ## <a name="non-delegable-functions"></a>Funciones no delegables
 Las demás funciones no admiten la delegación, incluidas estas importantes funciones:
 
-* **[Primero](functions/function-first-last.md)** , **[FirstN](functions/function-first-last.md)** , **[Último](functions/function-first-last.md)** , **[LastN](functions/function-first-last.md)**
+* **[Primero](functions/function-first-last.md)**, **[FirstN](functions/function-first-last.md)**, **[Último](functions/function-first-last.md)**, **[LastN](functions/function-first-last.md)**
 * **[Choices](functions/function-choices.md)**
 * **[Concat](functions/function-concatenate.md)**
-* **[Recopilar](functions/function-clear-collect-clearcollect.md)** , **[ClearCollect](functions/function-clear-collect-clearcollect.md)**
-* **[CountIf](functions/function-table-counts.md)** , **[RemoveIf](functions/function-remove-removeif.md)** , **[UpdateIf](functions/function-update-updateif.md)**
-* **[GroupBy](functions/function-groupby.md)** , **[Desagrupar](functions/function-groupby.md)**
+* **[Recopilar](functions/function-clear-collect-clearcollect.md)**, **[ClearCollect](functions/function-clear-collect-clearcollect.md)**
+* **[CountIf](functions/function-table-counts.md)**, **[RemoveIf](functions/function-remove-removeif.md)**, **[UpdateIf](functions/function-update-updateif.md)**
+* **[GroupBy](functions/function-groupby.md)**, **[Desagrupar](functions/function-groupby.md)**
 
 ## <a name="non-delegable-limits"></a>Límites no delegables
 Las fórmulas que no se pueden delegar se procesan localmente. Esto permite usar toda la amplitud del lenguaje de fórmulas de Power apps. Pero esto tiene un precio: primero deben pasarse todos los datos al dispositivo, lo que podría implicar la recuperación de una gran cantidad de datos a través de la red. Esta operación puede tardar un tiempo, lo que daría la impresión de que la aplicación se ejecuta con lentitud, o incluso que está bloqueada.
@@ -140,23 +139,23 @@ Para que sea más fácil saber qué es y qué no se está delegando, Power apps 
 Las advertencias de delegación solo aparecen en las fórmulas que operan en orígenes de datos delegables. Si no ve una advertencia y cree que la fórmula no se delega correctamente, compruebe el tipo de origen de datos en la lista anterior de [orígenes de datos que se pueden delegar](delegation-overview.md#delegable-data-sources) de este tema.
 
 ## <a name="examples"></a>Ejemplos:
-En este ejemplo se genera automáticamente una aplicación de tres pantallas basada en una tabla de SQL Server denominada **[dbo].[Fruit]** . Para obtener información sobre cómo generar la aplicación, puede aplicar principios similares en el [tema sobre Common Data Service](data-platform-create-app.md) a SQL Server.
+En este ejemplo se genera automáticamente una aplicación de tres pantallas basada en una tabla de SQL Server denominada **[dbo].[Fruit]**. Para obtener información sobre cómo generar la aplicación, puede aplicar principios similares en el [tema sobre Common Data Service](data-platform-create-app.md) a SQL Server.
 
 ![Aplicación de tres pantallas](./media/delegation-overview/products-afd.png)
 
 La propiedad **Items** de la galería está establecida en una fórmula que contiene las funciones **SortByColumns** y **Search**, que se pueden delegar.
 
-En el cuadro de búsqueda, escriba **"Apple"** .
+En el cuadro de búsqueda, escriba **"Apple"**.
 
 Una fila de puntos aparece momentáneamente junto a la parte superior de la pantalla mientras la aplicación se comunica con SQL Server para procesar la solicitud de búsqueda. Aparecen todos los registros que cumplen los criterios de búsqueda, aunque el origen de datos contenga millones de registros.
 
 ![Control de entrada de texto de búsqueda](./media/delegation-overview/products-apple.png)
 
-Los resultados de búsqueda incluyen **"Apples"** , **"Crab apples"** y **"Pineapple"** , porque la función **Search** busca por todas las partes de un columna de texto. Si solo quiere buscar los registros que contienen el término de búsqueda al principio del nombre de la fruta, puede usar otra función delegable, **Filter**, con un término de búsqueda más complicado. (Por motivos de simplicidad, quite la llamada a **SortByColumns**).
+Los resultados de búsqueda incluyen **"Apples"**, **"Crab apples"** y **"Pineapple"**, porque la función **Search** busca por todas las partes de un columna de texto. Si solo quiere buscar los registros que contienen el término de búsqueda al principio del nombre de la fruta, puede usar otra función delegable, **Filter**, con un término de búsqueda más complicado. (Por motivos de simplicidad, quite la llamada a **SortByColumns**).
 
 ![Quitar la llamada a SortByColumns](./media/delegation-overview/products-apple-delegationwarning.png)
 
-Los nuevos resultados incluyen **"Apples"** , pero no **"Crab apples"** ni **"Pineapple"** .  Pero aparece un triángulo amarillo junto a la galería (y en la miniatura de pantalla si la barra de navegación izquierda muestra miniaturas) y una línea ondulada azul debajo de una parte de la fórmula. Cada uno de estos elementos indica una advertencia. Si mantiene el puntero sobre el triángulo amarillo junto a la galería, aparece este mensaje:
+Los nuevos resultados incluyen **"Apples"**, pero no **"Crab apples"** ni **"Pineapple"**.  Pero aparece un triángulo amarillo junto a la galería (y en la miniatura de pantalla si la barra de navegación izquierda muestra miniaturas) y una línea ondulada azul debajo de una parte de la fórmula. Cada uno de estos elementos indica una advertencia. Si mantiene el puntero sobre el triángulo amarillo junto a la galería, aparece este mensaje:
 
 ![Puntero sobre la advertencia de delegación](./media/delegation-overview/products-apple-yellowwarning.png)
 

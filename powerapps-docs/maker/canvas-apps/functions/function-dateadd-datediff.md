@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e5c321617f08b6747824757344e3cc61b1abf27b
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403276"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211558"
 ---
 # <a name="dateadd-datediff-and-timezoneoffset-functions-in-power-apps"></a>Funciones DateAdd, DateDiff y TimeZoneOffset de Power Apps
 Agrega valores de fecha y hora o encuentra la diferencia en estos valores y realiza la conversión entre la hora local y UTC.
@@ -53,7 +53,7 @@ Para obtener más información, consulte también las secciones sobre los tipos 
 
 * *DateTime*: opcional.  Valor de fecha y hora para el que se devuelve el desplazamiento.  De forma predeterminada, se utiliza la fecha y hora actuales.
 
-## <a name="examples"></a>Ejemplos
+## <a name="examples"></a>Ejemplos:
 En todos estos ejemplos, se supone que la fecha y hora actuales son **15 de julio de 2013, 1:02 p.m**.
 
 ### <a name="simple-dateadd"></a>DateAdd simple

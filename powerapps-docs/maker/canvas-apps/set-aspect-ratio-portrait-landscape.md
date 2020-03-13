@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b6ec2006266a15b7552d1a83b2d7d67c14560470
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404335"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211443"
 ---
 # <a name="change-screen-size-and-orientation-of-a-canvas-app-in-power-apps"></a>Cambiar el tamaño y la orientación de una aplicación de lienzo en Power apps
 Personalice una aplicación de lienzo cambiando el tamaño y la orientación de la pantalla.
@@ -48,7 +47,7 @@ Cree una aplicación o abra una para editarla y, a continuación, seleccione Con
 
     Si desactiva esta configuración, la aplicación se ajusta a la relación de aspecto del dispositivo en el que se ejecuta y ocupa todo el espacio disponible. La aplicación no escala y, como resultado, las pantallas pueden mostrar más información.
 
-    Cuando esta opción está desactivada, la **relación de aspecto de bloqueo** se desactiva y deshabilita automáticamente. Además, la propiedad **ancho** de todas las pantallas está establecida en `Max(App.Width; App.DesignWidth)`y su propiedad **alto** está establecida en `Max(App.Height; App.DesignHeight)` para que realice el seguimiento de las dimensiones de la ventana en la que se ejecuta la aplicación. Con este cambio, puede crear aplicaciones que respondan a diferentes dispositivos y dimensiones de la ventana. Más información: [crear un diseño con capacidad de respuesta](create-responsive-layout.md)
+    Cuando esta opción está desactivada, la **relación de aspecto de bloqueo** se desactiva y deshabilita automáticamente. Además, la propiedad **ancho** de todas las pantallas está establecida en `Max(App.Width, App.DesignWidth)`y su propiedad **alto** está establecida en `Max(App.Height, App.DesignHeight)` para que realice el seguimiento de las dimensiones de la ventana en la que se ejecuta la aplicación. Con este cambio, puede crear aplicaciones que respondan a diferentes dispositivos y dimensiones de la ventana. Más información: [crear un diseño con capacidad de respuesta](create-responsive-layout.md)
 
 1. En **Bloquear relación de aspecto**, especifique **Activar** o **Desactivar**.
 

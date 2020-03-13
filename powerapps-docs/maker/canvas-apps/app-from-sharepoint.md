@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 346bb27911549715b6c4fdc40f64552c524527be
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403357"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211926"
 ---
 # <a name="create-a-canvas-app-in-power-apps-from-a-sharepoint-list"></a>Creación de una aplicación de lienzo en Power apps desde una lista de SharePoint
 

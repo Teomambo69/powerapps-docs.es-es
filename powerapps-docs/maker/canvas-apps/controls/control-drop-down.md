@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: cc9b12f6cf899d0a57e56eda9fe0dd4bc5ba6c2e
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404043"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212225"
 ---
 # <a name="drop-down-control-in-power-apps"></a>Control desplegable en Power apps
 Una lista que muestra solo el primer elemento a menos que el usuario la abra.
@@ -27,9 +27,9 @@ Una lista que muestra solo el primer elemento a menos que el usuario la abra.
 Un control **Lista desplegable** conserva el estado real de la pantalla, en especial cuando la lista contiene un gran número de opciones. El control toma una sola línea a menos que el usuario seleccione las comillas angulares para revelar más opciones.  El control muestra un máximo de 500 elementos.
 
 ## <a name="key-properties"></a>Propiedades principales
-**[Valor predeterminado](properties-core.md)** : valor inicial de un control antes de que el usuario especifique otro.
+**[Valor predeterminado](properties-core.md)**: valor inicial de un control antes de que el usuario especifique otro.
 
-**[Elementos](properties-core.md)** : origen de datos que contiene los elementos que aparecen en el control. Si el origen tiene varias columnas, establezca la propiedad **Valor** del control en la columna de datos que quiere mostrar.
+**[Elementos](properties-core.md)**: origen de datos que contiene los elementos que aparecen en el control. Si el origen tiene varias columnas, establezca la propiedad **Valor** del control en la columna de datos que quiere mostrar.
   
 **Valor**: columna de datos que quiere mostrar en el control (por ejemplo, si un origen de datos tiene varias columnas).
 
@@ -38,91 +38,91 @@ Un control **Lista desplegable** conserva el estado real de la pantalla, en espe
 **AllowEmptySelection** : indica si el control muestra una selección vacía si no se ha seleccionado ningún elemento. Los usuarios de la aplicación también pueden borrar sus elecciones seleccionando el elemento en blanco.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
-**[AccessibleLabel](properties-accessibility.md)** : etiqueta para lectores de pantalla.
+**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla.
 
-**[BorderColor](properties-color-border.md)** : el color de un borde del control.
+**[BorderColor](properties-color-border.md)**: el color de un borde del control.
 
-**[BorderStyle](properties-color-border.md)** : si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
+**[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
-**[BorderThickness](properties-color-border.md)** : el grosor de un borde del control.
+**[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
 
 **ChevronBackground**: el color detrás de la flecha hacia abajo en una lista desplegable.
 
 **ChevronFill**: el color de la flecha hacia abajo en una lista desplegable.
 
-**[Color](properties-color-border.md)** : el color del texto en un control.
+**[Color](properties-color-border.md)**: el color del texto en un control.
 
-**[DisplayMode](properties-core.md)** : indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+**[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
-**[DisabledBorderColor](properties-color-border.md)** : el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
+**[DisabledBorderColor](properties-color-border.md)**: el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
 
-**[DisabledColor](properties-color-border.md)** : el color del texto en un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
+**[DisabledColor](properties-color-border.md)**: el color del texto en un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
 
-**[DisabledFill](properties-color-border.md)** : el color de fondo de un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
+**[DisabledFill](properties-color-border.md)**: el color de fondo de un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
 
-**[Fill](properties-color-border.md)** : el color de fondo de un control.
+**[Fill](properties-color-border.md)**: el color de fondo de un control.
 
-**[FocusedBorderColor](properties-color-border.md)** : el color del borde de un control cuando el control recibe el foco.
+**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
 
-**[FocusedBorderThickness](properties-color-border.md)** : el grosor del borde de un control cuando el control recibe el foco.
+**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
 
-**[Font](properties-text.md)** : el nombre de la familia de fuentes en la que aparece el texto.
+**[Font](properties-text.md)**: el nombre de la familia de fuentes en la que aparece el texto.
 
-**[FontWeight](properties-text.md)** : el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
+**[FontWeight](properties-text.md)**: el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
 
-**[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
+**[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
-**[HoverBorderColor](properties-color-border.md)** : el color de un borde del control cuando el usuario mantiene el puntero del mouse sobre ese control.
+**[HoverBorderColor](properties-color-border.md)**: el color de un borde del control cuando el usuario mantiene el puntero del mouse sobre ese control.
 
-**[HoverColor](properties-color-border.md)** : el color del texto de un control cuando el usuario mantiene el puntero del mouse sobre él.
+**[HoverColor](properties-color-border.md)**: el color del texto de un control cuando el usuario mantiene el puntero del mouse sobre él.
 
-**[HoverFill](properties-color-border.md)** : el color de fondo de un control cuando el usuario mantiene el puntero del mouse sobre él.
+**[HoverFill](properties-color-border.md)**: el color de fondo de un control cuando el usuario mantiene el puntero del mouse sobre él.
 
-**[Italic](properties-text.md)** : indica si el texto de un control está en cursiva.
+**[Italic](properties-text.md)**: indica si el texto de un control está en cursiva.
 
-**[AlCambiar](properties-core.md)** : indica cómo responde la aplicación cuando el usuario cambia el valor de un control (por ejemplo, mediante el ajuste de un control deslizante).
+**[AlCambiar](properties-core.md)**: indica cómo responde la aplicación cuando el usuario cambia el valor de un control (por ejemplo, mediante el ajuste de un control deslizante).
 
-**[OnSelect](properties-core.md)** : indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
+**[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
 
-**[RellenoInferior](properties-size-location.md)** : distancia entre el texto de un control y el borde inferior de ese control.
+**[RellenoInferior](properties-size-location.md)**: distancia entre el texto de un control y el borde inferior de ese control.
 
-**[RellenoIzquierdo](properties-size-location.md)** : distancia entre el texto de un control y el borde izquierdo de ese control.
+**[RellenoIzquierdo](properties-size-location.md)**: distancia entre el texto de un control y el borde izquierdo de ese control.
 
-**[RellenoDerecho](properties-size-location.md)** : distancia entre el texto de un control y el borde derecho de ese control.
+**[RellenoDerecho](properties-size-location.md)**: distancia entre el texto de un control y el borde derecho de ese control.
 
-**[RellenoSuperior](properties-size-location.md)** : distancia entre el texto de un control y el borde superior de ese control.
+**[RellenoSuperior](properties-size-location.md)**: distancia entre el texto de un control y el borde superior de ese control.
 
-**[PressedBorderColor](properties-color-border.md)** : el color de un borde del control cuando el usuario toca o hace clic en ese control.
+**[PressedBorderColor](properties-color-border.md)**: el color de un borde del control cuando el usuario toca o hace clic en ese control.
 
-**[PressedColor](properties-color-border.md)** : el color de texto de un control cuando el usuario toca o hace clic en ese control.
+**[PressedColor](properties-color-border.md)**: el color de texto de un control cuando el usuario toca o hace clic en ese control.
 
-**[PressedFill](properties-color-border.md)** : el color de fondo de un control cuando el usuario toca o hace clic en ese control.
+**[PressedFill](properties-color-border.md)**: el color de fondo de un control cuando el usuario toca o hace clic en ese control.
 
-**[Reset](properties-core.md)** : indica si un control vuelve a su valor predeterminado.
+**[Reset](properties-core.md)**: indica si un control vuelve a su valor predeterminado.
 
-**SelectedText (en desuso)** : valor de cadena que representa el elemento seleccionado.
+**SelectedText (en desuso)**: valor de cadena que representa el elemento seleccionado.
 
-**[ColorDeSelección](properties-color-border.md)** : color del texto de los elementos seleccionados en una lista o de la herramienta de selección de un control de entrada manuscrita.
+**[ColorDeSelección](properties-color-border.md)**: color del texto de los elementos seleccionados en una lista o de la herramienta de selección de un control de entrada manuscrita.
 
-**[RellenoDeSelección](properties-color-border.md)** : el color de fondo de uno o varios elementos seleccionados en una lista o un área seleccionada de un control de entrada manuscrita.
+**[RellenoDeSelección](properties-color-border.md)**: el color de fondo de uno o varios elementos seleccionados en una lista o un área seleccionada de un control de entrada manuscrita.
 
-**[Size](properties-text.md)** : el tamaño de la fuente del texto que aparece en un control.
+**[Size](properties-text.md)**: el tamaño de la fuente del texto que aparece en un control.
 
-**[Strikethrough](properties-text.md)** : indica si aparece una línea sobre el texto de un control.
+**[Strikethrough](properties-text.md)**: indica si aparece una línea sobre el texto de un control.
 
-**[TabIndex](properties-accessibility.md)** : orden de navegación del teclado en relación con otros controles.
+**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
 
-**[Información sobre herramientas](properties-core.md)** : texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
+**[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
 
-**[Underline](properties-text.md)** : indica si aparece una línea debajo del texto de un control.
+**[Underline](properties-text.md)**: indica si aparece una línea debajo del texto de un control.
 
-**[Visible](properties-core.md)** : indica si un control aparece o está oculto.
+**[Visible](properties-core.md)**: indica si un control aparece o está oculto.
 
-**[Width](properties-size-location.md)** : la distancia entre los bordes derecho e izquierdo de un control.
+**[Width](properties-size-location.md)**: la distancia entre los bordes derecho e izquierdo de un control.
 
-**[X](properties-size-location.md)** : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
 
-**[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="example"></a>Ejemplo
 

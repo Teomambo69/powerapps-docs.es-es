@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b0e189bc2bfd922839373f009fcc54a34217daba
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404344"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211903"
 ---
 # <a name="screen-control-in-power-apps"></a>Control de pantalla en Power apps
 
@@ -27,19 +26,19 @@ Elemento de la interfaz de usuario que contiene uno o más controles de una apli
 
 ## <a name="description"></a>Descripción
 
-La mayoría de las aplicaciones tienen varios controles **Pantalla** que contienen controles **[Etiqueta](control-text-box.md)** , **[Botón](control-button.md)** y otros controles que muestran los datos y son compatibles con la navegación. Para obtener información sobre cómo agregar una pantalla, cambiar el orden de las pantallas y configurar la navegación, consulte [Agregar una pantalla](../add-screen-context-variables.md).
+La mayoría de las aplicaciones tienen varios controles **Pantalla** que contienen controles **[Etiqueta](control-text-box.md)**, **[Botón](control-button.md)** y otros controles que muestran los datos y son compatibles con la navegación. Para obtener información sobre cómo agregar una pantalla, cambiar el orden de las pantallas y configurar la navegación, consulte [Agregar una pantalla](../add-screen-context-variables.md).
 
 ## <a name="key-properties"></a>Propiedades principales
 
-**[ImagenDeFondo](properties-visual.md)** : nombre de un archivo de imagen que aparece en el fondo de una pantalla.
+**[ImagenDeFondo](properties-visual.md)**: nombre de un archivo de imagen que aparece en el fondo de una pantalla.
 
-**[Fill](properties-color-border.md)** : el color de fondo de un control.
+**[Fill](properties-color-border.md)**: el color de fondo de un control.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
 
 **Height** : el alto de la pantalla. Si la aplicación responde ([**escalar para ajustarse a**](../set-aspect-ratio-portrait-landscape.md#change-screen-size-and-orientation) está **desactivada**) y el dispositivo en el que se ejecuta la aplicación es menor que esta propiedad, la pantalla se puede desplazar verticalmente.
 
-**[PosiciónDeLaImagen](properties-visual.md)** : posición (**Rellenar**, **Ajustar**, **Estirar**, **Icono** o **Centrar**) de una imagen en una pantalla o un control, si no tiene el mismo tamaño que la imagen.
+**[PosiciónDeLaImagen](properties-visual.md)**: posición (**Rellenar**, **Ajustar**, **Estirar**, **Icono** o **Centrar**) de una imagen en una pantalla o un control, si no tiene el mismo tamaño que la imagen.
 
 **Nombre** : el nombre de la pantalla.
 
@@ -55,13 +54,13 @@ La mayoría de las aplicaciones tienen varios controles **Pantalla** que contien
 
 ## <a name="related-functions"></a>Funciones relacionadas
 
-[**Distinct**( *DataSource*; *ColumnName* )](../functions/function-distinct.md)
+[**Distinct**( *DataSource*, *ColumnName* )](../functions/function-distinct.md)
 
 ## <a name="example"></a>Ejemplo
 
-1. Agregue un control **[Radio](control-radio.md)** , asígnele el nombre **ScreenFills** y establezca su propiedad **[Elementos](properties-core.md)** en este valor:
+1. Agregue un control **[Radio](control-radio.md)**, asígnele el nombre **ScreenFills** y establezca su propiedad **[Elementos](properties-core.md)** en este valor:
 
-    `["Red"; "Green"]`
+    `["Red", "Green"]`
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
 
@@ -69,17 +68,17 @@ La mayoría de las aplicaciones tienen varios controles **Pantalla** que contien
 
 1. En **origen**, agregue un control **[forma](control-shapes-icons.md)** (como una flecha) y establezca su propiedad **[alseleccionar](properties-core.md)** en esta fórmula:
 
-    `Navigate(Target; ScreenTransition.Fade)`
+    `Navigate(Target, ScreenTransition.Fade)`
 
     ¿Desea más información sobre la función **[Navegar](../functions/function-navigate.md)** u [otras funciones](../formula-reference.md)?
 
 1. En **Target**, agregue un control **[Forma](control-shapes-icons.md)** (como una flecha) y establezca su propiedad **[AlSeleccionar](properties-core.md)** en esta fórmula:
 
-    `Navigate(Source; ScreenTransition.Fade)`
+    `Navigate(Source, ScreenTransition.Fade)`
 
 1. Establezca la propiedad **[Fill](properties-color-border.md)** de **Target** en esta fórmula:
 
-    `If("Red" in ScreenFills.Selected.Value; RGBA(255; 0; 0; 1); RGBA(54; 176; 75; 1))`
+    `If("Red" in ScreenFills.Selected.Value, RGBA(255, 0, 0, 1), RGBA(54, 176, 75, 1))`
 
 1. Seleccione la pantalla **origen** y, a continuación, mantenga presionada la tecla Alt, seleccione cualquiera de las opciones del control **[radio](control-radio.md)** y, a continuación, seleccione el control **[forma](control-shapes-icons.md)** .
 
@@ -104,7 +103,7 @@ Cuando la **pantalla** es de hecho el fondo del texto, debe haber un contraste d
 
 Por ejemplo, si un control **Pantalla** contiene un control **[Etiqueta](control-text-box.md)** y esta tiene relleno transparente, la propiedad **[Fill](properties-color-border.md)** de la pantalla se convierte de hecho en el color de fondo de la etiqueta.
 
-Además de texto, podría también comprobar el contraste de color con objetos gráficos esenciales como las imágenes de estrella de un control **[Clasificación](control-rating.md)** .
+Además de texto, podría también comprobar el contraste de color con objetos gráficos esenciales como las imágenes de estrella de un control **[Clasificación](control-rating.md)**.
 
 ### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
 

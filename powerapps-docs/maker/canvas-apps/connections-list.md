@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 12/10/2019
+ms.date: 03/12/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d78ce9b571ed925e68747f2307d59f5f143e13eb
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 00273fefd24b9e0f76ed284b2f9ab526fb7706d6
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403371"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211857"
 ---
 # <a name="overview-of-canvas-app-connectors-for-power-apps"></a>Información general de los conectores de canvas-app para Power apps
 Los datos son el núcleo de la mayoría de las aplicaciones, incluidas las que se crean en Power apps. Los datos se almacenan en un *origen de datos* y para enviarlos a una aplicación se crea una *conexión*. La conexión utiliza un *conector* concreto para comunicarse con el origen de datos. Power apps tiene conectores para muchos servicios populares y orígenes de datos locales, entre los que se incluyen SharePoint, SQL Server, Office 365, Salesforce y Twitter. Para empezar a agregar datos a una aplicación de lienzo, consulte [Agregar una conexión de datos en Power apps](add-data-connection.md).
@@ -74,13 +74,13 @@ La tabla siguiente contiene vínculos a más información sobre nuestros conecto
 | ![SharePoint](./media/connections-list/sharepoint.png) |[**SharePoint**](connections/connection-sharepoint-online.md) |&nbsp; | ![SQL Server](./media/connections-list/sql.png) |[**SQL Server**](connections/connection-azure-sqldatabase.md) 
 |![Twitter](./media/connections-list/twitter.png) |[**Twitter**](connections/connection-twitter.md)
 
-\* * Se aplica a Azure BLOB, Box, Dropbox, Google Drive, OneDrive y OneDrive para la empresa
+* * Se aplica a Azure BLOB, Box, Dropbox, Google Drive, OneDrive y OneDrive para la empresa
 
 ## <a name="standard-and-custom-connectors"></a>Conectores estándar y personalizados
-Power apps proporciona conectores *estándar* para muchos orígenes de datos de uso común, como los mencionados anteriormente. Si Power apps tiene un conector estándar para el tipo de origen de datos que desea usar, debe usar dicho conector. Si tiene que conectarse a otros tipos de orígenes de datos, como un servicio que haya creado, vea [Conectores personalizados en PowerApps](../canvas-apps/register-custom-api.md).
+Power apps proporciona conectores *estándar* para muchos orígenes de datos de uso frecuente. Si Power apps tiene un conector estándar para el tipo de origen de datos que desea usar, debe usar dicho conector. Si tiene que conectarse a otros tipos de orígenes de datos, como un servicio que haya creado, vea [Conectores personalizados en PowerApps](../canvas-apps/register-custom-api.md).
 
 ## <a name="all-standard-connectors"></a>Todos los conectores estándar
-Vea la [referencia de conectores de Microsoft](https://docs.microsoft.com/connectors/) para obtener una lista de todos los conectores estándar. Los conectores premium requieren Power apps por plan de aplicación o Power apps por plan de usuario. Para obtener más información, consulte [planes de Power apps](https://powerapps.microsoft.com/pricing/).
+Los conectores estándar no requieren licencias especiales. Para obtener más información, consulte [planes de Power apps](https://powerapps.microsoft.com/pricing/).
 
 Puede formular preguntas sobre un conector específico en los [foros de Power apps](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)y puede sugerir conectores para agregar o realizar otras mejoras en las [ideas de Power apps](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas).
 

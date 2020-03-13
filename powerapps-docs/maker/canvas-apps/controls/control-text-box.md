@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 66de4ee34cf52f3c351fe3f9c624596e5dd1211d
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403840"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212363"
 ---
 # <a name="label-control-in-canvas-apps"></a>Control de etiqueta en aplicaciones de lienzo
 
@@ -33,53 +32,53 @@ En una etiqueta se muestran datos que se especifican como una cadena literal de 
 
 **[Autoheight](properties-core.md)** : establézcalo en true para permitir que la etiqueta crezca automáticamente su alto para mostrar todo el texto. Establézcalo en false para truncar el texto con el alto asignado.
 
-**[Color](properties-color-border.md)** : el color del texto en un control.
+**[Color](properties-color-border.md)**: el color del texto en un control.
 
-**[Font](properties-text.md)** : el nombre de la familia de fuentes en la que aparece el texto.
+**[Font](properties-text.md)**: el nombre de la familia de fuentes en la que aparece el texto.
 
-**[Text](properties-core.md)** : texto que aparece en un control o que el usuario escribe en un control.
+**[Text](properties-core.md)**: texto que aparece en un control o que el usuario escribe en un control.
 
-**[DelayOutput](properties-core.md)** : establézcalo en true para retrasar la acción durante la entrada de texto.
+**[DelayOutput](properties-core.md)**: establézcalo en true para retrasar la acción durante la entrada de texto.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
 
-**[Align](properties-text.md)** : la ubicación del texto respecto al centro horizontal de su control.
+**[Align](properties-text.md)**: la ubicación del texto respecto al centro horizontal de su control.
 
 **AutoHeight**: indica si una etiqueta aumenta automáticamente su propiedad **[Altura](properties-size-location.md)** si su propiedad **[Texto](properties-core.md)** contiene más caracteres de los que el control permite mostrar a la vez.
 
-**[BorderColor](properties-color-border.md)** : el color de un borde del control.
+**[BorderColor](properties-color-border.md)**: el color de un borde del control.
 
-**[BorderStyle](properties-color-border.md)** : si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
+**[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
-**[BorderThickness](properties-color-border.md)** : el grosor de un borde del control.
+**[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
 
-**[DisplayMode](properties-core.md)** : indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+**[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
-**[DisabledBorderColor](properties-color-border.md)** : el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
+**[DisabledBorderColor](properties-color-border.md)**: el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
 
-**[DisabledColor](properties-color-border.md)** : el color del texto en un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
+**[DisabledColor](properties-color-border.md)**: el color del texto en un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
 
-**[DisabledFill](properties-color-border.md)** : el color de fondo de un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
+**[DisabledFill](properties-color-border.md)**: el color de fondo de un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
 
-**[Fill](properties-color-border.md)** : el color de fondo de un control.
+**[Fill](properties-color-border.md)**: el color de fondo de un control.
 
-**[FocusedBorderColor](properties-color-border.md)** : el color del borde de un control cuando el control recibe el foco.
+**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
 
-**[FocusedBorderThickness](properties-color-border.md)** : el grosor del borde de un control cuando el control recibe el foco.
+**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
 
-**[FontWeight](properties-text.md)** : el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
+**[FontWeight](properties-text.md)**: el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.
 
-**[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
+**[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
 
-**[HoverBorderColor](properties-color-border.md)** : el color de un borde del control cuando el usuario mantiene el puntero del mouse sobre ese control.
+**[HoverBorderColor](properties-color-border.md)**: el color de un borde del control cuando el usuario mantiene el puntero del mouse sobre ese control.
 
-**[HoverColor](properties-color-border.md)** : el color del texto de un control cuando el usuario mantiene el puntero del mouse sobre él.
+**[HoverColor](properties-color-border.md)**: el color del texto de un control cuando el usuario mantiene el puntero del mouse sobre él.
 
-**[HoverFill](properties-color-border.md)** : el color de fondo de un control cuando el usuario mantiene el puntero del mouse sobre él.
+**[HoverFill](properties-color-border.md)**: el color de fondo de un control cuando el usuario mantiene el puntero del mouse sobre él.
 
-**[Italic](properties-text.md)** : indica si el texto de un control está en cursiva.
+**[Italic](properties-text.md)**: indica si el texto de un control está en cursiva.
 
-**[AlturaDeLínea](properties-text.md)** : distancia entre, por ejemplo, las líneas de texto o los elementos de una lista.
+**[AlturaDeLínea](properties-text.md)**: distancia entre, por ejemplo, las líneas de texto o los elementos de una lista.
 
 **[Live](properties-accessibility.md)** : Cómo anuncia un lector de pantalla los cambios en el valor de la propiedad **Text** de la etiqueta.
 
@@ -87,51 +86,51 @@ En una etiqueta se muestran datos que se especifican como una cadena literal de 
 * Cuando se establece en **educado**, el lector de pantalla termina de hablar antes de anunciar los cambios que se produjeron mientras estaba hablando el lector de pantalla.
 * Cuando se establece en **assertive**, el lector de pantalla se interrumpe para anunciar los cambios que se produjeron mientras estaba hablando el lector de pantalla.
 
-**[OnSelect](properties-core.md)** : indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
+**[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
 
 **Desbordamiento**: indica si aparece una barra de desplazamiento en una etiqueta si su propiedad **Ajustar** está establecida en **true** y el valor de la propiedad **[Texto](properties-core.md)** del control contiene más caracteres de los que el control permite mostrar a la vez.
 
-**[RellenoInferior](properties-size-location.md)** : distancia entre el texto de un control y el borde inferior de ese control.
+**[RellenoInferior](properties-size-location.md)**: distancia entre el texto de un control y el borde inferior de ese control.
 
-**[RellenoIzquierdo](properties-size-location.md)** : distancia entre el texto de un control y el borde izquierdo de ese control.
+**[RellenoIzquierdo](properties-size-location.md)**: distancia entre el texto de un control y el borde izquierdo de ese control.
 
-**[RellenoDerecho](properties-size-location.md)** : distancia entre el texto de un control y el borde derecho de ese control.
+**[RellenoDerecho](properties-size-location.md)**: distancia entre el texto de un control y el borde derecho de ese control.
 
-**[RellenoSuperior](properties-size-location.md)** : distancia entre el texto de un control y el borde superior de ese control.
+**[RellenoSuperior](properties-size-location.md)**: distancia entre el texto de un control y el borde superior de ese control.
 
-**[PressedBorderColor](properties-color-border.md)** : el color de un borde del control cuando el usuario toca o hace clic en ese control.
+**[PressedBorderColor](properties-color-border.md)**: el color de un borde del control cuando el usuario toca o hace clic en ese control.
 
-**[PressedColor](properties-color-border.md)** : el color de texto de un control cuando el usuario toca o hace clic en ese control.
+**[PressedColor](properties-color-border.md)**: el color de texto de un control cuando el usuario toca o hace clic en ese control.
 
-**[PressedFill](properties-color-border.md)** : el color de fondo de un control cuando el usuario toca o hace clic en ese control.
+**[PressedFill](properties-color-border.md)**: el color de fondo de un control cuando el usuario toca o hace clic en ese control.
 
 **Role** : el rol semántico del texto de la etiqueta, como encabezado 1. No cambia el estilo de la etiqueta, pero hace que la salida sea semánticamente correcta para que la interpreten los lectores de pantalla.
 
-**[Size](properties-text.md)** : el tamaño de la fuente del texto que aparece en un control.
+**[Size](properties-text.md)**: el tamaño de la fuente del texto que aparece en un control.
 
-**[Strikethrough](properties-text.md)** : indica si aparece una línea sobre el texto de un control.
+**[Strikethrough](properties-text.md)**: indica si aparece una línea sobre el texto de un control.
 
-**[TabIndex](properties-accessibility.md)** : orden de navegación del teclado en relación con otros controles.
+**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
 
-**[Información sobre herramientas](properties-core.md)** : texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
+**[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
 
-**[Underline](properties-text.md)** : indica si aparece una línea debajo del texto de un control.
+**[Underline](properties-text.md)**: indica si aparece una línea debajo del texto de un control.
 
-**[VerticalAlign](properties-text.md)** : la ubicación del texto en un control respecto al centro vertical de ese control.
+**[VerticalAlign](properties-text.md)**: la ubicación del texto en un control respecto al centro vertical de ese control.
 
-**[Visible](properties-core.md)** : indica si un control aparece o está oculto.
+**[Visible](properties-core.md)**: indica si un control aparece o está oculto.
 
-**[Width](properties-size-location.md)** : la distancia entre los bordes derecho e izquierdo de un control.
+**[Width](properties-size-location.md)**: la distancia entre los bordes derecho e izquierdo de un control.
 
 **Ajustar**: indica si el texto que es demasiado largo para caber en una etiqueta se ajusta a la línea siguiente.
 
-**[X](properties-size-location.md)** : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
 
-**[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
 
-[**Text**( *Number*; "*FormatCodes*" )](../functions/function-text.md)
+[**Text**( *Number*, "*FormatCodes*" )](../functions/function-text.md)
 
 ## <a name="examples"></a>Ejemplos:
 
@@ -156,7 +155,7 @@ En una etiqueta se muestran datos que se especifican como una cadena literal de 
 En este procedimiento, creará una colección, denominada **CityPopulations**, que contiene datos sobre la población de varias ciudades de Europa. A continuación, mostrará los datos de una galería que contengan tres etiquetas y especificará el tipo de datos que se mostrará en cada etiqueta.
 
 1. Agregue un botón y establezca su propiedad **[OnSelect](properties-core.md)** en esta fórmula:<br>
-   **ClearCollect(CityPopulations; {City:"London"; Country:"United Kingdom"; Population:8615000}; {City:"Berlin"; Country:"Germany"; Population:3562000}; {City:"Madrid"; Country:"Spain"; Population:3165000}; {City:"Rome"; Country:"Italy"; Population:2874000}; {City:"Paris"; Country:"France"; Population:2273000}; {City:"Hamburg"; Country:"Germany"; Population:1760000}; {City:"Barcelona"; Country:"Spain"; Population:1602000}; {City:"Munich"; Country:"Germany"; Population:1494000}; {City:"Milan"; Country:"Italy"; Population:1344000})**
+   **ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
 2. Presione F5, seleccione el botón y presione Esc.
 3. Agregue una galería de texto y establezca su propiedad **[Elementos](properties-core.md)** en **CityPopulations**.
 
@@ -167,7 +166,7 @@ En este procedimiento, creará una colección, denominada **CityPopulations**, q
 
 A pesar de su nombre, un control **Etiqueta** no tiene que usarse como etiqueta con otro control. Se puede utilizar para mostrar cualquier fragmento de texto.
 
-Un control **Etiqueta** se puede usar como botón o vínculo mediante la especificación del comportamiento **[OnSelect](properties-core.md)** . Cuando se utiliza de este modo, hay algunas consideraciones sobre accesibilidad parecidas a las que se tienen con los botones.
+Un control **Etiqueta** se puede usar como botón o vínculo mediante la especificación del comportamiento **[OnSelect](properties-core.md)**. Cuando se utiliza de este modo, hay algunas consideraciones sobre accesibilidad parecidas a las que se tienen con los botones.
 
 ### <a name="color-contrast"></a>Contraste de color
 

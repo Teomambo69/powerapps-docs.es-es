@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 0c0f4744e7b323e3262a63278e7c12348142a99b
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403393"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212455"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>Conectarse a SharePoint desde una aplicación de lienzo
 
@@ -52,7 +52,7 @@ Si desea administrar los datos en una lista personalizada, Power apps puede [gen
 
 1. Realice cualquiera de estos conjuntos de pasos:
 
-    - Para conectarse a SharePoint Online, seleccione **conectar directamente (Cloud Services)** , seleccione **crear**y, a continuación, proporcione las credenciales (si se le solicita).
+    - Para conectarse a SharePoint Online, seleccione **conectar directamente (Cloud Services)**, seleccione **crear**y, a continuación, proporcione las credenciales (si se le solicita).
 
         > [!div class="mx-imgBorder"]
         > ![para conectarse a SharePoint Online, seleccione conectar directamente (Cloud Services)](./media/connection-sharepoint-online/select-online.png)
@@ -113,20 +113,20 @@ Aplique los conceptos de [creación de una aplicación desde cero](../get-starte
 
 Si la lista personalizada contiene cualquiera de estos tipos de columnas, muestre los datos en un control **Galería** mediante la barra de fórmulas para establecer la propiedad **texto** de uno o varios controles **etiqueta** de la Galería:
 
-- Para una columna de **elección** o de **búsqueda** , especifique **ThisItem.** _ColumnName_ **. Valor** para mostrar los datos de esa columna.
+- Para una columna de **elección** o de **búsqueda** , especifique **ThisItem.** _ColumnName_**. Valor** para mostrar los datos de esa columna.
 
     Por ejemplo, especifique **ThisItem.Location.Value** si tiene una columna **Opción** denominada **Ubicación** y especifique **ThisItem.PostalCode.Value** si tiene una columna **Búsqueda** denominada **CódigoPostal**.
 
-- Para una columna de **persona o grupo** , especifique **ThisItem.** _ColumnName_ **. DisplayName** para mostrar el nombre para mostrar del usuario o el grupo.
+- Para una columna de **persona o grupo** , especifique **ThisItem.** _ColumnName_**. DisplayName** para mostrar el nombre para mostrar del usuario o el grupo.
 
     Por ejemplo, especifique **ThisItem.Manager.DisplayName** para mostrar los nombres de una columna **Persona o grupo** denominada **Administrador**.
 
-    También puede mostrar información distinta acerca de los usuarios, como direcciones de correo electrónico o puestos de trabajo. Para mostrar una lista completa de opciones, especifique **ThisItem.** _ColumnName_ **.** (incluido el punto final).
+    También puede mostrar información distinta acerca de los usuarios, como direcciones de correo electrónico o puestos de trabajo. Para mostrar una lista completa de opciones, especifique **ThisItem.** _ColumnName_**.** (incluido el punto final).
 
     > [!NOTE]
     > En el caso de una columna **CreatedBy** , especifique **ThisItem. Author. DisplayName** para mostrar los nombres para mostrar de los usuarios que han creado elementos en la lista. Para una columna **ModifiedBy**, especifique **ThisItem.Editor.DisplayName** para mostrar los nombres de los usuarios que han modificado elementos en la lista.
 
-- Para una columna de **metadatos administrados** , especifique **ThisItem.** _ColumnName_ **. Etiqueta** para mostrar los datos de esa columna.
+- Para una columna de **metadatos administrados** , especifique **ThisItem.** _ColumnName_**. Etiqueta** para mostrar los datos de esa columna.
 
     Por ejemplo, especifique **ThisItem.Languages.Label** si tiene una columna **Metadatos administrados** denominada **Idiomas**.
 
@@ -180,7 +180,7 @@ Cuando encuentre el archivo que desea, selecciónelo para mostrarlo en el contro
 
 ### <a name="lists"></a>Listas
 
-Power apps puede leer nombres de columna que contienen espacios, pero los espacios se reemplazan por el código de escape hexadecimal **"\_x0020\_"** . Por ejemplo, **"nombre de columna"** en SharePoint aparecerá como **"Column_x0020_Name"** en Power apps cuando se muestre en el diseño de datos o se use en una fórmula.
+Power apps puede leer nombres de columna que contienen espacios, pero los espacios se reemplazan por el código de escape hexadecimal **"\_x0020\_"**. Por ejemplo, **"nombre de columna"** en SharePoint aparecerá como **"Column_x0020_Name"** en Power apps cuando se muestre en el diseño de datos o se use en una fórmula.
 
 No se admiten todos los tipos de columnas y no todos los tipos de columnas admiten todos los tipos de tarjetas.
 
