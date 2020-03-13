@@ -17,11 +17,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: c16a589ddcd1e7beb0be1ce28bc9f6df6a8c8b83
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74733296"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79239968"
 ---
 # <a name="work-with-reports"></a>Trabajo con los informes
 
