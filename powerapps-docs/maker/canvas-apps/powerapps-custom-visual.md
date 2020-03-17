@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/12/2020
 ms.locfileid: "79133588"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="power-apps-visual-for-power-bi"></a>Visual de Power apps para Power BI
 
@@ -53,7 +54,7 @@ Echemos un vistazo a los pasos necesarios para usar el visual de Power Apps en e
 
     ![Fórmula personalizada](./media/powerapps-custom-visual/custom-formula.png)
 
-    Esta fórmula combina datos de Power BI con el origen de datos de cliente: `LookUp(Customer,Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
+    Esta fórmula combina datos de Power BI con el origen de datos de cliente: `LookUp(Customer;Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
 
    El informe de Power BI y la instancia de Power apps Studio que se inició comparten una conexión de datos activa. Mientras ambos están abiertos, puede filtrar o cambiar los datos del informe para ver los datos actualizados reflejados inmediatamente en la aplicación en Power apps Studio.
 

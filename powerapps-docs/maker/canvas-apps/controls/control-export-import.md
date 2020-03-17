@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/10/2020
 ms.locfileid: "78970964"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="export-control-and-import-control-in-power-apps"></a>Control de exportación e importación de control en Power apps
 Controla la exportación de datos a un archivo local y la importación de los datos en otra aplicación de Power apps.
@@ -125,7 +126,7 @@ La funcionalidad de exportación no es compatible con los navegadores web.
 4. Presione F5 y seleccione el control **exportar** para descargar el archivo *Data. zip*.
 5. Seleccione **Guardar**y, a continuación, presione ESC para volver al área de trabajo predeterminada.
 6. En una aplicación nueva o existente, agregue un control **Importar**, asígnele el nombre **MyData** y establezca su propiedad **[OnSelect](properties-core.md)** en esta fórmula:<br>
-   **Collect(ImportedProducts, MyData.Data)**
+   **Collect(ImportedProducts; MyData.Data)**
 7. Presione F5 y seleccione mis **datos**, luego seleccione el archivo que ha exportado y, a continuación, seleccione **abrir**.
 8. Presione ESC y seleccione **colecciones** en el menú **archivo** y confirme que la aplicación actual tiene los datos exportados.
 
