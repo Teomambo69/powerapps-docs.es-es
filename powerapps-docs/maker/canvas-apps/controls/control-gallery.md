@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 12/02/2019
+ms.date: 03/16/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 449948efb53fd5fdc3b0f65f5277d50b6a831dc7
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 75450ef67217bdc7a1b86086fd07f1d3adbd7831
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74709380"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79436775"
 ---
 # <a name="gallery-control-in-canvas-apps"></a>Control Galería en aplicaciones de lienzo
 
@@ -27,47 +26,54 @@ Un control que contiene otros controles y muestra un conjunto de datos.
 
 ## <a name="description"></a>Descripción
 
-Un control **Galería** puede mostrar varios registros de un origen de datos, y cada registro puede contener varios tipos de datos. Por ejemplo, un control **Galería** puede mostrar varios contactos y cada elemento mostrar a su vez información de contacto que incluye un nombre, una dirección y un número de teléfono para cada contacto. Cada campo de datos aparece en un control independiente dentro del control **Galería** y esos controles se pueden configurar en su plantilla. La plantilla aparece como primer elemento dentro de la galería, en el borde izquierdo de un control **Galería** en orientación horizontal o vertical y en la parte superior de un control **Galería** en orientación vertical. Los cambios realizados en la plantilla se reflejarán en todo el control **Galería**.
+Un control **Galería** puede mostrar varios registros de un origen de datos, y cada registro puede contener varios tipos de datos. Por ejemplo, use un control **Galería** para mostrar varios contactos con cada elemento que muestre información de contacto que incluye un nombre, una dirección y un número de teléfono para cada contacto.
 
-Están disponibles las plantillas predefinidas para mostrar imágenes y texto en una galería, así como una galería para elementos de alto variable.
+Cada campo de datos aparece en un control independiente dentro del control **Galería** . Además, puede configurar esos controles en su plantilla. La plantilla aparece como el primer elemento dentro de la Galería:
 
-## <a name="limitations"></a>Límite
+- En el borde izquierdo de un control de **Galería** en orientación horizontal u horizontal.
+- Y en la parte superior de un control de **Galería** en orientación vertical u horizontal. 
+
+Los cambios realizados en la plantilla se reflejarán en todo el control **Galería**.
+
+Están disponibles las plantillas predefinidas para mostrar imágenes y texto en una galería, y una galería para elementos de alto variable.
+
+## <a name="limitations"></a>Limitaciones
 
 Si un usuario desplaza el control de la galería de **alto flexible** antes de que se carguen todos los elementos, el elemento que está actualmente en la vista se puede desplazar hacia abajo y fuera de la vista cuando finaliza la carga de datos. Para evitar este problema, use un control de **Galería** estándar en lugar de la variante de **alto flexible** .
 
 ## <a name="key-properties"></a>Propiedades principales
 
-**[Predeterminado](properties-core.md)** : el elemento o registro del origen de datos que se va a seleccionar en la galería al iniciarse la aplicación.
+[Predeterminado](properties-core.md) : el elemento o registro del origen de datos que se va a seleccionar en la Galería cuando se inicia la aplicación.
 
-**[Elementos](properties-core.md)** : origen de datos que aparece en un control, como una galería, una lista o un gráfico.
+[Items](properties-core.md): origen de datos que aparece en un control como una galería, una lista o un gráfico.
 
 **Seleccionados**: el elemento seleccionado.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
 
-**[Propiedad accessiblelabel](properties-accessibility.md)** : etiqueta de la galería (no los elementos que contiene) para los lectores de pantalla. Debe describir cuáles es la lista de elementos.
+[Propiedad accessiblelabel](properties-accessibility.md) : etiqueta de la galería (no los elementos que contiene) para los lectores de pantalla. Debe describir cuáles es la lista de elementos.
 
 **TodosLosElementos**: todos los elementos de una galería, como valores de control adicionales que sean parte de la plantilla de la galería.
 
-**[BorderColor](properties-color-border.md)** : el color de un borde del control.
+[BorderColor](properties-color-border.md): el color de un borde del control.
 
-**[BorderStyle](properties-color-border.md)** : si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
+[BorderStyle](properties-color-border.md) : si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
-**[BorderThickness](properties-color-border.md)** : el grosor de un borde del control.
+[BorderThickness](properties-color-border.md): el grosor de un borde del control.
 
-**[DisplayMode](properties-core.md)** : indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+[DisplayMode](properties-core.md) : indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**deshabilitado**).
 
-**[Fill](properties-color-border.md)** : el color de fondo de un control.
+[Fill](properties-color-border.md): el color de fondo de un control.
 
-**[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
+[Height](properties-size-location.md): la distancia entre los bordes superior e inferior de un control.
 
 **ItemAccessibleLabel** : etiqueta de cada elemento de la galería para lectores de pantalla. Debe describir qué es cada elemento.
 
 **PasoDeNavegación**: indica lo lejos que se desplaza una galería si su propiedad **Mostrar Navegación** está establecida en **true** y el usuario selecciona una flecha de navegación de cualquier extremo de esa galería.
 
-**Seleccionable** : indica si se pueden seleccionar elementos de la galería. Cuando se establece en **true**, los lectores de pantalla identifican la Galería como una lista seleccionable y se selecciona un elemento haciendo clic o pulsando en él. Cuando se establece en **false**, los lectores de pantalla identifican la Galería como una lista normal y al hacer clic o pulsar en un elemento no se selecciona.
+**Seleccionable** : indica si se pueden seleccionar elementos de la galería. Cuando se establece en **true**, los lectores de pantalla identifican la Galería como una lista seleccionable. Y selecciona un elemento seleccionándolo. Cuando se establece en **false**, los lectores de pantalla identifican la Galería como una lista normal y la selección de un elemento no la selecciona.
 
-**MostrarNavegación**: indica si aparece una flecha en cada extremo de una galería para que un usuario puede desplazarse por los elementos de la galería haciendo clic en una flecha o pulsando en ella.
+**Mostrarnavegación** : indica si aparece una flecha en cada extremo de una galería para que un usuario pueda desplazarse por los elementos de la Galería seleccionando una flecha.
 
 **MostrarBarraDesplazamiento**: indica si aparecerá una barra de desplazamiento cuando el usuario mantenga el cursor sobre una galería.
 
@@ -77,45 +83,45 @@ Si un usuario desplaza el control de la galería de **alto flexible** antes de q
 
 **EspaciadoInternoDePlantilla**: la distancia entre los elementos de una galería.
 
-**TamañoDePlantilla**: el alto de la plantilla en una galería en orientación vertical o el ancho de la plantilla en una galería en orientación horizontal o vertical.
+**Template** : el alto de la plantilla de una galería en orientación vertical u horizontal. O el ancho de la plantilla de una galería en orientación horizontal u horizontal.
 
 **Transition**: el efecto visual (**Pop**, **Push** o **None**) cuando el usuario mantiene el puntero sobre un elemento de la galería.
 
-**[Visible](properties-core.md)** : indica si un control aparece o está oculto.
+[Visible](properties-core.md): indica si un control aparece o está oculto.
 
-**[Width](properties-size-location.md)** : la distancia entre los bordes derecho e izquierdo de un control.
+[Width](properties-size-location.md): la distancia entre los bordes derecho e izquierdo de un control.
 
 **WrapCount**: número de elementos que se muestran por fila o columna en función del diseño horizontal o vertical.
 
-**[X](properties-size-location.md)** : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
+[X](properties-size-location.md) : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor o pantalla primaria.
 
-**[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+[Y](properties-size-location.md) : la distancia entre el borde superior de un control y el borde superior del contenedor o la pantalla primarios.
 
 ## <a name="related-functions"></a>Funciones relacionadas
 
-[**Filter**( *DataSource*; *Formula* )](../functions/function-filter-lookup.md)
+[Filter ( *DataSource*, *fórmula* )](../functions/function-filter-lookup.md)
 
-[ **Restablecer**( *control* )](../functions/function-reset.md) : restablece la galería de nuevo a su estado inicial. El estado inicial incluye desplazarse hasta el primer elemento y seleccionar el primer elemento o el valor predeterminado, si está presente. 
+[Restablecer ( *control* )](../functions/function-reset.md) : restablece la galería de nuevo a su estado inicial. El estado inicial incluye desplazarse hasta el primer elemento y seleccionar el primer elemento o el valor predeterminado, si está presente. 
 
   > [!NOTE]
   > El control de **restablecimiento** no restablece de forma recursiva todos los elementos secundarios de la galería.
 
-## <a name="examples"></a>Ejemplos
+## <a name="examples"></a>Ejemplos:
 
 ### <a name="show-and-filter-data"></a>Mostrar y filtrar los datos
 
-* [Mostrar texto](control-text-box.md#show-data-in-a-gallery)
-* [Mostrar imágenes](control-image.md#show-a-set-of-images-from-a-data-source)
-* [Filtrar datos mediante la selección de una opción de la lista](control-drop-down.md#example)
-* [Filtrar datos mediante el ajuste de un control deslizante](control-slider.md#example)
+- [Mostrar texto](control-text-box.md#show-data-in-a-gallery)
+- [Mostrar imágenes](control-image.md#show-a-set-of-images-from-a-data-source)
+- [Filtrar datos mediante la selección de una opción de la lista](control-drop-down.md#example)
+- [Filtrar datos mediante el ajuste de un control deslizante](control-slider.md#example)
 
 ### <a name="get-data-from-the-user"></a>Obtener datos del usuario
 
-* [Obtener texto](control-text-input.md#collect-data)
-* [Obtener imágenes](control-add-picture.md#add-images-to-an-image-gallery-control)
-* [Obtener fotografías](control-camera.md#example)
-* [Obtener sonidos](control-microphone.md#example)
-* [Obtener dibujos](control-pen-input.md#create-a-set-of-images)
+- [Obtener texto](control-text-input.md#collect-data)
+- [Obtener imágenes](control-add-picture.md#add-images-to-an-image-gallery-control)
+- [Obtener fotografías](control-camera.md#examples)
+- [Obtener sonidos](control-microphone.md#examples)
+- [Obtener dibujos](control-pen-input.md#create-a-set-of-images)
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
 
@@ -123,28 +129,28 @@ Si un usuario desplaza el control de la galería de **alto flexible** antes de q
 
 Si la finalidad de hacer clic en cualquier parte en un elemento de la galería es seleccionarlo, debe haber un contraste de color adecuado entre:
 
-* **[BorderColor](properties-color-border.md)**  y el color de fuera de la galería (si hay un borde)
-* **[Fill](properties-color-border.md)** y el color situado fuera de la galería (si hay un borde)
+- [BorderColor](properties-color-border.md) y el color fuera de la galería (si hay un borde).
+- [Relleno](properties-color-border.md) y el color fuera de la galería (si no hay borde).
 
 ### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
 
-* La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.
+- [Propiedad accessiblelabel](properties-accessibility.md) debe estar presente.
 
     > [!NOTE]
     > Los lectores de pantalla anunciarán cuando cambien los elementos de la galería. La propiedad **AccessibleLabel** también se menciona. De esta forma, se proporciona contexto al anuncio y es incluso más importante cuando hay varias galerías en la misma pantalla.
 
-* Cuando un elemento de la galería contiene varios controles, use **ItemAccessibleLabel** para resumir el contenido del elemento de la galería.
+- Cuando un elemento de la galería contiene varios controles, use **ItemAccessibleLabel** para mostrar el contenido de los elementos de la galería.
 
-* Establezca el valor de **Selectable** en **true** si desea que los usuarios seleccionen un elemento de la galería. De lo contrario, establezca el valor en **false**.
+- Establezca el valor de **Selectable** en **true** si desea que los usuarios seleccionen un elemento de la galería. De lo contrario, establezca el valor en **false**.
 
-* Cuando un elemento de la galería contiene varios controles, use **ItemAccessibleLabel** para proporcionar un resumen del contenido del elemento de la galería.
+- Cuando un elemento de la galería contiene varios controles, use **ItemAccessibleLabel** para proporcionar un resumen del contenido del elemento de la galería.
 
-* **Selectable** debe establecerse correctamente, en función de si los usuarios están diseñados para seleccionar un elemento de la galería.
+- **Selectable** debe establecerse correctamente, en función de si los usuarios están diseñados para seleccionar un elemento de la galería.
 
 ### <a name="keyboard-support"></a>Compatibilidad con el teclado
 
-* Considere la posibilidad de establecer **ShowScrollbar** en **true**. En la mayoría de los dispositivos de pantalla táctil, la barra de desplazamiento no se muestra hasta que comienza el desplazamiento.
-* Si la finalidad de hacer clic en cualquier parte en un elemento de la galería es seleccionarlo, debe haber también una forma de que los usuarios de teclado seleccionen el elemento de la galería. Por ejemplo, agregar un control **[Botón](control-button.md)** cuya propiedad **OnSelect** esté establecida en **Select(Parent)** .
+- Considere la posibilidad de establecer **ShowScrollbar** en **true**. En la mayoría de los dispositivos de pantalla táctil, la barra de desplazamiento no se mostrará hasta que comience el desplazamiento.
+- Si la finalidad de hacer clic en cualquier parte en un elemento de la galería es seleccionarlo, debe haber también una forma de que los usuarios de teclado seleccionen el elemento de la galería. Por ejemplo, al agregar un [botón](control-button.md) que tiene su propiedad **alseleccionar** establecida en **Select (Parent)** .
 
     > [!NOTE]
-  > Los controles situados fuera de la galería no se tienen en cuenta en el orden de desplazamiento por el teclado dentro de la galería. Se tiene en cuenta la propiedad **[TabIndex](properties-accessibility.md)** de los controles dentro de una galería. Consulte las [propiedades de accesibilidad](properties-accessibility.md) para obtener más información.
+  > Los controles situados fuera de la galería no se tienen en cuenta en el orden de desplazamiento por el teclado dentro de la galería. El ámbito de los controles [TabIndex](properties-accessibility.md) dentro de una galería es. Consulte las [propiedades de accesibilidad](properties-accessibility.md) para obtener más información.

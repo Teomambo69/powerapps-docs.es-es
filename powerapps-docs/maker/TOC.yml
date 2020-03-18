@@ -1233,6 +1233,8 @@
           href: ./portals/admin/portal-lifecycle.md
         - name: Actualización de un portal
           href: ./portals/admin/upgrade-portal.md
+        - name: Cookies que usa el portal
+          href: ./portals/admin/portal-cookies.md
     - name: Configuración avanzada del portal
       items:
         - name: Información general

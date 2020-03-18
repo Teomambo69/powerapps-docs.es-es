@@ -6,110 +6,175 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.date: 10/25/2016
+ms.date: 03/16/2020
 ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f70e6d8015a75f26d0716a144c7f524181f34664
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: fd3c468134e979732ead5e0144e60aaf1b3e38df
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79211788"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79436794"
 ---
 # <a name="camera-control-in-power-apps"></a>Control Cámara en Power Apps
-Un control con el que el usuario puede realizar fotos mediante el uso de la cámara del dispositivo.
+
+Un control que permite a los usuarios tomar fotografías con la cámara en un dispositivo.
 
 ## <a name="description"></a>Descripción
-Si agrega este control, el usuario puede actualizar un origen de datos con una o más fotos desde donde se esté ejecutando la aplicación. Las imágenes generadas por el control de cámara no tienen una resolución completa de la cámara.  Si necesita imágenes de resolución completa, valore la posibilidad de emplear el control **[Agregar imagen](control-add-picture.md)**.
+
+Use el control **cámara** para capturar imágenes con la cámara de un dispositivo.  El dispositivo debe tener una cámara y el usuario debe autorizar a la aplicación para que use la cámara. El control de cámara se admite cuando se ejecuta en un explorador Web.
+
+La imagen capturada más recientemente está disponible a través de la propiedad **Photo** . Con esta propiedad, las imágenes pueden ser:
+
+- **Se ve con el control de imagen.** Use el control [imagen](control-image.md) para ver la imagen capturada. Para obtener más información, vea los [ejemplos](#examples).  
+- **Se coloca temporalmente en una variable o una colección.**  Use las funciones [set](../functions/function-set.md) o [Collect](../functions/function-clear-collect-clearcollect.md) para almacenar imágenes en una variable o una colección.  Tenga cuidado al usar varias imágenes en una colección al mismo tiempo que consume memoria limitada del dispositivo. Use las funciones [savedata](../functions/function-savedata-loaddata.md) y [LoadData](../functions/function-savedata-loaddata.md) para trasladar imágenes al almacenamiento local en el dispositivo y para [escenarios sin conexión](../offline-apps.md).
+- **Almacenado en una base de datos.**  Utilice la función [patch](../functions/function-patch.md) para almacenar imágenes en una base de datos.
+- **Se transmite como una cadena de texto codificada en Base64.**  Use la función [JSON](../functions/function-json.md) para codificar imágenes en Base64.
+
+Use las propiedades **Stream**, **Tasasecuencia**y **ALStream** para capturar imágenes automáticamente en un temporizador, por ejemplo, ajustar una imagen cada minuto para crear una secuencia Time-lapse.
+
+Un URI de cadena de texto hace referencia a los medios capturados. Para obtener más información, lea la [documentación del tipo de datos](../functions/data-types.md#uris-for-images-and-other-media).
+
+Las imágenes generadas por el control de cámara no suelen estar en la resolución completa de la cámara. Si necesita imágenes de resolución completa, use el control [Agregar imagen](control-add-picture.md) .
 
 ## <a name="key-properties"></a>Propiedades principales
+
 **Cámara**: en un dispositivo que tenga más de una cámara, el identificador numérico de la cámara que usa la aplicación.
 
+**EnSecuencia**: indica cómo responde la aplicación cuando la propiedad **Stream** está actualizada.
+
+**Foto** : la imagen que se captura cuando el usuario toma una fotografía. 
+
+**Stream**: la imagen se actualiza automáticamente en la propiedad **TasaSecuencia**.
+
+**TasaSecuencia**: la frecuencia de actualización de la imagen en la propiedad **Stream**, en milisegundos. Este valor puede oscilar entre 100 (1/10 centésimas de segundo) y 3 600 000 (1 hora).
+
 ## <a name="additional-properties"></a>Propiedades adicionales
-**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla. Debe describir la finalidad de realizar una foto.
 
-**[BorderColor](properties-color-border.md)**: el color de un borde del control.
+[AccessibleLabel](properties-accessibility.md): etiqueta para lectores de pantalla. Debe describir la finalidad de realizar una foto.
 
-**[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
+[BorderColor](properties-color-border.md): el color de un borde del control.
 
-**[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
+[BorderStyle](properties-color-border.md) : si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
+
+[BorderThickness](properties-color-border.md): el grosor de un borde del control.
 
 **Brillo**: indica la claridad que el usuario percibirá probablemente en una imagen.
 
 **Contraste**: indica cómo el usuario puede distinguir fácilmente colores similares en una imagen.
 
-**[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+[DisplayMode](properties-core.md) : indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**deshabilitado**).
 
-**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+[FocusedBorderColor](properties-color-border.md) : el color del borde de un control cuando el control tiene el foco.
 
-**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
+[FocusedBorderThickness](properties-color-border.md) : el grosor del borde de un control cuando el control tiene el foco.
 
-**[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
+[Height](properties-size-location.md): la distancia entre los bordes superior e inferior de un control.
 
-**[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
+[OnSelect](properties-core.md): indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
 
-**EnSecuencia**: indica cómo responde la aplicación cuando la propiedad **Stream** está actualizada.
+[TabIndex](properties-accessibility.md) : orden de navegación por el teclado comparado con otros controles.
 
-**Foto**: la imagen capturada cuando el usuario realiza una foto.
+[Tooltip](properties-core.md): texto explicativo que aparece cuando el usuario mantiene el mouse sobre un control.
 
-**Stream**: la imagen se actualiza automáticamente en la propiedad **TasaSecuencia**.
+[Visible](properties-core.md): indica si un control aparece o está oculto.
 
-**TasaSecuencia**: la frecuencia de actualización de la imagen en la propiedad **Stream**, en milisegundos.  Este valor puede oscilar entre 100 (1/10 centésimas de segundo) y 3 600 000 (1 hora).
+[Width](properties-size-location.md): la distancia entre los bordes derecho e izquierdo de un control.
 
-**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
+[X](properties-size-location.md) : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor o pantalla primaria.
 
-**[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
+[Y](properties-size-location.md) : la distancia entre el borde superior de un control y el borde superior del contenedor o la pantalla primarios.
 
-**[Visible](properties-core.md)**: indica si un control aparece o está oculto.
+## <a name="examples"></a>Ejemplos:
 
-**[Width](properties-size-location.md)**: la distancia entre los bordes derecho e izquierdo de un control.
+En estos ejemplos, necesitará un dispositivo con una cámara. Para probar la aplicación, use una cámara web accesible desde el explorador. O bien, guarde la aplicación y cargarla en un dispositivo iOS o Android con una cámara.
 
-**[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
+### <a name="simple-display-of-a-captured-picture"></a>Visualización simple de una imagen capturada
 
-**[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+1. [Agregue](../add-configure-controls.md) un control de **cámara** .
 
-## <a name="related-functions"></a>Funciones relacionadas
-[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
+1. Autorice a la aplicación a usar la cámara del dispositivo si se le solicita.
 
-## <a name="example"></a>Ejemplo
-### <a name="add-photos-to-an-image-gallery-control"></a>Agregar fotos a un control Galería de imágenes
-1. Agregue un control **Cámara**, denomínelo **MyCamera** y establezca su propiedad **[AlSeleccionar](properties-core.md)** en esta fórmula:<br>
-   **Collect(MyPix; MyCamera.Photo)**
+1. Agregue un control **imagen** .
 
-    ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
+1. Establezca la propiedad **Image** del control **imagen** en esta fórmula:
 
-    ¿Desea más información sobre la función **[Recopilar](../functions/function-clear-collect-clearcollect.md)** u [otras funciones](../formula-reference.md)?
-2. Presione F5 y, a continuación, tome una foto haciendo clic o pulsando en **MyCamera**.
-3. Agregue un control **[Galería vertical](control-gallery.md)** y, luego, cambie de tamaño su control **[Imagen](control-image.md)**, su plantilla y el propio control **Galería de imágenes** para que quepa en la pantalla.
-4. Establezca la propiedad **[Elementos](properties-core.md)** del control **Galería de imágenes** en:<br>**MyPix**.
-5. Establezca la propiedad **[Elementos](properties-visual.md)** del control **Imagen** de la galería en esta expresión:<br>
-   **ThisItem.Url**
+    ```powerapps-dot
+    Camera1.Photo
+    ```
 
-    La foto que realizó aparece en el control **Galería de imágenes**.
-6. Realice tantas fotografías como desee y, a continuación, presione Esc para volver al área de trabajo predeterminada.
-7. (opcional) Establezca la propiedad **AlSeleccionar** del control **Imagen** del control **Galería de imágenes** en **Remove(MyPix; ThisItem)**, presione F5 y luego pulse o haga clic en una foto para quitarla.
+    > [!NOTE]
+    > Reemplace el nombre del control de cámara *Camera1* según corresponda.
 
-Use la función **[SaveData](../functions/function-savedata-loaddata.md)** para guardar las fotos localmente o la función **[Revisión](../functions/function-patch.md)** para actualizar el origen de datos.
+1. Presione F5 para obtener una vista previa de la aplicación.
 
+1. Tome una imagen seleccionando o pulsando el control cámara.  Debería ver el resultado en el control de imagen.
+
+### <a name="add-pictures-to-an-image-gallery-control"></a>Agregar imágenes a un control Galería de imágenes
+
+1. Agregue un control **cámara** , asígnele el nombre de **la cámara y**establezca su propiedad [alseleccionar](properties-core.md) en esta fórmula:
+
+    ```powerapps-dot
+    Collect( MyPix, MyCamera.Photo )
+    ```
+
+    Para obtener más información:
+
+    - [¿Cómo agregar, nombrar y configurar un control?](../add-configure-controls.md)
+    - Obtenga más información sobre la función [Collect](../functions/function-clear-collect-clearcollect.md) u [otras funciones](../formula-reference.md).
+
+1. Presione F5 y, a continuación, tome una imagen seleccionando o tocando la **cámara**.
+
+1. Agregue un control [Galería vertical](control-gallery.md) . Y, a continuación, cambie el tamaño del control de [imagen](control-image.md) , su plantilla y el propio control **Galería de imágenes** para que quepa en la pantalla.
+
+1. Establezca la propiedad [elementos](properties-core.md) del control **Galería de imágenes** en esta fórmula:
+ 
+    ```powerapps-dot
+    MyPix
+    ```
+
+1. Establezca la propiedad [imagen](properties-visual.md) del control **imagen** de la galería en esta fórmula:
+
+    ```powerapps-dot   
+    ThisItem.Url
+    ```
+
+    La imagen que tomó aparece en el control **Galería de imágenes** .
+
+1. Tome tantas imágenes como desee y, a continuación, vuelva al área de trabajo predeterminada presionando ESC.
+
+1. opta Establezca la propiedad **alseleccionar** del control **imagen** en el control **Galería de imágenes** en la fórmula:
+
+    ```powerapps-dot
+    Remove( MyPix, ThisItem )
+    ```
+
+1. Presione F5 y, a continuación, seleccione una imagen para quitarla.
+
+Utilice la función [savedata](../functions/function-savedata-loaddata.md) para guardar las imágenes localmente o la función [patch](../functions/function-patch.md) para actualizar un origen de datos.
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
-Además de mostrar la fuente de la cámara, todo el control de cámara también funciona como un botón que realiza una foto. Por lo tanto, las consideraciones sobre accesibilidad son parecidas a las de los botones.
+
+El control cámara muestra la fuente de cámara y también funciona como un botón que toma una fotografía. Por lo tanto, existen consideraciones de accesibilidad similares a las de los botones.
 
 ### <a name="video-alternatives"></a>Alternativas de vídeo
-* Considere la posibilidad de agregar una forma alternativa de entrada para los usuarios con discapacidades visuales. Por ejemplo, **[Agregar imagen](control-add-picture.md)** para permitir que los usuarios carguen una imagen desde sus dispositivos.
+
+Considere la posibilidad de agregar una forma alternativa de entrada para los usuarios con discapacidades visuales. Por ejemplo, [agregue una imagen](control-add-picture.md) para permitir que los usuarios carguen una imagen desde su dispositivo.
 
 ### <a name="color-contrast"></a>Contraste de color
-Debe haber un contraste de color adecuado entre:
-* **[FocusedBorderColor](properties-color-border.md)** y el color exterior
+
+Debe haber un contraste de color adecuado entre [FocusedBorderColor](properties-color-border.md) y el color exterior.
 
 ### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
-* La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.
+
+[Propiedad accessiblelabel](properties-accessibility.md) debe estar presente.
 
 ### <a name="keyboard-support"></a>Compatibilidad con el teclado
-* La propiedad **[TabIndex](properties-accessibility.md)** debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
-* Los indicadores de foco deben ser claramente visibles. Use **[FocusedBorderColor](properties-color-border.md)** y **[FocusedBorderThickness](properties-color-border.md)** para conseguirlo.
+
+- [TabIndex](properties-accessibility.md) debe ser cero o superior para que los usuarios del teclado puedan desplazarse hasta él.
+
+- Los indicadores de foco deben ser claramente visibles. Use [FocusedBorderColor](properties-color-border.md) y [FocusedBorderThickness](properties-color-border.md) para actualizar la visibilidad de los indicadores de foco.

@@ -7,126 +7,197 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/25/2016
+ms.date: 03/16/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b2da6fd3ac8c4d69eb702ac7537dfefa2e5e94f6
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 353485baf6726314f6009c57838b3aa68d145fa0
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79211972"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79436755"
 ---
 # <a name="microphone-control-in-power-apps"></a>Control de micrófono en Power apps
-Un control que permite a los usuarios de la aplicación grabar sonidos desde sus dispositivos.
+
+Un control que permite a los usuarios de la aplicación grabar sonidos desde su dispositivo.
 
 ## <a name="description"></a>Descripción
-Los usuarios de la aplicación pueden realizar grabaciones de audio si el dispositivo donde se ejecuta la aplicación tiene un micrófono.
 
-El audio se almacena en formato 3gp en Android, en formato AAC en iOS y en formato OGG en los navegadores web.
+Use el control **micrófono** para capturar audio con el micrófono de un dispositivo.  El dispositivo debe tener un micrófono y el usuario debe autorizar a la aplicación para que use el micrófono.  El control de micrófono se admite cuando se ejecuta en un explorador Web.  
+
+El clip de audio grabado más recientemente está disponible a través de la propiedad **audio** . Con esta propiedad, el audio grabado puede ser:
+
+- **Se reproduce con el control de audio.**  Use el control [audio](control-audio-video.md) para escuchar la grabación. Para obtener más información, vea los [ejemplos](#examples).
+- **Se coloca temporalmente en una variable o una colección.**  Use las funciones [set](../functions/function-set.md) o [Collect](../functions/function-clear-collect-clearcollect.md) para almacenar los clips de audio en una variable o una colección.  Tenga cuidado con varios clips de audio de una colección al mismo tiempo con la memoria limitada del dispositivo.  Use las funciones [savedata](../functions/function-savedata-loaddata.md) y [LoadData](../functions/function-savedata-loaddata.md) para trasladar clips de audio al almacenamiento local en el dispositivo y para [escenarios sin conexión](../offline-apps.md).
+- **Almacenado en una base de datos.**  Utilice la función [patch](../functions/function-patch.md) para almacenar clips de audio en una base de datos.
+- **Se transmite como una cadena de texto codificada en Base64.**  Use la función [JSON](../functions/function-json.md) para codificar los clips de audio en Base64.
+
+Formato del audio grabado:
+
+- formato *3GP* para *Android*.
+- Formato *AAC* para *iOS*.
+- Formato *OGG* para los *exploradores Web*.
+
+Un URI de cadena de texto hace referencia a los medios capturados. Para obtener más información, lea la [documentación del tipo de datos](../functions/data-types.md#uris-for-images-and-other-media).
 
 ## <a name="key-properties"></a>Propiedades principales
-**Micrófono**: en un dispositivo que tenga más de un micrófono, el identificador numérico del micrófono que usa la aplicación.
+
+**Audio** : el clip de audio capturado cuando el usuario registra con el micrófono del dispositivo. 
+
+**MIC** : identificador numérico del micrófono en un dispositivo que tiene más de un micrófono.
 
 **AlDetener**: indica cómo la aplicación responde cuando el usuario detiene la grabación con un control de micrófono.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
-**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla. Debe describir la finalidad del micrófono.
 
-**[BorderColor](properties-color-border.md)**: el color de un borde del control.
+[AccessibleLabel](properties-accessibility.md): etiqueta para lectores de pantalla. Debe describir la finalidad del micrófono.
 
-**[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
+[BorderColor](properties-color-border.md): el color de un borde del control.
 
-**[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
+[BorderStyle](properties-color-border.md) : si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
-**[Color](properties-color-border.md)**: el color del texto en un control.
+[BorderThickness](properties-color-border.md): el grosor de un borde del control.
 
-**[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+[Color](properties-color-border.md): el color del texto en un control.
 
-**[DisabledBorderColor](properties-color-border.md)**: el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
+[DisplayMode](properties-core.md) : indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**deshabilitado**).
 
-**[DisabledColor](properties-color-border.md)**: el color del texto en un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
+[DisabledBorderColor](properties-color-border.md) : el color del borde de un control si la propiedad [DisplayMode](properties-core.md) del control está establecida en **Disabled**.
 
-**[DisabledFill](properties-color-border.md)**: el color de fondo de un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
+[DisabledColor](properties-color-border.md) : el color del texto de un control si su propiedad [DisplayMode](properties-core.md) está establecida en **Disabled**.
 
-**[Fill](properties-color-border.md)**: el color de fondo de un control.
+[DisabledFill](properties-color-border.md) : el color de fondo de un control si su propiedad [DisplayMode](properties-core.md) está establecida en **Disabled**.
 
-**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+[Fill](properties-color-border.md): el color de fondo de un control.
 
-**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
+[FocusedBorderColor](properties-color-border.md) : el color del borde de un control cuando el control tiene el foco.
 
-**[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
+[FocusedBorderThickness](properties-color-border.md) : el grosor del borde de un control cuando el control tiene el foco.
 
-**[HoverBorderColor](properties-color-border.md)**: el color de un borde del control cuando el usuario mantiene el puntero del mouse sobre ese control.
+[Height](properties-size-location.md): la distancia entre los bordes superior e inferior de un control.
 
-**[HoverColor](properties-color-border.md)**: el color del texto de un control cuando el usuario mantiene el puntero del mouse sobre él.
+[HoverBorderColor](properties-color-border.md): el color de un borde del control cuando el usuario mantiene el puntero del mouse sobre ese control.
 
-**[HoverFill](properties-color-border.md)**: el color de fondo de un control cuando el usuario mantiene el puntero del mouse sobre él.
+[HoverColor](properties-color-border.md): el color del texto de un control cuando el usuario mantiene el puntero del mouse sobre él.
 
-**[Imagen](properties-visual.md)**: el nombre de la imagen que aparece en un control de imagen, audio o micrófono.
+[HoverFill](properties-color-border.md): el color de fondo de un control cuando el usuario mantiene el puntero del mouse sobre él.
 
-**[PosiciónDeLaImagen](properties-visual.md)**: posición (**Rellenar**, **Ajustar**, **Estirar**, **Icono** o **Centrar**) de una imagen en una pantalla o un control, si no tiene el mismo tamaño que la imagen.
+[Image](properties-visual.md): el nombre de la imagen que aparece en un control de imagen, audio o micrófono.
 
-**[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
+[ImagePosition](properties-visual.md): la posición (**Fill**, **Fit**, **Stretch**, **Tile** o **Center**) de una imagen en una pantalla o un control, si no tiene el mismo tamaño que la imagen.
+
+[Alseleccionar](properties-core.md) : cómo responde la aplicación cuando el usuario selecciona un control.
 
 **AlIniciar**: indica cómo la aplicación responde cuando el usuario comienza a grabar con un control de micrófono.
 
-**[PressedBorderColor](properties-color-border.md)**: el color de un borde del control cuando el usuario toca o hace clic en ese control.
+[PressedBorderColor](properties-color-border.md) : el color del borde de un control cuando el usuario selecciona ese control.
 
-**[PressedColor](properties-color-border.md)**: el color de texto de un control cuando el usuario toca o hace clic en ese control.
+[PressedColor](properties-color-border.md) : el color del texto de un control cuando el usuario selecciona ese control.
 
-**[PressedFill](properties-color-border.md)**: el color de fondo de un control cuando el usuario toca o hace clic en ese control.
+[PressedFill](properties-color-border.md) : el color de fondo de un control cuando el usuario selecciona ese control.
 
-**[Reset](properties-core.md)**: indica si un control vuelve a su valor predeterminado.
+[Reset](properties-core.md): indica si un control vuelve a su valor predeterminado.
 
-**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
+[TabIndex](properties-accessibility.md) : orden de navegación por el teclado comparado con otros controles.
 
-**[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
+[Tooltip](properties-core.md): texto explicativo que aparece cuando el usuario mantiene el mouse sobre un control.
 
-**[Visible](properties-core.md)**: indica si un control aparece o está oculto.
+[Visible](properties-core.md): indica si un control aparece o está oculto.
 
-**[Width](properties-size-location.md)**: la distancia entre los bordes derecho e izquierdo de un control.
+[Width](properties-size-location.md): la distancia entre los bordes derecho e izquierdo de un control.
 
-**[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
+[X](properties-size-location.md) : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor o pantalla primaria.
 
-**[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+[Y](properties-size-location.md) : la distancia entre el borde superior de un control y el borde superior del contenedor o la pantalla primarios.
 
-## <a name="related-functions"></a>Funciones relacionadas
-[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
+## <a name="examples"></a>Ejemplos:
 
-## <a name="example"></a>Ejemplo
-### <a name="add-sounds-to-a-custom-gallery-control"></a>Agregue sonidos a un control Galería personalizada
-1. Agregue un **Micrófono**, asígnele el nombre **MyMic**y establezca su propiedad **AlDetener** en esta fórmula:<br>
-   **Collect(MySounds; MyMic.Audio)**
+### <a name="simple-direct-playback"></a>Reproducción directa simple
 
-    ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
+En este ejemplo, conectaremos directamente un control de **micrófono** con un control de **audio** para la reproducción inmediata:
 
-    ¿Desea más información sobre la función **[Recopilar](../functions/function-clear-collect-clearcollect.md)** u [otras funciones](../formula-reference.md)?
-2. Agregue un control **Galería personalizada** muévalo debajo de **MyMic** establezca la propiedad **[Elementos](properties-core.md)** para el control **Galería personalizada** en **MySounds**.
-3. En la plantilla para el control **Galería personalizada** de control, agregue un control **[Audio](control-audio-video.md)** y establezca su propiedad **Multimedia** en **ThisItem.Url**.
-4. Presione F5, pulse o haga clic en **MyMic** para iniciar la grabación y luego pulse o haga clic en nuevo para detener la grabación.
-5. En el control **Galería personalizada**, pulse o haga clic en el botón de reproducción en el control **[Audio](control-audio-video.md)** para reproducir la grabación.
-6. Agregue tantas grabaciones como desee y, a continuación, presione Esc para volver al área de trabajo predeterminada.
-7. (opcional) En la plantilla para el control **Galería personalizada**, agregue un control **[Botón](control-button.md)**, establezca su propiedad **[AlSeleccionar](properties-core.md)** en **Quitar (MySounds, EsteElemento)**, presione F5 y, a continuación, quite una grabación haciendo clic o pulsando el correspondiente control **Botón**.
+1. [Agregue](../add-configure-controls.md) un control de **micrófono** a la aplicación.
+1. Autorice a la aplicación a usar el micrófono del dispositivo si se le solicita.
+1. Agregue un control de **audio** a la aplicación.
+1. Establezca la propiedad **multimedia** del control de **audio** en la fórmula:
 
-Use la función **[SaveData](../functions/function-savedata-loaddata.md)** para guardar las grabaciones localmente o la función **[Patch](../functions/function-patch.md)** para actualizar el origen de datos.
+    ```powerapps-dot
+    Microphone1.Audio
+    ```
 
+    > [!NOTE]
+    > Reemplace el nombre del control de micrófono *Microphone1* según corresponda.
+
+1. Obtenga una vista previa de la aplicación.
+1. Seleccione el control de **micrófono** para empezar a grabar.
+1. Hable para grabar audio.
+1. Vuelva a seleccionar el control de **micrófono** para finalizar la grabación.
+1. Seleccione el control **audio** para oír la grabación.  
+
+### <a name="add-sounds-to-a-gallery-control"></a>Agregar sonidos a un control Galería
+
+En este ejemplo, vamos a crear una galería de clips de audio almacenada en una colección que se puede seleccionar individualmente para la reproducción:
+
+1. [Agregue](../add-configure-controls.md) un control de **micrófono** .
+
+1. Establezca su propiedad **OnStop** en esta fórmula con la función [Collect](../functions/function-clear-collect-clearcollect.md) :
+
+    ```powerapps-dot
+    Collect( MySounds, MyMic.Audio )
+    ```
+
+1. Agregue un control **Galería** , muévalo debajo de **MyMic**.
+
+1. Establezca la propiedad [elementos](properties-core.md) de la galería en esta fórmula:
+
+    ```powerapps-dot
+    MySounds
+    ```
+
+1. En la plantilla del control **Galería personalizada** , agregue un control [audio](control-audio-video.md) .
+
+1. Establezca la propiedad **multimedia** del control de audio en esta fórmula:
+
+    ```powerapps-dot
+    ThisItem.Url
+    ```
+
+1. Presione F5 para obtener una vista previa de la aplicación.
+
+1. Seleccione **MyMic** para iniciar la grabación y luego vuelva a seleccionarlo para detener la grabación.
+
+1. En el control **Galería** , seleccione el botón reproducir en el control **audio** para reproducir la grabación.
+
+1. Agregue tantas grabaciones como desee y, a continuación, vuelva al área de trabajo predeterminada presionando la tecla ESC.
+
+1. opta En la plantilla del control **Galería** , agregue un control [botón](control-button.md) .
+
+1. Establezca su propiedad [alseleccionar](properties-core.md) en la fórmula:
+
+    ```powerapps-dot
+    Remove( MySounds, ThisItem )
+    ```
+
+1. Presione F5 y, a continuación, quite una grabación seleccionando el control de **botón** correspondiente.
+
+Utilice la función [savedata](../functions/function-savedata-loaddata.md) para guardar las grabaciones localmente o la función [patch](../functions/function-patch.md) para actualizar un origen de datos.
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
-Se aplican las mismas directrices para **[Botón](control-button.md)** porque **Micrófono** es simplemente un botón especializado. Además, tenga en cuenta lo siguiente:
+
+Se aplican las mismas directrices para [Button](control-button.md) porque el **micrófono** es simplemente un botón especializado. Además, tenga en cuenta lo siguiente:
 
 ### <a name="audio-alternatives"></a>Alternativas de audio
-* Considere la posibilidad de agregar una forma alternativa de entrada para los usuarios con discapacidades del habla o que no tienen micrófono. Por ejemplo, **[Entrada de texto](control-text-input.md)** para permitir que los usuarios escriban texto.
+
+Considere la posibilidad de agregar una forma alternativa de entrada para los usuarios con discapacidades del habla o que no tienen micrófono. Por ejemplo, [entrada de texto](control-text-input.md) para permitir que los usuarios escriban texto.
 
 ### <a name="color-contrast"></a>Contraste de color
-Debe haber un contraste de color adecuado entre:
-* **[Image](properties-visual.md)** y el texto y el icono del botón (si procede)
 
-Y esto, además de los [requisitos estándar de contraste de color](../accessible-apps-color.md).
+- Lea los [requisitos de contraste de color estándar](../accessible-apps-color.md).
+- Garantizar el contraste de color adecuado entre la [imagen](properties-visual.md) y el texto del botón y el icono (si procede).
 
 ### <a name="screen-reader-support"></a>Soporte técnico para el lector de pantalla
-* La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente.
+
+- [Propiedad accessiblelabel](properties-accessibility.md) debe estar presente.
