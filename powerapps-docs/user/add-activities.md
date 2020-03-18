@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 02/13/2020
+ms.date: 03/10/2020
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 91da88baa13204f8538ba3eb673a515e539f7fa7
-ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
+ms.openlocfilehash: 58e64d275a7d1380cd580a86f9899053b140b99e
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77282519"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78970938"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>Agregue una actividad de cita, correo electrónico, llamada telefónica, nota o tarea a la escala de tiempo. 
 
@@ -204,6 +204,9 @@ En la sección **Escala de tiempo**, seleccione ![botón Más ](media/MoreButton
 Filtre rápidamente las actividades, notas o publicaciones del muro de la escala de tiempo por tipo de registro o tipo de actividad y fecha con el panel de filtro. Puede seleccionar varios filtros y opciones de filtro a la vez. Puede ver la fecha de vencimiento, la fecha de modificación o el estado de la actividad, así como filtrar por estas opciones.
 
 - En la sección **Escala de tiempo**, seleccione **Abrir el panel de filtros** y seleccione cómo quiere filtrar las actividades.
+
+ > [!Note]
+ > Al alejar en el explorador, el panel de filtros y los registros de la escala de tiempo se muestran en dos columnas. Cuando la escala de tiempo se muestra en más de una columna, el panel de filtros se muestra como una columna junto con los registros de la escala de tiempo. Para obtener más información, consulte [El panel de filtros aparece en modo de dos columnas](../maker/model-driven-apps/faqs-timeline-control.md#why-my-agents-see-the-filter-pane-even-when-the-expand-filter-pane-by-default-check-box-is-cleared). 
 
   > [!div class="mx-imgBorder"]
   > ![Panel de filtro en la escala de tiempo](media/timeline-filter2.png "Panel de filtro de la escala de tiempo") ![Panel de filtro en la escala de tiempo](media/timeline-filter5.png "Panel de filtro de la escala de tiempo")

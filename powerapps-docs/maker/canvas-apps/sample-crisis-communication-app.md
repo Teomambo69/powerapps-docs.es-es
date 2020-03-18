@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 60d8cf270c7706de8a82bc7fe3ee66787404264a
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: ce3974f399948f1f9ccd125c0b9727f51abc644b
+ms.sourcegitcommit: 3066c2800a939fbcaaac4262c802843e2d80b88c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79209394"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79431863"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>Configuración y información sobre la plantilla de ejemplo de comunicación de crisis en Power apps
 
@@ -372,7 +372,7 @@ El flujo **CrisisCommunication. request** extrae las solicitudes desde la bandej
 
      ![Eliminar conector](media/sample-crisis-communication-app/33-delete-connector.png)
 
-1. Busque y seleccione **Cuándo llega un nuevo correo electrónico a un buzón compartido (V2)**.
+1. Busque y seleccione **Cuándo llega un nuevo correo electrónico a un buzón compartido (V2)** .
 1. Escriba la dirección de bandeja de entrada compartida en **dirección de buzón**.
 1. Abra la tarjeta de **comentarios** .
 1. Seleccione el botón **Agregar un valor dinámico** para **valor**.
@@ -591,7 +591,7 @@ La aplicación usa un flujo para enviar notificaciones a los usuarios finales ca
 
     ![Creación de una nueva conexión](media/sample-crisis-communication-app/create-connection.png)
 
-1. Busque el nombre de la conexión; por ejemplo, **notificación de PowerApps (versión preliminar)**:
+1. Busque el nombre de la conexión; por ejemplo, **notificación de PowerApps (versión preliminar)** :
 
     ![Notificaciones](media/sample-crisis-communication-app/notifications.png)
 
@@ -634,7 +634,7 @@ La aplicación usa un flujo para enviar notificaciones a los usuarios finales ca
 1. Abra la tarjeta llamada **obtener los valores de configuración de administración**.
 1. Cambie la **dirección del sitio** al nombre de su sitio de SharePoint.
 1. Cambie el **nombre** de la lista a **CI_configAdminSetup**.
-1. Abra la tarjeta llamada **Initialize variable (leer más texto)**.
+1. Abra la tarjeta llamada **Initialize variable (leer más texto)** .
 1. Cambie el **valor** a "leer más" en el lenguaje nativo.
 
     ![Configuración de Flow](media/sample-crisis-communication-app/flow-options.png)
@@ -736,7 +736,7 @@ Si es un administrador de equipos, puede enviar la aplicación a todos los usuar
 
     ![Directivas de configuración de aplicaciones](media/sample-crisis-communication-app/27-Setup-Policies.png)
 
-1. Seleccione **global (configuración de toda la organización)**.
+1. Seleccione **global (configuración de toda la organización)** .
 1. Seleccione **agregar aplicaciones**.
 
     ![Agregar aplicación](media/sample-crisis-communication-app/28-Add-App.png)
@@ -798,7 +798,12 @@ Para agregar el informe Power BI:
 
     El conector Power Automate de robot para equipos y el conector de notificaciones de extracción no están disponibles actualmente para GCC. Use la opción correo electrónico para alertar a los usuarios acerca de las actualizaciones de noticias internas de GCC.
 
-***Declinación de responsabilidades:*** *esta aplicación es un ejemplo y se puede usar con Microsoft Power apps y los equipos para la diseminación de información de referencia únicamente. Esta aplicación no está prevista ni está disponible para su uso como dispositivo médico, soporte clínico, herramienta de diagnóstico u otra tecnología pensada para usarse en el diagnóstico, la cura, la mitigación, el tratamiento o la prevención de la enfermedad o en otras condiciones, y Microsoft no concede ninguna licencia o derecho para usar esta aplicación con este fin.  Esta aplicación no está diseñada ni pretende ser un sustituto de asesoramiento médico profesional, diagnóstico, tratamiento o valoración y no debe usarse como tal.  El cliente asume el único riesgo y responsabilidad de cualquier uso de esta aplicación.  Microsoft no garantiza que la aplicación o los materiales proporcionados en la conexión serán suficientes para fines médicos o para cumplir los requisitos sanitarios de cualquier persona.*  
+## <a name="issues--feedback"></a>Problemas & comentarios
+
+- Para obtener **comentarios** sobre la *plantilla de ejemplo de comunicación de crisis*, vaya a [aka.ms/crisis-Communication-feedback](https://aka.ms/crisis-communication-feedback).
+- Para **notificar un problema** con la *aplicación de comunicación de crisis*, vaya a [aka.ms/crisis-Communication-issues](https://aka.ms/crisis-communication-issues).
+
+***Declinación de responsabilidades:*** *esta aplicación es un ejemplo y se puede usar con Microsoft Power apps y los equipos para la diseminación de información de referencia únicamente. Esta aplicación no está prevista ni está disponible para su uso como dispositivo médico, soporte clínico, herramienta de diagnóstico u otra tecnología pensada para usarse en el diagnóstico, la cura, la mitigación, el tratamiento o la prevención de la enfermedad o en otras condiciones, y Microsoft no concede ninguna licencia o derecho para usar esta aplicación con este fin.  Esta aplicación no está diseñada ni pretende ser un sustituto de asesoramiento médico profesional, diagnóstico, tratamiento o valoración y no debe usarse como tal.  El cliente asume el único riesgo y responsabilidad de cualquier uso de esta aplicación.  Microsoft no garantiza que la aplicación o los materiales proporcionados en la conexión serán suficientes para fines médicos o para cumplir los requisitos sanitarios de cualquier persona.* 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
