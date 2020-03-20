@@ -8,12 +8,12 @@ ms.topic: article
 author: lalexms
 ms.author: lalexms
 manager: shujoshi
-ms.openlocfilehash: 7a0dee04334f52518c1746b6650f75ebfb67634d
-ms.sourcegitcommit: 68a31e3fa4d1635ccf4cd8bd9da5fba1bfecefa4
+ms.openlocfilehash: 7d4930b03f175133a769226a407436d37f698633
+ms.sourcegitcommit: 3066c2800a939fbcaaac4262c802843e2d80b88c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77051922"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79431748"
 ---
 # <a name="preview-view-and-create-email-through-the-activities-grid"></a>Versión preliminar: Vista y creación de correos electrónicos mediante la cuadrícula Actividades
 
@@ -37,7 +37,7 @@ Las aplicaciones basadas en modelos de Dynamics 365 permiten interactuar con los
 
 Para ver el correo electrónico:
 
-1. En el mapa del sitio de la aplicación basada en modelo, seleccione  **Actividades**. 
+1. En el mapa del sitio de la aplicación basada en modelo, seleccione **Actividades**. 
 
 2. Seleccione la lista desplegable **Todas las actividades** y luego **Mis correos electrónicos recibidos**.
 
