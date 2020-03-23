@@ -2,7 +2,7 @@
 title: Cree una solución | MicrosoftDocs
 description: Aprenda cómo crear soluciones
 ms.custom: ''
-ms.date: 10/30/2018
+ms.date: 02/28/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 25ea1db66e61d3e0b03090a0a91f35bd90d7b649
-ms.sourcegitcommit: b746aad895b152259680f5179dcee0281c951d0a
+ms.openlocfilehash: f4f2b4941e049a08bde978a318f5fda39f3dd30e
+ms.sourcegitcommit: d98dd90a7dda11f434a13a7f8976459856d6142b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "2948852"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "3093748"
 ---
 # <a name="create-a-solution"></a>Crear una solución
 
-Puesto que la solución predeterminada contiene todos los componentes de soluciones, puede ser más fácil para usted ubicar solo los componentes de la solución que ha personalizado si crea una solución independiente y realiza toda la personalización ahí. Esto también ayuda exportar una copia de seguridad de la solución como un archivo más pequeño. Si elige realizar esta acción, debe recordar siempre agregar los componentes de la solución que edite para esta solución. Cuando crea nuevos componentes de la solución, debe crearlos siempre en el contexto de esta solución. De esta forma el prefijo de personalización del editor de soluciones se aplica de forma coherente. Después de crear los componentes de la solución en la solución, o de agregar componentes de la solución existentes a esa solución, también puede modificarlos en la solución predeterminada si lo desea.  
+Para ubicar y trabajar solo con los componentes que ha personalizado, cree una solución y realice toda su personalización allí. Luego, recuerde siempre trabajar en el contexto de la solución personalizada a medida que agrega, edita y crea componentes. Esto facilita la exportación de su solución para importarla a otro entorno o como copia de seguridad.   
   
- Para obtener más información sobre conceptos de una solución, consulte [Trabajar con soluciones](solutions-overview.md).  
+Para obtener más información sobre conceptos de una solución, consulte [Trabajar con soluciones](solutions-overview.md).  
   
 1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y seleccione **Soluciones** en el panel de navegación de la izquierda. 
   
@@ -43,7 +43,7 @@ Puesto que la solución predeterminada contiene todos los componentes de solucio
     |-----------|-----------------|  
     |**Nombre para mostrar**|Nombre que se muestra en la lista de soluciones. Puede cambiarlo más adelante.|  
     |**Nombre**|Nombre único de la solución. Este se genera con el valor especificado en el campo Nombre para mostrar. Puede modificarlo antes de guardar la solución, pero no podrá hacerlo una vez haya guardado la solución.|  
-    |**Editor**|Puede seleccionar el editor predeterminado o crear un nuevo editor. Le recomendamos que cree un editor para que su organización lo use de manera consistente en todos los entornos en los que usará la solución. Más información: [Cambiar el prefijo del editor de soluciones de cualquier editor](change-solution-publisher-prefix.md#change-the-solution-publisher-prefix-for-any-publisher) |  
+    |**Editor**|Puede seleccionar el editor predeterminado o crear un nuevo editor. Le recomendamos que cree un editor para que su organización lo use de manera consistente en todos los entornos en los que usará la solución. Más información: [Información general del editor de soluciones](change-solution-publisher-prefix.md) |  
     |**Versión**|Escriba un número para la versión de la solución. Solo es importante si exporta la solución. El número de versión se incluirá en el nombre de archivo cuando exporte la solución.|  
   
 3.  Seleccione **Guardar**.  
@@ -68,5 +68,22 @@ Puesto que la solución predeterminada contiene todos los componentes de solucio
 > [!IMPORTANT]
 >  Si piensa incluir citas en soluciones, se recomienda no incluir solo citas y solo citas periódicas en soluciones independientes. Si instala y desinstala soluciones independientes con tipos de citas diferentes, se mostrará un error de SQL Server y tendrá que volver a crear las citas. 
 
-## <a name="see-also"></a>Vea también
+## <a name="publish-changes"></a>Publicar cambios 
+
+ Determinadas personalizaciones que realizan cambios en la interfaz de usuario requieren que se publiquen antes de que los usuarios puedan usarlas en la aplicación. 
+ 
+### <a name="publish-your-customizations"></a>Publique las personalizaciones
+
+1.  Seleccione **Soluciones** en la barra de navegación izquierda.
+
+2.  Seleccione la solución que desea publicar para abrirla.
+
+3.  En la lista de comandos, seleccione **Publicar todas las personalizaciones**.  
+
+![Publicar todas las personalizaciones](media/publish-all-customizations.PNG "Publicar todas las personalizaciones")  
+  
+> [!IMPORTANT]
+>  La preparación de personalizaciones puede tardar tiempo. Si aparece un mensaje que indica que la página del explorador ha dejado de responder, espere a que responda y no la cierre.  
+
+### <a name="see-also"></a>Vea también
  [Usar soluciones](use-solution-explorer.md)

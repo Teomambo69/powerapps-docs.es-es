@@ -1,5 +1,5 @@
 ---
-title: Crear un mapa del sitio para una aplicación controlada por modelos en Power Apps | MicrosoftDocs
+title: Crear un mapa del sitio basado en modelos en Power Apps | MicrosoftDocs
 description: Aprenda a crear un mapa de sitio para aplicaciones
 keywords: ''
 ms.date: 05/29/2018
@@ -24,14 +24,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d225bba7469ba25f170bfa1f77af226996a9946b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 2dcfea33867b6a5113ed6fd36e20d529608ed0ab
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2860343"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091378"
 ---
-# <a name="tutorial-create-a-model-driven-app-site-map-for-an-app-using-the-site-map-designer"></a>Tutorial: Crear un mapa del sitio para una aplicación controlada por modelos usando el diseñador de mapas del sitio
+# <a name="create-a-model-driven-app-site-map-using-the-site-map-designer"></a>Crear un mapa del sitio para una aplicación basada en modelos usando el diseñador de mapas del sitio
 
 En este tutorial realizará varias tareas del mapa del sitio, como crear un nuevo mapa del sitio y agregar un área, un grupo y una subárea.
 

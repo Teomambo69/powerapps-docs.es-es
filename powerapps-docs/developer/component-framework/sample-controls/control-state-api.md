@@ -10,12 +10,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4a77bf37-8ea0-4fe3-9fe7-2769387167c3
-ms.openlocfilehash: fa21dbb8d141f06066a2d7d61ad68cadcd77124a
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 1b76b9b506dcf1842da9ddbddd8bb21d7190cb60
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017456"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091195"
 ---
 # <a name="implementing-control-state-api-component"></a>Implementar el componente API de estado de control
 
@@ -28,7 +28,7 @@ Por ejemplo, si el componente de código es una lista larga por la que el usuari
 
 ## <a name="available-for"></a>Disponible para
 
-Aplicaciones basadas en modelo y aplicaciones de lienzo (vista previa piloto)
+Aplicaciones basadas en modelos y aplicaciones de lienzo (vista previa pública)
 
 ## <a name="manifest"></a>Manifiesto
 

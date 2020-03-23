@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 5a60884e6cefab9b4bfa0735e03b5d5eb4761523
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 33ba9adb4e1f1d94973e8210a2eb32bdee0eaf7d
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017425"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091223"
 ---
 # <a name="implementing-localization-api-component"></a>Implementar componente API de localización
 
@@ -26,7 +26,7 @@ Power Apps component framework usa el concepto de implementar recursos web Strin
 
 ## <a name="available-for"></a>Disponible para 
 
-Aplicaciones basadas en modelo y aplicaciones de lienzo (vista previa piloto) 
+Aplicaciones basadas en modelos y aplicaciones de lienzo (vista previa pública) 
 
 ## <a name="manifest"></a>Manifiesto 
 

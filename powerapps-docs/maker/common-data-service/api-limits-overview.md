@@ -2,7 +2,7 @@
 title: Información general sobre límites de la API (Common Data Service) | MicrosoftDocs
 description: Comprender los límites de las solicitudes de la API Common Data Service.
 ms.custom: ''
-ms.date: 12/08/2019
+ms.date: 03/05/2020
 ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: aee2a6b256c991c178506c68a38f4821c341b1b5
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 69e55b7b917a95158caa13322be21471bd43df3a
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909524"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109127"
 ---
 # <a name="common-data-service-api-limits-overview"></a>Información general sobre límites de la API Common Data Service
 
@@ -55,9 +55,9 @@ Para garantizar una disponibilidad y un rendimiento consistentes para todos, apl
 Limitamos el número de conexiones simultáneas por cuenta de usuario, el número de solicitudes de API por conexión y la cantidad de tiempo de ejecución que se puede usar para cada conexión. Estos se evalúan en una ventana deslizante de cinco minutos. Cuando se supere uno de estos límites, la plataforma generará una excepción.
 
 > [!NOTE]
-> Los límites de protección del servicio se aplican a todas las solicitudes, no solo a las operaciones CRUD en entidades que se contabilizan para límites de derechos.
+> Los límites de protección del servicio se aplican a todas las solicitudes de servicios web externos, no solo a las operaciones de CRUD en entidades que cuentan para los límites de derechos.
 > 
-> Dado que los complementos y las actividades de flujo de trabajo personalizadas se ejecutan en el servidor independientemente de un usuario que ha iniciado sesión, los límites de protección de servicios no se cuentan para las llamadas de la API realizadas desde el código del complemento.
+> Los límites de la API de protección de servicio no se aplican a las llamadas de API realizadas en flujos de trabajo, actividades de flujo de trabajo personalizadas o código de complemento. Estas operaciones se invocan internamente.
 
 Dado que los límites de protección de servicios generalmente solo se encuentran en aplicaciones que realizan un gran volumen de operaciones de datos, recomendamos que los desarrolladores que crean esas aplicaciones apliquen patrones para volver a intentar las operaciones después de un período de tiempo cuando se devuelven estas excepciones. Esto permitirá que la aplicación responda a las excepciones que envía el servicio y reducirá el número total de solicitudes y logrará el mayor rendimiento posible.
 

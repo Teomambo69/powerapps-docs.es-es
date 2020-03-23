@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 01/07/2020
+ms.date: 02/12/2020
 ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 8575bdc4379091204dbdfe4fd04d9d2d56a06cc9
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: ceb25954357efeafec6b33338ff4b617af82ebda
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2976849"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069779"
 ---
 # <a name="enable-azure-storage"></a>Habilitar Azure Storage
 
@@ -24,6 +24,8 @@ Debe crear una cuenta de almacenamiento con **Administrador de recursos** como e
 
 Una vez que la cuenta de almacenamiento esté activa, los portales requieren una determinada configuración global que indique a aplicación cómo buscar su cuenta de almacenamiento. En la aplicación Administración del portal, vaya a **Configuración** > **Nuevo**, y agregue un valor nuevo con el nombre **FileStorage/CloudStorageAccount**.
 
+La integración de Azure Storage solo funciona con **Notas** configuradas en Metadatos del formulario de entidad. Azure Blob como almacenamiento no se usa si usa **Comentarios del portal** que se puede configurar usando **Escala de tiempo**. Aunque los Comentarios del portal también brindan la capacidad de cargar archivos como archivos adjuntos, estos archivos solo se almacenan en Common Data Service.
+ 
 > [!NOTE]
 > El límite máximo de carga de archivos es 125MB.
 

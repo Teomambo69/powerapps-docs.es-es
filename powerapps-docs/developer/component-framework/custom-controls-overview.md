@@ -8,24 +8,30 @@ ms.topic: article
 ms.assetid: 135481cd-4583-4e49-8f58-02f32a9b054a
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 93d60cb1e6c00951e51acd4f92d8c62dce84fc28
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 6b563136dba6cc2144e66654860c1f760adbea60
+ms.sourcegitcommit: 27cb5ad024d43f208ef6acfbea456a05df3edf8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909081"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "3082817"
 ---
 # <a name="what-are-code-components"></a>Qué son los componentes de código
 
 Los componentes de código son un tipo de componente de la solución, lo que significa que se pueden incluir en un archivo de solución e instalar en diferentes entornos. Más información: [Empaquetar y distribuir extensiones utilizando soluciones](https://docs.microsoft.com/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions).
 
-Puede agregar los componentes de código incluyéndolos en una solución y después importándolos en Common Data Service. Una vez que los componentes están en Common Data Service, los administradores y personalizadores del sistema pueden configurar campos de formulario, subcuadrículas, vistas y subcuadrículas del panel para usarlos en lugar del componente predeterminado. También puede agregar estos componentes de código en aplicaciones de lienzo. 
+> [!div class="mx-imgBorder"] 
+> ![Componentes de código](media/code-components.gif "Componentes de código")
+
+Puede agregar los componentes de código incluyéndolos en una solución y después importándolos en Common Data Service. Una vez que los componentes están en Common Data Service, los administradores y personalizadores del sistema pueden configurar campos de formulario, subcuadrículas, vistas y subcuadrículas del panel para usarlos en lugar del componente predeterminado. Puede agregar estos componentes de código a **aplicaciones basadas en modelo y de lienzo**. 
 
 Los componentes de código constan de tres elementos:
 
 - [Manifiesto](#manifest)
 - [Implementación del componente](#component-implementation)
 - [Recursos](#resources)
+
+> [!NOTE]
+> La definición e implementación de componentes de código utilizando Power Apps component framework es el mismo tanto para aplicaciones basadas en modelo como para las de lienzo. La única diferencia entre ambos es la parte de configuración. 
 
 ## <a name="manifest"></a>Manifiesto
 

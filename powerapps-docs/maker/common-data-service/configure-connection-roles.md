@@ -1,7 +1,7 @@
 ---
 title: Configurar roles de conexión | MicrosoftDocs
 ms.custom: ''
-ms.date: 10/17/2019
+ms.date: 02/11/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 434dea11e5238167e824561e247bc23ddbb7839b
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 0827acf9d7699e6bf88374d57a6e5218e3000ef5
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874186"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040532"
 ---
 # <a name="configure-connection-roles"></a>Configurar roles de conexión
 
@@ -49,46 +49,54 @@ Cualquiera con acceso de escritura a la entidad **Rol de conexión** puede estab
 
 ## <a name="view-connection-roles"></a>Ver roles de conexión
 
-Hay varios roles estándar de conexión ya configurados en Common Data Service. Para verlos debe desplazarse al área de Configuración. 
+Hay varios roles estándar de conexión ya configurados en Common Data Service.  
 
-### <a name="navigate-to-the-settings-area"></a>Navegue al área de Configuración.
+1. Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y en el panel de la izquierda, seleccione **Soluciones**. 
+2. Abra la solución no administrada que desee. 
+3. En la barra de comandos, seleccione **Agregar existentes** y, después, **Rol de conexión**. 
+   Se muestra la lista de roles de conexión disponibles. 
+4. Seleccione **Cancelar** para cerrar el diálogo **Agregar roles de conexión existentes** sin agregar un rol de conexión a la solución.
 
-1. En una aplicación basada en modelo seleccione **Configuración** > **Configuración avanzada**. 
+> [!NOTE]
+> - Si desea distribuir roles de conexión con una solución, asegúrese de que se incluyen en la solución que desea distribuir. Más información: [Agregue roles de conexión a una solución](#add-connection-roles-to-a-solution)
+
+### <a name="view-and-edit-connection-roles-using-the-classic-experience"></a>Ver y editar roles de conexión con la experiencia clásica
+
+La mayoría de los roles de conexión que puede ver en el área **Configuración** se definen en la **Solución predeterminada** *interna* (que no debe confundirse con **Solución predeterminada de Common Data Services**). La **Solución predeterminada** interna contiene todas las personalizaciones del sistema. Para ver la **Solución predeterminada** elija el vista **Todas las soluciones: internas**. 
+
+1. Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y luego en la barra de comandos seleccione **Configuración** ![Configuración](media/powerapps-gear.png) y luego seleccione **Configuración avanzada**.
 2. Navegue a **Configuración** > **Negocio** > **Administración de empresas** y después seleccione **Roles de conexión**.
 
    > [!div class="mx-imgBorder"] 
-    > ![Roles de conexión en la configuración de Administración de empresas](media/navigate-settings-connection-roles.png "Roles de conexión en la configuración de Administración de empresas")
+   > ![Roles de conexión en la configuración de Administración de empresas](media/navigate-settings-connection-roles.png "Roles de conexión en la configuración de Administración de empresas")
 
 En esta vista puede ver todos los roles de conexión que estén disponibles para este entorno y puede editarlos aquí.
 
-> [!NOTE]
-> Si desea distribuir roles de conexión con una solución, asegúrese de que se incluyen en la solución que desea distribuir. Más información: [Agregue roles de conexión a una solución](#add-connection-roles-to-a-solution)
-
-## <a name="view-connection-roles-in-the-solution-explorer"></a>Vea roles de conexión en el explorador de soluciones.
-
+## <a name="add-connection-roles-to-a-solution"></a>Agregar roles de conexión a una solución
 Puesto que los roles de conexión son *compatibles con las soluciones*, significa que se pueden incluir en una solución, también puede agregar roles de conexión a una solución que distribuye.
 
-[!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
+Generalmente no es recomendable editar los componentes de la **Solución predeterminada** interna. En la solución que ha creado para trabajar, puede usar el comando **Agregar existente** del área **Soluciones** para llevar los roles de conexión activos a la solución.
 
-La mayoría de los roles de conexión que puede ver en el área **Configuración** se definen en la **Solución predeterminada** *interna* (que no debe confundirse con **Solución predeterminada de Common Data Service**). La **Solución predeterminada** interna contiene todas las personalizaciones del sistema. Para ver la **Solución predeterminada** elija el vista **Todas las soluciones: internas**.
-
-## <a name="add-connection-roles-to-a-solution"></a>Agregar roles de conexión a una solución
-
-Generalmente no es recomendable editar los componentes de la **Solución predeterminada** interna. En la **Solución predeterminada de Common Data Service** o cualquier solución que haya creado para trabajar, puede usar el comando **Agregar existente** para llevar los roles de conexión predeterminados a la solución.
-
-![Agregar rol de conexión existente](media/add-existing-connection-role.png)
+> [!div class="mx-imgBorder"] 
+> ![Agregar rol de conexión existente](media/add-existing-connection-role.png)
 
 Una vez que agrega el rol de conexión a la solución, puede editarlo donde esté visible.
 
-## <a name="create-or-edit-connection-roles"></a>Creación o edición de roles de conexión.
+> [!NOTE]
+> El estado del rol de conexión no se incluye con el rol de conexión cuando se exporta desde una solución. Por tanto, cuando la solución se importa a un entorno de destino, el estado se establecerá en activo de forma predeterminada. 
+
+
+## <a name="create-a-connection-role"></a>Crear un rol de conexión
 
 > [!IMPORTANT]
 > Si tiene previsto distribuir una solución que incluya nuevos roles o cambios en roles de conexión existentes debe agregarlos a la solución que se distribuirá. Al editar o agregar nuevos roles de conexión mediante el área **Configuración** se agregarán estos roles de conexión a la **Solución predeterminada** interna y no se incluirán en la solución que distribuirá a menos que primero la agregue a la solución. Más información [Agregue roles de conexión a una solución](#add-connection-roles-to-a-solution)
 
-En la lista **Roles de conexión**, seleccione uno de los roles de conexión para editarlo.
-Hay tres pasos para definir un rol de conexión que se indican claramente en el formulario.
+1. Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y en el panel de la izquierda, seleccione **Soluciones**. 
+2. Abra la solución no administrada que desee y luego, en la barra de comandos, seleccione **Nuevo** > **Otro** > **Rol de conexión**. 
+3. Complete los tres pasos en el formulario para [Describir el rol de conexión](#describe-the-connection-role).
 
-![Crear formulario Rol de conexión](media/create-connection-role-form.png)
+   > [!div class="mx-imgBorder"] 
+   > ![Crear formulario Rol de conexión](media/create-connection-role-form.png)
 
 ### <a name="describe-the-connection-role"></a>Describa el rol de conexión
 
@@ -114,14 +122,14 @@ Los valores **Categoría** predeterminados son:
 
 Puede agregar nuevas categorías o modificar las existentes editando el conjunto de opciones globales **Categoría**. Más información: [Creación y edición de conjuntos de opciones globales para Common Data Service (listas desplegables)](create-edit-global-option-sets.md)
 
-### <a name="select-record-types"></a>Seleccionar tipos de registro
+#### <a name="select-record-types"></a>Seleccionar tipos de registro
 
 Seleccione los tipos de registro que deben estar disponibles para conectar.
 
 > [!NOTE]
 > Aunque **Todos** esté seleccionado de forma predeterminada, asegúrese de considerar los tipos adecuados para el rol de conexión que va a agregar.
 
-### <a name="matching-connection-roles"></a>Roles de conexión coincidentes
+#### <a name="matching-connection-roles"></a>Roles de conexión coincidentes
 
 En este paso opcional, puede definir los roles que se aplicarán de forma recíproca. No es necesario, pero las conexiones son más significativas si los define.
 

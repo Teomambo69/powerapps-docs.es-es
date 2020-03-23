@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 59351fbc8afa450a0de88e5e38ca9bcf812fee2b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3250c9e22881d24924997395a744a5bd45018786
+ms.sourcegitcommit: 4728372a4a467f65bab9ae17e91738f420e17374
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749401"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3029987"
 ---
 # <a name="authentication-with-common-data-service-web-services"></a>Autenticación con servicios web de Common Data Service
 
@@ -49,7 +49,7 @@ La autenticación de Office 365 requiere el uso de ensamblados de SDK de .NET Fr
 
 El uso de la autenticación de Office 365 no requiere que registre sus aplicaciones igual que OAuth. Debe proporcionar simplemente un nombre principal de usuario (UPN) y una contraseña para un usuario válido.
 
-Más información: [Autenticación con las aplicaciones de .NET Framework](authenticate-dot-net-framework.md)
+Más información: [Autenticación con aplicaciones .NET Framework](authenticate-dot-net-framework.md), [Uso de la autenticación de Office365 con el protocolo de seguridad WS-Trust](authenticate-office365-deprecation.md)
 
 ## <a name="all-other-software-frameworks"></a>El resto de los marcos de software
 

@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c13092daaa86abbcba5ef65dc809f29d9a6a6f12
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: d700c76009f45c4e28f78732e7ae52ab57693ccb
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883724"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040541"
 ---
 # <a name="create-and-edit-entities-in-common-data-service"></a>Crear y editar entidades en Common Data Service
 
@@ -45,7 +45,6 @@ Hay dos diseñadores que puede usar para crear una entidad:
 > - Use Power Query para crear nuevas entidades y rellenarlas con datos. Más información: [Agregar datos a una entidad en Common Data Service mediante Power Query.](/powerapps/maker/common-data-service/data-platform-cds-newentity-pq).
 > - Un programador puede usar [Servicios de metadatos](/powerapps/developer/common-data-service/use-web-services#metadata-services) para escribir un programa.
 
-
 ## <a name="entity-options-not-available-in-the-power-apps-portal"></a>Las opciones de entidad no están disponibles en el portal de Power Apps
 
 La información de este tema le ayudará a elegir el diseñador que puede usar. Puede usar el portal de Power Apps para crear la entidad a menos que necesite satisfacer cualquiera de los siguientes requisitos.
@@ -53,14 +52,6 @@ La información de este tema le ayudará a elegir el diseñador que puede usar. 
 - Controlar el prefijo de personalización
 
   La parte del nombre de cualquier entidad personalizada que cree es el prefijo de personalización. Esto se establece en función del editor de soluciones para la solución en la que trabaja. Si le interesa el prefijo de personalización, asegúrese de que está trabajando en una solución no administrada donde el prefijo de personalización es el que desea para esta entidad. Más información [Cambiar el prefijo del editor de soluciones](change-solution-publisher-prefix.md).
-
-- Crear entidad propiedad de la organización
-
-  De forma predeterminada, el portal de Power Apps creará entidades propiedad de un **Usuario o equipo**. Use el explorador de soluciones para establecer la propiedad en **Organización**. Más información: [Propiedad de entidad](types-of-entities.md#entity-ownership).
-
-- Crear una entidad de actividad
-
-  Una entidad de actividad es un tipo especial de entidad que realiza un seguimiento de las acciones para los que se puede realizar entrada en un calendario. Más información: [Entidades de actividad](types-of-entities.md#activity-entities).
 
 - Cambiar los iconos para una entidad personalizada
 
@@ -74,18 +65,12 @@ La información de este tema le ayudará a elegir el diseñador que puede usar. 
 
   |Opción   |Descripción  |
   |---------|---------|
-  |**Equipos de acceso**|Cree plantillas de equipo para esta entidad. |
-  |**Permitir creación rápida**|Una vez creado y publicado un **Formulario de creación rápida** para esta entidad, los usuarios tendrán la opción de crear un nuevo registro con el botón **Crear** del panel de navegación. Más información: [Crear y diseñar formularios](../model-driven-apps/create-design-forms.md)<br /><br /> Cuando esta opción está habilitada para una entidad de actividad personalizada, dicha actividad personalizada será visible en el grupo de entidades de actividad cuando los usuarios usen el botón **Crear** en el panel de navegación. Sin embargo, debido a que las actividades no admiten formularios de creación rápida, se utilizará el formulario principal cuando se haga clic en el icono de entidad personalizada.|
   |**Áreas que muestran esta entidad**|En la aplicación web, seleccione una de las áreas disponibles del mapa del sitio para mostrar esta entidad. Esto no se aplica a las aplicaciones basadas en modelos.|
   |**Auditoría**|Cuando se habilita la auditoría para la organización, permite capturar los cambios en los registros de entidad a lo largo del tiempo. Al habilitar la auditoría para una entidad, también se habilita la auditoría en todos sus campos. Puede seleccionar (o anular la selección de) los campos en los que desee habilitar la auditoría.|
-  |**Seguimiento de cambios**|Habilita la sincronización de datos de alto rendimiento mediante la detección de los datos que han cambiado desde que se extrajeron inicialmente o desde que se sincronizaron por última vez.  |
-  |**Color**|Establezca color que se usará para la entidad en aplicaciones basadas en modelos.|
-  |**Administración de documentos**|Después de realizar otras tareas para habilitar la administración de documentos para la organización, habilitar esta característica permite que esta entidad participe en la integración con SharePoint. |
-  |**Detección de duplicados**|Si la detección de duplicados está habilitada para la organización, habilitar esta opción le permite crear reglas de detección de duplicados para esta entidad.|
+  |**Color**|Establezca el color que se usará para la entidad en aplicaciones basadas en modelos.|
+  |**Administración de documentos**|Después de realizar otras tareas para habilitar la administración de documentos para la organización, si habilita esta característica permite que esta entidad participe en la integración con SharePoint. |
   |**Habilitar para móvil**|Hace que esta entidad esté disponible para las aplicaciones de Dynamics 365 for phones y tablets. También tiene la opción de convertir esta entidad en **Solo lectura en móvil**.<br /><br /> Si los formularios de una entidad requieren una extensión que no es compatible con las aplicaciones Dynamics 365 for phones y tablets, use esta configuración para asegurarse de que los usuarios de aplicaciones móviles no puedan editar los datos de estas entidades.|
   |**Habilitar para Phone Express**|Hace que esta entidad esté disponible para la aplicación Dynamics 365 for phones.|
-  |**Combinar correspondencia**|Los usuarios pueden usar esta entidad con la combinación de correspondencia.|
-  |**Capacidad de trabajar sin conexión de Dynamics 365 for Outlook**|Especifica si los datos de esta entidad estarán disponibles mientras la aplicación Dynamics 365 for Outlook no esté conectada a la red.|
   |**Panel de lectura en Dynamics 365 for Outlook**|Especifica si la entidad estará visible en el panel de lectura de la aplicación Dynamics 365 for Outlook.|
   |**Usar la Ayuda personalizada**|Si se habilita esta opción, establece una dirección URL de Ayuda para controlar qué página verán los usuarios cuando hagan clic en el botón Ayuda de la aplicación. Use esta opción para dar instrucciones específicas para los procesos de su empresa para la entidad.|
 

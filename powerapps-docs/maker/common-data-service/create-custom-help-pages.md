@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 25ad6206fb76c1c26f182c4ff4b67c8815e7e8ba
-ms.sourcegitcommit: 94aa6fd38aab1e145e0b9a0189154fb69b0ee223
+ms.openlocfilehash: 0ba852565acee10fc4c853eb185f552df6399fc9
+ms.sourcegitcommit: d98dd90a7dda11f434a13a7f8976459856d6142b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "2778965"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "3093924"
 ---
 # <a name="create-guided-help-for-your-unified-interface-app"></a>Crear ayuda guiada para la aplicación de la Interfaz unificada
 

@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c8ead91a40fc0f79f801fee64c8eff2891723264
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 2731520659633c305e19e02b67670bb12796dc50
+ms.sourcegitcommit: ed583eb94720a9645bfd79776311792a958077b8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2863869"
+ms.lasthandoff: 03/01/2020
+ms.locfileid: "3094042"
 ---
 # <a name="add-configure-move-or-delete-sections-on-a-form"></a>Agregar, configurar, mover o eliminar secciones de un formulario 
 Agregar, configurar, mover o eliminar secciones en un formulario usando el diseñador de formularios. 
@@ -113,7 +113,8 @@ Puede mover secciones mediante arrastrar y colocar o cortar y pegar acciones.
     >   - Si elimina una sección por error, en la barra de comandos seleccione **Deshacer** para revertir el formulario al estado anterior. 
     >   - No puede eliminar una sección que contenga un campo obligatorio o bloqueado. 
     >   - No puede eliminar una sección que esté bloqueada. 
-    >   - Una pestaña necesita tener al menos una sección en cada columna de pestaña. Si elimina la última sección restante de una columna de pestaña se agregará automáticamente una nueva sección. 
+    >   - Una pestaña necesita tener al menos una sección en cada columna de pestaña. Si elimina la última sección restante de una columna de pestaña se agregará automáticamente una nueva sección.
+    >   - En Interfaz unificada, las secciones no se representarán si ha seleccionado ocultarlas, incluidos el título y el borde.  Esto es diferente al cliente web heredado, y es por diseño para garantizar la representación adecuada del formulario en diferentes puertos de vista, desde extra ancho a estrecho.
 
 ### <a name="see-also"></a>Vea también
 [Información general del diseñador de formularios controlado por modelos](form-designer-overview.md)  

@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d52b3fa67863a43f82f020f3894bbabf5d38df84
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b0528015899ccc624fed1d83566c445f348343c9
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865487"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040455"
 ---
 # <a name="define-alternate-keys-using-power-apps-portal"></a>Definir las claves alternativas con el portal de Power Apps
 
@@ -37,9 +37,8 @@ El portal permite configurar las opciones más comunes, pero algunas opciones so
 
 ## <a name="view-alternate-keys"></a>Ver claves alternativas
 
-1. En el [portal de Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione el modo de diseño **Controlado por modelos** o **Lienzo**.
-2. Seleccione **Datos** > **Entidades** y seleccione la entidad que desea ver.
-3. Seleccione **Claves** para ver una lista de las claves alternativas que están definidas.
+1. Desde el [portal de Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione **Datos** > **Entidades** y seleccione la entidad que desea ver.
+2. Seleccione **Claves** para ver una lista de las claves alternativas que están definidas.
 
     ![Ver claves alternativas](media/view-alternate-keys-portal.png)
 

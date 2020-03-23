@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 27f90d74025718eafca642040e40835530177c91
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 415b613fbbafa5f3b1b54827a1aa59272cdc4b7d
+ms.sourcegitcommit: d98dd90a7dda11f434a13a7f8976459856d6142b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861587"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "3093836"
 ---
 # <a name="create-and-edit-one-to-many-or-many-to-one-entity-relationships-using-power-apps-portal"></a>Creación y edición de relaciones entre entidades uno a varios o varios a uno utilizando el portal de Power Apps
 

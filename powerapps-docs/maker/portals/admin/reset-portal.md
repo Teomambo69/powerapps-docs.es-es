@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 02/11/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 96e661f5774cedff7a3bc2317f02273af7041d13
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: b788d0b1a0935949e7114e220ad714fa6495c294
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2978697"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069471"
 ---
 # <a name="reset-a-portal"></a>Restablecer un portal
 
@@ -41,7 +41,8 @@ Para restaurar un portal configurado:
 > - Si no dispone de los permisos adecuados en una aplicación asociada de Azure Active Directory, se mostrará un error. Debe ponerse en contacto con el administrador global para obtener los permisos adecuados.
 > - Si ha aprovisionado un portal utilizando el complemento de portal anterior y el portal se restablece correctamente, el nombre del portal y su estado en la pestaña **Aplicaciones** en el **Centro de administración de Dynamics 365** no cambia. Por ejemplo, si su nombre de portal y estado eran Portal 1 y Configurado respectivamente, después de restablecer el portal, estos valores no cambian. Si desea cambiar el nombre de portal, puede cambiarlo en la pestaña **Detalles del portal** en el Centro de administración de portales de Power Apps. Sin embargo, el valor del estado no se puede revertir a No configurado.
 > - Es importante tener en cuenta que el estado del portal de la pestaña **Aplicaciones** no representa el estado de aprovisionamiento y no afecta al funcionamiento del portal. Simplemente muestra si alguna vez ha obtenido acceso al Centro de administración de portales de Power Apps para ese portal correspondiente o no.
-
+> - Si ha aprovisionado un portal utilizando el complemento del portal anterior, puede restablecer el portal al estado **no configurado** y [crear un nuevo portal](../provision-portal-add-on.md).
+ 
 Si su portal no se aprovisiona correcta, aparece un estado de error y se muestra la siguiente pantalla. En este caso, también puede restablecer el portal seleccionando **Restablecer portal** en la pantalla de error.
 
 > [!div class=mx-imgBorder]

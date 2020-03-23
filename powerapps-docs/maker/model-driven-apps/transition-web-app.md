@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bf9b21936a0b1a9d843d248cf4941854dcdbbd7d
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 8db8442c7cb5a53d1c836f814e6d7b1d5e58a84a
+ms.sourcegitcommit: 4f2e9e8f9bd3204ca9eee9e2a46f797c957c55ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874582"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029694"
 ---
 # <a name="quick-start-for-transitioning-your-legacy-web-client-application-to-unified-interface"></a>Tutorial para la transición de su aplicación de cliente web heredada a la interfaz unificada
 
@@ -49,11 +49,6 @@ Primero, seleccione un entorno de no producción y habilite el modo **Usar solo 
 
    > [!div class="mx-imgBorder"] 
    > ![Ajuste Usar solo la interfaz unificada](media/use-unified-interface-only-pac.png)
-
-También puede establecer esto en el área de configuración. Vaya a **Configuración** > **Administración** > **Configuración del sistema** y en la pestaña **General** establezca **Habilitar sólo la interfaz unificada** como **Sí**.
-
-> [!div class="mx-imgBorder"] 
-> ![Usar solo la nueva interfaz unificada](media/use-unified-interface-only.png "Usar solo la nueva interfaz unificada")
 
 
 > [!NOTE]

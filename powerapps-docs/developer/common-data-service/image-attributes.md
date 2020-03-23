@@ -2,7 +2,7 @@
 title: Atributos de imagen (Common Data Service) | Microsoft Docs
 description: Obtenga información sobre los atributos de imagen que almacenan datos de imagen, atributos de soporte, recuperando datos de imagen y cargando datos de imagen.
 ms.custom: ''
-ms.date: 10/01/2019
+ms.date: 02/11/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -14,16 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f05345c50f5f1e907f17147a9006ca9eed29c09d
-ms.sourcegitcommit: 1c4ab1859febccf79a835bd2f168e7e12a953a18
+ms.openlocfilehash: 988a403bdd3badd720a46ee5b58a9539bc1ac9f9
+ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "2957602"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "3037083"
 ---
 # <a name="image-attributes"></a>Atributos de imagen
 
 Algunas entidades del sistema y todas las entidades personalizadas admiten imágenes. Esas entidades que admiten imágenes pueden contener una miniatura y una imagen principal de tamaño completo. La imagen en miniatura se puede ver en la aplicación web al ver los datos del formulario de la entidad. Puede haber varios atributos de imagen múltiples en una instancia de entidad pero únicamente puede haber una imagen principal. Sin embargo, puede cambiar la imagen principal de una imagen a otra estableciendo [IsPrimaryImage](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata.isprimaryimage?view=dynamics-general-ce-9#Microsoft_Xrm_Sdk_Metadata_ImageAttributeMetadata_IsPrimaryImage) para ese atributo en `true`. Cada atributo de imagen de tamaño completo está limitada a 30 MB de tamaño. El <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.SchemaName> del atributo de imagen de entidad es `EntityImage`. Más información: [Imágenes de entidad](/dynamics365/customer-engagement/developer/introduction-entities#entity-images).
+
+Las imágenes en miniatura y los metadatos de imagen se almacenan en Common Data Service, que incluye la información necesaria para recuperar la imagen completa. Las imágenes completas se almacenan en el almacenamiento de archivos en el blob de Azure para reducir el consumo de almacenamiento de datos.
 
 API web (REST) | .NET API (SOAP) 
 ------- | -------

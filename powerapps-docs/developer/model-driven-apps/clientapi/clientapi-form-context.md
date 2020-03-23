@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3e40c21bb1e26ebefca3ea8d71fb1d02dad1700b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4218d231a6e079425eb1cc067c1760c473906e4a
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749628"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091187"
 ---
 # <a name="client-api-form-context"></a>Contexto de formulario de la API del cliente
 
@@ -114,6 +114,8 @@ La siguiente tabla describe las recopilaciones en el modelo de objetos **Xrm**. 
 
 [Método getFormContext](reference/executioncontext/getFormContext.md)<br/>
 [Método getGlobalContext](reference/xrm-utility/getGlobalContext.md)<br/>
+[método getAttribute](reference/attributes.md)<br/>
+[Método getControl](reference/controls/getcontrol.md)<br/>
 [Métodos del contexto de ejecución](reference/execution-context.md) 
 
  

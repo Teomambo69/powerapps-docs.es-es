@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 356561d0-a36b-4b93-8b76-3e1abf9414e9
-ms.openlocfilehash: c879f6d73e8ae8d2244e20080fdf64d376ff9bfd
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 2a87a321db887e9d56f8be30da67465f084a1089
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017451"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091203"
 ---
 # <a name="implementing-data-set-component"></a>Implementar el componente de conjunto de datos
 
@@ -28,6 +28,9 @@ Este componente de ejemplo muestra cómo cambiar la experiencia de usuario de in
 ## <a name="available-for"></a>Disponible para 
 
 Aplicaciones basadas en modelos
+
+> [!NOTE]
+> Algunos de los métodos de la API del conjunto de datos todavía no son compatibles con las aplicaciones de lienzo. Vea [Componente de conjunto de datos para aplicaciones de lienzo](data-set-component-canvas.md) para obtener más información sobre cómo se implementan los componentes de tipo conjunto de datos en las aplicaciones de lienzo.
 
 ## <a name="manifest"></a>Manifiesto 
 

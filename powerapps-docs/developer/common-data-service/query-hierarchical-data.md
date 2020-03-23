@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3a87868d86dca1326dcff1ad9b1c052606943de4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 006dccecfed21b29f3af48f657c2bb64b1708cf3
+ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749812"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "3037139"
 ---
 # <a name="query-hierarchical-data"></a>Consultar datos jerárquicos
 
@@ -38,8 +38,8 @@ Puede aprovechar los nuevos operadores de condición de consulta para consultar 
 |`under`|`Under`|Devuelve todos los registros secundarios por debajo del registro al que se hace referencia en la jerarquía.|  
 |`eq-or-under`|`UnderOrEqual`|Devuelve el registro al que se hace referencia y todos los registros secundarios por debajo de éste en la jerarquía.|  
 |`not-under`|`NotUnder`|Devuelve todos los registros que no están por debajo del registro al que se hace referencia en la jerarquía.|  
-|`eq-owneduseroruserhierarchy`|`OwnedByMeOrMyReports`|Cuando se usan modelos de seguridad jerárquicos, es igual al usuario actual o su jerarquía de subordinados|  
-|`eq-useroruserhierarchyandteams`|`OwnedByMeOrMyReportsAndTeams`|Cuando se usan modelos de seguridad jerárquicos, es igual al usuario actual y a sus equipos o su jerarquía de subordinados y sus equipos|  
+|`eq-owneduseroruserhierarchy`|`OwnedByMeOrMyReports`|Cuando se usan modelos de seguridad jerárquicos, es igual al usuario actual o la jerarquía de subordinados del usuario|  
+|`eq-useroruserhierarchyandteams`|`OwnedByMeOrMyReportsAndTeams`|Cuando se usan modelos de seguridad jerárquicos, es igual al usuario actual y sus equipos o la jerarquía de subordinados del usuario y sus equipos|  
   
 ### <a name="recursion-limits-when-querying-hierarchical-data"></a>Límites de la recursión al consultar datos jerárquicos  
  Dado que la consulta de datos jerárquicos puede emplear muchos recursos, hay un límite predeterminado de 100 condiciones permitidas de recursiones para consultas jerárquicas utilizando los operadores de condición `Above`, `AboveOrEqual`, `Under`, `UnderOrEqual`, y `NotUnder`.  

@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: f5c3fe93939ae2eb37457490c45689fc967df590
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 3a9b6880b681cffac05f98f623116c4748091ea8
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017446"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091199"
 ---
 # <a name="implementing-increment-component"></a>Implementar componente de incremento
 
@@ -26,7 +26,7 @@ Para implementar este componente, lo primero que necesita es definir el archivo 
 
 ## <a name="available-for"></a>Disponible para 
 
-Aplicaciones basadas en modelo y aplicaciones de lienzo (vista previa piloto) 
+Aplicaciones basadas en modelos y aplicaciones de lienzo (vista previa pública) 
 
 ## <a name="manifest"></a>Manifiesto
 

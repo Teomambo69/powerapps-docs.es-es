@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: d1e8048f4cc4dbb2023788fcc3d3cf28fdfb7f7b
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: 97c049394bac97106b6de970d40f07321ed927bd
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2979709"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069647"
 ---
 # <a name="configure-notes-for-entity-forms-and-web-forms-on-portals"></a>Configurar notas para formularios de entidad y formularios web en portales
 
@@ -158,3 +158,6 @@ Si ha creado un formulario personalizado y ha agregado la sección notas, asegú
 ## <a name="notes-configuration-for-web-forms"></a>Configuración de notas para formularios web
 
 Las notas de formulario web se configuran de la misma forma que las [notas de formulario de entidad](#notes-configuration-for-entity-forms). Primero debe crear un registro de metadatos para el paso del formulario web que tiene notas, y luego agregue los metadatos de configuración de notas.
+
+> [!NOTE]
+> La descripción de las notas debe tener el prefijo *WEB* (esa es la palabra clave 'WEB' con asterisco (*) antes y después) para mostrar en el portal.

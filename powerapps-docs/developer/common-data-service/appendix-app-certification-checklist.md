@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5dc66ce68c27ddf0ccea275c862e5c780a8d039c
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 795b7797c36a4491ed5e748bdbd42e0ad9add01f
+ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861857"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3080846"
 ---
 # <a name="appendix-app-certification-checklist"></a>Apéndice: Lista de comprobación de certificación de aplicaciones
 
@@ -33,12 +33,12 @@ La lista de comprobación siguiente proporciona la lista de comprobaciones reali
 <th>Lista de comprobación de certificación</th>
 </tr>
 <tr>
-<td rowspan=5><a href="https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview">Aplicaciones basadas en modelos</a>, <a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started">aplicaciones de lienzo</a> y <a href="https://docs.microsoft.com/flow/getting-started">flujos</a> que se conectan a Common Data Service<br/></td>
+<td rowspan=5><a href="https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview">Aplicaciones basadas en modelos</a>, <a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started">aplicaciones de lienzo</a> y <a href="https://docs.microsoft.com/power-automate/getting-started">flujos</a> que se conectan a Common Data Service<br/></td>
 <td>Comprobación de estado</td>
 <td><ul>
-<li>Buscar el tipo de registro de la aplicación: gratuita, prueba o contacto. Si se ha registrado en Contacto , el editor debe habilitar la prueba.</li>
+<li>Buscar el tipo de registro de la aplicación: gratuita, prueba o contacto.</li>
 <li>Compruebe que el <a href="https://docs.microsoft.com/powerapps/developer/common-data-service/create-package-app-appsource">paquete</a> enviado contiene todos los artefactos necesarios para publicar en AppSource.</li>
-<li>Descargue el documento funcional de extremo a extremo (E2E) del portal de Socio en la nube y valide si el documento se actualiza con escenarios funcionales y viaje usuario/administrador.</li>
+<li>Descargue el documento funcional de extremo a extremo (E2E) del <a href="https://partner.microsoft.com/dashboard">Centro de partners</a> y valide si el documento se actualiza con escenarios funcionales y viaje usuario/administrador.</li>
 </ul>
 </td>
 </tr>
@@ -52,8 +52,9 @@ La lista de comprobación siguiente proporciona la lista de comprobaciones reali
 <li>Errores en tiempo de ejecución: Pueden producirse cuando la aplicación se abre en modo de ejecución para ver. Los problemas que se encuentren se comunicarán por correo electrónico.</li>
 <li>Errores y advertencias de accesibilidad: Todos los errores de accesibilidad se deben resolver siguiendo las instrucciones del Comprobador de soluciones.</li>
 </ul></li>
-<li>La validación de código para la solución de Common Data Service se efectuará a través de la herramienta de la análisis del código de <a href="https://experienceisv.microsoftcrmportals.com/precertification/#/">OnDemand (ODCA)</a>.</li>
-<li>Los problemas comunicados desde ODCA serán validados manualmente para su corrección y se reducirán los problemas de falsos positivos para bajar la gravedad.</li>
+<li>La validación de código para la solución de Common Data Service se realizará utilizando <a href="https://docs.microsoft.com/powerapps/developer/common-data-service/checker/webapi/overview">Power Apps Checker</a>.</li>
+<li>Los problemas comunicados desde Power Apps Checker serán validados manualmente para su corrección y se reducirán los problemas de falsos positivos para bajar la gravedad.</li>
+<li>La calidad de la solución y los paquetes se validan contra el<a href="https://docs.microsoft.com/powerapps/developer/common-data-service/checker/webapi/retrieve-rulesets">conjunto de reglas</a> de la certificación de AppSource. 
 <li>El informe generado se comparte con el editor a través del correo electrónico.</li>
 </ul>
 </td>
@@ -74,7 +75,7 @@ La lista de comprobación siguiente proporciona la lista de comprobaciones reali
 <td>
 <ul>
 <li>Valide la funcionalidad de la aplicación basándose en el documento funcional compartido por el editor. Todas las características que se implementan en la aplicación deben pasar.</li>
-<li>El editor debe enviar el documento funcional E2E a través del portal de Socio en la nube o puede compartir vínculos de vídeo a través de correo electrónico.</li>
+<li>El editor debe enviar el documento funcional E2E a través del <a href="https://partner.microsoft.com/dashboard">Centro de partners</a> o puede compartir vínculos de vídeo a través de correo electrónico.</li>
 <li>Si la aplicación requiere configuración de licencia, el equipo de certificación compartirá los detalles de la instancia para que el editor actualice la licencia necesaria.</li>
 </ul></td>
 </tr>
@@ -90,7 +91,7 @@ La lista de comprobación siguiente proporciona la lista de comprobaciones reali
 </td>
 </tr>
 <tr>
-<td rowspan=5><a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started">Aplicaciones de lienzo</a> y <a href="https://docs.microsoft.com/flow/getting-started">flujos</a> que se conectan a orígenes de datos <i>distintos</i> de Common Data Service
+<td rowspan=5><a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started">Aplicaciones de lienzo</a> y <a href="https://docs.microsoft.com/power-automate/getting-started">flujos</a> que se conectan a orígenes de datos <i>distintos</i> de Common Data Service
 </td>
 <td>Comprobación de estado</td>
 <td><ul>
@@ -134,7 +135,9 @@ Para obtener más información acerca de las prácticas recomendadas para crear:
 - Aplicaciones de lienzo, vea [Estándar e instrucciones de codificación de aplicaciones de lienzo](https://aka.ms/powerappscanvasguidelines)
 - Aplicaciones basadas en modelos, consulte [Comprender los componentes de aplicaciones basadas en modelos](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-components)
 
-  
+### <a name="see-also"></a>Vea también
+
+[Documentación del Centro de partners](https://docs.microsoft.com/partner-center/)
 
 
 

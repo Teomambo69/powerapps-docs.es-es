@@ -10,12 +10,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: f0f397b6d355cc3189fcf211a677655c6ae49fd8
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 3454ef328b09b4df9b0ebe5a115b352ef13a5b46
+ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017375"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "3097312"
 ---
 # <a name="community-resources-for-power-apps-component-framework"></a>Recursos de la comunidad para Power Apps component framework
 
@@ -36,6 +36,28 @@ Asegúrese de revisar los términos de licencia y el código fuente antes de des
 > [!div class="mx-imgBorder"]
 > ![Galería de componentes](media/pcf-gallery.PNG "Galería de componentes")
 
+## <a name="videos"></a>Vídeos
+
+A continuación se muestra la lista de vídeos creados por la comunidad de Power Apps.
+
+|Nombre|Descripción|
+|------|-------|
+|[Cree sus propios componentes de código](https://www.youtube.com/watch?v=S3Z_IUf1ncg)| Aprenda a compilar componentes de código en aplicaciones basadas en modelo y de lienzo utilizando Power Apps component framework.| 
+|[Componentes de código para aplicaciones de lienzo](https://www.youtube.com/watch?v=bMSCkcb4xAQ&feature=emb_logo)| Aprenda a desarrollar y usar componentes de código en aplicaciones de lienzo.|
+|[Desarrollar componentes de código](https://www.youtube.com/watch?v=FxWF-LCCB4g&feature=youtu.be)| Este vídeo muestra los requisitos para desarrollar componentes de código utilizando Power Apps component framework y muestra un enfoque paso a paso para crear su primer componente de código.|
+|[Depuración más sencilla con mapas de origen y Fiddler](https://www.youtube.com/watch?v=Ov-m5FBUj9g&feature=youtu.be)|Aprenda a depurar código de producción unificado utilizando Fiddler y mapas de origen.|
+|[Introducción a los componentes de código](https://www.youtube.com/watch?v=ylhVZUlGgQw)| Vídeo introductorio sobre Power Apps component framework y conceptos básicos de creación de componentes de código.|
+|[Power Apps component framework Academy: Introducción](https://www.youtube.com/watch?v=YJ9hrKxAhTU)| Vídeo introductorio sobre cómo crear su primer componente de código.|
+|[Power Apps component framework: archivo de manifiesto detallado para la plantilla de conjunto de datos](https://www.youtube.com/watch?v=TsTrYaOGaGo&feature=youtu.be)| Aprenda a definir un archivo de manifiesto para componentes de código de tipo conjunto de datos.|
+|[Power Apps component framework: archivo de manifiesto detallado para la plantilla de campo](https://www.youtube.com/watch?time_continue=522&v=w40zqSsYEy0)| Aprenda a definir un archivo de manifiesto para componentes de código de tipo de campo.|
+|[Power Apps component framework Academy: Componentes de conjunto de datos](https://www.youtube.com/watch?v=OEiM97nTD0w)| Obtenga más información sobre los componentes conjunto de datos y cómo se utilizan los diferentes métodos de la API de conjunto de datos.|
+|[Power Apps component framework Academy: Importación a su organización](https://www.youtube.com/watch?v=2uO2L2xTPkc)| Aprenda a empaquetar e importar componentes de código en Common Data Service.|
+|[Revolución de Power Apps component framework](https://youtu.be/_SjEQ-7LK_Q)|Aprenda cómo component framework ha mejorado la visualización en aplicaciones basadas en modelos y lienzo|
+|[Power Apps component framework Academy: Uso de React y Office U FabricI](https://www.youtube.com/watch?v=e7JNgGlI3nE)| Aprenda a usar React y UI fabric en componentes de código.|
+|[Power Apps component framework Academy: Uso de marcos adicionales](https://www.youtube.com/watch?v=cOPyyDdsEjQ)| Aprenda a usar marcos adicionales en la creación de componentes de código.|
+[Power Apps component framework Academy: Trabajar con archivo de manifiesto](https://www.youtube.com/watch?v=qbSpDVTxt7U&t=5s)| Vídeo introductorio sobre el archivo de manifiesto y varios métodos que deben definirse para desarrollar componentes de código en el archivo de manifiesto.|
+|[Power Apps component framework: Qué es para Dynamics 365](https://youtu.be/3LnPaKtfKhw)|Si alguna vez se ha lamentado por las limitaciones de los componentes de formularios personalizados en Microsoft Dynamics 365, este tutorial le abrirá los ojos a un mundo completamente nuevo de posibilidades.|
+
 ## <a name="blogs"></a>Blogs
 
 A continuación se muestra la lista de blogs creados por la comunidad de Power Apps.
@@ -50,24 +72,6 @@ A continuación se muestra la lista de blogs creados por la comunidad de Power A
 - [Power Apps component framework: el glaseado sobre el pastel](https://stevemordue.com/powerapps-component-framework-frosting-on-the-cake/)
 - [Disponibilidad pública de Power Apps component framework: un hito importante](https://crmindian.com/2019/04/24/public-availability-of-powerapps-component-framework-an-important-milestone-for-powerapps-and-d365/)
 - [Trabajar con componentes de código mediante Power Apps component framework](https://powermaverick.dev/2019/05/18/create-custom-controls-using-powerapp-component-framework)
-
-## <a name="videos"></a>Vídeos
-
-A continuación se muestra la lista de vídeos creados por la comunidad de Power Apps.
-
-- [Cree sus propios componentes de código](https://www.youtube.com/watch?v=S3Z_IUf1ncg)
-- [Componentes de código para aplicaciones de lienzo](https://www.youtube.com/watch?v=bMSCkcb4xAQ&feature=emb_logo)
-- [Depuración más sencilla con mapas de origen y Fiddler](https://www.youtube.com/watch?v=Ov-m5FBUj9g&feature=youtu.be)
-- [Introducción a los componentes de código](https://www.youtube.com/watch?v=ylhVZUlGgQw)
-- [Power Apps component framework Academy: Introducción](https://www.youtube.com/watch?v=YJ9hrKxAhTU)  
-- [Power Apps component framework: archivo de manifiesto detallado para la plantilla de conjunto de datos](https://www.youtube.com/watch?v=TsTrYaOGaGo&feature=youtu.be)
-- [Power Apps component framework: archivo de manifiesto detallado para la plantilla de campo](https://www.youtube.com/watch?time_continue=522&v=w40zqSsYEy0)
-- [Power Apps component framework Academy: Componentes de conjunto de datos](https://www.youtube.com/watch?v=OEiM97nTD0w)
-- [Power Apps component framework Academy: Importación a su organización](https://www.youtube.com/watch?v=2uO2L2xTPkc)
-- [Power Apps component framework Academy: Uso de React y Office U FabricI](https://www.youtube.com/watch?v=e7JNgGlI3nE)
-- [Power Apps component framework Academy: Uso de marcos adicionales](https://www.youtube.com/watch?v=cOPyyDdsEjQ)
-- [Power Apps component framework Academy: Trabajar con archivo de manifiesto](https://www.youtube.com/watch?v=qbSpDVTxt7U&t=5s)
-- [Componentes de código de Power Apps component framework](https://www.youtube.com/watch?v=FxWF-LCCB4g&feature=youtu.be)
 
 ## <a name="tools"></a>Herramientas
 

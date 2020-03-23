@@ -10,23 +10,23 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 08/09/2018
+ms.date: 02/12/2020
 ms.author: matp
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 11febe03a69fe774f2c0394ee5d3a016c901498d
-ms.sourcegitcommit: 5e6d71967902c463f34a9254f988b9c10e431eb4
+ms.openlocfilehash: d29ec6ca429efb4a7c221b888c77f01841542a18
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "2890701"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069823"
 ---
 # <a name="what-are-model-driven-apps-in-power-apps"></a>¿Qué son las aplicaciones controladas por modelos en Power Apps?
 
-El diseño de una aplicación controlada por modelos es un enfoque centrado en los componentes para el desarrollo de la aplicación. Para el diseño de aplicaciones controladas por modelos no se requiere código y las aplicaciones que crea pueden ser simples o muy complejas.  A diferencia del desarrollo de aplicaciones de lienzo, donde el diseñador tiene control total sobre el diseño de la aplicación, con las aplicaciones controladas por modelos, la mayoría del diseño lo determina el usuario y viene determinado en gran medida por los componentes que agrega a la aplicación. 
+El diseño de una aplicación controlada por modelos es un enfoque centrado en los componentes para el desarrollo de la aplicación. Para el diseño de aplicaciones controladas por modelos no se requiere código y las aplicaciones que crea pueden ser simples o muy complejas.  A diferencia del desarrollo de aplicaciones de lienzo, donde el diseñador tiene control total sobre el diseño de la aplicación, con las aplicaciones controladas por modelos, la mayoría del diseño lo determina el usuario y viene determinado en gran medida por los componentes que agrega a la aplicación.
 
 ![Aplicación controlada por modelos de ejemplo](media/model-driven-app-overview/model-app-sample.png)
 

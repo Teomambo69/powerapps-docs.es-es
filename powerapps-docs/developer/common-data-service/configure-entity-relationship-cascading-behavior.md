@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6c6d37d688ad60054be4387d813dcb7d9c9305fb
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 01eb5a0a390ac399633e4f335f7322289056de1f
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749580"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040373"
 ---
 # <a name="configure-entity-relationship-cascading-behavior"></a>Configuración del comportamiento en cascada de las relaciones entre entidades  
 
@@ -62,7 +62,16 @@ La clase `CascadeConfiguration` (<xref:Microsoft.Xrm.Sdk.Metadata.CascadeConfigu
 |Cambiar primario|Consulte [Acerca de la acción de cambiar primario](#about-the-reparent-action) más adelante.|Active<br />Cascada<br />NoCascade<br />UserOwned|  
 |Compartir|Cuando el registro de entidad al que se hace referencia se comparte con otro usuario.|Active<br />Cascada<br />NoCascade<br />UserOwned|  
 |Dejar de compartir|Cuando se quita el uso compartido del registro de entidad al que se hace referencia.|Active<br />Cascada<br />NoCascade<br />UserOwned|  
-  
+
+> [!NOTE]
+> Las acciones Asignar, Eliminar, Combinar y Cambiar primario no se ejecutarán en las siguientes situaciones:
+> - Si el registro primario original y la acción solicitada contienen los mismos valores. Ejemplo: Intentar desencadenar una Asignación y elegir un contacto que ya sea el propietario del registro.
+> - Intentar realizar una acción en un registro primario que ya está ejecutando una acción en cascada
+
+
+> [!NOTE]
+> Al ejecutar una asignación, los flujos de trabajo o las reglas de negocio que están actualmente activos en los registros se desactivarán automáticamente cuando ocurra la reasignación. El nuevo propietario del registro deberá reactivar el flujo de trabajo o la regla de negocio si desea continuar usándolo.
+
 <a name="BKMK_ReparentAction"></a>   
 ### <a name="about-the-reparent-action"></a>Acerca de la acción de cambiar primario  
  La acción de cambiar primario es muy similar a la acción de compartir, pero se ocupa de los derechos de acceso de lectura heredados en lugar de los derechos de acceso de lectura explícitos. La acción de cambiar primario es cuando se cambia el valor del atributo de referencia en una relación jerárquica. Cuando se produce una acción de cambiar primario, es posible que el ámbito deseado de los derechos de acceso de lectura heredados para las entidades relacionadas cambie. Las acciones en cascada relacionadas con la acción de cambiar primario hacen referencia a los cambios realizados en los derechos de acceso de lectura para el registro de entidad y cualquier registro de entidad relacionado con él.  

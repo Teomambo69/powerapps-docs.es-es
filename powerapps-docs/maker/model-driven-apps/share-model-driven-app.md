@@ -10,69 +10,65 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 12/17/2019
+ms.date: 03/04/2020
 ms.author: matp
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bcdc8241692cd1713f4c0f4cd2f4c0d8959dffe4
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 42ba7e8416477890614b00f6aa89ea241287475b
+ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909392"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3099947"
 ---
 # <a name="share-a-model-driven-app-with-power-apps"></a>Compartir una aplicación controlada por modelos con Power Apps
 
 Las aplicaciones de [!INCLUDE [powerapps](../../includes/powerapps.md)] usan la seguridad basada en roles para compartir. El concepto básico en la seguridad basada en roles es que el rol de seguridad contiene privilegios que definen un conjunto de acciones que se pueden realizar en la aplicación. Todos los usuarios de la aplicación deben estar asignados a uno o más roles predefinidos o personalizados. O bien, también se pueden asignar roles a equipos. Cuando se asigna un usuario o un equipo a uno de estos roles, se concede a la persona o miembros del equipo el conjunto de privilegios asociados a este rol. 
 
 ## <a name="prerequisites"></a>Requisitos previos
-Para compartir una aplicación debe tener el rol de administrador del entorno de [!INCLUDE [powerapps](../../includes/powerapps.md)] o el rol de administrador del sistema. 
+Asegúrese de tener un [rol de seguridad](https://docs.microsoft.com/power-platform/admin/security-roles-privileges) con permisos iguales o mayores que el rol que está asignando a la aplicación y a otros usuarios. 
 
-## <a name="share-your-app-for-basic-use"></a>Compartir su aplicación para uso básico
-Para agregar privilegios para que el usuario de la aplicación pueda ejecutar una aplicación dentro del entorno y realizar tareas comunes para los registros que posee, use el rol de seguridad **Usuarios de Common Data Service**.
-1.  En el sitio [Power Apps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Aplicaciones**, junto a la aplicación basada en modelo que desea compartir, seleccione **...** y luego seleccione **Compartir**. 
-    > [!IMPORTANT]
-    > Los pasos para compartir una aplicación basada en modelo son diferentes de una aplicación de lienzo. Para conocer los pasos para compartir una aplicación de lienzo, consulte [Compartir una aplicación de lienzo en Power Apps](../canvas-apps/share-app.md). 
+## <a name="create-a-security-role-for-your-app"></a>Crear un rol de seguridad para la aplicación
+En general, las aplicaciones basadas en modelo contienen entidades personalizadas y otras configuraciones personalizadas. Es importante primero [crear un rol de seguridad](#create-a-security-role-for-your-app) con permiso para todos los componentes utilizados en la aplicación.  
+> [!NOTE]
+> Este paso se puede omitir si los roles existentes otorgan acceso a los datos en su aplicación. 
 
-2.  En **Asignar usuarios al rol de seguridad**, seleccione **Usuarios de seguridad**.
-3.  En la lista de usuarios habilitados, seleccione los usuarios a los que desea otorgar acceso a su aplicación y luego, en la barra de comandos, seleccione **Administrar roles**. 
-4.  En el cuadro de diálogo **Administrar roles de usuario**, seleccione el rol de seguridad **Usuario de Common Data Service** y seleccione **Aceptar**. 
-
+## <a name="preview-share-a-model-driven-app"></a>Vista previa: Compartir una aplicación basada en modelo 
+Compartir una aplicación basada en modelo implica dos pasos principales. Primero, asocie uno o más roles de seguridad con la aplicación y luego asigne los roles de seguridad a los usuarios. 
+1. Visite https://make.powerapps.com
+2. Seleccione una aplicación basada en modelo y haga clic en **Compartir**.
+3. Seleccione la aplicación y luego elija un rol de seguridad en la lista.
     > [!div class="mx-imgBorder"] 
-    > ![](media/share-model-driven-app/select-common-data-service-user.png "Select Common Data Service User")
+    > ![](media/share-model-driven-app/share-app.png "Assign a role to the app")
+4. Buscar un usuario
+5. Seleccione el usuario y luego seleccione un rol en la lista.
+    > [!div class="mx-imgBorder"] 
+    > ![](media/share-model-driven-app/share-user.png "Assign a role to the user")
+6. Haga clic en **Compartir**.
 
-5. [Agregar roles de seguridad a la aplicación](#add-security-roles-to-the-app)
-6. [Compartir el vínculo a su aplicación](#share-the-link-to-your-app)
+### <a name="share-the-link-to-your-app"></a>Compartir el vínculo a su aplicación
+A diferencia cuando se comparten aplicaciones de lienzo, compartir aplicaciones basadas en modelo actualmente no envía un correos electrónicos con un vínculo a la aplicación.
 
-Los usuarios con el rol de seguridad Usuario de Common Data Service ahora podrán acceder a su aplicación. 
+Para obtener el vínculo directo a una aplicación:
+1. Edite la aplicación y haga clic en la pestaña **Propiedades**.
+2. Copie la **URL de interfaz unificada**.
+3. Pegue la dirección URL de la aplicación en una ubicación para que los usuarios puedan acceder a ella, como publicándola en un sitio de SharePoint o enviándola por correo electrónico.
 
-## <a name="share-a-model-driven-app-for-specific-use"></a>Compartir una aplicación basada en modelo para uso específico
-En esta sección, realizará las tareas para compartir una aplicación basada en modelo utilizando dos roles de seguridad, cada uno específico para las necesidades de los usuarios de la aplicación. Aprenderá a:
-- Crear un rol de seguridad personalizado
-- Asignar usuarios al rol de seguridad personalizado
-- Asignar el rol de seguridad a una aplicación
 
-### <a name="tutorial-overview"></a>Información general del tutorial 
-En esta sección se realizará un seguimiento de la compañía, Contoso, que es una empresa de cuidado de mascotas orientada a perros y gatos. Una aplicación que contiene una entidad personalizada para realizar un seguimiento de la empresa de cuidado de mascotas ya se ha creado y publicado. Ahora la aplicación se debe compartir para que el personal de la empresa pueda usarla. Para compartir la aplicación, un administrador o el creador de la aplicación asigna uno o varios roles de seguridad a los usuarios y a la aplicación. 
-
-### <a name="create-or-configure-a-security-role"></a>Crear o configurar un rol de seguridad
-El entorno de [!INCLUDE [powerapps](../../includes/powerapps.md)] incluye [roles de seguridad predefinidos](#about-predefined-security-roles) que reflejan tareas de usuario comunes con niveles de acceso definidos para que coincidan con el objetivo de seguridad recomendado de proporcionar acceso a la cantidad mínima de datos profesionales necesarios para usar la aplicación. Recuerde que la aplicación de cuidado de mascotas de Contoso está basada en una entidad personalizada. Puesto que la entidad es personalizada, los privilegios se deben especificar explícitamente antes de que los usuarios puedan trabajar con ella. Para hacerlo, puede realizar lo siguiente.
+## <a name="create-or-configure-a-security-role"></a>Crear o configurar un rol de seguridad
+El entorno de [!INCLUDE [powerapps](../../includes/powerapps.md)] incluye [roles de seguridad predefinidos](#about-predefined-security-roles) que reflejan tareas de usuario comunes con niveles de acceso definidos para que coincidan con el objetivo de seguridad recomendado de proporcionar acceso a la cantidad mínima de datos profesionales necesarios para usar la aplicación. Por ejemplo, si su aplicación se basa en una entidad personalizada, los privilegios de la entidad deben especificarse explícitamente antes de que los usuarios puedan trabajar en ella. Para hacerlo, puede realizar lo siguiente.
 - Expandir un rol de seguridad predefinido existente, de modo que incluya privilegios en registros en función de la entidad personalizada. 
 - Crear un rol de seguridad personalizado con el fin de administrar privilegios para los usuarios de la aplicación. 
-
-Puesto que el entorno que mantendrá los registros de cuidado de mascotas también se usa para otras aplicaciones de Contoso, se creará un rol de seguridad personalizado específico para la aplicación de cuidado de mascotas. Además, se necesitan dos conjuntos diferentes de privilegios de acceso.
-- Los técnicos del cuidado de mascotas solo necesitan leer, actualizar y adjuntar otros registros, de modo que su rol de seguridad deberá tener privilegios de lectura, escritura y anexar. 
-- Los programadores del cuidado de mascotas necesitan todos los privilegios que tienen los técnicos, además de la capacidad de crear, anexar a, eliminar y compartir, por lo que su rol de seguridad tendrá privilegios para crear, leer, escribir, anexar, eliminar, asignar y compartir.
 
 Para obtener más información sobre los privilegios de acceso y de ámbito, consulte [Roles de seguridad](https://docs.microsoft.com/dynamics365/customer-engagement/admin/security-roles-privileges#security-roles).
 
 ### <a name="create-a-custom-security-role"></a>Crear un rol de seguridad personalizado
 1. En el sitio [!INCLUDE [powerapps](../../includes/powerapps.md)] seleccione **Aplicaciones**, junto a la aplicación basada en modelo que desea compartir, seleccione **...** y luego seleccione **Compartir**.
 
-2. En el cuadro de diálogo **Compartir esta aplicación**, en **Crear un rol de seguridad**, seleccione **Configuración de seguridad**.
+2. Seleccione la aplicación y expanda la lista de roles de seguridad.
 
 3. En la página **Todos los roles**, seleccione **Nuevo**.  
 
@@ -88,6 +84,9 @@ Para obtener más información sobre los privilegios de acceso y de ámbito, con
 7. Puesto que la aplicación de cuidado de mascotas también tiene una relación con la entidad Cuenta, seleccione la pestaña **Registros principales** y, en la fila **Cuenta** seleccione **Leer** cuatro veces hasta que se haya seleccionado el ámbito global de la organización ![Ámbito global de la organización](media/share-model-driven-app/organizational-scope-privilege.png). 
 
 8. Seleccione la pestaña **Personalización** y luego en la lista de privilegios seleccione el privilegio **Leer** junto a **Aplicación basada en modelo** para seleccionar el ámbito de organización. ![Ámbito global de la organización](media/share-model-driven-app/organizational-scope-privilege.png).
+
+    > [!div class="mx-imgBorder"] 
+    > ![Seleccionar roles de seguridad para la aplicación](media/app-access-specific-use.png)
 
 9. Seleccione **Guardar y cerrar**. 
 
@@ -109,49 +108,33 @@ Los roles de seguridad controlan el acceso del usuario a los datos a través de 
 1. En el cuadro de diálogo **Compartir esta aplicación**, en **Asignar usuarios al rol de seguridad**, seleccione **Usuarios de seguridad**.
 2. En la lista que se muestra, seleccione los usuarios que sean cuidadores de mascotas y luego, en la barra de comandos, seleccione **Administrar roles**.
 
+3. Haga clic en **Administrar roles de seguridad**.
     > [!div class="mx-imgBorder"] 
-    > ![Administrar roles](media/share-model-driven-app/select-users-for-security-roles.png)
+    > ![](media/share-model-driven-app/manage-roles.png "Manage roles")
 
-3. En el cuadro de diálogo **Administrar roles de usuario**, seleccione el rol de seguridad **Técnicos del cuidado de mascotas** que creó antes y seleccione **Aceptar**.
+4. En la página **Todos los roles**, seleccione **Usuario de Common Data Service**, luego haga clic en **Acciones** y luego en **Copiar rol**. 
 
-#### <a name="assign-a-security-role-to-pet-grooming-schedulers"></a>Asignar un rol de seguridad a los programadores del cuidado de mascotas
-1. En el cuadro de diálogo **Compartir esta aplicación**, en **Asignar usuarios a un rol de seguridad**, seleccione **Usuarios de seguridad**.
-2. En la lista que se muestra, seleccione los programadores del cuidado de mascotas.
-3. Seleccione **Administrar roles**.
-4. En el cuadro de diálogo **Administrar roles de usuario**, seleccione el rol de seguridad **Programadores del cuidado de mascotas** que creó antes y seleccione **Aceptar**.
+> [!TIP]
+> También puede crear una nueva función vacía en lugar de copiar una función existente. 
 
+6. En el cuadro **Nombre de rol** proporcione un rol descriptivo como *Mi acceso a la aplicación personalizada*.  Haga clic en **Aceptar**.
 
-## <a name="add-security-roles-to-the-app"></a>Agregar roles de seguridad a la aplicación
-Es necesario asignar uno o varios roles de seguridad a la aplicación. Los usuarios tendrán acceso a aplicaciones en función de los roles de seguridad a los que se les asigne.
-1. En el cuadro de diálogo **Compartir esta aplicación**, en **Agregar el rol de seguridad a la aplicación**, seleccione **Mis aplicaciones**.
-2. En la esquina inferior derecha de la ventana de la aplicación de la aplicación, seleccione **Más opciones (...)** y después seleccione **Administrar roles**.
+7. En el diseñador de roles de seguridad, seleccione las acciones, como leer, escribir o eliminar, y los [niveles de acceso](https://docs.microsoft.com/power-platform/admin/security-roles-privileges#security-roles). Los niveles de acceso determinan la profundidad o altura dentro de la jerarquía de entornos en la que el usuario puede realizar una acción determinada. 
 
-    ![Administrar roles para la aplicación](media/share-model-driven-app/manage-roles.png)
+8. Seleccione la pestaña **Entidades personalizadas** y, a continuación, localice la entidad personalizada que utiliza en su aplicación. 
 
-4. En la sección **Roles**, puede elegir si va a conceder a la aplicación acceso a todos los roles de seguridad o a roles seleccionados. Para acceder a la aplicación básica, seleccione el rol de seguridad **Usuario Common Data Service**. Para un acceso más específico, seleccione otro estándar o un rol de seguridad personalizado o de personalización. Por ejemplo, seleccione los roles **Programadores de cuidado de mascotas** y **Técnicos de cuidado de mascotas** que creó anteriormente en esta sección. 
+9.  En la fila de su entidad personalizada, establezca niveles de acceso para cada permiso.  
 
-    > [!div class="mx-imgBorder"] 
-    > ![Seleccionar roles de seguridad para la aplicación](media/share-model-driven-app/app-security-roles.png)
+10. Repita para otras entidades utilizadas en su aplicación. 
 
-5. Seleccione **Guardar**. 
- 
+11. Seleccione la pestaña **Personalización** y asegúrese de que el privilegio **Lectura** está establecido en **Aplicación basada en modelo** para que el nivel de acceso de la organización. ![Ámbito global de la organización](media/share-model-driven-app/organizational-scope-privilege.png) esté seleccionado.
 
     > [!IMPORTANT]
-    > Los usuarios a quienes se les haya otorgado los privilegios **Crear** o **Escribir** para la **Aplicación basada en modelo**, tendrán acceso a todas las aplicaciones del entorno, incluso cuando no formen parte de ningún rol que tenga acceso a la aplicación.
+    > Los usuarios que tengan otorgados **Lectura**, **Creación** y **Escritura** para el privilegio **Aplicación basada en modelo** tendrán acceso a todas las aplicaciones del entorno, incluso cuando no forman parte de ningún rol que tenga acceso a la aplicación.
     > ![Crear y escribir con privilegio de aplicación basada en modelo](media/app-access-cds.png)
 
-## <a name="share-the-link-to-your-app"></a>Compartir el vínculo a su aplicación
-1. En el cuadro de diálogo **Compartir esta aplicación**, en **Compartir el vínculo a su aplicación directamente con usuarios**, copie la dirección URL que se muestra.
-   > [!div class="mx-imgBorder"] 
-   > ![Compartir el vínculo](media/share-model-driven-app/share-model-driven-url.png)
+12. Seleccione **Guardar y cerrar**. 
 
-2. Seleccione **Cerrar**.
-3. Pegue la dirección URL de la aplicación en una ubicación para que los usuarios puedan acceder a ella, como publicándola en un sitio de SharePoint o enviándola por correo electrónico.
-
-También puede buscar la dirección URL de la aplicación en la pestaña **Propiedades** del diseñador de aplicaciones. 
-
-> [!div class="mx-imgBorder"] 
-> ![Copiar URL de la aplicación](media/share-model-driven-app/app-designer-copy-web-url.png)
 
 ## <a name="about-predefined-security-roles"></a>Acerca de los roles de seguridad predefinidos
 Estos roles predefinidos están disponibles con un entorno de [!INCLUDE [powerapps](../../includes/powerapps.md)].
@@ -174,5 +157,6 @@ Los administradores pueden usar los grupos de Azure Active Directory (Azure AD) 
 ### <a name="see-also"></a>Vea también
 [Ejecutar una aplicación controlada por modelos en un dispositivo móvil](../../user/run-app-client-model-driven.md)
 
+[Crear usuarios y asignar roles de seguridad](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles)
 
 

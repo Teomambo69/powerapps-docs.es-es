@@ -4,8 +4,8 @@ description: Use InvalidPluginExecutionException al publicar errores en el conte
 services: ''
 suite: powerapps
 documentationcenter: na
-author: jowells
-manager: austinj
+author: JimDaly
+manager: ryjones
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 1/15/2019
-ms.author: jowells
+ms.date: 3/5/2020
+ms.author: JimDaly
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c4ccc11cf09c00a2430e736d6e8ab6f532dee8e6
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0657e9b39713f4f11d68daac1c60fa144dc6ab08
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749390"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109141"
 ---
 # <a name="use-invalidpluginexecutionexception-in-plug-ins-and-workflow-activities"></a>Utilizar InvalidPluginExecutionException en actividades de complementos y de flujo de trabajo
 
@@ -37,72 +37,22 @@ ms.locfileid: "2749390"
 
 ## <a name="symptoms"></a>Síntomas
 
-Si un complementos sincrónico devuelve a la plataforma una excepción que no sea <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException>, el cuadro de diálogo de error se muestra al usuario con el mensaje de excepción <xref:System.Exception.Message> y el seguimiento de la pila. Esto proporciona una experiencia hostil de usuario ya que es probable que ya sea una situación de frustración.
+Si un complemento sincrónico devuelve a la plataforma una excepción que no sea <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException>, en un cliente de Power Apps se mostrará un error al usuario con el mensaje de la excepción <xref:System.Exception.Message> y el seguimiento de la pila. Esto proporciona una experiencia hostil de usuario ya que es probable que ya sea una situación de frustración.
+
+Si está usando <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException> para cancelar intencionalmente la operación debido a un problema de lógica de validación de datos, debe proporcionar orientación aplicable al usuario de la aplicación para que pueda corregir el problema y continuar.
+
+Si el error es inesperado, aún se recomienda detectar el error y convertirlo en un <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException> para que las aplicaciones puedan mostrar un mensaje de error amigable con orientación para ayudar a un usuario o personal técnico a identificar rápidamente el problema.
 
 <a name='guidance'></a>
 
 ## <a name="guidance"></a>Instrucciones
 
-Se recomienda que los complementos devuelven solo <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException> a la plataforma por las siguientes razones:
+Los complementos solo deben devolver un <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException> por las siguientes razones:
 
-- Aparece un mensaje descriptivo para el usuario
+- Mostrar un mensaje útil al usuario
 - Se evita que aumente el archivo de seguimiento/registro de eventos
 
-Las excepciones no controladas de otros tipos deben producirse solo cuando los errores inesperados se encuentran en tiempo de ejecución. Los siguientes son ejemplos de métodos válidos.
-
-- Generar InvalidPluginExecutionException sin vigilar
-
-    ```csharp
-    public void Execute(IServiceProvider serviceProvider)
-    {
-        // Invocation of a valid scenario that throws an appropriate exception type
-        ThrowPluginException();
-    }
-    
-    private void ThrowPluginException()
-    {
-        throw new InvalidPluginExecutionException("Throwing a plug-in exception in a member method body");
-    }
-    ```
-
-- Las excepciones sin vigilar administradas o generadas como una nueva InvalidPluginExecutionException
-
-    ```csharp
-    public void Execute(IServiceProvider serviceProvider)
-    {
-        try
-        {
-            ThrowGuardedMemberException();
-        }
-        catch (CustomException ex)
-        {
-            throw new InvalidPluginExecutionException("Unable to save the contact. This is likely caused by..."), ex);
-        }
-    
-        // Invocation of a valid scenario in a member method
-        HandleMemberException();
-    }
-    
-    private void HandleMemberException()
-    {
-        try
-        {
-            // Invocation of a scenario where CustomException is thrown
-            ThrowGuardedMemberException();
-        }
-        catch (CustomException ex)
-        {
-            // Handle the exception.
-            // Note - Debug.WriteLine is likely not the appropriate way to handle the exception. This is for demonstration purposes only
-            Debug.WriteLine(ex.Message);
-        }
-    }
-    
-    private void ThrowGuardedMemberException()
-    {
-        throw new CustomException("Throwing a custom exception in a guarded member");
-    }
-    ```
+No convertir el mensaje en un <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException> generará un error `IsvUnExpected` sin mensaje mostrado al usuario desde un cliente de Power Apps.
 
 <a name='problem'></a>
 
@@ -111,52 +61,10 @@ Las excepciones no controladas de otros tipos deben producirse solo cuando los e
 > [!WARNING]
 > Estos patrones deben evitarse.
 
-- Generación de excepciones sin vigilar
+No use HTML dentro del texto del mensaje de error. 
 
-    ```csharp
-    public void Execute(IServiceProvider serviceProvider)
-    {
-        // Invocation of a scenario where violation occurs during an unguarded throw
-        UnguardedMemberThrowException();
-    }
-    
-    private void UnguardedMemberThrowException()
-    {
-        throw new CustomException("Throwing an unguarded custom exception in a member method body");
-    }
-    ```
+Las aplicaciones web que acceden a datos CDS deben codificar a HTML cualquier texto de mensaje de error antes de mostrarlo a un usuario. Esto evitará que se procese cualquier HTML en su mensaje como lo desea. Solo mostrará el código HTML.
 
-- Excepción vigilada que se vuelve a generar sin vigilancia
-
-    ```csharp
-    public void Execute(IServiceProvider serviceProvider)
-    {
-        // Invocation of a scenario where violation occurs during an unguarded rethrow
-        UnguardedMemberRethrowException();
-    }
-    
-    private void UnguardedMemberRethrowException()
-    {
-        try
-        {
-            // Guarded invoking of a method member that throws a custom exception
-            GuardedMemberThrowException();
-        }
-        catch (CustomException ex)
-        {
-            // Handle and rethrow
-            Debug.WriteLine(ex.Message);
-    
-            // This is where the issue occurs
-            throw;
-        }
-    }
-    
-    private void GuardedMemberThrowException()
-    {
-        throw new CustomException("Throwing a guarded custom exception in a member method body");
-    }
-    ```
 
 <a name='seealso'></a>
 

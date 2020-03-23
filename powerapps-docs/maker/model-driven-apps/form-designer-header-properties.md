@@ -21,19 +21,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1832d3bd9fc222f3c71089ae386e455a53f512f7
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 67173c01bc6a96f0ada55c62688db76ca0af0596
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2868179"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069691"
 ---
 # <a name="configure-header-properties-in-the-form-designer"></a>Configurar propiedades de encabezado en el diseñador de formularios
 
 Los creadores pueden controlar la densidad de encabezados de formularios basados en modelo para que se ajusten a las necesidades de cualquiera que utilice el formulario.
-
-> [!NOTE]
-> Esta característica solo está disponible con entornos suscritos a las características de la versión de vista previa temprana de 2019 oleada 2. Más información: [Adhesión temprana a la segunda oleada de la versión 2019](https://docs.microsoft.com/power-platform/admin/preview-october-2019-updates) 
 
 ## <a name="high-density-header"></a>Encabezado de alta densidad
 
@@ -147,6 +144,10 @@ El encabezado de alta densidad muestra valores de solo lectura de campos en el e
 El mensaje informa al creador de que está intentando mover un campo del cuerpo del formulario al encabezado del formulario. Si l hace, lo convertirá en de sólo lectura. Da al creador la opción de mover el campo al encabezado o de agregar una copia del campo al encabezado. Si mueve el campo al encabezado hará que el campo no esté disponible en la ubicación original en el cuerpo del formulario para que los usuarios lo editen. Si agrega una copia del campo al encabezado se quedará el campo en la ubicación original tal como está, garantizando que los usuarios puedan continuar para editándolo en el cuerpo del formulario.
 
 ### <a name="form-headers-now-default-to-high-density-to-display-more-data-use-the-new-form-designer-to-edit-header-density"></a>Los encabezados del formulario se establecen de forma predeterminada ahora como de alta densidad para mostrar más datos. Use el nuevo diseñador de formularios para editar la densidad de encabezado.  
+Este mensaje se muestra en el diseñador de formularios clásico cuando un creador abre un formulario principal para editar y está configurado para usar el encabezado de baja densidad.  
+  
+Este mensaje ayuda a aumentar el conocimiento sobre el encabezado de alta densidad y sus beneficios y que los creadores deben usar el nuevo diseñador de formularios para configurar la densidad de encabezado.  
+
 Este mensaje se muestra en el diseñador de formularios clásico cuando un creador abre un formulario principal para editar y está configurado para usar el encabezado de baja densidad. 
 
 El mensaje ayuda a aumentar el conocimiento sobre el encabezado de alta densidad y sus beneficios y que los creadores deben usar el nuevo diseñador de formularios para configurar la densidad de encabezado.  

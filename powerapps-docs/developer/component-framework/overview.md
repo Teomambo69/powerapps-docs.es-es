@@ -12,25 +12,26 @@ ms.custom:
 ms.topic: article
 ms.assetid: 7923e36d-3640-49f7-9f2f-c97358a632db
 ms.author: nabuthuk
-ms.openlocfilehash: 6401bead52f3a36fdd51595cb1fdf38510438459
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: cc809d81b7b9adf7327aa9cb8f74515816022118
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909205"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091235"
 ---
 # <a name="power-apps-component-framework-overview"></a>Información general sobre Power Apps component framework
 
-Power Apps component framework permite a los desarrolladores profesionales y creadores de aplicaciones crear componentes de código para aplicaciones de lienzo y basadas en modelos (versión preliminar experimental) para proporcionar una experiencia de usuario mejorada para que los usuarios trabajen con datos en formularios, vistas y paneles. Por ejemplo:
+Power Apps component framework permite a los desarrolladores profesionales y creadores de aplicaciones crear componentes de código para aplicaciones basadas en modelo y aplicaciones de lienzo (versión preliminar pública) para proporcionar una experiencia de usuario mejorada para que los usuarios trabajen con datos en formularios, vistas y paneles. Por ejemplo:
 
 - Reemplace un campo que muestre un valor de texto numérico con un componente de código `dial` o `slider`.
 - Transforme una lista en una experiencia visual completamente diferente enlazada al conjunto de datos como un `Calendar` o `Map`.
 
 > [!IMPORTANT]
-> - Power Apps component framework está en vista previa piloto para aplicaciones de lienzo y en GA para aplicaciones basadas en modelo. Esto implica que todas las API que son compatibles con las aplicaciones basadas en modelo podrían no admitirse en aplicaciones de lienzo.
+> - PowerApps component framework está en una versión preliminar pública para aplicaciones de lienzo y generalmente está disponible para aplicaciones basadas en modelo. Esto implica que todas las API que son compatibles con las aplicaciones basadas en modelo podrían no admitirse en aplicaciones de lienzo.
 > - De forma predeterminada Power Apps component framework está habilitado para las aplicaciones basadas en modelo. Para habilitar esta función para aplicaciones de lienzo, consulte [Componentes de código para aplicaciones de lienzo](component-framework-for-canvas-apps.md).
 > - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
-> - Las aplicaciones de lienzo sólo admiten el tipo *campo* de componentes de código, y no el tipo *conjunto de datos*.
+> - Power Apps component framework solo funciona en Interfaz unificada y no en el cliente web. 
+> - Power Apps component framework no funciona para instancias locales. 
 
 ## <a name="how-is-it-different-from-web-resources"></a>¿En qué se diferencia de los recursos web?
 
@@ -48,6 +49,18 @@ Los componentes de código pueden ser reusados muchas veces en diferentes entida
 - Optimiza para el rendimiento.
 - Se puede volver a utilizar
 - Agrupe todos los archivos en un único archivo de solución.
+
+## <a name="licensing"></a>Licencias
+
+Los requisitos de licencia de Power Apps component framework se ajustan a los de los conectores y componentes existentes y se basan en el tipo de datos y conexiones utilizados en su aplicación. Más información: [Precios de Power Apps](https://powerapps.microsoft.com/pricing/). Para ajustarse a los requisitos de licencia, clasificaremos los componentes del código en dos tipos:
+
+- Componentes de código que se conectan a servicios o datos externos directamente y no a través de conectores. Cuando estos componentes se usan en una aplicación, la aplicación se vuelve premium y los usuarios finales deben tener licencias de **Power Apps**.
+- Componentes de código que no se conectan a servicios o datos externos. Cuando estos componentes se usan en una aplicación que usa características estándar, la aplicación sigue siendo estándar y los usuarios finales deben tener una licencia mínima para **Office 365**.
+
+> [!NOTE]
+> Si actualmente está utilizando componentes de código en aplicaciones basadas en modelo conectadas a Common Data Service, los usuarios finales requerirán licencias de **Power Apps**.
+
+Con la disponibilidad general del marco de trabajo, los desarrolladores de componentes de código podrán clasificar los componentes como parte del manifiesto de componentes para que los creadores puedan ver qué componentes son premium.
 
 ## <a name="related-topics"></a>Temas relacionados
 

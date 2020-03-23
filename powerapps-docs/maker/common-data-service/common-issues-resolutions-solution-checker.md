@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9859fd06ca31ed44d22474cd92491fc3194252c6
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: cf8fdf1b14ef7bbc503c49fac217bb071bd56305
+ms.sourcegitcommit: 4f2e9e8f9bd3204ca9eee9e2a46f797c957c55ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861755"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029786"
 ---
 # <a name="common-issues-and-resolutions-for-solution-checker"></a>Problemas y soluciones comunes para el comprobador de soluciones
 
@@ -220,7 +220,7 @@ Si una solución contiene un componente del flujo de proceso de negocio con el e
 
 Referencia [Artículo de KB #4337537: Exportación no válida - Falta entidad de proceso de negocio](https://support.microsoft.com/en-hk/help/4337537/invalid-export-business-process-entity-missing) para obtener más información sobre el problema y pasos para la resolución.
 
-## <a name="solution-cchecker-fails-to-export-patched-solutions"></a>El comprobador de soluciones no exporta las soluciones con parches
+## <a name="solution-checker-fails-to-export-patched-solutions"></a>El Comprobador de soluciones no exporta las soluciones con parches
 
 Si a una solución se le han aplicado [parches](https://docs.microsoft.com/powerapps/developer/common-data-service/create-patches-simplify-solution-updates), el Comprobador de soluciones no podrá exportar la solución para analizarla. Cuando se aplicaron parches a una solución, la solución original pasa a bloquearse y no se puede cambiarla o exportarla mientras haya revisiones dependientes que existan en la organización que identifica la solución como solución primaria.
 

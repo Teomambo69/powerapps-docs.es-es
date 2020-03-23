@@ -19,18 +19,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ce1c313c5c3b76f57d3ed2c04acba048a0772fe2
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3aa755e0f6f0d5d403c6a4d1c6d585009aa912b2
+ms.sourcegitcommit: 04ba6f3773b23e4e89c23269b84707d19e9ed04c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749649"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "3094386"
 ---
 # <a name="create-and-update-option-sets-using-the-web-api"></a>Crear y actualizar conjuntos de opciones mediante la API web
 
 Normalmente, usa conjuntos de opciones *globales* para definir campos de manera que los campos diferentes puedan compartir el mismo conjunto de opciones, que se mantiene en una ubicación. A diferencia de conjuntos de opciones *locales* que se definen solo para un atributo específico, puede volver a usar conjuntos de opciones globales. También los verá usados en los parámetros de solicitudes de manera similar a una enumeración.  
   
-Cuando define un conjunto de opciones global mediante una solicitud POST en *URI de organización*`/api/data/v9.0/GlobalOptionSetDefinitions`, se recomienda dejar que el sistema asigne un valor. Realice esta acción al pasar un valor **null** al crear la nueva instancia de `OptionMetadata`. Al definir una opción, contendrá un determinada prefijo de valor de opción específico del contexto del editor establecido para la solución en la que se crea el conjunto de opciones. Este prefijo ayuda a reducir la oportunidad de crear conjuntos de opciones duplicados para una solución administrada, y en cualquier conjunto de opciones que están definidos en organizaciones donde está instalada la solución administrada. Para obtener más información, consulte [Combinar opciones del conjunto de opciones](../understand-managed-solutions-merged.md#merge-option-set-options).
+Cuando define un conjunto de opciones global mediante una solicitud POST en *URI de organización*`/api/data/v9.0/GlobalOptionSetDefinitions`, se recomienda dejar que el sistema asigne un valor. Realice esta acción al pasar un valor **null** al crear la nueva instancia de `OptionMetadata`. Al definir una opción, contendrá un determinada prefijo de valor de opción específico del contexto del editor establecido para la solución en la que se crea el conjunto de opciones. Este prefijo ayuda a reducir la oportunidad de crear conjuntos de opciones duplicados para una solución administrada, y en cualquier conjunto de opciones que están definidos en organizaciones donde está instalada la solución administrada. Para obtener más información, consulte [Combinar opciones del conjunto de opciones](../../../maker/common-data-service/how-managed-solutions-merged.md#merge-option-set-options).
 
  ## <a name="messages"></a>Mensajes  
  La siguiente tabla enumera los mensajes que se pueden usar con los conjuntos de opciones globales.  

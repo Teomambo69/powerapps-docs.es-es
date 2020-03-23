@@ -3,9 +3,13 @@
     - name: Información general
       href: overview.md
     - name: Qué son los componentes de código
-      href: custom-controls-overview.md
-    - name: Componentes de código para aplicaciones de lienzo
-      href: component-framework-for-canvas-apps.md
+      items:
+        - name: Información general
+          href: custom-controls-overview.md
+        - name: Componentes de código para aplicaciones basadas en modelo
+          href: code-components-model-driven-apps.md
+        - name: Componentes de código para aplicaciones de lienzo
+          href: component-framework-for-canvas-apps.md
     - name: Obtener Power Apps CLI
       href: get-powerapps-cli.md
     - name: Tutorial
@@ -34,6 +38,8 @@
           href: issues-and-workarounds.md
         - name: Limitaciones
           href: limitations.md
+    - name: P + F
+      href: faq.md
     - name: Componente de ejemplo
       items:
         - name: ¿Cómo usar los componentes de ejemplo?
@@ -42,8 +48,10 @@
           href: sample-controls/angular-flip-control.md
         - name: Componente API de estado de control
           href: sample-controls/control-state-api.md
-        - name: Componente de cuadrícula de conjunto de datos
+        - name: Componente de cuadrícula de conjunto de datos para aplicaciones basadas en modelo
           href: sample-controls/data-set-grid-control.md
+        - name: Componente de conjunto de datos para aplicaciones de lienzo
+          href: sample-controls/data-set-component-canvas.md
         - name: Formato del componente API
           href: sample-controls/formatting-api-control.md
         - name: Componente IFRAME
@@ -340,7 +348,13 @@
               href: manifest-schema-reference/feature-usage.md
             - name: uses-feature
               href: manifest-schema-reference/uses-feature.md
-    - name: Recursos de la comunidad
-      href: community-resources.md
+    - name: Recursos
+      items:
+        - name: Recursos de la comunidad
+          href: community-resources.md
+        - name: Foro de la comunidad
+          href: 'https://aka.ms/PCFForum'
+        - name: Ideas destacadas
+          href: 'https://aka.ms/PCFIdea'
     - name: Compartir sus comentarios
       href: share-your-feedback-for-pcf.md

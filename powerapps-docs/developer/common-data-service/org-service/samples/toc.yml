@@ -272,6 +272,8 @@
       href: retrieve-time-zone-information.md
 - name: Consultar datos
   items:
+    - name: Consultar datos con LINQ
+      href: query-using-linq.md
     - name: Usar QueryExpression con una cookie de paginación
       href: use-queryexpression-with-a-paging-cookie.md
     - name: Recuperación múltiple con la clase QueryExpression

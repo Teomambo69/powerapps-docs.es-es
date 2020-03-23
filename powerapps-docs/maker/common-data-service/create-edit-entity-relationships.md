@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f96485d0c47da3b1d48ed9e1cafad89984133535
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 89a28060f7894afe49d0abe36b4461d6e2cbc474
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866023"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040411"
 ---
 # <a name="entity-relationships-overview"></a>Información general sobre relaciones entre entidades
 Las relaciones de entidad definen cómo pueden relacionarse los registros entre sí en la base de datos. En el nivel más sencillo, si agrega un campo de búsqueda a una entidad se crea una nueva relación 1:N (uno a varios) entre las dos entidades y permite colocar el campo de búsqueda en un formulario. Con el campo de búsqueda, los usuarios pueden asociar varios registros *secundarios* de la entidad a un solo registro de la entidad *primaria*.  
@@ -108,6 +108,13 @@ Estos son las acciones que pueden desencadenar determinados comportamientos:
 |**Combinar**|¿Qué debe suceder cuando un registro de entidad principal se combina?|Poner todas en cascada<br />No poner ninguna en cascada|
 |**Vista de informe**|¿Cuál es el comportamiento deseado de la vista de informe asociada a esta relación? |Poner todas en cascada<br />Poner activa en cascada<br />Poner en cascada las que pertenecen al usuario<br />No poner ninguna en cascada|
 
+> [!NOTE]
+> Las acciones Asignar, Eliminar, Combinar y Cambiar primario no se ejecutarán en las siguientes situaciones:
+> - Si el registro primario original y la acción solicitada contienen los mismos valores. Ejemplo: Intentar desencadenar una Asignación y elegir un contacto que ya sea el propietario del registro.
+> - Intentar realizar una acción en un registro primario que ya está ejecutando una acción en cascada
+
+> [!NOTE]
+> Al ejecutar una asignación, los flujos de trabajo o las reglas de negocio que están actualmente activos en los registros se desactivarán automáticamente cuando ocurra la reasignación. El nuevo propietario del registro deberá reactivar el flujo de trabajo o la regla de negocio si desea continuar usándolo.
 
 ### <a name="parental-entity-relationships"></a>Relaciones jerárquicas entre entidades
 Cada par de entidades que pueden tener una relación de 1:N pueden tener varias relaciones de 1:N entre ellas. Sin embargo, generalmente solo una de esas relaciones se puede considerar como una relación jerárquica entre entidades.

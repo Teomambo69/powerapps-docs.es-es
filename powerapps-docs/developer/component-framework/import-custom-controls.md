@@ -9,12 +9,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.topic: article
 author: Nkrb
-ms.openlocfilehash: 46bfdf070970e89cbe6eeb9aa4d3864ab493794b
-ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
+ms.openlocfilehash: 8a84d9b52f913f3c7f6da2bf07e11124277f2f52
+ms.sourcegitcommit: 5b6e6b41a3fc4d7f1aea46ec66c086b784efacac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3012661"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3095490"
 ---
 # <a name="package-a-code-component"></a>Empaquete un componente de código
 
@@ -22,7 +22,7 @@ Este tema describe cómo importar los componentes de código en Common Data Serv
 
 Para crear e importar un archivo de solución:
 
-1. Cree una nueva carpeta dentro de la carpeta que tiene el archivo `cdsproj` archivar y asígnele el nombre **Soluciones** (o cualquier nombre que elija) con el comando `mkdir Solutions`. Navegue al directorio utilizando el comando `cd Solutions`.
+1. Cree una nueva carpeta dentro de la carpeta que tiene el archivo `pcfproj` archivar y asígnele el nombre **Soluciones** (o cualquier nombre que elija) con el comando `mkdir Solutions`. Navegue al directorio utilizando el comando `cd Solutions`.
 
 2. Cree nuevos proyectos de soluciones con el siguiente comando. El proyecto de solución se usa para empaquetar el componente de código de un archivo zip de la solución que se usa para importar a Common Data Service.
    

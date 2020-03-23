@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1b7bec1539b2b3e45df4465cc28fa9a9ba7eb357
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 50e923cb096870645980e358fb8a0065513226b4
+ms.sourcegitcommit: 04ba6f3773b23e4e89c23269b84707d19e9ed04c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017385"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "3094442"
 ---
 # <a name="customize-option-sets"></a>Conjunto de opciones personalizadas
 
 Normalmente, usa conjuntos de opciones *globales* para definir campos de manera que los campos diferentes puedan compartir el mismo conjunto de opciones, que se mantiene en una ubicación. A diferencia de conjuntos de opciones *locales* que se definen solo para un atributo específico, puede volver a usar conjuntos de opciones globales. También los verá usados en los parámetros de solicitudes de manera similar a una enumeración.  
   
-Cuando define un conjunto de opciones glogal mediante <xref:Microsoft.Xrm.Sdk.Messages.CreateOptionSetRequest>, se recomienda dejar que el sistema asigne un valor. Realice esta acción al pasar un valor **null** al crear la nueva instancia de `OptionMetadata`. Al definir una opción, contendrá un determinada prefijo de valor de opción específico del contexto del editor establecido para la solución en la que se crea el conjunto de opciones. Este prefijo ayuda a reducir la oportunidad de crear conjuntos de opciones duplicados para una solución administrada, y en cualquier conjunto de opciones que están definidos en organizaciones donde está instalada la solución administrada. Para obtener más información, consulte [Combinar opciones del conjunto de opciones](../understand-managed-solutions-merged.md#merge-option-set-options).  
+Cuando define un conjunto de opciones glogal mediante <xref:Microsoft.Xrm.Sdk.Messages.CreateOptionSetRequest>, se recomienda dejar que el sistema asigne un valor. Realice esta acción al pasar un valor **null** al crear la nueva instancia de `OptionMetadata`. Al definir una opción, contendrá un determinada prefijo de valor de opción específico del contexto del editor establecido para la solución en la que se crea el conjunto de opciones. Este prefijo ayuda a reducir la oportunidad de crear conjuntos de opciones duplicados para una solución administrada, y en cualquier conjunto de opciones que están definidos en organizaciones donde está instalada la solución administrada. Para obtener más información, consulte [Combinar opciones del conjunto de opciones](../../../maker/common-data-service/how-managed-solutions-merged.md).  
 
 Puede descargar el ejemplo desde [aquí](https://github.com/microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/WorkWithOptionSets).
 

@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: af13a83b675ad097e532b0c04eda9766e6c1818e
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 43cfc92c988ea2d01e88c850b0845bcf276c25e5
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017436"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091215"
 ---
 # <a name="implementing-a-iframe-component"></a>Implementar un componente IFRAME
 
@@ -24,7 +24,7 @@ Este ejemplo describe cómo vincular un componente de código a distintos campos
 
 ## <a name="available-for"></a>Disponible para 
 
-Aplicaciones basadas en modelo y aplicaciones de lienzo (vista previa piloto) 
+Aplicaciones basadas en modelos y aplicaciones de lienzo (vista previa pública) 
 
 ## <a name="manifest"></a>Manifiesto
 

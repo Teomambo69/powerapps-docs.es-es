@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 4c657afc77e710769a803d313b36a7437c3e3f9a
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: e354a3a784a984e070f5948b4b14c9eb4c32417b
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977587"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069559"
 ---
 # <a name="add-a-custom-domain-name"></a>Agregue un nombre de dominio personalizado
 
@@ -31,10 +31,12 @@ Un dominio personalizado puede ayudar a sus clientes a encontrar los recursos de
      > [!Note]
      > El certificado SSL debe cumplir los siguientes requisitos:
      > - Debe estar firmado por una entidad de certificación de confianza.
-     > - Debe haber sido exportado como un archivo PFX protegido con contraseña.
+     > - [Exportado](https://docs.microsoft.com/powershell/module/pkiclient/export-pfxcertificate?view=win10-ps) como un archivo PFX protegido con contraseña.
      > - Debe contener una clave privada de al menos 2048 bits de longitud.
      > - Debe contener todos los certificados intermedios de la cadena de certificados.
      > - Debe estar habilitado para SHA2; el soporte técnico de SHA1 ya no estará disponible en los exploradores más populares.
+     > 
+     > Los pasos para exportar el certificado SSL como un archivo PFX protegido con contraseña pueden variar según el proveedor de su certificado. Consulte con su proveedor de certificados para obtener recomendaciones. Por ejemplo, ciertos proveedores pueden sugerir utilizar la herramienta de terceros OpenSSL desde los sitios [OpenSSL](https://www.openssl.org/) o [Binarios de OpenSSL](https://wiki.openssl.org/index.php/Binaries). 
 
 4. Seleccione **Siguiente**.
 

@@ -2,8 +2,8 @@
 title: Códigos de error de servicio web (Common Data Service) | Microsoft Docs
 description: 'Este tema enumera los códigos de error que puede encontrar al depurar el código. '
 ms.custom: ''
-ms.date: 05/09/2019
-ms.reviewer: ''
+ms.date: 02/21/2020
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3ba89c9798286e8aaf8a2a068c99347452b0effa
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 5da0e8248a1a65115f6c3ae2d084a6a6dec56cac
+ms.sourcegitcommit: 0e41cc0c944e6b0ee22a7e183e40c52fd553b7be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861277"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "3081452"
 ---
 # <a name="web-service-error-codes"></a>Códigos de error de servicio web
 
@@ -35,6 +35,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 >
 > |Error|Mensaje|
 > |---|---|
+> |**Nombre**:<br />AADError<br />**Hex**:<br />80072559<br />**Número**:<br />-2147015335|Error de AAD|
 > |**Nombre**:<br />AccessDenied<br />**Hex**:<br />80048405<br />**Número**:<br />-2147187707|Acceso denegado.|
 > |**Nombre**:<br />AccessDeniedSharePointRecord<br />**Hex**:<br />80060904<br />**Número**:<br />-2147088124|Acceso denegado en registro SharePoint de Dynamics 365.|
 > |**Nombre**:<br />AccessTokenExpired<br />**Hex**:<br />8005F101<br />**Número**:<br />-2147094271|El recurso solicitado requiere la autenticación.|
@@ -68,6 +69,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />AggregateQueryRecordLimitExceeded<br />**Hex**:<br />8004E023<br />**Número**:<br />-2147164125|Se ha superado el límite máximo de registros. Reduzca el número de registros.|
 > |**Nombre**:<br />AlreadyLinkedToAnotherAttribute<br />**Hex**:<br />8004F0FE<br />**Número**:<br />-2147159810|El atributo vinculado proporcionado ya está vinculado a otro atributo.|
 > |**Nombre**:<br />AppConfigFeatureNotEnabled<br />**Hex**:<br />80072200<br />**Número**:<br />-2147016192|La característica de configuración de aplicaciones de personalización en la aplicación no está habilitada.|
+> |**Nombre**:<br />AppEntityLimitExceeded<br />**Hex**:<br />80048547<br />**Número**:<br />-2147187385|{0}|
 > |**Nombre**:<br />ApplicationMetadataConverterFailed<br />**Hex**:<br />8005F231<br />**Número**:<br />-2147093967|Lo sentimos, se ha producido un error. Vuelva a intentarlo o reinicie la aplicación.|
 > |**Nombre**:<br />ApplicationMetadatadaCreateFailed<br />**Hex**:<br />8005F233<br />**Número**:<br />-2147093965|Lo sentimos, se ha producido un error. Vuelva a intentarlo o reinicie la aplicación.|
 > |**Nombre**:<br />ApplicationMetadatadaNullData<br />**Hex**:<br />8005F232<br />**Número**:<br />-2147093966|Lo sentimos, se ha producido un error. Vuelva a intentarlo o reinicie la aplicación.|
@@ -107,7 +109,9 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />ArticleIsPublished<br />**Hex**:<br />800404fe<br />**Número**:<br />-2147220226|El artículo no se puede actualizar ni borrar porque está en estado publicado|
 > |**Nombre**:<br />AssociateProductFailureDifferentUom<br />**Hex**:<br />80061040<br />**Número**:<br />-2147086272|No se puede agregar el producto a la agrupación. Tiene que usar una unidad de producto que pertenezca a la unidad de venta del producto.|
 > |**Nombre**:<br />AssociationRoleOrdinalInvalid<br />**Hex**:<br />80048468<br />**Número**:<br />-2147187608|El ordinal del rol de asociación no es válido; debe ser 1 o 2.|
+> |**Nombre**:<br />AsyncAssignOperationOngoing<br />**Hex**:<br />80048555<br />**Número**:<br />-2147187371|Esta entidad se está asignando actualmente como parte de un trabajo de asignación en cascada asíncrono. Espere a que se complete el trabajo asincrónico antes de intentar asignar esta entidad nuevamente. (EntityId: {0}, EntityName: {1}, AsyncJobName: {2}, AsyncJobId: {3}, AsyncAssignOperationId: {4})|
 > |**Nombre**:<br />AsyncCommunicationError<br />**Hex**:<br />80044307<br />**Número**:<br />-2147204345|Un error de comunicación se produjo al procesar la operación asincrónica.|
+> |**Nombre**:<br />AsyncDeleteOperationOngoing<br />**Hex**:<br />80048549<br />**Número**:<br />-2147187383|Esta entidad se está eliminando actualmente como parte de un trabajo de eliminación en cascada asíncrono. Espere a que se complete el trabajo asincrónico antes de intentar eliminar esta entidad nuevamente. (EntityId: {0}, EntityName: {1}, AsyncJobName: {2}, AsyncJobId: {3}, AsyncDeleteOperationId: {4})|
 > |**Nombre**:<br />AsyncNetworkError<br />**Hex**:<br />80044306<br />**Número**:<br />-2147204346|Se ha producido un error al acceder a la red.|
 > |**Nombre**:<br />AsyncOperationCannotCancel<br />**Hex**:<br />80044F00<br />**Número**:<br />-2147201280|Este trabajo de sistema seleccionado no se pudo cancelar.|
 > |**Nombre**:<br />AsyncOperationCannotDeleteUnlessCompleted<br />**Hex**:<br />8004416a<br />**Número**:<br />-2147204758|No se puede eliminar la operación asincrónica a menos que se encuentre en estado completado.|
@@ -136,6 +140,9 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />AttributeFormulaDefinitionIsEmpty<br />**Hex**:<br />80060439<br />**Número**:<br />-2147089351|La fórmula está vacía.|
 > |**Nombre**:<br />AttributeIsNotCustomAttribute<br />**Hex**:<br />80047009<br />**Número**:<br />-2147192823|El atributo especificado no es un atributo personalizado|
 > |**Nombre**:<br />AttributeIsNotFacetable<br />**Hex**:<br />80060305<br />**Número**:<br />-2147089659|No se pueden establecer facetas de búsqueda de usuario de la entidad {0} porque atributo {1} no es facetable. Quítelo de la lista para continuar.|
+> |**Nombre**:<br />AttributeMapHasAnUnmanagedBaseInstance<br />**Hex**:<br />8004F223<br />**Número**:<br />-2147159517|Un AttributeMap, con Id: {0}, entre atributo {1} y {2} de entidad {3} y {4}, tiene una instancia base no administrada y, por lo tanto, no puede actualizarse con un solución administrada.|
+> |**Nombre**:<br />AttributeMapIsManagedException<br />**Hex**:<br />8004F224<br />**Número**:<br />-2147159516|No se puede eliminar el mapa de atributos administrados con Id: {0} entre atributo {1} y {2} de entidad {3} y {4}.|
+> |**Nombre**:<br />AttributeNameConflictWithNavigationPropertyName<br />**Hex**:<br />80048834<br />**Número**:<br />-2147186636|Nombre del Atributo {0} conflicto con el nombre de NavigationProerty en la entidad. Utilice un nombre único para el atributo.|
 > |**Nombre**:<br />AttributeNotCreatedForOfficeGraphError<br />**Hex**:<br />80044237<br />**Número**:<br />-2147204553|Este atributo no se puede crear porque la ayuda para habilitar el atributo para Office Graph no está disponible.|
 > |**Nombre**:<br />AttributeNotOfTypePicklist<br />**Hex**:<br />8004033c<br />**Número**:<br />-2147220676|Este atributo no está asignado a un atributo de lista desplegable, booleano o estado. Sin embargo, se ha incluido un elemento ListValueMap para ello.  Solucione esta incoherencia y vuelva a importar esta asignación de datos.|
 > |**Nombre**:<br />AttributeNotOfTypeReference<br />**Hex**:<br />80040390<br />**Número**:<br />-2147220592|Este atributo no tiene asignado un atributo de referencia. Sin embargo, se ha incluido ReferenceMap para ello.  Solucione esta incoherencia y vuelva a importar esta asignación de datos.|
@@ -158,6 +165,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />AutoDataCaptureAuthorizationFailureException<br />**Hex**:<br />80091042<br />**Número**:<br />-2146889662|No tiene la licencia de Office 365 adecuada para recibir correos electrónicos sin seguimiento. Póngase en contacto con el administrador del sistema.|
 > |**Nombre**:<br />AutoDataCaptureDisabledError<br />**Hex**:<br />80091041<br />**Número**:<br />-2146889663|La función de captura automática no está habilitada.|
 > |**Nombre**:<br />AutoDataCaptureResponseRetrievalFailureException<br />**Hex**:<br />80091043<br />**Número**:<br />-2146889661|Error al capturar correos electrónicos sin seguimiento de Exchange.|
+> |**Nombre**:<br />AutoNumberAttributeSequenceMissing<br />**Hex**:<br />80060885<br />**Número**:<br />-2147088251|Falta la secuencia SQL para el atributo de número automático {0} de entidad {1}. Ahora intentará volver a crear la secuencia SQL.|
 > |**Nombre**:<br />AzureApplicationIdNotFound<br />**Hex**:<br />8004F510<br />**Número**:<br />-2147158768|No encontramos el identificador de la aplicación {0} en su Azure Active Directory (Azure AD) con CorrelationID {1}. Asegúrese de que la aplicación está registrada en Azure AD.|
 > |**Nombre**:<br />AzureApplicationIdNotFoundInOrgDB<br />**Hex**:<br />8004F512<br />**Número**:<br />-2147158766|Id. de aplicación de Azure no encontrado. No hemos podido encontrar el identificador de aplicación {0} en la base de datos CRM. Resuelva el identificador de la aplicación y vuelva a enviar la actualización.|
 > |**Nombre**:<br />AzureOperationResponseTimedOut<br />**Hex**:<br />80061635<br />**Número**:<br />-2147084747|Una solicitud de operación de Azure no devolvió una respuesta en el período de tiempo de espera establecido. Intente de nuevo la operación o aumente el tiempo de espera proporcionado para la operación.|
@@ -304,7 +312,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />BusinessProcessFlowStepHasInvalidParent<br />**Hex**:<br />80060405<br />**Número**:<br />-2147089403|{0} el primario no es de tipo {1}|
 > |**Nombre**:<br />BusinessRuleEditorSupportsOnlyIfConditionBranch<br />**Hex**:<br />80060008<br />**Número**:<br />-2147090424|El editor de reglas de negocio solo admite una condición si. Solucione la regla.|
 > |**Nombre**:<br />BusinessUnitCannotBeDisabled<br />**Hex**:<br />80041d59<br />**Número**:<br />-2147213991|La unidad de negocio no se puede deshabilitar: no existe usuario activo con el rol de administrador de sistema fuera del subárbol de la unidad de negocio.|
-> |**Nombre**:<br />BusinessUnitDefaultTeamOwnsRecords<br />**Hex**:<br />80041d62<br />**Número**:<br />-2147213982|El equipo de unidad de negocio predeterminado es propietario de registros. No se puede eliminar una unidad de negocio.|
+> |**Nombre**:<br />BusinessUnitDefaultTeamOwnsRecords<br />**Hex**:<br />80041d62<br />**Número**:<br />-2147213982|El equipo de unidad de negocio predeterminado es propietario de registros. No se puede eliminar la unidad de negocio (ID = {0}).|
 > |**Nombre**:<br />BusinessUnitHasChildAndCannotBeDeleted<br />**Hex**:<br />80041d61<br />**Número**:<br />-2147213983|La unidad de negocio tiene una unidad de negocio secundaria y no se puede eliminar.|
 > |**Nombre**:<br />BusinessUnitIsNotDisabledAndCannotBeDeleted<br />**Hex**:<br />80041d60<br />**Número**:<br />-2147213984|No se puede eliminar ninguna unidad de negocio deshabilitada.|
 > |**Nombre**:<br />BusinessUnitQueuesAssociatedWithBU<br />**Hex**:<br />80072526<br />**Número**:<br />-2147015386|Hay {0} colas que hacen referencia a esta BusinessUnit con Id. ={1}, Nombre = {2}. Elimine debe las colas antes de eliminar esta unidad de negocio o asignarla a otra unidad de negocio.|
@@ -343,6 +351,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />CancelActiveChildCaseFirst<br />**Hex**:<br />8003F451<br />**Número**:<br />-2147224495|Cancele el caso secundario activo antes de cancelar el caso principal.|
 > |**Nombre**:<br />CannotAcceptEmail<br />**Hex**:<br />8005E20B<br />**Número**:<br />-2147098101|Microsoft Dynamics 365 no puede aceptar el correo electrónico que intenta entregar. Código de motivo: {0}.|
 > |**Nombre**:<br />CannotAccessExchangeOptinStatus<br />**Hex**:<br />80071110<br />**Número**:<br />-2147020528|El estado de Exchange optin no está accesible.|
+> |**Nombre**:<br />CannotActivateDeactivateOnAnyEntityRoutingRuleFCBOff<br />**Hex**:<br />8004F849<br />**Número**:<br />-2147157943|No se puede activar o desactivar el registro de conjunto de reglas de enrutamiento para las entidades (excepto la entidad de caso), ya que el bit de control de la característica para el enrutamiento de registros de entidad está deshabilitado.|
 > |**Nombre**:<br />CannotActivateMailboxForDisabledUserOrQueue<br />**Hex**:<br />8005E230<br />**Número**:<br />-2147098064|No se puede activar buzón porque el usuario o la cola asociados con el buzón están en estado deshabilitado. Solo se puede activar el buzón para usuario o cola activos.|
 > |**Nombre**:<br />CannotActivateRecord<br />**Hex**:<br />80081017<br />**Número**:<br />-2146955241|No puede activar una agrupación o familia de producto retirada. Además, no se puede activar un producto retirado que forma parte de una familia de productos.|
 > |**Nombre**:<br />CannotActOnBehalfOfAnotherUser<br />**Hex**:<br />8004A110<br />**Número**:<br />-2147180272|El usuario no tiene el privilegio para que actuar en nombre de otro usuario.|
@@ -372,13 +381,13 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />CannotAddRetiredProductToKit<br />**Hex**:<br />80061027<br />**Número**:<br />-2147086297|No se puede agregar un producto retirado a un kit.|
 > |**Nombre**:<br />CannotAddRetiredProductToPricelist<br />**Hex**:<br />80061009<br />**Número**:<br />-2147086327|Los productos retirados no se pueden agregar a listas de precios.|
 > |**Nombre**:<br />CannotAddSingleQueueEnabledEntityToQueue<br />**Hex**:<br />8004051c<br />**Número**:<br />-2147220196|El registro de entidad no se puede agregar a la cola ya que existe en otra cola.|
-> |**Nombre**:<br />CannotAddSolutionComponentWithoutRoots <br />**Hex**:<br />8004F018<br />**Número**:<br />-2147160040|Este artículo no es un componente de solución válido. Para obtener más información sobre cómo organizar los componentes de la solución, consulte la documentación del SDK de Microsoft Dynamics 365.|
+> |**Nombre**:<br />CannotAddSolutionComponentWithoutRoots<br />**Hex**:<br />8004F018<br />**Número**:<br />-2147160040|Este artículo no es un componente de solución válido. Para obtener más información sobre cómo organizar los componentes de la solución, consulte la documentación del SDK de Microsoft Dynamics 365.|
 > |**Nombre**:<br />CannotAddUserToMobileOfflineProfile<br />**Hex**:<br />800609A6<br />**Número**:<br />-2147087962|No se puede agregar este usuario a este perfil de Mobile Offline debido a que el rol del usuario no se encuentra o no dispone del privilegio Dynamics 365 para móviles.|
-> |**Nombre**:<br />CannotAddWorkflowActivationToSolution <br />**Hex**:<br />8004F00C<br />**Número**:<br />-2147160052|No se puede agregar la activación de flujo de trabajo a la solución |
+> |**Nombre**:<br />CannotAddWorkflowActivationToSolution<br />**Hex**:<br />8004F00C<br />**Número**:<br />-2147160052|No se puede agregar la activación de flujo de trabajo a la solución.|
 > |**Nombre**:<br />CannotAssignAddressBookFilters<br />**Hex**:<br />80048448<br />**Número**:<br />-2147187640|No se pueden asignar filtros de libreta de direcciones|
 > |**Nombre**:<br />CannotAssignOfflineFilters<br />**Hex**:<br />800404ff<br />**Número**:<br />-2147220225|No se pueden asignar filtros sin conexión|
 > |**Nombre**:<br />CannotAssignOutlookFilters<br />**Hex**:<br />80040264<br />**Número**:<br />-2147220892|No se pueden asignar filtros de outlook|
-> |**Nombre**:<br />CannotAssignRolesOrProfilesToAccessTeam<br />**Hex**:<br />80048331<br />**Número**:<br />-2147187919|No se puede asignar roles o perfiles a un equipo de acceso.|
+> |**Nombre**:<br />CannotAssignRolesOrProfilesToAccessTeam<br />**Hex**:<br />80048331<br />**Número**:<br />-2147187919|No se puede asignar roles o perfiles a un equipo de acceso (ID = {0}).|
 > |**Nombre**:<br />CannotAssignRolesToSupportUser<br />**Hex**:<br />80041d51<br />**Número**:<br />-2147213999|Dado que el usuario de soporte es de solo lectura, no se le pueden asignar otros roles.|
 > |**Nombre**:<br />CannotAssignSupportUser<br />**Hex**:<br />80041d44<br />**Número**:<br />-2147214012|El rol de usuario de soporte no se puede asignar al usuario.|
 > |**Nombre**:<br />CannotAssignToAccessTeam<br />**Hex**:<br />80048340<br />**Número**:<br />-2147187904|No puede asignar un registro al equipo de acceso. Puede asignar un registro al equipo de propietario.|
@@ -393,6 +402,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />CannotCancelInvoice<br />**Hex**:<br />80100001<br />**Número**:<br />-2146435071|La factura no se puede cancelar porque no se encuentra en estado activa o pagada.|
 > |**Nombre**:<br />CannotChangeAccessModeForInternetMarketingUser<br />**Hex**:<br />80045035<br />**Número**:<br />-2147200971|El usuario de Marketing de Internet es un usuario del sistema. No puede cambiar su modo de acceso.|
 > |**Nombre**:<br />CannotChangeAttributeRequiredLevel<br />**Hex**:<br />8004D293<br />**Número**:<br />-2147167597|El nivel requerido de un atributo no se puede cambiar de SystemRequired|
+> |**Nombre**:<br />CannotChangeConnectorDisplayName<br />**Hex**:<br />80072607<br />**Número**:<br />-2147015161|El atributo del conector nombre para mostrar no se puede cambiar.|
 > |**Nombre**:<br />CannotChangeConvertRuleState<br />**Hex**:<br />800608F4<br />**Número**:<br />-2147088140|Error al activar la regla de conversión. Por favor, verifique sus privilegios en el flujo de trabajo e inténtelo de nuevo o póngase en contacto con el administrador del sistema.|
 > |**Nombre**:<br />CannotChangeDaysSinceRecordLastModified<br />**Hex**:<br />800609A4<br />**Número**:<br />-2147087964|Necesita habilitar esta entidad para Mobile Offline para poder establecer o cambiar el número de días que han transcurrido desde la última modificación del registro.|
 > |**Nombre**:<br />CannotChangeInvitationStatusForInternetMarketingUser<br />**Hex**:<br />80045036<br />**Número**:<br />-2147200970|El usuario de Marketing de Internet es un usuario del sistema. No puede cambiar el estado de la invitación.|
@@ -408,6 +418,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />CannotCloneBundleWithRetiredProducts<br />**Hex**:<br />80061034<br />**Número**:<br />-2147086284|No puede clonar una agrupación que contenga productos retirados.|
 > |**Nombre**:<br />CannotCloneProductKit<br />**Hex**:<br />80061020<br />**Número**:<br />-2147086304|No se puede clonar un kit.|
 > |**Nombre**:<br />CannotCloseCase<br />**Hex**:<br />8004F456<br />**Número**:<br />-2147158954|No se puede completar esta operación. Uno o más casos secundarios no se pueden cerrar debido a las reglas de transición de estado definidas para los casos.|
+> |**Nombre**:<br />CannotCompleteLockRequest<br />**Hex**:<br />8004026c<br />**Número**:<br />-2147220884|No se puede completar la solicitud debido al bloqueo de tiempo de espera {0}.|
 > |**Nombre**:<br />CannotConnectToSelf<br />**Hex**:<br />80048217<br />**Número**:<br />-2147188201|No se puede conectar un registro en sí mismo.|
 > |**Nombre**:<br />CannotConvertBundleToKit<br />**Hex**:<br />80061030<br />**Número**:<br />-2147086288|No se puede convertir una agrupación en un kit.|
 > |**Nombre**:<br />CannotConvertProductAssociatedWithBundleToKit<br />**Hex**:<br />80061018<br />**Número**:<br />-2147086312|No se puede convertir un producto que forma parte de una agrupación en un kit.|
@@ -428,6 +439,8 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />CannotCreatePropertyOptionSetItem<br />**Hex**:<br />80081013<br />**Número**:<br />-2146955245|Solo puede crear un registro de elemento de conjunto de opciones de propiedad que haga referencia a una propiedad que tenga su tipo de datos establecido en Conjunto de opciones.|
 > |**Nombre**:<br />CannotCreateQueueItemInactiveObject<br />**Hex**:<br />8004051e<br />**Número**:<br />-2147220194|No se puede agregar a la cola un objeto desactivado.|
 > |**Nombre**:<br />CannotCreateResponseForTemplate<br />**Hex**:<br />80040312<br />**Número**:<br />-2147220718|No se puede crear CampaignResponse para la campaña de plantilla.|
+> |**Nombre**:<br />CannotCreateRuleOnAnyEntityRoutingRuleFCBOff<br />**Hex**:<br />8004F848<br />**Número**:<br />-2147157944|No se puede crear el registro de conjunto de regla de enrutamiento para las entidades (excepto la entidad de caso), ya que el bit de control de la característica para el enrutamiento de registros de entidad está deshabilitado.|
+> |**Nombre**:<br />CannotCreateSelfReferencingParentChild<br />**Hex**:<br />8007200C<br />**Número**:<br />-2147016692|La relación Primario-Elemento secundario {0} no puede hacer referencia a sí misma.|
 > |**Nombre**:<br />CannotCreateSLAForEntity<br />**Hex**:<br />80055005<br />**Número**:<br />-2147135483|No puede crear un contrato de nivel de servicio (SLA) para esta entidad porque no se ha habilitado para crear SLA|
 > |**Nombre**:<br />CannotCreateSyncUserIsLicensedField<br />**Hex**:<br />80041d4d<br />**Número**:<br />-2147214003|La propiedad que IsLicensed no se puede establecer para sincronizar la creación de usuarios.|
 > |**Nombre**:<br />CannotCreateSyncUserObjectMissing<br />**Hex**:<br />80041d4b<br />**Número**:<br />-2147214005|Este no es un identificador de Microsoft Online Services válido para la organización.|
@@ -495,7 +508,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />CannotDeleteSystemEmailTemplate<br />**Hex**:<br />80048432<br />**Número**:<br />-2147187662|Las plantillas de correo electrónico no se pueden eliminar.|
 > |**Nombre**:<br />CannotDeleteSystemForm<br />**Hex**:<br />8004F652<br />**Número**:<br />-2147158446|No se pueden eliminar los formularios del sistema.|
 > |**Nombre**:<br />CannotDeleteSystemTheme<br />**Hex**:<br />800608DA<br />**Número**:<br />-2147088166|No puede suprimir los temas del sistema.|
-> |**Nombre**:<br />CannotDeleteTeamOwningRecords<br />**Hex**:<br />8004830E<br />**Número**:<br />-2147187954|No se puede eliminar un equipo que sea propietario de registros. Reasignar los registros e inténtelo de nuevo.|
+> |**Nombre**:<br />CannotDeleteTeamOwningRecords<br />**Hex**:<br />8004830E<br />**Número**:<br />-2147187954|No se puede eliminar un equipo (ID = {0}) que sea propietario de registros. Reasignar los registros e inténtelo de nuevo.|
 > |**Nombre**:<br />CannotDeleteUpdateInUseRule<br />**Hex**:<br />80048428<br />**Número**:<br />-2147187672|La regla de detección de duplicados se está usando actualmente y no se puede actualizar ni eliminar. Vuelva a intentarlo más tarde.|
 > |**Nombre**:<br />CannotDeleteUserMailbox<br />**Hex**:<br />8005E200<br />**Número**:<br />-2147098112|No es posible eliminar el buzón asociado a un usuario o una cola.|
 > |**Nombre**:<br />CannotDeleteUserProfile<br />**Hex**:<br />800609A3<br />**Número**:<br />-2147087965|No puede eliminar un perfil de Mobile Offline activo. Quite todos los usuarios del perfil e inténtelo de nuevo.|
@@ -517,7 +530,9 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />CannotEnableEntityForRelevanceSearch<br />**Hex**:<br />80060302<br />**Número**:<br />-2147089662|La entidad {0} no se puede habilitar para la búsqueda por relevancia debido a la configuración de sus propiedades administradas.|
 > |**Nombre**:<br />CannotExceedFilterLimit<br />**Hex**:<br />8004027c<br />**Número**:<br />-2147220868|No se puede superar el límite de filtro de sincronización.|
 > |**Nombre**:<br />CannotExecuteRequestBecauseHttpsIsRequired<br />**Hex**:<br />8004852C<br />**Número**:<br />-2147187412|Son necesarios protocolos HTTPS para este tipo de solicitud, por favor habilite protocolos HTTPS e inténtelo de nuevo.|
+> |**Nombre**:<br />CannotExportRuleOnAnyEntityRoutingRuleFCBOff<br />**Hex**:<br />8004F847<br />**Número**:<br />-2147157945|No se puede exportar el registro de conjunto de regla de enrutamiento para las entidades (excepto la entidad de caso), ya que el bit de control de la característica para el enrutamiento de registros de entidad está deshabilitado.|
 > |**Nombre**:<br />CannotFindDomainAccount<br />**Hex**:<br />80044342<br />**Número**:<br />-2147204286|Cuenta de dominio no válida|
+> |**Nombre**:<br />CannotFindLayerToMerge<br />**Hex**:<br />8004F060<br />**Número**:<br />-2147159968|No se puede encontrar una capa adecuada para fusionar el Componente: [{0}] con Id: [{1}]. No se puede continuar con la operación. Compruebe las capas del componente.|
 > |**Nombre**:<br />CannotFindObjectInQueue<br />**Hex**:<br />800404eb<br />**Número**:<br />-2147220245|No se encontró el objeto en la cola determinada|
 > |**Nombre**:<br />CannotFindUserQueue<br />**Hex**:<br />800404ec<br />**Número**:<br />-2147220244|No se puede encontrar la cola de usuario|
 > |**Nombre**:<br />CannotFollowInactiveEntity<br />**Hex**:<br />8004F6A3<br />**Número**:<br />-2147158365|No se puede seguir el registro inactivo. |
@@ -527,6 +542,8 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />CannotHaveDuplicateYomi<br />**Hex**:<br />80047018<br />**Número**:<br />-2147192808|Un atributo se puede vincular a solo yomi a la vez|
 > |**Nombre**:<br />CannotHaveMultipleDefaultFilterTemplates<br />**Hex**:<br />8004027d<br />**Número**:<br />-2147220867|No se pueden tener varias plantilla de sincronización predeterminadas para una única entidad.|
 > |**Nombre**:<br />CannotImportNullStringsForBaseLanguage<br />**Hex**:<br />80044246<br />**Número**:<br />-2147204538|La cadena de traducción del idioma base presente en la hoja de cálculo {0}, fila {1}, columna {2} es nula.|
+> |**Nombre**:<br />CannotImportRuleOnAnyEntityRoutingRuleFCBOff<br />**Hex**:<br />8004F845<br />**Número**:<br />-2147157947|No se puede importar el registro de conjunto de regla de enrutamiento para las entidades (excepto la entidad de caso), ya que el bit de control de la característica para el enrutamiento de registros de entidad está deshabilitado.|
+> |**Nombre**:<br />CannotImportRuleOnFieldMetadataUnavailable<br />**Hex**:<br />8004F846<br />**Número**:<br />-2147157946|No se puede importar el registro de conjunto de regla de enrutamiento para las entidades (excepto la entidad de caso), ya que los metadatos para el campo msdyn_entitylogicalname no están disponibles.|
 > |**Nombre**:<br />CannotInviteDisabledUser<br />**Hex**:<br />8004D212<br />**Número**:<br />-2147167726|No se puede enviar una invitación a un usuario deshabilitado|
 > |**Nombre**:<br />CannotLocateRecordForWorkflowActivity<br />**Hex**:<br />80045031<br />**Número**:<br />-2147200975|No se pudo encontrar el registro que este flujo de trabajo requiere.|
 > |**Nombre**:<br />CannotMakeReadOnlyUser<br />**Hex**:<br />80041d38<br />**Número**:<br />-2147214024|Un usuario no puede configurarse como usuario de solo lectura si es el último usuario de no solo lectura que tiene el rol de administrador del sistema.|
@@ -633,6 +650,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />CannotUpdateExternalPartyWithSameCorrelationKey<br />**Hex**:<br />80061114<br />**Número**:<br />-2147086060|Ya existe un registro de entidad externa con el mismo valor de clave de correlación.|
 > |**Nombre**:<br />CannotUpdateGoalPeriodInfoChildGoal<br />**Hex**:<br />80044901<br />**Número**:<br />-2147202815|No se pueden actualizar los atributos relacionados con el período del objetivo en un objetivo secundario.|
 > |**Nombre**:<br />CannotUpdateGoalPeriodInfoClosedGoal<br />**Hex**:<br />80044910<br />**Número**:<br />-2147202800|No se puede cambiar el período de tiempo del objetivo porque hay uno o varios objetivos subordinados cerrados.|
+> |**Nombre**:<br />CannotUpdateLogicalAttribute<br />**Hex**:<br />80048461<br />**Número**:<br />-2147187615|No se puede actualizar el atributo lógico {0} |
 > |**Nombre**:<br />CannotUpdateManagedSolution<br />**Hex**:<br />8004F024<br />**Número**:<br />-2147160028|No se puede actualizar la solución '{0}' porque es una solución administrada.|
 > |**Nombre**:<br />CannotUpdateMetricOnChildGoal<br />**Hex**:<br />80044900<br />**Número**:<br />-2147202816|No se puede actualizar la métrica en un objetivo secundario.|
 > |**Nombre**:<br />CannotUpdateMetricOnGoalWithChildren<br />**Hex**:<br />80044902<br />**Número**:<br />-2147202814|No se puede actualizar la métrica en un objetivo que tiene objetivos secundarios relacionados.|
@@ -647,6 +665,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />CannotUpdateProductCurrency<br />**Hex**:<br />80048cfa<br />**Número**:<br />-2147185414|La divisa de un producto no se puede actualizar porque tiene elementos de la lista de precios asociados con el porcentaje de método de cálculo de precios.|
 > |**Nombre**:<br />CannotUpdateQuoteCurrency<br />**Hex**:<br />8004480e<br />**Número**:<br />-2147203058|No se puede cambiar la divisa porque esta oferta tiene productos asociados. Si desea cambiar la divisa, elimine todos los productos y, después, cambie la divisa o cree una nueva oferta con la divisa correspondiente.|
 > |**Nombre**:<br />CannotUpdateReadOnlyPublisher<br />**Hex**:<br />8004F033<br />**Número**:<br />-2147160013|Intentando actualizar un editor de solo lectura.|
+> |**Nombre**:<br />CanNotUpdateRequiredBundleItem<br />**Hex**:<br />80100009<br />**Número**:<br />-2146435063|No puede actualizar este elemento de agrupación porque es un producto necesario en la agrupación.|
 > |**Nombre**:<br />CannotUpdateRestrictedPublisher<br />**Hex**:<br />8004F017<br />**Número**:<br />-2147160041|El editor restringido ({0}) no se puede actualizar.|
 > |**Nombre**:<br />CannotUpdateRestrictedSolution<br />**Hex**:<br />8004F00A<br />**Número**:<br />-2147160054|La solución restringida ({0}) no se puede actualizar.|
 > |**Nombre**:<br />CannotUpdateRollupAttributeWithClosedGoals<br />**Hex**:<br />80044801<br />**Número**:<br />-2147203071|Los cambios realizados en la definición del campo de informe no se pueden guardar porque uno o varios objetivos cerrados están usando la métrica del objetivo relacionada.|
@@ -669,9 +688,9 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />CanvasAppsExpectedFileMissing<br />**Hex**:<br />80072356<br />**Número**:<br />-2147015850|La solución especificó un archivo de activos esperado pero ese archivo faltaba o no era válido.|
 > |**Nombre**:<br />CanvasAppsInvalidSolutionFileContent<br />**Hex**:<br />80072354<br />**Número**:<br />-2147015852|La solicitud para importar una aplicación de lienzo debe contener al menos un archivo de activos.|
 > |**Nombre**:<br />CanvasAppsNotEnabled<br />**Hex**:<br />80072351<br />**Número**:<br />-2147015855|La creación y la edición de las aplicaciones de lienzo no está habilitada.|
-> |**Nombre**:<br />CanvasAppsServiceRequestClientFailure<br />**Hex**:<br />80072352<br />**Número**:<br />-2147015854|La solicitud al servicio de Power Apps falló con un error de cliente.|
-> |**Nombre**:<br />CanvasAppsServiceRequestServerFailure<br />**Hex**:<br />80072353<br />**Número**:<br />-2147015853|La solicitud al servicio de Power Apps falló con un error de sevidor.|
-> |**Nombre**:<br />CanvasAppsUnexpectedCanvasAppId<br />**Hex**:<br />80072355<br />**Número**:<br />-2147015851|La solicitud al servicio de Power Apps dio lugar a un nuevo canvasappid cuando se esperaba el valor previamente existente.|
+> |**Nombre**:<br />CanvasAppsServiceRequestClientFailure<br />**Hex**:<br />80072352<br />**Número**:<br />-2147015854|La solicitud al servicio de PowerApps falló con un error de cliente.|
+> |**Nombre**:<br />CanvasAppsServiceRequestServerFailure<br />**Hex**:<br />80072353<br />**Número**:<br />-2147015853|La solicitud al servicio de PowerApps falló con un error de sevidor.|
+> |**Nombre**:<br />CanvasAppsUnexpectedCanvasAppId<br />**Hex**:<br />80072355<br />**Número**:<br />-2147015851|La solicitud al servicio de PowerApps dio lugar a un nuevo canvasappid cuando se esperaba el valor previamente existente.|
 > |**Nombre**:<br />CanvasAppVersionDoesNotMatchLatestPublishedVersion<br />**Hex**:<br />80072358<br />**Número**:<br />-2147015848|La última versión publicada de la aplicación de lienzo no coincide con la versión conocida por el servicio de Dynamics.|
 > |**Nombre**:<br />CanvasAppVersionMissingOrInvalid<br />**Hex**:<br />80072357<br />**Número**:<br />-2147015849|La versión de la aplicación de lienzo no se estableció o era un valor no válido.|
 > |**Nombre**:<br />CAPolicyValidationFailedLateBind<br />**Hex**:<br />80072561<br />**Número**:<br />-2147015327|El usuario está en una ubicación limitada de administración.|
@@ -681,6 +700,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />CascadeInvalidLinkType<br />**Hex**:<br />80048102<br />**Número**:<br />-2147188478|Tipo de CascadeLink no válido|
 > |**Nombre**:<br />CascadeInvalidLinkTypeTransition<br />**Hex**:<br />80044155<br />**Número**:<br />-2147204779|Tipo de vínculo no válido para las acciones en cascada de la entidad del sistema.|
 > |**Nombre**:<br />CascadeMergeInvalidSpecialColumn<br />**Hex**:<br />80048106<br />**Número**:<br />-2147188474|Nombre de columna no válido para combinación de mayúsculas y minúsculas especiales|
+> |**Nombre**:<br />CascadeOperationConcurrentRequested<br />**Hex**:<br />80048105<br />**Número**:<br />-2147188475|Se ha detectado más de una solicitud {0} simultánea para una Entidad {1} y el ObjectTypeCode {2}.|
 > |**Nombre**:<br />CascadeProxyEmptyCallerId<br />**Hex**:<br />8004810b<br />**Número**:<br />-2147188469|Id. de autor de la llamada vacío|
 > |**Nombre**:<br />CascadeProxyInvalidNativeDAPtr<br />**Hex**:<br />80048109<br />**Número**:<br />-2147188471|Puntero no válido del objeto de acceso de datos no administrados|
 > |**Nombre**:<br />CascadeProxyInvalidPrincipalType<br />**Hex**:<br />8004810a<br />**Número**:<br />-2147188470|Tipo principal de seguridad no válido|
@@ -707,6 +727,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />ChildUserDoesNotExist<br />**Hex**:<br />80041d26<br />**Número**:<br />-2147214042|El usuario secundario no es válido.|
 > |**Nombre**:<br />ChildWorkflowNotFound<br />**Hex**:<br />8004502F<br />**Número**:<br />-2147200977|Este flujo de trabajo no se puede ejecutar porque uno o varios de los flujos de trabajo secundarios que utiliza no se han publicado o se han eliminado. Compruebe los flujos de trabajo secundarios e intente ejecutar de nuevo este flujo de trabajo.|
 > |**Nombre**:<br />ChildWorkflowParameterMismatch<br />**Hex**:<br />80045048<br />**Número**:<br />-2147200952|Este flujo de trabajo no se puede ejecutar porque los argumentos proporcionados por el flujo de trabajo principal no coinciden con los parámetros especificados en el flujo de trabajo secundario vinculado. Compruebe la referencia de flujo de trabajo secundaria en el flujo de trabajo primario y ejecute de nuevo este flujo de trabajo.|
+> |**Nombre**:<br />ChunkSizeExceeded<br />**Hex**:<br />80090008<br />**Número**:<br />-2146893816|Tamaño de fragmento de archivo no válido: {0} MB. Tamaño máximo de fragmento admitido: {1} MB.|
 > |**Nombre**:<br />CircularDependency<br />**Hex**:<br />80071157<br />**Número**:<br />-2147020457|La operación de la solución falló debido a una dependencia circular con otras soluciones. Compruebe la excepción para obtener más detalles: {0}|
 > |**Nombre**:<br />ClientAuthCanceled<br />**Hex**:<br />8004D224<br />**Número**:<br />-2147167708|El usuario canceló la autenticación.|
 > |**Nombre**:<br />ClientAuthNoConnectivity<br />**Hex**:<br />8004D226<br />**Número**:<br />-2147167706|No hay ninguna conectividad.|
@@ -727,6 +748,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />ColorStripAttributesInvalid<br />**Hex**:<br />80061502<br />**Número**:<br />-2147085054|La sección de la franja de colores solo puede tener atributos del tipo Dos opciones, Conjunto de opciones y Razón para el estado.|
 > |**Nombre**:<br />CombinedManagedPropertyFailure<br />**Hex**:<br />8004F027<br />**Número**:<br />-2147160025|La evaluación del componente actual (nombre{0}, id={1}) en la operación actual ({2}) ha dado error durante al menos una evaluación de propiedades administradas: {3}|
 > |**Nombre**:<br />CommandNotSupported<br />**Hex**:<br />80154B52<br />**Número**:<br />-2146088110|El comando no se admite en modo sin conexión.|
+> |**Nombre**:<br />CommitFileFailure<br />**Hex**:<br />80072556<br />**Número**:<br />-2147015338|Error al confirmar el archivo. (Tamaño chunkList : {0}, uploadToken: {1}, fileName:{2}, mimeType:{3})|
 > |**Nombre**:<br />CommunicationBlocked<br />**Hex**:<br />80044506<br />**Número**:<br />-2147203834|Debido a una excepción de socket se ha bloqueado la comunicación.|
 > |**Nombre**:<br />ComponentDefinitionDoesNotExists<br />**Hex**:<br />8004F019<br />**Número**:<br />-2147160039|No existe definición componente para el tipo de componente {0}.|
 > |**Nombre**:<br />ConcurrencyVersionMismatch<br />**Hex**:<br />80060882<br />**Número**:<br />-2147088254|La versión de un registro existente no coincide con la propiedad RowVersion proporcionada.|
@@ -753,8 +775,9 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />ConnectionInvalidStartEndDate<br />**Hex**:<br />80048209<br />**Número**:<br />-2147188215|La fecha de inicio/finalización no es válida.|
 > |**Nombre**:<br />ConnectionNotSupported<br />**Hex**:<br />80048213<br />**Número**:<br />-2147188205|El registro seleccionado no admite conexiones. No puede agregar la conexión.|
 > |**Nombre**:<br />ConnectionObjectsMissing<br />**Hex**:<br />80048210<br />**Número**:<br />-2147188208|Faltan los dos objetos que se desea conectar.|
-> |**Nombre**:<br />ConnectionRoleNotValidForObjectType<br />**Hex**:<br />80048215<br />**Número**:<br />-2147188203|El tipo de registro {0} no está definido para el usuario con el rol de conexión {1}.|
+> |**Nombre**:<br />ConnectionRoleNotValidForObjectType<br />**Hex**:<br />80048215<br />**Número**:<br />-2147188203|El registro de tipo {0} (Código de tipo de objeto {1}) no está definido para su uso con el rol de conexión {2} con id {3}.|
 > |**Nombre**:<br />ConnectionTimeOut<br />**Hex**:<br />80071024<br />**Número**:<br />-2147020764|No se pueden copiar los documentos porque se superó el tiempo de espera de la conexión de red. Vuelva a intentarlo más tarde o póngase en contacto con el administrador del sistema.|
+> |**Nombre**:<br />ConnectorLogicalNameAlreadyExists<br />**Hex**:<br />80072606<br />**Número**:<br />-2147015162|El nombre lógico del conector '{0}' ya existe en la organización.|
 > |**Nombre**:<br />ConnectorNotEnabled<br />**Hex**:<br />80072600<br />**Número**:<br />-2147015168|La creación y la edición de Conector no están habilitadas.|
 > |**Nombre**:<br />ContactDoesNotExist<br />**Hex**:<br />80040503<br />**Número**:<br />-2147220221|El contacto no existe.|
 > |**Nombre**:<br />ContactLoopBeingCreated<br />**Hex**:<br />8004050a<br />**Número**:<br />-2147220214|La creación de esta asociación jerárquica crearía un bucle en la jerarquía de contactos.|
@@ -785,7 +808,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />ConvertReportToCrmError<br />**Hex**:<br />8004832d<br />**Número**:<br />-2147187923|Se ha producido un error inesperado al convertir el informe proporcionado al formato de Dynamics 365.|
 > |**Nombre**:<br />ConvertRuleActivateDeactivateByNonOwner<br />**Hex**:<br />8004F886<br />**Número**:<br />-2147157882|Solo el propietario puede activar o desactivar este conjunto de reglas de conversión.|
 > |**Nombre**:<br />ConvertRuleAlreadyActive<br />**Hex**:<br />80060731<br />**Número**:<br />-2147088591|La ConvertRule seleccionada ya está en estado Activo. Seleccione otro registro e inténtelo de nuevo.|
-> |**Nombre**:<br />ConvertRuleAlreadyInDraftState <br />**Hex**:<br />80060732<br />**Número**:<br />-2147088590|La ConvertRule seleccionada ya está en estado Borrador. Seleccione otro registro e inténtelo de nuevo.|
+> |**Nombre**:<br />ConvertRuleAlreadyInDraftState<br />**Hex**:<br />80060732<br />**Número**:<br />-2147088590|La ConvertRule seleccionada ya está en estado Borrador. Seleccione otro registro e inténtelo de nuevo.|
 > |**Nombre**:<br />ConvertRuleInvalidAutoResponseSettings<br />**Hex**:<br />8004F879<br />**Número**:<br />-2147157895|Seleccione una plantilla de correo electrónico para una respuesta automática o defina la opción de respuesta automática en No.|
 > |**Nombre**:<br />ConvertRulePermissionToPerformAction<br />**Hex**:<br />80060733<br />**Número**:<br />-2147088589|No tiene los permisos necesarios sobre sobre ConvertRules y los procesos para realizar esta acción.|
 > |**Nombre**:<br />ConvertRuleQueueIdMissingForEmailSource<br />**Hex**:<br />8004F896<br />**Número**:<br />-2147157866|Se requiere el valor de cola. Especifique un valor par ala cola.|
@@ -795,7 +818,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />CorruptedHiddensheetData<br />**Hex**:<br />800609B7<br />**Número**:<br />-2147087945|Los datos de una hoja oculta está dañados.|
 > |**Nombre**:<br />CouldNotDecryptOAuthToken<br />**Hex**:<br />8005F110<br />**Número**:<br />-2147094256|No se ha podido descifrar el token OAuth de Yammer. Pruebe a configurar Yammer otra vez.|
 > |**Nombre**:<br />CouldNotFindQueueItemInQueue<br />**Hex**:<br />80040524<br />**Número**:<br />-2147220188|No se encontró un elemento de cola asociado con el objetivo en el SourceQueueId especificado. El SourceQueueId o destino no es válido o no existe el elemento de cola.|
-> |**Nombre**:<br />CouldNotObtainLockOnResource<br />**Hex**:<br />80044339<br />**Número**:<br />-2147204295|No se puede obtener el bloqueo de recursos de la base de datos. Para obtener más información, consulte https://docs.microsoft.com/dynamics365/customer-engagement/customize/best-practices-workflow-processes#limit-the-number-of-workflows-that-update-the-same-entity|
+> |**Nombre**:<br />CouldNotObtainLockOnResource<br />**Hex**:<br />80044339<br />**Número**:<br />-2147204295|No se puede obtener el bloqueo de recursos de la base de datos. Para obtener más información, consulte http://docs.microsoft.com/dynamics365/customer-engagement/customize/best-practices-workflow-processes#limit-the-number-of-workflows-that-update-the-same-entity|
 > |**Nombre**:<br />CouldNotReadAccessToken<br />**Hex**:<br />8005F105<br />**Número**:<br />-2147094267|El sistema no puede leer el token de acceso a Yammer del usuario aunque pasó un código no vacío.|
 > |**Nombre**:<br />CouldNotSetLocationTypeToOneNote<br />**Hex**:<br />80060905<br />**Número**:<br />-2147088123|No se pudo establecer el tipo de ubicación de la ubicación de documento en OneNote.|
 > |**Nombre**:<br />CountSpecifiedWithoutOrder<br />**Hex**:<br />8004E01F<br />**Número**:<br />-2147164129|La descripción de datos para la visualización no es válida ya que no especifica un nodo de pedido para el atributo de recuento.|
@@ -811,8 +834,12 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />CrmExpressionEvaluationError<br />**Hex**:<br />80040260<br />**Número**:<br />-2147220896|Ocurrió un error de evaluación de expresión de CRM.|
 > |**Nombre**:<br />CrmExpressionParametersParsingError<br />**Hex**:<br />8004025f<br />**Número**:<br />-2147220897|Se produjo un error de análisis de expresión de parámetros de CRM.|
 > |**Nombre**:<br />CrmExpressionParsingError<br />**Hex**:<br />8004025d<br />**Número**:<br />-2147220899|Se produjo un error de análisis de expresión de CRM.|
+> |**Nombre**:<br />CRMGlobalMetadataVersionMismatch<br />**Hex**:<br />80072494<br />**Número**:<br />-2147015532|No coinciden en la versión de metadatos globales de CRM al recuperar datos para la entidad: '{0}'. Versión de metadatos globales antes de recuperar datos: '{1}'. Versión de metadatos globales después de recuperar datos: '{2}'|
 > |**Nombre**:<br />CrmHttpError<br />**Hex**:<br />8006088A<br />**Número**:<br />-2147088246|Error en Wep Api en Dynamics 365.|
 > |**Nombre**:<br />CrmImpersonationError<br />**Hex**:<br />80040245<br />**Número**:<br />-2147220923|Error en CRM AutoReimpersonator.|
+> |**Nombre**:<br />CrmLicensingError<br />**Hex**:<br />80050300<br />**Número**:<br />-2147155200|Se produjo un error durante la verificación de licencia.|
+> |**Nombre**:<br />CrmLicensingNoServicePlan<br />**Hex**:<br />80050301<br />**Número**:<br />-2147155199|La aplicación requiere una licencia. Póngase en contacto con el administrador.Identificador de usuario llamante={0} no tiene ninguna licencia para leer el appmodule de la entidad uniqueName={1} con Id={2} del editor={3}. Se requiere una licencia con uno de los planes de servicio (cuenta={4}): {5}.|
+> |**Nombre**:<br />CrmLicensingNoUserPass<br />**Hex**:<br />80050302<br />**Número**:<br />-2147155198|La aplicación requiere una licencia y la organización no tiene pases de usuario. Póngase en contacto con el administrador.Identificador de usuario llamante={0} no tiene ninguna licencia para leer el appmodule de la entidad uniqueName={1} con Id={2} del editor={3}.|
 > |**Nombre**:<br />CrmLiveAddOnAddLicenseLimitReached<br />**Hex**:<br />8004B056<br />**Número**:<br />-2147176362|La suscripción ha alcanzado el número máximo de licencias de usuario disponibles.  Para obtener licencias adicionales, póngase en contacto con nuestra organización de ventas en 1-877-Dynamics 365-CHOICE (276-2464).|
 > |**Nombre**:<br />CrmLiveAddOnAddStorageLimitReached<br />**Hex**:<br />8004B057<br />**Número**:<br />-2147176361|Su consumo de almacenamiento ha almacenado el límite máximo de almacenamiento asignado a este entorno. Los entornos de prueba se asignan con recursos limitados. Si no usa un entorno de prueba, póngase en contacto con soporte.|
 > |**Nombre**:<br />CrmLiveAddOnDataChanged<br />**Hex**:<br />8004B05C<br />**Número**:<br />-2147176356|Debido a los últimos cambios realizados en su cuenta, estos cambios no se pueden realizar en este momento.   Cierre a este asistente e inténtelo de nuevo.  Si el problema persiste, póngase en contacto con nuestra organización de ventas en 1-877-Dynamics 365-CHOICE (276-2464).|
@@ -871,6 +898,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />CurrencyFieldMissing<br />**Hex**:<br />8004E026<br />**Número**:<br />-2147164122|La divisa de registro es obligatoria para calcular el campo consolidado del tipo de divisa. Indique una divisa e inténtelo de nuevo.|
 > |**Nombre**:<br />CurrencyNotEqual<br />**Hex**:<br />80048cea<br />**Número**:<br />-2147185430|La divisa de {0} no coincide con la divisa de {1}.|
 > |**Nombre**:<br />CurrencyRequiredForDiscountTypeAmount<br />**Hex**:<br />80048cf7<br />**Número**:<br />-2147185417|La divisa no puede ser nula para el importe de tipo de descuento.|
+> |**Nombre**:<br />CurrentFormEntityIsNull<br />**Hex**:<br />80060371<br />**Número**:<br />-2147089551|La entidad del formulario actual no puede ser NULL|
 > |**Nombre**:<br />CustomActionMustBeMarked<br />**Hex**:<br />80060381<br />**Número**:<br />-2147089535|La acción personalizada se debe marcar 'Como un paso de acción Flujo de proceso de negocio' para usar como paso de acción de BPF.|
 > |**Nombre**:<br />CustomActivityCannotBeMailMergeEnabled<br />**Hex**:<br />8004F124<br />**Número**:<br />-2147159772|Una entidad personalizada ya definida como una actividad no puede tener MailMerge habilitado.|
 > |**Nombre**:<br />CustomActivityInvalid<br />**Hex**:<br />8004501D<br />**Número**:<br />-2147200995|Estado de actividad personalizada no válido.|
@@ -881,7 +909,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />CustomerIsInactive<br />**Hex**:<br />80040517<br />**Número**:<br />-2147220201|Un cliente inactivo no se puede establecer como primario de un objeto.|
 > |**Nombre**:<br />CustomerOpportunityRoleExists<br />**Hex**:<br />80048202<br />**Número**:<br />-2147188222|Existe el rol de oportunidad de cliente.|
 > |**Nombre**:<br />CustomerRelationshipCannotBeDeleted<br />**Hex**:<br />8004847d<br />**Número**:<br />-2147187587|Esta relación {1} la requiere el {0} atributo y no se puede eliminar. Para eliminar esta relación, elimine primero el atributo de búsqueda.|
-> |**Nombre**:<br />CustomerRelationshipExists<br />**Hex**:<br />80048201<br />**Número**:<br />-2147188223|Las relaciones con el cliente ya existen.|
+> |**Nombre**:<br />CustomerRelationshipExists<br />**Hex**:<br />80048201<br />**Número**:<br />-2147188223|Las relaciones con el cliente ya existen. CustomerRelationshipId: {0}, CustomerId: {1}, CustomerIdType: {2}, PartnerId: {3}, PartnerIdType: {4}, CustomerRoleId: {5}, PartnerRoleId: {6}, UniqueDscId: {7}|
 > |**Nombre**:<br />CustomImageAttributeOnlyAllowedOnCustomEntity<br />**Hex**:<br />80048531<br />**Número**:<br />-2147187407|Un atributo de imagen personalizado solo se puede agregar a una entidad personalizada.|
 > |**Nombre**:<br />CustomOperationNotActivated<br />**Hex**:<br />80045052<br />**Número**:<br />-2147200942|La acción de proceso asociada a este proceso no está activada.|
 > |**Nombre**:<br />CustomParentingSystemNotSupported<br />**Hex**:<br />80047102<br />**Número**:<br />-2147192574|Una entidad personalizada no puede tener una relación jerárquica con una entidad del sistema|
@@ -904,11 +932,14 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />DataSourceOfflineErrorCode<br />**Hex**:<br />8005F211<br />**Número**:<br />-2147093999|Esta operación produjo un error porque está sin conexión. Vuelva a conectarse e inténtelo de nuevo.|
 > |**Nombre**:<br />DataSourceProhibited<br />**Hex**:<br />8004830D<br />**Número**:<br />-2147187955|Un origen de datos en basados en fetch no se admite en este informe|
 > |**Nombre**:<br />DataStoreKeyNotFoundErrorCode<br />**Hex**:<br />8005F21d<br />**Número**:<br />-2147093987|La clave no está en el almacén local '{0}'|
+> |**Nombre**:<br />DataSyncBadRequest<br />**Hex**:<br />80072514<br />**Número**:<br />-2147015404|El servidor no ha entendido la solicitud|
 > |**Nombre**:<br />DataSyncNoContent<br />**Hex**:<br />80072512<br />**Número**:<br />-2147015406|No hay contenido de sincronización de datos|
 > |**Nombre**:<br />DataSyncRequestAccepted<br />**Hex**:<br />80072511<br />**Número**:<br />-2147015407|Solicitud de sincronización de datos aceptada|
 > |**Nombre**:<br />DataTableNotAvailable<br />**Hex**:<br />800609B0<br />**Número**:<br />-2147087952|La tabla de datos original se eliminó o se le cambió el nombre.|
 > |**Nombre**:<br />DataTypeMismatchForLinkedAttribute<br />**Hex**:<br />8004F0FC<br />**Número**:<br />-2147159812|Tipo de datos incorrectos encontrados para atributos vinculados.|
 > |**Nombre**:<br />DateTimeFormatFailed<br />**Hex**:<br />8004025a<br />**Número**:<br />-2147220902|No se puede generar un valor con formato de fecha y hora.|
+> |**Nombre**:<br />DBConnectionOrTransactionInitializationFailed<br />**Hex**:<br />80048551<br />**Número**:<br />-2147187375|La inicialización de la conexión de la base de datos o la transacción falló. Esta operación se debe volver a intentar más tarde. Mensaje de inicialización de la excepción: {0}|
+> |**Nombre**:<br />DBUpgradeCauseTimeout<br />**Hex**:<br />80048553<br />**Número**:<br />-2147187373|La operación ha excedido el tiempo de espera porque la base de datos se está actualizando. Vuelva a intentarlo una vez que finalice la actualización de la base de datos.|
 > |**Nombre**:<br />DecimalValueOutOfRange<br />**Hex**:<br />80044330<br />**Número**:<br />-2147204304|Se ha producido un error de validación. El valor decimal especificado no está comprendido en el intervalo de valores permitidos para este atributo.|
 > |**Nombre**:<br />DecoupleChildEntity<br />**Hex**:<br />80048206<br />**Número**:<br />-2147188218|No se puede separar una entidad secundaria.|
 > |**Nombre**:<br />DecoupleUserOwnedEntity<br />**Hex**:<br />80048207<br />**Número**:<br />-2147188217|Solo se pueden separar entidades de usuario.|
@@ -960,6 +991,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />DiscountRangeOverlap<br />**Hex**:<br />80043b02<br />**Número**:<br />-2147206398|Las nuevas cantidades se superponen con el intervalo cubierto por las cantidades existentes.|
 > |**Nombre**:<br />DiscountTypeAndPriceLevelCurrencyNotEqual<br />**Hex**:<br />80048cf8<br />**Número**:<br />-2147185416|La divisa del descuento debe coincidir con la divisa de la lista de precios del importe del tipo de descuento.|
 > |**Nombre**:<br />DiskSpaceNotEnough<br />**Hex**:<br />80050124<br />**Número**:<br />-2147155676|No hay suficiente espacio en la carpeta Temp.|
+> |**Nombre**:<br />DistinctWithImageAttributeError<br />**Hex**:<br />80072531<br />**Número**:<br />-2147015375|No se permite la distinción cuando se seleccionan los atributos de imagen.|
 > |**Nombre**:<br />DistributeListAssociatedVary<br />**Hex**:<br />80048453<br />**Número**:<br />-2147187629|Esta actividad de campaña no se puede distribuir. Solo puede realizar actividades de combinación de correspondencia en las listas de marketing que sean todas del mismo tipo de registro. En esta actividad de campaña, elimine las listas de marketing para que las restantes sean del mismo tipo de registro y, después, inténtelo de nuevo.|
 > |**Nombre**:<br />DistributeNoListAssociated<br />**Hex**:<br />80048454<br />**Número**:<br />-2147187628|Esta actividad de campaña no se puede distribuir. No hay listas de marketing asociados con él. Agregue al menos una lista de marketing e inténtelo de nuevo.|
 > |**Nombre**:<br />DocumentManagementDisabled<br />**Hex**:<br />8004F0FF<br />**Número**:<br />-2147159809|Se deshabilitó la administración de documentos de esta organización.|
@@ -976,11 +1008,12 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />DownloadAllEntityRecordsChangedOrCreatedWithinTheseDays<br />**Hex**:<br />8006098F<br />**Número**:<br />-2147087985|Descargar todos los registros de la entidad modificados o creados en este número de días.|
 > |**Nombre**:<br />DownloadRelatedDataOnlyMustHaveRelationship<br />**Hex**:<br />80071140<br />**Número**:<br />-2147020480|La entidad '{0}' del perfil '{1}' está configurada solo con datos relacionados con descarga de filtro, sin embargo no hay relaciones especificadas para esta entidad en asociaciones del elemento de perfil. Si se establece una entidad para descargar datos relacionados solo usted debe especificar una asociación de elemento de perfil a esta entidad.|
 > |**Nombre**:<br />DraftBundleToProduct<br />**Hex**:<br />8004F994<br />**Número**:<br />-2147157612|Solo puede agregar productos a una agrupación de borrador.|
+> |**Nombre**:<br />DSSThrottlingConcurrencyLimitExceededError<br />**Hex**:<br />80072327<br />**Número**:<br />-2147015897|Demasiadas solicitudes simultáneas detectadas.|
 > |**Nombre**:<br />DuplicateAliasFound<br />**Hex**:<br />8004E00B<br />**Número**:<br />-2147164149|Descripción de datos no válida Se encontró un alias duplicado.|
 > |**Nombre**:<br />DuplicateApplicationUser<br />**Hex**:<br />8004F511<br />**Número**:<br />-2147158767|Está intentando crear un id. de aplicación = {0} que ya exista.|
 > |**Nombre**:<br />DuplicateAppModuleUniqueName<br />**Hex**:<br />8005011F<br />**Número**:<br />-2147155681|El nombre que ha escrito ya se está usando.|
 > |**Nombre**:<br />DuplicateAttributePhysicalName<br />**Hex**:<br />80060304<br />**Número**:<br />-2147089660|El atributo {0} ya existe para la entidad {1}.|
-> |**Nombre**:<br />DuplicateAttributeSchemaName<br />**Hex**:<br />80047013<br />**Número**:<br />-2147192813|Ya existe un atributo de con el nombre especificado|
+> |**Nombre**:<br />DuplicateAttributeSchemaName<br />**Hex**:<br />80047013<br />**Número**:<br />-2147192813|{0}|
 > |**Nombre**:<br />DuplicateChannelPropertyName<br />**Hex**:<br />800608F1<br />**Número**:<br />-2147088143|Ya existe una propiedad de canal con el nombre especificado. No puede crear otra.|
 > |**Nombre**:<br />DuplicateCheckNotEnabled<br />**Hex**:<br />80048412<br />**Número**:<br />-2147187694|La detección de duplicados no está habilitada. Para habilitar la detección de duplicados, haga clic en Configuración, en Administración de datos y, a continuación, en Configuración de detección de duplicados.|
 > |**Nombre**:<br />DuplicateCheckNotSupportedOnEntity<br />**Hex**:<br />80048410<br />**Número**:<br />-2147187696|Este tipo de registro no admite la detección de duplicados.|
@@ -1103,6 +1136,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />EntityIsUnlocked<br />**Hex**:<br />80043b1e<br />**Número**:<br />-2147206370|La entidad ya está desbloqueada.|
 > |**Nombre**:<br />EntityKeyNameExists<br />**Hex**:<br />80060893<br />**Número**:<br />-2147088237|Ya existe una clave de entidad con el nombre {0} en la entidad {1}.|
 > |**Nombre**:<br />EntityKeyNotDefined<br />**Hex**:<br />80060890<br />**Número**:<br />-2147088240|Los atributos de clave especificados no son una clave definida para la {0} entidad|
+> |**Nombre**:<br />EntityKeyNotSupportedForSolutionAwareComponents<br />**Hex**:<br />8006089F<br />**Número**:<br />-2147088225|Las claves de entidad no son compatibles con la entidad {0} porque la entidad es un componente consciente de la solución|
 > |**Nombre**:<br />EntityKeyWithSelectedAttributesExists<br />**Hex**:<br />80060894<br />**Número**:<br />-2147088236|Ya existe una clave de entidad con los atributos seleccionados en la entidad.|
 > |**Nombre**:<br />EntityLimitExceeded<br />**Hex**:<br />80060200<br />**Número**:<br />-2147089920|MultiEntitySearch ha superado el límite de entidades definido para la organización.|
 > |**Nombre**:<br />EntityLoopBeingCreated<br />**Hex**:<br />80040387<br />**Número**:<br />-2147220601|La creación de esta asociación jerárquica crearía un bucle en la jerarquía de esta entidad.|
@@ -1114,6 +1148,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />EntityNotEnabledForThisDevice<br />**Hex**:<br />8005F200<br />**Número**:<br />-2147094016|Entidad no habilitada para ser vista en este dispositivo|
 > |**Nombre**:<br />EntityNotRule<br />**Hex**:<br />8004E112<br />**Número**:<br />-2147163886|El nombre de colección no es una regla de periodicidad.|
 > |**Nombre**:<br />EntityReferenceArgumentsNotBound<br />**Hex**:<br />80060395<br />**Número**:<br />-2147089515|Los argumentos necesarios de tipo EntityReference deben estar enlazados a alguna entidad.|
+> |**Nombre**:<br />EntityReferenceLinkNull<br />**Hex**:<br />80048466<br />**Número**:<br />-2147187610|El enlace de referencia de entidad no puede ser nulo|
 > |**Nombre**:<br />EntityRelationshipRoleCustomLabelsMissing<br />**Hex**:<br />80044328<br />**Número**:<br />-2147204312|Si un rol de relación de entidad tiene una opción de visualización de UseCustomLabels se deben proporcionar etiquetas personalizadas|
 > |**Nombre**:<br />EntityRelationshipSchemaNameNotUnique<br />**Hex**:<br />8004432B<br />**Número**:<br />-2147204309|Ya existe una relación con el nombre especificado. Especifique un nombre exclusivo.|
 > |**Nombre**:<br />EntityRelationshipSchemaNameRequired<br />**Hex**:<br />8004432A<br />**Número**:<br />-2147204310|Las relaciones entre entidades requieren un nombre.|
@@ -1204,7 +1239,16 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />ExpiredKey<br />**Hex**:<br />8004A106<br />**Número**:<br />-2147180282|La clave especificada para calcular el que valor de hash ha expirado; solo son válidas las claves activas.  Clave expirada: {0}.|
 > |**Nombre**:<br />ExpiredOAuthToken<br />**Hex**:<br />80041d52<br />**Número**:<br />-2147213998|El token OAuth ha expirado|
 > |**Nombre**:<br />ExpiredVersionStamp<br />**Hex**:<br />80044352<br />**Número**:<br />-2147204270|La marca de versión asociada al cliente ha expirado. Vuelva a realizar una sincronización completa.|
+> |**Nombre**:<br />ExportAttributeMapException<br />**Hex**:<br />80044415<br />**Número**:<br />-2147204075|Error al exportar AttributeMap desde el atributo {0} a {1} en EntityMap de la entidad {2} a {3} durante la exportación de la solución. AttributeMapId = {4}, EntityMapId = {5}|
 > |**Nombre**:<br />ExportDefaultAsPackagedError<br />**Hex**:<br />80048048<br />**Número**:<br />-2147188664|La solución predeterminada no se puede exportar como un paquete.|
+> |**Nombre**:<br />ExportEntityMapException<br />**Hex**:<br />80044416<br />**Número**:<br />-2147204074|Error al exportar EntityMap desde la entidad {0} a {1} durante la exportación de la solución. EntityMapId = {2}|
+> |**Nombre**:<br />ExportKeyAttributeInvalidPrefix<br />**Hex**:<br />800608AD<br />**Número**:<br />-2147088211|Exportar atributo clave {0} para componente {1} debe comenzar con un prefijo de personalización válido.|
+> |**Nombre**:<br />ExportKeyAttributeNotBeginWithLetterOrNonAlphaNumericCharacters<br />**Hex**:<br />800608AB<br />**Número**:<br />-2147088213|Exportar atributo clave {0} para componente {1} debe comenzar con una letra y solo constar de caracteres alfanuméricos y subrayados.|
+> |**Nombre**:<br />ExportKeyAttributeValuesIncorrectNumber<br />**Hex**:<br />800608AC<br />**Número**:<br />-2147088212|Número incorrecto de valores de atributo de clave de exportación para clave de exportación {0} por entidad {1}.|
+> |**Nombre**:<br />ExportKeyNotSupported<br />**Hex**:<br />800608A8<br />**Número**:<br />-2147088216|Las claves de exportación no son compatibles con la entidad {0} porque las claves de exportación no son compatibles|
+> |**Nombre**:<br />ExportKeyNotSupportedForMaxAttributes<br />**Hex**:<br />800608AA<br />**Número**:<br />-2147088214|No se puede crear la clave de exportación para la entidad {0} porque la clave excede {1} atributos|
+> |**Nombre**:<br />ExportKeyNotSupportedForNonCustomizableComponents<br />**Hex**:<br />800608A7<br />**Número**:<br />-2147088217|Las claves de exportación no son compatibles con la entidad {0} porque la entidad no es personalizable|
+> |**Nombre**:<br />ExportKeyNotSupportedForNonSolutionAwareComponents<br />**Hex**:<br />800608A6<br />**Número**:<br />-2147088218|Las claves de exportación no son compatibles con la entidad {0} porque la entidad no es un componente consciente de la solución|
 > |**Nombre**:<br />ExportManagedSolutionError<br />**Hex**:<br />80048036<br />**Número**:<br />-2147188682|Se ha producido un error durante la exportación de una solución. La solución administrada no puede ser exportada.|
 > |**Nombre**:<br />ExportMissingSolutionError<br />**Hex**:<br />80048037<br />**Número**:<br />-2147188681|Se ha producido un error durante la exportación de una solución. La solución no existe en el sistema.|
 > |**Nombre**:<br />ExportSolutionError<br />**Hex**:<br />80048035<br />**Número**:<br />-2147188683|Error durante la exportación de una solución.|
@@ -1215,6 +1259,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />ExternalSearchAttributeLimitExceeded<br />**Hex**:<br />80060300<br />**Número**:<br />-2147089664|Se ha alcanzado el número máximo de campos indexados. Actualice la configuración de Búsqueda por relevancia para reducir el número total de campos indexados {1} debajo de {0}.|
 > |**Nombre**:<br />ExtraPartyInformation<br />**Hex**:<br />80040316<br />**Número**:<br />-2147220714|No se debe proporcionar información adicional para esta operación.|
 > |**Nombre**:<br />FailedToDeserializeAsyncOperationData<br />**Hex**:<br />80044304<br />**Número**:<br />-2147204348|No se pueden deserializar los datos de la operación asincŕonica.|
+> |**Nombre**:<br />FailedToFindDependentConnectorsForModernFlow<br />**Hex**:<br />80060475<br />**Número**:<br />-2147089291|No se pudo encontrar ninguno de los conectores personalizados dependientes del Modern Flow actual.|
 > |**Nombre**:<br />FailedToGetNetworkServiceName<br />**Hex**:<br />80047103<br />**Número**:<br />-2147192573|No se puede obtener el nombre localizado de cuenta NetworkService|
 > |**Nombre**:<br />FailedToLoadAssembly<br />**Hex**:<br />8004024e<br />**Número**:<br />-2147220914|No se pudo cargar el ensamblado|
 > |**Nombre**:<br />FailedToScheduleActivity<br />**Hex**:<br />80047000<br />**Número**:<br />-2147192832|Error al programar actividad.|
@@ -1236,6 +1281,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />FeedbackRatingValue<br />**Hex**:<br />80061773<br />**Número**:<br />-2147084429|La clasificación tiene que ser un valor entre {0} y {1}.|
 > |**Nombre**:<br />FetchDataSetQueryTimeout<br />**Hex**:<br />8005E00E<br />**Número**:<br />-2147098610|La consulta del conjunto de datos de Fetch ha superado el tiempo de espera después de {0} segundos. Aumente el tiempo de espera de la consulta e inténtelo de nuevo.|
 > |**Nombre**:<br />FieldLevelSecurityNotSupported<br />**Hex**:<br />80044817<br />**Número**:<br />-2147203049|La seguridad de nivel de campo no es compatible con una entidad virtual.|
+> |**Nombre**:<br />FileContentIsNull<br />**Hex**:<br />80090004<br />**Número**:<br />-2146893820|El contenido del archivo no puede ser NULL.|
 > |**Nombre**:<br />FileInUse<br />**Hex**:<br />80048837<br />**Número**:<br />-2147186633|No se pudo leer el archivo porque lo está usando otra aplicación.|
 > |**Nombre**:<br />FileNotFound<br />**Hex**:<br />80048440<br />**Número**:<br />-2147187648|No se encontró el archivo adjunto.|
 > |**Nombre**:<br />FilePickerErrorApplicationInSnapView<br />**Hex**:<br />8005F20D<br />**Número**:<br />-2147094003|Vuelva a intentarlo. Si el problema persiste, busque alguna solución en {0} o póngase en contacto con el administrador de {#Brand_CRM} de su organización. Finalmente, puede contactar {1}.|
@@ -1245,6 +1291,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />FilePickerErrorUnableToOpenFile<br />**Hex**:<br />8005F207<br />**Número**:<br />-2147094009|Vuelva a intentarlo. Si el problema persiste, busque alguna solución en {0} o póngase en contacto con el administrador de {#Brand_CRM} de su organización. Finalmente, puede contactar {1}.|
 > |**Nombre**:<br />FileReadError<br />**Hex**:<br />80048437<br />**Número**:<br />-2147187657|Error al leer el archivo del sistema de archivos. Asegúrese de que tiene permiso de lectura para este archivo y, después, intente migrar el archivo de nuevo.|
 > |**Nombre**:<br />FileSizeExceeded<br />**Hex**:<br />80071026<br />**Número**:<br />-2147020762|No se pueden copiar los documentos. El archivo seleccionado supera el límite de tamaño máximo de 128 MB.|
+> |**Nombre**:<br />FileSizeExceededForNonChunkedRequest<br />**Hex**:<br />80090001<br />**Número**:<br />-2146893823|El tamaño máximo de archivo permitido para {0} es de [{1}] MB. Archivo de [{2} MB] de tamaño solo puede ser {0}ed usando un trozo preparado {0}.|
 > |**Nombre**:<br />FileStoreFeatureNotEnabled<br />**Hex**:<br />80072520<br />**Número**:<br />-2147015392|Característica no habilitada para esta organización|
 > |**Nombre**:<br />FileTypeNotSupported<br />**Hex**:<br />800609B4<br />**Número**:<br />-2147087948|No se admite el tipo de archivo especificado como plantilla.|
 > |**Nombre**:<br />FilteredDuetoAntiSpam<br />**Hex**:<br />80040325<br />**Número**:<br />-2147220699|Este cliente está filtrado debido a la configuración contra correo no deseado|
@@ -1274,6 +1321,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />GenericMetadataSyncFailed<br />**Hex**:<br />8005F246<br />**Número**:<br />-2147093946|Lo sentimos, se ha producido un error. Vuelva a intentarlo o reinicie la aplicación.|
 > |**Nombre**:<br />GenericMetadataSyncFailedWithContinue<br />**Hex**:<br />8005F247<br />**Número**:<br />-2147093945|Lo sentimos, algo ha fallado al descargar los cambios de la configuración de servidor.  Puede continuar usando la aplicación con la configuración de una versión anterior, sin embargo, puede que tenga problemas con errores al guardar.  Si continúa este problema, póngase en contacto con su administrador de Dynamics 365 y proporcione la información disponible cuando elija 'obtener más información'.|
 > |**Nombre**:<br />GenericTransformationInvocationError<br />**Hex**:<br />8004037b<br />**Número**:<br />-2147220613|La transformación devuelve datos no válidos.|
+> |**Nombre**:<br />GetOnPolymorphicAttributeError<br />**Hex**:<br />80072532<br />**Número**:<br />-2147015374|No se puede consultar por {0} en {1}|
 > |**Nombre**:<br />GetPhotoFromGalleryFailed<br />**Hex**:<br />8005F208<br />**Número**:<br />-2147094008|Vuelva a intentarlo. Si el problema persiste, busque alguna solución en {0} o póngase en contacto con el administrador de {#Brand_CRM} de su organización. Finalmente, puede contactar {1}.|
 > |**Nombre**:<br />GetTenantIdFailure<br />**Hex**:<br />80071109<br />**Número**:<br />-2147020535|Error producido al obtener TenantId.|
 > |**Nombre**:<br />GoalAttributeAlreadyMapped<br />**Hex**:<br />80044807<br />**Número**:<br />-2147203065|El detalle de la métrica del atributo de objetivo especificado ya existe.|
@@ -1285,6 +1333,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />GoOfflineFailedMoveData<br />**Hex**:<br />80044225<br />**Número**:<br />-2147204571|El cliente no puede descargar los datos. Póngase en contacto con el administrador del sistema para obtener asistencia e intente desconectarse de nuevo.|
 > |**Nombre**:<br />GoOfflineFailedPrepareMsde<br />**Hex**:<br />80044226<br />**Número**:<br />-2147204570|Fallo al preparar MSDE. Póngase en contacto con el administrador del sistema para obtener asistencia e intente desconectarse de nuevo.|
 > |**Nombre**:<br />GoOfflineFailedReloadMetadataCache<br />**Hex**:<br />80044227<br />**Número**:<br />-2147204569|Microsoft Dynamics 365 for Outlook no pudo desconectarse. Intente ponerse sin conexión de nuevo.|
+> |**Nombre**:<br />GoOfflineFeatureNotEnabled<br />**Hex**:<br />8004422a<br />**Número**:<br />-2147204566|La capacidad sin conexión no es compatible con Microsoft Dynamics 365 for Outlook.|
 > |**Nombre**:<br />GoOfflineFileWasDeleted<br />**Hex**:<br />80044229<br />**Número**:<br />-2147204567|El archivo de datos se eliminó en el servidor antes de ser enviado al cliente.|
 > |**Nombre**:<br />GoOfflineGetBCPFileException<br />**Hex**:<br />80044221<br />**Número**:<br />-2147204575|Dynamics 365 server no puede procesar su solicitud. Póngase en contacto con el administrador del sistema para obtener asistencia e intente desconectarse de nuevo.|
 > |**Nombre**:<br />GoOfflineMetadataVersionsMismatch<br />**Hex**:<br />80044220<br />**Número**:<br />-2147204576|Cliente y versiones de metadatos del servidor son diferentes debido a la nueva personalización en el servidor. Intente ponerse sin conexión de nuevo.|
@@ -1301,6 +1350,8 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />HonorPauseWithoutSLAKPIError<br />**Hex**:<br />80045000<br />**Número**:<br />-2147201024|El SLA se puede definir para poder pausarse y reanudarse solo si el KPI de SLA del usuario está establecido en Sí.|
 > |**Nombre**:<br />HybridSSSExchangeOnlineS2SCertActsExpired<br />**Hex**:<br />80131500<br />**Número**:<br />-2146233088|El certificado que se usa para la autenticación de S2S de Dynamics 365 Onpremise con Exchange Online ha expirado|
 > |**Nombre**:<br />HybridSSSExchangeOnlineS2SCertExpired<br />**Hex**:<br />80131509<br />**Número**:<br />-2146233079|El certificado que se usa para la autenticación de S2S de Dynamics 365 Onpremise con Exchange Online ha expirado|
+> |**Nombre**:<br />ImageAttributeNotSupportedFullImage<br />**Hex**:<br />8009000D<br />**Número**:<br />-2146893811|El atributo de imagen {0} de entidad {1} no admite el almacenamiento de la imagen completa.|
+> |**Nombre**:<br />ImageInvalidMaxSizeInKB<br />**Hex**:<br />8009000E<br />**Número**:<br />-2146893810|MaxSizeInKB no válido para el atributo de imagen {0} de la entidad {1}. El tamaño válido debe estar entre [{2} - {3}] KB|
 > |**Nombre**:<br />ImportArticleTemplateError<br />**Hex**:<br />8004800D<br />**Número**:<br />-2147188723|Se ha producido un error al analizar las plantillas de artículo en la importación Xml|
 > |**Nombre**:<br />ImportAttributeNameError<br />**Hex**:<br />80048062<br />**Número**:<br />-2147188638|Nombre no válido para el atributo {0}.  El nombre del atributo personalizado debe comenzar con un prefijo de personalización válido. El prefijo para el componente de una solución debe coincidir con el prefijo especificado para el editor de la solución.|
 > |**Nombre**:<br />ImportChannelPropertyGroupError<br />**Hex**:<br />800608F3<br />**Número**:<br />-2147088141|Se ha producido un error al importar el grupo de propiedades de canal.|
@@ -1329,6 +1380,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />ImportFileFailed<br />**Hex**:<br />80050125<br />**Número**:<br />-2147155675|La importación y la extracción del archivo ha fallado.|
 > |**Nombre**:<br />ImportFileSignatureInvalid<br />**Hex**:<br />80048065<br />**Número**:<br />-2147188635|El archivo de importación tiene una firma digital no válida.|
 > |**Nombre**:<br />ImportFileTooLargeToUpload<br />**Hex**:<br />80040375<br />**Número**:<br />-2147220619|El archivo de importación es demasiado grande para cargarlo.|
+> |**Nombre**:<br />ImportFileUnprocessed<br />**Hex**:<br />80072035<br />**Número**:<br />-2147016651|Archivos sin procesar encontrados: {0}|
 > |**Nombre**:<br />ImportFormXmlError<br />**Hex**:<br />80048007<br />**Número**:<br />-2147188729|El número de parámetros de formato pasado a la cadena de entrada es incorrecto|
 > |**Nombre**:<br />ImportGenericEntitiesError<br />**Hex**:<br />80048020<br />**Número**:<br />-2147188704|Se ha producido un error al importar entidades genéricas.|
 > |**Nombre**:<br />ImportGenericError<br />**Hex**:<br />8004801E<br />**Número**:<br />-2147188706|Error de importación. Para obtener más información, vea los mensajes de error relacionados.|
@@ -1420,16 +1472,19 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />IncomingServerLocationAndSslSetToYes<br />**Hex**:<br />8005E240<br />**Número**:<br />-2147098048|La dirección URL especificada para Ubicación de servidor entrante utiliza HTTP, pero la opción Usar SSL para conexión entrante se ha establecido en Sí. Especifique una ubicación de servidor que utilice HTTPS e inténtelo de nuevo.|
 > |**Nombre**:<br />IncompatibleStepsEncountered<br />**Hex**:<br />8006088B<br />**Número**:<br />-2147088245|No puede habilitar la configuración de EnforceReadOnlyPlugins porque algunos complementos que cambian datos están registrados en mensajes SDK de solo lectura. {0}|
 > |**Nombre**:<br />IncompleteTransformationParameterMappingsFound<br />**Hex**:<br />8004037d<br />**Número**:<br />-2147220611|Uno o más parámetros de transformación obligatorios no tiene asignaciones definidas.|
+> |**Nombre**:<br />InconsistentAttributeConfiguration<br />**Hex**:<br />80072009<br />**Número**:<br />-2147016695|Se encontró más de una configuración para atributo con id {0}.|
 > |**Nombre**:<br />InconsistentAttributeNameCasing<br />**Hex**:<br />8004F043<br />**Número**:<br />-2147159997|Detectado uso incoherente de mayúsculas y minúsculas en nombre de atributo, esperado: {0}, real: {1}.|
 > |**Nombre**:<br />InconsistentProductRelationshipState<br />**Hex**:<br />8004F996<br />**Número**:<br />-2147157610|La otra fila de la relación de producto no está disponible.|
 > |**Nombre**:<br />IncorrectActiveStageEntity<br />**Hex**:<br />80060462<br />**Número**:<br />-2147089310|La fase activa no está en la entidad '{0}'.|
 > |**Nombre**:<br />IncorrectAttributeValueType<br />**Hex**:<br />80044354<br />**Número**:<br />-2147204268|Tipo de valor de atributo para {0} no válido. Esperado: {1}, Encontrado: {2}|
 > |**Nombre**:<br />IncorrectEntitySetName<br />**Hex**:<br />8006089C<br />**Número**:<br />-2147088228|El nombre del conjunto de entidades {0} debe comenzar con un prefijo de personalización válido.|
+> |**Nombre**:<br />IncorrectFileFormat<br />**Hex**:<br />80072037<br />**Número**:<br />-2147016649|El archivo {0} no se puede importar.|
 > |**Nombre**:<br />IncorrectSingleFileMultipleEntityMap<br />**Hex**:<br />80048502<br />**Número**:<br />-2147187454|Debe haber dos o más asignaciones de entidad definidos cuando se establece EntitiesPerFile en ImportMap en Varios|
 > |**Nombre**:<br />IncreasingDaysWillResetMobileOfflineData<br />**Hex**:<br />80060991<br />**Número**:<br />-2147087983|Al aumentar el número de días se restablecerán los datos de mobile offline y se volverá a sincronizar con los dispositivos móviles.|
 > |**Nombre**:<br />IndexOutOfRange<br />**Hex**:<br />8005E008<br />**Número**:<br />-2147098616|El índice {0} está fuera del intervalo {1}. El número de elementos presentes es {2}.|
 > |**Nombre**:<br />IndexSizeConstraintViolated<br />**Hex**:<br />80060895<br />**Número**:<br />-2147088235|El tamaño de índice supera el límite de tamaño de {0} bytes. La clave es demasiado grande. Intente quitar algunas columnas o marcar las cadenas en las columnas de cadenas más cortas.|
 > |**Nombre**:<br />InitializeErrorNoReadOnSource<br />**Hex**:<br />8004F800<br />**Número**:<br />-2147158016|No se pudo completar la operación porque no tiene acceso de lectura en algunos campos del registro {0}.|
+> |**Nombre**:<br />InitializeFileRequestFailure<br />**Hex**:<br />80072555<br />**Número**:<br />-2147015339|Se produjo un error durante la solicitud de inicialización del archivo. (RecordId: {0}, EntityName: {1}) Detalles:{2}|
 > |**Nombre**:<br />InputParameterFieldIncorrect<br />**Hex**:<br />80060378<br />**Número**:<br />-2147089544|El parámetro de entrada “{0}” no coincide con el campo de parámetros de entrada configurado. Póngase en contacto con el administrador del sistema para comprobar los metadatos de configuración si persiste el error.|
 > |**Nombre**:<br />InsertOptionValueInvalidType<br />**Hex**:<br />80044320<br />**Número**:<br />-2147204320|Puede agregar valores opcionales solo a los atributos de estado y de la lista desplegable.|
 > |**Nombre**:<br />InstanceOutsideEffectiveRange<br />**Hex**:<br />8004E115<br />**Número**:<br />-2147163883|No se puede realizar la operación. Una instancia está fuera series de rango de expansión efectiva.|
@@ -1468,6 +1523,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />InvalidAppModuleComponentType<br />**Hex**:<br />80050112<br />**Número**:<br />-2147155694|Una aplicación no puede hacer referencia al tipo de componente "{0}".|
 > |**Nombre**:<br />InvalidAppModuleEventHandlers<br />**Hex**:<br />8005012F<br />**Número**:<br />-2147155665|Los controladores de eventos proporcionados para la aplicación no son válidos.|
 > |**Nombre**:<br />InvalidAppModuleId<br />**Hex**:<br />80050116<br />**Número**:<br />-2147155690|El id. de aplicación no es válido o no tiene acceso a la aplicación.|
+> |**Nombre**:<br />InvalidAppModuleOptimizedFor<br />**Hex**:<br />8005013A<br />**Número**:<br />-2147155654|Los valores optimizados para la aplicación no son válidos.|
 > |**Nombre**:<br />InvalidAppModuleSiteMap<br />**Hex**:<br />80050110<br />**Número**:<br />-2147155696|No se puede usar el mapa del sitio personalizado para este módulo de aplicación porque está configurado incorrectamente. Para resolver este problema, navegue por la experiencia completa para reparar el mapa del sitio personalizado y vuelva a importarlo.|
 > |**Nombre**:<br />InvalidAppModuleSiteMapXml<br />**Hex**:<br />80050109<br />**Número**:<br />-2147155703|El mapa del sitio del módulo de la aplicación es válido.|
 > |**Nombre**:<br />InvalidAppModuleUniqueName<br />**Hex**:<br />8005011E<br />**Número**:<br />-2147155682|El nombre único supera la longitud máxima de 40 caracteres o contiene caracteres no válidos. Solo se permiten letras y números.|
@@ -1485,6 +1541,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />InvalidAssociatedSavedQuery<br />**Hex**:<br />800609AE<br />**Número**:<br />-2147087954|La consulta guardada seleccionada no pertenece a la entidad asociada del elemento del perfil de Mobile Offline.|
 > |**Nombre**:<br />InvalidAttachmentsFolder<br />**Hex**:<br />80048490<br />**Número**:<br />-2147187568|No se puede cargar el archivo comprimido (.zip) debido a que la carpeta "Adjuntos" contiene una o más subcarpetas. Quite las subcarpetas y vuelva a intentarlo.|
 > |**Nombre**:<br />InvalidAttribute<br />**Hex**:<br />8005E009<br />**Número**:<br />-2147098615|No se encontró el atributo {0} para la entidad {1}.|
+> |**Nombre**:<br />InvalidAttributeCopyTarget<br />**Hex**:<br />80048545<br />**Número**:<br />-2147187387|Un atributo de destino debe estar sin establecer o tener el mismo valor que el atributo de origen al copiar.|
 > |**Nombre**:<br />InvalidAttributeDataType<br />**Hex**:<br />80044815<br />**Número**:<br />-2147203051|Tipo de datos de atributo: {0} no es válida para esta entidad.|
 > |**Nombre**:<br />InvalidAttributeFieldType<br />**Hex**:<br />80044816<br />**Número**:<br />-2147203050|Tipo de campo de atributo: {0} no es válida para entidad virtual.|
 > |**Nombre**:<br />InvalidAttributeFound<br />**Hex**:<br />8004E303<br />**Número**:<br />-2147163389|Un panel formulario XML no puede contener atributo: {0}.|
@@ -1498,6 +1555,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />InvalidBaseUnit<br />**Hex**:<br />80043b0b<br />**Número**:<br />-2147206389|La unidad base no pertenece a la programación.|
 > |**Nombre**:<br />InvalidBehavior<br />**Hex**:<br />800608A1<br />**Número**:<br />-2147088223|No se puede modificar el valor de comportamiento de este atributo.|
 > |**Nombre**:<br />InvalidBehaviorSelection<br />**Hex**:<br />800608A0<br />**Número**:<br />-2147088224|El comportamiento de este campo Fecha y hora solo se puede cambiar a "Solo fecha".|
+> |**Nombre**:<br />InvalidBlockList<br />**Hex**:<br />80090006<br />**Número**:<br />-2146893818|La operación de confirmación de archivo falló. La lista de bloqueo especificada no es válida o faltan algunos fragmentos para cargar.|
 > |**Nombre**:<br />InvalidBrowserToConfigureOrganization<br />**Hex**:<br />8004D255<br />**Número**:<br />-2147167659|El explorador no es compatible para configurar la organización|
 > |**Nombre**:<br />InvalidBusinessProcess<br />**Hex**:<br />80060389<br />**Número**:<br />-2147089527|Proceso de negocio no válido.|
 > |**Nombre**:<br />InvalidCaller<br />**Hex**:<br />80040257<br />**Número**:<br />-2147220905|No puede cambiar de ExecutionContext al usuario del sistema sin establecer llamador primero.|
@@ -1508,13 +1566,16 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />InvalidChannelForCampaignActivityPropagate<br />**Hex**:<br />80040310<br />**Número**:<br />-2147220720|No puede distribuir actividades para actividades de campaña del tipo de canal especificado.|
 > |**Nombre**:<br />InvalidChannelOrigin<br />**Hex**:<br />80060602<br />**Número**:<br />-2147088894|Ya existe un término de canal de derecho con el mismo canal. Especifique un canal diferente e inténtelo de nuevo.|
 > |**Nombre**:<br />InvalidCharactersInField<br />**Hex**:<br />80040278<br />**Número**:<br />-2147220872|El campo '{0}' contiene uno o más caracteres no válidos.|
+> |**Nombre**:<br />InvalidCharInConnectorName<br />**Hex**:<br />80072604<br />**Número**:<br />-2147015164|El nombre del conector debe ser alfanumérico, '-' o '_' y comenzar con alfanumérico.|
 > |**Nombre**:<br />InvalidClassIdInReferencePanelSection<br />**Hex**:<br />80061503<br />**Número**:<br />-2147085053|La sección Panel de referencia solo puede tener controles de subcuadrícula, formulario de vista rápida, búsqueda en Knowledge Base, y recursos web i-frame y HTML. Encontrado control con classid no válido {0}.|
 > |**Nombre**:<br />InvalidCollectionName<br />**Hex**:<br />8006088E<br />**Número**:<br />-2147088242|Ya existe una entidad con ese nombre de recopilación. Especifique un nombre único.|
 > |**Nombre**:<br />InvalidColumnMapping<br />**Hex**:<br />80040377<br />**Número**:<br />-2147220617|ColumnMapping no es válido. Compruebe que existe el atributo de destino.|
 > |**Nombre**:<br />InvalidColumnNumber<br />**Hex**:<br />80040336<br />**Número**:<br />-2147220682|El número de columna especificado en la asignación de datos no existe.|
 > |**Nombre**:<br />InvalidCommand<br />**Hex**:<br />8005E100<br />**Número**:<br />-2147098368|Comando no válido.|
 > |**Nombre**:<br />InvalidComplexControlId<br />**Hex**:<br />8005E103<br />**Número**:<br />-2147098365|El id. de control complejo no es válido.|
+> |**Nombre**:<br />InvalidComponentType<br />**Hex**:<br />80072004<br />**Número**:<br />-2147016700|El tipo de componente {0} no pudo ser encontrado|
 > |**Nombre**:<br />InvalidConnectionString<br />**Hex**:<br />8004023f<br />**Número**:<br />-2147220929|La cadena de conexión no se ha encuentro o no es válida.|
+> |**Nombre**:<br />InvalidContentRangeForFileUpload<br />**Hex**:<br />80090005<br />**Número**:<br />-2146893819|El rango de contenido no es válido o el tamaño de la carga útil [{0}] no coincide con el tamaño del fragmento proporcionado.|
 > |**Nombre**:<br />InvalidContractDetailId<br />**Hex**:<br />800404f6<br />**Número**:<br />-2147220234|El id. de detalles del contrato no es válido.|
 > |**Nombre**:<br />InvalidControlClass<br />**Hex**:<br />8004E307<br />**Número**:<br />-2147163385|El panel formulario XML no puede contener elementos de control con el identificador de clase: {0}.|
 > |**Nombre**:<br />InvalidConversionRule<br />**Hex**:<br />800608F6<br />**Número**:<br />-2147088138|La ConversionRule especificada {0} no es válida. Especifique una ConversionRule válida.|
@@ -1527,6 +1588,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />InvalidCustomActivityType<br />**Hex**:<br />8004F125<br />**Número**:<br />-2147159771|Una entidad personalizada que se define como una actividad debe ser del tipo de actividad de comunicación.|
 > |**Nombre**:<br />InvalidCustomDataDownloadFilters<br />**Hex**:<br />80060996<br />**Número**:<br />-2147087978|No se pueden definir filtros de descarga personalizados porque Criterios de distribución de registros no se ha establecido en Otros filtros de datos.|
 > |**Nombre**:<br />InvalidCustomer<br />**Hex**:<br />8004022d<br />**Número**:<br />-2147220947|El cliente no es válido.|
+> |**Nombre**:<br />InvalidCustomerLookupXml<br />**Hex**:<br />80048051<br />**Número**:<br />-2147188655|La búsqueda de clientes Xml no es válida. Faltan una o más relaciones.|
 > |**Nombre**:<br />InvalidCustomReportingWizardXml<br />**Hex**:<br />80040491<br />**Número**:<br />-2147220335|Asistente XML no válido|
 > |**Nombre**:<br />InvalidDataDescription<br />**Hex**:<br />8004E000<br />**Número**:<br />-2147164160|La descripción de datos para la visualización no es válida.|
 > |**Nombre**:<br />InvalidDataDownloadFilterBusinessUnit<br />**Hex**:<br />8005F222<br />**Número**:<br />-2147093982|Para una entidad propiedad del propietario del negocio, solo puede usar los siguientes filtros de descarga de datos: todos los registros o descarga únicamente de datos relacionados.|
@@ -1557,6 +1619,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />InvalidElementFound<br />**Hex**:<br />8004E300<br />**Número**:<br />-2147163392|Un panel formulario XML no puede contener elemento: {0}.|
 > |**Nombre**:<br />InvalidEmail<br />**Hex**:<br />8004B016<br />**Número**:<br />-2147176426|El correo electrónico generado desde la plantilla no es válido|
 > |**Nombre**:<br />InvalidEmailAddressFormat<br />**Hex**:<br />80044192<br />**Número**:<br />-2147204718|Dirección de correo electrónico no válida. Para obtener más información, póngase en contacto con el administrador del sistema.|
+> |**Nombre**:<br />InvalidEmailAddressFormatWithEntityTypeAndId<br />**Hex**:<br />80040b0b<br />**Número**:<br />-2147218677|Dirección de correo electrónico no válida para el destinatario de tipo '{0}' con el identificador '{1}'|
 > |**Nombre**:<br />InvalidEmailAddressInMailbox<br />**Hex**:<br />8005E221<br />**Número**:<br />-2147098079|La dirección de correo electrónico del buzón no es correcta. Escriba la dirección de correo electrónico correcta para procesar mensajes.|
 > |**Nombre**:<br />InvalidEmailServerLocation<br />**Hex**:<br />8005E218<br />**Número**:<br />-2147098088|La ubicación del servidor falta o no es válida. Corrija la ubicación del servidor.|
 > |**Nombre**:<br />InvalidEmailTemplate<br />**Hex**:<br />80040313<br />**Número**:<br />-2147220717|Especifique un id. de plantilla válido|
@@ -1582,7 +1645,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />InvalidEntitySetName<br />**Hex**:<br />8006089B<br />**Número**:<br />-2147088229|Ya existe una entidad con el nombre de entidad especificado {0}. Especifique un nombre único.|
 > |**Nombre**:<br />InvalidEntitySpecified<br />**Hex**:<br />800609B1<br />**Número**:<br />-2147087951|La entidad no está especificada en la plantilla.|
 > |**Nombre**:<br />InvalidExchangeRate<br />**Hex**:<br />80048cfd<br />**Número**:<br />-2147185411|El tipo de cambio no es válido.|
-> |**Nombre**:<br />InvalidExportProcessFlowNotActivated<br />**Hex**:<br />80060376<br />**Número**:<br />-2147089546|No se pudo exportar el proceso de negocio "{0}" porque la solución no incluye la entidad de proceso de negocio correspondiente "{1}". Si se trata de un proceso de negocio recién creado en estado de borrador, actívelo una vez para generar la entidad de proceso de negocio y para incluirla en la solución. Para obtener más información, consulte https://support.microsoft.com/kb/4337537.|
+> |**Nombre**:<br />InvalidExportProcessFlowNotActivated<br />**Hex**:<br />80060376<br />**Número**:<br />-2147089546|No se pudo exportar el proceso de negocio "{0}" porque la solución no incluye la entidad de proceso de negocio correspondiente "{1}". Si se trata de un proceso de negocio recién creado en estado de borrador, actívelo una vez para generar la entidad de proceso de negocio y para incluirla en la solución. Para obtener más información, consulte http://support.microsoft.com/kb/4337537.|
 > |**Nombre**:<br />InvalidExternalCollectionName<br />**Hex**:<br />80046BA7<br />**Número**:<br />-2147193945|El nombre de colección externa especificado no es válido.|
 > |**Nombre**:<br />InvalidExternalName<br />**Hex**:<br />80046BC0<br />**Número**:<br />-2147193920|El nombre externo especificado no es válido.|
 > |**Nombre**:<br />InvalidExternalPartyConfiguration<br />**Hex**:<br />8006110F<br />**Número**:<br />-2147086065|Existen varios elementos de proveedores externos para parámetros de solicitud.|
@@ -1591,7 +1654,9 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />InvalidFeatureType<br />**Hex**:<br />80044272<br />**Número**:<br />-2147204494|El tipo de característica no es válido.|
 > |**Nombre**:<br />InvalidFetchCollection<br />**Hex**:<br />8004E019<br />**Número**:<br />-2147164135|La colección de Fetch para la visualización no es válida.|
 > |**Nombre**:<br />InvalidFetchXml<br />**Hex**:<br />80040303<br />**Número**:<br />-2147220733|FetchXml con estructura incorrecta.|
+> |**Nombre**:<br />InvalidFileAttributeName<br />**Hex**:<br />80090007<br />**Número**:<br />-2146893817|Nombre de atributo no válido para el archivo: [{0}].|
 > |**Nombre**:<br />InvalidFileBadCharacters<br />**Hex**:<br />80040396<br />**Número**:<br />-2147220586|No se pudo cargar el archivo porque contiene caracteres no válidos|
+> |**Nombre**:<br />InvalidFileRangeRequested<br />**Hex**:<br />80090000<br />**Número**:<br />-2146893824|El intervalo de fragmentos utilizado en esta llamada no es válido o es mayor de los {0} MB permitidos.|
 > |**Nombre**:<br />InvalidFileType<br />**Hex**:<br />800608CC<br />**Número**:<br />-2147088180|Tipo de archivo no válido.|
 > |**Nombre**:<br />InvalidFilterCriteriaForVisualization<br />**Hex**:<br />8004E01E<br />**Número**:<br />-2147164130|No se pudo representar la visualización para los criterios de filtro indicados.|
 > |**Nombre**:<br />InvalidFiscalPeriod<br />**Hex**:<br />80044814<br />**Número**:<br />-2147203052|El período fiscal {0} no se encuentra en el intervalo permitido de períodos fiscales según la configuración fiscal de la organización.|
@@ -1614,12 +1679,14 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />InvalidHexColorValue<br />**Hex**:<br />800608D0<br />**Número**:<br />-2147088176|Solo se permiten valores hexadecimales.|
 > |**Nombre**:<br />InvalidHierarchicalRelationship<br />**Hex**:<br />8004701F<br />**Número**:<br />-2147192801|Esta relación no se hace referencia a sí misma y por ello no puede ser jerárquica.|
 > |**Nombre**:<br />InvalidHierarchicalRelationshipChange<br />**Hex**:<br />8004701a<br />**Número**:<br />-2147192806|No puede cambiar esta jerarquía de la entidad porque la relación jerárquica {0} no se puede personalizar.|
+> |**Nombre**:<br />InvalidIconFileFormatForConnector<br />**Hex**:<br />80072603<br />**Número**:<br />-2147015165|Formato de archivo de icono no válido. Los formatos admitidos son PNG y JPG.|
 > |**Nombre**:<br />InvalidImportFileContent<br />**Hex**:<br />80040374<br />**Número**:<br />-2147220620|El contenido del archivo de importación no es válido. Debe seleccionar un archivo de texto.|
 > |**Nombre**:<br />InvalidImportFileData<br />**Hex**:<br />80040351<br />**Número**:<br />-2147220655|Los datos no tienen el formato necesario|
 > |**Nombre**:<br />InvalidImportFileParseData<br />**Hex**:<br />80040349<br />**Número**:<br />-2147220663|No se especificaron los delimitadores de campo y de datos de este archivo.|
 > |**Nombre**:<br />InvalidImportJobId<br />**Hex**:<br />80044252<br />**Número**:<br />-2147204526|El importjob solicitado no existe.|
 > |**Nombre**:<br />InvalidImportJobTemplateFile<br />**Hex**:<br />80044251<br />**Número**:<br />-2147204527|El archivo ImportJobTemplate.xml no es válido.|
 > |**Nombre**:<br />InvalidIncomingDeliveryExpectingEmailConnector<br />**Hex**:<br />8005E224<br />**Número**:<br />-2147098076|El método de entrega entrante no es conector de correo electrónico. Para recibir mensajes, su método de entrega entrante debe ser Conector de correo electrónico.|
+> |**Nombre**:<br />InvalidInputArgumentForModernFlowExecute<br />**Hex**:<br />80060480<br />**Número**:<br />-2147089280|No se puede ejecutar Modern Flow '{0}' porque '{1}' no es un argumento de entrada compatible.|
 > |**Nombre**:<br />InvalidInstanceEntityName<br />**Hex**:<br />8004E10D<br />**Número**:<br />-2147163891|Nombre de instancia de entidad no válido.|
 > |**Nombre**:<br />InvalidInstanceTypeCode<br />**Hex**:<br />8004E107<br />**Número**:<br />-2147163897|Código de tipo de instancia no válido.|
 > |**Nombre**:<br />InvalidInteractiveUserQuota<br />**Hex**:<br />8004B049<br />**Número**:<br />-2147176375|Ha alcanzado el número máximo de usuarios inactivos/completos.|
@@ -1651,15 +1718,16 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />InvalidManifestFilePath<br />**Hex**:<br />80048533<br />**Número**:<br />-2147187405|No puede encontrar el archivo de manifiesto en la ubicación especificada|
 > |**Nombre**:<br />InvalidMatchingAttributeError<br />**Hex**:<br />80044244<br />**Número**:<br />-2147204540|Atributo coincidente no válido.|
 > |**Nombre**:<br />InvalidMaximumResourceLimit<br />**Hex**:<br />8004B02B<br />**Número**:<br />-2147176405|El tipo de recurso {0} no puede tener un límite máximo de {1}.|
-> |**Nombre**:<br />InvalidMaxLengthForControl <br />**Hex**:<br />80060879<br />**Número**:<br />-2147088263|Se ha especificado un parámetro MaxLength no válido para el control {0}. Maxlength debe encontrarse entre {1} y {2}.|
-> |**Nombre**:<br />InvalidMaxValueForControl <br />**Hex**:<br />8006087B<br />**Número**:<br />-2147088261|Se ha especificado un parámetro MaxValue no válido para el control {0}. MaxValue debe encontrarse entre {1} y {2}.|
+> |**Nombre**:<br />InvalidMaxLengthForControl<br />**Hex**:<br />80060879<br />**Número**:<br />-2147088263|Se ha especificado un parámetro MaxLength no válido para el control {0}. Maxlength debe encontrarse entre {1} y {2}.|
+> |**Nombre**:<br />InvalidMaxSizeInKB<br />**Hex**:<br />80090009<br />**Número**:<br />-2146893815|Tamaño no válido para el atributo de tipo de archivo. El tamaño válido debe estar entre [0-{0}] KB|
+> |**Nombre**:<br />InvalidMaxValueForControl<br />**Hex**:<br />8006087B<br />**Número**:<br />-2147088261|Se ha especificado un parámetro MaxValue no válido para el control {0}. MaxValue debe encontrarse entre {1} y {2}.|
 > |**Nombre**:<br />InvalidMeasureCollection<br />**Hex**:<br />8004E00A<br />**Número**:<br />-2147164150|La colección de medida no es válida. No todas las medidas de la colección de medidas deben tener el mismo group bys.|
 > |**Nombre**:<br />InvalidMetadata<br />**Hex**:<br />8004023a<br />**Número**:<br />-2147220934|Metadatos no válidos.|
 > |**Nombre**:<br />InvalidMetadataSqlOperation<br />**Hex**:<br />80072343<br />**Número**:<br />-2147015869|Se ha lanzado una excepción SQL en la operación actual de metadatos. Compruebe la excepción para obtener más detalles.|
 > |**Nombre**:<br />InvalidMigrationFileContent<br />**Hex**:<br />8005F033<br />**Número**:<br />-2147094477|El contenido del archivo de importación no es válido. Debe seleccionar un archivo de texto.|
-> |**Nombre**:<br />InvalidMinAndMaxValueForControl <br />**Hex**:<br />8006087C<br />**Número**:<br />-2147088260|Se han especificado unos parámetros MinValue y MaxValue no válidos para el control {0}. MinValue debe ser inferior a MaxValue.|
+> |**Nombre**:<br />InvalidMinAndMaxValueForControl<br />**Hex**:<br />8006087C<br />**Número**:<br />-2147088260|Se han especificado unos parámetros MinValue y MaxValue no válidos para el control {0}. MinValue debe ser inferior a MaxValue.|
 > |**Nombre**:<br />InvalidMinimumResourceLimit<br />**Hex**:<br />8004B02A<br />**Número**:<br />-2147176406|El tipo de recurso {0} no puede tener un límite mínimo de {1}.|
-> |**Nombre**:<br />InvalidMinValueForControl <br />**Hex**:<br />8006087A<br />**Número**:<br />-2147088262|Se ha especificado un parámetro MinValue no válido para el control {0}. MinValue debe encontrarse entre {1} y {2}.|
+> |**Nombre**:<br />InvalidMinValueForControl<br />**Hex**:<br />8006087A<br />**Número**:<br />-2147088262|Se ha especificado un parámetro MinValue no válido para el control {0}. MinValue debe encontrarse entre {1} y {2}.|
 > |**Nombre**:<br />InvalidMobileOfflineFiltersFetchXml<br />**Hex**:<br />80071113<br />**Número**:<br />-2147020525|No coincide el formato XML. Compruebe la exactitud de XML.|
 > |**Nombre**:<br />InvalidMultipleMapping<br />**Hex**:<br />80048498<br />**Número**:<br />-2147187560|Un campo de origen está asignado a más de un campo de Dynamics 365 del tipo de búsqueda o lista desplegable.|
 > |**Nombre**:<br />InvalidMultipleSiteMapReferenceSingleAppModule<br />**Hex**:<br />80050111<br />**Número**:<br />-2147155695|Una aplicación no puede tener varios mapas del sitio.|
@@ -1668,11 +1736,13 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />InvalidNonInteractiveUserQuota<br />**Hex**:<br />8004B050<br />**Número**:<br />-2147176368|Ha alcanzado el número máximo de usuarios no inactivos/|
 > |**Nombre**:<br />InvalidNumberGroupFormat<br />**Hex**:<br />80043700<br />**Número**:<br />-2147207424|Cadena de entrada no válida para numbergroupformat. La cadena de entrada debe contener una matriz de enteros. Cada elemento de la matriz de valor debe estar entre uno y nueve, excepto el último elemento, que puede ser cero.|
 > |**Nombre**:<br />InvalidNumberOfCardFormSections<br />**Hex**:<br />80061505<br />**Número**:<br />-2147085051|El número de secciones de un formulario de tarjeta debe ser 4. Encontrado {0}.|
+> |**Nombre**:<br />InvalidNumberOfParametersForFileUpload<br />**Hex**:<br />80090002<br />**Número**:<br />-2146893822|Número de parámetros no válido [{0}] proporcionado en la URL de solicitud.|
 > |**Nombre**:<br />InvalidNumberOfPartitions<br />**Hex**:<br />8004E200<br />**Número**:<br />-2147163648|No se pueden eliminar datos de auditoría en las particiones que estén actualmente en uso ni eliminar las particiones que se han creado para almacenar datos de auditoría futuros.|
 > |**Nombre**:<br />InvalidNumberOfReferencePanelSections<br />**Hex**:<br />80061504<br />**Número**:<br />-2147085052|El formulario MainInteractionCentric solo puede tener una sección de panel de referencia. Encontrado {0}.|
 > |**Nombre**:<br />InvalidNumberOfSectionsInTab<br />**Hex**:<br />80060872<br />**Número**:<br />-2147088270|Un XML de formulario de diálogo no puede contener más de una sección.|
 > |**Nombre**:<br />InvalidNumberOfTabsInDialog<br />**Hex**:<br />80060871<br />**Número**:<br />-2147088271|Un XML de formulario de diálogo no puede contener más de una pestaña.|
 > |**Nombre**:<br />InvalidOAuthToken<br />**Hex**:<br />80041d50<br />**Número**:<br />-2147214000|El token OAuth no es válido|
+> |**Nombre**:<br />InvalidObjectTypeCode<br />**Hex**:<br />80072005<br />**Número**:<br />-2147016699|No se encuentra el código de tipo de objeto {0}. Son metadatos: {1}|
 > |**Nombre**:<br />InvalidObjectTypes<br />**Hex**:<br />8004021f<br />**Número**:<br />-2147220961|Tipo de objeto no válido.|
 > |**Nombre**:<br />InvalidOccurrenceNumber<br />**Hex**:<br />8004E125<br />**Número**:<br />-2147163867|La fecha de finalización efectiva de la serie no puede ser anterior a la actual. Seleccione un número de incidencia válido.|
 > |**Nombre**:<br />InvalidOfflineOperation<br />**Hex**:<br />8004410e<br />**Número**:<br />-2147204850|Operación no válida sin conexión.|
@@ -1682,6 +1752,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />InvalidOperation<br />**Hex**:<br />8004023b<br />**Número**:<br />-2147220933|Se realizó una operación no válida.|
 > |**Nombre**:<br />InvalidOperationForClosedOrCancelledCampaignActivity<br />**Hex**:<br />80040314<br />**Número**:<br />-2147220716|No se pueden agregar elementos a la campaignactivity cerrada (cancelada).|
 > |**Nombre**:<br />InvalidOperationForDynamicList<br />**Hex**:<br />8004F701<br />**Número**:<br />-2147158271|Esta acción no está disponible para una lista de marketing dinámica.|
+> |**Nombre**:<br />InvalidOperationWhenBusinessRuleIsActive<br />**Hex**:<br />80060015<br />**Número**:<br />-2147090411|Operación no válida: no puede activar o desactivar esta regla empresarial|
 > |**Nombre**:<br />InvalidOperationWhenListIsNotActive<br />**Hex**:<br />8004033a<br />**Número**:<br />-2147220678|La lista no está activa. No se puede realizar esta operación.|
 > |**Nombre**:<br />InvalidOperationWhenListLocked<br />**Hex**:<br />80040302<br />**Número**:<br />-2147220734|La lista está bloqueada. No se puede realizar esta acción.|
 > |**Nombre**:<br />InvalidOperationWhenPartyIsNotActive<br />**Hex**:<br />8004033b<br />**Número**:<br />-2147220677|La parte no está activa. No se puede realizar esta operación.|
@@ -1703,7 +1774,10 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />InvalidOwnerID<br />**Hex**:<br />80040229<br />**Número**:<br />-2147220951|El identificador de propietario falta o no es válido.|
 > |**Nombre**:<br />InvalidOwnershipTypeMask<br />**Hex**:<br />8004700d<br />**Número**:<br />-2147192819|La máscara de tipo de propiedad especificada no es válida para esta operación|
 > |**Nombre**:<br />InvalidPageResponse<br />**Hex**:<br />8004E00D<br />**Número**:<br />-2147164147|Respuesta de página no válida generada.|
+> |**Nombre**:<br />InvalidParameterForFileOperation<br />**Hex**:<br />80090003<br />**Número**:<br />-2146893821|Parámetro no válido [{0}] proporcionado en la URL de solicitud.|
 > |**Nombre**:<br />InvalidParent<br />**Hex**:<br />80040205<br />**Número**:<br />-2147220987|El objeto primario falta o no es válido.|
+> |**Nombre**:<br />InvalidParentChildCascadeBehavior<br />**Hex**:<br />8007200D<br />**Número**:<br />-2147016691|Relación Primario-Elemento secundario {0} requiere un comportamiento jerárquico en cascada.|
+> |**Nombre**:<br />InvalidParentChildRelationshipUpdate<br />**Hex**:<br />8007200B<br />**Número**:<br />-2147016693|No puede actualizar la relación de tipo ParentChild.|
 > |**Nombre**:<br />InvalidParentId<br />**Hex**:<br />80040206<br />**Número**:<br />-2147220986|El identificador primario falta o no es válido.|
 > |**Nombre**:<br />InvalidPartnerSolutionCustomizationProvider<br />**Hex**:<br />8004A109<br />**Número**:<br />-2147180279|Tipo de proveedor de personalización de solución asociada no válido|
 > |**Nombre**:<br />InvalidPartyMapping<br />**Hex**:<br />80043515<br />**Número**:<br />-2147207915|La asignación de entidad no es válida.|
@@ -1713,7 +1787,9 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />InvalidPluginStrongNameRequired<br />**Hex**:<br />80081114<br />**Número**:<br />-2146954988|El ensamblado de complemento no está indicado como nombre de alta seguridad.|
 > |**Nombre**:<br />InvalidPluginTypeImplementation<br />**Hex**:<br />8004418c<br />**Número**:<br />-2147204724|El tipo de complemento debe implementar exactamente uno de las siguientes clases o la interfaces: Microsoft.Crm.Sdk.IPlugin, Microsoft.Xrm.Sdk.IPlugin, System.Activities.Activity y System.Workflow.ComponentModel.Activity.|
 > |**Nombre**:<br />InvalidPointer<br />**Hex**:<br />80040218<br />**Número**:<br />-2147220968|Se desecha el objeto.|
-> |**Nombre**:<br />InvalidPrecisionForControl <br />**Hex**:<br />8006087D<br />**Número**:<br />-2147088259|Se ha especificado un parámetro Precision no válido para el control {0}. Precision debe encontrarse entre {1} y {2}.|
+> |**Nombre**:<br />InvalidPostponeUntilTimeForModernFlowExecute<br />**Hex**:<br />80060478<br />**Número**:<br />-2147089288|No se puede ejecutar Modern Flow '{0}' porque '{1}' no está en un formato DateTimeOffset admitido.|
+> |**Nombre**:<br />InvalidPrecisionForControl<br />**Hex**:<br />8006087D<br />**Número**:<br />-2147088259|Se ha especificado un parámetro Precision no válido para el control {0}. Precision debe encontrarse entre {1} y {2}.|
+> |**Nombre**:<br />InvalidPrefixInConnectorName<br />**Hex**:<br />80072605<br />**Número**:<br />-2147015163|El nombre del conector debe comenzar con un prefijo alfanumérico con una longitud entre 2~8 y seguido de '_' y nombre alfanumérico.|
 > |**Nombre**:<br />InvalidPresentationDescription<br />**Hex**:<br />8004E002<br />**Número**:<br />-2147164158|La descripción de la presentación no es válida.|
 > |**Nombre**:<br />InvalidPreviewModeOperation<br />**Hex**:<br />8005f219<br />**Número**:<br />-2147093991|No puede hacer esta operación en modo de vista previa.|
 > |**Nombre**:<br />InvalidPriceLevelCurrencyForPricingMethod<br />**Hex**:<br />80048cf9<br />**Número**:<br />-2147185415|La divisa de la lista de precios debe coincidir con la divisa del producto para el porcentaje del método de cálculo de precios.|
@@ -1742,6 +1818,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />InvalidRecurrencePattern<br />**Hex**:<br />8004E100<br />**Número**:<br />-2147163904|Patrón de periodicidad no válido.|
 > |**Nombre**:<br />InvalidRecurrenceRule<br />**Hex**:<br />80040246<br />**Número**:<br />-2147220922|Error en RecurrencePatternFactory.|
 > |**Nombre**:<br />InvalidRecurrenceRuleForBulkDeleteAndDuplicateDetection<br />**Hex**:<br />8004D2A0<br />**Número**:<br />-2147167584|Debe especificar como diaria la frecuencia de eliminación en masa y detección de duplicados.|
+> |**Nombre**:<br />InvalidReferencesFound<br />**Hex**:<br />80072032<br />**Número**:<br />-2147016654|Referencias no válidas encontradas: {0}|
 > |**Nombre**:<br />InvalidRegardingObjectTypeCode<br />**Hex**:<br />80040319<br />**Número**:<br />-2147220711|El código de tipo de objeto referente no es válido para la operación masiva.|
 > |**Nombre**:<br />InvalidRegistryKey<br />**Hex**:<br />8004024c<br />**Número**:<br />-2147220916|Clave de registro especificada no válida.|
 > |**Nombre**:<br />InvalidRelationshipDescription<br />**Hex**:<br />80047003<br />**Número**:<br />-2147192829|La relación especificada no se puede crear|
@@ -1758,6 +1835,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />InvalidRequestParameters<br />**Hex**:<br />8006110E<br />**Número**:<br />-2147086066|Los parámetros de la solicitud no son válidos para la parte externa del servidor.|
 > |**Nombre**:<br />InvalidResourceType<br />**Hex**:<br />8004B029<br />**Número**:<br />-2147176407|La acción solicitada no es válida para el tipo de recurso {0}.|
 > |**Nombre**:<br />InvalidRestore<br />**Hex**:<br />80040258<br />**Número**:<br />-2147220904|Debe llamarse RestoreCaller después de SwitchToSystemUser.|
+> |**Nombre**:<br />InvalidRoboticProcessAutomationFlowProcessClientData<br />**Hex**:<br />80060473<br />**Número**:<br />-2147089293|Clientdata no tiene un formato válido. Detalles: "{0}".|
 > |**Nombre**:<br />InvalidRole<br />**Hex**:<br />8004B012<br />**Número**:<br />-2147176430|No ha asignado roles de a este usuario|
 > |**Nombre**:<br />InvalidRoleOccurrencesForOneToManyRelationship<br />**Hex**:<br />8006089A<br />**Número**:<br />-2147088230|No puede haber más de dos roles de relación de entidad para una relación de uno a varios {0}.|
 > |**Nombre**:<br />InvalidRoleTypeForOneToManyRelationship<br />**Hex**:<br />80060899<br />**Número**:<br />-2147088231|Este tipo de rol de relación no es válido para una relación de uno a varios {0}.|
@@ -1777,8 +1855,10 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />InvalidSingletonResults<br />**Hex**:<br />8004024f<br />**Número**:<br />-2147220913|Excepciones internas de CRM: Consulta de recuperación de Singleton no debería devolver más de 1 registro.|
 > |**Nombre**:<br />InvalidSiteRelativeUrlFormat<br />**Hex**:<br />80048053<br />**Número**:<br />-2147188653|La URL relativa contiene caracteres no válidos. Utilice un nombre diferente. Los nombres de dirección URL relativa válidos no pueden terminar con las siguientes cadenas: .aspx, .ashx, .asmx, .svc, no pueden comenzar o terminar con un punto ni /, no pueden contener puntos consecutivos ni / y no pueden contener ninguno de los siguientes caracteres: ~ " # % & * : < > ? \ { | }.|
 > |**Nombre**:<br />InvalidSolutionAwarenessDeclaration<br />**Hex**:<br />80072000<br />**Número**:<br />-2147016704|Una entidad no puede ser declarada como compatible con la solución en una operación de actualización. Entidad: {0}|
+> |**Nombre**:<br />InvalidSolutionComponentKey<br />**Hex**:<br />8007200E<br />**Número**:<br />-2147016690|El atributo {0} de la clave {1} y entidad {2} debe ser exportable para ser una clave de exportación.|
 > |**Nombre**:<br />InvalidSolutionConfigurationPage<br />**Hex**:<br />8004701B<br />**Número**:<br />-2147192805|La página de configuración especificada para esta solución no es válida.|
-> |**Nombre**:<br />InvalidSolutionUniqueName<br />**Hex**:<br />8004F002<br />**Número**:<br />-2147160062|Carácter no válido especificado para el nombre único de la solución. Solo están permitidos caracteres dentro de los rangos \[A-Z\], \[a-z\], \[0-9\] o \_. El primer carácter solo puede estar en los intervalos \[A-Z\], \[a-z\] o \_.|
+> |**Nombre**:<br />InvalidSolutionDependencies<br />**Hex**:<br />80072006<br />**Número**:<br />-2147016698|Todos los componentes presentes en esta solución tienen dependencias. Esto no está permitido ya que la desinstalación de esta solución sería inaccesible.|
+> |**Nombre**:<br />InvalidSolutionUniqueName<br />**Hex**:<br />8004F002<br />**Número**:<br />-2147160062|Carácter no válido especificado para el nombre único de la solución. Solo están permitidos caracteres dentro de los rangos [A-Z] [a-z], [0-9] o _. El primer carácter solo puede estar en los intervalos [A-z] [a-z] o _.|
 > |**Nombre**:<br />InvalidSolutionVersion<br />**Hex**:<br />8004F01E<br />**Número**:<br />-2147160034|Se especificó una versión de la solución no válida.|
 > |**Nombre**:<br />InvalidSourceAttributeType<br />**Hex**:<br />80044808<br />**Número**:<br />-2147203064|El tipo de atributo de origen no coincide con el tipo de datos de importe especificado.|
 > |**Nombre**:<br />InvalidSourceEntityAttribute<br />**Hex**:<br />80044806<br />**Número**:<br />-2147203066|El atributo {0} no es un atributo de entidad {1}.|
@@ -1797,6 +1877,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />InvalidSubmitFromUnapprovedArticle<br />**Hex**:<br />80048dff<br />**Número**:<br />-2147185153|Está intentando enviar un artículo que tiene un estado de no aprobado. Solo puede enviar un artículo con el estado de borrador.|
 > |**Nombre**:<br />InvalidSubstituteProduct<br />**Hex**:<br />80043aff<br />**Número**:<br />-2147206401|Un producto no puede estar relacionado consigo mismo.|
 > |**Nombre**:<br />InvalidSyncDirectionValueForUpdate<br />**Hex**:<br />80060742<br />**Número**:<br />-2147088574|La dirección de sincronización no es válida según la dirección de sincronización permitida para una o varias asignaciones de atributos.|
+> |**Nombre**:<br />InvalidSyncToken<br />**Hex**:<br />80072515<br />**Número**:<br />-2147015403|Token de sincronización no válido|
 > |**Nombre**:<br />InvalidTargetEntity<br />**Hex**:<br />80040369<br />**Número**:<br />-2147220631|El tipo de registro de destino especificado no existe.|
 > |**Nombre**:<br />InvalidTargetEntityTypeForControl<br />**Hex**:<br />80060878<br />**Número**:<br />-2147088264|No se ha especificado Tipo de entidad de destino para el control {0}. Entidad de destino es un campo obligatorio.|
 > |**Nombre**:<br />InvalidTargetFrameworkVersion<br />**Hex**:<br />8004420b<br />**Número**:<br />-2147204597|El ensamblado de complemento tiene como destino una versión de .NET Framework que no es compatible.|
@@ -1808,6 +1889,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />InvalidThemeDeleteOperation<br />**Hex**:<br />800608D7<br />**Número**:<br />-2147088169|No puede eliminar temas del sistema o predeterminados.|
 > |**Nombre**:<br />InvalidThemeId<br />**Hex**:<br />800608D4<br />**Número**:<br />-2147088172|Identificador de tema no válido.|
 > |**Nombre**:<br />InvalidTimeZoneCode<br />**Hex**:<br />800608F7<br />**Número**:<br />-2147088137|El código de zona horaria {0} especificado no se reconoce. Especifique un valor de código de zona horaria válido.|
+> |**Nombre**:<br />InvalidToDeleteFileAttachmentBulkDelete<br />**Hex**:<br />8009000A<br />**Número**:<br />-2146893814|Los trabajos de eliminación masiva de archivos adjuntos no se pueden eliminar.|
 > |**Nombre**:<br />InvalidToken<br />**Hex**:<br />8004B061<br />**Número**:<br />-2147176351|El token no es válido.|
 > |**Nombre**:<br />InvalidTotalDiscount<br />**Hex**:<br />800404f4<br />**Número**:<br />-2147220236|El descuento total no es válido|
 > |**Nombre**:<br />InvalidTotalPrice<br />**Hex**:<br />800404f5<br />**Número**:<br />-2147220235|El precio total no es válido|
@@ -1886,12 +1968,24 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />IsNotLiveToSendInvitation<br />**Hex**:<br />8004B009<br />**Número**:<br />-2147176439|No se admite esta funcionalidad, solo está disponible para la solución en línea.|
 > |**Nombre**:<br />IsvAborted<br />**Hex**:<br />80040265<br />**Número**:<br />-2147220891|El código ISV anuló la operación.|
 > |**Nombre**:<br />IsvExtensionsPrivilegeNotPresent<br />**Hex**:<br />80048029<br />**Número**:<br />-2147188695|Para importar ISV.Config, la cuenta de usuario debe estar asociada a un rol de seguridad que incluya el privilegio Extensiones ISV.|
+> |**Nombre**:<br />IsvTransactionCount<br />**Hex**:<br />8009000C<br />**Número**:<br />-2146893812|El código ISV redujo el recuento de transacciones abiertas. Los complementos personalizados no deben detectar excepciones de llamadas de OrganizationService y continuar el procesamiento.|
 > |**Nombre**:<br />IsvUnExpected<br />**Hex**:<br />80040224<br />**Número**:<br />-2147220956|Error inesperado del código ISV.|
 > |**Nombre**:<br />JobNameIsEmptyOrNull<br />**Hex**:<br />80048457<br />**Número**:<br />-2147187625|El nombre del trabajo no puede ser nulo o estar vacío.|
 > |**Nombre**:<br />KBInvalidCreateAssociation<br />**Hex**:<br />80060861<br />**Número**:<br />-2147088287|Este artículo de KB ya está vinculado a {0}.|
 > |**Nombre**:<br />KnowledgeSearchActiveModelsAlreadyExist<br />**Hex**:<br />80061680<br />**Número**:<br />-2147084672|Ya existe una configuración activa para entidad de origen {0}. Solo se permite una configuración activa por entidad de origen.|
 > |**Nombre**:<br />LabelIdDoesNotMatchStepId<br />**Hex**:<br />80060419<br />**Número**:<br />-2147089383|El identificador de la etiqueta {0} no coincide con el identificador del paso {1}.|
 > |**Nombre**:<br />LanguageProvisioningSrsDataConnectorNotInstalled<br />**Hex**:<br />8004F710<br />**Número**:<br />-2147158256|Microsoft Dynamics 365 Reporting Extensions tiene que instalarse antes de que se pueda proporcionar el idioma para esta organización.|
+> |**Nombre**:<br />LayerDesiredOrderFCBIsOff<br />**Hex**:<br />8004F057<br />**Número**:<br />-2147159977|La cláusula LayerDesiredOrder está presente en el mensaje de importación pero el FCB no está habilitado. Para evitar capas incorrectas, el proceso finaliza.|
+> |**Nombre**:<br />LayerDesiredOrderHintDiffFormOnBase<br />**Hex**:<br />8004F055<br />**Número**:<br />-2147159979|La cláusula LayerDesiredOrder contiene un valor que causará el formulario [{0}] se convierta en la base, pero el Formulario en la solución entrante es un dif. Esto es un error terminal, volver a intentarlo no ayudará.|
+> |**Nombre**:<br />LayerDesiredOrderHintTypeNotAvailable<br />**Hex**:<br />8004F054<br />**Número**:<br />-2147159980|La cláusula LayerDesiredOrder contiene un tipo [{0}] que no está disponible para su uso. Esto es un error terminal, volver a intentarlo no ayudará.|
+> |**Nombre**:<br />LayerDesiredOrderInvalidLayerState<br />**Hex**:<br />8004F051<br />**Número**:<br />-2147159983|Hubo una coincidencia para una solución en la cláusula LayerDesiredOrder, pero no es posible honrarla debido a una corrupción en las capas del componente [{0}], identificado [{1}]. Esto es un error terminal, volver a intentarlo no ayudará. Llame al soporte al cliente. El estado de la capa es: [{2}].|
+> |**Nombre**:<br />LayerDesiredOrderInvalidXML<br />**Hex**:<br />8004F049<br />**Número**:<br />-2147159991|La cláusula LayerDesiredOrder contiene un esquema XML no válido.|
+> |**Nombre**:<br />LayerDesiredOrderInvalidXMLDetail<br />**Hex**:<br />8004F050<br />**Número**:<br />-2147159984|La cláusula LayerDesiredOrder contiene un esquema XML no válido. Verifique la propiedad [{0}].|
+> |**Nombre**:<br />LayerDesiredOrderNotAllowedOnPatch<br />**Hex**:<br />8004F052<br />**Número**:<br />-2147159982|La cláusula LayerDesiredOrder no se puede utilizar al importar un parche. Elimine la cláusula y vuelva a intentar la operación.|
+> |**Nombre**:<br />LayerDesiredOrderNotSamePublisher<br />**Hex**:<br />8004F048<br />**Número**:<br />-2147159992|La solución [{0}] se usó en una cláusula LayerDesiredOrder, pero su editor [{1}] no coincide con el editor de la solución que se está instalando: [{2}]. No se admite esta operación.|
+> |**Nombre**:<br />LayerDesiredOrderPendingUpgrade<br />**Hex**:<br />8004F047<br />**Número**:<br />-2147159993|La solución [{0}] se usó en una cláusula LayerDesiredOrder, pero tiene una actualización pendiente. Complete la actualización e intente la operación nuevamente.|
+> |**Nombre**:<br />LayerDesiredOrderPublisherNotAllowed<br />**Hex**:<br />8004F056<br />**Número**:<br />-2147159978|El editor [{0}] no está permitido usar la cláusula LayerDesiredOrder.|
+> |**Nombre**:<br />LayerDesiredOrderRestrictedSolution<br />**Hex**:<br />8004F058<br />**Número**:<br />-2147159976|La cláusula LayerDesiredOrder no se puede usar en [{0}]. Esto es un error terminal, volver a intentarlo no ayudará.|
 > |**Nombre**:<br />LeadAlreadyInClosedState<br />**Hex**:<br />80040519<br />**Número**:<br />-2147220199|El cliente potencial ya está cerrado.|
 > |**Nombre**:<br />LeadAlreadyInOpenState<br />**Hex**:<br />80040518<br />**Número**:<br />-2147220200|El cliente potencial se encuentra en estado abierto.|
 > |**Nombre**:<br />LegacyXlsxFileNotSupported<br />**Hex**:<br />800608CF<br />**Número**:<br />-2147088177|Los archivos .xlsx heredados no se pueden usar para plantillas de Excel.|
@@ -1921,6 +2015,13 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />LowerVersionUpgrade<br />**Hex**:<br />80048541<br />**Número**:<br />-2147187391|La solución de importación debe tener una versión superior a la solución existente que está actualizando.|
 > |**Nombre**:<br />LowQuantityGreaterThanHighQuantity<br />**Hex**:<br />80043b01<br />**Número**:<br />-2147206399|Una cantidad baja debe ser menor que la cantidad alta.|
 > |**Nombre**:<br />LowQuantityLessThanZero<br />**Hex**:<br />80043b00<br />**Número**:<br />-2147206400|Una baja cantidad debe ser superior a cero.|
+> |**Nombre**:<br />MailApp_AppModuleDashboardFormInactive<br />**Hex**:<br />80061227<br />**Número**:<br />-2147085785|La aplicación para el formulario de Outlook Dashboard está inactiva.|
+> |**Nombre**:<br />MailApp_AppModuleDashboardFormMissing<br />**Hex**:<br />80061223<br />**Número**:<br />-2147085789|No se encuentra la aplicación para el formulario de Outlook Dashboard.|
+> |**Nombre**:<br />MailApp_AppModuleDashboardFormRoleNotAssigned<br />**Hex**:<br />80061228<br />**Número**:<br />-2147085784|El usuario no tiene acceso a la aplicación para Outlook Dashboard.|
+> |**Nombre**:<br />MailApp_AppModulePermission<br />**Hex**:<br />80070004<br />**Número**:<br />-2147024892|El rol del usuario actual no tiene los permisos necesarios para acceder a la aplicación para Outlook|
+> |**Nombre**:<br />MailApp_AppModuleSitemapDashboardMissing<br />**Hex**:<br />80061224<br />**Número**:<br />-2147085788|No se encuentra la aplicación para Outlook Dashboard en el mapa del sitio.|
+> |**Nombre**:<br />MailApp_AppModuleSitemapDashboardNotDefault<br />**Hex**:<br />80061225<br />**Número**:<br />-2147085787|El panel de la aplicación para Outlook no está configurado como predeterminado en el Mapa del sitio.|
+> |**Nombre**:<br />MailApp_AppModuleSitemapMissing<br />**Hex**:<br />80061226<br />**Número**:<br />-2147085786|No se encuentra el mapa del sitio de la aplicación para Outlook AppModule|
 > |**Nombre**:<br />MailApp_AppointmentFeatureNotEnabled<br />**Hex**:<br />80061218<br />**Número**:<br />-2147085800|No ha sido habilitado el acceso a la aplicación para citas para esta organización de Microsoft Dynamics 365. Póngase en contacto con el administrador del sistema para habilitar el acceso a citas.|
 > |**Nombre**:<br />MailApp_DifferentSecurityZoneError<br />**Hex**:<br />80061210<br />**Número**:<br />-2147085808|Intente agregar las direcciones URL siguientes a los sitios de confianza:{0} {1} {2}|
 > |**Nombre**:<br />MailApp_EmailAddressMismatch<br />**Hex**:<br />80061211<br />**Número**:<br />-2147085807|Parece que intenta acceder a la aplicación de CRM para Outlook desde una dirección de correo electrónico que se no reconoce. Cierre e inicie sesión con la dirección de correo electrónico que utiliza para Dynamics CRM o bien haga que su administrador del sistema actualice la configuración de su correo electrónico para que refleje esta dirección de correo electrónico.|
@@ -1956,6 +2057,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />MaxActiveSLAKPIError<br />**Hex**:<br />8004F898<br />**Número**:<br />-2147157864|No puede activar este SLA porque ha superado el número máximo de KPI del SLA permitidos por entidad para su organización.|
 > |**Nombre**:<br />MaxChildCasesLimitExceeded<br />**Hex**:<br />8003F454<br />**Número**:<br />-2147224492|Un caso principal no puede tener más casos secundarios del máximo permitido. Póngase en contacto con el administrador para conocer más detalles|
 > |**Nombre**:<br />MaxConditionsMobileOfflineFilters<br />**Hex**:<br />80071114<br />**Número**:<br />-2147020524|Solo puede definir 3 filtros de la org. de Mobile offline para cada entidad.|
+> |**Nombre**:<br />MaxIconSizeExceededForConnector<br />**Hex**:<br />80072602<br />**Número**:<br />-2147015166|El archivo de icono del conector es demasiado grande, el tamaño no puede exceder 1 MB.|
 > |**Nombre**:<br />MaximumControlsLimitExceeded<br />**Hex**:<br />8004E301<br />**Número**:<br />-2147163391|El panel formulario XML contiene más del número máximo de elementos de control: {0}.|
 > |**Nombre**:<br />MaximumCountForUpdateModeExceeded<br />**Hex**:<br />8004F602<br />**Número**:<br />-2147158526|En una operación de actualización, solo se puede importar un archivo a la vez.|
 > |**Nombre**:<br />MaximumNumberHandlersExceeded<br />**Hex**:<br />80048505<br />**Número**:<br />-2147187451|Esta solución agrega controladores de eventos de formulario y, por consiguiente, se excede el número máximo de controladores de eventos para un formulario.|
@@ -1988,7 +2090,9 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />MissingControlStep<br />**Hex**:<br />80060385<br />**Número**:<br />-2147089531|Falta un paso de control necesario.|
 > |**Nombre**:<br />MissingCrmAuthenticationToken<br />**Hex**:<br />80044300<br />**Número**:<br />-2147204352|CrmAuthenticationToken no existe.|
 > |**Nombre**:<br />MissingCrmAuthenticationTokenOrganizationName<br />**Hex**:<br />80044308<br />**Número**:<br />-2147204344|El nombre de la organización debe especificarse en CrmAuthenticationToken.|
+> |**Nombre**:<br />MissingDependentConnectorsForModernFlow<br />**Hex**:<br />80060474<br />**Número**:<br />-2147089292|Faltan conectores personalizados para el flujo actual, recuento esperado: {0} con nombre: {1}, recuento real: {2}|
 > |**Nombre**:<br />MissingHierarchicalRelationshipForOperator<br />**Hex**:<br />80047020<br />**Número**:<br />-2147192800|Esta consulta utiliza un operador jerárquico, pero la entidad {0} no tiene una relación jerárquica.|
+> |**Nombre**:<br />MissingKeyValue<br />**Hex**:<br />80072034<br />**Número**:<br />-2147016652|Entidad {0} no contiene el valor clave para el atributo {1}.|
 > |**Nombre**:<br />MissingOpportunityId<br />**Hex**:<br />80043b15<br />**Número**:<br />-2147206379|El identificador de oportunidad falta o no es válido.|
 > |**Nombre**:<br />MissingOrganizationFriendlyName<br />**Hex**:<br />8004B00A<br />**Número**:<br />-2147176438|No se puede instalar Dynamics 365 sin un nombre descriptivo de la organización.|
 > |**Nombre**:<br />MissingOrganizationUniqueName<br />**Hex**:<br />8004B00B<br />**Número**:<br />-2147176437|No se puede instalar Dynamics 365 sin un nombre único de la organización.|
@@ -1998,13 +2102,16 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />MissingParameterToMethod<br />**Hex**:<br />8004B021<br />**Número**:<br />-2147176415|Falta el parámetro {0} método {1}|
 > |**Nombre**:<br />MissingParameterToStoredProcedure<br />**Hex**:<br />8004C000<br />**Número**:<br />-2147172352|Falta parámetro de procedimiento almacenado: {0}|
 > |**Nombre**:<br />MissingPriceLevelId<br />**Hex**:<br />80043b12<br />**Número**:<br />-2147206382|Falta el identificador del nivel de precios.|
+> |**Nombre**:<br />MissingPrimaryKey<br />**Hex**:<br />80072033<br />**Número**:<br />-2147016653|A la Entidad {0} le falta la clave principal {1}.|
 > |**Nombre**:<br />MissingProductId<br />**Hex**:<br />80043b11<br />**Número**:<br />-2147206383|Falta el identificador del producto.|
 > |**Nombre**:<br />MissingQuantity<br />**Hex**:<br />80081012<br />**Número**:<br />-2146955246|Falta la cantidad.|
 > |**Nombre**:<br />MissingQueryType<br />**Hex**:<br />80040235<br />**Número**:<br />-2147220939|Falta el tipo de consulta.|
 > |**Nombre**:<br />MissingRecipient<br />**Hex**:<br />8004350d<br />**Número**:<br />-2147207923|El fax debe tener un destinatario para poder enviarlo.|
+> |**Nombre**:<br />MissingRelationshipInSolution<br />**Hex**:<br />80048548<br />**Número**:<br />-2147187384|A los siguientes atributos {0} de entidad {1} les faltan sus relaciones asociadas.|
 > |**Nombre**:<br />MissingRequiredAttributes<br />**Hex**:<br />80061037<br />**Número**:<br />-2147086281|La propiedad no se puede ser creada ni actualizada porque falta el regardingobjectid, el tipo de datos o el atributo de nombre.|
 > |**Nombre**:<br />MissingRequiredComponentAttributes<br />**Hex**:<br />80072002<br />**Número**:<br />-2147016702|El atributo necesario no debe ser nulo. Atributo: {0}|
 > |**Nombre**:<br />MissingTeamName<br />**Hex**:<br />80041d0b<br />**Número**:<br />-2147214069|El nombre de equipo falta inesperadamente.|
+> |**Nombre**:<br />MissingTransactionCurrencyId<br />**Hex**:<br />80048546<br />**Número**:<br />-2147187386|Se necesita suministrar TransactionCurrencyId para dar formato al campo de dinero (Id: {0}, Nombre: {1}, Valor: {2}, Entidad: {3}).|
 > |**Nombre**:<br />MissingUomId<br />**Hex**:<br />80043b0d<br />**Número**:<br />-2147206387|Falta el identificador de unidad.|
 > |**Nombre**:<br />MissingUomScheduleId<br />**Hex**:<br />80043b0a<br />**Número**:<br />-2147206390|Falta el identificador de programación de unidad.|
 > |**Nombre**:<br />MissingUserId<br />**Hex**:<br />8004021b<br />**Número**:<br />-2147220965|El identificador de usuario o de equipo falta o no es válido.|
@@ -2020,6 +2127,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />MobileOfflineProfileNameCanNotBeNullOrEmpty<br />**Hex**:<br />800609A9<br />**Número**:<br />-2147087959|El nombre del perfil de Mobile Offline no puede ser nulo ni estar vacío. Escriba un nombre para el perfil.|
 > |**Nombre**:<br />MobileOfflineRuleEnhancementFeatureNotAvailaible<br />**Hex**:<br />80071117<br />**Número**:<br />-2147020521|Esta característica no está habilitada para su organización. Póngase en contacto con el administrador del sistema para obtener ayuda.|
 > |**Nombre**:<br />MobileServiceError<br />**Hex**:<br />8004B070<br />**Número**:<br />-2147176336|Error de comunicación con el servicio móvil.|
+> |**Nombre**:<br />ModernFlowMustBeMarkedAsOnDemandForExecuteWorkflow<br />**Hex**:<br />80060479<br />**Número**:<br />-2147089287|No se puede ejecutar Modern Flow '{0}' porque no está marcado como bajo demanda.|
 > |**Nombre**:<br />ModernFlowProcessesNotEnabled<br />**Hex**:<br />80060464<br />**Número**:<br />-2147089308|La creación de procesos de flujo modernos no está habilitada.|
 > |**Nombre**:<br />ModernFlowProcessesOnlyAvailableOnline<br />**Hex**:<br />80060465<br />**Número**:<br />-2147089307|La creación de procesos de flujo modernos solo es accesible en línea.|
 > |**Nombre**:<br />MoneySizeExceeded<br />**Hex**:<br />80040317<br />**Número**:<br />-2147220713|El valor proporcionado superaba el valor mínimo o máximo del campo de tipo dinero.|
@@ -2030,12 +2138,16 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />MultilevelParentChildRelationshipNotAllowed<br />**Hex**:<br />8003F453<br />**Número**:<br />-2147224493|No se permite asociar casos secundarios a los casos secundarios existentes.|
 > |**Nombre**:<br />MultipleChartAreasFound<br />**Hex**:<br />8004E008<br />**Número**:<br />-2147164152|No se admiten varias áreas de gráficos.|
 > |**Nombre**:<br />MultipleChildPicklist<br />**Hex**:<br />80040250<br />**Número**:<br />-2147220912|Excepciones internas de CRM: No se admiten listas desplegables con más de un childAttribute.|
+> |**Nombre**:<br />MultipleExportKeyNotSupported<br />**Hex**:<br />800608A9<br />**Número**:<br />-2147088215|No se puede crear la clave de exportación para la entidad {0} porque la entidad ya tiene definida una clave de exportación|
 > |**Nombre**:<br />MultipleFilesFound<br />**Hex**:<br />80048439<br />**Número**:<br />-2147187655|El nombre del archivo adjunto no es único.|
 > |**Nombre**:<br />MultipleFormElementsFound<br />**Hex**:<br />8004E304<br />**Número**:<br />-2147163388|Un panel formulario XML puede contener solo un elemento de formulario.|
+> |**Nombre**:<br />MultipleImportFilesFound<br />**Hex**:<br />80072036<br />**Número**:<br />-2147016650|Múltiples archivos para atributo {0} fueron encontrados para la entidad {1}.|
+> |**Nombre**:<br />MultipleInstancesOnEntity<br />**Hex**:<br />80060373<br />**Número**:<br />-2147089549|Múltiples instancias de proceso '{0}' existen para '{1}':'{2}'. Utilice las API flujo de proceso de negocio para realizar acciones relacionadas con el proceso.|
 > |**Nombre**:<br />MultipleLabelsInUserDashboard<br />**Hex**:<br />8004E30D<br />**Número**:<br />-2147163379|Un panel de usuario puede tener como máximo una etiqueta para un elemento de formulario.|
 > |**Nombre**:<br />MultipleMeasureCollectionsFound<br />**Hex**:<br />8004E01C<br />**Número**:<br />-2147164132|Más de una colección de medidas no es admitida para los gráficos con subcategoría, como por ejemplo los gráficos de comparación|
 > |**Nombre**:<br />MultipleMeasuresFound<br />**Hex**:<br />8004E007<br />**Número**:<br />-2147164153|Más de una medida no es admitida para los gráficos con subcategoría, como por ejemplo los gráficos de comparación|
 > |**Nombre**:<br />MultipleOrganizationsNotAllowed<br />**Hex**:<br />80041d35<br />**Número**:<br />-2147214027|Solo se permite una organización y un negocio de raíz.|
+> |**Nombre**:<br />MultipleParentEntitiesFoundByEntity<br />**Hex**:<br />8006089E<br />**Número**:<br />-2147088226|Existe más de un primario para {0} Una entidad solo puede tener una entidad primaria.|
 > |**Nombre**:<br />MultipleParentReportsFound<br />**Hex**:<br />80040485<br />**Número**:<br />-2147220347|Se encontró más de un enlace de informes. Cada informe puede tener sólo un primario.|
 > |**Nombre**:<br />MultipleParentsNotSupported<br />**Hex**:<br />80047007<br />**Número**:<br />-2147192825|Una entidad puede tener únicamente una relación jerárquica|
 > |**Nombre**:<br />MultiplePartnerSecurityRoleWithSameInformation<br />**Hex**:<br />8004A10a<br />**Número**:<br />-2147180278|Más de un rol de seguridad encontrado para el usuario asociado|
@@ -2050,16 +2162,20 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />MustContainAtLeastACharInMention<br />**Hex**:<br />8004F6A4<br />**Número**:<br />-2147158364|El nombre para mostrar debe contener al menos un carácter que no sea un espacio en blanco.|
 > |**Nombre**:<br />NavigationPropertyAlreadyExists<br />**Hex**:<br />80072551<br />**Número**:<br />-2147015343|NavigationPropertyName {0} no es único en una entidad|
 > |**Nombre**:<br />NavigationPropertyNameCannotBeTheSameOnBothSidesOfRel<br />**Hex**:<br />80072550<br />**Número**:<br />-2147015344|El nombre de la propiedad de navegación no puede ser el mismo en ambos lados de una relación que hace referencia a sí misma. SchemaName - {0}|
+> |**Nombre**:<br />NavigationPropertyNameNodeMissing<br />**Hex**:<br />80048452<br />**Número**:<br />-2147187630|Falta el nodo NavigationPropertyName para la relación de entidad {0}.|
+> |**Nombre**:<br />NavigationPropertyNameValueMissing<br />**Hex**:<br />80048836<br />**Número**:<br />-2147186634|Falta el valor NavigationPropertyName para la relación de entidad {0}.|
 > |**Nombre**:<br />NavPaneNotCustomizable<br />**Hex**:<br />80044329<br />**Número**:<br />-2147204311|Las propiedades del panel de navegación de esta relación no son personalizables|
 > |**Nombre**:<br />NavPaneOrderValueNotAllowed<br />**Hex**:<br />80044327<br />**Número**:<br />-2147204313|No se permite el valor de orden del panel de navegación proporcionado|
+> |**Nombre**:<br />NegativeAutoNumberSeed<br />**Hex**:<br />80060886<br />**Número**:<br />-2147088250|No se puede establecer la semilla de número automático para el atributo {0} de entidad {1} con valor {2} ya que es menor de 0.|
 > |**Nombre**:<br />NetworkIssue<br />**Hex**:<br />8005F104<br />**Número**:<br />-2147094268|Error en la solicitud debido a problemas de red desconocidos o problemas de GateWay o servidor.|
 > |**Nombre**:<br />NewStatusHasInvalidState<br />**Hex**:<br />80044322<br />**Número**:<br />-2147204318|El valor de estado suministrado para esta opción de estado nueva no existe.|
 > |**Nombre**:<br />NewStatusRequiresAssociatedState<br />**Hex**:<br />80044321<br />**Número**:<br />-2147204319|La nueva opción de estado debe tener un valor de estado asociado.|
 > |**Nombre**:<br />NoActiveLocation<br />**Hex**:<br />80060900<br />**Número**:<br />-2147088128|No se encontraron ubicaciones activas.|
+> |**Nombre**:<br />NoAddressFoundForRecipient<br />**Hex**:<br />80040b0a<br />**Número**:<br />-2147218678|No se pudo encontrar la dirección de correo electrónico para el destinatario de tipo '{0}' con el identificador '{1}'|
 > |**Nombre**:<br />NoAppModuleComponentReferred<br />**Hex**:<br />8005011B<br />**Número**:<br />-2147155685|No se hace referencia a ningún componente|
 > |**Nombre**:<br />NoAttributesForEntityCreate<br />**Hex**:<br />80047014<br />**Número**:<br />-2147192812|No hay atributos para la acción de creación de una entidad.|
 > |**Nombre**:<br />NoConditionRuleCreationNotAllowedForSetValueShowError<br />**Hex**:<br />80060013<br />**Número**:<br />-2147090413|Las acciones "Mostrar mensaje de error" y "Establecer un valor" no se pueden usar en una regla de negocio que no tenga una condición.|
-> |**Nombre**:<br />NoConnectionRoleAndObjectTypeCodePairPresent<br />**Hex**:<br />8004F222<br />**Número**:<br />-2147159518|No hay pares ConnectionRoleId y AssociatedObjectTypeCode presentes. Entidades que se están conectando: ({0},{1}); Registros de entidad que se están conectando: ({2},{3}); Record1ConnectionRoleName: {4}, Record2ConnectionRoleName: {5}. ConnectionRoleIds : {6}|
+> |**Nombre**:<br />NoConnectionRoleAndObjectTypeCodePairPresent<br />**Hex**:<br />8004F222<br />**Número**:<br />-2147159518|No hay pares ConnectionRoleId y AssociatedObjectTypeCode presentes. Entidades que se están conectando: ({0},{1}); Registros de entidad que se están conectando: ({2},{3}); Record1ConnectionRoleName: {4}, Record2ConnectionRoleName: {5}. ConnectionRoleIds: {6};|
 > |**Nombre**:<br />NoConversionRule<br />**Hex**:<br />800608F5<br />**Número**:<br />-2147088139|Se requiere una ConversionRule para que se ejecute la herramienta.|
 > |**Nombre**:<br />NoDataFilterSelectedForOtherDataFilter<br />**Hex**:<br />80071138<br />**Número**:<br />-2147020488|La entidad '{0}' del perfil '{1}' contenía el filtro de descarga de datos 'Otro filtro de datos'; sin embargo, no se había seleccionado ninguna opción de filtro de datos. La entidad debe especificar una opción de filtro de datos.|
 > |**Nombre**:<br />NoDataForVisualization<br />**Hex**:<br />8004E011<br />**Número**:<br />-2147164143|No hay ningún dato para crear esta visualización.|
@@ -2076,6 +2192,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />NoLicenseInConfigDB<br />**Hex**:<br />8004D241<br />**Número**:<br />-2147167679|No existe licencia en la base de datos MSCRM_CONFIG.|
 > |**Nombre**:<br />NoMinimumRequiredPrivilegesForTabletApp<br />**Hex**:<br />8005F20F<br />**Número**:<br />-2147094001|No tiene permisos suficientes en el servidor para cargar la aplicación.\nPóngase en contacto con el administrador para actualizar sus permisos.|
 > |**Nombre**:<br />NoMoreCustomOptionValuesExist<br />**Hex**:<br />8004431F<br />**Número**:<br />-2147204321|Se han usado todos los valores de opciones personalizadas disponibles.|
+> |**Nombre**:<br />NonAutoNumberAttributeSpecified<br />**Hex**:<br />80060884<br />**Número**:<br />-2147088252|El atributo {0} de entidad {1} no es un atributo de número automático. Confirme que las entradas para Atributo y Entidad se asignen correctamente a un atributo de Número automático.|
 > |**Nombre**:<br />NoncompliantXml<br />**Hex**:<br />80048425<br />**Número**:<br />-2147187675|El XML de entrada no cumple el esquema XML.|
 > |**Nombre**:<br />NonCrmUIInteractiveWorkflowNotSupported<br />**Hex**:<br />80045044<br />**Número**:<br />-2147200956|No se puede crear, actualizar o publicar el flujo de trabajo interactivo porque se creó fuera de la aplicación web de Microsoft Dynamics 365.|
 > |**Nombre**:<br />NonCrmUIWorkflowsNotSupported<br />**Hex**:<br />80045040<br />**Número**:<br />-2147200960|No se puede crear, actualizar o publicar el flujo de trabajo porque se creó fuera de la aplicación web de Microsoft Dynamics 365. Su organización no admite este tipo de flujo de trabajo.|
@@ -2105,15 +2222,18 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />NotSupported<br />**Hex**:<br />80040315<br />**Número**:<br />-2147220715|No se admite esta acción.|
 > |**Nombre**:<br />NotVerifiedAdmin<br />**Hex**:<br />8005F106<br />**Número**:<br />-2147094266|Necesita una cuenta de empresa con Yammer para realizar esta configuración. Inicie sesión con una cuenta de administrador Yammer o póngase en contacto con un administrador de Yammer para obtener ayuda.|
 > |**Nombre**:<br />NoUserPrivilege<br />**Hex**:<br />80154B50<br />**Número**:<br />-2146088112|No tiene permisos suficientes.|
+> |**Nombre**:<br />NoValidModernFlowTriggerForExecute<br />**Hex**:<br />80060476<br />**Número**:<br />-2147089290|Modern Flow '{0}' no es válido para ExecuteWorkflow.  Seleccione un Flow que se active siempre que se crea, actualiza o elimina una entidad Common Data Service.|
 > |**Nombre**:<br />NoWritePermission<br />**Hex**:<br />80071023<br />**Número**:<br />-2147020765|No tiene permisos de escritura para copiar los documentos.|
 > |**Nombre**:<br />NoYammerNetworksFound<br />**Hex**:<br />8005F108<br />**Número**:<br />-2147094264|No está autorizado para ninguna red Yammer. Vuelva a autorizar la configuración de Yammer con una cuenta de administrador Yammer o póngase en contacto con un administrador de Yammer para obtener ayuda.|
 > |**Nombre**:<br />NullArticleTemplateFormatXml<br />**Hex**:<br />800404f8<br />**Número**:<br />-2147220232|El formato de plantilla de artículo XML no puede ser NULO|
 > |**Nombre**:<br />NullArticleTemplateStructureXml<br />**Hex**:<br />800404f9<br />**Número**:<br />-2147220231|La estructura de plantilla de artículo XML no puede ser NULO|
 > |**Nombre**:<br />NullArticleXml<br />**Hex**:<br />800404f7<br />**Número**:<br />-2147220233|El xml del artículo no puede ser NULO|
+> |**Nombre**:<br />NullAutoNumberParameterSpecfied<br />**Hex**:<br />80060887<br />**Número**:<br />-2147088249|El atributo de número automático o los parámetros de entidad no pueden ser una cadena nula o vacía.|
 > |**Nombre**:<br />NullDashboardName<br />**Hex**:<br />8004E305<br />**Número**:<br />-2147163387|El nombre de un panel no puede ser nulo.|
 > |**Nombre**:<br />NullKBArticleTemplateId<br />**Hex**:<br />800404fa<br />**Número**:<br />-2147220230|kbarticletemplateidno puede ser NULO|
 > |**Nombre**:<br />NullOrEmptyAttributeInXaml<br />**Hex**:<br />80060406<br />**Número**:<br />-2147089402|El atributo {0} de {1} no puede ser nulo o estar vacío|
 > |**Nombre**:<br />NumberFormatFailed<br />**Hex**:<br />80040259<br />**Número**:<br />-2147220903|No se puede generar un valor con formato numérico.|
+> |**Nombre**:<br />O365RoleUnsupportedForEmailApproval<br />**Hex**:<br />8009000B<br />**Número**:<br />-2146893813|La dirección de correo electrónico solo puede ser aprobada por un Administrador Global de Office 365 o por un Administrador de Exchange. Para obtener más información, póngase en contacto con el administrador del sistema.|
 > |**Nombre**:<br />OAuthTokenNotFound<br />**Hex**:<br />8005F109<br />**Número**:<br />-2147094263|No se ha encontrado el token OAuth de Yammer. Debe configurar Yammer antes de acceder a cualquier función relacionada.|
 > |**Nombre**:<br />ObjectAlreadyExists<br />**Hex**:<br />8004E30A<br />**Número**:<br />-2147163382|Un objeto con el identificador {0} ya existe. Cambie el identificador e inténtelo de nuevo.|
 > |**Nombre**:<br />ObjectDoesNotExist<br />**Hex**:<br />80040217<br />**Número**:<br />-2147220969|No se encontró el objeto especificado.|
@@ -2155,11 +2275,12 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />OpenDocumentErrorCodeGeneric<br />**Hex**:<br />8005F20C<br />**Número**:<br />-2147094004|Vuelva a intentarlo. Si el problema persiste, busque alguna solución en {0} o póngase en contacto con el administrador de {#Brand_CRM} de su organización. Finalmente, puede contactar {1}.|
 > |**Nombre**:<br />OpenDocumentErrorCodeUnableToFindAnActivity<br />**Hex**:<br />8005F20A<br />**Número**:<br />-2147094006|Vuelva a intentarlo. Si el problema persiste, busque alguna solución en {0} o póngase en contacto con el administrador de {#Brand_CRM} de su organización. Finalmente, puede contactar {1}.|
 > |**Nombre**:<br />OpenDocumentErrorCodeUnableToFindTheDataId<br />**Hex**:<br />8005F20B<br />**Número**:<br />-2147094005|Vuelva a intentarlo. Si el problema persiste, busque alguna solución en {0} o póngase en contacto con el administrador de {#Brand_CRM} de su organización. Finalmente, puede contactar {1}.|
-> |**Nombre**:<br />OpenMailboxException<br />**Hex**:<br />8005E216<br />**Número**:<br />-2147098090|Se producen excepciones al abrir el buzón del servidor de correo electrónico de Exchange.|
+> |**Nombre**:<br />OpenMailboxException<br />**Hex**:<br />8005E216<br />**Número**:<br />-2147098090|Se produce una excepción al abrir el buzón del servidor de correo de Exchange.|
 > |**Nombre**:<br />OperationCanBeCalledOnlyOnce<br />**Hex**:<br />80040334<br />**Número**:<br />-2147220684|La acción especificada sólo se puede realizar una vez.|
 > |**Nombre**:<br />OperationCanceled<br />**Hex**:<br />80060912<br />**Número**:<br />-2147088110|El usuario canceló la actualización.|
 > |**Nombre**:<br />OperationFailedTryAgain<br />**Hex**:<br />80154B53<br />**Número**:<br />-2146088109|No se puede realizar la operación en el momento. Inténtelo de nuevo.|
 > |**Nombre**:<br />OperationOrganizationNotFullyDisabled<br />**Hex**:<br />8004D23a<br />**Número**:<br />-2147167686|La operación {1} ha dado error porque la organización {0} no está completamente deshabilitada aún.  Utilice FORCE para reemplazar|
+> |**Nombre**:<br />OperationReservedForSolutionAwareEntities<br />**Hex**:<br />80072008<br />**Número**:<br />-2147016696|Esta operación está reservada solo para entidades conscientes de la solución.|
 > |**Nombre**:<br />OperatorCodeNotPresentError<br />**Hex**:<br />80044241<br />**Número**:<br />-2147204543|OperatorCode debería estar en condición XML.|
 > |**Nombre**:<br />OperatorsInViewNotSupportedOffline<br />**Hex**:<br />80071127<br />**Número**:<br />-2147020505|Uno o varios operadores de esta vista no se admiten sin conexión.|
 > |**Nombre**:<br />OpportunityAlreadyInOpenState<br />**Hex**:<br />8004051a<br />**Número**:<br />-2147220198|La oportunidad se encuentra en estado abierto.|
@@ -2208,7 +2329,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />ParsingMetadataNotFound<br />**Hex**:<br />80040367<br />**Número**:<br />-2147220633|No se encontraron los datos necesarios para analizar el archivo, como el delimitador de datos, el delimitador de campo o los encabezados de columna.|
 > |**Nombre**:<br />PartialExpansionSettingLoadError<br />**Hex**:<br />8004E102<br />**Número**:<br />-2147163902|Error al recuperar la configuración de expansión parcial de la base de datos de configuración.|
 > |**Nombre**:<br />PartialHolidayScheduleCreation<br />**Hex**:<br />8004F873<br />**Número**:<br />-2147157901|No se puede crear una programación de vacaciones parcial.|
-> |**Nombre**:<br />ParticipatingEntityDoesNotAppearInTraversedPath<br />**Hex**:<br />80060441<br />**Número**:<br />-2147089343|Error al mostrar control de proceso de negocio. La entidad que participa debe ser parte de la ruta atravesada, pero la entidad '{0}' no aparece en la ruta '{1}'. Póngase en contacto con el administrador del sistema.|
+> |**Nombre**:<br />ParticipatingEntityDoesNotAppearInTraversedPath<br />**Hex**:<br />80060441<br />**Número**:<br />-2147089343|El registro de la entidad '{0}' no está en la ruta recorrida '{1}'. Póngase en contacto con el administrador del sistema.|
 > |**Nombre**:<br />ParticipatingQueryEntityMismatch<br />**Hex**:<br />80044909<br />**Número**:<br />-2147202807|El entitytype de consulta de participación debe ser el mismo que la entidad especificada en fetchxml.|
 > |**Nombre**:<br />PasswordRequiredForImpersonation<br />**Hex**:<br />8005E24E<br />**Número**:<br />-2147098034|Escriba una contraseña y vuelva a guardar|
 > |**Nombre**:<br />PatchMissingBase<br />**Hex**:<br />80048540<br />**Número**:<br />-2147187392|No se puede importar la revisión ({0}) para la solución ({1}) debido a que la solución no está presente. La operación se ha cancelado.|
@@ -2227,6 +2348,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />PluginSecureStoreAdalAcquireToken<br />**Hex**:<br />80091005<br />**Número**:<br />-2146889723|No se puede adquirir el token para el recurso|
 > |**Nombre**:<br />PluginSecureStoreKeyVaultClient<br />**Hex**:<br />80091000<br />**Número**:<br />-2146889728|No se puede iniciar KeyVaultClientProvider en el Sandbox WorkerProcess|
 > |**Nombre**:<br />PluginSecureStoreKeyVaultClientDecrypt<br />**Hex**:<br />80091003<br />**Número**:<br />-2146889725|No se puede descifrar mediante KeyVault|
+> |**Nombre**:<br />PluginSecureStoreKeyVaultClientDeleteSecret<br />**Hex**:<br />80091010<br />**Número**:<br />-2146889712|No se puede obtener DeleteSecret para Key Vault|
 > |**Nombre**:<br />PluginSecureStoreKeyVaultClientEncrypt<br />**Hex**:<br />80091004<br />**Número**:<br />-2146889724|No se puede cifrar mediante KeyVault|
 > |**Nombre**:<br />PluginSecureStoreKeyVaultClientGetSecret<br />**Hex**:<br />80091001<br />**Número**:<br />-2146889727|No se puede obtener secreto de KeyVault|
 > |**Nombre**:<br />PluginSecureStoreKeyVaultClientSetSecret<br />**Hex**:<br />80091002<br />**Número**:<br />-2146889726|No se puede obtener secreto para KeyVault|
@@ -2247,6 +2369,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />PreviousOperationNotComplete<br />**Hex**:<br />80048464<br />**Número**:<br />-2147187612|No se ha completado correctamente una operación de la que depende esta operación.|
 > |**Nombre**:<br />PriceLevelNameExists<br />**Hex**:<br />80043b0f<br />**Número**:<br />-2147206385|El nombre ya existe.|
 > |**Nombre**:<br />PriceLevelNoName<br />**Hex**:<br />80043b0e<br />**Número**:<br />-2147206386|El nombre no puede ser nulo.|
+> |**Nombre**:<br />PriceListIsMandatory<br />**Hex**:<br />80100010<br />**Número**:<br />-2146435056|PriceList es obligatorio para crear la entidad.|
 > |**Nombre**:<br />PrimaryEntityInvalid<br />**Hex**:<br />8004501E<br />**Número**:<br />-2147200994|Entidad principal no válida.|
 > |**Nombre**:<br />PrimaryEntityIsNull<br />**Hex**:<br />80060401<br />**Número**:<br />-2147089407|La entidad principal no puede ser NULO al crear la categoría de flujo de proceso de negocio|
 > |**Nombre**:<br />PrimaryNameAttributeNotFound<br />**Hex**:<br />80044355<br />**Número**:<br />-2147204267|No se encontró el atributo PrimaryName para la Entidad: {0}|
@@ -2261,10 +2384,13 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />ProcessActionWithInvalidInputParam<br />**Hex**:<br />80045057<br />**Número**:<br />-2147200937|La acción de proceso contiene un campo en parámetro de entrada que no es compatible en Pasos de acción. Referencia a {0} |
 > |**Nombre**:<br />ProcessActionWithInvalidOutputParam<br />**Hex**:<br />80045056<br />**Número**:<br />-2147200938|La acción de proceso contiene un campo en parámetro de salida que no es compatible en Pasos de acción. Referencia a {0}.|
 > |**Nombre**:<br />ProcessActionWorkflowNotEnabledForOnDemand<br />**Hex**:<br />80060380<br />**Número**:<br />-2147089536|La acción de proceso o el flujo de trabajo debe estar habilitado para que la ejecución a petición esté disponible para pasos de acción.|
+> |**Nombre**:<br />ProcessControlDoesNotExistOnForm<br />**Hex**:<br />80060372<br />**Número**:<br />-2147089550|El control de proceso no existe en el formulario|
 > |**Nombre**:<br />ProcessEmptyBranches<br />**Hex**:<br />80060399<br />**Número**:<br />-2147089511|Este proceso contiene ramas vacías. Defina o elimine estas ramas e inténtelo de nuevo.|
+> |**Nombre**:<br />ProcessFileFailure<br />**Hex**:<br />80072554<br />**Número**:<br />-2147015340|Se ha producido un error al procesar el archivo. Razón: {0}|
 > |**Nombre**:<br />ProcessIdDoesNotMatchBusinessProcessDefinition<br />**Hex**:<br />80060460<br />**Número**:<br />-2147089312|Error de validación: El identificador del proceso no coincide con la definición de proceso de negocio.|
 > |**Nombre**:<br />ProcessIdIsEmpty<br />**Hex**:<br />80060459<br />**Número**:<br />-2147089319|Error de validación: El identificador del proceso no puede estar vacío.|
 > |**Nombre**:<br />ProcessImageFailure<br />**Hex**:<br />80072553<br />**Número**:<br />-2147015341|Se ha producido un error al procesar imagen. Razón: {0}|
+> |**Nombre**:<br />ProcessInstanceNotFound<br />**Hex**:<br />80060370<br />**Número**:<br />-2147089552|Instancia de proceso suministrada {0} no coincide con ninguna instancia existente en esta entidad {1}|
 > |**Nombre**:<br />ProcessNameContainsInvalidCharacters<br />**Hex**:<br />80060398<br />**Número**:<br />-2147089512|El nombre de proceso de negocio contiene caracteres no válidos.|
 > |**Nombre**:<br />ProcessNameIsNullOrEmpty<br />**Hex**:<br />80060418<br />**Número**:<br />-2147089384|El flujo de proceso de negocio es NULO o está vacío. |
 > |**Nombre**:<br />ProcessStageIdIsEmpty<br />**Hex**:<br />80060461<br />**Número**:<br />-2147089311|Error de validación: El identificador principal de la fase no puede estar vacío.|
@@ -2374,7 +2500,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />QueueMailboxUnexpectedDeliveryMethod<br />**Hex**:<br />8005E210<br />**Número**:<br />-2147098096|Método de entrega para buzón asociado con una cola no puede ser cliente de outlook.|
 > |**Nombre**:<br />QuickCreateDisabledOnEntity<br />**Hex**:<br />80060911<br />**Número**:<br />-2147088111|La entidad {0} no dispone de formulario de creación rápida o el número de formularios de creación rápida anidados superó el máximo permitido.|
 > |**Nombre**:<br />QuickCreateInvalidEntityName<br />**Hex**:<br />80060910<br />**Número**:<br />-2147088112|El entityLogicalName no es válido. Este valor no puede ser nulo ni estar vacío, y debe representar una entidad de la organización.|
-> |**Nombre**:<br />QuickFindQueryRecordLimitExceeded<br />**Hex**:<br />8004E024<br />**Número**:<br />-2147164124|QuickFindQueryRecordLimit se ha superado. No se puede realizar esta operación.|
+> |**Nombre**:<br />QuickFindQueryRecordLimitExceeded<br />**Hex**:<br />8004E024<br />**Número**:<br />-2147164124|El número de registros para esta búsqueda excede el límite de registro de Búsqueda rápida. Restrinja la consulta e inténtelo de nuevo.|
 > |**Nombre**:<br />QuickFindSavedQueryAlreadyExists<br />**Hex**:<br />8004853A<br />**Número**:<br />-2147187398|"Solo una consulta de búsqueda rápida guardada puede existir para una entidad. Ya hay una consulta guardada de búsqueda rápida para la entidad con objecttypecode: {0}"|
 > |**Nombre**:<br />QuickFormNotCustomizableThroughSdk<br />**Hex**:<br />8004F659<br />**Número**:<br />-2147158439|El SDK no admite la creación de un formulario del tipo "rápido". Este tipo de formulario está reservado para uso interno.|
 > |**Nombre**:<br />QuoteAndSalesOrderCurrencyNotEqual<br />**Hex**:<br />80048cee<br />**Número**:<br />-2147185426|La divisa del registro no coincide con la divisa de la lista de precios.|
@@ -2385,6 +2511,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />ReadOnlyUpdateValidationFailed<br />**Hex**:<br />80061003<br />**Número**:<br />-2147086333|No puede actualizar la instancia de propiedad para una propiedad de solo lectura.|
 > |**Nombre**:<br />ReadOnlyUserNotSupported<br />**Hex**:<br />80041d40<br />**Número**:<br />-2147214016|No se admite el modo de acceso de solo lectura|
 > |**Nombre**:<br />RecalculateNotSupportedOnNonRollupField<br />**Hex**:<br />80060554<br />**Número**:<br />-2147089068|Campo {0} de tipo {1} no admite recalcular acción. La acción de recalcular solo se puede llamar para el campo consolidado.|
+> |**Nombre**:<br />RecipientMarkedDoNotEmail<br />**Hex**:<br />80040b09<br />**Número**:<br />-2147218679|El destinatario de tipo '{0}' con el identificador '{1}' está marcado como que no puede recibir correos|
 > |**Nombre**:<br />RecommendationAzureConnectionCascadeActivateFailed<br />**Hex**:<br />80061633<br />**Número**:<br />-2147084749|No se puede activar uno o varios modelos de recomendación. Intente activar los modelos de recomendaciones existentes por sepadado de la conexión del servicio de Azure.|
 > |**Nombre**:<br />RecommendationAzureConnectionFailed<br />**Hex**:<br />80061631<br />**Número**:<br />-2147084751|Error al conectar con el servicio de recomendaciones de Azure. Compruebe que la dirección URL del servicio y la cuenta de Azure son válidos y la suscripción de servicio está activa.|
 > |**Nombre**:<br />RecommendationModelActivateConnectionMustBeActive<br />**Hex**:<br />80061607<br />**Número**:<br />-2147084793|La conexión del servicio de recomendaciones de Aprendizaje automático de Microsoft Azure se debe activar antes de poder activar el modelo. Active la conexión del servicio de recomendaciones e inténtelo de nuevo.|
@@ -2429,6 +2556,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />RelatedEntityGenericError<br />**Hex**:<br />8005F220<br />**Número**:<br />-2147093984|Se ha producido un error inesperado al crear la asociación del perfil. Inténtelo de nuevo.|
 > |**Nombre**:<br />RelatedRecordsFailure<br />**Hex**:<br />80071013<br />**Número**:<br />-2147020781|Error al recuperar registros relacionados.|
 > |**Nombre**:<br />RelationshipGraphLimitExceeded<br />**Hex**:<br />80071139<br />**Número**:<br />-2147020487|Ha especificado una o varias asociaciones de elementos de perfil para las entidades definidas en el perfil de '{0}'. Compruebe las asociaciones del elemento de perfil que afectan a la entidad de '{1}' que tiene un recuento de asociación de {2} y supera el límite admitido de {3}.|
+> |**Nombre**:<br />RelationshipGraphLimitExceededForIntersectEntity<br />**Hex**:<br />80071135<br />**Número**:<br />-2147020491|Ha especificado una o varias asociaciones de elementos de perfil para las entidades definidas en el perfil de '{0}' y relacionado con la entidad interseccionada '{1}'. Compruebe las asociaciones del elemento de perfil que afectan a las entidades '{2}' y '{3}' que tienen un recuento total de asociación de {4} y superan el límite admitido de {5}.|
 > |**Nombre**:<br />RelationshipInsightsFeatureDisableError<br />**Hex**:<br />80044292<br />**Número**:<br />-2147204462|La característica Información de relaciones no se puede deshabilitar|
 > |**Nombre**:<br />RelationshipInsightsFeatureNotEnabledError<br />**Hex**:<br />80044293<br />**Número**:<br />-2147204461|La característica Información de relaciones no está habilitada o el paquete RI no está instalado|
 > |**Nombre**:<br />RelationshipIntelligenceSDKInvocationError<br />**Hex**:<br />80044276<br />**Número**:<br />-2147204490|Necesita Dynamics 365 (online) para poder utilizar el SDK de Información de relaciones.|
@@ -2438,7 +2566,9 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />RelationshipNotUpdatedForOfficeGraphError<br />**Hex**:<br />80044236<br />**Número**:<br />-2147204554|Esta relación no se puede actualizar para Office Graph porque ninguna de las entidades está habilitada para Office Graph.|
 > |**Nombre**:<br />RelationshipRoleMismatch<br />**Hex**:<br />80048467<br />**Número**:<br />-2147187609|El nombre del rol de relación {0} no coincide con el nombre de entidad esperado de {1} o {2}.|
 > |**Nombre**:<br />RelationshipRoleNodeNumberInvalid<br />**Hex**:<br />80048469<br />**Número**:<br />-2147187607|Debe haber dos nodos del rol de relación de entidad cuando se crea una nueva relación de entidad de muchos a muchos.|
+> |**Nombre**:<br />RelationshipSchemaNameConflictWithFieldNameOnReferencedEntity<br />**Hex**:<br />80048835<br />**Número**:<br />-2147186635|RelationshipName {0} tiene un conflicto con el nombre del atributo en la entidad {1} (entityid={2}). Utilice un nombre único para la relación.|
 > |**Nombre**:<br />RelatioshipAlreadyExists<br />**Hex**:<br />8005F221<br />**Número**:<br />-2147093983|La relación relacionada para la entidad ya existe en este perfil. |
+> |**Nombre**:<br />RemoveActiveCustomizationsNotSupported<br />**Hex**:<br />8004F059<br />**Número**:<br />-2147159975|RemoveActiveCustomizations no es compatible con componentes de tipo {0}|
 > |**Nombre**:<br />ReportDoesNotExist<br />**Hex**:<br />80040499<br />**Número**:<br />-2147220327|El informe no existe. ReportId:{0}|
 > |**Nombre**:<br />ReportFileTooBig<br />**Hex**:<br />80048297<br />**Número**:<br />-2147188073|El archivo es demasiado grande y no se puede cargar. Reduzca el tamaño del archivo e inténtelo de nuevo.|
 > |**Nombre**:<br />ReportFileZeroLength<br />**Hex**:<br />80048296<br />**Número**:<br />-2147188074|Ha cargado un archivo vacío.  Seleccione un nuevo archivo e inténtelo de nuevo.|
@@ -2472,6 +2602,8 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />RequiredChildReportHasOtherParent<br />**Hex**:<br />8004F029<br />**Número**:<br />-2147160023|No se encontró una opción de categoría para los informes.|
 > |**Nombre**:<br />RequiredColumnsNotFoundInImportFile<br />**Hex**:<br />80040383<br />**Número**:<br />-2147220605|Una o varias columnas de origen que se utilizan en la transformación no existe en el archivo de origen.|
 > |**Nombre**:<br />RequiredFieldMissing<br />**Hex**:<br />80040200<br />**Número**:<br />-2147220992|Falta un campo necesario.|
+> |**Nombre**:<br />RequiredProcessFlowStepIsNotComplete<br />**Hex**:<br />8006041d<br />**Número**:<br />-2147089379|No puede pasar a la siguiente etapa o completar el proceso hasta que se complete el paso de Flow o paso de aprobación requerido en la etapa actual.|
+> |**Nombre**:<br />RequiredProcessFlowStepIsNotStarted<br />**Hex**:<br />8006041e<br />**Número**:<br />-2147089378|Para pasar a la siguiente etapa o completar el proceso, haga clic en el paso de Flow requerido o el paso de aprobación en la etapa actual. No puede pasar a las siguientes etapas o completar el proceso hasta que se complete el paso de Flow o paso de aprobación requerido en la etapa actual.|
 > |**Nombre**:<br />RequiredProcessStepIsNull<br />**Hex**:<br />8006041a<br />**Número**:<br />-2147089382|Para desplazarse a la fase siguiente, complete los pasos requeridos.|
 > |**Nombre**:<br />RequireValidImportMapForUpdate<br />**Hex**:<br />8004F600<br />**Número**:<br />-2147158528|No se puede completar la operación de actualización porque la asignación de importación usada para la importación no es válida.|
 > |**Nombre**:<br />RestrictedSolutionName<br />**Hex**:<br />8004F022<br />**Número**:<br />-2147160030|El nombre único de la solución '{0}' está restringido y solo lo pueden usar soluciones internas.|
@@ -2495,6 +2627,8 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />RibbonImportModifyingTopLevelNode<br />**Hex**:<br />8004F108<br />**Número**:<br />-2147159800|No se pueden realizar personalizaciones de la cinta de opciones en los siguientes nodos de nivel superior de la cinta de opciones: <Ribbon>, <ContextualGroups>, y <Tabs>.|
 > |**Nombre**:<br />RibbonImportRibbonDiffIdInvalidLength<br />**Hex**:<br />8004F10C<br />**Número**:<br />-2147159796|No se puede importar este elemento de la cinta de opciones porque la duración del identificador supera la longitud máxima de 128 caracteres: {0}|
 > |**Nombre**:<br />RINotProvisioned<br />**Hex**:<br />80044281<br />**Número**:<br />-2147204479|Información de relaciones no se ha activado para su organización {0}.|
+> |**Nombre**:<br />RoboticProcessAutomationFlowProcessesNotEnabled<br />**Hex**:<br />80060471<br />**Número**:<br />-2147089295|La creación de procesos reservados no está habilitada.|
+> |**Nombre**:<br />RoboticProcessAutomationFlowProcessesOnlyAvailableOnline<br />**Hex**:<br />80060472<br />**Número**:<br />-2147089294|La creación de procesos de reservados solo es accesible en línea.|
 > |**Nombre**:<br />RoleAlreadyExists<br />**Hex**:<br />80041403<br />**Número**:<br />-2147216381|Un rol con el nombre especificado '{0}' ya existe en la unidad de negocio {1} y el Id. de solución {3}. Id de rol: {2}|
 > |**Nombre**:<br />RoleNotEnabledForTabletApp<br />**Hex**:<br />8005F203<br />**Número**:<br />-2147094013|No está autorizado para utilizar esta aplicación.\nConsulte con el administrador del sistema para actualizar su configuración.|
 > |**Nombre**:<br />RollupAggregateQueryRecordLimitExceeded<br />**Hex**:<br />8004E025<br />**Número**:<br />-2147164123|Los cálculos no se pueden llevar a cabo en línea porque se ha alcanzado el límite de cálculo de {0} registros relacionados.|
@@ -2579,6 +2713,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />SalesPeopleEmptyEffectiveDate<br />**Hex**:<br />80043801<br />**Número**:<br />-2147207167|La fecha de vigencia fiscal en vigor no puede estar vacía|
 > |**Nombre**:<br />SalesPeopleEmptySalesPerson<br />**Hex**:<br />80043800<br />**Número**:<br />-2147207168|El comercial primario no puede estar vacío|
 > |**Nombre**:<br />SalesPeopleManagerNotAllowed<br />**Hex**:<br />80043805<br />**Número**:<br />-2147207163|El administrador de la zona de ventas no puede pertenecer a otra zona de ventas|
+> |**Nombre**:<br />SameSolutionCircularDependenciesIdentified<br />**Hex**:<br />80072007<br />**Número**:<br />-2147016697|Se identificaron dependencias circulares para esta solución.|
 > |**Nombre**:<br />SandboxClientPluginTimeout<br />**Hex**:<br />80044171<br />**Número**:<br />-2147204751|La ejecución complemento da error porque la operación ha superado el tiempo de espera en el cliente de espacio aislado.|
 > |**Nombre**:<br />SandboxHostNotAvailable<br />**Hex**:<br />8004418e<br />**Número**:<br />-2147204722|La ejecución del complemento da error porque no está disponible ahora ningún host de espacio aislado. Compruebe que tiene un servidor en espacio aislado configurado y que se está ejecutando.|
 > |**Nombre**:<br />SandboxHostPluginTimeout<br />**Hex**:<br />80044172<br />**Número**:<br />-2147204750|La ejecución complemento da error porque la operación ha superado el tiempo de espera en el host de espacio aislado.|
@@ -2667,7 +2802,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />SharePointUnableToRemoveUserFromGroup<br />**Hex**:<br />8004F0F2<br />**Número**:<br />-2147159822|No se puede quitar el usuario {0} del grupo {1} en SharePoint.|
 > |**Nombre**:<br />SharePointUnableToRetrieveGroup<br />**Hex**:<br />8004F0F4<br />**Número**:<br />-2147159820|No se puede recuperar el grupo {0} de SharePoint.|
 > |**Nombre**:<br />SharePointUrlHostValidator<br />**Hex**:<br />8004F301<br />**Número**:<br />-2147159295|No se puede resolver la dirección URL en una dirección IP.|
-> |**Nombre**:<br />SharePointUrlIsRootWebValidator<br />**Hex**:<br />8004F306<br />**Número**:<br />-2147159290|La URL no es válida. La dirección URL debe ser una colección de sitios válidos y no puede incluir un subsitio. La dirección URL debe tener una forma válida, como https://SharePointServer/sites/CrmSite.|
+> |**Nombre**:<br />SharePointUrlIsRootWebValidator<br />**Hex**:<br />8004F306<br />**Número**:<br />-2147159290|La URL no es válida. La dirección URL debe ser una colección de sitios válidos y no puede incluir un subsitio. La dirección URL debe tener una forma válida, como http://SharePointServer/sites/CrmSite.|
 > |**Nombre**:<br />SharePointVersionUnsupported<br />**Hex**:<br />800608B6<br />**Número**:<br />-2147088202|Microsoft Dynamics 365 no puede conectarse a Sharepoint porque la versión Sharepoint no está admitida. Instale la versión correcta y, después, inténtelo de nuevo. |
 > |**Nombre**:<br />SimilarityRuleDisabled<br />**Hex**:<br />80071016<br />**Número**:<br />-2147020778|No hay ninguna regla de similitud activa para esta entidad.|
 > |**Nombre**:<br />SimilarityRuleFCBOff<br />**Hex**:<br />80071018<br />**Número**:<br />-2147020776|Las reglas de similitud no están habilitadas.|
@@ -2677,11 +2812,12 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />SkipValidDateTimeBehavior<br />**Hex**:<br />800608A3<br />**Número**:<br />-2147088221|El valor de comportamiento de este campo se ha ignorado. Un personalizador del sistema tendrá que configurar el valor de comportamiento para este campo directamente.|
 > |**Nombre**:<br />SlaActivateDeactivateByNonOwner<br />**Hex**:<br />8004F872<br />**Número**:<br />-2147157902|Esta SLA la puede activar o desactivar sólo su propietario.|
 > |**Nombre**:<br />SlaAlreadyInactiveState<br />**Hex**:<br />8004F861<br />**Número**:<br />-2147157919|No puede activar este registro porque ya está activo.|
-> |**Nombre**:<br />SlaAlreadyInDraftState <br />**Hex**:<br />8004F862<br />**Número**:<br />-2147157918|No puede desactivar este registro porque no está en un estado de borrador.|
+> |**Nombre**:<br />SlaAlreadyInDraftState<br />**Hex**:<br />8004F862<br />**Número**:<br />-2147157918|No puede desactivar este registro porque no está en un estado de borrador.|
 > |**Nombre**:<br />SlaNotEnabledEntity<br />**Hex**:<br />80055003<br />**Número**:<br />-2147135485|No se ha habilitado el SLA para esta entidad.|
 > |**Nombre**:<br />SlaPermissionToPerformAction<br />**Hex**:<br />8004F875<br />**Número**:<br />-2147157899|No tiene los permisos necesarios sobre los SLA y los procesos para realizar esta acción.|
 > |**Nombre**:<br />SnapshotReportNotReady<br />**Hex**:<br />80040489<br />**Número**:<br />-2147220343|El informe seleccionado no está listo para ver. El informe se sigue creando o no está disponible ninguna instantánea del informe. ReportId:{0}|
 > |**Nombre**:<br />SocialCareDisabledError<br />**Hex**:<br />80060621<br />**Número**:<br />-2147088863|Hay un problema en la comunicación con la organización Dynamics 365. Puede ser la organización no está disponible o qie la característica esté establecida de forma que no puede recibir datos sociales. Vuelva a intentarlo más tarde. Si el problema persiste, póngase en contacto con el administrador de Microsoft Dynamics 365.|
+> |**Nombre**:<br />SolutionComponentDefinitionNotAvailable<br />**Hex**:<br />8007200A<br />**Número**:<br />-2147016694|No se puede crear la definición de componente para la entidad que reconoce la solución {0}.|
 > |**Nombre**:<br />SolutionConcurrencyFailure<br />**Hex**:<br />80071151<br />**Número**:<br />-2147020463|La instalación o la desinstalación de la solución no se ha podido realizar porque se estaba instalando o desinstalando otra solución al mismo tiempo. Inténtelo de nuevo más tarde.|
 > |**Nombre**:<br />SolutionConfigurationPageMustBeHtmlWebResource<br />**Hex**:<br />8004701C<br />**Número**:<br />-2147192804|La página de configuración de la solución debe existir dentro de la solución que representa.|
 > |**Nombre**:<br />SolutionImportCauseTimeout<br />**Hex**:<br />80048543<br />**Número**:<br />-2147187389|La operación agotó el tiempo de espera. Esto puede ser debido a que una solución se está importando actualmente en este entorno. Vuelva a intentarlo una vez finalizada la importación de la solución. Las soluciones se deberían importar fuera del horario laboral si es posible.|
@@ -2689,6 +2825,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />SolutionUniqueNameViolation<br />**Hex**:<br />8004F023<br />**Número**:<br />-2147160029|El nombre único de la solución '{0}' ya se está usando y no se puede usar de nuevo.|
 > |**Nombre**:<br />SolutionUpgradeFailed<br />**Hex**:<br />8004F046<br />**Número**:<br />-2147159994|La acción de la actualización de solución falló después de importar como retenida. InnerException es: {1}.|
 > |**Nombre**:<br />SolutionUpgradeNotAvailable<br />**Hex**:<br />8004853B<br />**Número**:<br />-2147187397|"La solución {0} no dispone de ninguna actualización lista para aplicarse".|
+> |**Nombre**:<br />SolutionUpgradeOfApiManagedSolutionError<br />**Hex**:<br />8004803C<br />**Número**:<br />-2147188676|La importación ha fallado porque una solución ApiManaged no se puede actualizar.|
 > |**Nombre**:<br />SolutionUpgradeWrongSolutionSelected<br />**Hex**:<br />8004853C<br />**Número**:<br />-2147187396|"Para usar esta acción, primero deberá seleccionar la solución anterior y, a continuación, intentarlo de nuevo."|
 > |**Nombre**:<br />SourceAttributeHeaderTooBig<br />**Hex**:<br />80044340<br />**Número**:<br />-2147204288|Encabezados de columna deben tener 160 o menos caracteres. Solucione los encabezados de columna y, después, vuelva a ejecutar el administrador de migración de datos.|
 > |**Nombre**:<br />SourceEntityMappedToMultipleTargets<br />**Hex**:<br />8004033d<br />**Número**:<br />-2147220675|Esta entidad de origen está asignada a más de una entidad de Microsoft Dynamics 365. Quite las asignaciones duplicadas y, a continuación, vuelva a importar esta asignación de datos.|
@@ -2798,6 +2935,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />StageIdIsEmpty<br />**Hex**:<br />80060454<br />**Número**:<br />-2147089324|Error de validación: El identificador de la fase no puede estar vacío.|
 > |**Nombre**:<br />StageIdIsNotPresentInBusinessProcess<br />**Hex**:<br />80060450<br />**Número**:<br />-2147089328|Error de validación: El identificador de la fase '{0}' no está presente en el proceso de negocio. Póngase en contacto con el administrador del sistema.|
 > |**Nombre**:<br />StageIdIsNotValid<br />**Hex**:<br />80060458<br />**Número**:<br />-2147089320|Error de validación: El identificador de la fase no es válido para el proceso de negocio.|
+> |**Nombre**:<br />StandAloneBpfNotActivated<br />**Hex**:<br />80060470<br />**Número**:<br />-2147089296|StandAlone BPF debe activarse en la página de Flujos.|
 > |**Nombre**:<br />StateTransitionActivateNewStatus<br />**Hex**:<br />8004F857<br />**Número**:<br />-2147157929|No puede activar este registro debido al estado de las reglas de transición.Póngase en contacto con el administrador del sistema.|
 > |**Nombre**:<br />StateTransitionActiveToCanceled<br />**Hex**:<br />8004F855<br />**Número**:<br />-2147157931|Debido a las reglas de transición del estado, no puede cancelar el caso en el estado actual. Cambie el estado del caso e intente cancelarlo o póngase en contacto con el administrador del sistema.|
 > |**Nombre**:<br />StateTransitionActiveToResolve<br />**Hex**:<br />8004F854<br />**Número**:<br />-2147157932|Debido a las reglas de transición de estado, no puede resolver un caso en el estado actual. Cambie el estado del caso e intente resolverlo o póngase en contacto con el administrador del sistema.|
@@ -2822,7 +2960,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />SupportUserCannotBeCreateNorUpdated<br />**Hex**:<br />80041d41<br />**Número**:<br />-2147214015|El usuario de soporte no se puede actualizar.|
 > |**Nombre**:<br />SyncAttributeMappingCannotBeUpdated<br />**Hex**:<br />80060741<br />**Número**:<br />-2147088575|La asignación del atributo de sincronización no se puede actualizar.|
 > |**Nombre**:<br />SyncToMsdeFailure<br />**Hex**:<br />80048407<br />**Número**:<br />-2147187705|Se produjo un error al iniciar o conectarse a la base de datos de Microsoft MSDE en modo sin conexión.|
-> |**Nombre**:<br />SystemAttributeMap<br />**Hex**:<br />80046205<br />**Número**:<br />-2147196411|Se ha producido un error en SystemAttributeMap|
+> |**Nombre**:<br />SystemAttributeMap<br />**Hex**:<br />80046205<br />**Número**:<br />-2147196411|No se puede crear o eliminar el mapa de atributos del sistema que tiene ID {0} desde {1} a {2} perteneciente a un mapa de entidad con id {3} desde {4} a {5}.|
 > |**Nombre**:<br />SystemEntityMap<br />**Hex**:<br />80046202<br />**Número**:<br />-2147196414|Se produjo un error de SystemEntityMap|
 > |**Nombre**:<br />SystemFormCopyUnmatchedEntity<br />**Hex**:<br />8004F656<br />**Número**:<br />-2147158442|La entidad para Target y SourceId debe coincidir.|
 > |**Nombre**:<br />SystemFormCopyUnmatchedFormType<br />**Hex**:<br />8004F657<br />**Número**:<br />-2147158441|El tipo de formulario de SourceId no es válido para la entidad Target.|
@@ -2882,6 +3020,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />TooManyConditionsInQuery<br />**Hex**:<br />8004430C<br />**Número**:<br />-2147204340|El número de condiciones en la consulta superó el límite máximo.|
 > |**Nombre**:<br />TooManyEntitiesEnabledForAutoCreatedAccessTeams<br />**Hex**:<br />80048332<br />**Número**:<br />-2147187918|Demasiadas entidades habilitadas para crear automáticamente equipos de acceso.|
 > |**Nombre**:<br />TooManyLinkEntitiesInQuery<br />**Hex**:<br />8004430D<br />**Número**:<br />-2147204339|El número de entidades de vínculos en la consulta superó el límite máximo.|
+> |**Nombre**:<br />TooManyModernFlowTriggersForExecute<br />**Hex**:<br />80060477<br />**Número**:<br />-2147089289|No se puede ejecutar Modern Flow '{0}' porque hay más de una devolución de llamada registrada.|
 > |**Nombre**:<br />TooManyMultiSelectConditionParametersInQuery<br />**Hex**:<br />80050223<br />**Número**:<br />-2147155421|El número de parámetros de condición de selección múltiple en la consulta superó el límite máximo: {0}.|
 > |**Nombre**:<br />TooManyPicklistValues<br />**Hex**:<br />80048492<br />**Número**:<br />-2147187566|El número de valores de la lista desplegable diferenciada superará el límite.|
 > |**Nombre**:<br />TooManyRecipients<br />**Hex**:<br />8004350e<br />**Número**:<br />-2147207922|No se admite el envío a varios destinatarios.|
@@ -2894,6 +3033,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />TopicModelTestWithoutConfiguration<br />**Hex**:<br />80061654<br />**Número**:<br />-2147084716|Especifique la configuración usada para la compilación.|
 > |**Nombre**:<br />TraceMessageConstructionError<br />**Hex**:<br />8004F900<br />**Número**:<br />-2147157760|El registro de seguimiento tiene un código de seguimiento no válido o un número suficiente de parámetros de seguimiento.|
 > |**Nombre**:<br />TransactionAborted<br />**Hex**:<br />80040255<br />**Número**:<br />-2147220907|Transacción anulada.|
+> |**Nombre**:<br />TransactionAbortedByIsvException<br />**Hex**:<br />80048550<br />**Número**:<br />-2147187376|Transacción cancelada por la excepción del código ISV en la etapa previa a la confirmación. Para obtener información detallada, consulte excepción interna.|
 > |**Nombre**:<br />TransactionNotCommited<br />**Hex**:<br />80040252<br />**Número**:<br />-2147220910|Transacciones no confirmadas.|
 > |**Nombre**:<br />TransactionNotStarted<br />**Hex**:<br />80040251<br />**Número**:<br />-2147220911|Transacción sin iniciar.|
 > |**Nombre**:<br />TransactionNotSupported<br />**Hex**:<br />8005E007<br />**Número**:<br />-2147098617|La operación que está intentando realizar no admite transacciones.|
@@ -3357,7 +3497,7 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />UserNameRequiredForImpersonation<br />**Hex**:<br />8005E24D<br />**Número**:<br />-2147098035|Escriba un nombre de usuario y vuelva a guardar|
 > |**Nombre**:<br />UserNeverLoggedIntoYammer<br />**Hex**:<br />8005F111<br />**Número**:<br />-2147094255|Para seguir a otros usuarios, debe iniciar sesión en Yammer. Inicie sesión en su cuenta de Yammer e inténtelo de nuevo.|
 > |**Nombre**:<br />UserNotAssignedLicense<br />**Hex**:<br />8004D24B<br />**Número**:<br />-2147167669|No se han asignado licencias al usuario|
-> |**Nombre**:<br />UserNotAssignedRoles<br />**Hex**:<br />80042f09<br />**Número**:<br />-2147209463|No se han asignado roles al usuario.|
+> |**Nombre**:<br />UserNotAssignedRoles<br />**Hex**:<br />80042f09<br />**Número**:<br />-2147209463|No se ha asignado ningún rol al usuario (Id = {0}).|
 > |**Nombre**:<br />UserNotInParentHierarchy<br />**Hex**:<br />80041d07<br />**Número**:<br />-2147214073|El usuario no se encuentra en la jerarquía de negocio del usuario primario.|
 > |**Nombre**:<br />UserNotMemberOfOrg<br />**Hex**:<br />80072560<br />**Número**:<br />-2147015328|El usuario no es miembro de la organización.|
 > |**Nombre**:<br />UserSettingsInvalidAdvancedFindStartupMode<br />**Hex**:<br />80041d34<br />**Número**:<br />-2147214028|El modo de inicio de búsqueda avanzada no es válido.|
@@ -3407,10 +3547,12 @@ Este tema enumera los códigos de error que puede encontrar al depurar el códig
 > |**Nombre**:<br />WebResourceNameInvalidCharacters<br />**Hex**:<br />8004F117<br />**Número**:<br />-2147159785|Los nombres de recursos web solo pueden incluir letras, números, puntos y caracteres de barra diagonal no consecutivos.|
 > |**Nombre**:<br />WebResourceNameInvalidFileExtension<br />**Hex**:<br />8004F119<br />**Número**:<br />-2147159783|Los recursos Web no pueden tener las siguientes extensiones de archivo: .aspx, .ascx, .asmx o .ashx.|
 > |**Nombre**:<br />WebResourceNameInvalidPrefix<br />**Hex**:<br />8004F118<br />**Número**:<br />-2147159784|El nombre del recurso web no contiene un prefijo válido.|
+> |**Nombre**:<br />WebResourcePreventingFormSave<br />**Hex**:<br />80060369<br />**Número**:<br />-2147089559|No se pueden guardar los datos del formulario porque el recurso web registró onSave al invocar preventDefault.|
 > |**Nombre**:<br />WopiApplicationUrl<br />**Hex**:<br />80060802<br />**Número**:<br />-2147088382|Error al recuperar la información de la dirección url de la aplicación WOPI.|
 > |**Nombre**:<br />WopiDiscoveryFailed<br />**Hex**:<br />80060800<br />**Número**:<br />-2147088384|Fallo en la solicitud de recuperar el XML de detección de WOPI.|
 > |**Nombre**:<br />WopiMaxFileSizeExceeded<br />**Hex**:<br />80060803<br />**Número**:<br />-2147088381|{0} el archivo ha superado límite de tamaño de {1}.|
 > |**Nombre**:<br />WordTemplateFeatureNotEnabled<br />**Hex**:<br />800608DB<br />**Número**:<br />-2147088165|La característica de documento de Word no está habilitada.|
+> |**Nombre**:<br />WorkerProcessCrashFailure<br />**Hex**:<br />80072031<br />**Número**:<br />-2147016655|Esta operación falló debido a un bloqueo del proceso de trabajo.|
 > |**Nombre**:<br />WorkflowActivityNotSupported<br />**Hex**:<br />80045045<br />**Número**:<br />-2147200955|No se puede crear, actualizar o publicar el flujo de trabajo porque hace referencia un paso del flujo de trabajo no compatible.|
 > |**Nombre**:<br />WorkflowAutomaticallyDeactivated<br />**Hex**:<br />80045042<br />**Número**:<br />-2147200958|La definición de flujo de trabajo original se ha desactivado y sustituido.|
 > |**Nombre**:<br />WorkflowCompileFailure<br />**Hex**:<br />80045001<br />**Número**:<br />-2147201023|Se ha producido un error durante la recopilación del flujo de trabajo.|

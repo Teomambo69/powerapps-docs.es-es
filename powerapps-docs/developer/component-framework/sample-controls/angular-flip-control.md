@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 42539d33e5439b71f523c69b0ac44d6ee10c6640
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: d04656cb3ce2970eded1bcf39e2d5c6a2f121410
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017602"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091227"
 ---
 # <a name="implementing-flip-component"></a>Implementar componente Flip
 
@@ -24,7 +24,7 @@ En este ejemplo se muestra cómo usar las bibliotecas de terceros para crear com
 
 ## <a name="available-for"></a>Disponible para 
 
-Aplicaciones basadas en modelo y aplicaciones de lienzo (vista previa piloto) 
+Aplicaciones basadas en modelos y aplicaciones de lienzo (vista previa pública) 
 
 ## <a name="manifest"></a>Manifiesto
 

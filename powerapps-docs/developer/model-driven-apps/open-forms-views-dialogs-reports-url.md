@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2a8656eb85ff7812aff2c395b4a63e239dfdb375
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e99433c2fce04ec5b72579645ccfda838892dbea
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753608"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091303"
 ---
 # <a name="open-forms-views-dialogs-and-reports-with-a-url"></a>Abrir formularios, vistas, diálogos e informes con una dirección URL
 
@@ -216,7 +216,9 @@ function getReportURL(action,fileName,id) {
 ```  
 
 ### <a name="see-also"></a>Vea también   
- [Establecer valores de campo usando parámetros pasados a un formulario](set-field-values-using-parameters-passed-form.md)   
+
+ [Establecer valores de campo usando parámetros pasados a un formulario](set-field-values-using-parameters-passed-form.md)<br/>
+ [Xrm.Navigation.openUrl](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-navigation/openurl)<br/>
  [Configurar un formulario para aceptar parámetros querystring personalizados](configure-form-accept-custom-querystring-parameters.md)    
  [Personalizar la cinta de opciones](customize-commands-ribbon.md)<br/>
  [Scripting del cliente con JavaScript](client-scripting.md)<br/>

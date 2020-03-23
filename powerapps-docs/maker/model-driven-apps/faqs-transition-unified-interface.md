@@ -2,7 +2,7 @@
 title: 'Preguntas más frecuentes: Transición a la Interfaz unificada | MicrosoftDocs'
 description: Preguntas más frecuentes relacionadas con el proceso de transición para desplazar usuarios del cliente web heredado a la Interfaz unificada.
 ms.custom: ''
-ms.date: 12/20/2019
+ms.date: 02/26/2020
 ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e06fa6901ec123307adaabdbbb6071e5a11c47cc
-ms.sourcegitcommit: 41a78575a6533c45c7cf4c012f8ed30c4e43aae8
+ms.openlocfilehash: 003bc58cc0c4db717a92d75d6157b7b53eb3629c
+ms.sourcegitcommit: bb1a684d4ce2d342ad092a29ebca2bb502736e6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2918130"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "3087812"
 ---
 # <a name="faqs-transition-to-unified-interface"></a>Preguntas más frecuentes: Transición a la Interfaz unificada
 
@@ -79,7 +79,7 @@ Consulte el contenido de soporte técnico disponible en el [sitio de la comunida
 
 ### <a name="my-environment-has-been-transitioned-but-i-am-finding-blocking-issues-for-my-users-and-want-to-move-back-to-the-legacy-web-client-is-this-possible"></a>Se ha realizado la transición de su entorno, pero estoy teniendo problemas de bloqueo para mis usuarios y quiero volver al cliente web heredado. ¿Esto es posible?
 
-Sí, aún podrá volver al cliente web heredado en un plazo de hasta 10 días después de la transición. Puede realizar el [cambio manualmente](https://docs.microsoft.com/power-platform/admin/enable-unified-interface-only) durante los primeros 4 días o después, presentar una solicitud de soporte técnico en canal habitual, ya que el cambio manual se deshabilitará. 
+Sí, aún podrá volver al cliente web heredado en un plazo de hasta 10 días después de la transición. Puede hacer el [cambio manualmente](https://docs.microsoft.com/power-platform/admin/enable-unified-interface-only) durante los primeros 10 días o elevar una [solicitud de soporte estándar](https://admin.powerplatform.microsoft.com/support?referer=mbssupport) y configurar el tipo de problema para que sea "Transición del cliente web heredado a Interfaz unificada" ya que el cambio manual quedará deshabilitado. 
 
 > [!NOTE]
 > Los 10 días deberán ser antes de 1 de octubre de 2020 ya que el cliente web heredado ya no estará disponible a partir de esa fecha.
@@ -116,9 +116,9 @@ Solo se realizará la transición de las fechas aprobadas por el administrador.
 
 ### <a name="if-i-already-have-an-environment-transitioned-to-unified-interface-will-i-still-be-able-to-switch-back-to-the-legacy-web-client-manually"></a>Si ya tengo un entorno que ha realizado la transición a la interfaz unificada, ¿podré volver al cliente web heredado manualmente?
 
-Si el entorno transición ha realizado la transición hace al menos 4 días, intentaremos deshabilitar el cambio manual al antiguo cliente web. 
+Si el entorno transición ha realizado la transición hace al menos 10 días, intentaremos deshabilitar el cambio manual al antiguo cliente web. 
 
-Si encuentra esta opción se ha deshabilitado y tiene necesidad de volver, presente una solicitud de soporte técnico en el canal habitual para su evaluación.
+Si encuentra que se ha deshabilitado y tiene un requisito para volver a cambiar, eleve una [solicitud de soporte estándar](https://admin.powerplatform.microsoft.com/support?referer=mbssupport) y configure el tipo de problema como "Transición del cliente web heredado a Interfaz unificada".
 
 ### <a name="is-there-a-specific-day-and-time-when-approved-transitions-will-take-place"></a>¿Hay un día y hora específicos en que se llevarán a cabo las transiciones aprobadas? 
 

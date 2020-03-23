@@ -13,17 +13,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 24164d6eb03de550a1f3f4a8f3e8402154d03046
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 7cf24511fd8f314fde5f653608c1a4fa43ebc4e4
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865627"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040675"
 ---
 # <a name="open-entity-data-in-excel"></a>Abrir datos de entidad en Excel
 Al abrir datos de entidad en Microsoft Excel, puede ver y editar datos de forma rápida y sencilla usando el complemento de Excel Microsoft Power Apps. El complemento Power Apps Excel requiere Microsoft Excel 2016.
 
 ![Complemento para Excel](./media/data-platform-cds-excel-addin/ExcelAddin.png "Complemento Power Apps Excel")
+
+Para instalar el complemento de Power Apps Excel, vea [Complemento de Microsoft PowerApps Office](https://appsource.microsoft.com/en-us/product/office/WA104380330?tab=Overview). Para obtener más información sobre cómo agregar o quitar un complemento de Office Excel, vea [Agregar o quitar complementos en Excel](https://support.office.com/en-us/article/add-or-remove-add-ins-in-excel-0af570c4-5cf3-4fa9-9b88-403625a0b460).
 
 ## <a name="open-entity-data-in-excel"></a>Abrir datos de entidad en Excel
 1. En [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y haga clic o pulse en **Entidades** en el panel de navegación de la izquierda. Se muestran todas las entidades.

@@ -6,21 +6,25 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 01/17/2020
+ms.date: 03/04/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: bf76d2a8a3e91d9e20de9d70543af0bda4a57040
-ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
+ms.openlocfilehash: 9293288a8f3de86807342466771d197754b65706
+ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2988099"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100035"
 ---
 # <a name="power-apps-portals-faq"></a>Preguntas más frecuentes sobre portales de Power Apps
 
 Hemos recopilado una lista de preguntas frecuentes con respuestas breves para que obtenga la información que necesita con rapidez.
 
 ## <a name="general"></a>General
+
+### <a name="does-power-apps-portals-support-tls-12"></a>¿Admiten TLS 1.2 los portales Power Apps?
+
+Los portales Power Apps versión 8.3 y posteriores admiten [TLS 1.2](https://support.microsoft.com/help/4041984/portal-capabilities-for-microsoft-dynamics-365-version-8-3-2-85-releas).
 
 ### <a name="what-is-the-difference-between-power-apps-portals-dynamics-365-portals-and-add-on-portals"></a>¿Cuál es la diferencia entre los portales de Power Apps, los portales de Dynamics 365 y los portales de complementos?
 
@@ -32,9 +36,11 @@ Puede comprobar el tipo de portal desde el [Centro de administración de portale
 
 ![Tipo de portales de Power Apps](./media/power-apps-portals-type.png)
 
-Para los portales de complementos, el tipo de portal tiene agregado un sufijo de 'complemento'. Por ejemplo, un tipo de portal de complemento de producción aparece como 'Producción (complemento)'.
+Diferencias adicionales entre portales de Power Apps con licencias basadas en capacidad y licencias basadas en complemento:
 
-No hay diferencia en la funcionalidad entre portales de Power Apps con licencias basadas en capacidad y licencias basadas en complemento. Sin embargo, el método de aprovisionamiento para portales con licencias basadas en capacidad y licencias basadas en complemento es diferente.
+- Para los portales de complementos, el tipo de portal tiene agregado un sufijo de 'complemento'. Por ejemplo, un tipo de portal de complemento de producción aparece como 'Producción (complemento)'.
+- Los portales de Power Apps tienen un [mecanismo de almacenamiento en caché diferente](https://powerapps.microsoft.com/en-us/blog/publishing-changes-to-powerapps-portals/) en comparación con los portales de licencias basados en complementos.
+- El método de aprovisionamiento es diferente para portales con licencias basadas en capacidad que para licencias basadas en complementos.
 
 Puede crear un portal de Power Apps con licencia basada en capacidad utilizando los pasos descritos en los siguientes artículos:
 
@@ -213,6 +219,10 @@ Cuando cambia la dirección URL de su entorno de Common Data Service, el portal 
 Su portal se reiniciará y volverá a funcionar.
 
 ## <a name="debugging-and-fixing-problems"></a>Depuración y solución de problemas
+
+### <a name="performance-of-entity-forms-actions-such-as-createupdatedelete-on-entity-forms-take-a-lot-of-time-to-complete-or-timeout"></a>Rendimiento de formularios de la entidad: acciones como crear/actualizar/eliminar en los formularios de la entidad requieren mucho tiempo para completarse o para agotar el tiempo de espera.
+
+Esto puede suceder debido a múltiples razones según sus datos y personalizaciones realizadas en esa entidad dentro de Common Data Service. Al solucionar este problema relacionado con el rendimiento en acciones de registro desde portales, asegúrese de que no haya complementos sincrónicos registrados en esos eventos que puedan causar estos retrasos. Siempre que sea posible, intente implementarlos de forma asíncrona para que no retengan o retrasen la transacción.
 
 ### <a name="when-accessing-my-portal-i-see-a-generic-error-page-how-can-i-see-the-actual-error"></a>Al acceder a mi portal, veo una página de errores genérica. ¿Cómo puedo ver el error real?
 

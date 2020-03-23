@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2aa8cb6f5bb0cd3e58eda61c2b9c7b9d03637ec7
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 199399fe75103df2d8fde902d54a803ec56fc395
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866111"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040587"
 ---
 # <a name="create-and-edit-entities-using-power-apps-portal"></a>Crear y editar entidades con el portal de Power Apps
 
@@ -38,8 +38,7 @@ El portal permite configurar las opciones más comunes, pero algunas opciones so
 
 ## <a name="view-entities"></a>Ver entidades
 
-1. En el [portal de Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione el modo de diseño **Controlado por modelos** o **Lienzo**.
-2. Seleccione **Datos** > **Entidades**
+1. Desde el [portal de Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione **Datos** > **Entidades**.
 
 ![Ver entidades](media/view-entities-portal.png)
 
@@ -50,6 +49,7 @@ Puede filtrar las entidades que ve mediante las vistas siguientes en una lista:
  |Vista|Descripción|
  |--|--|
  |**Todo**| Muestra todas las entidades|
+ |**Administrada**| Muestra solo entidades administradas y estándar|
  |**Personalizada**|Muestra solo entidades personalizadas|
  |**Predeterminado**|Muestra únicamente las entidades estándar |
 
@@ -68,23 +68,33 @@ Escriba datos para los campos siguientes:
 |**Nombre**|Este es el nombre singular de la entidad que aparecerá en la aplicación. Se puede cambiar posteriormente.|
 |**Nombre plural para mostrar**|Este es el nombre plural de la entidad que aparecerá en la aplicación. Se puede cambiar posteriormente.|
 |**Nombre**|Este campo se rellena previamente según el **Nombre para mostrar** que escriba. Incluye el prefijo de personalización para el editor de soluciones de Common Data Service. No se puede cambiar esto una vez guardada la entidad.|
+|**Nombre principal**|Este es el único campo visible en este momento.| Edítelo si desea cambiar el **Nombre para mostrar** o el **Nombre** del campo.
+|**Nombre para mostrar**|Este es el principal identificador de texto fácil de usar para su registro (generalmente un nombre o un número). El valor de este campo se muestra a los usuarios cuando necesitan seleccionar en una lista de registros.
+|**Nombre**|Este campo se rellena previamente según el **Nombre para mostrar** que escriba. Incluye el prefijo de personalización para el editor de soluciones de Common Data Service. No se puede cambiar esto una vez guardada la entidad.|
+
+Seleccione **Habilitar archivos adjuntos** para agregar notas y archivos a los registros de esta entidad.
+
+Seleccione **Más valores**. Estas configuraciones son opcionales para una entidad.
+
+|Campo|Descripción|
+|--|--|
 |**Descripción**|Proporcione una descripción significativa del objetivo de la entidad.|
+|**Tipo y propiedad de entidad**|Cambie el tipo de entidad a Entidad de actividad para crear entidades que puedan administrar tareas. El tipo de **Propiedad** define quién puede realizar operaciones en un registro.|
+|**Colaboración**|Habilite características para ayudar a los usuarios a trabajar juntos más fácilmente en esta entidad.|
+|**Crear y actualizar configuración**|Puede habilitar formularios de creación rápida, dando a su aplicación una experiencia de entrada de datos optimizada. La detección de duplicados le permite establecer directivas de detección de duplicados y crear reglas detección de duplicados. El seguimiento de cambios proporciona una forma de mantener los datos sincronizados de manera eficiente.|
+|**Dynamics 365 for Outlook**|Configure cómo aparece esta entidad en Outlook.|
 
-Seleccione **Siguiente** para continuar, se cerrará el panel **Nueva entidad** y se mostrará la lista de campos.
+Seleccione **Crear** para continuar, se cerrará el panel **Nueva entidad** y se mostrará la lista de campos.
 
-El campo **Nombre principal**es el único campo visible en este momento. Seleccione el campo **Nombre principal** para editarlo si desea cambiar el **Nombre para mostrar** o el **Nombre** del campo. Los valores predeterminados se muestran debajo:
+El campo **Nombre principal** de la entidad se muestra en la lista de campos. Seleccione el campo **Nombre principal** para editarlo si desea cambiar el **Nombre para mostrar** o el **Nombre** del campo. Los valores predeterminados se muestran debajo:
 
 ![Panel Nombre principal](media/primary-name-panel.png)
-
-Seleccione **Guardar entidad** para crear la entidad o siga editando la entidad.
-
-![Guardar entidad](media/save-entity-portal.png)
 
 ## <a name="edit-an-entity"></a>Editar una entidad
 
 Mientras [ve entidades](#view-entities), seleccione la entidad que desea editar.
 
-Seleccione Configuración en el menú si desea editar el **Nombre para mostrar**, **Nombre plural para mostrar** o **Descripción** de la entidad.
+Seleccione **Configuración** en el menú si desea editar el **Nombre para mostrar**, **Nombre plural para mostrar** o **Descripción** de la entidad.
 
 ![Configuración de la entidad](media/entity-settings-portal.png)
 
@@ -141,7 +151,7 @@ Como usuario con el rol de seguridad de administrador del sistema, puede elimina
 > [!NOTE]
 > La única forma de recuperar datos de una entidad que se haya eliminado es restaurar la base de datos desde un punto anterior a la eliminación de la entidad. Más información: [Copia de seguridad y restauración de instancias](/dynamics365/customer-engagement/admin/backup-restore-instances)
 
-Mientras [ve entidades](#view-entities), seleccione la entidad y seleccione **Eliminar entidad** en el menú o en el menú contextual.
+Mientras [ve entidades](#view-entities), seleccione la entidad y seleccione **Eliminar entidad** en el menú.
 
 ![Eliminación de entidades mediante el portal de Power Apps](media/delete-entity-powerapps-portal.png)
 

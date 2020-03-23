@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3b875f06-0fd9-49fa-bc34-939d00e17185
-ms.openlocfilehash: bc22e8dd153396d4cbcac8715c0b04c49b246ac5
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: d9b51c50d2e8ed24be46889077acc366b7d88f60
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017441"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091211"
 ---
 # <a name="implementing-formatting-api-component"></a>Implementar el formato del componente API
 
@@ -27,7 +27,7 @@ Este componente de ejemplo explora los distintos métodos disponibles como parte
 
 ## <a name="available-for"></a>Disponible para 
 
-Aplicaciones basadas en modelo y aplicaciones de lienzo (vista previa piloto) 
+Aplicaciones basadas en modelos y aplicaciones de lienzo (vista previa pública) 
 
 ## <a name="manifest"></a>Manifiesto
 

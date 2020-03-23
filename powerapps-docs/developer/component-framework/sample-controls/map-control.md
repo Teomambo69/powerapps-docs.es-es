@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: a304ace5ed62bf831aafb2ae41d4e615213c84a6
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 651ada19ae34f40a04f6dca92c761148efa69241
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017415"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091191"
 ---
 # <a name="implementing-map-component"></a>Implementar componente de mapa
 
@@ -24,7 +24,7 @@ Este componente de ejemplo cambia la experiencia de usuario de interactuar con c
 
 ## <a name="available-for"></a>Disponible para 
 
-Aplicaciones basadas en modelo y aplicaciones de lienzo (vista previa piloto) 
+Aplicaciones basadas en modelos y aplicaciones de lienzo (vista previa pública) 
 
 ## <a name="manifest"></a>Manifiesto
 

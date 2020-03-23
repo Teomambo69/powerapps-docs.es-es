@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 02/07/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: fb5799514de32d3046ccba7479b3019da64bf4aa
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: 987541aff2cb3585fa19c1c9f8007ad4a79b163d
+ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977025"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "3033118"
 ---
 # <a name="create-a-common-data-service-starter-portal"></a>Crear un portal de inicio de Common Data Service
 
@@ -56,6 +56,9 @@ Para crear un portal:
 
 5.  En la ventana **Portal en blanco**, escriba un nombre para el portal y la dirección de la página web, y seleccione un idioma de la lista desplegable. Cuando esté listo, seleccione **Crear**.
 
+    > [!TIP]
+    > Para crear un portal con un idioma diferente, primero debe [habilitar el idioma en el entorno](https://docs.microsoft.com/power-platform/admin/enable-languages#enable-the-language) para que esté disponible en la lista desplegable de idiomas.
+
     > [!div class=mx-imgBorder]
     > ![crear un nuevo portal](media/create-new-portal.png "Crear un nuevo portal")  
 
@@ -74,7 +77,7 @@ Después de que el portal se aprovisione correctamente, el estado se actualiza y
 Para editar el portal en portales de Power Apps Studio, consulte [Editar un portal](manage-existing-portals.md#edit).
 
 > [!NOTE]
-> - Puede crearse un máximo de cinco portales en un inquilino. Sin embargo, solo puede haber un portal de cada tipo creado en un entorno.
+> - Solo puede haber un portal de cada tipo y para cada idioma creado en un entorno.
 > - Si no tiene suficientes privilegios para aprovisionar un portal, se muestra un error. Debe tener el rol de administrador del sistema de Common Data Service para crear un portal. También debe tener el **Modo de acceso** establecido como **Lectura-Escritura** en **Información de licencia de acceso de cliente (CAL)** en el registro de usuario.
 > - Si ha adquirido un complemento de portal más antiguo, y desea para aprovisionar un portal con el complemento, debe ir a la página **Centro de administración de Dynamics 365**. Más información: [Aprovisionar un portal con el complemento de portal más antiguo](provision-portal-add-on.md)
 > - Si ha suministrado un portal con el complemento de portal más antiguo, puede seguir personalizándolo y administrándolo desde [make.powerapps.com](https://make.powerapps.com).
