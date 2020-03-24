@@ -547,7 +547,7 @@ Complete todos los campos como se muestra en la tabla siguiente y, a continuaci�
 |-|-|-|
 | Nombre completo | FullName | Nombre del contacto. |
 | Correo electrónico | Correo electrónico | La dirección de correo electrónico que se muestra para el contacto. |
-| País | País | País del contacto. Este campo se utiliza para agrupar los contactos; puede usar otros valores para agrupar contactos por si los países no tienen sentido. |
+| País | País | País del contacto. Este campo se utiliza para agrupar los contactos; puede usar otros valores para agrupar contactos por si los países o regiones no tienen sentido. |
 | Comentarios | Comentarios | Muestra información adicional sobre el contacto; útil para describir cuándo ponerse en contacto con este contacto. |
 | Obsoleto | Obsoleto | Use para ocultar un contacto de emergencia existente. |
 
