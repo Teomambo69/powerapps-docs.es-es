@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/30/2019
+ms.date: 03/19/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 18abbc91426c74b48aefd51f1867d8bff806d718
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 7e434de24af417b5871c762d1aecd64cc41c5c72
+ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79211512"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80122751"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Requisitos del sistema, límites y valores de configuración para aplicaciones de lienzo
 Este tema contiene los requisitos de la plataforma del dispositivo y del explorador Web, así como los límites y los valores de configuración de las aplicaciones de canvas.
@@ -92,6 +92,7 @@ Esta lista identifica todos los servicios a los que se comunica Power apps Studi
 
 | Dominios | Protocolos | Usos |
 | --- | --- | --- |
+| api.bap.microsoft.com<br/>api.businessappdiscovery.microsoft.com | https | Administración de permisos de entorno|
 | management.azure.com |https |RP |
 | msmanaged-na.azure-apim.net |https |Runtime de conectores/API |
 | login.microsoft.com<br>login.windows.net<br>login.microsoftonline.com<br>secure.aadcdn.microsoftonline-p.com |https |ADAL |
@@ -102,9 +103,10 @@ Esta lista identifica todos los servicios a los que se comunica Power apps Studi
 | \*. azureedge.net |https | create.powerapps.com, make.powerapps.com, content.powerapps.com y make.powerapps.com |
 | \*. blob.core.windows.net |https | Blob Storage |
 | \*. flow.microsoft.com | https | create.powerapps.com, make.powerapps.com, content.powerapps.com y make.powerapps.com |
-| *. dynamics.com | https | Common Data Service |
+| \*. dynamics.com | https | Common Data Service |
 | vortex.data.microsoft.com |https |Telemetría |
-| localhost | https | Power apps Mobile
+| localhost | https | Power apps Mobile|
+
 
 > [!NOTE]
 > Si usa una VPN, debe configurarse para excluir localhost de la tunelización de Power apps Mobile.

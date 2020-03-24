@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a8ef720b45f3a9e02129c79f883b007a1fac3b22
-ms.sourcegitcommit: 0ca700b2982a4dec430f0b02b00cb1b3a045cf1c
+ms.openlocfilehash: febec328c291972563599eb56a32f80e22eb070a
+ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "79543067"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80122525"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>Configuración y información sobre la plantilla de ejemplo de comunicación de crisis en Power apps
 <!--note from editor: Suggest moving the overview into the usual overview position (i.e. after the H1). Other notes: According to the Docs Contributor Guide, graphic file names should be all lowercase, including the extension. I didn't change this, but something to note for next time. -->
@@ -547,7 +547,7 @@ Complete todos los campos como se muestra en la tabla siguiente y, a continuaci�
 |-|-|-|
 | Nombre completo | FullName | Nombre del contacto. |
 | Correo electrónico | Correo electrónico | La dirección de correo electrónico que se muestra para el contacto. |
-| País | País | País del contacto. Este campo se utiliza para agrupar los contactos; puede usar otros valores para agrupar contactos por si los países o regiones no tienen sentido. |
+| País | País | País del contacto. Este campo se utiliza para agrupar los contactos; puede usar otros valores para agrupar contactos por si los países no tienen sentido. |
 | Comentarios | Comentarios | Muestra información adicional sobre el contacto; útil para describir cuándo ponerse en contacto con este contacto. |
 | Obsoleto | Obsoleto | Use para ocultar un contacto de emergencia existente. |
 
@@ -700,6 +700,31 @@ La aplicación usa un flujo para enviar notificaciones a los usuarios finales ca
 > [!NOTE]
 > Es posible que reciba un error si aún no se ha autorizado una de las conexiones.
 Si esto ocurre, abra la tarjeta con la conexión no autorizada y vuelva a autorizarla.
+
+
+### <a name="optional-sending-notifications-to-more-than-999-users"></a>Opcional: envío de notificaciones a más de 999 usuarios
+
+La acción **obtener miembros del grupo** actual está limitada a la extracción de 999 usuarios (100 usuarios de forma predeterminada). Para distribuir a más usuarios, puede modificar el flujo para enviar un correo electrónico a un grupo de distribución en su lugar.
+
+1. Elimine las siguientes tarjetas: **obtener los miembros del grupo** y **cambiar la configuración de notificación de envío preferida**:
+
+    ![Eliminar acciones](media/sample-crisis-communication-app/36-delete-actions.png)
+
+1. Agregue una nueva acción.
+
+1. Busque y seleccione **Enviar un correo electrónico (V2)** :
+
+    ![Agregar enviar un correo electrónico](media/sample-crisis-communication-app/37-add-send-an-email.png)
+
+1. En el campo **para** , escriba el nombre del grupo de distribución.
+
+1. En el campo **asunto** , seleccione el botón **Agregar un valor dinámico** y agregue el campo **título** desde la tarjeta **cuando se publique un elemento de noticias** :
+
+    ![Agregar título](media/sample-crisis-communication-app/38-add-title.png)
+
+1. En el campo **cuerpo** , seleccione el botón **Agregar un valor dinámico** y agregue el campo de **detalles** de la tarjeta **cuando se publique un elemento de noticias** .
+
+1. Seleccione **Guardar**.
 
 ### <a name="test-the-news-notification-flow"></a>Probar el flujo de notificación de noticias
 

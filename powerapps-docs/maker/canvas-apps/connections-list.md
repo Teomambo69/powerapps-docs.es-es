@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/12/2020
+ms.date: 03/19/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 00273fefd24b9e0f76ed284b2f9ab526fb7706d6
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: c0710f36b5c49037d5104ab1085d1c990290b967
+ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79211857"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80122876"
 ---
 # <a name="overview-of-canvas-app-connectors-for-power-apps"></a>Información general de los conectores de canvas-app para Power apps
 Los datos son el núcleo de la mayoría de las aplicaciones, incluidas las que se crean en Power apps. Los datos se almacenan en un *origen de datos* y para enviarlos a una aplicación se crea una *conexión*. La conexión utiliza un *conector* concreto para comunicarse con el origen de datos. Power apps tiene conectores para muchos servicios populares y orígenes de datos locales, entre los que se incluyen SharePoint, SQL Server, Office 365, Salesforce y Twitter. Para empezar a agregar datos a una aplicación de lienzo, consulte [Agregar una conexión de datos en Power apps](add-data-connection.md).
@@ -70,11 +70,11 @@ La tabla siguiente contiene vínculos a más información sobre nuestros conecto
 | ![Dynamics 365](./media/connections-list/dynamics-365.png) |[**Dynamics 365**](connections/connection-dynamics-crmonline.md) |&nbsp; | ![Dynamics AX](./media/connections-list/dynamics-ax.png) |[**Dynamics AX**](connections/connection-dynamicsax.md) |
 |![Excel](./media/connections-list/excel.png) |[**Excel**](connections/connection-excel.md) |&nbsp; |![Traductor de Microsoft](./media/connections-list/microsoft-translator.png) |[**Microsoft Translator**](connections/connection-microsoft-translator.md) |
 |![Office 365 Outlook](./media/connections-list/office365.png) |[**Office 365 Outlook**](connections/connection-office365-outlook.md) |&nbsp; | ![Usuarios de Office 365](./media/connections-list/office365.png) |[**Usuarios de Office 365**](connections/connection-office365-users.md) |
-| ![Oracle](./media/connections-list/oracle-icon.png) |[**Oracle**](connections/connection-oracledb.md) |&nbsp; | ![Power BI](./media/connections-list/powerbi.png) |[**Power BI**](connections/connection-powerbi.md) |
+| ![Oracle](./media/connections-list/oracle-icon.png) |[**Oracle**](connections/connection-oracledb.md) |&nbsp; | ![Aplicación](./media/connections-list/powerbi.png) |[**Power BI**](connections/connection-powerbi.md) |
 | ![SharePoint](./media/connections-list/sharepoint.png) |[**SharePoint**](connections/connection-sharepoint-online.md) |&nbsp; | ![SQL Server](./media/connections-list/sql.png) |[**SQL Server**](connections/connection-azure-sqldatabase.md) 
 |![Twitter](./media/connections-list/twitter.png) |[**Twitter**](connections/connection-twitter.md)
 
-* * Se aplica a Azure BLOB, Box, Dropbox, Google Drive, OneDrive y OneDrive para la empresa
+\* * Se aplica a Azure BLOB, Box, Dropbox, Google Drive, OneDrive y OneDrive para la empresa
 
 ## <a name="standard-and-custom-connectors"></a>Conectores estándar y personalizados
 Power apps proporciona conectores *estándar* para muchos orígenes de datos de uso frecuente. Si Power apps tiene un conector estándar para el tipo de origen de datos que desea usar, debe usar dicho conector. Si tiene que conectarse a otros tipos de orígenes de datos, como un servicio que haya creado, vea [Conectores personalizados en PowerApps](../canvas-apps/register-custom-api.md).
@@ -102,4 +102,4 @@ Este tipo de conexión no es muy seguro porque no se basa en la autenticación d
 
 ### <a name="windows-authentication"></a>Autenticación de Windows
 
-Este tipo de conexión no es muy seguro porque tampoco se basa en la autenticación de usuario final.  La autenticación de Windows se utiliza cuando es necesario conectarse a un origen de datos **local**.  Un ejemplo de este tipo de conexión es a un servidor local que tiene una SQL Server.  La conexión debe pasar a través de una puerta de enlace.  Dado que pasa a través de una puerta de enlace, el conector tiene acceso a todos los datos de ese origen de datos. Como resultado, cualquier información a la que se pueda tener acceso con las credenciales de Windows que suministre está disponible para el conector. Una vez publicada la aplicación, la conexión también se publica y está disponible para los usuarios.   Esto significa que los usuarios finales también pueden crear aplicaciones con esta misma conexión y acceder a los datos de esa máquina.  Las conexiones al origen de datos también se **comparten implícitamente** con los usuarios con los que se comparte la aplicación.  Este tipo de conexión puede ser válido cuando el origen de datos solo reside en un servidor local y los datos de ese origen se pueden compartir libremente.
+Este tipo de conexión no es muy seguro porque no se basa en la autenticación de usuario final. Use la autenticación de Windows cuando necesite conectarse a un origen **de datos local**. Un ejemplo de este tipo de conexión es a un servidor local que tiene una SQL Server. La conexión debe pasar a través de una puerta de enlace. Dado que pasa a través de una puerta de enlace, el conector tiene acceso a todos los datos de ese origen de datos. Como resultado, cualquier información a la que se pueda tener acceso con las credenciales de Windows que suministre está disponible para el conector. Una vez publicada la aplicación, la conexión también se publica y está disponible para los usuarios.  Esto significa que los usuarios finales también pueden crear aplicaciones con esta misma conexión y acceder a los datos de esa máquina. Las conexiones al origen de datos también se **comparten implícitamente** con los usuarios con los que se comparte la aplicación. Este tipo de conexión puede ser válido cuando el origen de datos solo reside en un servidor local y los datos de ese origen se pueden compartir libremente.

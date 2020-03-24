@@ -7,46 +7,63 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 01/31/2019
+ms.date: 03/23/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 11208b68c3ec63f3a762771844adaaf7cd35aec1
-ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
+ms.openlocfilehash: c90f0be8d1f8f62afd3fdec1701b98b434f74387
+ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78265321"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80122839"
 ---
 # <a name="savedata-and-loaddata-functions-in-power-apps"></a>Funciones SaveData y LoadData en Power apps
-Guarda y vuelve a cargar una [colección](../working-with-data-sources.md#collections) desde un dispositivo local.
+Guarda y recarga una [colección](../working-with-data-sources.md#collections) desde un dispositivo local.
 
 ## <a name="description"></a>Descripción
 La función **SaveData** almacena una colección para su uso posterior con un nombre.  
 
-La función **LoadData** vuelve a cargar una colección por el nombre guardado anteriormente con **SaveData**. No se puede utilizar esta función para cargar una colección de otro origen.  
+La función **LoadData** recarga una colección por el nombre que se guardó anteriormente con **savedata**. No se puede utilizar esta función para cargar una colección de otro origen.  
 
-Use estas funciones para mejorar el rendimiento de inicio de la aplicación almacenando en caché los datos de la fórmula **[app. OnStart](../controls/control-screen.md#additional-properties)** en una primera ejecución y volviendo a cargar la memoria caché local en ejecuciones posteriores. También puede usar estas funciones para agregar [funcionalidades sin conexión sencillas](../offline-apps.md) a la aplicación.
+Use estas funciones para mejorar el rendimiento de inicio de la aplicación:
 
-No puede usar estas funciones dentro de un explorador, ya sea al crear la aplicación en Power apps Studio o al ejecutar la aplicación en el reproductor Web. Para probar la aplicación, ejecútela en Power apps Mobile en un dispositivo iPhone o Android.
+- Almacenar en caché los datos de la fórmula **[app. OnStart](../controls/control-screen.md#additional-properties)** en una primera ejecución.
+- Volver a cargar la memoria caché local en las siguientes ejecuciones.
 
-Estas funciones están limitadas por la cantidad de memoria de la aplicación disponible, ya que operan en una colección en memoria. La memoria disponible puede variar según el dispositivo y el sistema operativo, la memoria que usa el reproductor de Power apps y la complejidad de la aplicación en términos de pantallas y controles. Si almacena más de unos megabytes de datos, pruebe la aplicación con los escenarios esperados en los dispositivos en los que espera que la aplicación se ejecute. Por lo general, debe esperar entre 30 y 70 megabytes de memoria disponible.  
+También puede usar estas funciones para agregar [funcionalidades sin conexión sencillas](../offline-apps.md) a la aplicación.
 
-Estas funciones dependen de la colección que se define implícitamente con la presencia de una llamada de función **[Collect](function-clear-collect-clearcollect.md)** o **[ClearCollect](function-clear-collect-clearcollect.md)** en cualquier fórmula dentro de la aplicación.  En realidad, no es necesario llamar a **Collect** o **ClearCollect** para cargar datos en la colección con el fin de definirlo, que es el caso común cuando se usa **LoadData** después de un **savedata**anterior.  Lo único que se necesita es la presencia de estas funciones en una fórmula para definir implícitamente la estructura de la colección.  Para obtener más información [, vea crear y quitar variables](../working-with-variables.md#create-and-remove-variables).
+No puede usar estas funciones dentro de un explorador cuando:
+
+- Crear la aplicación en Power apps Studio.
+- Ejecutar la aplicación en el reproductor Web. 
+
+Para probar la aplicación, ejecútela en Power apps Mobile en un dispositivo iPhone o Android.
+
+Estas funciones están limitadas por la cantidad de memoria de la aplicación disponible mientras operan en una colección en memoria. La memoria disponible puede variar dependiendo de factores como: 
+
+- El dispositivo y el sistema operativo.
+- La memoria que usa el reproductor de Power apps.
+- Complejidad de la aplicación con pantallas y controles. 
+
+Pruebe la aplicación con los escenarios esperados en el tipo de dispositivos que espera que la aplicación se ejecute al almacenar datos de gran tamaño. En general, se espera tener entre 30 MB y 70 MB de memoria disponible.
+
+Estas funciones dependen de la colección que se define implícitamente con **[Collect](function-clear-collect-clearcollect.md)** o **[ClearCollect](function-clear-collect-clearcollect.md)** . No es necesario llamar a **Collect** o **ClearCollect** para cargar datos en la colección para definirlos. Es un caso común cuando se usa **LoadData** después de un **savedata**anterior.  Lo único que se necesita es la presencia de estas funciones en una fórmula para definir implícitamente la estructura de la colección.  Para obtener más información, vea [crear y quitar variables](../working-with-variables.md#create-and-remove-variables).
 
 Los datos cargados se anexarán a la colección. Utilice la función **[Clear](function-clear-collect-clearcollect.md)** antes de llamar a **LoadData** si desea empezar con una colección vacía.
 
-Las funciones de espacio aislado de la aplicación integradas del dispositivo se usan para aislar los datos guardados de otras aplicaciones.  El dispositivo también puede cifrar los datos o puede usar una herramienta de administración de dispositivos móviles como [Microsoft Intune](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/microsoft-intune) para cifrar si lo desea.
+Las funciones de espacio aislado de la aplicación integradas del dispositivo se usan para aislar los datos guardados de otras aplicaciones. 
+
+El dispositivo también puede cifrar los datos. también puede usar una herramienta de administración de dispositivos móviles como [Microsoft Intune](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/microsoft-intune).
 
 ## <a name="syntax"></a>Sintaxis
-**SaveData**( *Colección*; *Nombre* )<br>**LoadData**( *Collection*; *Name* [; *IgnoreNonexistentFile* ])
+**SaveData**( *Colección*, *Nombre* )<br>**LoadData**( *Collection*, *Name* [, *IgnoreNonexistentFile* ])
 
 * *Colección*: requerido.  Colección para almacenar o cargar.
-* *Nombre*: requerido.  Nombre del almacenamiento. Tiene que usar el mismo nombre para guardar y cargar el mismo conjunto de datos. El espacio de nombres no se comparte con otros usuarios o aplicaciones.
-* *IgnoreNonexistentFile*: opcional. Valor booleano que indica qué hacer si el archivo no existe todavía.  Use *false* (valor predeterminado) para devolver un error y *true* para suprimir el error.   
+* *Nombre*: requerido.  Nombre del almacenamiento. El nombre debe ser el mismo para guardar y cargar el mismo conjunto de datos. El espacio de nombres no se comparte con otros usuarios o aplicaciones.
+* *IgnoreNonexistentFile*: opcional. Valor booleano que indica qué hacer si el archivo todavía no existe.  Use *false* (valor predeterminado) para devolver un error y *true* para suprimir el error.   
 
 ## <a name="examples"></a>Ejemplos:
 
@@ -57,7 +74,7 @@ Las funciones de espacio aislado de la aplicación integradas del dispositivo se
 
 ### <a name="simple-offline-example"></a>Ejemplo sin conexión sencillo
 
-En este sencillo ejemplo se capturan y almacenan los nombres y las imágenes de los elementos cotidianos sin conexión.  Almacena la información en el almacenamiento local del dispositivo para su uso posterior, lo que permite que la aplicación se cierre o que el dispositivo se reinicie sin perder datos.  
+En el siguiente ejemplo simple se capturan y almacenan los nombres y las imágenes de los elementos cotidianos sin conexión.  Almacena la información en el almacenamiento local del dispositivo para su uso posterior. Esto permite que la aplicación se cierre o que el dispositivo se reinicie sin perder datos.  
 
 Debe tener un dispositivo para trabajar en este ejemplo, ya que usa las funciones **LoadData** y **savedata** que no funcionan en un explorador Web.
 
@@ -69,11 +86,11 @@ Debe tener un dispositivo para trabajar en este ejemplo, ya que usa las funcione
 
 1. Agregue un control de [**botón**](../controls/control-button.md) .
 
-2. Haga doble clic en el control botón para cambiar el texto del botón a **Agregar elemento** (o modificar la propiedad **texto** ).
+2. Haga doble clic en el control de botón para cambiar el texto del botón a **Agregar elemento** (o modificar la propiedad **Text** ).
 
-3. Establezca la propiedad **OnSeelct** del control de botón en esta fórmula, que agregará un elemento a nuestra colección:
-    ```powerapps-comma
-    Collect( MyItems; { Item: TextInput1.Text; Picture: Camera1.Photo } )
+3. Establezca la propiedad **alseleccionar** del control botón en esta fórmula que agregará un elemento a nuestra colección:
+    ```powerapps-dot
+    Collect( MyItems, { Item: TextInput1.Text, Picture: Camera1.Photo } )
     ```
     > [!div class="mx-imgBorder"] 
     > ![un control de botón agregado con el texto "Agregar elemento" y el conjunto de propiedades alseleccionar](media/function-savedata-loaddata/simple-additem.png)
@@ -82,22 +99,22 @@ Debe tener un dispositivo para trabajar en este ejemplo, ya que usa las funcione
 
 2. Haga doble clic en el control de botón para cambiar el texto del botón para **guardar los datos** (o modificar la propiedad **Text** ).
 
-3. Establezca la propiedad **OnSeelct** del control de botón en esta fórmula para guardar la colección en el dispositivo local:
-    ```powerapps-comma
-    SaveData( MyItems; "LocalSavedItems" )
+3. Establezca la propiedad **alseleccionar** del control botón en esta fórmula para guardar la colección en el dispositivo local:
+    ```powerapps-dot
+    SaveData( MyItems, "LocalSavedItems" )
     ```
     > [!div class="mx-imgBorder"] 
     > ![un control de botón agregado con el texto "guardar datos" y el conjunto de propiedades alseleccionar](media/function-savedata-loaddata/simple-savedata.png)
 
-    Es tentador probar el botón y no perjudicará nada si desea probarlo, pero solo verá un error mientras se crea en un explorador Web....  Primero debe guardar la aplicación y abrirla en un dispositivo para poder probar esta fórmula, que haremos en los pasos que debe seguir.
+    Es tentador probar el botón porque no afecta a nada. Pero solo verá un error mientras crea en un explorador Web. Guarde la aplicación primero y abra en un dispositivo antes de seguir los pasos siguientes para probar esta fórmula:
 
 1. Agregue un tercer control de **botón** .
 
 2. Haga doble clic en el control de botón para cambiar el texto del botón a **cargar datos** (o modificar la propiedad **Text** ).
 
-3. Establezca la propiedad **OnSeelct** del control de botón en esta fórmula para cargar la colección desde el dispositivo local:
-    ```powerapps-comma
-    LoadData( MyItems; "LocalSavedItems" )
+3. Establezca la propiedad **alseleccionar** del control botón en esta fórmula para cargar la colección desde el dispositivo local:
+    ```powerapps-dot
+    LoadData( MyItems, "LocalSavedItems" )
     ``` 
     > [!div class="mx-imgBorder"] 
     > ![un control de botón agregado con el texto "cargar datos" y el conjunto de propiedades alseleccionar](media/function-savedata-loaddata/simple-loaddata.png)
@@ -112,9 +129,9 @@ Debe tener un dispositivo para trabajar en este ejemplo, ya que usa las funcione
 
 1. Coloque el control a la derecha de los otros controles: 
     > [!div class="mx-imgBorder"] 
-    > ![galería se ha reposicionado a la derecha de la pantalla](media/function-savedata-loaddata/simple-gallery-placed.png)
+    > ![Galería cambia de posición a la derecha de la pantalla](media/function-savedata-loaddata/simple-gallery-placed.png)
 
-1. Guarde la aplicación.  Si es la primera vez que se ha guardado, no es necesario publicarla; Si no es así, publique también la aplicación.
+1. Guarde la aplicación.  Si es la primera vez que se ha guardado, no es necesario publicarla. Si no es la primera vez, publique la aplicación después de guardarla.
 
 1. Abra la aplicación en un dispositivo como un teléfono o una tableta.  **Savedata** y **LoadData** no se pueden usar en Studio o en un explorador Web.  Actualice la lista de aplicaciones si no ve la aplicación inmediatamente, la aplicación puede tardar unos segundos en aparecer en el dispositivo.  Cerrar sesión y volver a la cuenta también puede ser útil.
     > [!div class="mx-imgBorder"] 
@@ -128,13 +145,13 @@ Debe tener un dispositivo para trabajar en este ejemplo, ya que usa las funcione
 
 1. Seleccione el botón **guardar datos** .  Esto guardará los datos de la colección en el dispositivo local.
 
-1. Cierre la aplicación.  La recopilación en memoria se perderá, incluidos todos los nombres de elementos e imágenes, pero seguirán allí en el almacenamiento del dispositivo.
+1. Cierre la aplicación.  La colección en memoria se perderá, incluidos todos los nombres de elementos e imágenes, pero seguirán allí en el almacenamiento del dispositivo.
 
 1. Vuelva a iniciar la aplicación.  La colección en memoria volverá a aparecer como vacía en la galería.
     > [!div class="mx-imgBorder"] 
     > ![aplicación de nuevo en ejecución sin elementos agregados](media/function-savedata-loaddata/simple-mobile.png) 
 
-1. Seleccione el botón **cargar datos** .  La recopilación se volverá a rellenar a partir de los datos almacenados en el dispositivo y los elementos volverán a la galería.  Tenga en cuenta que la colección estaba vacía antes de que este botón llame a la función **LoadData** ; no era necesario llamar a **Collect** o **ClearCollect** antes de cargar los datos desde el almacenamiento.
+1. Seleccione el botón **cargar datos** .  La recopilación se volverá a rellenar a partir de los datos almacenados en el dispositivo y los elementos volverán a la galería.  La colección estaba vacía antes de que este botón llame a la función **LoadData** ; no era necesario llamar a **Collect** o **ClearCollect** antes de cargar los datos desde el almacenamiento.
     > [!div class="mx-imgBorder"] 
     > ![aplicación que se ejecuta con tres elementos restaurados después de llamar a la función LoadData](media/function-savedata-loaddata/simple-mobile-load1.png) 
 
