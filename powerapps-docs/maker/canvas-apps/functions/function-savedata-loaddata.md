@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/24/2020
 ms.locfileid: "80122839"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="savedata-and-loaddata-functions-in-power-apps"></a>Funciones SaveData y LoadData en Power apps
 Guarda y recarga una [colección](../working-with-data-sources.md#collections) desde un dispositivo local.
@@ -59,7 +60,7 @@ Las funciones de espacio aislado de la aplicación integradas del dispositivo se
 El dispositivo también puede cifrar los datos. también puede usar una herramienta de administración de dispositivos móviles como [Microsoft Intune](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/microsoft-intune).
 
 ## <a name="syntax"></a>Sintaxis
-**SaveData**( *Colección*, *Nombre* )<br>**LoadData**( *Collection*, *Name* [, *IgnoreNonexistentFile* ])
+**SaveData**( *Colección*; *Nombre* )<br>**LoadData**( *Collection*; *Name* [; *IgnoreNonexistentFile* ])
 
 * *Colección*: requerido.  Colección para almacenar o cargar.
 * *Nombre*: requerido.  Nombre del almacenamiento. El nombre debe ser el mismo para guardar y cargar el mismo conjunto de datos. El espacio de nombres no se comparte con otros usuarios o aplicaciones.
@@ -89,8 +90,8 @@ Debe tener un dispositivo para trabajar en este ejemplo, ya que usa las funcione
 2. Haga doble clic en el control de botón para cambiar el texto del botón a **Agregar elemento** (o modificar la propiedad **Text** ).
 
 3. Establezca la propiedad **alseleccionar** del control botón en esta fórmula que agregará un elemento a nuestra colección:
-    ```powerapps-dot
-    Collect( MyItems, { Item: TextInput1.Text, Picture: Camera1.Photo } )
+    ```powerapps-comma
+    Collect( MyItems; { Item: TextInput1.Text; Picture: Camera1.Photo } )
     ```
     > [!div class="mx-imgBorder"] 
     > ![un control de botón agregado con el texto "Agregar elemento" y el conjunto de propiedades alseleccionar](media/function-savedata-loaddata/simple-additem.png)
@@ -100,8 +101,8 @@ Debe tener un dispositivo para trabajar en este ejemplo, ya que usa las funcione
 2. Haga doble clic en el control de botón para cambiar el texto del botón para **guardar los datos** (o modificar la propiedad **Text** ).
 
 3. Establezca la propiedad **alseleccionar** del control botón en esta fórmula para guardar la colección en el dispositivo local:
-    ```powerapps-dot
-    SaveData( MyItems, "LocalSavedItems" )
+    ```powerapps-comma
+    SaveData( MyItems; "LocalSavedItems" )
     ```
     > [!div class="mx-imgBorder"] 
     > ![un control de botón agregado con el texto "guardar datos" y el conjunto de propiedades alseleccionar](media/function-savedata-loaddata/simple-savedata.png)
@@ -113,8 +114,8 @@ Debe tener un dispositivo para trabajar en este ejemplo, ya que usa las funcione
 2. Haga doble clic en el control de botón para cambiar el texto del botón a **cargar datos** (o modificar la propiedad **Text** ).
 
 3. Establezca la propiedad **alseleccionar** del control botón en esta fórmula para cargar la colección desde el dispositivo local:
-    ```powerapps-dot
-    LoadData( MyItems, "LocalSavedItems" )
+    ```powerapps-comma
+    LoadData( MyItems; "LocalSavedItems" )
     ``` 
     > [!div class="mx-imgBorder"] 
     > ![un control de botón agregado con el texto "cargar datos" y el conjunto de propiedades alseleccionar](media/function-savedata-loaddata/simple-loaddata.png)

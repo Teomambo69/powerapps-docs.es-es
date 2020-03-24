@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/17/2020
 ms.locfileid: "79436755"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="microphone-control-in-power-apps"></a>Control de micrófono en Power apps
 
@@ -124,7 +125,7 @@ En este ejemplo, conectaremos directamente un control de **micrófono** con un c
 1. Agregue un control de **audio** a la aplicación.
 1. Establezca la propiedad **multimedia** del control de **audio** en la fórmula:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Microphone1.Audio
     ```
 
@@ -145,15 +146,15 @@ En este ejemplo, vamos a crear una galería de clips de audio almacenada en una 
 
 1. Establezca su propiedad **OnStop** en esta fórmula con la función [Collect](../functions/function-clear-collect-clearcollect.md) :
 
-    ```powerapps-dot
-    Collect( MySounds, MyMic.Audio )
+    ```powerapps-comma
+    Collect( MySounds; MyMic.Audio )
     ```
 
 1. Agregue un control **Galería** , muévalo debajo de **MyMic**.
 
 1. Establezca la propiedad [elementos](properties-core.md) de la galería en esta fórmula:
 
-    ```powerapps-dot
+    ```powerapps-comma
     MySounds
     ```
 
@@ -161,7 +162,7 @@ En este ejemplo, vamos a crear una galería de clips de audio almacenada en una 
 
 1. Establezca la propiedad **multimedia** del control de audio en esta fórmula:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.Url
     ```
 
@@ -177,8 +178,8 @@ En este ejemplo, vamos a crear una galería de clips de audio almacenada en una 
 
 1. Establezca su propiedad [alseleccionar](properties-core.md) en la fórmula:
 
-    ```powerapps-dot
-    Remove( MySounds, ThisItem )
+    ```powerapps-comma
+    Remove( MySounds; ThisItem )
     ```
 
 1. Presione F5 y, a continuación, quite una grabación seleccionando el control de **botón** correspondiente.

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/17/2020
 ms.locfileid: "79436794"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="camera-control-in-power-apps"></a>Control Cámara en Power Apps
 
@@ -103,7 +104,7 @@ En estos ejemplos, necesitará un dispositivo con una cámara. Para probar la ap
 
 1. Establezca la propiedad **Image** del control **imagen** en esta fórmula:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Camera1.Photo
     ```
 
@@ -118,8 +119,8 @@ En estos ejemplos, necesitará un dispositivo con una cámara. Para probar la ap
 
 1. Agregue un control **cámara** , asígnele el nombre de **la cámara y**establezca su propiedad [alseleccionar](properties-core.md) en esta fórmula:
 
-    ```powerapps-dot
-    Collect( MyPix, MyCamera.Photo )
+    ```powerapps-comma
+    Collect( MyPix; MyCamera.Photo )
     ```
 
     Para obtener más información:
@@ -133,13 +134,13 @@ En estos ejemplos, necesitará un dispositivo con una cámara. Para probar la ap
 
 1. Establezca la propiedad [elementos](properties-core.md) del control **Galería de imágenes** en esta fórmula:
  
-    ```powerapps-dot
+    ```powerapps-comma
     MyPix
     ```
 
 1. Establezca la propiedad [imagen](properties-visual.md) del control **imagen** de la galería en esta fórmula:
 
-    ```powerapps-dot   
+    ```powerapps-comma   
     ThisItem.Url
     ```
 
@@ -149,8 +150,8 @@ En estos ejemplos, necesitará un dispositivo con una cámara. Para probar la ap
 
 1. opta Establezca la propiedad **alseleccionar** del control **imagen** en el control **Galería de imágenes** en la fórmula:
 
-    ```powerapps-dot
-    Remove( MyPix, ThisItem )
+    ```powerapps-comma
+    Remove( MyPix; ThisItem )
     ```
 
 1. Presione F5 y, a continuación, seleccione una imagen para quitarla.
