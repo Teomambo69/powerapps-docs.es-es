@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 01/02/2020
+ms.date: 03/24/2020
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e21db21ff9c161e8ae8ab55d4d3ef295da7d419e
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 6cbbc3442a54a0c84ff82b7e32f255c2b400d073
+ms.sourcegitcommit: 3f89b04359df19f8fa5167e2607509bb97e60fe0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79211397"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80242887"
 ---
 # <a name="share-a-canvas-app-in-power-apps"></a>Compartir una aplicación de lienzo en Power apps
 
@@ -52,7 +52,7 @@ Para poder compartir una aplicación, debe guardarla en la nube, no de forma loc
 1. Especifique el nombre o el alias de los usuarios o grupos de seguridad de Azure Active Directory con los que desea compartir la aplicación.
 
     - Para que toda la organización pueda ejecutar la aplicación (pero no modificarla ni compartirla), escriba **todos** en el panel de uso compartido.
-    - Puede compartir una aplicación con una lista de alias, nombres descriptivos o una combinación de ellos (por ejemplo, **Jane Doe &lt;jane.doe@contoso.com>**) si los elementos están separados por punto y coma. Si hay más de una persona con el mismo nombre pero con distintos alias, se agregará a la lista la primera persona encontrada. Aparece una información sobre herramientas si un nombre o alias ya tiene permiso o no se puede resolver. 
+    - Puede compartir una aplicación con una lista de alias, nombres descriptivos o una combinación de ellos (por ejemplo, **Jane Doe &lt;jane.doe@contoso.com>** ) si los elementos están separados por punto y coma. Si hay más de una persona con el mismo nombre pero con distintos alias, se agregará a la lista la primera persona encontrada. Aparece una información sobre herramientas si un nombre o alias ya tiene permiso o no se puede resolver. 
 
     ![Especificar usuarios y copropietarios](./media/share-app/share-everyone.png)
 
@@ -159,7 +159,8 @@ Cuando comparte una aplicación basada en una versión anterior de Common Data S
 Las aplicaciones de lienzo de Power apps se pueden compartir con usuarios invitados de un inquilino de Azure Active Directory. Esto permite invitar a socios comerciales externos, contratistas y terceros a ejecutar las aplicaciones de lienzo de la empresa. 
 
 > [!NOTE]
-> Los invitados solo pueden tener asignado el rol de **usuario** y no el rol de **copropietario** para las aplicaciones que se comparten con ellos.
+> - Los invitados solo pueden tener asignado el rol de **usuario** y no el rol de **copropietario** para las aplicaciones que se comparten con ellos.
+> - El acceso de invitado de la aplicación de Power apps Canvas aprovecha Azure B2B. Power apps reconoce a los invitados descritos en los Estados 1 a 4 en la [documentación de B2B de Azure](https://docs.microsoft.com/azure/active-directory/b2b/user-properties). Power apps no puede reconocer invitados que se autentican mediante [Azure ad la Federación directa](https://docs.microsoft.com/azure/active-directory/b2b/direct-federation). 
 
 ### <a name="prerequisites"></a>Requisitos previos
 - En Azure Active Directory (Azure AD), habilite la colaboración externa B2B para el inquilino. Más información: [Habilitar la colaboración externa B2B y administrar quién puede invitar a invitados](/azure/active-directory/b2b/delegate-invitations)
@@ -241,6 +242,9 @@ Puede encontrar más información sobre los precios y las capacidades de varios 
 
 #### <a name="in-power-apps-mobile-how-does-a-guest-see-apps-for-their-home-tenant"></a>En Power apps Mobile, ¿cómo ve un invitado las aplicaciones para su inquilino principal?
 Cualquier usuario que haya tenido acceso a una aplicación de lienzo, en su dispositivo móvil, que se publique en un inquilino de Azure AD que no sea su inquilino principal debe cerrar la sesión de las aplicaciones de energía y volver a iniciar sesión en Power apps Mobile.  
+
+#### <a name="in-power-apps-mobile-how-does-a-guest-see-apps-in-the-guest-tenant"></a>En Power apps Mobile, ¿cómo ve un invitado las aplicaciones en el inquilino invitado?
+Como usuario invitado, abra el correo electrónico que recibió cuando se compartió una aplicación en el inquilino invitado y seleccione el botón **abrir la aplicación** . Esto se aplica tanto a los usuarios de cuentas de Azure Active Directory como de Microsoft.   
 
 #### <a name="must-a-guest-accept-the-azure-ad-guest-invitation-prior-to-sharing-an-app-with-the-guest"></a>¿Un invitado debe aceptar la invitación Azure AD invitado antes de compartir una aplicación con el invitado?
 No. Si un invitado inicia una aplicación compartida con ellos antes de aceptar una invitación de invitado, se solicitará al invitado que acepte la invitación como parte de la experiencia de inicio de sesión mientras se inicia la aplicación.  
@@ -339,7 +343,7 @@ Todos los conectores que no realizan Azure AD autenticación de cualquier tipo a
 | Paylocity                                         | No                                                                     |
 | Planificador                                           | No                                                                     |
 | Formularios de Plumsail                                    | No                                                                     |
-| Power BI                                          | Sí                                                                    |
+| Aplicación                                          | Sí                                                                    |
 | Project Online                                    | No                                                                     |
 | Integración del diseño de ProjectWise                    | No                                                                     |
 | Recurso compartido ProjectWise                                 | No                                                                     |
