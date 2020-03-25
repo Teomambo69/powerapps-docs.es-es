@@ -23,11 +23,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 92d76b056c21ebe583679bc51b73b04dcf812e69
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2867607"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109515"
 ---
 # <a name="change-navigation-within-a-model-driven-app-form"></a>Cambiar la navegación en un formulario de aplicación controlada por modelos
 

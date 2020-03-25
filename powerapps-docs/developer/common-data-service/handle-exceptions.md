@@ -15,11 +15,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 56214c61e3440b3612a4b4433cefdb22162a5e31
-ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004972"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109616"
 ---
 # <a name="handle-exceptions-in-plug-ins"></a>Administrar las excepciones en complementos
 

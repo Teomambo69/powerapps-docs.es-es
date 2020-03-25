@@ -11,31 +11,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5d100dc3-bd82-4b45-964c-d90eaebc0735
-ms.openlocfilehash: 300da15802a7132115b91773544792a921f0a827
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: b7d93d18ee9e176d936912235f71920f3cdeff48
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909290"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109073"
 ---
 # <a name="code-components-for-canvas-apps"></a>Componentes de código para aplicaciones de lienzo
 
-> [!IMPORTANT]
-> Esta característica sigue siendo piloto y está deshabilitada de forma predeterminada. Para obtener más información, consulte [Características en versión preliminar y piloto](../../maker/canvas-apps/working-with-experimental.md).
-
 Power Apps component framework permite a los fabricantes de aplicaciones crear componentes de código para usar en una aplicación o a través de aplicaciones. Más información: [Información general de Power Apps component framework](overview.md) 
 
-En esta vista previa piloto, Power Apps component framework permite a los fabricantes de aplicaciones crear componentes de código, depurar, importar, y agregarlos a aplicaciones de lienzo mediante útiles Power Apps CLI. Solo se admiten API específicas en esta vista previa piloto. Es recomendable que compruebe cada API para determinar si admite aplicaciones de lienzo. 
+En esta vista previa pública, Power Apps component framework permite a los creadores de aplicaciones crear componentes de código, depurarlos, importarlos y agregarlos a aplicaciones de lienzo utilizando útiles Power Apps CLI. Solo las API específicas son compatibles con esta vista previa pública. Recomendamos que verifique cada API para determinar si admite aplicaciones de lienzo. 
 
 > [!WARNING]
 > Los componentes de código contienen código que Microsoft puede no generar y puede acceder potencialmente a tokens de seguridad y datos. Cuando agrega componentes de código a una aplicación, asegúrese de que las soluciones de componentes de código son de una fuente de confianza.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Se requieren privilegios de administrador del sistema para habilitar la característica de componente de Power Apps en el entorno.
-
-> [!IMPORTANT]
-> De forma predeterminada Power Apps component framework está habilitado para las aplicaciones basadas en modelo.
+1. Se necesita una licencia de Power Apps. Más información: [Licencia de Power Apps component framework](overview.md#licensing)
+2. Se requieren privilegios de administrador del sistema para habilitar la característica de componente de Power Apps en el entorno.
 
 ## <a name="enable-power-apps-component-framework-feature"></a>Habilite la característica Power Apps component framework
 
@@ -67,13 +62,7 @@ Después de habilitar la característica Power Apps component framework en el en
 
  El tema [Cree su primer componente de código](implementing-controls-using-typescript.md) demuestra el proceso paso a paso para crear componentes de código.
 
-> [!NOTE]
-> Implementar componentes de código es igual para las aplicaciones basadas en modelo y las aplicaciones de lienzo (vista previa experimental). La única diferencia es agregar los componentes de código. 
-
 ## <a name="add-components-to-a-canvas-app"></a>Agregar componentes a una aplicación de lienzo
-
-> [!NOTE]
-> Para agregar componentes de código a un campo o una entidad para las aplicaciones basadas en modelo, consulte [Agregar componentes de código a aplicaciones basadas en modelo](add-custom-controls-to-a-field-or-entity.md)
 
 Para agregar componentes de código a una aplicación de lienzo:
 
@@ -97,7 +86,7 @@ Para agregar componentes de código a una aplicación de lienzo:
 
 ## <a name="delete-a-code-component"></a>Eliminar un componente de código 
 
-Para eliminar un componente de código de una aplicación de lienzo, seleccione el componente de código que desea eliminar y después seleccione el botón **Eliminar** en el menú. Cuando el componente de código se elimina de la aplicación, todos los elementos del componente de código se eliminan de la aplicación y del paquete de la aplicación. 
+Para eliminar un componente de código de una aplicación de lienzo, seleccione el componente de código que desea eliminar y después seleccione el botón **Eliminar** en el menú. Cuando el componente de código se elimina de la aplicación, todos los elementos del componente de código se eliminan de la aplicación y del paquete de la aplicación.
 
 ## <a name="update-existing-code-components"></a>Actualizar componentes de código existentes
 
@@ -110,4 +99,3 @@ Cada vez que actualice los componentes de código y desee ver los cambios en tie
 
 [Información general sobre Power Apps component framework](overview.md)<br/>
 [Crear el primer componente de código](implementing-controls-using-typescript.md)
-

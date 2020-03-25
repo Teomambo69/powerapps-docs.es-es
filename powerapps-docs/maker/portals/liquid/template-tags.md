@@ -10,11 +10,11 @@ ms.date: 01/24/2020
 ms.author: tapanm
 ms.reviewer: ''
 ms.openlocfilehash: a152fc23b71b2e564bad28a9f1717c15acfe9a60
-ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2988007"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3108825"
 ---
 # <a name="template-tags"></a>Etiquetas de plantilla
 

@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7774090950b179e349c6c576439ebd4ad47da67b
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 39ad845cfa18a64e242fd762792e244c50e7ad77
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883768"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109518"
 ---
 # <a name="create-and-edit-entities-using-solution-explorer"></a>Crear y editar entidades con el explorador de soluciones
 

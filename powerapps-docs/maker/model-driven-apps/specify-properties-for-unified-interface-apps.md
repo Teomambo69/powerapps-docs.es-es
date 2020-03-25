@@ -25,11 +25,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 25e6125476ae3e5ceac47b0ef6b45f67ccfc1d3f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2867915"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3108824"
 ---
 # <a name="specify-properties-for-model-driven-unified-interface-apps"></a>Especificar propiedades para aplicaciones controladas por modelos de Interfaz unificada
 

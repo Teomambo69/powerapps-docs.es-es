@@ -21,11 +21,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 767c0ed29643c51057d9f3d794136dc56915e161
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753680"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109076"
 ---
 # <a name="retrieve-an-entity-record-using-the-web-api"></a>Recuperar un registro de entidad usando la API web
 

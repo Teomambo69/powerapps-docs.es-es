@@ -21,11 +21,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 3db4a538b45b754b1c0a3ca823638c4850aae43b
-ms.sourcegitcommit: 5e6d71967902c463f34a9254f988b9c10e431eb4
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "2890711"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109063"
 ---
 # <a name="query-data-using-the-web-api"></a>Consultar datos utilizando la API web
 

@@ -15,11 +15,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 57778f4520a305061c8f598ad82e033a89565033
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749719"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109082"
 ---
 # <a name="create-a-recurring-appointment-series-instance-or-exception"></a>Crear una instancia, excepción o serie de cita periódica.
 

@@ -15,11 +15,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: bba0a473d76fc69832e05ec316a6ed6da6ad899d
-ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2975743"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109614"
 ---
 # <a name="register-a-plug-in"></a>Registrar un complemento
 

@@ -23,11 +23,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 309b6721d60d06e81926bfc0f97ff192f936686a
-ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2975825"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3108819"
 ---
 # <a name="solutions-overview"></a>Información general de las soluciones  
 
@@ -167,7 +167,7 @@ Para ver una lista de los tipos de componentes que se pueden agregar a cualquier
  
 ## <a name="solution-publisher-prefix"></a>Prefijo del editor de soluciones 
 
-De forma predeterminada, la solución con la que trabajará en Power Apps será la **Solución predeterminada de Common Data Service** que está asociado con el **Editor predeterminado de Common Data Service**. El prefijo de personalización predeterminado se asignará aleatoriamente para este editor, por ejemplo, podría ser `cr8a3`. Esto significa que el nombre de cada nuevo elemento de metadatos creado para su organización tendrá que anexarse a los nombres usados para identificar los elementos. 
+De forma predeterminada, la solución con la que trabajará en Power Apps será la **Solución predeterminada de Common Data Services** que está asociada con el **Editor predeterminados de Common Data Service**. El prefijo de personalización predeterminado se asignará aleatoriamente para este editor, por ejemplo, podría ser `cr8a3`. Esto significa que el nombre de cada nuevo elemento de metadatos creado para su organización tendrá que anexarse a los nombres usados para identificar los elementos. 
 
 Recomendamos que cambie el prefijo del editor de soluciones para que sea más significativo. Más información: [Cambiar el prefijo del editor de soluciones](change-solution-publisher-prefix.md)
   

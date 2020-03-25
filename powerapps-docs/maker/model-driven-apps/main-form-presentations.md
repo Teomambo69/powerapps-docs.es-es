@@ -23,11 +23,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 03eca0ade83c4d241eca9e4f7a6004232aac2b87
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2860123"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3108804"
 ---
 # <a name="how-model-driven-app-main-forms-appear-on-different-devices"></a>Cómo se presentan los formularios principales de aplicaciones controladas por modelos en los distintos dispositivos
 
@@ -57,7 +57,7 @@ El formulario principal se usa en todos los clientes de aplicación basada en mo
 |Componente|Resumen|  
 |---------------|-------------|  
 |**Barra de navegación**|Use los datos del mapa del sitio para proporcionar la capacidad de pasar a diferentes áreas de la aplicación.<br /><br /> El panel de navegación usado en los formularios clásicos no se incluye en el formulario actualizado. En el contexto de un registro, la barra de navegación proporciona acceso a las vistas de registros relacionados. En lugar de navegar hasta los registros relacionados con el panel de navegación o mediante la barra de navegación, si agrega subcuadrículas configuradas para mostrar registros de entidad relacionados útiles mejorará la experiencia para la mayoría de los usuarios.|  
-|**Barra de comandos**|Use los datos definidos para que las cintas de opciones ofrezcan comandos relevantes para el registro.<br /><br /> Se muestran los cinco primeros comandos seguidos de puntos suspensivos (![Botón Más comandos](media/not-available.gif "MBotón Más comandos")), lo que proporciona un menú de control flotante para elegir comandos adicionales.|  
+|**Barra de comandos**|Use los datos definidos para que las cintas de opciones ofrezcan comandos relevantes para el registro.<br /><br /> Se muestran los cinco primeros comandos seguidos de puntos suspensivos (![Botón Más comandos](media/not-available.gif "Botón Más comandos")), lo que proporciona un menú de control flotante para elegir comandos adicionales.|  
 |**Imagen**|Cuando una entidad tiene un campo de imagen y la opción **Imagen principal** de la entidad está definida en **Imagen predeterminada**, se puede mostrar una imagen en el encabezado cuando el formulario se configura para mostrar la imagen.|  
 |**Encabezado**|Los campos colocados en el encabezado siguen siendo visibles cuando los usuarios bajan por el cuerpo del formulario.<br /><br /> Hasta cuatro campos se pueden poner en el encabezado. No se permiten varias líneas de texto, recursos web o iFrames en el encabezado. El encabezado y el pie de página comparten algunas propiedades con las secciones.|  
 |**Control de proceso**|Cuando una entidad tiene flujos de proceso de negocio activos, el control de proceso aparece debajo del encabezado. Más información: [Flujos de proceso de negocio](/flow/business-process-flows-overview)|  

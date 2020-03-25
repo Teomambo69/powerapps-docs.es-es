@@ -15,11 +15,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 2fd09284e99a11ad55625d63a30975c36164a7bd
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749696"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109077"
 ---
 # <a name="query-data-using-the-organization-service"></a>Consulta de datos duplicados con el servicio de organización
 

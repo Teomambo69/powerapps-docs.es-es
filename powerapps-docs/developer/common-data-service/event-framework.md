@@ -15,11 +15,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 4c055dbac811186dde54cc4a002ee721e3ca25cf
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752984"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109067"
 ---
 # <a name="event-framework"></a>Marco de trabajo de eventos
 

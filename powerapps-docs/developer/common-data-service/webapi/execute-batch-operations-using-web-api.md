@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 373902e69a6299144954f55067236abcfa5764f0
-ms.sourcegitcommit: 4fb0e2cd9c4bb7d0b83bd7fe6c7c88accfc70390
+ms.openlocfilehash: 1c7d738212bee75306ed5a693087c4ae7d6324d2
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "2907040"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109065"
 ---
 # <a name="execute-batch-operations-using-the-web-api"></a>Ejecute las operaciones por lotes mediante API web
 
@@ -53,21 +53,21 @@ Use una solicitud POST para enviar una operación por lotes que contenga varias 
 La solicitud POST que contiene el lote debe tener un encabezado del tipo contenido con un valor establecido como multiparte/mixto con un conjunto de límites para incluir el identificador del lote utilizando este patrón:  
   
 ```  
---batch_<unique identifier>  
+--batch_<unique identifier>
 ```  
   
 El identificador único no necesita ser un GUID, pero debe ser único. Cada elemento dentro del lote debe ir precedido del identificador de lote con un encabezado Content-Type y Content-Transfer-Encoding como el siguiente:  
   
 ```  
---batch_WKQS9Yui9r  
-Content-Type: application/http  
-Content-Transfer-Encoding:binary  
+--batch_WKQS9Yui9r
+Content-Type: application/http
+Content-Transfer-Encoding:binary
 ```  
   
 El final del lote debe contener un indicador de finalización como el siguiente:  
   
 ```  
---batch_WKQS9Yui9r--  
+--batch_WKQS9Yui9r--
 ```   
   
 <a name="bkmk_ChangeSets"></a>
@@ -77,15 +77,15 @@ El final del lote debe contener un indicador de finalización como el siguiente:
 Cuando un conjunto de cambios contiene varias operaciones, todas ellas se consideran atómicas, lo que significa que si alguna de las operaciones produce error, se revertirán las operaciones completadas. Como una solicitud de lote, los conjuntos de cambios deben tener un encabezado de tipo contenido con un valor establecido como multiparte/mixto con un conjunto de límites para incluir el identificador del conjunto de cambios utilizando este patrón:  
   
 ```  
---changeset_<unique identifier>  
+--changeset_<unique identifier>
 ```  
   
 El identificador único no necesita ser un GUID, pero debe ser único. Cada elemento dentro del conjunto de cambios debe ir precedido del identificador del conjunto de cambios con un encabezado Content-Type y Content-Transfer-Encoding como el siguiente:  
   
 ```  
---changeset_BBB456  
-Content-Type: application/http  
-Content-Transfer-Encoding:binary  
+--changeset_BBB456
+Content-Type: application/http
+Content-Transfer-Encoding:binary
 ```  
   
 Los conjuntos de cambios también pueden incluir un encabezado Content-ID con un valor único. Este valor, cuando va precedido de `$`, representa una variable que contiene la Uri para cualquier entidad creada en esa operación. Por ejemplo, cuando establece el valor de 1, puede hacer referencia a esa entidad usando `$1` más adelante en el conjunto de cambios.  
@@ -93,7 +93,7 @@ Los conjuntos de cambios también pueden incluir un encabezado Content-ID con un
 El final del conjunto de cambios debe contener un indicador de finalización como el siguiente:  
   
 ```  
---changeset_BBB456--  
+--changeset_BBB456--
 ```  
   
 <a name="bkmk_Example"></a>
@@ -109,111 +109,111 @@ Finalmente, se incluye una solicitud GET fuera del conjunto de cambios para devo
  **Solicitud**
 
 ```http 
-POST[Organization URI]/api/data/v9.1/$batch HTTP/1.1  
-Content-Type: multipart/mixed;boundary=batch_AAA123  
-Accept: application/json  
-OData-MaxVersion: 4.0  
-OData-Version: 4.0  
-  
---batch_AAA123  
-Content-Type: multipart/mixed;boundary=changeset_BBB456  
-  
---changeset_BBB456  
-Content-Type: application/http  
-Content-Transfer-Encoding:binary  
-Content-ID: 1  
-  
-POST[Organization URI]/api/data/v9.1/tasks HTTP/1.1  
-Content-Type: application/json;type=entry  
-  
-{"subject":"Task 1 in batch","regardingobjectid_account_task@odata.bind":"[Organization URI]/api/data/v9.1/accounts(00000000-0000-0000-000000000001)"}  
---changeset_BBB456  
-Content-Type: application/http  
-Content-Transfer-Encoding:binary  
-Content-ID: 2  
-  
-POST[Organization URI]/api/data/v9.1/tasks HTTP/1.1  
-Content-Type: application/json;type=entry  
-  
-{"subject":"Task 2 in batch","regardingobjectid_account_task@odata.bind":"[Organization URI]/api/data/v9.1/accounts(00000000-0000-0000-000000000001)"}  
---changeset_BBB456--  
-  
---batch_AAA123  
-Content-Type: application/http  
-Content-Transfer-Encoding:binary  
-  
-GET[Organization URI]/api/data/v9.1/accounts(00000000-0000-0000-000000000001)/Account_Tasks?$select=subject HTTP/1.1  
-Accept: application/json  
-  
---batch_AAA123--  
+POST[Organization URI]/api/data/v9.1/$batch HTTP/1.1
+Content-Type: multipart/mixed;boundary=batch_AAA123
+Accept: application/json
+OData-MaxVersion: 4.0
+OData-Version: 4.0
+
+--batch_AAA123
+Content-Type: multipart/mixed;boundary=changeset_BBB456
+
+--changeset_BBB456
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+Content-ID: 1
+
+POST[Organization URI]/api/data/v9.1/tasks HTTP/1.1
+Content-Type: application/json;type=entry
+
+{"subject":"Task 1 in batch","regardingobjectid_account_task@odata.bind":"[Organization URI]/api/data/v9.1/accounts(00000000-0000-0000-000000000001)"}
+--changeset_BBB456
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+Content-ID: 2
+
+POST[Organization URI]/api/data/v9.1/tasks HTTP/1.1
+Content-Type: application/json;type=entry
+
+{"subject":"Task 2 in batch","regardingobjectid_account_task@odata.bind":"[Organization URI]/api/data/v9.1/accounts(00000000-0000-0000-000000000001)"}
+--changeset_BBB456--
+
+--batch_AAA123
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+GET[Organization URI]/api/data/v9.1/accounts(00000000-0000-0000-000000000001)/Account_Tasks?$select=subject HTTP/1.1
+Accept: application/json
+
+--batch_AAA123--
 ```  
   
  **Respuesta**
 
-```http 
---batchresponse_c1bd45c1-dd81-470d-b897-e965846aad2f  
-Content-Type: multipart/mixed; boundary=changesetresponse_ff83b4f1-ab48-430c-b81c-926a2c596abc  
-  
---changesetresponse_ff83b4f1-ab48-430c-b81c-926a2c596abc  
-Content-Type: application/http  
-Content-Transfer-Encoding: binary  
-Content-ID: 1  
-  
-HTTP/1.1 204 No Content  
-OData-Version: 4.0  
-Location:[Organization URI]/api/data/v9.1/tasks(a59c24f3-fafc-e411-80dd-00155d2a68cb)  
-OData-EntityId:[Organization URI]/api/data/v9.1/tasks(a59c24f3-fafc-e411-80dd-00155d2a68cb)  
-  
---changesetresponse_ff83b4f1-ab48-430c-b81c-926a2c596abc  
-Content-Type: application/http  
-Content-Transfer-Encoding: binary  
-Content-ID: 2  
-  
-HTTP/1.1 204 No Content  
-OData-Version: 4.0  
-Location:[Organization URI]/api/data/v9.1/tasks(a69c24f3-fafc-e411-80dd-00155d2a68cb)  
-OData-EntityId:[Organization URI]/api/data/v9.1/tasks(a69c24f3-fafc-e411-80dd-00155d2a68cb)  
-  
---changesetresponse_ff83b4f1-ab48-430c-b81c-926a2c596abc--  
---batchresponse_c1bd45c1-dd81-470d-b897-e965846aad2f  
-Content-Type: application/http  
-Content-Transfer-Encoding: binary  
-  
-HTTP/1.1 200 OK  
-Content-Type: application/json; odata.metadata=minimal  
-OData-Version: 4.0  
-  
-{  
-  "@odata.context":"[Organization URI]/api/data/v9.1/$metadata#tasks(subject)","value":[  
-    {  
-      "@odata.etag":"W/\"474122\"","subject":"Task Created with Test Account","activityid":"919c24f3-fafc-e411-80dd-00155d2a68cb"  
-    },{  
-      "@odata.etag":"W/\"474125\"","subject":"Task 1","activityid":"a29c24f3-fafc-e411-80dd-00155d2a68cb"  
-    },{  
-      "@odata.etag":"W/\"474128\"","subject":"Task 2","activityid":"a39c24f3-fafc-e411-80dd-00155d2a68cb"  
-    },{  
-      "@odata.etag":"W/\"474131\"","subject":"Task 3","activityid":"a49c24f3-fafc-e411-80dd-00155d2a68cb"  
-    },{  
-      "@odata.etag":"W/\"474134\"","subject":"Task 1 in batch","activityid":"a59c24f3-fafc-e411-80dd-00155d2a68cb"  
-    },{  
-      "@odata.etag":"W/\"474137\"","subject":"Task 2 in batch","activityid":"a69c24f3-fafc-e411-80dd-00155d2a68cb"  
-    }  
-  ]  
-}  
---batchresponse_c1bd45c1-dd81-470d-b897-e965846aad2f--  
+```http
+--batchresponse_c1bd45c1-dd81-470d-b897-e965846aad2f
+Content-Type: multipart/mixed; boundary=changesetresponse_ff83b4f1-ab48-430c-b81c-926a2c596abc
+
+--changesetresponse_ff83b4f1-ab48-430c-b81c-926a2c596abc
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+Content-ID: 1
+
+HTTP/1.1 204 No Content
+OData-Version: 4.0
+Location:[Organization URI]/api/data/v9.1/tasks(a59c24f3-fafc-e411-80dd-00155d2a68cb)
+OData-EntityId:[Organization URI]/api/data/v9.1/tasks(a59c24f3-fafc-e411-80dd-00155d2a68cb)
+
+--changesetresponse_ff83b4f1-ab48-430c-b81c-926a2c596abc
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+Content-ID: 2
+
+HTTP/1.1 204 No Content
+OData-Version: 4.0
+Location:[Organization URI]/api/data/v9.1/tasks(a69c24f3-fafc-e411-80dd-00155d2a68cb)
+OData-EntityId:[Organization URI]/api/data/v9.1/tasks(a69c24f3-fafc-e411-80dd-00155d2a68cb)
+
+--changesetresponse_ff83b4f1-ab48-430c-b81c-926a2c596abc--
+--batchresponse_c1bd45c1-dd81-470d-b897-e965846aad2f
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 200 OK
+Content-Type: application/json; odata.metadata=minimal
+OData-Version: 4.0
+
+{
+  "@odata.context":"[Organization URI]/api/data/v9.1/$metadata#tasks(subject)","value":[
+    {
+      "@odata.etag":"W/\"474122\"","subject":"Task Created with Test Account","activityid":"919c24f3-fafc-e411-80dd-00155d2a68cb"
+    },{
+      "@odata.etag":"W/\"474125\"","subject":"Task 1","activityid":"a29c24f3-fafc-e411-80dd-00155d2a68cb"
+    },{
+      "@odata.etag":"W/\"474128\"","subject":"Task 2","activityid":"a39c24f3-fafc-e411-80dd-00155d2a68cb"
+    },{
+      "@odata.etag":"W/\"474131\"","subject":"Task 3","activityid":"a49c24f3-fafc-e411-80dd-00155d2a68cb"
+    },{
+      "@odata.etag":"W/\"474134\"","subject":"Task 1 in batch","activityid":"a59c24f3-fafc-e411-80dd-00155d2a68cb"
+    },{
+      "@odata.etag":"W/\"474137\"","subject":"Task 2 in batch","activityid":"a69c24f3-fafc-e411-80dd-00155d2a68cb"
+    }
+  ]
+}
+--batchresponse_c1bd45c1-dd81-470d-b897-e965846aad2f--
 ```  
 Incluya el encabezado preferencia `odata.include-annotations` con las solicitudes `GET` y establezca su valor en "*" para especificar que todas las anotaciones relacionadas con las propiedades deben devolverse.
 
 ```HTTP
---batch_AAA123  
-Content-Type: application/http  
-Content-Transfer-Encoding:binary  
-  
-GET[Organization URI]/api/data/v9.1/accounts(00000000-0000-0000-000000000001)?$select=name,telephone1,emailaddress1,shippingmethodcode,customersizecode,accountratingcode,followemail,donotemail,donotphone,statuscode HTTP/1.1  
-Accept: application/json  
+--batch_AAA123
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+GET[Organization URI]/api/data/v9.1/accounts(00000000-0000-0000-000000000001)?$select=name,telephone1,emailaddress1,shippingmethodcode,customersizecode,accountratingcode,followemail,donotemail,donotphone,statuscode HTTP/1.1
+Accept: application/json
 Prefer: odata.include-annotations="*"
-  
---batch_AAA123-- 
+
+--batch_AAA123--
 ```
 Para obtener más información sobre los encabezados de preferencia, consulte [Preferencia de encabezado](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752234).
 

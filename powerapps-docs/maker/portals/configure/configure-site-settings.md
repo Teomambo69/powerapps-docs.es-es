@@ -10,11 +10,11 @@ ms.date: 10/18/2019
 ms.author: tapanm
 ms.reviewer: ''
 ms.openlocfilehash: 539df5b7515f739c64b9d6cefc1c92f79812736c
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2979049"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3108822"
 ---
 # <a name="configure-site-settings-for-portals"></a>Configurar opciones del sitio para portales
 

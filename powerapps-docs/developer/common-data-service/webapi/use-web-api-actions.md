@@ -21,11 +21,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: a45ec3bf62719dd5b161deb9d117aa476f249c57
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749750"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109061"
 ---
 # <a name="use-web-api-actions"></a>Usar acciones de la API web
 

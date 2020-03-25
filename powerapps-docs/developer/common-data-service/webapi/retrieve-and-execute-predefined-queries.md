@@ -21,11 +21,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: e805a4919bcdfa8b61c097dc09455f7ca5783999
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753684"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109068"
 ---
 # <a name="retrieve-and-execute-predefined-queries"></a>Recuperar y ejecutar consultas predefinidas
 

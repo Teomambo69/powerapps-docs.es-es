@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9c9fe500fc2f3a7991b09c346b4fd931f8802160
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d85aa0cf9b27647a64631b5b39ba01e432b6148c
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749576"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109085"
 ---
 # <a name="create-install-and-update-a-managed-solution"></a>Crear, instalar y actualizar una solución administrada
 

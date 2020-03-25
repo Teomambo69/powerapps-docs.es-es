@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a029fa57a3caf02414e20127ba24dc961c85551b
-ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
+ms.openlocfilehash: 2a93239f648c5f69676ad7903d1379b4cb1cd2a4
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004962"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109066"
 ---
 # <a name="web-api-types-and-operations"></a>Tipos y operaciones de API web
 
@@ -344,7 +344,7 @@ Las *funciones* son operaciones que no tienen efectos secundarios y pueden admit
 
 Los *tipos complejos* son tipos estructurados con nombre sin clave que constan de un conjunto de propiedades. Los tipos complejos suelen utilizarse como valores de propiedad en entidades de modelo, o como parámetros o valores devueltos para operaciones.  
   
-<xref:Microsoft.Dynamics.CRM.ComplexTypeIndex> incluye todos los tipos complejos del sistema. Los *tipos complejos* son tipos estructurados con nombre sin clave que constan de un conjunto de propiedades. Suelen utilizarse como valores de propiedad en entidades de modelo, o como parámetros o valores devueltos para operaciones. El siguiente es el <xref href="Microsoft.Dynamics.CRM.WhoAmIResponse?text=WhoAmIResponse ComplexType" /> del $metadata.  
+<xref:Microsoft.Dynamics.CRM.ComplexTypeIndex> incluye todos los tipos complejos del sistema. El siguiente es el <xref href="Microsoft.Dynamics.CRM.WhoAmIResponse?text=WhoAmIResponse ComplexType" /> del $metadata.  
   
 ```xml  
 <ComplexType Name="WhoAmIResponse">  

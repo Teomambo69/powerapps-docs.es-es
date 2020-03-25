@@ -15,11 +15,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 642d4f74e8d4e0c613bbc42381fecd4418f93030
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754549"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109060"
 ---
 # <a name="webpage-html-web-resources"></a>Recursos web de página web (HTML)
 

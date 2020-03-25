@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 01/07/2020
+ms.date: 02/11/2020
 ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 32bde2ec2c97f33c426a57b17216a7086930eaca
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: 0c011c61c2084662d1e759d7226140dcf3ddfad6
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977949"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109514"
 ---
 # <a name="add-the-azure-storage-web-resource-to-a-form"></a>Agregar el recurso de web Azure Storage a un formulario
 
@@ -22,8 +22,8 @@ Los datos adjuntos cargados en Azure Storage, en lugar de directamente en Common
 
 Para que los datos adjuntos de un formulario determinado se puedan cargar en Azure Storage, debe agregar un recurso web al formulario y debe [configurar Azure Storage para la organización](enable-azure-storage.md).
 
-> [!Note]
-> En este ejemplo, el formulario se agrega al formulario de cliente potencial para la entidad Cliente potencial. Se recomienda tener precaución al editar los formularios existentes.
+> [!NOTE]
+En este ejemplo, el formulario se agrega al formulario de cliente potencial para la entidad Cliente potencial. Se recomienda tener precaución al editar los formularios existentes.
 
 Cuando un archivo (por ejemplo, attachments.zip) se carga en Azure Storage mediante el portal, es representado por una nota en una entidad y un marcador para el dato adjunto.
 
@@ -87,13 +87,15 @@ Si el archivo adjunto es una imagen, el control mostrará la imagen como miniatu
 El protocolo [Uso compartido de recursos de origen cruzado (CORS)](https://www.w3.org/TR/cors/) se compone de un conjunto de encabezados que indican si una respuesta se puede compartir con otro dominio.
 La siguiente configuración se usa para configurar CORS.
 
-|                 Nombre                  |                                                                            Descripción                                                                            |
-|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| HTTP/Access-Control-Allow-Credentials | El único valor válido para este encabezado es verdadero (con distinción entre mayúsculas de minúsculas). Si no necesita las credenciales, omita este encabezado completamente (en lugar de establecer el valor en falso). |
-|   HTTP/Access-Control-Allow-Headers   |                                                   Una lista delimitada por comas de los encabezados de solicitud HTTP admitidos.                                                   |
-|   HTTP/Access-Control-Allow-Methods   |                                      Una lista delimitada por comas de los métodos de solicitud HTTP admitidos como OBTENER, CORREO, OPCIONES.                                       |
-|   HTTP/Access-Control-Allow-Origin    |                   Para permitir que un recurso acceda a las recursos, puede especificar \*. De lo contrario, especifique el URI que puede tener acceso a los recursos.                   |
-|  HTTP/Access-Control-Expose-Headers   |                Una lista delimitada por comas de nombres de encabezado HTTP distintos a los encabezados de respuesta sencillos que el recurso puede usar y a los que puede ser expuesto.                 |
-|      HTTP/Access-Control-Max-Age      |                                                       El número máximo de segundos que se pueden almacenar los resultados en la caché.                                                        |
-|                                       |                                                                                                                                                                   |
-
+| Configuración del sitio | Encabezado de solicitud | Descripción |
+|-|-|-|
+| HTTP/Access-Control-Allow-Credentials | Access-Control-Allow-Credentials | El único valor válido para este encabezado es verdadero (con distinción entre mayúsculas de minúsculas). Si no necesita las credenciales, omita este encabezado completamente (en lugar de establecer el valor en falso). 
+| HTTP/Access-Control-Allow-Headers | Access-Control-Allow-Headers | Una lista delimitada por comas de los encabezados de solicitud HTTP admitidos.
+| HTTP/Access-Control-Allow-Methods | Access-Control-Allow-Methods | Una lista delimitada por comas de los métodos de solicitud HTTP admitidos como OBTENER, CORREO, OPCIONES.
+| HTTP/Access-Control-Allow-Origin | Access-Control-Allow-Origin | Para permitir que un recurso acceda a las recursos, puede especificar \*. De lo contrario, especifique el URI que puede tener acceso a los recursos.                   |
+|  HTTP/Access-Control-Expose-Headers | Access-Control-Expose-Headers | Una lista delimitada por comas de nombres de encabezado HTTP distintos a los encabezados de respuesta sencillos que el recurso puede usar y a los que puede ser expuesto.
+| HTTP/Access-Control-Max-Age | Access-Control-Max-Age |  El número máximo de segundos que se pueden almacenar los resultados en la caché.
+| HTTP/Content-Security-Policy | Content-Security-Policy | Controla los recursos que el agente de usuario puede cargar para una página determinada.
+| HTTP/Content-Security-Policy-Report-Only | Content-Security-Policy-Report-Only | Permite a los desarrolladores web experimentar con directivas monitorizando, pero no forzando, sus efectos. Estos informes de infracción consisten en documentos JSON enviados a través de una solicitud HTTP POST al URI especificado.
+| HTTP/X-Frame-Options | X-Frame-Options | Indica si se debe permitir a un explorador representar una página en un *\<frame\>*, *\<iframe\>*, *\<embed\>* u *\<object\>*.
+| HTTP/X-Content-Type-Options | X-Content-Type-Options | Deshabilita el análisis MIME y fuerza al explorador a usar el tipo dado en *Tipo de contenido*.

@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ebf5b794bcfc7ec01abf08315f1dbf59ce6e4808
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4e01abce4f047c0f801a3f24a7d49f09f024e659
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2869916"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109519"
 ---
 # <a name="types-of-entities"></a>Tipos de entidades
 
@@ -71,10 +71,7 @@ En la tabla siguiente se muestran las entidades de actividad que están disponib
   
 Puede crear nuevas entidades de actividad personalizadas. Por ejemplo, puede crear una entidad de actividad personalizada para registrar comunicaciones de mensajes instantáneos. Crear una entidad de actividad es diferente de crear una entidad de no actividad porque no especifica un campo principal. Todas las entidades de actividad tienen **Campo principal** establecido en **Asunto** y otros campos comunes que se definen mediante la entidad Actividad. Esto permite que se incluyan todos los tipos de actividades en una vista que solo muestra los campos comunes.  
 
-> [!NOTE]
-> No puede crear una actividad personalizada mediante el portal de Power Apps. Debe abrir el explorador de soluciones con el botón **Avanzado**.
-  
-Para crear una entidad de actividad personalizada, seleccione **Definir como entidad de actividad**. Después de seleccionar esto, verá que la opción **Mostrar en los menús de actividades** está seleccionada. Esta opción permite a las personas crear este tipo de actividad en los menús de actividad. No está activada para las actividades que suelen asociarse con determinados eventos y que se crean detrás mediante código o por un flujo de trabajo. Después de guardar la entidad, no se puede cambiar la configuración.  
+Para crear una entidad de actividad personalizada, abra la sección **Más valores** en el panel **Nueva entidad**, seleccione la opción **Entidad de actividad** de la lista desplegable **Elegir tipo de entidad**. Después de seleccionar esto, verá que la opción **Mostrar en los menús de actividades** está seleccionada. Esta opción permite a las personas crear este tipo de actividad en los menús de actividad. No está activada para las actividades que suelen asociarse con determinados eventos y que se crean detrás mediante código o por un flujo de trabajo. Después de guardar la entidad, no se puede cambiar la configuración.  
 
 ### <a name="see-also"></a>Vea también
 [Crear o editar entidades](create-edit-entities.md)

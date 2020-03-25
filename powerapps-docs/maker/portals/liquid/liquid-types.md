@@ -10,11 +10,11 @@ ms.date: 10/07/2019
 ms.author: tapanm
 ms.reviewer: ''
 ms.openlocfilehash: e84ec3363f492231c218e0bb9f6e8a8d8b45fce6
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2980985"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3108803"
 ---
 # <a name="available-liquid-types"></a>Tipos de Liquid disponibles
 

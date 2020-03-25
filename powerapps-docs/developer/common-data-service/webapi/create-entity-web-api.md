@@ -21,11 +21,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 64561c0b655e02a7537af4268b2a92b7a1677f9a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749512"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109086"
 ---
 # <a name="create-an-entity-record-using-the-web-api"></a>Crear un registro de entidad usando la API web
 
