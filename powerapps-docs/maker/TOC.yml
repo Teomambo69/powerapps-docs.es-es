@@ -1559,8 +1559,6 @@
           href: ./common-data-service/update-solutions.md
         - name: Exportación de soluciones
           href: ./common-data-service/export-solutions.md
-        - name: Creación de revisiones de soluciones
-          href: ./common-data-service/solution-patches.md
         - name: Cómo se combinan las soluciones administradas
           href: ./common-data-service/how-managed-solutions-merged.md
         - name: Uso de variables de entorno
@@ -1579,6 +1577,10 @@
           href: ./common-data-service/set-managed-properties-metadata.md
         - name: Procedimientos recomendados
           href: ./common-data-service/solution-best-practices.md
+        - name: temas avanzados
+          items:
+            - name: Creación de revisiones de soluciones
+              href: ./common-data-service/solution-patches.md
     - name: Trabajo con flujos de datos
       href: ./common-data-service/self-service-data-prep-with-dataflows.md
       items:
