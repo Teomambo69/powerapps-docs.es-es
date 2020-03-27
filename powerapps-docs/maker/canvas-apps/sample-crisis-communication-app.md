@@ -7,21 +7,21 @@ ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/18/2020
+ms.date: 03/25/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: febec328c291972563599eb56a32f80e22eb070a
-ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
+ms.openlocfilehash: b4a356903c741b97a9b8dbe49d402f71f7196f0b
+ms.sourcegitcommit: 77e00640a59a7db9d67d3ac52f74d264cbe3a494
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80122525"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80328548"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>Configuración y información sobre la plantilla de ejemplo de comunicación de crisis en Power apps
-<!--note from editor: Suggest moving the overview into the usual overview position (i.e. after the H1). Other notes: According to the Docs Contributor Guide, graphic file names should be all lowercase, including the extension. I didn't change this, but something to note for next time. -->
+
 La aplicación de comunicación de crisis proporciona una experiencia fácil de utilizar para conectar usuarios con información sobre una crisis. Reciba rápidamente actualizaciones de noticias internas de la empresa, Obtenga respuestas a las preguntas más frecuentes y obtenga acceso a información importante, como vínculos y contactos de emergencia. Esta aplicación requiere un mínimo de configuración para personalizarla.
 
 En este tutorial, aprenderá a:
@@ -427,7 +427,7 @@ El flujo CrisisCommunication. request extrae las solicitudes desde la bandeja de
 
      ![Eliminar el conector](media/sample-crisis-communication-app/33-delete-connector.png)
 
-1. Busque y seleccione **Cuándo llega un nuevo correo electrónico a un buzón compartido (V2)** .
+1. Busque y seleccione **Cuándo llega un nuevo correo electrónico a un buzón compartido (V2)**.
 1. Escriba la dirección de bandeja de entrada compartida en **dirección de buzón**.
 1. Abra la tarjeta de **comentarios** .
 1. Seleccione **Agregar un valor dinámico** para **valor**.
@@ -647,12 +647,12 @@ La aplicación usa un flujo para enviar notificaciones a los usuarios finales ca
 
     ![Creación de una nueva conexión](media/sample-crisis-communication-app/create-connection.png)
 
-1. Busque el nombre de la conexión; por ejemplo, **notificación de PowerApps (versión preliminar)** .
+1. Busque el nombre de la conexión; por ejemplo, **notificación de PowerApps (versión preliminar)**.
 
     ![Nombre de conexión de ejemplo](media/sample-crisis-communication-app/notifications.png)
 
 1. Seleccione la conexión que desee.
-1. Si va a crear una conexión a las **notificaciones de PowerApps (versión preliminar)** , verá el cuadro de diálogo tal como se muestra en la siguiente imagen.
+1. Si va a crear una conexión a las **notificaciones de PowerApps (versión preliminar)**, verá el cuadro de diálogo tal como se muestra en la siguiente imagen.
 
     ![Cuadro de diálogo notificaciones](media/sample-crisis-communication-app/notifications-dialog.png)
 
@@ -702,27 +702,21 @@ La aplicación usa un flujo para enviar notificaciones a los usuarios finales ca
 Si esto ocurre, abra la tarjeta con la conexión no autorizada y vuelva a autorizarla.
 
 
-### <a name="optional-sending-notifications-to-more-than-999-users"></a>Opcional: envío de notificaciones a más de 999 usuarios
+### <a name="optional-sending-notifications-to-more-than-5000-users"></a>Opcional: envío de notificaciones a más de 5000 usuarios
 
-La acción **obtener miembros del grupo** actual está limitada a la extracción de 999 usuarios (100 usuarios de forma predeterminada). Para distribuir a más usuarios, puede modificar el flujo para enviar un correo electrónico a un grupo de distribución en su lugar.
+La acción **obtener miembros del grupo** actual está limitada a la extracción de 5000 usuarios si usa la licencia de Office de Power Automatic. Si tiene una licencia Premium y desea distribuir hasta 100000 usuarios, puede seguir estos pasos para enviar a más usuarios.
 
-1. Elimine las siguientes tarjetas: **obtener los miembros del grupo** y **cambiar la configuración de notificación de envío preferida**:
+1. Seleccione el menú **...** para la tarjeta **obtener miembros del grupo** .
 
-    ![Eliminar acciones](media/sample-crisis-communication-app/36-delete-actions.png)
+    ![Seleccione... MENU](media/sample-crisis-communication-app/40-Settings.png)
 
-1. Agregue una nueva acción.
+1. Seleccione **Configuración**.
 
-1. Busque y seleccione **Enviar un correo electrónico (V2)** :
+1. Cambie el campo **umbral** a 100.000
 
-    ![Agregar enviar un correo electrónico](media/sample-crisis-communication-app/37-add-send-an-email.png)
+    ![Establecimiento del campo umbral](media/sample-crisis-communication-app/41-Threshold.png)
 
-1. En el campo **para** , escriba el nombre del grupo de distribución.
-
-1. En el campo **asunto** , seleccione el botón **Agregar un valor dinámico** y agregue el campo **título** desde la tarjeta **cuando se publique un elemento de noticias** :
-
-    ![Agregar título](media/sample-crisis-communication-app/38-add-title.png)
-
-1. En el campo **cuerpo** , seleccione el botón **Agregar un valor dinámico** y agregue el campo de **detalles** de la tarjeta **cuando se publique un elemento de noticias** .
+1. Seleccionar **listo**
 
 1. Seleccione **Guardar**.
 
@@ -823,7 +817,7 @@ Si es un administrador de equipos, puede enviar la aplicación a todos los usuar
 
     ![Directivas de configuración de aplicaciones](media/sample-crisis-communication-app/27-Setup-Policies.png)
 
-1. Seleccione **global (configuración de toda la organización)** .
+1. Seleccione **global (configuración de toda la organización)**.
 1. Seleccione **agregar aplicaciones**.
 
     ![Agregar aplicación](media/sample-crisis-communication-app/28-Add-App.png)
@@ -840,7 +834,7 @@ Si es un administrador de equipos, puede enviar la aplicación a todos los usuar
 
 ### <a name="create-a-central-crisis-management-team-in-teams"></a>Crear un equipo central de administración de crisis en Teams<a name="create-a-central-crisis-management-teams-team"></a>
 
-Para coordinar la respuesta de crisis, querrá crear un equipo central de administración de crisis en Teams y rellenarlo con toda la información pertinente.
+Para coordinar la respuesta de crisis, querrá crear un equipo central de administración de crisis en Teams y rellenarlo con toda la información pertinente. Este equipo solo debe compartirse con el equipo de respuesta central.
 
 1. Vaya a equipos.
 1. Seleccione **equipos** en la barra de la aplicación izquierda.
@@ -886,6 +880,10 @@ Después de haber creado correctamente el equipo, puede anclar la información r
 * **¿Qué características no se admiten actualmente en GCC?**
 
     El conector Power Automate de robot para equipos y el conector de notificaciones de extracción no están disponibles actualmente para GCC. Use la opción correo electrónico para avisar a los usuarios acerca de las actualizaciones de noticias internas en su lugar.
+
+* **¿Cómo puedo actualizar la aplicación?**
+
+    Si desea actualizar la aplicación, siga los pasos descritos en [aka.ms/CrisisCommunicationSolution](https://aka.ms/CrisisCommunicationSolution).
 
 ## <a name="issues-and-feedback"></a>Problemas y comentarios
 

@@ -169,8 +169,6 @@
           href: ./canvas-apps/help-desk-install.md
         - name: Aplicación Meeting Capture
           href: ./canvas-apps/sample-meeting-capture.md
-        - name: Aplicación para la comunicación de crisis
-          href: ./canvas-apps/sample-crisis-communication-app.md
     - name: Crear su primera aplicación
       items:
         - name: 1 - Crear una aplicación a partir de una plantilla
@@ -1624,6 +1622,18 @@
   items:
     - name: Uso de AI Builder en Power Apps
       href: ../use-ai-builder.md
+- name: Aplicaciones y soluciones de ejemplo
+  items:
+    - name: Aplicación para la comunicación de crisis
+      href: ./canvas-apps/sample-crisis-communication-app.md
+    - name: Solución de respuesta de emergencia
+      items:
+        - name: Información general
+          href: ../sample-apps/emergency-response/overview.md
+        - name: Implementación y configuración de la aplicación
+          href: ../sample-apps/emergency-response/deploy-configure.md
+        - name: Uso de la aplicación
+          href: ../sample-apps/emergency-response/use.md
 - name: Aprender de otros
   items:
     - name: Seminarios web
