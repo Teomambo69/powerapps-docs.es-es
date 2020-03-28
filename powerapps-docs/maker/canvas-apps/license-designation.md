@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 95478501e6ca5af36ef993637b3612cdf1ea0196
-ms.sourcegitcommit: 77e00640a59a7db9d67d3ac52f74d264cbe3a494
+ms.openlocfilehash: 495325949776b066ed30d629fb031730e4463179
+ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80328787"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "80375002"
 ---
 # <a name="how-to-check-license-designation-for-an-app"></a>Comprobación de la designación de la licencia para una aplicación
 
@@ -32,7 +32,7 @@ En la tabla siguiente se describen las designaciones y la licencia que debe tene
 |-|-|
 | Estándar | Una aplicación que solo usa conectores estándar. Un usuario final debe tener un plan de Power apps para Office 365, por plan de aplicación o un plan por usuario para acceder a esta aplicación.
 | Extendido | Una aplicación permitió usar conectores promocionados a Premium el 1 de octubre de 2019. Un usuario final debe tener un plan de Power apps para Office 365, por plan de aplicación o por plan de usuario.  [Preguntas más frecuentes sobre licencias de Power Apps](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#office-365) describe qué conectores se promovieron a Premium el 1 de octubre de 2019.
-| Premium | Una aplicación que usa al menos un conector Premium. Un usuario final debe tener un plan por aplicación o un plan de usuario para tener acceso a él.
+| Premium | Una aplicación que usa al menos un conector Premium, un conector personalizado o una puerta de enlace local. Un usuario final debe tener un plan por aplicación o un plan de usuario para tener acceso a él.
 
 ## <a name="check-app-license-designation-from-app-settings"></a>Comprobar la designación de la licencia de la aplicación en la configuración de la aplicación
 
@@ -40,7 +40,7 @@ En la tabla siguiente se describen las designaciones y la licencia que debe tene
 
 1. Seleccione **aplicaciones** en el lado izquierdo.
 
-1. Seleccione una aplicación de la lista de aplicaciones. Puede usar la opción de **configuración** de Top o, usar los **comandos más** (**...**) y, después, la **configuración** del menú desplegable:
+1. Seleccione una aplicación de la lista de aplicaciones. Puede usar la opción de **configuración** de Top o, usar los **comandos más** ( **...** ) y, después, la **configuración** del menú desplegable:
 
     ![Opción de configuración](media/license-designation/app-settings.png)
 
@@ -54,7 +54,7 @@ En la tabla siguiente se describen las designaciones y la licencia que debe tene
 
 1. Seleccione **aplicaciones** en el lado izquierdo.
 
-1. Seleccione una aplicación de la lista de aplicaciones. Puede usar la opción de **detalles** de la parte superior o, usar los **comandos más** (**...**) y, después, los **detalles** del menú desplegable:
+1. Seleccione una aplicación de la lista de aplicaciones. Puede usar la opción de **detalles** de la parte superior o, usar los **comandos más** ( **...** ) y, después, los **detalles** del menú desplegable:
 
     ![Detalles de la aplicación](media/license-designation/app-details.png)
 

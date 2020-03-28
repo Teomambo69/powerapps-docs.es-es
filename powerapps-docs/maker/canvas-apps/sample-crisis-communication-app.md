@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b4a356903c741b97a9b8dbe49d402f71f7196f0b
-ms.sourcegitcommit: 77e00640a59a7db9d67d3ac52f74d264cbe3a494
+ms.openlocfilehash: 465f18474c7054467db8e22bb1702db250177395
+ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80328548"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "80375063"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>Configuración y información sobre la plantilla de ejemplo de comunicación de crisis en Power apps
 
@@ -427,7 +427,7 @@ El flujo CrisisCommunication. request extrae las solicitudes desde la bandeja de
 
      ![Eliminar el conector](media/sample-crisis-communication-app/33-delete-connector.png)
 
-1. Busque y seleccione **Cuándo llega un nuevo correo electrónico a un buzón compartido (V2)**.
+1. Busque y seleccione **Cuándo llega un nuevo correo electrónico a un buzón compartido (V2)** .
 1. Escriba la dirección de bandeja de entrada compartida en **dirección de buzón**.
 1. Abra la tarjeta de **comentarios** .
 1. Seleccione **Agregar un valor dinámico** para **valor**.
@@ -647,12 +647,12 @@ La aplicación usa un flujo para enviar notificaciones a los usuarios finales ca
 
     ![Creación de una nueva conexión](media/sample-crisis-communication-app/create-connection.png)
 
-1. Busque el nombre de la conexión; por ejemplo, **notificación de PowerApps (versión preliminar)**.
+1. Busque el nombre de la conexión; por ejemplo, **notificación de PowerApps (versión preliminar)** .
 
     ![Nombre de conexión de ejemplo](media/sample-crisis-communication-app/notifications.png)
 
 1. Seleccione la conexión que desee.
-1. Si va a crear una conexión a las **notificaciones de PowerApps (versión preliminar)**, verá el cuadro de diálogo tal como se muestra en la siguiente imagen.
+1. Si va a crear una conexión a las **notificaciones de PowerApps (versión preliminar)** , verá el cuadro de diálogo tal como se muestra en la siguiente imagen.
 
     ![Cuadro de diálogo notificaciones](media/sample-crisis-communication-app/notifications-dialog.png)
 
@@ -704,19 +704,25 @@ Si esto ocurre, abra la tarjeta con la conexión no autorizada y vuelva a autori
 
 ### <a name="optional-sending-notifications-to-more-than-5000-users"></a>Opcional: envío de notificaciones a más de 5000 usuarios
 
-La acción **obtener miembros del grupo** actual está limitada a la extracción de 5000 usuarios si usa la licencia de Office de Power Automatic. Si tiene una licencia Premium y desea distribuir hasta 100000 usuarios, puede seguir estos pasos para enviar a más usuarios.
+La acción **obtener miembros del grupo** actual se limita a extraer 5000 usuarios para la licencia de Office de Power Automatic. Incluso para la licencia Premium, puede alcanzar los límites de limitación con el conector para equipos si intenta enviar notificaciones a demasiados usuarios. Para distribuir a más usuarios, puede modificar el flujo para enviar un correo electrónico a una lista de distribución.
 
-1. Seleccione el menú **...** para la tarjeta **obtener miembros del grupo** .
+1. Elimine las siguientes tarjetas: **obtener los miembros del grupo** y **cambiar la configuración de notificación de envío preferida**:
 
-    ![Seleccione... MENU](media/sample-crisis-communication-app/40-Settings.png)
+    ![Eliminar acciones](media/sample-crisis-communication-app/36-delete-actions.png)
 
-1. Seleccione **Configuración**.
+1. Agregue una nueva acción.
 
-1. Cambie el campo **umbral** a 100.000
+1. Busque y seleccione **Enviar un correo electrónico (V2)** :
 
-    ![Establecimiento del campo umbral](media/sample-crisis-communication-app/41-Threshold.png)
+    ![Agregar enviar un correo electrónico](media/sample-crisis-communication-app/37-add-send-an-email.png)
 
-1. Seleccionar **listo**
+1. En el campo **para** , escriba el nombre del grupo de distribución.
+
+1. En el campo **asunto** , seleccione el botón **Agregar un valor dinámico** y agregue el campo **título** desde la tarjeta **cuando se publique un elemento de noticias** :
+
+    ![Agregar título](media/sample-crisis-communication-app/38-add-title.png)
+
+1. En el campo **cuerpo** , seleccione el botón **Agregar un valor dinámico** y agregue el campo de **detalles** de la tarjeta **cuando se publique un elemento de noticias** .
 
 1. Seleccione **Guardar**.
 
@@ -817,7 +823,7 @@ Si es un administrador de equipos, puede enviar la aplicación a todos los usuar
 
     ![Directivas de configuración de aplicaciones](media/sample-crisis-communication-app/27-Setup-Policies.png)
 
-1. Seleccione **global (configuración de toda la organización)**.
+1. Seleccione **global (configuración de toda la organización)** .
 1. Seleccione **agregar aplicaciones**.
 
     ![Agregar aplicación](media/sample-crisis-communication-app/28-Add-App.png)
