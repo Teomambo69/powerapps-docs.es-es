@@ -827,6 +827,8 @@
           href: ./canvas-apps/edit-app.md
         - name: Eliminar una aplicación
           href: ./canvas-apps/delete-app.md
+        - name: Designación de licencia para una aplicación
+          href: ./canvas-apps/license-designation.md
         - name: Restaurar una versión anterior
           href: ./canvas-apps/restore-an-app.md
         - name: Cambiar el nombre y el icono de la aplicación
@@ -877,6 +879,8 @@
           href: ./canvas-apps/cognitive-services-api.md
         - name: Transformación de Formularios de InfoPath a Power Apps
           href: ./canvas-apps/transform-infopath.md
+        - name: Analizar la telemetría de las aplicaciones mediante Application Insights
+          href: ./canvas-apps/application-insights.md
     - name: Para desarrolladores
       items:
         - name: 'Aplicaciones de lienzo para desarrolladores empresariales, asociados y fabricantes de software independientes'
