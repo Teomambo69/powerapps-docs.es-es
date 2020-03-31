@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 10/29/2019
+ms.date: 03/30/2020
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4980d7989a65032cec28aab1bc70ae3e01d1747d
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: c17fff957091a13e26e4bbbb3bc90f34fa5659f7
+ms.sourcegitcommit: 204d73f30be2fd63e13e3c64cbfa62b8d667df33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74724158"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80406086"
 ---
 # <a name="preview-create-a-canvas-app-from-azure-sql-database"></a>Vista previa: cree una aplicación de lienzo desde Azure SQL Database
 
@@ -27,8 +27,8 @@ ms.locfileid: "74724158"
 En este tema, usará los datos de la Azure SQL Database para crear una aplicación con Power Apps en solo unos minutos. Tendrá una aplicación totalmente funcional con los datos que puede personalizar para ajustarse a sus necesidades empresariales y compartir en cualquier dispositivo.
 
 > [!IMPORTANT]
-> - Se trata de una característica de vista previa.
-> - Una característica de vista previa puede tener una disponibilidad limitada y una funcionalidad restringida. Una característica de vista previa está disponible antes de una versión oficial para que los clientes puedan obtener acceso temprano y proporcionar comentarios.
+> - Esta es una característica en vista previa.
+> - Una característica en versión preliminar puede tener una disponibilidad limitada y una funcionalidad restringida. Una característica en versión preliminar está disponible antes de una versión oficial para que los clientes puedan obtener acceso anticipado y proporcionar comentarios.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -37,23 +37,25 @@ En este tema, usará los datos de la Azure SQL Database para crear una aplicaci�
 - Necesita acceso a un SQL Database existente. </br> Si no tiene un SQL Database existente, [cree una nueva base de datos](https://docs.microsoft.com/azure/sql-database/sql-database-single-database-get-started?tabs=azure-portal).
 - Debe permitir que [las direcciones IP](#app-access-to-sql-database) de la región de Power Apps o los servicios de Azure tengan acceso a SQL Database en la configuración del firewall.
 - La tabla SQL Database debe tener al menos una columna con el tipo de datos texto.
-- Necesita una licencia de Power apps válida o regístrese para obtener una [licencia de prueba de 30 días](../signup-for-powerapps.md).
 
-## <a name="create-an-app"></a>Crear una aplicación
+## <a name="create-an-app-from-azure-portal"></a>Crear una aplicación a partir de Azure Portal
 
-1. Inicie sesión en el [portal de Azure](https://portal.azure.com).
+> [!TIP]
+> También puede crear una aplicación que use Azure SQL Database desde [Power apps](https://make.powerapps.com). Para obtener más información, lea [SQL Server Connector para Power apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/connections/connection-azure-sqldatabase).
+
+1. Inicie sesión en [Azure portal](https://portal.azure.com).
 2. Navegue hasta el SQL Database.
 3. Seleccione Power apps.
-
     
     ![Opción de Power Apps en SQL Database opciones](./media/app-from-azure-sql-database/powerapps-link-azure-portal.png "Opción de Power apps dentro de SQL Database")
-
-    > [!NOTE]
-    > Si no tiene una licencia de Power Apps, verá una barra de información azul con un vínculo para iniciar una prueba. Cuando seleccione iniciar una versión de prueba, se le dirigirá a una nueva pestaña en la que se suscribirá para obtener una licencia. Una vez completado, vuelva al Azure Portal y actualice la hoja para continuar.
 
 4. Escriba un nombre para la aplicación como "inspección del sitio", "recaudador" o "seguimiento de presupuesto".
 
 5. Escriba una contraseña de autenticación de SQL y, si es necesario, cambie el nombre de usuario.
+    
+    > [!NOTE]
+    > Si desea usar Azure AD la autenticación integrada en lugar de la autenticación de SQL con Azure SQL Database, cree una aplicación desde [Power apps](https://make.powerapps.com) en su lugar y use [SQL Server Connector](https://docs.microsoft.com/powerapps/maker/canvas-apps/connections/connection-azure-sqldatabase).
+
 6. Seleccione una tabla de la lista desplegable que desea usar para crear la aplicación.
 
 7. Seleccione **Crear**.
@@ -91,12 +93,12 @@ Power apps puede conectarse al SQL Database **permitir el acceso al control de s
 > [!IMPORTANT]
 > Si deja el control establecido en activado, el servidor de Azure SQL Database acepta la comunicación desde cualquier subred dentro del límite de Azure, que se origina en una de las direcciones IP que se reconocen como las que se encuentran dentro de los intervalos definidos para los centros de datos de Azure. Si se mantiene el control establecido en ON, podría ser un acceso excesivo desde un punto de vista de seguridad.
 
-## <a name="limitations"></a>Límite
+## <a name="limitations"></a>Limitaciones
 
 - El nombre de la aplicación solo puede incluir letras, números, guiones, paréntesis o caracteres de subrayado.
-- Power apps requiere la autenticación de SQL para conectarse a SQL Database.
+- La creación de una aplicación desde Azure Portal requiere la autenticación de SQL.
 - Puede seleccionar solo una tabla mientras crea una aplicación de lienzo desde el Azure Portal. Personalice la aplicación después de crear la aplicación si desea agregar más tablas y otros orígenes de datos agregando más conexiones de datos.
-- Power apps no puede conectarse a SQL Database mediante puntos de conexión de servicio de red virtual. Para obtener más información, consulte [permitir el acceso a través de puntos de conexión de servicio de red virtual](https://docs.microsoft.com/azure/sql-database/sql-database-vnet-service-endpoint-rule-overview).
+- Power apps no se puede conectar a SQL Database mediante puntos de conexión de servicio de red virtual. Para obtener más información, consulte [permitir el acceso a través de puntos de conexión de servicio de red virtual](https://docs.microsoft.com/azure/sql-database/sql-database-vnet-service-endpoint-rule-overview).
 
 ## <a name="other-considerations"></a>Otras consideraciones
 
@@ -106,7 +108,7 @@ Power apps puede conectarse al SQL Database **permitir el acceso al control de s
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-En esta guía de inicio rápido, ha creado una aplicación con datos de su SQL Database mediante el Azure Portal. Como paso siguiente, personalice la aplicación con controles, imágenes y lógica para satisfacer mejor sus necesidades empresariales.
+Como paso siguiente, use [Power apps](https://make.powerapps.com) Studio para personalizar la aplicación agregando controles, imágenes y lógica adicionales para satisfacer mejor sus necesidades empresariales.
 
 > [!div class="nextstepaction"]
 > [Diseño de la interfaz de la aplicación Canvas en Power apps](add-configure-controls.md)

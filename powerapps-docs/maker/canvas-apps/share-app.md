@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 03/24/2020
+ms.date: 03/30/2020
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6cbbc3442a54a0c84ff82b7e32f255c2b400d073
-ms.sourcegitcommit: 3f89b04359df19f8fa5167e2607509bb97e60fe0
+ms.openlocfilehash: 7d47d5fc808ebd13a101093b58b1e3e890730f25
+ms.sourcegitcommit: 204d73f30be2fd63e13e3c64cbfa62b8d667df33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80242887"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80406337"
 ---
 # <a name="share-a-canvas-app-in-power-apps"></a>Compartir una aplicación de lienzo en Power apps
 
@@ -191,7 +191,7 @@ Las aplicaciones de lienzo de Power apps se pueden compartir con usuarios invita
           > [!div class="mx-imgBorder"] 
           > ![Compartir con invitado](media/share-app/guest_access_doc_2.png "Compartir con invitado")
  
-Después de compartir una aplicación para el acceso de invitado, los invitados pueden detectar y acceder a las aplicaciones compartidas con ellas desde el correo electrónico que se les envía como parte del uso compartido.
+Después de compartir una aplicación para el acceso de invitado, los invitados pueden detectar y acceder a las aplicaciones compartidas con ellas desde el correo electrónico que se les envía como parte del uso compartido. También puede compartir la dirección URL de la aplicación directamente con el invitado. Para buscar la dirección URL, vaya a [Power apps](https://make.powerapps.com), seleccione **aplicaciones** en el panel izquierdo, **Seleccione una aplicación** y, a continuación, seleccione la pestaña **detalles** . La dirección URL de la aplicación se muestra en **vínculo Web**.
 
 > [!div class="mx-imgBorder"]  
 > ![Los invitados reciben el correo electrónico del recurso compartido de aplicaciones](media/share-app/guest_access_doc_4.png "Los invitados reciben el correo electrónico del recurso compartido de aplicaciones")
