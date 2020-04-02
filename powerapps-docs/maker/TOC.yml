@@ -29,13 +29,13 @@
   items:
     - name: En un explorador
       href: ../user/run-app-browser.md
+    - name: En un teléfono (versión preliminar)
+      href: ../user/run-canvas-and-model-apps-on-mobile.md
     - name: En un teléfono (lienzo)
       href: ../user/run-app-client.md
-    - name: En un teléfono (controlado por modelos)
-      href: ../user/run-app-client-model-driven.md
-    - name: En una página de SharePoint Online (lienzo)
+    - name: En una página de SharePoint Online (aplicaciones de lienzo)
       href: ../user/powerapps-web-part.md
-    - name: En Microsoft Teams (lienzo)
+    - name: "En Microsoft\_Teams (aplicación de lienzo)"
       href: ../user/open-app-embedded-in-teams.md
     - name: Desde AppSource
       href: ../user/app-source.md
@@ -143,6 +143,8 @@
               href: ../user/work-with-business-processes.md
             - name: Usar flujos
               href: ../user/use-flows.md
+    - name: Uso de aplicaciones controladas por modelos en dispositivos móviles (versión preliminar)
+      href: ../user/use-custom-model-driven-app-on-mobile.md
     - name: "Usar Dynamics\_365 App for Outlook"
       href: ../user/use-outlook-app.md
 - name: Crear aplicaciones
