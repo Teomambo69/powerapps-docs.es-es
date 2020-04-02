@@ -1,12 +1,12 @@
 ---
 title: Ejecución de una aplicación basada en lienzo en un dispositivo móvil | Microsoft Docs
 description: Vea cómo ejecutar una aplicación de lienzo en un dispositivo móvil.
-author: Mattp123
+author: mduelae
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 11/16/2018
-ms.author: matp
+ms.date: 04/1/2020
+ms.author: mkaur
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ad34f7daacf07ebc8ecde2a8ce29c163d0c28e95
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 1494c1624fc37b59b5e20b0cdaa15a9c9edb33e3
+ms.sourcegitcommit: 39f6feb699512e9c2bf71ef1a1238b32b639da02
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74733337"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527456"
 ---
 # <a name="run-a-canvas-app-on-a-mobile-device"></a>Ejecución de una aplicación de lienzo en un dispositivo móvil
 Cuando crea una aplicación o alguien comparte una aplicación con usted, puede ejecutar la aplicación en Windows, iOS, Android o en un explorador web. En este tema aprenderá a ejecutar una aplicación de lienzo en un dispositivo móvil. Las aplicaciones que se ejecutan en un dispositivo móvil pueden aprovechar las funcionalidades del dispositivo, como los servicios de ubicación y la cámara.
@@ -66,7 +66,7 @@ Para ejecutar una aplicación de lienzo en un dispositivo móvil, pulse el icono
 
 Si es la primera vez que usa Power Apps, en una pantalla se muestra el gesto de deslizar rápidamente para cerrar la aplicación.
 
-![Iniciar aplicación](./media/run-app-client/run-client-app.png)
+![Iniciar aplicación](media/run_client.png)
 
 ## <a name="give-consent"></a>Dar consentimiento
 Si una aplicación requiere una conexión a un origen de datos o permiso para usar las funcionalidades del dispositivo (como la cámara o los servicios de ubicación), debe dar su consentimiento antes de usar la aplicación. Habitualmente, solo se le solicitará la primera vez.

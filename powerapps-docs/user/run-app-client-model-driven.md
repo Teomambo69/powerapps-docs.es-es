@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 12/05/2019
+ms.date: 04/1/2020
 ms.author: mkaur
 ms.custom: ''
 ms.reviewer: ''
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 61a2cf34b7deef7dcc12f88a30b1673c6124c7c5
-ms.sourcegitcommit: 15c6b26ff085928459ad9b3f52fb607fae4a997d
+ms.openlocfilehash: dc0b0cd3be01f9cfbcac14f5a36325106c0972bb
+ms.sourcegitcommit: 39f6feb699512e9c2bf71ef1a1238b32b639da02
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74956630"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527547"
 ---
 # <a name="run-a-model-driven-app-on-a-mobile-device"></a>Ejecutar una aplicación controlada por modelos en un dispositivo móvil
 
