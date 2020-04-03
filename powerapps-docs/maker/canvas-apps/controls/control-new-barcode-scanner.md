@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c83e713a5f29198779b0b9b8968bb38b98bc2a5a
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: d2499a597295147cea1b39bb18fee2cbb056b413
+ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75204005"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80624981"
 ---
 # <a name="barcode-scanner-control-for-canvas-apps"></a>Control del lector de código de barras para aplicaciones de lienzo
 
@@ -32,39 +32,43 @@ El control abre un escáner nativo en un dispositivo iOS o Android. El escáner 
 
 **Valor** : propiedad de salida que contiene el valor de texto del código que se analizó más recientemente.
 
-**Texto: texto** que aparece en el botón que activa el analizador.
+**Type** : propiedad de salida que contiene el tipo del código que se analizó más recientemente.
 
 **Alscan** : cómo responde una aplicación cuando se examina correctamente un código de barras.
 
-## <a name="additional-properties"></a>Propiedades adicionales
+**OnCancel** : cómo responde una aplicación cuando el usuario cancela un examen de código de barras.
 
 **BarcodeType** : el tipo de código de barras que se va a examinar. Puede tener como destino varios tipos de código de barras mediante su concatenación. Antiguo. BarcodeType. CODE128 & BarcodeType. CODE39 **default: auto**
 
-**[BorderColor](properties-color-border.md)**: el color de un borde del control.
-
-**[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
-
-**[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
-
-**[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+**PreferFrontCamera** : indica si la cámara frontal, si está disponible, se utiliza para el examen.
 
 **FlashlightEnabled** : indica si la linterna se habilita automáticamente cuando se abre el escáner.
 
+## <a name="additional-properties"></a>Propiedades adicionales
+
+**Texto: texto** que aparece en el botón que activa el analizador.
+
+**[BorderColor](properties-color-border.md)** : el color de un borde del control.
+
+**[BorderStyle](properties-color-border.md)** : si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
+
+**[BorderThickness](properties-color-border.md)** : el grosor de un borde del control.
+
+**[DisplayMode](properties-core.md)** : indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+
 **[Alto](properties-size-location.md)** : el alto del botón que activa el escáner.
 
-**PreferFrontCamera** : indica si la cámara frontal, si está disponible, se utiliza para el examen.
-
-**[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
+**[Información sobre herramientas](properties-core.md)** : texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
 
 **Tipo** : el tipo de código que se ha detectado en el examen que se ha realizado correctamente.
 
-**[Visible](properties-core.md)**: indica si un control aparece o está oculto.
+**[Visible](properties-core.md)** : indica si un control aparece o está oculto.
 
 **[Ancho](properties-size-location.md)** : el ancho del botón que activa el escáner.
 
-**[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[X](properties-size-location.md)** : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
 
-**[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
 Las mismas instrucciones para el control de **[botón](control-button.md)** se aplican al control de **escáner de código de barras** porque es un botón que inicia el examen.
