@@ -51,6 +51,8 @@
               href: ../user/navigation.md
             - name: Uso de filtros de cuadrícula
               href: ../user/grid-filters.md
+            - name: Creación de vistas personales con filtros de cuadrícula avanzada
+              href: ../user/grid-filters-advanced.md
             - name: Ver su perfil
               href: ../user/view-your-user-profile.md
             - name: Búsqueda del administrador o encargado de soporte técnico
@@ -69,7 +71,7 @@
               href: ../user/add-activities.md
             - name: Preguntas más frecuentes acerca de actividades
               href: ../user/faq-for-timeline-and-activity.md
-            - name: Vista y creación de correos electrónicos mediante la cuadrícula Actividades
+            - name: Visualización y creación de correos electrónicos mediante la cuadrícula de actividades
               href: ../user/view-create-email.md
             - name: Envío de correo electrónico con la experiencia de correo electrónico mejorada
               href: ../user/enhanced-email.md
@@ -937,7 +939,7 @@
                   href: ./model-driven-apps/create-site-map-app.md
                 - name: Agregar o editar componentes de una aplicación
                   href: ./model-driven-apps/add-edit-app-components.md
-                - name: Adición de la entidad de equipo como una opción de búsqueda
+                - name: Adición de una entidad como búsqueda
                   href: ./model-driven-apps/team-entity-lookup.md
             - name: Trabajar con fórmulas
               href: ./model-driven-apps/create-design-forms.md
@@ -1630,9 +1632,9 @@
       href: ../use-ai-builder.md
 - name: Aplicaciones y soluciones de ejemplo
   items:
-    - name: Aplicación para la comunicación de crisis
+    - name: Comunicación de crisis
       href: ./canvas-apps/sample-crisis-communication-app.md
-    - name: Solución de respuesta de emergencia
+    - name: Respuesta ante emergencias hospitalarias
       items:
         - name: Información general
           href: ../sample-apps/emergency-response/overview.md
