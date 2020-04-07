@@ -6,18 +6,18 @@ manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 03/26/2020
+ms.date: 03/30/2020
 ms.author: kvivek
 ms.reviewer: kvivek
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: e58b23503e1730c8606a833cb05f7253b5b96f49
-ms.sourcegitcommit: 77e00640a59a7db9d67d3ac52f74d264cbe3a494
+ms.openlocfilehash: f126a415cfe42e38e2131967a29564fc0255f6bb
+ms.sourcegitcommit: b6beb1b76d9ddb0f9846253f895d581bda9012ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80327682"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80417480"
 ---
 # <a name="deploy-and-configure-the-emergency-response-app"></a>Implementación y configuración de la aplicación de respuesta ante emergencias
 
@@ -42,8 +42,8 @@ Siga estos pasos para implementar la aplicación de ejemplo de respuesta ante em
 - [Paso 2: Descargar el paquete de implementación](#step-2-download-the-deployment-package)
 - [Paso 3: Importar el archivo de solución en el entorno](#step-3-import-the-solution-file-into-your-environment)
 - [Paso 4: Cargar la configuración y los datos maestros de la organización](#step-4-load-configuration-and-master-data-for-your-organization)
-    - [Paso 4.1: ¿Cómo se cargan los datos de los archivos de datos?](#step-41-how-to-load-data-from-data-files)
-    - [Paso 4.2: Importar datos de configuración obligatorios](#step-42-import-mandatory-configuration-data)
+    - [Paso 4.1: Cargar datos de configuración obligatorios](#step-41-load-mandatory-configuration-data)
+    - [Paso 4.2: Cargar datos maestros](#step-42-load-master-data)
 - [Paso 5: Actualizar la personalización de marca de la aplicación móvil](#step-5-update-the-mobile-app-branding)
 - [Paso 6: Omitir el consentimiento para aplicaciones móviles](#step-6-bypass-consent-for-mobile-apps)
 - [Paso 7: Agregar la clave de Application Insights a aplicaciones móviles para telemetría](#step-7-add-azure-application-insights-key-to-mobile-apps-for-telemetry)
@@ -65,6 +65,9 @@ Una vez que haya adquirido Power Apps, cree un entorno con una base de datos de
 1.  Inicie sesión en el [Centro de administración de Power Platform](https://aka.ms/ppac).
 
 2.  Cree un entorno de Common Data Service con la base de datos. Más información: [Creación y administración de entornos](https://docs.microsoft.com/power-platform/admin/create-environment)
+
+    > [!IMPORTANT]
+    > Si selecciona un grupo de seguridad para la base de datos al crearla, las aplicaciones se podrán compartir *solo* con usuarios que sean miembros del grupo de seguridad.
 
 3.  Cree los usuarios adecuados en su entorno. Más información: [Crear usuarios y asignar roles de seguridad](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles)
 
@@ -97,7 +100,7 @@ Para comenzar el proceso de implementación, extraiga el archivo de implementaci
 
 5.  En el cuadro de diálogo **Importación de la solución**, seleccione el archivo de soluciones mencionado en el paso 1 y, a continuación, siga los pasos del asistente para importar la solución.
 
-6.  Una vez que la solución se haya importado correctamente, seleccione **Cerrar** en el cuadro de diálogo de importación y, a continuación, seleccione **Public all customizations** (Todas las personalizaciones públicas). Esta operación puede tardar varios minutos en completarse.
+6.  Una vez que la solución se haya importado correctamente, seleccione **Cerrar** en el cuadro de diálogo de importación.
 
 Ahora verá las aplicaciones nuevas en **Aplicaciones**:
 
@@ -168,29 +171,7 @@ La carpeta **Archivos de datos** tiene los siguientes archivos y carpetas:
 </tr>
 </table>
 
-#### <a name="step-41-how-to-load-data-from-data-files"></a>Paso 4.1: ¿Cómo se cargan los datos de los archivos de datos?
-
-Para cargar datos de ejemplo de uno de los archivos de datos en una entidad:
-
-1.  En el panel de navegación izquierdo de la aplicación de administración, seleccione una entidad para cargar datos en ella. Por ejemplo, seleccione **Location** (Ubicación) en el selector de área y, a continuación, seleccione **Systems** (Sistemas).
-
-2.  Seleccione **Importar desde Excel** y seleccione el archivo **01 - Load Systems.xlsx** (Cargar sistemas) de la carpeta de **datos de ejemplo**.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Importar desde Excel](media/conf-import-from-excel.png "Importar desde Excel")
-
-3.  Continúe con los pasos del asistente de importación para importar los datos.
-
-4.  Una vez importados los datos de ejemplo, verá el registro importado en la entidad:
-
-    > [!div class="mx-imgBorder"] 
-    > ![Registro de entidad](media/conf-entity-record.png "Registro en la entidad después de la importación")
-
-Repita los pasos anteriores con otras entidades.
-
-Como alternativa, si desea escribir los datos maestros manualmente, consulte [Configuración y administración manual de los datos maestros de la organización](#manually-configure-and-manage-master-data-for-your-organization).
-
-#### <a name="step-42-import-mandatory-configuration-data"></a>Paso 4.2: Importar datos de configuración obligatorios
+#### <a name="step-41-load-mandatory-configuration-data"></a>Paso 4.1: Cargar datos de configuración obligatorios
 
 La importación de los datos de configuración en las siguientes entidades de la aplicación de administración es **obligatoria** antes de pasar al siguiente paso:
 
@@ -202,18 +183,47 @@ La importación de los datos de configuración en las siguientes entidades de la
 | Staffing (Personal) | Request Roles (Roles de solicitud) | 00 - Request Roles Import.xlsx (Importación de roles de solicitud)
 | Ubicaciones | Supplies (Suministros) | 00 - Supplies Import.xlsx (Importación de suministros)
 
-Los datos de otras entidades se pueden agregar [manualmente](#manually-configure-and-manage-master-data-for-your-organization) más adelante o mediante los archivos de datos de ejemplo explicados anteriormente.
+##### <a name="how-to-load-data-from-data-files"></a>¿Cómo se cargan los datos de los archivos de datos?
+
+Para importar datos de uno de los archivos de datos en una entidad:
+
+1.  En el panel de navegación izquierdo de la aplicación de administración, seleccione una entidad para cargar datos en ella. Por ejemplo, seleccione **Administration** (Administración) en el selector de área y, a continuación, **Acuities** (Triaje).
+
+2.  Seleccione **Importar desde Excel** y seleccione el archivo **00 - Acuities Import.xlsx** (Importación de triaje) de la carpeta **Archivos de datos**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Importar desde Excel](media/conf-import-from-excel.png "Importar desde Excel")
+
+3.  Continúe con los pasos del asistente de importación para importar los datos.
+
+4.  Una vez importados los datos, verá el registro importado en la entidad:
+
+    > [!div class="mx-imgBorder"] 
+    > ![Registro de entidad](media/conf-entity-record.png "Registro en la entidad después de la importación")
+
+Repita los pasos anteriores con otras entidades de datos de configuración.
+
+Como alternativa, si desea escribir los datos maestros manualmente, consulte [Configuración y administración manual de los datos maestros de la organización](#manually-configure-and-manage-master-data-for-your-organization).
+
+#### <a name="step-42-load-master-data"></a>Paso 4.2: Cargar datos maestros
+
+Tal y como se ha explicado anteriormente:
+- Puede usar los archivos de datos de ejemplo para las entidades de datos maestros en la carpeta **Archivos de datos/Datos de ejemplo** para importar los datos de ejemplo en las entidades necesarias. 
+
+- Puede usar los archivos de datos "vacíos" para las entidades de datos maestros en la carpeta **Archivos de datos/Archivo de plantilla de datos para datos maestros**, que puede emplear para rellenar los datos de la organización y, a continuación, importar los datos en las entidades necesarias.
+
+También puede agregar los datos maestros de forma manual más adelante. Más información: [Configuración y administración manual de los datos maestros de la organización](#manually-configure-and-manage-master-data-for-your-organization)
 
 ### <a name="step-5-update-the-mobile-app-branding"></a>Paso 5: Actualizar la personalización de marca de la aplicación móvil
 
-Puede cambiar el icono o la combinación de colores de las aplicaciones móviles para que coincidan con la personalización de marca de la organización.
+Puede cambiar el icono, la combinación de colores o el nombre para mostrar de las aplicaciones móviles para que coincidan con la personalización de marca de la organización.
 
-Para ello, use las entidades **App** (Aplicación) y **App Config** (Configuración de aplicaciones) del área de **administración** importando los datos de la aplicación y de configuración de la aplicación desde el archivo de Excel disponible en la carpeta **Archivos de datos** del paquete de implementación, tal como se explicó en el paso anterior.
+Para ello, use las entidades **App** (Aplicación) y **App Config** (Configuración de aplicaciones) del área de **administración** importando los datos de la aplicación y de configuración de la aplicación desde los archivos de Excel disponibles en la carpeta **Archivos de datos** y desde los archivos de iconos en la carpeta **Iconos de aplicación** del paquete de implementación, tal como se explica en el [Paso 2: Descargar el paquete de implementación](#step-2-download-the-deployment-package).
 
 > [!div class="mx-imgBorder"] 
 > ![Entidades Apps (Aplicaciones) y App Config (Configuración de aplicaciones)](media/conf-app-app-config-entities.png "Entidades Apps (Aplicaciones) y App Config (Configuración de aplicaciones)")
 
-1.  Asegúrese de que ha importado los datos de configuración para las entidades **Apps** (Aplicaciones) y **App Config** (Configuración de aplicaciones) desde los archivos **App Import.xlsx** (Importación de la aplicación) y **App Config Import.xlsx** (Importación de la configuración de aplicación) respectivamente en el paquete de implementación extraído.
+1.  Asegúrese de que ha importado los datos de configuración para las entidades **Apps** (Aplicaciones) y **App Config** (Configuración de aplicaciones) mediante los archivos **App Import.xlsx** (Importación de la aplicación) y **App Config Import.xlsx** (Importación de la configuración de aplicación), respectivamente.
 
 1.  Ahora, se copiarán los identificadores de aplicación de las aplicaciones de lienzo para que podamos rellenarlos en los registros de **aplicaciones** importados. Inicie sesión en [Power Apps](https://make.powerapps.com).
 
@@ -224,12 +234,12 @@ Para ello, use las entidades **App** (Aplicación) y **App Config** (Configuraci
     > [!div class="mx-imgBorder"] 
     > ![Detalles de aplicaciones](media/conf-environments-apps-details.png "Detalles de la aplicación")
 
-1.  El identificador de la aplicación aparece en la parte inferior del panel  **Detalles**  para la aplicación. Copie el identificador de la aplicación junto con su nombre en el archivo del Bloc de notas.
+1.  El identificador de la aplicación aparece en la parte inferior del panel  **Detalles**  para la aplicación. Copie el identificador de la aplicación junto con su nombre en un archivo del Bloc de notas.
 
     > [!div class="mx-imgBorder"] 
     > ![Identificador de la aplicación de detalles](media/conf-details-app-id.png "Identificador de la aplicación de detalles")
 
-1.  Repita los pasos 3 y 4 para cada una de las aplicaciones de lienzo.
+1.  Repita los pasos 4 y 5 para cada una de las aplicaciones de lienzo.
 
 1.  Abra la aplicación de administración y, en el panel de navegación izquierdo, seleccione **Administración** en el selector de área y, a continuación, **Aplicaciones**. Se mostrarán todos los registros de la aplicación de lienzo importados del archivo **App Import.xlsx** (Importación de aplicaciones).
 
@@ -241,19 +251,29 @@ Para ello, use las entidades **App** (Aplicación) y **App Config** (Configuraci
     > [!div class="mx-imgBorder"] 
     > ![Campo del identificador de aplicación de Power Apps](media/conf-powerapp-id-field.png "Campo del identificador de Power Apps")
 
-1.  Copie el identificador de la aplicación del Bloc de notas (donde lo copió anteriormente en los pasos 2-6) en el campo del **identificador de Power Apps**. También puede actualizar el icono de la aplicación si hace doble clic en el icono en él y especifica otra imagen. Guarde el registro.
+1.  En la página de detalles de la aplicación:
 
-1.  Repita el paso 9 para cada registro de la aplicación de lienzo en **Aplicaciones** para agregar el valor del **identificador de Power Apps**.
+    1. Copie el identificador de la aplicación del Bloc de notas (donde lo copió anteriormente) en el campo del **identificador de Power Apps**.
+
+    2. Haga doble clic en el icono de la aplicación y seleccione un archivo de icono para la aplicación en la carpeta **Iconos de aplicación**. Los archivos de imagen tienen nombres intuitivos para que pueda seleccionar fácilmente el icono correcto. Por ejemplo, seleccione el archivo "Emergency Response App.png" para la **aplicación de respuesta ante emergencia**. También puede seleccionar una imagen personalizada de acuerdo con la personalización de marca de su organización.
+
+    3. Si es necesario, actualice los campos **Descripción** o **Nombre para mostrar** de la aplicación.
+
+    4. Si es necesario, actualice el valor del campo **Hide App from Menu** (Ocultar la aplicación en el menú) para determinar si la aplicación se debe mostrar en la lista de aplicaciones. Como la **aplicación de respuesta ante emergencias** es una aplicación contenedora, el valor se establece en **No** de forma predeterminada.
+
+    5. Si es necesario, actualice el valor del campo **App Display Rank** (Clasificación de la aplicación) para establecer la posición en la que aparece la aplicación en la lista de aplicaciones.
+
+    6. Seleccione **Guardar**.
+
+1.  Repita los pasos 8 y 9 para cada uno de los registros de las aplicaciones de lienzo en **Aplicaciones**.
 
 1.  En el panel izquierdo, seleccione **App Config** (Configuración de aplicaciones).
 
 1.  Seleccione el registro de la **aplicación de respuesta ante emergencias** para abrirlo para su edición.
 
-    1.  Haga doble clic en el icono para especificar una nueva imagen como icono de la aplicación.
+    1.  Si es necesario, actualice los colores de la aplicación.
 
-    2.  Actualice los nombres de aplicación y sus colores.
-
-    3.  Seleccione **Yes** (Sí) o **No** en el campo **Device Sharing Enabled** (Uso compartido de dispositivos habilitado) para especificar si una la opción de **cerrar sesión** estará disponible en las aplicaciones móviles. Si selecciona **Yes** (Sí), habrá una opción para **cerrar sesión** disponible.
+    2.  Seleccione **Yes** (Sí) o **No** en el campo **Device Sharing Enabled** (Uso compartido de dispositivos habilitado) para especificar si una la opción de **cerrar sesión** estará disponible en las aplicaciones móviles. Si selecciona **Yes** (Sí), habrá una opción para **cerrar sesión** disponible.
 
     > [!div class="mx-imgBorder"] 
     > ![Campo de uso compartido de dispositivos habilitado](media/conf-device-sharing-enabled-field.png "Campo de uso compartido de dispositivos habilitado")
@@ -289,7 +309,7 @@ A continuación, haga lo siguiente:
     Set-AdminPowerAppApisToBypassConsent -AppName APPGUIDHERE
     ```
 
-2.  Reemplace el valor `APPGUIDHERE` de cada línea por el identificador de aplicación real de una aplicación de lienzo.
+2.  Reemplace el valor `APPGUIDHERE` por el identificador de aplicación real de una aplicación de lienzo.
 
 3.  Guarde el archivo con la extensión .ps.
 
@@ -299,7 +319,7 @@ A continuación, haga lo siguiente:
 
 ### <a name="step-7-add-azure-application-insights-key-to-mobile-apps-for-telemetry"></a>Paso 7: Agregar la clave de Application Insights a aplicaciones móviles para telemetría
 
-Puede usar Azure Application Insights para recopilar información detallada de la telemetría de las aplicaciones móviles (aplicaciones de lienzo) con el fin de obtener información sobre el uso de la aplicación. Para obtener información detallada al respecto, consulte [Registro de telemetría para las aplicaciones con Azure Application Insights](https://powerapps.microsoft.com/blog/log-telemetry-for-your-apps-using-azure-application-insights/).
+Puede usar Azure Application Insights para recopilar información detallada de la telemetría de las aplicaciones móviles (aplicaciones de lienzo) con el fin de obtener información sobre el uso de la aplicación. Para obtener información detallada al respecto, consulte [Analizar la telemetría de las aplicaciones mediante Application Insights](https://docs.microsoft.com/powerapps/maker/canvas-apps/application-insights).
 
 ### <a name="step-8-share-canvas-apps-with-users-in-your-organization"></a>Paso 8: Compartir aplicaciones de lienzo con los usuarios de la organización
 
@@ -314,7 +334,7 @@ Para que los usuarios de primera línea puedan usar y consumir datos mediante la
     > [!div class="mx-imgBorder"] 
     > ![Compartir aplicaciones de lienzo](media/conf-share-canvas-apps.png "Compartir aplicaciones de lienzo")
 
-4.  Especifique el grupo o los usuarios de Azure AD con los que desea compartir esta aplicación. A medida que la aplicación se conecte a los datos de Common Data Service, también deberá proporcionar permisos a las entidades. El panel para compartir le pide que administre la seguridad de las entidades. Asigne los roles de seguridad **COVID 19 End User** (Usuario final de COVID 19) y **Usuario de Common Data Service** a las entidades utilizadas por esta aplicación y seleccione **Compartir**.
+4.  Especifique el grupo o los usuarios de Azure AD con los que desea compartir esta aplicación. A medida que la aplicación se conecte a los datos de Common Data Service, también deberá proporcionar permisos a las entidades. El panel para compartir le pide que administre la seguridad de las entidades. Asigne los roles de seguridad **Emergency Response User** (Usuario de respuesta ante emergencias) y **Usuario de Common Data Service** a las entidades que usa esta aplicación y seleccione **Compartir**.
 
     > [!div class="mx-imgBorder"] 
     > ![Compartir la aplicación con grupo o usuarios de Azure AD](media/conf-share-app-groups-users.png "Compartir la aplicación con grupo o usuarios de Azure AD")
@@ -357,11 +377,12 @@ A continuación, haga lo siguiente:
     Set-AdminPowerAppAsHero -AppName APPGUIDHERE
     ```
 
-2.  Reemplace el valor de `APPGUIDHERE` en cada línea por el identificador de aplicación real de la aplicación que desea establecer como destacada y prominente, respectivamente.
+2.  Reemplace el valor de `APPGUIDHERE` por el identificador de aplicación real de la aplicación que quiere establecer como destacada y prominente, respectivamente.
 
 3.  Guarde el archivo con la extensión .ps.
 
 4.  Ejecute PowerShell como administrador y luego el archivo .ps que acaba de crear.
+ 
 
 ### <a name="step-10-share-model-driven-app-with-admins-in-your-organization"></a>Paso 10: Compartir una aplicación controlada por modelos con administradores de la organización
 

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 482d06a91d3cb3a7c22e41e4e880aa72294d2b3f
-ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
+ms.openlocfilehash: 91f027af2f7d8b10fcfd15380fae46f62bc5603b
+ms.sourcegitcommit: 10861337ce87866b58cc98dda6eab8d985c9220c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78264973"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80615415"
 ---
 #  <a name="use-the-lookup-field-on-a-record"></a>Uso del campo de búsqueda en un registro
 
@@ -96,8 +96,11 @@ La selección de **Cambiar vista** permite determinar:
 
     ![Cambio de vista de tipos de contactos](media/change-view.png "Cambio de vista de tipos de contactos")
 
->[!IMPORTANT] 
->La opción **Cambiar vista** no es visible si el administrador no ha configurado la opción para que aparezca en las vistas.
+### <a name="filter-by-only-my-records-or-filter-by-related-primary-contact"></a>Filtrado por solo mis registros o contacto principal relacionado
+
+Para aplicar filtros adicionales, en el menú **Cambiar vista**, seleccione **Solo mis registros** o **Filtrar por contacto principal relacionado(a)** .
+
+![Adición de más filtros](media/extra_filters.png "Adición de más filtros")
 
 ### <a name="choose-from-multiple-records"></a>Elección entre varios registros
 
