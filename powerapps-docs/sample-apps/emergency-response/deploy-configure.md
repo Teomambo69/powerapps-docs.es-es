@@ -6,18 +6,18 @@ manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 03/30/2020
+ms.date: 04/02/2020
 ms.author: kvivek
 ms.reviewer: kvivek
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: f126a415cfe42e38e2131967a29564fc0255f6bb
-ms.sourcegitcommit: b6beb1b76d9ddb0f9846253f895d581bda9012ba
+ms.openlocfilehash: bd85066993a317af0d9a594fa856ce1d5800b849
+ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80417480"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80624999"
 ---
 # <a name="deploy-and-configure-the-emergency-response-app"></a>Implementación y configuración de la aplicación de respuesta ante emergencias
 
@@ -325,6 +325,9 @@ Puede usar Azure Application Insights para recopilar información detallada de l
 
 Para que los usuarios de primera línea puedan usar y consumir datos mediante las aplicaciones de lienzo en sus dispositivos móviles, las aplicaciones deben compartirse con ellos. Es más fácil usar grupos de Azure AD para compartir fácilmente aplicaciones con grupos de usuarios.
 
+> [!IMPORTANT]
+> Asegúrese de que el usuario o grupo con el que piensa compartir las aplicaciones *ya* tenga acceso a su entorno. Normalmente, ya habrá agregado usuarios o grupos al [configurar el entorno](#step-1-sign-up-for-power-apps-and-create-an-environment). Si no es así, puede seguir los pasos que se indican aquí para agregar usuarios al entorno y proporcionar el acceso adecuado antes de compartir aplicaciones con ellos: [Crear usuarios y asignar roles de seguridad](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles).
+
 1.  Inicie sesión en [Power Apps](https://make.powerapps.com).
 
 2.  En el panel de navegación izquierdo, seleccione **Aplicaciones** para ver una lista de todas las aplicaciones.
@@ -387,6 +390,9 @@ A continuación, haga lo siguiente:
 ### <a name="step-10-share-model-driven-app-with-admins-in-your-organization"></a>Paso 10: Compartir una aplicación controlada por modelos con administradores de la organización
 
 Para que los usuarios administradores usen la aplicación de administración (aplicación controlada por modelos), debe compartirse con ellos. Es más fácil usar grupos de Azure AD para compartir fácilmente aplicaciones con un grupo de usuarios administradores.
+
+> [!IMPORTANT]
+> Asegúrese de que el usuario o grupo con el que va a compartir la aplicación *ya* tenga acceso a su entorno. Normalmente, ya habrá agregado usuarios o grupos al [configurar el entorno](#step-1-sign-up-for-power-apps-and-create-an-environment). Si no es así, puede seguir los pasos que se indican aquí para agregar usuarios al entorno y proporcionar el acceso adecuado antes de compartir la aplicación con ellos: [Crear usuarios y asignar roles de seguridad](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles).
 
 1. Inicie sesión en [Power Apps](https://make.powerapps.com).
 
