@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 75450ef67217bdc7a1b86086fd07f1d3adbd7831
-ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
+ms.openlocfilehash: ca48ccaf4aca72301d3a8b7f2eb79885d7c7cdf5
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79436775"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80871336"
 ---
 # <a name="gallery-control-in-canvas-apps"></a>Control Galería en aplicaciones de lienzo
 
@@ -61,6 +61,8 @@ Si un usuario desplaza el control de la galería de **alto flexible** antes de q
 
 [BorderThickness](properties-color-border.md): el grosor de un borde del control.
 
+**DelayItemLoading** : retrasar la carga de elementos (filas) hasta que la pantalla se carga por primera vez.
+
 [DisplayMode](properties-core.md) : indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**deshabilitado**).
 
 [Fill](properties-color-border.md): el color de fondo de un control.
@@ -68,6 +70,10 @@ Si un usuario desplaza el control de la galería de **alto flexible** antes de q
 [Height](properties-size-location.md): la distancia entre los bordes superior e inferior de un control.
 
 **ItemAccessibleLabel** : etiqueta de cada elemento de la galería para lectores de pantalla. Debe describir qué es cada elemento.
+
+**LoadingSpinner** (**ninguno**, **controles** o **datos**): Si no hay ninguno, no se mostrará el control de número. Cuando controla | Datos, el control de número se mostrará cuando se produzca una fase de representación que tenga como resultado filas vacías visibles.
+
+**LoadingSpinnerColor** : el color de relleno del control de carga.  El valor predeterminado se establece en BorderColor.
 
 **PasoDeNavegación**: indica lo lejos que se desplaza una galería si su propiedad **Mostrar Navegación** está establecida en **true** y el usuario selecciona una flecha de navegación de cualquier extremo de esa galería.
 
@@ -106,7 +112,7 @@ Si un usuario desplaza el control de la galería de **alto flexible** antes de q
   > [!NOTE]
   > El control de **restablecimiento** no restablece de forma recursiva todos los elementos secundarios de la galería.
 
-## <a name="examples"></a>Ejemplos:
+## <a name="examples"></a>Ejemplos
 
 ### <a name="show-and-filter-data"></a>Mostrar y filtrar los datos
 

@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.date: 03/16/2020
+ms.date: 04/07/2020
 ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fd3c468134e979732ead5e0144e60aaf1b3e38df
-ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
+ms.openlocfilehash: 59c0f85dd71c9dc512e348d6d8ee9686d6945fa1
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79436794"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80871129"
 ---
 # <a name="camera-control-in-power-apps"></a>Control Cámara en Power Apps
 
@@ -44,7 +43,15 @@ Las imágenes generadas por el control de cámara no suelen estar en la resoluci
 
 ## <a name="key-properties"></a>Propiedades principales
 
-**Cámara**: en un dispositivo que tenga más de una cámara, el identificador numérico de la cámara que usa la aplicación.
+**AvailableDevices** : tabla de las cámaras disponibles en el dispositivo.
+
+La tabla contiene dos columnas: 
+- Número de *identificación* que se va a usar con la propiedad **Camera** 
+- *Nombre* proporcionado por el dispositivo para identificar la cámara. Algunas plataformas pueden incluir *Front* o *back* para ayudar a encontrar la cámara.
+
+*Nota*: no todos los dispositivos de la tabla pueden usarse en la aplicación.  Algunos pueden ser controladores especializados o aplicaciones destinadas a fines específicos.  
+
+**Cámara** : el identificador numérico de la cámara que se va a usar.  Resulta útil en dispositivos con más de una cámara.  
 
 **EnSecuencia**: indica cómo responde la aplicación cuando la propiedad **Stream** está actualizada.
 
@@ -90,7 +97,7 @@ Las imágenes generadas por el control de cámara no suelen estar en la resoluci
 
 [Y](properties-size-location.md) : la distancia entre el borde superior de un control y el borde superior del contenedor o la pantalla primarios.
 
-## <a name="examples"></a>Ejemplos:
+## <a name="examples"></a>Ejemplos
 
 En estos ejemplos, necesitará un dispositivo con una cámara. Para probar la aplicación, use una cámara web accesible desde el explorador. O bien, guarde la aplicación y cargarla en un dispositivo iOS o Android con una cámara.
 
@@ -100,11 +107,11 @@ En estos ejemplos, necesitará un dispositivo con una cámara. Para probar la ap
 
 1. Autorice a la aplicación a usar la cámara del dispositivo si se le solicita.
 
-1. Agregue un control **imagen** .
+1. Agregue un control [**imagen**](../controls/control-image.md) .
 
-1. Establezca la propiedad **Image** del control **imagen** en esta fórmula:
+1. Establezca la propiedad **Image** del control **imagen** en la fórmula siguiente:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Camera1.Photo
     ```
 
@@ -113,14 +120,14 @@ En estos ejemplos, necesitará un dispositivo con una cámara. Para probar la ap
 
 1. Presione F5 para obtener una vista previa de la aplicación.
 
-1. Tome una imagen seleccionando o pulsando el control cámara.  Debería ver el resultado en el control de imagen.
+1. Tome una imagen seleccionando o pulsando el control cámara. Debería ver el resultado en el control de imagen.
 
 ### <a name="add-pictures-to-an-image-gallery-control"></a>Agregar imágenes a un control Galería de imágenes
 
 1. Agregue un control **cámara** , asígnele el nombre de **la cámara y**establezca su propiedad [alseleccionar](properties-core.md) en esta fórmula:
 
-    ```powerapps-comma
-    Collect( MyPix; MyCamera.Photo )
+    ```powerapps-dot
+    Collect( MyPix, MyCamera.Photo )
     ```
 
     Para obtener más información:
@@ -134,13 +141,13 @@ En estos ejemplos, necesitará un dispositivo con una cámara. Para probar la ap
 
 1. Establezca la propiedad [elementos](properties-core.md) del control **Galería de imágenes** en esta fórmula:
  
-    ```powerapps-comma
+    ```powerapps-dot
     MyPix
     ```
 
 1. Establezca la propiedad [imagen](properties-visual.md) del control **imagen** de la galería en esta fórmula:
 
-    ```powerapps-comma   
+    ```powerapps-dot   
     ThisItem.Url
     ```
 
@@ -150,13 +157,41 @@ En estos ejemplos, necesitará un dispositivo con una cámara. Para probar la ap
 
 1. opta Establezca la propiedad **alseleccionar** del control **imagen** en el control **Galería de imágenes** en la fórmula:
 
-    ```powerapps-comma
-    Remove( MyPix; ThisItem )
+    ```powerapps-dot
+    Remove( MyPix, ThisItem )
     ```
 
 1. Presione F5 y, a continuación, seleccione una imagen para quitarla.
 
 Utilice la función [savedata](../functions/function-savedata-loaddata.md) para guardar las imágenes localmente o la función [patch](../functions/function-patch.md) para actualizar un origen de datos.
+
+### <a name="change-the-active-camera-from-a-drop-down"></a>Cambiar la cámara activa de un menú desplegable
+
+1. [Agregue](../add-configure-controls.md) un control de **cámara** .
+
+1. Autorice a la aplicación a usar la cámara del dispositivo si se le solicita.
+    
+1. [Agregue](../add-configure-controls.md) un control [lista](control-drop-down.md) desplegable.
+
+1. Establezca el prroperty de **elementos** de la lista desplegable en:
+
+    ```powerapps-dot
+    Camera1.AvailableDevices
+    ```
+
+    > [!NOTE]
+      > Reemplace el nombre del control de cámara *Camera1* según corresponda.
+    
+1. Establezca la propiedad **Camera** de la cámara en: 
+
+    ```powerapps-dot
+    Dropdown1.Selected.Id
+    ```
+
+    > [!NOTE]
+      > Reemplace el nombre del control DropDown *Dropdown1* según corresponda.
+
+1. Presione F5 y, a continuación, seleccione un elemento de la lista desplegable para cambiar la cámara.
 
 ## <a name="accessibility-guidelines"></a>Directrices de accesibilidad
 
