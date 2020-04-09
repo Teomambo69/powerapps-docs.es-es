@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/16/2020
+ms.date: 04/08/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fc28b370b36be8d309c292e110d0b927d08c4a11
-ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
+ms.openlocfilehash: 2fc1a91b4468926ee98351f79d7ce2e84133aa46
+ms.sourcegitcommit: 7d3caf698d367a56af9e16c43af8005adb9f87cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79436722"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "80987235"
 ---
 # <a name="datevalue-timevalue-and-datetimevalue-functions-in-power-apps"></a>Funciones DateValue, TimeValue y Fechahoranumero en Power apps
 
@@ -40,8 +39,11 @@ La función **dateValue** omite cualquier información de hora en la cadena de f
 
 Las fechas deben estar en uno de estos formatos:
 
-- MM/DD/AAAA
-- DD/MM/AAAA
+- MM/DD/AAAA o MM-DD-AAAA
+- DD/MM/AAAA o DD-MM-AAAA
+- AAAA/MM/DD o AAAA-MM-DD
+- MM/DD/AA o MM-DD-AA
+- DD/MM/AA o DD-MM-AA
 - DD Mes AAAA
 - Mes DD, AAAA
 
@@ -55,14 +57,14 @@ Para obtener más información, lea:
 
 ## <a name="syntax"></a>Sintaxis
 
-**DateValue**( *String* [; *Language* ])<br>
-**DateTimeValue**( *String* [; *Language* ])<br>
-**TimeValue**( *String* [; *Language* ])
+**DateValue**( *String* [, *Language* ])<br>
+**DateTimeValue**( *String* [, *Language* ])<br>
+**TimeValue**( *String* [, *Language* ])
 
 * *String*: requerido. Una cadena de texto que contiene un valor de fecha, de hora, o una combinación de ambas.
 * *Idioma*: opcional. Una cadena de idioma, como la devolverían los dos primeros caracteres de la función [Language](function-language.md) .  Si no se proporciona, se usa el idioma de la configuración del usuario actual.  
 
-## <a name="examples"></a>Ejemplos:
+## <a name="examples"></a>Ejemplos
 
 ### <a name="datevalue"></a>DateValue
 
@@ -70,19 +72,19 @@ Si escribe **10/11/2014** en un control de entrada de texto denominado **startDa
 
 - Convierte una fecha de una cadena en la configuración regional del usuario y muestra el resultado como una fecha larga.
 
-    ```powerapps-comma
-    Text( DateValue( Startdate.Text ); DateTimeFormat.LongDate )
+    ```powerapps-dot
+    Text( DateValue( Startdate.Text ), DateTimeFormat.LongDate )
     ```
 
     Dispositivo establecido en **en** configuración regional muestra la etiqueta como **sábado, 11 de octubre de 2014**.
   
     > [!NOTE]
-    > Puede usar varias opciones con **DateTimeFormat** en comparación con **LongDateTime**. Para mostrar una lista de opciones, escriba el parámetro seguido de un signo de exclamación ( **!** ) en la barra de fórmulas.
+    > Puede utilizar varias opciones con la enumeración **DateTimeFormat** . Para mostrar una lista de opciones, escriba el parámetro seguido de un punto o un punto ( **.** ) en la barra de fórmulas o en la referencia de la función de comprobación de [ **texto** ](function-text.md).
 
 - Convertir la fecha de una cadena en la configuración regional en francés y mostrar el resultado como una fecha larga. En este ejemplo, los meses y el día del mes se interpretan de forma diferente del inglés.
 
-    ```powerapps-comma
-    Text( DateValue( Startdate.Text; "fr" ); DateTimeFormat.LongDate )
+    ```powerapps-dot
+    Text( DateValue( Startdate.Text, "fr" ), DateTimeFormat.LongDate )
     ```
   
     Dispositivo establecido en **en** la configuración regional muestra la etiqueta como **lunes, 10 de noviembre de 2014**.
@@ -91,8 +93,8 @@ Si escribió el **20 de octubre de 2014** en su lugar:
 
 - Convertir una fecha de una cadena en la configuración regional del usuario y calcular la diferencia entre dos días, en días
 
-    ```powerapps-comma
-    DateDiff( DateValue( Startdate.Text ); Today() )
+    ```powerapps-dot
+    DateDiff( DateValue( Startdate.Text ), Today() )
     ```
   
     Dispositivo establecido en **en** la configuración regional muestra la etiqueta **9**, que indica el número de días entre el 11 de octubre y el 20 de octubre. La función [DateDiff](function-dateadd-datediff.md) también puede mostrar la diferencia en meses, trimestres o años.
@@ -103,27 +105,27 @@ Si escribió **10/11/2014 1:50:24.765 PM** en un control de entrada de texto den
 
 - Convierte una cadena de fecha y hora en la configuración regional actual.
  
-    ```powerapps-comma
-    Text( DateTimeValue( Start.Text ); DateTimeFormat.LongDateTime )
+    ```powerapps-dot
+    Text( DateTimeValue( Start.Text ), DateTimeFormat.LongDateTime )
     ```    
     
     Dispositivo establecido en **en** configuración regional muestra la etiqueta como **sábado, 11 de octubre de 2014 1:50:24 PM**.
   
   > [!NOTE]
-  > Puede usar varias opciones con **DateTimeFormat** en comparación con **LongDateTime**. Para mostrar una lista de opciones, escriba el parámetro seguido de un signo de exclamación ( **!** ) en la barra de fórmulas.
+  > Puede utilizar varias opciones con la enumeración **DateTimeFormat** . Para mostrar una lista de opciones, escriba el parámetro seguido de un punto o un punto ( **.** ) en la barra de fórmulas o en la referencia de la función de comprobación de [ **texto** ](function-text.md).
 
 - Convierte una cadena de fecha y hora en la configuración regional en francés. El mes y el día del mes se interpretan de forma diferente.
 
-    ```powerapps-comma
-    Text( DateTimeValue( Start.Text; "fr"); DateTimeFormat.LongDateTime )
+    ```powerapps-dot
+    Text( DateTimeValue( Start.Text, "fr"), DateTimeFormat.LongDateTime )
     ```
   
     Dispositivo establecido en **en** la configuración regional muestra la etiqueta como **lunes, 10 de noviembre de 2014 1:50:24 PM**.
 
 - Convierte una cadena de fecha y hora en la configuración regional del usuario y muestra el resultado con una fracción de segundo.
 
-    ```powerapps-comma
-    Text( DateTimeValue( Start.Text ); "dddd, mmmm dd, yyyy hh:mm:ss.fff AM/PM" )
+    ```powerapps-dot
+    Text( DateTimeValue( Start.Text ), "dddd, mmmm dd, yyyy hh:mm:ss.fff AM/PM" )
     ```
   
     Dispositivo establecido en **en** configuración regional muestra la etiqueta como **sábado, 11 de octubre de 2014 01:50:24.765 PM**.
@@ -134,9 +136,9 @@ Si escribió **10/11/2014 1:50:24.765 PM** en un control de entrada de texto den
 
 Asigne el nombre **FinishedAt**a un control de entrada de texto y establezca la propiedad [texto](../controls/properties-core.md) de una etiqueta en esta fórmula:
 
-```powerapps-comma
-If( TimeValue( FinishedAt.Text ) < TimeValue( "5:00:00.000 PM" ); 
-    "You made it!"; 
+```powerapps-dot
+If( TimeValue( FinishedAt.Text ) < TimeValue( "5:00:00.000 PM" ), 
+    "You made it!", 
     "Too late!"
 )
 ```
