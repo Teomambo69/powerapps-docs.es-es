@@ -1,23 +1,21 @@
 ---
 title: 'Versión preliminar: Envío de correo electrónico mediante la experiencia de correo electrónico mejorada en aplicaciones basadas en modelos | Microsoft Docs'
 description: Use la experiencia de correo electrónico mejorada para redactar un correo electrónico sin abandonar el contexto en el que está trabajando.
-ms.date: 02/03/2020
+ms.date: 04/09/2020
 ms.service:
 - dynamics-365-sales
 ms.topic: article
 author: shubhadaj
 ms.author: shujoshi
 manager: annbe
-ms.openlocfilehash: 546f94f67608ab735d2c2eb6bb39f105335549f7
-ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
+ms.openlocfilehash: bc4b7023e56ae75b34f797089a812ab4ea1f8d84
+ms.sourcegitcommit: 2484ebce6563cfd1c849e1e2f66dd2d29fdb7b64
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77282587"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81007948"
 ---
-# <a name="preview-send-email-using-the-enhanced-email-experience"></a>Versión preliminar: Envío de correo electrónico con la experiencia de correo electrónico mejorada
-
-El envío de correo electrónico mediante la experiencia de correo electrónico mejorada es una característica de acceso anticipado. Puede optar por la habilitación anticipada de estas características en el entorno. Esto le permite probar estas características y después adoptarlas en los entornos. Para obtener más información sobre cómo habilitar estas características, vea [Optar por usar actualizaciones de oleada 1 de la versión 2020](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates).
+# <a name="send-email-using-the-enhanced-email-experience"></a>Envío de correo electrónico con la experiencia de correo electrónico mejorada
 
 La experiencia de correo electrónico mejorada en aplicaciones basadas en modelos permite redactar un correo electrónico sin abandonar el registro en el que está trabajando. Con la experiencia de correo electrónico mejorada se puede:
 

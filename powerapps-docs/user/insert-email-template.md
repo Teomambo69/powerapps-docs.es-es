@@ -1,23 +1,21 @@
 ---
 title: Inserción de una plantilla de correo electrónico al redactar un correo electrónico en aplicaciones basadas en modelos | Microsoft Docs
 description: Inserte un mensaje de correo electrónico con formato previo al redactar un correo electrónico.
-ms.date: 02/03/2020
+ms.date: 04/09/2020
 ms.service:
 - dynamics-365-sales
 ms.topic: article
 author: sbmjais
 ms.author: shjais
 manager: shujoshi
-ms.openlocfilehash: abbef00f3b93809dadf617c4180b52a1372e625a
-ms.sourcegitcommit: 68a31e3fa4d1635ccf4cd8bd9da5fba1bfecefa4
+ms.openlocfilehash: 8f5b607375cccd03b3bcea2bd5d50664e7033ae4
+ms.sourcegitcommit: 2484ebce6563cfd1c849e1e2f66dd2d29fdb7b64
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77051853"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81007994"
 ---
-# <a name="preview-insert-an-email-template"></a>Versión preliminar: Inserción de una plantilla de correo electrónico
-
-La inserción de una plantilla de correo electrónico es una característica de acceso anticipado. Puede optar por la habilitación anticipada de estas características en el entorno. Esto le permite probar estas características y después adoptarlas en los entornos. Para obtener más información sobre cómo habilitar estas características, vea [Participación en actualizaciones de acceso anticipado](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates).
+# <a name="insert-an-email-template"></a>Inserción de una plantilla de correo electrónico
 
 Puede usar una plantilla de correo electrónico (un mensaje de correo electrónico con formato previo) para crear y enviar mensajes de correo electrónico rápidamente. Para insertar la plantilla mientras redacta un correo electrónico, seleccione **Insertar plantilla** en la barra de comandos. La lista de plantillas disponibles se muestra en la ventana **Plantillas de correo electrónico**. En la sección **Usadas recientemente** se muestran las cuatro plantillas usadas más recientemente por el usuario. En la sección **Todas las plantillas** se muestra una lista de todas las plantillas de correo electrónico de serie (globales y específicas de entidad) en orden alfabético. Las plantillas globales se muestran como el tipo Usuario. Si ha creado una plantilla de correo electrónico personalizada, también está disponible aquí. Para obtener información sobre cómo crear una plantilla de correo electrónico personalizada, vea [Crear plantillas de correo electrónico](https://docs.microsoft.com/power-platform/admin/create-templates-email).
 

@@ -1,23 +1,21 @@
 ---
 title: Visualización y creación de correo electrónico en aplicaciones basadas en modelos | Microsoft Docs
 description: Vea y cree correo electrónico mientras usa una aplicación basada en modelo.
-ms.date: 02/03/2020
+ms.date: 04/09/2020
 ms.service:
 - dynamics-365
 ms.topic: article
 author: lalexms
 ms.author: lalexms
 manager: shujoshi
-ms.openlocfilehash: 7d4930b03f175133a769226a407436d37f698633
-ms.sourcegitcommit: 3066c2800a939fbcaaac4262c802843e2d80b88c
+ms.openlocfilehash: 1ec0a3f6903bb5bcccf429e6f11941206a5e4f72
+ms.sourcegitcommit: 2484ebce6563cfd1c849e1e2f66dd2d29fdb7b64
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79431748"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81008017"
 ---
-# <a name="preview-view-and-create-email-through-the-activities-grid"></a>Versión preliminar: Vista y creación de correos electrónicos mediante la cuadrícula Actividades
-
-La visualización y creación de correo electrónico mediante la cuadrícula Actividades es una característica de acceso anticipado. Puede optar por la habilitación anticipada de estas características en el entorno. Esto le permite probar estas características y después adoptarlas en los entornos. Para obtener más información sobre cómo habilitar estas características, vea [Participación en actualizaciones de acceso anticipado](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates).
+# <a name="view-and-create-email-through-the-activities-grid"></a>Vista y creación de correos electrónicos mediante la cuadrícula Actividades
 
 Las aplicaciones basadas en modelos de Dynamics 365 permiten interactuar con los clientes a través del correo electrónico. La funcionalidad de correo electrónico permite:
 
