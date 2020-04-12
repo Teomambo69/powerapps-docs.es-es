@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 09/13/2017
+ms.date: 04/10/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 68fad4cb2c73bcaeb448212012133c171d682cb4
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 9193b3d4ba16b5dca10a8dab471eb731f07d56bf
+ms.sourcegitcommit: af653cd30f5879fea97a594d458d355fe18f4834
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74722997"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223389"
 ---
 # <a name="combo-box-control-in-power-apps"></a>Control de cuadro combinado en Power apps
 Un control que permite a los usuarios seleccionar entre las opciones proporcionadas.  Admite tanto la búsqueda como la selección múltiple.
@@ -29,6 +29,9 @@ Con un control de **cuadro combinado** puede buscar los elementos que va a selec
 El modo de selección individual o múltiple se configura mediante la propiedad SelectMultiple.
 
 Cuando se buscan elementos que se van a seleccionar, en todos los elementos puede elegir mostrar un valor de datos único, dos valores o una imagen y dos valores (Persona) mediante la modificación de la configuración de diseño en el panel Data (Datos).
+
+> [!NOTE]
+> Si desea buscar elementos con *números*, convierta los números en texto con la función [Text ()](https://docs.microsoft.com/powerapps/maker/canvas-apps/functions/function-text) . Por ejemplo, *Text (12345)* .
 
 ## <a name="people-picker"></a>Selector de personas
 Para usar **cuadro combinado** como selector de personas, elija la plantilla **Persona** desde la configuración de diseño del panel Data (Datos) y configure las propiedades de datos relacionadas que se mostrará para la persona que aparece a continuación.

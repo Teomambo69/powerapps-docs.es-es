@@ -7,24 +7,23 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/25/2016
+ms.date: 04/10/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3275c93aea5492384727701d1074982a345fae67
-ms.sourcegitcommit: fa88889cd109651d403ab03287b7f0521bb90e02
+ms.openlocfilehash: 4d241eb8ce8ec9f6d0fa17ac802aeddbd142de25
+ms.sourcegitcommit: af653cd30f5879fea97a594d458d355fe18f4834
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "75324951"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223366"
 ---
 # <a name="date-picker-control-in-power-apps"></a>Control selector de fecha en Power apps
 Un control en el que el usuario puede hacer clic o pulsar para especificar una fecha.
 
-## <a name="description"></a>Description
+## <a name="description"></a>Descripción
 Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de texto](control-text-input.md)** , ayuda a garantizar que el usuario especifica una fecha en el formato correcto.
 
 ## <a name="key-properties"></a>Propiedades principales
@@ -86,6 +85,10 @@ Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de 
 
 **[OnSelect](properties-core.md)** : indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
 
+**[Onchange](properties-core.md)** : cómo responde la aplicación cuando el usuario cambia el valor de un control. 
+
+Diferencia entre **onchange** y **alseleccionar**: alseleccionar y cambiar desencadenador en la misma acción del usuario si el *clic* del usuario provoca el cambio. En este caso, los desencadenadores alseleccionar **antes** de onChange.
+
 **[RellenoInferior](properties-size-location.md)** : distancia entre el texto de un control y el borde inferior de ese control.
 
 **[RellenoIzquierdo](properties-size-location.md)** : distancia entre el texto de un control y el borde izquierdo de ese control.
@@ -117,8 +120,8 @@ Si agrega un control **Selector de fecha** en lugar de un control **[Entrada de 
 1. Agregue un control **Selector de fecha** y denomínelo **Deadline**.
 
     ¿No sabe cómo [agregar, nombrar y configurar un control](../add-configure-controls.md)?
-2. Agregue un control **[Etiqueta](control-text-box.md)** y establezca su propiedad **[Texto](properties-core.md)** en esta fórmula:
-   <br>**DateDiff(Today(); Deadline.SelectedDate) & " days to go!"**
+2. Agregue un control **[Label](control-text-box.md)** y establezca su propiedad **[Text](properties-core.md)** en esta fórmula:
+   <br>**DateDiff(Today(), Deadline.SelectedDate) & " days to go!"**
 
     ¿Desea más información sobre la función **[DateDiff](../functions/function-dateadd-datediff.md)** u [otras funciones](../formula-reference.md)?
 3. Presione F5, elija una fecha en **Deadline** (Fecha límite) y, a continuación, pulse o haga clic en **Aceptar**.

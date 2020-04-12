@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/25/2016
+ms.date: 04/10/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: df568e6a61ca43f6c98ee80c33ed9efe4148de9e
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: a8136fc1ce04ed696aeb68af7139d1b538dd879e
+ms.sourcegitcommit: af653cd30f5879fea97a594d458d355fe18f4834
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729072"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223343"
 ---
 # <a name="pdf-viewer-control-experimental-in-power-apps"></a>Control de PDF Viewer (experimental) en Power apps
 Un control experimental que muestra el contenido de un archivo PDF.
@@ -26,7 +26,7 @@ Un control experimental que muestra el contenido de un archivo PDF.
 ## <a name="description"></a>Descripción
 Muestre texto, gráficos y otro contenido en un archivo PDF mediante la incorporación de este tipo de control y estableciendo su propiedad **Documento** a la dirección URL, entre comillas dobles, del archivo que desea mostrar.
 
-## <a name="limitations"></a>Límite
+## <a name="limitations"></a>Limitaciones
 1. La arquitectura de seguridad de Power apps requiere que el visor de PDF admita solo vínculos HTTPS, no HTTP.  
 
 2. La propiedad **Document** debe vincularse directamente al archivo PDF. No se admiten las redirecciones del servidor ni las vistas HTML del documento.
@@ -36,8 +36,6 @@ Muestre texto, gráficos y otro contenido en un archivo PDF mediante la incorpor
 4. Es posible que no pueda ver un documento PDF en la aplicación si el documento reside en un servidor que tiene una configuración de uso compartido de recursos entre orígenes (CORS) restrictiva. Para resolver este problema, el servidor que hospeda documentos PDF debe permitir solicitudes entre orígenes de powerapps.com.
 
 Los usuarios de la aplicación pueden solucionar estas limitaciones abriendo documentos PDF en un explorador externo, como se le pregunta si el control no puede abrir un documento. Esta opción también está disponible en el menú de control para todos los documentos externos.
-
-Los responsables de aplicaciones pueden solucionar estas limitaciones incluyendo documentos PDF como recursos multimedia en la aplicación. De este modo, el control de PDF Viewer siempre puede mostrar el documento.
 
 ## <a name="key-properties"></a>Propiedades principales
 **Documento**: la dirección URL entre comillas dobles, de un archivo PDF.
