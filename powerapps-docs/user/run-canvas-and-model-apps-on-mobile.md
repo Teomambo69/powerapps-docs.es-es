@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5523ef67ed6912f7eae36228884b0c9a300d0785
-ms.sourcegitcommit: 39f6feb699512e9c2bf71ef1a1238b32b639da02
+ms.openlocfilehash: fbd6233eb775fb7f1c48ec6cc05006ac0237f72d
+ms.sourcegitcommit: abdc8c609a7a221ce4ca6b051a84b7083bdbe1ab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80530018"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80645574"
 ---
 # <a name="run-canvas-apps-and-model-driven-apps-on-a-mobile-device"></a>Ejecución de aplicaciones de lienzo y basadas en modelos en un dispositivo móvil
 
@@ -155,8 +155,7 @@ Seleccione el icono del mapa del sitio ![Icono del mapa del sitio](media/pa_mobi
 
 Todavía estamos trabajando en algunos problemas conocidos y publicaremos correcciones con el tiempo. Asegúrese de actualizar de forma manual a la versión preliminar más reciente en cuanto esté disponible. 
 
-Entre los problemas conocidos se incluyen:
+Problemas conocidos
 
-- No se muestran aplicaciones en la lista de aplicaciones al abrir la aplicación de Power Apps en el modo sin conexión.
 - A veces desaparecen los iconos de las aplicaciones basadas en modelos.
 

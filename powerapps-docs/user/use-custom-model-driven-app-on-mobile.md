@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 03/12/2020
+ms.date: 04/07/2020
 ms.author: mkaur
 ms.custom: ''
 ms.reviewer: ''
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 84fe0685f9a128fb0cbbeadfbea01aceaa86cb19
-ms.sourcegitcommit: 39f6feb699512e9c2bf71ef1a1238b32b639da02
+ms.openlocfilehash: 1668b6a10ba651fd7f4986fcd1f83357d83b79bc
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80530432"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80871467"
 ---
 # <a name="user-guide-for-model-driven-apps-running-on-the-power-apps-mobile-app"></a>Guía del usuario para usar aplicaciones basadas en modelos que se ejecutan en la aplicación móvil de Power Apps
 
@@ -36,27 +36,28 @@ Use la aplicación móvil de Power Apps para ejecutar aplicaciones basadas en mo
 
 Es fácil familiarizarse con la aplicación móvil de Power Apps. En la siguiente ilustración se muestran los elementos de navegación más importantes de la pantalla principal. 
 
-![Controles de navegación, vista expandida](media/pa_mobile_main_nav_android.png "Controles de navegación, vista expandida")
+![Controles de navegación, vista expandida](media/home_screen_iphone.png "Controles de navegación, vista expandida")
 
 Leyenda:
 
 1. **Mapa del sitio**: abra el menú y desplácese entre las aplicaciones, consulte sus registros favoritos y los usados recientemente, acceda a la configuración, etc.
 2. **Buscar**: busque registros de aplicaciones en Common Data Service.
 3. **Creación rápida**: cree un nuevo registro e indique rápidamente casi cualquier tipo de información en el sistema.
-4. **Comandos globales**: acceda a los comandos globales personalizados por su administrador.
-5. **Más**: acceda a más comandos para los registros con los que está trabajando, como ordenar, buscar, eliminar, actualizar, etc.<!--There really are "more"? Or can you end the list at "refresh"?-->
-6. **Ordenar registros**: ordene y vea los registros alfabéticamente.
+4. **Relationship Assistant** (Asistente de relaciones): use el asistente para supervisar y realizar un seguimiento de las acciones y las comunicaciones diarias. El asistente le ayuda a mantenerse al día con las tarjetas de información que se muestran de forma destacada a lo largo de la aplicación para proporcionar información personalizada y práctica.
 
 ## <a name="site-map"></a>Mapa del sitio 
 
 En la pantalla principal, seleccione el icono del mapa del sitio ![Icono del mapa del sitio](media/pa_mobile_sitemap_icon.png "Icono del mapa del sitio") para acceder a las entidades, los registros favoritos o más usados, otras aplicaciones y la configuración.
 
+ 
    > [!div class="mx-imgBorder"]
-   > ![Pantalla del mapa del sitio](media/pa_mobile_site_map.gif "Pantalla del mapa del sitio")
+   > ![Pantalla del mapa del sitio](media/go_to_sitemap_iphone.gif "En esta imagen se muestra cómo llegar a la pantalla de mapa del sitio.")
+   
+ *Actualice la página para reiniciar la acción de GIF*.
 
 En la siguiente ilustración se muestran los elementos de navegación principales de la pantalla del mapa del sitio. 
 
-![Pantalla del mapa del sitio](media/pa_mobile_sitemap_android.png "Pantalla del mapa del sitio")
+![Pantalla del mapa del sitio](media/site_map_iphone.png "Pantalla del mapa del sitio")
 
 Leyenda
 
@@ -80,8 +81,11 @@ Las listas **Anclados** y **Recientes** proporcionan un acceso rápido a los reg
 
 3. Para ver los registros recién anclados, seleccione ![Icono de retroceso](media/mobile_go_back_icon.png "Icono de retroceso") y, a continuación, **Anclados** ![Icono de registros favoritos anclados](media/mobile_pinned_favs_icon.png "Icono de registros favoritos anclados").
 
+
    > [!div class="mx-imgBorder"]
-   > ![Anclaje de un registro a favoritos](media/pin_favs.gif "Anclaje de un registro a favoritos")
+   > ![Anclaje de un registro a favoritos](media/pin_favs.gif "En esta imagen se muestra cómo anclar los registros favoritos.")
+   
+*Actualice la página para reiniciar la acción de GIF*.
 
 ### <a name="unpin-a-record"></a>Desanclaje de registros
 
@@ -89,15 +93,21 @@ Las listas **Anclados** y **Recientes** proporcionan un acceso rápido a los reg
 
 2. Seleccione el icono de quitar chincheta ![Icono de quitar chincheta](media/pa_mobile_remove_pin_icon.png "Icono de quitar chincheta") junto a un registro para eliminarlo de los favoritos (registros anclados).
 
+
    > [!div class="mx-imgBorder"]
-   > ![Desanclaje de registros](media/unpin_favs.gif "Desanclaje de registros")
+   > ![Desanclaje de registros](media/unpin_favs.gif "En esta imagen se muestra cómo desanclar un registro.")
+   
+*Actualice la página para reiniciar la acción de GIF*.
 
 ## <a name="change-views"></a>Cambio de vista
 
 - En la pantalla principal, seleccione la flecha abajo ![Icono de cambio de vista](media/mobile_view_selector_icon.png "Icono de cambio de vista") junto a la vista actual y, a continuación, seleccione una nueva vista.
 
+
    > [!div class="mx-imgBorder"]
-   > ![Cambio de vista](media/pa_mobile_change_view.gif "Cambio de vista")
+   > ![Cambio de vista](media/change_views_iphone.gif "En esta imagen se muestra cómo seleccionar una vista diferente.")
+
+*Actualice la página para reiniciar la acción de GIF*.
 
 ## <a name="add-a-record-quickly"></a>Adición de un registro rápidamente
 
@@ -106,22 +116,28 @@ Las listas **Anclados** y **Recientes** proporcionan un acceso rápido a los reg
 3. Una vez creado el registro, puede verlo. 
 
    > [!div class="mx-imgBorder"]
-   > ![Crear registros](media/pamobile_add_record.gif "Creación de un registro")
+   > ![Crear registros](media/pamobile_add_record.gif "En esta imagen se muestra cómo crear un registro.")
+
+*Actualice la página para reiniciar la acción de GIF*.
 
 -  Para guardar y abrir el registro que ha creado, seleccione **Más** ![Icono de más comandos](media/pa_mobile_more_commands_icon.png "Icono de más comandos") y, a continuación, **Guardar y abrir**.
 
 - Para guardar el registro y crear otro, seleccione **Más** ![Icono de más comandos](media/pa_mobile_more_commands_icon.png "Icono de más comandos") y, después, **Guardar y crear nuevo**.
 
    > [!div class="mx-imgBorder"]
-   > ![Crear registros](media/pa_mobile_save_create_new.gif "Creación de un registro")
+   > ![Crear registros](media/pa_mobile_save_create_new.gif "En esta imagen se muestra cómo guardar un registro y abrirlo o guardarlo y crear uno nuevo.")
 
-## <a name="view-commands-for-a-record"></a>Visualización de los comandos de un registro
+*Actualice la página para reiniciar la acción de GIF*.
+
+## <a name="view-commands-for-a-record-android"></a>Visualización de los comandos de un registro (Android)
 
 1. En la pantalla principal, abra un registro.
 2. En el registro abierto, seleccione **Más** ![Icono de más comandos del registro](media/access_record_commands_icon.png "Icono de más comandos del registro") para acceder a más comandos.
 
    > [!div class="mx-imgBorder"]
-   > ![Comandos de un registro](media/pa_mobile_view_record_commands.gif "Comandos de un registro")
+   > ![Comandos de un registro](media/pa_mobile_view_record_commands.gif "En esta imagen se muestra cómo acceder a más comandos en un registro.")
+
+*Actualice la página para reiniciar la acción de GIF*.
 
 ## <a name="edit-a-record"></a>Editar un registro
 
@@ -129,7 +145,9 @@ Las listas **Anclados** y **Recientes** proporcionan un acceso rápido a los reg
 2. Cuando haya terminado de editarlo, seleccione **Guardar**. Para cancelar los cambios, seleccione **Descartar**.
 
    > [!div class="mx-imgBorder"]
-   > ![Edición de un registro](media/pa_mobile_edit_record.gif "Editar un registro")
+   > ![Edición de un registro](media/save_on_iphone.gif "En esta imagen se muestra cómo editar y, luego, guardar un registro.")
+
+*Actualice la página para reiniciar la acción de GIF*.
 
 ## <a name="go-back-to-the-home-screen"></a>Retroceso a la pantalla principal
 
@@ -137,7 +155,9 @@ Las listas **Anclados** y **Recientes** proporcionan un acceso rápido a los reg
 - En cualquier momento, mantenga presionado **Atrás** ![Icono de retroceso](media/pa_mobile_back_icon.png "Icono de retroceso") para volver a la pantalla principal. 
 
    > [!div class="mx-imgBorder"]
-   > ![Retroceso a la pantalla principal](media/go_back_home.gif "Retroceso a la pantalla principal")
+   > ![Retroceso a la pantalla principal](media/go_back_home.gif "En esta imagen se muestra cómo volver a la pantalla principal presionando y manteniendo presionado el icono atrás.")
+
+*Actualice la página para reiniciar la acción de GIF*.
 
 ## <a name="sign-out"></a>Cerrar sesión
 

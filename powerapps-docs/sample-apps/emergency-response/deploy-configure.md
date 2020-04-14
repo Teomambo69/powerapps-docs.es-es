@@ -1,42 +1,59 @@
 ---
-title: Implementación y configuración de la aplicación de respuesta ante emergencias | Microsoft Docs
+title: Implementación y configuración de la aplicación Respuesta ante emergencias hospitalarias | Microsoft Docs
 description: Proporciona instrucciones detalladas para que los administradores de TI de hospitales implementen y configuren la aplicación de ejemplo para su organización.
-author: KumarVivek
+author: pankajarora-msft
 manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 04/02/2020
-ms.author: kvivek
+ms.date: 04/07/2020
+ms.author: pankar
 ms.reviewer: kvivek
 searchScope:
-- GetStarted
 - PowerApps
-ms.openlocfilehash: bd85066993a317af0d9a594fa856ce1d5800b849
-ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
+ms.openlocfilehash: 97de25b8c1f80ad4bd89242a2c71f97eeec1c9aa
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80624999"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80871658"
 ---
-# <a name="deploy-and-configure-the-emergency-response-app"></a>Implementación y configuración de la aplicación de respuesta ante emergencias
+# <a name="deploy-and-configure-the-hospital-emergency-response-app"></a>Implementación y configuración de la aplicación Respuesta ante emergencias hospitalarias
 
-La aplicación de respuesta ante emergencias requiere el ajuste de algunos parámetros para adaptarse a sus necesidades. Este artículo proporciona instrucciones paso a paso para que los administradores de TI de hospitales implementen y configuren la aplicación para su organización.
+La aplicación Respuesta ante emergencias hospitalarias requiere el ajuste de algunos parámetros para adaptarse a sus necesidades. Este artículo proporciona instrucciones paso a paso para que los administradores de TI de hospitales implementen y configuren la aplicación para su organización.
 
 Tiempo estimado para completar estos pasos: **35–40 minutos**.
 
-## <a name="demo-deploy-and-configure-the-emergency-response-app"></a>Demostración: Implementación y configuración de la aplicación de respuesta ante emergencias
+## <a name="demo-deploy-and-configure-the-hospital-emergency-response-app"></a>Demostración: Implementación y configuración de la aplicación Respuesta ante emergencias hospitalarias
 
-Vea cómo puede implementar y configurar la aplicación de respuesta ante emergencias.
+Vea cómo puede implementar y configurar la aplicación Respuesta ante emergencias hospitalarias.
 
 <br/>
 
 > [!VIDEO https://www.youtube.com/embed/-1g44wNiuWI]
 
 
-## <a name="deploy-the-emergency-response-app"></a>Implementación de la aplicación de respuesta ante emergencias
+## <a name="service-urls-for-us-government-customers"></a>Direcciones URL de servicio para clientes de la Administración Pública
 
-Siga estos pasos para implementar la aplicación de ejemplo de respuesta ante emergencias para su organización.
+La solución Respuesta ante emergencias hospitalarias también está disponible para los clientes de la Administración Pública de EE. UU. Hay un conjunto diferente de direcciones URL para acceder a los entornos de Power Apps para la Administración Pública de Estados Unidos que el que contiene la versión comercial.
+
+En este artículo se usa la versión comercial de la dirección URL del servicio. Si es un cliente de la Administración pública de Estados Unidos, use la dirección URL de dicha entidad para la implementación, tal y como se menciona aquí:
+
+
+| **Dirección URL de la versión comercial**                | **Dirección URL de la versión de la Administración Pública de Estados Unidos**  |
+|-------------------------------------------|--------------------------------|
+| https://make.powerapps.com                | https://make.gov.powerapps.us (GCC)<br/><br/>https://make.high.powerapps.us (GCC High)                |
+| https://admin.powerplatform.microsoft.com | https://gcc.admin.powerplatform.microsoft.us (GCC)<br/><br/>https://high.admin.powerplatform.microsoft.us (GCC High) |
+| https://app.powerbi.com/                  | <https://app.powerbigov.us> (GCC)<br/><br/>https://app.high.powerbigov.us (GCC High)                  |
+
+Para más información sobre los planes de la Administración Pública de Estados Unidos para Power Apps y Power BI, consulte:
+- [Power Apps para la Administración Pública de Estados Unidos](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
+- [Power BI para la Administración Pública de Estados Unidos](https://docs.microsoft.com/power-bi/service-govus-overview)
+
+
+## <a name="deploy-the-hospital-emergency-response-app"></a>Implementación de la aplicación Respuesta ante emergencias hospitalarias
+
+Siga estos pasos para implementar la aplicación de ejemplo Respuesta ante emergencias hospitalarias para su organización.
 
 - [Paso 1: Registrarse en Power Apps y crear un entorno](#step-1-sign-up-for-power-apps-and-create-an-environment)
 - [Paso 2: Descargar el paquete de implementación](#step-2-download-the-deployment-package)
@@ -46,7 +63,7 @@ Siga estos pasos para implementar la aplicación de ejemplo de respuesta ante em
     - [Paso 4.2: Cargar datos maestros](#step-42-load-master-data)
 - [Paso 5: Actualizar la personalización de marca de la aplicación móvil](#step-5-update-the-mobile-app-branding)
 - [Paso 6: Omitir el consentimiento para aplicaciones móviles](#step-6-bypass-consent-for-mobile-apps)
-- [Paso 7: Agregar la clave de Application Insights a aplicaciones móviles para telemetría](#step-7-add-azure-application-insights-key-to-mobile-apps-for-telemetry)
+- [Paso 7: Agregar la clave de Azure Application Insights a las aplicaciones móviles para obtener la telemetría (opcional)](#step-7-add-azure-application-insights-key-to-mobile-apps-for-telemetry-optional)
 - [Paso 8: Compartir aplicaciones de lienzo con los usuarios de la organización](#step-8-share-canvas-apps-with-users-in-your-organization)
 - [Paso 9: Establecer la aplicación móvil como aplicación destacada y prominente](#step-9-set-your-mobile-app-as-hero-and-featured-app)
 - [Paso 10: Compartir una aplicación controlada por modelos con administradores de la organización](#step-10-share-model-driven-app-with-admins-in-your-organization)
@@ -73,9 +90,16 @@ Una vez que haya adquirido Power Apps, cree un entorno con una base de datos de
 
 ### <a name="step-2-download-the-deployment-package"></a>Paso 2: Descargar el paquete de implementación
 
-Obtenga el paquete de implementación (.zip) más reciente de <https://aka.ms/emergency-response-solution> que contiene el archivo de solución, las imágenes y los archivos de datos para configurar las aplicaciones y la lógica de negocios de la aplicación de respuesta ante emergencias.
+Obtenga el paquete de implementación (.zip) más reciente de <https://aka.ms/emergency-response-solution> que contenga el archivo de solución, las imágenes y los archivos de datos para configurar las aplicaciones y la lógica de negocios de la aplicación Respuesta ante emergencias hospitalarias.
 
-Para comenzar el proceso de implementación, extraiga el archivo de implementación (. zip) en una ubicación del equipo. La carpeta extraída contendrá las siguientes carpetas:
+> [!IMPORTANT]
+> Antes de extraer el paquete de implementación (archivo .zip), asegúrese de desbloquear el archivo. Para desbloquearlo:
+> 1. Haga clic con el botón derecho en el archivo .zip y seleccione **Propiedades**.
+> 2. En el cuadro de diálogo Propiedades, seleccione **Desbloquear** y, luego, elija **Aplicar** seguido de **Aceptar**.
+
+<br/>
+
+Después de desbloquear el archivo de implementación (archivo .zip), extraiga el archivo en una ubicación del equipo. La carpeta extraída contendrá las siguientes carpetas:
 
 | **Carpeta/Archivo**       | **Descripción**  |
 |-----------------------|------------------|
@@ -83,7 +107,7 @@ Para comenzar el proceso de implementación, extraiga el archivo de implementaci
 | **Archivos de datos**        | Contiene los archivos de datos maestros y de ejemplo (.xlsx) para que funcione la solución o la aplicación. Puede importar datos desde estos archivos para empezar a trabajar en la aplicación. Para más información, consulte [Paso 4: Cargar la configuración y los datos maestros de la organización](#step-4-load-configuration-and-master-data-for-your-organization) |
 | **Plantilla de Power BI** | Contiene el archivo de plantilla de informe Power BI (.pbit) que utilizará para configurar los informes para su organización. Más información: [Obtención de información mediante paneles de Power BI](#get-insights-using-power-bi-dashboards)|
 | **PowerShell**        | Contiene scripts que usará para configurar las aplicaciones móviles (aplicaciones de lienzo). |
-| **Archivo de soluciones**     | Contiene el archivo de soluciones de Common Data Service que crea las aplicaciones y los metadatos necesarios para la aplicación de respuesta ante emergencias.  |
+| **Archivo de soluciones**     | Contiene el archivo de soluciones de Common Data Service que crea las aplicaciones y los metadatos necesarios para la aplicación Respuesta ante emergencias hospitalarias.  |
 
 ### <a name="step-3-import-the-solution-file-into-your-environment"></a>Paso 3: Importar el archivo de solución en el entorno
 
@@ -116,7 +140,7 @@ La aplicación de administración tiene varias entidades donde puede agregar y a
 
 ### <a name="step-4-load-configuration-and-master-data-for-your-organization"></a>Paso 4: Cargar la configuración y los datos maestros de la organización
 
-Todos los datos necesarios para la aplicación de respuesta ante emergencias están disponibles en la carpeta **Archivos de datos** en la carpeta de implementación extraída.
+Todos los datos necesarios para la aplicación Respuesta ante emergencias hospitalarias están disponibles en la carpeta **Archivos de datos** en la carpeta de implementación extraída.
 
 La carpeta **Archivos de datos** tiene los siguientes archivos y carpetas:
 
@@ -143,7 +167,7 @@ La carpeta **Archivos de datos** tiene los siguientes archivos y carpetas:
 <li>Request Roles (Roles de solicitud)</li>
 <li>Supplies Import (Importación de suministros)</li>
 </ul>
-<br/>La importación de datos a estas entidades creará registros para estas entidades que son necesarios para que funcione la aplicación de respuesta ante emergencias.
+<br/>La importación de datos a estas entidades creará para ellas registros que son necesarios para que funcione la aplicación Respuesta ante emergencias hospitalarias.
 <br/>
 <br/>
 <strong>Precaución</strong>: Asegúrese de que no actualiza los valores de configuración en estas entidades, excepto en las entidades <strong>Apps</strong> (Aplicaciones) y <strong>App Config</strong> (Configuración de aplicaciones), como se explica más adelante.</td>
@@ -151,7 +175,7 @@ La carpeta **Archivos de datos** tiene los siguientes archivos y carpetas:
 <tr>
 <td>Carpeta de <strong>datos de ejemplo</strong></td>
 <td><p>La carpeta contiene los archivos de datos de ejemplo (.xlsx) que se pueden importar para rellenar los datos de ejemplo de la aplicación. Los nombres de los archivos sirven para indicar la secuencia en la que los datos se deben importar en la aplicación. </p>
-<p>Debe importar datos para las siguientes entidades que contienen los datos de ejemplo maestros de la aplicación de respuesta ante emergencias:
+<p>Importe datos para las siguientes entidades que contengan los datos de ejemplo maestros de la aplicación Respuesta ante emergencias hospitalarias:
 <ul>
 <li>Sistemas</li>
 <li>regiones</li>
@@ -246,7 +270,7 @@ Para ello, use las entidades **App** (Aplicación) y **App Config** (Configuraci
     > [!div class="mx-imgBorder"] 
     > ![Aplicaciones de administración](media/conf-admin-app-records.png "Aplicaciones de administración")
 
-1.  Para abrir uno de los registros de la aplicación, selecciónelo. Observe que el campo del identificador de Power Apps está en blanco.
+1.  Para abrir uno de los registros de la aplicación, selecciónelo. Observe que el campo del **identificador de Power Apps** está en blanco.
 
     > [!div class="mx-imgBorder"] 
     > ![Campo del identificador de aplicación de Power Apps](media/conf-powerapp-id-field.png "Campo del identificador de Power Apps")
@@ -257,11 +281,11 @@ Para ello, use las entidades **App** (Aplicación) y **App Config** (Configuraci
 
     2. Haga doble clic en el icono de la aplicación y seleccione un archivo de icono para la aplicación en la carpeta **Iconos de aplicación**. Los archivos de imagen tienen nombres intuitivos para que pueda seleccionar fácilmente el icono correcto. Por ejemplo, seleccione el archivo "Emergency Response App.png" para la **aplicación de respuesta ante emergencia**. También puede seleccionar una imagen personalizada de acuerdo con la personalización de marca de su organización.
 
-    3. Si es necesario, actualice los campos **Descripción** o **Nombre para mostrar** de la aplicación.
+    3. Si es necesario, actualice los campos **Description** (Descripción) o **Display Name** (Nombre para mostrar) de la aplicación.
 
     4. Si es necesario, actualice el valor del campo **Hide App from Menu** (Ocultar la aplicación en el menú) para determinar si la aplicación se debe mostrar en la lista de aplicaciones. Como la **aplicación de respuesta ante emergencias** es una aplicación contenedora, el valor se establece en **No** de forma predeterminada.
 
-    5. Si es necesario, actualice el valor del campo **App Display Rank** (Clasificación de la aplicación) para establecer la posición en la que aparece la aplicación en la lista de aplicaciones.
+    5. Si es necesario, actualice el valor del campo **App Display Rank** (Clasificación de visualización de la aplicación) para establecer la posición en la que aparece la aplicación en la lista de aplicaciones.
 
     6. Seleccione **Guardar**.
 
@@ -273,7 +297,7 @@ Para ello, use las entidades **App** (Aplicación) y **App Config** (Configuraci
 
     1.  Si es necesario, actualice los colores de la aplicación.
 
-    2.  Seleccione **Yes** (Sí) o **No** en el campo **Device Sharing Enabled** (Uso compartido de dispositivos habilitado) para especificar si una la opción de **cerrar sesión** estará disponible en las aplicaciones móviles. Si selecciona **Yes** (Sí), habrá una opción para **cerrar sesión** disponible.
+    2.  Seleccione **Yes** (Sí) o **No** en el campo **Device Sharing Enabled** (Uso compartido de dispositivos habilitado) para especificar si una opción **Sign Out** (Cerrar sesión) estará disponible en las aplicaciones móviles. Si selecciona **Yes** (Sí), habrá una opción para **cerrar sesión** disponible. Más información: [Fin de turno - cierre de sesión](use.md#end-shift---sign-out) en la guía del usuario.
 
     > [!div class="mx-imgBorder"] 
     > ![Campo de uso compartido de dispositivos habilitado](media/conf-device-sharing-enabled-field.png "Campo de uso compartido de dispositivos habilitado")
@@ -317,9 +341,9 @@ A continuación, haga lo siguiente:
 
 5.  Repita los pasos 2 y 4 para cada una de las aplicaciones de lienzo.
 
-### <a name="step-7-add-azure-application-insights-key-to-mobile-apps-for-telemetry"></a>Paso 7: Agregar la clave de Application Insights a aplicaciones móviles para telemetría
+### <a name="step-7-add-azure-application-insights-key-to-mobile-apps-for-telemetry-optional"></a>Paso 7: Agregar la clave de Azure Application Insights a las aplicaciones móviles para obtener la telemetría (opcional)
 
-Puede usar Azure Application Insights para recopilar información detallada de la telemetría de las aplicaciones móviles (aplicaciones de lienzo) con el fin de obtener información sobre el uso de la aplicación. Para obtener información detallada al respecto, consulte [Analizar la telemetría de las aplicaciones mediante Application Insights](https://docs.microsoft.com/powerapps/maker/canvas-apps/application-insights).
+Tiene la opción de usar Azure Application Insights para recopilar telemetría detallada de las aplicaciones móviles (aplicaciones de lienzo) con el fin de obtener información sobre el uso de la aplicación. Para obtener información detallada al respecto, consulte [Analizar la telemetría de las aplicaciones mediante Application Insights](https://docs.microsoft.com/powerapps/maker/canvas-apps/application-insights).
 
 ### <a name="step-8-share-canvas-apps-with-users-in-your-organization"></a>Paso 8: Compartir aplicaciones de lienzo con los usuarios de la organización
 
@@ -405,7 +429,7 @@ Para que los usuarios administradores usen la aplicación de administración (ap
 
 ## <a name="manually-configure-and-manage-master-data-for-your-organization"></a>Configuración y administración manual de los datos maestros de la organización
 
-Los administradores pueden usar la aplicación controlada por modelos en [Power Apps](https://make.powerapps.com) para crear y administrar los datos maestros de su organización. Estos datos son necesarios para que funcione la aplicación de respuesta ante emergencias.
+Los administradores pueden usar la aplicación controlada por modelos en [Power Apps](https://make.powerapps.com) para crear y administrar los datos maestros de su organización. Estos datos son necesarios para que funcione la aplicación Respuesta ante emergencias hospitalarias.
 
 > [!NOTE]
 > También puede importar los datos de la organización en archivos de datos disponibles en el paquete de implementación y, a continuación, importarlos en estas entidades. Más información: [Paso 4: Cargar la configuración y los datos maestros de la organización](#step-4-load-configuration-and-master-data-for-your-organization)
@@ -472,8 +496,8 @@ Para crear un registro:
     | Sistema               | Seleccione un sistema hospitalario. Esta lista se rellena en función de los datos de **Systems** (Sistemas) que ha creado anteriormente. |
     | Nombre de región          | Escriba el nombre de la región. Por ejemplo, Seattle.                                                              |
     | Descripción          | Escriba una descripción opcional.                                                                            |
-    | Effective Start Date (Fecha de inicio efectiva) | Escriba la fecha y hora de inicio de este sistema hospitalario.                                                       |
-    | Effective End Date (Fecha de fin efectiva)   | Escriba la fecha y hora de fin de este sistema hospitalario.                                                         |
+    | Effective Start Date (Fecha de inicio efectiva) | Escriba la fecha y hora de inicio de esta región.                                                       |
+    | Effective End Date (Fecha de fin efectiva)   | Escriba la fecha y hora de fin de esta región.                                                         |
 
 3. Seleccione **Guardar y cerrar**. El registro recién creado estará disponible en la lista **Regions** (Regiones).
 
@@ -529,15 +553,17 @@ Para crear un registro:
     | Facility             | Seleccione una instalación. Esta lista se rellena en función de los datos de **Facilities** (Instalaciones) que ha creado anteriormente. |
     | Floor                | Escriba la información de la planta de la instalación.                                                         |
     | Unidad                 | Escriba la información de la unidad de la instalación.                                                           |
-    | Location Acuity (Triaje de la ubicación)      | Seleccione el registro de triaje asociado a esta ubicación.                                                                                                     |
+    | Acuity (Agudeza)      | Seleccione el registro de triaje asociado a esta ubicación.                                                                                                     |
+    | COVID Location (Ubicación de COVID)      | Seleccione si esta ubicación se usa para tratar a pacientes con COVID (**Yes** (Sí) o **No**).                                                                                                      |
     | Total Beds (Camas totales)           | Escriba el número total de camas de la instalación.                                                       |
+    | Surge Beds (Camas de ampliación)           | Escriba el número de camas de ampliación en la instalación. Las camas de ampliación son aquellas que se pueden dotar sobrepasando la capacidad de camas admitida en caso de que sea necesario ingresar a los pacientes.                                                      |
     | Blocked beds (Camas bloqueadas)         | Escriba el número de camas bloqueadas de la instalación.                                                     |
     | Last Census (Último censo)          | Se rellena basándose en el último registro del censo que se está creando.                                             |
     | Occupancy Percentage (Porcentaje de ocupación) | Se calcula automáticamente según el último censo y el total de camas.                                         |
-    | Effective Start Date (Fecha de inicio efectiva) | Escriba la fecha y hora de inicio de este sistema hospitalario.                                                   |
-    | Effective End Date (Fecha de fin efectiva)   | Escriba la fecha y hora de fin de este sistema hospitalario.                                                     |
+    | Effective Start Date (Fecha de inicio efectiva) | Escriba la fecha y hora de inicio de esta ubicación.                                                   |
+    | Effective End Date (Fecha de fin efectiva)   | Escriba la fecha y hora de fin de esta ubicación.                                                     |
     | Location Order (Orden de la ubicación)       | Escriba un número que ordene la ubicación en las listas desplegables de ubicación.                               |
-    | Alternate Site Flag (Marca de sitio alternativo)  | Para uso interno                                                                                     |
+    | Alternate Site Flag (Marca de sitio alternativo)  | Para uso interno.                                                                                     |
 
 3. Seleccione **Guardar y cerrar**. El registro recién creado estará disponible en la lista **Locations** (Ubicaciones).
 
@@ -551,7 +577,7 @@ Para crear un registro:
 
 1. Seleccione **Departments** (Departamentos) en el panel izquierdo y luego **Nuevo**.
 
-2. En la página **New Departments** (Nuevo departamento), especifique los valores adecuados:    
+2. En la página **New Departments** (Nuevo departamento), especifique los valores adecuados:
 
     > [!div class="mx-imgBorder"]
     > ![enter-details-new-department](media/enter-details-new-department.png)
@@ -560,8 +586,8 @@ Para crear un registro:
     |----------------------|----------------------------------------------------|
     | Nombre de departamento      | Escriba el nombre de un departamento.                            |
     | Descripción          | Escriba una descripción opcional.                      |
-    | Effective Start Date (Fecha de inicio efectiva) | Escriba la fecha y hora de inicio de este sistema hospitalario. |
-    | Effective End Date (Fecha de fin efectiva)   | Escriba la fecha y hora de fin de este sistema hospitalario.   |
+    | Effective Start Date (Fecha de inicio efectiva) | Escriba la fecha y hora de inicio de este departamento. |
+    | Effective End Date (Fecha de fin efectiva)   | Escriba la fecha y hora de fin de este departamento.   |
 
 3. Seleccione **Guardar y cerrar**. El registro recién creado estará disponible en la lista **Departments** (Departamentos).
 
@@ -569,7 +595,7 @@ Para editar el registro, seleccione el registro, actualice los valores según se
 
 ## <a name="get-insights-using-common-data-service-dashboards"></a>Obtención de información mediante paneles de Common Data Service
 
-Los siguientes paneles están disponibles de forma predeterminada en la aplicación del administrador de respuesta ante emergencias (controlada por modelos):
+Los siguientes paneles están disponibles de forma predeterminada en la aplicación del administrador de Respuesta ante emergencias hospitalarias (controlada por modelos):
 
 - **Bed Management** (Administración de camas)
 
@@ -661,7 +687,9 @@ Publique el panel de Power BI y compártalo con los usuarios de su organización
 - Instale Power BI Desktop desde la Tienda de aplicaciones de Windows: <https://aka.ms/pbidesktop>
 
    > [!NOTE] 
-   > Si ha instalado Power BI mediante la descarga directa desde el sitio de Power BI como un archivo ejecutable en algún momento anterior, quítelo y use el de la Tienda de aplicaciones. La versión de la Tienda de aplicaciones se irá actualizando automáticamente a medida que estén disponibles nuevas versiones.
+   > Si ha instalado Power BI Desktop mediante la descarga directa desde la página del Centro de descarga como un archivo ejecutable en algún momento anterior, quítela y use la de Microsoft Store. La versión de Microsoft Store se irá actualizando automáticamente a medida que estén disponibles nuevas versiones.
+   >
+   > Si no puede realizar la instalación desde Microsoft Store, instale la última versión que no sea de Microsoft Store desde la [página del Centro de descarga](https://www.microsoft.com/download/details.aspx?id=58494).
 
 - Después de instalar Power BI Desktop desde la Tienda de aplicaciones, ejecútelo e inicie sesión con una cuenta que tenga permiso para publicar aplicaciones de Power BI en su organización.
 
@@ -669,59 +697,65 @@ Publique el panel de Power BI y compártalo con los usuarios de su organización
 
 1. Vaya a la ubicación donde extrajo el paquete de implementación. Encontrará el archivo **Emergency Response App.pbit** en la carpeta **Plantilla de Power BI**.
 
-2. Abra el archivo **Emergency Response App.pbit** en Power BI Desktop. Cuando este archivo se abra en Power BI Desktop, verá un cuadro de diálogo **Actualizar** que indica que se ha producido un error en la actualización de los datos. Esto se debe a que aún no se han especificado los detalles de conexión en el entorno de Common Data Service.
+2. Abra el archivo **Emergency Response App.pbit** en Power BI Desktop. Se le pedirá que escriba los valores siguientes:
 
-3. Seleccione **Transformar datos** para especificar la conexión con su entorno de Common Data Service.  
-    
-    > [!div class="mx-imgBorder"]
-    > ![select-transform-data](media/select-transform-data.png)
-
-4. En el editor de consultas, actualice el parámetro **CDSBaseURL** con la dirección URL de su entorno de Common Data Service. Haga clic con el botón derecho en **CDSBaseURL**, seleccione **Editor avanzado** y, a continuación, especifique el valor adecuado.  
+    - **Organization_name**: escriba el nombre de la organización que se rellenará en la esquina superior izquierda de cada página del informe.
+    - **CDS_base_solution_URL**: escriba la dirección URL de la instancia de entorno de Common Data Service. Por ejemplo: https:// *[myenv]* .crm.dynamics.com
 
     > [!div class="mx-imgBorder"]
-    > ![select-advanced-editor](media/select-advanced-editor.png)
+    > ![Especificación del nombre y la dirección URL base de la organización](media/pbi-pub-rep1.png)
 
-5. Guarde los cambios. Aparece un mensaje que le pide que aplique los cambios pendientes a la consulta. Seleccione **Aplicar**.
+    Seleccione **Cargar**.
 
-6. Se le pedirá que escriba las credenciales para conectarse a su entorno de Common Data Service. Seleccione **Cuenta de organización** > **Inicio de sesión** para especificar las credenciales de Common Data Service.  
+3. Se le pedirá que escriba las credenciales para conectarse a su entorno de Common Data Service. Seleccione **Cuenta de organización** > **Inicio de sesión** para especificar las credenciales de Common Data Service.  
 
     > [!div class="mx-imgBorder"]
     > ![select-organizational-account](media/select-organizational-account.png)
 
-7. Seleccione **Conectar** para establecer una conexión.
+4. Después de iniciar sesión, seleccione **Conectar** para conectarse a los datos en Common Data Service.
 
-8. Si la conexión se realiza correctamente, se le pedirá que guarde el archivo como un archivo .pbix junto con la información del entorno de Common Data Service. Proporcione un nombre y guárdelo en el equipo.
+5. Si la conexión es correcta, los datos se mostrarán en el informe de Power BI. Se le pedirá que aplique los cambios pendientes a la consulta; seleccione **Aplicar cambios**.
 
-9. En la pestaña **Inicio**, seleccione **Cerrar y aplicar**.
+6. Seleccione **Publicar** para publicar datos en el área de trabajo de Power BI. Se le pedirá que guarde los cambios; seleccione **Guardar**.
 
-10. Seleccione **Actualizar** para actualizar los datos desde el entorno de Common Data Service. Seleccione **Publicar** para publicar datos en el área de trabajo de Power BI.  
-    
     > [!div class="mx-imgBorder"]
     > ![select-refresh-publish](media/select-refresh-publish.png)
 
-11. En la página **Publicar en Power BI**, seleccione el área de trabajo en la que desea publicar.
+7. Se le pedirá que guarde el archivo como un archivo .pbix junto con la información del entorno de Common Data Service. Proporcione un nombre y guárdelo en el equipo.
+
+8. Después de guardar el archivo .pbix, se le pedirá que publique el informe. En la página **Publicar en Power BI**, seleccione el área de trabajo en la que quiere publicarlo y, luego, haga clic en **Seleccionar**.
 
 12. El informe estará disponible en el área de trabajo. Ahora, configuraremos la actualización de datos para el conjunto de datos. Seleccione el conjunto de datos en el área de trabajo y seleccione el icono **Programar actualización**.  
     
     > [!div class="mx-imgBorder"]
     > ![schedule-refresh](media/schedule-refresh.png)
 
-13. En la página de configuración del conjunto de datos, expanda **Credenciales del origen de datos** y seleccione **Editar credenciales** para asegurarse de que los detalles de conexión para conectarse a su origen de datos son correctos.  
+13. La primera vez que intente establecer la configuración de la actualización de datos, verá la página **Configuración** con un mensaje que indica que las credenciales no son válidas. En **Credenciales de origen de datos**, seleccione **Editar credenciales** para especificar las credenciales.  
 
     > [!div class="mx-imgBorder"]
     > ![select-edit-credentials](media/select-edit-credentials.png)
 
-14. Expanda **Actualización programada** y especifique los detalles necesarios para actualizar los datos en función de una programación.
+14. En la siguiente pantalla:
+    - En **Método de autenticación**, seleccione **OAuth2**.
+    - En **Privacy level setting for this data source** (Configuración del nivel de privacidad de este origen de datos), elija **Organizativo**.
+    - Seleccione **Iniciar sesión**.
+
+    Se le pedirá que especifique sus credenciales y que inicie sesión. Tras iniciar sesión correctamente, volverá a la página **Configuración**.
+
+15. En la página **Settings** (Configuración), expanda **Scheduled refresh** (Actualización programada) y especifique los detalles necesarios para actualizar los datos en función de una programación. Seleccione **Aplicar**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Actualización programada](media/refresh-schedule.png)
 
     > [!NOTE] 
     > Hay límites en el número de veces que se pueden actualizar los datos. Power BI limita los conjuntos de datos en la capacidad compartida a ocho actualizaciones diarias. Si el conjunto de datos reside en una capacidad Premium, puede programar hasta 48 actualizaciones al día en la configuración de dicho conjunto de datos. Más información: [Actualización de datos](https://docs.microsoft.com/power-bi/refresh-data#data-refresh)
 
-15. Seleccione el nombre del área de trabajo en el panel izquierdo y, a continuación, seleccione **Crear aplicación** en la esquina superior derecha.  
+16. Seleccione el nombre del área de trabajo en el panel izquierdo y, a continuación, seleccione **Crear aplicación** en la esquina superior derecha.  
 
     > [!div class="mx-imgBorder"]
     > ![select-create-app](media/select-create-app.png)
 
-16. En la página de publicación de aplicaciones:
+17. En la página de publicación de aplicaciones:
 
     1. En la pestaña **Configuración**, especifique el nombre y la descripción de la aplicación.
 
@@ -732,14 +766,105 @@ Publique el panel de Power BI y compártalo con los usuarios de su organización
         > [!div class="mx-imgBorder"]
         > ![select-install-apps-automatically](media/select-install-apps-automatically.png)
 
-17. Seleccione **Publicar aplicación**. Para obtener información detallada sobre cómo publicar aplicaciones en Power BI, consulte [Publicar la aplicación](https://docs.microsoft.com/power-bi/service-create-distribute-apps#publish-your-app).
+18. Seleccione **Publicar aplicación**. Para obtener información detallada sobre cómo publicar aplicaciones en Power BI, consulte [Publicar la aplicación](https://docs.microsoft.com/power-bi/service-create-distribute-apps#publish-your-app).
 
 ### <a name="view-the-power-bi-dashboard"></a>Visualización del panel de Power BI
 
 Inicie sesión en [Power BI](https://apps.powerbi.com) para obtener acceso al panel de Power BI y verlo.
 
 > [!div class="mx-imgBorder"]
-> ![view-power-dashboard](media/view-power-dashboard.png)
+> ![Visualización del panel de Power BI](media/view-power-dashboard.png)
+
+Puede usar los filtros que se encuentran en la parte superior del informe para filtrar los datos de los sistemas, regiones e instalaciones del hospital. También puede filtrar por las ubicaciones de COVID.
+
+> [!div class="mx-imgBorder"]
+> ![Filtros de informe](media/report-filters.png)
+
+#### <a name="system-at-a-glance-page"></a>Página System at a glance (Resumen del sistema) 
+
+La página **Systems at a glance** (Resumen del sistema) es la página predeterminada o la de nivel superior que ofrece una vista general.  
+
+En la página se muestra una vista resumida de lo siguiente: 
+
+- **COVID Patients** (Pacientes con COVID): muestra el número total de pacientes con COVID, el número de pacientes que han dado positivo en la COVID-19 y el número de pacientes en investigación. 
+
+- **Bed Management** (Administración de camas): muestra la disponibilidad de camas, el porcentaje de ocupación, el número de camas de ampliación y el número total de camas. También puede usar la cuadrícula siguiente para ver los números por unidades de cuidados intensivos. 
+
+- **Nurse staffing management** (Administración del personal de enfermería): muestra el número de pacientes en la UCI, el personal de enfermería asignado y la relación entre personal de enfermería y pacientes.  
+
+- **Discharges** (Altas): muestra el número de pacientes de larga estancia totales, el número de pacientes previstos para alta y las altas reales. 
+
+- **Equipment** (Equipo): muestra el número total de respiradores, el número de respiradores en uso y los respiradores disponibles. 
+
+- **Supplies** (Suministros): muestra el número de suministros disponibles por días.
+
+> [!NOTE]
+> - Al seleccionar el icono de información (i) en cualquiera de las áreas resumidas, irá a la página de detalles correspondiente del área. 
+> - También puede realizar otras acciones en los informes, como filtrar y ordenar datos, exportar el informe a PDF y PowerPoint, agregar un resaltado, etc. Para más información sobre las características de los informes de Power BI, consulte [Informes en Power BI](https://docs.microsoft.com/power-bi/consumer/end-user-reports).
+> - Las columnas más recientes o actualizadas por última vez en algunos de estos informes muestran la fecha y la hora en que se actualizaron los datos por última vez. También es fácil identificar lo recientes que son los datos observando el color de los valores de fecha y hora de estas columnas:
+>    - Negro: los datos se han actualizado hace menos de 20 horas.
+>    - Gris: los datos se han actualizado hace 20-24 horas.
+>    - Rojo: los datos se han actualizado hace más de 24 horas. 
+ 
+#### <a name="system-view-page"></a>Página System View (Vista del sistema)
+
+La página **System View** (Vista del sistema) muestra gráficos con la siguiente información del sistema de un hospital:
+- Respiradores en uso y respiradores disponibles
+- Disponibilidad de camas, camas de cuidados intensivos y porcentaje de ocupación
+- Personal total solicitado, número de pacientes (censo), relación entre personal de enfermería y pacientes
+- Suministros disponibles en días
+
+> [!div class="mx-imgBorder"]
+> ![System View (Vista del sistema)](media/report-system-view.png)
+
+#### <a name="location-details-page"></a>Página Location Details (Detalles de la ubicación) 
+
+Para explorar en profundidad el informe por ubicación, haga clic en **Location Details** (Detalles de la ubicación) en la esquina superior derecha. En la página **Location Details** (Detalles de la ubicación) se muestran los datos por ubicación, como el número total de camas, las camas disponibles, las camas de ampliación, los pacientes con COVID, etc. 
+
+> [!div class="mx-imgBorder"]
+> ![Location Details (Detalles de la ubicación)](media/report-location-details.png) 
+
+#### <a name="covid-patient-details-page"></a>Página COVID Patient Details (Detalles de los pacientes con COVID) 
+
+En la página **COVID Patient Details** (Detalles de los pacientes con COVID) se proporciona información detallada sobre los pacientes con COVID, por ejemplo, los pacientes en cada ubicación, la tendencia de los pacientes en el tiempo con las subidas y bajadas del número de pacientes en investigación (PUI), y el número de pacientes positivos, y se tiene una idea general de dónde se encuentran los pacientes en el hospital.
+
+> [!div class="mx-imgBorder"]
+> ![COVID Patient Details (Detalles de los pacientes con COVID)](media/report-covid-details.png)
+
+#### <a name="bed-management-page"></a>Página Bed Management (Administración de camas) 
+
+La página **Bed Management** (Administración de camas) ofrece información detallada por ubicación, como las camas disponibles totales y el porcentaje de ocupación.
+
+> [!div class="mx-imgBorder"]
+> ![Bed Management](media/report-bed-details.png) (Administración de camas)
+
+#### <a name="staff-details-page"></a>Página Staff Details (Detalles del personal)  
+
+En la página **Staff Details** (Detalles del personal) se proporciona información detallada sobre el personal por ubicación, el número de miembros del personal de enfermería asignados, el número total de pacientes y el número de pacientes con COVID. También se muestra la relación miembro del personal de enfermería-paciente y la relación personal de enfermería en UCI-paciente en un período de tiempo.
+
+> [!div class="mx-imgBorder"]
+> ![Staff Details (Detalles del personal)](media/report-staff-details.png)
+
+#### <a name="equipment-details-page"></a>Página Equipment Details (Detalles del equipo) 
+
+En la página **Equipment Details** (Detalles del equipo) se proporcionan detalles sobre el equipo por ubicación, el número total de respiradores en uso, solapados por el número de pacientes con COVID, y otras piezas de equipo, como correas, cargadores y capuchas en uso.
+
+> [!div class="mx-imgBorder"]
+> ![Equipment Details (Detalles del equipo)](media/report-equipment-details.png)
+
+#### <a name="discharge-details-page"></a>Página Discharge Details (Detalles de altas) 
+
+En la página **Discharge Details** (Detalles de altas) se proporcionan detalles sobre los pacientes de estancia prolongada, los obstáculos a las altas durante un período y la varianza en cuanto a las altas reales y previstas.
+
+> [!div class="mx-imgBorder"]
+> ![Equipment Details (Detalles del equipo)](media/report-discharge-details.png)
+
+#### <a name="supplies-on-hand-details-page"></a>Página Supplies on Hand Details (Detalles de suministros disponibles) 
+
+En la página **Supplies on Hand Details** (Detalles de los suministros disponibles) se proporcionan detalles sobre los suministros por ubicación y suministro; también se proporcionan datos sobre el suministro disponible a lo largo de un período de tiempo.
+
+> [!div class="mx-imgBorder"]
+> ![Equipment Details (Detalles del equipo)](media/report-discharge-details.png)
 
 ## <a name="view-and-manage-app-feedback"></a>Visualización y administración de los comentarios de la aplicación
 
@@ -758,10 +883,10 @@ Para ver y administrar los comentarios de la aplicación:
 
 ## <a name="issues-and-feedback"></a>Problemas y comentarios
 
-- Para notificar un problema con la aplicación de ejemplo de respuesta ante emergencias, visite <https://aka.ms/emergency-response-issues>.
+- Para notificar un problema con la aplicación de ejemplo Respuesta ante emergencias hospitalarias, visite <https://aka.ms/emergency-response-issues>.
 
-- Para ofrecer comentarios sobre la aplicación de ejemplo de respuesta ante emergencias, visite <https://aka.ms/emergency-response-feedback>.
+- Para ofrecer comentarios sobre la aplicación de ejemplo Respuesta ante emergencias hospitalarias, visite <https://aka.ms/emergency-response-feedback>.
 
 ## <a name="next-step"></a>Siguiente paso
 
-[Uso de la aplicación de respuesta ante emergencias](use.md)
+[Uso de la aplicación Respuesta ante emergencias hospitalarias](use.md)

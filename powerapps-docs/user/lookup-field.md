@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 91f027af2f7d8b10fcfd15380fae46f62bc5603b
-ms.sourcegitcommit: 10861337ce87866b58cc98dda6eab8d985c9220c
+ms.openlocfilehash: bdb1b0bf1a500087f11804f6da55d1c3abe2eaf3
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80615415"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80871359"
 ---
 #  <a name="use-the-lookup-field-on-a-record"></a>Uso del campo de búsqueda en un registro
 
@@ -68,7 +68,7 @@ Para examinar una búsqueda, seleccione el icono de búsqueda (lupa). En el men�
 La lista de registros usados más recientemente muestra una imagen para ayudar a distinguir entre tipos de registros.
 
 >[!NOTE] 
->Los registros recientes no se filtran por término de búsqueda ni vista seleccionada.
+>Los registros recientes no se filtran por término de búsqueda, vista seleccionada o registros relacionados.
 
   > [!div class="mx-imgBorder"]
   > ![Campos de búsqueda que muestran una imagen](media/Lookup_03-MRU_Entity_Images_56[1].png "Campos de búsqueda que muestran una imagen")  
