@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/07/2020
 ms.locfileid: "80759829"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="remove-and-removeif-functions-in-power-apps"></a>Funciones Remove y RemoveIf en Power apps
 Quita [registros](../working-with-tables.md#records) de un [origen de datos](../working-with-data-sources.md).
@@ -40,19 +41,19 @@ También puede usar la función **[Clear](function-clear-collect-clearcollect.md
 [!INCLUDE [delegation-no](../../../includes/delegation-no.md)]
 
 ## <a name="syntax"></a>Sintaxis
-**Remove**( *DataSource*, *Record1* [, *Record2*, ... ] [, **All** ] )
+**Remove**( *DataSource*; *Record1* [; *Record2*; ... ] [; **All** ] )
 
 * *DataSource*: requerido. El origen de datos que contiene el registro o los registros que desea quitar.
 * *Registro(s)* : requerido. El registro o los registros que se van a quitar.
 * **Todo**: opcional. En una colección, el mismo registro puede aparecer más de una vez.  Puede agregar el argumento **Todo** para quitar todas las copias del registro.
 
-**Remove**( *DataSource*, *Table* [, **All** ] )
+**Remove**( *DataSource*; *Table* [; **All** ] )
 
 * *DataSource*: requerido. El origen de datos que contiene los registros que desea quitar.
 * *Table*: requerido. Tabla de registros que se van a quitar.
 * **Todo**: opcional. En una colección, el mismo registro puede aparecer más de una vez.  Puede agregar el argumento **Todo** para quitar todas las copias del registro.
 
-**RemoveIf**( *DataSource*, *Condición* [,...])
+**RemoveIf**( *DataSource*; *Condición* [;...])
 
 * *DataSource*: requerido. El origen de datos que contiene el registro o los registros que desea quitar.
 * *Condition(s)* : requerido. Una fórmula que se evalúa como **true** para el registro o los registros que se van a quitar.  Puede usar nombres de columna de *DataSource* en la fórmula.  Si especifica varias *Condiciones*, todas se deben evaluar como **true** para el registro o registros que va a quitar.
@@ -70,11 +71,11 @@ Para crear una colección con estos datos:
 1. Inserte un control de [**botón**](../controls/control-button.md) .
 1. Establezca la propiedad **alseleccionar** del control de botón en la fórmula siguiente:
 
-    ```powerapps-dot
-    ClearCollect( IceCream,
-                  { ID: 1, Flavor: "Chocolate",  Quantity: 100 },
-                  { ID: 2, Flavor: "Vanilla",    Quantity: 200 },
-                  { ID: 3, Flavor: "Strawberry", Quantity: 300 }
+    ```powerapps-comma
+    ClearCollect( IceCream;
+                  { ID: 1; Flavor: "Chocolate";  Quantity: 100 };
+                  { ID: 2; Flavor: "Vanilla";    Quantity: 200 };
+                  { ID: 3; Flavor: "Strawberry"; Quantity: 300 }
     )
     ```
 1. Seleccione el botón [mientras mantiene presionada la tecla Alt](../keyboard-shortcuts.md#alternate-behavior):
@@ -84,10 +85,10 @@ Para crear una colección con estos datos:
 
 | Fórmula | Descripción | Resultado |
 | --- | --- | --- |
-| **Remove(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;) )** |Quita el registro **Chocolate** del origen de datos. |<style>IMG {Max-width: None}</style> ![](media/function-remove-removeif/icecream-no-chocolate.png)<br><br>El origen de datos **IceCream** se ha modificado. |
-| **Remove(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;) First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Strawberry"&nbsp;)&nbsp;) )** |Quita los dos registros del origen de datos. |![](media/function-remove-removeif/icecream-only-vanilla.png)<br><br>El origen de datos **IceCream** se ha modificado. |
+| **Remove(&nbsp;IceCream;<br>First(&nbsp;Filter(&nbsp;IceCream;&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;) )** |Quita el registro **Chocolate** del origen de datos. |<style>IMG {Max-width: None}</style> ![](media/function-remove-removeif/icecream-no-chocolate.png)<br><br>El origen de datos **IceCream** se ha modificado. |
+| **Remove(&nbsp;IceCream;<br>First(&nbsp;Filter(&nbsp;IceCream;&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;) First(&nbsp;Filter(&nbsp;IceCream;&nbsp;Flavor="Strawberry"&nbsp;)&nbsp;) )** |Quita los dos registros del origen de datos. |![](media/function-remove-removeif/icecream-only-vanilla.png)<br><br>El origen de datos **IceCream** se ha modificado. |
 | **RemoveIf (&nbsp;IceCream, Cantidad&nbsp;>&nbsp;150)** |Quita los registros que tienen una **Cantidad** superior a **150**. |![](media/function-remove-removeif/icecream-only-chocolate.png)<br><br>El origen de datos **IceCream** se ha modificado. |
-| **RemoveIf(&nbsp;IceCream, Cantidad&nbsp;>&nbsp;150, Left(&nbsp;Flavor,&nbsp;1&nbsp;) = "S" )** |Quita los registros que tienen una **Cantidad** superior a 150 y cuyo valor **Flavor** empieza con **S**. |![](media/function-remove-removeif/icecream-no-strawberry.png)<br><br><br>El origen de datos **IceCream** se ha modificado. |
+| **RemoveIf(&nbsp;IceCream; Cantidad&nbsp;>&nbsp;150; Left(&nbsp;Flavor;&nbsp;1&nbsp;) = "S" )** |Quita los registros que tienen una **Cantidad** superior a 150 y cuyo valor **Flavor** empieza con **S**. |![](media/function-remove-removeif/icecream-no-strawberry.png)<br><br><br>El origen de datos **IceCream** se ha modificado. |
 | **RemoveIf (&nbsp;IceCream, true)** |Quita todos los registros del origen de datos. |![](media/function-remove-removeif/icecream-empty.png)<br><br>El origen de datos **IceCream** se ha modificado. |
 
 ## <a name="examples---remove-button-outside-a-gallery"></a>Ejemplos: botón Quitar fuera de una galería
@@ -136,8 +137,8 @@ En este ejemplo, quitará un elemento mediante un *botón* que está fuera de la
 
 1. Establezca la propiedad **alseleccionar** para este control de botón en la fórmula siguiente:
 
-    ```powerapps-dot
-    Remove( Contacts, Gallery1.Selected )
+    ```powerapps-comma
+    Remove( Contacts; Gallery1.Selected )
     ```
 
     ![Establecer la propiedad alseleccionar del control Button](media/function-remove-removeif/gallery-button-onselect.png)
@@ -174,15 +175,15 @@ Si ya ha [preparado datos de ejemplo](#prepare-for-sample-data), omita este paso
 1. Agregue un control [**botón**](../controls/control-button.md) a la pantalla.
 1. Establezca la propiedad **AlSeleccionar** en la fórmula siguiente:
 
-    ```powerapps-dot
-    ClearCollect( SampleContacts, 
-          { 'Full Name': "Yvonne McKay (sample)",      'Primary Email': "someone_a@example.com" },
-          { 'Full Name': "Susanna Stubberod (sample)", 'Primary Email': "someone_b@example.com" },
-          { 'Full Name': "Nancy Anderson (sample)",    'Primary Email': "someone_c@example.com" },
-          { 'Full Name': "Maria Campbell (sample)",    'Primary Email': "someone_d@example.com" },
-          { 'Full Name': "Robert Lyon (sample)",       'Primary Email': "someone_e@example.com" },
-          { 'Full Name': "Paul Cannon (sample)",       'Primary Email': "someone_f@example.com" },
-          { 'Full Name': "Rene Valdes (sample)",       'Primary Email': "someone_g@example.com" } 
+    ```powerapps-comma
+    ClearCollect( SampleContacts; 
+          { 'Full Name': "Yvonne McKay (sample)";      'Primary Email': "someone_a@example.com" };
+          { 'Full Name': "Susanna Stubberod (sample)"; 'Primary Email': "someone_b@example.com" };
+          { 'Full Name': "Nancy Anderson (sample)";    'Primary Email': "someone_c@example.com" };
+          { 'Full Name': "Maria Campbell (sample)";    'Primary Email': "someone_d@example.com" };
+          { 'Full Name': "Robert Lyon (sample)";       'Primary Email': "someone_e@example.com" };
+          { 'Full Name': "Paul Cannon (sample)";       'Primary Email': "someone_f@example.com" };
+          { 'Full Name': "Rene Valdes (sample)";       'Primary Email': "someone_g@example.com" } 
     )
     ```
 1. Seleccione el botón [mientras mantiene presionada la tecla Alt](../keyboard-shortcuts.md#alternate-behavior).
@@ -230,7 +231,7 @@ Se crea una colección de ejemplo que puede usar en el ejemplo siguiente.
 
 1. Seleccione la propiedad **icono** para icono y establézcala en la siguiente fórmula para actualizar la imagen del icono como icono de la papelera:
 
-    ```powerapps-dot 
+    ```powerapps-comma 
     Icon.Trash
     ```
     
@@ -241,8 +242,8 @@ Se crea una colección de ejemplo que puede usar en el ejemplo siguiente.
 
 1. Establezca la propiedad **AlSeleccionar** en la fórmula siguiente:
 
-    ```powerapps-dot
-    Remove( [@Contacts], ThisItem )
+    ```powerapps-comma
+    Remove( [@Contacts]; ThisItem )
     ```
 
     > [!NOTE]
