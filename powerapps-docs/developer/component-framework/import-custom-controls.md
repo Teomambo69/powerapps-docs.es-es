@@ -1,6 +1,6 @@
 ---
 title: Importar componentes  | Microsoft Docs
-description: Este tema describe cómo importar los componentes de código
+description: Este artículo describe cómo importar componentes de código
 keywords: ''
 ms.author: nabuthuk
 manager: kvivek
@@ -9,16 +9,16 @@ ms.service: powerapps
 ms.suite: ''
 ms.topic: article
 author: Nkrb
-ms.openlocfilehash: 8a84d9b52f913f3c7f6da2bf07e11124277f2f52
-ms.sourcegitcommit: 5b6e6b41a3fc4d7f1aea46ec66c086b784efacac
+ms.openlocfilehash: 717fb3a5ceba7b2136382736b462206c72a3d8e0
+ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3095490"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3218541"
 ---
 # <a name="package-a-code-component"></a>Empaquete un componente de código
 
-Este tema describe cómo importar los componentes de código en Common Data Service. Después de implementar los componentes de código mediante el CLI Power Apps, el siguiente paso es agrupar todos los elementos de componente de código en un archivo de solución e importar el archivo de solución en Common Data Service para poder ver los componentes de código en tiempo de ejecución.
+Este artículo describe cómo importar componentes de código en Common Data Service. Después de implementar los componentes de código mediante el CLI Power Apps, el siguiente paso es agrupar todos los elementos de componente de código en un archivo de solución e importar el archivo de solución en Common Data Service para poder ver los componentes de código en tiempo de ejecución.
 
 Para crear e importar un archivo de solución:
 
@@ -56,7 +56,9 @@ Para crear e importar un archivo de solución:
 
 ## <a name="connecting-to-your-environment"></a>Conexión al entorno
 
-Puede implementar los componentes del código directamente desde Power Apps CLI conectándose al entorno de Common Data Service y luego enviando los componentes actualizados. Use los siguientes pasos para crear el perfil de autenticación, conéctese a Common Data Service, e inserte los componentes actualizados. 
+Puede implementar los componentes del código directamente desde Power Apps CLI conectándose al entorno de Common Data Service y luego enviando los componentes actualizados.
+
+Use los siguientes pasos para crear el perfil de autenticación, conéctese a Common Data Service, e inserte los componentes actualizados. 
  
 1. Cree el perfil de autenticación utilizando el comando: 
  
@@ -118,26 +120,26 @@ Más información: [Opciones de configuración](https://docs.microsoft.com/dotne
 > [!NOTE]
 > El comando del complemento se encuentra en versión preliminar pública y Power Apps CLI ahora es compatible con la creación de un proyecto de complemento y su empaquetamiento en una solución agregando una referencia al proyecto de complemento. El comando `pac plugin init` crea los archivos de plantilla (csproj, Plugin.cs & ServiceHelper.cs) en el directorio. Para ello: 
 
-1.  Asegúrese de que tiene un perfil de autenticación válido creado.
-2.  Vaya al directorio raíz donde desea que se cree el proyecto.
-3.  Ejecute el comando. 
+1.    Asegúrese de que tiene un perfil de autenticación válido creado.
+2.    Vaya al directorio raíz donde desea que se cree el proyecto.
+3.    Ejecute el comando. 
 
      ```CLI
      pac auth create –url <https://xyz.crm.dynamics.com>
      ```
-4.  Ejecutar el comando para crear el proyecto de complemento
+4.    Ejecutar el comando para crear el proyecto de complemento
 
     ```CLI
     pac plugin init
     ```
 
-5.  Agregue una referencia a su proyecto de solución utilizando el siguiente comando para que el proyecto de complementos se compile cuando se haya compilado la solución.
+5.    Agregue una referencia a su proyecto de solución utilizando el siguiente comando para que el proyecto de complementos se compile cuando se haya compilado la solución.
 
     ```CLI
     pac solution add-reference –path <path to your plugin project>
     ```
 
-6.  Ejecute el comando para compilar la solución y el complemento al que se hace referencia.
+6.    Ejecute el comando para compilar la solución y el complemento al que se hace referencia.
     ```CLI
     msbuild
     ```

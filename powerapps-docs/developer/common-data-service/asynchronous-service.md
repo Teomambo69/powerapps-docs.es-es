@@ -3,7 +3,7 @@ title: Servicio asincrónico (Common Data Service) | Microsoft Docs
 description: Comprenda cómo funciona el servicio asincrónico que administra trabajos del sistema.
 ms.custom: ''
 ms.date: 11/27/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3a387c23af14a8772eb42900c63aed45dd8c13cb
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 56b9cba4b7738edbd70ebaea8da37f5b549d9ec5
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753080"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156460"
 ---
 # <a name="asynchronous-service"></a>Servicio asincrónico
 

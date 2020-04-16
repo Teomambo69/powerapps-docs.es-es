@@ -2,7 +2,7 @@
 title: Actualizar una solución | MicrosoftDocs
 description: Obtener información sobre cómo actualizar una solución en Power Apps
 ms.custom: ''
-ms.date: 01/24/2020
+ms.date: 03/18/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -21,17 +21,27 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 178c4e6d618ad29975c37c5e690847b27899fc08
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 0bebbc9eeead8fb4f02c4bf958c33b79c0d9cc1c
+ms.sourcegitcommit: 48414442a10210d49911c3eda8b49f68db85f684
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017545"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "3151194"
 ---
-# <a name="update-or-upgrade-a-solution"></a>Actualizar una solución  
-Hay ocasiones en las que podría desear instalar una actualización de una solución administrada existente. El proceso es similar a instalar una nueva solución administrada, salvo en que obtendrá algunas opciones diferentes. Si va a actualizar una solución que ha obtenido de otra persona, debe obtener instrucciones del editor de soluciones sobre las opciones que debe elegir.  
+# <a name="upgrade-or-update-a-solution"></a>Actualizar una solución  
+Hay ocasiones en las que podría necesitar instalar una actualización de una solución administrada existente. Para actualizar la solución, siga estos pasos: 
 
-1. Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) y seleccione **Soluciones** en el panel de navegación de la izquierda.  
+1.  Abra la solución no administrada en su entorno de desarrollo y cree nuevos o agregue y elimine los componentes existentes que desee. 
+2.  Incremente el número de versión cuando exporte la solución como solución administrada. Más información: [Comprender los números de versión para las actualizaciones](#understanding-version-numbers-for-updates) 
+
+    > [!div class="mx-imgBorder"] 
+    > ![Versión de solución de actualización](media/update-solution-version.png)
+3. [Aplicar la actualización o actualización en el entorno de destino](#apply-the-upgrade-or-update-in-the-target-environment)
+
+## <a name="apply-the-upgrade-or-update-in-the-target-environment"></a>Aplicar la actualización o actualización en el entorno de destino
+El proceso para importar una solución actualizada es similar a instalar una nueva solución administrada, salvo en que obtendrá algunas opciones diferentes. Si va a actualizar una solución que ha obtenido de otra persona, debe obtener instrucciones del editor de soluciones sobre las opciones que debe elegir.  
+
+1. Iniciar sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione el entorno de destino que desee y luego seleccione **Soluciones** desde la navegación izquierda.  
 
 2. Seleccione **Importar** en la barra de comandos.  
 
@@ -70,8 +80,11 @@ Hay ocasiones en las que podría desear instalar una actualización de una soluc
 
 **Finalización de la actualización de la solución** Si elige preparar para la actualización, o si el sistema tiene un problema para completar una actualización, verá que tiene la solución original aún instalada en el sistema, así como una nueva solución que tiene el mismo nombre de la solución que la solución base añadida con el sufijo \_Upgrade.  Para completar la actualización, seleccione la solución base en la lista de soluciones y seleccione **Aplicar actualización de la solución**.  Esto desinstalará todas las revisiones anteriores y la solución base. A continuación, cambie el nombre de la solución \_Upgrade para que tenga el mismo nombre que la solución base anterior.  Se eliminarán como parte de este proceso los componentes que se encuentren en la solución original y revisiones que no estén presentes en la solución \_Upgrade.
 
+## <a name="understanding-version-numbers-for-updates"></a>Comprender los números de versión para las actualizaciones
+La versión de una solución tiene el siguiente formato: primaria.secundaria.compilación.revisión. Una actualización debe tener un número de compilación o de revisión más alto que la solución primaria. Por ejemplo, para una versión de solución base 3.1.5.7, una pequeña actualización podría ser una versión 3.1.5.8 o una actualización un poco más significativa podría tener la versión 3.1.7.0. Una actualización sustancialmente más significativa podría ser la versión 3.2.0.0.
+
 
 ### <a name="see-also"></a>Vea también
+[Agregar componentes de la solución](create-solution.md#add-solution-components) <br />
 [Exportar soluciones](export-solutions.md) <br />
-[Distribuir soluciones y revisiones](use-segmented-solutions-patches-simplify-updates.md) <br />
 [Importar soluciones](import-update-export-solutions.md)

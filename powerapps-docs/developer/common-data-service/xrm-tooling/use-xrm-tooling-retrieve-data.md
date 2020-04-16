@@ -3,7 +3,7 @@ title: Usar útiles de XRM para recuperar datos (Common Data Service)| Microsoft
 description: Utilizar la clase CrmServiceClient para recuperar datos de Common Data Service
 ms.custom: ''
 ms.date: 03/27/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7625f914327742f3c86fef6810b5082a47845904
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8de9abf4a377e91ad936a21429902ac426a088ae
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749472"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154848"
 ---
 # <a name="use-xrm-tooling-to-retrieve-data"></a>Utilizar los útiles de XRM para recuperar datos
 

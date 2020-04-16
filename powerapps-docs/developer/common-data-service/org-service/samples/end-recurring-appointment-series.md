@@ -3,7 +3,7 @@ title: 'Ejemplo: Finalizar una cita periódica (Common Data Service) | Microsoft
 description: En este ejemplo muestra cómo finalizar una serie de citas periódicas
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 899a7111f4b206c1d405806522882e7f188e3642
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 94302e63ea2eee166a772d1fd2c8959c99ec8d78
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934300"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155784"
 ---
 # <a name="sample-end-a-recurring-appointment-series"></a>Ejemplo: cerrar una serie de citas periódicas
 

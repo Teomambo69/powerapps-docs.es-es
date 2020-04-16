@@ -9,18 +9,18 @@ ms.assetid: 93d0442e-5fc9-c43c-c8c1-a433687f3d0a
 author: JimDaly
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: ''
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ec78fd214741b6bd2e6377d20fdd6fc238d9af88
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: cb2f68fafcee5f7e5b8eea06cecc64f4120843f5
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749481"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154916"
 ---
 # <a name="write-a-custom-azure-aware-plug-in"></a>Escribir un complemento con Azure personalizado
 
@@ -147,3 +147,4 @@ Para un complemento registrado para ejecutarse asincrónicamente, el <xref:Micro
 [Escribir un complemento](write-plug-in.md)<br />
 [Canalización de ejecución del evento](event-framework.md)<br />
 [Registrar e implementar complementos](register-plug-in.md)
+ 

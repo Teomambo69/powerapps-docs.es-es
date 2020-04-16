@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 651ada19ae34f40a04f6dca92c761148efa69241
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: b5eeecdee0d16ed345549159a63f030cd9f11fff
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091191"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162049"
 ---
 # <a name="implementing-map-component"></a>Implementar componente de mapa
 
@@ -173,7 +173,7 @@ Asegúrese de llamar a la función `renderMap` dentro de la función [updateView
 
 ### <a name="related-topics"></a>Temas relacionados
 
-[Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[Descargar componentes de ejemplo](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
 [¿Cómo usar los componentes de ejemplo?](../use-sample-components.md)<br/>
 [Referencia de la API de Power Apps component framework](../reference/index.md)<br/>
 [Referencia de esquema de manifiesto de Power Apps component framework](../manifest-schema-reference/index.md)

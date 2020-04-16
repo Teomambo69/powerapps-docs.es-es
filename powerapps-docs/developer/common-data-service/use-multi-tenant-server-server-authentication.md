@@ -3,7 +3,7 @@ title: Usar autenticación entre servidores multiempresa (Common Data Service) |
 description: Describe cómo configurar un usuario de la aplicación para la autenticación entre servidores con Common Data Service.
 ms.custom: ''
 ms.date: 2/28/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: paulliew
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dd0bacbd2743100380c67a8e0a0da14bd643465f
-ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
+ms.openlocfilehash: cdc3a2c20f8459787e01001e070ed01b684ceb83
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "2922347"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155172"
 ---
 # <a name="use-multi-tenant-server-to-server-authentication"></a>Usar autenticación multiempresa entre servidores
 

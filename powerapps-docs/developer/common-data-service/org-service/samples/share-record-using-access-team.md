@@ -3,7 +3,7 @@ title: 'Ejemplo: Compartir un registro utilizando un equipo de acceso(Common Dat
 description: Este ejemplo muestra cómo permitir el acceso a un registro utilizando un equipo de acceso.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 61c9947e8e48adce0145cf6651254005134e2cfe
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 2132c1a101da0402644ae00c70297c1607ffb99b
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934156"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155564"
 ---
 # <a name="sample-share-a-record-using-an-access-team"></a>Ejemplo: Compartir un registro utilizando un equipo de acceso
 

@@ -3,7 +3,7 @@ title: Administrar excepciones en el código (Common Data Service) | Microsoft D
 description: Este artículo analiza las excepciones que se devuelven desde una llamada al método de servicio web de Common Data Service. El ejemplo de este artículo resalta los errores y las excepciones comunes que el diseño de su aplicación debe controlar.
 ms.custom: ''
 ms.date: 06/17/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1888da184a7452ddaee79bdcf9dad0817a36befa
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 549cec78e4a56bf90d578ecef9a62e50282ba573
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752936"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156048"
 ---
 # <a name="handle-exceptions-in-your-code"></a>Administrar las excepciones en su código
 

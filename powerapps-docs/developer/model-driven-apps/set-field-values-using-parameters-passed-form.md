@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b0bcb58ceab5c0fd711bbe7316b93ce2b8c036e8
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 66f0516651d73fbf881a1bfa36529cc9998cfbd6
+ms.sourcegitcommit: 10861337ce87866b58cc98dda6eab8d985c9220c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749523"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3218318"
 ---
 # <a name="set-field-values-using-parameters-passed-to-a-form"></a>Establecer valores de campo usando parámetros pasados a un formulario
 
@@ -35,7 +35,7 @@ Puede establecer los valores predeterminados para los nuevos registros creados p
   
  Al abrir un nuevo formulario usando la dirección URL, puede incluir argumentos en el parámetro `extraqs` para establecer los valores de los campos. Deben cumplirse los siguientes requisitos:  
   
-- Debe codificar los parámetros que se pasan en el parámetro `extraqs`. Para codificar los parámetros, use [encodeURIComponent](https://msdn.microsoft.com/library/aeh9cef7\(VS.85\).aspx).  
+- Debe codificar los parámetros que se pasan en el parámetro `extraqs`. Para codificar los parámetros, use [encodeURIComponent](https://msdn.microsoft.com/library/aeh9cef7\(VS.85\).aspx).  Para usar caracteres especiales como "=" o "&" en los valores de los parámetros, debe codificar dos veces (un ejemplo, para establecer `name` a `A=B&C`, debería ser `extraqs=name%3DA%253DB%2526C`).
   
 - Los nombres de los argumentos de cadena de consulta deben coincidir con los nombres de los atributos de la entidad o incluirlos.  
   

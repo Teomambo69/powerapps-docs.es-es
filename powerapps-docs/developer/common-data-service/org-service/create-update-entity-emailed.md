@@ -3,7 +3,7 @@ title: Crear y actualizar una entidad para enviar actividades de correo electró
 description: Aprenda a crear una entidad que contenga una dirección de correo electrónico que pueda usar para enviar actividades de correo electrónico a los registros de la entidad.
 ms.custom: ''
 ms.date: 04/05/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4fd4b3f6cf80d81eda15cb559e711925c53c6171
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: b5a33e558747eb605ffed08025c3681134666093
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749700"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156100"
 ---
 # <a name="create-and-update-an-entity-to-send-email-activities-to-records"></a>Crear y actualizar una entidad para enviar actividades de correo electrónico a registros
 

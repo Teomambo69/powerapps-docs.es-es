@@ -3,7 +3,7 @@ title: " Deshabilitación o habilitación de un usuario (Common Data Service) | 
 description: Este ejemplo muestra cómo deshabilitar y habilitar un usuario del sistema.
 ms.custom: ''
 ms.date: 1/27/2020
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: aa87ed58a38db30435f60e3066b62b27f5d98730
-ms.sourcegitcommit: 5bfd0448f1d5ca3d938e3bd928d1dd3d4042afff
+ms.openlocfilehash: 03cd88528ee3851fc1eae44dab94bcb961af9e59
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "2992871"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155824"
 ---
 # <a name="sample-disable-or-enable-a-user"></a>Ejemplo: habilitación o deshabilitación de un usuario
 

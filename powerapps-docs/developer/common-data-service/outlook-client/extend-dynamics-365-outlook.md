@@ -3,7 +3,7 @@ title: Extender Dynamics 365 for Outlook (Common Data Service) | Microsoft Docs
 description: Dynamics 365 for Outlook permite a los usuarios interactuar con datos sin conexión y sin estar conectados a un servidor. Common Data Service incluye características que permiten extender las soluciones a escenarios sin conexión llamando a los servicios web sin conexión desde su código personalizado. Además, el ensamblado Sdk ofrece compatibilidad mediante programación para acciones básicas de Outlook, como sincronización, conexión y desconexión, y comprobación de estado de Dynamics 365 for Outlook. La programación sin conexión utiliza el servidor de desarrollo de ASP.NET.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: sriharibs
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8004814b49fb54a902f09fd77807d817a7800b69
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: b73543ce9220db75269e9452b4e839fcd6d2cb1c
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749825"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155404"
 ---
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/extend-customer-engagement-outlook 
 

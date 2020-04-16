@@ -3,7 +3,7 @@ title: Crear consultas con QueryExpression (Common Data Service) | Microsoft Doc
 description: Obtenga información sobre cómo puede usar la clase QueryExpression para crear una consulta mediante programación que contenga los filtros y las condiciones de búsqueda de los datos que definen el ámbito de una búsqueda de base de datos.
 ms.custom: ''
 ms.date: 06/25/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d726829928ae426161a0f9cde53bd52b5a32ff5b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 107432081e08a662621521244f2dc5613824a28f
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749549"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156108"
 ---
 # <a name="build-queries-with-queryexpression"></a>Crear consultas con QueryExpression
 

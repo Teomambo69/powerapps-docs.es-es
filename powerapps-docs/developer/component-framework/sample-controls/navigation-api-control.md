@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: e17ad5f8e792b6759e917017a8c2b2b056727d46
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: edba323d663befebfa328a877e33e7aa75194181
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017410"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162045"
 ---
 # <a name="implementing-navigation-api-component"></a>Implementar componente API de navegación
 
@@ -244,7 +244,7 @@ Este ejemplo abre una ventana nueva y carga la página principal de microsoft.co
 
 ### <a name="related-topics"></a>Temas relacionados
 
-[Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[Descargar componentes de ejemplo](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
 [¿Cómo usar los componentes de ejemplo?](../use-sample-components.md)<br/>
 [Referencia de la API de Power Apps component framework](../reference/index.md)<br/>
 [Referencia de esquema de manifiesto de Power Apps component framework](../manifest-schema-reference/index.md)

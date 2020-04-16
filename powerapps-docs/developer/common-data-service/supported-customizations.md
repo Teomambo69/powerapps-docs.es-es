@@ -3,7 +3,7 @@ title: Personalizaciones compatibles para Common Data Service (Common Data Servi
 description: Lea cómo puede personalizar Common Data Service mediante las herramientas disponibles en el portal Power Apps o las que aparecen descritas en documentos.
 ms.custom: ''
 ms.date: 01/25/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: shmcarth
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 38cf4a367c197649dde3e9f8737584f03c9b4a1a
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: c33e2830e80c8fcf90bab2054429dcdcdc952b16
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883514"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155265"
 ---
 <!-- This is the portion of the old topic that applies to Common Data Service
 https://docs.microsoft.com/dynamics365/customer-engagement/developer/supported-extensions

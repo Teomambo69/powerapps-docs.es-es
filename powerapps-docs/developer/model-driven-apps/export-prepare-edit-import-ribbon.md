@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 41b33926303c6211636c6a20e4e12651ae6a7586
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 6494c278f147be996beb10d0e295666ae39a564b
+ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749904"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172583"
 ---
 # <a name="export-prepare-to-edit-and-import-the-ribbon"></a>Exportar, preparar para modificar e importar la cinta de opciones
 
@@ -142,7 +142,11 @@ Para editar la cinta de opciones, debe realizar los siguientes pasos:
     >  El tipo de error más común es un error que hace referencia a un elemento dependiente en el RibbonDiffXml. Es posible que se haya olvidado de incluir una LocLabel a la que se hace referencia en alguna parte. Quizás haya un espacio en blanco adicional al final de un atributo XML que hace referencia a otro elemento. Todas las referencias deben coincidir exactamente.  
   
 4.  Una vez que haya corregido el error, complete los pasos para importar la cinta de opciones nuevamente.  
-  
+
+## <a name="troubleshoot-ribbon-issues"></a>Solución de problemas de cinta
+
+Si tiene un problema con un botón de la barra de comandos de la cinta, use esta guía de solución de problemas para encontrar y resolver el problema: <https://support.microsoft.com/help/4552163>
+
 ### <a name="see-also"></a>Vea también  
  [Personalizar la cinta de opciones](customize-commands-ribbon.md)   
  [Exportar definiciones de cinta de opciones](export-ribbon-definitions.md)   

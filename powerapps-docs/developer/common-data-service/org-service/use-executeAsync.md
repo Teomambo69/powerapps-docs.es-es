@@ -3,7 +3,7 @@ title: Uso ExecuteAsync para ejecutar mensajes forma asincrónica (Common Data S
 description: Puede usar el mensaje de ExecuteAsync para importar soluciones de forma asincrónica
 ms.custom: ''
 ms.date: 06/08/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8a2a00a5fb8a60282b12d3a966e46fddd8b0a8b7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 101934aa1e114d85dd1059ba62dd1f7e1c5bd686
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749840"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155460"
 ---
 # <a name="use-executeasync-to-execute-messages-asynchronously"></a>Uso ExecuteAsync para ejecutar mensajes forma asincrónica
 

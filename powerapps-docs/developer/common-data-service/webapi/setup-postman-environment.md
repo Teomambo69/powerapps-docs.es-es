@@ -3,7 +3,7 @@ title: Configurar un entorno Postman (Common Data Service para aplicaciones)| Mi
 description: Aprenda a instalar y configurar un entorno Postman que se conecte con entornos de Common Data Service.
 ms.custom: ''
 ms.date: 04/09/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -17,12 +17,12 @@ search.audienceType:
 - developer
 search.app:
 - D365CE
-ms.openlocfilehash: da8d3ac44d9993aee813347b327442789e7fb8a7
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 2d92959cddce2046f3cd88acb5dfde56e2b297de
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2859925"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155004"
 ---
 # <a name="set-up-a-postman-environment"></a>Configure un entorno Postman
 
@@ -57,7 +57,7 @@ Use estos pasos para crear un entorno de envío que puede usar para conectarse c
 
     | Nombre de variable | Value |
     |----|---|
-    |`url`|`https://<add your environment name, like ‘myorg.crm’>.dynamics.com`|
+    |`url`|`https://<add your environment name, like 'myorg.crm'>.dynamics.com`|
     |`clientid`|`51f81489-12ee-4a9e-aaae-a2591f45987d`|
     |`version`|`9.0`|
     |`webapiurl`|`{{url}}/api/data/v{{version}}/`|
@@ -98,7 +98,7 @@ Vea [Pruebe la conexión](#test-your-connection) para los pasos para comprobar l
 
 Crear una nueva solicitud de API web para probar la conexión con su instancia de Common Data Service. Use el <xref href="Microsoft.Dynamics.CRM.WhoAmI?text=WhoAmI function" />:
 1. Seleccione `GET` como el método de HTTP y agregan `{{webapiurl}}WhoAmI` en el espacio de edición.
-  ![Solicitud del rol WhoAmI](media/postman-whoami-request.png "WSolicitud del función WhoAmI")
+  ![Solicitud del rol WhoAmI](media/postman-whoami-request.png "Solicitud del rol WhoAmI")
 2. Seleccione **Enviar** para enviar esta solicitud.
 3. Si su solicitud se realiza correctamente, debe ver los datos de <xref href="Microsoft.Dynamics.CRM.WhoAmIResponse?text=WhoAmIResponse ComplexType" /> que son devueltos por <xref href="Microsoft.Dynamics.CRM.WhoAmI?text=WhoAmI Function" />.
 

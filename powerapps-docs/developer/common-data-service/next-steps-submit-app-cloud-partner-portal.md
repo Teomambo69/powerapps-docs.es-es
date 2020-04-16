@@ -3,7 +3,7 @@ title: 'Pasos siguientes: Enviar la aplicación al Centro de partners (Common Da
 description: Obtenga información sobre cómo enviar una aplicación al Cloud Partner Portal para que aparezca en AppSource.
 ms.custom: ''
 ms.date: 07/25/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: KumarVivek
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5d768189b4d21456d4d6cd24918b12606aa24ebc
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 46598666417e3c0809808e2e1c35307dd7374eff
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749708"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156136"
 ---
 # <a name="next-steps-submit-your-app-on-partner-center"></a>Pasos siguientes: enviar la aplicación al Centro de partners
 

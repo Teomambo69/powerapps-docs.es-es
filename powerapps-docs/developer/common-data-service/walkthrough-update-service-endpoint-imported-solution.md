@@ -9,18 +9,18 @@ ms.assetid: 66795838-3b15-bfb3-6f59-68cfe2fe988e
 author: JimDaly
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: ''
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 969660edb15b7be94921e4d16050699ca145ec4a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 607f231260d606c9da5070914b50d4b2e4c0abb1
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749652"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155128"
 ---
 # <a name="tutorial-update-a-service-endpoint-imported-from-a-solution"></a>Tutorial: Actualizar un extremo de servicio importado de una solución
 

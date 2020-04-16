@@ -3,7 +3,7 @@ title: " Descargar definición de informe (Common Data Service) | Microsoft Docs
 description: Este ejemplo muestra cómo descargar la definición del informe
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6498fd0db4a65c5664cff8c4ffc03f1ff477fc78
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 938a3dc5fd22c5fb600ad019fa3408ce415146b1
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3020098"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155820"
 ---
 # <a name="download-report-definition"></a>Descargar definición de informe
 

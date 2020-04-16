@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: f20285b882e3505a1464f7801b8808eef5a08f7c
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 798ef5f7cf5054934fb2de221f6484f62ec3807a
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017405"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162041"
 ---
 # <a name="implementing-table-component"></a>Implementar componente de tabla
 
@@ -446,7 +446,7 @@ El método de devolución de llamada inserta esta información como HTML en un d
 
 ### <a name="related-topics"></a>Temas relacionados
 
-[Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[Descargar componentes de ejemplo](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
 [¿Cómo usar los componentes de ejemplo?](../use-sample-components.md)<br/>
 [Referencia de la API de Power Apps component framework](../reference/index.md)<br/>
 [Referencia de esquema de manifiesto de Power Apps component framework](../manifest-schema-reference/index.md)

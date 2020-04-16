@@ -3,7 +3,7 @@ title: Modelo de expansión parcial de citas periódicas (Common Data Service) |
 description: El modelo de expansión parcial es un trabajo asincrónico que se ejecuta a intervalos predefinidos y se define en el nivel de organización y se usa para crear instancias de citas recurrentes.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1f8db578a771cca7985a3a52110257ee35692a16
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 266bc4c0b6a5d2517ec1f003034b77853392b244
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749810"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155352"
 ---
 # <a name="recurring-appointment-partial-expansion-model"></a>Modelo de expansión parcial de citas periódicas
 

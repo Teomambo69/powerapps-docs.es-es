@@ -10,12 +10,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: aaaa3e01902f1e2a9a96b1d2501d9931a6c8d085
-ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
+ms.openlocfilehash: ee265ae0c82cc6b8fe82595ae555b989579177d2
+ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3099909"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3218537"
 ---
 # <a name="common-issues-and-workarounds"></a>Problemas comunes y soluciones alternativas
 
@@ -79,14 +79,41 @@ Si se crea un componente utilizando la versión de CLI anterior a 0.4.3, encontr
        </configuration>
      ```
 
-## <a name="web-resource-size-is-too-big"></a>El tamaño del recurso web es excesivo
+## <a name="web-resource-size-is-too-large"></a>El tamaño del recurso web es demasiado grande
 
 Error  **Error en la importación de la solución: el tamaño del contenido de recursos web es demasiado grande**.
 
 **Solución alternativa**
 
-- Cuando crea el archivo `bundle.js` desde las herramientas de CLI, agrupa muchos componentes que hacen que el archivo sea grande. Elimine algunos de los componentes que no son necesarios.
-- Cree el componente en modo `production` modificando el archivo `node_modules/pcf-scripts/webpackconfig.js`.
+- Construya el `.pcfproj` como configuración de lanzamiento que establece el paquete web en modo producción usando el comando 
+  ```CLI
+  msbuild /property:configuration=Release
+  ```
+- Ejecute el comando msbuild con una propiedad adicional como se muestra a continuación: 
+  ```CLI
+  msbuild /p:PcfBuildMode=production
+  ```
+- Edite el `.pcfproj` para construir siempre el paquete web en modo de producción configurando la propiedad `PcfBuildMode` a la producción:
+  ```XML
+  <PropertyGroup>
+    <Name>TS_ReactStandardControl</Name>
+    <ProjectGuid>0df84c56-2f55-4a80-ac9f-85b7a14bf378</ProjectGuid>
+    <OutputPath>$(MSBuildThisFileDirectory)out\controls</OutputPath>
+    <PcfBuildMode>production</PcfBuildMode>
+  </PropertyGroup>
+  ```
+## <a name="solution-checker-issue"></a>Problema con el comprobador de soluciones
+
+**Error: No usa la función 'eval' o sus equivalentes funcionales.**
+
+Este error ocurre cuando el usuario crea, construye y empaqueta componentes de código usando CLI y crea un archivo de solución usando `msbuild` e importa el archivo de solución a Common Data Service y ejecuta el corrector de soluciones.
+
+**Solución alternativa**
+
+Vuelva a compilar el archivo de solución con el siguiente comando y reimporte la solución en Common Data Service y ejecute el comprobador de soluciones.
+```CLI
+msbuild/property:configuration:Release
+```
 
 ## <a name="power-apps-component-framework-datasets-getvalue-by-property-alias-doesnt-work"></a>La función getValue de los conjuntos de datos de Power Apps component framework por alias de propiedad no funciona
 

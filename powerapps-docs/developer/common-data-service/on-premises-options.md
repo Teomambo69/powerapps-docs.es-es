@@ -3,7 +3,7 @@ title: Opciones de implementación local (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ae0de503011c67e4b62b765274b1d620bd5f0505
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a5437f2c0d7b6471f4b62ab355cf07a0d18c8b02
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749710"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156128"
 ---
 # <a name="on-premises-deployment-options"></a>Opciones de implementación local
 

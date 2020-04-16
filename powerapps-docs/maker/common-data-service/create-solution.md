@@ -2,7 +2,7 @@
 title: Cree una solución | MicrosoftDocs
 description: Aprenda cómo crear soluciones
 ms.custom: ''
-ms.date: 02/28/2020
+ms.date: 03/20/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f4f2b4941e049a08bde978a318f5fda39f3dd30e
-ms.sourcegitcommit: d98dd90a7dda11f434a13a7f8976459856d6142b
+ms.openlocfilehash: 59c041d7fe74e1a1dbbce9f1516057d324447478
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "3093748"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162215"
 ---
 # <a name="create-a-solution"></a>Crear una solución
 
@@ -61,12 +61,13 @@ Para obtener más información sobre conceptos de una solución, consulte [Traba
   
  Este diálogo le alerta de que un componente de la solución tiene dependencias de otros componentes de la solución. Si selecciona **No, no incluir los componentes necesarios**, la solución puede generar errores si se importa en otra organización donde no existen todos los componentes necesarios. Si la importación de la solución es correcta, el comportamiento en la otra solución puede no ser idéntico al de la organización original, porque los componentes están configurados de forma distinta a los de la solución de origen.  
   
- Normalmente, es más seguro incluir los componentes necesarios si tiene previsto exportar la solución a otra organización. Si no agrega estos componentes cuando agrega un componente de la solución individual, puede volver más tarde, seleccionar el componente de la solución que ha agregado y elija **Agregar componentes necesarios** en el menú.  
+Cuando selecciona componentes de la entidad, le recomendamos que utilice la segmentación de la solución para que solo incluya los componentes de la entidad que son nuevos o actualizados cuando distribuye las actualizaciones de la solución. Con la segmentación de soluciones, puede trabajar en una solución con activos seleccionados de la entidad, como campos de la entidad, formularios y vistas, en lugar de entidades completas con todos los activos. Más información: [Usar soluciones segmentadas](use-segmented-solutions-patches-simplify-updates.md)
   
  Si no se piensa exportar la solución, o si solo pretende exportarla como una solución no administrada e importarla nuevamente en la misma organización, no es necesario incluir componentes necesarios. Si alguna vez exporta la solución, verá otra advertencia indicando que faltan algunos componentes necesarios. Si va a importar solo esta solución nuevamente en la misma organización, puede ignorar esta advertencia. Los pasos para modificar la navegación de la aplicación o la cinta sin usar una herramienta de edición de terceros prevén que exportará la solución nuevamente en la misma organización.  
 
+<!-- >
 > [!IMPORTANT]
->  Si piensa incluir citas en soluciones, se recomienda no incluir solo citas y solo citas periódicas en soluciones independientes. Si instala y desinstala soluciones independientes con tipos de citas diferentes, se mostrará un error de SQL Server y tendrá que volver a crear las citas. 
+>  If you plan to include appointments in solutions, we strongly recommend that you don’t include only appointments and only recurring appointments in separate solutions. If you install and uninstall separate solutions with different appointment types, you’ll encounter a SQL Server error and you’ll have to re-create the appointments.  -->
 
 ## <a name="publish-changes"></a>Publicar cambios 
 

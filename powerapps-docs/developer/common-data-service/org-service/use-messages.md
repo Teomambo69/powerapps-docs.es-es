@@ -3,7 +3,7 @@ title: Usar mensajes con el servicio de la organización (Common Data Service) |
 description: Conocer cómo se usan los mensajes para invocar operaciones con el servicio de la organización.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a2a9a1419503d9a0187816daf2bcd0f2db8fa9f2
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: dd9f93750bd5d46d6188add8249aeb47051f4186
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749834"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155440"
 ---
 # <a name="use-messages-with-the-organization-service"></a>Utilizar mensajes con el servicio de la organización
 

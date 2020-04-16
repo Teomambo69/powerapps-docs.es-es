@@ -9,18 +9,18 @@ ms.assetid: b5ef50fa-8085-f425-3968-804d012fc840
 author: JimDaly
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: ''
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bf065cc4b2eb1c76156e5373fecfc0193a870380
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 727b627a3069d8010828c829f5c133a0e868700f
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749653"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155164"
 ---
 # <a name="tutorial-register-an-azure-aware-plug-in-using-the-plug-in-registration-tool"></a>Tutorial: Registrar un complemento basado en Azure con la herramienta de registro de complementos
 
@@ -94,3 +94,4 @@ Ahora puede anular el registro del extremo, si así lo desea, seleccionándolo e
 
 [Integración de Azure para CDS](azure-integration.md)<br />
 [Introducción a la integración de Microsoft Azure con CDS](azure-integration.md)
+ 

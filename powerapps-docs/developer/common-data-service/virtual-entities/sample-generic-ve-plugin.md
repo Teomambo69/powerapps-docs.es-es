@@ -3,7 +3,7 @@ title: 'Ejemplo: Complemento de proveedor de datos de entidad virtual genérico 
 description: El ejemplo muestra cómo implementar un complemento de entidad virtual personalizado genérico en Dynamics 365.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,18 +13,18 @@ applies_to:
 ms.assetid: d329dade-16c5-46e9-8dec-4b8efb996d24
 author: mayadumesh
 ms.author: jdaly
-manager: amyla
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 27b274a04a704c5db1cf2f94e9535bde1914862c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c943741e2d7ade3335a67d857984e2600a24cf9a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749655"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155148"
 ---
 # <a name="sample-generic-virtual-entity-data-provider-plug-in"></a>Ejemplo: Complemento de proveedor de datos de entidad virtual genérico
 

@@ -3,26 +3,26 @@ title: JavaScript del lado del cliente mediante API Web en aplicaciones basadas 
 description: Puede usar JavaScript en recursos web HTML, secuencias de comandos de formularios o comandos de cinta de opciones para realizar operaciones en los datos de Common Data Service para aplicaciones con la API web
 ms.custom: ''
 ms.date: 03/28/2019
-ms.reviewer: kvivek
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 ms.assetid: get-started-dynamics-365-web-api-client-side-JavaScript
 author: JimDaly
-ms.author: kvivek
+ms.author: pehecke
 manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8d499d7188919e3cce2eaed7a820394b6743b4db
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 09ff233b4b405f03a22d8e644433ba0c27cf3192
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749505"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155073"
 ---
 # <a name="client-side-javascript-using-web-api-in-model-driven-apps"></a>JavaScript del lado del cliente mediante API Web en aplicaciones basadas en modelo
 

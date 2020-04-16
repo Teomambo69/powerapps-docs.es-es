@@ -3,7 +3,7 @@ title: Entidades de calendario (Common Data Service) | Microsoft Docs
 description: Lea cómo almacenar datos para los calendarios de servicio de atención al cliente y para las programaciones de vacaciones usando entidades de calendario.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 629421059fc822d9e4adc24d81f3750cec76c5fc
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a204683c14dd4ed90fe80ab923f2a42c76a68081
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749585"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156408"
 ---
 # <a name="calendar-entities"></a>Entidades de calendario
 

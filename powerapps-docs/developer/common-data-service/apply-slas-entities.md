@@ -3,7 +3,7 @@ title: Aplicar SLA a entidades (Common Data Service) | Microsoft Docs
 description: Obtenga información sobre cómo aplicar SLA a entidades personalizadas habilitando entidades para aplicar los SLA. También puede crear KPI de SLA.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bd66d104ec87b2a6f8e07cb476603f82cca2c023
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0df400e4aa71adfce7c4932627d9f4982d377b7e
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749406"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156468"
 ---
 # <a name="apply-slas-to-entities"></a>Aplicar SLA a entidades
 

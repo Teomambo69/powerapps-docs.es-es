@@ -2,7 +2,7 @@
 title: Prácticas de creación de aplicaciones de Common Data Service | MicrosoftDocs
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 81df04eba4a8f843cc254978590807c83ef704cb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: fcdf45be500a6b425842ddd903a3b0fbad7a7bdb
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861789"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156304"
 ---
 # <a name="common-data-service-supported-and-unsupported-app-building-practices"></a>Prácticas de creación de aplicaciones compatibles e incompatibles con Common Data Service
 

@@ -22,25 +22,30 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b2a498ab6b5efbca0e3970769dcc3e19c4ecd77d
-ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
+ms.openlocfilehash: 9bddae4295a891d4c4dd86593b4fa27815b2b03c
+ms.sourcegitcommit: 3f89b04359df19f8fa5167e2607509bb97e60fe0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100188"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "3165283"
 ---
-# <a name="create-solution-patches"></a>Crear revisiones de solución 
-Una revisión contiene solo los cambios en una solución administrada primaria, como agregar o editar componentes y activos. Cuando se importan revisiones, se colocan en capas sobre la solución principal. Cuando se clona una solución, el sistema resume todas las revisiones relacionadas en la solución base y crea una nueva versión.  
-  
+# <a name="create-solution-patches"></a>Crear revisiones de solución  
+Puede crear una revisión para una solución primaria y exportarla como actualización de menor importancia en la solución base. Cuando se clona una solución, el sistema resume todas las revisiones relacionadas en la solución base y crea una nueva versión.
+
+> [!WARNING]
+> El uso de clonar un parche y una solución de clonación para actualizar una solución no se recomienda porque limita el desarrollo del equipo y aumenta la complejidad al almacenar su solución en un sistema de control de código fuente. Para obtener información sobre cómo actualizar una solución, vea [Actualizar una solución](update-solutions.md).
+
+
+## <a name="creating-updates-using-clone-solution-and-clone-to-patch"></a>Crear actualizaciones usando la solución de clonación y clonar para parchear
  Cuando trabaja con las revisiones y soluciones clonadas, tenga en cuenta la siguiente información:  
   
 -   Una revisión representa una actualización incremental de menor importancia de la solución primaria. Una revisión puede agregar o actualizar componentes y activos en la solución primaria cuando se instala en el sistema de destino, pero no puede eliminar ningún componente o activo de la solución primaria.  
   
 -   Una revisión solo puede tener una solución primaria, pero una solución primaria tiene una o más revisiones.  
   
--   Una revisión se crea para una solución no administrada. No se puede crear una revisión para una solución administrada.  
+-   Una revisión se crea desde una solución no administrada. No se puede crear una revisión desde una solución administrada.  
   
--   Cuando exporta una revisión a un sistema de destino, debe exportarlo como revisión administrada. No use revisiones no administradas en entornos de producción.  
+-   Cuando importa una revisión a un sistema de destino, debe exportarlo como revisión administrada. No use revisiones no administradas en entornos de producción.  
   
 -   La solución primaria debe estar presente en el sistema de destino para instalar una revisión.  
   
@@ -53,11 +58,19 @@ Una revisión contiene solo los cambios en una solución administrada primaria, 
 -   Cuando se clona una solución base, todas las revisiones secundarias se resumen en la solución base y pasa a ser una nueva versión. Puede agregar, editar, o eliminar componentes y activos en la solución clonada.  
   
 -   Una solución clonada representa la sustitución de la solución base cuando se instala en el sistema de destino como solución administrada. Normalmente, puede usar una solución clonada para enviar una actualización importante a la solución precedente.  
-  
-## <a name="understanding-version-numbers-for-cloned-solutions-and-patches"></a>Descripción de los números de versión para soluciones clonadas y revisiones  
- La versión de una solución tiene el siguiente formato: primaria.secundaria.compilación.revisión. Una revisión debe tener un número de compilación o de revisión más alto que la solución primaria. No puede tener una versión importante o de menor importancia más alta. Por ejemplo, para una versión de solución base 3.1.5.7, una revisión podría ser una versión 3.1.5.8 o versión 3.1.7.0, pero no versión 3.2.0.0. Una solución clonada debe tener el número de versión mayor o igual que el número de versión de la solución base. Por ejemplo, para una versión de solución base 3.1.5.7, una solución clonada podría ser una versión 3.2.0.0 o versión 3.1.5.7. En la interfaz de usuario, solo puede establecer los valores de versión importante y secundaria para una solución clonada, y los valores de compilación o de revisiones para una revisión.  
-  
 
+Cuando clona una solución, el número de versión que especifique incluye las posiciones principales y secundarias. 
+
+   > [!div class="mx-imgBorder"]
+   > <img src="media/clone-solution.png" alt="Clone a patch major and minor version" height="560" width="307"> 
+
+ Cuando clona una revisión, el número de versión que especifique incluye las posiciones de creación y revisión. 
+
+   > [!div class="mx-imgBorder"] 
+   > <img src="media/clone-a-patch2.png" alt="Clone a patch build and revision version" height="560" width="307">
+
+Para obtener más información sobre los números de versión, vea [Números de solución de clonación y parche de clonación](#clone-solution-and-clone-patch-version-numbers) en este articulo.
+  
 ## <a name="create-a-solution-patch"></a>Crear una revisión de la solución  
  Una revisión contiene cambios en la solución primaria, como agregar o editar componentes y activos. No es necesario incluir los componentes primarios a menos que prevea modificarlos.  
   
@@ -96,11 +109,14 @@ Una revisión contiene solo los cambios en una solución administrada primaria, 
 ![Clonar una solución](media/cloned-solution.png)
 
 > [!IMPORTANT]
-> Clonar una solución elimina la solución original y las revisiones asociadas. 
+> La clonación de una solución combina la solución original y los parches asociados en una nueva solución base y elimina la solución original y los parches. 
   
 1. Vaya al portal Power Apps y luego seleccione **Soluciones**.   
   
 2.  En la lista de soluciones, seleccione una solución no administrada para crear un clon. En la barra de comandos, seleccione **Clonar** y, después, **Clonar solución**. El panel derecho muestra el nombre de la solución base y el número de la nueva versión. Seleccione **Guardar**.  
+
+## <a name="clone-solution-and-clone-patch-version-numbers"></a>Solución de clones y números de versión de revisiones de clones
+Una revisión debe tener un número de compilación o de revisión más alto que la solución primaria. No puede tener una versión importante o de menor importancia más alta. Por ejemplo, para una versión de solución base 3.1.5.7, una revisión podría ser una versión 3.1.5.8 o versión 3.1.7.0, pero no versión 3.2.0.0. Una solución clonada debe tener el número de versión mayor o igual que el número de versión de la solución base. Por ejemplo, para una versión de solución base 3.1.5.7, una solución clonada podría ser una versión 3.2.0.0 o versión 3.1.5.7. Cuando clona una solución o revisión puede establecer los valores de versión importante y secundaria para una solución clonada, y los valores de compilación o de revisiones para una revisión.  
   
 ### <a name="see-also"></a>Vea también
-[Información general de las soluciones](solutions-overview.md)
+[Actualizar una solución](update-solutions.md)

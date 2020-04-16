@@ -13,19 +13,19 @@ ms.assetid: ad4e4eac-117a-4958-9df0-b7353305b0c7
 caps.latest.revision: 13
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1b1aee98b1fb6048c875ef41672d105cb096ed1a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 07c8738336f88460d3ae8bba11bbdced5b37bce8
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749651"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155108"
 ---
 # <a name="associate-and-disassociate-entities-using-the-web-api"></a>Asociar y anular la asociación de entidades mediante la API web
 

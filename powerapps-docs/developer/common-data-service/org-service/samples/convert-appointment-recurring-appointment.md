@@ -3,7 +3,7 @@ title: 'Ejemplo: Convertir una cita en una cita periódica (Common Data Service)
 description: Este ejemplo muestra cómo convertir una cita en una serie de citas periódicas.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e1753cbbc46be5fad8aeb7ab5285057098bd9c35
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 8649ade2da529c5971b8bf321e1c58b44dfda9df
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934400"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155908"
 ---
 # <a name="sample-convert-an-appointment-to-a-recurring-appointment"></a>Ejemplo: convertir una cita en una cita periódica
 

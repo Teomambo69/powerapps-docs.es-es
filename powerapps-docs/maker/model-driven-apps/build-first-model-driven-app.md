@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 04c083624b8f9d971698c97d133cdd209a8a6e5c
-ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
+ms.openlocfilehash: 4c404c8aab419fa4b0445a392d7440c2ab3f099b
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004950"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "3136164"
 ---
 # <a name="build-your-first-model-driven-app-from-scratch"></a>Crear la primera aplicación controlada por modelos desde cero
 El diseño de una aplicación controlada por modelos es un enfoque centrado en los componentes para el desarrollo de la aplicación. En este tema, simplificará el modo de crear una aplicación controlada por modelos usando una de las entidades estándar que esté disponible en el entorno de Power Apps.
@@ -35,49 +35,54 @@ Inicie sesión en [Power Apps](https://make.powerapps.com/). Si aún no tiene un
 
 ## <a name="create-your-model-driven-app"></a>Cree su aplicación controlada por modelos
 
-1.  Seleccione el entorno que desee o vaya al [Centro de administración de Power Apps](https://admin.powerapps.com/) para crear uno nuevo.
+1.    Seleccione el entorno que desee o vaya al [Centro de administración de Power Apps](https://admin.powerapps.com/) para crear uno nuevo.
 
-  > [!IMPORTANT]
-  > Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).   
+2.  En la página **Inicio** , seleccione **Empezar en blanco una aplicación basada en modelos**.
 
-2. En la página **Inicio** , seleccione **Empezar en blanco una aplicación basada en modelos**.
-<!-- ![Start-from-blank_model](media/build-first-model-driven-app/start-from-blank-model-driven.png) -->
+    > [!div class="mx-imgBorder"] 
+    > <img src="media/build-first-model-driven-app/start-from-blank-model-driven.png" alt="Start from blank model" height="429" width="673">
 
-3.  En la página **Crear una nueva aplicación**, especifique los siguientes detalles y, a continuación, seleccione **Hecho**: 
+3.  Seleccione **Crear**.
+
+3.    En la página **Crear una nueva aplicación**, especifique los siguientes detalles y, a continuación, seleccione **Hecho**: 
   - **Nombre**: escriba un nombre para la aplicación, como *Mi primera aplicación*. 
   - **Nombre único**: de forma predeterminada, el nombre único usa el nombre que especifique en la casilla **Nombre**, sin espacios y precedida por el prefijo del editor y un guión bajo (_). Por ejemplo, *crecf_Myfirstapp*. Más información: [Cambiar el prefijo del editor de soluciones](../common-data-service/change-solution-publisher-prefix.md)
   - **Descripción**: escriba una breve descripción de lo que es o hace la aplicación, como *Esta es mi primera aplicación*.
 Para obtener información acerca de las propiedades adicionales de la aplicación, consulte [Crear una aplicación](create-edit-app.md#create-an-app).
 
-    > [!div class="mx-imgBorder"] 
-    > ![](media/create-new-app.png "Create a new app") 
-
+  > [!div class="mx-imgBorder"] 
+  > ![Crear una nueva aplicación](media/create-new-app.png "Crear una nueva aplicación")
 
 ## <a name="add-components-to-your-app"></a>Agregar componentes a la aplicación
 En el diseñador de aplicaciones puede agregar componentes a la aplicación.
-1.  Seleccione la flecha **Abrir el diseñador del mapa del sitio** para abrir el diseñador del mapa del sitio. 
+1.    Seleccione el botón de edición **Abrir el diseñador del mapa del sitio** para abrir el diseñador del mapa del sitio.
 
-    ![Crear nuevo mapa del sitio](media/build-first-model-driven-app/new-sitemap.png)
+      > [!div class="mx-imgBorder"] 
+      > ![Crear nuevo mapa del sitio](media/build-first-model-driven-app/new-sitemap.png "Diseñador del mapa del sitio")
 
-2.  En el diseñador del mapa del sitio, seleccione **Nueva subárea**, en el panel derecho seleccione la pestaña **Propiedades** y, a continuación, seleccione las siguientes propiedades.
+2.    En el diseñador del mapa del sitio, seleccione **Nueva subárea**, en el panel derecho seleccione la pestaña **Propiedades** y, a continuación, seleccione las siguientes propiedades.
   - **Tipo**: Entidad
   - **Entidad**: Cuenta
 
-    ![Agregar componentes al mapa del sitio](media/build-first-model-driven-app/sitemap.png)
+    > [!div class="mx-imgBorder"] 
+    > ![Agregar componentes al mapa del sitio](media/build-first-model-driven-app/sitemap.png "Nueva subárea")
 
-3.  Seleccione **Guardar y cerrar**.
-4.  En el lienzo del diseñador de aplicaciones, seleccione **Formularios** y, en el panel derecho, bajo el grupo **Formularios principales**, seleccione el formulario **Cuenta**.
+3.    Seleccione **Guardar y cerrar**.
+4.    En el lienzo del diseñador de aplicaciones, seleccione **Formularios** y, en el panel derecho, bajo el grupo **Formularios principales**, seleccione el formulario **Cuenta**.
 
-    ![Formulario Cuenta principal](media/build-first-model-driven-app/main-form.png)
+      > [!div class="mx-imgBorder"] 
+      > ![Formulario Cuenta principal](media/build-first-model-driven-app/main-form.png "Formularios de aplicación")
 
-5.  En el lienzo del diseñador de aplicaciones, seleccione **Vistas** y, a continuación, seleccione las vistas **Cuentas activas**, **Todas las cuentas** y **Mis cuentas activas**.
+5.    En el lienzo del diseñador de aplicaciones, seleccione **Vistas** y, a continuación, seleccione las vistas **Cuentas activas**, **Todas las cuentas** y **Mis cuentas activas**.<!-- All checkbox seems to be selected by default -->
 
-    ![Vistas de Cuenta](media/build-first-model-driven-app/views.png)
+      > [!div class="mx-imgBorder"] 
+      > ![Vistas de Cuenta](media/build-first-model-driven-app/views.png "Vistas de aplicación")
 
 6. En el lienzo del diseñador de aplicaciones, seleccione **Gráficos** y seleccione el gráfico **Cuentas por sector**.
 7. En la barra de herramientas del diseñador de aplicaciones, seleccione **Guardar**.
 
-    ![Barra de herramientas del diseñador de aplicaciones - Guardar](media/build-first-model-driven-app/app-designer-toolbar.png)
+      > [!div class="mx-imgBorder"] 
+      > ![Barra de herramientas del diseñador de aplicaciones - Guardar](media/build-first-model-driven-app/app-designer-toolbar.png "Guardar la aplicación")
  
 <!-- ##  Validate your app
 This step checks for component dependencies that are required for the app to work, but haven't yet been added to the app. 
@@ -94,7 +99,8 @@ En la barra de herramientas del diseñador de aplicaciones, seleccione **Publica
 
 Después de que publique la aplicación, la podrá ejecutar o compartir con otros.
 
-![Aplicación simple de la entidad Cuenta](media/build-first-model-driven-app/accounts-quickstart-app.png)
+  > [!div class="mx-imgBorder"] 
+  > ![Aplicación simple de la entidad Cuenta](media/build-first-model-driven-app/accounts-quickstart-app.png "Ejecutar la prueba")
 
 ## <a name="next-steps"></a>Pasos siguientes
 En este tema, creó una aplicación controlada por modelos simple. 

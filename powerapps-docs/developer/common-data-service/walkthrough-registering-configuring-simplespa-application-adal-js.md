@@ -9,18 +9,18 @@ ms.assetid: a327d2ff-e252-61cf-1190-6a974130ef19
 author: paulliew
 ms.author: nabuthuk
 manager: ryjones
-ms.reviewer: ''
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 874fb17ddb2911f1464b07e7dacd597f89fc8c75
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 91e51f55a6a2066f8a72d61aa4ef6f889bd8f6c4
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2859937"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155132"
 ---
 # <a name="walkthrough-registering-and-configuring-a-spa-application-with-adaljs"></a>Tutorial: Registrar y configurar una aplicación SPA con adal.js
 

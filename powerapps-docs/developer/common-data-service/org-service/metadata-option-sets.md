@@ -3,7 +3,7 @@ title: Personalizar conjuntos de opciones (Common Data Service) | Microsoft Docs
 description: Describe cómo trabajar con los conjuntos de opciones globales y locales en código.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 50e923cb096870645980e358fb8a0065513226b4
-ms.sourcegitcommit: 04ba6f3773b23e4e89c23269b84707d19e9ed04c
+ms.openlocfilehash: 3b2d6bc193fb5e001d3fd2813d8da3956b0b3a53
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "3094442"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156016"
 ---
 # <a name="customize-option-sets"></a>Conjunto de opciones personalizadas
 

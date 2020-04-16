@@ -3,7 +3,7 @@ title: 'Ejemplo: Reemplazar el recuento total de objetivos y cerrar el objetivo 
 description: Este ejemplo muestra cómo reemplazar el recuento total de objetivos y cerrar el objetivo.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a57a0daa4d956cf07728e836cf0663c27157322d
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 16909500d47a6661ec3b25281bc6034627fc88c2
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934272"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155716"
 ---
 # <a name="sample-override-goal-total-count-and-close-the-goal"></a>Ejemplo: reemplazar el recuento total de objetivos y cerrar el objetivo
 

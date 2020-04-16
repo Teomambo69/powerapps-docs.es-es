@@ -3,7 +3,7 @@ title: Registrar un complemento (Common Data Service) | Microsoft Docs
 description: Aprenda a registrar un complemento para aplicar lógica de negocios personalizada a Common Data Service.
 ms.custom: ''
 ms.date: 02/19/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bba0a473d76fc69832e05ec316a6ed6da6ad899d
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: a4b9bdbc10af7afcc3fd5165c98d25c60727a5dd
+ms.sourcegitcommit: 3f89b04359df19f8fa5167e2607509bb97e60fe0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109614"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "3165201"
 ---
 # <a name="register-a-plug-in"></a>Registrar un complemento
 
@@ -46,6 +46,7 @@ El contenido de este tema describe los pasos anteriores **en negrita** y ofrece 
 - [Tutorial: Escribir y registrar un complemento](tutorial-write-plug-in.md)
 - [Tutorial: Depurar un complemento](tutorial-debug-plug-in.md)
 - [Tutorial: Actualizar un complemento](tutorial-update-plug-in.md)
+
 
 ## <a name="plugin-registration-tool-prt"></a>Plugin Registration Tool (PRT)
 
@@ -169,10 +170,6 @@ Al registrar una paso, hay muchas opciones disponibles para usted que dependen d
 |**Pedido de ejecución**|Pueden registrarse múltiples pasos para la misma fase del mismo mensaje. El número de este campo determina el orden en el que se aplicarán del más bajo al más alto. <br/> **Nota**: debe establecer esta opción para controlar el orden en el que los complementos se aplican en la fase. No se recomendado para aceptar simplemente el valor predeterminado. Si todos los complementos de la misma fase, la entidad y el mensaje tienen el mismo valor, el valor [SdkMessageProcessingStep.SdkMessageFilterId](/dynamics365/customer-engagement/developer/entities/sdkmessageprocessingstep#BKMK_SdkMessageFilterId) determinará el orden en el que se ejecutan.|
 |**Descripción**|Descripción del paso. Este valor se rellena previamente pero puede sobrescribirse.|
 
-> [!NOTE]
-> Existen algunos casos donde los complementos registrados para el evento `Update` se pueden llamar dos veces. Más información: [Comportamiento de operaciones de actualización especializadas](special-update-operation-behavior.md)
-
-
 ### <a name="event-pipeline-stage-of-execution"></a>Fase de canalización de eventos de ejecución
 
 Elija la fase de la canalización de eventos que mejor se adapte al objetivo del complemento.
@@ -194,7 +191,13 @@ Hay dos modos de ejecución: asincrónico y sincrónico.
 |**Asincrónico**|El contexto de ejecución y la definición de la lógica de negocios que se aplicará pasa al trabajo del sistema que se ejecutará después de que la operación se complete.|
 |**Sincrónico**|Los complementos se ejecutan inmediatamente según la fase de ejecución y el orden de ejecución. La operación completa esperará hasta que se complete.|
 
-Los complementos asincrónicos solo pueden registrarse para la fase **PostOperation**. Para obtener más información sobre el funcionamiento de los trabajos del sistema, consulte [Servicio asincrónico](asynchronous-service.md)
+Los complementos asincrónicos solo pueden registrarse para la fase **PostOperation**. Para obtener más información sobre el funcionamiento de los trabajos del sistema, consulte [Servicio asincrónico](asynchronous-service.md)       
+
+### <a name="special-step-registration-scenarios"></a>Escenarios especiales de registro de pasos
+Hay ciertos escenarios en los que el registro de pasos para una combinación de mensaje y entidad no es obvio. Este es el resultado de cómo el sistema está diseñado internamente donde existe una relación especial entre entidades u operaciones. La siguiente información identifica estos casos y proporciona una guía de registro de pasos.
+
+- Existen algunos casos donde los complementos registrados para el evento _Actualizar_ se pueden llamar dos veces. Más información: [Comportamiento de operaciones de actualización especializadas](https://github.com/MicrosoftDocs/powerapps-docs-pr/blob/8c969ed391d6fc8e423bde15c65db1f60f5fab2f/powerapps-docs/developer/common-data-service/special-update-operation-behavior.md)
+- Registre un paso de complemento en **cuenta** o **contacto** cuando desee manejar cambios de datos a las instancias de entidad **customeraddress**, **leadaddress**, **publisheraddress** o **competitoraddress**.
 
 ### <a name="deployment"></a>Implementación
 

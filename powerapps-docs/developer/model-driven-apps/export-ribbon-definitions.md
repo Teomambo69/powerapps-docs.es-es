@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d6c342d1b5c3b5864aaf556af800c0f439a3e272
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 4c30de17ecf3653baeebb3f3de015e982bc5b2bf
+ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753620"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172579"
 ---
 # <a name="export-ribbon-definitions"></a>Exportar definiciones de cinta de opciones
 
@@ -210,7 +210,12 @@ foreach (System.String entityName in entitiesWithRibbons)
   }
  }
 }  
-```  
+``` 
+
+## <a name="troubleshoot-ribbon-issues"></a>Solución de problemas de cinta
+
+Si tiene un problema con un botón de la barra de comandos de la cinta, use esta guía de solución de problemas para encontrar y resolver el problema: <https://support.microsoft.com/help/4552163>
+
 ### <a name="see-also"></a>Vea también  
  [Personalizar la cinta de opciones](customize-commands-ribbon.md)   
  [Presentación de la barra de comandos o la cinta de opciones](command-bar-ribbon-presentation.md)   

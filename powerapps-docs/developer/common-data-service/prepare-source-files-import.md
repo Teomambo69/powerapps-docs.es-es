@@ -3,7 +3,7 @@ title: Preparar los archivos de origen para importación (Common Data Service) |
 description: La importación de datos es compatible con archivos de origen con formato de valores separados por comas (.csv), hoja de cálculo XML 2003 (.xml) o archivos de texto.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 19ddeb03ffc6132e67da8140c63f392769db4fe2
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0e2e89f178e30d8b0f1f704149f64e496f7740e4
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752668"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155368"
 ---
 # <a name="prepare-source-files-for-import"></a>Preparar archivos de origen para importar
 

@@ -3,7 +3,7 @@ title: 'Ejemplo: Publicar informes (Common Data Service) | MicrosoftDocs'
 description: Este ejemplo muestra cómo publicar informes.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dbf928c13e80ed0f95e1b0c84b4e51452d6f8607
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: 0dc52a0cd6cdc45c15327b1f1b2bf9c5c1848153
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956350"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155704"
 ---
 # <a name="publish-reports"></a>Publicación de informes
 

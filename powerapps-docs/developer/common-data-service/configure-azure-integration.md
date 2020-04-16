@@ -3,7 +3,7 @@ title: Configurar la integración de Azure (Common Data Service) | Microsoft Doc
 description: El tema describe la configuración de la integración de Azure con Common Data Service.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b030ca4e60d9f51f53706d682146c9acd46d5aa0
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 718d895ddaccff14569d3acb70cfe8360d406139
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749726"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156384"
 ---
 # <a name="configure-azure-integration-with-common-data-service"></a>Configurar la integración de Azure con Common Data Service
 

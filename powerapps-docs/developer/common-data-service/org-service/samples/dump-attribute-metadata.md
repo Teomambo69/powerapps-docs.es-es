@@ -3,7 +3,7 @@ title: " Volcar metadatos de atributo a un archivo (Common Data Service) | Micro
 description: Este ejemplo muestra cómo volcar metadatos de atributos a un archivo.
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fe834777d88361620c70ba26b77596c15db83eac
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 280ee9d22cc5cd6fb3679850b83fe86fe4719717
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934332"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155816"
 ---
 # <a name="dump-attribute-metadata-information-to-a-file"></a>Volcar información de metadatos de atributo a un archivo
 

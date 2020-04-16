@@ -3,7 +3,7 @@ title: Entidad de anotación (nota) (Common Data Service) | Microsoft Docs
 description: Obtenga información sobre la entidad de anotación para anexar información adicional a cualquier registro en la base de datos. La entidad de anotación representa una anotación y contiene el texto de la anotación, quién creó y modificó la anotación, y si hay un archivo vinculado a la anotación.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9b065d6fc88ecd0662034f6fa95667679d667922
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3db4131efc8242233eeaab2ae85d9c8e42417015
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749590"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156477"
 ---
 # <a name="annotation-note-entity"></a>Entidad de anotación (nota)
 

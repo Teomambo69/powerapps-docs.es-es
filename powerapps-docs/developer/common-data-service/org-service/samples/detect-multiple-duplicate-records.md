@@ -3,7 +3,7 @@ title: 'Ejemplo: Detectar varios registros duplicados (Common Data Service) | Mi
 description: Este ejemplo muestra cómo detectar y registrar varios registros duplicados para un tipo de entidad especificado.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2efe8b44f2ea8cbe943466441df75dcb876a3bb3
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 73172bf6736f1093351879d77e4b5445b56d3789
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934344"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155833"
 ---
 # <a name="sample-detect-multiple-duplicate-records"></a>Ejemplo: detectar varios registros duplicados
 

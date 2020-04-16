@@ -13,18 +13,18 @@ ms.assetid: f2e5d22b-93fe-43b7-af15-3e281f3b3084
 caps.latest.revision: 13
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 283d78e56fc87825ed7e1b72ef182dd0379e786c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 924368f5d72a11fb94445b5e283bfe180871c681
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753640"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154964"
 ---
 # <a name="web-api-conditional-operations-sample"></a>Ejemplo de operaciones condicionales de la API web
 

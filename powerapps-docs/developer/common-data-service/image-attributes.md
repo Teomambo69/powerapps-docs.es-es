@@ -3,7 +3,7 @@ title: Atributos de imagen (Common Data Service) | Microsoft Docs
 description: Obtenga información sobre los atributos de imagen que almacenan datos de imagen, atributos de soporte, recuperando datos de imagen y cargando datos de imagen.
 ms.custom: ''
 ms.date: 02/11/2020
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 988a403bdd3badd720a46ee5b58a9539bc1ac9f9
-ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
+ms.openlocfilehash: 79cacd85ae1478ed43ee21e499fdfd4b1e606c14
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3037083"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156184"
 ---
 # <a name="image-attributes"></a>Atributos de imagen
 

@@ -3,7 +3,7 @@ title: Importar datos (Common Data Service) | Microsoft Docs
 description: Si desea importar datos a Common Data Service, puede usar la función de *importación de datos*. Importación de datos le permite cargar datos de los distintos sistemas de administración de relaciones con el cliente y orígenes de datos en Common Data Service
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 562072c6d63b0abfeaa6c9f44f9cccfc5fdc960c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a6dbd7fb1f94a0824cd28e643057c2c3bf3b8100
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749431"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156168"
 ---
 # <a name="import-data"></a>Importar datos
 

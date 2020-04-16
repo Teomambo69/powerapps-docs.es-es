@@ -3,7 +3,7 @@ title: 'Ejemplo: Trabajar con servicio de detección <Topic Title> (Common Data 
 description: Este código de muestra cómo usar los servicios de detección
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d33f6cedbbfdaa22f4de7da6348c22c1e25cbc53
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: caa9d0c983c6d78d084062ac6dd38094a2a2e9c6
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956295"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155972"
 ---
 # <a name="sample-access-the-discovery-service"></a>Ejemplo: Acceder al servicio de detección
 

@@ -3,7 +3,7 @@ title: Modelo de seguridad (Common Data Service) | Microsoft Docs
 description: Common Data Service ofrece un modelo de seguridad que protege la integridad y privacidad de los datos, y admite una colaboración y un acceso a los datos eficaces.
 ms.custom: ''
 ms.date: 10/19/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: paulliew
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b637d0a26acddad25dcfe56b5ad8067f34735398
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f8c23b96fdc79920ddb79fdc495aaebec00a0bc6
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2859917"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155296"
 ---
 # <a name="security-model"></a>Modelo de seguridad
 

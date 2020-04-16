@@ -3,7 +3,7 @@ title: 'Paso 1: Crear una cuenta del Centro de partners de Microsoft (Common Dat
 description: Los creadores de aplicaciones deben ser miembros de Microsoft Partner Network (MPN) para poder publicar aplicaciones en AppSource.
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: KumarVivek
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e9f85d14252e7472340fc5ca299f27d6f048e45a
-ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
+ms.openlocfilehash: 3430d0881aa0a9b23eec2c45951cfbde416aa870
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "2922343"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155344"
 ---
 # <a name="step-1-create-a--microsoft-partner-center-account"></a>Paso 1: Crear una cuenta del Centro de partners de Microsoft
 

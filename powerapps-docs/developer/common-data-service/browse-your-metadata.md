@@ -3,23 +3,23 @@ title: Examinar los metadatos para su organización (Common Data Service) | Micr
 description: Use el Explorador de metadatos de la entidad para ver las entidades y sus propiedades en Common Data Service. El Explorador de metadatos de la entidad es una solución administrada que puede descargar e instalar en su organización.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
-author: JimDaly
-ms.author: jdaly
+author: phecke
+ms.author: pehecke
 manager: ryjones
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 50a7c59ac5655fdcf6928f626c5714a75fe3f57e
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fed8e202cd7deb17b8861b43444be228fb5ccb92
+ms.sourcegitcommit: 204d73f30be2fd63e13e3c64cbfa62b8d667df33
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753056"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "3176153"
 ---
 # <a name="browse-the-metadata-for-your-environment"></a>Examinar los metadatos del entorno
 
@@ -89,10 +89,10 @@ Puede realizar las siguientes acciones para una sola entidad:
 **Explorador de metadatos** es una herramienta desarrollada por la comunidad de XrmToolbox para Common Data Service. Consulte el tema [herramientas para desarrolladores](developer-tools.md) para comunidad de herramientas desarrolladas.
 
 > [!NOTE]
-> Las herramientas de la Comunidad no son un producto de Common Data Service y no se amplía el soporte para las herramientas de comunidad. Si tiene alguna duda relacionada con la herramienta, póngase en contacto con el Editor. Más información: [XrmToolBox](https://www.xrmtoolbox.com).
+> Las herramientas de la comunidad no son un producto de Common Data Service y Microsoft no proporciona soporte técnico para las herramientas de la comunidad. Si tiene alguna duda relacionada con la herramienta, póngase en contacto con el Editor. Más información: [XrmToolBox](https://www.xrmtoolbox.com).
 
 ### <a name="see-also"></a>Vea también
 
  [Herramientas de desarrollo para Common Data Service](developer-tools.md)<br />
  [Personalizar metadatos de entidad](customize-entity-metadata.md)<br />
- 
+  

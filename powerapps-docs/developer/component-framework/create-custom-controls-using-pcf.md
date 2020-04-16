@@ -11,16 +11,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2cbf58a-9112-45c2-b823-2c07a310714c
-ms.openlocfilehash: 70532cfb3cc5cfad0f274f123857eedc5d54cae2
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: ccdb91def96f485d4641a71a6d12199117063e78
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909282"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162165"
 ---
 # <a name="create-and-build-a-code-component"></a>Crear y generar un componente de código
 
-En este tema se demuestra cómo crear e implementar componentes de código mediante Power Apps CLI. Asegúrese de que tiene instalado [Microsoft Power Apps CLI](https://aka.ms/PowerAppsCLI).
+Este artículo muestra cómo crear e implementar componentes de código utilizando Power Apps CLI. Asegúrese de que tiene instalado [Microsoft Power Apps CLI](https://aka.ms/PowerAppsCLI).
 
 ## <a name="create-a-new-component"></a>Crear un componente
 
@@ -43,7 +43,9 @@ Para comenzar, abra **Developer Command Prompt for VS 2017** después de instala
 
 ## <a name="build-your-component"></a>Crear su componente
 
-Para generar el proyecto de componentes abra la carpeta de proyecto que contiene `package.json` en Código de Visual Studio y use el comando (Ctrl-Mayús-B), y luego seleccione las opciones de compilación. Como alternativa, puede compilar el componente rápidamente mediante el comando `npm run build` en la ventana de Developer Command Prompt for VS 2017.
+Para generar el proyecto de componentes abra la carpeta de proyecto que contiene `package.json` en Código de Visual Studio y use el comando (Ctrl-Mayús-B), y luego seleccione las opciones de compilación. 
+
+Como alternativa, puede compilar el componente rápidamente mediante el comando `npm run build` en la ventana de Developer Command Prompt for VS 2017.
 
 > [!TIP]
 > Para depurar el componente durante o después de operaciones de compilación, consulte [Depurar un componente de código](debugging-custom-controls.md).

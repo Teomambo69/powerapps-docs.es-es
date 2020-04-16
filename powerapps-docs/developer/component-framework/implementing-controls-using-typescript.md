@@ -8,12 +8,12 @@ ms.topic: index-page
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: e2a9ceb90ec91e7c13c50b966b3a2808d988cf31
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 3dfb75a6d4ccf70863436bae8c7c6264f96f18d8
+ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017370"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3218545"
 ---
 # <a name="create-your-first-component"></a>Crear el primer componente 
 
@@ -25,6 +25,7 @@ Los siguientes pasos son necesarios para crear un componente de código deslizan
 - [Implementar el manifiesto](#implementing-manifest)
 - [Implementar lógica de componentes con TypeScript](#implementing-component-logic)
 - [Agregar estilo a los componentes de código](#adding-style-to-the-code-component)
+- [Crear sus componentes de código](#build-your-code-components)
 - [Empaquetar componentes de código](#packaging-your-code-components)
 - [Agregar un componente a una aplicación basada en modelos](#adding-code-components-in-model-driven-apps)
 - [Agregar un componente a una aplicación de lienzo](#adding-code-components-to-a-canvas-app)
@@ -33,14 +34,13 @@ Los siguientes pasos son necesarios para crear un componente de código deslizan
 
 Para crear un nuevo proyecto:
 
-1. Abra una ventana de **Developer Command Prompt for VS 2017**.
-1. Cree una nueva carpeta para el proyecto usando el comando siguiente: 
+1. Abra una ventana de **Developer Command Prompt for VS 2017**. Cree una nueva carpeta para el proyecto usando el comando siguiente: 
     ```CLI
-    mkdir LinearComponent
+     mkdir LinearComponent
     ```
-
+                     
 1. Vaya a la carpeta componente usando el comando `cd LinearComponent`. 
-   
+         
 1. Cree un nuevo proyecto de componente pasando parámetros básicos utilizando el comando.
 
    ```CLI
@@ -48,7 +48,7 @@ Para crear un nuevo proyecto:
     ``` 
 
 1. Instale las herramientas de generación del proyecto usando el comando `npm install`. 
-1. Abra la carpeta de proyecto `C:\Users\<your name>\Documents\<My_code_Component>` en un entorno de desarrollo de su elección y empiece con el desarrollo del componente de código. La forma más rápida de empezar es ejecutando `code .` desde el símbolo del sistema una vez que esté en el directorio `C:\Users\<your name>\Documents\<My_code_Component>`. Este comando abre el proyecto de componente en Código de Visual Studio.
+1. Abra la carpeta de proyecto en un entorno de desarrollo de su elección y empiece con el desarrollo del componente de código. La forma más rápida de comenzar es ejecutando `code .` desde el símbolo del sistema una vez que esté en el directorio del proyecto. Este comando abre el proyecto de componente en Código de Visual Studio.
 
 ## <a name="implementing-manifest"></a>Implementar el manifiesto
 
@@ -68,7 +68,7 @@ Realice cambios en el archivo de manifiesto predefinido, como se muestra aquí:
      ```XML
       <?xml version="1.0" encoding="utf-8" ?>
       <manifest>
-      <control namespace="SampleNameSpace" constructor="TSLinearInputComponent" version="1.0.0" display-name-key="Linear Input Component" description-key="Allows you to enter the numeric values using the visual slider." control-type="standard">
+      <control namespace="SampleNameSpace" constructor="TSLinearInputComponent" version="1.0.0" display-name-key="TSLinearInputComponent_Display_Key" description-key="TSLinearInputComponent_Desc_Key" control-type="standard">
      ```
 
 2. El nodo [propiedad](manifest-schema-reference/property.md) define las propiedades del componente de código como la definición del tipo de datos de campo. El nodo de la propiedad se especifica como elemento secundario bajo el elemento `control`. Defina el nodo [propiedad](manifest-schema-reference/property.md) como se muestra aquí:
@@ -92,14 +92,14 @@ Realice cambios en el archivo de manifiesto predefinido, como se muestra aquí:
       <resources>
         <code path="index.ts" order="1" />
         <css path="css/TS_LinearInputComponent.css" order="1" />
-        </resources>
+      </resources>
         ```
       El archivo de manifiesto general ser de este tipo: 
 
      ```XML
       <?xml version="1.0" encoding="utf-8" ?>
       <manifest>
-      <control namespace="SampleNamespace" constructor="TSLinearInputComponent" version="1.0.0" display-name-key="Linear Input Component" description-key="Allows you to enter the numeric values using the visual slider." control-type="standard">
+      <control namespace="SampleNamespace" constructor="TSLinearInputComponent" version="1.0.0" display-name-key="TSLinearInputComponent_Display_Key" description-key="TSLinearInputComponent_Desc_Key" control-type="standard">
         <type-group name="numbers">
           <type>Whole.None</type>
           <type>Currency</type>
@@ -116,10 +116,6 @@ Realice cambios en el archivo de manifiesto predefinido, como se muestra aquí:
      ```
 
 4. Guarde los cambios en el archivo `ControlManifest.Input.xml`.
-5. Ahora, cree una nueva carpeta dentro de la carpeta `TSLinearInputComponent` y llámela **css**.
-6. Cree un archivo CSS para [agregar estilos al componente de código](#adding-style-to-the-code-component).
-7. Cree el proyecto de componente usando el comando `npm run build`.
-8. La generación crea un archivo de declaración de tipo TypeScript actualizado en la carpeta `TSLinearInputComponent/generated`.
 
 ## <a name="implementing-component-logic"></a>Implementar lógica del componente
 
@@ -232,12 +228,7 @@ export class TSLinearInputComponent
 
 ```
 
-3. Vuelva a generar el proyecto usando el comando `npm run build`. 
- 
-4. El componente se compila en la carpeta `out/controls/TSLinearInputComponent`. Los artefactos de compilación incluyen:
-
-   - bundle.js – Código origen del componente agrupado. 
-   - ControlManifest.xml – Archivo de manifiesto del componente real que se carga en la organización de Common Data Service.
+3. Guarde los cambios en el archivo `index.ts`.
 
 ## <a name="adding-style-to-the-code-component"></a>Agregar estilo al componente de código
 
@@ -245,7 +236,7 @@ Los programadores y proveedores de aplicaciones pueden definir el diseño para r
 
 1. Cree una nueva subcarpeta `css` en la carpeta `TSLinearInputComponent`. 
 2. Cree un nuevo archivo `TS_LinearInputComponent.css` en la subcarpeta `css`. 
-3. Agregue el siguiente contenido de estilo al archivo `TS_LinearInputComponent.css`:
+3. Agregue el siguiente contenido de estilo al archivo `TS_LinearInputComponent.css`:""""""""
 
     ```CSS
     .SampleNamespace\.TSLinearInputComponent input[type=range].linearslider {
@@ -325,11 +316,19 @@ Los programadores y proveedores de aplicaciones pueden definir el diseño para r
       <css path="css/TS_LinearInputComponent.css" order="1"/> 
     </resources> 
      ```
-7. Vuelva a generar el proyecto usando el comando siguiente: 
-   ```CLI
-   npm run build
-   ```
-8. Inspeccione la salida de compilación en **./out/controls/TSLinearInputComponent** y observe que el archivo **TS_LinearInputComponent.css** ahora está incluido con los artefactos de generación compilados. 
+
+## <a name="build-your-code-components"></a>Crear sus componentes de código
+
+Después de terminar de agregar manifiesto, lógica de componentes y estilo, compile los componentes del código con el comando:
+```
+npm run build
+```
+
+De forma alternativa, para crear el componente del proyecto, abra la carpeta del proyecto que contiene `package.json` en Visual Studio Code y use el comando (Ctrl-Shift-B) y después las opciones de creación. La generación crea un archivo de declaración de tipo TypeScript actualizado en la carpeta `TSLinearInputComponent/generated`.
+El componente se compila en la carpeta `out/controls/TSLinearInputComponent`. Los artefactos de compilación incluyen:
+
+   - bundle.js – Código origen del componente agrupado. 
+   - ControlManifest.xml – Archivo de manifiesto del componente real que se carga en la organización de Common Data Service.
 
 ## <a name="debugging-your-code-component"></a>Depurar el componente de código
 
@@ -365,11 +364,14 @@ Siga estos pasos para crear e importar un archivo de [solución](https://docs.mi
      msbuild /t:restore
     ```
 
-5. Ejecute de nuevo el siguiente comando msbuild:
+5. Ejecute de nuevo el siguiente comando:
     ```CLI
      msbuild
     ```
-
+    > [!TIP]
+    > Recibirá el error: *No use la función `eval` o sus equivalentes funcionales*, cuando cree el archivo de solución utilizando el comando `msbuild` y lo importe en Common Data Service y ejecuta el comprobador de soluciones.
+    > Vuelva a compilar el archivo de solución con el comando `msbuild/property:configuration:Release` y reimporte la solución en Common Data Service y ejecute el comprobador de soluciones.
+      
     > [!NOTE]
     > Asegúrese de que está activado **Destinos de NuGet y tareas de compilación**. Para habilitarla:
     > - Abra **Instalador de Visual Studio**.
@@ -382,15 +384,16 @@ Siga estos pasos para crear e importar un archivo de [solución](https://docs.mi
 
 ## <a name="adding-code-components-in-model-driven-apps"></a>Agregar componentes código en aplicaciones basadas en modelo
 
-Para agregar un componente de código como un componente de entrada lineal, siga los pasos a los que se hace referencia en el tema [Agregar componentes a campos y entidades](add-custom-controls-to-a-field-or-entity.md).
+Para agregar un componente de código como un componente de entrada lineal, siga los pasos mencionados en el artículo [Agregar componentes a campos y entidades](add-custom-controls-to-a-field-or-entity.md).
 
 ## <a name="adding-code-components-to-a-canvas-app"></a>Agregar componentes de código a una aplicación de lienzo
 
-Para agregar los componentes de código a una aplicación de lienzo, siga los pasos del tema [Agregar componentes de código a una aplicación de lienzo](component-framework-for-canvas-apps.md#add-components-to-a-canvas-app).
+Para agregar los componentes del código a una aplicación de lienzo, siga los pasos del artículo [Agregar componentes de código a una aplicación de lienzo](component-framework-for-canvas-apps.md#add-components-to-a-canvas-app).
 
 ### <a name="see-also"></a>Vea también
 
-[Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[Descargar componentes de ejemplo](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
+[Más información sobre Power Apps component framework](https://docs.microsoft.com/learn/paths/use-power-apps-component-framework)<br/>
 [Actualizar componentes existentes de Power Apps component framework](updating-existing-controls.md)<br/>
 [Power Apps build tools](https://docs.microsoft.com/powerapps/developer/common-data-service/build-tools-overview)<br/>
 [Referencia de la API de Power Apps component framework](reference/index.md)<br/>

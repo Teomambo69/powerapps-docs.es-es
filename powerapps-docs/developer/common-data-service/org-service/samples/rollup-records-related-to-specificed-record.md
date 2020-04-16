@@ -3,7 +3,7 @@ title: " Consolidar registros relacionados con un registro específico (Common D
 description: En este ejemplo se muestra cómo consolidar registros relacionados con un registro especificado.
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ebdaaa74f406a1f640f8d26494a72fa1e5ed31e1
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 7756f3b180e57277a6350eca261898ecec264032
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934578"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155596"
 ---
 # <a name="rollup-records-related-to-a-specific-record"></a>Consolidar registros relacionados con un registro específico
 

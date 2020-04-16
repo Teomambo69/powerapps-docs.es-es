@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 70d150d0405bf6196387a39c807a26ba3e6efbfa
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 4f5378eb97f452c0a7dc57fa5b8e8cc314f7779b
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883506"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3167132"
 ---
 # <a name="best-practices-and-guidance-for-model-driven-apps"></a>Prácticas recomendadas e instrucciones para aplicaciones basadas en modelos
 
@@ -33,7 +33,12 @@ Las aplicaciones basadas en modelos son un modelo centrado en los componentes pa
 
 En esta sección se informará sobre los problemas que hemos identificado, su impacto, y entenderá la información para resolverlos. Explicaremos las cuestiones de fondo sobre por qué las cosas deben realizarse de tal forma que se eviten posibles problemas en el futuro. Esto puede ser una ventaja para la utilidad, la compatibilidad y el rendimiento del entorno. La documentación de las instrucciones admite la información existente en de las guías de programación y administración.
 
+> [!NOTE]
+> En este momento, solo las mejores prácticas de scripting del cliente están documentadas en el TOC y el resto de ellas se agregarán eventualmente.
+> Este documento cubre la estructura general de cómo debería verse la página de mejores prácticas con las secciones y pautas.
+
 ## <a name="targeted-customization-types"></a>Tipos específicos de personalización
+
 La documentación aborda los siguientes tipos de personalización:
 
 - Diseño de aplicaciones basadas en modelos
@@ -42,6 +47,7 @@ La documentación aborda los siguientes tipos de personalización:
 - Recursos web
 
 ## <a name="sections"></a>Secciones
+
 Cada artículo de las instrucciones incluye la mayor parte o todas las secciones siguientes:
 
 - Título: descripción de las instrucciones.
@@ -54,6 +60,7 @@ Cada artículo de las instrucciones incluye la mayor parte o todas las secciones
 - Vea también: referencias para obtener más información sobre algo que aparece en el artículo.
 
 ## <a name="categories"></a>Categorías
+
 Cada artículo de las instrucciones se clasifica en una o más de las categorías siguientes:
 
 - Uso: uso incorrecto de una API, patrón o configuración particulares.

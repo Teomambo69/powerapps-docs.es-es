@@ -23,11 +23,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: e0e9e71f1df22d091597add562b8a863504ed0aa
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3108802"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3126297"
 ---
 # <a name="navigate-to-advanced-model-driven-app-making-and-customization-areas"></a>Navegar a áreas de creación y personalización avanzadas de aplicaciones controladas por modelos
 

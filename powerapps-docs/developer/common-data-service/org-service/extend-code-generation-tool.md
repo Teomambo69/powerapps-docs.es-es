@@ -3,7 +3,7 @@ title: Crear extensiones para la herramienta de generación de código (Common D
 description: El paquete de descarga del SDK incluye una extensión a la herramienta de generación de código CrmSvcUtil que puede usar para generar enumeraciones para todos los valores del conjunto de opciones incluidos los conjuntos de opciones globales, la lista desplegable, el estado y los valores de estado.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3481ef129b91883df648b956a31fffc9aa55067e
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: ebc09cf522fa7847f087dc772bf23fed0ddb27fb
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091255"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156056"
 ---
 # <a name="create-extensions-for-the-code-generation-tool"></a>Crear extensiones para la herramienta de generación de código
 

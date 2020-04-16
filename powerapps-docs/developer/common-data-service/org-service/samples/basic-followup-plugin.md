@@ -3,7 +3,7 @@ title: 'Ejemplo: Crear un complemento básico (Common Data Service) | Microsoft 
 description: En este ejemplo se muestra cómo escribir un complemento sencillo que cree una actividad de seguimiento.
 ms.custom: ''
 ms.date: 1/29/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 43e914fd10d05b4c93857fe05b414562070c7907
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c3df411b45640551781e37d5b349ee4c4640086d
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749680"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155920"
 ---
 # <a name="sample-create-a-basic-plug-in"></a>Ejemplo: Crear un complemento básico
 

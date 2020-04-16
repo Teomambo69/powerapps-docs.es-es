@@ -3,7 +3,7 @@ title: Detección de datos duplicados con el servicio de organización (Common D
 description: El servicio de la organización le permite detectar registros duplicados en Common Data Service para mantener la integridad de los datos.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cb2ecce70adaf47ea55117831d2ced866bce10f1
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 6d34d8e58f313fcd10824a88578c6fc0ae69d84b
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109079"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156099"
 ---
 # <a name="detect-duplicate-data-using-the-organization-service"></a>Detección de datos duplicados con el servicio de organización
 

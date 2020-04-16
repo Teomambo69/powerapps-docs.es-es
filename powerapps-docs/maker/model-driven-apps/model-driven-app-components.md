@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4f1c05ca41e6873a0072e8ea6720343e468e38bb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 31578198bb468a2a4269b7fda23a2ac2cc2cab73
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2863080"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "3136321"
 ---
 # <a name="understand-model-driven-app-components"></a>Conocer los componentes de las aplicaciones basadas en modelos
 Una aplicación controlada por modelos bien diseñada se compone de varios componentes que selecciona usando el diseñador para crear la apariencia y funcionalidades de la aplicación terminada. Los componentes y propiedades de componentes que los diseñadores usan para crear una aplicación son los metadatos. 
@@ -52,7 +52,8 @@ Estos componentes determinan cómo interactúan los usuarios con la aplicación.
 |Formulario     | Conjunto de campos de entrada de datos de una entidad dada que coincide con los elementos de los que su organización realiza un seguimiento para la entidad. Por ejemplo, un conjunto de campos de entrada de datos que realizan un seguimiento de los pedidos anteriores de un cliente junto con las fechas de nuevo pedido específicas solicitadas.        | Diseñador de formularios        |
 |Vista     | Las vistas definen cómo se muestra una lista de registros para una entidad específica en la aplicación. Una vista define las columnas para mostrar, el ancho de cada columna, el comportamiento de ordenación y los filtros predeterminados.   |  Diseñador de vistas       |
 
-![Diseñador de aplicaciones y diseñador de formularios](media/model-driven-app-overview/app-and-form-designers.png)
+> [!div class="mx-imgBorder"] 
+> ![Diseñador de aplicaciones y diseñador de formularios](media/model-driven-app-overview/app-and-form-designers.png "Diseñador de aplicaciones y diseñador de formularios")
 
 ## <a name="logic"></a>Lógica
 Determina los procesos de negocio, reglas y automatización que la aplicación tendrá. Los creadores de [!INCLUDE [powerapps](../../includes/powerapps.md)] usan un diseñador que es específico al tipo de proceso o de regla. 
@@ -66,7 +67,7 @@ Determina los procesos de negocio, reglas y automatización que la aplicación t
 |Regla de negocio     | Se usa para aplicar lógica de reglas o de recomendación a un formulario, por ejemplo, para establecer los requisitos de campo, ocultar campos o validar datos. Los diseñadores de aplicaciones usan una interfaz básica para implementar y mantener reglas de evolución rápida y de uso general.         |  Diseñador de reglas de negocio       |
 |Flujo     | Un flujo es un servicio basado en la nube que le permite crear flujos de trabajo automáticos entre aplicaciones y servicios para obtener notificaciones, sincronizar archivos, recopilar datos, etc.        | Power Automate        |
 
-![Diseñadores de flujos de trabajo, acciones y flujos de proceso de negocio](media/model-driven-app-overview/designer-mash.png)
+![Diseñadores de flujos de trabajo, acciones y flujos de proceso de negocio](media/model-driven-app-overview/designer-mash.png "Diseñadores de flujos de trabajo, acciones y flujos de proceso de negocio")
 
 Más información: [Aplicar lógica de negocios a su aplicación controlada por modelos](guide-staff-through-common-tasks-processes.md) 
 
@@ -84,18 +85,23 @@ Determina qué tipo de visualizaciones y de creación de informes tendrá dispon
 |Panel     | Funciona como una preferencia para una o varias visualizaciones gráficas que proporcionan una visión general de los datos profesionales en los que se puede actuar.        | Diseñador de paneles        |
 |Power BI insertado     | Agregue ventanas y paneles de Power BI incrustado a la aplicación. Power BI es un servicio basado en la nube que ofrece información detallada de inteligencia empresarial.        |  Combinación de diseñador de gráficos, diseñador de paneles y Power BI       |
 
-![Panel de ejemplo](media/model-driven-app-overview/dashboard-designer.png)
+> [!div class="mx-imgBorder"] 
+> ![Panel de ejemplo](media/model-driven-app-overview/dashboard-designer.png "Panel de ejemplo")
 
 ## <a name="advanced-model-driven-app-making"></a>Creación avanzada de aplicaciones controladas por modelos
 El explorador de soluciones es una herramienta completa que se usa para la creación avanzada de aplicaciones controladas por modelos. En el explorador de soluciones puede navegar por una jerarquía formada por todos los componentes de las aplicaciones usando el panel de navegación que hay a la izquierda de la herramienta.
 
-![Explorador de soluciones](media/model-driven-app-overview/solutionexplorer-entitiescollapsed.png)
+> [!div class="mx-imgBorder"] 
+> ![Explorador de soluciones](media/model-driven-app-overview/solutionexplorer-entitiescollapsed.png "Explorador de soluciones")
 
-Para abrir el explorador de soluciones, seleccione **Controlado por modelos** en el panel izquierdo de [!INCLUDE [powerapps](../../includes/powerapps.md)].
+Para abrir el explorador de soluciones, 
 
-  ![Seleccione Controlado por modelos](media/model-driven-app-overview/app-type-picker-mod.png)
+1. En la página principal de [!INCLUDE [powerapps](../../includes/powerapps.md)], seleccione el icono **Configuración** y después seleccione **Configuración avanzada**.
 
-A continuación, seleccione la pestaña **Avanzada**.
+2. En la página Dynamics 365 Business Management, seleccione **Configuración**, seleccione **Personalizaciones** y luego seleccione **Personaliza el sistema**.
+
+  > [!div class="mx-imgBorder"] 
+  > ![Abra el explorador de soluciones](media/model-driven-app-overview/app-settings-solutions-explorer.png "Abrir el explorador de soluciones")
 
 Más información: [Creación y personalización avanzadas de aplicaciones](advanced-navigation.md)
 

@@ -2,7 +2,7 @@
 title: Componer solicitudes HTTP y administrar errores (Common Data Service)| Microsoft Docs
 description: Obtenga información sobre los métodos y encabezados de HTTP que forman parte de las solicitudes HTTP que interactúan con la API web y cómo identificar y controlar errores devueltos en la respuesta.
 ms.custom: ''
-ms.date: 11/05/2018
+ms.date: 04/03/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,19 +13,19 @@ ms.assetid: 64a39182-25de-4d31-951c-852025a75811
 caps.latest.revision: 13
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 405e27d3461f78a2452de1c8b19d99d4d827d879
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 4ce55b03411e7a7d3e3a8695a97db96ea350b95a
+ms.sourcegitcommit: 3e6c499a65ada8a9f28022a02f64030b0c069a17
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109084"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "3226367"
 ---
 # <a name="compose-http-requests-and-handle-errors"></a>Componer solicitudes HTTP y administrar errores
 
@@ -44,7 +44,7 @@ Para acceder a la API web, debe crear una dirección URL con los componentes de 
 |Región|El entorno normalmente estará disponible en un centro de datos que tenga cercano geográficamente.<br />Norteamérica: `crm`<br />Sudamérica: `crm2`<br />Canadá: `crm3`<br />Europa, Oriente Medio y África (EMEA): `crm4`<br />Área Asia Pacífico (APAC): `crm5`<br />Oceanía: `crm6`<br />Japón: `crm7`<br />India: `crm8`<br />Norteamérica 2: `crm9`<br />Reino Unido: `crm11`<br />Francia: `crm12`<br />Más valores se agregarán a lo largo del tiempo a medida que se abran nuevas regiones del centro de datos.|
 |URL base|`dynamics.com.`|
 |Ruta de la API web|La ruta a la API web es `/api/data/`.|
-|Versión|   La versión se expresa de esta manera: `v[Major_version].[Minor_version][PatchVersion]/`. La versión válida para esta publicación es `v9.0`.|
+|Versión|    La versión se expresa de esta manera: `v[Major_version].[Minor_version][PatchVersion]/`. La versión válida para esta publicación es `v9.1`.|
 |Recurso|El nombre, la función o la acción de entidad que desea usar.|
 
 
@@ -107,15 +107,15 @@ Puede usar encabezados adicionales para habilitar funcionalidades específicas.
   
 -   Para devolver datos al crear operaciones (POST) o actualizar operaciones (PATCH) para entidades, incluya la preferencia `return=representation`. Cuando esta preferencia se aplica a una solicitud de POST, una respuesta correcta tendrá el estado 201 (Creados). Para una solicitud PATCH, una respuesta correcta tendrá un estado 200 (OK). Sin esta preferencia aplicada, ambas operaciones devolverán el estado 204 (sin contenido) para reflejar que no se devuelve ningún dato en el cuerpo de la respuesta de forma predeterminada.  
   
--   Para devolver los valores con formato con una consulta, incluya la preferencia odata.include anotaciones establecida en Microsoft.Dynamics.CRM.formattedvalue con el encabezado [Prefer](https://tools.ietf.org/html/rfc7240). Más información:[Incluir valores con formato](query-data-web-api.md#bkmk_includeFormattedValues).  
+-   Para devolver valores formateados con una consulta, incluya la preferencia odata.include-annotations establecida como `Microsoft.Dynamics.CRM.formattedvalue` mediante el encabezado [Preferencia](https://tools.ietf.org/html/rfc7240). Más información:[Incluir valores con formato](query-data-web-api.md#bkmk_includeFormattedValues).  
   
--   También puede usar el encabezado Prefer con la opción odata.maxpagesize para especificar el número de páginas desea devolver. Más información:[Especifique el número de entidades para devolver a una página](query-data-web-api.md#bkmk_specifyNumber)  
+-   También puede usar el encabezado `Prefer` con la opción `odata.maxpagesize` para especificar el número de páginas desea devolver. Más información:[Especifique el número de entidades para devolver a una página](query-data-web-api.md#bkmk_specifyNumber)  
   
--   Para suplantar a otro usuario cuando el autor de la llamada tiene privilegios para ello, agregue el encabezado MSCRMCallerID con el valor systemuserid del usuario que desea suplantar. Más información:[Suplantar a otro usuario utilizando la API web](impersonate-another-user-web-api.md).  
+-   Para suplantar a otro usuario cuando el autor de la llamada tiene privilegios para ello, agregue el encabezado `CallerObjectId` con el valor de Id. de objeto de usuario de Azure Active Directory del usuario a suplantar. Estos datos están en el atributo [Entidad de usuario del sistema](/reference/entities/systemuser) [AzureActiveDirectoryObjectId](/reference/entities/systemuser#BKMK_AzureActiveDirectoryObjectId). Más información:[Suplantar a otro usuario utilizando la API web](impersonate-another-user-web-api.md).  
   
--   Para aplicar simultaneidad optimista, puede aplicar el encabezado [If-Match](https://tools.ietf.org/html/rfc7232#section-3.1) con un valor Etag. Más información:[Aplicar simultaneidad optimista](perform-conditional-operations-using-web-api.md#bkmk_Applyoptimisticconcurrency).  
+-   Para aplicar simultaneidad optimista, puede aplicar el encabezado [If-Match](https://tools.ietf.org/html/rfc7232#section-3.1) con un valor `Etag`. Más información:[Aplicar simultaneidad optimista](perform-conditional-operations-using-web-api.md#bkmk_Applyoptimisticconcurrency).  
   
--   Para controlar si una operación de upsert debe crear o actualizar realmente una entidad, también puede usar los encabezados If-Match e [If-None-Match](https://tools.ietf.org/html/rfc7232#section-3.2). Más información:[Aplicar Upsert a una entidad](update-delete-entities-using-web-api.md#bkmk_upsert).  
+-   Para controlar si una operación de upsert debe crear o actualizar realmente una entidad, también puede usar los encabezados `If-Match` y [If-None-Match](https://tools.ietf.org/html/rfc7232#section-3.2). Más información:[Aplicar Upsert a una entidad](update-delete-entities-using-web-api.md#bkmk_upsert).  
   
 -   Al ejecutar operaciones por lotes, deberá aplicar distintos encabezados en la solicitud y con cada parte enviada en el cuerpo. Más información:[Ejecute las operaciones por lotes mediante API web](execute-batch-operations-using-web-api.md)  
   
@@ -146,21 +146,42 @@ Puede usar encabezados adicionales para habilitar funcionalidades específicas.
 
 ## <a name="parse-errors-from-the-response"></a>Errores de análisis de la respuesta
 
- Los detalles sobre errores se incluyen como JSON en la respuesta. Los errores tendrán este formato.  
+Los detalles sobre errores se incluyen como JSON en la respuesta. Los errores tendrán este formato.  
   
 ```json  
 {  
  "error":{  
   "code": "<This code is not related to the http status code and is frequently empty>",  
-  "message": "<A message describing the error>",  
-  "innererror": {  
-   "message": "<A message describing the error, this is frequently the same as the outer message>",  
-   "type": "Microsoft.Crm.CrmHttpException",  
-   "stacktrace": "<Details from the server about where the error occurred>"  
-  }  
+  "message": "<A message describing the error>"  
  }  
 }  
-```  
+```
+
+> [!IMPORTANT]
+> La estructura de los mensajes de error está cambiando. Se espera que este cambio se implemente en diferentes regiones durante un período que comienza a finales de abril hasta mayo de 2020.
+> 
+> Antes de este cambio, los errores devueltos estaban en este formato:
+> 
+> ```json  
+> {  
+>  "error":{  
+>   "code": "<This code is not related to the http status code and is frequently empty>",  
+>   "message": "<A message describing the error>",  
+>   "innererror": {  
+>    "message": "<A message describing the error, this is frequently the same as the outer message>",  
+>    "type": "Microsoft.Crm.CrmHttpException",  
+>    "stacktrace": "<Details from the server about where the error occurred>"  
+>   }  
+>  }  
+> }  
+> ```
+> 
+> Estamos eliminando la propiedad `innererror` del mensaje de error. Debe eliminar cualquier código que espere analizar esta propiedad.
+>
+> El OData [Guía de respuesta a errores](https://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091) afirma "*El par nombre / valor de error interno DEBERÍA utilizarse solo en entornos de desarrollo para evitar posibles problemas de seguridad relacionados con la divulgación de información.*". Para alinearnos con esta guía, estamos eliminando esta propiedad.
+> 
+> Si descubre que una aplicación que usa depende de esta propiedad después de implementar este cambio, puede ponerse en contacto con el soporte y solicitar que el cambio se elimine temporalmente para su entorno. Esto proporcionará tiempo para que el desarrollador de la aplicación realice los cambios apropiados para eliminar esta dependencia.
+
   
 ### <a name="see-also"></a>Vea también  
 

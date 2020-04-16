@@ -3,7 +3,7 @@ title: Herramientas de pruebas para desarrollo del lado del servidor (Common Dat
 description: Obtenga más información sobre los marcos de prueba para desarrollo del lado del servidor.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9f4aedc7bc54dcf8d18ab3f9fb0aa1ae21d02b89
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d04cd41d1b71c6a4cfee087a76859acc2e07dc5f
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749786"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155252"
 ---
 # <a name="testing-tools-for-server-side-development"></a>Herramientas de pruebas para el desarrollo de servidor
 

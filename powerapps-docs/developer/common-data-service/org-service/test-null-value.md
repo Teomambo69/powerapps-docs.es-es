@@ -3,23 +3,23 @@ title: Comprobar un valor nulo (Common Data Service) | Microsoft Docs
 description: Este ejemplo muestra cómo probar un valor null usando las clases FilterExpression y QueryByAttribute
 ms.custom: ''
 ms.date: 05/03/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: KumarVivek
 ms.author: kvivek
-manager: amyla
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 38a9109faf5d8ae45aa2a0bdecfb0d25037742dd
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 1db91713c281edc5d7c41f72d0fc1740c76c6a2b
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749842"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155468"
 ---
 # <a name="test-for-a-null-value"></a>Comprobar valores nulos
 

@@ -13,19 +13,19 @@ ms.assetid: 8105ff3d-4c8e-4f86-bbb9-e37bdb4c272e
 caps.latest.revision: 14
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 manager: kvivek
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: abb56223283a371ed648dd88b8419320ae576ef0
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 059cac35fb19e0690cc93f00a0e5578085765067
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749506"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155076"
 ---
 # <a name="get-started-with-common-data-service-web-api-c"></a>Introducción a la API web de Common Data Service (C#)
 

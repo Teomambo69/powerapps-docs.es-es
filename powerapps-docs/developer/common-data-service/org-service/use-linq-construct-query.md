@@ -3,7 +3,7 @@ title: Usar LINQ para generar una consulta (Common Data Service) | Microsoft Doc
 description: Describe cómo utilizar el proveedor de consulta Consulta integrada del lenguaje .NET (LINQ) en Dynamics 365 para crear una consulta
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 03728912350057f8db3cd1ed4c59a97f66362507
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: b9040ecde86c49cc0c6aed4046970250ad2dc22b
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752948"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155436"
 ---
 # <a name="use-linq-to-construct-a-query"></a>Usar LINQ para crear una consulta
 

@@ -3,7 +3,7 @@ title: " Usar métodos de Outlook (Common Data Service) | Microsoft Docs"
 description: Este ejemplo muestra cómo usar los métodos de Outlook.
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b1609c29dde65e77c6cecda39f9f1b651847dae6
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 128f988bb9ae16ac477e62e7c67829545b811af8
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3020097"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155520"
 ---
 # <a name="sample-use-dynamics-365-for-outlook-methods"></a>Ejemplo: Usar métodos de Dynamics 365 for Outlook
 

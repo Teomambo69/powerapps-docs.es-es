@@ -3,7 +3,7 @@ title: 'Apéndice: Lista de comprobación de certificación de aplicaciones (Pow
 description: La lista de comprobación de certificación de aplicaciones le proporciona información acerca de las comprobación que deben pasar las aplicaciones basadas en modelos, de lienzo y los flujos antes de poder publicarse en AppSource.
 ms.custom: ''
 ms.date: 03/20/2019
-ms.reviewer: kvivek
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: omarcdoc
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 795b7797c36a4491ed5e748bdbd42e0ad9add01f
-ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
+ms.openlocfilehash: d36fe4c8d62ea8cbc2750d44fbe28901fd7a827a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "3080846"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156480"
 ---
 # <a name="appendix-app-certification-checklist"></a>Apéndice: Lista de comprobación de certificación de aplicaciones
 

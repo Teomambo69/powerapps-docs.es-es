@@ -13,18 +13,18 @@ ms.assetid: 80bcdd8e-7c4f-4fd5-8708-00345f5d0408
 caps.latest.revision: 8
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f56f825b426843b5e3c1ad9747ac060d84100ae0
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: ff416abba39421d1147e93dbd48ccde48d362390
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749499"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155048"
 ---
 # <a name="retrieve-metadata-by-name-or-metadataid"></a>Recuperar metadatos por nombre o identificador de metadatos
 

@@ -9,7 +9,7 @@ applies_to:
 - powerapps
 ms.author: matp
 manager: kvivek
-ms.date: 06/18/2018
+ms.date: 03/18/2020
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 1b7e6a0c-18a9-47e2-aa7d-0cffb8c93b19
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7c4d4348726dfb53b0b54e3a8d86a1809a568b7b
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 0775689b2edab8cdbee1b9a595ff73e56ee9af9b
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2875022"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166770"
 ---
 # <a name="iframe-properties-for-model-driven-app-main-forms"></a>Propiedades de iFrame para formularios principales de aplicaciones controladas por modelos
 
@@ -35,9 +35,14 @@ Para ver las propiedades de IFrame, siga estos pasos.
 
 2.  Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**. 
 
-3. En la lista de formularios, abra un formulario de tipo **Principal**. Luego en la pestaña **Insertar**, seleccione IFRAME para ver propiedades de IFRAME.
+3. En la lista de formularios, abra un formulario de tipo **Principal**.
 
-![iframe-properties](media/iframe-properties.png)
+4.  Seleccione **Cambiar a clásico** para editar el formulario en el diseñador de formularios clásico.
+
+4.  En la pestaña **Insertar**, seleccione IFRAME para ver propiedades de IFRAME.
+
+      > [!div class="mx-imgBorder"] 
+      > ![iframe-properties](media/iframe-properties.png)
 
 
 > [!NOTE]

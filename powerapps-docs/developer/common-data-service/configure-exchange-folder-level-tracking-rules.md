@@ -3,7 +3,7 @@ title: Configurar reglas de seguimiento de nivel de carpeta de Exchange (Common 
 description: Aprenda a configurar reglas de seguimiento de nivel de carpeta de Exchange.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 09b7d273968f2d37b45ca5210924546a8bee6cd9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: b5af5c7e29e8fec72a8e6249141b5816fe4c59ea
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749724"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156380"
 ---
 # <a name="configure-exchange-folder-level-tracking-rules"></a>Configurar reglas de seguimiento de nivel de carpeta de Exchange
 

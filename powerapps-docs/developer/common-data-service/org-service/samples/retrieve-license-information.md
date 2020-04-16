@@ -3,7 +3,7 @@ title: " Recuperar información de licencia (Common Data Service) | Microsoft Do
 description: 'En este ejemplo se muestra cómo recuperar la información de licencia. '
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1ed007c4536a359b0e3a6a4c072f02cebd7c3311
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: cd2a6e5551c4eea8f20fa8ef6cc71a8f6bf71664
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934208"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155636"
 ---
 # <a name="retrieve-license-information"></a>Recuperar información de licencia
 

@@ -11,7 +11,7 @@ tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
-ms.reviewer: kvivek
+ms.reviewer: pehecke
 ms.workload: na
 ms.date: 01/28/2019
 ms.author: jdaly
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a621bf0ff0093a5100a14ccad9f3e4c3ebb9e1e7
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: ff175320897f156027cd394cf8319032c9f8a6ff
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109069"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156164"
 ---
 # <a name="introduction-to-solutions"></a>Introducción a soluciones
 

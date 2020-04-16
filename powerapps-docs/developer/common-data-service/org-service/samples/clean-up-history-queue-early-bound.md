@@ -3,7 +3,7 @@ title: 'Ejemplo: Limpiar el historial de una cola (Common Data Service) | Micros
 description: En este ejemplo se muestra cómo liberar el historial de una cola
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 07e6849d7888550338206fd76fec174a0d25fade
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: 0e44bc19b30996840ea2c0fa0b8bc8be3695d0aa
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956223"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155912"
 ---
 # <a name="sample-clean-up-history-for-a-queue"></a>Ejemplo: limpiar el historial de una cola
 

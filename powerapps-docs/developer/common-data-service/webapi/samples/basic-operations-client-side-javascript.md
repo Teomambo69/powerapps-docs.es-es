@@ -13,19 +13,19 @@ ms.assetid: 11847c67-2807-4cb5-998b-90f45d3d98a7
 caps.latest.revision: 27
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
-manager: amyla
+ms.reviewer: pehecke
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5e788cc42f0db9fec992493cb943c06848723ad2
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 9e254dbeafd1d0092e741f8ecd576ecf3dac280b
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753676"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155029"
 ---
 # <a name="web-api-basic-operations-sample-client-side-javascript"></a>Ejemplo de operaciones básicas de la API web (JavaScript del lado del cliente)
 

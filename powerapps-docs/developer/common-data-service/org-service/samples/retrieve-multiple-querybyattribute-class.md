@@ -3,7 +3,7 @@ title: 'Ejemplo: recuperar varios con la clase QueryByAttribute(Common Data Serv
 description: Este ejemplo muestra cómo usar la clase QueryByAttribute
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0a6b20686f4e02afff576eb54133d061e4b82f18
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: a3437a976116e7484efb1474f2534c48346dd83d
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934212"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155628"
 ---
 # <a name="sample-retrieve-multiple-with-the-querybyattribute-class"></a>Ejemplo: recuperar varios con la clase QueryByAttribute
 

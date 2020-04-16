@@ -2,8 +2,8 @@
 title: Trabajar con teclas alternativas (Common Data Service) | Microsoft Docs
 description: En este tema se explica cómo crear claves alternativas para una entidad. Las claves alternativas pueden crearse mediante programación o usando las herramientas de personalización
 ms.custom: ''
-ms.date: 06/04/2019
-ms.reviewer: ''
+ms.date: 03/16/2020
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bd5b71f6817aed5de4c34220a2d27e9f9cb02c86
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 03c15a27a20dc36609438d82fe4789af1dc1f95c
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749566"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156272"
 ---
 # <a name="work-with-alternate-keys"></a>Trabajar con claves alternativas
 
@@ -60,7 +60,7 @@ Debe conocer las siguientes restricciones al crear claves alternativas:
 
 - **Caracteres Unicode en valor de clave**
 
-  Si los datos en un campo que se usa en una clave alternativa contienen uno de los caracteres siguientes `<``>`,`*`,`%`,`&`,`:`,`\\`, las acciones get o patch no funcionarán.  Si solo necesita unicidad, este método funciona, pero si necesita usar estas claves como parte de la integración de datos, entonces es mejor crear la clave en los campos que no tendrán datos con dichos caracteres.
+  Si los datos en un campo que se usa en una clave alternativa contienen uno de los caracteres siguientes `/`,`<`,`>`,`*`,`%`,`&`,`:`,`\\` las acciones get o patch no funcionarán.  Si solo necesita unicidad, este método funciona, pero si necesita usar estas claves como parte de la integración de datos, entonces es mejor crear la clave en los campos que no tendrán datos con dichos caracteres.
 
 <a name="BKMK_crud"></a>   
 
@@ -94,3 +94,4 @@ Si se elimina la clave alternativa mientras un trabajo de creación de índice s
  [Uso de claves alternativas](use-alternate-key-create-record.md)<br />
  [Uso del seguimiento de cambios para sincronizar los datos con sistemas externos](use-change-tracking-synchronize-data-external-systems.md)<br />
  [Use Upsert para insertar o actualizar un registro](use-upsert-insert-update-record.md) [Definir teclas alternativas para hacer referencia a los registros](../../maker/common-data-service/define-alternate-keys-reference-records.md)
+ 

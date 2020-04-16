@@ -3,7 +3,7 @@ title: Consultas guardadas (Common Data Service) | Microsoft Docs
 description: Conozca cómo las consultas guardadas aumentan el entorno de búsqueda en Common Data Service.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c466cb19fcc1b350fda1b85a05c24c2231d14815
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 03b56956c9094b969fed759e3f923d2dcb157142
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749803"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155320"
 ---
 # <a name="saved-queries"></a>Consultas guardadas
 

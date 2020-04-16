@@ -3,7 +3,7 @@ title: Usar la clase FilterExpression (Common Data Service) | Microsoft Docs
 description: Conozca cómo puede utilizar la clase FilterExpression para crear una consulta que exprese múltiples condiciones
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ba077e5bf9c1f1f464e8cc71594d30684efc0824
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 408ac08b6f4289b4274c1946ac9ec660d9949e95
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749838"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155452"
 ---
 # <a name="use-the-filterexpression-class"></a>Usar la clase FilterExpression
 

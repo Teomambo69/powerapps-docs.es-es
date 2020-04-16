@@ -12,12 +12,12 @@ ms.custom:
 ms.topic: article
 ms.assetid: 7923e36d-3640-49f7-9f2f-c97358a632db
 ms.author: nabuthuk
-ms.openlocfilehash: cc809d81b7b9adf7327aa9cb8f74515816022118
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: 10344af0eca776ae6cc32547e2e61bde5ce9713d
+ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091235"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3218533"
 ---
 # <a name="power-apps-component-framework-overview"></a>Información general sobre Power Apps component framework
 
@@ -25,6 +25,10 @@ Power Apps component framework permite a los desarrolladores profesionales y cre
 
 - Reemplace un campo que muestre un valor de texto numérico con un componente de código `dial` o `slider`.
 - Transforme una lista en una experiencia visual completamente diferente enlazada al conjunto de datos como un `Calendar` o `Map`.
+
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4slRe]
+
 
 > [!IMPORTANT]
 > - PowerApps component framework está en una versión preliminar pública para aplicaciones de lienzo y generalmente está disponible para aplicaciones basadas en modelo. Esto implica que todas las API que son compatibles con las aplicaciones basadas en modelo podrían no admitirse en aplicaciones de lienzo.
@@ -67,5 +71,6 @@ Con la disponibilidad general del marco de trabajo, los desarrolladores de compo
 [Qué son los componentes de código](custom-controls-overview.md)<br/>
 [Componentes de código para aplicaciones de lienzo](component-framework-for-canvas-apps.md)<br/>
 [Crear y generar un componente de código](create-custom-controls-using-pcf.md)<br/>
+[Más información sobre Power Apps component framework](https://docs.microsoft.com/learn/paths/use-power-apps-component-framework)<br/>
 [Power Apps para desarrolladores](https://docs.microsoft.com/powerapps/#pivot=home&panel=developer)
 

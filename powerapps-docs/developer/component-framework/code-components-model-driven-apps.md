@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5d100dc3-bd82-4b45-964c-d90eaebc0735
-ms.openlocfilehash: 4380d99439b9103ea40800ea8a5a20e1e13768d8
-ms.sourcegitcommit: 27cb5ad024d43f208ef6acfbea456a05df3edf8e
+ms.openlocfilehash: 7011c11ef8beb9549e864f650fad891f9c3d61bc
+ms.sourcegitcommit: 13d4042c7bd73580cc8c595e137de7e7fec22875
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "3082825"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3170220"
 ---
 # <a name="code-components-for-model-driven-apps"></a>Componentes de código para aplicaciones basadas en modelo
 
@@ -29,7 +29,7 @@ Power Apps component framework ofrece a los desarrolladores la capacidad de ampl
 
 Antes de comenzar a crear componentes de código, asegúrese de que ha instalado todos los requisitos previos necesarios para desarrollar componentes utilizando el Power Apps component framework. 
 
-El tema [Cree su primer componente de código](implementing-controls-using-typescript.md) demuestra el proceso paso a paso para crear componentes de código.
+El artículo [Cree su primer componente de código](implementing-controls-using-typescript.md) demuestra el proceso paso a paso para crear componentes de código.
 
 ## <a name="add-code-components-to-model-driven-apps"></a>Agregar componentes de código a aplicaciones basadas en modelo
 
@@ -48,4 +48,5 @@ Cada vez que actualice los componentes del código y desee ver los cambios en ti
 ## <a name="see-also"></a>Vea también
 
 [Información general sobre Power Apps component framework](overview.md)<br/>
-[Crear el primer componente de código](implementing-controls-using-typescript.md)
+[Crear el primer componente de código](implementing-controls-using-typescript.md)<br/>
+[Más información sobre Power Apps component framework](https://docs.microsoft.com/learn/paths/use-power-apps-component-framework)

@@ -3,7 +3,7 @@ title: Use los útiles de XRM para actualizar datos (Common Data Service)| Micro
 description: Utilizar la clase CrmServiceClient para actualizar datos en Common Data Service
 ms.custom: ''
 ms.date: 03/27/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b8e591e818aa51158262d575d3e18c22cf322bc5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 2b026cb5e17bf6583970e82567ce693ba4c20f09
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749471"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154796"
 ---
 # <a name="use-xrm-tooling-to-update-data"></a>Usar útiles de XRM para actualizar los datos
 

@@ -3,7 +3,7 @@ title: 'Diseño de la personalización escalable: problemas de simultaneidad (Co
 description: 'El tercero de una serie de temas. '
 ms.custom: ''
 ms.date: 1/15/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: rogergilchrist
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 19ce32ee11075f716a1c3f032e90ab935744d44d
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 971e847a511ab253a97ca1c5543e144a72275a79
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749800"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155312"
 ---
 # <a name="scalable-customization-design-concurrency-issues"></a>Diseño de personalización escalable: problemas de simultaneidad
 

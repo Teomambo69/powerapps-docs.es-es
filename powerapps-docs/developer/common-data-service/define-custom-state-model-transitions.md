@@ -3,7 +3,7 @@ title: Definir transiciones de modelo de estado personalizadas (Common Data Serv
 description: Obtenga más información sobre la definición de las transiciones de modelos de estado personalizados para la entidad Incidente (caso) o entidades personalizadas.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a7172755f75a2d39ff1ad2b0bf7dcbfb88bdf72d
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 695ab29333e501f9ff436eeebf66e5b1ef73f37b
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752992"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156268"
 ---
 # <a name="define-custom-state-model-transitions"></a>Definir transiciones de modelo de estado personalizadas
 

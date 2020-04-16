@@ -2,7 +2,7 @@
 title: Crear o editar formularios de vista rápida de aplicaciones controladas por modelos en Power Apps | MicrosoftDocs
 description: Aprenda a crear o editar un formulario de vista rápida.
 ms.custom: ''
-ms.date: 05/23/2018
+ms.date: 03/13/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e6a4540927ad4329bab936fac631e2693d618104
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 1e94b836fc7718f3aa259b677edc58419c98af06
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2875286"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3167122"
 ---
 # <a name="create-a-model-driven-app-quick-view-form-to-view-information-about-a-related-entity"></a>Crear un formulario de vista rápida de una aplicación controlada por modelos para ver información sobre una entidad relacionada
 
@@ -45,33 +45,27 @@ Un formulario de vista rápida se puede agregar a otro formulario como un contro
   
 1. Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
-
-    > [!IMPORTANT]
-    > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).     
-  
 2. Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**. 
   
 3. En la barra de herramientas seleccione **Agregar formulario** > **Formulario de vista rápida**.  
   
-4. En la barra de herramientas del editor de formularios, seleccione **Propiedades del formulario**.  
+5. En el panel **Formulario**, escriba un **Nombre para mostrar** y una **Descripción** para distinguir este formulario de vista rápida de cualquier otro.  
   
-5. En el cuadro de diálogo **Propiedades del formulario**, escriba un **Nombre del formulario** y una **Descripción** para distinguir este formulario de vista rápida de cualquier otro. Seleccione **Aceptar** para cerrar el cuadro de diálogo **Propiedades del formulario**.  
-  
-6. En el diseñador de formularios arrastre los campos que desee del **Explorador de campos** a la sección del formulario. 
-  
-    > [!IMPORTANT]
-    >  Si agrega un campo y elige **Requisito de campo** > **Requerido por la empresa** y después lo guarda, no podrá eliminar el campo.  
-  
-7. Para guardar el formulario y cerrar el editor de formularios, seleccione **Guardar**.  
+6. En el diseñador de formularios arrastre los campos que desee del **Explorador de campos** a la sección del formulario.
 
-8. Seleccione **Publicar** para ver el nuevo formulario en la aplicación.
+    > [!IMPORTANT]
+    > Los campos obligatorios no se pueden eliminar de un formulario. Si agrega un campo Requerido al formulario y desea eliminarlo, debe eliminar el formulario y luego volver a crearlo. Cuando establece la propiedad Obligatorio para un campo, no se puede guardar un registro sin datos en este campo.
+
+7. Para guarda el formulario, elija **Guardar**.  
+
+8. Seleccione **Publicar** para ver el nuevo formulario en la aplicación. <!-- Which app? What does Publish do?-->
   
 <a name="BKMK_EditQVF"></a>   
 ## <a name="edit-a-quick-view-form"></a>Editar un formulario de vista rápida  
  Los formularios de vista rápida tienen un diseño simplificado porque se han diseñado para visualizarse en una sección del formulario. Solo está disponible una pestaña de una sola columna. Solo puede agregar secciones, campos, subcuadrículas y espaciadores adicionales de una sola columna.   
   
-> [!NOTE]
->  No puede eliminar un campo que sea **Requerido por la empresa**. Recibirá este mensaje si intenta eliminar el campo: "El campo que intenta quitar es necesario para el sistema o la empresa". Si no desea el campo del formulario, debe eliminar el formulario completo y volver a crearlo.  
+  > [!IMPORTANT]
+  > No se pueden eliminar los campos obligatorios. Si agrega un campo Obligatorio al formulario, no puede eliminarlo. Si no desea el campo del formulario, debe eliminar todo el formulario y volver a crearlo.
   
  Cuando edite un formulario de vista rápida, debe publicar los cambios antes de que estén visible en la aplicación.  
   
@@ -81,21 +75,21 @@ Un formulario de vista rápida se puede agregar a otro formulario como un contro
   
 1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
-    > [!IMPORTANT]
-    > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).     
-  
 2.  Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**.  
 
 3. Seleccione un formulario cuyo **Tipo** sea **Principal**.
 
-4. En el diseñador de formularios seleccione la pestaña **Insertar** y, a continuación, en la barra de herramientas seleccione **Formulario de vista rápida**.  
+4. En diseñador de formularios, desde el panel Componentes, seleccione **Vista rápida**.  
   
-5.  En el cuadro de diálogo **Propiedades de control de vista rápida**, establezca las propiedades del control de vista rápida, como **Nombre**, **Etiqueta** y **Formulario de vista rápida**. Más información: [Propiedades de control de vista rápida](quick-view-control-properties-legacy.md).  
-  
-6.  Seleccione **Aceptar** para cerrar el cuadro de diálogo **Propiedades de control de vista rápida**.  
-  
-7.  Seleccione la pestaña **Inicio** y, a continuación, seleccione **Publicar** para que el control de vista rápida aparezca en el formulario.  
-  
+5.  En el cuadro de diálogo **Seleccionar formularios de vista rápida**, seleccione el campo **Buscar** y luego seleccione el valor del campo de búsqueda. Más información: [Propiedades de control de vista rápida](quick-view-control-properties-legacy.md).  
+
+    > [!div class="mx-imgBorder"] 
+    > ![Agregar un control de vista rápida](media/add-quick-view-control.png "Agregar un control de vista rápida a un formulario principal")
+
+6.  Seleccione **Listo** para cerrar el cuadro de diálogo **Seleccionar formularios de vista rápida**. El formulario de vista rápida aparece en el formulario.
+
+7.  Para guarda el formulario, elija **Guardar**.  
+
 ## <a name="next-steps"></a>Pasos siguientes   
  [Crear y diseñar formularios](create-design-forms.md)   
  [Crear o editar formularios de creación rápida](create-edit-quick-create-forms.md)

@@ -3,7 +3,7 @@ title: Vincular los atributos personalizados de las entidades de cita y cita per
 description: Vincular los atributos personalizados de la entidad RecurringAppointmentMaster con los atributos personalizados de la entidad Appointment para copiar automáticamente los datos.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b592f23ee8907902a206be8012249c4db2e7bac2
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c867790a7ffa9fecd68ff838d829618dc2a431c6
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749423"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156156"
 ---
 # <a name="link-custom-attributes-of-the-recurring-appointment-master-and-appointment-entities"></a>Vincular los atributos personalizados de las entidades de cita y cita periódica maestra
 

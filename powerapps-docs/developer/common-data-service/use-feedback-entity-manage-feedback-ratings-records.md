@@ -3,7 +3,7 @@ title: Usar la entidad Comentarios para administrar comentarios y clasificacione
 description: Información sobre la entidad de comentarios para obtener comentarios y calificaciones para los registros.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f52a5b5200a498f2374be8547fa4d563c4486e2a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3a29c5bc852796063d90a3da5bab16bd0eae1a5a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753764"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155204"
 ---
 # <a name="use-the-feedback-entity-to-manage-feedback-and-ratings-for-records"></a>Usar la entidad Comentarios para administrar comentarios y clasificaciones para registros
 

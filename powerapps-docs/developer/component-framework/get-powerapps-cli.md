@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f393f227-7a88-4f25-9036-780b3bf14070
-ms.openlocfilehash: fd887f50453875f1f22cf1ab4eaa5d5d0f8029ee
-ms.sourcegitcommit: 60a721432b3fa2abd14ccb3bd16a6b34e13ada85
+ms.openlocfilehash: 3075a33615112694ccc7e06d2eadf601630aac13
+ms.sourcegitcommit: 13d4042c7bd73580cc8c595e137de7e7fec22875
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026405"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3170216"
 ---
 # <a name="get-tooling-for-power-apps-component-framework"></a>Obtener útiles para de Power Apps component framework
 
@@ -25,6 +25,7 @@ Use **Microsoft Power Apps CLI** (interfaz de la línea de comandos) para crear,
 > [!IMPORTANT]
 > Para implementar el componente de código utilizando Power Apps CLI, deberá tener un entorno de Common Data Service con privilegios de administrador del sistema o personalizador del sistema.
 
-### <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Vea también
 
 [Crear el primer componente de código](implementing-controls-using-typescript.md)<br/>
+[Más información sobre Power Apps component framework](https://docs.microsoft.com/learn/paths/use-power-apps-component-framework)

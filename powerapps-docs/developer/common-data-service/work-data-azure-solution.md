@@ -9,18 +9,18 @@ ms.assetid: 1ef66369-71c9-3b89-ac1a-09d523ca737b
 author: JimDaly
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: ''
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 949717fbf33ee27e77ce81672fd66c2920a15bf2
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5c1a5660f8befdbbbb19cc81003ead880903b384
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749490"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154972"
 ---
 # <a name="work-with-common-data-service-data-in-your-azure-solution"></a>Trabajar con datos de Common Data Service en la solución de Azure
 

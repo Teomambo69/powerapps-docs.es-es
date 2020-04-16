@@ -9,7 +9,7 @@ applies_to:
 - powerapps
 ms.author: matp
 manager: kvivek
-ms.date: 06/06/2018
+ms.date: 03/23/2020
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 2d3af6e9-e8a4-4129-b708-383b2740c015
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5e7b22ed1680a3f2377d8318eb46e1de791f21b2
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 25d2edd58bf146f9537af87a0b7564b4ce421395
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2873658"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166594"
 ---
 # <a name="model-driven-app-form-section-properties"></a>Propiedades de sección para formularios principales de aplicaciones controladas por modelos
 
@@ -31,16 +31,47 @@ ms.locfileid: "2873658"
   
  Las secciones pueden tener hasta 4 columnas e incluyen las opciones para mostrar cómo las etiquetas de los campos de la sección se muestran.  
   
- Los encabezados y pies de página son similares a las secciones pero no se pueden quitar. Si no contienen nada no se mostrarán. 
+ Los encabezados y pies de página son similares a las secciones pero no se pueden quitar. Si no contienen nada no se mostrarán.
 
-Puede acceder a las **Propiedades de sección** desde el sitio de Power Apps. 
-1. Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+## <a name="section-properties-in-form-designer"></a>Propiedades de sección en el diseñador de formularios
+
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**. 
 
-3.  En la lista de formularios, abra el formulario de tipo **Principal**. A continuación, haga doble clic en una de las secciones para ver las propiedades de la sección. 
+3.  En la lista de formularios, abra un formulario de tipo **Principal**. Para abrir un formulario en otra pestaña, seleccione **Más comandos** ![Botón Más comandos](media/more-commands.gif "Botón Más comandos para formularios") y luego seleccione **Editar formulario** > **Editar formulario en una pestaña nueva**.
 
-    ![section-properties](media/section-properties.png)
+4.  Seleccione una de las secciones para ver las propiedades de la sección.
+
+    > [!div class="mx-imgBorder"]
+    > ![propiedades de sección](media/new-section-properties.png "Propiedades de sección en el diseñador de formularios")
+
+|Propiedad|Descripción|  
+|---------|--------------|  
+|**Etiqueta de sección**|**Requerido**: etiqueta localizable de la sección visible para los usuarios.|  
+|**Nombre**|**Requerido**: nombre único de la sección que se usa al hacerle referencia en los scripts. El nombre solo puede contener caracteres alfanuméricos y de subrayado.|  
+|**Ocultar etiqueta**|Las secciones a menudo se usan sin etiquetas para controlar el formato de los campos que contienen.|
+|**Bloquear sección**|Esto evitará que la sección se quite accidentalmente y que los usuarios quiten el contenido.<br /><br /> Al quitar una sección no solo se quita la sección, sino también cualquier campo que contenga.<br /><br /> Alguien que desea quitar esta sección necesitaría cambiar esta configuración antes de eliminarla.|  
+|**Ocultar sección**|Mostrar la sección es opcional y se puede controlar mediante scripts. Más información: [Opciones de visibilidad](visibility-options-legacy.md)|  
+|**Ocultar en teléfono**|Elija si desea que la pestaña esté disponible en el teléfono.|  
+|**Formato**|Especifique hasta cuatro columnas para incluir en la sección.|  
+
+## <a name="section-properties-in-classic-form-designer"></a>Propiedades de sección en el diseñador de formularios clásico
+
+Puede acceder a **Propiedades de sección** en el explorador de soluciones desde el sitio Power Apps.
+
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+
+2.  Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**. 
+
+3.  En la lista de formularios, abra el formulario de tipo **Principal**. 
+
+4.  Seleccione **Cambiar a clásico** para editar el formulario en el diseñador de formularios clásico.
+
+5.  Haga doble clic en una de las secciones para ver las propiedades de sección. 
+
+    > [!div class="mx-imgBorder"]
+    > ![propiedades de sección](media/section-properties.png "Propiedades de sección en el explorador de soluciones")
   
 |Pestaña|Propiedad|Descripción|  
 |---------|--------------|-----------------|  

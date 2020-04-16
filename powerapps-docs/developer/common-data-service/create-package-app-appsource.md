@@ -3,7 +3,7 @@ title: 'Paso 3: Crear un paquete AppSource para la aplicación (Common Data Serv
 description: Obtenga información sobre cómo crear un paquete AppSource (archivo .zip) para incluir los archivos de datos de demostración y de la solución junto con otros archivos necesarios.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: KumarVivek
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 43accbf1e1acf8c32e76c5e0c0dab4975cd847a0
-ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
+ms.openlocfilehash: 377bbd94e39afa3b4702a809ff1dd7a97b6cff25
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "2922351"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156337"
 ---
 # <a name="step-3-create-an-appsource-package-for-your-app"></a>Paso 3: Crear un paquete AppSource para la aplicación
 

@@ -13,18 +13,18 @@ ms.assetid: 337f5d15-66be-46db-a96a-309951a37a2a
 caps.latest.revision: 20
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b084896ee7b44df1d96c33dcd426231816c2c1e4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8602ff505be357e836d04b9f2f7aefc3b459d328
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753668"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155036"
 ---
 # <a name="web-api-functions-and-actions-sample-client-side-javascript"></a>Ejemplo de funciones y acciones de la API web (JavaScript del lado del cliente)
 

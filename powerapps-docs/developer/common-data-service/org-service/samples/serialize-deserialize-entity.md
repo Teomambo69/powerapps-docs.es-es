@@ -3,7 +3,7 @@ title: " Serializar y deserializar instancias de entidad (Common Data Service) |
 description: En este ejemplo se muestra cómo serializar y deserializar instancias de entidad.
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5e37ef6f9fb64cd8e9ed29f4a4b2a6d0adf3fa03
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: b1189d6a17433d9656ba760c5bf2dd079bde34b8
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956139"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155583"
 ---
 # <a name="serialize-and-deserialize-an-entity-instance"></a>Serializar y deserializar una instancia de entidad 
 

@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/04/2019
+ms.date: 03/16/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 74ad7201f84e7b96c785d77092048e24d24f3333
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: f6e6989e1005f12fd3e9d3a02222a8cd95226cca
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2980356"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "3136242"
 ---
 # <a name="invite-contacts-to-your-portals"></a>Invitar a contactos a los portales
 
@@ -29,7 +29,7 @@ Use la característica de invitación a los portales para invitar a contactos a 
 
 El canje de invitación se puede conseguir usando cualquier de las muchas opciones de autenticación. Para documentación respecto a la autenticación del portal, vea [Establecer identidad de autenticación para un portal](set-authentication-identity.md) y elija el modelo aplicable a la versión y la configuración del portal. El usuario adoptará los valores proporcionados por el administrador tras el canje. Se creará una actividad de canje de invitación para la invitación y el contacto.
 
-Las invitaciones se envían a través del flujo de trabajo **Enviar invitación**. De forma predeterminada, el flujo de trabajo crea un correo electrónico con un mensaje genérico y lo envía a la dirección de correo electrónico principal del contacto invitado. El flujo de trabajo **Enviar invitación** contiene una plantilla de correo electrónico que debe modificarse para contener un mensaje específico para el portal y el hipervínculo correcto a la página **Canje de invitación del portal**.
+Las invitaciones se envían a través del flujo de trabajo **Enviar invitación**. De forma predeterminada, el flujo de trabajo crea un correo electrónico con un mensaje genérico y lo envía a la dirección de correo electrónico principal del contacto invitado. Las direcciones de correo electrónico en los campos CC y BCC se ignoran para garantizar una comunicación segura. El flujo de trabajo **Enviar invitación** contiene una plantilla de correo electrónico que debe modificarse para contener un mensaje específico para el portal y el hipervínculo correcto a la página **Canje de invitación del portal**.
 
 Para editar el flujo de trabajo de plantilla de correo electrónico **Enviar invitación**, búsquelo y desactívelo. Una vez desactivado, modifique la plantilla de correo electrónico para enviar el mensaje que desea y proporcionar un vínculo a la página **Canje de invitación del portal** del portal.
 

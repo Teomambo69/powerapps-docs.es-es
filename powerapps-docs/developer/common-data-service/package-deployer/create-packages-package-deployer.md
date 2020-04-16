@@ -3,7 +3,7 @@ title: Crear paquetes para Package Deployer (Common Data Service) | Microsoft Do
 description: Cree paquetes que los administradores pueden implementar en las instancias de Common Data Service.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: shmcarth
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d713bee10d98006e8310d614175cdaf6898631e2
-ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
+ms.openlocfilehash: db2252f9e3e2d889b9ce2f5d5683600ab5c82149
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "3080850"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155372"
 ---
 # <a name="create-packages-for-the-package-deployer"></a>Crear paquetes para el Package Deployer
 

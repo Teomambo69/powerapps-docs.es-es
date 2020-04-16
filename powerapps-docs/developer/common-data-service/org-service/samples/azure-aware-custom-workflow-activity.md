@@ -3,7 +3,7 @@ title: Actividad de flujo de trabajo personalizada con Azure (Common Data Servic
 description: Este ejemplo obtiene el contexto de datos de la operación de Common Data Service actual y lo publica en el Azure Service Bus.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2a4079d3a4c62dbf61893797074468a13b12d203
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 50bcfa51bb8978fc65b903a5f7e30657d0da6778
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749538"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155936"
 ---
 # <a name="sample-azure-aware-custom-workflow-activity"></a>Ejemplo: actividad personalizada de flujo de trabajo basada en Azure
 

@@ -3,7 +3,7 @@ title: 'Ejemplo: cargar, recuperar y descargar datos adjuntos(Common Data Servic
 description: Este ejemplo muestra cómo cargar, recuperar y descargar un archivo adjunto
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7e1f871cdf456322737df9da5990ae671f769034
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: c147acf6cef89eec26af7cd86740b47fc74cee75
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934140"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155544"
 ---
 # <a name="sample-upload-retrieve-and-download-an-attachment"></a>Ejemplo: cargar, recuperar y descargar datos adjuntos
 

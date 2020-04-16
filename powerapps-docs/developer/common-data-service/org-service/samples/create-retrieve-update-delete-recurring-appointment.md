@@ -3,7 +3,7 @@ title: 'Ejemplo: CRUD una cita periódica (Common Data Service) | Microsoft Docs
 description: Este ejemplo muestra cómo realizar operaciones CRUD en citas periódicas
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 08789d9be9b093428733ab13424a75e307504bdd
-ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
+ms.openlocfilehash: 220ac3122c67917a2dbdd57c6e8fdeecc960b7ac
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3005059"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155852"
 ---
 # <a name="sample-create-retrieve-update-and-delete-a-recurring-appointment"></a>Ejemplo: crear, recuperar, actualizar y eliminar una cita periódica
 

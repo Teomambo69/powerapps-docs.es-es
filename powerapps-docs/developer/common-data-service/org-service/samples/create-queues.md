@@ -3,7 +3,7 @@ title: " Crear colas (Common Data Service) | Microsoft Docs"
 description: En este ejemplo se muestra cómo crear una cola simple
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3b980f388c8ea9227ad18d66548e8e2992281a6e
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: ebb99a4f497ffc1e8c08eea2e80d73c00d5b9a2f
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956215"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155876"
 ---
 # <a name="create-a-queue-early-bound"></a>Crear una cola (con enlace en tiempo de compilación)
 

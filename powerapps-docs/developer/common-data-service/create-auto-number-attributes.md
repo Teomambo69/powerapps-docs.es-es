@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo crear un atributo de numeración a
 keywords: Atributos de numeración automática
 ms.custom: ''
 ms.date: 07/24/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: nhelgren
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 676c70f9287202f537827a5950ab84049ab81a34
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8cbb5748a7d0ec2206abb8efd9cf3bb31fdaca51
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753020"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156360"
 ---
 # <a name="create-auto-number-attributes"></a>Crear atributos de numeración automática
 

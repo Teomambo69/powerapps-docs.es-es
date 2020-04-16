@@ -3,7 +3,7 @@ title: Consultar datos jerárquicos (Common Data Service) | Microsoft Docs
 description: Lea cómo puede aprovechar los nuevos operadores de condición de consulta para consultar entidades con relaciones jerárquicas explícitas.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 006dccecfed21b29f3af48f657c2bb64b1708cf3
-ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
+ms.openlocfilehash: 61bcf12b58c3ce4438281adda0809dcda92c7cfa
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3037139"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155360"
 ---
 # <a name="query-hierarchical-data"></a>Consultar datos jerárquicos
 

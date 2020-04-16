@@ -3,7 +3,7 @@ title: 'Ejemplo: Consultar las horas laborables de varios usuarios (Common Data 
 description: En este ejemplo se muestra cómo consultar las horas laborables de varias horas
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3694c3180d3183f2fbae44c8e59acbebb6a548b0
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 9e3732b27c007e86e6d651828dd0082014b2cf62
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934252"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155672"
 ---
 # <a name="sample-query-the-working-hours-of-multiple-users"></a>Ejemplo: consultar las horas laborables de varios usuarios
 

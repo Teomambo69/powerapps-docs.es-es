@@ -3,7 +3,7 @@ title: Organizar sus soluciones (Common Data Service) | Microsoft Docs
 description: En este documento se enumeran algunas estrategias para organizar sus soluciones
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: shmcarth
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cc6414a1d846b5bd601ce2c6f37164014f089631
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c24c701848f2a68d7a8ec9473dc521f6444f447d
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749828"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155412"
 ---
 # <a name="organize-your-solutions"></a>Organizar sus soluciones
 

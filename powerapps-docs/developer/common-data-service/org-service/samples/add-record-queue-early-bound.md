@@ -3,7 +3,7 @@ title: 'Ejemplo: agregar un registro a una cola (Common Data Service) | Microsof
 description: Este ejemplo muestra cómo agregar registros a una cola.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 909105a7659be0fc2ade1085592a43ffa4a51544
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: 6c3ecaa99c557b771a285b0bff2f14c2863a7950
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956147"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155982"
 ---
 # <a name="sample-add-a-record-to-a-queue"></a>Ejemplo: agregar un registro a una cola
 

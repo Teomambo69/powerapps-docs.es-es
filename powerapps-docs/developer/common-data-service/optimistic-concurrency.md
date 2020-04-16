@@ -3,7 +3,7 @@ title: Simultaneidad optimista (Common Data Service) | Microsoft Docs
 description: La simultaneidad optimista ofrece la capacidad de que las aplicaciones detecten si un registro de entidad ha cambiado en el servidor desde el momento en que la aplicación recuperó el registro y cuando intenta actualizar o eliminar ese registro.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c21caa604e025250805d26d0b31a2e88d1a7ad64
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: df56a86d2f7b111904bf35343f846431f13acc7d
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2859997"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156116"
 ---
 # <a name="optimistic-concurrency"></a>Simultaneidad optimista
 

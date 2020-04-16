@@ -3,7 +3,7 @@ title: Personalizar asignaciones de entidades y atributos en Power Apps (Common 
 description: Obtenga información sobre cómo asignar atributos entre entidades que tienen una relación de entidad en Power Apps. Esto le permite establecer valores predeterminados para un registro creado en el contexto de otro registro.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 123cc7c11659c04d805a5d34abd49b2aa60aca6e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 10c4968a9ece335cbaac6d100d77401e216e504c
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861793"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156300"
 ---
 # <a name="customize-entity-and-attribute-mappings"></a>Personalizar asignaciones de entidad y atributo
 

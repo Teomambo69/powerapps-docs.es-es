@@ -3,7 +3,7 @@ title: " Combinar dos registros (Common Data Service) | Microsoft Docs"
 description: En este ejemplo se muestra cómo combinar dos registros.
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d354f49535b8afe0bcc7a246879bbd25c2ad7bc6
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: f918af6304134366df54ccf70acf90e861d61428
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956195"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155720"
 ---
 # <a name="merge-two-record"></a>Combinar dos registros
 

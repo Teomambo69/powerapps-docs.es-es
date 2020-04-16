@@ -3,7 +3,7 @@ title: Suplantar a un usuario (Common Data Service) | Microsoft Docs
 description: Aprenda a escribir el código de complemento para actuar en nombre de un usuario específico.
 ms.custom: ''
 ms.date: 1/24/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 27022b8ffb76128e70ef2985059f6dc7dea504ef
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f82b983e06aa75b3f12fa030b59f04a548ec18f0
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749434"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156173"
 ---
 # <a name="impersonate-a-user"></a>Suplantar a un usuario
 

@@ -3,7 +3,7 @@ title: 'Ejemplo: Enviar los resultados de supervisión y correo electrónico en 
 description: Este ejemplo muestra cómo enviar mensajes de correo electrónico en masa y supervisar los resultados
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9433f62aef5d98ff95023b57927b544f1367bfb8
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: bc2fcd19815339fd822a5de7674b0e6f031b5532
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934176"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155593"
 ---
 # <a name="sample-send-bulk-email-and-monitor-results"></a>Ejemplo: enviar los resultados de supervisión y correo electrónico en masa
 

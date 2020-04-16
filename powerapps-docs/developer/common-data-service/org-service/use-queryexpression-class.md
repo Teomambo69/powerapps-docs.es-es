@@ -3,7 +3,7 @@ title: Usar la clase QueryExpression (Common Data Service) | Microsoft Docs
 description: Utilice la clase QueryExpression para crear consultas complejas para uso con el método IOrganizationService.QueryBase o el mensaje RetrieveMultipleRequest.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d812ab783b64e6d4cae6800666c719e803f090a5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 79b8f500bb6448a0272df627e813cf518159c817
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749832"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155428"
 ---
 # <a name="use-the-queryexpression-class"></a>Usar la clase QueryExpression
 

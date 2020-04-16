@@ -3,7 +3,7 @@ title: Integración con Office 365 (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: paulliew
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5bb07c52d7a7fa159880a2cdf04b1f8109aec42d
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 85a9327e34ef69f84f7de8970f8a18d7eff02832
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749568"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156124"
 ---
 # <a name="integration-with-office-365"></a>La integración con Office 365
 

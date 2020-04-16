@@ -3,7 +3,7 @@ title: 'Ejemplo: compartir registros utilizando GrantAccess, ModifyAccess y Revo
 description: Este ejemplo muestra cómo compartir un registro usando un mensaje de concesión, modificación y revocación de acceso.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 01dee131ac3e3efa330998f8c8030835893c502b
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 4019e1330ce354528b6b14ff0bc78dec81b8ee03
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934152"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155560"
 ---
 # <a name="sample-share-records-using-grantaccess-modifyaccess-and-revokeaccess-messages"></a>Ejemplo: compartir registros utilizando los mensajes GrantAccess, ModifyAccess y RevokeAccess
 

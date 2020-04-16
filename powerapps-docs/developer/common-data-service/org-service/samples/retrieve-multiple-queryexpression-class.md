@@ -3,7 +3,7 @@ title: 'Ejemplo: Recuperar varios con QueryExpression (Common Data Service) | Mi
 description: En este ejemplo se muestra cómo crear una tarea para un fax mediante usando QueryExpression.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2939a005c5fac49706f6a582a71f0d11a520faac
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 73384e223a3b4ea23193ca2b8654b9cf3177a811
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934204"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155624"
 ---
 # <a name="sample-retrieve-multiple-with-the-queryexpression-class"></a>Ejemplo: Recuperación múltiple con la clase de QueryExpression
 

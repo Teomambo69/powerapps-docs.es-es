@@ -3,7 +3,7 @@ title: 'Ejemplo: Sincronizar datos con sistemas externos usando el sistema de se
 description: Este ejemplo muestra cómo recuperar cambios de una entidad y sincronizar datos con sistemas externos.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c6b855102f595460fd2324e94fff56a9ccd949d7
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 380a4c5e959b1cd7dac0c9b491cea753038db60e
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934148"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155556"
 ---
 # <a name="sample-synchronize-data-with-external-systems-using-change-tracking"></a>Ejemplo: Sincronizar datos con sistemas externos utilizando seguimiento de cambios
 

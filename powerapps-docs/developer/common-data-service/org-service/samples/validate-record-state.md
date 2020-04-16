@@ -3,7 +3,7 @@ title: " Validar y establecer el estado del registro (Common Data Service) | Mic
 description: Este ejemplo muestra cómo validar un cambio de estado de una entidad y establecer el estado.
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ab3d1083aaf3be9b6f8b35de6bb57c2c925fcca6
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 7dc4321cba939a0882e753cdd7741d923b7b2ae4
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934575"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155504"
 ---
 # <a name="validate-record-state-and-set-the-state-of-record"></a>Validar el estado del registro y establecer el estado del registro
 

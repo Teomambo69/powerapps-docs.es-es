@@ -13,19 +13,19 @@ author: JimDaly
 ms.assetid: 7f097d9f-8fe7-428a-9ef7-ca79ec501d81
 caps.latest.revision: 23
 ms.author: jdaly
-ms.reviewer: susikka
-manager: amyla
+ms.reviewer: pehecke
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: db5c01620da508203f27d4c826b9748f94e0f950
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2b8d41344f5f93b3f6c2efd9e0e6aabe4833b4df
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753672"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155020"
 ---
 # <a name="web-api-conditional-operations-sample-client-side-javascript"></a>Ejemplo de operaciones condicionales de la API web (JavaScript del lado del cliente)
 

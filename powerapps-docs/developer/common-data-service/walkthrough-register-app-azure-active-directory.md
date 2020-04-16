@@ -9,18 +9,18 @@ ms.assetid: 86c4a8a8-7401-6d75-7979-3b04b506eb0c
 author: paulliew
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: kvivek
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b2cf649ad1bcba55e32192a8f72f3a7c7aabf10f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 7ea2afe0b3a4770be48a7df13f9378069926b0b5
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2859933"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155136"
 ---
 # <a name="walkthrough-register-an-app-with-azure-active-directory"></a>Tutorial: Registrar una aplicación con Azure Active Directory
 

@@ -3,7 +3,7 @@ title: Crear aplicaciones cliente (Common Data Service) | Microsoft Docs
 description: Introduce los conceptos necesarios para crear aplicaciones cliente personalizadas que se conecten a Common Data Service mediante código.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: paulliew
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 29f6cca10ca81eacc9f70c589b8dc12f0e0cd466
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 7fe3f14b0a12d87066c978e7460bd8c7c4878288
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883534"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156344"
 ---
 # <a name="create-client-applications"></a>Crear aplicaciones cliente
 

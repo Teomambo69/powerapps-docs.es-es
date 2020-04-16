@@ -13,19 +13,19 @@ ms.assetid: 15c4039e-a3ca-4116-ba1d-3ac88cba3ae1
 caps.latest.revision: 15
 author: JimDaly
 ms.author: susikka
-ms.reviewer: susikka
+ms.reviewer: pehecke
 manager: shujoshi
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 168bb77cfe97d0239da0786c093e3c1960736802
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 458e26218141f3c8a6d29fba23d78ee92b4c3165
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753696"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155068"
 ---
 # <a name="use-the-common-data-service-web-api"></a>Use la API web de Common Data Service
 

@@ -3,7 +3,7 @@ title: Tutorial sobre Build tools y preguntas más frecuentes| Microsoft Docs
 description: 'Power Apps build tools son una colección de tareas de compilación de Azure DevOps específicas de Power Apps que eliminan la necesidad de descargar manualmente los scripts para administrar el desarrollo de Power Apps. En este tema se describen el tutorial y las preguntas más frecuentes a los que puede tener acceso para obtener más información sobre estas herramientas. '
 ms.custom: ''
 ms.date: 07/21/2019
-ms.reviewer: Dean-Haas
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mikkelsen2000
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ac7b2aeabe6121ee45b8593abb3234cfb6fb566b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0aa106f7d4f162f20d7274f596f1b5354d968ffa
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861833"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156414"
 ---
 # <a name="tutorial-and-faq"></a>Tutorial y preguntas más frecuentes
 
@@ -49,7 +49,7 @@ El laboratorio práctico proporciona un tutorial con instrucciones paso a paso s
 
 **¿Power Apps build tools funcionan sólo para Power Apps?**  
 
-*Power Apps Build Tools funcionan con Power Apps y con aplicaciones basadas en modelo en Dynamics 365 como Dynamics 365 Sales y Dynamics 365 Customer Service. Las tareas de compilación independientes están disponibles para Microsoft Dynamics para Finance and Operations.*
+*Las Power Apps Build Tools funcionan para Power Apps y aplicaciones basadas en modelos en Dynamics 365 como Dynamics 365 Sales y Dynamics 365 Customer Service. Hay tareas de compilación separadas disponibles para Microsoft Dynamics para Finance and Operations.*
 
 **¿Puedo incluir aplicaciones de flujo y de lienzo?**
 

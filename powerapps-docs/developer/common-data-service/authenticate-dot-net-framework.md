@@ -3,7 +3,7 @@ title: Autenticación con las aplicaciones de .NET Framework (Common Data Servic
 description: Cómo las aplicaciones .NET Framework puede autenticarse con Common Data Service
 ms.custom: ''
 ms.date: 01/25/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: paulliew
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1cfe6bf09d274f7b465ffbcc97f220e3374af72f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3cb5256130773472af60fbfbc3b6f062f24db1a5
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749737"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156452"
 ---
 # <a name="authentication-with-net-framework-applications"></a>Autenticación con las aplicaciones de .NET Framework
 

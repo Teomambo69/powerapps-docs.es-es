@@ -3,7 +3,7 @@ title: Recuperar y detectar cambios en los metadatos (Common Data Service) | Mic
 description: Las clases del espacio de nombres Query y las clases RetrieveMetadataChangesRequest y RetrieveMetadataChangesResponse permiten crear consultas eficaces de metadatos y capturar los cambios que se producen según suceden en el tiempo.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 18b5659731f790196a11fb4b27c84bead474940f
-ms.sourcegitcommit: c8d982ad7da95206bbe40c8a8e4debd58edd67db
+ms.openlocfilehash: 8723f629b38df58bbc44ec294f84e7d006555e62
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "3082310"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156024"
 ---
 # <a name="retrieve-and-detect-changes-to-metadata"></a>Recuperar y detectar cambios en metadatos
 

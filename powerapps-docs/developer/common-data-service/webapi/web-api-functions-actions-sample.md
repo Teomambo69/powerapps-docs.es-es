@@ -12,19 +12,19 @@ applies_to:
 ms.assetid: 953c3137-6171-4e6e-b249-6a96221c6e96
 caps.latest.revision: 16
 author: JimDaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 ms.author: jdaly
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f119709c48f4d98050ecd5384681dcf0b954a664
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 531ebab75dcbac2e00004ae91fd9ff5349670382
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753648"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154960"
 ---
 # <a name="web-api-functions-and-actions-sample"></a>Ejemplo de funciones y acciones de la API web
 

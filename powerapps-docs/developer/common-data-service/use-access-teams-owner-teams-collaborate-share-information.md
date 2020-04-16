@@ -3,7 +3,7 @@ title: Usar equipos de acceso y de propietario para colaborar y compartir inform
 description: Aprenda a utilizar equipos de acceso y equipos de propietarios para colaborar y compartir información.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: paulliew
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1454c5db803851d5d691db05e57af0beeb90a2b3
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 381127cd3c85cdb76e8d8e591943b5fb470a9d19
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753780"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155212"
 ---
 # <a name="use-access-teams-and-owner-teams-to-collaborate-and-share-information"></a>Usar equipos de acceso y de propietario para colaborar y compartir información
 

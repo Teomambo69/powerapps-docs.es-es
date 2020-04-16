@@ -8,12 +8,12 @@ ms.topic: article
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 8d1da235f93f98a8104c69511bb8c50f86ddcbda
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: cc4e4dd513cc627c7c9622854151f6a3f85c3e77
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909286"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162169"
 ---
 # <a name="debug-code-components"></a>Depurar componentes de código
 
@@ -26,7 +26,7 @@ Como se muestra en la imagen de arriba, la ventana del explorador se abre con cu
 
 - **Entradas de contexto** proporciona una forma de especificar el factor de forma y de probar el componente de código con cada factor de forma (web, tableta, teléfono). Esto es útil cuando el componente de código depende de una capacidad específica de factor de forma.
 - **Entradas de datos** es una interfaz de usuario interactiva que muestra todas las propiedades y sus [tipos](manifest-schema-reference/types.md) o [grupos](manifest-schema-reference/type-group.md) de tipos definidos en el archivo de [manifiesto](manifest-schema-reference/manifest.md). Permitir escribir datos ficticios para cada propiedad. 
-- **Salidas** genera la salida cada vez que se llama al método [getOutputs](reference/control/getoutputs.md) de un componente.  
+- **Salidas** representa la salida cada vez que se llama al método [getOutputs](reference/control/getoutputs.md) de un componente.  
 
      > [!div class="mx-imgBorder"]
      > ![Agente de prueba 2](media/test-harness-2.png "Agente de prueba 2")
@@ -61,10 +61,10 @@ Como se muestra en la imagen de arriba, la ventana del explorador se abre con cu
 
 El agente de prueba admite el modo `watch` del que se puede aprovechar para proyectos de Power Apps component framework. Para habilitar el modo `watch`, inicie el agente de prueba usando el comando `npm start watch`. En modo `watch`, los cambios realizados en cualquiera de los activos de componente se reflejan automáticamente en el agente de prueba sin tener que reiniciarlo:
 
-1.  `index.ts`.
-2.  `ControlManifest.Input.xml`.
-3.  Bibliotecas importadas en `index.ts`.
-4.  Todos los recursos incluidos en el archivo de manifiesto.
+1.    `index.ts`.
+2.    `ControlManifest.Input.xml`.
+3.    Bibliotecas importadas en `index.ts`.
+4.    Todos los recursos incluidos en el archivo de manifiesto.
 
 ## <a name="debug-code-components-using-native-browsers"></a>Depurar componentes de código mediante exploradores nativos
 

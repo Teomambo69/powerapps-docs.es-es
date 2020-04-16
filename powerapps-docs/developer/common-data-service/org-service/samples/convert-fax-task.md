@@ -3,7 +3,7 @@ title: 'Ejemplo: Convertir un fax en una tarea (Common Data Service) | Microsoft
 description: 'Ejemplo que muestra cómo convertir un fax en una tarea '
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f018257e2cacd8b9e60de4e82e2724885fe7ab91
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: ef5577ca49a02235791339cc182faab50494c536
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956235"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155904"
 ---
 # <a name="sample-convert-a-fax-to-a-task"></a>Ejemplo: convertir un fax en una tarea
 

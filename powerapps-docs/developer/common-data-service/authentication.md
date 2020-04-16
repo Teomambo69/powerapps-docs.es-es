@@ -3,7 +3,7 @@ title: Autenticación con servicios web de Common Data Service (Common Data Serv
 description: Introduce opciones de autenticación que dependen del marco de software que use.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: paulliew
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3250c9e22881d24924997395a744a5bd45018786
-ms.sourcegitcommit: 4728372a4a467f65bab9ae17e91738f420e17374
+ms.openlocfilehash: 0503114883dd93a2b57d380cf5686853e0315ea8
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3029987"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156436"
 ---
 # <a name="authentication-with-common-data-service-web-services"></a>Autenticación con servicios web de Common Data Service
 

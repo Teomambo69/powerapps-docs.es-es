@@ -3,7 +3,7 @@ title: " Eliminar colas (Common Data Service) | Microsoft Docs"
 description: En este ejemplo se muestra cómo eliminar una cola
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 76ddf413a7d2d88b252697282ff585fc69c33633
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: b663296a3f99624b1aee8996f79f04cbf9a245ae
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956159"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155844"
 ---
 # <a name="delete-a-queue-early-bound"></a>Eliminar una cola (enlace de compilación)
 

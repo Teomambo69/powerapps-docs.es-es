@@ -3,7 +3,7 @@ title: 'Ejemplo: crear, recuperar, actualizar y eliminar (enlace en tiempo de ej
 description: Este ejemplo muestra las operaciones de crear, recuperar, actualizar y eliminar en una cuenta mediante la clase Entity de enlace en tiempo de ejecución.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9e97dfc4ab319c30decbc07fa866ab5f6c861e28
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 8228f099689526594274e406147b26956b9a1ff3
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934276"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155736"
 ---
 # <a name="sample-late-bound-entity-operations"></a>Ejemplo: operaciones de entidad en tiempo de ejecución
 

@@ -3,7 +3,7 @@ title: Usar el servicio de organización de Common Data Service (Common Data Ser
 description: Lea cómo puede usar el servicio de organización de Common Data Service para aplicaciones para trabajar con datos y metadatos.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2d32c212a3b6c8f95f3de078d6849356ef3853c7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 2a8e33af88dd4cb52d83a150ae4ca8edbd1a0eb9
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749684"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156004"
 ---
 # <a name="use-the-common-data-service-organization-service"></a>Usar el servicio de la organización de Common Data Service
 

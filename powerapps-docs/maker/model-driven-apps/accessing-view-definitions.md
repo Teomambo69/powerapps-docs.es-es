@@ -2,7 +2,7 @@
 title: Acceso a una definición de vista de aplicación controlada por modelos | MicrosoftDocs
 description: En este tema, aprenderá a acceder a vistas de entidad
 ms.custom: ''
-ms.date: 11/27/2018
+ms.date: 03/23/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 43a35f82f93260b4f4a8f6b5084e6827e46eff8f
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 26d9abdd0703519d36c5f51a20a8617e4801f552
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2885153"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166682"
 ---
 # <a name="access-a-model-driven-app-view-definition-in-power-apps"></a>Acceso a una definición de vista de aplicación controlada por modelos en Power Apps
 
@@ -41,11 +41,8 @@ ms.locfileid: "2885153"
 
 1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
-
-    > [!IMPORTANT]
-    > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment). 
-
 2.  Expanda **Datos**, seleccione **Entidades** y, a continuación, seleccione la entidad que desee, como la entidad **Cuenta**.   
+
 3. Seleccione la ficha **Vistas**.
 
     > [!div class="mx-imgBorder"] 

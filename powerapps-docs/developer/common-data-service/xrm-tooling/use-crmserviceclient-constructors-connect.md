@@ -3,7 +3,7 @@ title: Usar constructores CrmServiceClient para conectarse a Common Data Service
 description: Puede crear una instancia de la clase CrmServiceClient y después usar uno de los constructores para conectarse a Common Data Service.
 ms.custom: ''
 ms.date: 03/27/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3b42f674ef9bfe53d1665d4c0489450274f93d33
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: fe382d76dc314680c1da66a37227ad441567324f
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749474"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154876"
 ---
 # <a name="use-crmserviceclient-constructors-to-connect-to-common-data-service"></a>Usar constructores CrmServiceClient para conectarse a Common Data Service
 

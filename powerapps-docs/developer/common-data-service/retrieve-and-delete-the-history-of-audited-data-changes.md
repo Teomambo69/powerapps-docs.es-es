@@ -3,7 +3,7 @@ title: Recuperar y eliminar el historial de cambios de datos auditados (Common D
 description: Recuperar mediante programación el historial de cambios de auditoría o eliminar registros de auditoría.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: paulliew
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ca55c34eeab5d2ca0839669c48b6c0a1b5b1b3a7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c42e00535df1fad95ec9b133d880b17b9dd17733
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749806"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155336"
 ---
 # <a name="retrieve-and-delete-the-history-of-audited-data-changes"></a>Recuperar y eliminar el historial de cambios de datos auditados
 

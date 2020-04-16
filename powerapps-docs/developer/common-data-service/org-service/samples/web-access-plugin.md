@@ -3,7 +3,7 @@ title: 'Ejemplo: acceso web desde un complemento (Common Data Service) | Microso
 description: En este ejemplo se muestra cómo escribir un complemento que tiene acceso a recursos en la red.
 ms.custom: ''
 ms.date: 8/19/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c12d9eff40db2afb20eebf787b360ab4c49be18b
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 1e6d56cfe5bf51a58bb81dc845df19f3af62a4de
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752931"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155500"
 ---
 # <a name="sample-web-access-from-a-plug-in"></a>Ejemplo: Acceso web desde un complemento
 

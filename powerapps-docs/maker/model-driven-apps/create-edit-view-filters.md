@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7645910490aee24b7f3c2b239f1a6dd841b67df2
-ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
+ms.openlocfilehash: 3a36cf57710da4e6306c7de48e19d4af6c722f10
+ms.sourcegitcommit: abdc8c609a7a221ce4ca6b051a84b7083bdbe1ab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "3060240"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225604"
 ---
 # <a name="create-or-edit-filters-in-model-driven-app-views"></a>Crear o editar filtros en vistas de aplicaciones basadas en modelo
 
@@ -142,7 +142,8 @@ En este tema, creará o editará filtros realizando las siguientes tareas:
     > [!div class="mx-imgBorder"] 
     > ![Filtro de condición agrupado](media/group-conditions-filter.png "Filtro de condición agrupado")
 
-### <a name="next-steps"></a>Pasos siguientes
-[Elija y configure columnas](choose-and-configure-columns.md)  
+### <a name="see-also"></a>Vea también
+[Edite o cree vistas personales utilizando filtros de cuadrícula avanzados](../../user/grid-filters-advanced.md)
+[Elegir y configurar columnas](choose-and-configure-columns.md)  
 [Edite criterios de filtrado](edit-filter-criteria.md)  
 [Crear relaciones 1: N (uno a varios) o N:1 (varios a uno)](../common-data-service/create-edit-1n-relationships.md)

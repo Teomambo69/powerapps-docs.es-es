@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cf8fdf1b14ef7bbc503c49fac217bb071bd56305
-ms.sourcegitcommit: 4f2e9e8f9bd3204ca9eee9e2a46f797c957c55ec
+ms.openlocfilehash: 2280ea28178a85429367ea0359660b3b94f5f99b
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029786"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154742"
 ---
 # <a name="common-issues-and-resolutions-for-solution-checker"></a>Problemas y soluciones comunes para el comprobador de soluciones
 
@@ -224,7 +224,7 @@ Referencia [Artículo de KB #4337537: Exportación no válida - Falta entidad de
 
 Si a una solución se le han aplicado [parches](https://docs.microsoft.com/powerapps/developer/common-data-service/create-patches-simplify-solution-updates), el Comprobador de soluciones no podrá exportar la solución para analizarla. Cuando se aplicaron parches a una solución, la solución original pasa a bloquearse y no se puede cambiarla o exportarla mientras haya revisiones dependientes que existan en la organización que identifica la solución como solución primaria.
 
-Para resolver este problema, clone la solución para que todos los parches relacionados con la solución se implementen en una solución recién creada. Esto desbloquea la solución y permite exportarla desde el sistema.  Para obtener más información, consulte [Clonar una solución](use-segmented-solutions-patches-simplify-updates.md#clone-a-solution).
+Para resolver este problema, clone la solución para que todos los parches relacionados con la solución se implementen en una solución recién creada. Esto desbloquea la solución y permite exportarla desde el sistema.  Para obtener más información, consulte [Clonar una solución](solution-patches.md#clone-a-solution).
 
 ## <a name="solution-checker-will-not-analyze-empty-solutions"></a>El comprobador de soluciones no analizará soluciones vacías
 

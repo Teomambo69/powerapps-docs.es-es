@@ -3,7 +3,7 @@ title: 'Ejemplo: hacer que un informe esté disponible o no disponible para la o
 description: Este ejemplo muestra cómo hacer que un informe esté disponible o no disponible para una organización.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 204caead7dc4416305964ff449c787b348414891
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: 7c248c4393bd2872b3fba32977b47ebd32b15c17
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956351"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155728"
 ---
 # <a name="make-a-report-available-or-unavailable-to-organization"></a>Hacer que un informe esté disponible o no disponible para la organización
 

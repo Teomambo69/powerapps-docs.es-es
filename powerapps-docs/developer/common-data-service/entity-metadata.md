@@ -21,11 +21,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 70a545ba267869acf4d2305444621fe4a1ea12f9
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109070"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3126475"
 ---
 <!-- 
 Was Mike Carter

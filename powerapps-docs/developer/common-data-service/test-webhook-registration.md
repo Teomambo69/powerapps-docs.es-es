@@ -3,7 +3,7 @@ title: Probar el registro de webhook con un sitio de registro de solicitud (Comm
 description: Para comprender los datos contextuales pasados con un webhook conviene usar un sitio de registro de solicitud para explorar los datos. En este tema se describirá cómo hacerlo.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 75bccd3cbc7425279338fa58bd77592fbc5c3d64
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a92de35959665dd99eae405c10f2b38d6fd0c15a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749674"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155256"
 ---
 # <a name="test-webhook-registration-with-request-logging-site"></a>Probar el registro de webhook con un sitio de registro de solicitud 
 

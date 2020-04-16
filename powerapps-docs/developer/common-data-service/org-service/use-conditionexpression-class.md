@@ -3,7 +3,7 @@ title: Usar la clase ConditionExpression (Common Data Service) | Microsoft Docs
 description: Conozca cómo puede utilizar la clase ConditionExpression para comparar un atributo con un valor o conjunto de valores utilizando un operador, como &quot;igual a&quot; o &quot;mayor que&quot;.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5e05b1124c8c1453b0e14208451068026e6570f1
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 84ac9bf64031fcf27e8b7602db36d35025aff7bd
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749841"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155464"
 ---
 # <a name="use-the-conditionexpression-class"></a>Usar la clase ConditionExpression
 

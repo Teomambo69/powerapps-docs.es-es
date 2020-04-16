@@ -3,7 +3,7 @@ title: Personalizar etiquetas para admitir varios idiomas (Common Data Service) 
 description: Obtenga información sobre cómo personalizar etiquetas para que admitan varios idiomas.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 759dcce9d209a904a1c8f0705414eccb88216e26
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3b384ff32f0e1eaf85c3730ec10bb1492ba2de34
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753000"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156296"
 ---
 # <a name="customize-labels-to-support-multiple-languages"></a>Personalizar etiquetas para admitir varios idiomas
 

@@ -14,7 +14,7 @@ ms.assetid: e200d242-ff3f-48e5-af32-aed050e02441
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.suite: ''
 ms.tgt_pltfrm: ''
 search.audienceType:
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 52c4b3217b9520db99679ddad0e773d17705fdb4
-ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
+ms.openlocfilehash: 71bbb3d4b17d518e251ccedb1d2e8244d011853e
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2975723"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155156"
 ---
 # <a name="view-or-download-developer-resources"></a>Visualización o descarga de recursos para programadores
 

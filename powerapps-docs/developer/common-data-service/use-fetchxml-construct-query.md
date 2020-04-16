@@ -3,7 +3,7 @@ title: Usar FetchXML para consultar datos (Common Data Service) | Microsoft Docs
 description: FetchXML es un lenguaje de consulta propietario que se usa en Common Data Service. Se basa en un esquema que describe las funciones del idioma.
 ms.custom: ''
 ms.date: 07/23/2019
-ms.reviewer: susikka
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1337df809d0f696d81882089877c4ab9304ef3d8
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 70dd2fe43d882d36f54fa6b13c87f5a6782d692f
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749662"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155188"
 ---
 # <a name="use-fetchxml-to-construct-a-query"></a>Usar FetchXML para crear una consulta
 
@@ -143,3 +143,4 @@ foreach (var c in result.Entities)
 ## <a name="fetchxml-query-results"></a>Resultados de la consulta FetchXML  
  Cuando se ejecuta una consulta de FetchXML usando el método <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.RetrieveMultiple(Microsoft.Xrm.Sdk.Query.QueryBase)> se autentica el usuario. método de autenticación del usuario. Método, el valor devuelto es un <xref:Microsoft.Xrm.Sdk.EntityCollection> que contiene los resultados de la consulta. A continuación puede iterar a través de la colección de entidades. El ejemplo anterior usa el bucle de `foreach` para iterar a través de la recopilación de resultados de la consulta de FetchXML.  
   
+ 

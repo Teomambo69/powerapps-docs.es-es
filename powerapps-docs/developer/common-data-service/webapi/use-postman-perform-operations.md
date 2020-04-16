@@ -3,7 +3,7 @@ title: Usar Postman para realizar operaciones con la API web (Common Data Servic
 description: Aprenda a crear y enviar a solicitudes web API mediante envío.
 ms.custom: ''
 ms.date: 03/22/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -17,12 +17,12 @@ search.audienceType:
 - developer
 search.app:
 - D365CE
-ms.openlocfilehash: c651dbc8ba553192f4ff3b09b84518684ac4b866
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: be5300e665c2c116618f5b01ba7186c3627c23d6
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749747"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155000"
 ---
 # <a name="use-postman-to-perform-operations-with-the-web-api"></a>Use Postman para realizar operaciones con la API web
 

@@ -7,19 +7,19 @@ ms.service: powerapps
 ms.topic: article
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 manager: ryjones
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 995fbc4e4d21549d59c5d1c135fd7448c8abedc0
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 84ba00bfe3d634fcf4ad64e0447b6dc5dcb7d049
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753688"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155052"
 ---
 # <a name="quick-start-web-api-sample-c"></a>Tutorial: Ejemplo de API Web (C#)
 

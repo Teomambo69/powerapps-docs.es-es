@@ -1,6 +1,6 @@
 ---
-title: Usar la solución predeterminada para personalizar con Power Apps | MicrosoftDocs
-description: Aprenda cómo personalizar la solución predeterminada
+title: Usar una solución para personalizar Power Apps | MicrosoftDocs
+description: Aprenda cómo personalizar Power Apps
 ms.custom: ''
 ms.date: 02/20/2020
 ms.reviewer: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1525cdb41cb7e809a54b6389472e5be842a87697
-ms.sourcegitcommit: d98dd90a7dda11f434a13a7f8976459856d6142b
+ms.openlocfilehash: e32920e3a3ae2bd3c65bfaae6da4b875d4dff645
+ms.sourcegitcommit: 3e6c499a65ada8a9f28022a02f64030b0c069a17
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "3093639"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "3226445"
 ---
 # <a name="use-a-solution-to-customize"></a>Use una solución para personalizar
 Se recomienda crear una solución para administrar sus personalizaciones. Con una solución personalizada, puede encontrar fácilmente los componentes de la solución que ha personalizado, aplicar consistentemente su prefijo editor de soluciones y exportar su solución para distribuirla a otros entornos.  

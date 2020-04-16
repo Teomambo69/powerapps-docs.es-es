@@ -1,9 +1,9 @@
 ---
-title: Entidades de cliente (cuenta, contacto) (Common Data Service) | Microsoft Docs
+title: Entidades de cliente (account, contact, customeraddress) (Common Data Service) | Microsoft Docs
 description: Las entidades Account y Contact en Dynamics 365 son esenciales para identificar y administrar clientes, vender productos y servicios, y proporcionar un mejor servicio a los clientes. Se usa una entidad de dirección de cliente para almacenar la dirección y la información de envío para un cliente.
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 03/30/2020
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,14 +14,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 48a9f4e8a18fcf6db639e2a17c21779fa8de90c3
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4181206bef39f6834b5aef096ed90931f725d310
+ms.sourcegitcommit: b6beb1b76d9ddb0f9846253f895d581bda9012ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749572"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "3176669"
 ---
-# <a name="customer-entities-account-contact"></a>Entidades de cliente (cuenta, contacto)
+# <a name="customer-entities-account-contact-customeraddress"></a>Entidades de cliente (account, contact, customeraddress)
 
 <!-- 
 Was Mike Carter
@@ -66,7 +66,14 @@ La entidad de contacto almacena toda la información acerca de una persona, como
   
 Las operaciones básicas que puede realizar en un contacto incluyen crear, leer, actualizar y eliminar.  
   
-Vincular entidades como actividades y notas a la entidad de contacto permite al usuario ver todas las comunicaciones que el usuario ha tenido con un cliente, las acciones que el usuario ha realizado en nombre del cliente y toda la información que el usuario necesita sobre el cliente.  
+Vincular entidades como actividades y notas a la entidad de contacto permite al usuario ver todas las comunicaciones que el usuario ha tenido con un cliente, las acciones que el usuario ha realizado en nombre del cliente y toda la información que el usuario necesita sobre el cliente.
+
+## <a name="customeraddress-entity"></a>Entidad CustomerAddress
+
+Esta entidad contiene dirección e información de envío. Se utiliza también para almacenar direcciones adicionales para un contacto o una cuenta.
+
+>[!NOTE]
+>La tabla de direcciones del cliente se actualiza a nivel de plataforma cuando se realiza un cambio en las entidades cuenta o contacto. Debido a esto, no se realizará una llamada al SDK por separado para actualizar o crear la entidad Dirección del cliente. Cualquier código que se active al actualizar o crear direcciones debe apuntar a las entidades de contacto o cuenta.
   
 ## <a name="in-this-section"></a>En esta sección  
  [Entidad Account](reference/entities/account.md)  

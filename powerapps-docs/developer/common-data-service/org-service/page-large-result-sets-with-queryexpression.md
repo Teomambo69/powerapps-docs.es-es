@@ -3,7 +3,7 @@ title: Conjuntos de resultados grandes de página con QueryExpression (Common Da
 description: Use la característica de la cookie de paginación para crear la paginación en una aplicación más rápida para conjuntos de datos de gran tamaño. La característica está disponible con las consultas FetchXML y QueryExpression
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f518f8b47347399d3670b89f67db8978f591430c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 534c7c0266a0152c8e2e15a4c7e4290f537fd8ae
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749542"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155992"
 ---
 # <a name="page-large-result-sets-with-queryexpression"></a>Conjuntos de resultados grandes de página con QueryExpression
 

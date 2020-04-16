@@ -2,7 +2,7 @@
 title: Traducir texto localizable para aplicaciones controladas por modelos | MicrosoftDocs
 description: Aprenda a obtener el texto traducido localizable para admitir varios idiomas
 ms.custom: ''
-ms.date: 06/03/2018
+ms.date: 03/05/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 32e6eb8439cdd5a685f761b1326a0cc891f0e6bb
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d0f8f154d4a2cb92a062b7ce37f9e6a0b17e9b6b
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754891"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "3136409"
 ---
 # <a name="translate-localizable-text-for-model-driven-apps"></a>Traducir texto localizable para aplicaciones controladas por modelos
 
@@ -51,20 +51,25 @@ Si todavía no ha habilitado los idiomas para el entorno, siga los pasos descrit
 
 ## <a name="export-the-localizable-text"></a>Exportar el texto localizable
 
-El ámbito del texto localizable que se exportará es la solución no administrada que contiene el texto localizable. Esto solo se puede hacer usando el explorador de soluciones
+El ámbito del texto localizable que se exportará es la solución no administrada que contiene el texto localizable.
 
-[!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
+<!-- [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)] -->
 
-Abra la solución no administrada que contiene el texto localizable y en la barra de menús seleccione **Traducciones** > **Exportar traducciones**. 
+1. Desde el portal de Power Apps, seleccione **Soluciones**.
 
-![Exportación de traducciones](media/export-localizable-text.png)
+2. En la lista **Todas las soluciones**, seleccione la solución no administrada que contiene el texto localizable que quiere.
 
-Debería ver una alerta que indica:
-> La exportación de etiquetas personalizadas para la traducción puede tardar varios minutos. No haga clic en el vínculo de exportación de nuevo hasta que la primera exportación haya finalizado. ¿Está seguro de que desea exportar ahora? 
+3. En la barra de menú, seleccione **Traducciones** > **Exportar traducciones**. 
 
-Si desea continuar, haga clic en **Aceptar**.
+    > [!div class="mx-imgBorder"] 
+    > ![Exportar traducciones](media/export-localizable-text.png "Exportación de traducciones")
 
-Cuando finalice la exportación, puede encontrar un archivo con un nombre parecido a `CrmTranslations_{0}_{1}.zip` en la carpeta de descargas donde `{0}` es el nombre único de la solución y `{1}` es el número de versión de la solución.
+    Podría ver una alerta que indica:
+    > La exportación de etiquetas personalizadas para la traducción puede tardar varios minutos. No haga clic en el vínculo de exportación de nuevo hasta que la primera exportación haya finalizado. ¿Está seguro de que desea exportar ahora?
+    
+    > Si desea continuar, haga clic en **Aceptar**.
+
+Cuando se complete la exportación, guarde el archivo zip de las traducciones. El archivo se llamará algo así como `CrmTranslations_{0}_{1}.zip`, donde `{0}` es el nombre único de la solución y `{1}` es el número de versión de la solución.
 
 ## <a name="get-the-localizable-text-translated"></a>Obtener el texto localizable traducido
 
@@ -84,7 +89,7 @@ Puede abrir el archivo CrmTranslations.xml con. Microsoft Office Excel.
 
 Cuando visualice los datos en Excel, consulte la pestaña **Etiquetas localizadas**.
 
-![Texto exportado para localización](media/localized-labels-tab-exported-languages.png)
+![Texto exportado para localización](media/localized-labels-tab-exported-languages.png "Texto exportado para localización")
 
 Cualquier entidad o campo personalizado tendrá celdas vacías para el texto localizable. Agregue los valores localizados para esos elementos.
 
@@ -117,13 +122,14 @@ Una vez realizados los cambios en el archivo `CrmTranslations.xml`, debe comprim
 
 Desde la misma solución no administrada desde la que exportó las traducciones, en el menú elija **Traducciones** > **Importar traducciones**. 
 
-![Importar traducciones](media/import-translations.png)
+<!-- ![Import translations](media/import-translations.png) -->
+
+> [!div class="mx-imgBorder"] 
+> ![Importar el archivo seleccionado](media/import-translated-text-dialog.png "Importar el texto localizado")
 
 Seleccione el archivo que contiene el texto traducido comprimido y, a continuación, seleccione **Importar**.
 
-![Importar el archivo seleccionado](media/import-translated-text-dialog.png)
-
-Una vez importado el texto traducido, debe publicar todas las personalizaciones para ver los cambios en sus aplicaciones;
+Una vez importado el texto traducido, debe publicar todas las personalizaciones para ver los cambios en sus aplicaciones.
 
 ## <a name="community-tools"></a>Herramientas de la Comunidad
 
@@ -137,4 +143,3 @@ Una vez importado el texto traducido, debe publicar todas las personalizaciones 
 ## <a name="next-steps"></a>Pasos siguientes
 [Opciones regionales y de idioma para la organización](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-languages)<br />
 [Editar mensajes de entidades del sistema](../common-data-service/edit-system-entity-messages.md)
-

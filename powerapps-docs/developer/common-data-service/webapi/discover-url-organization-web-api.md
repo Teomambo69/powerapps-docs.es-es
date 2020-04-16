@@ -13,19 +13,19 @@ ms.assetid: 2db13b4e-0e7c-4f25-b7be-70a612fb96e2
 caps.latest.revision: 18
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 manager: kvivek
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cc170191c97d2519d73690fcdf557dfaae86d1be
-ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
+ms.openlocfilehash: bc68a5ae74c72f2dbc9a8240253574348d85a7cd
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2975719"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155092"
 ---
 # <a name="discover-the-url-for-your-organization"></a>Detectar la URL de su organización
 

@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2b54cad59b1f5a6cc4199675308f5cd48d05240d
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 2c98ab7d40d89460995e69aed86dcdecc97ada25
+ms.sourcegitcommit: abdc8c609a7a221ce4ca6b051a84b7083bdbe1ab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3108813"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225648"
 ---
 # <a name="types-of-fields"></a>Tipos de campos
 
@@ -152,7 +152,7 @@ Sin embargo, debe conocer que no todas las búsquedas se comportan de esta forma
 |-----------------|-----------------|  
 |**Básico**|Permite una única referencia a una entidad específica. Todas las búsquedas personalizadas son de este tipo.|  
 |**Cliente**|Permite una única referencia a una cuenta o un registro de contacto.|  
-|**Propietario**|Permite una única referencia a un equipo o un registro de usuario. Todas las entidades propiedad del equipo el usuario presentan una de estas opciones. Más información: [Agregar la entidad de equipo como opción de búsqueda en la aplicación](../model-driven-apps/team-entity-lookup.md)|  
+|**Propietario**|Permite una única referencia a un equipo o un registro de usuario. Todas las entidades propiedad del equipo el usuario presentan una de estas opciones. Más información: [Agregar una entidad como opción de búsqueda en la aplicación](../model-driven-apps/team-entity-lookup.md)|  
 |**Lista de partes**|Permite asignar varias referencias a varias entidades. Estas búsquedas se encuentran en los campos **Para** y **CC** de la entidad Correo electrónico. También se usan en las entidades Teléfono y Cita.|  
 |**Referente a**|Permite asignar una sola referencia a varias entidades. Estas búsquedas se encuentran en el campo referente usado en las actividades.|  
 

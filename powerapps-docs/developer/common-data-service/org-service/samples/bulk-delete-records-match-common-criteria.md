@@ -3,7 +3,7 @@ title: 'Ejemplo: Eliminación de registros en masa que coincidan con criterios c
 description: Este ejemplo muestra cómo eliminar registros en masa, que coinciden con criterios comunes.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7d4e3f2de06a2ba946d3548d67072149ab5b7d6a
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: 81a8a87e02c93c07c680d16a963f848e710e6887
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956239"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155916"
 ---
 # <a name="sample-bulk-delete-records-that-match-common-criteria"></a>Ejemplo: eliminar registros en masa que coincidan con los criterios comunes
 

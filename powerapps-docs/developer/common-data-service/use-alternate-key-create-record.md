@@ -3,7 +3,7 @@ title: Usar una clave alternativa para crear un registro (Common Data Service) |
 description: Se pueden utilizar teclas alternativas para crear instancias de clases Entity y EntityReference. Este tema analiza los patrones de uso y las excepciones posibles que se pueden lanzar cuando se usan claves alternativas.
 ms.custom: ''
 ms.date: 04/21/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 11c94bdecd7a2032ea17066280f2abddd61528ef
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a37abf0a350a6a196312d89e0f7b126f33f9a894
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749667"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155208"
 ---
 # <a name="use-an-alternate-key-to-create-a-record"></a>Usar una clave alternativa para crear un registro
 

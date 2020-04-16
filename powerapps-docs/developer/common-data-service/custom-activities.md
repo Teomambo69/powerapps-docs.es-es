@@ -3,7 +3,7 @@ title: Actividades personalizadas (Common Data Service) | Microsoft Docs
 description: Las actividades personalizadas admiten las necesidades de comunicación de una empresa como la mensajería instantánea (IM) y el servicio de mensajes cortos (SMS) en Dynamics 365.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ee86c88222c0385f1fec8458af6ee9d2cfeabf18
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 942680191db63b6238efdaaa07b5b113d9a5604e
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749716"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156316"
 ---
 # <a name="custom-activities"></a>Actividades personalizadas
 

@@ -2,7 +2,7 @@
 title: Crear o editar formularios de creación rápida de aplicaciones controladas por modelos en Power Apps | MicrosoftDocs
 description: Aprenda a crear o editar un formulario de creación rápida.
 ms.custom: ''
-ms.date: 05/14/2019
+ms.date: 03/23/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 171d64581fd0a9feb51d5a6111c79e63de1ba845
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: e6f3c1313ad006d9280145fd2802f83369410ec3
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2875374"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166946"
 ---
 # <a name="create-or-edit-model-driven-app-quick-create-forms-for-a-streamlined-data-entry-experience"></a>Crear o editar formularios de creación rápida de aplicaciones controladas por modelos para lograr una experiencia optimizada de entrada de datos
 
@@ -46,7 +46,7 @@ En este tema, creará y editará un formulario de creación rápida.
 |Cuenta|Respuesta de campaña|Caso|Competidor|  
 |Contacto|Cliente potencial|Oportunidad||  
   
-Aunque puede crear formularios de creación rápida para entidades de actividad del sistema, a excepción de la entidad Cita, estas no admiten formularios de creación rápida. Con el lanzamiento de Microsoft Dynamics 365, versión 9.0, la entidad Cita incluye un formulario de creación rápida para utilizar con la Interfaz unificada. Actualmente, la opción de deshabilitar el formulario de creación rápida para la entidad Cita no se admite. Cualquiera de las otras [entidades actualizadas](create-design-forms.md) y todas las entidades personalizadas se pueden habilitar para admitir estos formularios seleccionando **Permitir creación rápida** en la definición de la entidad y creando un formulario de creación rápida para la entidad. 
+Aunque puede crear formularios de creación rápida para entidades de actividad del sistema, a excepción de la entidad Cita, estas no admiten formularios de creación rápida. Actualmente, la opción de deshabilitar el formulario de creación rápida para la entidad Cita no se admite. Cualquiera de las otras [entidades actualizadas](create-design-forms.md) y todas las entidades personalizadas se pueden habilitar para admitir estos formularios seleccionando **Habilitar creación rápida de formularios** en la definición de la entidad y creando un formulario de creación rápida para la entidad. 
 
 Puede habilitar entidades de actividad personalizadas para admitir formularios de creación rápida y puede crear formularios de creación rápida para esas entidades. Sin embargo, el formulario de creación rápida para entidades de actividad personalizadas no se usará cuando los usuarios seleccionen **Crear** en la barra de navegación. Estos formularios de creación rápida se pueden usar solo cuando los usuarios agregan un nuevo registro para un subcuadrícula que muestra esa entidad de actividad personalizada específica.  
   
@@ -55,7 +55,7 @@ Puede habilitar entidades de actividad personalizadas para admitir formularios d
  Aunque puede definir varios formularios de creación rápida, solo uno puede usarlo todo el mundo. El formulario que todo el mundo usará se establece mediante el pedido de formulario. Los formularios de creación rápida no se pueden asignar a los roles de seguridad y no proporcionan al usuario la capacidad de cambiar formularios.  
   
 > [!NOTE]
->  - La entidad debe tener la opción **Permitir creación rápida** habilitada para que el formulario de creación rápida se muestre. 
+>  - La entidad debe tener la opción **Habilitar creación rápida de formularios** habilitada para que el formulario de creación rápida se muestre. 
 >  - También deberá agregar la entidad y el formulario de creación rápida a la aplicación.
 >  - Algunos campos, como el campo CREATEDON, no están disponibles para agregar a un formulario de creación rápida.  
   
@@ -63,10 +63,6 @@ Puede habilitar entidades de actividad personalizadas para admitir formularios d
   
 1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
-
-> [!IMPORTANT]
-> “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).     
-  
 2.  Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**.  
 
 3.  En la barra de herramientas seleccione **Agregar formulario** > **Formulario de creación rápida**.  
@@ -101,9 +97,6 @@ Si agrega un campo compuesto a un formulario de creación rápida, este se mostr
   
 1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
-> [!IMPORTANT]
-> Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).    
-  
 2. Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**.    
 
 3. En la lista de formularios, seleccione uno cuyo **Tipo** sea **Creación rápida**.  
@@ -116,15 +109,15 @@ Si agrega un campo compuesto a un formulario de creación rápida, este se mostr
   
 5.  Seleccione **Publicar** para ver el formulario modificado en la aplicación.  
 
-## <a name="allow-quick-create-property-form-behavior-for-activities"></a>Comportamiento de formulario de la propiedad Permitir creación rápida para actividades
-Introducida en la actualización 9.1.0.2007, la propiedad **Permitir creación rápida** se puede habilitar o deshabilitar para todas las actividades estándar, salvo citas periódicas. Esta propiedad le permite cambiar el formulario que se muestra de forma predeterminada para la mayoría de las actividades. De forma predeterminada, se habilita la propiedad **Permitir creación rápida** y el formulario de creación de creación rápida es el formulario que se muestra en las áreas de aplicación y las entidades de actividad que lo admiten. 
+## <a name="enable-quick-create-form-property-behavior-for-activities"></a>Comportamiento de la propiedad Habilitar creación rápida de formulario para actividades
+La propiedad **Habilitar creación rápida de formularios** se puede habilitar o deshabilitar para todas las actividades estándar, salvo citas periódicas. Esta propiedad le permite cambiar el formulario que se muestra de forma predeterminada para la mayoría de las actividades. De forma predeterminada, se habilita la propiedad **Habilitar creación rápida de formularios** y el formulario de creación de creación rápida es el formulario que se muestra en las áreas de aplicación y las entidades de actividad que lo admiten. 
 
 > [!div class="mx-imgBorder"] 
 > ![](media/allow-quick-create.png "Allow Quick Create property on appointment entity")
 
 
 ### <a name="unified-interface-client-form-display-behavior"></a>Comportamiento de visualización del formulario de cliente de la interfaz unificada
-En la siguiente tabla se indica qué formulario aparece de forma predeterminada cuando la propiedad **Permitir creación rápida** está *habilitada* en el cliente de la interfaz unificada.
+En la siguiente tabla se indica qué formulario aparece de forma predeterminada cuando la propiedad **Habilitar creación rápida de formularios** está *habilitada* en el cliente de la interfaz unificada.
  
 |Ubicación en la que se accede al formulario  |Formulario mostrado  |
 |---------|---------|
@@ -138,11 +131,11 @@ En la siguiente tabla se indica qué formulario aparece de forma predeterminada 
 |Cuadrícula de actividades (activitypointer)   | Principal   |
 |Cuadrícula de actividades específicas    | Principal   |
 
-<sup>1</sup>Las actividades aparecen en los botones globales **Crear** o **+ Nuevo** cuando se habilita la propiedad **Permitir creación rápida**. En este caso, se utiliza el formulario de creación rápida si existe o el formulario principal si no. Si está deshabilitado **Permitir creación rápida**, la entrada para la entidad no aparecerá.
+<sup>1</sup>Las actividades aparecen en los botones globales **Crear** o **+ Nuevo** cuando se habilita la propiedad **Habilitar creación rápida de formularios**. En este caso, se utiliza el formulario de creación rápida si existe o el formulario principal si no. Si está deshabilitado **Habilitar creación rápida de formularios**, la entrada para la entidad no aparecerá.
 
 ### <a name="classic-web-client-form-display-behavior"></a>Comportamiento de visualización de formulario del cliente web clásico
 
-En la siguiente tabla se indica qué formulario aparece de forma predeterminada cuando la propiedad **Permitir creación rápida** está *habilitada* en el cliente web clásico.
+En la siguiente tabla se indica qué formulario aparece de forma predeterminada cuando la propiedad **Habilitar creación rápida de formularios** está *habilitada* en el cliente web clásico.
 
 |Ubicación en la que se accede al formulario  |Formulario mostrado  |
 |---------|---------|
@@ -156,7 +149,7 @@ En la siguiente tabla se indica qué formulario aparece de forma predeterminada 
 
  #### <a name="classic-web-client-social-pane-behavior"></a>Comportamiento social del panel del cliente web clásico
  
-El panel social es un caso especial porque no usa la propiedad **Permitir creación rápida** pero usa formularios diferentes para diferentes entidades de actividad según lo indicado aquí.
+El panel social es un caso especial porque no usa la propiedad **Habilitar creación rápida de formularios** pero usa formularios diferentes para diferentes entidades de actividad según lo indicado aquí.
 
 
 |Actividad  |Formulario mostrado  |
@@ -169,9 +162,9 @@ El panel social es un caso especial porque no usa la propiedad **Permitir creaci
 
 ### <a name="solution-import-allow-quick-create-value-behavior"></a>Importar soluciones con comportamiento de valor Permitir creación rápida
 
-Cuando importa una solución de la versión 8.2 independientemente del valor de la propiedad **Permitir creación rápida** en la solución, se restablecerán las siguientes entidades al valor de visualización del formulario predeterminado y el formulario principal mostrará: tarea, llamada de teléfono, correo electrónico, y cita. En esta situación, necesitará restablecer la opción **Permitir creación rápida** de nuevo a *habilitada* para aquellas entidades de actividad después de importar.
+Cuando importa una solución de la versión 8.2 independientemente del valor de la propiedad **Habilitar creación rápida de formularios** en la solución, se restablecerán las siguientes entidades al valor de visualización del formulario predeterminado y el formulario principal mostrará: tarea, llamada de teléfono, correo electrónico, y cita. En esta situación, necesitará restablecer la opción **Habilitar creación rápida de formularios** de nuevo a *habilitada* para aquellas entidades de actividad después de importar.
  
-Si existe una personalización creada en una solución de la versión 9.0 a entidades donde está habilitada **Permitir creación rápida** , el valor no cambiará después de importar.  Sin embargo, si ha establecido la opción **Permitir creación rápida** como *deshabilitada* para entidades de tarea, llamada de teléfono, correo electrónico y cita, el valor se sobrescribirá como habilitada. En esta situación, necesitará restablecer la opción **Permitir creación rápida** de nuevo a deshabilitada para aquellas entidades de actividad después de importar. 
+Si existe una personalización creada en una solución de la versión 9.0 a entidades donde está habilitada **Habilitar creación rápida de formularios**, el valor no cambiará después de importar.  Sin embargo, si ha establecido la opción **Habilitar creación rápida de formularios** como *deshabilitada* para entidades de tarea, llamada de teléfono, correo electrónico y cita, el valor se sobrescribirá como habilitada. En esta situación, necesitará restablecer la opción **Habilitar creación rápida de formularios** de nuevo a deshabilitada para aquellas entidades de actividad después de importar. 
   
 ### <a name="see-also"></a>Vea también  
 [Información general de la interfaz de usuario del editor de formularios](form-editor-user-interface-legacy.md)

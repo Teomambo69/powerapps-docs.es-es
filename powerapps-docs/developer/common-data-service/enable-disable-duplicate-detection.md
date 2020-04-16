@@ -3,7 +3,7 @@ title: Habilitar y deshabilitar la detección de duplicados (Common Data Service
 description: Este tema ofrece información sobre cómo habilitar la detección de duplicados para todas las entidades de una organización, para una entidad específica y para operaciones específicas y cómo deshabilitar la detección de duplicados globalmente o para un tipo de entidad anulando la publicación de las reglas de detección de duplicados o eliminando las reglas publicadas.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 381cb4eb4a9f5372e218d71a7372f0161605f950
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: b1690e7d9d000770823e6d0164a1bf0812054bc3
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749369"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156224"
 ---
 # <a name="enable-and-disable-duplicate-detection"></a>Habilitar y deshabilitar la detección de duplicados
 

@@ -9,18 +9,18 @@ ms.assetid: 33c9da5b-27dd-d82d-1eb1-7b3b69b6032b
 author: shmcarth
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: ''
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6a99ee0bbc5487575d56b571442db5e6a6d2f329
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: eb5d340bcd1f12926925791678d12dc98cbdf387
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109083"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154920"
 ---
 # <a name="work-with-solutions"></a>Trabajar con soluciones
 
@@ -719,3 +719,4 @@ if (_globalOptionSetId != null)
  [Desinstalar o eliminar una solución](uninstall-delete-solution.md)   
  [Entidades de solución](/dynamics365/customer-engagement/developer/solution-entities)   
  [Ejemplo: trabajar con soluciones](org-service/samples/work-solutions.md) [Ejemplo: detectar dependencias de la solución](/dynamics365/customer-engagement/developer/sample-detect-solution-dependencies)
+ 

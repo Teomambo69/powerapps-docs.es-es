@@ -7,18 +7,18 @@ manager: ryjones
 ms.service: powerapps
 ms.date: 08/05/2019
 ms.author: jdaly
-ms.reviewer: kvivek
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d896f91cc08e5a025fdbb87366543768508a6fb4
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: bfc3415d95e8861cdd2ba4c4835e453c0ddc2720
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883522"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156192"
 ---
 # <a name="developers-get-started-with-common-data-service"></a>Desarrolladores: Introducción a Common Data Service
 

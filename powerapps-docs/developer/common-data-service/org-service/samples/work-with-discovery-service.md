@@ -3,7 +3,7 @@ title: 'Ejemplo: Trabajar con servicio de detección (Common Data Service) | Mic
 description: Este código muestra cómo trabajar con el servicio de detección
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: shmcarth
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 48cbd588783963dbdd0f12ce98eac2e780c06b02
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 6099f304e62092dd63dd35472b80d3c22471de8e
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934574"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155484"
 ---
 # <a name="work-with-discovery-service"></a>Trabajar con el servicio de detección
 

@@ -3,7 +3,7 @@ title: Atributos de lista desplegable de selección múltiple (Common Data Servi
 description: Obtenga información sobre los atributos de lista desplegable de selección múltiple que permiten almacenar varias opciones seleccionables en un único atributo.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: MicroSri
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 47f6b9f5aeda7bcf8fec0c0831d478683a811b44
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3495162f0d5327ae0ec39707fe997583bb244592
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749560"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156144"
 ---
 # <a name="multi-select-picklist-attributes"></a>Atributos de lista desplegable de selección múltiple
 

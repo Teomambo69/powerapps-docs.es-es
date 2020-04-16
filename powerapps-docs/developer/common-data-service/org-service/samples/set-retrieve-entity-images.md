@@ -3,7 +3,7 @@ title: " Establecer y recuperar imágenes de entidad (Common Data Service) | Mic
 description: En este ejemplo se muestra cómo establecer y recuperar imágenes de entidad.
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 61fca71e073f43a2ea3b09d3ca4aae18f63c4952
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 79a2b18db60afa9f487f4313116c9600c72a13c0
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934576"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155576"
 ---
 # <a name="set-and-retrieve-entity-images"></a>Establecer y recuperar imágenes de entidad
 

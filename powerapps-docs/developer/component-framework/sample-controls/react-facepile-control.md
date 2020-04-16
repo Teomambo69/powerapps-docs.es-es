@@ -9,12 +9,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: grhurl
 ms.reviewer: nkrb
-ms.openlocfilehash: 6c56f40ebc741e591eae1bd6a0b1d0dbdc5296f8
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: 606f76c4956a5f2249d8d42f78ade3e91c1cda64
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091219"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162073"
 ---
 # <a name="implementing-the-facepile-component"></a>Implementar el componente FacePile
 
@@ -56,7 +56,7 @@ El ejemplo del componente consta de tres componentes de Office UI Fabric: un fac
 - Cuando el componente se carga, el control deslizante se establece con el valor de atributo enlazado. La propiedad `context.parameters.[property_name].attributes` contiene los metadatos asociados.
 - Se pasan a un controlador de eventos en los apoyos del componente de React; esto permite que el componente de Reac notifique al control de Power Apps Component Framework host que un valor ha cambiado. El controlador de eventos a continuación determina si una llamada al método **notifyOutputEvents** es necesaria.
 - Al deslizar el control deslizante React actualizará el valor enlazado y llamará al controlador de eventos pasado. Dentro del controlador, si se hace una llamada al método **notifyOutputEvents**, el método [getOutputs](../reference/control/getoutputs.md) del control será llamado de forma asincrónica y fluirá a Power Apps Component Framework. 
-- El host de marco actualiza el valor de atributo enlzado, y el valor actualizado fluye al componente, desencadenando el método [updateView](../reference/control/updateview.md) del control. A continuación el control representa el componente React con el nuevo valor.
+- El host de marco actualiza el valor de atributo enlazado y el valor actualizado fluye al componente, desencadenando el método [updateView](../reference/control/updateview.md) del control. A continuación el control representa el componente React con el nuevo valor.
 
 
 ## <a name="code"></a>Código
@@ -135,7 +135,7 @@ export class ReactStandardControl
 
   /**
    * It is called by the framework prior to a control receiving new data.
-   * @returns an object based on nomenclature defined in manifest, expecting object[s] for property marked as “bound” or “output”
+   * @returns an object based on nomenclature defined in manifest, expecting object[s] for property marked as "bound" or "output"
    */
   public getOutputs(): IOutputs {
     return {
@@ -420,6 +420,7 @@ export const TestImages = {
 
 ### <a name="related-topics"></a>Temas relacionados
 
+[Descargar componentes de ejemplo](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
 [¿Cómo usar los componentes de ejemplo?](../use-sample-components.md)<br/>
 [Referencia de esquema de manifiesto de Power Apps component framework](../manifest-schema-reference/index.md)<br />
 [Referencia de la API de Power Apps component framework](../reference/index.md)<br />

@@ -3,7 +3,7 @@ title: 'Ejemplo: Crear una actividad de flujo de trabajo personalizada (Common D
 description: El ejemplo muestra cómo escribir una actividad de flujo de trabajo personalizada que puede crear una cuenta y una tarea para la cuenta. Este ejemplo usa un enlace anticipado.
 ms.custom: ''
 ms.date: 1/28/2020
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fa3766bd8d034b66bb56ff0d4b12b529972eb981
-ms.sourcegitcommit: 4d858e628c89d245317d6192801d136f3591ea52
+ms.openlocfilehash: d54298423488ee67ecd011fc413dac254677fd81
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "2994583"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154928"
 ---
 # <a name="sample-create-a-custom-workflow-activity"></a>Ejemplo: crear una actividad de flujo de trabajo personalizada
 

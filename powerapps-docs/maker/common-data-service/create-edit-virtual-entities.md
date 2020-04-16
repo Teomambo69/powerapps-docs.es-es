@@ -2,7 +2,7 @@
 title: Crear y editar de entidades virtuales con Common Data Service | MicrosoftDocs
 description: Aprenda a crear entidades virtuales
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 03/03/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 07a6d262aeaba818d5a965409ce28a90934536c3
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: c8fdc0a1f6cd29117b78c19526f0e03dfe28718e
+ms.sourcegitcommit: 3e6c499a65ada8a9f28022a02f64030b0c069a17
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861315"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "3226489"
 ---
 # <a name="create-and-edit-virtual-entities-that-contain-data-from-an-external-data-source"></a>Crear y editar entidades virtuales que contienen datos desde un origen de datos externo
 
@@ -150,6 +150,7 @@ Las entidades virtuales presentan estas restricciones.
 - Se recomienda centrarse en un único origen de datos al usar las entidades virtuales en las búsquedas avanzadas. Por ejemplo, no se admite crear una búsqueda avanzada que, en última instancia, cree una combinación entre los datos nativos de Common Data Service y los datos externos de la entidad virtual.  
 - Las propiedades de metadatos de campos que se validan en la actualización no se aplican a las entidades virtuales. Por ejemplo, un campo Número entero en un campo de la entidad virtual puede establecerse para tener un valor mínimo de cero. Sin embargo, ya que el valor se proporcionará de un origen de datos externos, una consulta devolverá valores menores que cero cuando se recuperen de una entidad virtual.  La propiedad de valor mínimo no se implica en la consulta.  Aún debería filtrar los valores para que sean mayores que 0 si es lo se desea.
 - Las entidades virtuales no admiten el seguimiento de los cambios y no se pueden sincronizar usando una característica de Common Data Service, como el Servicio de exportación de datos.
+- Las entidades virtuales que usan el proveedor de datos OData v4 incluido están habilitadas en el puerto de salida 443.
   
 ### <a name="see-also"></a>Vea también  
 

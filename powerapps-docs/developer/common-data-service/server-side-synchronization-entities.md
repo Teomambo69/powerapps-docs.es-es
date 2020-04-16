@@ -3,7 +3,7 @@ title: Entidades de sincronización del lado del servidor (Common Data Service) 
 description: En , la sincronización del lado del servidor proporciona una interfaz entre Common Data Service y uno o más servidores de Exchange o POP3 para el correo electrónico entrante, y uno o más servidores SMTP o Exchange para el correo electrónico saliente.
 ms.custom: ''
 ms.date: 02/21/2019
-ms.reviewer: kvivek
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5c0a12acd097c477860e2f472055ec47ca259493
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0f79600f0c3851ec248cb5d482ac9c0cfacadf30
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2859921"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155292"
 ---
 # <a name="server-side-synchronization-entities"></a>Entidades de sincronización del lado del servidor
 

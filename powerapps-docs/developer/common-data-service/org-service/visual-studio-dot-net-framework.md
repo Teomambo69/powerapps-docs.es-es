@@ -3,7 +3,7 @@ title: Visual Studio y .NET Framework (Common Data Service) | Microsoft Docs
 description: Obtenga más información sobre herramientas y requisitos de desarrollo de código administrado.
 ms.custom: ''
 ms.date: 07/03/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a0da56df7ce42c5c886e8dc739a2e9f6f060a0a0
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: aa37008b56ba88afd0286582d896c8cea5bb1c11
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749830"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155420"
 ---
 # <a name="visual-studio-and-the-net-framework"></a>Visual Studio y .NET Framework
 

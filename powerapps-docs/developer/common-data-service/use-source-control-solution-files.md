@@ -3,7 +3,7 @@ title: Control de código fuente con archivos de solución(Common Data Service) 
 description: La herramienta SolutionPackager puede usarse con cualquier sistema de control de código fuente. Cuando un archivo .zip de solución se extrae a una carpeta, simplemente agregue y envíe los archivos al sistema de control de código fuente. Estos archivos se pueden sincronizar a continuación en otro equipo donde se pueden comprimir en un nuevo archivo .zip de solución idéntico.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: shmcarth
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 77e938315461948c5dc5507f68be290560e728d2
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8f09fe8c955a7108c4df62b1f4abddeeba5eb08d
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749658"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155160"
 ---
 # <a name="source-control-with-solution-files"></a>Control de código fuente con archivos de solución
 

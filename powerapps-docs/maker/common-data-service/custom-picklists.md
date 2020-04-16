@@ -13,20 +13,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6f3f47882800252c91de0efc572954f7397ac251
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 375ead78421dae021841009c5c6d1308fa4ed24b
+ms.sourcegitcommit: ca7df48f819795d28ccfcd4a862639e20a7fe8fe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757640"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3169093"
 ---
 # <a name="create-an-option-set"></a>Crear un conjunto de opciones
 
 Los conjuntos de opciones le permiten incluir listas desplegables de valores fijos para un usuario dentro de la aplicación para garantizar la coherencia de datos. A veces se hace referencia a ellos como listas desplegables o campos de opciones en otras aplicaciones. Similar a las entidades, hay conjuntos de opciones estándar y la posibilidad de crear conjuntos de opciones personalizadas para usar dentro de la aplicación.
 
-Los conjuntos de opciones se pueden crear de dos maneras, ya sea desde la lista de conjuntos de opciones del portal o directamente en una entidad cuando se crea un campo. Para obtener más información sobre cómo crear una entidad, consulte [Crear una entidad](data-platform-create-entity.md).
+Los conjuntos de opciones se pueden crear de dos maneras, ya sea desde la lista de **Conjuntos de opciones** del portal o directamente en una entidad cuando se crea un campo. Para obtener más información sobre cómo crear una entidad, consulte [Crear una entidad](data-platform-create-entity.md).
 
-## <a name="creating-an-option-set-while-adding-a-field"></a>Crear un conjunto de opciones mientras agrega un campo.
+## <a name="creating-an-option-set-while-adding-a-field"></a>Crear un conjunto de opciones mientras agrega un campo
 
 1. En [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expanda la sección **Datos** y haga clic o pulse en **Entidades** en el panel de navegación de la izquierda.
 
@@ -38,10 +38,10 @@ Los conjuntos de opciones se pueden crear de dos maneras, ya sea desde la lista 
 
 4. En el panel del nuevo campo, introduzca el **Nombre para mostrar** para el campo, el **Nombre** se rellenará automáticamente y se usa como el nombre único para el campo. Se usa **Nombre para mostrar** al mostrar este campo a sus usuarios, se usa **Nombre** cuando crea la aplicación, en expresiones y fórmulas.
 
+5. Haga clic en la lista desplegable **Tipo de datos** y seleccione **Conjunto de opciones** o **Conjunto de opciones de selección múltiple**.
+
     > [!div class="mx-imgBorder"] 
     > ![Nuevo campo](./media/data-platform-cds-create-entity/newfieldpanel.png "Panel Nuevo campo")
-
-5. Haga clic en la lista desplegable **Tipo de datos** y seleccione **Conjunto de opciones** o **Conjunto de opciones de selección múltiple**.
 
 6. Haga clic en la lista desplegable **Conjunto de opciones** y seleccione **Nuevo conjunto de opciones**
 
@@ -91,7 +91,7 @@ Los conjuntos de opciones se pueden crear de dos maneras, ya sea desde la lista 
 
 ## <a name="global-and-local-option-sets"></a>Conjuntos de opciones globales y locales
 
-De forma predeterminada, los conjuntos de opciones se crean como conjuntos de opciones globales que permite reutilizarlos en varias entidades. En la opción **Ver más**, al crear un nuevo conjunto de opciones puede elegir establecer un conjunto de opciones como **Local**. Esta opción solo está disponible al crear un conjunto de opciones mientras agrega un campo, y no en la lista de conjuntos de opciones. Los conjuntos de opciones locales solo se pueden usar en la entidad y el campo para los que se han creado, y no se pueden reutilizar en otras entidades. Este método se recomienda solo para usuarios avanzados con una necesidad específica para un conjunto de opciones local.
+De forma predeterminada, los conjuntos de opciones se crean como conjuntos de opciones globales que permite reutilizarlos en varias entidades. En la opción **Ver más**, al crear un nuevo conjunto de opciones puede elegir establecer un conjunto de opciones como **Local**. Esta opción solo está disponible al crear un conjunto de opciones mientras agrega un campo, y no en la lista de **Conjuntos de opciones**. Los conjuntos de opciones locales solo se pueden usar en la entidad y el campo para los que se han creado, y no se pueden reutilizar en otras entidades. Este método se recomienda solo para usuarios avanzados con una necesidad específica para un conjunto de opciones local.
 
 > [!IMPORTANT]
 > Una vez creado un conjunto de opciones como local o global, no se puede cambiar.

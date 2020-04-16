@@ -3,7 +3,7 @@ title: Crear sus propios acciones (Common Data Service) | Microsoft Docs
 description: Las acciones son mensajes personalizados que ayudan a extender la funcionalidad de Common Data Service. Más información sobre cómo crear sus propias acciones
 ms.custom: ''
 ms.date: 09/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a06bb80c1281df457f963db534311b2e2062d3e1
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f33b35f9791b33da4eb3bef73de9d03756c30d01
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749573"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156320"
 ---
 # <a name="create-your-own-actions"></a>Crear acciones propias
 

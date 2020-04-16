@@ -3,7 +3,7 @@ title: " Volcar relaciones de entidad a un archivo (Common Data Service) | Micro
 description: Este ejemplo muestra cómo volcar relaciones de entidad a un archivo.
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 542abdd52320d866ff2bcd0ff65167bf8f3fc071
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 1dec5680fc1bd42d2443c94bd1afe740ffb2aaf0
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934320"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155792"
 ---
 # <a name="dump-entity-relationships-information-to-a-file"></a>Volcar la información de privilegios de entidad a un archivo
 

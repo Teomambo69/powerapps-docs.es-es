@@ -6,28 +6,28 @@ suite: powerapps
 author: KumarVivek
 ms.service: powerapps
 ms.topic: article
-ms.date: 06/27/2019
+ms.date: 03/18/2020
 ms.author: kvivek
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c0608363a450de89acf509ec5c1a3cece2037a40
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 39f462daeb86dae724aa5b9cde7e7d0a3c9a5d6e
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753976"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162029"
 ---
 # <a name="apply-business-logic-using-client-scripting-in-model-driven-apps-using-javascript"></a>Aplicar la lógica de negocios usando scripting de cliente en aplicaciones basadas en modelos que usan JavaScript
 
 El scripting del cliente mediante JavaScript es una de las distintas formas de aplicar la lógica personalizada de procesos de negocios para mostrar los datos en un formulario en una aplicación basada en modelos.
 
 > [!IMPORTANT]
-> Todos los conceptos y API de script del cliente explicados en esta documentación también se aplican a los usuarios de Dynamics 365 Customer Engagement (on-premises).
+> Todos los conceptos y API de script del cliente explicados en esta documentación también se aplican a los usuarios de [Dynamics 365 Customer Engagement (on-premises)](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/overview).
 
-Los scripts de cliente no deben ser su primera opción sin embargo para aplicar lógica de proceso de negocio personalizada en formularios de aplicación basados en modelos. Las *reglas de negocio* permiten a alguien que no conozca JavaScript y no sea programador aplicar la lógica de los procesos de negocio en un formulario. Más información: [Crear reglas de negocio para aplicar lógica](/powerapps/maker/model-driven-apps/create-business-rules-recommendations-apply-logic-form). Encontrará al diseñador de reglas de negocio dentro del área **Common Data Service** en [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Cuando vea una entidad, busque la pestaña **Reglas de negocio**.
+Los scripts de cliente no deben ser su primera opción sin embargo para aplicar lógica de proceso de negocio personalizada en formularios de aplicación basados en modelos. Las *reglas de negocio* permiten a alguien que no conozca JavaScript y no sea programador aplicar la lógica de los procesos de negocio en un formulario. Más información: [Crear reglas de negocio para aplicar lógica](/powerapps/maker/model-driven-apps/create-business-rules-recommendations-apply-logic-form). Encontrará al diseñador de reglas de negocio dentro del área **Datos** > **Entidades** > [nombre_entidad] en [make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Cuando vea una entidad, busque la pestaña **Reglas de negocio**.
 
 Sin embargo, si el requisito empresarial no se puede conseguir con una regla de negocio, descubrirá que el scripting de cliente que usa el modelo de objetos API de cliente proporciona una forma eficaz de ampliar el comportamiento de la aplicación y habilitar la automatización en el cliente.
 

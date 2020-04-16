@@ -3,7 +3,7 @@ title: Entidad ActivityPointer (actividad) (Common Data Service) | Microsoft Doc
 description: La entidad de puntero de actividad (actividad) representa cualquier actividad o tarea que se realiza, o que será realizada por un usuario. Una actividad es cualquier acción para la que se puede crear una entrada en un calendario.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f979296356ba5cce562272ae1291a4aa39189a33
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0131950c398c1a21e05205a64ddb4b0bf79f7b62
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749414"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156496"
 ---
 # <a name="activitypointer-activity-entity"></a>Entidad ActivityPointer (actividad)
 

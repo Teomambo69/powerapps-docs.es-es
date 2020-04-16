@@ -3,7 +3,7 @@ title: Registro y seguimiento (Common Data Service) | Microsoft Docs
 description: Use el registro de seguimiento para almacenar la información de ejecución de los complementos para ayudar en la depuración de los complementos.
 ms.custom: ''
 ms.date: 09/19/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9a663c8f6a8f37b36d341c2a20c96c2ff7cff3e0
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e2915725a25cafce432133bc75f13d5a6a89d561
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749425"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156152"
 ---
 # <a name="tracing-and-logging"></a>Registro y seguimiento
 

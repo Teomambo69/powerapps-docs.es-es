@@ -3,7 +3,7 @@ title: Seguimiento de las dependencias de los componentes de la solución (Commo
 description: Las dependencias de los componentes de la solución ayudan a garantizar una experiencia confiable cuando trabaja con soluciones. Pueden verse en la aplicación haciendo clic en Mostrar dependencias
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: shmcarth
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bf8e53658fce9599cb0f0415f130fb5afd5e7e01
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 538c26f0f0a0dfbd1347137e0086945783dec441
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749386"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156256"
 ---
 # <a name="dependency-tracking-for-solution-components"></a>Seguimiento de las dependencias de los componentes de la solución
 

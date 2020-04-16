@@ -13,19 +13,19 @@ ms.assetid: 3d771a18-3dc5-4372-a7c7-40b3b1f986d8
 caps.latest.revision: 16
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e805a4919bcdfa8b61c097dc09455f7ca5783999
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: ea1a2055fd1e6032342b5260beba9593353216d0
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109068"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155044"
 ---
 # <a name="retrieve-and-execute-predefined-queries"></a>Recuperar y ejecutar consultas predefinidas
 

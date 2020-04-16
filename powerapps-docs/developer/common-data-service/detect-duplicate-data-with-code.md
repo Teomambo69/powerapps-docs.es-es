@@ -3,7 +3,7 @@ title: Detectar datos duplicados con código (Common Data Service) | Microsoft D
 description: La detección de duplicados permite a las organizaciones establecer directivas de detección de duplicados y crear reglas de detección de duplicados para entidades de negocio y personalizadas.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9218dc6cf84ca771385082f58a10c710fb402390
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e2a1b6d37f458cbd2f2b78818184e00f1bdd784a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749379"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156252"
 ---
 # <a name="detect-duplicate-data-using-code"></a>Detección de datos duplicados con código
 

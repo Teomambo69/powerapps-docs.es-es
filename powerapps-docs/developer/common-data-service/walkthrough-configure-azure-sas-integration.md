@@ -9,18 +9,18 @@ ms.assetid: d7b24b11-57f0-ab05-4bec-0b64efee178d
 author: JimDaly
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: ''
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a6d6e12e07174d67afc3fa1461767eca284c0015
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4146c3237e14deae8ccc2633dd1c09b384ea4e3e
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749654"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155140"
 ---
 # <a name="tutorial-configure-azure-sas-for-integration-with-common-data-service"></a>Tutorial: Configurar Azure (SAS) para integración con Common Data Service
 

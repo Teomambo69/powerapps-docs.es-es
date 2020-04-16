@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5824f2acfdcf1a6dc6e3491abfdd8896528597a1
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 2b2e19a11e176729ecaaa47fceb95f27999bb219
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872713"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166638"
 ---
 # <a name="open-the-model-driven-app-form-editor"></a>Abrir el editor de formularios de una aplicación controlada por modelos 
 El editor de formularios es donde debe diseñar los formularios colocando componentes como secciones, pestañas, campos y controles sobre el lienzo del editor de formularios. En este tema aprenderá varias formas de acceder al editor de formularios.
@@ -68,9 +68,11 @@ Si crea componentes de la solución nuevos en el proceso de edición del formula
   
 1.  Abra [soluciones](advanced-navigation.md#solutions).  
   
-2.  Haga doble clic en la solución no administrada que desea utilizar.  
+2.  Seleccione la solución no administrada con la que desea trabajar.  
   
-3.  Busque la entidad con el formulario que desea editar. Si la entidad no está presente, deberá agregarla. Más información: [Agregar una entidad a una solución no administrada](#add-an-entity-to-an-unmanaged-solution) 
+3.  Abra la entidad con el formulario que desea editar. Si la entidad no está presente, deberá agregarla. Más información: [Agregar una entidad a una solución no administrada](#add-an-entity-to-an-unmanaged-solution)
+
+4.  Seleccione la pestaña **Formularios** y después abra el formulario que quiera editar.
   
 ### <a name="add-an-entity-to-an-unmanaged-solution"></a>Agregar una entidad para una solución no administrada  
   

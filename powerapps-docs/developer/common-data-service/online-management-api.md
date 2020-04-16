@@ -3,7 +3,7 @@ title: API de administración en línea (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: jamesol-msft
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 037089849e6358818760d00390f6bf004e129955
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4c22fc0514a627c786f1e53bedfe506d61bac8b3
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749706"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156120"
 ---
 # <a name="online-management-api"></a>API de administración en línea
 

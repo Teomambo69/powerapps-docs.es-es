@@ -3,7 +3,7 @@ title: " Marco de trabajo de eventos (Common Data Service) | Microsoft Docs"
 description: Describe el marco de trabajo de eventos y los desarrolladores de información deben saber cuándo utilizarlo.
 ms.custom: ''
 ms.date: 06/18/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4c055dbac811186dde54cc4a002ee721e3ca25cf
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 217a3706e06cb8e36899b51882a0de33ca6141ec
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109067"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156208"
 ---
 # <a name="event-framework"></a>Marco de trabajo de eventos
 

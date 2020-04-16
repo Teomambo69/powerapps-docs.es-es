@@ -3,7 +3,7 @@ title: 'Paso 4: Almacenar el paquete AppSource en Azure Storage y generar una di
 description: Para mantener la seguridad de los archivos, todos los desarrolladores de aplicaciones deben almacenar su archivo de paquete AppSource en una cuenta de almacenamiento del objeto binario de Microsoft Azure y usar una clave de firma de acceso compartido (SAS) para compartir el archivo de paquete. El archivo de paquete se recupera de la ubicación de Azure Storage para certificación y, después, para versiones de prueba de AppSource.
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: shmcarth
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8eb263efed13149ea8abcce217116783fdb4b598
-ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
+ms.openlocfilehash: cb6436f85a9961bad403c3a6c97440f154877b00
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "2922339"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155276"
 ---
 # <a name="step-4-store-your-appsource-package-on-azure-storage-and-generate-a-url-with-sas-key"></a>Paso 4: Almacenar el paquete AppSource en Azure Storage y generar una dirección URL con clave SAS
 

@@ -21,11 +21,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: d6d0f5aee398d83227f365ac5bb73ccea8068ed4
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109075"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3126515"
 ---
 # <a name="entity-relationship-metadata"></a>Metadatos de relaciones entre entidades
 

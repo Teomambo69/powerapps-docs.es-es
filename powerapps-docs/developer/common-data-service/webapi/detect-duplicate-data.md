@@ -7,19 +7,19 @@ ms.service: powerapps
 ms.topic: article
 author: mayadumesh
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 manager: ryjones
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d2efa9e7a134a83ef081a677cdb168ba3f8b8883
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a1f39aa32824691191ff7ee5bfa332e87b3e5d2e
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749509"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155096"
 ---
 # <a name="detect-duplicate-data-using-the-web-api"></a>Detección de datos duplicados con la API web
 

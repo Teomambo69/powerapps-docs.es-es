@@ -3,7 +3,7 @@ title: 'Ejemplo: actualizar el siguiente cumpleaños con una actividad de flujo 
 description: 'La siguiente actividad de flujo de trabajo de ejemplo devuelve el próximo cumpleaños. Use esto en un flujo de trabajo que envíe una felicitación de cumpleaños a un cliente. '
 ms.custom: ''
 ms.date: 1/28/2020
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2bc01c06ca6f40e8bd521fa481519f6490f13d43
-ms.sourcegitcommit: 4d858e628c89d245317d6192801d136f3591ea52
+ms.openlocfilehash: b419800c6a556c61a8b9bf1ea0344e6798ea6e79
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "2994598"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154932"
 ---
 # <a name="sample-update-next-birthday-using-a-custom-workflow-activity"></a>Ejemplo: actualizar el siguiente cumpleaños con una actividad de flujo de trabajo personalizada
 

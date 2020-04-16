@@ -13,19 +13,19 @@ ms.assetid: 244259ca-2fbc-4fd4-9a74-6166e6683355
 caps.latest.revision: 51
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 64561c0b655e02a7537af4268b2a92b7a1677f9a
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 3db4826ca9e08672e8dddd9736a35dad3475fb06
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109086"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155116"
 ---
 # <a name="create-an-entity-record-using-the-web-api"></a>Crear un registro de entidad usando la API web
 

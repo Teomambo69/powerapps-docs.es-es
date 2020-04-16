@@ -3,7 +3,7 @@ title: " Asignar un registro a un nuevo propietario (Common Data Service) | Micr
 description: Este ejemplo muestra cómo asignar registros a un nuevo propietario.
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0e6df124f8fcd9baf4658263bc65d510af3ac003
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: e33db08a3a6aa5118a5ac9d8d0871457e2cfc4d5
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956359"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155960"
 ---
 # <a name="assign-a-record-to-a-new-owner"></a>Asignar un registro a un nuevo propietario
 

@@ -12,19 +12,19 @@ applies_to:
 ms.assetid: 91183105-bc99-4e34-a1b3-1085e1a51f82
 caps.latest.revision: 16
 author: JimDaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 ms.author: jdaly
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e1169849532de15de98c05be6ee1050232da8c4f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 592ad2ad8a9d34a6beef9cb37acc177c94c9604e
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749755"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154996"
 ---
 # <a name="web-api-query-data-sample-c"></a>Ejemplo de datos de consulta API (C#)
 

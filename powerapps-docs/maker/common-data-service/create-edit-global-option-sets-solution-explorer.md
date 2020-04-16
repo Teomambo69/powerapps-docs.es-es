@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 060d749fe3f8c7f3d2e0870b99a836571c29bd86
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 68663e52d3e0111d5a374b2fc434edcaa2294074
+ms.sourcegitcommit: 3f89b04359df19f8fa5167e2607509bb97e60fe0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865935"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "3165327"
 ---
 # <a name="create-and-edit-global-option-sets-for-common-data-service-using-solution-explorer"></a>Creación y edición de conjuntos de opciones globales para Common Data Service utilizando el explorador de soluciones
 
@@ -76,6 +76,9 @@ Escribir una **Descripción** para el conjunto de opciones global.
 Mientras ve conjuntos de opciones globales, seleccione el conjunto de opciones que desea editar para abrir el panel para editarlo.
 
 Con la excepción de cambiar el valor del campo **Nombre** o el **Valor** del número asignado a una opción, puede realizar cualquier de los cambios que puede al crear el conjunto de opciones global.
+
+> [!NOTE]
+> No puede editar un conjunto de opciones si es parte de un solución administrada. Para editar los conjuntos de opciones de solución administrada, deberá ponerse en contacto con el propietario de la solución.
 
 [!INCLUDE [cc_remove-option-warning](../../includes/cc_remove-option-warning.md)]
 

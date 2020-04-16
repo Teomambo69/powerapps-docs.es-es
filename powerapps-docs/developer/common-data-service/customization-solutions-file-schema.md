@@ -3,7 +3,7 @@ title: Esquema de archivo de soluciones de personalización (Common Data Service
 description: A continuación se presenta la definición de esquema de un archivo de personalización de soluciones de Common Data Service.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cb442292ace97b5b0a1eebb351b146d096ce828b
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2bad0727b91a0dda050f99a1035803fd08767512
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753008"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156308"
 ---
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/customization-solutions-file-schema -->
 

@@ -2,7 +2,7 @@
 title: Crear o editar una vista de aplicación controlada por modelos en Power Apps | MicrosoftDocs
 description: Aprenda a crear o editar una vista
 ms.custom: ''
-ms.date: 06/11/2018
+ms.date: 03/19/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0835e35f5815e7704cfe3d0de24ad4429600512b
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 0d84734a618aac445f5b7dd1b46e0d9de8c97dca
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3108812"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166814"
 ---
 # <a name="understand-model-driven-app-views"></a>Conocer las vistas de las aplicaciones controladas por modelos
 
@@ -89,7 +89,7 @@ Puede crear vistas públicas personalizadas. Puede eliminar cualquier vista púb
 
 ## <a name="places-where-you-can-access-the-view-editor-to-create-or-edit-views"></a>Lugares donde puede acceder al editor de vistas para crear o editar vistas
 
-- Sitio de Power Apps: puede acceder al diseñador de vistas en el área **Controlado por modelos** > pestaña **Datos** > **Entidades** > **Vista**. Abra una vista existente o cree una nueva. Más información: [Crear o editar una vista](create-and-edit-views.md)
+- Sitio Power Apps: para acceder al diseñador de vistas, seleccione **Datos** > **Entidades**, seleccione una entidad y luego seleccione la pestaña **Vista**. Abra una vista existente o cree una nueva. Más información: [Crear o editar una vista](create-and-edit-views.md)
 - Diseñador de aplicaciones: si está trabajando con una aplicación, puede que desee usar el diseñador de aplicaciones, que ofrece una IU intuitiva y simple con capacidades de arrastrar y colocar para las vistas creadas. Más información: [Tutorial: Crear y editar vistas públicas o del sistema usando el diseñador de aplicaciones](create-edit-views-app-designer.md)
 - Explorador de soluciones: si ya tiene experiencia con Dynamics 365, es posible que desee utilizar el explorador de soluciones. Más información: [Navegar a áreas de creación y personalización avanzadas de aplicaciones](advanced-navigation.md#solution-explorer)
  

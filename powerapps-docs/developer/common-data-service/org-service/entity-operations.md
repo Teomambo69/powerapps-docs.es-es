@@ -3,7 +3,7 @@ title: Operaciones de la entidad con el servicio de organización (Common Data S
 description: Obtenga más información sobre la clase entidad que se usa para las operaciones de datos mediante el servicio de la organización de Common Data Service
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bbd71c47e31f619885a91f2042d4d7de6f7b7143
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 810d13ca894e1152438b667e409a1989623be5b8
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749550"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156064"
 ---
 # <a name="entity-operations-using-the-organization-service"></a>Operaciones de la entidad con el servicio de la organización
 

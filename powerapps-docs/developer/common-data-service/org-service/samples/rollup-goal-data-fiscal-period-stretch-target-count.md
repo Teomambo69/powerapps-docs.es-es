@@ -3,7 +3,7 @@ title: 'Ejemplo: Datos de objetivos consolidados para un período fiscal en comp
 description: Este ejemplo muestra cómo consolidar datos de objetivos para un período fiscal en comparación con el recuento de destino extendido.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a99f10644768cf5d9f7cba07460b673c3e198786
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: 186fd5ca543fda45970f0e5fd141c3854fcac52f
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956151"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155600"
 ---
 # <a name="sample-rollup-goal-data-for-a-fiscal-period-against-the-stretch-target-count"></a>Ejemplo: Datos de objetivos consolidados para un período fiscal en comparación con el recuento de destino extendido
 

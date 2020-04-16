@@ -3,7 +3,7 @@ title: Ejecutar varias solicitudes con el servicio de la organización (Common D
 description: El mensaje ExecuteMultipleRequest admite un rendimiento mayor de los mensajes en masa que pasan escenarios en Common Data Service.
 ms.custom: ''
 ms.date: 11/27/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3de841f5ed56e067e23862448c8e7db40381efda
-ms.sourcegitcommit: abeedb952afc5e09ae4c158611e4813b63cb49b3
+ms.openlocfilehash: 37330e87b1de20fac0906c8430b4018f0c65d5fd
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "2854759"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156060"
 ---
 # <a name="execute-multiple-requests-using-the-organization-service"></a>Ejecución de varias solicitudes con el servicio de la organización
 

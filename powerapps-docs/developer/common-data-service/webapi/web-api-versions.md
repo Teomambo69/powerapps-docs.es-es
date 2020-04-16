@@ -13,18 +13,18 @@ ms.assetid: d9bb79a5-2bfa-4ffe-8cb4-60f192359489
 caps.latest.revision: 34
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6c62874a32880edc18f13ea4ab2f5539fccb4e9d
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9f400988376ccfe1427df8dd6036fb61b85aa987
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749491"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154940"
 ---
 # <a name="common-data-service-web-api-versions"></a>Common Data ServiceVersiones de la API web
 

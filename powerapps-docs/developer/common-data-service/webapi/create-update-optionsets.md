@@ -12,19 +12,19 @@ applies_to:
 caps.latest.revision: 15
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 manager: ryjones
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3aa755e0f6f0d5d403c6a4d1c6d585009aa912b2
-ms.sourcegitcommit: 04ba6f3773b23e4e89c23269b84707d19e9ed04c
+ms.openlocfilehash: f53c92c16a4f586f72d3ff471e285936d4490204
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "3094386"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155100"
 ---
 # <a name="create-and-update-option-sets-using-the-web-api"></a>Crear y actualizar conjuntos de opciones mediante la API web
 

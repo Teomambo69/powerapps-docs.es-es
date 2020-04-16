@@ -10,25 +10,25 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: 3454ef328b09b4df9b0ebe5a115b352ef13a5b46
-ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
+ms.openlocfilehash: 0163e6d71caf307e3e952c0f8fcb3d21a82949cc
+ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "3097312"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3218549"
 ---
 # <a name="community-resources-for-power-apps-component-framework"></a>Recursos de la comunidad para Power Apps component framework
 
-A continuación se muestra una lista de algunos recursos de la comunidad creados por la comunidad de Power Apps que puede utilizar para crear componentes de código en aplicaciones basadas en modelos y de lienzo utilizando Power Apps component framework y Power Apps CLI. 
+La siguiente es una lista de algunos recursos comunitarios creados por la comunidad de Power Apps que puede usar para crear componentes de código en aplicaciones basadas en modelos y de lienzo utilizando el Power Apps component framework y Power Apps CLI. 
 
-> [!NOTE]
+> [!NOTE]            
 > Los recursos creados por la comunidad no se admiten en Microsoft. Si tiene preguntas o problemas con los recursos de la comunidad, póngase en contacto con el editor del recurso. Antes de usar estos recursos, debe asegurarse de que estos recursos de la comunidad cumplen con las instrucciones de Power Apps component framework y solo deben utilizarse con fines de referencia. 
 
 ## <a name="code-components-gallery"></a>Galería de componentes de código
 
 La galería de Power Apps component framework (<https://pcf.gallery/>) es una recopilación de componentes de código creados por la comunidad de Power Apps. Tiene una amplia gama de componentes de código que pueden adaptarse a su caso de negocio. 
 
-Asegúrese de revisar los términos de licencia y el código fuente antes de descargarlos. Consulte el tema [Cómo ejecutar los ejemplos](use-sample-components.md) sobre cómo crear un paquete de solución e importarlo a Common Data Service.
+Asegúrese de revisar los términos de licencia y el código fuente antes de descargarlos. Vea el artículo [Cómo ejecutar las muestras](use-sample-components.md) sobre cómo crear un paquete de solución e importarlo a Common Data Service.
 
 > [!WARNING]
 > El componente de código se ejecuta en el contexto del usuario final que está usando el componente y puede realizar cualquier acción que pueda incluir acceder, capturar y modificar los datos. 
@@ -36,7 +36,7 @@ Asegúrese de revisar los términos de licencia y el código fuente antes de des
 > [!div class="mx-imgBorder"]
 > ![Galería de componentes](media/pcf-gallery.PNG "Galería de componentes")
 
-## <a name="videos"></a>Vídeos
+## <a name="videos"></a>Vídeos        
 
 A continuación se muestra la lista de vídeos creados por la comunidad de Power Apps.
 
@@ -45,7 +45,7 @@ A continuación se muestra la lista de vídeos creados por la comunidad de Power
 |[Cree sus propios componentes de código](https://www.youtube.com/watch?v=S3Z_IUf1ncg)| Aprenda a compilar componentes de código en aplicaciones basadas en modelo y de lienzo utilizando Power Apps component framework.| 
 |[Componentes de código para aplicaciones de lienzo](https://www.youtube.com/watch?v=bMSCkcb4xAQ&feature=emb_logo)| Aprenda a desarrollar y usar componentes de código en aplicaciones de lienzo.|
 |[Desarrollar componentes de código](https://www.youtube.com/watch?v=FxWF-LCCB4g&feature=youtu.be)| Este vídeo muestra los requisitos para desarrollar componentes de código utilizando Power Apps component framework y muestra un enfoque paso a paso para crear su primer componente de código.|
-|[Depuración más sencilla con mapas de origen y Fiddler](https://www.youtube.com/watch?v=Ov-m5FBUj9g&feature=youtu.be)|Aprenda a depurar código de producción unificado utilizando Fiddler y mapas de origen.|
+|[Depuración más fácil con mapas de origen y Fiddler](https://www.youtube.com/watch?v=Ov-m5FBUj9g&feature=youtu.be)|Aprenda a depurar código de producción unificado utilizando Fiddler y mapas de origen.|
 |[Introducción a los componentes de código](https://www.youtube.com/watch?v=ylhVZUlGgQw)| Vídeo introductorio sobre Power Apps component framework y conceptos básicos de creación de componentes de código.|
 |[Power Apps component framework Academy: Introducción](https://www.youtube.com/watch?v=YJ9hrKxAhTU)| Vídeo introductorio sobre cómo crear su primer componente de código.|
 |[Power Apps component framework: archivo de manifiesto detallado para la plantilla de conjunto de datos](https://www.youtube.com/watch?v=TsTrYaOGaGo&feature=youtu.be)| Aprenda a definir un archivo de manifiesto para componentes de código de tipo conjunto de datos.|
@@ -72,6 +72,8 @@ A continuación se muestra la lista de blogs creados por la comunidad de Power A
 - [Power Apps component framework: el glaseado sobre el pastel](https://stevemordue.com/powerapps-component-framework-frosting-on-the-cake/)
 - [Disponibilidad pública de Power Apps component framework: un hito importante](https://crmindian.com/2019/04/24/public-availability-of-powerapps-component-framework-an-important-milestone-for-powerapps-and-d365/)
 - [Trabajar con componentes de código mediante Power Apps component framework](https://powermaverick.dev/2019/05/18/create-custom-controls-using-powerapp-component-framework)
+- [Qué sucede cuando un recurso web llama a setVisible / setDisabled para ese componente](https://www.itaintboring.com/dynamics-crm/pcf-components-and-setvisible-setdisabled)
+- [¿Cuándo llama al método updateView?](https://dianabirkelbach.wordpress.com/2020/03/29/pcf-when-is-updateview-called)
 
 ## <a name="tools"></a>Herramientas
 

@@ -3,7 +3,7 @@ title: Entidad de divisa de la transacción (divisa) (Common Data Service) | Mic
 description: Obtenga más información sobre la divisa de la transacción, que es una función multidivisa que permite a los usuarios realizar transacciones financieras en varias monedas. Es posible agregar, comparar o analizar varios registros en diferentes monedas de transacción con respecto a una moneda única utilizando la moneda base.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 28dac174671b4577a42e488afa4e007f7e0d9212
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9744ed3acb2758cede516f55f1eba764d366c8ab
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749785"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155244"
 ---
 # <a name="transaction-currency-currency-entity"></a>Entidad de divisa de la transacción (divisa)
 

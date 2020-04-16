@@ -3,7 +3,7 @@ title: 'Ejemplo: Importe archivos como recursos web (Common Data Service) | Micr
 description: En este ejemplo se muestra cómo importar archivos como recursos web
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d73d2d7fa70998ceedc2cf9f833201a92c32c7e4
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: c4f17c771242505941780b16c53ad3defd763c08
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934581"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155752"
 ---
 # <a name="sample-import-files-as-web-resources"></a>Ejemplo: importar archivos como recursos web 
 

@@ -3,7 +3,7 @@ title: 'Ejemplo: Recuperar datos adjuntos de correo electrónico para una planti
 description: Este ejemplo muestra cómo recuperar los datos adjuntos de correo electrónico asociados con una plantilla de correo electrónico
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f8a073fe96df341bbfba2c48f9c5c3bc14bdf38d
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 5950f2870c316e302fa757dae552ac7836d91a69
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934224"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155644"
 ---
 # <a name="sample-retrieve-email-attachments-for-an-email-template"></a>Ejemplo: recuperar datos adjuntos de correo electrónico para una plantilla de correo electrónico
 

@@ -3,7 +3,7 @@ title: Administrar la implementación mediante el servicio web de implementació
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: jamesol-msft
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b94bf8ce98e644cf1bbbbe856b42f2a31a228e6f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9644667701b77ac435cab6574d207f9b3cf00327
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749563"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156260"
 ---
 # <a name="administer-the-deployment-using-the-deployment-web-service"></a>Administrar la implementación mediante el servicio web de implementación
 

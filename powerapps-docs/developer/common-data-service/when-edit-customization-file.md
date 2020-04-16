@@ -9,18 +9,18 @@ ms.assetid: cac303a6-70f9-3962-879a-fbf7fdc2364f
 author: shmcarth
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: ''
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dee119bec4c4a57995f0f2c4299c199c9a45caf1
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e35d21cbb4dd9898ae7b535c052880fe61df647e
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749744"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154944"
 ---
 # <a name="when-to-edit-the-customizations-file"></a>Cuándo modificar el archivo de personalizaciones
 

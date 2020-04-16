@@ -13,19 +13,19 @@ ms.assetid: 694889fd-2b85-43a0-97bc-1e760695db31
 caps.latest.revision: 17
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d85a90b05d7da51a6f2de2585d87376d4354a8eb
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 60e8c8386427247a37d81c301978d3c202d6ffdc
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749497"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154987"
 ---
 # <a name="update-and-delete-entities-using-the-web-api"></a>Actualizar y eliminar entidades mediante la API web
 

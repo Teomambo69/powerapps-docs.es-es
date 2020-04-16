@@ -3,7 +3,7 @@ title: Usar cadenas de conexión en útiles de XRM para conectarse a Common Data
 description: Los útiles de XRM le permiten conectarse al entorno de Common Data Service mediante cadenas de conexión.
 ms.custom: ''
 ms.date: 11/13/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: nkrb
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 648aba609cb8b7b8cafeefa9515fabf0751595c7
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.openlocfilehash: 91c4e6cac2f91d92d6d765983274b19d2cf6e227
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "2815948"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154884"
 ---
 # <a name="use-connection-strings-in-xrm-tooling-to-connect-to-common-data-service"></a>Usar cadenas de conexión en útiles de XRM para conectarse a Common Data Service
 

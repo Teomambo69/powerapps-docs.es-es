@@ -3,7 +3,7 @@ title: Actualizar y eliminar entidades con el servicio de la organización (Comm
 description: Más información sobre cómo actualizar y eliminar entidades con el servicio de la organización.
 ms.custom: ''
 ms.date: 04/21/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 974835002e6c65ce553d93393132dfa225baba7e
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: c2fa250d39f74295ce5554d0ce83af6731826ab0
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109078"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156068"
 ---
 # <a name="update-and-delete-entities-using-the-organization-service"></a>Actualización y eliminación de entidades con el servicio de la organización
 

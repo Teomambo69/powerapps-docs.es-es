@@ -3,7 +3,7 @@ title: Mantener soluciones administradas (Common Data Service) | Microsoft Docs
 description: ''
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: shmcarth
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 72d1960bcdab96f1bd2f899bb4573f8f20d0e9a5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 48f614c7e938dc243ac0780c7387ea91a1926795
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749422"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156148"
 ---
 # <a name="maintain-managed-solutions"></a>Mantener soluciones administradas
 

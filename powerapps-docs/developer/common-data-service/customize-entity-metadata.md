@@ -3,7 +3,7 @@ title: Personalice los metadatos de entidad (Common Data Service) | Microsoft Do
 description: Las entidades están definidas por metadatos. Definiendo o cambiando estos metadatos, puede controlar las capacidades de una entidad.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7be52e8fb5eae18e709ab10765a0684b5a65ef81
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 086075fe05f7daf8819144e0978a3c349c2b8362
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753004"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156292"
 ---
 # <a name="customize-entity-metadata"></a>Personalizar metadatos de entidad
 

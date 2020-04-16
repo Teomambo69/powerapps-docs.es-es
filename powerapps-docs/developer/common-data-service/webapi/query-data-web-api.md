@@ -13,19 +13,19 @@ ms.assetid: fc3ade34-9c4e-4c33-88a4-aa3842c5eee1
 caps.latest.revision: 78
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3db4a538b45b754b1c0a3ca823638c4850aae43b
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 9f53882266482b0a68a8fe857b76a7a86e0ee1f7
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109063"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155060"
 ---
 # <a name="query-data-using-the-web-api"></a>Consultar datos utilizando la API web
 

@@ -3,7 +3,7 @@ title: Suscripción a actualizaciones de ensamblados de SDK mediante NuGet (Comm
 description: Los ensamblados de SDK .NET y algunas herramientas de línea de comandos están disponibles a través de un sitio web de distribución de software llamado nuget.org. El uso de paquetes NuGet en su proyecto de aplicación le permite mantener el proyecto actualizado con las últimas versiones de los ensamblados y herramientas de SDK.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 15790d37a187eafa73a5dc837aa090833f3d95ee
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 027793bf373e0a3554fcbc4c2059eaf0f79f1a7b
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2859993"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155472"
 ---
 # <a name="subscribe-to-sdk-assembly-updates-using-nuget"></a>Suscribirse a las actualizaciones de ensamblados de SDK mediante NuGet
 

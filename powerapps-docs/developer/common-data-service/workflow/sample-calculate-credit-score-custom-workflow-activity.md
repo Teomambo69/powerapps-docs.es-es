@@ -3,7 +3,7 @@ title: 'Ejemplo: Calcular una puntuación de crédito con una actividad de flujo
 description: El ejemplo muestra una actividad de flujo de trabajo que calcula la puntuación de crédito basada en el número de la seguridad social (SSN) y el nombre.
 ms.custom: ''
 ms.date: 1/28/2020
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cb66d92382f38a6646a80f889a97f2d6bed49e7e
-ms.sourcegitcommit: 4d858e628c89d245317d6192801d136f3591ea52
+ms.openlocfilehash: 5d007765af7f8c22d027a65f2a1c8818e1890410
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "2994604"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154904"
 ---
 # <a name="sample-calculate-a-credit-score-with-a-custom-workflow-activity"></a>Ejemplo: Calcular una puntuación de crédito con una actividad de flujo de trabajo personalizada
 

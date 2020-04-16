@@ -3,7 +3,7 @@ title: Usar herramientas XRM para crear datos (Common Data Service)| Microsoft D
 description: Utilizar la clase CrmServiceClient para crear datos en Common Data Service
 ms.custom: ''
 ms.date: 03/27/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0ff7b7c8b1e6833a705d3a6f49e48b8518342763
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 883577685cfcb0930484421d4ade4ba2e654abed
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749640"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154860"
 ---
 # <a name="use-xrm-tooling-to-create-data"></a>Usar útiles de XRM para crear los datos
 

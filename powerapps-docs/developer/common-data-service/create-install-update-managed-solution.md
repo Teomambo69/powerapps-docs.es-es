@@ -3,7 +3,7 @@ title: Crear, instalar y actualizar una solución administrada (Common Data Serv
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: shmcarth
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d85aa0cf9b27647a64631b5b39ba01e432b6148c
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 0b532294163233f8eefd06851b1cb142f931eb4d
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109085"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156364"
 ---
 # <a name="create-install-and-update-a-managed-solution"></a>Crear, instalar y actualizar una solución administrada
 

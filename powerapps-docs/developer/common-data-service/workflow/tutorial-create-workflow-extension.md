@@ -3,7 +3,7 @@ title: 'Tutorial: Crear extensión de flujo de trabajo (Common Data Service) | M
 description: Este tutorial mostrará el proceso para ampliar el diseñador de flujos de trabajo para agregar actividades personalizadas y lógica mediante un ensamblado de flujo de trabajo.
 ms.custom: ''
 ms.date: 07/16/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0e143eba56729944bf04d11736a949cfca538449
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: fc3f08ac3422a50c3e1580d923aa941bba253c23
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872675"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154908"
 ---
 # <a name="tutorial-create-workflow-extension"></a>Tutorial: Crear extensión de flujo de trabajo
 

@@ -6,24 +6,25 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: reference
-ms.date: 09/26/2019
+ms.date: 03/20/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a87b41fd2688992b85fb4dde36a2e7119f4e7a9f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e497b7dcf1b815acfaad7df170e3801083b8433e
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861267"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156590"
 ---
 # <a name="complex-entities-and-licensing"></a>Entidades y licencias complejas
 
 > [!IMPORTANT]
-> Este tema está obsoleto y se actualizará pronto para reflejar los últimos cambios en licencias aplicables a partir del 1 de octubre de 2019. Para obtener la información más reciente sobre los requisitos de licencia para entidades, consulte [Manual de licencias de Power Apps](https://go.microsoft.com/fwlink/?linkid=2085130).
+> Las entidades complejas solo son aplicables para licencias Power Apps Plan 1 y Plan 2 y no para Power Apps por aplicación y Power Apps por planes de usuario.
+> Para obtener la información más reciente sobre los requisitos de licencia para entidades, consulte [Manual de licencias de Power Apps](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
 Las entidades que incluyen la siguiente lógica compleja de servidor requieren que los usuarios de una aplicación o flujo en el que se usen estas entidades tengan una licencia de Plan 2 de Power Apps o de Plan 2 de Power Automate:
 

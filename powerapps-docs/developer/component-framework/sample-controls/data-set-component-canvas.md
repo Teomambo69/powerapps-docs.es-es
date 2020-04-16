@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 356561d0-a36b-4b93-8b76-3e1abf9414e9
-ms.openlocfilehash: 44cad6fe7eafb457db7b2d5d3204612a42944a02
-ms.sourcegitcommit: 5b6e6b41a3fc4d7f1aea46ec66c086b784efacac
+ms.openlocfilehash: 6bc0f3da0b66dc929b1f6410453df88b3069bf8d
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3095486"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162149"
 ---
 # <a name="implementing-data-set-component-for-canvas-apps"></a>Implementar componente de conjunto de datos para aplicaciones de lienzo
 
@@ -582,7 +582,7 @@ En las aplicaciones basadas en modelo, se requieren vistas para componentes de c
 
 ### <a name="related-topics"></a>Temas relacionados
 
-[Descargar componentes de ejemplo](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[Descargar componentes de ejemplo](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
 [¿Cómo usar los componentes de ejemplo?](../use-sample-components.md)<br/>
 [Referencia de la API de Power Apps component framework](../reference/index.md)<br/>
 [Referencia de esquema de manifiesto de Power Apps component framework](../manifest-schema-reference/index.md)

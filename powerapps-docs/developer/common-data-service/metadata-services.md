@@ -3,7 +3,7 @@ title: Trabajar con metadatos con código (Common Data Service) | Microsoft Docs
 description: La [API web](webapi/overview.md) y el [Servicio de organización](org-service/overview.md) incluyen funciones para realizar operaciones CRUD en el esquema de la entidad
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: kvivek
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 853fc53221f82a25aeab271c5fca53b19d17eabe
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f226814935e7a0c4b7a005897dc2ae7fbb7f93c5
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749709"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156140"
 ---
 # <a name="work-with-metadata-using-code"></a>Trabajar con metadatos mediante código
 

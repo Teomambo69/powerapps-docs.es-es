@@ -3,7 +3,7 @@ title: Use la entidad de categoría (Common Data Service) | Microsoft Docs
 description: Obtenga más información sobre cómo categorizar los registros de entidad utilizando la entidad de categoría.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2f19ba3babc0d2a57395fc04296c6ccce5e07dc1
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: b506c926fd2ac43d7fd15782e0f32d3402ed8989
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749778"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155200"
 ---
 # <a name="use-the-category-entity"></a>Usar la entidad Categoría
 

@@ -1,7 +1,7 @@
 ---
 title: Deshabilitar guardado automático en una aplicación controlada por modelos con Power Apps | MicrosoftDocs
 ms.custom: ''
-ms.date: 06/18/2018
+ms.date: 03/19/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2f09cd488165643a3336c526050abc0b9223b49f
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 86d70ba6d91fdd0179932401ceffd619ae50ce7e
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2875682"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166740"
 ---
 # <a name="disable-auto-save-in-a-model-driven-app"></a>Deshabilitar el guardado automático en una aplicación controlada por modelos
 
@@ -61,15 +61,17 @@ El guardado automático ayuda a los usuarios de la aplicación a centrarse en el
  Si desea deshabilitar el autoguardado para formularios específicos de entidad, puede agregar código al evento `OnSave` de una entidad.  
   
 > [!NOTE]
->  El guardado automático se deshabilitará para el formulario, pero los datos se guardarán al seleccionar el ![botón Botón Guardado automático](media/auto-save-icon.png "ABotón de autoguardado") de la esquina inferior derecha. Si intenta desplazarse fuera de un formulario o cerrar un formulario donde se han cambiado los datos, se les pedirá que guarden los cambios para poder salir o cerrar el formulario.  
+>  El guardado automático se deshabilitará para el formulario, pero los datos se guardarán al seleccionar el ![botón Botón Guardado automático](media/auto-save-icon.png "Botón de autoguardado") de la esquina inferior derecha. Si intenta desplazarse fuera de un formulario o cerrar un formulario donde se han cambiado los datos, se les pedirá que guarden los cambios para poder salir o cerrar el formulario.  
   
 1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**.  
   
-3.  Abra el formulario que desee editar.  
+3.  Abra el formulario que desee editar.
+
+4.  Seleccione **Cambiar a clásico** para editar el formulario en el diseñador de formularios clásico.
   
-4.  Cree un recurso web de JavaScript y agréguelo al formulario:  
+5.  Cree un recurso web de JavaScript y agréguelo al formulario:  
   
     1.  En el editor de formularios, en el grupo **Formulario** elija **Propiedades de formulario**.  
   
@@ -105,7 +107,7 @@ El guardado automático ayuda a los usuarios de la aplicación a centrarse en el
   
     9. En el diálogo **Buscar registro**, el nuevo recurso web que ha creado estará seleccionado. Elija **Agregar** para cerrar el cuadro diálogo.  
   
-5.  Configurar el evento OnSave:  
+6.  Configurar el evento OnSave:  
   
     1.  En la ventana **Propiedades de formulario**, en la sección **Controladores de eventos**, defina **Evento** en **OnSave**.  
   
@@ -113,7 +115,7 @@ El guardado automático ayuda a los usuarios de la aplicación a centrarse en el
   
     3.  En la ventana **Propiedades del controlador**, establezca **Biblioteca** en el recurso web que agregó en el paso anterior.  
   
-    4.  Escriba ‘`preventAutoSave`’ en el campo **Función**. Distingue mayúsculas de minúsculas. No incluya las comillas.  
+    4.  Escriba "`preventAutoSave`" en el campo **Función**. Distingue mayúsculas de minúsculas. No incluya las comillas.  
   
     5.  Asegúrese de que la opción **Habilitado** se encuentre activada.  
   
@@ -122,7 +124,7 @@ El guardado automático ayuda a los usuarios de la aplicación a centrarse en el
         > [!IMPORTANT]
         >  Si no realiza este paso, el script no funcionará.  
   
-         El diálogo **Propiedades del controlador** debe verse así. El prefijo de personalización "new_" puede variar según el prefijo de personalización definido para el editor predeterminado para la organización.  
+         El diálogo **Propiedades del controlador** debe verse así. El prefijo de personalización: "new_" puede variar según el prefijo de personalización definido para el editor predeterminado para la organización.  
   
          ![Controlador de eventos OnSave para impedir el autoguardado en Dynamics 365](media/prevent-auto-save-script.png "Controlador de eventos OnSave para impedir el autoguardado en Dynamics 365")  
   
@@ -130,11 +132,11 @@ El guardado automático ayuda a los usuarios de la aplicación a centrarse en el
   
     8.  Si hay otros controladores de eventos para el evento `OnSave`, use las flechas verdes para moverlo a la parte superior.  
   
-6. Seleccione **Aceptar** para cerrar el cuadro de diálogo **Propiedades del formulario**.  
+7. Seleccione **Aceptar** para cerrar el cuadro de diálogo **Propiedades del formulario**.  
   
-7. Seleccione **Guardar y cerrar** para cerrar el formulario.  
+8. Seleccione **Guardar y cerrar** para cerrar el formulario.  
   
-8. En el explorador de soluciones, seleccione **Publicar todas las personalizaciones**.  
+9. En el explorador de soluciones, seleccione **Publicar todas las personalizaciones**.  
   
  Después de aplicar este script al evento `OnSave`, cuando los usuarios editen un registro mediante este formulario, el mensaje **cambios no guardados** aparecerá en la esquina inferior derecha de formulario como si el autoguardado no estuviese deshabilitado. Pero este mensaje no desaparecerá hasta que los usuarios seleccionen el ![botón Botón Guardado automático](media/auto-save-icon.png "Botón de autoguardado") situado al lado.  
   

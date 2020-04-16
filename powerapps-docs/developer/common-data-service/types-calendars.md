@@ -3,7 +3,7 @@ title: Tipos de calendarios (Common Data Service) | Microsoft Docs
 description: ''
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e5f0465a51114a7fc3fd2eecd33a243a5af74cae
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8ece6467796f7cdf68295744e5875a49a32edaa5
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749781"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155224"
 ---
 # <a name="types-of-calendars"></a>Tipos de calendarios
 

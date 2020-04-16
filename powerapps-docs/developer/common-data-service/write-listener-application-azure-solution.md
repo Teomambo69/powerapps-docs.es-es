@@ -9,18 +9,18 @@ ms.assetid: cf68e0a9-c240-59e7-c501-68cbfa0df455
 author: JimDaly
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: ''
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e4247a7561bc0fc2116030737db72f99390f46c3
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4988b5c3210b083658c539c53a9479abdd03d2ee
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749489"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154900"
 ---
 # <a name="write-a-listener-application-for-a-azure-solution"></a>Escriba una aplicación de escucha para una solución de Azure
 
@@ -140,3 +140,4 @@ else if (receivedMessage.ContentType = "application/xml")
 [Ejemplo: Escucha de REST](org-service/samples/rest-listener.md)<br />
 [Trabajar con datos de Common Data Service en la solución de Azure](work-data-azure-solution.md)<br />
 [Trabajar con datos de eventos de Common Data Service en la solución del Centro de eventos de Azure](work-event-data-azure-event-hub-solution.md)
+ 

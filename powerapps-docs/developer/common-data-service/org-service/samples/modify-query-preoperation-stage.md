@@ -3,7 +3,7 @@ title: 'Ejemplo: Modificar consulta en fase PreOperation (Common Data Service) |
 description: Este ejemplo muestra cómo escribir un complemento que modifique una consulta definida en la fase PreOperation de una solicitud RetrieveMultiple.
 ms.custom: ''
 ms.date: 09/23/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 92a8a5889eba5068b3cf4eddb095fe98ce6fc097
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a9e0cfa0a639d50a60fbc793ad87b35ed4faf8d8
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749890"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155712"
 ---
 # <a name="sample-modify-query-in-preoperation-stage"></a>Ejemplo: Modificar consulta en fase PreOperation
 

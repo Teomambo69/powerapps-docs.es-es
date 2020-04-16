@@ -3,7 +3,7 @@ title: " Crear, recuperar, actualizar y eliminar paneles (Common Data Service) |
 description: En este ejemplo se muestra cómo crear, recuperar, actualizar y eliminar paneles propiedad del usuario.
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0efb3e9b29f23e3d24fbaeb938751c20fe69566c
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 591934479a2b1bc810907973767e9a3083e7f107
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934360"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155864"
 ---
 # <a name="create-retrieve-update-and-delete-a-chart"></a>Crear, recuperar, actualizar y eliminar un gráfico
 

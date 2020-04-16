@@ -3,7 +3,7 @@ title: 'Ejemplo: Insertar o actualizar un registro utilizando Upsert (Common Dat
 description: Este ejemplo muestra cómo insertar o actualizar registros mediante el mensaje de Upsert.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e1157acd76f9f6cb83286e3b5066be52b7545256
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 357f8b39a5f653a3e1c14587fd8a06353d42add3
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934280"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155740"
 ---
 # <a name="sample-insert-or-update-a-record-using-upsert"></a>Ejemplo: Insertar o actualizar un registro mediante Upsert
 

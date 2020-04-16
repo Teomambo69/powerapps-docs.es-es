@@ -3,7 +3,7 @@ title: 'Ejemplo: exportar definiciones de cinta de opciones (Common Data Service
 description: Este ejemplo muestra cómo exportar definiciones de la cinta de opciones
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 49d48cd432fb2b45395bbcff558a98378b889d40
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: 009b9a644ac4ae010d4e5e74facc4cdef99a6cc7
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956353"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155768"
 ---
 # <a name="export-ribbon-definitions"></a>Exportar definiciones de cinta de opciones
 

@@ -3,7 +3,7 @@ title: 'Ejemplo: Eliminación en masa de los registros exportados (Common Data S
 description: Este ejemplo muestra cómo realizar una eliminación en masa de registros
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8b690bb3a7a27c278c9354073f5e4140dfe33b4d
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: bb4a145e74f31e0cdd1c230a8bacca3340e38148
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934412"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155932"
 ---
 # <a name="sample-bulk-delete-exported-records"></a>Ejemplo: eliminación en masa de los registros exportados
 

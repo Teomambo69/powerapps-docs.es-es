@@ -13,19 +13,19 @@ ms.assetid: 923538e2-15fe-4718-8eae-d939c5d200cd
 caps.latest.revision: 15
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 90479dca5ecd6fcb230847533ed98533fda2e876
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 49c2d8124e17cb1329f3312724e71045c2e25262
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109087"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155104"
 ---
 # <a name="create-and-update-entity-relationships-using-the-web-api"></a>Crear y actualizar relaciones de entidad mediante la API web
 

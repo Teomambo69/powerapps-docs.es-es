@@ -3,7 +3,7 @@ title: Administrar excepciones en un complemento (Common Data Service) | Microso
 description: Conocer el comportamiento del sistema cuando un complemento devuelva una excepción al autor de la llamada.
 ms.custom: ''
 ms.date: 09/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 56214c61e3440b3612a4b4433cefdb22162a5e31
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 22593751c4eb580e978a0a561f26034f6fd6e9da
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109616"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156188"
 ---
 # <a name="handle-exceptions-in-plug-ins"></a>Administrar las excepciones en complementos
 

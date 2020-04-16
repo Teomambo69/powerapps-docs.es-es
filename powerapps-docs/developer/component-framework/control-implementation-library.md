@@ -11,16 +11,18 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5d100dc3-bd82-4b45-964c-d90eaebc0735
-ms.openlocfilehash: 311bb23bac05ffc49be9366d281226fd755c8faa
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: febda5c1c52b482db449b370d114c771cb2984eb
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862018"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162173"
 ---
 # <a name="component-implementation-library"></a>Biblioteca de implementación del componente
 
-Implementar la biblioteca de componentes es uno de los pasos clave cuando está desarrollando componentes de código con Power Apps component framework. Los desarrolladores pueden implementar la biblioteca de componentes con TypeScript. Cada componente de código debe tener una biblioteca que incluya la definición de una función que devuelva un objeto que implemente los métodos descritos en la interfaz de componentes de código. 
+Implementar la biblioteca de componentes es uno de los pasos clave cuando está desarrollando componentes personalizados con Power Apps component framework. Los desarrolladores pueden implementar la biblioteca de componentes con TypeScript.
+
+Cada componente de código debe tener una biblioteca que incluya la definición de una función que devuelva un objeto que implemente los métodos descritos en la interfaz de componentes de código. 
 
 El objeto implementa los siguientes métodos:
 

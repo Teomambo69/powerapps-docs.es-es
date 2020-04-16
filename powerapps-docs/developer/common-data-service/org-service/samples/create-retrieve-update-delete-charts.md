@@ -3,7 +3,7 @@ title: " Crear, recuperar, actualizar y eliminar gráficos (Common Data Service)
 description: En este ejemplo se muestra cómo crear, recuperar, actualizar y eliminar visualizaciones propiedad del usuario.
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2ae3536ba7896817bbaf12231c52fef297f4ef6d
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 7c05e2b8618e4b1a542d3657bf822bd44e5e0287
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934364"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155868"
 ---
 # <a name="create-retrieve-update-and-delete-a-chart"></a>Crear, recuperar, actualizar y eliminar un gráfico
 

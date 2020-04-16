@@ -3,7 +3,7 @@ title: Tareas de Build tools| Microsoft Docs
 description: 'Power Apps build tools son una colección de tareas de compilación de Azure DevOps específicas de Power Apps que eliminan la necesidad de descargar manualmente herramientas y scripts para administrar el ciclo de vida de la aplicación de Power Apps. En este tema se describen las tareas que están disponibles. '
 ms.custom: ''
 ms.date: 07/21/2019
-ms.reviewer: Dean-Haas
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mikkelsen2000
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7271fb611f6ddff6d36dd1984b760ce3bbf19b45
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 20c4dfe96f7293f9a00a97867beda7ac8a0f4b41
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861837"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156416"
 ---
 # <a name="build-tools-tasks"></a>Tareas de build tools
 
@@ -52,9 +52,9 @@ A continuación se indica cómo generar la aplicación Azure Active Directory (A
 > Se requieren privilegios para crear entidades de servicio en un inquilino de AAD con licencia para Power Apps (P1/P2) o D365 CE para completar estos pasos. 
 
 1. Abra un comando de PowerShell con derechos de administración.
-![Ventana de comandos de Powershell](media/pscommand.png "PVentana de comandos de Powershell")
+![Ventana de comandos de Powershell](media/pscommand.png "Ventana de comandos de Powershell")
 2. Ejecute el siguiente comando en PowerShell: *Install-Module -Name AzureAD*.
-![Comando Install-Module](media/pscommand-install.png "IPantalla del comando Install-Module")
+![Comando Install-Module](media/pscommand-install.png "Pantalla de comando del módulo de instalación")
  
 3.  Esto le pide que confíe en los módulos de PSGallery. Seleccione **A (Sí a todo)**.
 1. Copie y pegue lo siguiente en el mensaje de PowerShell:
@@ -119,17 +119,17 @@ $newApp = New-PowerAppsCheckerAzureADApplication -ApplicationDisplayName "Power 
  ```
 
 5.  Cuando se le solicite, seleccione **A (Ejecutar siempre)**.
-![Pantalla de comandos de Powershell](media/pscommand-always-run.png "PCaptura de pantalla de comandos de Powershell")
+![Pantalla de comandos de Powershell](media/pscommand-always-run.png "Captura de pantalla del comando PowerShell")
 6. Un diálogo de inicio de sesión aparece. Inicie sesión como usuario. Tenga en cuenta que puede tenga que iniciar sesión dos veces en algunos casos.
 7. Una vez completado el script, muestran el identificador y el inquilino de la aplicación en la ventana de comandos.
 8. Continuación, inicie sesión en [Azure AD](https://portal.azure.com) para obtener el secretos de cliente.
 9. En Microsoft Azure, seleccione **Azure Active Directory –> Registros de aplicaciones -> Cliente del comprobador de Power Apps**.
-![Seleccionar cliente del comprobador en Azure](media/azure-select-checker.png "ACaptura de pantalla de Azure")
+![Seleccionar cliente del comprobador en Azure](media/azure-select-checker.png "Captura de pantalla de Azure")
 10. En el panel izquierdo de navegación, en **Administrar**, seleccione **Certificados y secretos**.
 11. En la pantalla **Certificados y secretos**, en **Secretos de cliente**, seleccione **Nuevo secreto de cliente**. 
 12. Escriba una descripción para el secreto de cliente, seleccione el valor de caducidad y después haga clic en **Agregar**.
 13. Copie el valor del secreto de cliente que aparece en la siguiente pantalla. 
-![Copiar secreto de cliente](media/client-secret-copy.png "ClCaptura de pantalla de secreto del cliente")
+![Copiar secreto de cliente](media/client-secret-copy.png "Captura de pantalla de secreto de cliente")
     > [!NOTE]
     > Esta es la única vez en la que se muestra el secreto de cliente
 14. Abra la conexión de servicio del comprobador de Power Apps y pegue el secreto de cliente en el campo **Clave de entidad de servicio** y, a continuación haga clic en **Aceptar**.

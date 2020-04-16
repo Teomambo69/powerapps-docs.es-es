@@ -2,7 +2,7 @@
 title: Ejecutar operaciones por lotes mediante la API web (Common Data Service)| Microsoft Docs
 description: Las operaciones por lotes le permiten agrupar varias operaciones en una sola solicitud HTTP. Lea cómo ejecutar las operaciones por lotes con la API web
 ms.custom: ''
-ms.date: 12/10/2019
+ms.date: 03/30/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,19 +13,19 @@ ms.assetid: 799b2346-bda1-4a26-a330-79d0927a7743
 caps.latest.revision: 11
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1c7d738212bee75306ed5a693087c4ae7d6324d2
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 3d1b6d2e3abcef9101210d659dc155d6d4cb9a2f
+ms.sourcegitcommit: ee60386ecdd26df1d48176beb96f5e74874f2e5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109065"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175469"
 ---
 # <a name="execute-batch-operations-using-the-web-api"></a>Ejecute las operaciones por lotes mediante API web
 
@@ -42,7 +42,7 @@ Recuerde que las entidades asociadas se pueden crear en una sola operación más
 Además, las respuestas devueltas son esencialmente documentos de texto en lugar de objetos que pueden fácilmente ser analizados en JSON. Necesitará analizar el texto de la respuesta o localizar una biblioteca de código auxiliar para tener acceso a los datos de la respuesta.  
  
 >[!NOTE]
->  La solicitudes por lotes pueden contener hasta 100 solicitudes individuales y no pueden contener otras solicitudes por lotes.  
+>  La solicitudes por lotes pueden contener hasta 1000 solicitudes individuales y no pueden contener otras solicitudes por lotes.  
   
 <a name="bkmk_BatchRequests"></a> 
 

@@ -6,24 +6,24 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
-ms.date: 05/01/2018
+ms.date: 03/20/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a44bdc829defb8434b9b6de24392e360039de3c4
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0a6b950c35043ecf47f45373f758ce62953945e7
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2864240"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156546"
 ---
 # <a name="license-requirements-for-entities"></a>Requisitos de licencia para entidades
 
 > [!IMPORTANT]
-> Este tema está obsoleto y se actualizará pronto para reflejar los últimos cambios en licencias aplicables a partir del 1 de octubre de 2019. Para obtener la información más reciente sobre los requisitos de licencia para entidades, consulte [Manual de licencias de Power Apps](https://go.microsoft.com/fwlink/?linkid=2085130).
+> Para obtener la información más reciente sobre los requisitos de licencia para entidades, consulte [Manual de licencias de Power Apps](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
 Los creadores de aplicaciones pueden usar la mayoría de entidades disponibles en Common Data Service (incluidas las entidades personalizadas y las entidades que forman parte del modelo común de datos) para crear aplicaciones y flujos para los usuarios que tienen una licencia de Plan 1 de Power Apps o de Plan 1 de Power Automate. En algunos casos, las entidades contienen lógica de negocios compleja o están ligadas a aplicaciones de Dynamics 365 para las que es necesario que los usuarios tengan una licencia específica. 
 

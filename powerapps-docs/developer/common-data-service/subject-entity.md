@@ -3,7 +3,7 @@ title: Entidad de tema (Common Data Service) | Microsoft Docs
 description: Obtenga más información sobre la clasificación de registros de entidad en Power Apps, como artículos y documentación de ventas. Usando temas, puede crear una jerarquía de temas para organizar y mantener la información.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: aa2159f458ab02d9e1a38c9d8e2edd760778f9e8
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: deafd208f16d20407d1a5615560a98b973f20061
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2859913"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155272"
 ---
 # <a name="subject-entity"></a>Entidad de tema
 

@@ -2,7 +2,7 @@
 title: Tutorial para agregar o editar componentes de aplicación controlada por modelos con Power Apps | MicrosoftDocs
 description: Utilice el diseñador de aplicaciones de Power Apps para agregar o editar componentes.
 keywords: ''
-ms.date: 10/15/2018
+ms.date: 03/05/2020
 ms.service: powerapps
 ms.custom: ''
 ms.topic: article
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f78b990432988de5ba1d6c2b254bef8577770d16
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 5f357bd55060258ca8545fae6ad4bb3c7621ab5c
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2873570"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "3136497"
 ---
 # <a name="tutorial-add-or-edit-model-driven-app-components-in-the-power-apps-app-designer"></a>Tutorial: Agregar o editar componentes de aplicación controlada por modelos en el diseñador de aplicaciones de Power Apps
 
@@ -41,7 +41,8 @@ El diseñador de la aplicación hace referencia a metadatos existentes en la sol
 ## <a name="app-designer-layout"></a>Diseño del Diseñador de la aplicación  
  El diseñador de la aplicación tiene dos áreas principales. En la parte izquierda está el lienzo donde se agregan componentes de la aplicación.  
   
-![Lienzo del diseñador de la aplicación](../model-driven-apps/media/app-designer-canvas-pane.png)
+ > [!div class="mx-imgBorder"]
+ > ![Lienzo del diseñador de la aplicación](../model-driven-apps/media/app-designer-canvas-pane.png "Lienzo del diseñador de la aplicación")
 
  En el lado derecho están las pestañas que usará para seleccionar componentes y establecer propiedades de componentes.  
  
@@ -58,7 +59,7 @@ El diseñador de la aplicación hace referencia a metadatos existentes en la sol
 ## <a name="open-an-app"></a>Abra una aplicación
 1. Inicie sesión en [Power Apps](https://make.powerapps.com/). 
 
-2. Seleccione una aplicación basada en modelos ya existente o seleccione **Empezar en blanco**. Para obtener información acerca de cómo crear una aplicación, consulte [Creación o edición de una aplicación controlada por modelos usando el diseñador de aplicaciones](create-edit-app.md#create-an-app).
+2. Seleccione una aplicación basada en modelos ya existente o seleccione **Aplicación basada en modelo desde cero**. Para obtener información acerca de cómo crear una aplicación, consulte [Creación o edición de una aplicación controlada por modelos usando el diseñador de aplicaciones](create-edit-app.md#create-an-app).
 
 ## <a name="add-an-artifact-entity-dashboard-or-business-process-flow"></a>Agregar un artefacto (entidad, panel, o flujo de proceso de negocio)  
  Cuando se agrega un panel o un flujo de proceso de negocio a una aplicación, las entidades que usan se agregan automáticamente a la aplicación. Cuando agrega una entidad, las ventanas de los activos se agregan automáticamente. Hay dos formas de agregar artefactos al lienzo del diseñador: mediante el botón **Agregar** ![Botón Agregar en el diseñador](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "Agregar botón en el diseñador") en la barra de comandos o con las ventanas de la pestaña **Componentes**.  
@@ -87,7 +88,8 @@ El diseñador de la aplicación hace referencia a metadatos existentes en la sol
   
      Todas las entidades que utiliza el panel también se agregan al área **Vista de la entidad**. Por ejemplo, si agrega el panel Administrador de servicio de atención al cliente, las entidades Caso, Derechos y Cola se agregan al área Vista de entidad. Para cada entidad, también se agregan las ventanas de sus activos. Puede usar estas ventanas para agregar formularios, vistas y gráficos. Más información:[Agregar o editar componentes en el diseñador de aplicaciones de Power Apps](add-edit-app-components.md#bkmk_AddEntityAssets)   
   
-    ![Agregar la entidad al lienzo del diseñador de aplicaciones](../model-driven-apps/media/add-entity-app-designer-canvas.png "Agregar una entidad al lienzo del diseñador de aplicaciones")  
+    > [!div class="mx-imgBorder"]
+    > ![Agregar la entidad al lienzo del diseñador de aplicaciones](../model-driven-apps/media/add-entity-app-designer-canvas.png "Agregar una entidad al lienzo del diseñador de aplicaciones")  
   
 4.  Si el panel que desea no existe en la solución predeterminada, cree un panel seleccionando **Crear nuevo** en la pestaña **Componentes** en el lado derecho del lienzo.  
   

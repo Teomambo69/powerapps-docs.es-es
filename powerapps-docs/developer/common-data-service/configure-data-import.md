@@ -3,7 +3,7 @@ title: Configurar importación de datos (Common Data Service) | Microsoft Docs
 description: La información de configuración que se necesita para importar datos se incluye en la entidad de importación de datos y la entidad del archivo de origen.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: de387cf362a8cef5971f7abf16afdd06a07cb32f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3a0e4a8e79b16ff8d641d6f790c20419e0956c25
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753032"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156376"
 ---
 # <a name="configure-data-import"></a>Configurar la importación de datos
 

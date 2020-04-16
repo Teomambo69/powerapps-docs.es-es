@@ -13,19 +13,19 @@ ms.assetid: f006f88c-74cb-4fde-90e5-e1faf2051673
 caps.latest.revision: 25
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bfcb86abc016ffa0fee9dd52385815f88983de66
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 073ea8853c8a897e7df40b4560916fc66f709968
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753653"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154968"
 ---
 # <a name="web-api-basic-operations-sample"></a>Ejemplo de operaciones básicas de la API web
 

@@ -10,11 +10,11 @@ ms.date: 02/11/2020
 ms.author: tapanm
 ms.reviewer: tapanm
 ms.openlocfilehash: 0c011c61c2084662d1e759d7226140dcf3ddfad6
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109514"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3126209"
 ---
 # <a name="add-the-azure-storage-web-resource-to-a-form"></a>Agregar el recurso de web Azure Storage a un formulario
 

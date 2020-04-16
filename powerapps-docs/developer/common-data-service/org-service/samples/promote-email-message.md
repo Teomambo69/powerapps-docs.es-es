@@ -3,7 +3,7 @@ title: 'Ejemplo: promocionar un mensaje de correo electrónico (Common Data Serv
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7e3b2b207b1618e8373e0d008ec9f853ecf46910
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: c75b3d4b147888345812aed5d7267b08a9adb8a4
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934268"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155700"
 ---
 # <a name="sample-promote-an-email-message"></a>Ejemplo: promover un mensaje de correo electrónico 
 

@@ -3,7 +3,7 @@ title: 'Ejemplo: Utilizar agregado en FetchXML (Common Data Service) | Microsoft
 description: Este ejemplo muestra cómo recuperar datos de registros agregados mediante FetchXML.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9ac38c8b53b6950c7bbf69583da1a83a24c1fe63
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 7042b99fede796c6eea75d6f700ca36293d91897
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934136"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155540"
 ---
 # <a name="sample-use-aggregation-in-fetchxml"></a>Ejemplo: uso de agregación en FetchXML
 

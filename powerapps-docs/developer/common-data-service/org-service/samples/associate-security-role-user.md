@@ -3,7 +3,7 @@ title: " Asociar rol de seguridad a un usuario ( Common Data Service) | Microsof
 description: 'Esta muestra expone cómo asignar un rol de seguridad a un usuario '
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4caaf5201878d4ebd3bbc38835591f31a7064c72
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: e01d2fd39caa6405a7340634c48f25f1c533843b
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956358"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155942"
 ---
 # <a name="sample-associate-security-role-to-a-user"></a>Ejemplo: asociar un rol de seguridad a un usuario
 

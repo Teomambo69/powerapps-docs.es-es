@@ -2,12 +2,12 @@
 title: Personalice los comandos y la cinta de opciones (aplicaciones basadas en modelos) | Microsoft Docs
 description: Common Data Service muestra comandos de diferentes maneras en función de la entidad y del cliente. En la mayoría de los lugares en la aplicación web verá una barra de comandos en lugar de una cinta de opciones. Dynamics 365 para tabletas también usa los datos definidos como cintas de opciones para controlar qué comandos están disponibles con una barra de comandos optimizada para tacto.
 keywords: ''
-ms.date: 10/31/2018
+ms.date: 03/27/2020
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 926364b0-ede6-00e9-39d4-5aae5e00be0b
-author: JimDaly
-ms.author: jdaly
+author: Nkrb
+ms.author: nabuthuk
 manager: shilpas
 ms.reviewer: ''
 search.audienceType:
@@ -15,18 +15,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 508ea8788f0fbaf9823721958229c3ed3cd21d55
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: bf61faabb150e45f80227ed8c776795f2e319d82
+ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754585"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172571"
 ---
 # <a name="customize-commands-and-the-ribbon"></a>Personalización de comandos y la cinta de opciones
 
-<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/customize-commands-ribbon -->
-
- Common Data Service muestra comandos de diferentes maneras en función de la entidad y del cliente. En la mayoría de los lugares en la aplicación web verá una *barra de comandos* en lugar de una cinta de opciones. Dynamics 365 for tablets también usa los datos definidos como cintas de opciones para controlar qué comandos están disponibles con una barra de comandos optimizada para tacto.  
+Common Data Service muestra comandos de diferentes maneras en función de la entidad y del cliente. En la mayoría de los lugares en la aplicación web verá una *barra de comandos* en lugar de una cinta de opciones. Dynamics 365 for tablets también usa los datos definidos como cintas de opciones para controlar qué comandos están disponibles con una barra de comandos optimizada para tacto.  
   
  La barra de comandos ofrece un mejor rendimiento. La cinta de opciones se sigue mostrando en la aplicación web para determinados formularios de entidad y aún se usa para las vistas de lista en Dynamics 365 for Outlook.  
   
@@ -37,15 +35,16 @@ ms.locfileid: "2754585"
 > [!NOTE]
 >  Puesto que el esquema XML subyacente se diseñó para mostrar los comandos como cintas de opciones, el término *cinta de opciones* se seguirá usando en la documentación.  
   
- El SDK describe el proceso de modificación de la cinta de opciones editando el archivo customization.xml directamente. Varias personas han creado editores de cinta de opciones que proporcionan una interfaz de usuario para que sea más sencillo modificar la cinta de opciones. Actualmente están disponibles los siguientes proyectos en Codeplex y en otras ubicaciones:  
-  
-- [Ribbon Workbench](https://www.develop1.net/public/rwb/ribbonworkbench.aspx)  
-  
-- [MS CRM 2011 : Pragma Toolkit : Ribbon, Site Map Editor](https://pragmatoolkit.codeplex.com/)  
-  
-- [CRM 2011 Visual Ribbon Editor](https://crmvisualribbonedit.codeplex.com/)  
-  
-  Para obtener soporte técnico o ayuda para usar estos programas, póngase en contacto con el editor del programa.  
+## <a name="troubleshoot-ribbon-issues"></a>Solución de problemas de cinta
+
+Si tiene un problema con un botón de la barra de comandos de la cinta, use esta guía de solución de problemas para encontrar y resolver el problema: <https://support.microsoft.com/help/4552163>
+
+
+## <a name="community-tool"></a>Herramienta comunitaria
+El SDK describe el proceso de modificación de la cinta de opciones editando el archivo customization.xml directamente. También puedes usar una herramienta comunitaria, [Workbench de cinta](https://www.develop1.net/public/rwb/ribbonworkbench.aspx), para editar visualmente cintas usando la interfaz de usuario. 
+
+> [!NOTE]
+> Microsoft no proporciona ayuda o soporte para herramientas comunitarias. Para obtener soporte técnico o ayuda para usar estos programas, póngase en contacto con el editor del programa.  
   
   
 ## <a name="see-also"></a>Vea también  

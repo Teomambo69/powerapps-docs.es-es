@@ -3,7 +3,7 @@ title: Crear una serie de citas periódicas, una instancia o una excepción (Com
 description: Crear mediante programación una cita periódica maestra (serie), instancias de cita periódica individuales, excepciones a dichas instancias o convertir una cita en periódica.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 57778f4520a305061c8f598ad82e033a89565033
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 3fcc1838c787b313022ef512972da60e94424148
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109082"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156340"
 ---
 # <a name="create-a-recurring-appointment-series-instance-or-exception"></a>Crear una instancia, excepción o serie de cita periódica.
 

@@ -3,7 +3,7 @@ title: Información general de auditoría (Common Data Service) | Microsoft Docs
 description: Lea cómo la capacidad de auditoría de Common Data Service se puede usar para registrar cambios de datos de atributos y entidades con el tiempo para usarlos para fines de análisis e informes.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: paulliew
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 71f39d432e551df456f3d339155d1f3105d6891b
-ms.sourcegitcommit: 5bfd0448f1d5ca3d938e3bd928d1dd3d4042afff
+ms.openlocfilehash: 43cd755b6746d52aa1aa9a0c89f7134566ee2c1b
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "2992810"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156456"
 ---
 # <a name="auditing-overview"></a>Información general de auditoría
 

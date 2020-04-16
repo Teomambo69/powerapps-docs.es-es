@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: article
 ms.date: 03/27/2019
 ms.author: jdaly
-ms.reviewer: kvivek
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9ff18386dcad8f0a3dec918cd0d3ea1f35326e72
-ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
+ms.openlocfilehash: a6b160057ca43b8a4e6a9b0e906994fbf2d46051
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2895070"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155376"
 ---
 # <a name="common-data-service-developer-guide"></a>Manual para desarrolladores de Common Data Service
 

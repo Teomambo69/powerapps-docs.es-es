@@ -2,7 +2,7 @@
 title: Crear o editar una aplicación basada en modelos utilizando el diseñador de aplicaciones en Power Apps | MicrosoftDocs
 description: Aprender a crear o editar aplicaciones mediante el diseñador de aplicaciones
 keywords: ''
-ms.date: 02/05/2019
+ms.date: 03/05/2020
 ms.service: powerapps
 ms.custom: ''
 ms.topic: article
@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ef8fa8e20afd7d0e4ad1593ae169a132246d3992
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: d5909d704863dbf88673ac35e3b36b59143d9f5f
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2875455"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "3136585"
 ---
 # <a name="create-a-model-driven-app-by-using-the-app-designer"></a>Crear o editar una aplicación controlada por modelos utilizando el diseñador de aplicaciones
 
@@ -45,10 +45,9 @@ Compruebe los requisitos siguientes antes de empezar a crear una aplicación:
 
 1.  En la página **Inicio** de [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), seleccione la opción **Empezar en blanco una aplicación basada en modelos** para una aplicación basada en modelos.  
 
-    > [!IMPORTANT]
-    > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment). 
+2.  Seleccione **Crear**.
 
-2. En la página **Crear una nueva aplicación**, especifique los siguientes detalles: 
+3.  En la página **Crear una nueva aplicación**, especifique los siguientes detalles: 
 
     - **Nombre**: introduzca un nombre para la aplicación.  
   
@@ -66,7 +65,8 @@ Compruebe los requisitos siguientes antes de empezar a crear una aplicación:
       > [!NOTE]
       > Al seleccionar **Solución predeterminada** cuando se agrega un mapa del sitio, los componentes que están asociados con ese mapa del sitio se agregan automáticamente a la aplicación.  
 
-      ![Usar solución existente para crear la página de la aplicación](media/use-existing-solution-to-create-the-app.png "Use una solución existente para crear la aplicación.") 
+      > [!div class="mx-imgBorder"] 
+      > ![Usar solución existente para crear la página de la aplicación](media/use-existing-solution-to-create-the-app.png "Use una solución existente para crear la aplicación.") 
 
     - **Elija una página de bienvenida**: Esta opción permite elegir entre los recursos web disponibles en su organización. Las páginas de bienvenida que cree pueden contener información útil para los usuarios, como vínculos a vídeos, instrucciones de actualización o información de introducción. La página de bienvenida aparece cuando se abre una aplicación. Los usuarios pueden seleccionar **No mostrar esta pantalla de bienvenida la próxima vez** en la página de inicio de sesión para deshabilitar la página para que no aparezca la próxima vez que se inicie la aplicación. Tenga en cuenta que la opción **No mostrar esta pantalla de bienvenida la próxima vez** es una configuración de usuario y no se puede controlar por los administradores o proveedores de la aplicación. Para obtener más información acerca de cómo crear un recurso web, por ejemplo, un archivo HTML que pueda usar como página de bienvenida, consulte: [Crear y editar recursos web para extender la aplicación web](create-edit-web-resources.md).  
       
@@ -75,7 +75,7 @@ Compruebe los requisitos siguientes antes de empezar a crear una aplicación:
      > [!NOTE]
      >  No puede cambiar el nombre único y el sufijo de la dirección URL de la aplicación en la pestaña **Propiedades**.  
   
-3. Seleccione **Listo** o&mdash;si seleccionó **Usar una solución existente para crear la aplicación**&mdash;seleccione **Siguiente** para elegir entre las soluciones disponibles que se importaron en la organización.  
+4. Seleccione **Listo** o&mdash;si seleccionó **Usar una solución existente para crear la aplicación**&mdash;seleccione **Siguiente** para elegir entre las soluciones disponibles que se importaron en la organización.  
   
     Una nueva aplicación se crea y se muestra en estado de borrador. Verá el lienzo del diseñador de aplicaciones para la nueva aplicación. Desde ahí puede agregar componentes, como entidades, vistas y paneles para que su aplicación resulte útil. Más información: [Agregar o editar componentes de la aplicación](add-edit-app-components.md)  
    
@@ -83,9 +83,6 @@ Compruebe los requisitos siguientes antes de empezar a crear una aplicación:
 ## <a name="edit-an-app"></a>Editar una aplicación  
   
 1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
-
-> [!IMPORTANT]
-> “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment). 
 
 2. En el panel de navegación de la izquierda seleccione **Aplicaciones**, seleccione una aplicación basada en modelos y, en la barra de herramientas, seleccione **Editar**.   
 

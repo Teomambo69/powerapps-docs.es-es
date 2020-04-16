@@ -3,7 +3,7 @@ title: 'Diseño de la personalización escalable: Patrones de diseño de transac
 description: 'El cuarto de una serie de temas. '
 ms.custom: ''
 ms.date: 11/18/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: rogergilchrist
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fa1c5e62abfa63e3a5c11f0498dab54a3b4eaeec
-ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
+ms.openlocfilehash: 4d6b2b93c77e452ec3dd77e4a0ce6fc24a22e055
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3005096"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155300"
 ---
 # <a name="scalable-customization-design-transaction-design-patterns"></a>Diseño de la personalización escalable: Patrones de diseño de transacciones
 

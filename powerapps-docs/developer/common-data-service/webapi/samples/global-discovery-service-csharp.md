@@ -7,19 +7,19 @@ ms.service: powerapps
 ms.topic: article
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 manager: kvivek
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 11c2d71263ac9c60e9dc88b00f78da81755d40f0
-ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
+ms.openlocfilehash: c65092ed5b34bd06645e92f691cfe07ffc3eb233
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2975715"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155016"
 ---
 # <a name="global-discovery-service-sample-c"></a>Ejemplo de servicio de detección global (C#)
 
@@ -29,22 +29,21 @@ En este ejemplo se muestra cómo acceder al servicio de detección utilizando la
 
 Este ejemplo está disponible en GitHub en [https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/webapi/C%23/GlobalDiscovery](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/webapi/C%23/GlobalDiscovery)
 
-## <a name="what-this-sample-does"></a>Qué hace este ejemplo
-
-Este ejemplo devuelve las instancias disponibles de Common Data Service para una credencial de usuario determinada.
+## <a name="what-this-sample-does"></a>Qué hace este ejemplo"
+" Este ejemplo devuelve las instancias disponibles de Common Data Service para una credencial de usuario determinada.
 
 ## <a name="how-this-sample-works"></a>Cómo funciona este ejemplo
 
 Este ejemplo usará la información de sus credenciales en el archivo App.config, pero no usará la dirección URL configurada en la cadena de conexión.
 En su lugar, solo usará las credenciales de usuario y el identificador de cliente.
-
+''''''''''''
 ### <a name="demonstrates"></a>Demostraciones
 
 Este ejemplo usa un HttpClient para autenticar mediante ADAL (v2.29) e invocar al servicio de detección para que devuelva información sobre las instancias disponibles a las que se puede conectar el usuario.
 
 El ejemplo dependen del método `GetInstances` y la clae `Instance` a continuación:
 
-```csharp
+```csharp    
     /// <summary>
     /// Uses the Discovery Service to return organization instances.
     /// </summary>
@@ -60,7 +59,7 @@ El ejemplo dependen del método `GetInstances` y la clae `Instance` a continuaci
 
       UserCredential cred = new UserCredential(username, password);
       AuthenticationResult authResult = authContext.AcquireToken(GlobalDiscoUrl, clientId, cred);
-
+'
       HttpClient client = new HttpClient();
       client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authResult.AccessToken);
       client.Timeout = new TimeSpan(0, 2, 0);
@@ -74,19 +73,19 @@ El ejemplo dependen del método `GetInstances` y la clae `Instance` a continuaci
         //Get the response content and parse it.
         string result = response.Content.ReadAsStringAsync().Result;
         JObject body = JObject.Parse(result);
-        JArray values = (JArray)body.GetValue("value");
+        JArray values = (JArray)body.GetValue("value");''
 
         if (!values.HasValues)
         {
           return new List<Instance>();
-        }
+        }'
 
         return JsonConvert.DeserializeObject<List<Instance>>(values.ToString());
-      }
+      }'
       else
       {
         throw new Exception(response.ReasonPhrase);
-      }
+      }'
     }
 ```
 
@@ -109,3 +108,4 @@ El ejemplo dependen del método `GetInstances` y la clae `Instance` a continuaci
   }
 ```
 
+                                                                                                                    '''

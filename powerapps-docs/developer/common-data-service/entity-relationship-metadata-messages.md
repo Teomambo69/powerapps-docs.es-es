@@ -3,7 +3,7 @@ title: Mensajes de metadatos de relación entre entidades (Common Data Service) 
 description: El artículo describe los mensajes que se pueden usar para crear, recuperar, actualizar y eliminar relaciones entre entidades con la API web y el servicio de la organización.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8e574711366f7f47cdce758867293a17cb01bf3e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 88ced3454045917012c3736dcc6faad5dfcdf091
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749444"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156212"
 ---
 # <a name="entity-relationship-metadata-messages"></a>Mensajes de metadatos de relación entre entidades
 

@@ -3,7 +3,7 @@ title: Información general sobre herramientas de compilación para Azure DevOps
 description: Power Apps build tools son una colección de tareas de compilación de Azure DevOps específicas de Power Apps que eliminan la necesidad de descargar manualmente los scripts para administrar el desarrollo de Power Apps
 ms.custom: ''
 ms.date: 07/21/2019
-ms.reviewer: Dean-Haas
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mikkelsen2000
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 62570ded1e682bde50482fbdaa8f00d29dde77f3
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 111169c35463ba082a734082ea5eca1f4bab5c21
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883530"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156420"
 ---
 # <a name="power-apps-build-tools-for-azure-devops-overview"></a>Información general sobre Power Apps build tools para Azure DevOps
 

@@ -13,19 +13,19 @@ ms.assetid: 1f430d2d-e829-4ffa-922e-dfcfb7c9e86e
 caps.latest.revision: 24
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4718f47247907c7c3af6f826829a985b56a5ff08
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 1dfa7e51ee63ad6c0904b93d5aaaad4979f0a540
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109609"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155120"
 ---
 # <a name="create-and-update-entity-definitions-using-the-web-api"></a>Crear y actualizar definiciones de entidad mediante la API web
 

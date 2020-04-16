@@ -13,18 +13,18 @@ ms.assetid: 45cdefe5-0776-496a-9b06-b5cad768e543
 caps.latest.revision: 20
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 766f9f16690ad111115db163b79641f8e4ec5683
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 2d627143f1d5f632319cb7b8909bd8b1a455b97c
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749760"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155031"
 ---
 # <a name="web-api-basic-operations-sample-c"></a>Ejemplo de operaciones básicas de la API web (C#)
 

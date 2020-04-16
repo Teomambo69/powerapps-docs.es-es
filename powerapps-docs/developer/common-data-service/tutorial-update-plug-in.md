@@ -3,7 +3,7 @@ title: 'Tutorial: Actualizar un complemento (Common Data Service) | Microsoft Do
 description: 'Este tutorial es el tercero de una serie que le muestra cómo trabajar con los complementos. '
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e28493c3790e49e616157124d49acae65c5bd9a0
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f00c30c25c1038edbd444bfdfffc5b6597f67f42
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749780"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155236"
 ---
 # <a name="tutorial-update-a-plug-in"></a>Tutorial: Actualizar un complemento
 

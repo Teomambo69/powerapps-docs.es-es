@@ -3,7 +3,7 @@ title: 'Ejemplo: Detectar dependencias de solución (Common Data Service) | Micr
 description: En este ejemplo se muestra cómo detectar las dependencias de las soluciones.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: shmcarth
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7e960b1a593f0c3d940f3a43ab2e369f459d3648
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: 8f84ecba9af675d6027276bc307621a71476735a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956207"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155836"
 ---
 # <a name="sample-detect-solution-dependencies"></a>Ejemplo: detectar las dependencias de solución
 

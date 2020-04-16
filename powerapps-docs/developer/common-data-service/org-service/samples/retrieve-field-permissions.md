@@ -3,7 +3,7 @@ title: 'Ejemplo: Recuperar permisos de campo (Common Data Service) | Microsoft D
 description: Este ejemplo muestra cómo recuperar campos protegidos para un usuario
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 940013b96159dc5804e7cd3f4df25a6cdfcf2509
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 53b73e6a30875d6f8c2620517e83ebd3230597e9
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934220"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155640"
 ---
 # <a name="sample-retrieve-field-permissions"></a>Ejemplo: recuperar permisos de campo
 

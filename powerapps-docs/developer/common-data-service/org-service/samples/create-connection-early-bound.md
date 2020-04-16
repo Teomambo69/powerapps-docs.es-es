@@ -3,7 +3,7 @@ title: 'Ejemplo: Creación de un rol de conexión (Common Data Service) | Micros
 description: Este ejemplo muestra cómo crear un rol de conexión.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bee68c021f1fa6c34f41c71b1a62299dfda423e6
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 8e67af447e8d43f14476dcb153798ff3ce7da673
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934388"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155896"
 ---
 # <a name="sample-create-a-connection"></a>Ejemplo: crear una conexión
 

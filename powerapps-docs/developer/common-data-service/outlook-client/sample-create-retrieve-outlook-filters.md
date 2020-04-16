@@ -3,7 +3,7 @@ title: 'Ejemplo: Crear y recuperar filtros de Outlook (Common Data Service)| Mic
 description: Este ejemplo muestra cómo recuperar filtros para Microsoft Dynamics 365 for Outlook.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: sriharibs
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a144c6166bf14737d0258a962306eb24f1aebc3b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 22fb005832149316eb8c967b425f6058d7e1bcf9
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749822"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155388"
 ---
 # <a name="sample-create-and-retrieve-outlook-filters"></a>Ejemplo: crear y recuperar filtros de Outlook
 

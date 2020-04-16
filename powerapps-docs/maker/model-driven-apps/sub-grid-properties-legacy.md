@@ -9,7 +9,7 @@ applies_to:
 - powerapps
 ms.author: matp
 manager: kvivek
-ms.date: 06/07/2018
+ms.date: 03/17/2020
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 82892cd3-3436-4677-b96b-f2ccd0a4f078
@@ -18,31 +18,63 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ff9b79565525cee42eedfcd48c59669c4fe277d8
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: c71afbf34f2e74afbcbd31f67d9164606d80d83b
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872845"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3167034"
 ---
 # <a name="sub-grid-properties-for-model-driven-app-main-forms-overview"></a>Información general de propiedades de subcuadrícula para formularios principales de aplicaciones controladas por modelos
 
-Puede configurar una subcuadrícula en un formulario para presentar una lista de registros o un gráfico. Seleccione **Solo mostrar gráfico** en la ficha **Mostrar** para mostrar un gráfico en lugar de una lista.  
+Puede configurar una subcuadrícula en un formulario para presentar una lista de registros.  
 
 Puede acceder a las **Propiedades de subcuadrícula** desde el sitio de Power Apps. 
-1.  En el sitio de [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación).  
-
-     ![Modo de diseño controlado por modelos](media/model-driven-switch.png)
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 2.  Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**. 
 
-3.  En la lista de formularios, abra el formulario de tipo **Principal**. Luego en la pestaña **Insertar**, seleccione **Subcuadrícula** para ver propiedades de subcuadrícula.
+3.  En la lista de formularios, abra un formulario de tipo **Principal** y luego seleccione **Componentes**. 
 
-    ![propiedades de subcuadrícula](media/sub-grid-properties.png)
-  
-|Ficha|Propiedad|Descripción|  
+4.  Desde el panel Componentes, seleccione **Subcuadrícula**.
+
+    > [!div class="mx-imgBorder"] 
+    > ![Seleccionar vistas de subcuadrícula](media/sub-grid-views.png "Seleccionar vistas de subcuadrícula")
+
+5.  En **Entidad**, seleccione una entidad cuyos registros desea mostrar en la subcuadrícula. La lista desplegable **Entidad** se filtra para enumerar únicamente las entidades relacionadas con la entidad actual.
+
+6.  En **Vista predeterminada**, seleccione una vista predeterminada para la subcuadrícula. Esta es la vista de la entidad seleccionada en la propiedad Entidad que se usará para obtener y mostrar la lista de registros en la subcuadrícula.
+
+7.  Seleccione **Mostrar registros relacionados** para mostrar solo los registros relacionados con el registro actual que se muestra en el formulario.
+
+8.  Seleccione **Hecho** para agregar la subcuadrícula al formulario. Las propiedades de la subcuadrícula aparecen en el panel Propiedades.
+
+    > [!div class="mx-imgBorder"] 
+    > ![propiedades de subcuadrícula](media/newform-designer-sub-grid-properties.png "propiedades de subcuadrícula")
+
+|Propiedad|Descripción|  
+|--------------|-----------------|  
+|**Nombre**|**Requerido**: nombre único de la subcuadrícula que se usa al hacerle referencia en los scripts. El nombre solo puede contener caracteres alfanuméricos y de subrayado.|  
+|**Etiqueta**|**Requerido**: etiqueta localizable de la subcuadrícula visible para los usuarios.|  
+|**Ocultar etiqueta**|Si la etiqueta debería mostrarse en el formulario. Es necesario si habilita **Mostrar cuadro de búsqueda**. También puede elegir el color del encabezado del panel.|  
+|**Ocultar en teléfono**|Especifique si la sección debe estar disponible en el teléfono.|
+|**Mostrar registros relacionados**| La subcuadrícula solo mostrará los registros relacionados con el registro actual.<br /> Si no selecciona esta propiedad, la subcuadrícula mostrará los registros filtrados solo por la vista predeterminada o, si está habilitado el selector de la vista, todas las vistas que el usuario elija.<br /><br /> La opción que elija afectará al comportamiento de control de visualización de lista. Más información: [Mostrar comportamiento de la lista](#show-list-behavior) |  
+|**Entidad**|En función de la opción que elija para **Mostrar registros relacionados**, esta lista mostrará una de las opciones:<br /><br /> - Solo los registros relacionados: una lista de entidades relacionadas con esta entidad con el nombre del campo de búsqueda en la entidad que define la relación entre paréntesis.<br />- Todos los tipos de registros: una lista de todas las entidades.|  
+|**Vista predeterminada**|Seleccione la vista que se aplicará de forma predeterminada. Si no habilita otras vistas mediante la propiedad **Selector de vista**. Esta será la única vista.<br /><br /> Use el botón **Editar** para abrir la vista predeterminada para editar. Use el botón **Nuevo** para crear una vista nueva para usar para esta subcuadrícula.|  
+|**Permitir que los usuarios cambien la vista**|Cuando está seleccionada, los usuarios de la aplicación pueden cambiar de la Vista predeterminada a otra vista de la entidad seleccionada en la propiedad Entidad.|
+
+## <a name="sub-grid-properties-for-model-driven-app-main-forms-classic"></a>Propiedades de subcuadrícula para formularios principales de aplicaciones controladas por modelos: Clásico
+
+Puede configurar una subcuadrícula en un formlario usando el diseñador de formularios clásico para mostrar una lista de registros o un gráfico. Seleccione **Solo mostrar gráfico** en la ficha **Mostrar** para mostrar un gráfico en lugar de una lista.
+
+  > [!div class="mx-imgBorder"] 
+  > ![propiedades de subcuadrícula](media/sub-grid-properties.png "propiedades de subcuadrícula")
+
+Éstas son las propiedades disponibles para configurar cuando utiliza un componente de subcuadrícula en un formulario usando el diseñador de formularios clásico.
+
+|Pestaña|Propiedad|Descripción|  
 |---------|--------------|-----------------|  
-|**Presentación**|**Nombre**|**Requerido**: nombre único de la subcuadrícula que se usa al hacerle referencia en los scripts. El nombre solo puede contener caracteres alfanuméricos y de subrayado.|  
+|**Mostrar**|**Nombre**|**Requerido**: nombre único de la subcuadrícula que se usa al hacerle referencia en los scripts. El nombre solo puede contener caracteres alfanuméricos y de subrayado.|  
 ||**Etiqueta**|**Requerido**: etiqueta localizable de la subcuadrícula visible para los usuarios.|  
 ||**Mostrar etiqueta en el formulario**|Si la etiqueta debería mostrarse en el formulario. Es necesario si habilita **Mostrar cuadro de búsqueda**. También puede elegir el color del encabezado del panel.|  
 ||**Registros**|Elija entre dos opciones:<br /><br /> - **Solo los registros relacionados**: la subcuadrícula solo mostrará los registros relacionados con el registro actual.<br />- **Todos los tipos de registros**: la subcuadrícula mostrará los registros filtrados solo por la vista predeterminada o, si está habilitado el selector de la vista, todas las vistas que el usuario elija.<br /><br /> La opción que elija afectará al comportamiento de control de visualización de lista. Más información: [Mostrar comportamiento de la lista](#show-list-behavior) |  

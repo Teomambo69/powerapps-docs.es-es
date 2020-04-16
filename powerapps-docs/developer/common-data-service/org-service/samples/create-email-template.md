@@ -3,7 +3,7 @@ title: 'Ejemplo: Crear un mensaje de correo electrónico usando una plantilla (C
 description: Este ejemplo muestra cómo crear una instancia de un registro de correo electrónico.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9ef1bf83b0423943eb88a71a2e06dbb9629b8c36
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 819d9ad70355d843884cbbf35d4c0985c72ddc60
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934380"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155892"
 ---
 # <a name="sample-create-an-email-using-a-template"></a>Ejemplo: crear un mensaje de correo electrónico usando una plantilla
 

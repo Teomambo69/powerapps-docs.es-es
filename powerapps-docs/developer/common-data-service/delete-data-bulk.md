@@ -3,7 +3,7 @@ title: Eliminar datos en masa (Common Data Service) | Microsoft Docs
 description: Eliminar datos de forma masiva ayuda a mantener la calidad de los datos y a administrar el consumo de almacenamiento del sistema eliminando los datos que ya no son necesarios.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5eb692c38d7a8dac779c827c09d7b767e89bb6e2
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: b0c02c3f94c7c3965fcf9705a5eb77ae66e87d94
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749565"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156264"
 ---
 # <a name="delete-data-in-bulk"></a>Eliminar datos en masa
 

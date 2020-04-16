@@ -3,7 +3,7 @@ title: Esquema FetchXML (Common Data Service) | Microsoft Docs
 description: El lenguaje de consultas FetchXML se usa para crear consultas en la base de datos de Common Data Service.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cb2720eac36aab2b84eaa2b973c4aab7551be123
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 42d72ffe7ba49120f20107276078ecc01d20109a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752976"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156204"
 ---
 # <a name="fetchxml-schema"></a>Esquema FetchXML
 

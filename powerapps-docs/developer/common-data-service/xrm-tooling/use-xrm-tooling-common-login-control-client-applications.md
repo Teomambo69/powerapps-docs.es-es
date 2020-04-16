@@ -3,7 +3,7 @@ title: Usar el control de inicio de sesión común de los útiles de XRM en las 
 description: El SDK de Common Data Service proporciona una plantilla para Visual Studio que permite usar el control de inicio de sesión común en las aplicaciones cliente. El código para autenticación de Common Data Service, almacenamiento de credenciales y recuperación, y registro de diagnóstico está integrado en la plantilla, de modo que se pueden aprovechar rápidamente estas funciones en las aplicaciones cliente de Windows para Common Data Service
 ms.custom: ''
 ms.date: 03/27/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 28342954a5ee996b151265f738673ffef3b4b0d2
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 235132665462441616bfcdb9d05811584464fd6e
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749641"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154868"
 ---
 # <a name="use-the-xrm-tooling-common-login-control-in-your-client-applications"></a>Usar el control de inicio de sesión común de los útiles de XRM en las aplicaciones cliente
 

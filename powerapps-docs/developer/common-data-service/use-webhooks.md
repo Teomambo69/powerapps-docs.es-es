@@ -3,7 +3,7 @@ title: Uso de WebHooks para crear controladores externos para eventos de servido
 description: Puede enviar datos sobre eventos que tienen lugar en el servidor a una aplicación web mediante webhooks. Webhooks es un patrón HTTP ligero para conectar servicios y API web con un modelo de publicación/suscripción. Los remitentes de webhook envían a los receptores notificaciones sobre eventos realizando solicitudes a los extremos de los receptores con información sobre los eventos.
 ms.custom: ''
 ms.date: 09/04/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ae74c23170feb73bc128dff74e4e842190d3d50e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 360bf7689406195c369e74b0f255cd8db32bda8d
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749773"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155168"
 ---
 # <a name="use-webhooks-to-create-external-handlers-for-server-events"></a>Utilice webhooks para crear controladores externos para eventos de servidor
 

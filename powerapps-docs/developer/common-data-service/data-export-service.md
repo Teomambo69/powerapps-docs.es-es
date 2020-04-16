@@ -3,7 +3,7 @@ title: Servicio de exportación de datos (Common Data Service) | Microsoft Docs
 description: Capacidades, requisitos previos, API y programación del servicio de exportación de datos.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: sabinn-msft
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bb782e362692b63e9412493af0fb561846cdd6f1
-ms.sourcegitcommit: c2de40124037825308fbccf71f3a221198a928f9
+ms.openlocfilehash: 108e1fcc040266fae7e6c6b67b54f8e6c274275a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "2944300"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156288"
 ---
 # <a name="data-export-service"></a>Servicio de exportación de datos
 
@@ -110,7 +110,7 @@ Puesto que sólo están autorizados los administradores del sistema de Common Da
   
 ```csharp  
   
-//Reference Azure AD authentication Library (ADAL)    
+//Reference Azure AD authentication Library (ADAL v2.29)    
 using Microsoft.IdentityModel.Clients.ActiveDirectory;  
    . . .  
     string yourAppClientID = "[app-associated-GUID]";   //Your AAD-registered AppId   

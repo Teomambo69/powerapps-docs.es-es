@@ -3,7 +3,7 @@ title: Iniciar un proyecto de la API web de Common Data Service en Visual Studio
 description: Crear un nuevo proyecto en Visual Studio para crear una aplicación de consola que use la API web de Common Data Service
 ms.custom: ''
 ms.date: 04/22/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -17,12 +17,12 @@ search.audienceType:
 - developer
 search.app:
 - D365CE
-ms.openlocfilehash: 37548edcebb037a64599f405b3cf4d121d38d517
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8914412cd7189a1b0e79de1d13690dcd877a9b8a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753660"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154993"
 ---
 # <a name="start-a-common-data-service-web-api-project-in-visual-studio-c"></a>Iniciar un proyecto de la API web de Common Data Service en Visual Studio (C#)
 
@@ -55,7 +55,7 @@ En el siguiente procedimiento se muestra cómo crear un proyecto de aplicación 
   
    ![Un diálogo de nuevo proyecto de aplicación de consola en Common Data Service](media/new-project.PNG "Un diálogo de nuevo proyecto de aplicación de consola en Common Data Service")  
   
-5. En los cuadros de texto que están cerca de la parte inferior del formulario, escriba el nombre y la ubicación del proyecto y, a continuación, seleccione Aceptar. (Para este tema, se usó el nombre de la solución “StartWebAPI-CS”.) Se generarán los archivos de solución iniciales y la solución se cargará en Visual Studio.  
+5. En los cuadros de texto que están cerca de la parte inferior del formulario, escriba el nombre y la ubicación del proyecto y, a continuación, seleccione Aceptar. (Para este tema, se usó el nombre de la solución "StartWebAPI-CS"). Se generarán los archivos de solución iniciales y la solución se cargará en Visual Studio.  
   
 6. En el menú **Proyecto**, abra el formulario de propiedades del proyecto y compruebe que el marco de destino está establecido en **.NET Framework 4.6.2**.  
   
