@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
 author: aengusheaney
-ms.author: jdaly
+ms.author: nabuthuk
 manager: ryjones
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7ce54c1f02fa702a41b045b8f83e511c5017e45c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 39ebe094712540fde1c71c1a7d5d0757cd894519
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753584"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115836"
 ---
 # <a name="testing-tools-for-client-side-development"></a>Herramientas de pruebas para desarrollo del lado del cliente
 

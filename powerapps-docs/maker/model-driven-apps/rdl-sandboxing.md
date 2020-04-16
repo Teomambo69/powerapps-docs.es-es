@@ -13,19 +13,19 @@ ms.assetid: 8ec72014-9f0c-4964-ac67-24419b054e91
 caps.latest.revision: 13
 author: Mattp123
 ms.author: matp
-manager: amyla
+manager: annbe
 tags:
 - MigrationHO
 search.audienceType:
 - customizer
 search.app:
 - D365CE
-ms.openlocfilehash: 557959f9bb561fcb138f15011bd8320dfa5c94ff
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d5a74785ed33c8c4591717dc062ac741a8dceb87
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862904"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115722"
 ---
 # <a name="rdl-sandboxing"></a>Espacio seguro para RDL 
 

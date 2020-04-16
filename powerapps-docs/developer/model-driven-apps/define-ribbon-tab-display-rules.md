@@ -8,8 +8,8 @@ ms.custom:
 - ''
 ms.topic: article
 ms.assetid: 916f4e82-01a3-2476-c2a4-ff71caa4195c
-author: JimDaly
-ms.author: jdaly
+author: Nkrb
+ms.author: nabuthuk
 manager: shilpas
 ms.reviewer: ''
 search.audienceType:
@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7e843f93e4775e97ef5d99d9df969ac2793aebe4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4e4b7f1cbfc167d999881e396d53436387c2f184
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749906"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115636"
 ---
 # <a name="define-ribbon-tab-display-rules"></a>Definir las reglas de visualización de la pestaña de la cinta de opciones
 

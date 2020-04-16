@@ -9,18 +9,18 @@ applies_to:
 ms.assetid: d329dade-16c5-46e9-8dec-4b8efb996dea
 author: mayadumesh
 ms.author: jdaly
-manager: amyla
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fed9bc722c09b157dfd1f62b6ea27d2603bcc969
-ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
+ms.openlocfilehash: e561c77b2677d6b306463d687866a55b46f65421
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3005091"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115780"
 ---
 # <a name="api-considerations-of-virtual-entities"></a>Consideraciones sobre API para entidades virtuales
 

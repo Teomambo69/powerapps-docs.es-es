@@ -6,8 +6,8 @@ ms.date: 10/31/2018
 ms.service: powerapps
 ms.topic: article
 ms.assetid: da41f997-1f61-7ea8-db83-5d670d708d67
-author: JimDaly
-ms.author: jdaly
+author: Nkrb
+ms.author: nabuthuk
 manager: shilpas
 ms.reviewer: ''
 search.audienceType:
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8dfbf28255f3e36d6b5fcb28a52bf02f738b9860
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 02b8e2b80821e3a59f3522f25f455d6cc3b4a083
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749622"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115916"
 ---
 # <a name="create-a-dashboard"></a>Crear un panel
 

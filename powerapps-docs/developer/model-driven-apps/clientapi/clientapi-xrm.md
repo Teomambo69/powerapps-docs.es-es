@@ -9,18 +9,18 @@ applies_to:
 ms.assetid: 15272ad9-25d7-499e-9361-a65f789daf20
 author: KumarVivek
 ms.author: kvivek
-manager: amyla
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 057c63b0f3c22d653bc0988aeaa908dd455908fc
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 6ee727043ba58c4facc387b7834728e1c30c7406
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749626"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115884"
 ---
 # <a name="client-api-xrm-object"></a>Objeto Xrm de API de cliente
 

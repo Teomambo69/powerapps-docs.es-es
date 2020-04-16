@@ -7,18 +7,18 @@ applies_to: Dynamics 365 (online)
 ms.assetid: 73dfc13c-a18c-42fc-b511-a37896c2f893
 author: KumarVivek
 ms.author: kvivek
-manager: amyla
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9b9936cccd243213f785cf65b7dc2d94cfaa1763
-ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
+ms.openlocfilehash: 8eb4dc2079cb274289395c975b4af143bc1ebb1d
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2895134"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115924"
 ---
 # <a name="walkthrough-write-your-first-client-script"></a>Tutorial: Escribir el primer script de cliente
 

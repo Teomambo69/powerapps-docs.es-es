@@ -2,7 +2,7 @@
 title: Recursos web de imágenes (aplicaciones basadas en modelos) | Microsoft Docs
 description: Obtenga información sobre cómo usar los recursos web de imágenes para hacer que las imágenes estén disponibles para su uso
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 03/11/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -14,16 +14,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a31cdc5c3c987f68ab9e46aef985501737d3c0f9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9b87b36d0262a3bf634b9d8e22cc79f7f1816373
+ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749612"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "3119758"
 ---
 # <a name="image-web-resources"></a>Recursos web de imágenes
-
-<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/image-web-resources -->
 
 Use los recursos web de imagen para hacer que las imágenes estén disponibles para su uso en Aplicaciones basadas en modelos.  
 
@@ -48,6 +46,9 @@ Hay cinco tipos de recursos web de imágenes:
 - Imágenes de fondo usadas por recursos web CSS.  
 
 Use los recursos web de formato de vector (SVG) para cualquier icono que se muestre en la aplicación. Las imágenes vectoriales se definen como Scalable Vector Graphics (SVG), un formato de imagen vectorial basado en XML. La ventaja de las imágenes vectoriales sobre otros recursos web de imagen es que son escalables. Puede definir una imagen vectorial y reutilizarla en lugar de proporcionar varios tamaños de imágenes. Usará estos con una nueva sesión<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IconVectorName> propiedad para definir el icono de una entidad personalizada en lugar de las propiedades `IconLargeName`, `IconMediumName` o `IconSmallName`.
+
+> [!NOTE]
+> Los recursos web de formato vectorial (SVG) se tratan como recursos web [Script (JScript)](/powerapps/developer/model-driven-apps/script-jscript-web-resources) y conllevan los mismos riesgos de seguridad que los recursos web Script (JScript) porque los archivos SVG permiten la incrustación JScript.
   
 <a name="BKMK_Limitations"></a>   
 ## <a name="limitations-of-image-web-resources"></a>Limitaciones de los recursos web de imagen  

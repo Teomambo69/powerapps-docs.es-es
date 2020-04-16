@@ -6,8 +6,8 @@ ms.date: 10/31/2018
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 72544b02-4eed-4d70-666e-a0d880f526af
-author: JimDaly
-ms.author: jdaly
+author: Nkrb
+ms.author: nabuthuk
 manager: shilpas
 ms.reviewer: ''
 search.audienceType:
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 414541da940771c68acf49f338308a8b4a80e751
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 368801cbac62fee5f51646959c6f62380a6c61db
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2863094"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115864"
 ---
 # <a name="define-custom-actions-to-modify-the-ribbon"></a>Definir acciones personalizadas para modificar la cinta de opciones
 

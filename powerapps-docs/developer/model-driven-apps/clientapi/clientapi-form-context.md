@@ -8,18 +8,18 @@ applies_to:
 ms.assetid: 0cf94e8d-801a-451f-98c3-130e912f963b
 author: KumarVivek
 ms.author: kvivek
-manager: amyla
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4218d231a6e079425eb1cc067c1760c473906e4a
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: 5847a9688ef657c1689480ee9fdbd4873a25bfa3
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091187"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115892"
 ---
 # <a name="client-api-form-context"></a>Contexto de formulario de la API del cliente
 

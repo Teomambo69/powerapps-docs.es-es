@@ -6,20 +6,20 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: JimDaly
-ms.author: jdaly
+author: Nkrb
+ms.author: nabuthuk
 manager: shilpas
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0ac5d6ec9527334b8e9ef82fcff9e37744967c16
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 7d6ae1ae1389631987eef030af698d57b2a4235e
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865585"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115648"
 ---
 # <a name="get-started-with-model-driven-apps-customization-using-code"></a>Introducción a la personalización de aplicaciones basada en modelos mediante código
 

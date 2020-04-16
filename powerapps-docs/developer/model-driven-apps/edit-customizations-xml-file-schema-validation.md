@@ -8,8 +8,8 @@ ms.custom:
 - ''
 ms.topic: article
 ms.assetid: b77d962e-6e3c-bd28-d03c-cf2e23cd742d
-author: JimDaly
-ms.author: jdaly
+author: Nkrb
+ms.author: nabuthuk
 manager: shilpas
 ms.reviewer: ''
 search.audienceType:
@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 340e068b4d4ecaba2a83d4b39a0d8d9300cb2f84
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2634fe9dcc9d0a68f200c2af0fcb47169fdbdb0c
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753616"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115844"
 ---
 # <a name="edit-the-customizations-xml-file-with-schema-validation"></a>Editar el archivo XML de personalizaciones con la validación de esquema
 

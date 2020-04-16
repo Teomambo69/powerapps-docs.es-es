@@ -23,11 +23,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 0f75c9c38b3fbd74f330de5e80a2c0f7df8d6e13
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109521"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124977"
 ---
 # <a name="set-managed-properties-in-common-data-service-metadata"></a>Establecer propiedades administradas en metadatos de Common Data Service 
 Puede controlar cuáles componentes de la solución administrada se pueden personalizar mediante el uso de propiedades administradas. Los ISV deberían permitir la personalización para los componentes de la solución cuando tenga sentido. Esto permite que las organizaciones personalicen la solución según sus requisitos únicos. Limite o elimine la personalización de los componentes críticos de la solución que ofrecen la funcionalidad básica para que pueda respaldarla y mantenerla de manera previsible. Para la mayoría de los entornos de desarrollo que no son ISV, recomendamos que no permita la personalización para sus componentes de solución administrada. 

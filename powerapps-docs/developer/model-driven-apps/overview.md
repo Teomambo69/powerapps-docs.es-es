@@ -2,7 +2,7 @@
 title: Información general para desarrolladores de aplicaciones basadas en modelos en Power Apps | Microsoft Docs
 description: Descubra cómo los desarrolladores pueden agregar valor a las aplicaciones basadas en modelos; tutorial; introducción para desarrolladores de aplicaciones basadas en modelos en Power Apps
 services: ''
-author: JimDaly
+author: Nkrb
 manager: kvivek
 editor: ''
 tags: ''
@@ -12,18 +12,18 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/01/2019
-ms.author: jdaly
+ms.author: nabuthuk
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3893874e1826c48c8d7d6b32cc042ffc72b9cc91
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d96b2676e1d5ab115234422181121c20e35607e1
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2863090"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115840"
 ---
 # <a name="model-driven-apps-developer-guide"></a>Manual para desarrolladores de aplicaciones basadas en modelos
 

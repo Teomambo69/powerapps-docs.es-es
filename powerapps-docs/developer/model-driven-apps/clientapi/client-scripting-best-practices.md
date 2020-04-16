@@ -8,18 +8,18 @@ applies_to:
 ms.assetid: 16271bd8-cfa8-4a7f-802a-60fbff7c3722
 author: KumarVivek
 ms.author: kvivek
-manager: amyla
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0ef08d16ad91292c5757bb1d95c5ccadd15b5128
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d4766cd0bfc48e79a39bb5da7c7048330fbcabfe
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749451"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115676"
 ---
 # <a name="best-practices-client-scripting-in-model-driven-apps"></a>Prácticas recomendadas: ejemplo de script en aplicaciones basadas en modelos
 

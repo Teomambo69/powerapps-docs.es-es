@@ -9,18 +9,18 @@ applies_to:
 ms.assetid: 14c5fbbc-98db-4e49-b245-2c84c1cd11cd
 author: mayadumesh
 ms.author: jdaly
-manager: amyla
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d64aa3a4802917f0ed03dec5c22cafaffcd5ce5f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c6d4cc24a527a84c19c61123f8a63e088e3f9c34
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753704"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115773"
 ---
 # <a name="get-started-with-virtual-entities"></a>Introducción a las entidades virtuales
 

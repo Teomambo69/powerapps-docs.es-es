@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2c60e3b149ae634364a0e0bca8fb2349c96c1aab
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 1f2faa63b75a6842ee73f74ac1ebabd36b24d383
+ms.sourcegitcommit: 551af7e0273862b28d9b2387671a4eeaf719eb37
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2875330"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3116698"
 ---
 # <a name="create-or-edit-a-model-driven-app-main-form-for-an-entity"></a>Crear o editar formularios principales de aplicaciones controladas por modelos 
 
@@ -35,7 +35,7 @@ En este tema aprenderá a crear o editar un formulario principal para una entida
 
 Al crear un nuevo formulario para una entidad, el tipo de formulario es Principal. Cuando se abre el formulario principal, es idéntico al formulario denominado Información. Puede agregar o editar campos, secciones, pestañas, navegación y propiedades asociadas al formulario y, a continuación, guardar el formulario.
 
-Cada formulario principal se compone de una o varias pestañas. Cada ficha tiene una o varias secciones. Cada sección contiene uno o varios campos o IFRAMES. Si desea basar su nuevo formulario en uno existente, puede clonar un formulario. 
+Cada formulario principal se compone de una o varias pestañas. Cada ficha tiene una o varias secciones. Cada sección contiene uno o más campos. Si desea basar su nuevo formulario en uno existente, puede clonar un formulario. 
 
 Compruebe que tiene el rol de seguridad de Administrador del sistema o de Personalizador del sistema o permisos equivalentes para realizar esta tarea.
 
@@ -43,48 +43,31 @@ Compruebe que tiene el rol de seguridad de Administrador del sistema o de Person
   
 1.   Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
-
-> [!IMPORTANT]
-> “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).   
-  
 2.  Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Formularios**. 
 
 3. Para crear un nuevo formulario principal, en la barra de herramientas seleccione **Agregar formulario** > **Formulario principal**.  
     \-O bien - Para editar un formulario principal existente, seleccione cualquiera de los formularios cuyo **Tipo** sea **Principal**.
   
 3.  Cambie el diseño del formulario de cualquiera de las siguientes maneras, según corresponda:
-    -   Adición de una ficha a un formulario
-    -   Adición de secciones a un formulario
-    -   Adición de campos a un formulario
-    -   Agregar o editar un IFRAME de formulario
-    -   Agregar o editar una subcuadrícula en un formulario
-    -   Agregar o editar un recurso web de formulario
-    -   Adición o edición de la navegación del formulario para las entidades relacionadas
-    -   Edición de encabezados y pies de página de formularios
-    -   Quitar una pestaña, sección, campo o IFRAME
-    -   Habilitar o deshabilitar el Asistente de formulario
+    - Adición de una ficha a un formulario
+    - Adición de secciones a un formulario
+    - Agregar un campo a un formulario
+    - Agregar o editar una subcuadrícula en un formulario
+    - Edición de encabezados y pies de página de formularios
+    - Quitar un campo de la sección pestaña
     
 4.  Edite las propiedades de las partes del formulario según sea necesario:
-    -   Edición de propiedades de formularios
-    -   Edición de las propiedades de campos de formulario
-    -   Edición de las propiedades de ficha
-    -   Edición de las propiedades de sección
+    - Edición de propiedades de formularios
+    - Edición de las propiedades de campos de formulario
+    - Edición de las propiedades de ficha
+    - Edición de las propiedades de sección
 
-5.  Agregue los scripts de eventos que sea necesario. 
+5.    Cuando haya terminado de editar el formulario, seleccione **Guardar** > **Guardar como**. Escriba un nombre para el formulario y, a continuación, seleccione **Aceptar**.
 
-6.  Determine qué roles de seguridad podrán ver el formulario. Más información: [Asignar roles de seguridad a un formulario](https://docs.microsoft.com/dynamics365/customer-engagement/admin/assign-security-roles-form)
-
-7.  *Muestre una vista previa del aspecto que tendrá el formulario principal y cómo funcionan los eventos:
-    - En la ficha **Inicio**, seleccione **Vista previa** y, a continuación, seleccione **Formulario de creación**, **Formulario de actualización** o **Formulario de sólo lectura**.
-    - Para cerrar el formulario Vista previa, en el menú **Archivo**, seleccione **Cerrar**.
-
-8.  Cuando haya terminado de editar el formulario, seleccione **Guardar como**. Escriba un nombre para el formulario y, a continuación, seleccione **Aceptar**.
-
-9.  Cuando haya completado las personalizaciones, publíquelas:
-    -   Para publicar las personalizaciones únicamente para el componente que está editando actualmente, en **Componentes**, haga clic en la entidad en la que ha estado trabajando, y haga clic en **Publicar**.
-    -   Para publicar personalizaciones de todos los componentes no publicados a la vez, en **Componentes**, haga clic en **Entidades** y, en la barra de comandos, haga clic en **Publicar todas las personalizaciones**.
-    
+6.    Cuando haya completado las personalizaciones, puede publicarlas: seleccione **Publicar**.
  
 ### <a name="next-steps"></a>Pasos siguientes  
+[Información general del diseñador de formularios controlado por modelos](form-designer-overview.md)
+
 [Información general de la interfaz de usuario del editor de formularios](form-editor-user-interface-legacy.md)
  

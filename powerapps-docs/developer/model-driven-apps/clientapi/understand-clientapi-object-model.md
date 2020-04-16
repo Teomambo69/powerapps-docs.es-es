@@ -8,18 +8,18 @@ applies_to:
 ms.assetid: 3335aec5-6b48-4ef6-8d49-2833b177f318
 author: KumarVivek
 ms.author: kvivek
-manager: amyla
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 87b842ce84c08b083ca4769914aa4652dcd1d41f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 68d6cf52bd70452ccc41e392fa84c9426c72673a
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749915"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115880"
 ---
 # <a name="understand-the-client-api-object-model"></a>Comprender el modelo de objetos de la API del cliente
 

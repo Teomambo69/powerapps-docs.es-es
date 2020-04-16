@@ -7,8 +7,8 @@ ms.service:
 - PowerApps
 ms.topic: article
 ms.assetid: fbb7ff68-e4be-d8c2-069f-6a4a69665b56
-author: JimDaly
-ms.author: jdaly
+author: Nkrb
+ms.author: nabuthuk
 manager: shilpas
 ms.reviewer: ''
 search.audienceType:
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 835378bb68adc7a90c84e2b1db1d48616aa59127
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 8f17a21544a1f218b7f3c21264e723bd3750a843
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883498"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115644"
 ---
 # <a name="define-ribbon-actions"></a>Definir acciones de la cinta de opciones
 

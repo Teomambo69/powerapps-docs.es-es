@@ -1,7 +1,7 @@
 ---
 title: Preguntas más frecuentes para el control de escala de tiempo (sección) en Power Apps | MicrosoftDocs
 description: Preguntas más frecuentes para el control de escala de tiempo (sección) en Power Apps
-ms.date: 02/03/2020
+ms.date: 03/10/2020
 ms.service: powerapps
 author: kabala123
 ms.assetid: 7F495EE1-1208-49DA-9B02-17855CEB2FDF
@@ -12,12 +12,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6556ee415f2ee3340f6e36f417a25299871c1860
-ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
+ms.openlocfilehash: c664ca490f3a03d02dfe273c26d061698242a6c3
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3013077"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3114386"
 ---
 # <a name="faqs-for-timeline-control"></a>Preguntas más frecuentes para control de escala de tiempo
 
@@ -98,6 +98,11 @@ Para mitigar el problema, muestre los botones en las definiciones de la barra de
 ## <a name="why-my-users-see-different-activities-and-records-in-their-my-activities-stream-in-the-dashboard"></a>¿Por qué mis usuarios ven actividades y registros diferentes en su secuencia Mis actividades en el panel?
 
 La secuencia **Mis actividades** en el panel muestra los registros y las actividades que son propiedad de un usuario determinado. Por ejemplo, el usuario **A** ve registros y actividades que son propiedad de **A** y el usuario **B** ve registros y actividades que son propiedad de **B**.
+
+
+## <a name="why-my-agents-see-the-filter-pane-even-when-the-expand-filter-pane-by-default-check-box-is-cleared"></a>¿Por qué mis agentes ven el panel de filtro incluso cuando la casilla de verificación Expandir panel de filtro de forma predeterminada está desactivada?
+
+Cuando la línea de tiempo se muestra en más de una columna, el panel de filtro se muestra como una columna junto a los registros de la línea de tiempo. Aunque haya despejado la casilla de verificación **Expandir panel de filtro por defecto** en las configuraciones de línea de tiempo, el panel de filtro siempre se mostrará a sus agentes.
 
 ## <a name="see-also"></a>Vea también
 

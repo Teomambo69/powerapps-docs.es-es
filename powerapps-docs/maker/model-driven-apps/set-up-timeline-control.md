@@ -1,7 +1,7 @@
 ---
 title: Configurar el control de escala de tiempo (sección) en PowerApps | MicrosoftDocs
 description: Aprender a configurar el control de escala de tiempo (sección) en PowerApps
-ms.date: 02/03/2020
+ms.date: 03/10/2020
 ms.service: powerapps
 author: kabala123
 ms.assetid: 7F495EE1-1208-49DA-9B02-17855CEB2FDF
@@ -12,12 +12,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8afb5427a74b879b0e407b1038705a0bbc15920b
-ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
+ms.openlocfilehash: 272eab58ed332f87a49eae275a98e4a4bdc69cc6
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3013122"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3114330"
 ---
 # <a name="set-up-timeline-section-control"></a>Configurar la sección de escala de tiempo (control)
 
@@ -86,7 +86,7 @@ Los módulos son Actividades, Publicaciones y Notas. Como personalizador, puede 
     |------------------------------------------|--------------------------------------------------------------|---------------------------|
     | Módulo predeterminado para la experiencia de creación | Seleccione el módulo para el que desea la experiencia de creación predeterminada en la escala de tiempo. <br><br> El valor predeterminado es **Notas**.  | Notas |
     | Mostrar panel de filtro | Seleccione la casilla si desea mostrar el icono de filtro para los usuarios. Si deja la casilla vacía, no habrá filtros para los usuarios. |  |
-    | Expandir panel del filtro de forma predeterminada | Seleccione la casilla, de forma predeterminada, si desea mostrar el panel de filtro en el modo expandido. |
+    | Expandir panel del filtro de forma predeterminada | Seleccione la casilla, de forma predeterminada, si desea mostrar el panel de filtro en el modo expandido. <br><br> **Nota:** cuando la línea de tiempo se muestra en más de una columna, el panel de filtro se muestra como una columna junto a los registros de la línea de tiempo. Aunque haya despejado la casilla de verificación **Expandir panel de filtro por defecto** en las configuraciones de línea de tiempo, el panel de filtro siempre se mostrará a sus agentes.|
     | Sort | Seleccione el orden de clasificación en función del cual se muestran los registros en la escala de tiempo. La ordenación se basa en el campo que elija para Actividades. Si no existe un campo para la publicación, las notas o la actividad, la ordenación se realiza en función del campo **Última actualización**. <br><br> El criterio de ordenación predeterminado es **Descendente**.  <br><br> **Nota:** cambiar el orden de clasificación no cambiará la propiedad de tiempo visualizada en el control de la escala de tiempo. Para personalizar el formulario de tarjeta de escala de tiempo, consulte [Personalizar el formulario de tarjeta](#customize-the-card-form).  | Descendente |
     | Número de resultados | El número máximo de registros que se muestran en la escala de tiempo antes de seleccionar la opción **Más**. Cada vez que selecciona la opción **Más**, la escala de tiempo muestra el número configurado de registros. Puede configurar un valor de 1 a 50. <br><br> El valor predeterminado es **10**. | 10 |
 
@@ -243,7 +243,7 @@ Por ejemplo, vea **Formulario de correo electrónico**.
 
 **Modo contraído de la tarjeta de correo electrónico**
 
-Los campos **1** y **2** de la sección **Encabezado** y los campos **3** y **4** de la sección **Detalles** se muestran en el modo contraído.
+Los campos **1** y **2** de la sección **Encabezado** y los campos **3** y **4** de la sección **Detalles** se muestran en el modo contraído. Los campos **3** y **4** en el modo contraído no muestran contenido en el formato de texto enriquecido.
 
    > [!div class=mx-imgBorder] 
    > ![Tarjeta de correo electrónico en modo contraído](media/email-card-collapsed.png "Tarjeta de correo electrónico en modo contraído")
@@ -257,7 +257,7 @@ Los campos **1** y **2** de la sección **Encabezado** y los campos **3**
 
 **Modo expandido de la tarjeta de correo electrónico**
 
-El campo **5** de la sección **Detalles** se muestra en el modo expandido.
+El campo **5** de la sección **Detalles** se muestra en el modo expandido. El campo **3** en el modo expandido no muestra contenido en el formato de texto enriquecido, mientras que el campo **4** en el modo expandido muestra contenidos en el formato de texto enriquecido.
 
    > [!div class=mx-imgBorder] 
    > ![Tarjeta de correo electrónico en modo expandido](media/email-card-expanded.png "Tarjeta de correo electrónico en modo expandido")

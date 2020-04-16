@@ -20,18 +20,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 10ab6feca7843d64d20938561d44748fc6756768
-ms.sourcegitcommit: dc379bede57da58b5787eda5437eb94b662e21ed
+ms.openlocfilehash: 1b5d71f8683b5cb86f79d90540dcf5aa99f6415d
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3028359"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3114242"
 ---
 # <a name="solution-layers"></a>Capas de las soluciones
 
-Existen soluciones administradas y no administradas en diferentes capas dentro de un entorno de Common Data Service. En Common Data Service, hay dos capas distintas:  
+Existen soluciones administradas y no administradas en diferentes niveles dentro de un entorno de Common Data Service. En Common Data Service, hay dos niveles de capas distintas:  
 - Capa no gestionada. Todas las soluciones no administradas importadas y las personalizaciones no administradas existen en esta capa. La capa no administrada es una sola capa.  
-- Capa administrada. Todas las soluciones administradas importadas y la solución del sistema existen en esta capa. Cuando se instalan varias soluciones administradas, la primera que se instala aparece debajo de la solución administrada instalada más tarde. Esto significa que la segunda solución instalada puede personalizar la que se ha instalado antes. Cuando dos soluciones administradas tienen definiciones en conflicto, la regla general es la "última gana". Si desinstala una solución administrada, la solución administrada siguiente toma efecto. Si desinstala todas las soluciones administradas, el comportamiento predeterminado definido en la solución del sistema se aplica. En la base de la capa administrada se encuentra la capa del sistema. La capa del sistema contiene la solución del sistema, que incluye todas las entidades y componentes estándar. La solución del sistema define lo que se puede y no se puede personalizar mediante propiedades administradas. Los editores de soluciones administradas tienen la misma capacidad de restringir su capacidad de personalización de los componentes de la solución que agregan a su solución. Puede personalizar cualquier componente de la solución que no tenga propiedades administradas que le impidan personalizarlo. Más información: [Establecer propiedades administradas en metadatos de Common Data Service](set-managed-properties-metadata.md) 
+- Capas administradas. Todas las soluciones administradas importadas y la solución del sistema existen en este nivel. Cuando se instalan varias soluciones administradas, la última que se instala aparece sobre la solución administrada instalada anteriormente. Esto significa que la segunda solución instalada puede personalizar la que se ha instalado antes. Cuando dos soluciones administradas tienen definiciones en conflicto, el comportamiento del tiempo de ejecución es "El último gana" o se implementa una lógica de fusión.  Si desinstala una solución administrada, la solución administrada siguiente toma efecto. Si desinstala todas las soluciones administradas, el comportamiento predeterminado definido en la solución del sistema se aplica. En la base de la del nivel de capas administradas se encuentra la capa del sistema. La capa del sistema contiene las entidades y componentes necesarios para que la plataforma funcione. 
 
 ![Capas de las soluciones](media/solution-layers.png)
 

@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/22/2019
+ms.date: 03/11/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: feb982b47ddcb2212e43c55f2e48e9dd9cb3b3e1
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: 372b710115609115e8090d21821c45a1037472ab
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977069"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3125593"
 ---
 # <a name="about-entity-forms"></a>Acerca de formularios de entidad
 
@@ -54,35 +54,35 @@ Para proteger los formularios, debe crear permisos de entidad que determinan el 
 |-----|----------|
 |Nombre|Nombre descriptivo del registro. Este campo es obligatorio.|
 |Nombre de entidad|El nombre de la entidad desde la que se cargará el formulario. Este campo es obligatorio.|
-|Nombre del formulario| El nombre del formulario de la entidad de destino que se va a representar. Este campo es obligatorio.|
-|Nombre de pestaña|  Nombre opcional de una pestaña en un formulario para una entidad especificada que debe ser representada.|
+|Nombre del formulario|    El nombre del formulario de la entidad de destino que se va a representar. Este campo es obligatorio.|
+|Nombre de pestaña|    Nombre opcional de una pestaña en un formulario para una entidad especificada que debe ser representada.|
 |Modo|Uno de los siguientes valores:<ul><li>Inserción</li><li>Edición</li><li>Solo lectura</li></ul>Si selecciona _Insertar_ indica que el formulario debe insertar un nuevo registro tras el envío. Especificar _Editar_ indica que el formulario deben modificar un registro existente. Si selecciona _ReadOnly_ indica que el formulario debe mostrar el formulario no editable de un registro existente. _Editar_ y _ReadOnly_ requieren que exista un registro de origen y los parámetros especificados en los campos 'Tipo de origen de registro' y 'Nombre del parámetro de cadena de consulta de id. de registro' para seleccionar el registro adecuado cuando el formulario se carga en el portal.|
 |Tipo de origen de registro|Uno de los siguientes valores:<ul><li>Cadena de consulta</li><li>Usuario actual del portal</li><li>Registro asociado al usuario actual del portal</li></ul>Si selecciona _Cadena de consulta_ se requiere un nombre de parámetro que se debe proporcionar en la cadena de consulta de la dirección URL del formulario. Esto se puede especificar en el campo 'Nombre del parámetro de cadena de consulta de id. de registro'.<br>Si selecciona _Usuario actual del portal_ se recuperará el registro de usuario del portal para el usuario autenticado actual.<br>Si selecciona _Registro asociado al usuario actual del portal_ se recuperará el registro de usuario del portal para el usuario actual autenticado y después se recuperará el registro para la relación dada especificada por el campo 'Nombre de relación'.|
-|Nombre del parámetro de cadena de consulta de id. de registro| Un nombre de parámetro proporcionado en la cadena de consulta de la dirección URL de la página web que contienen este formulario de entidad.|
-|Nombre de la relación| Requerido cuando Tipo de origen del registro es Registro asociado al usuario actual del portal. El nombre lógico de la relación entre el registro de usuario del portal actual y el registro de destino. Esto debe devolver el mismo tipo de entidad especificado por el campo Nombre de entidad.|
-|Permitir creación si es nulo|  Un valor booleano opcional disponible cuando Tipo de origen del registro es Registro asociado al usuario actual del portal. Indica que si no existe el registro relacionado, se permite que el usuario lo cree la primera vez, en caso contrario se lanzará una excepción si el registro no existe aún, pues el formulario necesita un registro con el que enlazar datos.|
-|Habilitar permisos de entidad| Hará que el formulario respete permisos de entidad. El valor predeterminado es false por razones de compatibilidad con versiones anteriores. Si se establece como true, SE REQUERIRÁN permisos explícitos para cualquier usuario que desee obtener acceso al formulario.|
+|Nombre del parámetro de cadena de consulta de id. de registro|    Un nombre de parámetro proporcionado en la cadena de consulta de la dirección URL de la página web que contienen este formulario de entidad.|
+|Nombre de la relación|    Requerido cuando Tipo de origen del registro es Registro asociado al usuario actual del portal. El nombre lógico de la relación entre el registro de usuario del portal actual y el registro de destino. Esto debe devolver el mismo tipo de entidad especificado por el campo Nombre de entidad.|
+|Permitir creación si es nulo|    Un valor booleano opcional disponible cuando Tipo de origen del registro es Registro asociado al usuario actual del portal. Indica que si no existe el registro relacionado, se permite que el usuario lo cree la primera vez, en caso contrario se lanzará una excepción si el registro no existe aún, pues el formulario necesita un registro con el que enlazar datos.|
+|Habilitar permisos de entidad|    Hará que el formulario respete permisos de entidad. El valor predeterminado es false por razones de compatibilidad con versiones anteriores. Si se establece como true, SE REQUERIRÁN permisos explícitos para cualquier usuario que desee obtener acceso al formulario.|
 |||
 
 ### <a name="form-options"></a>Opciones de formulario
 
 |Nombre|Descripción|
 |----|---------|
-|Agregar captcha|   Muestra captcha.|
-|Mostrar captcha para usuarios autenticados|  Muestra captcha para usuarios autenticados.|
-|Grupo de validación|  El nombre de grupo asignado a los controles de entrada para evaluar entrada válida de grupos con nombre.|
-|Generar automáticamente pasos desde pestañas| Indica que múltiples pestañas en un formulario de entidad se mostrarán con cada pestaña como paso secuencial que comienza con la primera pestaña y continúa hasta recorrer todas las pestañas y tras el envío final se inserta un registro. De forma predeterminada no está seleccionado. El valor predeterminado indica que sólo un formulario o pestaña debe ser representado para el paso actual. Si el Nombre de pestaña no se especifica, aparecerá la primera pestaña.|
-|Representar recursos web insertados|   Elimina el iframe que abarca un recurso web en un formulario de entidad .|
-|Informaciones sobre herramientas habilitadas|  La información sobre herramientas se establece utilizando la descripción del atributo de la entidad de destino.|
-|Mostrar campos no compatibles|   Todos los campos son compatibles actualmente. Esto se reserva para los cambios potenciales que Common Data Service pueda hacer en los tipos de campo.|
-|Establecer campos recomendados como obligatorios|    Hace que sean obligatorios todos los atributos que tengan el nivel de requisito del campo establecido en 'Recomendado por la empresa'.|
-|Hacer que todos los campos sean obligatorios|  Hace que sean obligatorios todos los campos independientemente del nivel de requisito del campo.|
-|Clase CSS de resumen de validación|  Nombre de clase CSS asignado el resumen de validación. El valor predeterminado es 'validation-summary alert alert-error alert-block'|
-|Habilitar vínculos de resumen de validación|   Un valor booleano de true o false de que indica si los vínculos de delimitador deben representarse en el resumen de validación para desplazarse al campo que contiene un error. El valor predeterminado es true.|
-|Texto del vínculo de resumen de validación|  La etiqueta asignada a los vínculos de resumen de validación. El valor predeterminado es 'haga clic aquí'.|
+|Agregar captcha|    Muestra captcha.|
+|Mostrar captcha para usuarios autenticados|    Muestra captcha para usuarios autenticados.|
+|Grupo de validación|    El nombre de grupo asignado a los controles de entrada para evaluar entrada válida de grupos con nombre.|
+|Generar automáticamente pasos desde pestañas|    Indica que múltiples pestañas en un formulario de entidad se mostrarán con cada pestaña como paso secuencial que comienza con la primera pestaña y continúa hasta recorrer todas las pestañas y tras el envío final se inserta un registro. De forma predeterminada no está seleccionado. El valor predeterminado indica que sólo un formulario o pestaña debe ser representado para el paso actual. Si el Nombre de pestaña no se especifica, aparecerá la primera pestaña.|
+|Representar recursos web insertados|    Elimina el iframe que abarca un recurso web en un formulario de entidad .|
+|Informaciones sobre herramientas habilitadas|    La información sobre herramientas se establece utilizando la descripción del atributo de la entidad de destino.|
+|Mostrar campos no compatibles|    Todos los campos son compatibles actualmente. Esto se reserva para los cambios potenciales que Common Data Service pueda hacer en los tipos de campo.|
+|Establecer campos recomendados como obligatorios|     Hace que sean obligatorios todos los atributos que tengan el nivel de requisito del campo establecido en 'Recomendado por la empresa'.|
+|Hacer que todos los campos sean obligatorios|     Hace que sean obligatorios todos los campos independientemente del nivel de requisito del campo.|
+|Clase CSS de resumen de validación|    Nombre de clase CSS asignado el resumen de validación. El valor predeterminado es 'validation-summary alert alert-error alert-block'|
+|Habilitar vínculos de resumen de validación|    Un valor booleano de true o false de que indica si los vínculos de delimitador deben representarse en el resumen de validación para desplazarse al campo que contiene un error. El valor predeterminado es true.|
+|Texto del vínculo de resumen de validación|    La etiqueta asignada a los vínculos de resumen de validación. El valor predeterminado es 'haga clic aquí'.|
 |Texto del encabezado de resumen de validación|    La etiqueta asignada al encabezado de resumen de validación.|
-|Instrucciones|  Instrucciones para trabajar con el formulario.|
-|Mensaje No se encuentra el registro|  Mensaje para mostrar cuando no se encuentra un registro.|
+|Instrucciones|    Instrucciones para trabajar con el formulario.|
+|Mensaje No se encuentra el registro|    Mensaje para mostrar cuando no se encuentra un registro.|
 |||
 
 ### <a name="on-success-settings"></a>Configuración en caso de éxito
@@ -90,15 +90,15 @@ Para proteger los formularios, debe crear permisos de entidad que determinan el 
 |Nombre|Descripción|
 |----|----------|
 |En caso de éxito|    Uno de los siguientes valores:<ul><li>Mostrar mensaje de correcto (opción predeterminada)</li><li>Redirigir</li></ul>|
-|Ocultar formulario en caso de éxito|  Requiere que En caso de éxito se establezca como Mostrar mensaje de correcto. Cuando se selecciona, el formulario está oculto tras el envío correcto del formulario.|
-|Mensaje de correcto|   Requiere que En caso de éxito se establezca como Mostrar mensaje de correcto. El mensaje se muestra al usuario tras el envío correcto. Si no se especifica uno se mostrará un mensaje predeterminado ("Envío completado correctamente”). Para cada paquete de idioma instalado y activado para la organización un campo estará disponible para especificar el mensaje en el idioma asociado.|
+|Ocultar formulario en caso de éxito|    Requiere que En caso de éxito se establezca como Mostrar mensaje de correcto. Cuando se selecciona, el formulario está oculto tras el envío correcto del formulario.|
+|Mensaje de correcto|    Requiere que En caso de éxito se establezca como Mostrar mensaje de correcto. El mensaje se muestra al usuario tras el envío correcto. Si no se especifica uno se mostrará un mensaje predeterminado ("Envío completado correctamente”). Para cada paquete de idioma instalado y activado para la organización un campo estará disponible para especificar el mensaje en el idioma asociado.|
 |Dirección URL externa|Requiere establecer En caso de éxito como Redirigir. Especifique una dirección URL a un recurso externo de la web.
 |o página web|Requiere establecer En caso de éxito como Redirigir. Seleccione una página web desde el sitio web actual.|
-|Anexar cadena de consulta existente|  Requiere establecer En caso de éxito como Redirigir. Cuando seleccionada esta opción, los parámetros de cadena de consulta existente se agregarán a la dirección URL de destino antes del redireccionamiento.|
-|Anexar id. de registro a la cadena de consulta|  Requiere establecer En caso de éxito como Redirigir. Cuando seleccionada esta opción, el Id. del registro creado se anexa a cadena de consulta de la dirección URL a la que se está realizando el redireccionamiento.|
+|Anexar cadena de consulta existente|    Requiere establecer En caso de éxito como Redirigir. Cuando seleccionada esta opción, los parámetros de cadena de consulta existente se agregarán a la dirección URL de destino antes del redireccionamiento.|
+|Anexar id. de registro a la cadena de consulta|     Requiere establecer En caso de éxito como Redirigir. Cuando seleccionada esta opción, el Id. del registro creado se anexa a cadena de consulta de la dirección URL a la que se está realizando el redireccionamiento.|
 |Nombre del parámetro de cadena de consulta de id. de registro|     Requiere establecer En caso de éxito como Redirigir. El nombre del parámetro Id. de la cadena de consulta de la dirección URL a la que se está realizando el redireccionamiento.|
 |Anexar cadena de consulta personalizada|    Requiere establecer En caso de éxito como Redirigir. Una cadena personalizada que se puede anexar a la cadena de consulta existente de la dirección URL de redireccionamiento.|
-|Anexar valor de atributo a la cadena de consulta: nombre de parámetro|   Requiere establecer En caso de éxito como Redirigir. Un nombre para dar al parámetro que se correlaciona con el valor de atributo de la entidad de destino que se anexa a cadena de consulta de la dirección URL de redireccionamiento.|
+|Anexar valor de atributo a la cadena de consulta: nombre de parámetro|    Requiere establecer En caso de éxito como Redirigir. Un nombre para dar al parámetro que se correlaciona con el valor de atributo de la entidad de destino que se anexa a cadena de consulta de la dirección URL de redireccionamiento.|
 |Anexar valor de atributo a la cadena de consulta: nombre lógico de atributo|Requiere establecer En caso de éxito como Redirigir. Un nombre lógico de un atributo en la entidad de destino para obtener el valor que se anexa a cadena de consulta de la dirección URL de redireccionamiento.|
 |||
 
@@ -106,21 +106,21 @@ Para proteger los formularios, debe crear permisos de entidad que determinan el 
 
 |Nombre|Descripción|
 |----|----------|
-|Asociar usuario actual del portal| Indica que el registro del usuario que ha iniciado sesión actualmente se debe asociar al registro de la entidad de destino.|
+|Asociar usuario actual del portal|    Indica que el registro del usuario que ha iniciado sesión actualmente se debe asociar al registro de la entidad de destino.|
 |Atributo de búsqueda de usuarios del portal de la entidad de destino|    El nombre lógico del atributo de la entidad de destino que almacena el usuario del portal.|
-|Es grupo de actividad| Valor booleano que indica si el Atributo de búsqueda de usuarios del portal de la entidad de destino es un tipo del grupo de actividad.|
-|Adjuntar archivo|   Seleccione esta opción para que el formulario incluya un control de carga de archivos en la parte inferior del formulario para permitir adjuntar un archivo al registro. Debe elegir **Habilitar permisos de entidad** y asignar los permisos Crear, Anexar y Anexar a permisos a la entidad Anotación para permitir que un usuario adjunte archivos al formulario. Más información: [Asignar permisos de entidades](assign-entity-permissions.md)<br>**Nota**: Si un usuario no tiene los permisos adecuados para cargar un archivo o no está seleccionada Habilitar permisos de entidad, la opción para cargar un archivo no se mostrará en el formulario.|
-|Ubicación de almacenamiento de archivos adjuntos|  Opciones: Datos adjuntos de nota, Almacenamiento de blobs de Azure. Si su organización está configurada para utilizar Azure Storage, puede elegir almacenar los archivos cargados para este formulario de entidad allí. De lo contrario, los archivos se almacenarán como Datos adjuntos de nota.|
+|Es grupo de actividad|    Valor booleano que indica si el Atributo de búsqueda de usuarios del portal de la entidad de destino es un tipo del grupo de actividad.|
+|Adjuntar archivo |  Seleccionar para que el formulario incluya un control de carga de archivos en la parte inferior del formulario para permitir adjuntar un archivo al registro. <br> **Nota**: Portales con [versión 9.2.2.x y posterior](https://support.microsoft.com/help/4541765/power-apps-portals-version-9-2-2-x-release) no requieren habilitar **Habilitar permisos de entidad** en el formulario de entidad para adjuntar archivos. Sin embargo, si lo ha seleccionado, debe asegurarse de que se otorguen los privilegios apropiados en la entidad principal y la entidad de anotación para mostrar el botón **Adjuntar archivo** en el formulario. La entidad de anotación debe tener al menos privilegios **Crear** y **Adjuntar** privilegios y la entidad matriz debe tener el correspondiente privilegio **AppendTo**. Dependiendo de si tiene un formulario de creación o actualización, también puede necesitar **Crear**, **Leer** y **Escribir** privilegios para completar el escenario del formulario. |
+|Ubicación de almacenamiento de archivos adjuntos|    Opciones: Datos adjuntos de nota, Almacenamiento de blobs de Azure. Si su organización está configurada para utilizar Azure Storage, puede elegir almacenar los archivos cargados para este formulario de entidad allí. De lo contrario, los archivos se almacenarán como Datos adjuntos de nota.|
 |Permitir varios archivos|Valor booleano que indica si el usuario puede cargar más de un archivo.|
 |Aceptar|    El atributo de aceptación especifica los tipos MIME de archivos que el servidor acepta a través de la carga de archivos. Para especificar más de un valor, separe los valores con comas (por ejemplo, audio/*,video/*,image/*).|
-|Etiqueta| Texto mostrado junto al control de carga de archivos. Para cada paquete de idioma instalado y activado para la organización un campo estará disponible para especificar el mensaje en el idioma asociado.|
+|Etiqueta|    Texto mostrado junto al control de carga de archivos. Para cada paquete de idioma instalado y activado para la organización un campo estará disponible para especificar el mensaje en el idioma asociado.|
 |Obligatorio adjuntar archivo| Hace que avancen los datos adjuntos de un archivo requerido.|
 |Mensaje de error obligatorio|El mensaje mostrado durante la validación de formulario si Es obligatorio es true y el usuario no ha adjuntado un archivo. Para cada paquete de idioma instalado y activado para la organización un campo estará disponible para especificar el mensaje en el idioma asociado.|
-|Restringir archivos a los tipos aceptados|  Fuerza validación en el campo de Aceptar. Si no se selecciona, el atributo de Aceptar se usará únicamente como sugerencia para el diálogo de carga de archivos.|
+|Restringir archivos a los tipos aceptados|    Fuerza validación en el campo de Aceptar. Si no se selecciona, el atributo de Aceptar se usará únicamente como sugerencia para el diálogo de carga de archivos.|
 |Mensaje de error de tipo de archivo|El mensaje mostrado durante la validación de formulario si Restringir archivos a los tipos aceptados es True y el usuario ha intentado cargar un tipo de archivo no válido. Para cada paquete de idioma instalado y activado para la organización un campo estará disponible para especificar el mensaje en el idioma asociado.|
-|Tamaño máximo de archivo (en kilobytes)|  Fuerza la validación en el tamaño máximo permitido del archivo cargado.|
-|Mensaje de error de tamaño de archivo|   El mensaje mostrado durante la validación de formulario si Tamaño máximo de archivo (en kilobytes) es True y el usuario ha intentado cargar un archivo que es demasiado grande. Para cada paquete de idioma instalado y activado para la organización un campo estará disponible para especificar el mensaje en el idioma asociado.|
-|JavaScript personalizado| Un bloque personalizado de JavaScript que se agregará a la parte inferior de la página justo delante el elemento de etiqueta de formulario de cierre. El identificador de entrada HTML de un campo de entidad se define con el nombre lógico del atributo. Esto facilita la selección de un campo, el establecimiento de valores u otras manipulaciones del lado del cliente con jQuery.<br>`$(document).ready(function() {   $(“#address1_stateorprovince”).val(“Saskatchewan”);});`|
+|Tamaño máximo de archivo (en kilobytes)|    Fuerza la validación en el tamaño máximo permitido del archivo cargado.|
+|Mensaje de error de tamaño de archivo|    El mensaje mostrado durante la validación de formulario si Tamaño máximo de archivo (en kilobytes) es True y el usuario ha intentado cargar un archivo que es demasiado grande. Para cada paquete de idioma instalado y activado para la organización un campo estará disponible para especificar el mensaje en el idioma asociado.|
+|JavaScript personalizado|    Un bloque personalizado de JavaScript que se agregará a la parte inferior de la página justo delante el elemento de etiqueta de formulario de cierre. El identificador de entrada HTML de un campo de entidad se define con el nombre lógico del atributo. Esto facilita la selección de un campo, el establecimiento de valores u otras manipulaciones del lado del cliente con jQuery.<br>`$(document).ready(function() {   $("#address1_stateorprovince").val("Saskatchewan");});`|
 |||
 
 ### <a name="entity-reference"></a>Referencia de entidad
@@ -135,14 +135,14 @@ Esto proporciona una forma de asociar el registro actual que crea o actualiza el
 |Nombre de la relación|El Nombre de definición de relación para una determinada relación entre dos tipos de entidad.|
 |Nombre lógico de la entidad|El nombre lógico de la entidad de referencia.|
 |Nombre lógico del atributo de búsqueda de destinos|Nombre lógico del atributo de búsqueda en la entidad de destino que se crea o actualiza.|
-|Rellenar campo de búsqueda| Si la búsqueda relativa a la entidad de referencia se encuentra en el formulario, al activar este valor se completará el campo del formulario con el valor recuperado mediante el valor siguiente.|
-|Tipo de origen de entidad de referencia|  Uno de los siguientes valores:<ul><li>Cadena de consulta</li><li>Usuario actual del portal</li><li>Resultado del paso anterior</li></ul> Si selecciona _Cadena de consulta_ se requiere un nombre de parámetro que se debe proporcionar en la cadena de consulta de la dirección URL del formulario. Esto se puede especificar en el campo **Nombre de cadena de consulta**. Si este parámetro es la clave principal, seleccione Sí para **La cadena de consulta es la clave principal**, en caso contrario, seleccione No y proporcione el nombre lógico del atributo de la entidad de destino para consultar por lo especificado en el campo **Nombre lógico del atributo de consulta**.  Si selecciona Usuario actual del portal se recuperará el registro de contacto para el usuario autenticado actual. Al seleccionar Resultado del paso anterior se recuperará el registro creado como resultado del paso antes del paso actual o de un paso específico basado en el paso asociado con el paso de origen de entidad.|
-|Paso de entidad de referencia| El registro del paso del formulario web de un paso anterior para recuperar la entidad creada o modificada en dicho paso para asociarlo con el registro de este paso actual.|
-|Nombre de cadena de consulta| Nombre de parámetro proporcionado en la cadena de consulta de la dirección URL de la página web que contienen el formulario web.|
-|La cadena de consulta es la clave principal|   Sí indica que el valor de cadena de consulta es el valor de clave principal. No indica que el valor de cadena de consulta es un tipo de atributo distinto de la clave principal.|
-|Nombre lógico del atributo de consulta|  Nombre lógico del atributo para consultar el registro.|
-|Mostrar detalles de solo lectura| Indica que un formulario debe representarse en la parte superior de la página que muestra información de solo lectura referente al registro de referencia. Requiere un nombre de formulario.|
-|Nombre del formulario| El nombre del formulario de la entidad de referencia que debe utilizarse para mostrar detalles de solo lectura.|
+|Rellenar campo de búsqueda|    Si la búsqueda relativa a la entidad de referencia se encuentra en el formulario, al activar este valor se completará el campo del formulario con el valor recuperado mediante el valor siguiente.|
+|Tipo de origen de entidad de referencia|    Uno de los siguientes valores:<ul><li>Cadena de consulta</li><li>Usuario actual del portal</li><li>Resultado del paso anterior</li></ul> Si selecciona _Cadena de consulta_ se requiere un nombre de parámetro que se debe proporcionar en la cadena de consulta de la dirección URL del formulario. Esto se puede especificar en el campo **Nombre de cadena de consulta**. Si este parámetro es la clave principal, seleccione Sí para **La cadena de consulta es la clave principal**, en caso contrario, seleccione No y proporcione el nombre lógico del atributo de la entidad de destino para consultar por lo especificado en el campo **Nombre lógico del atributo de consulta**.  Si selecciona Usuario actual del portal se recuperará el registro de contacto para el usuario autenticado actual. Al seleccionar Resultado del paso anterior se recuperará el registro creado como resultado del paso antes del paso actual o de un paso específico basado en el paso asociado con el paso de origen de entidad.|
+|Paso de entidad de referencia|    El registro del paso del formulario web de un paso anterior para recuperar la entidad creada o modificada en dicho paso para asociarlo con el registro de este paso actual.|
+|Nombre de cadena de consulta|    Nombre de parámetro proporcionado en la cadena de consulta de la dirección URL de la página web que contienen el formulario web.|
+|La cadena de consulta es la clave principal|    Sí indica que el valor de cadena de consulta es el valor de clave principal. No indica que el valor de cadena de consulta es un tipo de atributo distinto de la clave principal.|
+|Nombre lógico del atributo de consulta|    Nombre lógico del atributo para consultar el registro.|
+|Mostrar detalles de solo lectura|    Indica que un formulario debe representarse en la parte superior de la página que muestra información de solo lectura referente al registro de referencia. Requiere un nombre de formulario.|
+|Nombre del formulario|    El nombre del formulario de la entidad de referencia que debe utilizarse para mostrar detalles de solo lectura.|
 |||
 
 
@@ -188,6 +188,33 @@ El control de mapa del formulario requiere configuración adicional para indicar
 > [!Note]
 > - El campo de dirección de un formulario de entidad de solo lectura se reemplaza por el mapa si la ubicación geográfica está habilitada.
 > - La sección de ubicación geográfica no podrá verse en el entorno de la nube soberana alemana. Si un usuario ha habilitado la ubicación geográfica con otro formulario, no se mostrarán durante la representación en portal.
+
+## <a name="request-validation"></a>Validación de solicitud
+
+[Validación de solicitud](https://docs.microsoft.com/aspnet/whitepapers/request-validation), una característica de ASP.NET desde la versión 1.1, evita que el servidor acepte contenido que contenga HTML sin codificar. Esta característica está diseñada para ayudar a prevenir algunos ataques de inyección de script mediante los cuales el código de script del cliente o HTML pueden enviarse sin saberlo a un servidor, almacenarse y luego presentarse a otros usuarios. Seguimos recomendando encarecidamente que valide todos los datos de entrada y que los codifique en HTML cuando sea apropiado.
+
+De forma predeterminada, la validación de solicitud está habilitada en el portal, lo que genera el siguiente error genérico si introduce código de script sin codificación HTML en los campos del formulario de entidad:
+
+![Error de validación de solicitud](../media/request-validation-error.png)
+
+Para deshabilitar la validación de solicitud, siga estos pasos:
+
+1. Vaya a [configuración de portal](https://docs.microsoft.com/powerapps/maker/portals/manage-existing-portals#settings) y seleccione **Configuraciones de sitios**.
+
+1. Seleccione **Nuevo**.
+
+1. Escribe el nombre como **DisableValidationWebTemplate**.
+
+1. Seleccione el registro del sitio web apropiado.
+
+1. Escriba el valor como **true**. De forma predeterminada, la configuración es **false**, lo que permite la validación de la solicitud.
+
+1. Escriba la descripción adecuada.
+
+1. Seleccione **Guardar y cerrar**.
+
+> [!CAUTION]
+> Cuando la validación de solicitud está deshabitada, el contenido se puede enviar a una página. Debe asegurarse de que el contenido se codifica o procesa correctamente.
 
 ### <a name="see-also"></a>Vea también
 

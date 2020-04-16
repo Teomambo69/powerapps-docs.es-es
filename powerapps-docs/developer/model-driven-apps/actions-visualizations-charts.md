@@ -6,8 +6,8 @@ ms.date: 10/31/2018
 ms.service: powerapps
 ms.topic: article
 ms.assetid: c7eb3bdf-9d6f-9bcc-8114-4c3dc5be2976
-author: JimDaly
-ms.author: jdaly
+author: Nkrb
+ms.author: nabuthuk
 manager: shilpas
 ms.reviewer: ''
 search.audienceType:
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5681b80b28a1691aa94be960a464c6c63ce04db4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 97c11000f1f36a9356520913270b75e24a35b751
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749924"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115904"
 ---
 # <a name="actions-on-visualizations-charts"></a>Acciones en visualizaciones (gráficos)
 

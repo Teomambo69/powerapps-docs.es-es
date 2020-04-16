@@ -8,18 +8,18 @@ applies_to:
 ms.assetid: 3edad039-4397-4984-a29b-9307a7a2aaee
 author: KumarVivek
 ms.author: kvivek
-manager: amyla
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2b95ef2604b226629f87e37f5a54e79447d1a494
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f0441d5a96a3e35eb28f77c726591a6634be9704
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749450"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115672"
 ---
 # <a name="debug-your-javascript-code-for-model-driven-apps"></a>Depuración del código JavaScript para aplicaciones basadas en modelos
 

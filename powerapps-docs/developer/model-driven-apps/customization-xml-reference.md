@@ -6,8 +6,8 @@ ms.date: 10/31/2018
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 864699de-c22f-3504-f120-84ca5a4aeca6
-author: JimDaly
-ms.author: jdaly
+author: Nkrb
+ms.author: nabuthuk
 manager: shilpas
 ms.reviewer: ''
 search.audienceType:
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a5e4a9a44c7b3dcfb7131e5782bc680c114665e7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0006367c852d5f3490c4c63cc5b923b952f997e8
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749625"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115860"
 ---
 # <a name="customization-xml-reference"></a>Referencia de XML de personalización
 

@@ -9,18 +9,18 @@ applies_to:
 ms.assetid: ''
 author: KumarVivek
 ms.author: kvivek
-manager: amyla
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b4e2d49c8017011a9a7a8682843612533698990b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e26ed387ca3ac233cd8080357c8a500d32f3d83e
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749449"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115668"
 ---
 # <a name="client-api-reference-for-model-driven-apps"></a>Referencia API de cliente para aplicaciones basadas en modelos
 

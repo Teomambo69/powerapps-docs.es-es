@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.assetid: 63600a55-a1f0-491f-83f6-b3252566d27e
 author: KumarVivek
 ms.author: kvivek
-manager: amyla
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
-ms.openlocfilehash: 520079abf73c0367628de3bca01b316554b3af8c
-ms.sourcegitcommit: 8f32eed48adf4b24b9ca607bbf6db3d19749c46f
+ms.openlocfilehash: 165fedbd6bb8790fac6b1c3b1c4ac1814f31c7d6
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "2830527"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115684"
 ---
 # <a name="quick-start-sample-retrieve-common-data-service-environements-using-online-management-api"></a>Ejemplo de inicio rápido: Recuperar entornos de Common Data Service mediante la API de administración en línea 
 

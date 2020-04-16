@@ -23,11 +23,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 309b6721d60d06e81926bfc0f97ff192f936686a
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3108819"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3125461"
 ---
 # <a name="solutions-overview"></a>Información general de las soluciones  
 

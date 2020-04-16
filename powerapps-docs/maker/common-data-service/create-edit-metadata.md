@@ -23,11 +23,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 3aeb07c29178570ca17426cca46dd7cbc73a2aca
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3108810"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3125945"
 ---
 # <a name="entities-and-metadata-in-common-data-service"></a>Entidades y metadatos en Common Data Service
 

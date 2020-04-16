@@ -9,18 +9,18 @@ applies_to:
 ms.assetid: d329dade-16c5-46e9-8dec-4b8efb996d22
 author: mayadumesh
 ms.author: jdaly
-manager: amyla
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 50223ab21a885a43c6dcb91285545e67b43c144c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 22de24c208d3df119de4c9312087a4c37531ad48
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749518"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115776"
 ---
 # <a name="custom-virtual-entity-data-providers"></a>Proveedores de datos de entidad virtuales personalizados
 

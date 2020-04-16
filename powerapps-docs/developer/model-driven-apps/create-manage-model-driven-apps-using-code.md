@@ -6,8 +6,8 @@ ms.date: 03/04/2019
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 4261c476-2eff-10e3-a334-d02e0cbbb9d5
-author: JimDaly
-ms.author: jdaly
+author: Nkrb
+ms.author: nabuthuk
 manager: shilpas
 ms.reviewer: ''
 search.audienceType:
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bffa59c11805b803997e9025ff4fcf9470773efd
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 80c604cf7595d64a946fab9faf186339d732eb5e
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883502"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115664"
 ---
 # <a name="create-manage-and-publish-model-driven-apps-using-code"></a>Crear, administrar, y publicar aplicaciones basadas en modelos con código
 

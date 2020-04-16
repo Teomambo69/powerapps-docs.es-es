@@ -6,8 +6,8 @@ ms.date: 10/31/2018
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 89287d32-0d16-8f7d-e0b6-8cc208212cff
-author: JimDaly
-ms.author: jdaly
+author: Nkrb
+ms.author: nabuthuk
 manager: shilpas
 ms.reviewer: ''
 search.audienceType:
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a80155792e7303c015f7797b4fd1e8dd3625a3c6
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5814c60e301e3721c2c0e4e7f20926708c2dd5e3
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749623"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115920"
 ---
 # <a name="configure-a-form-to-accept-custom-querystring-parameters"></a>Configurar un formulario para aceptar parámetros querystring personalizados
 

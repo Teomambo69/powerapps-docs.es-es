@@ -6,8 +6,8 @@ ms.date: 10/31/2018
 ms.service: powerapps
 ms.topic: article
 ms.assetid: da2a9b57-fcd2-38c5-c670-63acf1767efa
-author: JimDaly
-ms.author: jdaly
+author: Nkrb
+ms.author: nabuthuk
 manager: shilpas
 ms.reviewer: ''
 search.audienceType:
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a006a7cdb2110161ad30ecd7acbf6f95cbca41de
-ms.sourcegitcommit: da16207fe9bf4e2382a9a25463b2ee8c3a680a3b
+ms.openlocfilehash: e0d0b9dc84ea44e971871213a480c0094bc249d4
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "2806043"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115656"
 ---
 # <a name="customize-entity-views"></a>Personalizar vistas de entidad
 

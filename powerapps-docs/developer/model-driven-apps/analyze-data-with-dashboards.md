@@ -6,8 +6,8 @@ ms.date: 10/31/2018
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 4b54597b-5603-2e6e-4630-bc120f711707
-author: JimDaly
-ms.author: jdaly
+author: Nkrb
+ms.author: nabuthuk
 manager: shilpas
 ms.reviewer: ''
 search.audienceType:
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ddaad62f16fdf178249155967c532d7e63af28d6
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 040fe73d5a4a18043511b9b1d7bc80b48eaa0a67
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749456"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115976"
 ---
 # <a name="analyze-data-with-dashboards"></a>Analizar datos con paneles
 

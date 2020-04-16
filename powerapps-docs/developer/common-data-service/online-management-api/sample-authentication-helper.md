@@ -8,17 +8,17 @@ applies_to: Dynamics 365 for Customer Engagement (online)
 ms.assetid: a96fff7c-814e-4fa1-98b6-7a2875ee0234
 author: KumarVivek
 ms.author: kvivek
-manager: amyla
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - D365CE
-ms.openlocfilehash: 90fe7a49334fc902ef9508f6e3859879526ff7cf
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9ae7d883b31afc0e23f83ebf7157c2ec2ebf72b9
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749555"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115736"
 ---
 # <a name="sample-authentication-helper-for-the-online-management-api"></a>Ejemplo: Código auxiliar de autenticación para la API de Online Management 
 

@@ -6,8 +6,8 @@ ms.date: 10/31/2018
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 9dbed5ee-21a4-ab86-fc4c-08c3838e42f2
-author: JimDaly
-ms.author: jdaly
+author: Nkrb
+ms.author: nabuthuk
 manager: shilpas
 ms.reviewer: ''
 search.audienceType:
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2d5a7245b0e620885ab60ca57d674245641745fd
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 48245a8034c8dde9da77e7cbd6e2c8d9163bb5d5
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749621"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115868"
 ---
 # <a name="create-a-visualization-chart"></a>Crear una visualización (gráfico)
 

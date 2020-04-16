@@ -2,7 +2,7 @@
 title: Exportar a lago de datos | Microsoft Docs
 description: Obtenga información sobre cómo exportar datos de entidades a un lago de datos de Azure en Power Apps
 ms.custom: ''
-ms.date: 01/28/2020
+ms.date: 03/04/2020
 ms.reviewer: Mattp123
 ms.service: powerapps
 ms.suite: ''
@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6adf35a76df347ca8a99bd12620e7beea4b403d5
-ms.sourcegitcommit: 97a36c9df2a7067a29fb6bd254975dadc2bc16fa
+ms.openlocfilehash: 04913c04d6f8209ed3d0a11105964627eec96220
+ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "3072884"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "3119921"
 ---
 # <a name="export-entity-data-to-azure-data-lake-storage-gen2"></a>Exportar datos de entidad a Azure Data Lake Storage Gen2
 
@@ -78,6 +78,10 @@ Siga los pasos en el artículo  [Crear una cuenta Azure Storage](/azure/storag
    - **Suscripción**. Seleccione su suscripción a Azure. 
    - **Grupo de recursos**. Seleccione el grupo de recursos que contiene la cuenta de almacenamiento Storage v2 (uso general v2).
    - **Cuenta de almacenamiento**. Seleccione la cuenta de almacenamiento Storage v2 (uso general v2) que desea usar para la exportación. 
+
+    > [!NOTE]
+    > Como parte de vincular el entorno Common Data Service a un Data Lake, usted otorga acceso al servicio Exportar a Data Lake a su cuenta de almacenamiento. Asegúrese de seguir los [prerrequisitos](#prerequisites) de crear y configurar la cuenta Azure Data Lake Storage y otorgarse un rol de propietario en la cuenta de almacenamiento. Además, otorgue el acceso al servicio de flujo de datos de Power Platform a su cuenta de almacenamiento. Más información [Preparación de los datos de autoservicio con flujos de datos](self-service-data-prep-with-dataflows.md).  
+
 4. Seleccione las entidades que desea exportar al lago de datos y luego seleccione **Guardar**. Solo se pueden exportar las entidades con seguimiento de cambios habilitado. Más información: [Habilitar el seguimiento de cambios](/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
 
    > [!div class="mx-imgBorder"] 

@@ -8,18 +8,18 @@ applies_to:
 ms.assetid: f884d7d4-31e6-4080-acd9-493e81e6b278
 author: KumarVivek
 ms.author: kvivek
-manager: amyla
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 56fb2faf0259a38183beea29a1603ecccbc35260
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d7e842fdfca982bbe552d95a2b4ada1ff499aa76
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749917"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115888"
 ---
 # <a name="client-api-grid-context"></a>Contexto de cuadrícula de la API del cliente
 

@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.assetid: c292c148-01f0-41f6-a2fe-7ed05a01a733
 author: KumarVivek
 ms.author: kvivek
-manager: amyla
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - D365CE
-ms.openlocfilehash: 7243f2fccc8356ecac5eedba2b740bc39df1913a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: b796413bdf78321f63594ac6c6e9feefd0386324
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752940"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115740"
 ---
 # <a name="authenticate-to-use-the-online-management-api"></a>Autenticación para usar la API de Online Management
 

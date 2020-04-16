@@ -6,8 +6,8 @@ ms.date: 10/31/2018
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 2bf0d49f-8b6d-6d5b-0af5-edf6dd485fed
-author: JimDaly
-ms.author: jdaly
+author: Nkrb
+ms.author: nabuthuk
 manager: shilpas
 ms.reviewer: ''
 search.audienceType:
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 47e77e2cfea704fee2693787f818f90f435f8fd6
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8d6669c644b3ecc9419f7900030eb663cf25ebe1
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749910"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115652"
 ---
 # <a name="data-xml-web-resources"></a>Recursos web (XML) de datos
 

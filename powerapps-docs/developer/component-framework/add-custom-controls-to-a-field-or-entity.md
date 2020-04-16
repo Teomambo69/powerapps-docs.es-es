@@ -10,12 +10,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: 89dacd67f5a7876f7fd0950d0bba4cd60218f296
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6f801328a4fc6b400cecd9ae7d8d233d8f3241a7
+ms.sourcegitcommit: 551af7e0273862b28d9b2387671a4eeaf719eb37
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862026"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3116873"
 ---
 # <a name="add-code-components-to-a-field-or-entity-in-model-driven-apps"></a>Agregar componentes de código a un campo o entidad en aplicaciones basadas en modelo
 
@@ -29,7 +29,7 @@ Los componentes de código permiten transformar en visualizaciones campos que no
 
 Siga los pasos para cambiar la etiqueta predeterminada y el campo de cuadro de texto del campo **Importe del presupuesto** por un componente de código deslizante en la entidad Oportunidad. Puede seguir los mismos pasos para sustituir un campo existente por un componente de código o configurar un componente de código para un campo personalizado.
 
-1. Abra el explorador de soluciones.
+1. Navegue a **Configuración** > **Personalizaciones** > **Personalizar el sistema**.
 
 2. Expanda **Entidades**, expanda la entidad que desee, como la entidad **Oportunidad**, seleccione **Formularios** y, a continuación, abra un formulario como el formulario **Principal** .
 
