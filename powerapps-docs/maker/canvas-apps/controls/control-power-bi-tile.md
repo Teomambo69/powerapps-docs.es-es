@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ac8f7a3838d29324408a6041c9ad0e9cdbcfa666
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 959f8eaee539febbb7c00441453da9bab23a1812
+ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74728328"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81441774"
 ---
 # <a name="power-bi-tile-control-in-power-apps"></a>Power BI el control de icono en Power apps
 
@@ -54,7 +54,13 @@ En ese valor, anexe esta sintaxis:
 &$filter=<TableName>/<ColumnName> eq '<Value>'
 ```
 
-El parámetro filtrará un valor en el conjunto de DataSet del informe en el que se origina el icono.
+El parámetro filtrará un valor en el conjunto de DataSet del informe en el que se origina el icono. Sin embargo, la característica de filtrado tiene las siguientes limitaciones:
+
+- Solo se puede aplicar un filtro.
+- Solo se admite el operador `eq`.
+- El tipo de campo debe ser una cadena.
+
+Puede usar campos calculados en el informe Power BI para convertir otros tipos de valor en una cadena o combinar varios campos en uno.
 
 ## <a name="key-properties"></a>Propiedades principales
 
