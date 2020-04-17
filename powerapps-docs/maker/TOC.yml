@@ -849,6 +849,10 @@
           href: ./canvas-apps/test-studio.md
         - name: Trabajo con Test Studio
           href: ./canvas-apps/working-with-test-studio.md
+        - name: Automatización de pruebas con las canalizaciones de Azure DevOps
+          items:
+            - name: Configuración de la canalización con el editor clásico
+              href: ./canvas-apps/test-studio-classic-pipeline-editor.md
     - name: Personalizar un formulario de lista de SharePoint
       items:
         - name: Realización de cambios básicos
@@ -1638,9 +1642,11 @@
       items:
         - name: Información general
           href: ../sample-apps/emergency-response/overview.md
-        - name: Implementación y configuración de la aplicación
+        - name: Implementar la aplicación
           href: ../sample-apps/emergency-response/deploy-configure.md
-        - name: Uso de la aplicación
+        - name: Uso de la aplicación y los paneles de administración
+          href: ../sample-apps/emergency-response/configure-data-reporting.md
+        - name: Uso de la aplicación móvil
           href: ../sample-apps/emergency-response/use.md
 - name: Aprender de otros
   items:
