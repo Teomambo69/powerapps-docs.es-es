@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dc5ad83a127c812c2a97750ce0fbd05abee50bc7
-ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
-ms.translationtype: HT
+ms.openlocfilehash: b4f4576105ab29b1576fdef0bc3988433bbc1419
+ms.sourcegitcommit: 223c3d19ec4fbe43fcc7a16b76423c00f8602ecd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76541184"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81488959"
 ---
 # <a name="test-studio-experimental"></a>Test Studio (experimental) 
 
@@ -51,7 +51,7 @@ En Test Studio, los pasos de prueba se escriben mediante el lenguaje de expresi
 
 Los conjuntos de pruebas se usan para organizar o agrupar casos de prueba. A medida que crece el número de casos de prueba de la aplicación, puede considerar la posibilidad de organizar los casos de prueba por características o funciones específicas. Por ejemplo, puede tener un conjunto de pruebas con casos de prueba para validar los envíos de informes de gastos y otro conjunto de pruebas que se centra solo en las aprobaciones de gastos.
 
-Los casos de prueba que contienen los conjuntos de prueba se ejecutan secuencialmente. El estado de la aplicación se conserva en todos los casos de prueba de un conjunto. Por ejemplo, si tiene un caso de prueba que se completa en la pantalla 5 de la aplicación, el siguiente caso de prueba del conjunto de pruebas comenzará a ejecutarse desde la pantalla 5. Permite dividir un escenario de prueba complejo en varios casos de prueba dentro de un único conjunto y el estado se comparte entre todos los casos de prueba. Si el segundo caso de prueba debe comenzar en la pantalla de inicio de la aplicación, puede ir a la pantalla de inicio como primer paso en el caso de prueba. Al planear la ejecución de la prueba, es importante recordar que la aplicación no se vuelve a cargar al comienzo de cada caso de prueba de un conjunto.
+Los casos de prueba que contienen los conjuntos de prueba se ejecutan secuencialmente. El estado de la aplicación se conserva en todos los casos de prueba de un conjunto. Por ejemplo, si tiene un caso de prueba que se completa en la pantalla 5 de la aplicación, el siguiente caso de prueba del conjunto de pruebas comenzará a ejecutarse desde la pantalla 5. Permite dividir un escenario de prueba complejo en varios casos de prueba dentro de un único conjunto y el estado se comparte entre todos los casos de prueba. Si el segundo caso de prueba debe comenzar en la pantalla de inicio de la aplicación, puede ir a la pantalla de inicio como primer paso en el caso de prueba. Es importante recordar que la aplicación no se vuelve a cargar al principio de cada caso de prueba de un conjunto de pruebas al planear la ejecución de la prueba.
 
 ### <a name="test-assertions"></a>Aserciones de pruebas
 
@@ -65,7 +65,7 @@ Al probar la aplicación de lienzo con Test Studio, cabe tener en cuenta las si
 
 1. **Determine los casos de prueba que se deben automatizar.**
 
-    Es difícil automatizar todas las pruebas y no se recomienda confiar completamente en la automatización. Las pruebas manuales deben realizarse junto con las automatizadas. Las pruebas más adecuadas para la automatización son:
+    Es difícil automatizar todas las pruebas y no se recomienda confiar completamente en la automatización de la prueba. Las pruebas manuales deben realizarse junto con las automatizadas. Las pruebas más adecuadas para la automatización son:
 
     - Pruebas repetitivas.
     - Pruebas de funcionalidad de gran impacto empresarial.
@@ -100,3 +100,11 @@ Aunque se está trabajando para proporcionar una cobertura de control total en P
 - La característica experimental de administración de errores de nivel de fórmula debe estar activada para la aplicación.
 - Compatibilidad con los controles que no aparecen en las funciones [Select](./functions/function-select.md) y [SetProperty](./functions/function-setproperty.md).
 - Columnas de tipo de persona.
+
+## <a name="next-steps"></a>Pasos siguientes
+
+- [Trabajo con Test Studio](working-with-test-studio.md)
+
+### <a name="see-also"></a>Vea también
+
+- [Automatización de pruebas con el editor clásico de canalización de Azure DevOps](test-studio-classic-pipeline-editor.md)

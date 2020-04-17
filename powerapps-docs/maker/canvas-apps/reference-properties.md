@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 119c3c22d93c7b8985b9c9c5bf08129372c78409
-ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
-ms.translationtype: HT
+ms.openlocfilehash: 9233de7632332b1ea5e6b0041dfbe84a8632af42
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "76750780"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385198"
 ---
 # <a name="controls-and-properties-in-power-apps"></a>Controles y propiedades en Power Apps
 
@@ -60,7 +60,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 
 **[Formulario de edición](controls/control-form-detail.md)** : edite y cree registros en un origen de datos mediante un formulario.
 
-**[Formulario de la entidad](entity-form-control.md)** (característica experimental): Permite agregar formularios dinámicos que permiten a los usuarios ver, explorar y editar datos relacionales de Common Data Service.
+**[Formulario de entidad](entity-form-control.md)** (característica experimental): agregue formularios dinámicos en el que los usuarios puedan ver datos relacionales de Common Data Service, editarlos y navegar por ellos.
 
 **[Exportar](controls/control-export-import.md)** : exporte datos para usarlos en cualquier otro lugar de Power Apps.
 
@@ -242,9 +242,9 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 
 **[Font](controls/properties-text.md)** : el nombre de la familia de fuentes en la que aparece el texto.  Se aplica a muchos controles.
 
-**[FontWeight](controls/properties-text.md)** : peso del texto de un control, que puede ser **Bold**, **Semibold**, **Normal** o **Lighter**.  Se aplica a muchos controles.
+**[FontWeight](controls/properties-text.md)** : el peso del texto en un control: **Bold**, **Semibold**, **Normal** o **Lighter**.  Se aplica a muchos controles.
 
-### <a name="g"></a>G
+### <a name="g"></a>N
 
 **[GridStyle](controls/control-column-line-chart.md)** : indica si un gráfico de columnas o de líneas muestra su eje x, su eje, ambos o ninguno.  Se aplica a los controles **[Gráfico de columnas](controls/control-column-line-chart.md)** y **[Gráfico de líneas](controls/control-column-line-chart.md)** .
 
@@ -300,7 +300,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 
 **Layout**: indica si el usuario se desplaza por la galería o ajusta un control deslizante de arriba a abajo (**Vertical**) o de izquierda a derecha (**Horizontal**).  Se aplica a los controles **[Galería](controls/control-gallery.md)** y **[Control deslizante](controls/control-slider.md)** .
 
-**[AlturaDeLínea](controls/properties-text.md)** : distancia entre, por ejemplo, líneas de texto o elementos de una lista.  Se aplica a los controles **[Cuadro de lista](controls/control-list-box.md)** , **[Botón de selección](controls/control-radio.md)** , **[Etiqueta](controls/control-text-box.md)** y **[Entrada de texto](controls/control-text-input.md)** .
+**[AlturaDeLínea](controls/properties-text.md)** : distancia entre, por ejemplo, las líneas de texto o los elementos de una lista.  Se aplica a los controles **[Cuadro de lista](controls/control-list-box.md)** , **[Botón de selección](controls/control-radio.md)** , **[Etiqueta](controls/control-text-box.md)** y **[Entrada de texto](controls/control-text-input.md)** .
 
 **[Bucle](controls/control-audio-video.md)** : indica si un clip de audio o de vídeo empieza de nuevo automáticamente en cuanto termina de reproducirse.  Se aplica a los controles **[Audio](controls/control-audio-video.md)** y **[Vídeo](controls/control-audio-video.md)** .
 
@@ -442,7 +442,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 
 **[SelectedDate](controls/control-date-picker.md)** : la fecha seleccionada actualmente en un control de fecha.  Se aplica al control **[Selector de fecha](controls/control-date-picker.md)** .
 
-**[ColorDeSelección](controls/properties-color-border.md)** : color del texto de los elementos seleccionados en una lista o de la herramienta de selección de un control de entrada manuscrita.  Se aplica a los controles **[Desplegable](controls/control-drop-down.md)** , **[Cuadro de lista](controls/control-list-box.md)** y **[Entrada manuscrita](controls/control-pen-input.md)** .
+**[ColorDeSelección](controls/properties-color-border.md)** : color del texto de los elementos seleccionados en una lista o de la herramienta de selección de un control de entrada manuscrita.  Se aplica a los controles **[Drop down](controls/control-drop-down.md)** , **[List Box](controls/control-list-box.md)** y **[Pen input](controls/control-pen-input.md)** .
 
 **[RellenoDeSelección](controls/properties-color-border.md)** : el color de fondo de uno o varios elementos seleccionados en una lista o un área seleccionada de un control de entrada manuscrita.  Se aplica a los controles **[Desplegable](controls/control-drop-down.md)** y **[Cuadro de lista](controls/control-list-box.md)** .
 
@@ -496,7 +496,7 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 
 **[Transición](controls/control-gallery.md)** : el efecto visual (**Emergente**, **Insertar** o **Ninguno**) cuando el usuario mantiene el puntero sobre un elemento de la galería.  Se aplica al control **[Galería](controls/control-gallery.md)** .
 
-**[Transparencia](controls/control-image.md)** : el grado de visibilidad de los controles de detrás de una imagen.  Se aplica al control **[Imagen](controls/control-image.md)** .
+**[Transparencia](controls/control-image.md)** : el grado de visibilidad de los controles de detrás de una imagen.  Se aplica al control **[Imagen](controls/control-image.md)** . Los valores decimales oscilan entre 0 y 1.  Donde 0 es opaco, 0,5 es semitransparente y 1 es transparente.
 
 ### <a name="u"></a>U
 
@@ -516,13 +516,13 @@ Para configurar la apariencia y el comportamiento de un control es preciso estab
 
 **RellenoDeValor**: color de fondo del rectángulo en un control Alternar cuando su valor es **true** o color de la línea a la izquierda del identificador en un control deslizante.  Se aplica a los controles **[Control deslizante](controls/control-slider.md)** y **[Alternancia](controls/control-toggle.md)** .
 
-**RellenoValorAlMantenerPuntero**: al mantener el puntero sobre un control Alternar o Control deslizante, color de fondo del rectángulo del primero cuando su valor es **true** o color de la línea a la izquierda del identificador del segundo.  Se aplica a los controles **[Control deslizante](controls/control-slider.md)** y **[Alternancia](controls/control-toggle.md)** .
+**RellenoValorAlMantenerPuntero**: al mantener el puntero del mouse sobre un control Alternar o Control deslizante, color de fondo del rectángulo del primero cuando su valor es **true** o color de la línea a la izquierda del identificador del segundo.  Se aplica a los controles **[Control deslizante](controls/control-slider.md)** y **[Alternancia](controls/control-toggle.md)** .
 
 **[VerticalAlign](controls/properties-text.md)** : la ubicación del texto en un control respecto al centro vertical de ese control.  Se aplica a muchos controles.
 
 **[Visible](controls/properties-core.md)** : indica si un control aparece o está oculto.  Se aplica a muchos controles.
 
-### <a name="w"></a>W
+### <a name="w"></a>M
 
 **[Width](controls/properties-size-location.md)** : la distancia entre los bordes derecho e izquierdo de un control.  Se aplica a muchos controles.
 

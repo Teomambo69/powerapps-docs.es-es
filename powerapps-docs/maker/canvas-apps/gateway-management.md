@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/16/2019
+ms.date: 04/14/2020
 ms.author: arthii
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b7d4471fde0bf22ec2900f303347d5d4783381ed
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 0956668fa3576dca58c728396d0c4c08473df73f
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729558"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385221"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-power-apps"></a>Administración de una puerta de enlace de datos local en Power apps
 
@@ -36,13 +36,13 @@ Con una puerta de enlace, puede conectarse a datos locales a través de estas co
 ## <a name="prerequisites"></a>Requisitos previos
 
 * El nombre de usuario y la contraseña que usó para [suscribirse](../signup-for-powerapps.md) a Power apps.
-* Los permisos administrativos de una puerta de enlace. De forma predeterminada, tiene estos permisos para cada puerta de enlace que instala, y un administrador de otra puerta de enlace puede concederle estos permisos para esa puerta de enlace.
+* Permisos administrativos en una puerta de enlace. (De manera predeterminada, tiene estos permisos en todas las puertas de enlace que instale y un administrador de otra puerta de enlace puede concederle estos permisos para dicha puerta).
 * Una licencia que permite el acceso a los datos locales mediante una puerta de enlace local. Para más información, consulte la sección "Conectividad" de la [página de precios](https://powerapps.microsoft.com/pricing/).
 * Las puertas de enlace y las conexiones locales solo se pueden crear y usar en el [entorno predeterminado](working-with-environments.md) del usuario.
 
 ## <a name="install-a-gateway"></a>Instalar una puerta de enlace
 
-Para instalar una puerta de enlace, siga los pasos descritos en [instalación de una puerta de enlace de datos local](/data-integration/gateway/service-gateway-install). Instale la puerta de enlace en modo estándar porque la _puerta de enlace de datos local (modo personal)_ solo está disponible para Power BI.
+Para instalar una puerta de enlace, siga los pasos descritos en [Instalación de una puerta de enlace de datos local](/data-integration/gateway/service-gateway-install). Instale la puerta de enlace en modo estándar, ya que la _puerta de enlace de datos local (modo personal)_ solo está disponible para Power BI.
 
 ## <a name="view-and-manage-gateway-permissions"></a>Ver y administrar los permisos de la puerta de enlace
 
@@ -55,6 +55,9 @@ Para instalar una puerta de enlace, siga los pasos descritos en [instalación de
    * **Administración**: administradores que tienen control total sobre la puerta de enlace, lo que incluye agregar usuarios, establecer permisos, crear conexiones a todos los orígenes de datos disponibles y eliminar la puerta de enlace.
 
 Para los niveles de permiso **Puede usar** y **Puede usar y compartir**, seleccione los orígenes de datos a los que puede conectarse el usuario mediante la puerta de enlace.
+
+> [!NOTE]
+> **Puede usar** y **puede usar + share** no se aplica a los conectores personalizados.
 
 ## <a name="view-and-manage-gateway-connections"></a>Ver y administrar las conexiones de puerta de enlace
 

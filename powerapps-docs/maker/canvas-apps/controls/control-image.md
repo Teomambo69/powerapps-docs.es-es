@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d35150434d8fec7694f493f2d62c67997e2c839c
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 0610e1cfabde8bd62e083ca1cff65825c28918e4
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79212478"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385267"
 ---
 # <a name="image-control-in-power-apps"></a>Control de imagen en Power apps
 Un control que muestra una imagen desde, por ejemplo, un archivo local o un origen de datos.
@@ -28,91 +27,91 @@ Un control que muestra una imagen desde, por ejemplo, un archivo local o un orig
 Si agrega uno o varios controles **Imagen** controles a la aplicación, puede mostrar imágenes individuales que no forman parte de un conjunto de datos, o puede incorporar imágenes desde registros de orígenes de datos.
 
 ## <a name="key-properties"></a>Propiedades principales
-**[Imagen](properties-visual.md)**: el nombre de la imagen que aparece en un control de imagen, audio o micrófono.
+**[Imagen](properties-visual.md)** : el nombre de la imagen que aparece en un control de imagen, audio o micrófono.
 
 ## <a name="additional-properties"></a>Propiedades adicionales
-**[AccessibleLabel](properties-accessibility.md)**: etiqueta para lectores de pantalla.
+**[AccessibleLabel](properties-accessibility.md)** : etiqueta para lectores de pantalla.
 
 **ApplyEXIFOrientation**: si se aplica automáticamente la orientación especificada en los datos EXIF insertados en la imagen.
 
 **AutoDisableOnSelect**: deshabilita automáticamente el control mientras se ejecuta el comportamiento AlSeleccionar.
 
-**[BorderColor](properties-color-border.md)**: el color de un borde del control.
+**[BorderColor](properties-color-border.md)** : el color de un borde del control.
 
-**[BorderStyle](properties-color-border.md)**: si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
+**[BorderStyle](properties-color-border.md)** : si el borde del control es **Solid**, **Dashed**, **Dotted** o **None**.
 
-**[BorderThickness](properties-color-border.md)**: el grosor de un borde del control.
+**[BorderThickness](properties-color-border.md)** : el grosor de un borde del control.
 
 **CalculateOriginalDimensions**: habilita las propiedades **AltoOriginal** y **AnchoOriginal**.
 
-**[DisplayMode](properties-core.md)**: indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
+**[DisplayMode](properties-core.md)** : indica si el control permite entradas de usuario (**Edit**), solo muestra datos (**View**) o si está deshabilitado (**Disabled**).
 
-**[DisabledBorderColor](properties-color-border.md)**: el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
+**[DisabledBorderColor](properties-color-border.md)** : el color de un borde del control si la propiedad **[DisplayMode](properties-core.md)** del control está establecida en **Disabled**.
 
-**[DisabledFill](properties-color-border.md)**: el color de fondo de un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
+**[DisabledFill](properties-color-border.md)** : el color de fondo de un control si su propiedad **[DisplayMode](properties-core.md)** está establecida en **Disabled**.
 
-**[Fill](properties-color-border.md)**: el color de fondo de un control.
+**[Fill](properties-color-border.md)** : el color de fondo de un control.
 
 **FlipHorizontal**: si la imagen se voltea horizontalmente antes de mostrarla.
 
 **FlipVertical**: si la imagen se voltea verticalmente antes de mostrarla.
 
-**[FocusedBorderColor](properties-color-border.md)**: el color del borde de un control cuando el control recibe el foco.
+**[FocusedBorderColor](properties-color-border.md)** : el color del borde de un control cuando el control recibe el foco.
 
-**[FocusedBorderThickness](properties-color-border.md)**: el grosor del borde de un control cuando el control recibe el foco.
+**[FocusedBorderThickness](properties-color-border.md)** : el grosor del borde de un control cuando el control recibe el foco.
 
-**[Height](properties-size-location.md)**: la distancia entre los bordes superior e inferior de un control.
+**[Height](properties-size-location.md)** : la distancia entre los bordes superior e inferior de un control.
 
-**[HoverBorderColor](properties-color-border.md)**: el color de un borde del control cuando el usuario mantiene el puntero del mouse sobre ese control.
+**[HoverBorderColor](properties-color-border.md)** : el color de un borde del control cuando el usuario mantiene el puntero del mouse sobre ese control.
 
-**[HoverFill](properties-color-border.md)**: el color de fondo de un control cuando el usuario mantiene el puntero del mouse sobre él.
+**[HoverFill](properties-color-border.md)** : el color de fondo de un control cuando el usuario mantiene el puntero del mouse sobre él.
 
-**[PosiciónDeLaImagen](properties-visual.md)**: posición (**Rellenar**, **Ajustar**, **Estirar**, **Icono** o **Centrar**) de una imagen en una pantalla o un control, si no tiene el mismo tamaño que la imagen.
+**[PosiciónDeLaImagen](properties-visual.md)** : posición (**Rellenar**, **Ajustar**, **Estirar**, **Icono** o **Centrar**) de una imagen en una pantalla o un control, si no tiene el mismo tamaño que la imagen.
 
 **ImageRotation**: cómo girar la imagen antes de mostrarla.  Los valores pueden ser: no, 90 grados a la derecha, 90 grados a la izquierda y 180 grados a la derecha.
 
-**[OnSelect](properties-core.md)**: indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
+**[OnSelect](properties-core.md)** : indica cómo responde la aplicación cuando el usuario toca o hace clic en un control.
 
 **AltoOriginal**: la altura original de una imagen, habilitada con la propiedad **CalculateOriginalDimensions**.
 
 **AnchoOriginal**: el ancho original de una imagen, habilitada con la propiedad **CalculateOriginalDimensions**.
 
-**[RellenoInferior](properties-size-location.md)**: distancia entre el texto de un control y el borde inferior de ese control.
+**[RellenoInferior](properties-size-location.md)** : distancia entre el texto de un control y el borde inferior de ese control.
 
-**[RellenoIzquierdo](properties-size-location.md)**: distancia entre el texto de un control y el borde izquierdo de ese control.
+**[RellenoIzquierdo](properties-size-location.md)** : distancia entre el texto de un control y el borde izquierdo de ese control.
 
-**[RellenoDerecho](properties-size-location.md)**: distancia entre el texto de un control y el borde derecho de ese control.
+**[RellenoDerecho](properties-size-location.md)** : distancia entre el texto de un control y el borde derecho de ese control.
 
-**[RellenoSuperior](properties-size-location.md)**: distancia entre el texto de un control y el borde superior de ese control.
+**[RellenoSuperior](properties-size-location.md)** : distancia entre el texto de un control y el borde superior de ese control.
 
-**[PressedBorderColor](properties-color-border.md)**: el color de un borde del control cuando el usuario toca o hace clic en ese control.
+**[PressedBorderColor](properties-color-border.md)** : el color de un borde del control cuando el usuario toca o hace clic en ese control.
 
-**[PressedFill](properties-color-border.md)**: el color de fondo de un control cuando el usuario toca o hace clic en ese control.
+**[PressedFill](properties-color-border.md)** : el color de fondo de un control cuando el usuario toca o hace clic en ese control.
 
-**[RadiusBottomLeft](properties-size-location.md)**: el grado al que se redondea la esquina inferior izquierda de un control.
+**[RadiusBottomLeft](properties-size-location.md)** : el grado al que se redondea la esquina inferior izquierda de un control.
 
-**[RadiusBottomRight](properties-size-location.md)**: el grado al que se redondea la esquina inferior derecha de un control.
+**[RadiusBottomRight](properties-size-location.md)** : el grado al que se redondea la esquina inferior derecha de un control.
 
-**[RadiusTopLeft](properties-size-location.md)**: el grado al que se redondea la esquina superior izquierda de un control.
+**[RadiusTopLeft](properties-size-location.md)** : el grado al que se redondea la esquina superior izquierda de un control.
 
-**[RadiusTopRight](properties-size-location.md)**: el grado al que se redondea la esquina superior derecha de un control.
+**[RadiusTopRight](properties-size-location.md)** : el grado al que se redondea la esquina superior derecha de un control.
 
-**[TabIndex](properties-accessibility.md)**: orden de navegación del teclado en relación con otros controles.
+**[TabIndex](properties-accessibility.md)** : orden de navegación del teclado en relación con otros controles.
 
-**[Información sobre herramientas](properties-core.md)**: texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
+**[Información sobre herramientas](properties-core.md)** : texto explicativo que aparece cuando el usuario mantiene el puntero sobre un control.
 
-**Transparencia**: el grado en el los controles permanecen visibles detrás de una imagen.
+**Transparencia**: el grado en el los controles permanecen visibles detrás de una imagen. Los valores decimales oscilan entre 0 y 1.  Donde 0 es opaco, 0,5 es semitransparente y 1 es transparente. 
 
-**[Visible](properties-core.md)**: indica si un control aparece o está oculto.
+**[Visible](properties-core.md)** : indica si un control aparece o está oculto.
 
-**[Width](properties-size-location.md)**: la distancia entre los bordes derecho e izquierdo de un control.
+**[Width](properties-size-location.md)** : la distancia entre los bordes derecho e izquierdo de un control.
 
-**[X](properties-size-location.md)**: la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[X](properties-size-location.md)** : la distancia entre el borde izquierdo de un control y el borde izquierdo de su contenedor primario (la pantalla si no hay un contenedor primario).
 
-**[Y](properties-size-location.md)**: la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
+**[Y](properties-size-location.md)** : la distancia entre el borde superior de un control y el borde superior de su contenedor primario (la pantalla si no hay un contenedor primario).
 
 ## <a name="related-functions"></a>Funciones relacionadas
-[**Quitar**( *DataSource*; EsteElemento)](../functions/function-remove-removeif.md)
+[**Quitar**( *DataSource*, EsteElemento)](../functions/function-remove-removeif.md)
 
 ## <a name="examples"></a>Ejemplos:
 ### <a name="show-an-image-from-a-local-file"></a>Mostrar una imagen desde un archivo local
@@ -147,10 +146,10 @@ Si agrega uno o varios controles **Imagen** controles a la aplicación, puede mo
 * La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar presente si el gráfico se usa como botón o no solo como decoración.
 * La propiedad **[AccessibleLabel](properties-accessibility.md)** debe estar vacía o la cadena **""** vacía si el gráfico es exclusivamente decorativo. De esta forma, los lectores de pantalla omiten el gráfico.
 * La propiedad **[AccessibleLabel](properties-accessibility.md)** puede estar vacía o la cadena **""** vacía si el gráfico proporciona información redundante.
-  * Por ejemplo, un control **Imagen** de engranajes con su propiedad **[AccessibleLabel](properties-accessibility.md)** establecida en **Configuración**. Esta imagen no se utiliza como botón. Se encuentra junto a una **[etiqueta](control-text-box.md)** que también dice **Configuración**. Los lectores de pantalla leerán la imagen como **Configuración** y, nuevamente, la etiqueta como **Configuración**. No es necesario tanto detalle. En este caso, el control **Imagen** no necesita una propiedad **[AccessibleLabel](properties-accessibility.md)**.
+  * Por ejemplo, un control **Imagen** de engranajes con su propiedad **[AccessibleLabel](properties-accessibility.md)** establecida en **Configuración**. Esta imagen no se utiliza como botón. Se encuentra junto a una **[etiqueta](control-text-box.md)** que también dice **Configuración**. Los lectores de pantalla leerán la imagen como **Configuración** y, nuevamente, la etiqueta como **Configuración**. No es necesario tanto detalle. En este caso, el control **Imagen** no necesita una propiedad **[AccessibleLabel](properties-accessibility.md)** .
 
     > [!IMPORTANT]
-    > Los lectores de pantalla siempre leerán los controles **Imagen** cuya propiedad **[TabIndex](properties-accessibility.md)** sea cero o superior, incluso si la propiedad **[AccessibleLabel](properties-accessibility.md)** está vacía. El motivo es que se representan como botones. Si no se proporciona ninguna propiedad **[AccessibleLabel](properties-accessibility.md)**, los lectores de pantalla simplemente leerán el gráfico como un **botón**.
+    > Los lectores de pantalla siempre leerán los controles **Imagen** cuya propiedad **[TabIndex](properties-accessibility.md)** sea cero o superior, incluso si la propiedad **[AccessibleLabel](properties-accessibility.md)** está vacía. El motivo es que se representan como botones. Si no se proporciona ninguna propiedad **[AccessibleLabel](properties-accessibility.md)** , los lectores de pantalla simplemente leerán el gráfico como un **botón**.
 
 ### <a name="keyboard-support"></a>Compatibilidad con el teclado
 * **[TabIndex](properties-accessibility.md)** debe ser cero o mayor si el gráfico se utiliza como botón. De esta forma, los usuarios de teclado pueden navegar hasta él.
