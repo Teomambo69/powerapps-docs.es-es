@@ -2,7 +2,7 @@
 title: Información general sobre crear relaciones entre entidades de varios a varios en Common Data Service | MicrosoftDocs
 description: Aprender a crear relaciones entre entidades de varios a varios
 ms.custom: ''
-ms.date: 05/29/2018
+ms.date: 04/07/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,16 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 907a1147630cc779e6c1af7be2486548f1907c5a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 5f5c0f78f94ae2ec452bcbf6f5d677723d5ede52
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865809"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3238302"
 ---
 # <a name="create-many-to-many-entity-relationships-overview"></a>Crear información general de relación varios a varios entre entidades
 
 Las relaciones entre entidades de uno a varios (1:N) establecen una jerarquía entre registros. Con relaciones de varios a varios (N:N) no existe una jerarquía explícita. No existen campos de búsqueda ni comportamientos para configurar. Los registros creados utilizando relaciones de varios a varios pueden considerarse iguales y la relación es recíproca.  
+
+Un ejemplo de relación varios a varios se define entre dos entidades estándar incluidas con la aplicación Dynamics 365 Sales. La entidad Oportunidad también tiene una relación de N:N con la entidad Competidor. Esto permite agregar múltiples competidores a la oportunidad y múltiples oportunidades asociadas con el mismo competidor. 
   
 Con relaciones de varios a varios una entidad de relaciones (o intersección) almacena los datos que asocia las entidades. Esta entidad tiene una relación entre entidades de uno a varios con las dos entidades relacionadas y almacena solo los valores necesarios para definir relación. No puede agregar campos personalizados a una entidad de relación y nunca es visible en la interfaz de usuario. 
   

@@ -6,17 +6,17 @@ manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 04/05/2020
+ms.date: 04/15/2020
 ms.author: pankar
 ms.reviewer: kvivek
 searchScope:
 - PowerApps
-ms.openlocfilehash: 39c7b61b596b786a72e1602ff5a5aaf2981b33e6
-ms.sourcegitcommit: c0f3152ee44a7027eb4b2038db0f7dfbf1b56d65
+ms.openlocfilehash: 1923c9a39fe4cc820de05acc8d8225500c2711af
+ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2020
-ms.locfileid: "3228848"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3264904"
 ---
 # <a name="hospital-emergency-response---power-platform-sample-solution"></a>Muestra de la solución Hospital Emergency Response Power Platform
 
@@ -28,8 +28,11 @@ La muestra de la solución Hospital Emergency Response proporciona un conjunto d
 Los componentes principales de la solución Hospital Emergency Response son:
 
 - **Aplicación móvil para personal de primera línea**: el personal de primera línea, como enfermeras y profesionales médicos, puede usar la aplicación móvil para ver e introducir información rápidamente según sea necesario.
-- **Aplicación web para administradores de TI del hospital**: los administradores del hospital pueden usar esta aplicación para agregar y administrar los datos del sistema necesarios para que la solución funcione.
+- **Aplicación web para administradores de hospitales**: los administradores del hospital pueden usar esta aplicación para agregar y administrar los datos del sistema necesarios para que la solución funcione.
 - **Paneles de control para responsables de toma de decisiones sanitarias**: use paneles para ver rápidamente datos y métricas importantes que lo ayudarán a tomar decisiones de manera eficiente.
+
+La solución de ejemplo Hospital Emergency Response está disponible en los siguientes idiomas: inglés, francés, alemán, italiano, japonés, portugués de Brasil y español.
+
 
 ## <a name="demo-quick-overview"></a>Demostración: vista general rápida
 
@@ -48,15 +51,22 @@ Póngase en contacto con su representante local de cuenta de Microsoft para preg
 
 Vea también: [Información general de licencias para Power Platform](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)
 
+## <a name="start-here"></a>Empiece aquí
+
+|Tarea | Público objetivo|Consulte|
+|--|--|--|
+|Implementar el panel y la aplicación de ejemplo|Administrador de TI|[Implemente la aplicación Hospital Emergency Response](deploy-configure.md)|
+|Usar la aplicación de administración para agregar/administrar datos maestros|Administrador de empresa|[Configurar y administrar datos maestros para su organización](configure-data-reporting.md#configure-and-manage-master-data-for-your-organization)|
+|Usar paneles de para obtener información y tomar decisiones|Administrador de empresa|[Ver paneles de Common Data Service](configure-data-reporting.md#view-common-data-service-dashboards)<br/><br/>[Ver el panel de Power BI](configure-data-reporting.md#view-power-bi-dashboard)|
+|Usar la aplicación móvil para seguir datos de respiradores, personal, altas pendientes y pacientes relacionados con COVID-19|Personal de primera línea|[Usar la aplicación móvil Hospital Emergency Response](use.md)
+|Usar la aplicación de administración para seguir los comentarios de la aplicación móvil|Administrador de empresa/TI|[Ver y administrar comentarios de la aplicación](configure-data-reporting.md#view-and-manage-app-feedback)|
+
+
 ## <a name="issues-and-feedback"></a>Problemas y comentarios
 
 - Para informar un problema con la aplicación de muestra Hospital Emergency Response, visite <https://aka.ms/emergency-response-issues>.
 
 - Para comentarios sobre la aplicación de muestra Hospital Emergency Response, visite <https://aka.ms/emergency-response-feedback>.
-
-## <a name="next-step"></a>Paso siguiente
-
-[Implemente y configure la aplicación Hospital Emergency Response](deploy-configure.md)
 
 ### <a name="disclaimer"></a>Declinación de responsabilidades
 

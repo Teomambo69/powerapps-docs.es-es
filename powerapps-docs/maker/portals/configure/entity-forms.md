@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 03/11/2020
+ms.date: 04/09/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 372b710115609115e8090d21821c45a1037472ab
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 4ddc8daba01d281a483d51b1ce7a42205d0c6e93
+ms.sourcegitcommit: 2484ebce6563cfd1c849e1e2f66dd2d29fdb7b64
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3125593"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "3256699"
 ---
 # <a name="about-entity-forms"></a>Acerca de formularios de entidad
 
@@ -33,7 +33,7 @@ Cuando cree un nuevo formulario de entidad el primer paso es decidir la **Entida
 > [!Note]
 > - Un **formulario de entidad** debe estar asociado con una página web para un determinado sitio web para que el formulario sea visible desde el sitio.
 > - Las subcuadrículas de la entidad de conexión no se admiten en formularios de entidad. Si agrega una subcuadrícula de entidad de conexión al formulario con el diseñador formularios, se muestran los mensajes de error cuando procesa el formulario en el portal y usa la entidad de la conexión.
-> - Los campos duplicados, el conjunto de opciones multiselección y reglas de negocio no son compatibles en los formularios de entidad.
+> - Los campos duplicados, el conjunto de opciones multiselección, los campos de lista de partes y las reglas de negocio no son compatibles en los formularios de entidad.
 > - Las reglas de negocio y el cliente API pueden permitir campos bloqueados en un formulario de sólo lectura.
 > - Si crea un formulario de entidad en el modo de inserción, no podrá cambiar la alineación de un botón o colocar un botón de acción encima del formulario de entidad.
 > - Si genera un control de búsqueda como lista desplegable en el formulario, el filtro de registros relacionados no funciona.

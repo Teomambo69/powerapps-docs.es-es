@@ -2,7 +2,7 @@
 title: Problemas y soluciones comunes para el comprobador de soluciones | Microsoft Docs
 description: " Una lista de problemas y soluciones comunes en comprobador de soluciones"
 keywords: ''
-ms.date: 02/11/2019
+ms.date: 04/07/2020
 ms.service: powerapps
 ms.custom:
 - ''
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2280ea28178a85429367ea0359660b3b94f5f99b
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: fb40f10fae12afb16f59c98c6e1a43c3acf64e89
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154742"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3238434"
 ---
 # <a name="common-issues-and-resolutions-for-solution-checker"></a>Problemas y soluciones comunes para el comprobador de soluciones
 
@@ -46,6 +46,12 @@ Los errores que se producen durante el procesamiento en segundo plano de anális
 La selección de notificación del portal vinculará a esta página de problemas comunes para la solución de problemas adicionales. Si uno de los problemas comunes proporcionados no resuelve el problema, también se devuelve un número de referencia. Proporcione este número de referencia al soporte técnico de Microsoft para su posterior investigación.
 
 ![Notificación de error](media/solution-checker-failure-notification.png)
+
+
+## <a name="solution-checker-fails-to-check-default-solution"></a>El Comprobador de soluciones no puede comprobar la solución predeterminada
+
+El comprobador de soluciones exporta la solución desde el entorno Common Data Service para el análisis. No se permite la exportación de la Solución predeterminada y es posible que la verificación no se complete correctamente. Más información: [El Comprobador de soluciones no exporta soluciones grandes](#solution-checker-fails-to-export-large-solutions).
+
 
 ## <a name="solution-checker-fails-due-to-unsupported-version-of-power-apps-checker"></a>El comprobador de soluciones falla debido a una versión no compatible del Comprobador de Power Apps
 

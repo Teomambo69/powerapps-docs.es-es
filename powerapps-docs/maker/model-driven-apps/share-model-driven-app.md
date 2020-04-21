@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 42ba7e8416477890614b00f6aa89ea241287475b
-ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
+ms.openlocfilehash: e1187757c90af2ec245ace51031f5e0345c92bd2
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3099947"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3238478"
 ---
 # <a name="share-a-model-driven-app-with-power-apps"></a>Compartir una aplicación controlada por modelos con Power Apps
 
@@ -151,7 +151,7 @@ Estos roles predefinidos están disponibles con un entorno de [!INCLUDE [powerap
 *El privilegio es ámbito global salvo que se especifique lo contrario.
 
 ## <a name="use-azure-active-directory-groups-to-manage-access"></a>Utilizar grupos de Azure Active Directory para administrar acceso
-Los administradores pueden usar los grupos de Azure Active Directory (Azure AD) de su organización para administrar los derechos de acceso para usuarios de Common Data Service con licencia. Ambos tipos de grupos de Azure AD (oficina y seguridad) se pueden usar para proteger los derechos de acceso de usuario a una aplicación. Más información: [Acerca de los equipos de grupo](/power-platform/admin/manage-teams.md#about-group-teams) 
+Los administradores pueden usar los grupos de Azure Active Directory (Azure AD) de su organización para administrar los derechos de acceso para usuarios de Common Data Service con licencia. Ambos tipos de grupos de Azure AD (oficina y seguridad) se pueden usar para proteger los derechos de acceso de usuario a una aplicación. Más información: [Acerca de los equipos de grupo](/power-platform/admin/manage-teams#about-group-teams) 
 
 
 ### <a name="see-also"></a>Vea también

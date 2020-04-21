@@ -12,12 +12,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d5ce493618d5a7b7d736f56714fcfa2a1c6ba068
-ms.sourcegitcommit: da1a13776f3e27d6b3d2157d17196681e6fe3619
+ms.openlocfilehash: b85441d10f3079e90f911939d3752e5ccce91bc6
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "2922844"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3238346"
 ---
 # <a name="create-a-custom-entity"></a>Creación de una entidad personalizada
 En Power Apps, una *entidad* define la información de la que desea realizar un seguimiento en forma de registros, que incluyen normalmente propiedades como el nombre, ubicación, productos, correo electrónico, y teléfono de la compañía. A continuación puede exponer los datos desarrollando una aplicación que haga referencia a la entidad. Power Apps ofrece entidades estándar “listas para usar” que cubren los escenarios típicos de una organización (como citas de seguimiento), pero puede haber ocasiones en las que necesite crear entidades personalizadas para almacenar datos que sean específicos de la organización.

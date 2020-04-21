@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 01/03/2020
 ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 5328415e8f55d9997bbe14a9ecca271b12a9ae31
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: 37a515486afd2c57fa07cea24905584e9515ba60
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2979577"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3238522"
 ---
 # <a name="azure-ad-b2c-provider-settings-for-portals"></a>Azure AD B2C configuración del proveedor para portales
 
@@ -28,29 +28,31 @@ Durante la configuración de [!include[Azure](../../../includes/pn-azure-shortes
 |-------------------|-------|-----------------------------------------------------------------------|
 | Nombre de la aplicación  |       | Nombre de la aplicación que representa el portal como un usuario de confianza |
 | Id. de aplicación    |       | El identificador de la aplicación asociado a la aplicación creada en Azure Active Directory B2C.  |
-| Policy-Signin-URL |       | La dirección URL del emisor (iss) definida en el extremo de metadatos.                |
+| Issuer-URL |       | La dirección URL del emisor (iss) definida en el extremo de metadatos.                |
 | Nombre de la federación   |       | Un nombre único para identificar el tipo de proveedor de federación como “B2C”. Se usará en los nombres de configuración de sitio para agrupar las opciones de configuración de este proveedor específico.                                                                      |
 | | | |
 
 ### <a name="use-azure-ad-b2c-as-an-identity-provider-for-your-portal"></a>Use Azure AD AD B2C como proveedor de identidad para el portal
 
 1. Inicie sesión en el [portal Azure](https://portal.azure.com/).
-2. [Crear un inquilino de Azure AD B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-get-started).
-3. Seleccione **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C** en la barra de navegación más a la izquierda.
-4. [Cree la aplicación Azure](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-app-registration#register-a-web-application).
+1. [Crear un inquilino de Azure AD B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-get-started).
+1. Seleccione **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C** en la barra de navegación más a la izquierda.
+1. [Cree la aplicación Azure](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-app-registration#register-a-web-application).
 
    > [!Note]
    > Debe elegir **Sí** para el campo **Permitir el flujo implícito** y especificar la dirección URL de portal en el campo **Dirección URL de respuesta**. El valor en el campo **Dirección URL de respuesta** debe tener el formato [dominio de portal]/inicio de sesión-[Nombre de la federación]. Por ejemplo, `https://contosocommunity.microsoftcrmportals.com/signin-B2C`.
 
-5. Copie el nombre de la aplicación, e incorpórelo como el valor del nombre de la aplicación en la tabla precedente.
-6. Copie el ID de la aplicación, e incorpórelo como el valor del ID de la aplicación en la tabla precedente.
-7. [Crear una directiva de registro o inicio de sesión](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-reference-policies#create-a-sign-up-or-sign-in-policy).
-8. Seleccione la directiva y, a continuación seleccione **Editar**.
-9. Seleccione **Token, sesión y configuración de SSO**.
-10. Del lista **Notificación de emisor (iss)** , seleccione la dirección URL que tiene **/tfp** en la ruta.
-11. Guarde la directiva.
-12. Seleccione la dirección URL en el campo **Extremo de metadatos para esta directiva**.
-13. Copie el valor del campo de emisor e incorpórelo como el valor de la Policy-Signin-URL en la tabla precedente. 
+1. Copie el nombre de la aplicación, e incorpórelo como el valor del nombre de la aplicación en la tabla precedente.
+1. Copie el id. de (cliente) de la aplicación e incorpórelo como el valor del id. de la aplicación en la tabla precedente.
+1. [Crear una directiva de registro o inicio de sesión](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-reference-policies#create-a-sign-up-or-sign-in-policy).
+1. Navegue al recurso **Azure AD B2C**.
+1. Seleccione **Flujos de usuarios** bajo Directivas.
+1. Elija la política de suscripción e inicio de sesión recién creada.
+1. En la lista **Configuraciones**, seleccione **Propiedades**
+1. En **Configuración de compatibilidad de token**, en la lista **Notificación de emisor (iss)**, seleccione la URL que tiene **/tfp** en la ruta.
+1. Guarde la directiva.
+1. Seleccione la dirección URL en el campo **Extremo de metadatos para esta directiva**.
+1. Copie el valor del campo de emisor e incorpórelo como el valor de Issuer-URL en la tabla precedente. 
 
 ## <a name="portal-configuration"></a>Configuración de portal
 
@@ -64,7 +66,7 @@ Después de crear y configurar el suscriptor de B2C en [!include[Azure](../../..
 5. Cree la siguiente configuración del sitio:
    -   **Nombre**: Autenticación/OpenIdConnect/[Nombre de federación]/Autoridad
 
-       **Valor**: [Policy-Signin-URL]
+       **Valor**: [Issuer-URL]
    -   **Nombre**: Autenticación/OpenIdConnect/[Nombre de federación]/ClientId
 
        **Valor**: [ID de aplicación]
@@ -80,7 +82,7 @@ Después de crear y configurar el suscriptor de B2C en [!include[Azure](../../..
 7. Para codificar de forma rígida su portal para un solo proveedor de identidad, cree la siguiente configuración del sitio:
    - **Nombre**: Authentication/Registration/LoginButtonAuthenticationType
 
-     **Valor**: [Policy-Signin-URL]
+     **Valor**: [Issuer-URL]
 
 8. Para admitir la restauración de la contraseña, cree la configuración necesaria descrita [aquí](#password-reset).
 9. Para admitir la asignación de notificaciones, cree la configuración necesaria descrita [aquí](#claims-mapping).
@@ -94,7 +96,7 @@ Se requiere la siguiente configuración del sitio si desea admitir la restauraci
 | Configuración del sitio                                                        | Descripción                                                                                                          |
 |---------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | Authentication/OpenIdConnect/[Nombre de federación]/PasswordResetPolicyId | Identificador de la directiva de restauración de contraseña.                                                                                     |
-| Authentication/OpenIdConnect/[Nombre de federación]/ValidIssuers         | Una lista delimitada por comas de emisores que incluye la [Policy-Signin-URL] y el emisor de la directiva de restauración de contraseña. |
+| Authentication/OpenIdConnect/[Nombre de federación]/ValidIssuers         | Una lista delimitada por comas de emisores que incluye [Issuer-URL] y el emisor de la directiva de restablecimiento de contraseña. |
 |Authentication/OpenIdConnect/[Nombre de federación]/DefaultPolicyId | Identificador de la directiva de inicio de sesión o suscripción.|
 |||
 

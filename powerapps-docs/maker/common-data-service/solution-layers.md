@@ -2,7 +2,7 @@
 title: Capas de las soluciones | MicrosoftDocs
 description: Aprenda a usar capas de las soluciones
 keywords: ''
-ms.date: 02/05/2020
+ms.date: 03/13/2020
 ms.service: powerapps
 ms.custom: ''
 ms.topic: article
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1b5d71f8683b5cb86f79d90540dcf5aa99f6415d
-ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
+ms.openlocfilehash: 9c9e95e477e2ccb0bce9eac2256221486412f584
+ms.sourcegitcommit: 6fce86edacd9bfe49f8114a2a69bc18302cd01f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3114242"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260704"
 ---
 # <a name="solution-layers"></a>Capas de las soluciones
 
@@ -67,6 +67,12 @@ Característica de capas de la solución:
 
    > [!div class="mx-imgBorder"] 
    > ![Todas las propiedades de la capa de las soluciones](media/solution-layers-all-prop.png "Todas las propiedades de la capa de las soluciones")
+5. Seleccione la pestaña **Etiquetas localizadas** para mostrar información de los componentes que tienen campos de etiqueta en la capa de solución. El idioma base y cualquier texto de traducción importado se muestran como se indica en la columna **Id. de idioma**. Si no existen etiquetas, la pestaña no se muestra.  
+   > [!div class="mx-imgBorder"] 
+   > ![Etiquetas localizadas de capa de solución](media/localized-labels.png "Etiquetas localizadas de capa de solución")
+
+    Seleccione una etiqueta para ver todas sus capas.
 
 ### <a name="see-also"></a>Vea también
+[Traducir texto localizable para aplicaciones controladas por modelos](../model-driven-apps/translate-localizable-text.md) <br />
 [Información general de las soluciones](solutions-overview.md)

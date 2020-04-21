@@ -1,12 +1,12 @@
 ---
-title: Configurar paneles de experiencia interactiva de aplicaciones controladas por modelos en Power Apps | Microsoft Docs
-description: Aprenda a configurar paneles de experiencia interactiva en Power Apps
+title: Crear y configurar paneles de experiencia interactiva de aplicaciones controladas por modelos en Power Apps | Microsoft Docs
+description: Aprenda a crear y configurar paneles de experiencia interactiva en Power Apps
 keywords: Paneles interactivos; Customer Service; Microsoft Dynamics 365; centro de servicio interactivo
 author: Mattp123
 ms.author: matp
 manager: kvivek
 ms.custom: ''
-ms.date: 04/19/2019
+ms.date: 04/08/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,20 +22,23 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fefeebb0106907e59ea1fd5a13d620cdeb315774
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 584aeae66230e94296b386023c00f95d07c51a13
+ms.sourcegitcommit: 7d3caf698d367a56af9e16c43af8005adb9f87cd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2885021"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "3250077"
 ---
-# <a name="configure-model-driven-app-interactive-experience-dashboards"></a>Configurar paneles de experiencia interactiva de aplicaciones controladas por modelos
+# <a name="create-and-configure-model-driven-app-interactive-experience-dashboards"></a>Crear y configurar paneles de experiencia interactiva de aplicaciones controladas por modelos
 
 Los paneles de experiencia interactiva pueden convertirse en un área de trabajo integral para los usuarios de las aplicaciones, como representantes de servicio, para ver la información sobre la carga de trabajo y actuar. Son totalmente configurables, están basados en roles de seguridad y proporcionan la información de carga de trabajo a través de secuencias múltiples en tiempo real. Los usuarios de panel interactivo no necesitan navegar por la aplicación en busca de un registro específico; pueden actuar sobre él directamente desde el panel. 
 
  Los paneles de experiencia interactiva se ofrecen en dos formatos: de varias secuencias y de secuencia única. Además, los paneles de varias secuencias pueden ser paneles específicos de la página principal o de la entidad. Los paneles específicos de la entidad se configuran en una parte diferente de la interfaz de usuario y se precargan parcialmente con información de configuración específica de la entidad.  
   
  Los paneles de varias secuencias muestran datos en tiempo real sobre varias secuencias de datos. No hay un límite en el número de secuencias que puede configurar en el panel. Los datos de una secuencia se pueden basar únicamente en una entidad, pero cada secuencia se puede basar en otra entidad. En los paneles específicos de la entidad, todas las secuencias se basan en la misma entidad. Los datos fluyen desde distintas vistas o colas, por ejemplo, **Mis actividades**, **Mis casos**o **Casos de la cola bancarios**. 
+ 
+> [!NOTE]
+> Los ejemplos descritos aquí usan la entidad Case, que está disponible con la aplicación Dynamics 365 Customer Service.
   
  Los paneles de secuencia única muestran datos en tiempo real a lo largo de una secuencia basados en una vista o cola de la entidad. Las ventanas se colocan en la parte derecha de los paneles y se muestran siempre. Los paneles de secuencia única suelen ser útiles para los clientes potenciales o administradores del servicio de nivel 2, que supervisan menos casos, pero más complejos o remitidos a una instancia superior.  
   
@@ -97,11 +100,12 @@ En este ejemplo hay dos opciones interactivas del panel disponibles en la entida
   
 ### <a name="configure-the-appears-in-global-filter-in-interactive-experience-option"></a>Configurar la opción 'Aparece en el filtro global en la experiencia interactiva'
 
-1. Abra el [explorador de soluciones](advanced-navigation.md#solution-explorer).  
-2. En **Componentes**, expanda **Entidades** y, a continuación, expanda la entidad que desea.
-3. En el panel de navegación, seleccione **Campos** y en la cuadrícula, haga doble clic en el campo que desee habilitar.
-4. En la pestaña **General**, seleccione la casilla **Aparece en el filtro global en la experiencia interactiva**. Seleccione **Guardar y cerrar**.
-5. Seleccione **Publicar todas las personalizaciones** para que los cambios surtan efecto.
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+2.  Seleccione **Soluciones**, abra la solución que desee y, en la barra de herramientas, seleccione **Cambiar a clásico**. 
+3. En **Componentes**, expanda **Entidades** y, a continuación, expanda la entidad que desea.
+4. En el panel de navegación, seleccione **Campos** y en la cuadrícula, haga doble clic en el campo que desee habilitar.
+5. En la pestaña **General**, seleccione la casilla **Aparece en el filtro global en la experiencia interactiva**. Seleccione **Guardar y cerrar**.
+6. Seleccione **Publicar todas las personalizaciones** para que los cambios surtan efecto.
   
  Los campos que habilita para **Aparece en el filtro global en la experiencia interactiva** aparecen en la ventana de control flotante de filtro global cuando se hace clic en el icono de filtro global en el encabezado del panel. En la ventana de control flotante, los representantes de servicio pueden seleccionar los campos que desean filtrar globalmente, en gráficos, y también en secuencias y ventanas que se basan en la entidad de filtro.   
   
@@ -114,11 +118,12 @@ En este ejemplo hay dos opciones interactivas del panel disponibles en la entida
   
 ### <a name="configure-the-sortable-in-interactive-experience-dashboard-option"></a>Configurar la opción 'Se puede ordenar en el panel de experiencia interactiva'
   
-1. Abra el [explorador de soluciones](advanced-navigation.md#solution-explorer).  
-2. En **Componentes**, expanda **Entidades** y, a continuación, expanda la entidad que desea.
-3. En el panel de navegación, seleccione Campos y en la cuadrícula, haga doble clic en el campo que desee habilitar.
-4. En la pestaña **General**, seleccione la casilla **Se puede ordenar en el panel de experiencia interactiva**. Seleccione **Guardar y cerrar**.
-5. Seleccione **Publicar todas las personalizaciones** para que los cambios surtan efecto.
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+2.  Seleccione **Soluciones**, abra la solución que desee y, en la barra de herramientas, seleccione **Cambiar a clásico**. 
+3. En **Componentes**, expanda **Entidades** y, a continuación, expanda la entidad que desea.
+4. En el panel de navegación, seleccione **Campos** y en la cuadrícula, haga doble clic en el campo que desee habilitar.
+5. En la pestaña **General**, seleccione la casilla **Se puede ordenar en el panel de experiencia interactiva**. Seleccione **Guardar y cerrar**.
+6. Seleccione **Publicar todas las personalizaciones** para que los cambios surtan efecto.
   
 Los campos que configure para ordenación aparecerán en la lista desplegable en el encabezado de la secuencia. 
 
@@ -131,44 +136,50 @@ El siguiente ejemplo muestra el cuadro de diálogo de control flotante con la li
   
 #### <a name="enable-security-roles-for-interactive-dashboards"></a>Habilitar roles de seguridad para paneles interactivos
 
-1. Abra el [explorador de soluciones](advanced-navigation.md#solution-explorer).  
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
   
-2. En **Componentes**, seleccione **Paneles**.  
+2.  Seleccione **Soluciones** y luego abra la solución que desee. 
+
+3.  Seleccione el panel que desea y en la barra de herramientas seleccione **Habilitar roles de seguridad**. 
   
-3.  En la cuadrícula, seleccione el panel interactivo que desea y seleccione **Habilitar roles de seguridad** en la barra de tareas.  
-  
+    > [!div class="mx-imgBorder"] 
+    > ![Habilitar roles de seguridad](media/dashboard-enable-security-roles.png)
+
 4.  En el diálogo **Asignar roles de seguridad**, seleccione la opción **Mostrar solo a estos roles de seguridad determinados** y seleccione los roles que desea habilitar. Seleccione **Aceptar**.  
+
+     ![Habilitar roles de seguridad](media/security-roles.png "Habilitar roles de seguridad")    
   
-5.  Seleccione **Publicar todas las personalizaciones** para que los cambios surtan efecto.    
+5.  Seleccione **Publicar** para que los cambios surtan efecto.    
   
- ![Habilitar roles de seguridad](media/security-roles.png "Habilitar roles de seguridad")    
   
 <a name="BKMK_Configure"></a>   
-## <a name="configure-interactive-experience-dashboards"></a>Configurar paneles de experiencia interactiva  
- En la siguiente sección se describe cómo configurar los diferentes tipos de paneles interactivos.  
+## <a name="create-interactive-experience-dashboards"></a>Crear paneles de experiencia interactiva  
+En la siguiente sección se describe cómo crear y después configurar los diferentes tipos de paneles interactivos.  
   
 ### <a name="configure-a-multi-stream-interactive-dashboard-using-the-4-column-layout"></a>Configure un panel interactivo de varias secuencias utilizando el diseño de 4 columnas  
  
 1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
   
-2.  Seleccione **Datos** > **Entidades** > seleccione la entidad que desee. 
+2.  Seleccione **Soluciones**, abra la solución que desee y, en la barra de herramientas, seleccione **Cambiar a clásico**. 
 
-3.  Seleccione la pestaña **Paneles** y, a continuación, en la barra de herramientas seleccione **Agregar panel**. 
+3.  En el panel de navegación izquierdo, seleccione **Paneles**, en la barra de herramientas seleccione **Nuevo** y luego seleccione **Panel de experiencia interactiva**. 
+
+    ![Nuevo panel de experiencia interactiva](media/interactive-exp-dash-sol-explorer.png)
   
 4.  Elija el diseño, 2, 3 o 4 de ancho de las columnas.  
   
 5.  Cuando se abre el formulario del panel, rellene la información de filtro en la parte superior del formulario, como se indica aquí.  
  
- > [!div class="mx-imgBorder"] 
- > ![Agregar filtros visuales](media/interactive-dashboards-add-visual-filters.png "Agregar filtros visuales")  
+    > [!div class="mx-imgBorder"] 
+    > ![Agregar filtros visuales](media/interactive-dashboards-add-visual-filters.png "Agregar filtros visuales")  
   
    - **Entidad de filtro**: Los filtros visuales y los atributos de filtro global se basan en esta entidad.  
       
-    - **Vista de entidad**: Los filtros visuales se basan en esta vista.  
+   - **Vista de entidad**: Los filtros visuales se basan en esta vista.  
       
-    - **Filtrar por**: El campo al que se aplica el filtro temporal.  
+   - **Filtrar por**: El campo al que se aplica el filtro temporal.  
       
-    - **Plazo de tiempo**: El valor predeterminado del filtro temporal para el campo **Filtrar por**.  
+   - **Plazo de tiempo**: El valor predeterminado del filtro temporal para el campo **Filtrar por**.  
       
  Una vez especificada la información de filtrado, comience a agregar componentes para los gráficos y las secuencias de datos. Para agregar un componente, simplemente seleccione el elemento del centro del gráfico o la secuencia y, cuando aparezca el cuadro de diálogo, seleccione la información necesaria de la lista desplegable, como se muestra en las siguientes ilustraciones.  
   
@@ -205,23 +216,17 @@ La siguiente ilustración es un ejemplo de un panel de gráficos completamente y
   
 1. Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).   
   
-2. Seleccione **Datos** > **Entidades** > seleccione la entidad que desee. Seleccione la ficha **Paneles**.  
+2. Seleccione **Soluciones**, abra la solución que desee y abra el panel interactivo.  
   
-     O bien  
-   
-   Abra el [explorador de soluciones](advanced-navigation.md#solution-explorer) y, a continuación, en **Componentes** seleccione **Paneles**.
+3.  Seleccione la secuencia que desea editar para seleccionarla y luego seleccione **Editar componente**.  
   
-3.  En la cuadrícula, seleccione el nombre del panel interactivo que desea editar para abrirlo.  
+4.  En función de si desea agregar una vista o una cola a la secuencia, seleccione los detalles de la vista o la cola para la secuencia y, a continuación seleccione **Establecer**.  
   
-4.  Seleccione la secuencia que desea editar para seleccionarla y luego seleccione **Editar componente**.  
+5.  Seleccione **Guardar**.  
   
-5.  En función de si desea agregar una vista o una cola a la secuencia, seleccione los detalles de la vista o la cola para la secuencia y, a continuación seleccione **Establecer**.  
+ También puede eliminar una secuencia individual de un panel. Para ello, seleccione la secuencia y, en la barra de herramientas, seleccione **Eliminar**.  
   
-6.  Seleccione **Guardar**.  
-  
- También puede eliminar una secuencia individual de un panel. Para ello, seleccione la secuencia y, en la barra de comandos, seleccione **Eliminar**.  
-  
-### <a name="configure-an-entity-specific-dashboard"></a>Configurar un panel específico de la entidad  
+### <a name="create-an-entity-specific-dashboard"></a>Crear un panel específico de la entidad  
  Un panel específico de la entidad es un panel de varias secuencias. La configuración de este panel es similar a configurar un panel de varias secuencias de la página principal, pero se realiza en un lugar distinto de la interfaz de usuario y hay otras diferencias de menor importancia. 
 
 Por ejemplo, en lugar de seleccionar una entidad, algunos campos del panel específico de la entidad se preestablecen en la entidad para la que está creando el panel.  
@@ -244,7 +249,7 @@ Por ejemplo, en lugar de seleccionar una entidad, algunos campos del panel espec
   
 <a name="BKMK_ConfigureColors"></a>   
 ## <a name="configure-dashboard-colors"></a>Configurar los colores del panel  
- Para todos los campos del tipo **Conjunto de opciones** y **Dos opciones**, como **Tipo de caso**, **Se ha remitido a una instancia superior** o **Prioridad** de la entidad **Caso**, puede configurar un color determinado que aparecerá en los gráficos y secuencias para valores de campos específicos. Por ejemplo, los casos prioritarios se pueden mostrar en rojo, los casos de prioridad media en azul, y los casos de prioridad baja en verde en los gráficos interactivos. En las secuencias, habrá una barra vertical fina de color junto a la descripción del elemento de trabajo.  
+Para todos los campos del tipo **Conjunto de opciones** y **Dos opciones**, como **Tipo de caso**, **Se ha remitido a una instancia superior** o **Prioridad** de la entidad **Caso**, puede configurar un color determinado que aparecerá en los gráficos y secuencias para valores de campos específicos. Por ejemplo, los casos prioritarios se pueden mostrar en rojo, los casos de prioridad media en azul, y los casos de prioridad baja en verde en los gráficos interactivos. En las secuencias, habrá una barra vertical fina de color junto a la descripción del elemento de trabajo.  
   
 > [!NOTE]
 >  La codificación de color no está disponible para los gráficos de etiqueta y los gráficos de anillos. Estos gráficos aparecen en el panel en tonos de blanco, gris, y negro.  
@@ -258,7 +263,7 @@ Por ejemplo, en lugar de seleccionar una entidad, algunos campos del panel espec
   
 5.  Cuando aparezca el diálogo **Modificar valor de lista**, establezca el nuevo valor en el cuadro de texto **Color**. Seleccione **Aceptar**.  
   
-     Seleccione **Guardar y cerrar**.  
+6.  Seleccione **Guardar y cerrar**.  
   
 7.  Seleccione **Publicar** para que los cambios surtan efecto.  
   
@@ -267,7 +272,7 @@ En el siguiente ejemplo, modificamos el color para el campo **Se ha remitido a u
  > [!div class="mx-imgBorder"] 
  > ![Cambiar color en el panel](media/edit-color.png "Cambiar color en el panel")  
   
-Cuando se abra el cuadro de diálogo **Modificar valor de lista**, elija el color como se muestra aquí:  
+Cuando se abra el cuadro de diálogo **Modificar valor de lista**, introduzca un código de color hexadecimal, como #800000, que se muestra aquí:  
   
  ![Modificar el color del panel](media/modify-color.png "Modificar el color del panel")  
 

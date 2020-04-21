@@ -1,7 +1,7 @@
 ---
 title: Información general sobre las relaciones entre entidades para Common Data Service | MicrosoftDocs
 ms.custom: ''
-ms.date: 04/25/2019
+ms.date: 04/13/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 89a28060f7894afe49d0abe36b4461d6e2cbc474
-ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
+ms.openlocfilehash: 279b2419af515b4a75265069d8b19ba348004b94
+ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3040411"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3265124"
 ---
 # <a name="entity-relationships-overview"></a>Información general sobre relaciones entre entidades
 Las relaciones de entidad definen cómo pueden relacionarse los registros entre sí en la base de datos. En el nivel más sencillo, si agrega un campo de búsqueda a una entidad se crea una nueva relación 1:N (uno a varios) entre las dos entidades y permite colocar el campo de búsqueda en un formulario. Con el campo de búsqueda, los usuarios pueden asociar varios registros *secundarios* de la entidad a un solo registro de la entidad *primaria*.  
