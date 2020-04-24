@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b5f273fcc14b7c8bd9cbde947133fd70d4a2a432
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: a3e1bb7acbe645a6a1c9ae39dfe37634ac2c2deb
+ms.sourcegitcommit: 365155c2d81a78958561b89b46285f5bcbffa853
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79035625"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224612"
 ---
 # <a name="use-keyboard-shortcuts-in-power-apps"></a>Uso de métodos abreviados de teclado en Power Apps
 
@@ -69,8 +69,8 @@ Si el administrador ha habilitado las cuadrículas editables (vistas), puede edi
 
 |Tarea  | Interfaz unificada|
 |---------|---------|
-|Si el foco está en un encabezado de columna, ordenar por columna | Tecla Entrar |
-|Si el foco está en un encabezado de columna, abrir el cuadro de diálogo de filtro | Barra espaciadora|
+|Si el foco está en un encabezado de columna, ordenar por columna | Barra espaciadora para la lista desplegable y luego flecha abajo para seleccionar una acción, seguido de Entrar |
+|Si el foco está en un encabezado de columna, abrir el cuadro de diálogo de filtro | Barra espaciadora para la lista desplegable y luego flecha abajo para seleccionar la opción **Filtrar por**, seguido de Entrar |
 |Si el foco esté en las celdas, ir al siguiente campo |  Tecla de flecha derecha (→)  | 
 |Si el foco esté en las celdas, ir al campo anterior   |  Tecla de flecha izquierda (←)|
 |Si el foco está en el encabezado de columna, ir al siguiente encabezado de columna |  Pestaña  | 

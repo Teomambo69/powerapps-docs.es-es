@@ -15,24 +15,24 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 522fda8c104263f4508dbf0577aca44f1b858708
-ms.sourcegitcommit: 5bfd0448f1d5ca3d938e3bd928d1dd3d4042afff
+ms.openlocfilehash: d2fb92fcec1ac0954eeb35e4161efd21f2ff13a1
+ms.sourcegitcommit: af653cd30f5879fea97a594d458d355fe18f4834
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76828808"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223490"
 ---
 # <a name="create-edit-or-save-an-advanced-find-search"></a>Creación, edición o guardado de una búsqueda avanzada
 
 Busque los registros que quiera en la aplicación mediante la opción de búsqueda avanzada. También puede usar la búsqueda avanzada para preparar datos para exportar a Office Excel, de modo que se puedan analizar, resumir o agregar, o para crear tablas dinámicas para ver los datos desde distintas perspectivas.  
   
-1. En la barra de comandos, haga clic en el botón **Búsqueda avanzada**.
+1. En la barra de comandos, seleccione el botón **Búsqueda avanzada**.
   
 2. Especifique lo que quiere buscar.  
   
    1.  En la lista **Buscar**, seleccione un tipo de registro.  
   
-   2.  Haga clic en **Seleccionar** para definir los criterios de búsqueda: campo (por ejemplo, Nombre de cuenta o Ciudad), el operador relacional de consulta (parte de una expresión como "Es igual a" o "Contiene" que define cómo se debe comparar un atributo especificado con un valor) y los valores que se van a buscar (por ejemplo, "Seattle" o "Correo electrónico").  
+   2.  Elija **Seleccionar** para definir los criterios de búsqueda: campo (por ejemplo, Nombre de cuenta o Ciudad), el operador relacional de consulta (parte de una expresión como "Es igual a" o "Contiene" que define cómo se debe comparar un atributo especificado con un valor) y los valores que se van a buscar (por ejemplo, "Seattle" o "Correo electrónico").  
   
        Puede seleccionar campos del tipo de registro actual o de registros relacionados. Por ejemplo, una cuenta podría tener muchos registros de contactos relacionados.  
   
@@ -57,3 +57,39 @@ Busque los registros que quiera en la aplicación mediante la opción de búsque
    4.  Seleccione **Aceptar**.  
   
 5. Seleccione **Resultados**.
+
+Para guardar los resultados, seleccione **Guardar como** y asigne el nombre a la vista personalizada. 
+
+
+## <a name="share-a-personal-view"></a>Uso compartido de una vista personal
+
+Para compartir una vista personal, esta debe guardarse primero.
+
+1. En la barra de comandos, seleccione el botón **Búsqueda avanzada**.
+2. En la pestaña búsqueda avanzada, seleccione **Vistas guardadas**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Botón de vistas guardadas](media/saved_views_1.png "Botón de vistas guardadas")
+   
+3. En la lista de vistas guardadas, seleccione una vista y, a continuación, seleccione **Compartir**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Selección de una vista guardada](media/saved_views_2.png "Selección de una vista guardada")
+   
+4. En la pantalla para **compartir vista guardada**, seleccione **Agregar usuario o equipo**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Selección de usuarios o equipo](media/saved_views_3.png "Selección de usuarios o equipo")
+
+
+5. Use la búsqueda para encontrar los usuarios o equipos con los que desea compartir la vista.
+6. Cuando encuentre el usuario o el equipo, seleccione su nombre y, a continuación, elija **Seleccionar** y **Guardar**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Selección de nombres de usuario o equipo](media/saved_views_4.png "Selección de nombres de usuario o equipo")
+    
+7. Seleccione el permiso de cada usuario y, a continuación, seleccione **Compartir**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Uso compartido de la vista](media/saved_views_5.png "Selección de Compartir para compartir la vista")
+
