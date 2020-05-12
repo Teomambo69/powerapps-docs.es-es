@@ -1,4 +1,4 @@
-- name: Comenzar
+- name: Introducción
   items:
     - name: ¿Qué es Power Apps?
       href: ../powerapps-overview.md
@@ -29,13 +29,11 @@
   items:
     - name: En un explorador
       href: ../user/run-app-browser.md
-    - name: En un teléfono (versión preliminar)
+    - name: En un teléfono
       href: ../user/run-canvas-and-model-apps-on-mobile.md
-    - name: En un teléfono (lienzo)
-      href: ../user/run-app-client.md
     - name: En una página de SharePoint Online (aplicaciones de lienzo)
       href: ../user/powerapps-web-part.md
-    - name: "En Microsoft\_Teams (aplicación de lienzo)"
+    - name: En Microsoft Teams (aplicaciones de lienzo)
       href: ../user/open-app-embedded-in-teams.md
     - name: Desde AppSource
       href: ../user/app-source.md
@@ -95,7 +93,7 @@
               href: ../user/add-powerbi-dashboards.md
         - name: Colaboración
           items:
-            - name: Uso de OneDrive para la Empresa
+            - name: Usar OneDrive para la Empresa
               href: ../user/one-drive.md
             - name: Toma de notas mediante OneNote
               href: ../user/onenote.md
@@ -117,7 +115,7 @@
               href: ../user/import-data.md
             - name: Exportar datos a Excel Online
               href: ../user/export-to-excel-online.md
-            - name: Exportación de datos a Excel
+            - name: Exportar datos a Excel
               href: ../user/export-data-excel.md
             - name: Exportar a una hoja de cálculo dinámica
               href: ../user/export-excel-dynamic-worksheet.md
@@ -145,9 +143,9 @@
               href: ../user/work-with-business-processes.md
             - name: Usar flujos
               href: ../user/use-flows.md
-    - name: Uso de aplicaciones controladas por modelos en dispositivos móviles (versión preliminar)
+    - name: Uso de aplicaciones basadas en modelos en dispositivos móviles
       href: ../user/use-custom-model-driven-app-on-mobile.md
-    - name: "Usar Dynamics\_365 App for Outlook"
+    - name: Usar Dynamics 365 App for Outlook
       href: ../user/use-outlook-app.md
 - name: Crear aplicaciones
   items:
@@ -203,7 +201,7 @@
           href: ./canvas-apps/get-started-create-from-blank.md
     - name: Diseñar y crear una aplicación
       items:
-        - name: Conectar a datos
+        - name: Conectarse a los datos
           items:
             - name: Información general sobre las conexiones
               href: ./canvas-apps/connections-list.md
@@ -223,19 +221,19 @@
                   href: canvas-apps/connections/connection-dynamicsax.md
                 - name: Excel
                   href: canvas-apps/connections/connection-excel.md
-                - name: Microsoft Translator
+                - name: "Microsoft\_Translator"
                   href: canvas-apps/connections/connection-microsoft-translator.md
                 - name: Office 365 Outlook
                   href: canvas-apps/connections/connection-office365-outlook.md
                 - name: Usuarios de Office 365
                   href: canvas-apps/connections/connection-office365-users.md
-                - name: Oracle Database
+                - name: Base de datos de Oracle
                   href: canvas-apps/connections/connection-oracledb.md
-                - name: "Power\_BI"
+                - name: Power BI
                   href: canvas-apps/connections/connection-powerbi.md
                 - name: SharePoint
                   href: canvas-apps/connections/connection-sharepoint-online.md
-                - name: "SQL\_Server"
+                - name: SQL Server
                   href: canvas-apps/connections/connection-azure-sqldatabase.md
                 - name: Twitter
                   href: canvas-apps/connections/connection-twitter.md
@@ -249,11 +247,11 @@
               href: ./canvas-apps/delegation-overview.md
             - name: Administrar puertas de enlace
               href: ./canvas-apps/gateway-management.md
-            - name: Puertas de enlace
+            - name: Conocer las puertas de enlace
               href: ./canvas-apps/gateway-reference.md
-            - name: Orígenes de datos
+            - name: Información acerca de los orígenes de datos
               href: ./canvas-apps/working-with-data-sources.md
-            - name: Tablas y registros
+            - name: Conocer las tablas y registros
               href: ./canvas-apps/working-with-tables.md
             - name: Referencias de los registros
               href: ./canvas-apps/working-with-references.md
@@ -267,7 +265,7 @@
                   href: ./canvas-apps/add-screen-context-variables.md
                 - name: Agregar una pantalla en desplazamiento
                   href: ./canvas-apps/add-scrolling-screen.md
-                - name: Configurar las pantallas de Office 365
+                - name: Configurar pantallas de Office 365
                   items:
                     - name: Información general de la pantalla de calendario
                       href: ./canvas-apps/screen-templates/calendar-screen-overview.md
@@ -311,6 +309,18 @@
               href: ./canvas-apps/use-line-pie-bar-chart.md
             - name: Agregar elementos multimedia
               href: ./canvas-apps/add-images-pictures-audio-video.md
+            - name: Agregar componentes de realidad mixta (vista previa)
+              items:
+                - name: Componentes de realidad mixta
+                  href: ./canvas-apps/mixed-reality-overview.md
+                - name: Ver y manipular modelos 3D
+                  href: ./canvas-apps/mixed-reality-component-view-3d.md
+                - name: Ver formas predefinidas en realidad mixta
+                  href: ./canvas-apps/mixed-reality-component-view-shape.md
+                - name: Ver modelos 3D e imágenes 2D en realidad mixta
+                  href: ./canvas-apps/mixed-reality-component-view-mr.md
+                - name: Medir en realidad mixta
+                  href: ./canvas-apps/mixed-reality-component-measure-distance.md
             - name: Agregar datos de Power BI
               href: ./canvas-apps/powerapps-custom-visual.md
             - name: Trabajo con la galería
@@ -351,7 +361,7 @@
                   href: ./canvas-apps/controls/control-form-detail.md
                 - name: Desplegable
                   href: ./canvas-apps/controls/control-drop-down.md
-                - name: Formulario de edición
+                - name: Editar formulario
                   href: ./canvas-apps/controls/control-form-detail.md
                 - name: Exportar
                   href: ./canvas-apps/controls/control-export-import.md
@@ -363,7 +373,7 @@
                   href: ./canvas-apps/controls/control-shapes-icons.md
                 - name: Imagen
                   href: ./canvas-apps/controls/control-image.md
-                - name: Importación
+                - name: Importar
                   href: ./canvas-apps/controls/control-export-import.md
                 - name: Gráfico de líneas
                   href: ./canvas-apps/controls/control-column-line-chart.md
@@ -371,13 +381,13 @@
                   href: ./canvas-apps/controls/control-list-box.md
                 - name: Micrófono
                   href: ./canvas-apps/controls/control-microphone.md
-                - name: Visor de PDF (experimental)
+                - name: Visor de PDF (piloto)
                   href: ./canvas-apps/controls/control-pdf-viewer.md
                 - name: Entrada manuscrita
                   href: ./canvas-apps/controls/control-pen-input.md
                 - name: Gráfico circular
                   href: ./canvas-apps/controls/control-pie-chart.md
-                - name: Icono de Power BI
+                - name: Ventana de Power BI
                   href: ./canvas-apps/controls/control-power-bi-tile.md
                 - name: Radio
                   href: ./canvas-apps/controls/control-radio.md
@@ -393,7 +403,7 @@
                   href: ./canvas-apps/controls/control-slider.md
                 - name: Streaming de vídeo
                   href: ./canvas-apps/controls/control-stream-video.md
-                - name: Label
+                - name: Etiqueta
                   href: ./canvas-apps/controls/control-text-box.md
                 - name: Entrada de texto
                   href: ./canvas-apps/controls/control-text-input.md
@@ -411,7 +421,7 @@
                   href: ./canvas-apps/controls/properties-accessibility.md
                 - name: Color y borde
                   href: ./canvas-apps/controls/properties-color-border.md
-                - name: Núcleo
+                - name: Principal
                   href: ./canvas-apps/controls/properties-core.md
                 - name: Imagen
                   href: ./canvas-apps/controls/properties-visual.md
@@ -419,33 +429,33 @@
                   href: ./canvas-apps/controls/properties-size-location.md
                 - name: Texto
                   href: ./canvas-apps/controls/properties-text.md
-        - name: Configurar la funcionalidad de una aplicación
+        - name: Configurar funcionalidad de la aplicación
           items:
             - name: Introducción a las fórmulas
               href: ./canvas-apps/working-with-formulas.md
-            - name: Variables
+            - name: Conocer las variables
               href: ./canvas-apps/working-with-variables.md
-            - name: Información sobre las fórmulas de comportamiento
+            - name: Conocer las fórmulas de comportamiento
               href: ./canvas-apps/working-with-formulas-in-depth.md
             - name: Mostrar fechas y horas
               href: ./canvas-apps/show-text-dates-times.md
-            - name: Crear una colección
+            - name: Cree una recopilación
               href: ./canvas-apps/create-update-collection.md
             - name: Mostrar el usuario actual
               href: ./canvas-apps/show-current-user.md
-            - name: Conectar listas mediante búsquedas
+            - name: Conectar listas con búsquedas
               href: ./canvas-apps/sharepoint-lookup-fields.md
             - name: Agregar un flujo
               href: ./canvas-apps/using-logic-flows.md
             - name: Creación de una regla en aplicaciones de lienzo
               href: ./canvas-apps/working-with-rules.md
-            - name: Referencia sobre fórmulas
+            - name: Referencia de fórmula
               items:
                 - name: Información general
                   href: ./canvas-apps/formula-reference.md
                 - name: Abs
                   href: ./canvas-apps/functions/function-numericals.md
-                - name: Acceleration
+                - name: Aceleración
                   href: ./canvas-apps/functions/signals.md
                 - name: Acos
                   href: ./canvas-apps/functions/function-trig.md
@@ -453,9 +463,9 @@
                   href: ./canvas-apps/functions/function-trig.md
                 - name: AddColumns
                   href: ./canvas-apps/functions/function-table-shaping.md
-                - name: And
+                - name: 'Y'
                   href: ./canvas-apps/functions/function-logicals.md
-                - name: App
+                - name: Aplicación
                   href: ./canvas-apps/functions/object-app.md
                 - name: Asin
                   href: ./canvas-apps/functions/function-trig.md
@@ -473,7 +483,7 @@
                   href: ./canvas-apps/functions/function-navigate.md
                 - name: Blank
                   href: ./canvas-apps/functions/function-isblank-isempty.md
-                - name: Calendar
+                - name: Calendario
                   href: ./canvas-apps/functions/function-clock-calendar.md
                 - name: Char
                   href: ./canvas-apps/functions/function-char.md
@@ -503,7 +513,7 @@
                   href: ./canvas-apps/functions/function-concatenate.md
                 - name: Concurrent
                   href: ./canvas-apps/functions/function-concurrent.md
-                - name: Connection
+                - name: Conexión
                   href: ./canvas-apps/functions/signals.md
                 - name: Count
                   href: ./canvas-apps/functions/function-table-counts.md
@@ -531,7 +541,7 @@
                   href: ./canvas-apps/functions/function-datevalue-timevalue.md
                 - name: DateValue
                   href: ./canvas-apps/functions/function-datevalue-timevalue.md
-                - name: Día
+                - name: Day
                   href: ./canvas-apps/functions/function-datetime-parts.md
                 - name: Defaults
                   href: ./canvas-apps/functions/function-defaults.md
@@ -542,7 +552,7 @@
                 - name: Distinct
                   href: ./canvas-apps/functions/function-distinct.md
                 - name: Download
-                  href: ./canvas-apps/functions/function-param.md
+                  href: ./canvas-apps/functions/function-download.md
                 - name: DropColumns
                   href: ./canvas-apps/functions/function-table-shaping.md
                 - name: EditForm
@@ -559,7 +569,7 @@
                   href: ./canvas-apps/functions/function-exit.md
                 - name: Exp
                   href: ./canvas-apps/functions/function-numericals.md
-                - name: Filtro
+                - name: Filter
                   href: ./canvas-apps/functions/function-filter-lookup.md
                 - name: Find
                   href: ./canvas-apps/functions/function-find.md
@@ -579,7 +589,7 @@
                   href: ./canvas-apps/functions/function-datetime-parts.md
                 - name: Identificadores
                   href: ./canvas-apps/functions/operators.md
-                - name: Si
+                - name: If
                   href: ./canvas-apps/functions/function-if.md
                 - name: IfError
                   href: ./canvas-apps/functions/function-iferror.md
@@ -587,6 +597,8 @@
                   href: ./canvas-apps/functions/function-isblank-isempty.md
                 - name: IsEmpty
                   href: ./canvas-apps/functions/function-isblank-isempty.md
+                - name: IsError
+                  href: ./canvas-apps/functions/function-iferror.md
                 - name: IsMatch
                   href: ./canvas-apps/functions/function-ismatch.md
                 - name: IsNumeric
@@ -597,7 +609,7 @@
                   href: ./canvas-apps/functions/function-astype-istype.md
                 - name: JSON
                   href: ./canvas-apps/functions/function-json.md
-                - name: Idioma
+                - name: Language
                   href: ./canvas-apps/functions/function-language.md
                 - name: Last
                   href: ./canvas-apps/functions/function-first-last.md
@@ -605,7 +617,7 @@
                   href: ./canvas-apps/functions/function-first-last.md
                 - name: Launch
                   href: ./canvas-apps/functions/function-param.md
-                - name: Izquierda
+                - name: Left
                   href: ./canvas-apps/functions/function-left-mid-right.md
                 - name: Len
                   href: ./canvas-apps/functions/function-len.md
@@ -633,9 +645,9 @@
                   href: ./canvas-apps/functions/function-datetime-parts.md
                 - name: Mod
                   href: ./canvas-apps/functions/function-mod.md
-                - name: Mes
+                - name: Month
                   href: ./canvas-apps/functions/function-datetime-parts.md
-                - name: Navigate
+                - name: Navegar
                   href: ./canvas-apps/functions/function-navigate.md
                 - name: NewForm
                   href: ./canvas-apps/functions/function-form.md
@@ -645,7 +657,7 @@
                   href: ./canvas-apps/functions/function-showerror.md
                 - name: Now
                   href: ./canvas-apps/functions/function-now-today-istoday.md
-                - name: Operators
+                - name: Operadores
                   href: ./canvas-apps/functions/operators.md
                 - name: Or
                   href: ./canvas-apps/functions/function-logicals.md
@@ -665,11 +677,11 @@
                   href: ./canvas-apps/functions/function-trig.md
                 - name: Rand
                   href: ./canvas-apps/functions/function-rand.md
-                - name: Actualizar
+                - name: Refresh
                   href: ./canvas-apps/functions/function-refresh.md
                 - name: Relate
                   href: ./canvas-apps/functions/function-relate-unrelate.md
-                - name: Quitar
+                - name: Remove
                   href: ./canvas-apps/functions/function-remove-removeif.md
                 - name: RemoveIf
                   href: ./canvas-apps/functions/function-remove-removeif.md
@@ -739,25 +751,25 @@
                   href: ./canvas-apps/functions/function-trig.md
                 - name: Text
                   href: ./canvas-apps/functions/function-text.md
-                - name: Hora
+                - name: Time
                   href: ./canvas-apps/functions/function-date-time.md
                 - name: TimeValue
                   href: ./canvas-apps/functions/function-datevalue-timevalue.md
                 - name: TimeZoneOffset
                   href: ./canvas-apps/functions/function-dateadd-datediff.md
-                - name: Hoy
+                - name: Today
                   href: ./canvas-apps/functions/function-now-today-istoday.md
                 - name: Seguimiento
                   href: ./canvas-apps/functions/function-trace.md
-                - name: Trim
+                - name: Recortar
                   href: ./canvas-apps/functions/function-trim.md
                 - name: TrimEnds
                   href: ./canvas-apps/functions/function-trim.md
-                - name: Desagrupar
+                - name: Ungroup
                   href: ./canvas-apps/functions/function-groupby.md
                 - name: Unrelate
                   href: ./canvas-apps/functions/function-relate-unrelate.md
-                - name: Actualizar
+                - name: Update
                   href: ./canvas-apps/functions/function-update-updateif.md
                 - name: UpdateContext
                   href: ./canvas-apps/functions/function-updatecontext.md
@@ -779,7 +791,7 @@
                   href: ./canvas-apps/functions/function-datetime-parts.md
                 - name: Con
                   href: ./canvas-apps/functions/function-with.md
-                - name: Año
+                - name: Year
                   href: ./canvas-apps/functions/function-datetime-parts.md
         - name: Crear una aplicación en una solución
           href: ./canvas-apps/add-app-solution.md
@@ -797,21 +809,21 @@
               href: ./canvas-apps/northwind-orders-canvas-part3.md
         - name: Crear una aplicación global
           href: ./canvas-apps/global-apps.md
-        - name: Hacer que una aplicación sea accesible
+        - name: Crear una aplicación accesible
           items:
             - name: Crear una aplicación accesible
               href: ./canvas-apps/accessible-apps.md
             - name: Buscar problemas de accesibilidad
               href: ./canvas-apps/accessibility-checker.md
-            - name: Usar el color para la accesibilidad
+            - name: Usar color para accesibilidad
               href: ./canvas-apps/accessible-apps-color.md
             - name: Mostrar u ocultar el contenido de las tecnologías de asistencia
               href: ./canvas-apps/accessible-apps-content-visibility.md
             - name: Anunciar cambios dinámicos con las regiones activas
               href: ./canvas-apps/accessible-apps-live-regions.md
-        - name: Características experimentales y de versión preliminar
+        - name: Características piloto y de vista previa
           href: ./canvas-apps/working-with-experimental-preview.md
-    - name: Guardar y publicar una aplicación
+    - name: Guardar y publicar en la aplicación
       href: ./canvas-apps/save-publish-app.md
     - name: Dependencias de una aplicación y uso compartido
       items:
@@ -819,7 +831,7 @@
           href: ./canvas-apps/share-app.md
         - name: Compartir datos de Excel
           href: ./canvas-apps/share-app-data.md
-        - name: Compartir los recursos de la aplicación
+        - name: Compartir recursos de aplicación
           href: ./canvas-apps/share-app-resources.md
         - name: Insertar una aplicación en Power BI
           href: ./canvas-apps/embed-powerapps-powerbi.md
@@ -835,11 +847,11 @@
           href: ./canvas-apps/license-designation.md
         - name: Restaurar una versión anterior
           href: ./canvas-apps/restore-an-app.md
-        - name: Cambiar el nombre y el icono de la aplicación
+        - name: Cambiar nombre y ventana de aplicación
           href: ./canvas-apps/set-name-tile.md
         - name: Administración de pantallas
           items:
-            - name: Cambiar el tamaño y la orientación de la pantalla
+            - name: Cambiar tamaño de pantalla y orientación
               href: ./canvas-apps/set-aspect-ratio-portrait-landscape.md
             - name: Creación de un diseño dinámico
               href: ./canvas-apps/create-responsive-layout.md
@@ -853,11 +865,15 @@
           items:
             - name: Configuración de la canalización con el editor clásico
               href: ./canvas-apps/test-studio-classic-pipeline-editor.md
+            - name: Configuración de la canalización con YAML
+              href: ./canvas-apps/test-studio-yaml-pipeline.md
+    - name: Depurar una aplicación con el monitor de aplicación de lienzo
+      href: ./canvas-apps/monitor.md
     - name: Personalizar un formulario de lista de SharePoint
       items:
         - name: Realización de cambios básicos
           href: ./canvas-apps/customize-list-form.md
-        - name: Comprensión de la integración de formularios de SharePoint
+        - name: Conocer la integración de formularios de SharePoint
           href: ./canvas-apps/sharepoint-form-integration.md
     - name: Integrar con otras tecnologías
       items:
@@ -881,25 +897,25 @@
               href: ./canvas-apps/sharepoint-scenario-embed-report.md
             - name: Crear un flujo para alertas
               href: ./canvas-apps/sharepoint-scenario-alerts-flow.md
-            - name: Recorrer el escenario finalizado
+            - name: Ejemplo de escenario finalizado
               href: ./canvas-apps/sharepoint-scenario-summary.md
         - name: Cognitive Services
           href: ./canvas-apps/cognitive-services-api.md
-        - name: Transformación de Formularios de InfoPath a Power Apps
+        - name: Transformar los formularios de InfoPath a Power Apps
           href: ./canvas-apps/transform-infopath.md
         - name: Analizar la telemetría de las aplicaciones mediante Application Insights
           href: ./canvas-apps/application-insights.md
     - name: Para desarrolladores
       items:
-        - name: 'Aplicaciones de lienzo para desarrolladores empresariales, asociados y fabricantes de software independientes'
+        - name: 'Aplicaciones de lienzo para desarrolladores empresariales, partners e ISV'
           href: ./canvas-apps/dev-enterprise-intro.md
-        - name: Compilación y certificación de conectores personalizados
+        - name: Crear y certificar conectores personalizados
           href: ./canvas-apps/register-custom-api.md
-        - name: Integrar con sitios web y otras tecnologías
+        - name: Integrar con páginas web y otras tecnologías
           href: ./canvas-apps/embed-apps-dev.md
-        - name: Desarrollar aplicaciones que puedan ejecutarse sin conexión
+        - name: Desarrollar aplicaciones con trabajo sin conexión
           href: ./canvas-apps/offline-apps.md
-        - name: Permitir que los clientes prueben las versiones de las aplicaciones
+        - name: Permitir que los clientes prueben sus aplicaciones
           href: ./canvas-apps/dev-appsource-test-drive.md
         - name: Crear un componente
           items:
@@ -911,7 +927,7 @@
               href: ./canvas-apps/component-behavior.md
         - name: Incrustación de aplicaciones de lienzo en otras aplicaciones
           href: ./canvas-apps/embedding-sdk.md
-- name: Aplicaciones controladas por modelos
+- name: Aplicaciones basadas en modelos
   items:
     - name: ¿Qué son las aplicaciones basadas en modelos?
       href: ./model-driven-apps/model-driven-app-overview.md
@@ -921,16 +937,16 @@
       href: ./model-driven-apps/build-first-model-driven-app.md
     - name: Diseñar y crear una aplicación
       items:
-        - name: Información de componentes de aplicación controlados por modelos
+        - name: Conocer los componentes de las aplicaciones basadas en modelos
           href: ./model-driven-apps/model-driven-app-components.md
-        - name: Definir datos para una aplicación
+        - name: Definir los datos para una aplicación
           href: ./model-driven-apps/define-data-model-driven-app.md
           items:
-            - name: Propiedades de campo común
+            - name: Propiedades de campos comunes
               href: ./model-driven-apps/common-field-properties-legacy.md
-            - name: Información general de propiedades de campo especial
+            - name: Información general sobre propiedades de campos especiales
               href: ./model-driven-apps/special-field-properties-legacy.md
-            - name: Traducir texto localizable
+            - name: Traducir el texto localizable
               href: ./model-driven-apps/translate-localizable-text.md
         - name: Diseñar la interfaz
           items:
@@ -941,11 +957,11 @@
                   href: ./model-driven-apps/create-edit-app.md
                 - name: Crear un mapa del sitio para una aplicación
                   href: ./model-driven-apps/create-site-map-app.md
-                - name: Agregar o editar componentes de una aplicación
+                - name: Agregar o editar componentes de la aplicación
                   href: ./model-driven-apps/add-edit-app-components.md
                 - name: Adición de una entidad como búsqueda
                   href: ./model-driven-apps/team-entity-lookup.md
-            - name: Trabajar con fórmulas
+            - name: Trabajar con formularios
               href: ./model-driven-apps/create-design-forms.md
               items:
                 - name: Usar el nuevo diseñador de formularios
@@ -985,13 +1001,13 @@
                 - name: Información general del editor de formularios
                   href: ./model-driven-apps/form-editor-user-interface-legacy.md
                   items:
-                    - name: Información general de las propiedades de formulario
+                    - name: Información general de propiedades de formularios
                       href: ./model-driven-apps/form-properties-legacy.md
-                    - name: Información general de las propiedades de cuadrícula secundaria
+                    - name: Información general sobre propiedades de subcuadrícula
                       href: ./model-driven-apps/sub-grid-properties-legacy.md
-                    - name: Información general de las propiedades de pestaña
+                    - name: Información general de propiedades de pestañas
                       href: ./model-driven-apps/tab-properties-legacy.md
-                - name: Consideraciones de diseño para formularios principales
+                - name: Consideraciones de diseño para los formularios principales
                   href: ./model-driven-apps/design-considerations-main-forms.md
                 - name: Cómo aparecen los formularios principales
                   href: ./model-driven-apps/main-form-presentations.md
@@ -999,32 +1015,32 @@
                   href: ./model-driven-apps/control-access-forms.md
                 - name: Agregar un campo a un formulario
                   href: ./model-driven-apps/add-field-form.md
-                - name: Mostrar u ocultar elementos de un formulario
+                - name: Mostrar u ocultar elementos de formulario
                   href: ./model-driven-apps/visibility-options-legacy.md
                 - name: Cambiar la navegación en un formulario
                   href: ./model-driven-apps/use-the-form-editor-legacy.md
                   items:
-                    - name: Agregar navegación de formularios para entidades relacionadas
+                    - name: Agregar la navegación de formulario para entidades relacionadas
                       href: ./model-driven-apps/add-edit-form-navigation-related-entities.md
-                - name: 'Guías de procedimientos: Formularios'
+                - name: 'Guías prácticas: Formularios'
                   items:
-                    - name: Cómo usar el formulario principal y sus componentes
+                    - name: Cómo utilizar el formulario principal y sus componentes
                       href: ./model-driven-apps/use-main-form-and-components.md
                     - name: Cómo abrir el editor de formularios
                       href: ./model-driven-apps/open-form-editor.md
-                    - name: Cómo agregar iFrames a formularios
+                    - name: Cómo agregar elementos iFrame a formularios
                       href: ./model-driven-apps/iframe-properties-legacy.md
-                    - name: Cómo optimizar el rendimiento de un formulario
+                    - name: Cómo optimizar el rendimiento del formulario
                       href: ./model-driven-apps/optimize-form-performance.md
-                    - name: Cómo trabajar con secciones de un formulario
+                    - name: Cómo trabajar con las secciones en un formulario
                       href: ./model-driven-apps/section-properties-legacy.md
                     - name: Cómo configurar mapas de Bing en un formulario
                       href: ./model-driven-apps/configure-bing-maps-legacy.md
-                    - name: Cómo asignar el orden de un formulario
+                    - name: Cómo asignar el orden de los formularios
                       href: ./model-driven-apps/assign-form-order.md
                     - name: Cómo configurar controladores de eventos en un formulario
                       href: ./model-driven-apps/configure-event-handlers-legacy.md
-                    - name: Cómo deshabilitar el guardado automático en un formulario
+                    - name: Cómo deshabilitar el autoguardado en un formulario
                       href: ./model-driven-apps/manage-auto-save.md
                     - name: Cómo agregar una pestaña para los documentos de SharePoint
                       href: ./model-driven-apps/add-documents-tab-entity-main-form.md
@@ -1060,34 +1076,34 @@
                   href: ./model-driven-apps/choose-and-configure-columns.md
                 - name: Creación o edición de filtros en vistas de aplicaciones
                   href: ./model-driven-apps/create-edit-view-filters.md
-                - name: 'Guías de procedimientos: Vistas'
+                - name: 'Guías prácticas: Vistas'
                   items:
-                    - name: Cómo hacer que las cuadrículas sean editables
+                    - name: Cómo crear las cuadrículas editables
                       href: ./model-driven-apps/make-grids-lists-editable-custom-control.md
-                    - name: Cómo ordenar los registros en una vista
+                    - name: Cómo ordenar registros en una vista
                       href: ./model-driven-apps/configure-sorting.md
-                    - name: Cómo editar los criterios de filtros y el criterio de ordenación
+                    - name: Cómo editar criterios de filtro y cambiar el orden
                       href: ./model-driven-apps/edit-filter-criteria.md
-                    - name: Cómo configurar propiedades administradas para vistas
+                    - name: Cómo establecer las propiedades administradas de las vistas
                       href: ./model-driven-apps/managed-properties-views.md
                     - name: Cómo especificar una vista predeterminada
                       href: ./model-driven-apps/specify-default-views.md
                 - name: Cómo eliminar o desactivar una vista
                   href: ./model-driven-apps/remove-views.md
-        - name: Aplicar lógica de negocios en una aplicación
+        - name: Aplica la lógica de negocios a una aplicación
           href: ./model-driven-apps/guide-staff-through-common-tasks-processes.md
           items:
-            - name: Crear una regla de negocios para un formulario
+            - name: Crear una regla de negocio para un formulario
               href: ./model-driven-apps/create-business-rules-recommendations-apply-logic-form.md
-        - name: Aplicar visualizaciones de datos en una aplicación
+        - name: Aplicar las visualizaciones de datos a una aplicación
           items:
             - name: Crear un gráfico del sistema
               href: ./model-driven-apps/create-edit-system-chart.md
             - name: Crear o editar paneles
               href: ./model-driven-apps/create-edit-dashboards.md
-            - name: Configurar paneles de experiencia interactivos
+            - name: Configurar paneles de experiencia interactiva
               href: ./model-driven-apps/configure-interactive-experience-dashboards.md
-            - name: Establecer las propiedades de un gráfico o una lista
+            - name: Establecer las propiedades de un gráfico o lista
               href: ./model-driven-apps/set-properties-chart-list-included-dashboard.md
             - name: Usar los controles del sistema para visualizaciones de datos
               items:
@@ -1101,9 +1117,9 @@
                   href: ./model-driven-apps/quick-view-control-properties-legacy.md
                 - name: Controles adicionales para Dynamics 365 para teléfonos y tabletas
                   href: ./model-driven-apps/additional-controls-for-dynamics-365-for-phones-and-tablets.md
-                - name: Información general del control de temporizador
+                - name: Información general sobre el control de temporizador
                   href: ./model-driven-apps/timer-control-legacy.md
-            - name: Usar controles personalizados para visualizaciones de datos
+            - name: Usar los controles personalizados para las visualizaciones de datos
               href: ./model-driven-apps/use-custom-controls-data-visualizations.md
         - name: Uso de plantillas de Excel y Word
           href: ./model-driven-apps/templates-overview.md
@@ -1118,9 +1134,9 @@
               href: ./model-driven-apps/reporting-considerations.md
             - name: Espacio aislado de RDL
               href: ./model-driven-apps/rdl-sandboxing.md
-            - name: "Uso de Power\_BI"
+            - name: Usar Power BI
               href: ./model-driven-apps/use-power-bi.md
-            - name: "Personalización de paquetes de contenido de Power\_BI"
+            - name: Personalización de paquetes de contenido de Power BI
               href: ./model-driven-apps/customize-power-bi-content-packs.md
     - name: Validar y publicar una aplicación
       href: ./model-driven-apps/validate-app.md
@@ -1128,22 +1144,22 @@
       href: ./model-driven-apps/share-model-driven-app.md
     - name: Administrar una aplicación
       items:
-        - name: Administrar propiedades de una aplicación
+        - name: Administrar propiedades de aplicaciones
           href: ./model-driven-apps/manage-app-properties.md
-        - name: Especificar propiedades de aplicaciones de interfaz unificada
+        - name: Especificar propiedades para aplicaciones de Interfaz unificada
           href: ./model-driven-apps/specify-properties-for-unified-interface-apps.md
         - name: Eliminar una aplicación
           href: ./model-driven-apps/delete-model-driven-app.md
-    - name: Personalización y creación de aplicaciones avanzadas
+    - name: Crear y personalizar aplicaciones avanzadas
       href: ./model-driven-apps/advanced-navigation.md
       items:
-        - name: Privilegios para la personalización
+        - name: Privilegios de personalización
           href: ./model-driven-apps/privileges-required-customization.md
         - name: Crear o editar recursos web
           href: ./model-driven-apps/create-edit-web-resources.md
-        - name: Propiedades de recursos web
+        - name: Propiedades de recurso web
           href: ./model-driven-apps/web-resource-properties-legacy.md
-        - name: Cambiar iconos de una entidad personalizada
+        - name: Cambiar los iconos de entidades personalizadas
           href: ./model-driven-apps/change-custom-entity-icons.md
         - name: Distribuir una aplicación con soluciones
           href: ./model-driven-apps/distribute-model-driven-app.md
@@ -1151,19 +1167,19 @@
           href: ./model-driven-apps/use-customizable-help.md
         - name: Creación de ayuda interactiva
           href: ./model-driven-apps/create-guided-help-learning-path.md
-    - name: Transición a una interfaz unificada
+    - name: Transición a una Interfaz unificada
       items:
         - name: Introducción rápida a transiciones
           href: ./model-driven-apps/transition-web-app.md
         - name: Introducción rápida al uso de un entorno existente para la transición
           href: ./model-driven-apps/transition-web-app-existing.md
-        - name: Cuaderno de estrategias de interfaz unificada
+        - name: Cuaderno de estrategias de Interfaz unificada
           href: ./model-driven-apps/unified-interface-playbook.md
-        - name: Enfoque de una transición de interfaz unificada
+        - name: Enfoque de una transición de Interfaz unificada
           href: ./model-driven-apps/approaching-unified-interface.md
-        - name: 'Lista de comprobación: Transición a la interfaz unificada'
+        - name: 'Lista de comprobación: Transición a la Interfaz unificada'
           href: ./model-driven-apps/checklist-transition-unified-interface.md
-        - name: 'Preguntas más frecuentes: Transición a la interfaz unificada'
+        - name: 'Preguntas más frecuentes: Transición a la Interfaz unificada'
           href: ./model-driven-apps/faqs-transition-unified-interface.md
     - name: Accesibilidad en el diseñador de aplicaciones de Power Apps
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
@@ -1187,7 +1203,7 @@
           href: ./portals/create-dynamics-portal.md
         - name: Aprovisionamiento de un portal mediante el complemento de portal anterior
           href: ./portals/provision-portal-add-on.md
-        - name: Anatomía del estudio de los portales de Power Apps
+        - name: Anatomía de portales de Power Apps Studio
           href: ./portals/portal-designer-anatomy.md
         - name: Exploradores web compatibles con el diseñador de portales
           href: ./portals/supported-browser.md
@@ -1195,10 +1211,14 @@
           href: ./portals/create-manage-webpages.md
         - name: Creación de una página
           href: ./portals/compose-page.md
-        - name: Uso de plantillas
+        - name: Trabajar con plantillas
           href: ./portals/work-with-templates.md
-        - name: Edición de CSS
-          href: ./portals/edit-css.md
+        - name: Trabajar con temas
+          items:
+            - name: Crear tema
+              href: ./portals/theme-overview.md
+            - name: Editar CSS
+              href: ./portals/edit-css.md
     - name: Administración de portales existentes
       href: ./portals/manage-existing-portals.md
     - name: Administración avanzada del portal
@@ -1215,23 +1235,23 @@
           href: ./portals/admin/reset-portal.md
         - name: Cambio de la dirección URL base de un portal
           href: ./portals/admin/change-base-url.md
-        - name: Activación del modo de mantenimiento
+        - name: Habilitar modo de mantenimiento
           href: ./portals/admin/enable-maintenance-mode.md
-        - name: Adición de un nombre de dominio personalizado
+        - name: Agregar un nombre de dominio personalizado
           href: ./portals/admin/add-custom-domain.md
-        - name: Importación de la traducción de los metadatos
+        - name: Importar la traducción de metadatos
           href: ./portals/admin/import-metadata-translation.md
-        - name: "Integración con Power\_BI"
+        - name: Integración con Power BI
           items:
             - name: Configuración de la integración con Power BI
               href: ./portals/admin/set-up-power-bi-integration.md
-            - name: "Agregar un informe o panel de Power\_BI a una página web en el portal"
+            - name: Agregar un informe o panel de Power BI a una página web en el portal
               href: ./portals/admin/add-powerbi-report.md
-        - name: Ejecución del comprobador del portal
+        - name: Ejecutar comprobador del portal
           href: ./portals/admin/portal-checker.md
         - name: Renovación de la clave de autenticación del portal
           href: ./portals/admin/manage-auth-key.md
-        - name: Configuración de la restricción de direcciones IP
+        - name: Configurar restricción de direcciones IP
           href: ./portals/admin/ip-address-restrict.md
         - name: Actualización al dominio de portales de Power Apps
           href: ./portals/admin/update-portal-domain.md
@@ -1255,9 +1275,11 @@
           items:
             - name: Configuración de la autenticación del portal
               href: ./portals/configure/configure-portal-authentication.md
+            - name: Usar configuración de autenticación simplificada (vista previa)
+              href: ./portals/configure/use-simplified-authentication-configuration.md
             - name: Establecimiento de la identidad de autenticación
               href: ./portals/configure/set-authentication-identity.md
-            - name: "Configuración del proveedor de Azure\_AD\_B2C para portales"
+            - name: Configuración del proveedor de Azure AD B2C para portales
               href: ./portals/configure/azure-ad-b2c.md
             - name: Configuración de los valores del proveedor de OAuth2
               href: ./portals/configure/configure-oauth2-settings.md
@@ -1267,12 +1289,14 @@
               href: ./portals/configure/configure-ws-federation-settings.md
             - name: "Configuración de los valores del proveedor de SAML\_2.0"
               href: ./portals/configure/configure-saml2-settings.md
-            - name: "Migración de los proveedores de identidades a Azure\_AD\_B2C"
+            - name: Migrar los proveedores de identidades a Azure AD B2C
               href: ./portals/configure/migrate-identity-providers.md
-        - name: Buscar
+        - name: Búsqueda
           items:
             - name: Acerca de la búsqueda
               href: ./portals/configure/search.md
+            - name: Configuración de la búsqueda de entidades adicionales
+              href: ./portals/configure/search-additional-entities.md
             - name: Mejora de la búsqueda mediante la búsqueda por facetas
               href: ./portals/configure/improve-portal-search-faceted-search.md
             - name: Búsqueda en datos adjuntos de archivos
@@ -1313,7 +1337,7 @@
           items:
             - name: Definición de propiedades de formularios web
               href: ./portals/configure/web-form-properties.md
-            - name: Pasos de formularios web
+            - name: Pasos de formulario web
               items:
                 - name: Definición de los pasos de formularios web
                   href: ./portals/configure/web-form-steps.md
@@ -1411,13 +1435,13 @@
               href: ./portals/enable-azure-storage.md
             - name: Adición del recurso web de Azure Storage a una forma
               href: ./portals/add-web-resource.md
-        - name: Administración de documentos de SharePoint
+        - name: Administrar documentos de SharePoint
           href: ./portals/manage-sharepoint-documents.md
     - name: Problemas conocidos
       href: ./portals/known-issues.md
     - name: Preguntas más frecuentes sobre los portales de Power Apps
       href: ./portals/faq.md
-    - name: "Preguntas más frecuentes sobre Adxstudio Portals\_v7 heredado"
+    - name: Preguntas más frecuentes de Adxstudio Portals v7 heredado
       href: ./portals/legacy-portal-faq.md
 - name: Common Data Service
   items:
@@ -1429,7 +1453,7 @@
           href: ./common-data-service/entity-overview.md
         - name: Crear una entidad
           href: ./common-data-service/data-platform-create-entity.md
-        - name: Crear una entidad personalizada que tiene componentes
+        - name: Crear una entidad personalizada que tenga componentes
           href: ./common-data-service/create-custom-entity.md
         - name: Entidades y metadatos
           href: ./common-data-service/create-edit-metadata.md
@@ -1443,19 +1467,21 @@
           href: ./common-data-service/create-edit-virtual-entities.md
         - name: Proveedor de datos de entidad virtual OData v4
           href: ./common-data-service/virtual-entity-odata-provider-requirements.md
-        - name: Definición de claves alternativas mediante el portal de Power Apps
+        - name: Definir las claves alternativas con el portal de Power Apps
           href: ./common-data-service/define-alternate-keys-portal.md
-        - name: Definir claves alternativas mediante el Explorador de soluciones
+        - name: Definir las claves alternativas con el explorador de soluciones
           href: ./common-data-service/define-alternate-keys-solution-explorer.md
-        - name: 'Guías de procedimientos: Entidad'
+        - name: Ver datos de entidad en Power BI Desktop (vista previa)
+          href: ./common-data-service/view-entity-data-power-bi.md
+        - name: 'Guías prácticas: Entidad'
           items:
-            - name: Creación de entidades mediante el portal de Power Apps
+            - name: Cómo crear entidades con el portal Power Apps
               href: ./common-data-service/create-edit-entities-portal.md
-            - name: Cómo crear entidades mediante el Explorador de soluciones
+            - name: Cómo crear entidades con el explorador de soluciones
               href: ./common-data-service/create-edit-entities-solution-explorer.md
             - name: Cómo importar o exportar datos
               href: ./common-data-service/data-platform-import-export.md
-            - name: Cómo abrir datos de entidades en Excel
+            - name: Cómo abrir datos de entidad en Excel
               href: ./common-data-service/data-platform-excel-addin.md
             - name: Cómo definir claves alternativas
               href: ./common-data-service/define-alternate-keys-reference-records.md
@@ -1467,48 +1493,48 @@
               href: ./common-data-service/display-custom-icons-instead.md
             - name: Cómo editar mensajes de entidad del sistema
               href: ./common-data-service/edit-system-entity-messages.md
-            - name: Cómo configurar una entidad para las clasificaciones y comentarios
+            - name: Cómo configurar una entidad para comentarios/clasificación
               href: ./common-data-service/configure-entity-feedback.md
             - name: Proveedor de datos de la API de SQL de Azure Cosmos DB
               href: ./common-data-service/virtual-entity-documentdb-provider-requirements.md
-            - name: Cómo trabajar con entidades virtuales
+            - name: Cómo trabajar con la entidad virtual
               href: ./common-data-service/virtual-entity-walkthrough-using-odata-provider.md
-    - name: Trabajar con relaciones de entidades
+    - name: Trabajar con relaciones entre entidades
       href: ./common-data-service/relationships-overview.md
       items:
-        - name: Información general de relaciones de entidades
+        - name: Información general sobre relaciones entre entidades
           href: ./common-data-service/create-edit-entity-relationships.md
-        - name: Información general de creación de relaciones de entidades de uno a varios
+        - name: Crear información general de relación uno a varios entre entidades
           href: ./common-data-service/create-edit-1n-relationships.md
-        - name: Información general de creación de relaciones de entidades de varios a varios
+        - name: Crear información general de relación varios a varios entre entidades
           href: ./common-data-service/create-edit-nn-relationships.md
-        - name: Crear una relación de entidades
+        - name: Crear una relación entre entidades
           href: ./common-data-service/data-platform-entity-lookup.md
-        - name: Crear relaciones de entidades de uno a varios
+        - name: Crear relaciones uno a varios entre entidades
           href: ./common-data-service/create-edit-1n-relationships-portal.md
-        - name: Crear relaciones de entidades de uno a varios mediante el Explorador de soluciones
+        - name: Crear relaciones uno a varios entre entidades con el explorador de soluciones
           href: ./common-data-service/create-edit-1n-relationships-solution-explorer.md
-        - name: Creación de relaciones de entidades de uno a varios mediante el portal de Power Apps
+        - name: Crear relaciones varios a varios entre entidades con el portal de Power Apps
           href: ./common-data-service/create-edit-nn-relationships-portal.md
-        - name: Establecer propiedades administradas para relaciones de entidades
+        - name: Establecer las propiedades administradas de relaciones entre entidades
           href: ./common-data-service/set-managed-properties-relationships.md
         - name: Visualizar datos jerárquicos
           href: ./common-data-service/visualize-hierarchical-data.md
-        - name: Definir datos relacionados jerárquicamente y realizar consultas en ellos
+        - name: Definir y consultar datos relacionados jerárquicamente
           href: ./common-data-service/define-query-hierarchical-data.md
         - name: Configurar roles de conexión
           href: ./common-data-service/configure-connection-roles.md
-        - name: 'Guías de procedimientos: Relaciones'
+        - name: 'Guías prácticas: Relaciones'
           items:
-            - name: Creación de relaciones de varios a varios mediante el portal de Power Apps
+            - name: Cómo crear relaciones varios a varios entre entidades con el portal de Power Apps
               href: ./common-data-service/create-edit-nn-relationships-portal.md
-            - name: Creación de relaciones de varios a varios mediante el explorador de soluciones de Power Apps
+            - name: Cómo crear relaciones varios a varios entre entidades con el explorador de soluciones de Power Apps
               href: ./common-data-service/create-edit-nn-relationships-solution-explorer.md
-            - name: Cómo establecer propiedades administradas para relaciones
+            - name: Cómo establecer las propiedades administradas de las relaciones
               href: ./common-data-service/set-managed-properties-relationships.md
-            - name: Cómo visualizar datos relacionados jerárquicamente y realizar consultas en ellos
+            - name: Cómo consultar y visualizar datos relacionados jerárquicamente
               href: ./common-data-service/query-visualize-hierarchical-data.md
-            - name: Cómo definir datos relacionados jerárquicamente y realizar consultas en ellos
+            - name: Cómo definir y consultar datos relacionados jerárquicamente
               href: ./common-data-service/define-query-hierarchical-data.md
             - name: Cómo configurar roles de conexión
               href: ./common-data-service/configure-connection-roles.md
@@ -1521,36 +1547,36 @@
           href: ./common-data-service/create-edit-global-option-sets.md
         - name: Campo de autonumeración
           href: ./common-data-service/autonumber-fields.md
-        - name: Establecimiento de las propiedades administradas de campos
+        - name: Establecer propiedades administradas para campos
           href: ./common-data-service/set-managed-properties-for-field.md
-        - name: Comportamiento y formato del campo Fecha y hora
+        - name: Comportamiento y formato del campo de fecha y hora
           href: ./common-data-service/behavior-format-date-time-field.md
-        - name: 'Guías de procedimientos: Campos'
+        - name: 'Guías prácticas: Campos'
           items:
             - name: Cómo crear campos
               href: ./common-data-service/create-edit-fields.md
             - name: Cómo administrar campos
               href: ./common-data-service/data-platform-manage-fields.md
-            - name: Creación de campos mediante el portal de Power Apps
+            - name: Cómo crear campos con el portal de Power Apps
               href: ./common-data-service/create-edit-field-portal.md
-            - name: Creación de campos mediante el explorador de soluciones de Power Apps
+            - name: Cómo crear campos con el explorador de soluciones de Power Apps
               href: ./common-data-service/create-edit-field-solution-explorer.md
-            - name: Creación de un conjunto de opciones mediante el portal de Power Apps
+            - name: Cómo crear un conjunto de opciones con el portal de Power Apps
               href: ./common-data-service/custom-picklists.md
-            - name: Cómo crear un conjunto de opciones global mediante el Explorador de soluciones
+            - name: Cómo crear conjuntos de opciones globales con el explorador de soluciones
               href: ./common-data-service/create-edit-global-option-sets-solution-explorer.md
             - name: Cómo definir campos calculados
               href: ./common-data-service/define-calculated-fields.md
             - name: Cómo definir campos consolidados
               href: ./common-data-service/define-rollup-fields.md
-            - name: Cómo asignar campos de entidades
+            - name: Cómo asignar campos de entidad
               href: ./common-data-service/map-entity-fields.md
             - name: Cómo eliminar campos
               href: ./common-data-service/delete-fields.md
     - name: Aplicar la lógica de negocios
       href: ./common-data-service/cds-processes.md
       items:
-        - name: Crear una regla de negocios para una entidad
+        - name: Crear una regla de negocio para una entidad
           href: ./common-data-service/data-platform-create-business-rule.md
     - name: Trabajar con soluciones
       href: ./common-data-service/solutions-overview.md
@@ -1570,13 +1596,13 @@
           items:
             - name: 'Problemas y soluciones habituales: comprobador de la solución'
               href: ./common-data-service/common-issues-resolutions-solution-checker.md
-        - name: Procedimientos recomendados
+        - name: Prácticas recomendadas
           href: ./common-data-service/solution-best-practices.md
-        - name: Procedimiento
+        - name: Cómo
           items:
             - name: Creación de revisiones de soluciones
               href: ./common-data-service/solution-patches.md
-            - name: Creación de una solución
+            - name: Crear una solución
               href: ./common-data-service/create-solution.md
             - name: Actualización de soluciones
               href: ./common-data-service/update-solutions.md
@@ -1592,10 +1618,6 @@
               href: ./common-data-service/solution-history.md
             - name: Establecer propiedades administradas en metadatos
               href: ./common-data-service/set-managed-properties-metadata.md
-            - name: temas avanzados
-              items:
-                - name: Creación de revisiones de soluciones
-                  href: ./common-data-service/solution-patches.md
     - name: Trabajo con flujos de datos
       href: ./common-data-service/self-service-data-prep-with-dataflows.md
       items:
@@ -1610,30 +1632,28 @@
     - name: Requisitos de licencia para entidades
       href: ./common-data-service/data-platform-entity-licenses.md
       items:
-        - name: Entidades complejas y licencias
+        - name: Entidades y licencias complejas
           href: ./common-data-service/data-platform-complex-entities.md
-        - name: Entidades restringidas que requieren licencias de Dynamics 365
+        - name: Entidades con restricciones que requieren licencias de Dynamics 365
           href: ./common-data-service/data-platform-restricted-entities.md
     - name: 'Integración de SharePoint, OneNote y OneDrive'
       href: ./common-data-service/sharepoint-onedrive-onenote-intro.md
     - name: Crear un informe de Power BI
       href: ./common-data-service/data-platform-powerbi-connector.md
-    - name: Traducir texto de campos y entidades personalizado
+    - name: Traducir texto de entidad y de campo personalizado
       href: ./common-data-service/export-customized-entity-field-text-translation.md
-    - name: Importación de texto traducido de entidades y campos
+    - name: Importación de texto de entidad y campo traducido
       href: ./common-data-service/import-translated-entity-field-text.md
-    - name: Exportación en un lago de datos
+    - name: Exportación a lago de datos
       href: ./common-data-service/export-to-data-lake.md
-    - name: Seguridad de Common Data Service
+    - name: Seguridad en Common Data Service
       href: /power-platform/admin/wp-security
     - name: Información general sobre los límites de API
       href: ./common-data-service/api-limits-overview.md
     - name: Para desarrolladores
       href: ../developer/common-data-service/overview.md
 - name: AI Builder
-  items:
-    - name: Uso de AI Builder en Power Apps
-      href: ../use-ai-builder.md
+  href: ../use-ai-builder.md
 - name: Aplicaciones y soluciones de ejemplo
   items:
     - name: Comunicación de crisis
@@ -1646,27 +1666,37 @@
           href: ../sample-apps/emergency-response/deploy-configure.md
         - name: Uso de la aplicación y los paneles de administración
           href: ../sample-apps/emergency-response/configure-data-reporting.md
-        - name: Uso de la aplicación móvil
+        - name: Usar la aplicación móvil
           href: ../sample-apps/emergency-response/use.md
+    - name: Supervisión y respuesta ante emergencias del gobierno regional
+      items:
+        - name: Información general
+          href: ../sample-apps/regional-emergency-response/overview.md
+        - name: Implementar la solución
+          href: ../sample-apps/regional-emergency-response/deploy.md
+        - name: Aplicación y panel de información para el administrador regional
+          href: ../sample-apps/regional-emergency-response/configure.md
+        - name: Portal para el administrador y el visor de informes
+          href: ../sample-apps/regional-emergency-response/portals-admin-reporting.md
+        - name: Portal para profesionales de la salud
+          href: ../sample-apps/regional-emergency-response/portals-user.md
 - name: Aprender de otros
   items:
-    - name: Seminarios web
-      href: ./canvas-apps/webinars-listing.md
     - name: Blog
       href: 'https://powerapps.microsoft.com/blog/'
     - name: Foros
       href: 'https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1'
-- name: Solucionar problemas
+- name: Solución de problemas
   items:
-    - name: Sugerencias de rendimiento de las aplicaciones de lienzo
+    - name: Sugerencias de rendimiento para aplicaciones de lienzo
       href: ./canvas-apps/performance-tips.md
-    - name: Problemas y resoluciones habituales
+    - name: Problemas y soluciones comunes
       href: ./canvas-apps/common-issues-and-resolutions.md
     - name: Obtener un id. de aplicación o de sesión
       href: ./canvas-apps/get-sessionid.md
     - name: Solución de problemas de inicio de Power Apps
       href: troubleshooting-startup-issues.md
-    - name: Solucionar problemas de Power Query
+    - name: Solución de problemas de Power Query
       href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
     - name: Soporte técnico
       href: 'https://powerapps.microsoft.com/support/'

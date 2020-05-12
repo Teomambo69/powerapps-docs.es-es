@@ -1,4 +1,4 @@
-- name: Docs
+- name: Documentos
   href: /
   topicHref: /
   items:
@@ -41,7 +41,7 @@
               tocHref: /powerapps/developer/model-driven-apps/
               topicHref: /powerapps/maker/index
               items:
-                - name: Aplicaciones controladas por modelos
+                - name: Aplicaciones basadas en modelos
                   tocHref: /powerapps/developer/model-driven-apps/
                   topicHref: /powerapps/maker/model-driven-apps/index
                   items:
