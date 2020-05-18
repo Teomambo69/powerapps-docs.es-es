@@ -1,13 +1,13 @@
 ---
-title: Novedades de Power Apps | Microsoft Docs
-description: Se proporciona información sobre la versión semanal de Power Apps y las notas de la versión
+title: Novedades de Power Apps | Microsoft Docs
+description: Proporciona información sobre la versión semanal de Power Apps y las notas de la versión
 author: KumarVivek
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.reviewer: ''
-ms.date: 02/18/2020
+ms.date: 04/21/2020
 ms.author: kvivek
 search.audienceType:
 - maker
@@ -19,20 +19,20 @@ search.app:
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: d07cec7afb328917b7fe8e01038fad0fa5d3d516
-ms.sourcegitcommit: 1137abc4660ffb3432adbc702b1c5dae3293aa58
+ms.openlocfilehash: 82815f2d4a7c16f5f216c2e706756576d5784b8d
+ms.sourcegitcommit: ce291964123737257536378270e6004ecb74b3c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77479160"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3303723"
 ---
-# <a name="whats-new-in-power-apps"></a>Novedades de Power Apps
+# <a name="whats-new-in-power-apps"></a>Novedades de Power Apps
 
 En este tema se proporcionan recursos donde puede obtener información sobre las nuevas características que se han publicado recientemente, las características nuevas que se publicarán en los próximos meses y las limitaciones conocidas.
 
 ## <a name="weekly-releases"></a>Publicaciones semanales
 
-Para obtener información sobre características nuevas, correcciones y mejoras publicadas en las últimas semanas, vea [Versiones publicadas de Microsoft Power Apps](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/powerapps).
+Para obtener información sobre características nuevas, correcciones y mejoras publicadas en las últimas semanas, vea [Released versions for Microsoft Power Apps](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/powerapps) (Versiones publicadas de Microsoft PowerApps).
 
 Para obtener más detalles sobre cómo buscar información en las notas de la versión semanales, lea esta [entrada de blog](https://powerapps.microsoft.com/blog/stay-tuned-with-the-latest-features-and-fixes-through-powerapps-weekly-release-notes/).
 
@@ -41,9 +41,7 @@ Para obtener más detalles sobre cómo buscar información en las notas de la ve
 
 ## <a name="release-plan"></a>Plan de lanzamiento
 
-Para información sobre las características nuevas que se van a publicar en los próximos meses y que puede usar para el planeamiento, consulte:
-- [Plan de las actualizaciones de acceso anticipado 2 de 2019](https://docs.microsoft.com/power-platform-release-plan/2019wave2/microsoft-powerapps/planned-features)
-- [Plan de las actualizaciones de acceso anticipado 1 de 2020](https://docs.microsoft.com/power-platform-release-plan/2020wave1/microsoft-powerapps/planned-features)
+Para obtener información sobre las nuevas características que se van a publicar durante los próximos meses y que puede usar para el planeamiento, vea el [plan de las actualizaciones de acceso anticipado 1 de 2020](https://docs.microsoft.com/power-platform-release-plan/2020wave1/microsoft-powerapps/planned-features).
 
 ## <a name="known-limitations"></a>Limitaciones conocidas
 

@@ -1,5 +1,5 @@
 ---
-title: Detección de aplicaciones a través de AppSource | Microsoft Docs
+title: Detectar aplicaciones a través de AppSource | Microsoft Docs
 description: Detecte las aplicaciones que se comparten con su organización a través de AppSource
 author: mkaur
 manager: kvivek
@@ -21,10 +21,10 @@ ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/04/2020
-ms.locfileid: "78264998"
+ms.locfileid: "3303263"
 ---
 # <a name="discover-apps-via-appsource"></a>Detectar aplicaciones a través de AppSource
-Las aplicaciones que se crean y publican con Power Apps se detectan y usan en Dynamics 365 en la Web. Muestra todas las aplicaciones: las que haya decidido usar específicamente (es decir, al iniciarlas desde un correo electrónico compartido o abrirlas desde AppSource) o las que un administrador haya aprovisionado para su uso. Esto incluye todas las aplicaciones de Power Apps, así como las de Dynamics 365 de Microsoft. Puede buscar aplicaciones, filtrar por entorno y anclar las aplicaciones que use con más frecuencia a la parte superior de la página.
+Las aplicaciones que crea y que publica con Power Apps se detectan y se usan en Dynamics 365 en la web. Muestra todas las aplicaciones: las que haya decidido usar específicamente (es decir, al iniciarlas desde un correo electrónico compartido o abrirlas desde AppSource) o las que un administrador haya aprovisionado para su uso. Esto incluye todas las aplicaciones de Power Apps, así como las de Dynamics 365 de Microsoft. Puede buscar aplicaciones, filtrar por entorno y anclar las aplicaciones que use con más frecuencia a la parte superior de la página.
 
   ![Aplicaciones en Dynamics 365](./media/app-source/apps-dynamics365.png)
 
@@ -34,6 +34,6 @@ Ahora, Microsoft AppSource está insertada en la página principal de [Dynamics 
 ![Aplicaciones en Dynamics 365](media/getmoreapps_1.png)
 
 
-Aquí aparecerán las aplicaciones creadas con Power Apps y compartidas con un grupo de seguridad o toda la empresa con el permiso **Usuario**, en lugar de ocupar espacio en la página principal de forma predeterminada. Cuando reciba una aplicación de AppSource, aparecerá en la página principal y podrá acceder a ella con facilidad a lo largo de la experiencia.
+Aquí aparecerán las aplicaciones creadas con Power Apps y compartidas con un grupo de seguridad o toda la empresa con el permiso **Usuario**, en lugar de ocupar espacio en la página principal de forma predeterminada. Cuando reciba una aplicación de AppSource, aparecerá en la página principal y podrá acceder a ella con facilidad a lo largo de la experiencia.
 
   ![Aplicaciones en Dynamics 365](./media/app-source/appsource.png)

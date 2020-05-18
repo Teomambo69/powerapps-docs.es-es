@@ -20,9 +20,9 @@ ms.sourcegitcommit: f5d15c973b2a129a0cc29a74cf8eaf6b24fbf36d
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/01/2020
-ms.locfileid: "80516641"
+ms.locfileid: "3303424"
 ---
-# <a name="create-a-new-record"></a>Crear un nuevo registro
+# <a name="create-a-new-record"></a>Crear un registro nuevo
 
 ## <a name="create-a-new-record-using-the--option-on-the-command-bar"></a>Creación de un registro con la opción + de la barra de comandos
 
@@ -50,7 +50,7 @@ El comando **Crear un registro** o **Creación rápida** facilita y agiliza el p
 ## <a name="create-a-new-record-using-the-new-button"></a>Creación de un registro con el botón Nuevo 
 
 1. En el panel de navegación izquierdo, seleccione un tipo de registro. Por ejemplo, seleccione **Contactos** para crear un registro de contacto.
-2. En la barra de comandos, haga clic en **+Nuevo**.
+2. En la barra de comandos, seleccione **+Nueva**.
 
     > [!div class="mx-imgBorder"] 
     > ![Botón Crear nuevo](media/newrecord2.png "Botón Crear nuevo")

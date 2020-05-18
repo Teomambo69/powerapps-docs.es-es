@@ -20,7 +20,7 @@ ms.sourcegitcommit: dc379bede57da58b5787eda5437eb94b662e21ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/06/2020
-ms.locfileid: "77037376"
+ms.locfileid: "3303171"
 ---
 # <a name="work-with-business-processes"></a>Trabajar con procesos de negocio
 

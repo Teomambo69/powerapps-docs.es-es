@@ -17,11 +17,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 53e4f2fc61bb72b4c3fc6fed188b513641c2034d
-ms.sourcegitcommit: e9671e018c1ee4b640528915350a367758991b6a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67420223"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "3302504"
 ---
 # <a name="edit-the-default-filter-of-a-report"></a>Edición del filtro predeterminado de un informe
 
@@ -31,9 +31,9 @@ Si se trata de un informe de SQL Server Reporting Services que está habilitad
 2. Elija un informe y, en la barra de comandos, seleccione **Editar filtro predeterminado**.
 
      > [!div class="mx-imgBorder"]
-     > ![Edición del filtro de informe predeterminado](media/edit_filter.png "Edit default report filter")
+     > ![Editar filtro de informe predeterminado](media/edit_filter.png "Editar filtro de informe predeterminado")
   
-3. Modifique los criterios del filtro.  
+3. Modifique los criterios de filtro.  
   
    Los criterios se agrupan por tipos de registros que puede usar en el filtro, como **Cuentas** o **Contactos**.  
   
@@ -48,14 +48,14 @@ Si se trata de un informe de SQL Server Reporting Services que está habilitad
 
    2.  Seleccione el operador relacional de consulta y elija un operador.  
 
-   3.  Seleccione **Escribir valor** y escriba un valor por el que filtrar. En el caso de algunos valores, puede seleccionar el botón **Seleccione o cambie los valores de este campo** ![Botón de puntos suspensivos](media/ellipsis-button.png "Botón de puntos suspensivos") para abrir el cuadro de diálogo **Seleccionar valores** y seleccionar el valor que quiera.  
+   3.  Seleccione **Escribir valor** y escriba un valor por el que filtrar. Para algunos valores, puede seleccionar el botón **Seleccione o cambie los valores de este campo** ![botón de puntos suspensivos ](media/ellipsis-button.png "Botón de puntos suspensivos") para abrir el cuadro de diálogo **Seleccionar valores** y seleccionar el valor que desee.  
 
    ### <a name="to-group-criteria"></a>Para agrupar criterios
    Debe seleccionar dos o más filas del mismo tipo de registro, pero no puede agrupar filas con valores de campo de diferentes tipos de registros (como **Cuenta** y **Contactos**).  
 
    1.  Para cada fila que quiera agrupar, en el modo detallado, seleccione el botón **Menú de opciones** de esa fila y después elija **Seleccionar fila**.  
 
-   2.  En la barra de herramientas del filtro, seleccione **Agrupar con Y** o **Agrupar con O**.  
+   2.  En la barra de herramientas Filtro, seleccione **Agrupar con Y** o **Agrupar con O**.  
 
    3.  Para quitar una fila de un grupo, seleccione el botón **Menú de opciones** de la fila y después **Eliminar**.  
 
@@ -70,7 +70,7 @@ Si se trata de un informe de SQL Server Reporting Services que está habilitad
    8.  Para cambiar un grupo de **Agrupar con Y** a uno de **Agrupar con O**, o bien un grupo de **Agrupar con O** a uno de **Agrupar con Y**, seleccione el botón **Menú de opciones** de ese grupo y después **Cambiar a O** o **Cambiar a Y**.  
 
    > [!TIP]
-   > - Para borrar todos los criterios y empezar de cero, en la barra de herramientas del filtro, seleccione **Borrar** y luego **Confirmar**.  
+   > - Para borrar todos los criterios y empezar de nuevo, en la barra de herramientas Filtro, seleccione **Borrar** y, a continuación, en **confirmar**.  
    > - Para eliminar una fila, seleccione el botón **Menú de opciones** de la fila y después **Eliminar**.  
   
 4. Cuando termine, seleccione **Guardar filtro predeterminado**.

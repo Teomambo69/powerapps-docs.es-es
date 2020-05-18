@@ -1,6 +1,6 @@
 ---
-title: Inserción de una plantilla de correo electrónico al redactar un correo electrónico en aplicaciones basadas en modelos | Microsoft Docs
-description: Inserte un mensaje de correo electrónico con formato previo al redactar un correo electrónico.
+title: Insertar un plantilla de correo electrónico mientras redacta un correo electrónico en aplicaciones basadas en modelos | Microsoft Docs
+description: Inserte un mensaje de correo electrónico preformateado mientras redacta un correo electrónico.
 ms.date: 04/09/2020
 ms.service:
 - dynamics-365-sales
@@ -13,16 +13,16 @@ ms.sourcegitcommit: 2484ebce6563cfd1c849e1e2f66dd2d29fdb7b64
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/10/2020
-ms.locfileid: "81007994"
+ms.locfileid: "3303608"
 ---
-# <a name="insert-an-email-template"></a>Inserción de una plantilla de correo electrónico
+# <a name="insert-an-email-template"></a>Insertar una plantilla de correo electrónico
 
-Puede usar una plantilla de correo electrónico (un mensaje de correo electrónico con formato previo) para crear y enviar mensajes de correo electrónico rápidamente. Para insertar la plantilla mientras redacta un correo electrónico, seleccione **Insertar plantilla** en la barra de comandos. La lista de plantillas disponibles se muestra en la ventana **Plantillas de correo electrónico**. En la sección **Usadas recientemente** se muestran las cuatro plantillas usadas más recientemente por el usuario. En la sección **Todas las plantillas** se muestra una lista de todas las plantillas de correo electrónico de serie (globales y específicas de entidad) en orden alfabético. Las plantillas globales se muestran como el tipo Usuario. Si ha creado una plantilla de correo electrónico personalizada, también está disponible aquí. Para obtener información sobre cómo crear una plantilla de correo electrónico personalizada, vea [Crear plantillas de correo electrónico](https://docs.microsoft.com/power-platform/admin/create-templates-email).
+Puede utilizar una plantilla de correo electrónico (un mensaje de correo electrónico preformateado) que le permite crear y enviar rápidamente correos electrónicos. Puede insertar la plantilla mientras redacta un correo electrónico seleccionando **Insertar plantilla** en la barra de comandos. La lista de plantillas disponibles se muestra en la ventana **Plantillas de correo electrónico**. En la sección **Usados recientemente**, se muestran las cuatro plantillas que ha utilizado más recientemente. La sección **Todas las plantillas** muestra una lista de todas las plantillas de correo electrónico listas para usar (globales y específicas de la entidad), en orden alfabético. Las plantillas globales se muestran como el tipo Usuario. Si ha creado una plantilla de correo electrónico personalizada, también estará disponible aquí. Para obtener información sobre cómo crear una plantilla de correo electrónico personalizada, consulte [Crear plantillas de correo electrónico](https://docs.microsoft.com/power-platform/admin/create-templates-email).
 
-Puede ver las plantillas de un idioma determinado si selecciona un idioma en la lista **Idioma**. Puede buscar una plantilla o examinar la lista y seleccionarla. Al seleccionar una plantilla de correo electrónico, se muestra una vista previa en el lado derecho de la ventana. En la vista previa se muestra el contenido para que pueda elegir la plantilla que mejor se adapte a sus necesidades. Después de insertar una plantilla de correo electrónico, puede modificar el contenido según sea necesario y luego enviar el correo electrónico.
+Puede ver las plantillas de un idioma determinado seleccionando un idioma en la lista **Idioma**. Puede buscar una plantilla o navegar por la lista y seleccionarla. Cuando seleccione una plantilla de correo electrónico, se muestra una vista previa en el lado derecho de la ventana. La vista previa le muestra el contenido para que pueda elegir la plantilla que mejor se adapte a sus necesidades. Después de insertar una plantilla de correo electrónico, puede modificar el contenido según sea necesario y, a continuación, enviar el correo electrónico.
 
 > [!NOTE]
-> La búsqueda no admite expresiones regulares y solo funciona en el nombre de plantilla.
+> La búsqueda no admite expresiones regulares y solo funciona en el nombre de la plantilla.
 
 **Para insertar una plantilla de correo electrónico**
 
@@ -33,23 +33,23 @@ Puede ver las plantillas de un idioma determinado si selecciona un idioma en la 
 
     Se abre la ventana **Plantillas de correo electrónico**.
 
-2.  Para ver las plantillas de otra configuración regional, seleccione un idioma en la lista **Idioma**. Las plantillas se cargan según el idioma seleccionado.    
+2.  Para ver las plantillas de una configuración regional diferente, seleccione un idioma en la lista **Idioma**. Las plantillas se cargan según el idioma seleccionado.    
 
-3.  Busque la plantilla que quiera. Seleccione la plantilla y obtenga una vista previa de su contenido.
+3.  Busque la plantilla que desee. Seleccione la plantilla y obtenga una vista previa del contenido de la plantilla.
 
-4.  De forma opcional, puede seleccionar la flecha abajo del nombre de la plantilla para ver una descripción de su contenido.
+4.  Como alternativa, puede seleccionar la flecha abajo en el nombre de la plantilla para ver una descripción de su contenido.
 
 5.  Seleccione **Aplicar plantilla** para insertar el contenido en el correo electrónico.
 
      > [!div class="mx-imgBorder"]
-     > ![Ventana Plantillas de correo electrónico](media/email-templates-window.png "Ventana Plantillas de correo electrónico")
+     > ![Ventana de plantillas de correo electrónico](media/email-templates-window.png "Ventana de plantillas de correo electrónico")
 
-Si intenta insertar una plantilla de correo electrónico en un dispositivo con un tamaño de pantalla menor, solo se ve una opción para buscar y seleccionar una plantilla.
+Si intenta insertar una plantilla de correo electrónico en un dispositivo con un tamaño de pantalla más pequeño, solo verá una opción para buscar y seleccionar una plantilla.
 
 > [!div class="mx-imgBorder"]
-> ![Búsqueda de plantilla](media/search-template.png "Búsqueda de plantilla") 
+> ![Buscar plantilla](media/search-template.png "Buscar plantilla") 
 
 ### <a name="see-also"></a>Vea también
 
-[Configuración de correo electrónico mejorado](https://docs.microsoft.com/power-platform/admin/system-settings-dialog-box-email-tab)<br>
-[Redacción y envío de correo electrónico con la experiencia de correo electrónico mejorada](enhanced-email.md)
+[Configurar correo electrónico mejorado](https://docs.microsoft.com/power-platform/admin/system-settings-dialog-box-email-tab)<br>
+[Redactar y enviar un correo electrónico usando la experiencia mejorada de correo electrónico](enhanced-email.md)

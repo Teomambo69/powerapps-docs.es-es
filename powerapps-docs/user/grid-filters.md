@@ -14,17 +14,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 54ddcf717b26859e71ed1339caa533fa9c6bcbb8
-ms.sourcegitcommit: f5d15c973b2a129a0cc29a74cf8eaf6b24fbf36d
+ms.openlocfilehash: 047263130052c412b69d4b69d219352b214b0671
+ms.sourcegitcommit: 52b7f59e271437e86ffff226fb6c1982bf7f08b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80516661"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "3332722"
 ---
 # <a name="use-grid-filters"></a>Uso de filtros de cuadrícula 
 
 Las cuadrículas de la interfaz unificada se han mejorado para aumentar la cantidad de datos que se puede ver en la pantalla. Ahora puede elegir entre muchas opciones de filtrado diferentes para una columna; el tipo de datos de la columna determina las opciones de filtrado disponibles. Por ejemplo, la columna **Nombre completo** de la cuadrícula **Contactos** tiene opciones de filtrado diferentes a las de la columna **Tipo de actividad** de la cuadrícula **Actividades**.
 
+> [!IMPORTANT]
+> En las cuadrículas de la interfaz unificada, no rellene previamente los filtros de columna según la definición de vista actual.
 
    > [!div class="mx-imgBorder"]
    > ![Filtrado de cuadrícula](media/filter-options.png "Filtrado de cuadrícula")
@@ -33,6 +35,7 @@ Las cuadrículas de la interfaz unificada se han mejorado para aumentar la canti
 ## <a name="grid-and-filter-navigation"></a>Navegación por la cuadrícula y el filtro
 
 Al filtrar los datos de una cuadrícula, la página de cuadrícula principal recuerda el filtro, el criterio de ordenación y el estado de la página cuando se sale y después se vuelve a la página. Esto funciona igual al filtrar datos en la búsqueda rápida, el filtrado de columnas, el número de página, etc. 
+
 
    > [!div class="mx-imgBorder"]
    > ![Al ir de nuevo a la página, se abre en el mismo estado](media/grid-remember-state-on-back-navigate.gif "Al ir de nuevo a la página, se abre en el mismo estado")
@@ -50,7 +53,7 @@ Al seleccionar el icono de jerarquía, se va a la vista de jerarquía.
 También se pueden abrir campos principales y de búsqueda en una nueva pestaña o ventana.
 
    > [!div class="mx-imgBorder"]
-   > ![Apertura en una nueva ventana](media/newtab.png "Apertura en una nueva ventana")
+   > ![Abrir en una ventana nueva](media/newtab.png "Apertura en una nueva ventana")
   
   
 ## <a name="lookup-field-column"></a>Columna de campo de búsqueda
@@ -121,6 +124,8 @@ Para volver a la experiencia de búsqueda rápida anterior, que usa la definici�
 2. Vaya a **Configuración** > **Administración** > **Configuración del sistema**.
 
 3. En la pestaña **General**, en **Configurar Búsqueda rápida**, seleccione **Sí** para **usar la vista de búsqueda rápida de una entidad para buscar en cuadrículas y subcuadrículas**.
+
+
 
 
 

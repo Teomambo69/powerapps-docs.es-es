@@ -16,21 +16,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1668b6a10ba651fd7f4986fcd1f83357d83b79bc
-ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
+ms.openlocfilehash: 1b1c0b6158bb19ed64bc70282aed2d4c62d07fe3
+ms.sourcegitcommit: 597849e2942c88a5c54953eeb8f14c8c81ac0ae2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80871467"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3326222"
 ---
 # <a name="user-guide-for-model-driven-apps-running-on-the-power-apps-mobile-app"></a>Guía del usuario para usar aplicaciones basadas en modelos que se ejecutan en la aplicación móvil de Power Apps
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Use la aplicación móvil de Power Apps para ejecutar aplicaciones basadas en modelos en su dispositivo móvil. Para obtener más información sobre cómo instalar y empezar a usar una aplicación, consulte el artículo sobre cómo [ejecutar aplicaciones de lienzo y aplicaciones basadas en modelos en un dispositivo móvil](run-canvas-and-model-apps-on-mobile.md).
 
 > [!IMPORTANT]
-> Las aplicaciones basadas en modelos de Dynamics 365 for Sales, Dynamics 365 for Customer Service y Dynamics 365 for Field Service<!--For sure this list doesn't include Dynamics 365 Marketing, and Dynamics 365 Project Service Automation? That's the list of model-driven apps according to the Dynamics Style Guide.--> no se ejecutan en la aplicación móvil de Power Apps. En su lugar, se usa la aplicación Dynamics 365 para teléfonos y tabletas. Para obtener más información, consulte el artículo [Manual del usuario (Dynamics 365 para teléfonos y tabletas)](https://docs.microsoft.com/dynamics365/mobile-app/dynamics-365-phones-tablets-users-guide).
+> Aplicaciones basadas en modelos para Dynamics 365 Sales, Dynamics 365 Customer Service y Dynamics 365 Field Service<!--For sure this list doesn't include Dynamics 365 Marketing, and Dynamics 365 Project Service Automation? That's the list of model-driven apps according to the Dynamics Style Guide.--> no se ejecutan en la aplicación móvil de Power Apps. En su lugar, se usa la aplicación Dynamics 365 para teléfonos y tabletas. Para obtener más información, consulte el artículo [Manual del usuario (Dynamics 365 para teléfonos y tabletas)](https://docs.microsoft.com/dynamics365/mobile-app/dynamics-365-phones-tablets-users-guide).
 
 ## <a name="home-screen"></a>Pantalla principal 
 
@@ -41,9 +39,9 @@ Es fácil familiarizarse con la aplicación móvil de Power Apps. En la siguient
 Leyenda:
 
 1. **Mapa del sitio**: abra el menú y desplácese entre las aplicaciones, consulte sus registros favoritos y los usados recientemente, acceda a la configuración, etc.
-2. **Buscar**: busque registros de aplicaciones en Common Data Service.
+2. **Buscar:** buscar registros de aplicación mientras se usa Common Data Service.
 3. **Creación rápida**: cree un nuevo registro e indique rápidamente casi cualquier tipo de información en el sistema.
-4. **Relationship Assistant** (Asistente de relaciones): use el asistente para supervisar y realizar un seguimiento de las acciones y las comunicaciones diarias. El asistente le ayuda a mantenerse al día con las tarjetas de información que se muestran de forma destacada a lo largo de la aplicación para proporcionar información personalizada y práctica.
+4. **Asistente de relaciones**: use el asistente para supervisar y realizar un seguimiento de las acciones y las comunicaciones diarias. El asistente le ayuda a mantenerse al día con las tarjetas de información que se muestran de forma destacada a lo largo de la aplicación para proporcionar información personalizada y práctica.
 
 ## <a name="site-map"></a>Mapa del sitio 
 
@@ -51,7 +49,7 @@ En la pantalla principal, seleccione el icono del mapa del sitio ![Icono del map
 
  
    > [!div class="mx-imgBorder"]
-   > ![Pantalla del mapa del sitio](media/go_to_sitemap_iphone.gif "En esta imagen se muestra cómo llegar a la pantalla de mapa del sitio.")
+   > ![Pantalla del mapa del sitio](media/go_to_sitemap_iphone.gif "En esta imagen se muestra cómo llegar a la pantalla de mapa del sitio")
    
  *Actualice la página para reiniciar la acción de GIF*.
 
@@ -61,15 +59,15 @@ En la siguiente ilustración se muestran los elementos de navegación principale
 
 Leyenda
 
-1. **Selector de aplicaciones**: abra este menú para cerrar la aplicación y cambiar a otra.
-2. **Pantalla principal**: seleccione esta página para volver a la pantalla principal.
+1. **Selector de aplicación**: abra este menú para cerrar la aplicación y cambiar a otra.
+2. **Pantalla de inicio**: seleccione esta página para volver a la pantalla de inicio.
 3. **Perfil**: vaya a la pantalla de su perfil para cerrar sesión o volver a configurar la aplicación. 
 4. **Registros recientes**: vea una lista de los registros que ha usado recientemente. 
-5. **Registros anclados**: vea y abra sus registros favoritos (anclados). 
-6. **Navegador de entidades**: en esta área se muestra la entidad disponible en la aplicación.
+5. **Registros favoritos**: vea y abra sus registros favoritos (anclados). 
+6. **Navegador de entidad**: en esta área se muestra la entidad disponible en la aplicación.
 7. **Ayuda**: acceda al contenido de ayuda para obtener más información sobre cómo usar la aplicación móvil de Power Apps.
-8. **Estado sin conexión**: trabaje con los datos en el modo sin conexión, incluso cuando no disponga de acceso a Internet. Más información: [Trabajar sin conexión en su dispositivo móvil](https://docs.microsoft.com/dynamics365/mobile-app/work-in-offline-mode)
-9. **Configuración**: acceso a las opciones de configuración
+8. **Estado sin conexión**: trabaje con sus datos en el modo sin conexión aunque no tenga acceso a Internet. Más información: [Trabajar sin conexión en el dispositivo móvil](https://docs.microsoft.com/dynamics365/mobile-app/work-in-offline-mode)
+9. **Configuraciones**: configuraciones de acceso.
 
 ## <a name="pin-favorite-records"></a>Anclaje de registros favoritos
 
@@ -83,7 +81,7 @@ Las listas **Anclados** y **Recientes** proporcionan un acceso rápido a los reg
 
 
    > [!div class="mx-imgBorder"]
-   > ![Anclaje de un registro a favoritos](media/pin_favs.gif "En esta imagen se muestra cómo anclar los registros favoritos.")
+   > ![Anclaje de un registro a favoritos](media/pin_favs.gif "En esta imagen se muestra cómo anclar los registros favoritos")
    
 *Actualice la página para reiniciar la acción de GIF*.
 
@@ -95,7 +93,7 @@ Las listas **Anclados** y **Recientes** proporcionan un acceso rápido a los reg
 
 
    > [!div class="mx-imgBorder"]
-   > ![Desanclaje de registros](media/unpin_favs.gif "En esta imagen se muestra cómo desanclar un registro.")
+   > ![Desanclaje de registros](media/unpin_favs.gif "En esta imagen se muestra cómo desanclar un registro")
    
 *Actualice la página para reiniciar la acción de GIF*.
 
@@ -105,18 +103,18 @@ Las listas **Anclados** y **Recientes** proporcionan un acceso rápido a los reg
 
 
    > [!div class="mx-imgBorder"]
-   > ![Cambio de vista](media/change_views_iphone.gif "En esta imagen se muestra cómo seleccionar una vista diferente.")
+   > ![Cambio de vista](media/change_views_iphone.gif "En esta imagen se muestra cómo seleccionar una vista diferente")
 
 *Actualice la página para reiniciar la acción de GIF*.
 
 ## <a name="add-a-record-quickly"></a>Adición de un registro rápidamente
 
 1. En la pantalla principal, seleccione **Nuevo** ![Botón de creación de registros](media/create-record-button.png "Botón Crear registro").
-2. Rellene los campos y seleccione **Guardar**.
+2. Complete los campos y, a continuación, seleccione **Guardar**.
 3. Una vez creado el registro, puede verlo. 
 
    > [!div class="mx-imgBorder"]
-   > ![Crear registros](media/pamobile_add_record.gif "En esta imagen se muestra cómo crear un registro.")
+   > ![Crear un registro](media/pamobile_add_record.gif "En esta imagen se muestra cómo crear un registro.")
 
 *Actualice la página para reiniciar la acción de GIF*.
 
@@ -125,7 +123,7 @@ Las listas **Anclados** y **Recientes** proporcionan un acceso rápido a los reg
 - Para guardar el registro y crear otro, seleccione **Más** ![Icono de más comandos](media/pa_mobile_more_commands_icon.png "Icono de más comandos") y, después, **Guardar y crear nuevo**.
 
    > [!div class="mx-imgBorder"]
-   > ![Crear registros](media/pa_mobile_save_create_new.gif "En esta imagen se muestra cómo guardar un registro y abrirlo o guardarlo y crear uno nuevo.")
+   > ![Crear un registro](media/pa_mobile_save_create_new.gif "En esta imagen se muestra cómo guardar un registro y abrirlo o guardarlo y crear uno nuevo.")
 
 *Actualice la página para reiniciar la acción de GIF*.
 
@@ -135,7 +133,7 @@ Las listas **Anclados** y **Recientes** proporcionan un acceso rápido a los reg
 2. En el registro abierto, seleccione **Más** ![Icono de más comandos del registro](media/access_record_commands_icon.png "Icono de más comandos del registro") para acceder a más comandos.
 
    > [!div class="mx-imgBorder"]
-   > ![Comandos de un registro](media/pa_mobile_view_record_commands.gif "En esta imagen se muestra cómo acceder a más comandos en un registro.")
+   > ![Comandos de un registro](media/pa_mobile_view_record_commands.gif "En esta imagen se muestra cómo acceder a más comandos en un registro")
 
 *Actualice la página para reiniciar la acción de GIF*.
 
@@ -145,7 +143,7 @@ Las listas **Anclados** y **Recientes** proporcionan un acceso rápido a los reg
 2. Cuando haya terminado de editarlo, seleccione **Guardar**. Para cancelar los cambios, seleccione **Descartar**.
 
    > [!div class="mx-imgBorder"]
-   > ![Edición de un registro](media/save_on_iphone.gif "En esta imagen se muestra cómo editar y, luego, guardar un registro.")
+   > ![Edición de un registro](media/save_on_iphone.gif "En esta imagen se muestra cómo editar y, luego, guardar un registro")
 
 *Actualice la página para reiniciar la acción de GIF*.
 
@@ -155,7 +153,7 @@ Las listas **Anclados** y **Recientes** proporcionan un acceso rápido a los reg
 - En cualquier momento, mantenga presionado **Atrás** ![Icono de retroceso](media/pa_mobile_back_icon.png "Icono de retroceso") para volver a la pantalla principal. 
 
    > [!div class="mx-imgBorder"]
-   > ![Retroceso a la pantalla principal](media/go_back_home.gif "En esta imagen se muestra cómo volver a la pantalla principal presionando y manteniendo presionado el icono atrás.")
+   > ![Retroceso a la pantalla principal](media/go_back_home.gif "En esta imagen se muestra cómo volver a la pantalla principal presionando y manteniendo presionado el icono atrás")
 
 *Actualice la página para reiniciar la acción de GIF*.
 

@@ -21,7 +21,7 @@ ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
-ms.locfileid: "74726168"
+ms.locfileid: "3302780"
 ---
 # <a name="track-your-progress-with-dashboards-and-charts"></a>Realizar un seguimiento del progreso con gráficos y paneles
 
@@ -36,7 +36,7 @@ Los paneles toman una colección de datos de la aplicación y proporcionan infor
    > [!div class="mx-imgBorder"]
    > ![Adición o cambio de un panel](media/add_dashboard.png "Adición o cambio de un panel") 
 
-## <a name="create-a-new-dashboard"></a>Creación de un nuevo panel
+## <a name="create-a-new-dashboard"></a>Crea un panel
 
 1. Para crear un panel, seleccione **Crear un panel de Dynamics 365**. 
 
@@ -46,13 +46,13 @@ Los paneles toman una colección de datos de la aplicación y proporcionan infor
 2. Elija un diseño de panel y seleccione **Crear**.  
 
    > [!div class="mx-imgBorder"]
-   > ![Creación de un panel](media/create_dashboard.png "Crear un panel")
+   > ![Crear un panel](media/create_dashboard.png "Crear un panel")
  
 3. Escriba un nombre para el panel. 
 4. Agregue lo que quiera a cada área del panel. Vamos a agregar un gráfico, por ejemplo. 
 
    > [!div class="mx-imgBorder"]
-   > ![Adición de un gráfico](media/add_chart.png "Agregar un gráfico")
+   > ![Agregar un gráfico](media/add_chart.png "Agregar un gráfico")
  
  5. Seleccione el **Tipo de registro** del gráfico.
  6. Seleccione una **Vista** que vayan a mostrar los datos del gráfico.
@@ -68,20 +68,20 @@ Los gráficos proporcionan una vista rápida de cómo se lleva un seguimiento de
 -   Mantenga el puntero sobre el gráfico para ver una información emergente que dé información rápida sobre esa área del gráfico.
 -   Haga clic en el área de un gráfico para ver una vista de cuadrícula con más detalles sobre los datos contenidos en el gráfico.
 -   Para expandir un gráfico, seleccione el botón **Expandir gráfico** ![Vista Expandir gráfico](media/expandviewbutton.png "Vista Expandir gráfico").
--   Para ver registros del gráfico o actualizar el gráfico, seleccione ![Más comandos](media/MoreButton.png "Más comandos") y, después, elija una acción: **Actualizar** o **Ver registros**.
+-   Para ver los registros en el gráfico o actualizarlo, seleccione ![Más comandos](media/MoreButton.png "Más comandos") y, a continuación, elija una acción: **Actualizar** o **Ver registros**.
      
      > [!div class="mx-imgBorder"]
-     > ![Vista de gráficos en Power Apps](media/ViewOfCharts.png "Vista de gráficos en Power Apps")  
+     > ![Ver gráficos en Power Apps](media/ViewOfCharts.png "Vista de gráficos en Power Apps")  
        
 
-**Cambio de la vista de gráfico**
+**Cambiar la vista del gráfico**
  
 Cuando se cambia de vista de gráfico, se muestra un desglose de los datos distinto, como, por ejemplo, las oportunidades abiertas durante un período de tiempo concreto. Para cambiar una vista de gráfico, hay que seleccionar el selector Vista de la página Cuadrícula.
 
 Por ejemplo, seleccione "Todas las oportunidades" y, después, seleccione una vista diferente, y se actualizarán tanto el gráfico como la cuadrícula.
 
 > [!div class="mx-imgBorder"]
-> ![Cambiar una vista de gráfico en Power Apps](media/ChangeChartView.png "Cambio de una vista de gráfico en Power Apps")
+> ![Cambiar una vista de gráfico en Power Apps](media/ChangeChartView.png "Cambiar una vista de gráfico en Power Apps")
 
 ## <a name="known-issues"></a>Problemas conocidos  
 En el diseñador de gráficos no se puede agregar una opción Ordenar por en algunos campos calculados, y se producirá un error.  Los campos calculados en los que esto sucede usan otros campos calculados, un campo de entidad relacionado o un campo local en la entidad.

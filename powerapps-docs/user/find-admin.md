@@ -16,11 +16,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 56b7b8e2b63b497d18470968ebe21edb7a280293
-ms.sourcegitcommit: 79ac9decef3d5aab40fbf3bc95f8f4ba03f9b3df
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "72959310"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "3302435"
 ---
 # <a name="find-your-administrator-or-support-person"></a>Búsqueda de un administrador o una persona de soporte técnico 
 
@@ -32,16 +32,16 @@ A veces puede experimentar problemas que exijan una consulta al administrador. S
   
 3. En la página Búsqueda avanzada, en la lista **Buscar**, seleccione **Usuarios**.  
   
-4. Seleccione **Seleccionar** y luego **Roles de seguridad** en la lista.  
+4. Seleccione **Seleccione** y, a continuación, **Roles de seguridad** en la lista.  
   
 5. En **Campos**, seleccione **Nombres**.  
   
-6. Escriba **Administrador del sistema** en el cuadro que indica **Escribir texto**. En este momento, la pantalla debe tener este aspecto:  
+6. Entre en **Administrador del sistema** en el cuadro que indica **Escriba texto**. En este momento, la pantalla debe tener este aspecto:  
      
    > [!div class="mx-imgBorder"]
    > ![Cuadro de diálogo Búsqueda avanzada](media/find-admnistrator-advanced-find-complete.png "Cuadro de diálogo Búsqueda avanzada")  
   
-7. Seleccione el botón **Resultados** de la cinta de opciones.  
+7. Elija el botón **Resultados** en la cinta de opciones.  
   
    Debe ver una lista de uno o más administradores del sistema.  
   

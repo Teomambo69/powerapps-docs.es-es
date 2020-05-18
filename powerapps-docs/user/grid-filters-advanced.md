@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0a27f7104b85b8ae45146ea7a3626cd1b0e2157c
-ms.sourcegitcommit: 3e6c499a65ada8a9f28022a02f64030b0c069a17
+ms.openlocfilehash: 47d7c34d36ff5bed1a69ead94514afc2b2054561
+ms.sourcegitcommit: 52b7f59e271437e86ffff226fb6c1982bf7f08b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "80661334"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "3332678"
 ---
 # <a name="edit-or-create-personal-views-using-advanced-grid-filters"></a>Edición o creación de vistas personales mediante filtros de cuadrícula avanzados 
 
@@ -27,7 +27,9 @@ Use las opciones de filtro avanzadas para crear una vista personal y ver los reg
 
 
 > [!NOTE]
-> La opción de filtro avanzada solo está disponible en las versiones en inglés.
+> - La opción de filtro avanzada solo está disponible en las versiones en inglés.
+> - La opción de filtro avanzado en la entidad Colas no funciona y muestra este mensaje de error: No podemos mostrar las condiciones del filtro para esta vista.
+> - En las cuadrículas de la interfaz unificada, no rellene previamente los filtros de columna según la definición de vista actual.
 
 Al crear y guardar una vista personal, ésta aparece en la lista de vistas personales en **Mis vistas**.
 
@@ -37,14 +39,14 @@ Al crear y guardar una vista personal, ésta aparece en la lista de vistas perso
 
 ## <a name="see-the-current-view-definition"></a>Vista de la definición de la vista actual
 
-Para ver los filtros que se aplicaron a la vista actual, seleccione una vista y, luego, elija **Filtro** ![icono Filtro](media/commandbar_filter_icon.png "Icono de Filtro"). Se abre el generador de expresiones y se muestra la definición de vista predeterminada.
+Para ver los filtros que se aplicaron a la vista actual, seleccione una vista y, luego, elija **Filtro** ![icono Filtro](media/commandbar_filter_icon.png "Icono Filtro"). Se abre el generador de expresiones y se muestra la definición de vista predeterminada.
 
 > [!div class="mx-imgBorder"] 
 > ![Definición de vista actual](media/current_view_def.gif "En esta imagen se muestra cómo ver los filtros de la vista.")
 
 ## <a name="add-conditions-to-filters"></a>Adición de condiciones a los filtros
 
-1. Para editar la vista actual y agregar más filtros, seleccione una vista y, luego, elija **Filtro** ![icono Filtro](media/commandbar_filter_icon.png "Icono de Filtro").
+1. Para editar la vista actual y agregar más filtros, seleccione una vista y, luego, elija **Filtro** ![icono Filtro](media/commandbar_filter_icon.png "Icono Filtro").
 2. En la pantalla **Filtros avanzados**, use el generador de expresiones para agregar condiciones a los filtros. Para más información sobre cómo agregar condiciones, consulte [Agregar condiciones a un filtro](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-edit-view-filters#add-conditions-to-a-filter).
 3. Cuando finalice, seleccione **Aplicar**. 
 
@@ -58,7 +60,7 @@ Para profundizar aún más en los datos, puede agregar condiciones agrupadas o a
    > [!div class="mx-imgBorder"] 
    > ![Adición de un grupo o una condición anidada](media/group_condition.gif "En esta imagen se muestra cómo agregar una condición agrupada o anidada a un filtro.")
 
-### <a name="clear-filters"></a>Borrado de filtros
+### <a name="clear-filters"></a>Borra filtros
 
 Para borrar los filtros que se aplicaron y restablecer la vista a la definición original, seleccione **Borrar filtro** ![icono Borrar filtro](media/clear_filter_icon.png "Icono Borrar filtro").
 

@@ -20,7 +20,7 @@ ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/12/2020
-ms.locfileid: "79133558"
+ms.locfileid: "3303309"
 ---
 #  <a name="basic-navigation-in-a-model-driven-app"></a>Navegación básica en una aplicación controlada por modelos 
 
@@ -32,9 +32,9 @@ Una aplicación basada en modelo consta de aplicaciones, áreas y entidades.
 
 - Las *aplicaciones* proporcionan una colección de funciones para llevar a cabo una clase específica de actividad, como administrar las cuentas y los contactos. Use el menú del selector de aplicaciones para navegar por las aplicaciones que están disponibles para su organización.
 
-- Un *área de trabajo* es una subdivisión de una aplicación, dedicada a una característica específica. Cada área de trabajo proporciona una colección de entidades de destino para trabajar en dicha área. En algunos casos, la misma entidad aparece en más de un área (o incluso en más de una aplicación). Las entidades Contacto y Cuenta, por ejemplo, aparecen en varias aplicaciones y áreas de trabajo. Use el menú del área de trabajo para navegar por las áreas de trabajo de la aplicación actual.
+- Un *área de trabajo* es una subdivisión de una aplicación, dedicada a una característica específica. Cada área de trabajo proporciona una colección de entidades de destino para trabajar en dicha área. En algunos casos, la misma entidad aparece en más de un área (o incluso en más de una aplicación). Las entidades Contacto y Cuenta, por ejemplo, aparecen en varias aplicaciones y áreas de trabajo. Use el menú del área de trabajo para desplazarse por las áreas de trabajo para la aplicación actual.
 
-- Las *entidades* representan un tipo específico de datos, como contactos y cuentas. Las entidades usan un formato de datos estructurados, que define la colección de campos disponibles en la entidad. Cada entidad consta de una colección de registros individuales. Por ejemplo, en el caso de la entidad Contacto, cada registro describe una sola persona e incluye una colección de campos (como el nombre, los apellidos y la dirección de correo electrónico). Las entidades suelen presentar dos vistas: una vista de lista (que normalmente es una tabla en la que aparecen los registros disponibles) y una vista de formulario (en la que se muestran todos los datos y las opciones de configuración disponibles de un único registro). Use el navegador lateral para desplazarse por las entidades del área de trabajo actual.
+- Las *entidades* representan un tipo específico de datos, como contactos y cuentas. Las entidades usan un formato de datos estructurados, que define la colección de campos disponibles en la entidad. Cada entidad consta de una colección de registros individuales. Por ejemplo, en el caso de la entidad Contacto, cada registro describe una sola persona e incluye una colección de campos (como el nombre, los apellidos y la dirección de correo electrónico). Normalmente, las entidades presentan dos vistas: una vista de lista, que suele ser una tabla donde se enumeran los registros disponibles, y una vista de formulario, que muestra todos los datos y valores de configuración disponibles para un solo registro. Use el navegador lateral para desplazarse entre las entidades del área de trabajo actual.
 
 ### <a name="move-between-apps"></a>Desplazamiento por las aplicaciones
 
@@ -52,12 +52,12 @@ Es fácil desplazarse por sus registros favoritos o más usados y volver a ellos
 
 Leyenda:
 
-1. **Selector de aplicaciones**: abra este menú para desplazarse por las aplicaciones.
-2. **Botón para contraer o expandir**: selecciónelo para contraer el navegador y para que haya más espacio en la parte principal de la página. Si el navegador ya está contraído, seleccione este botón para volver a expandirlo.
-3. **Registros recientes**: expanda esta entrada para ver una lista de los registros que ha usado recientemente. Seleccione un registro para abrirlo. Seleccione el icono de alfiler situado junto a uno de los registros que aparecen aquí para agregarlo a los favoritos (registros anclados).
-4. **Registros favoritos**: expanda esta entrada para ver y abrir sus registros favoritos (anclados). Use la lista **Registros recientes** para agregar registros aquí. Seleccione el icono de quitar alfiler situado junto a uno de los registros que aparecen aquí para eliminarlo de la lista.
-5. **Navegador de entidades**: en esta área se enumeran todas las entidades y paneles disponibles del área de trabajo actual. Seleccione cualquiera de estas entradas para abrir el panel con nombre o la vista de lista de dicha entidad.
-6. **Selector de áreas de trabajo**: abra este menú para ir a otra área de trabajo. El área de trabajo actual aparece aquí.
+1. **Selector de aplicaciones**: abra este menú para moverse entre aplicaciones.
+2. **Botón Contraer/Expandir**: seleccione este botón para contraer el navegador y permitir que haya más espacio para la parte principal de la página. Si el navegador ya está contraído, seleccione este botón para volver a expandirlo.
+3. **Registros recientes**: expanda esta entrada para ver una lista de registros utilizados recientemente. Seleccione un registro para abrirlo. Seleccione el icono de alfiler situado junto a uno de los registros que aparecen aquí para agregarlo a los favoritos (registros anclados).
+4. **Registros favoritos**: expanda esta entrada para ver y a abrir sus registros favoritos (anclados). Use la lista **Registros recientes** para agregar registros aquí. Seleccione el icono de quitar alfiler situado junto a uno de los registros que aparecen aquí para eliminarlo de la lista.
+5. **Navegador entre entidades**: esta área muestra todas las entidades y todos los paneles disponibles para el área de trabajo actual. Seleccione cualquiera de estas entradas para abrir el panel con nombre o la vista de lista de dicha entidad.
+6. **Selector del área de trabajo**: abra este menú para ir a otra área de trabajo. El área de trabajo actual aparece aquí.
 
 ## <a name="working-with-list-views"></a>Trabajo con vistas de lista
 
@@ -67,12 +67,12 @@ Normalmente, la primera vez que abra una entidad, verá la vista de lista, en la
 
 Leyenda:
 
-1. **Seleccionar registros**: para seleccionar uno o varios registros, coloque una marca de verificación en esta columna. En función de dónde esté trabajando, es posible que pueda aplicar una única operación a todos los registros seleccionados a la vez mediante los botones de la barra de comandos.
-2. **Abrir un registro**: seleccione cualquier registro de la lista para abrir su vista de registro, en la que se muestran todos sus detalles. Normalmente, para abrir un registro de la entidad actual, tiene que seleccionar uno de la columna **Nombre**. Algunas entidades proporcionan vínculos a registros de entidades relacionadas en otras columnas (por ejemplo, un contacto relacionado).
-3. **Ordenar o filtrar la lista**: seleccione esta opción para ordenar o filtrar la lista por los valores de esa columna. Una flecha en el encabezado de columna indica qué columna se está ordenando y en qué dirección. 
-4. **Barra de comandos**: use los comandos de la barra de comandos para trabajar en los registros de la lista y realizar acciones relacionadas. Algunos comandos (como **Eliminar**) necesitan que primero seleccione uno o varios registros de destino (para ello, coloque una marca de verificación en la columna de la izquierda de todo), mientras que otros funcionan en toda la lista. Puede exportar la lista a un libro de Excel (posiblemente basado en una plantilla), abrir gráficos y paneles, etc., en función del tipo de registros con los que esté trabajando.
-5. **Buscar en la vista**: escriba el texto en el campo de búsqueda situado encima de la lista para mostrar solo los registros de la vista actual que contengan el texto.
-6. **Filtrado y paginación**: seleccione una letra para mostrar solo los registros cuyos nombres empiecen por esa letra. Si la lista contiene más registros de los que se pueden mostrar en una página, use las flechas de paginación situadas en la parte inferior de la lista para avanzar y retroceder por las páginas.
+1. **Seleccionar registros**: seleccione uno o varios registros poniendo una marca de verificación en esta columna. En función de dónde esté trabajando, es posible que pueda aplicar una única operación a todos los registros seleccionados a la vez mediante los botones de la barra de comandos.
+2. **Abrir un registro**: seleccione un registro de la lista para abrir la vista de registro, que muestra todos los detalles del registro. Normalmente, para abrir un registro de la entidad actual, tiene que seleccionar uno de la columna **Nombre**. Algunas entidades proporcionan vínculos a registros de entidades relacionadas en otras columnas (por ejemplo, un contacto relacionado).
+3. **Ordenar o filtrar la lista:** seleccione esta opción para ordenar o filtrar la lista por los valores de esa columna. Una flecha en el encabezado de columna indica qué columna se está ordenando y en qué dirección. 
+4. **Barra de comandos**: use los comandos de la barra de comandos para operar en registros de la lista y llevar a cabo acciones relacionadas. Algunos comandos (como **Eliminar**) requieren que seleccione primero uno o varios registros de destino poniendo una marca de verificación en la columna situada más a la izquierda, mientras que otros operan en toda la lista. Puede exportar la lista a un libro de Excel (posiblemente basado en una plantilla), abrir gráficos y paneles, etc., en función del tipo de registros con los que esté trabajando.
+5. **Buscar en la vista**: escriba el texto en el campo de búsqueda que aparece encima de la lista para mostrar solo los registros en la vista actual que contienen ese texto.
+6. **Filtrar y paginar**: seleccione una letra para mostrar solo aquellos registros cuyos nombres empiezan por esa letra. Si la lista contiene más registros de los que se pueden mostrar en una página, use las flechas de paginación situadas en la parte inferior de la lista para avanzar y retroceder por las páginas.
 
 ## <a name="working-with-record-views"></a>Trabajo con vistas de registros
 
@@ -83,11 +83,11 @@ Las vistas de registros muestran todos los detalles sobre un único registro y a
 Leyenda:
 
 
-1. **Pestañas**: la mayoría de las vistas de registros se dividen en pestañas. En cada pestaña se proporciona una colección de campos relacionados del registro. Si las pestañas están disponibles, aparecen debajo del nombre del registro. Seleccione cualquier nombre para ir a la pestaña. La pestaña actual aparece subrayada.
+1. **Pestañas**: la mayoría de las vistas de registros se dividen en pestañas. En cada pestaña se proporciona una colección de campos relacionados del registro. Si las pestañas están disponibles, aparecen debajo del nombre del registro. Seleccione cualquier nombre de pestaña para ir a esa pestaña. La pestaña actual se muestra subrayada.
 2. **Relacionado**: en casi todos los tipos de registros se muestra una pestaña **Relacionado** después de haberlos guardado al menos una vez. Esta pestaña es en realidad una lista desplegable que puede usar para buscar otros tipos de registros que utilizan el registro mostrado o hacen referencia a este. Al elegir el nombre de una entidad en la lista desplegable **Relacionado**, se abre una nueva pestaña con el nombre de dicha entidad, en la que se muestra una lista de todos los registros relacionados de ese tipo. La pestaña **Relacionado** sigue estando disponible y puede usarla para buscar otros tipos de registros que hagan referencia al actual.
-3. **Barra de comandos**: use los comandos de la barra de comandos para trabajar en el registro actual o realizar una tarea relacionada con el registro. Los comandos disponibles varían en función del tipo de registro, pero normalmente puede usar la barra de comandos para guardar los cambios, eliminar el registro, actualizar la página, enviar un vínculo al registro por correo electrónico, reasignar el propietario del registro o exportar el registro mediante una plantilla de Word.
-4. **Barra de encabezado**: en algunas vistas de registros se muestran algunos campos especialmente importantes en la barra de encabezado, en el lado opuesto al nombre del registro. Suelen ser campos fundamentales para trabajar con registros del tipo actual (como el nombre o el propietario del registro).
-5. **Vista y edición de todos los valores de campos**: en el cuerpo principal de la vista de registros, encontrará todos los campos relacionados con la pestaña, la vista de formulario y el tipo de registro actuales. Los campos marcados con un asterisco rojo son obligatorios y no puede guardar el registro sin que tengan valores válidos. Los campos marcados con un signo más azul son especialmente importantes o recomendados, pero no son estrictamente obligatorios. Los campos en los que se muestra un icono de candado son de solo lectura y no se pueden editar.
+3. **Barra de comandos**: use los comandos de la barra de comandos para operar en el registro actual o llevar a cabo una tarea relacionada con el registro. Los comandos disponibles varían en función del tipo de registro, pero normalmente puede usar la barra de comandos para guardar los cambios, eliminar el registro, actualizar la página, enviar un vínculo al registro por correo electrónico, reasignar el propietario del registro o exportar el registro mediante una plantilla de Word.
+4. **Barra de encabezado**: algunas vistas de registro muestran algunos campos especialmente importantes en la barra de encabezado, frente al nombre del registro. Suelen ser campos fundamentales para trabajar con registros del tipo actual (como el nombre o el propietario del registro).
+5. **Ver y editar todos los valores de campo**: en el cuerpo de la vista de registro se encuentran todos los campos relacionados con la pestaña, la vista de formulario y el tipo de registro actuales. Los campos marcados con un asterisco rojo son obligatorios y no se puede guardar el registro sin que tengan valores válidos. Los campos marcados con un signo más azul son especialmente importantes o recomendados, pero no son estrictamente obligatorios. Los campos en los que se muestra un icono de candado son de solo lectura y no se pueden editar.
 
 ## <a name="record-set-navigation"></a>Navegación por el conjunto de registros 
 
@@ -96,12 +96,12 @@ Navegue por varios registros mediante vistas y consultas predefinidas. La navega
 > [!div class="mx-imgBorder"]
 > ![Navegación por el conjunto de registros](media/recordset1.png "Navegación por el conjunto de registros")
 
-## <a name="reference-panel"></a>Panel de referencias
+## <a name="reference-panel"></a>Panel de referencia
 
 El panel de referencias es una excelente manera de trabajar sin salir de la pantalla en la que esté. Puede buscar otros elementos relacionados, como casos u oportunidades de una cuenta, en el contexto del registro que está viendo sin tener que ir a otras pantallas.
 
 > [!div class="mx-imgBorder"]
-> ![Panel de referencias](media/reference-panel1.png "Panel de referencias")
+> ![Panel de referencia](media/reference-panel1.png "Panel de referencia")
 
  Para obtener más información sobre el panel de referencias, vea este vídeo:
 
@@ -117,8 +117,8 @@ Al seleccionar la notificación de error, se le llevará al campo del formulario
 
 Leyenda:
 
-1. **Info**: la notificación es informativa.
-2. **Warn**: la notificación es una advertencia. 
+1. **Información**: la notificación es informativa.
+2. **Advertencia**: la notificación es una advertencia. 
 3. **Error**: la notificación es un error. 
 
 

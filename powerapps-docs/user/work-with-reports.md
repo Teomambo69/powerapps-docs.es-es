@@ -1,6 +1,6 @@
 ---
 title: Trabajo con informes | Microsoft Docs
-description: Trabajo con informes en Power Apps
+description: Trabajar con informes en Power Apps
 author: mduelae
 manager: kvivek
 ms.service: powerapps
@@ -21,24 +21,24 @@ ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/13/2020
-ms.locfileid: "79239968"
+ms.locfileid: "3303378"
 ---
 # <a name="work-with-reports"></a>Trabajo con los informes
 
 Los informes le ayudan a supervisar su progreso para conseguir sus objetivos empresariales, ya que le ayudan a comprobar cómo lo está haciendo. También puede hacer un seguimiento de las tendencias, lo que le ofrece una ventaja sobre sus competidores.  
 
-Para obtener más información sobre cómo organizar y crear informes, vea: [Personalización y organización de informes](https://docs.microsoft.com/powerapps/maker/model-driven-apps/add-reporting-to-app).
+Para obtener más información acerca de crear y organizar informes, vea: [Personalizar y organizar informes](https://docs.microsoft.com/powerapps/maker/model-driven-apps/add-reporting-to-app).
   
-## <a name="run-a-report"></a>Ejecución de un informe  
+## <a name="run-a-report"></a>Ejecutar informes  
   
 1. En el panel de navegación izquierdo, seleccione el área de informes. 
-2. Elija el informe que quiera y después **Ejecutar informe**.  
+2. Seleccione el informe que desee > **Ejecutar informe**.  
   
    > [!NOTE]
-   >  En el cuadro de diálogo **Visor de informes**, puede dejar los criterios de búsqueda tal cual o cambiarlos si es necesario.  
+   >  En el cuadro de diálogo **Visor de informes** puede dejar los criterios de búsqueda tal cual o cambiarlos según sea necesario.  
    
    > [!div class="mx-imgBorder"]
-   > ![Ejecución de un informe](media/report-run.png "Ejecución de un informe")
+   > ![Ejecución de informes](media/report-run.png "Ejecutar informes")
  
   
 ## <a name="share-a-report-with-other-users-or-teams"></a>Uso compartido de un informe con otros usuarios o equipos    
@@ -61,7 +61,7 @@ Para obtener más información sobre cómo organizar y crear informes, vea: [Per
    > [!div class="mx-imgBorder"]
    > ![Adición del usuario para compartir un informe](media/report-share2.png "Adición del usuario para compartir el informe")
   
-7. En el cuadro de diálogo **Compartir informe**, seleccione el tipo de acceso de recurso compartido que quiera. Los permisos disponibles son los siguientes: Lectura, Escritura, Eliminación, Anexo, Asignación o Uso compartido. De esta forma, se agregará el registro del usuario o el equipo al cuadro **Registros seleccionados**.
+7. En el cuadro de diálogo **Compartir informe**, seleccione el tipo de acceso compartido que desee. Los permisos disponibles son: Leer, Escribir, Eliminar, Anexar, Asignar o Compartir. De esta forma, se agregará el registro del usuario o el equipo al cuadro **Registros seleccionados**.
 
    > [!div class="mx-imgBorder"]
    > ![Elección del acceso de recurso compartido](media/report-share3.png "Elección del acceso de recurso compartido")
@@ -78,7 +78,7 @@ Para obtener más información sobre cómo organizar y crear informes, vea: [Per
    > [!div class="mx-imgBorder"]
    > ![Uso compartido de un informe con la organización](media/report-share4.png "Uso compartido de un informe con la organización")
 
-## <a name="download-a-report"></a>Descarga de un informe
+## <a name="download-a-report"></a>Descargar un informe
 
 1. En el panel de navegación izquierdo, seleccione el área de informes. 
 2. En la lista de informes, seleccione el que quiera compartir.  

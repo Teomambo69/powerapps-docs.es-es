@@ -16,11 +16,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 82d14f70bbdcd9faddc467636db255f0b512830e
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61544830"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "3302481"
 ---
 # <a name="export-to-an-excel-static-worksheet"></a>Exportación a una hoja de cálculo estática de Excel
 
@@ -28,19 +28,19 @@ Si quiere presentar información sobre los datos de la aplicación a una persona
 
 Se pueden exportar hasta 100 000 registros a la vez. Una aplicación basada en modelos muestra de forma predeterminada un máximo de 50 registros por página. Elija las flechas de **Página** situadas al final de la lista para ver más páginas.  
   
-## <a name="export-data-to-an-excel-static-worksheet"></a>Exportación de datos a una hoja de cálculo estática de Excel  
+## <a name="export-data-to-an-excel-static-worksheet"></a>Exportación de datos a hojas de cálculo estáticas de Excel  
 Puede que tenga la opción de exportar datos a una hoja de cálculo estática de Excel en cualquier tipo de registro. Sin embargo, en algunos casos, el formato puede ser heredado, o puede que los datos no se filtren por lo que aparece en la aplicación.  
   
 1. Abra una lista de registros de la aplicación, seleccione la flecha situada a la derecha de **Exportar a Excel** y, después, seleccione **Hoja de cálculo estática (solo página)**.  
   
-2. Una hoja de cálculo exportada incluye de forma predeterminada los campos que se muestran en la lista, en el mismo orden, clasificación y ancho de campo. Para realizar cambios en las columnas de una vista de búsqueda avanzada, elija **Editar columnas**. 
+2. De manera predeterminada, una hoja de cálculo exportada incluye los campos que se muestran en la lista, con el mismo orden de campos, la misma ordenación y el mismo ancho de campo. Para realizar cambios en las columnas de una Vista de búsqueda avanzada, elija **Editar columnas**. 
   
 3. Elija **Guardar** y guarde el archivo .xlsx. Anote la ubicación en la que guarde el archivo.  
   
    > [!NOTE]
-   > Si va a editar el archivo de datos más adelante, se recomienda guardar el archivo antes de abrirlo. De lo contrario, podría aparecer este mensaje de error: **Excel no puede abrir o guardar más documentos porque el espacio en disco o la memoria son insuficientes.**  
+   > Si va a editar el archivo de datos más adelante, se recomienda guardar el archivo antes de abrirlo. De lo contrario, es posible que reciba este mensaje de error: **Excel no pueden abrir o guardar más documentos porque no hay suficiente memoria o espacio en disco disponible**.  
    > 
-   > Para solucionar el problema, haga lo siguiente:  
+   > Para solucionar este problema, haga lo siguiente:  
    > 
    > 1. Abra Excel y vaya a **Archivo** > **Opciones** > **Centro de confianza** > **Configuración del Centro de confianza** > **Vista protegida**.  
    > 2.  En **Vista protegida**, desactive los tres elementos.  
@@ -51,13 +51,13 @@ Puede que tenga la opción de exportar datos a una hoja de cálculo estática de
 
 4. Abra Excel y, luego, abra el archivo .xlsx que guardó en el paso anterior.  
   
-   Una hoja de cálculo exportada incluye de forma predeterminada los campos que se muestran en la lista, en el mismo orden, clasificación y ancho de campo.  
+   De manera predeterminada, una hoja de cálculo exportada incluye los campos que se muestran en la lista, con el mismo orden de campos, la misma ordenación y el mismo ancho de campo.  
   
-## <a name="tips"></a>Recomendaciones  
+## <a name="tips"></a>Sugerencias  
   
 - Una hoja de cálculo estática exportada se puede enviar por correo electrónico a cualquier persona o almacenarla en un archivo compartido. Cualquier persona que abra el archivo verá todos los datos que hay en él.
   
-- No se pueden cambiar las columnas de una vista del sistema, como, por ejemplo, **Todas las cuentas activas**. Debe personalizar la vista (que requiere el rol de seguridad Administrador del sistema o Personalizador del sistema), o bien usar la búsqueda avanzada para crear su propia vista basada en la vista actual.  
+- No puede cambiar las columnas de una vista del sistema, como **Todas las cuentas activas**. Debe personalizar la vista, lo que requiere el rol de seguridad del administrador o del personalizador del sistema, o bien usar la Búsqueda avanzada para crear su propia vista basada en la vista actual.  
     
 - En las aplicaciones basadas en modelos, los valores de moneda se exportan a Excel como números. Una vez completada la exportación, vea el tema de la Ayuda de Excel “Mostrar números como moneda” para dar formato de moneda a los datos.
   

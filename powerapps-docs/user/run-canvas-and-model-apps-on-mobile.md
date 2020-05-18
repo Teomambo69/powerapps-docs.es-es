@@ -5,7 +5,7 @@ author: mduelae
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 03/12/2020
+ms.date: 04/30/2020
 ms.author: mkaur
 ms.custom: ''
 ms.reviewer: ''
@@ -15,43 +15,39 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fbd6233eb775fb7f1c48ec6cc05006ac0237f72d
-ms.sourcegitcommit: abdc8c609a7a221ce4ca6b051a84b7083bdbe1ab
+ms.openlocfilehash: d7690cdab07c32b740e058f905ab9d96df7c1bba
+ms.sourcegitcommit: 597849e2942c88a5c54953eeb8f14c8c81ac0ae2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80645574"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3326126"
 ---
 # <a name="run-canvas-apps-and-model-driven-apps-on-a-mobile-device"></a>Ejecución de aplicaciones de lienzo y basadas en modelos en un dispositivo móvil
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+Al crear una aplicación, o cuando alguien comparte una aplicación con usted, tanto una aplicación de lienzo como una aplicación basada en modelos, puede ejecutar dicha aplicación en dispositivos iOS y Android con la aplicación móvil de Power Apps. Si usa un dispositivo Windows, solo puede ejecutar aplicaciones de lienzo; las aplicaciones basadas en modelos no se admiten en la aplicación móvil de Power Apps para dispositivos Windows. En este tema, aprenderá a empezar a usar y ejecutar una aplicación de lienzo y una aplicación basada en modelos en su dispositivo móvil. 
 
-Al crear una aplicación, o cuando alguien comparte una aplicación con usted, &mdash;tanto una aplicación de lienzo como una aplicación basada en modelos&dash;, puede ejecutar dicha aplicación en dispositivos iOS y Android con la aplicación móvil de Power Apps. Si usa un dispositivo Windows, solo puede ejecutar aplicaciones de lienzo; las aplicaciones basadas en modelos no se admiten en la aplicación móvil de Power Apps para dispositivos Windows. En este tema, aprenderá a empezar a usar y ejecutar una aplicación de lienzo y una aplicación basada en modelos en su dispositivo móvil. 
-
-Para obtener información, consulte la [Guía del usuario para usar aplicaciones basadas en modelos que se ejecutan en la aplicación móvil de Power Apps](use-custom-model-driven-app-on-mobile.md).
+Para obtener información sobre cómo usar aplicaciones basadas en modelos ejecutándose en la aplicación móvil de Power Apps, consulte la [Guía del usuario para usar aplicaciones basadas en modelos que se ejecutan en la aplicación móvil de Power Apps](use-custom-model-driven-app-on-mobile.md).
 
 > [!IMPORTANT]
-> Las aplicaciones basadas en modelos de Dynamics 365 for Sales, Dynamics 365 for Customer Service, Dynamics 365 for Field Service, Dynamics 365 for Marketing y Dynamics 365 for Project Service Automation<!--Via Dynamics Style Guide. If this sentence doesn't apply to all these products, maybe only mention Sales, Customer Service, and Field Service as you do in use-custom-model-driven-app-on-mobile.md? "Dynamics verticals" is out of brand.--> no se ejecutan en la aplicación móvil de Power Apps. En su lugar, se usa la aplicación Dynamics 365 para teléfonos y tabletas. Más información: [Manual del usuario (Dynamics 365 para teléfonos y tabletas)](https://docs.microsoft.com/dynamics365/mobile-app/dynamics-365-phones-tablets-users-guide).
+> Aplicaciones basadas en modelos para Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing y Dynamics 365 Project Service Automation<!--Via Dynamics Style Guide. If this sentence doesn't apply to all these products, maybe only mention Sales, Customer Service, and Field Service as you do in use-custom-model-driven-app-on-mobile.md? "Dynamics verticals" is out of brand.--> no se ejecutan en la aplicación móvil de Power Apps. En su lugar, se usa la aplicación Dynamics 365 para teléfonos y tabletas. Más información: [Manual del usuario de Dynamics 365 for phones y tablets](https://docs.microsoft.com/dynamics365/mobile-app/dynamics-365-phones-tablets-users-guide)
 
-![Aplicación móvil de Power Apps](media/powerappsmobile.png "Interfaz de usuario de Power Apps para dispositivos móviles")
+![Power Apps móvil](media/powerappsmobile.png "Interfaz de usuario de muestra de Power Apps")
 
 Leyenda:
 
 1. **Aplicaciones basadas en modelos**
 2. **Aplicaciones de lienzo**
 
-**Para suscribirse a la versión preliminar de Power Apps para dispositivos móviles:**
+**Instalación de Power Apps móvil**
 
-1. [Instale Power Apps para iOS](https://go.microsoft.com/fwlink/?linkid=2125171) o [Power Apps para Android](https://go.microsoft.com/fwlink/?linkid=2125172).
-2. Si ya ha instalado la aplicación, esta se reemplazará por la versión preliminar de la aplicación.
-3. Asegúrese de actualizar manualmente a la versión más reciente disponible para beneficiarse de las últimas mejoras. 
-3. Después de instalar la aplicación, puede empezar las pruebas. Si tiene algún comentario, póngase en contacto con nosotros en [pamobsup@microsoft.com](mailto:pamobsup@microsoft.com). 
+Para seguir este procedimiento, si no se ha registrado en Power Apps, [regístrese gratis](https://make.powerapps.com/signup?redirect=marketing&email=) antes de comenzar y luego descargue Power Apps desde la [Tienda de aplicaciones](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) o [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) en un iPhone, iPad o dispositivo Android que ejecute un [sistema operativo compatible](../maker/canvas-apps/limits-and-config.md). Además, asegúrese de que tiene acceso a una aplicación de lienzo que ha creado o que otra persona ha creado y compartido con usted.
 
-## <a name="open-power-apps-and-sign-in"></a>Apertura de Power Apps e inicio de sesión
 
-Abra Power Apps en el dispositivo móvil e inicie sesión con sus credenciales de Azure Active Directory.
+## <a name="open-power-apps-and-sign-in"></a>Abrir Power Apps e iniciar sesión
 
-![Inicio de sesión en Power Apps](media/powerapps_mobile_app_signin_screen.png "Iniciar sesión en Power Apps")
+Abra Power Apps en su dispositivo móvil e inicie sesión con las credenciales de Azure Active Directory.
+
+![Iniciar sesión en Power Apps](media/powerapps_mobile_app_signin_screen.png "Iniciar sesión en Power Apps")
 
 Si tiene la aplicación Microsoft Authenticator instalada en el dispositivo móvil, simplemente escriba el nombre de usuario cuando se le solicite y, después, apruebe la notificación enviada al dispositivo.
 
@@ -69,13 +65,13 @@ Los siguientes filtros están disponibles:
 
 * **Mis aplicaciones**: en el caso de las aplicaciones de lienzo, se muestran las aplicaciones de lienzo que ha abierto, aquellas de las que es propietario y las que puede editar. En el caso de las aplicaciones basadas en modelos, se muestran todas las aplicaciones de este tipo a las que tiene acceso. 
 
-* **Aplicaciones de ejemplo** (solo aplicaciones de lienzo): muestra las aplicaciones de lienzo de ejemplo de Microsoft que presentan escenarios de aplicaciones reales con datos ficticios para ayudar a explorar las posibilidades de diseño.
+* **Aplicaciones de muestra** (solo aplicaciones de lienzo): presenta las aplicaciones de lienzo de muestra de Microsoft que incluyen escenarios de aplicaciones reales con datos ficticios para ayudarlo a explorar las posibilidades de diseño.
 
 * **Favoritos** (solo aplicaciones de lienzo): muestra las aplicaciones de lienzo que ha marcado seleccionando los puntos suspensivos (…) en el icono de la aplicación y, después, seleccionando **Favoritos**. Para quitar una aplicación de esta lista, seleccione los puntos suspensivos (…) en el icono de la aplicación y, después, seleccione **Quitar de Favoritos**.
 
     ![Marcado como favorito](media/add_favorite_app.png "Marcar como favorito")
 
-* **Aplicaciones destacadas** (solo aplicaciones de lienzo): muestra las aplicaciones de lienzo que el administrador ha marcado como aplicaciones destacadas.
+* **Aplicaciones destacadas** (solo aplicaciones de lienzo): muestra las aplicaciones de lienzo que su administrador ha marcado como aplicaciones destacadas.
 
 ### <a name="sort-apps"></a>Ordenación de las aplicaciones
 
@@ -119,7 +115,7 @@ Si es la primera vez que ejecuta una aplicación de lienzo mediante la aplicaci�
 
 #### <a name="close-a-canvas-app"></a>Cierre de una aplicación de lienzo
 
-Deslice su dedo desde el borde izquierdo de la aplicación al borde derecho para cerrarla. En los dispositivos Android, también puede presionar el botón Atrás y luego confirmar que quiere cerrar la aplicación.
+Deslice su dedo desde el borde izquierdo de la aplicación al borde derecho para cerrarla. En los dispositivos Android, también puede presionar el botón Atrás y después confirmar que su intención era cerrar la aplicación.
 
 ![Cierre de una aplicación](media/swipe.gif "Cerrar una aplicación")
 
@@ -135,7 +131,7 @@ Si una aplicación requiere una conexión a un origen de datos o permiso para us
 
 ### <a name="run-a-model-driven-app"></a>Ejecutar una aplicación controlada por modelos 
 
-La siguiente imagen muestra un ejemplo de la pantalla de una aplicación basada en modelos después de haber iniciado sesión. Para obtener información, consulte la [Guía del usuario para usar aplicaciones basadas en modelos que se ejecutan en la aplicación móvil de Power Apps](use-custom-model-driven-app-on-mobile.md). 
+La siguiente imagen muestra un ejemplo de la pantalla de una aplicación basada en modelos después de haber iniciado sesión. Para obtener información sobre cómo usar aplicaciones basadas en modelos ejecutándose en la aplicación móvil de Power Apps, consulte la [Guía del usuario para usar aplicaciones basadas en modelos que se ejecutan en la aplicación móvil de Power Apps](use-custom-model-driven-app-on-mobile.md). 
 
 ![Página principal de la aplicación basada en modelos](media/model-driven-app-opened.png "Página principal de la aplicación basada en modelos")
 
@@ -151,11 +147,5 @@ Seleccione el icono del mapa del sitio ![Icono del mapa del sitio](media/pa_mobi
 
 ![Cierre de una aplicación basada en modelos](media/pa_mobile_close_app.png "Cierre de una aplicación basada en modelos")
 
-## <a name="known-issues"></a>Problemas conocidos
 
-Todavía estamos trabajando en algunos problemas conocidos y publicaremos correcciones con el tiempo. Asegúrese de actualizar de forma manual a la versión preliminar más reciente en cuanto esté disponible. 
-
-Problemas conocidos
-
-- A veces desaparecen los iconos de las aplicaciones basadas en modelos.
 

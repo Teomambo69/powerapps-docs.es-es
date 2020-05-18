@@ -16,11 +16,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 7dd418db04f72310210925345611bc1a0b2a6f17
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "63318529"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "3302550"
 ---
 # <a name="share-records-using-access-team"></a>Compartir registros con Access Team
 
@@ -33,17 +33,17 @@ La característica de equipos de acceso concede acceso a registros mediante el u
 2. En la lista de registros, abra el registro al que desea proporcionar acceso a otro usuario.
 
   > [!div class="mx-imgBorder"]
-  > ![Mis cuentas activas](media/AccessTeam1.png "My active accounts")
+  > ![Mis cuentas activas](media/AccessTeam1.png "Mis cuentas activas")
 
-3. En la sección de **los miembros del equipo de acceso**, seleccione **Más comandos** ( **…** ) > **Agregar usuario**.
+3. En la sección de **los miembros del equipo de acceso**, seleccione **Más comandos** (**…**) > **Agregar usuario**.
 
   > [!div class="mx-imgBorder"]
-  > ![Agregar usuario al equipo de acceso](media/AccessTeam2.png "Add user to Access Team")
+  > ![Agregar usuario a equipo de acceso](media/AccessTeam2.png "Agregar usuario a equipo de acceso")
 
  4. En el cuadro de búsqueda, escriba el nombre de usuario para buscarlo y, a continuación, seleccione **Agregar**.
   
   > [!div class="mx-imgBorder"]
-  > ![Buscar usuario](media/AccessTeam3.png "Find user")  
+  > ![Buscar usuario](media/AccessTeam3.png "Buscar usuario")  
   
  
 ## <a name="remove-a-user-from-access-teams"></a>Eliminación de un usuario de los equipos de acceso
@@ -54,6 +54,6 @@ La característica de equipos de acceso concede acceso a registros mediante el u
 2.  En la subcuadrícula de **los miembros del equipo de acceso**, seleccione **Quitar usuario**.
 
   > [!div class="mx-imgBorder"]
-  > ![Quitar usuario del equipo de acceso](media/AccessTeam4.png "Remove user from Access Team")  
+  > ![Quitar usuario del equipo de acceso](media/AccessTeam4.png "Quitar usuario del equipo de acceso")  
   
   

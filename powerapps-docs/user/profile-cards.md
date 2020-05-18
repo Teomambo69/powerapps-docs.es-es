@@ -20,25 +20,25 @@ ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73543372"
+ms.locfileid: "3302619"
 ---
 # <a name="view-the-profile-card-for-a-contact-or-user"></a>Visualización de la tarjeta de perfil de un contacto o usuario
 
-Use la tarjeta de perfil para obtener información rápida sobre un contacto o usuario. Al seleccionar un campo de contacto o usuario en aplicaciones basadas en modelos de Dynamics 365, como Dynamics 365 Sales y Dynamics 365 Customer Service, puede encontrar información relacionada con él en su tarjeta de perfil. Para obtener más información sobre las tarjetas de perfil, vea [Tarjetas de perfil en Office 365](https://support.office.com/article/Profile-cards-in-Office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501).
+Use la tarjeta de perfil para obtener información rápida sobre un contacto o usuario. Al seleccionar un campo de contacto o usuario en aplicaciones basadas en modelos de Dynamics 365, como Dynamics 365 Sales y Dynamics 365 Customer Service, puede encontrar información relacionada con él en su tarjeta de perfil. Para obtener más información acerca de las tarjetas de perfil, consulte [Tarjetas de perfil en Office 365](https://support.office.com/article/Profile-cards-in-Office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501).
 
 > [!NOTE]
 >  - La tarjeta de perfil está disponible para las entidades **Contacto** y **Usuario**. Para obtener información, vea [Habilitar visualización de tarjetas de perfil (para administradores)](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-profile-card).
->  - La tarjeta de perfil de Common Data Service no se muestra si la autenticación multifactor está activada para el servicio Delve de Office en Azure Active Directory.
+>  - La tarjeta del perfil en Common Data Service no se muestra si la autenticación de varios factores está activada para Office Delve servicio en Azure Active Directory.
 
 ## <a name="view-a-contacts-profile"></a>Visualización del perfil de un contacto
 
 1.  Vaya a **Actividades**.
 2.  Seleccione una actividad existente o cree una nueva.
-3.  Mantenga el mouse sobre el campo **Llamar a** cuando tenga un registro de contacto. 
+3.  Desplácese sobre el campo **Llamar a** cuando tiene un registro de contacto. 
 
-Puede ver detalles del contacto alineados que incluyen su imagen, nombre, título y cuenta.
+Puede ver los detalles del contacto en línea que incluye la imagen, el nombre, el título y la cuenta del contacto.
 
-4. Para ver más detalles, seleccione **Mostrar más** para expandir el perfil del contacto.
+4. Para ver más detalles, seleccione **Mostrar más** para expandir el perfil de contacto.
  
     > [!div class="mx-imgBorder"] 
     > ![Expansión de detalles de tarjeta de perfil de contacto](media/profile1.png "Expansión de detalles de tarjeta de perfil de contacto")
@@ -47,8 +47,8 @@ Puede ver detalles del contacto alineados que incluyen su imagen, nombre, títul
  
 1.  Vaya a **Cuentas**.
 2.  Seleccione un registro de cuenta.
-3.  Mantenga el mouse sobre el campo de propietario cuando tenga un registro de usuario. Puede ver los detalles del usuario alineados.
-4.  Para ver más detalles, como mensajes de correo electrónico y archivos compartidos con el usuario, seleccione **Mostrar más** para expandir el perfil del contacto.
+3.  Mantenga el mouse sobre el campo de propietario cuando tenga un registro de usuario. Puede ver los detalles del usuario en línea.
+4.  Para ver más detalles como correos electrónicos y archivos compartidos con el usuario, seleccione **Mostrar más** para expandir el perfil del contacto.
  
     > [!div class="mx-imgBorder"] 
     > ![Expansión de detalles de tarjeta de perfil de usuario](media/profile2.png "Expansión de detalles de tarjeta de perfil de usuario")
@@ -59,16 +59,16 @@ Puede ver detalles del contacto alineados que incluyen su imagen, nombre, títul
 ### <a name="where-can-i-see-profile-cards-in-dynamics-365"></a>¿Dónde puedo ver tarjetas de perfil en Dynamics 365?
 Las tarjetas de perfil pueden verse en los registros de contactos y usuarios. Solo se pueden ver cuando están en una búsqueda.
 
-### <a name="where-is-information-shown-in-the-profile-card-coming-from"></a>¿De dónde procede la información que se muestra en la tarjeta de perfil?
-La información que se muestra en la tarjeta de perfil de contacto se captura de Common Data Service (y no de Microsoft Exchange). Esto significa que los detalles de contacto proceden de Dynamics 365.
+### <a name="where-is-information-shown-in-the-profile-card-coming-from"></a>¿De dónde procede la información que se muestra en la tarjeta del perfil?
+La información mostrada en la tarjeta del perfil del contacto se obtiene de Common Data Service (y no de Microsoft Exchange). Esto significa que los detalles de contacto proceden de Dynamics 365.
 
-La información que se muestra en la tarjeta de perfil de usuario se captura de Office 365 (Azure Active Directory). Para obtener más información, vea [Tarjetas de perfil en Office 365 (sección para administradores)](https://support.office.com/article/Profile-cards-in-Office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501).
+La información mostrada en la tarjeta del perfil de usuario se obtiene de Office 365 (Azure Active Directory). Para obtener más información, consulte [Tarjetas de perfil en Office 365 (sección de administración)](https://support.office.com/article/Profile-cards-in-Office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501).
 
-### <a name="how-can-i-customize-the-fields-shown-on-the-profile-card"></a>¿Cómo puedo personalizar los campos que se muestran en la tarjeta de perfil?
-Actualmente, la lista de campos que se muestran en la tarjeta de perfil no está sujeta a personalización.
+### <a name="how-can-i-customize-the-fields-shown-on-the-profile-card"></a>¿Cómo puedo personalizar los campos que se muestran en la tarjeta del perfil?
+Actualmente, la lista de campos que se muestran en la tarjeta del perfil no está abierta para personalización.
 
-### <a name="why-is-the-start-chat-option-on-the-profile-card-disabled-greyed-out"></a>¿Por qué está deshabilitada (atenuada) la opción **Iniciar chat** de la tarjeta de perfil?
-Las opciones **Iniciar chat** y **Enviar correo electrónico** de la tarjeta de perfil abren las aplicaciones predeterminadas de correo electrónico y mensajería instantánea. La opción **Iniciar chat** se habilita si la persona con la que intenta ponerse en contacto está en el mismo entorno de Azure Active Directory que usted o es un contacto federado.
+### <a name="why-is-the-start-chat-option-on-the-profile-card-disabled-greyed-out"></a>¿Por qué la opción **Iniciar chat** en la tarjeta del perfil está deshabilitada (atenuada)?
+Las opciones **Iniciar chat** y **Enviar correo electrónico** en la tarjeta del perfil abrirán las aplicaciones instantáneas predeterminadas de mensaje o de correo electrónico. La opción **Iniciar chat** se habilita si la persona con la que intenta contactar está en el mismo entorno de Azure Active Directory que usted u es un contacto federado.
 
 
   

@@ -21,13 +21,13 @@ ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
-ms.locfileid: "74733211"
+ms.locfileid: "3302895"
 ---
 # <a name="import-data"></a>Importar datos
 
 Si sus datos están almacenados en una hoja de cálculo, en el teléfono o en un programa de correo electrónico, en este artículo sabrá cómo importar los datos en su aplicación. Por ejemplo, importar su lista de contactos de clientes desde una hoja de cálculo de Excel en la aplicación para poder realizar un seguimiento de toda la información de los clientes en un mismo lugar.
   
-## <a name="step-1-get-your-import-file-ready"></a>Paso 1: Prepárese el archivo de importación  
+## <a name="step-1-get-your-import-file-ready"></a>Paso 1: Prepare el archivo de importación  
 En primer lugar, exporte los datos a un archivo de Excel. Se admiten estos formatos de archivo:
  - Libro de Excel (.xlsx)
  - Valores separados por comas (.csv)
@@ -49,9 +49,9 @@ El tamaño máximo de archivo permitido para archivos .zip es de 32 MB. Para el
 2.  Si es necesario, edite el nombre de cualquier columna de la hoja de cálculo para que coincida con el nombre correspondiente que se muestra a continuación.  
   
     > [!WARNING]
-    > Si la hoja de cálculo no incluye todos los nombres de columna enumerados, es correcto. Sin embargo, si hay un nombre de columna, debe coincidir exactamente con el nombre correspondiente en la lista; si no, la importación no funcionará. Los espacios son obligatorios. Tenga en cuenta que la palabra "Email" no contiene un guión.  
+    > Si la hoja de cálculo no incluye todos los nombres de columna enumerados, es correcto. Sin embargo, si hay un nombre de columna, debe coincidir exactamente con el nombre correspondiente en la lista; si no, la importación no funcionará. Se requieren espacios. Tenga en cuenta que la palabra "correo electrónico" no contiene un guión.  
 
-    |**Nombre de columna en la hoja de cálculo (la ortografía debe coincidir exactamente)**|
+    |**Nombre columna en hoja de cálculo (la ortografía debe coincidir con exactitud)**|
     |---------|
     |Nombre|  
     |Segundo nombre|  
@@ -61,10 +61,10 @@ El tamaño máximo de archivo permitido para archivos .zip es de 32 MB. Para el
     |Puesto|  
     |Calle del trabajo|  
     |Ciudad de trabajo|  
-    |Estado o provincia del trabajo|  
+    |Provincia o estado de trabajo|  
     |Código postal del trabajo|  
-    |País o región del trabajo|  
-    |Dirección de correo electrónico|  
+    |País o región de trabajo|  
+    |Dirección de correo|  
   
 3.  Guarde el archivo.  
   
@@ -76,12 +76,12 @@ Para buscar los pasos específicos sobre cómo exportar los contactos de su marc
   
 Para buscar una aplicación, busque en la tienda en línea del teléfono.  
   
-## <a name="step-2-import-the-file"></a>Paso 2: Importe el archivo. 
+## <a name="step-2-import-the-file"></a>Paso 2: Importe el archivo 
   
 1. En la barra de comandos, seleccione **Importar desde Excel** o **Importar desde archivo CSV**.
 
    > [!div class="mx-imgBorder"]
-   > ![Menú principal de Power Apps](media/import.png "Menú principal de Power Apps")
+   > ![Menú principal en Power Apps](media/import.png "Menú principal en Power Apps")
   
 2. Vaya a la carpeta donde guardó el archivo que contiene la exportación de los contactos. Seleccione el archivo, elija **Abrir** y, a continuación, seleccione **Siguiente**.  
   
@@ -102,7 +102,7 @@ Cuando finalice el asistente, compruebe los datos (por ejemplo, la lista de cont
 
 Si va a importar datos que incluyen caracteres de doble byte de idiomas de Este de Asia, asegúrese de que el archivo está codificado como UTF-8 BOM. La codificación UTF-8 estándar podría no ser suficiente.
 
-1. Abra el archivo CSV utilizando Visual Studio Code.
+1. Abra el archivo CSV usando Visual Studio Code.
 2. En la barra inferior, haga clic en la etiqueta **UTF-8** (se abre una ventana emergente). 
 3. Seleccione **Guardar con codificación**. 
 

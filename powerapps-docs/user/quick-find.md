@@ -20,7 +20,7 @@ ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/01/2020
-ms.locfileid: "76918622"
+ms.locfileid: "3303102"
 ---
 # <a name="using-quick-find-to-search-for-records"></a>Uso de la búsqueda rápida para buscar registros
 
@@ -47,9 +47,9 @@ La búsqueda rápida de varias entidades también se conoce como búsqueda categ
 
 Con la búsqueda categorizada, puede buscar registros que empiecen por una palabra concreta o usar un carácter comodín.
   
-- **Empieza por**: los resultados incluyen registros que empiezan por una palabra determinada. Por ejemplo, si quiere buscar "Alpine Ski House", escriba **alp** en el cuadro de búsqueda; si escribe **ski**, el registro no se muestra.  
+- **Empieza por**: los resultados incluyen registros que comiencen con una palabra específica. Por ejemplo, si quiere buscar "Alpine Ski House", escriba **alp** en el cuadro de búsqueda; si escribe **ski**, el registro no se muestra.  
   
-- **Carácter comodín**: por ejemplo, *ski o *ski\*. 
+- **Comodín**: por ejemplo, *ski o *ski\*. 
 
   > [!NOTE]
   >  El uso de un carácter comodín al principio de la consulta de búsqueda rápida (una o varias entidades) puede dar lugar a un rendimiento más lento.

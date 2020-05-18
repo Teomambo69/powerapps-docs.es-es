@@ -1,5 +1,5 @@
 ---
-title: Uso de Power Automate para automatizar procesos en las aplicaciones basadas en modelos | Microsoft Docs
+title: Uso de Power Automate para automatizar los procesos en aplicaciones controladas por modelos | Microsoft Docs
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -20,34 +20,34 @@ ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/09/2019
-ms.locfileid: "73900375"
+ms.locfileid: "3302665"
 ---
-# <a name="use-power-automate-to-automate-processes"></a>Uso de Power Automate para automatizar procesos
+# <a name="use-power-automate-to-automate-processes"></a>Usar Power Automate para automatizar procesos
 
-Power Automate permite crear procesos automatizados entre sus aplicaciones y servicios favoritos. Desde dentro de la aplicación, puede ejecutar un flujo en uno o más registros. 
+Power Automate permite crear procesos automatizados entre las aplicaciones y servicios favoritos. Desde dentro de la aplicación, puede ejecutar un flujo en uno o más registros. 
 
-Además, puede abrir Power Automate en la aplicación para ver, editar o crear flujos nuevos.  Más información: [Introducción a Power Automate](https://docs.microsoft.com/flow/getting-started)
+Igualmente, pude abrir Power Automate desde su aplicación para ver, editar o crear nuevos flujos.  Más información: [Empezar con Power Automate](https://docs.microsoft.com/flow/getting-started)
 
-## <a name="manage-your-flows"></a>Administración de los flujos 
-Conéctese a Power Automate desde la aplicación para administrar los flujos.
+## <a name="manage-your-flows"></a>Administración de flujos 
+Conectar con Power Automate desde su aplicación para administrar los flujos.
   
 > [!NOTE]
-> Para administrar y ejecutar Power Automate desde la aplicación, Power Automate debe estar habilitado en la configuración del sistema de la organización. Más información:  [Flujos de su organización](https://docs.microsoft.com/flow/organization-q-and-a) 
+> Para administrar y ejecutar Power Automate desde su aplicación, debe habilitar Power Automate en la configuración del sistema de la organización. Más información: [Flujos en su organización](https://docs.microsoft.com/flow/organization-q-and-a) 
   
 1. En la barra de comandos, seleccione **Flujo**.  
   
    > [!div class="mx-imgBorder"]
-   > ![Menú de Power Automate](media/flow.png "Menú de Power Automate") 
+   > ![Menú de Power Automate](media/flow.png "Menú Power Automate") 
   
 2. Aparecen las opciones siguientes:  
   
-   -   Seleccione **Crear un flujo** para abrir una nueva pestaña del explorador que le dirigirá al sitio de Power Automate. En la página de Power Automate, seleccione **Continuar** para usar una plantilla existente o **X** para cerrar, elegir o crear una diferente.  
+   -   Seleccione **Crear un flujo** para abrir una nueva pestaña del explorador y para obtener acceso al sitio de Power Automate. En la página de Power Automate, seleccione **Continuar** para usar una plantilla ya o seleccione **X** para cerrar, elegir o crear una distinta.  
   
-   -   Seleccione **Ver los flujos** para abrir una nueva pestaña del explorador que le dirigirá al sitio de Power Automate, donde se muestran los flujos del entorno de Flow.  
+   -   Seleccione **Ver los flujos** para abrir una nueva pestaña del explorador y obtener acceso al sitio de Power Automate donde se muestran todos los flujos del entorno.  
   
-   -   Seleccione **Iniciar sesión en Flow** para conectarse a Power Automate y ver los flujos que hay disponibles para ejecutarse. Esto aparece únicamente si en ese momento no ha iniciado sesión en Power Automate.   
+   -   Seleccione **Iniciar sesión en Flow** para conectar con Power Automate y mostrar los flujos disponibles que se pueden ejecutar. Esta opción solo aparece si no inició sesión en Power Automate.   
 
-    Para obtener más información sobre cómo crear un flujo, vea [Introducción a Power Automate](https://docs.microsoft.com/powerapps/maker/canvas-apps/using-logic-flows#create-a-flow).  
+    Para obtener información sobre cómo crear un flujo, vea [Empezar en Power Automate](https://docs.microsoft.com/powerapps/maker/canvas-apps/using-logic-flows#create-a-flow)  
     
  
     

@@ -20,7 +20,7 @@ ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/10/2020
-ms.locfileid: "78970938"
+ms.locfileid: "3303286"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>Agregue una actividad de cita, correo electrónico, llamada telefónica, nota o tarea a la escala de tiempo. 
 
@@ -34,14 +34,14 @@ Agregue **Actividades** al muro de la **Escala de tiempo** para realizar un segu
 - Se mostrará un mensaje de correo electrónico con una imagen adjunta insertada con el cuerpo del correo electrónico.
 
   > [!div class="mx-imgBorder"]
-  > ![Vista de escala de tiempo de las actividades en Power Apps](media/TimelineViewOfActivity.png "Vista de escala de tiempo de las actividades en Power Apps")
+  > ![Vista de escala de tiempo de actividades en Power Apps](media/TimelineViewOfActivity.png "Vista de escala de tiempo de actividades en Power Apps")
 
 
 Leyenda:
 
-  1. Buscar registros
+  1. Búsqueda de registros
   2. Tomar notas
-  3. Agregar información y actividades
+  3. Agregar datos y actividades
   4. Filtrar
   5. Más comandos
   6. Estado de la actividad
@@ -55,7 +55,7 @@ La forma más rápida de agregar una actividad es usar el acceso directo en la b
 1. En la barra de navegación superior, seleccione **Nuevo** ![botón Crear registro](media/create-record-button.png "Botón Crear registro") > **Actividades** > elija el tipo de actividad que quiere agregar.
 
    > [!div class="mx-imgBorder"]
-   > ![Acceso directo para agregar una actividad en Power Apps](media/add_new_activity_from_nav.gif "Acceso directo para agregar una actividad en Power Apps")  
+   > ![Acceso directo para agregar una actividad en Power Apps](media/add_new_activity_from_nav.gif "Acceso directo para agregar una actividad en Power Apps")  
  
 3. Rellene la información necesaria. Use el campo **Referente a** para asociar la actividad a un registro.
 
@@ -66,7 +66,7 @@ La forma más rápida de agregar una actividad es usar el acceso directo en la b
 También puede abrir un registro y, a continuación, agregar una actividad a este. 
 
    > [!div class="mx-imgBorder"]
-   > ![Acceso directo para agregar una actividad en Power Apps](media/add_new_activity_from_record.gif "Acceso directo para agregar una actividad en Power Apps") 
+   > ![Acceso directo para agregar una actividad en Power Apps](media/add_new_activity_from_record.gif "Acceso directo para agregar una actividad en Power Apps") 
 
 
 ### <a name="add-a-phone-call"></a>Adición de una llamada telefónica  
@@ -77,7 +77,7 @@ También puede abrir un registro y, a continuación, agregar una actividad a est
 
 
    > [!div class="mx-imgBorder"]
-   > ![Adición de una actividad de teléfono en Power Apps](media/addphonecall.png "Adición de una actividad de teléfono en Power Apps")
+   > ![Agregar una actividad de teléfono en Power Apps](media/addphonecall.png "Agregar una actividad de teléfono en Power Apps")
   
 3. Rellene el **Asunto** de la llamada.
 
@@ -85,7 +85,7 @@ También puede abrir un registro y, a continuación, agregar una actividad a est
   
      El campo **Llamar a** se rellena automáticamente con el registro al que agregó la actividad de llamada telefónica. Puede seleccionar un registro diferente si es necesario.  
   
-4. De forma predeterminada, la dirección se establece en **Saliente**. Puede cambiarla a **Entrante** seleccionando **Saliente**.
+4. De forma predeterminada, la dirección se establece como **Saliente**. Puede cambiarla a **Entrante** seleccionando **Saliente**.
   
 5. Cuando haya terminado de rellenar el formulario, seleccione **Guardar y cerrar** para guardar la actividad de llamada de teléfono.  
   
@@ -95,7 +95,7 @@ También puede abrir un registro y, a continuación, agregar una actividad a est
   
 2. En la sección **Escala de tiempo**, seleccione **Agregar información y actividades** ![Agregar actividades](media/add-activity-button.png "Botón Agregar actividades") > **Tarea**.
   
-3. El campo **Propietario** se establece en el usuario actual de forma predeterminada. Si desea volver a asignar la tarea, seleccione el icono de búsqueda y, a continuación, seleccione otro usuario o equipo.  
+3. El campo **Propietario** se establece como el usuario actual de forma predeterminada. Si desea volver a asignar la tarea, seleccione el icono de búsqueda y, a continuación, seleccione otro usuario o equipo.  
   
 4. Cuando haya terminado de rellenar la información de la tarea, seleccione **Guardar y cerrar** para guardar la información. 
   
@@ -114,7 +114,7 @@ Para agregar una actividad de correo electrónico a un registro, primero debe gu
    > [!NOTE]
    > Se mostrará un mensaje de correo electrónico con una imagen adjunta insertada con el cuerpo del correo electrónico.
   
-5. Para usar una plantilla en el cuerpo del correo electrónico, seleccione **Insertar plantilla** en la barra de comandos y después seleccione la plantilla. Para obtener más información sobre cómo insertar una plantilla de correo electrónico, vea [Inserción de una plantilla de correo electrónico](insert-email-template.md). 
+5. Para usar una plantilla en el cuerpo del correo electrónico, seleccione **Insertar plantilla** en la barra de comandos y después seleccione la plantilla. Para obtener más información sobre cómo insertar una plantilla de correo, consulte [Inserta una plantilla de correo electrónico](insert-email-template.md). 
   
 6. Cuando haya terminado de redactar el correo electrónico, en la barra de comandos seleccione **Enviar**. 
 
@@ -124,7 +124,7 @@ Para agregar una actividad de correo electrónico a un registro, primero debe gu
 1. Para enumerar los correos electrónicos en una vista de conversación, vaya a **Configuración** > **Configuración de personalización**.
 
    > [!div class="mx-imgBorder"]
-   > ![Establecimiento de las opciones personales](media/emailsettings1.png "Establecer las opciones personales")
+   > ![Definir opciones personales](media/emailsettings1.png "Definir opciones personales")
 
 2. en la pestaña **Correo electrónico** y seleccione **Mostrar correo electrónico como conversación en la escala de tiempo**. Para obtener más información sobre la configuración personal, vea [Establecer las opciones personales](https://docs.microsoft.com/powerapps/user/set-personal-options#email-tab-options). Una vez que haya habilitado esta configuración, puede abrir cualquier formulario que tenga una escala de tiempo y los correos electrónicos se agruparán en conversaciones con el correo electrónico más reciente en la parte superior.
    
@@ -137,7 +137,7 @@ Para agregar una actividad de correo electrónico a un registro, primero debe gu
 Para agregar una actividad de cita a un registro, primero debe guardar el registro al que está agregando la actividad de la cita.  
 
 > [!NOTE]
-> No se admiten las citas periódicas en la aplicación Dynamics 365 para Outlook, en la aplicación Dynamics 365 para teléfonos ni al ejecutar el cliente web de aplicaciones basadas en modelo en el explorador web del teléfono móvil.
+> Las citas periódicas no se admiten en Dynamics 365 App for Outlook, la aplicación Dynamics 365 para teléfonos, y al ejecutar el cliente web de aplicaciones basadas en modelo en el explorador web del teléfono móvil.
   
 1. Abra el registro al que desea agregar la actividad. Por ejemplo, abra un registro de contacto.
   
@@ -162,7 +162,7 @@ También puede agregar notas fácilmente en el área de actividades.
 3. Cuando haya terminado, seleccione **Agregar nota** para guardarla.
 
    > [!div class="mx-imgBorder"]
-   > ![Adición de una nota](media/addnote.png "Adición de una nota")
+   > ![Agregar una nota](media/addnote.png "Agregar una nota")
 
 > [!NOTE]
 > También puede agregar una nota seleccionando **Agregar información y actividades** ![Agregar actividades](media/add-activity-button.png "Botón Agregar actividades") > **Nota**.
@@ -225,4 +225,4 @@ Administre actividades directamente desde el muro de la escala de tiempo, inclui
 
 [Preguntas frecuentes sobre las actividades y el muro de escala de tiempo](faq-for-timeline-and-activity.md)
 
-[Sección Escala de tiempo en la aplicación Centro de servicio al cliente](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)
+[Sección de escala de tiempo en la aplicación del Centro de servicios al cliente](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)

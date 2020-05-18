@@ -20,7 +20,7 @@ ms.sourcegitcommit: d0f02fdaa125feaea884932e1ef31b8fea1bd10c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886513"
+ms.locfileid: "3303079"
 ---
 # <a name="assign-or-share-records"></a>Asignar o compartir registros
 
@@ -74,7 +74,7 @@ Use la búsqueda avanzada para encontrar registros y reasignarlos a otra persona
  3. En la barra de comandos, seleccione **REASIGNAR REGISTROS**.
  
    > [!div class="mx-imgBorder"]
-   > ![Reasignación de todos los registros](media/assign5.png "Reasignación de todos los registros")
+   > ![Reasignar todos los registros](media/assign5.png "Reasignar todos los registros")
    
  4. En el cuadro de diálogo **Reasignar registros**, elija cómo quiere reasignar todos los registros y, luego, seleccione **Aceptar**.
  

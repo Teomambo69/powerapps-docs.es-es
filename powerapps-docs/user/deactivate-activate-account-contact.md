@@ -20,9 +20,9 @@ ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
-ms.locfileid: "74725808"
+ms.locfileid: "3302918"
 ---
-# <a name="deactivate-or-activate-an-account-or-contact"></a>Desactivación o activación de una cuenta o un contacto
+# <a name="deactivate-or-activate-an-account-or-contact"></a>Desactivar o activar cuentas o contactos
 
 En una aplicación basada en modelos, una cuenta o un contacto se puede desactivar en lugar de eliminarse. De este modo, se garantiza la integridad de la traza de auditoría asociada a ese registro.  
   
@@ -37,7 +37,7 @@ Si, más adelante, necesita reactivar una cuenta desactivada, hacerlo es muy sen
 2.  Seleccione la cuenta o el contacto activo que quiera desactivar, seleccione **Desactivar** en la barra de comandos y, después, confirme la desactivación.
 
     > [!div class="mx-imgBorder"]
-    > ![Desactivación de una cuenta en Power Apps](media/DeactiveAccounts.png "Desactivación de una cuenta en Power Apps")
+    > ![Desactivar una cuenta en Power Apps](media/DeactiveAccounts.png "Desactivar una cuenta en Power Apps")
 
 
 ## <a name="activate-an-account-or-contact"></a>Activación de una cuenta o un contacto  
@@ -53,7 +53,7 @@ Si, más adelante, necesita reactivar una cuenta desactivada, hacerlo es muy sen
 5.  Seleccione **Activar** y, después, confirme la activación.  
 
     > [!div class="mx-imgBorder"]
-    > ![Activación de una cuenta en Power Apps](media/ActiveAccounts.png "Activación de una cuenta en Power Apps")  
+    > ![Activar una cuenta en Power Apps](media/ActiveAccounts.png "Activar una cuenta en Power Apps")  
 
 
 

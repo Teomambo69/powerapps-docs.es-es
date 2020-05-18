@@ -1,6 +1,6 @@
 ---
 title: Creación de un informe mediante el Asistente para informes | Microsoft Docs
-description: Creación de un informe mediante el Asistente para informes en Power Apps
+description: Crear un informe con el Asistente para informes en Power Apps
 author: mduelae
 manager: kvivek
 ms.service: powerapps
@@ -21,14 +21,14 @@ ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2019
-ms.locfileid: "74733269"
+ms.locfileid: "3302941"
 ---
 # <a name="create-a-report-using-the-report-wizard"></a>Creación de los informes mediante el Asistente para informes
 
 
 Use el Asistente para informes para crear informes con gráficos y tablas que le permitan analizar fácilmente los datos. 
 
-Todos los informes que se crean mediante el Asistente para informes están basados en Fetch. Tenga en cuenta que todos los informes generados con el Asistente para informes se imprimen en modo horizontal.
+Todos los informes que se crean con el Asistente para informes son informes basados en Fetch. Tenga en cuenta que todos los informes generados con el Asistente para informes se imprimen en modo horizontal.
 
 ## <a name="create-a-new-report"></a>Creación de un informe nuevo.
 
