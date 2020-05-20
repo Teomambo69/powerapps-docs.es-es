@@ -1,0 +1,1 @@
+La solución de muestra de Respuesta de emergencia hospitalaria está disponible en los siguientes idiomas: inglés, francés, alemán, italiano, japonés, coreano, polaco, portugués de Brasil, portugués de Portugal, español y turco.
