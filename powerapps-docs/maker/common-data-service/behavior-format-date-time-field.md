@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d89f040bf7030706f9f7288021249e3b78dcd3e5
-ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
+ms.openlocfilehash: 67e172bfcb0a9e1b8cc344892f15e74d070d28fe
+ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3167078"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3341499"
 ---
 # <a name="behavior-and-format-of-the-date-and-time-field"></a>Comportamiento y formato del campo de fecha y hora
 
@@ -113,7 +113,7 @@ Los siguientes operadores de consulta relacionados con fecha y hora no son váli
 [Crear y editar campos](create-edit-fields.md)<br />
 [Definir campos calculados para automatizar los cálculos manuales](define-calculated-fields.md)<br />
 [Propiedades administradas de campos](set-managed-properties-metadata.md#view-and-edit-field-managed-properties)<br />
-[Propiedades administradas](solutions-overview.md#managed-properties)  
+[Propiedades administradas](/power-platform/alm/managed-properties-alm)  
 [Blog: Trabajar con zonas horarias en Common Data Service](https://powerapps.microsoft.com/en-us/blog/working-with-time-zones-in-the-common-data-service/)
 
 

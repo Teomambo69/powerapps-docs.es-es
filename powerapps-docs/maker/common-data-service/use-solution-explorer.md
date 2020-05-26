@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c926e0fb48791879ea88c19212b30c79731cb3be
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: bb53212044c79798a124dfa74251b32ecc2f78c3
+ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3125813"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3341543"
 ---
 # <a name="use-solutions-in-power-apps"></a>Usar soluciones en Power Apps
 
@@ -75,7 +75,7 @@ ms.locfileid: "3125813"
 > [!div class="mx-imgBorder"]  
 > ![Agregar un componente existente a una solución](media/solution-add-existing-component.PNG "Agregar un componente existente a una solución")  
   
- Con soluciones que son administradas solo algunos comandos están disponibles y verá el mensaje que se muestra a continuación. Deberá agregarlo a otra solución no administrada que ha creado para personalizar el componente. El componente puede no ser personalizable. Más información: [Propiedades administradas](solutions-overview.md#managed-properties)
+ Con soluciones que son administradas solo algunos comandos están disponibles y verá el mensaje que se muestra a continuación. Deberá agregarlo a otra solución no administrada que ha creado para personalizar el componente. El componente puede no ser personalizable. Más información: [Propiedades administradas](/power-platform/alm/managed-properties-alm)
 
 > [!div class="mx-imgBorder"]  
 > ![Solución administrada](media/managed-solution.PNG "Solución administrada")  
@@ -93,12 +93,11 @@ En Power Apps, puede ver el explorador de soluciones clásico seleccionando **So
 
 Las siguientes limitaciones se aplican al uso de aplicaciones de lienzo, flujos y conectores personalizados en soluciones. 
 
-- Los flujos desencadenados por botones de aplicaciones de lienzo no se admiten en soluciones. Cree la aplicación y el flujo fuera de una solución, y exporte el archivo .msapp para migrar aplicaciones de lienzo con un flujo desencadenado por un botón insertado. 
-- Si una aplicación de lienzo se empaqueta en una solución administrada, no puede editarse y volver a publicarse en el entorno de destino. Use soluciones no administradas si las aplicaciones requieren edición en el entorno de destino. 
 - Las conexiones requieren autenticación y consentimiento, que requiere una sesión de usuario interactiva y por tanto no se pueden transportar mediante soluciones. Después de importar la solución, juegue la aplicación para autenticar conexiones. También puede crear las conexiones en el entorno de destino antes de importar la solución. 
+- Los flujos desencadenados por botones de la aplicación de lienzo deben crearse desde una aplicación que ya esté en una solución. La adición de este tipo de flujo de soluciones externas está bloqueada.
+  - La aplicación y el flujo no se conectarán actualmente en el entorno de destino posterior a la implementación. Primero asocie conexiones válidas con el flujo y actívelo. A continuación, edite la aplicación y vuelva a asociar el flujo al botón.
 -   Las aplicaciones de lienzo compartidas como copropietario con grupo de seguridad Azure Active Directory (AAD) no se pueden agregar a soluciones. Deje de comaprtir la aplicación antes de agregarla a una solución.
--   Las aplicaciones de lienzo no se mostrarán en el explorador de soluciones clásico. Use la experiencia moderna.
--   El acceso a la aplicación de lienzo (CRUD y seguridad) se administra completamente en Power Apps y no en la base de datos de Common Data Service ().
+-   Las aplicaciones de lienzo no se mostrarán en el explorador de soluciones clásico. Use la experiencia moderna. No hay planes para agregarlos al explorador de soluciones clásico. 
 - Las operaciones de base de datos como copia de seguridad, restauración, y copia no son compatibles con las aplicaciones de lienzo y flujos. Estas operaciones pueden dañar a aplicaciones de lienzo y flujos.
 - Al eliminar una solución administrada no se revertirá a la versión de otra aplicación de lienzo. En su lugar, todas las versiones de la aplicación se eliminan.
 - Cuando se importa una solución que contiene un flujo no se crearán o asociarán conexiones necesarias. El flujo se debe editar para corregir las conexiones.

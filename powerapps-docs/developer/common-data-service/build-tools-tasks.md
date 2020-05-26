@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 20c4dfe96f7293f9a00a97867beda7ac8a0f4b41
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 7f2d41bcc951b2044f2a70b62e683525e98e5bcc
+ms.sourcegitcommit: 8e76afb331745f1da929a39e831634680dfa6008
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156416"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346865"
 ---
 # <a name="build-tools-tasks"></a>Tareas de build tools
 
@@ -37,7 +37,7 @@ La tarea del comprobador de Power Apps ejecuta una comprobación de análisis es
 
 | **Parámetros** | **Descripción** |
 | --- | --- |
-| Servicio del comprobador de Power Apps  |   Seleccione el extremo de servicio para el comprobador de Power Apps. El punto de conexión de servicio se define en **Conexiones del servicio** en **Configuración de proyecto**.  **NOTA:** El tipo de conexión de servicio que se debe usar para esta tarea específica solo es 'Comprobador de Power Apps', que es una conexión de entidades de servicio. Encontrará más información sobre cómo configurar entidades de servicio para poder usar la tarea [aquí](https://aka.ms/buildtoolsconnection).  |
+| Servicio del comprobador de Power Apps  |   Seleccione el extremo de servicio para el comprobador de Power Apps. El punto de conexión de servicio se define en **Conexiones del servicio** en **Configuración de proyecto**.  **NOTA:** El tipo de conexión de servicio que se debe usar para esta tarea específica solo es 'Comprobador de Power Apps', que es una conexión de entidades de servicio. Encontrará más información sobre cómo configurar entidades de servicio para poder usar la tarea [aquí](build-tools-tasks#configure-service-connection-for-power-apps-checker).  |
 | Ubicación del archivo a analizar  | Especifique si desea hacer referencia a un archivo local o hacer referencia a un archivo desde una dirección URL de Sas. 
 | Archivos locales para analizar/Uri de Sas para archivo a analizar |  Especifique la ruta de acceso y el nombre de los archivos zip para analizar.   Pueden emplearse comodines. Por ejemplo, **\*.zip para todos los archivos zip en todas las subcarpetas. Puede elegir especificar los archivos directamente o hacer referencia a un archivo desde un uri de Sas.   |
 |  Conjunto de reglas |   Especifique qué conjunto de reglas desea aplicar. Están disponibles los dos conjuntos de reglas siguientes:  **Comprobador de soluciones:** Es el mismo conjunto de reglas que se ejecuta desde el [Portal de creadores](https://make.powerapps.com/).    **AppSource:** Es el conjunto de reglas extendido que se usa para certificar una aplicación para poder publicarla en [AppSource](https://appsource.microsoft.com/).   |

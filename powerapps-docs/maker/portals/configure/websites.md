@@ -6,25 +6,25 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/14/2019
+ms.date: 04/30/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: ae3d928a6beb05819c7c752503993a7b789a0fd7
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: ce0b60b8801873376696c446a56e28ffa69b8d80
+ms.sourcegitcommit: 8e76afb331745f1da929a39e831634680dfa6008
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2976893"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346955"
 ---
 # <a name="manage-websites"></a>Administrar sitios web
 
-Un sitio web es la entidad principal de la aplicación de portales. Una aplicación del portal selecciona un único registro del sitio web, y esto determina qué entidades ([páginas web](web-page.md), [archivos web](web-files.md), [roles web](create-web-roles.md), [fragmentos de contenido](customize-content-snippets.md), etc.) son válidas para esta aplicación.
+Un sitio web es la entidad principal de la aplicación de portales. Una aplicación del portal selecciona un único registro del sitio web, y esto determina qué entidades como [páginas web](web-page.md), [archivos web](web-files.md), [roles web](create-web-roles.md) y [fragmentos de contenido](customize-content-snippets.md) son válidas para esta aplicación.
 
 Con un sitio web que proporciona un ámbito de aplicación, las distintas aplicaciones del portal se pueden conectar a una única organización.
 
 > [!NOTE]
 > El nombre del sitio web determina normalmente el registro del sitio web que al que se enlaza una aplicación del portal determinada. Este nombre se especifica en la configuración de la implementación del portal.
-Sin embargo, también es posible controlar esto mediante el prefijo de la ruta de la dirección URL (consulte las descripciones del sitio web principal y la dirección URL parcial en los [atributos del sitio web](#website-attributes)), o mediante un dominio, con enlaces a los sitios web.
+Sin embargo, también es posible controlar esto por nombre de dominio o enlaces de sitios web.
 
 ## <a name="manage-websites"></a>Administrar sitios web
 
@@ -46,12 +46,15 @@ Los sitios web se crean cuando crea un nuevo portal. Sin embargo, la administrac
 ### <a name="website-attributes"></a>Atributos del sitio web
 
 |Nombre|Descripción|
-|-----|----------|
+|-|-|
 |Nombre|El nombre descriptivo del sitio web. Este campo es obligatorio.|
+| Idioma predeterminado | Idioma predeterminado para el portal seleccionado. Antes de cambiar el idioma predeterminado, debe: <br> - [Agregar el idioma en el entorno de Common Data Service](https://docs.microsoft.com/power-platform/admin/enable-languages). <br> - [Agregar el idioma en la sección de Idiomas compatibles](enable-multiple-language-support.md) para el registro de Sitios web.
+| Propietario | El registro de contacto del propietario para el registro de Sitios web seleccionado.
 |Nombre de dominio principal|El nombre de dominio principal del portal al que se agregó el registro de esta página web.|
-|Sitio web primario|El sitio web principal del sitio web. Este campo se puede ignorar normalmente, excepto en determinadas configuraciones de portal avanzadas en las que una única aplicación del portal se enlaza con un sitio web maestro en la ruta raíz de la aplicación, con uno o más sitios web secundarios disponibles en las rutas secundarias específicas.|
-|Dirección URL parcial|El segmento de la ruta de la dirección URL raíz para todas las direcciones URL generadas para las entidades del portal relacionadas con este sitio web.<br>Por ejemplo, si una aplicación del portal se implementa para estar disponible en la ruta del dominio example.com, y este atributo no tiene ningún valor, una solicitud a `http://example.com/` mostrará la página web de inicio del sitio web de la aplicación (ya que la página web de inicio tiene que tener la dirección URL parcial establecida en "/").<br>Si este atributo se establece en el valor "my-website", la página web de inicio tendrá una dirección URL de `http://example.com/my-website/`, y todas las páginas del sitio web tendrán el mismo prefijo de ruta "/my-website/".<br>En la mayoría de las configuraciones de portal, este campo puede ignorarse y dejarse en blanco.<br>Se usan valores de dirección URL parciales como segmentos de la dirección URL. Por tanto, no deben contener caracteres no válidos para dirección URL, como "?", "#", "!", "%". Dado que las direcciones URL del portal se generan combinando valores de dirección URL parciales con barras diagonales ("/"), tampoco deben contener normalmente las barras diagonales.<br>La práctica recomendada sería restringir valores parciales de la dirección URL a letras, números y guiones o caracteres de subrayado. Por ejemplo: "comunicados-de-prensa", "Users_Guide", "product1".|
-|||
+|Sitio web primario\*|El sitio web principal del sitio web. Este campo se puede ignorar normalmente, excepto en determinadas configuraciones de portal avanzadas en las que una única aplicación del portal se enlaza con un sitio web maestro en la ruta raíz de la aplicación, con uno o más sitios web secundarios disponibles en las rutas secundarias específicas. <br>\* Solo para compatibilidad con versiones anteriores, no se debe utilizar para portales nuevos o existentes. |
+| Plantillas de encabezado y pie de página | Las [Plantillas web para encabezados y pies de página](../liquid/store-content-web-templates.md#web-templates-as-page-templates) reemplazan encabezados y pies de página globales.
+| Idiomas compatibles | Los [idiomas compatibles](enable-multiple-language-support.md) para el registro de Sitios web seleccionado.
 
 ### <a name="see-also"></a>Vea también
+
 [Enlaces a sitios web](website-bindings.md)

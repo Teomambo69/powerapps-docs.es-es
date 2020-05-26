@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.reviewer: pehecke
 ms.workload: na
-ms.date: 01/28/2019
+ms.date: 05/06/2020
 ms.author: jdaly
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ff175320897f156027cd394cf8319032c9f8a6ff
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: db2dd730f172810a571d8d6289ce4ae8b25dcdbe
+ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156164"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3341446"
 ---
 # <a name="introduction-to-solutions"></a>Introducción a soluciones
 
@@ -36,7 +36,7 @@ Cada personalización que crea para Common Data Service o para una solución ins
 Si tiene previsto transportar personalizaciones o extensiones entre diferentes entornos de Common Data Service o distribuir soluciones mediante AppSource, debe comprender el marco de trabajo de la solución.
 
 > [!NOTE]
-> Para obtener información detallada sobre cómo usar eficazmente las soluciones para una administración correcta de del ciclo de vida (ALM) de la aplicación, consulte [Notas del producto: Administración del ciclo de vida de la solución](https://www.microsoft.com/download/details.aspx?id=57777)
+> Para obtener información detallada sobre cómo usar eficazmente las soluciones para una implementación correcta de la administración del ciclo de vida de la aplicación (ALM), consulte [Administración del ciclo de vida de la aplicación (ALM) con Microsoft Power Platform](/power-platform/alm).
 
 ## <a name="managed-and-unmanaged-solutions"></a>Soluciones administradas y no administradas
 

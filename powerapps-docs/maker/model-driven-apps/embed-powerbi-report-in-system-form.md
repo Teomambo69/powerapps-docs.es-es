@@ -3,38 +3,28 @@ title: Insertar un informe de Power BI en un formulario basado en modelos | Micr
 ms.custom: ''
 ms.date: 03/05/2019
 ms.reviewer: matp
-ms.service: crm-online
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.service: powerapps
 ms.topic: get-started-article
-applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- PowerApps
-ms.assetid: 99c795e0-9165-4112-85b1-6b5e1a4aa5ec
-caps.latest.revision: 1
-author: prsi-msft
-ms.author: prsi
+author: adrianorth
+ms.author: aorth
 manager: kvivek
-tags:
-- Links to topic not migrated
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5ea6ed1011ce9d21c78adf6beed9a2943c9f4cd0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: c31121b0de0c1256d12f6bbdbb4367d8122cab68
+ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2860475"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3341455"
 ---
 # <a name="embed-a-power-bi-report-in-a-model-driven-system-form"></a>Insertar un informe de Power BI en un formulario basado en modelos
 Puede usar informes de Power BI en aplicaciones basadas en modelos Power Apps para incluir informes y análisis enriquecido en los formularios del sistema y permitir a los usuarios conseguir más. Esto desbloquea la capacidad de agregar datos en entre los sistemas, y adaptarlos al contexto de un solo registro.
  
 ## <a name="prerequisites"></a>Requisitos previos
-Insertar contenido de Power BI es una característica opcional y está deshabilitada en todos los entornos de forma predeterminada. Debe habilitarla para poder insertar contenido de Power BI. Más información: [Visualizaciones de Power BI en la organización](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi?#enable--visualizations-in-the-organization).
+Insertar contenido de Power BI es una característica opcional y está deshabilitada en todos los entornos de forma predeterminada. Debe habilitarla para poder insertar contenido de Power BI. Más información: [Visualizaciones de Power BI en la organización](/power-platform/admin/use-power-bi#embed--visualizations-on-personal-dashboards).
 
 Esta característica requiere exportar una solución, modificarla para agregar el fragmento de código XML, y luego volver a importarla al entorno. Asegúrese de importar los cambios en el entorno de destino mediante una solución administrada únicamente. Vea [Importar, actualizar y exportar soluciones](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) para obtener instrucciones sobre instalar una actualización en una solución administrada existente.
 
@@ -153,8 +143,8 @@ Puede crear expresiones de filtro más complejas consultando ejemplos de [Constr
 
 ### <a name="see-also"></a>Vea también
 
-[Insertar un panel de Power BI en un panel personal basado en modelos de Power Apps](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)
+[Insertar un panel de Power BI en un panel personal basado en modelos de Power Apps](/powerapps/user/add-powerbi-dashboards)
 
-[Usar Power BI con aplicaciones de Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi)
+[Usar Power BI con aplicaciones de Dynamics 365](/power-platform/admin/use-power-bi)
 
 [Importar, actualizar y exportar soluciones](../common-data-service/import-update-export-solutions.md)

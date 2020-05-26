@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/04/2019
+ms.date: 04/30/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: a91ffe1c00b7dbcc40b786731e956bfdd8fc6d94
-ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
+ms.openlocfilehash: 3af930d100dca4920c3bcb832aefc0f06c93e612
+ms.sourcegitcommit: 8e76afb331745f1da929a39e831634680dfa6008
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3012745"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346999"
 ---
 # <a name="enable-multiple-language-portal-support"></a>Habilitar compatibilidad de portal en varios idiomas
 El negocio no se restringe una sola región o un idioma. Un único portal puede mostrar el contenido en varios idiomas para llegar a los clientes de todo el mundo. El contenido del portal se puede traducir a varios idiomas mientras se mantiene una sola jerarquía del contenido.
@@ -23,7 +23,7 @@ El negocio no se restringe una sola región o un idioma. Un único portal puede 
 
 Para habilitar varios idiomas para un portal, sigas estos pasos:
 
-1. [Habilite idiomas en un entorno de Common Data Service.](https://technet.microsoft.com/library/dn832148.aspx)  
+1. [Habilite idiomas en un entorno de Common Data Service.](https://docs.microsoft.com/power-platform/admin/enable-languages)  
 2. Vaya a **Portales** > **Página web** > **Páginas web**.
 3. Seleccione el sitio web al que agregar compatibilidad con idiomas.
 4. En la sección **Idiomas compatibles** en la pestaña **General**, seleccione **Nuevo idioma del sitio web**.

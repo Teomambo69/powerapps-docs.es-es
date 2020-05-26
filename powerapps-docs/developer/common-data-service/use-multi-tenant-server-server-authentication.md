@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cdc3a2c20f8459787e01001e070ed01b684ceb83
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 3ba1bdb37eef71584a2992855c61f0ac0799e2b9
+ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155172"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3341369"
 ---
 # <a name="use-multi-tenant-server-to-server-authentication"></a>Usar autenticación multiempresa entre servidores
 
@@ -209,7 +209,7 @@ En este escenario cualquier inquilino de Common Data Service puede usar potencia
   
   Para obtener información sobre la creación de una solución de Common Data Service, vea los temas siguientes:
   
-- [Usar soluciones para las personalizaciones](../../maker/common-data-service/use-solutions-for-your-customizations.md)  
+- [Usar soluciones para las personalizaciones](/power-platform/alm/use-solutions-for-your-customizations)  
 - [Empaquetar y distribuir las extensiones con soluciones](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions)  
   
   Sin embargo, el usuario de la aplicación no se puede incluir con una solución, por lo que deberá proporcionar una forma de crear este usuario de la aplicación y asociarlo con el rol de seguridad personalizado.  
