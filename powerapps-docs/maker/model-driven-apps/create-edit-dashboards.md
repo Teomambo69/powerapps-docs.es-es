@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bcd178eef75c5ee63389048aff2f1cf0baf01fae
-ms.sourcegitcommit: cbaf5ba8b6435796a538ece2da5cc172c0781fad
+ms.openlocfilehash: 9a9e49a14268c3ee82a8c5fb541473903bbf5f11
+ms.sourcegitcommit: 3c6c5594b73abd5ff438d50f3b579d56cef7241c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "3254381"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3285823"
 ---
 # <a name="create-or-edit-model-driven-app-dashboards"></a>Crear o editar paneles de aplicaciones controladas por modelos
 
@@ -68,7 +68,7 @@ Los paneles pueden ser estándar o interactivos. Los paneles estándar permiten 
   
      Para obtener más información sobre cómo establecer propiedades de los componentes del panel, consulte [Establecer las propiedades para un gráfico o una lista incluidos en un panel](set-properties-chart-list-included-dashboard.md).  
   
-5.  Cuando haya completado sus cambios en la barra de herramientas, seleccione **Guadar** y luego **Cerrar**. 
+5.  Cuando haya completado sus cambios en la barra de herramientas, seleccione **Guardar** y luego **Cerrar**. 
 
 6. En la barra de herramientas de soluciones, seleccione **Publicar**.  
   

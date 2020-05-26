@@ -3,14 +3,14 @@ title: Catálogo de aprendizaje de administradores
 description: Encuentre todas las opciones de formación para Power Apps
 author: loreleishannonmsft
 ms.topic: article
-ms.date: 02/19/2020
+ms.date: 04/28/2020
 ms.author: v-lshann
-ms.openlocfilehash: a4998011c83097649f1ad4e661e947086841972f
-ms.sourcegitcommit: ca7df48f819795d28ccfcd4a862639e20a7fe8fe
+ms.openlocfilehash: 340452caf9efe138e84eb0f47627d21215730184
+ms.sourcegitcommit: 08184794f3438c8293b88dbbd16bfe8be4f6c229
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3168425"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3322085"
 ---
 # <a name="administrators-learning-catalog"></a>Catálogo de aprendizaje de administradores
 
@@ -21,4 +21,6 @@ El siguiente catálogo se organiza del conocimiento clave a los dominios concret
 ## <a name="administration"></a>Administración
 | Contenido  | Descripción  | Formato   | Duración    | 
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|----------------------------------------------------------|
-| [Gestionar permisos y administración para Common Data Service](https://docs.microsoft.com/learn/paths/manage-permissions-administration-common-data-service/)|   ¿Necesita administrar derechos de acceso de los usuarios? En esta ruta de aprendizaje, aprenderá a administrar los permisos asociados a entornos y entidades. También aprenderá acerca de los distintos portales administrativos y cómo acceder a cada uno.| Ruta de aprendizaje en línea, libre y a su propio ritmo    |1 h 23 min |
+| [Gestionar permisos y administración para Common Data Service](https://docs.microsoft.com/learn/paths/manage-permissions-administration-common-data-service/)|   ¿Necesita administrar derechos de acceso de los usuarios? En esta ruta de aprendizaje, aprenderá a administrar los permisos asociados a entornos y entidades. También aprenderá sobre los diferentes portales administrativos y cómo acceder a cada uno de ellos.| Ruta de aprendizaje en línea, libre y a su propio ritmo    |1 h 23 min |
+| [Administrador en un laboratorio de un día](https://github.com/microsoft/powerapps-tools/tree/master/Administration/AdminInADay)                                      | Instrucciones del laboratorio para eventos de aprendizaje o a autoaprendizaje, laboratorios prácticos e ILT | Gratuito, dirigido por instructor | Un día laborable   |
+| [Descripción del panel de administración de clientes](https://powerapps.microsoft.com/blog/custom-admin-dashboard-with-the-powerapps-admin-connectors/) | Publicación de blog sobre el panel de administración de clientes   | Entrada de blog   | 

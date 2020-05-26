@@ -2,7 +2,7 @@
 title: Atributos de archivo (Common Data Service) | Microsoft Docs
 description: Obtenga información sobre los atributos de archivo que almacenan datos de archivo en la aplicación, atributos de soporte, recuperación de datos y carga de datos de archivo.
 ms.custom: ''
-ms.date: 10/04/2019
+ms.date: 04/27/2020
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d8a64f994f035f61506a26836386f5f087777928
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 55b9e10d0d6e40394f8c4119ff1b47a11edb1540
+ms.sourcegitcommit: 9f83d4c09f09256493bc5d49c7b4a4fc02d9342a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156196"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3292980"
 ---
 # <a name="file-attributes"></a>Atributos de archivo
 
@@ -32,7 +32,9 @@ FileAttributeMetadata | <xref:Microsoft.Xrm.Sdk.Metadata.FileAttributeMetadata>
 Para obtener información sobre los tipos de archivos que no están permitidos, consulte [Pestaña General Configuración del sistema](/power-platform/admin/system-settings-dialog-box-general-tab) en la configuración **Definir las extensiones de archivo bloqueadas para datos adjuntos**.
 
 > [!IMPORTANT]
-> Se aplican algunas restricciones al usar el archivo y los tipos de datos de imagen mejorados de Common Data Service. Si están habilitadas claves administradas de cliente (CMK) en el inquilino, los tipos de datos de archivo, imagen e IoT no están disponibles para las organizaciones del inquilino. Las soluciones que contienen tipos de datos excluidos no se instalan. Los clientes deben cancelar la suscripción a CMK para hacer uso de estos tipos de datos.
+> Se aplican algunas restricciones al usar el archivo y los tipos de datos de imagen mejorados de Common Data Service. Si están habilitadas claves administradas de cliente (CMK) en el inquilino, los tipos de datos de archivo, imagen e IoT no están disponibles para las organizaciones del inquilino. Las soluciones que contienen tipos de datos excluidos no se instalan. Los clientes deben cancelar la suscripción a CMK para hacer uso de estos tipos de datos.<p/>
+> Se admiten atributos de archivo en <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.SdkClientVersion> 9.0.45.329 o superior y la API web versión 9.1 o superior.
+
 
 <!--File data is not passed to plug-ins for performance reasons. You must retrieve the file data in plug-in code using an explicit retrieve call. -->
   

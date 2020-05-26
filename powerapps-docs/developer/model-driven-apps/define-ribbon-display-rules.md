@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 190659fb75b6cb6e89b1952178ff4eb0301f47b7
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 71fd2e8592622f894d3636610767c078e92a33e8
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115660"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275928"
 ---
 # <a name="define-ribbon-display-rules"></a>Defina las reglas de la visualización de la cinta de opciones
 
@@ -198,6 +198,6 @@ Al configurar los elementos de la cinta de opciones se pueden definir las reglas
 >  Para los comandos definidos para la subcuadrícula en formularios con la experiencia de usuario actualizada, no se pueden usar las reglas de valor dentro de reglas de visualización. Use este elemento en un `<EnableRule>` para ocultar un elemento.  
 
 ### <a name="see-also"></a>Vea también  
- [Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)   
+ [Personalizar comandos y la cinta de opciones](customize-commands-ribbon.md)   
  [Definir reglas de habilitación de la cinta de opciones](define-ribbon-enable-rules.md)   
  [Definir las acciones de la cinta de opciones](define-ribbon-actions.md)

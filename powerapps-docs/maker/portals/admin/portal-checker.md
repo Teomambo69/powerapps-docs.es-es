@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 04/24/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: cc1a2107b6e0b5bcdbad1dacff396791b61627c3
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: bbc5cc51fceadb5dfb836ca36483002f6537620b
+ms.sourcegitcommit: 943672dad0041d3bab25b44cd8c4d25e88f39b93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2978389"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "3289366"
 ---
 # <a name="portal-checker"></a>Comprobador del portal
 
@@ -23,8 +23,8 @@ El comprobador de portal es una herramienta de diagnóstico de autoservicio que 
 Al ejecutar el comprobador del portal, los resultados se muestran en la sección **Resultados de diagnóstico** en un formato de cuadrícula. La cuadrícula de resultados tiene las siguientes columnas:
 
 - **Error**: Muestra el problema de nivel superior que tiene el cliente; por ejemplo, degradación de rendimiento.
-- **Categoría**: Muestra el área de nivel superior donde los problemas se pueden dividir en categorías; por ejemplo, aprovisionar, actualización de una solución, etc.
-- **Resultado**: Muestra el estado de problema; por ejemplo, error, advertencia, etc.
+- **Categoría**: Muestra el área de nivel superior donde los problemas se pueden dividir en categorías; por ejemplo, aprovisionar o actualización de una solución.
+- **Resultado**: Muestra el estado del problema; por ejemplo, error o advertencia.
 
 De forma predeterminada, la información de la cuadrícula se ordenará por la columna **Resultado** en este orden: error, advertencia, y paso.
 

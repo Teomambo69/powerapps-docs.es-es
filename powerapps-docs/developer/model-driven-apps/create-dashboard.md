@@ -15,16 +15,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 02b8e2b80821e3a59f3522f25f455d6cc3b4a083
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 069e5d2b41176e7c947db1460f76cd34011124e5
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115916"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275836"
 ---
 # <a name="create-a-dashboard"></a>Crear un panel
-
-<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/create-dashboard -->
 
 Los paneles de propiedad de la organización se pueden crear usando los Common Data Service o personalizando el formulario de entidad en Common Data Service mediante la edición del archivo customizations.xml.  
   
@@ -146,7 +144,7 @@ SystemForm dashboard = new SystemForm
 _dashboardId = _serviceProxy.Create(dashboard);
  ``` 
   
- Para ver un ejemplo completo, vea [Ejemplo: Crear, recuperar, actualizar y eliminar (CRUD) un panel](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard) Para obtener un ejemplo para crear un panel de propiedad del usuario y asignarlo a otro usuario, consulte [Ejemplo: Asignar un panel propiedad del usuario a otro usuario](/dynamics365/customer-engagement/developer/customize-dev/sample-assign-user-owned-dashboard-another-user).  <!-- TODO relevant powerapps repo topic must be linked> 
+ Para ver un ejemplo completo, vea [Ejemplo: Crear, recuperar, actualizar y eliminar (CRUD) un panel](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard) Para obtener un ejemplo para crear un panel de propiedad del usuario y asignarlo a otro usuario, consulte [Ejemplo: Asignar un panel propiedad del usuario a otro usuario](/dynamics365/customer-engagement/developer/customize-dev/sample-assign-user-owned-dashboard-another-user).  
   
 <a name="UsingFormCustomization"></a>   
 ## <a name="create-an-organization-owned-dashboard-by-customizing-the-entity-form"></a>Crear un panel de propiedad de la organización al personalizar el formulario de entidad  

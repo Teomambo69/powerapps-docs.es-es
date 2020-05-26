@@ -2,7 +2,7 @@
 title: Realizar operaciones condicionales mediante la API web (Common Data Service)| Microsoft Docs
 description: Aprenda a crear condiciones que decidan si y cómo realizar ciertas operaciones mediante la API web
 ms.custom: ''
-ms.date: 01/08/2020
+ms.date: 04/06/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a78b50dc3f70817a3da5f1f66c3a562099076e56
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: aa6d6827994749d48981144fd2deea0d1f839a83
+ms.sourcegitcommit: 49b69129262a9b530e69508e84c3822b742066df
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155084"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "3233752"
 ---
 # <a name="perform-conditional-operations-using-the-web-api"></a>Realizar operaciones condicionales mediante la API web
 
@@ -116,7 +116,7 @@ If-Match: *
 }  
 ```  
   
- **Respuesta**  
+ **Response**  
  Si se encuentra la entidad, recibirá una respuesta normal con estado 204 (sin contenido). Si no se encuentra la entidad, recibirá la siguiente respuesta con estado 404 (no encontrado).  
   
 ```json  
@@ -127,12 +127,7 @@ Content-Type: application/json; odata.metadata=minimal
 {  
  "error": {  
   "code": "",  
-  "message": "account With Id = 00000000-0000-0000-0000-000000000001 Does Not Exist",  
-  "innererror": {  
-   "message": "account With Id = 00000000-0000-0000-0000-000000000001 Does Not Exist",  
-   "type": "System.ServiceModel.FaultException`1[[Microsoft.Xrm.Sdk.OrganizationServiceFault, Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",  
-   "stacktrace": <stack trace removed for brevity>  
-  }  
+  "message": "account With Id = 00000000-0000-0000-0000-000000000001 Does Not Exist"
  }  
 }  
 ```  
@@ -161,7 +156,7 @@ If-None-Match: *
 }  
 ```  
   
- **Respuesta**  
+ **Response**  
  Si no se encuentra la entidad, recibirá una respuesta normal con estado 204 (sin contenido). Si sí se encuentra la entidad, recibirá la siguiente respuesta con estado 412 (error de condición previa).  
   
 ```json  
@@ -172,12 +167,7 @@ Content-Type: application/json; odata.metadata=minimal
 {  
   "error":{  
    "code":"",  
-   "message":"A record with matching key values already exists.",  
-   "innererror":{  
-    "message":"Cannot insert duplicate key.",  
-    "type":"System.ServiceModel.FaultException`1[[Microsoft.Xrm.Sdk.OrganizationServiceFault, Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",  
-    "stacktrace":<stack trace removed for brevity>  
-    }  
+   "message":"A record with matching key values already exists."
   }  
 }  
 ```  
@@ -213,12 +203,7 @@ OData-Version: 4.0
   
 {  
   "error":{  
-    "code":"","message":"The version of the existing record doesn't match the RowVersion property provided.",  
-    "innererror":{  
-      "message":"The version of the existing record doesn't match the RowVersion property provided.",  
-      "type":"System.ServiceModel.FaultException`1[[Microsoft.Xrm.Sdk.OrganizationServiceFault, Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",  
-"stacktrace":"  <stack trace details omitted for brevity>  
-    }  
+    "code":"","message":"The version of the existing record doesn't match the RowVersion property provided." 
   }  
 }  
 ```  
@@ -250,12 +235,7 @@ OData-Version: 4.0
   
 {  
   "error":{  
-    "code":"","message":"The version of the existing record doesn't match the RowVersion property provided.",  
-    "innererror":{  
-      "message":"The version of the existing record doesn't match the RowVersion property provided.",  
-      "type":"System.ServiceModel.FaultException`1[[Microsoft.Xrm.Sdk.OrganizationServiceFault, Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",  
-"stacktrace":"  <stack trace details omitted for brevity>  
-    }  
+    "code":"","message":"The version of the existing record doesn't match the RowVersion property provided."
   }  
 }  
 ```  

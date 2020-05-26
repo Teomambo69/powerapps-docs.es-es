@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 03/04/2020
+ms.date: 04/23/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 9293288a8f3de86807342466771d197754b65706
-ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
+ms.openlocfilehash: 9d74d408cc6a1000b9f8d29e4c91d62952b70e40
+ms.sourcegitcommit: 504bf052f7fe276484fa8c9b1ea04b19ad63484f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100035"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3288440"
 ---
 # <a name="power-apps-portals-faq"></a>Preguntas más frecuentes sobre portales de Power Apps
 
@@ -39,7 +39,7 @@ Puede comprobar el tipo de portal desde el [Centro de administración de portale
 Diferencias adicionales entre portales de Power Apps con licencias basadas en capacidad y licencias basadas en complemento:
 
 - Para los portales de complementos, el tipo de portal tiene agregado un sufijo de 'complemento'. Por ejemplo, un tipo de portal de complemento de producción aparece como 'Producción (complemento)'.
-- Los portales de Power Apps tienen un [mecanismo de almacenamiento en caché diferente](https://powerapps.microsoft.com/en-us/blog/publishing-changes-to-powerapps-portals/) en comparación con los portales de licencias basados en complementos.
+- Los portales de Power Apps tienen un [mecanismo de almacenamiento en caché diferente](admin/clear-server-side-cache.md) en comparación con los portales de licencias basados en complementos.
 - El método de aprovisionamiento es diferente para portales con licencias basadas en capacidad que para licencias basadas en complementos.
 
 Puede crear un portal de Power Apps con licencia basada en capacidad utilizando los pasos descritos en los siguientes artículos:

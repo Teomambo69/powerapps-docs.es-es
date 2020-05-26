@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9dce1d13b5cb74173ff8af678480bda7b8e00140
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d6805a18d0b445d18233c854d0b760b0a7098db2
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865589"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275820"
 ---
 # <a name="define-ribbon-enable-rules"></a>Definir las reglas de habilitación de la cinta de opciones
 
@@ -87,29 +87,32 @@ function EnableRule()
  > [!NOTE]
 >  Las reglas basadas en promesas solo funcionarán en la interfaz unificada, por lo que no se pueden usar si se sigue utilizando el típico cliente web.
  ```JavaScript
-function EnableRule()
-{
+// Old synchronous style
+/*
+function EnableRule() {
+    const request = new XMLHttpRequest();
+    request.open('GET', '/bar/foo', false);
+    request.send(null);
+    return request.status === 200 && request.responseText === "true";
+}
+*/
+
+// New asynchronous style
+function EnableRule() {
     const request = new XMLHttpRequest();
     request.open('GET', '/bar/foo');
 
-    return new Promise((resolve, reject) =>
-    {
-        request.onload = function (e)
-        {
-            if (request.readyState === 4)
-            {
-                if (request.status === 200)
-                {
+    return new Promise(function(resolve, reject) {
+        request.onload = function (e) {
+            if (request.readyState === 4) {
+                if (request.status === 200) {
                     resolve(request.responseText === "true");
-                }
-                else
-                {
+                } else {
                     reject(request.statusText);
                 }
             }
         };
-        request.onerror = function (e)
-        {
+        request.onerror = function (e) {
             reject(request.statusText);
         };
 
@@ -165,6 +168,6 @@ function EnableRule()
 Usa el elemento `<ValueRule>`. Use esta regla para comprobar el valor de un campo específico en el registro que se muestra en el formulario. Debe especificar `Field` y `Value` para comprobar.
 
 ### <a name="see-also"></a>Vea también  
- [Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)   
+ [Personalizar comandos y la cinta de opciones](customize-commands-ribbon.md)   
  [Definir comandos de la cinta de opciones](define-ribbon-commands.md)   
  [Definir reglas de visualización de la cinta de opciones](define-ribbon-display-rules.md)

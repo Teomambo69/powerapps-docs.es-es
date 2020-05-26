@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 642d4f74e8d4e0c613bbc42381fecd4418f93030
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: abf6098de965ae83da968bf6b59da3615fb1c7f5
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3126535"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275800"
 ---
 # <a name="webpage-html-web-resources"></a>Recursos web de página web (HTML)
 
@@ -142,13 +142,14 @@ Debido a la característica HTML en recursos web que permite las modificaciones 
 |seguridad||Solo para uso interno.|
 |tabSet||Solo para uso interno.|
 
- Si varios valores se pasan en el parámetro de datos, se codificarán automáticamente. La lógica se debe incluir también para descodificar los varios parámetros con el script en el recurso de web HTML. El tema [Ejemplo: Pasar varios valores a un recurso web a través de los datos parámetro](sample-pass-multiple-values-web-resource-through-data-parameter.md) muestra una solución para dirigirse pasando varios valores de parámetros.  
+ Si varios valores se pasan en el parámetro de datos, se codificarán automáticamente. La lógica se debe incluir también para descodificar los varios parámetros con el script en el recurso de web HTML. El tema [Ejemplo: Pasar varios valores a un recurso web mediante el parámetro de datos](sample-pass-multiple-values-web-resource-through-data-parameter.md) muestra un enfoque para transferir varios valores de parámetro.  
 
 ### <a name="see-also"></a>Vea también
+
  [Recursos web](web-resources.md)   
  [Crear recursos web accesibles](create-accessible-web-resources.md)   
  [Uso de recursos web de hojas de estilo (CSS)](css-web-resources.md)   
  [Usar recursos web de script (JScript)](script-jscript-web-resources.md)   
- [Uso de recursos web de datos (XML)](data-xml-web-resources.md)   
+ [Usar recursos web de datos (XML)](data-xml-web-resources.md)   
  [Uso de recursos web de imagen (JPG, PNG, GIF)](image-web-resources.md)   
- [Uso de recursos web de hoja de estilo (XSL)](stylesheet-xsl-web-resources.md)
+ [Usar recursos web de hoja de estilo (XSL)](stylesheet-xsl-web-resources.md)

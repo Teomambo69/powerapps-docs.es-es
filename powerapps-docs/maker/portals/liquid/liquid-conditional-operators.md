@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 034c6741ac5555448f85fc08579855d6980490e2
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: dc356e876c2b5ece6379765e01d623d98c08a7a4
+ms.sourcegitcommit: 51fa748cde4ea81e918dae1b39f9dca1d6e4e546
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2978345"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3292043"
 ---
 # <a name="available-liquid-conditional-operators"></a>Operadores condicionales de Liquid disponibles
 
@@ -23,7 +23,7 @@ Cuando se usa en instrucciones condicionales (**si**, **a menos que**), algunos 
 En Liquid, null y el valor booleano false se tratan como false; todo lo demás se trata como true. Cadenas vacías, matrices vacías, etc. se tratan como true. Por ejemplos:
 
 ```
-{% assign empty_string =  %}
+{% assign empty_string = "" %}
 {% if empty_string %}
 <p>This will render.</p>
 {% endif %}

@@ -2,14 +2,10 @@
 title: Visualización o descarga de recursos para desarrolladores de Power Apps y Common Data Service | MicrosoftDocs
 description: Buscar recursos para desarrolladores y direcciones URL del extremo de servicio para Power Apps y Common Data Service
 keywords: ''
-ms.date: 06/06/2018
+ms.date: 04/09/2020
 ms.service: powerapps
 ms.custom: ''
 ms.topic: article
-applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- powerapps
 ms.assetid: e200d242-ff3f-48e5-af32-aed050e02441
 author: Mattp123
 ms.author: matp
@@ -18,16 +14,16 @@ ms.reviewer: pehecke
 ms.suite: ''
 ms.tgt_pltfrm: ''
 search.audienceType:
-- maker
+- developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 71bbb3d4b17d518e251ccedb1d2e8244d011853e
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: bd3b907411d0e43b572908204aeff9c64069ed15
+ms.sourcegitcommit: cbaf5ba8b6435796a538ece2da5cc172c0781fad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155156"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "3254402"
 ---
 # <a name="view-or-download-developer-resources"></a>Visualización o descarga de recursos para programadores
 
@@ -35,11 +31,21 @@ Esta página ofrece recursos para desarrolladores e información acerca de la in
 
 ## <a name="view-the-developer-resources-page-for-your-environment"></a>Ver la página de Recursos para desarrolladores para su entorno
 
-1. En el portal de Power Apps seleccione el ![Botón Configuración](../../administrator/media/settings-button-nav-bar.png) botón Configuración y elija **Personalizaciones avanzadas**.
+1. Inicie sesión en [Power Apps](https://make.powerapps.com) y luego seleccione su entorno en la esquina superior derecha.
+
+1. Seleccione el botón **Configuración** en la esquina superior derecha y después seleccione **Configuración avanzada**.
 
     ![Personalizaciones avanzadas](media/advanced-customizations-menu.png)
 
-1. En el panel **Personalizaciones avanzadas**, elija el vínculo **Recursos para desarrolladores** :<br />![Vínculo Recursos para desarrolladores](media/developer-resources-link.png)
+1. En la página de **Configuración**, seleccione la flecha desplegable situada junto a **Configuración** y, a continuación, seleccione **Personalizaciones**.
+
+    ![Seleccionar Personalizaciones](media/dev-customization.png)
+
+1. En la página **Personalizaciones**, seleccione **Recursos de desarrolladores** para ver la página con recursos para desarrolladores.
+
+    ![Página de recursos para desarrolladores](media/developer-resources-page.png)
+
+Las siguientes secciones explican la información disponible en la página de recursos para desarrolladores.
 
 ## <a name="getting-started"></a>Introducción 
 
@@ -50,9 +56,9 @@ Esta sección proporciona los vínculos para que los desarrolladores busquen rec
 |---------|---------|
 |[Centro de desarrollo](https://go.microsoft.com/fwlink/?LinkId=551006)|El punto de entrada principal para la documentación para desarrolladores.|
 |[Foros de desarrolladores](https://go.microsoft.com/fwlink/?LinkId=550993)|Formule preguntas y obtenga respuestas de otros desarrolladores.|
-|[NuGetPaquetes](https://go.microsoft.com/fwlink/?LinkId=550994)|Descubra los paquetes de NuGet para agregar ensamblados de SDK a sus proyectos.|
-|[Descargar herramientas](https://go.microsoft.com/fwlink/?LinkID=512122)|Las herramientas que necesita se pueden descargar desde NuGet. Use el script de PowerShell en esta página para obtener las últimas versiones.|
-|[Código de ejemplo](https://go.microsoft.com/fwlink/?LinkId=553007)|Una lista de ejemplos disponible.|
+|[Paquetes NuGet SDK](https://go.microsoft.com/fwlink/?LinkId=550994)|Descubra los paquetes de NuGet para agregar ensamblados de SDK a sus proyectos.|
+|Descarga de SDK|Ya no enviamos el paquete SDK como descarga en el Centro de descargas de Microsoft. En cambio, los ensamblajes y herramientas del SDK están disponibles como [paquetes NuGet](https://go.microsoft.com/fwlink/?LinkId=550994). Use el script de PowerShell en este artículo para obtener la última versión de las herramientas del SDK: [Descargar herramientas de NuGet](https://docs.microsoft.com/powerapps/developer/common-data-service/download-tools-nuget)|
+|[Código de ejemplo](https://go.microsoft.com/fwlink/?LinkId=553007)|Una lista de ejemplos de código disponible.|
 |[Información general para desarrolladores](https://go.microsoft.com/fwlink/?LinkId=550995)|Vincular a un tema que proporciona información general para desarrolladores.|
 
 
@@ -81,7 +87,7 @@ Más información: [Integración de Azure](/powerapps/developer/common-data-serv
 
 Puesto que los usuarios pueden acceder a varios entornos de Common Data Service, los servicios de detección permiten recuperar los entornos disponibles a los que puede acceder un usuario en función de sus credenciales.
 
-### <a name="discovery-restful-api"></a>API RESTful de detección
+### <a name="discovery-web-api"></a>API web de detección
 
 Es la dirección del extremo para la versión v4 de RESTful OData del servicio de detección que se usará para su instancia. También puede descargar el documento de servicio aquí.
 Más información: [Documentación para desarrolladores: Detectar la dirección URL de su organización con la API web](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api)

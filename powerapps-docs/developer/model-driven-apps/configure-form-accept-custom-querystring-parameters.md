@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5814c60e301e3721c2c0e4e7f20926708c2dd5e3
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 518cae90216c8178c1ef46c3613a6613f9895527
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115920"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275844"
 ---
 # <a name="configure-a-form-to-accept-custom-querystring-parameters"></a>Configurar un formulario para aceptar parámetros querystring personalizados
 
@@ -35,9 +35,9 @@ La capacidad de transferir valores a una página web mediante cadenas de consult
 ## <a name="define-allowed-query-string-parameters"></a>Definir parámetros de cadena de consulta permitidos  
  Existen dos formas de especificar cuáles de los parámetros de la cadena de consulta serán aceptados por el formulario:  
   
--   Edición de propiedades de formularios  
+- Edición de propiedades de formularios  
   
--   Editar XML de formulario  
+- Editar XML de formulario  
   
 ### <a name="edit-form-properties"></a>Edición de propiedades de formularios  
  Al editar un formulario de entidad, en la pestaña **Inicio**, en el grupo **Formulario**, haga clic en **Propiedades del formulario**. En el cuadro de diálogo **Propiedades del formulario**, seleccione la pestaña **Parámetros**.  

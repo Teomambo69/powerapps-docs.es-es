@@ -8,12 +8,12 @@ ms.topic: index-page
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 3dfb75a6d4ccf70863436bae8c7c6264f96f18d8
-ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
+ms.openlocfilehash: d60bbb70b4f716868aa5f7090750d8f334808444
+ms.sourcegitcommit: 6fce86edacd9bfe49f8114a2a69bc18302cd01f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3218545"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260658"
 ---
 # <a name="create-your-first-component"></a>Crear el primer componente 
 
@@ -234,9 +234,12 @@ export class TSLinearInputComponent
 
 Los programadores y proveedores de aplicaciones pueden definir el diseño para representar sus componentes de código visualmente usando CSS. CSS permite que los desarrolladores describan la presentación de componentes de código, incluidos estilo, colores, diseños, y fuentes. El método [init](reference/control/init.md) del componente de entrada lineal crea un elemento de entrada y establece el atributo de clase en `linearslider`. El estilo para la clase `linearslider` se define en un archivo `CSS` aparte. Recursos de componente adicionales como `CSS` se pueden incluir con el componente de código para admitir otras personalizaciones.
 
+> [!IMPORTANT]
+> Cuando implemente estilos en sus componentes de código mediante CSS, asegúrese de que el ámbito de CSS es el control. Para ello, use las clases CSS generadas automáticamente y aplíqueselas al elemento `DIV` del contenedor para el componente. Si el código CSS tiene un ámbito global, es probable que rompa el estilo existente del formulario o la pantalla donde se representa el componente de código. Si usa un marco de trabajo CSS de terceros, debe usar una versión que ya tenga espacio de nombres o, de lo contrario, encapsular ese marco en un espacio de nombres, ya sea manualmente o mediante un preprocesador de CSS.
+
 1. Cree una nueva subcarpeta `css` en la carpeta `TSLinearInputComponent`. 
 2. Cree un nuevo archivo `TS_LinearInputComponent.css` en la subcarpeta `css`. 
-3. Agregue el siguiente contenido de estilo al archivo `TS_LinearInputComponent.css`:""""""""
+3. Agregue el siguiente contenido de estilo al archivo `TS_LinearInputComponent.css`:
 
     ```CSS
     .SampleNamespace\.TSLinearInputComponent input[type=range].linearslider {

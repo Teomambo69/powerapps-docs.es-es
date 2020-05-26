@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0dfaf5f41207106d217fa90f64bff1b3a2c4d124
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c79e744d24a233406e33ea33a6b2bc9a38b567c7
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749595"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275964"
 ---
 # <a name="script-jscript-web-resources"></a>Recursos web de script (JScript)
 
@@ -57,7 +57,7 @@ Los recursos web de Script(JScript) se usan para crear una biblioteca de funcion
  [Recursos web](web-resources.md)   
  [Uso de recursos web de página web (HTML)](webpage-html-web-resources.md)   
  [Uso de recursos web de hojas de estilo (CSS)](css-web-resources.md)   
- [Uso de recursos web de datos (XML)](data-xml-web-resources.md)   
+ [Usar recursos web de datos (XML)](data-xml-web-resources.md)   
  [Uso de recursos web de imagen (JPG, PNG, GIF)](image-web-resources.md)   
  [Usar recursos web de hoja de estilo (XSL)](stylesheet-xsl-web-resources.md)   
  [Agilice el desarrollo de recursos web con Fiddler AutoResponder](streamline-javascript-development-fiddler-autoresponder.md)    

@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 368801cbac62fee5f51646959c6f62380a6c61db
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 13c793dbc4e9011ee1d5685374010a7b9e204ffe
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115864"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276132"
 ---
 # <a name="define-custom-actions-to-modify-the-ribbon"></a>Definir acciones personalizadas para modificar la cinta de opciones
 
@@ -61,6 +61,6 @@ El valor predeterminado, una barra de comandos de la aplicación o la cinta de o
  El elemento **HideActionId** proporciona un identificador único para la acción. Para mantener la coherencia y la legibilidad, debe seguir la misma convención de nomenclatura que la descrita para los elementos `<CustomAction>`. El atributo **Location** debe coincidir con el identificador del elemento de la cinta de opciones que desea quitar.  
   
 ### <a name="see-also"></a>Vea también  
- [Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)   
+ [Personalizar comandos y la cinta de opciones](customize-commands-ribbon.md)   
  [Pasar los datos desde una página como parámetro de las acciones de la cinta de opciones](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actions)<br/>   <!-- TODO need to update the relevant Power Apps repo link-->
  [Definir la escalabilidad para elementos de la cinta de opciones](define-scaling-ribbon-elements.md)

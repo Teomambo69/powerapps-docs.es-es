@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8d6669c644b3ecc9419f7900030eb663cf25ebe1
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: bc5eeb970ecd8d54b7276e0f932e4822456e04e4
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115652"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276128"
 ---
 # <a name="data-xml-web-resources"></a>Recursos web (XML) de datos
 
@@ -45,4 +45,4 @@ Use recursos web de datos (XML) para guardar y obtener acceso a los datos.
  [Usar recursos web de script (JScript)](script-jscript-web-resources.md)   
  [Uso de recursos web de imagen (JPG, PNG, GIF)](image-web-resources.md)   
  [Usar recursos web Silverlight (XAP)](/dynamics365/customer-engagement/developer/silverlight-xap-web-resources)<br/>   <!-- TODO need to update the relevant link from the powerapps repo-->
- [Uso de recursos web de hoja de estilo (XSL)](/dynamics365/customer-engagement/developer/stylesheet-xsl-web-resources) <!-- TODO need to update the relevant link from the powerapps repo-->
+ [Usar recursos web de hoja de estilo (XSL)](/dynamics365/customer-engagement/developer/stylesheet-xsl-web-resources) <!-- TODO need to update the relevant link from the powerapps repo-->

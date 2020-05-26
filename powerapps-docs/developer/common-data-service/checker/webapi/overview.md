@@ -20,16 +20,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 01ef77aba8b6380b39c1514d317567132894c4af
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: ed1900a217d0f193f3026b6e48219489eb58d0cf
+ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909582"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3341361"
 ---
 # <a name="use-the-power-apps-checker-web-api"></a>Usar la API web del comprobador de Power Apps
 
 La API web del comprobador de Power Apps proporciona un mecanismo para ejecutar comprobaciones de análisis estático con personalizaciones y extensiones de la plataforma Common Data Service. Está disponible para que fabricantes y desarrolladores realicen comprobaciones de análisis estático de sus soluciones con un conjunto de reglas de prácticas recomendadas para identificar rápidamente patrones problemáticos. El servicio proporciona la lógica para la [característica del comprobador de soluciones](../../../../maker/common-data-service/use-powerapps-checker.md) en el [portal del fabricante de Power Apps](https://make.powerapps.com) y se incluye como parte de la automatización para [solicitudes enviadas a AppSource](../../publish-app-appsource.md). La interacción directamente con el servicio de esta manera permite el análisis de soluciones que se incluyen como parte de entornos locales (todas las versiones admitidas) y en línea.
+
+Para obtener información sobre el uso del servicio del comprobador del código de PowerShell, consulte [Trabajar con soluciones usando PowerShell](/power-platform/alm/powershell-api).
 
 <a name="bkmk_altApproaches"></a>
 

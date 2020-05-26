@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 11e38cf505a2fa6bb597c24fbf03bdbe1ddc9de1
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e94e5a0058d6f892a06e982fba454551b15f5374
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749426"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3261791"
 ---
 # <a name="the-tenant-page"></a>La página de inquilino
 
@@ -88,5 +88,7 @@ Al mantener el puntero sobre cualquier elemento el gráfico, se muestra la sigui
 ### <a name="see-also"></a>Vea también
 
 [Introducción a ISV Studio para Power Platform](isv-app-management.md)  
-[Página principal](isv-app-management-homepage.md)  
-[Página de aplicación](isv-app-management-apppage.md)
+[Página principal](isv-app-management-homepage.md)<br/> 
+[Página de aplicación](isv-app-management-apppage.md)<br/> 
+[Comprobador de AppSource](isv-app-management-appsource-checker.md)<br/> 
+[Certificación de conector](isv-app-management-certification.md)

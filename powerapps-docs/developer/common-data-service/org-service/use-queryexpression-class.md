@@ -2,7 +2,7 @@
 title: Usar la clase QueryExpression (Common Data Service) | Microsoft Docs
 description: Utilice la clase QueryExpression para crear consultas complejas para uso con el método IOrganizationService.QueryBase o el mensaje RetrieveMultipleRequest.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 04/17/2020
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
@@ -14,30 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 79b8f500bb6448a0272df627e813cf518159c817
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 0b405e76323300522e01956ea3eacbe7b2596f50
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155428"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275784"
 ---
 # <a name="use-the-queryexpression-class"></a>Usar la clase QueryExpression
 
 En Common Data Service puede usar la clase <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> para construir consultas complejas para su uso con el <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*> el método o el mensaje <xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest>. Se pueden configurar los parámetros de la consulta en <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> con las clases <xref:Microsoft.Xrm.Sdk.Query.ConditionExpression>, <xref:Microsoft.Xrm.Sdk.Query.ColumnSet> y <xref:Microsoft.Xrm.Sdk.Query.FilterExpression>.  
   
  La clase <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> permite crear consultas complejas. La clase <xref:Microsoft.Xrm.Sdk.Query.QueryByAttribute> está diseñada para ser una forma simple de búsqueda para las entidades en las que los atributos coinciden con los valores especificados.  
-  
- En la siguiente tabla se enumeran las propiedades que se definen para crear una expresión de consulta.  
-  
-|Propiedad|Descripción|  
-|--------------|-----------------|  
-|<xref:Microsoft.Xrm.Sdk.Query.QueryExpression.EntityName>|Especifica que tipo de entidad se va a recuperar. Una expresión de consulta solo puede recuperar una colección de un tipo de entidad.|  
-|<xref:Microsoft.Xrm.Sdk.Query.QueryExpression.ColumnSet>|Especifica el conjunto de atributos (columnas) que se va a recuperar.|  
-|<xref:Microsoft.Xrm.Sdk.Query.QueryExpression.Criteria>|Especifica complejas expresiones de filtro condicionales y lógicas que filtran los resultados de la consulta.|  
-|<xref:Microsoft.Xrm.Sdk.Query.QueryExpression.Distinct>|Especifica si los resultados de la consulta contienen registros duplicados.|  
-|<xref:Microsoft.Xrm.Sdk.Query.QueryExpression.LinkEntities>|Especifica los vínculos entre varios tipos de entidad.|  
-|<xref:Microsoft.Xrm.Sdk.Query.QueryExpression.Orders>|Especifica el orden en que los registros se devuelven desde la consulta.|  
-|<xref:Microsoft.Xrm.Sdk.Query.QueryExpression.PageInfo>|Especifica el número de páginas y el número de registros por página devueltos por la consulta.|  
   
 <a name="record_count"></a>   
 ## <a name="record-count"></a>Recuento de registros  
@@ -69,7 +57,25 @@ foreach (var a in result1.Entities)
 }  
 Console.WriteLine("---------------------------------------");  
 ```  
-  
+## <a name="use-sql-hints-in-a-query"></a>Usar sugerencias en una consulta SQL
+
+La clase <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> contiene una propiedad denominada <xref:Microsoft.Xrm.Sdk.Query.QueryExpression.QueryHints>. Al establecer esta propiedad en uno de los valores de cadena admitidos que se muestran a continuación, puede proporcionar una pista para el texto SQL generado que afecta la ejecución de la consulta.
+
+|Valor de QueryHint | Opción y consulta de SQL Query |
+|---------|---------|
+|OptimizeForUnknown | Optimizar para desconocido|
+|ForceOrder | Forzar orden |
+|Volver a compilar | Volver a compilar |
+|DisableRowGoal | use hint(‘Disable_Optimizer_RowGoal’) |
+|EnableOptimizerHotfixes | use hint('ENABLE_QUERY_OPTIMIZER_HOTFIXES') |
+|LoopJoin | Combinación de bucle |
+|MergeJoin | Combinación de mezcla |
+|HashJoin | Combinación hash |
+|NO_PERFORMANCE_SPOOL | NO_PERFORMANCE_SPOOL |
+|MaxRecursion | Número MAXRECURSION |
+
+Más información: [Sugerencias (Transact-SQL) - Consulta](https://docs.microsoft.com/sql/t-sql/queries/hints-transact-sql-query)
+
 ### <a name="see-also"></a>Vea también  
  [Generar consultas con QueryExpression](build-queries-with-queryexpression.md)   
  [Utilizar la clase ColumnSet](use-the-columnset-class.md)   

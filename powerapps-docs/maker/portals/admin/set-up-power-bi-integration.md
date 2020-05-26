@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 04/27/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 18ae2abded4208a3caf2e02408c4cf0eef7af09f
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: aa5bf8a76097f1f2885487ac9550326e7e0eba23
+ms.sourcegitcommit: 8dd68565e03a4e66db1f8937630fa4c52eb93871
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2978653"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "3321265"
 ---
 # <a name="set-up-power-bi-integration"></a>Configurar integración de Power BI
 
@@ -23,10 +23,11 @@ Power BI es una de las mejores herramientas para ofrecer ideas con visualizació
 > [!NOTE]
 > - Debe tener una licencia adecuada de Power BI.
 > - Para usar el servicio Power BI Embedded, debe tener una licencia adecuada de Power BI Embedded. Para obtener más información, vea el tema sobre [Licencias](https://docs.microsoft.com/power-bi/developer/embedded-faq#licensing).
+> - Asegúrese de que **Incrustar contenido en aplicaciones** está *Habilitado* en la [configuración de desarrollo](https://docs.microsoft.com/power-bi/guidance/admin-tenant-settings#developer-settings) de su inquilino de Power BI. Cuando está deshabilitado, el portal no puede procesar un panel o informe de Power BI incrustado.
 
 ## <a name="enable-power-bi-visualization"></a>Habilitar visualización de Power BI
 
-Habilitar la visualización de Power BI permite insertar paneles e informes en las páginas web en un portal utilizando la etiqueta powerbi Liquid.
+Habilitar la visualización de Power BI permite insertar paneles e informes en las páginas web en un portal utilizando la etiqueta *powerbi* Liquid.
 
 1.  Abra [Centro de administración de Portales de Power Apps](admin-overview.md).
 

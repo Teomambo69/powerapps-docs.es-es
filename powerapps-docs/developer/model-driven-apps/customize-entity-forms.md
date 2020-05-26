@@ -2,7 +2,7 @@
 title: Personalización de los formularios de la entidad (aplicaciones basadas en modelos) | Microsoft Docs
 description: Los formularios ofrecen la interfaz de usuario (UI) que los usuarios usan para crear, ver, o editar registros de la entidad. Use el diseñador de formulario en las herramientas de personalización para crear y modificar formularios de entidad. Este tema le confiere la información necesaria para crear o editar formularios mediante programación.
 keywords: ''
-ms.date: 10/31/2018
+ms.date: 03/10/2020
 ms.service: powerapps
 ms.topic: article
 ms.assetid: e6a25bbe-e484-cfe9-9ad9-20ac6f19336a
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f81937377d647aae58f189236c1d656d6ab988e5
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: b5ca535e329f20813662e9a218ed47da19d09a08
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3126507"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275940"
 ---
 # <a name="customize-entity-forms"></a>Personalizar los formularios de entidad
 
@@ -82,10 +82,10 @@ Los formularios ofrecen la interfaz de usuario (UI) que los usuarios usan para c
 
 Para abrir el formulario principal en un cuadro de diálogo utilizando la API del cliente, debe invocar la llamada utilizando el método [Xrm.Navigation.navigateTo](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-navigation/navigateto). El método de API [Xrm.Navigation.navigateTo](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-navigation/navigateto) le permite abrir el cuadro de diálogo con varias opciones, incluido el tamaño y la posición.
 
+
 > [!IMPORTANT]
 > - El formulario principal abierto en un cuadro de diálogo con la API del cliente todavía está en la vista previa.
 > - Las vistas previas de características no se han diseñado para un uso de producción y pueden tener una funcionalidad restringida. Estas características están disponibles antes del lanzamiento oficial para que los clientes puedan tener un acceso anticipado y proporcionar comentarios.
-
 
 > [!NOTE]
 > El método [Xrm.Navigation.openForm](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-navigation/openform) no es compatible para abrir un formulario principal como cuadro de diálogo.
@@ -97,7 +97,17 @@ Para abrir el formulario principal en un cuadro de diálogo utilizando la API de
 En este ejemplo, el cuadro de diálogo abre un nuevo formulario de cuenta para crear un nuevo registro. El cuadro de diálogo aparece en el centro utilizando hasta el 50 % de la ventana disponible como cuadro modal encima del formulario desde el que se invocó o se llamó.
 
 ```JavaScript
-Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formType:2}, {target: 2, position: 1, width: {value: 50, unit:"%"}});
+var pageInput = {
+    pageType: "entityrecord",
+    entityName: "account",
+    formType: 2,
+};
+var navigationOptions = {
+    target: 2,
+    width: {value: 50, unit:"%"},
+    position: 1
+};
+Xrm.Navigation.navigateTo(pageInput, navigationOptions);
 ```
 > [!div class="mx-imgBorder"]
 > ![Abrir un nuevo registro](media/open-new-record-mfd.png "Abrir un nuevo registro")
@@ -107,7 +117,18 @@ Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formTy
 En este ejemplo, el cuadro de diálogo abre un registro de cuenta existente utilizando el valor de Id. de entidad de cuenta sobre el formulario de contacto. Reemplace el id. de la entidad por cualquier valor de id. del registro que desee abrir en el cuadro de diálogo.
 
 ```JavaScript
-Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formType:2, entityId:"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"}, {target: 2, position: 1, width: {value: 80, unit:"%"}});
+var pageInput = {
+    pageType: "entityrecord",
+    entityName: "account",
+    formType: 2,
+    entityId: "5a57f2c3-5672-ea11-a812-000d3a339706" //replace with actual ID
+};
+var navigationOptions = {
+    target: 2,
+    width: {value: 80, unit:"%"},
+    position: 1
+};
+Xrm.Navigation.navigateTo(pageInput, navigationOptions);
 ```
 > [!div class="mx-imgBorder"]
 > ![Abrir un registro existente](media/open-existing-record-mfd.png "Abrir un registro existente")
@@ -117,7 +138,17 @@ Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formTy
 En este ejemplo, el cuadro de diálogo abre un nuevo registro en la esquina derecha de la ventana. Esto se puede lograr mediante el uso de las opciones de píxeles.
 
 ```JavaScript
-Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formType:2}, {target: 2, position: 2, width: {value: 500, unit:"px"}});
+var pageInput = {
+    pageType: "entityrecord",
+    entityName: "account",
+    formType: 2,
+};
+var navigationOptions = {
+    target: 2,
+    width: {value: 500, unit:"px"},
+    position: 2
+};
+Xrm.Navigation.navigateTo(pageInput, navigationOptions);
 ```
 > [!div class="mx-imgBorder"]
 > ![Abra un registro existente en el panel lateral](media/open-record-side-pane-mfd.png "Abrir un registro existente en el panel lateral")
@@ -127,13 +158,26 @@ Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formTy
 Este ejemplo muestra cómo se invoca un cuadro de diálogo de formulario principal con un método de devolución de llamada después de guardar un registro y cerrar el cuadro de diálogo.
 
 ```Javascript
-Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formType:2},{target: 2, position: 2, width: {value: 80, unit:"%"}}).then(
-    function (retVal) {
-        console.log(retVal.savedEntityReference[0].id + ", " + retVal.savedEntityReference[0].name)
+var pageInput = {
+    pageType: "entityrecord",
+    entityName: "account",
+    formType: 2
+};
+var navigationOptions = {
+    target: 2,
+    width: {value: 80, unit:"%"},
+    position: 2  
+};
+Xrm.Navigation.navigateTo(pageInput, navigationOptions).then(
+    function success(result) {
+            console.log("Record created with ID: " + result.savedEntityReference[0].id + 
+            " Name: " + result.savedEntityReference[0].name)
+            // Handle dialog closed
     },
-    function (error) {
-        console.log(error);
-    });
+    function error() {
+            // Handle errors
+    }
+);
 ```
 
 ### <a name="see-also"></a>Vea también  

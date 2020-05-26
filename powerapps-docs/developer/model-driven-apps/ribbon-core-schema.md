@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d1f8805f2cb817e3e3859942f3640ea335ae7a93
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 01789bbbfddb4e3f554cbd0cabb2e23f05d8be70
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753596"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275788"
 ---
 # <a name="ribbon-core-schema"></a>Esquema central de cinta de opciones
 

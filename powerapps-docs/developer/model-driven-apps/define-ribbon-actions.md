@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8f17a21544a1f218b7f3c21264e723bd3750a843
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 13efb9c8962f14dffe73beb67aff1f1c229a9286
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115644"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275960"
 ---
 # <a name="define-ribbon-actions"></a>Definir acciones de la cinta de opciones
 
@@ -45,7 +45,7 @@ Defina las acciones que se deben realizar mediante una barra de comandos o contr
 [!INCLUDE[ribbon_element_BoolParameter](../../includes/ribbon-element-boolparameter.md)]
   
  `<CrmParameter>`  
- [!INCLUDE[ribbon_element_CrmParameter](../../includes/ribbon-element-crmparameter.md)] Más información: [Pasar los datos desde una página como parámetro a las acciones de la cinta de opciones](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actionsd)  <!-- TODO need to update the relevant link from the powerapps repo -->
+ [!INCLUDE[ribbon_element_CrmParameter](../../includes/ribbon-element-crmparameter.md)] Más información: [Pasar los datos desde una página como parámetro a las acciones de la cinta de opciones](pass-data-page-parameter-ribbon-actions.md) 
   
  `<DecimalParameter>`  
  [!INCLUDE[ribbon_element_DecimalParameter](../../includes/ribbon-element-decimalparameter.md)]
@@ -62,7 +62,8 @@ Defina las acciones que se deben realizar mediante una barra de comandos o contr
   
 ## <a name="see-also"></a>Vea también  
 
- [Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)   
+ [Personalizar comandos y la cinta de opciones](customize-commands-ribbon.md)   
  [Definir reglas de visualización de la cinta de opciones](define-ribbon-display-rules.md)   
- [Pasar los datos desde una página como parámetro de las acciones de la cinta de opciones](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actionsd)  
-<!-- TODO need to update the relevant link from the powerapps repo-->
+ [Pasar los datos desde una página como parámetro de las acciones de la cinta de opciones](pass-data-page-parameter-ribbon-actions.md)  
+
+

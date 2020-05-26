@@ -14,26 +14,26 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9b87b36d0262a3bf634b9d8e22cc79f7f1816373
-ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
+ms.openlocfilehash: a55cebde012018b68aac06cf144e1b91a9e065f5
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3119758"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275932"
 ---
-# <a name="image-web-resources"></a>Recursos web de imágenes
+# <a name="image-web-resources"></a>Recursos web de imagen
 
-Use los recursos web de imagen para hacer que las imágenes estén disponibles para su uso en Aplicaciones basadas en modelos.  
+Use los recursos web de imagen para hacer que las imágenes estén disponibles para su uso en aplicaciones basadas en modelos.  
 
 Hay cinco tipos de recursos web de imágenes: 
 * Formato PNG
 * Formato JPG
 * Formato GIF
 * Formato ICO
-* Formato de vector (SVG)
+* Formato vectorial (SVG)
 
 > [!NOTE]
-> Los recursos web de formato de vector (SVG) que se han agregado con Aplicaciones basadas en modelos.
+> Los recursos web de formato de vector (SVG) se agregaron con las aplicaciones basadas en modelos.
 
   
 <a name="BKMK_Capabilities"></a>   
@@ -109,13 +109,13 @@ Use los recursos web de formato de vector (SVG) para cualquier icono que se mues
 ```  
   
 > [!NOTE]
->  Mediante la directiva de `$webresource:` se agrega una dependencia de la solución que impide eliminar los recursos web de imagen a los que se hace referencia mientras otro componente de la solución los esté usando.  
+> Mediante la directiva de `$webresource:` se agrega una dependencia de la solución que impide eliminar los recursos web de imagen a los que se hace referencia mientras otro componente de la solución los esté usando.  
   
 ### <a name="see-also"></a>Vea también  
  [Recursos web](web-resources.md)   
  [Uso de recursos web de página web (HTML)](webpage-html-web-resources.md)   
  [Uso de recursos web de hojas de estilo (CSS)](css-web-resources.md)   
  [Usar recursos web de script (JScript)](script-jscript-web-resources.md)   
- [Uso de recursos web de datos (XML)](data-xml-web-resources.md)   
+ [Usar recursos web de datos (XML)](data-xml-web-resources.md)   
  [Usar recursos web Silverlight (XAP)](/dynamics365/customer-engagement/developer/silverlight-xap-web-resources)  
  [Usar recursos web de hoja de estilo (XSL)](stylesheet-xsl-web-resources.md)

@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3617be54131274dc82f6940e39621b864e9fd76c
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 7a6b628c1c59de02078f96abf3a46abe21e446cf
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115912"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275828"
 ---
 # <a name="css-web-resources"></a>Recursos web de CSS
 
@@ -51,7 +51,7 @@ Use los recursos web de las hojas de estilo en cascada (CSS) para crear hojas de
  [Uso de recursos web de página web (HTML)](webpage-html-web-resources.md)   
  [Usar recursos web de script (JScript)](script-jscript-web-resources.md)   
  [Usar recursos web de datos (XML)](data-xml-web-resources.md)   
- [Usar recursos web de imagen (JPG, PNG, GIF)](image-web-resources.md)   
+ [Uso de recursos web de imagen (JPG, PNG, GIF)](image-web-resources.md)   
  [Usar recursos web Silverlight (XAP)](/dynamics365/customer-engagement/developer/silverlight-xap-web-resources)  
  [Usar recursos web de hoja de estilo (XSL)](stylesheet-xsl-web-resources.md)   
  [Entidad WebResource](../common-data-service/reference/entities/webresource.md)

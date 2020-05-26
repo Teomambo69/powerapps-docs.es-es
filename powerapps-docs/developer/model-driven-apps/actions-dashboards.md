@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6176e627bde57c71424cf657e698ed8aef66de20
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: fdb1fc5ceb8ec5ead1b5e43bc79e500de0f6a39a
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115972"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276136"
 ---
 # <a name="actions-on-dashboards"></a>Acciones en los paneles
 
@@ -56,6 +56,7 @@ Puede realizar acciones, como crear, recuperar, actualizar o eliminar paneles qu
   Para obtener una lista de mensajes admitidos en la entidad de paneles que pertenecen al usuario, vea [Entidad UserForm](../common-data-service/reference/entities/userform.md).  
   
 ### <a name="see-also"></a>Vea también  
+
  [Paneles para Microsoft Dynamics 365](analyze-data-with-dashboards.md)   
  [Uso de FormXML para paneles](understand-dashboards-dashboard-components-formxml.md)   
  [Crear un panel](create-dashboard.md)   

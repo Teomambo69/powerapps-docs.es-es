@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 34ca8223ecf08bda2ed38353684a0971ab289b19
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 759c43e922d6d0d17f7efbf84ae8f442ee19850a
+ms.sourcegitcommit: 6c73e316f866af6a34619f95a5ac64ad1664b48a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749598"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3326374"
 ---
 # <a name="sample-charts"></a>Gráficos de muestra
 
@@ -92,7 +92,7 @@ Este tema contiene gráficos de ejemplo junto con las respectivas cadenas XML de
   
 <a name="BarChart"></a>   
 ## <a name="bar-chart"></a>Gráfico de barras  
- A continuación se muestra un gráfico de barras que muestra los 10 clientes principales. Este es uno de los gráficos predeterminados disponibles en MDA para la entidad `Opportunity`.  
+ A continuación se muestra un gráfico de barras que muestra los 10 clientes principales. Este es uno de los gráficos predeterminados disponibles en las aplicaciones basadas en modelo para la entidad `Opportunity`.  
   
  ![Gráfico de barras de muestra: 10 clientes principales](media/charts-top-10-customers.gif "Gráfico de barras de muestra: 10 clientes principales")  
   
@@ -212,7 +212,7 @@ Este tema contiene gráficos de ejemplo junto con las respectivas cadenas XML de
   
 <a name="LineChart"></a>   
 ## <a name="line-chart"></a>Gráfico de líneas  
- A continuación se muestra un gráfico de líneas que muestra el número de clientes potenciales generados en los cinco últimos meses. Este es uno de los gráficos predeterminados disponibles en MDA para la entidad `Lead`. 
+ A continuación se muestra un gráfico de líneas que muestra el número de clientes potenciales generados en los cinco últimos meses. Este es uno de los gráficos predeterminados disponibles en las aplicaciones basadas en modelo para la entidad `Lead`. 
   
 ![Gráfico de líneas de muestra: tasa de generación de clientes potenciales](media/lead-generation-rate-chart.png "Gráfico de líneas de muestra: tasa de generación de clientes potenciales") --> 
   
@@ -269,7 +269,7 @@ Este tema contiene gráficos de ejemplo junto con las respectivas cadenas XML de
   
 <a name="PieChart"></a>   
 ## <a name="pie-chart"></a>Gráfico circular  
- A continuación se muestra un gráfico circular que muestra la cantidad total de clientes potenciales y su importancia. Este es uno de los gráficos predeterminados disponibles en MDA para la entidad `Lead`.  
+ A continuación se muestra un gráfico circular que muestra la cantidad total de clientes potenciales y su importancia. Este es uno de los gráficos predeterminados disponibles en las aplicaciones basadas en modelo para la entidad `Lead`.  
   
  ![Gráfico circular de muestra: clientes potenciales por nivel de interés](media/leads-by-source-chart.png "Gráfico circular de muestra: clientes potenciales por nivel de interés")  
   
@@ -323,7 +323,7 @@ Este tema contiene gráficos de ejemplo junto con las respectivas cadenas XML de
   
 <a name="FunnelChart"></a>   
 ## <a name="funnel-chart"></a>Gráfico de embudo  
- A continuación se muestra un gráfico de embudo que muestra la suma de los ingresos estimados en cada etapa de la canalización de ventas. Este es uno de los gráficos predeterminados disponibles en MDA para la entidad `Opportunity`.  
+ A continuación se muestra un gráfico de embudo que muestra la suma de los ingresos estimados en cada etapa de la canalización de ventas. Este es uno de los gráficos predeterminados disponibles en las aplicaciones basadas en modelo para la entidad `Opportunity`.  
   
  ![Gráfico de embudo de muestra: canalización de ventas](media/charts-sales-pipeline-chart.png "Gráfico de embudo de muestra: canalización de ventas")  
   
@@ -379,7 +379,7 @@ Este tema contiene gráficos de ejemplo junto con las respectivas cadenas XML de
   
 ## <a name="multi-series-chart"></a>Gráfico de varias series  
 
- A continuación se muestra un gráfico de varias series que muestra los ingresos estimados frente a los ingresos reales cerrados por mes. Puede usar el diseñador de gráficos en MDA o los métodos descritos en la documentación para desarrolladores para crear estos tipos de gráficos.  
+ A continuación se muestra un gráfico de varias series que muestra los ingresos estimados frente a los ingresos reales cerrados por mes. Puede usar el diseñador de gráficos en aplicaciones basadas en modelo o los métodos descritos en la documentación para desarrolladores para crear estos tipos de gráficos.  
   
  Un gráfico de varias series tiene varios elementos `<measurecollection>` en la descripción de los datos, cada uno asignado al elemento `<Series>` correspondiente en la cadena XML de descripción de presentación  
   
@@ -458,7 +458,7 @@ Este tema contiene gráficos de ejemplo junto con las respectivas cadenas XML de
   
 <a name="ComparisonChart"></a>   
 ## <a name="comparison-chart-stacked-chart"></a>Gráfico de comparación (gráfico apilado)  
- A continuación se muestra un gráfico de comparación que muestra el número de actividades por tipo y prioridad. Puede usar el diseñador de gráficos en MDA o los métodos descritos en la documentación para desarrolladores para crear estos tipos de gráficos.  
+ A continuación se muestra un gráfico de comparación que muestra el número de actividades por tipo y prioridad. Puede usar el diseñador de gráficos en aplicaciones basadas en modelo o los métodos descritos en la documentación para desarrolladores para crear estos tipos de gráficos.  
   
  Un gráfico de comparación tiene dos cláusulas `groupby` en la cadena XML de descripción de los datos.  
   
@@ -525,7 +525,7 @@ Este tema contiene gráficos de ejemplo junto con las respectivas cadenas XML de
 
 ## <a name="comparison-chart-100-stacked-chart"></a>Gráfico de comparación (gráfico 100% apilado)  
 
- A continuación se muestra un gráfico de comparación que muestra el número de casos abierto en cualquier fecha, agrupados por prioridad. Puede usar el diseñador de gráficos en MDA o los métodos disponibles en servicios web para crear estos tipos de gráficos.  
+ A continuación se muestra un gráfico de comparación que muestra el número de casos abierto en cualquier fecha, agrupados por prioridad. Puede usar el diseñador de gráficos en aplicaciones basadas en modelo o los métodos disponibles en los servicios web para crear estos tipos de gráficos.  
   
  Un gráfico de comparación tiene dos cláusulas `groupby` en la cadena XML de descripción de los datos.  
   
@@ -588,6 +588,7 @@ Este tema contiene gráficos de ejemplo junto con las respectivas cadenas XML de
 ```  
   
 ### <a name="see-also"></a>Vea también  
+
  [Análisis y la visualización de datos](customize-visualizations-dashboards.md)   
  [Esquema de descripción de los datos de visualización](visualization-data-description-schema.md)   
  [Crear un gráfico](create-visualization-chart.md)   

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e99433c2fce04ec5b72579645ccfda838892dbea
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: c2176e4915970f214a8c74fa8c4f1ac61fd81f53
+ms.sourcegitcommit: 6c73e316f866af6a34619f95a5ac64ad1664b48a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091303"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3326446"
 ---
 # <a name="open-forms-views-dialogs-and-reports-with-a-url"></a>Abrir formularios, vistas, diálogos e informes con una dirección URL
 
@@ -90,6 +90,7 @@ https://myorg.crm.dynamics.com/main.aspx?etn=contact&pagetype=entitylist&viewid=
 |   `cmdbar`   |                                                                                                                Controla si se muestra la barra de comandos. **Nota**: esta función admite los requisitos de la aplicación de Unified Service Desk. No se admite su uso para mostrar un formulario de entidad en un IFrame incrustado en otro formulario de entidad. <br /><br /> -   `true`<br />     Se muestra la barra de comandos. Esta es la configuración predeterminada.<br />-   `false`<br />     Se oculta la barra de comandos.                                                                                                                |
 
 <a name="BKMK_CopyViewURL"></a>   
+
 ### <a name="copy-the-url-for-a-view"></a>Copia de la dirección URL para una vista  
  Muchas vistas de aplicaciones basadas en modelos permiten a un usuario copiar la dirección URL de una vista determinada o enviar un correo electrónico con la dirección URL de una vista determinada incrustada en el mensaje. Esta característica facilita la comunicación entre usuarios, y expone una forma de obtener acceso a una dirección URL para una vista que los usuarios pueden incluir en otra aplicación, como un sitio de SharePoint.  
 
@@ -102,7 +103,7 @@ https://myorg.crm.dynamics.com/main.aspx?etn=contact&pagetype=entitylist&viewid=
 
 1. Abra la vista que desea usar.  
 
-2. En la barra de comandos, haga clic en **Enviar un vínculo** y, a continuación, en **De la vista actual**.  
+2. En la barra de comandos, haga clic en **Acciones** y, a continuación, haga clic en **Envío de un vínculo por correo electrónico**.  
 
 3. Péguelo en el Bloc de notas y edítelo para extraer solo la parte de la dirección URL del texto que desee.  
 
@@ -110,13 +111,16 @@ https://myorg.crm.dynamics.com/main.aspx?etn=contact&pagetype=entitylist&viewid=
 > - Las vistas que usan el contexto del usuario como un parámetro, como **Mis cuentas**, no se pueden copiar.  
 >   - El GUID que representa vistas del sistema para las entidades del sistema será igual para todas las instalaciones. El GUID para las entidades y vistas personalizadas será único para cada instalación de .  
 
-<a name="BKMK_DisplayViewInApplicationUsingSiteMap"></a>   
+<a name="BKMK_DisplayViewInApplicationUsingSiteMap"></a>  
+
 ### <a name="display-a-view-in-the-application-navigation-using-the-site-map"></a>Visualización de una vista en la navegación de la aplicación mediante el mapa del sitio  
- Al personalizar la navegación por la aplicación mediante el mapa del sitio, no use la dirección URL de la vista que copió de la aplicación con los pasos descritos en [Copiar la dirección URL de una vista](open-forms-views-dialogs-reports-url.md#BKMK_CopyViewURL) para establecerla como dirección URL. Esta dirección URL muestra una página que incluye la cinta de opciones y genera resultados indeseables si se usa en un atributo de URL `<SubArea>`.  
 
- Para mostrar una lista de registros de entidades dentro de la aplicación para una subárea, establezca el valor del atributo Entity. Esto muestra la vista predeterminada para esa entidad y proporciona el título y el icono correctos.  
+Al personalizar la navegación por la aplicación mediante el mapa del sitio, no use la dirección URL de la vista que copió de la aplicación con los pasos descritos en [Copiar la dirección URL de una vista](open-forms-views-dialogs-reports-url.md#BKMK_CopyViewURL) para establecerla como dirección URL.
+Esta dirección URL muestra una página que incluye la cinta de opciones y genera resultados indeseables si se usa en un atributo de URL `<SubArea>`.  
 
- Sin embargo, si desea tener un elemento SubArea que use una vista determinada predeterminada inicial específica, use el patrón de URL siguiente.  
+Para mostrar una lista de registros de entidades dentro de la aplicación para una subárea, establezca el valor del atributo Entity. Esto muestra la vista predeterminada para esa entidad y proporciona el título y el icono correctos.  
+
+Sin embargo, si desea tener un elemento SubArea que use una vista determinada predeterminada inicial específica, use el patrón de URL siguiente.  
 
 ```xml  
 Url=“/_root/homepage.aspx?etn=<entity logical name >&amp;viewid=%7b<GUID value of view id>%7d”  
@@ -125,13 +129,15 @@ Url=“/_root/homepage.aspx?etn=<entity logical name >&amp;viewid=%7b<GUID value
  Al usar esta dirección a URL, también debe especificar los valores adecuados para `<Titles>` y `<Descriptions>`, y especificar un icono para la entidad.  
 
 > [!NOTE]
->  Si especifica la vista mediante la página `/_root/homepage.aspx`, el selector de vista seguirá mostrándose. Si el usuario cambia la vista, la aplicación basada en modelos recuerda la selección más reciente y muestra la vista predeterminada inicial una vez que cierre y reinicie de nuevo el explorador.  
+> Si especifica la vista mediante la página `/_root/homepage.aspx`, el selector de vista seguirá mostrándose. Si el usuario cambia la vista, la aplicación basada en modelos recuerda la selección más reciente y muestra la vista predeterminada inicial una vez que cierre y reinicie de nuevo el explorador.  
 
 <a name="BKMK_OpenADialogProcess"></a>   
-## <a name="opening-a-dialog-process-by-using-a-url"></a>Apertura de un proceso de diálogo mediante una dirección URL  
- Una personalización común es permitir que un usuario abra un determinado proceso de diálogo en el contexto de un registro específico. Por ejemplo, es posible que desee agregar un botón personalizado a la cinta de opciones para una entidad específica usando el valor del identificador del registro actual como un parámetro de entrada del proceso de diálogo.  
 
- Para abrir un diálogo necesita lo siguiente:  
+## <a name="opening-a-dialog-process-by-using-a-url"></a>Apertura de un proceso de diálogo mediante una dirección URL
+
+Una personalización común es permitir que un usuario abra un determinado proceso de diálogo en el contexto de un registro específico. Por ejemplo, es posible que desee agregar un botón personalizado a la cinta de opciones para una entidad específica usando el valor del identificador del registro actual como un parámetro de entrada del proceso de diálogo.  
+
+Para abrir un diálogo necesita lo siguiente:  
 
 -   El identificador único del diálogo.  
 
@@ -186,7 +192,7 @@ function openDialogProcess(dialogId, entityName, objectId)
  **id**  
  Este parámetro es el valor del atributo `ReportId` del informe.  
 
- Los siguientes ejemplos muestran las direcciones URL que se pueden usar para abrir informes en MDA.  
+ Los siguientes ejemplos muestran las direcciones URL que se pueden usar para abrir informes en aplicaciones basadas en modelos.  
 
  Abra el informe **Casos sin atender** mediante el filtro predeterminado:  
  ```  

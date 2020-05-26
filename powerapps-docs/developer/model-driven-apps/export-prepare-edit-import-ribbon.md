@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6494c278f147be996beb10d0e295666ae39a564b
-ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
+ms.openlocfilehash: 624b158e50807396ccc3e349b1afc2c158bbc82c
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172583"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275916"
 ---
 # <a name="export-prepare-to-edit-and-import-the-ribbon"></a>Exportar, preparar para modificar e importar la cinta de opciones
 
@@ -27,24 +27,26 @@ ms.locfileid: "3172583"
 
 Para editar la cinta de opciones, debe realizar los siguientes pasos:  
   
-1.  [Exporte la cinta de opciones](export-prepare-edit-import-ribbon.md#BKMK_ExportTheRibbon)  
+1. [Exporte la cinta de opciones](export-prepare-edit-import-ribbon.md#BKMK_ExportTheRibbon)  
   
-2.  [Prepararse para editar el archivo XML](export-prepare-edit-import-ribbon.md#BKMK_PrepareToEditTheXML)  
+2. [Prepararse para editar el archivo XML](export-prepare-edit-import-ribbon.md#BKMK_PrepareToEditTheXML)  
   
-3.  Edite la `<RibbonDiffXml>`  
+3. Edite la `<RibbonDiffXml>`  
   
-4.  [Importar la cinta de opciones](export-prepare-edit-import-ribbon.md#BKMK_ImportTheRibbon)  
+4. [Importar la cinta de opciones](export-prepare-edit-import-ribbon.md#BKMK_ImportTheRibbon)  
   
-<a name="BKMK_ExportTheRibbon"></a>   
+<a name="BKMK_ExportTheRibbon"></a>
+
 ## <a name="export-the-ribbon"></a>Exporte la cinta de opciones  
- La cinta de opciones se exporta al incluirla en una solución y luego se exporta la solución. Puede exportar todas las personalizaciones, pero esto puede representar una gran cantidad de datos. Se recomienda usar una solución no administrada existente o crear una solución nueva.  
+
+La cinta de opciones se exporta al incluirla en una solución y luego se exporta la solución. Puede exportar todas las personalizaciones, pero esto puede representar una gran cantidad de datos. Se recomienda usar una solución no administrada existente o crear una solución nueva.  
   
 #### <a name="create-a-new-solution"></a>Crear una solución nueva  
   
 1. Vaya a **Configuración > Personalizaciones**.
 1. Vaya a **Configuración > Soluciones**.
 1. Haga clic o pulse en **Nuevo**.  
-1. Escriba un **Nombre** significativo, **Nombre único** e ingrese un **Editor** y escriba un número **Versión**.  
+1. Escriba un **Nombre para mostrar** significativo, **Nombre** e introduzca un **Editor** y escriba un número de **Versión**.  
   
    > [!NOTE]
    >  Puede usar normalmente el editor predeterminado para la organización.  
@@ -106,7 +108,8 @@ Para editar la cinta de opciones, debe realizar los siguientes pasos:
 ## <a name="prepare-to-edit-the-xml"></a>Prepararse para editar el archivo XML  
  Para una mejor experiencia, edite el archivo customizations.xml con una aplicación que pueda usar la validación de esquema para proporcionar soporte de IntelliSense. Para obtener más información, consulte [Editar el archivo de personalizaciones con la validación de esquema](edit-customizations-xml-file-schema-validation.md).  
   
-<a name="BKMK_ImportTheRibbon"></a>   
+<a name="BKMK_ImportTheRibbon"></a>
+
 ## <a name="import-the-ribbon"></a>Importar la cinta de opciones  
   
 1. Después de modificar el archivo customization.xml, en Visual Studio o Visual Web Developer 2010 Express, haga clic con el botón secundario en la pestaña customization.xml y seleccione **Abrir carpeta contenedora**.  
@@ -130,6 +133,7 @@ Para editar la cinta de opciones, debe realizar los siguientes pasos:
 10. Una vez que haya importado correctamente la solución, debe publicar las personalizaciones para poder ver los cambios. En la lista Soluciones, haga clic en **Publicar todas las personalizaciones**.  
   
 <a name="BKMK_DealWithErrorsOnImport"></a>   
+
 ### <a name="dealing-with-errors-on-import"></a>Cómo gestionar los errores en la importación  
   
 1.  Si recibe una notificación que se produjeron errores que causaron un problema en la importación, haga clic en **Exportar registro**.  
@@ -145,7 +149,7 @@ Para editar la cinta de opciones, debe realizar los siguientes pasos:
 
 ## <a name="troubleshoot-ribbon-issues"></a>Solución de problemas de cinta
 
-Si tiene un problema con un botón de la barra de comandos de la cinta, use esta guía de solución de problemas para encontrar y resolver el problema: <https://support.microsoft.com/help/4552163>
+Si tiene un problema con un botón de la barra de comandos de la cinta, use esta [guía de solución de problemas](https://support.microsoft.com/help/4552163) para encontrar y resolver el problema.
 
 ### <a name="see-also"></a>Vea también  
  [Personalizar la cinta de opciones](customize-commands-ribbon.md)   

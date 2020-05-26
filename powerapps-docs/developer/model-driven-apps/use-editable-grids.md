@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8ded46aa0fcae233370fc514e3268314639b4225
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 6d4818eead8924ea16f4deb8f08dfa112e005b85
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115632"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275920"
 ---
 # <a name="use-editable-grids"></a>Usar cuadrículas editables
 
@@ -29,26 +29,45 @@ La cuadrícula editable es un control personalizado que proporciona funciones de
 > Si usa formularios antiguos (versiones anteriores a Dynamics CRM 2016) y habilita una cuadrícula editable en una subcuadrícula, la subcuadrícula editable no se representará. Los administradores del sistema pueden desactivar los formularios antiguos en la configuración del sistema, si es necesario. 
 
 <a name="Enable"></a>   
+
 ## <a name="enable-editable-grids"></a>Habilitar cuadrículas editables  
- Puede habilitar cuadrículas editables en el nivel de entidad para usar en la cuadrícula principal, o en el nivel de formulario para reemplazar subcuadrículas de solo lectura (cuadrículas asociadas) con una cuadrícula editable.  
+
+Puede habilitar cuadrículas editables en el nivel de entidad para usar en la cuadrícula principal, o en el nivel de formulario para reemplazar subcuadrículas de solo lectura (cuadrículas asociadas) con una cuadrícula editable.  
   
- Puede habilitar el control de cuadrícula editable para una entidad mediante la herramienta de personalización en aplicaciones basadas en modelos (pestaña **Configuración** > **Personalizaciones**  > **Personalización del sistema** > **Entidades** > *[Entity_Name]* > **Controles**.  
+1. Abra el [explorador de soluciones](../../maker/model-driven-apps/advanced-navigation.md#solution-explorer).  
   
- Para habilitar la cuadrícula editable para una cuadrícula en un formulario, abra el editor de formularios, haga doble clic en la cuadrícula de sólo lectura que desea sustituir con la cuadrícula editables, y luego agregue/habilite la cuadrícula editable en la pestaña **Controles**.  
+2. En la lista **Entidades**, abra la entidad adecuada, seleccione la pestaña **Controles**, y después seleccione **Agregar control**.  
   
- Puede para revertir a la cuadrícula no editable en cualquier momento para la cuadrícula principal y cuadrículas asociadas, si es necesario. Además, en tiempo de ejecución, los usuarios cambiar entre cuadrículas editables y cuadrículas de solo lectura.  
+     ![Agregar control personalizado Cuadrículas editables](../../maker/model-driven-apps/media/add-editable-grids-custom-control.png "Agregar control personalizado Cuadrículas editables")  
   
- Más información: [Crear cuadrículas (listas) editables de aplicaciones basadas en modelos mediante el control personalizado Cuadrículas editables](../../maker/model-driven-apps/make-grids-lists-editable-custom-control.md)  
+3. En el cuadro de diálogo **Agregar control**, seleccione **Cuadrícula editable**, y después seleccione **Agregar**.  
+  
+4. En la fila **Cuadrícula editable** que se agrega, seleccione los factores de forma que desea aplicar a la cuadrícula. Esto convierte al control de cuadrícula editable en el control predeterminado para el factor de forma seleccionado.  
+  
+     ![Fila de cuadrícula editable con selección de factor de forma](../../maker/model-driven-apps/media/editable-grid-row-wit-factor-selection.png "Fila de cuadrícula editable con selección de factor de forma")    
+
+   > [!NOTE]
+   >  En tiempo de ejecución, los usuarios cambiar entre cuadrículas editables y cuadrículas de solo lectura. 
+  
+Para habilitar la cuadrícula editable para una cuadrícula en un formulario, abra el editor de formularios, haga doble clic en la cuadrícula de solo lectura que desea reemplazar por la cuadrícula editable y, a continuación, haga clic en la pestaña **Controles** y seleccione la cuadrícula editable de la lista de controles.  
+  
+Puede para revertir a la cuadrícula no editable en cualquier momento para la cuadrícula principal y cuadrículas asociadas, si es necesario. Además, en tiempo de ejecución, los usuarios cambiar entre cuadrículas editables y cuadrículas de solo lectura.  
+  
+Más información: [Crear cuadrículas (listas) editables de aplicaciones basadas en modelos mediante el control personalizado Cuadrículas editables](../../maker/model-driven-apps/make-grids-lists-editable-custom-control.md)  
   
 <a name="FormScripting"></a>   
-## <a name="form-scripting-support"></a>Soporte de scripts de formularios  
- Las cuadrículas editables admiten eventos y métodos del lado del cliente que se pueden usar para escribir extensiones de cliente personalizadas de acuerdo con su necesidad de negocio. Más informacikón: [Cuadrículas y subcuadrículas en aplicaciones basadas en modelos (referencia de API de cliente)](clientapi/reference/grids.md)
+
+## <a name="form-scripting-support"></a>Soporte de scripts de formularios 
+
+Las cuadrículas editables admiten eventos y métodos del lado del cliente que se pueden usar para escribir extensiones de cliente personalizadas de acuerdo con su necesidad de negocio. Más información: [Cuadrículas y subcuadrículas en aplicaciones basadas en modelos (referencia de API de cliente)](clientapi/reference/grids.md)
   
-<a name="EntitiesSupported"></a>   
-## <a name="entities-and-views-supported-by-editable-grid"></a>Entidades y vistas admitidas por la cuadrícula editable  
- No todas las entidades y vistas admiten el uso de cuadrícula editable.  
+<a name="EntitiesSupported"></a>  
+
+## <a name="entities-and-views-supported-by-editable-grid"></a>Entidades y vistas admitidas por la cuadrícula editable 
+
+No todas las entidades y vistas admiten el uso de cuadrícula editable.  
   
- En el cliente web, una entidad admitirá la cuadrícula editable si se cumplen las siguientes condiciones:  
+En el cliente web, una entidad admitirá la cuadrícula editable si se cumplen las siguientes condiciones:  
   
 - La entidad es personalizable (IsCustomizable = true)  
   
@@ -56,13 +75,13 @@ La cuadrícula editable es un control personalizado que proporciona funciones de
   
 - La entidad no es una entidad secundaria (IsChildEntity = false)  
   
-  En el cliente móvil, una entidad admitirá la cuadrícula editable si la entidad puede mostrarse en el mapa del sitio del cliente móvil.  
+ En el cliente móvil, una entidad admitirá la cuadrícula editable si la entidad puede mostrarse en el mapa del sitio del cliente móvil.  
   
-  Para obtener información acerca de las entidades que admiten cuadrículas editables, consulte la sección **Entidades predefinidas admitidas** en TechNet: [Crear cuadrículas (listas) editables de aplicaciones basadas en modelos mediante el control personalizado Cuadrícula editable](../../maker/model-driven-apps/make-grids-lists-editable-custom-control.md) 
+Para obtener información acerca de las entidades que admiten cuadrículas editables, consulte la sección **Entidades predefinidas compatibles** en TechNet: [Crear cuadrículas (listas) editables de aplicaciones controladas por modelos mediante el control personalizado Cuadrícula editable con PowerApps](../../maker/model-driven-apps/make-grids-lists-editable-custom-control.md). 
    
-  Las cuadrículas editables no admiten vistas asociadas de informe asociadas (**Tipo de informe** = `Related`).  
+Las cuadrículas editables no admiten vistas asociadas de informe asociadas (**Tipo de informe** = `Related`).  
   
-  Use el código de ejemplo siguiente para generar un archivo XML que pueda abrir en Excel como tabla XML para ver información de compatibilidad de entidades para controles editables. Excel determinará el esquema automáticamente, y mostrará la información en las siguientes columnas:  
+Use el código de ejemplo siguiente para generar un archivo XML que pueda abrir en Excel como tabla XML para ver información de compatibilidad de entidades para controles editables. Excel determinará el esquema automáticamente, y mostrará la información en las siguientes columnas:  
   
 - `LogicalName`: Nombre lógico de la entidad.  
   

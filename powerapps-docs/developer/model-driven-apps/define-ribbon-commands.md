@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3ea2f5cfdffb19589719780e7da1afaf3c510243
-ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
+ms.openlocfilehash: 0578be828ec9d061df54df173320e8719137bf9c
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3218557"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275976"
 ---
 # <a name="define-ribbon-commands"></a>Definir comandos de la cinta de opciones
 
@@ -43,6 +43,6 @@ Un comando *de la cinta de opciones* crea una definición reutilizable a la que 
 >  Todas las definiciones del comando se descargan en el equipo de un usuario para poder evaluarlas en tiempo de ejecución. Esto significa que un usuario sin los privilegios para ver un determinado control en la cinta de opciones puede usar el comando del explorador **Ver código fuente**, revisar el código y determinar que existe un control que no puede ver.  
   
 ### <a name="see-also"></a>Vea también  
- [Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)   
+ [Personalizar comandos y la cinta de opciones](customize-commands-ribbon.md)   
  [Usar etiquetas localizadas con cintas de opciones](use-localized-labels-ribbons.md)   
  [Definir reglas de habilitación de la cinta de opciones](define-ribbon-enable-rules.md) [Solucionar problemas de cinta](https://support.microsoft.com/help/4552163)

@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 97c11000f1f36a9356520913270b75e24a35b751
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: bac673e3312cdcf03830341abea44020297cca05
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115904"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276140"
 ---
 # <a name="actions-on-visualizations-charts"></a>Acciones en visualizaciones (gráficos)
 
@@ -28,8 +28,9 @@ ms.locfileid: "3115904"
 
 Mediante los servicios web de Common Data Service, puede realizar las siguientes acciones en las entidades de visualización.  
   
-## <a name="actions-on-organization-owned-visualizations"></a>Acciones en visualizaciones que pertenecen a una organización  
- Para realizar acciones sobre una visualización que pertenece a una organización (`SavedQueryVisualization`), debe tener el rol de administrador del sistema o personalizador del sistema. Puede realizar las siguientes acciones sobre una visualización que pertenece a una organización:  
+## <a name="actions-on-organization-owned-visualizations"></a>Acciones en visualizaciones que pertenecen a una organización 
+
+Para realizar acciones sobre una visualización que pertenece a una organización (`SavedQueryVisualization`), debe tener el rol de administrador del sistema o personalizador del sistema. Puede realizar las siguientes acciones sobre una visualización que pertenece a una organización:  
   
 - Crear, recuperar, actualizar y eliminar una visualización que pertenece a una organización. Más información: [Crear una visualización](create-visualization-chart.md)  
   

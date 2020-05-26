@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2634fe9dcc9d0a68f200c2af0fcb47169fdbdb0c
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 39948d6193a156fe67ec282bbdea4310105f016b
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115844"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276152"
 ---
 # <a name="edit-the-customizations-xml-file-with-schema-validation"></a>Editar el archivo XML de personalizaciones con la validación de esquema
 
@@ -54,7 +54,8 @@ El archivo customizations.xml se incluye en el archivo .zip comprimido exportado
 - VisualizationDataDescription.xsd  
   
   
-<a name="BKMK_UseSchemaValidation"></a>   
+<a name="BKMK_UseSchemaValidation"></a>
+
 ## <a name="using-schema-validation"></a>Usar la validación de esquema  
  Como el archivo XML exportado es un archivo de texto, puede modificarlo con un editor de texto como [!INCLUDE[pn_Notepad](../../includes/pn-notepad.md)]. Sin embargo, se recomienda usar una aplicación que admita validación de esquema XSD como [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)]. Validación de XSD en [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)] <!-- TODO - need to fix this link. The page is not available (or [Visual Studio Express 2012 for Web](https://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-web))--> proporciona información de [!INCLUDE[pn_IntelliSense](../../includes/pn-intellisense.md)] y comprobación de esquemas para evitar errores.  
   
@@ -82,7 +83,7 @@ El archivo customizations.xml se incluye en el archivo .zip comprimido exportado
 [Cuándo modificar el archivo de personalizaciones para Common Data Service](when-edit-customization-file.md)<br/> 
 [Esquema central de cinta de opciones](ribbon-core-schema.md)<br/>
 [Esquema de tipos de cinta](ribbon-types-schema.md)<br/>
-[Esquema WSS de cinta de opciones](ribbon-wss-schema.md)<br/>
+[Esquema WSS de cinta](ribbon-wss-schema.md)<br/>
 [Esquema de mapa del sitio](/dynamics365/customer-engagement/developer/customize-dev/sitemap-schema)<br/>   <!-- TODO need to fix link relevant to the topic in powerapps repo-->
 [Esquema XML de formulario](form-xml-schema.md)     
 [Esquema de archivo de configuración ISV](/dynamics365/customer-engagement/developer/customize-dev/isv-configuration-file-schema)<br/>   <!-- TODO need to fix link relevant to the topic in powerapps repo-->

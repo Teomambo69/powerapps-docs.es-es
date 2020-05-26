@@ -2,7 +2,7 @@
 title: Extender Dynamics 365 for Outlook (Common Data Service) | Microsoft Docs
 description: Dynamics 365 for Outlook permite a los usuarios interactuar con datos sin conexión y sin estar conectados a un servidor. Common Data Service incluye características que permiten extender las soluciones a escenarios sin conexión llamando a los servicios web sin conexión desde su código personalizado. Además, el ensamblado Sdk ofrece compatibilidad mediante programación para acciones básicas de Outlook, como sincronización, conexión y desconexión, y comprobación de estado de Dynamics 365 for Outlook. La programación sin conexión utiliza el servidor de desarrollo de ASP.NET.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 04/07/2020
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
@@ -14,24 +14,21 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b73543ce9220db75269e9452b4e839fcd6d2cb1c
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 8c8fc40f7a02d6b636b29758cd0964084b8e9333
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155404"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3238264"
 ---
-<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/extend-customer-engagement-outlook 
-
-This topic should be in powerapps-docs/developer/common-data-service/outlook-client/
--->
-
 # <a name="extend-dynamics-365-for-outlook"></a>Extender Dynamics 365 for Outlook
 
 > [!IMPORTANT]
-> El 29/1/2018, de acuerdo con los innumerables comentarios recibidos y de nuestro deseo de seguir ayudando a nuestros clientes, hemos **decidido no dejar de usar Dynamics 365 for Outlook** (complemento de Outlook). Lea [esta entrada de blog](https://blogs.msdn.microsoft.com/crm/2018/01/29/continued-support-for-outlook-add-in-dynamics-365-for-outlook/) para obtener más detalles.
+> A partir de marzo de 2020, la versión heredada de Dynamics 365 for Outlook (también denominada complemento COM de Outlook) está en desuso. Los clientes deben realizar la transición a la versión moderna de [Dynamics 365 App for Outlook](https://docs.microsoft.com/dynamics365/outlook-app/overview) antes del 1 de octubre de 2020. Microsoft seguirá proporcionando soporte, seguridad y otras actualizaciones esenciales al complemento COM de Outlook hasta el 1 de octubre de 2020.
+> 
+> Para obtener más información y ver los pasos necesarios para realizar una transición sin problemas, descargue [Cuaderno de estrategias de Dynamics 365 for Outlook (complemento COM)](https://aka.ms/OutlookCOMPlaybook).
 
-Microsoft Dynamics 365 for Outlook permite a los usuarios interactuar con datos sin conexión y sin estar conectados a un servidor. Common Data Service incluye características que permiten extender las soluciones a escenarios sin conexión llamando a los servicios web sin conexión desde su código personalizado. Además, el ensamblado <xref:Microsoft.Crm.Outlook.Sdk> ofrece compatibilidad mediante programación para acciones básicas de Outlook, como sincronización, conexión y desconexión, y comprobación de estado de Dynamics 365 for Outlook. La programación sin conexión utiliza el servidor de desarrollo de ASP.NET.  
+Dynamics 365 for Outlook permite a los usuarios interactuar con datos sin conexión y sin estar conectados a un servidor. Common Data Service incluye características que permiten extender las soluciones a escenarios sin conexión llamando a los servicios web sin conexión desde su código personalizado. Además, el ensamblado <xref:Microsoft.Crm.Outlook.Sdk> ofrece compatibilidad mediante programación para acciones básicas de Outlook, como sincronización, conexión y desconexión, y comprobación de estado de Dynamics 365 for Outlook. La programación sin conexión utiliza el servidor de desarrollo de ASP.NET.  
   
  Dynamics 365 incluye características que permiten a los administradores personalizar y administrar filtros para los usuarios. Las plantillas de filtro proporcionan el punto de partida para la sincronización de entidades en Dynamics 365 for Outlook. Los filtros que determinan qué colecciones de la entidad se sincronizan con Outlook y SQL Server 2008 Express Edition para soluciones de Dynamics 365 Server habilitadas para su uso sin conexión.  
   

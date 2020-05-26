@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 775ad0f50f65845f6e7fa437348b69c6730008a5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f8662e7462ef54fa39084cf311faf756680505e7
+ms.sourcegitcommit: 6c73e316f866af6a34619f95a5ac64ad1664b48a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749596"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3326430"
 ---
 # <a name="sample-import-files-as-web-resources"></a>Ejemplo: importar archivos como recursos web
 
@@ -110,7 +110,7 @@ static public string getEncodedFileContents(String pathToFile)
 ## <a name="example"></a>Ejemplo  
  La siguiente parte del archivo ImportWebResources.cs espera las siguientes variables:  
   
-- `_customizationPrefix`: El prefijo de personalización del editor de **Ejemplos del SDK de MDA**. Si este editor no existe, se creará con el prefijo de personalización "ejemplo".  
+- `_customizationPrefix`: el prefijo de personalización del editor de **Ejemplos del SDK**. Si este editor no existe, se creará con el prefijo de personalización "ejemplo".  
   
 - `_ImportWebResourcesSolutionUniqueName`: El nombre único **Importar solución de muestra de recursos web** creado en este ejemplo. El valor es `ImportWebResourcesSample`.  
   

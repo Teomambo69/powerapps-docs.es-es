@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7ad26853dd63163672cd3a981251a57dd7735857
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5b473b1f9eeec11e25c22202cb56e28b86dbdb55
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749427"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3261795"
 ---
 # <a name="the-home-page"></a>La página principal
 
@@ -76,5 +76,7 @@ Los nombres y los iconos de la aplicación proceden de AppSource.
 ### <a name="see-also"></a>Vea también
 
 [Introducción a ISV Studio para Power Platform](isv-app-management.md)  
-[Página de aplicación](isv-app-management-apppage.md)  
-[Página de inquilino](isv-app-management-tenantpage.md)
+[Página de aplicación](isv-app-management-apppage.md)<br/>  
+[Página de inquilino](isv-app-management-tenantpage.md)<br/> 
+[Comprobador de AppSource](isv-app-management-appsource-checker.md)<br/> 
+[Certificación de conector](isv-app-management-certification.md)

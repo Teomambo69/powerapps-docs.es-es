@@ -27,6 +27,8 @@
           href: use-fetchxml-left-outer-join-query-records-not-in.md
         - name: Páginar grandes conjuntos de resultados con FetchXML
           href: org-service/page-large-result-sets-with-fetchxml.md
+    - name: Usar SQL para consultar datos (Vista previa)
+      href: cds-sql-query.md
     - name: Consultas guardadas
       href: saved-queries.md
     - name: Consultar datos jerárquicos
@@ -135,6 +137,8 @@
           href: data-import-entities.md
     - name: Servicio de exportación de datos
       href: data-export-service.md
+    - name: Migrar datos entre entornos mediante flujos de datos de OData
+      href: cds-odata-dataflows-migration.md
     - name: Sincronizar datos
       href: data-synchronization.md
       items:
@@ -302,6 +306,8 @@
       items:
         - name: Seguimiento de las dependencias de los componentes de la solución
           href: dependency-tracking-solution-components.md
+        - name: Eliminar dependencias
+          href: removing-dependencies.md
         - name: Mantener soluciones administradas
           href: maintain-managed-solutions.md
         - name: Organizar sus soluciones
@@ -374,7 +380,7 @@
           href: appendix-app-design-best-practices-checklist.md
         - name: 'Apéndice: Lista de comprobación de certificación de aplicaciones'
           href: appendix-app-certification-checklist.md
-    - name: Administración y supervisión de aplicaciones de ISV
+    - name: Supervisar su aplicación en ISV Studio
       items:
         - name: Introducción a ISV Studio
           href: isv-app-management.md
@@ -384,6 +390,10 @@
           href: isv-app-management-apppage.md
         - name: Página de inquilino
           href: isv-app-management-tenantpage.md
+        - name: AppSource Checker
+          href: isv-app-management-appsource-checker.md
+        - name: Certificación de conector
+          href: isv-app-management-certification.md
 - name: Crear aplicaciones cliente
   href: connect-cds.md
   items:

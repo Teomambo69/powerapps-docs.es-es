@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dbd648bd96d087ce34d8482d96507fa2391902b6
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 85850ce83fa7431e1f881f18ae95c59b320c9dd1
+ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3125153"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3341199"
 ---
 # <a name="overview-of-the-model-driven-app-form-editor-user-interface"></a>Información general de la interfaz de usuario del editor de formularios de aplicaciones controladas por modelos
 
@@ -116,7 +116,7 @@ Seleccione la pestaña **Archivo** para agregar o ver las siguientes opciones:
 ||**Vista previa**|Utilice esta para ver el aspecto del formulario después de que se ha publicado. También puede obtener una vista previa para probar secuencias asociadas desde eventos.|         
 ||**Habilitar roles de seguridad**|Use esta opción para establecer los roles de seguridad que tendrán acceso a los formularios. Más información: [Controlar el acceso a los formularios](control-access-forms.md) **Importante**: si crea un nuevo formulario, solo los roles de seguridad de administrador del sistema y de personalizador del sistema tendrán acceso al formulario. Debe asignar el acceso a otros roles de seguridad para que los usuarios puedan usarlo.|  
 ||**Mostrar dependencias**|Vea los componentes de la solución que dependen de este formulario y los componentes de la solución necesarios para este formulario. |  
-||**Propiedades administradas**|El comando de propiedades administradas tiene dos propiedades **Personalizable** y **Puede eliminarse**. Si se configuran estas propiedades como falso, el formulario no se podrá personalizar y no se podrá eliminar una vez que se haya incluido en una solución, exportado la solución como una solución administrada e importado la solución administrada en otro entorno. Más información: [Propiedades administradas](../common-data-service/solutions-overview.md#managed-properties)| 
+||**Propiedades administradas**|El comando de propiedades administradas tiene dos propiedades **Personalizable** y **Puede eliminarse**. Si se configuran estas propiedades como falso, el formulario no se podrá personalizar y no se podrá eliminar una vez que se haya incluido en una solución, exportado la solución como una solución administrada e importado la solución administrada en otro entorno. Más información: [Propiedades administradas](/power-platform/alm/managed-properties-alm)| 
 |**Actualizar**|**Combinar formularios**|Si procede, esta opción permite combinar este formulario con un formulario de una versión anterior del formulario de Dynamics 365|
   
 

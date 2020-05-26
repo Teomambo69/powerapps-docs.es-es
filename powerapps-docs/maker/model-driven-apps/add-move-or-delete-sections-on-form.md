@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2731520659633c305e19e02b67670bb12796dc50
-ms.sourcegitcommit: ed583eb94720a9645bfd79776311792a958077b8
+ms.openlocfilehash: bcbb1fba03a60135f192f0760f33b2e7e637123f
+ms.sourcegitcommit: ce291964123737257536378270e6004ecb74b3c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2020
-ms.locfileid: "3094042"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3281424"
 ---
 # <a name="add-configure-move-or-delete-sections-on-a-form"></a>Agregar, configurar, mover o eliminar secciones de un formulario 
 Agregar, configurar, mover o eliminar secciones en un formulario usando el diseñador de formularios. 
@@ -38,7 +38,8 @@ Para agregar secciones a un formulario, use el panel **Componentes**.
 > ![](media/FormDesignerComponentsLayout.png "Layout components")
 
   > [!NOTE]
-  >   Las secciones solo se pueden agregar a formularios principales y formularios de la vista rápida. Más información: [Tipos de formularios](types-forms.md)
+  >   Las secciones solo se pueden agregar a formularios principales y formularios de la vista rápida. Más información: [Tipos de formularios](types-forms.md).
+  En la interfaz unificada, las secciones vacías no se procesarán en tiempo de ejecución y se ocultarán automáticamente.
 
 ### <a name="add-sections-to-a-form-using-drag-and-drop"></a>Agregar secciones a un formulario mediante arrastrar y colocar
 > [!NOTE]

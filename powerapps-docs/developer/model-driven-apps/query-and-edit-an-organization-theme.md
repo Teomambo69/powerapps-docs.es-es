@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8abda26be50d31f734d3143c9cfa79b38fd3f130
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 93f73878e8bc978a01f6100b76829f60365f5967
+ms.sourcegitcommit: 6c73e316f866af6a34619f95a5ac64ad1664b48a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753600"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3326442"
 ---
 # <a name="query-and-edit-an-organization-theme"></a>Consultar y editar un tema de organización
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme -->
 
-Puede definir y aplicar temas visuales a una organización. Esto proporciona una forma compatible de aplicar el logotipo y las opciones de color de una organización a la aplicación. Puede crear un tema personalizado para su aplicación realizando cambios en los colores predeterminados y los elementos visuales proporcionados en el sistema de aplicaciones orientadas a modelos. Por ejemplo, puede crear su marca de producto personal, agregar un logotipo de compañía y proporcionar colores específicos de la entidad. Los colores de tema se aplican globalmente en toda la aplicación, con la excepción de algunas áreas heredadas.  
+Puede definir y aplicar temas visuales a una organización. Esto proporciona una forma compatible de aplicar el logotipo y las opciones de color de una organización a la aplicación. Puede crear un tema personalizado para su aplicación realizando cambios en los colores predeterminados y los elementos visuales proporcionados en el sistema de aplicaciones basadas en modelo. Por ejemplo, puede crear su marca de producto personal, agregar un logotipo de compañía y proporcionar colores específicos de la entidad. Los colores de tema se aplican globalmente en toda la aplicación, con la excepción de algunas áreas heredadas.  
   
 <!-- [!NOTE]
 > [!INCLUDE[cc_feature_included_with_2015_update_1_admins](../../includes/cc-feature-included-with-2015-update-1-admins.md)]  -->
@@ -102,7 +102,7 @@ OData-Version: 4.0
 |LogoId|String|null|El nombre de un recurso web que desea usar como logotipo. Las dimensiones recomendadas son una altura de 50 píxeles y un ancho máximo de 400 píxeles.|  
 |LogoToolTip|String|Aplicaciones basadas en modelos|El texto que se usará como información en pantalla y texto alternativo para el logotipo.| 
 |MainColor|String|#3B79B7|El color del tema principal Interfaz unificada que se utilizará en la barra de comandos, las pestañas y los botones principales.| 
-|Nombre|String|Tema predeterminado de MDA|El nombre de la entidad de tema.|  
+|Nombre|String|Tema predeterminado de aplicaciones basadas en modelo|El nombre de la entidad de tema.|  
 |NavBarBackgroundColor|String|#002050|El color de barra de navegación principal.|  
 |NavBarShelfColor|String|#DFE2E8|El color de barra de navegación secundaria.|  
 |OverriddenCreatedOn|DateTime|null|Fecha y hora de migración del registro.|  

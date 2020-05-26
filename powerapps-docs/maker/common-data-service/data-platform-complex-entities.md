@@ -6,24 +6,27 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: reference
-ms.date: 03/20/2020
+ms.date: 04/15/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e497b7dcf1b815acfaad7df170e3801083b8433e
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 464222180188a4295c8662b70f5b5d7cdef49509
+ms.sourcegitcommit: 371fb08328f88f8bae7335db413d52b5c961c3e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156590"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3266058"
 ---
 # <a name="complex-entities-and-licensing"></a>Entidades y licencias complejas
 
 > [!IMPORTANT]
-> Las entidades complejas solo son aplicables para licencias Power Apps Plan 1 y Plan 2 y no para Power Apps por aplicación y Power Apps por planes de usuario.
+> *Este tema es aplicable solo para licencias antiguas de Power Apps Plan 1 y Plan 2.* 
+>
+> Las entidades complejas son aplicables *solamente* para las licencias antiguas Power Apps Plan 1 y Plan 2, y no para los planes Power Apps por aplicación y Power Apps por usuario.
+> 
 > Para obtener la información más reciente sobre los requisitos de licencia para entidades, consulte [Manual de licencias de Power Apps](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
 Las entidades que incluyen la siguiente lógica compleja de servidor requieren que los usuarios de una aplicación o flujo en el que se usen estas entidades tengan una licencia de Plan 2 de Power Apps o de Plan 2 de Power Automate:
@@ -31,7 +34,7 @@ Las entidades que incluyen la siguiente lógica compleja de servidor requieren q
 * Complementos de código. Más información: [Desarrollo de complementos](/powerapps/developer/common-data-service/plug-ins)
 * Flujos de trabajo en tiempo real. Más información: [Procesos de flujo de trabajo](/flow/workflow-processes)
 
-    > [!IMPORTANT]
+    > [!NOTE]
     >  Solo los flujos de trabajo que se convierten a un flujo de trabajo en tiempo real se consideran en tiempo real y sincrónicos. Los flujos de trabajo que se ejecutan en segundo plano pueden usarse con el plan adecuado de Power Apps y no requieren licencias adicionales.
 
 Para saber si ha agregado lógica de negocios compleja a las entidades, revise la lista de ensamblados de complementos y de flujos de trabajo configurados en el entorno.
@@ -176,8 +179,4 @@ En la tabla siguiente se muestran las entidades que contienen lógica del lado d
 * Tarea de servicio de orden de trabajo
 * Subestado de la orden de trabajo
 * Plantilla de trabajo
-
-
-## <a name="licensing"></a>Licencias
-Para obtener más información acerca de las licencias de Power Apps y Dynamics 365, consulte la página [Información general de las licencias](../../administrator/pricing-billing-skus.md).
 

@@ -2,7 +2,7 @@
 title: Suplantar a otro usuario (Common Data Service) | Microsoft Docs
 description: Use la suplantación para ejecutar la lógica de negocios en nombre de otro usuario de Common Data Service para proporcionar una característica o servicio deseado con el rol que le corresponde y la seguridad basada en objetos de dicho usuario suplantado.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 04/07/2020
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e817468da9cf506acbaedf6b1617ca1a563661e9
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: bc5f6ee0e852985213365ed54f118b0ce72cd1ce
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156160"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275760"
 ---
 # <a name="impersonate-another-user"></a>Suplantar a otro usuario
 
@@ -52,7 +52,7 @@ Más información: [Crear aplicaciones web mediante la autenticación de servido
 
 ## <a name="impersonate-another-user-using-the-web-api"></a>Suplantar a otro usuario utilizando la API web
 
-Para suplantar a un usuario, agregue un encabezado de solicitud llamado `MSCRMCallerID` con un valor GUID igual al `systemuserid` del usuario suplantado antes de enviar la solicitud al servicio web. 
+Para suplantar a un usuario, agregue un encabezado de solicitud llamado `CallerObjectId` con un valor GUID igual al id. de objeto de Azure Active Directory (AAD) suplantado antes de enviar la solicitud al servicio web. El id. del objeto AAD del usuario se incluye en el [SystemUser.AzureActiveDirectoryObjectId](reference/entities/systemuser.md#BKMK_AzureActiveDirectoryObjectId).
 
 Más información: [Suplantar a otro usuario utilizando la API web](webapi/impersonate-another-user-web-api.md).
 
@@ -76,3 +76,4 @@ Más información: [Suplantar a un usuario](impersonate-a-user.md).
 [Crear aplicaciones web mediante autenticación de servidor a servidor (S2S)](build-web-applications-server-server-s2s-authentication.md)<br />
 [Suplantar a otro usuario utilizando la API web](webapi/impersonate-another-user-web-api.md)<br />
 [Escribir un complemento](write-plug-in.md)
+ 

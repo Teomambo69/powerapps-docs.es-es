@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a8c24b6d48b5d9330cdc3761cad458e399aec898
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f76065b6205343742e67a03740745e35b8564c35
+ms.sourcegitcommit: 6c73e316f866af6a34619f95a5ac64ad1664b48a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754581"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3326450"
 ---
 # <a name="pass-parameters-to-a-url-by-using-the-ribbon"></a>Pasar parámetros a una dirección URL con la cinta de opciones
 
@@ -48,7 +48,7 @@ Las acciones de la cinta de opciones se definen en el elemento de `<Actions>` de
 [!INCLUDE[languagecode](../../includes/languagecode.md)]
   
 > [!NOTE]
->  Se recomienda usar el nombre de la entidad en lugar del código de tipo de entidad porque el código de tipo de entidad puede variar entre las instalaciones de MDA.  
+>  Se recomienda usar el nombre de la entidad en lugar del código de tipo de entidad porque el código de tipo de entidad puede variar entre las instalaciones de aplicaciones basadas en modelo.  
   
 ### <a name="example"></a>Ejemplo  
  El siguiente ejemplo muestra la dirección URL sin parámetros:  
@@ -77,7 +77,7 @@ https://myserver/mypage.aspx?orgname=AdventureWorksCycle&userlcid=1033&orglcid=1
   
 ### <a name="see-also"></a>Vea también
 
- [Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)   
+ [Personalizar comandos y la cinta de opciones](customize-commands-ribbon.md)   
  [Abrir formularios y vistas con una dirección URL](open-forms-views-dialogs-reports-url.md)    
  [Definir las reglas de visualización de la pestaña de la cinta de opciones](define-ribbon-tab-display-rules.md)   
  [Ejemplo: Exportar definiciones de cinta de opciones](sample-export-ribbon-definitions.md)

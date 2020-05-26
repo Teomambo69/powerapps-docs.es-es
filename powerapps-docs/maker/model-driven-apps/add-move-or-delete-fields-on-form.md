@@ -1,7 +1,7 @@
 ---
 title: Agregar, configurar, mover o eliminar campos de un formulario | MicrosoftDocs
 ms.custom: ''
-ms.date: 08/26/2019
+ms.date: 05/04/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d711a46676003786363f3496515dbd387024dadb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: ce9bea71cb941628d943b60da30558c0d7794ed1
+ms.sourcegitcommit: 52b7f59e271437e86ffff226fb6c1982bf7f08b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2860695"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "3332546"
 ---
 # <a name="add-configure-move-or-delete-fields-on-a-form"></a>Agregar, configurar, mover o eliminar campos de un formulario  
 Agregar, configurar, mover o eliminar campos usando el diseñador de formularios.
@@ -78,6 +78,9 @@ Para agregar campos a un formulario, use el panel **Campos**. El panel **Campos*
 |**Opciones de visualización** | **Ocultar campo** | Cuando se selecciona, el campo está oculto de forma predeterminada y se puede mostrar con código. |
 |**Opciones de visualización** | **Ocultar en teléfono** | El campo se puede ocultar para representar una versión condensada del formulario en pantallas de teléfono. |
 |**Formato** | **Ancho de campo** |  Cuando la sección que contiene los campos tiene más de una columna puede establecer el campo para ocupar hasta el número de columnas que tiene la sección. |
+
+[!NOTE] 
+> En la interfaz unificada, la configuración de tamaño de etiqueta se ignora porque el formulario ajusta el ancho de todos los campos para garantizar una representación adecuada para los tamaños de pantalla, desde muy pequeños hasta muy grandes.
 
 ## <a name="move-fields-on-a-form"></a>Mover campos de un formulario
 Puede mover un campo en un formulario mediante arrastrar y colocar o cortar y pegar acciones. 

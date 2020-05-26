@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4e4b7f1cbfc167d999881e396d53436387c2f184
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 5ad0f76512d423cbe94072cc96ec09da1b56ce9c
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115636"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276156"
 ---
 # <a name="define-ribbon-tab-display-rules"></a>Definir las reglas de visualización de la pestaña de la cinta de opciones
 
@@ -39,6 +39,6 @@ Las reglas de visualización de las pestañas controlan si una pestaña específ
  Cuando define una regla de visualización de pestaña a nivel global en `RibbonDiffXml` para las cintas de aplicación, puede aplicar tanto los elementos `EntityRule` como los elementos `<PageRule>`.  
   
 ### <a name="see-also"></a>Vea también  
- [Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)   
+ [Personalizar comandos y la cinta de opciones](customize-commands-ribbon.md)   
  [Definir escalabilidad para elementos de la cinta de opciones](define-scaling-ribbon-elements.md)   
  [Pasar parámetros a una dirección URL con la cinta de opciones](pass-parameters-url-by-using-ribbon.md)

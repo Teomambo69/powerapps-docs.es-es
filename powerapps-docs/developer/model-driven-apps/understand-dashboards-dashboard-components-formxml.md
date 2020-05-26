@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b01f06fa23f14c4868d4a81af941d73682e4c158
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: bab891da008d1d7c850f1a17cf273a687e765962
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749520"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275936"
 ---
 # <a name="understand-dashboards-dashboard-components-and-formxml"></a>Comprender los paneles: FormXML y componentes de panel
 
@@ -43,7 +43,7 @@ Los paneles son uno de los diferentes tipos de formularios en aplicaciones basad
  Un panel propiedad de una organización solo puede contener gráficos propiedad de una organización. Sin embargo, un panel que pertenece a un usuario puede contener gráficos que pertenecen al usuario y a la organización. Más información [Gráficos (visualizaciones) para aplicaciones basadas en modelos](view-data-with-visualizations-charts.md).  
 
 ### <a name="grids"></a>Cuestionarios  
- Las cuadrículas capturan datos de las consultas (vistas) en aplicaciones basadas en modelos. Un panel que pertenece a una organización solo puede contener cuadrículas que capturen datos de las consultas guardadas. Sin embargo, un panel que pertenece a un usuario puede contener cuadrículas que capturen datos del usuario y de las cuadrículas guardadas. Más información: [Entidad SavedQuery](../common-data-service/reference/entities/savedquery.md) 
+ Las cuadrículas capturan datos de consultas (vistas) en aplicaciones basadas en modelos. Un panel que pertenece a una organización solo puede contener cuadrículas que capturen datos de las consultas guardadas. Sin embargo, un panel que pertenece a un usuario puede contener cuadrículas que capturen datos del usuario y de las cuadrículas guardadas. Más información: [Entidad SavedQuery](../common-data-service/reference/entities/savedquery.md) 
 
 ### <a name="iframes"></a>IFRAME  
  Cuando se agrega un IFRAME de un panel que pertenece a la organización, puede especificar si desea restringir o permitir el scripting entre marcos. Para ello, tendrá que usar el parámetro de `<Security>` en el control del IFRAME en FormXML. Sin embargo, para los paneles de propiedad del usuario, se restringe el scripting entre marcos para los IFRAME y no se puede cambiar. Si intenta crear un panel de propiedad del usuario que contiene un IFRAME con scripting entre marcos habilitado, se mostrará un mensaje de error.  

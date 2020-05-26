@@ -14,34 +14,38 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c839738bb0ab1a533a432ea4d6e8ad6be1f7a6ce
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c51852f54770acc7299f73478529d3f5ea303680
+ms.sourcegitcommit: 6c73e316f866af6a34619f95a5ac64ad1664b48a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754565"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3326438"
 ---
 # <a name="ribbons-available"></a>Cintas de opciones disponibles
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/ribbons-available-microsoft-dynamics-365 -->
 
-En este tema se describe cómo se definen y modifican las cintas de opciones en aplicaciones basadas en modelos.
+En este tema se describe cómo se definen y modifican las cintas de opciones en aplicaciones basadas en modelo.
 
-<a name="ribbon_defs"></a>   
-## <a name="ribbon-definitions"></a>Definiciones de cintas de opciones  
- Las aplicaciones basadas en modelos contienen definiciones `<RibbonDiffXml>` predeterminadas para todas las cintas de opciones de la aplicación. Puede exportar y ver el código XML que define actualmente la cinta de opciones de su organización, pero no puede actualizar directamente el XML. La definición de la cinta se personaliza definiendo cómo se desea que cambie. Las definiciones de los cambios que especifique se aplican en tiempo de ejecución cuando la cinta se muestra en la aplicación. Todos los cambios estarán en los elementos `<CustomAction>` o `<HideCustomAction>`. Estos elementos se aplican sobre las definiciones de cintas de opciones predeterminadas proporcionadas por aplicaciones basadas en modelos.  
+<a name="ribbon_defs"></a>  
 
- Cuando escriba definiciones de cambios, normalmente deberá consultar con frecuencia las definiciones de las cintas de opciones predeterminadas. Por ejemplo, si desea ocultar un elemento específico de la cinta de opciones, deberá conocer el identificador único del elemento. Si desea situar un nuevo elemento de cinta de opciones dentro o junto a un elemento de cinta de opciones existente, deberá conocer los valores de los identificadores de los elementos, así como el orden de la secuencia que controlará la posición relativa de los elementos.  
+## <a name="ribbon-definitions"></a>Definiciones de cintas de opciones 
 
- Debido a este requisito de hacer referencia a las definiciones de los elementos existentes de las cintas de opciones, es muy importante comprender las definiciones actuales de las cintas de opciones de la organización. Hay dos mensajes que puede usar para exportar los archivos XML que representan el estado actual de las cintas de opciones. Esas definiciones incluyen las personalizaciones que ya se han aplicado en el sistema de modo que pueda personalizar las cintas de opciones personalizadas que se aplicaron previamente. Para obtener más información, consulte [Exportar definiciones de cinta de opciones](export-ribbon-definitions.md).  
+Las aplicaciones basadas en modelos contienen definiciones `<RibbonDiffXml>` predeterminadas para todas las cintas de opciones de la aplicación. Puede exportar y ver el código XML que define actualmente la cinta de opciones de su organización, pero no puede actualizar directamente el XML. La definición de la cinta se personaliza definiendo cómo se desea que cambie. Las definiciones de los cambios que especifique se aplican en tiempo de ejecución cuando la cinta se muestra en la aplicación. Todos los cambios estarán en los elementos `<CustomAction>` o `<HideCustomAction>`. Estos elementos se aplican sobre las definiciones de cintas de opciones predeterminadas proporcionadas por aplicaciones basadas en modelo.  
 
- Para ayudarle a empezar puede descargar las definiciones de cintas de opciones predeterminadas para MDA desde [Descargas de Microsoft: ExportedRibbonXml.zip](https://download.microsoft.com/download/C/2/A/C2A79C47-DD2D-4938-A595-092CAFF32D6B/ExportedRibbonXml.zip). El archivo ExportedRibbonXml.zip incluye los archivos de salida que tendría en una organización con una cinta de opciones que no se ha personalizado. No es necesario ejecutar la aplicación de ejemplo para exportar estos datos. Si tiene una cinta personalizada, debe ejecutar la aplicación de ejemplo para actualizar los archivos de esta carpeta con las personalizaciones que haya aplicado previamente a la organización.  
+Cuando escriba definiciones de cambios, normalmente deberá consultar con frecuencia las definiciones de las cintas de opciones predeterminadas. Por ejemplo, si desea ocultar un elemento específico de la cinta de opciones, deberá conocer el identificador único del elemento. Si desea situar un nuevo elemento de cinta de opciones dentro o junto a un elemento de cinta de opciones existente, deberá conocer los valores de los identificadores de los elementos, así como el orden de la secuencia que controlará la posición relativa de los elementos.  
 
- En los archivos XML de cinta de opciones exportados, el archivo applicationRibbon.xml incluye todas las cintas de opciones que no se han definido para una entidad específica. Son las que corresponden al componente de la solución **Cintas de opciones de la aplicación**. Para cada entidad, encontrará un archivo *nombre de la entidad*ribbon.xml. Este corresponde al `RibbonDiffXml` que se incluye en cada entidad. Si desea modificar la cinta de opciones para una entidad específica, debe buscar el archivo XML de cinta de opciones de esa entidad.  
+Debido a este requisito de hacer referencia a las definiciones de los elementos existentes de las cintas de opciones, es muy importante comprender las definiciones actuales de las cintas de opciones de la organización. Hay dos mensajes que puede usar para exportar los archivos XML que representan el estado actual de las cintas de opciones. Esas definiciones incluyen las personalizaciones que ya se han aplicado en el sistema de modo que pueda personalizar las cintas de opciones personalizadas que se aplicaron previamente. Para obtener más información, consulte [Exportar definiciones de cinta de opciones](export-ribbon-definitions.md).  
 
-<a name="entity_ribbons"></a>   
+Para ayudarle a comenzar, puede descargar las definiciones de cinta predeterminadas para aplicaciones basadas en modelos desde [Exportar ejemplo de definiciones de cinta](https://github.com/microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ExportRibbonDefinitions). El archivo `The ExportedRibbonXml` incluye los archivos de salida que tendría para una organización.  
+
+En los archivos XML de cinta de opciones exportados, el archivo applicationRibbon.xml incluye todas las cintas de opciones que no se han definido para una entidad específica. Son las que corresponden al componente de la solución **Cintas de opciones de la aplicación**. Para cada entidad, encontrará un archivo *nombre de la entidad*ribbon.xml. Este corresponde al `RibbonDiffXml` que se incluye en cada entidad. Si desea modificar la cinta de opciones para una entidad específica, debe buscar el archivo XML de cinta de opciones de esa entidad.  
+
+<a name="entity_ribbons"></a>  
+
 ## <a name="entity-ribbons"></a>Cintas de opciones de entidad  
- Todas las entidades usan una definición de cinta de opciones común denominada *plantilla de cinta de opciones de la entidad*. La definición de la plantilla de cinta de opciones de la entidad se encuentra en el archivo applicationribbon.xml. Cuando cree una entidad personalizada, la cinta de opciones que verá es la cinta de opciones predeterminada especificada por la plantilla de cinta de opciones de la entidad. Cada entidad del sistema tiene su propia definición de `<RibbonDiffXml>` que modifica a la definición de la plantilla de cinta de opciones de la entidad.  
+
+Todas las entidades usan una definición de cinta de opciones común denominada *plantilla de cinta de opciones de la entidad*. La definición de la plantilla de cinta de opciones de la entidad se encuentra en el archivo `applicationribbon.xml`. Cuando cree una entidad personalizada, la cinta de opciones que verá es la cinta de opciones predeterminada especificada por la plantilla de cinta de opciones de la entidad. Cada entidad del sistema tiene su propia definición de `<RibbonDiffXml>` que modifica a la definición de la plantilla de cinta de opciones de la entidad.  
 
  En el archivo applicationribbon.xml, podrá ver las siguientes pestañas que se aplican a todas las entidades:  
 
@@ -131,7 +135,7 @@ En este tema se describe cómo se definen y modifican las cintas de opciones en 
 
 <a name="BKMK_BasicHomeTab"></a>   
 ## <a name="basic-home-tab"></a>Pestaña de inicio básica  
- La pestaña de inicio básica se muestra en la cinta de opciones principal de la aplicación siempre que no se haya definido una pestaña alternativa debido al contexto de la entidad o a una regla de visualización que la suprima para determinadas páginas. Por ejemplo, esta pestaña se muestra cuando se ve la **Ayuda** de MDA. El identificador de la pestaña de inicio básica es `Mscrm.BasicHomeTab`.  
+ La pestaña de inicio básica se muestra en la cinta de opciones principal de la aplicación siempre que no se haya definido una pestaña alternativa debido al contexto de la entidad o a una regla de visualización que la suprima para determinadas páginas. Por ejemplo, esta pestaña se muestra cuando se ve la **Ayuda** de las aplicaciones basadas en modelo. El identificador de la pestaña de inicio básica es `Mscrm.BasicHomeTab`.  
 
 <!-- [!NOTE]-->
 <!-- >  The Jewel that was shown in [!INCLUDE[pn_crm2011_and_online](../../includes/pn-crm2011-and-online.md)] is no longer displayed. Changes to the Jewel will not appear in [!INCLUDE[pn_dynamics_crm_online](../../includes/pn-dynamics-crm-online.md)]  -->
@@ -146,7 +150,7 @@ En este tema se describe cómo se definen y modifican las cintas de opciones en 
 <!--### Microsoft Office Outlook 2010  
  The [!INCLUDE[pn_crm_for_outlook_full](../../includes/pn-crm-for-outlook-full.md)] controls to support [!INCLUDE[ribbon_enum_Version_2010](../../includes/ribbon-enum-version-2010.md)] toolbars and menus are defined as tabs with the Id values of `Mscrm.Outlook14GlobalToolbar` and `Mscrm.Outlook14GlobalMenubar`, respectively.  -->
 
-<a name="other_ribbons"></a> ## Otras cintas de opciones MDA define otras pestañas de la cinta de opciones con propósitos especiales y un grupo contextual.
+<a name="other_ribbons"></a> ## Otras cintas de opciones Las aplicaciones basadas en modelo definen otras pestañas de la cinta de opciones con propósitos especiales y un grupo contextual.
 Cada pestaña está asociada a una `<TabDisplayRule>` específica que controla cuándo se muestra. La siguiente tabla muestra estas pestañas.  
 
 

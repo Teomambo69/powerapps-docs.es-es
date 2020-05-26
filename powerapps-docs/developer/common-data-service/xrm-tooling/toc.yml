@@ -28,3 +28,5 @@
       href: sample-simplified-connection-quick-start.md
     - name: 'Ejemplo: inicio rápido para la API de útiles de XMR'
       href: sample-quick-start-xrm-tooling-api.md
+    - name: 'Ejemplo: Biblioteca paralela de tareas con CrmServiceClient'
+      href: sample-tpl-crmserviceclient.md

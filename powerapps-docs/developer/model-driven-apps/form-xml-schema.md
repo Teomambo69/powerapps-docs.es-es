@@ -14,20 +14,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 73c5a681df915beecd52b3d813178491e5832bff
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 495da0a1534f0d9174e6c295b052b68510ed3c3c
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754577"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275944"
 ---
 # <a name="form-xml-schema"></a>Esquema XML de formulario
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/form-xml-schema -->
 
-A continuación se presenta la definición de esquema para personalizaciones de formulario para aplicaciones basadas en modelos. Para obtener más información, consulte [Personalizar formularios de entidad](customize-entity-forms.md). [!INCLUDE[schema_download](../../includes/schema-download.md)].  
+A continuación se presenta la definición de esquema para personalizaciones de formulario para aplicaciones basadas en modelo. Para obtener más información, consulte [Personalizar formularios de entidad](customize-entity-forms.md). [!INCLUDE[schema_download](../../includes/schema-download.md)].  
   
-## <a name="schema"></a>Nombre del  
+## <a name="schema"></a>Esquema  
   
 ```xml  
 <?xml version="1.0"?>  
@@ -1882,7 +1882,7 @@ A continuación se presenta la definición de esquema para personalizaciones de 
 ```  
   
 ### <a name="see-also"></a>Vea también  
- [Personalizar los formularios de entidad](customize-entity-forms.md)   
+ [Personalizar formularios de entidad](customize-entity-forms.md)   
  [Crear, instalar y actualizar una solución administrada](../common-data-service/create-install-update-managed-solution.md)<br/>
  [Crear, exportar o importar una solución no administrada](../common-data-service/create-export-import-unmanaged-solution.md)<br/>
  [Esquema XML de formulario](form-xml-schema.md)

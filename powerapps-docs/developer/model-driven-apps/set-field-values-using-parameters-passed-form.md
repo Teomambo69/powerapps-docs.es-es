@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 66f0516651d73fbf881a1bfa36529cc9998cfbd6
-ms.sourcegitcommit: 10861337ce87866b58cc98dda6eab8d985c9220c
+ms.openlocfilehash: 347aca146b6edd1d1f7d6e05eb5f442fd2912dc7
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3218318"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275956"
 ---
 # <a name="set-field-values-using-parameters-passed-to-a-form"></a>Establecer valores de campo usando parámetros pasados a un formulario
 
@@ -43,7 +43,7 @@ Puede establecer los valores predeterminados para los nuevos registros creados p
   
 - El valor no puede ser un script.  
   
-  Los intentos de pasar un parámetro o un valor no válido producirán un error.  
+- Los intentos de pasar un parámetro o un valor no válido producirán un error.  
   
 - Para los campos booleanos, use el valor entero `0` o `1`, o el valor de texto `true` o `false` para establecer el valor.  
   

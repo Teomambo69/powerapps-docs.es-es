@@ -1,271 +1,279 @@
 ---
-title: Uso de la aplicación móvil de respuesta ante emergencias hospitalarias | Microsoft Docs
-description: Tutorial dirigido a los usuarios sobre las diferentes aplicaciones y componentes de la plantilla de ejemplo de la aplicación Respuesta ante emergencias hospitalarias
+title: Usar la aplicación móvil Hospital Emergency Response | Microsoft Docs
+description: Recorrido por diferentes aplicaciones y componentes para los usuarios de la plantilla de aplicación de muestra de Hospital Emergency Response
 author: pankajarora-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 04/15/2020
+ms.date: 04/28/2020
 ms.author: pankar
 ms.reviewer: tapanm
 searchScope:
 - PowerApps
-ms.openlocfilehash: 3e77410c59eebc0008bf15a5aef3ed477669af0f
-ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
+ms.openlocfilehash: 1aea1458a0bb02915736df1a88ba79bf4252f34c
+ms.sourcegitcommit: 08184794f3438c8293b88dbbd16bfe8be4f6c229
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81441500"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3322129"
 ---
-# <a name="use-the-hospital-emergency-response-mobile-app"></a>Uso de la aplicación móvil de respuesta ante emergencias hospitalarias
+# <a name="use-the-hospital-emergency-response-mobile-app"></a>Usar la aplicación móvil Hospital Emergency Response
 
-El personal de los hospitales tiene que hacer frente al desafío que representa el incremento del número de pacientes sin descuidar la administración de la cadena de suministro durante una emergencia. Mediante el uso de la aplicación móvil Respuesta ante emergencias hospitalarias, los trabajadores de primera línea pueden ver y agregar rápidamente datos relativos a respiradores, personal, altas pendientes y pacientes afectados de COVID-19.
+El personal del hospital tiene el desafío de cumplir con un aumento en el número de pacientes mientras gestiona la cadena de suministro durante una emergencia. Al usar la aplicación móvil Hospital Emergency Response, los trabajadores de primera línea pueden ver y agregar rápidamente datos para respiradores, personal, altas pendientes y pacientes relacionados con COVID-19.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Para empezar a trabajar con la aplicación móvil, debe descargar la aplicación Power Apps Mobile en el dispositivo mediante la tienda de aplicaciones correspondiente.
+Para comenzar con la aplicación móvil, debe descargar Power Apps Mobile en su dispositivo utilizando la tienda de aplicaciones del dispositivo.
 
-- **Descarga** de la aplicación [**Power Apps Mobile**](https://powerapps.microsoft.com/downloads)
-    - En el caso de dispositivos **Apple** con iOS como iPhone y iPad, hay que usar la [**App Store**](https://aka.ms/powerappsios).
-    - Para dispositivos **Android**, la aplicación se encuentra en [**Google Play**](https://aka.ms/powerappsandroid).
-- Asegúrese de que su organización ha implementado y configurado la aplicación Respuesta ante emergencias hospitalarias como se explica en [Implementación y configuración de la aplicación](deploy-configure.md).
+- **Descargar** [**Power Apps Mobile**](https://powerapps.microsoft.com/downloads)
+    - Para dispositivos **Apple** con iOS como iPhone e iPad, use el [**App store**](https://aka.ms/powerappsios)
+    - Para dispositivos **Android**, use [**Google Play**](https://aka.ms/powerappsandroid)
+- Asegúrese de que su organización ha implementado y configurado la aplicación móvil de respuesta a emergencias hospitalarias como se explica en [Implementar y configurar la aplicación](deploy-configure.md).
 
-Después de instalar Power Apps Mobile, abra la aplicación desde el dispositivo e inicie sesión con la cuenta de Azure Active Directory de su empresa. Una vez iniciada la sesión, puede ver todas las aplicaciones compartidas por su organización. Para obtener más información, vea [Abrir Power Apps e iniciar sesión](https://docs.microsoft.com/powerapps/user/run-app-client#open-power-apps-and-sign-in).
+Después de instalar Power Apps Mobile, abra la aplicación desde su dispositivo e inicie sesión con su cuenta de empresa Azure Active Directory. Puede ver todas las aplicaciones compartidas por su organización una vez que inicie sesión. Para más información, vea [Iniciar sesión en Power Apps en dispositivo móvil](https://docs.microsoft.com/powerapps/user/run-app-client#open-power-apps-and-sign-in).
 
-## <a name="demo-use-the-hospital-emergency-response-mobile-app"></a>Demostración: Uso de la aplicación móvil de respuesta ante emergencias hospitalarias
+## <a name="demo-use-the-hospital-emergency-response-mobile-app"></a>Demo: Usar la aplicación móvil Hospital Emergency Response
 
-Vea cómo usar la aplicación Respuesta ante emergencias hospitalarias.
+Vea cómo usar la aplicación móvil de respuesta a emergencias hospitalarias.
 
 <br/>
 
 > [!VIDEO https://www.youtube.com/embed/H1u6SYt3UsQ]
 
-## <a name="hospital-emergency-response-mobile-app"></a>Aplicación móvil de respuesta ante emergencias hospitalarias
+## <a name="hospital-emergency-response-mobile-app"></a>Aplicación móvil Hospital Emergency Response
 
-![Aplicación Respuesta ante emergencias hospitalarias](media/use/app-launcher.png)
+![Aplicación móvil Hospital Emergency Response](media/use/app-launcher.png)
 
-La aplicación móvil Respuesta ante emergencias hospitalarias tiene una estructura modular con aplicaciones diferentes, según corresponda a su rol. Abra la aplicación móvil Respuesta ante emergencias hospitalarias desde Power Apps Mobile, seleccione los campos correspondientes a **Hospital system** (Sistema hospitalario) y **Region, Facility** (Región, instalación) y seleccione **Siguiente**.
-
-> [!NOTE]
-> Al iniciar la aplicación móvil Respuesta ante emergencias hospitalarias o cualquiera de sus componentes por *primera vez*, se le pedirá su consentimiento para permitir que la aplicación lea su perfil de *usuario de Office 365* y la *ubicación*. Debe seleccionar **Permitir** para poder empezar a usar la aplicación seleccionada. Para más información, consulte [Dar consentimiento](https://docs.microsoft.com/powerapps/user/run-app-client#give-consent).
-
-## <a name="app-components"></a>Componentes de la aplicación
-
-![Componentes de la aplicación móvil Respuesta ante emergencias hospitalarias](media/use/app-components.png)
-
-La aplicación de solución de ejemplo Respuesta ante emergencias hospitalarias consta de varias aplicaciones para mejorar la experiencia del usuario. En función de su rol, es posible que vea uno o más componentes en la aplicación **Respuesta ante emergencias hospitalarias**.
-
-- **Bed capacity**
-     (Capacidad de camas)<br> Recopile información de la camas, como las camas autorizadas, las camas para cuidados intensivos y otros datos sobre capacidad de las camas.
-
-- **COVID-19 stats**
-     (Estadísticas de COVID-19)<br> Recopile el estado de cuántos pacientes son sospechosos de padecer COVID-19 y cuántos han dado positivo en la prueba.
-
-- **Equipment**
-     (Equipamiento)<br> Supervise la información del equipamiento, como respiradores, asistencia respiratoria no invasiva y respiradores a batería para purificar el aire.
-
-- **Staff**
-     (Personal)<br> Recopile el número de pacientes y el estado del personal de enfermería, como asociados, asignados, solicitados y sin asignar.
-
-- **Supplies**
-     (Suministros)<br> Realice un seguimiento de los suministros clave para controlar, administrar y predecir las existencias del inventario de forma más eficaz. 
-
-- **Staffing needs**
-     (Necesidades del personal)<br> Recopile solicitudes de personal por departamento, rol y urgencia.
-
-- **Discharge planning**
-     (Planeación de altas)<br> Recopile el estado y las proyecciones de altas de los pacientes.
+La aplicación móvil Hospital Emergency Response tiene una estructura modular con diferentes aplicaciones según corresponda a su función. Abra la aplicación móvil Hospital Emergency Response desde Power Apps Mobile, seleccione su **Sistema hospitalario**, **Región, Instalaciones** y seleccione **Siguiente** para empezar.
 
 > [!NOTE]
-> De forma predeterminada, puede realizar un seguimiento de la información en las siguientes aplicaciones a nivel de *ubicación*: **COVID-19 stats** (Estadísticas de COVID-19), **Equipment** (Equipamiento) y **Staff** (Personal). En el resto de las aplicaciones, puede realizar un seguimiento de la información en el nivel a nivel de *instalación* de forma predeterminada. El administrador puede cambiar el nivel de seguimiento predeterminado, si es necesario. Más información: [Administración del nivel de seguimiento de aplicaciones móviles](configure-data-reporting.md#manage-tracking-level-for-mobile-apps)
+> Cuando inicie la aplicación móvil Hospital Emergency Response o cualquiera de sus componentes por *primera vez*, se le pedirá su consentimiento para permitir que la aplicación lea su perfil de *Office 365 Users* y su *Ubicación*. Debes elegir **Permitir** antes de que pueda comenzar a usar la aplicación seleccionada. Para obtener más información, consulte [dar consentimiento](https://docs.microsoft.com/powerapps/user/run-app-client#give-consent).
 
-## <a name="bed-capacity"></a>Bed capacity (Capacidad de camas)
+## <a name="app-components"></a>Componentes de aplicación
 
-![Bed capacity (Capacidad de camas)](media/use/bed-capacity.png)
+![Componentes de la aplicación móvil Hospital Emergency Response](media/use/app-components.png)
 
-Envíe información relacionada con las camas como camas autorizadas, camas de cuidados intensivos (con y sin aislamiento) y camas en urgencias (con y sin aislamiento), así como si la instalación seleccionada está dotada de personal para responder a la capacidad de camas plenamente autorizada.
+La aplicación de solución de muestra Hospital Emergency Response consta de varias aplicaciones para mejorar la experiencia del usuario. En función de su rol, es posible que vea uno o más componentes en la **aplicación móvil de respuesta a emergencias hospitalarias**.
 
-Seleccione **Back** (Atrás) arriba a la izquierda si quiere volver a la **aplicación Respuesta ante emergencias hospitalarias** sin enviar ningún cambio. El botón **Submit** (Enviar) envía los valores especificados.
+- **Capacidad de camas**
+    <br> Recopile información sobre la cama, como camas autorizadas, camas de UCI, camas de UCI pediátrica/ cuidados intensivos y otros datos de capacidad de camas.
 
-Después de enviar los datos, tiene la opción de volver a la aplicación **Bed capacity** (Capacidad de camas) para crear otro registro mediante el botón **Track another** (Seguir otro). Seleccione **Inicio** para volver a **Aplicación Respuesta ante emergencias hospitalarias**.
+- **Estadísticas de COVID-19**
+    <br> Obtenga información sobre cuántos pacientes están bajo investigación de COVID-19 y cuántos dieron positivo.
+
+- **Equipamiento**
+    <br> Realice un seguimiento de la información del equipamiento, como respiradores VPPNI y PAPR.
+
+- **Personal**
+    <br> Recopile información sobre el número de pacientes y el estado de ED, como partners, asignados, solicitados y no asignados.
+
+- **Suministros**
+    <br> Rastree los suministros clave para seguir, administrar y pronosticar el inventario de manera más efectiva. 
+
+- **Necesidades del personal**
+    <br> Recopile solicitudes de personal por departamento, rol y urgencia.
+
+- **Planificación de alta**
+    <br> Recopile el estado y las proyecciones sobre las altas de pacientes.
+
+> [!NOTE]
+> De forma predeterminada, puede rastrear información en las siguientes aplicaciones en el nivel de *ubicación*: **Estadísticas de COVID-19**, **Equipamiento** y **Personal**. En el resto de las aplicaciones, puede seguir información en el nivel de *instalaciones* por defecto. Su administrador puede cambiar el nivel de seguimiento predeterminado, si es necesario. Más información: [Administrar el nivel de seguimiento de aplicaciones móviles](configure-data-reporting.md#manage-tracking-level-for-mobile-apps)
+
+## <a name="bed-capacity"></a>Capacidad de camas
+
+![Capacidad de camas](media/use/bed-capacity.png)
+
+Envíe información relacionada con las camas, como las camas autorizadas, camas de UCI (SAITA/no SAITA), camas de cuidados intensivos (SAITA/no SAITA) y si la instalación seleccionada dispone de personal para toda su capacidad de camas autorizadas.
+
+Seleccione **Atrás** desde arriba a la izquierda si quiere volver a la **Aplicación Hospital Emergency Response** sin enviar ningún cambio. **Enviar** el botón envía los valores que introdujo.
+
+Después de enviar los datos, seleccione **Inicio** para volver a la **Aplicación Respuesta ante emergencias hospitalarias**.
 
 ### <a name="fields-and-description"></a>Campos y descripción
 
-| **Nombre de la opción**                                               | **Descripción**                                                                       |
+| **Nombre de opción**                                               | **Descripción**                                                                       |
 |---------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| How many licensed beds are currently in use in this facility? (¿Cuántas camas autorizadas hay actualmente en uso en esta instalación?) | Número de camas autorizadas actualmente en uso en esta instalación.                            |
-| Number of ICU Beds (AIIR Room) currently in use (Número de camas de cuidados intensivos [con aislamiento] actualmente en uso)               | Número de camas de cuidados intensivos (con aislamiento) actualmente en uso.                                      |
-| Number of ICU Beds (non-AIIR Room) currently in use (Número de camas de cuidados intensivos [sin aislamiento] actualmente en uso)           | Número de camas de cuidados intensivos (sin aislamiento) actualmente en uso.                                  |
-| Number of Acute Care Beds (AIIR Room) currently in use (Número de camas de urgencias [con aislamiento] actualmente en uso)        | Número de camas de urgencias (con aislamiento) actualmente en uso.                               |
-| Number of Acute Care Beds (non-AIIR Room) currently in use (Número de camas de urgencias [sin aislamiento] actualmente en uso)    | Número de camas de urgencias (sin aislamiento) actualmente en uso.                           |
-| Is your facility staffed to its full license bed capacity? (¿Su instalación está dotada de personal para atender su capacidad total de camas autorizadas?)    | Sí/No Si la respuesta es No, tiene la opción de seleccionar los motivos pertinentes: <br> - Staff (Personal) <br> - Space (Espacio) <br> - EPI (Equipos de protección individual) <br> - Equipment (Equipamiento) <br> - Low Patient Volume (Escaso volumen de pacientes) |
-| Are you able to surge beyond your licensed beds? (¿Tiene capacidad para ampliar las camas autorizadas?)              | Sí/No Si la respuesta es No, tiene la opción de seleccionar los motivos pertinentes: <br> - Staff (Personal) <br> - Space (Espacio) <br> - EPI (Equipos de protección individual) <br> - Equipment (Equipamiento) <br> - Low Patient Volume (Escaso volumen de pacientes)  |
-| Number of surge beds currently in use (Número de camas de ampliación actualmente en uso)                         | Número de camas de ampliación actualmente en uso.                                                |
+| ¿Cuántas camas autorizadas están actualmente en uso en este centro? | Número de camas autorizadas actualmente en uso en este centro.                            |
+| N.º de camas de UCI (sala SAITA) en uso               | Número de camas de UCI en la sala de aislamiento de infección aérea (sala SAITA) actualmente en uso.                                      |
+| N.º de camas de UCI (sala no SAITA) en uso           | Número de camas de UCI (sala no SAIA) actualmente en uso.                                  |
+| N.º de camas de cuidados intensivos (sala SAITA) en uso        | Número de camas de cuidados intensivos (sala SAIA) actualmente en uso.                               |
+| N.º de camas de cuidados intensivos (sala no SAITA) en uso    | Número de camas de cuidados intensivos (sala no SAIA) actualmente en uso.                           |
+| ¿El centro dispone de personal para toda su capacidad de camas autorizadas?    | Sí/No Si la respuesta es No, tiene la opción de seleccionar todos los motivos que correspondan: <br> - Personal <br> - Espacio <br> - EPI <br> - Equipamiento <br> - Volumen bajo de pacientes |
+| ¿Puede aumentar el número de camas por encima de las autorizadas?              | Sí/No Si la respuesta es No, tiene la opción de seleccionar todos los motivos que correspondan: <br> - Personal <br> - Espacio <br> - EPI <br> - Equipamiento <br> - Volumen bajo de pacientes  |
+| N.º de camas suplementarias actualmente en uso                         | Número de camas suplementarias actualmente en uso.                                                |
+| N.º de camas de UCI pediátricas (SAITA y no SAITA) actualmente en uso | Número de camas de UCI pediátrica (SAITA y no SAITA) actualmente en uso en estas instalaciones. |
+| N.º de camas de cuidados intensivos pediátricos (SAITA y no SAITA) actualmente en uso | Número de camas de cuidados intensivos pediátricos (SAITA y no SAITA) actualmente en uso en este centro. |  
 
-## <a name="covid-19-stats"></a>COVID-19 stats (Estadísticas de COVID-19)
+## <a name="covid-19-stats"></a>Estadísticas de COVID-19
 
-![COVID-19 stats (Estadísticas de COVID-19)](media/use/covid19-stats.png)
+![Estadísticas de COVID-19](media/use/covid19-stats.png)
 
-Envíe los detalles específicos de COVID-19 mediante la aplicación **COVID-19 stats** (Estadísticas de COVID-19). Puede actualizar los detalles de los pacientes específicos de la ubicación, como los pacientes investigados, los positivos, los intubados y los que han recibido el alta.
+Envíe detalles específicos de COVID-19 utilizando la aplicación  **Estadísticas de COVID-19**. Puede actualizar los detalles del paciente específicos de la ubicación, como sospechosos, positivos, intubados y dados de alta.
 
-Seleccione **Back** (Atrás) arriba a la izquierda si quiere volver a la **aplicación Respuesta ante emergencias hospitalarias** sin enviar ningún cambio. El botón **Submit** (Enviar) envía los valores especificados.
+Seleccione **Atrás** desde arriba a la izquierda si quiere volver a la **Aplicación Hospital Emergency Response** sin enviar ningún cambio. **Enviar** el botón envía los valores que introdujo.
 
-Después de enviar los datos, tiene la opción de volver a la aplicación **COVID-19 stats** (Estadísticas de COVID-19) para crear otro registro mediante el botón **Track another** (Seguir otro). Seleccione **Inicio** para volver a **Aplicación Respuesta ante emergencias hospitalarias**.
+Después de enviar los datos, tiene la opción de volver a la aplicación **Estadísticas COVID-19** para crear otro registro utilizando el botón **Seguir otro**. Seleccione **Inicio** para volver a la **Aplicación Hospital Emergency Response**.
 
 ### <a name="fields-and-description"></a>Campos y descripción
 
 | **Nombre del campo**  | **Descripción**                                                                                    |
 |-----------------|----------------------------------------------------------------------------------------------------|
-| Ubicación        | El nombre y el tipo de la habitación, el pabellón o cualquier otra ubicación especializada dentro de la instalación seleccionada.  |
-| PUI (pacientes investigados)            | Número de pacientes en investigación.                                                            |
-| Positivo        | Número de pacientes positivos en COVID-19.                                                         |
-| Intubated (Intubados)        | Número de pacientes intubados.                                                         |
-| Discharged (Dados de alta)        | Número de pacientes con COVID-19 dados de alta.                                                         |
+| Ubicación        | El nombre y tipo de la habitación, sala o cualquier otra ubicación especializada dentro de la instalación seleccionada.  |
+| PUIs            | Número de pacientes bajo investigación.                                                            |
+| Positivo        | Número de pacientes positivos con COVID-19.                                                         |
+| Intubados        | Número de pacientes intubados.                                                         |
+| Dados de alta        | Número de pacientes con COVID-19 dados de alta.                                                         |
 
 ## <a name="equipment"></a>Equipamiento
 
 ![Equipamiento](media/use/equipment.png)
 
-Envíe detalles de equipos específicos de la ubicación mediante la aplicación  **Equipment** (Equipamiento). Puede actualizar el número de equipos en uso, como respiradores, asistencia respiratoria no invasiva y respiradores a batería para purificar el aire.
+Envíe detalles de equipamiento específicos de la ubicación utilizando la aplicación **Equipamiento**. Puede actualizar la cantidad de equipamiento en uso, como respiradores, VPPN y PAPR.
 
-Seleccione **Back** (Atrás) arriba a la izquierda si quiere volver a la **aplicación Respuesta ante emergencias hospitalarias** sin enviar ningún cambio. El botón **Submit** (Enviar) envía los valores especificados.
+Seleccione **Atrás** desde arriba a la izquierda si quiere volver a la **Aplicación Hospital Emergency Response** sin enviar ningún cambio. **Enviar** el botón envía los valores que introdujo.
 
-Después de enviar los datos, tiene la opción de volver a la aplicación **Equipment** (Equipamiento) para crear otro registro mediante el botón **Track another** (Seguir otro). Seleccione **Inicio** para volver a **Aplicación Respuesta ante emergencias hospitalarias**.
+Después de enviar los datos, tiene la opción de volver a la aplicación **Equipamiento** para crear otro registro utilizando el botón **Seguir otro**. Seleccione **Inicio** para volver a la **Aplicación Hospital Emergency Response**.
 
 ### <a name="fields-and-description"></a>Campos y descripción
 
 | **Nombre del campo**  | **Descripción**                                                                                    |
 |-----------------|----------------------------------------------------------------------------------------------------|
-| Ubicación        | El nombre y el tipo de la habitación, el pabellón o cualquier otra ubicación especializada dentro de la instalación seleccionada.  |
-| Ventilators (Respiradores)            | Número de ventiladores en uso.                                                            |
-| NIPPV (Asistencia respiratoria no invasiva)        | Número de respiradores con ventilación con presión positiva no invasiva.                                                         |
-| PAPR belts (Cinturones respiradores)        | Número de cinturones respiradores a batería para purificar el aire en uso.                                                         |
-| PAPR chargers (Cargadores de respiradores)        | Número de cargadores de respiradores a batería para purificar el aire en uso.                                                         |
-| PAPR hoods (Capuchas respiradoras)        | Número de capuchas respiradoras a batería para purificar el aire en uso.                                                         |
+| Ubicación        | El nombre y tipo de la habitación, sala o cualquier otra ubicación especializada dentro de la instalación seleccionada.  |
+| Ventiladores            | Número de respiradores en uso.                                                            |
+| VPPN        | Número de respiradores mecánicos con presión positiva no invasiva.                                                         |
+| Capucha para PAPR        | Número de capuchas para respiradores purificadores (PAPR) de aire forzado en uso.                                                         |
+| Cinturones para PAPR (respiradores purificadores de aire forzado)        | Número de cinturones PAPR en uso.                                                         |
+| Cargadores para PAPR        | Número de cargadores PAPR en uso.                                                         |
 
 ## <a name="staff"></a>Personal
 
 ![Personal](media/use/staff.png)
 
-Envíe un inventario específico de la ubicación relativo a enfermeros, pacientes y equipos. No es necesario especificar valores para cada campo de la pantalla. Escriba un número para el campo que tenga que guardar en la base de datos de la solución.
+Envíe un inventario específico de ubicación para enfermeras registradas, pacientes y equipos. No tiene que introducir valores para cada campo en la pantalla. Introduzca un número para el campo que necesita guardar en la base de datos de la solución.
 
-Por ejemplo, si el número de enfermeros tiene que ser 3, escriba 3 en **Registered nurses on duty - Requested** (Enfermeros en servicio - Solicitado) y seleccione **Submit** (Enviar). Si también necesita actualizar los enfermeros para que sean 6, indique 6 en **Registered nurses on duty - Assigned** (Enfermeros en servicio - Asignados), indique 3 en **Registered nurses on duty - Requested** (Enfermeros en servicio - Solicitado), luego indique 6 en **Registered nurses on duty - Assigned** (Enfermeros en servicio - Asignados) y finalmente seleccione **Submit** (Enviar).
+Por ejemplo, si necesita agregar el número de enfermeras registradas solicitadas como 3, introduzca 3 en el campo **Enfermeras registradas de servicio - Solicitadas** y seleccione **Enviar**. Si también necesita actualizar **Enfermeras registradas de servicio - Asignadas** en uso como 6, introduzca 3 en el campo **Enfermeras registradas de servicio - Solicitadas**, luego introduzca 6 en **Enfermeras registradas de servicio - Asignadas** y seleccione **Enviar**.
 
-Seleccione **Back** (Atrás) arriba a la izquierda si quiere volver a la **aplicación Respuesta ante emergencias hospitalarias** sin enviar ningún cambio. El botón **Submit** (Enviar) envía los valores especificados.
+Seleccione **Atrás** desde arriba a la izquierda si quiere volver a la **Aplicación Hospital Emergency Response** sin enviar ningún cambio. **Enviar** el botón envía los valores que introdujo.
 
-Después de enviar los datos, tiene la opción de volver a la aplicación **Staff** (Personal) para crear otro registro mediante el botón **Track another** (Seguir otro). Seleccione **Inicio** para volver a **Aplicación Respuesta ante emergencias hospitalarias**.
+Después de enviar los datos, tiene la opción de volver a la aplicación **Personal** para crear otro registro utilizando el botón **Seguir otro**. Seleccione **Inicio** para volver a la **Aplicación Hospital Emergency Response**.
 
 ### <a name="fields-and-description"></a>Campos y descripción
 
-| **Nombre de la opción**               | **Descripción**                                                                                   |
+| **Nombre de opción**               | **Descripción**                                                                                   |
 |-------------------------------|---------------------------------------------------------------------------------------------------|
-| Ubicación                      | El nombre y el tipo de la habitación, el pabellón o cualquier otra ubicación especializada dentro de la instalación seleccionada. |
-| Number of patients (Número de pacientes)            | Número total actual de pacientes en la ubicación seleccionada.                                        |
-| **Registered nurses on duty** (Enfermeros en servicio) |                                                                                                   |
-| *Asociados*                    | Número de enfermeros asociados presentes en la ubicación seleccionada.                             |
-| *Requested* (Solicitado)                   | Número de enfermeros solicitados para la ubicación seleccionada.                                  |
-| *Assigned* (Asignado)                    | Número de enfermeros asignados a la ubicación seleccionada.                                    |
-| *Unassigned* (Sin asignar)                  | Número de enfermeros sin asignar a ninguna tarea en la ubicación seleccionada.                    |
-| **Facility level tracking** (Seguimiento de nivel de instalación) |                                                                                                   |
-| % of essential care personnel currently absent in the this facility (% de personal de asistencia esencial actualmente ausente en esta instalación)                  | Personal de asistencia esencial no presente actualmente en formato porcentual del total para **toda la instalación**.                    |
+| Ubicación                      | El nombre y tipo de la habitación, sala o cualquier otra ubicación especializada dentro de la instalación seleccionada. |
+| Número de pacientes            | Número total actual de pacientes en la ubicación seleccionada.                                        |
+| **Enfermeras registradas de servicio** |                                                                                                   |
+| *Asociados* <br> Los asociados/ayudantes de ED apoyan al personal de enfermería y pacientes                   | Número de enfermeras registradas asociadas presentes en la ubicación seleccionada.                             |
+| *Solicitado* <br> N.º de ED solicitados                  | Número de enfermeras registradas solicitadas en la ubicación seleccionada.                                  |
+| *Asignado* <br> N.º de ED con asignación                   | Número de enfermeras registradas asignadas a la ubicación seleccionada.                                    |
+| *Sin asignar* <br> N.º de ED sin asignar a ninguna tarea                  | Número de enfermeras registradas no asignadas a ninguna tarea en la ubicación seleccionada.                    |
+| **Seguimiento de nivel de instalaciones** |                                                                                                   |
+| % del personal sanitario esencial ausente actualmente en este centro                  | Personal de atención esencial actualmente ausente como porcentaje del total para las **instalaciones completas**.                    |
 
-## <a name="supplies"></a>Supplies (Suministros)
+## <a name="supplies"></a>Suministros
 
-![Supplies (Suministros)](media/use/supplies.png)
+![Suministros](media/use/supplies.png)
 
-Vea el inventario de suministros con la aplicación **Supplies** (Suministros). Puede actualizar las cantidades de los componentes de suministros en todo el inventario de instalaciones y la tasa de evolución diaria desde esta aplicación.
+Recolecte inventario de suministros con la aplicación **Suministros**. Puede actualizar las cantidades de componentes de suministro en todo el inventario de las instalaciones y la tasa de consumo diario desde esta aplicación.
 
 > [!NOTE]
-> Escriba valores en ambos campos: **In stock** (En existencias) y **Used past 24 hr** (Utilizado en las últimas 24 h) antes de seleccionar **Submit** (Enviar).
+> Introduzca valores en ambos campos, **En stock** y **Usado en las últimas 24 horas**, antes de seleccionar **Enviar**.
 
-Seleccione **Back** (Atrás) arriba a la izquierda si quiere volver a la **aplicación Respuesta ante emergencias hospitalarias** sin enviar ningún cambio. El botón **Submit** (Enviar) envía los valores especificados. Seleccione **Inicio** para volver a **Aplicación Respuesta ante emergencias hospitalarias** después de enviarlos.
+Seleccione **Atrás** arriba a la izquierda si quiere volver a la **Aplicación Hospital Emergency Response** sin enviar ningún cambio. **Enviar** el botón envía los valores que introdujo. Seleccione **Inicio** para volver a la **Aplicación Hospital Emergency Response** tras enviar.
 
 ### <a name="fields-and-description"></a>Campos y descripción
 
-La lista de elementos de la aplicación de suministros puede variar en función de los requisitos de su organización. Consulte los recursos de la organización para obtener descripciones de los nombres de suministro.
+La lista de elementos de la aplicación de suministros puede ser diferente según los requisitos de su organización. Consulte los recursos de su organización para obtener descripciones de los nombres de los suministros.
 
-Los administradores de TI pueden agregar o actualizar la lista de elementos de la aplicación de suministros mediante la aplicación controlada por modelos para Power Apps. Para más información, vea la [guía de configuración](deploy-configure.md).
+Los administradores de TI pueden agregar o actualizar la lista de elementos de la aplicación de suministros utilizando la aplicación basada en modelos para Power Apps. Para obtener más información, consulte [guía de configuración](deploy-configure.md).
 
 > [!NOTE]
-> Los valores de elemento de inventario de suministro deben estar en formato de número.
+> Los valores de los artículos del inventario de suministros deben estar en formato numérico.
 
-## <a name="staffing-needs"></a>Staffing needs (Necesidades del personal)
+## <a name="staffing-needs"></a>Necesidades del personal
 
-![Staffing needs (Necesidades del personal)](media/use/staffing-needs.png)
+![Necesidades del personal](media/use/staffing-needs.png)
 
-Recopila las solicitudes del grupo de trabajo de la instalación seleccionada. Antes de poder enviar la solicitud del grupo de trabajo para una instalación, asegúrese de que los campos marcados como *obligatorios* (*) contengan valores.
+Recopila solicitudes de mano de obra para la instalación seleccionada. Antes de poder enviar la solicitud de grupo de trabajo para una instalación, asegúrese de que los campos marcados como *obligatorio* (*) están rellenados.
 
-Seleccione **Back** (Atrás) arriba a la izquierda si quiere volver a la **aplicación Respuesta ante emergencias hospitalarias** sin enviar ningún cambio. El botón **Submit** (Enviar) envía los valores especificados. Seleccione **Inicio** para volver a **Aplicación Respuesta ante emergencias hospitalarias** después de enviarlos.
+Seleccione **Atrás** desde arriba a la izquierda si quiere volver a la **Aplicación Hospital Emergency Response** sin enviar ningún cambio. **Enviar** el botón envía los valores que introdujo. Seleccione **Inicio** para volver a la **Aplicación Hospital Emergency Response** tras enviar.
 
 ### <a name="fields-and-description"></a>Campos y descripción
 
 | **Nombre del campo**           | **Descripción**                                                                            |
 |--------------------------|--------------------------------------------------------------------------------------------|
-| Departamento               | Nombre del departamento que solicita un trabajador. Este campo es *obligatorio*.             |
-| Department location (Ubicación del departamento)      | Ubicación del departamento.                                                                |
-| Tipo de solicitud             | Tipo de solicitud de puesto de trabajo: clínico o no clínico. Este campo es *obligatorio*. |
-| Role needed (Rol necesario)              | Rol del puesto solicitado; por ejemplo, cuidador o enfermero.                          |
-| Needed now or next shift (Necesario ahora o en el turno siguiente) | Seleccione un turno para el puesto solicitado: el turno actual o un turno próximo.                |
-| Cantidad                 | Cuántos recursos se necesitan, en formato numérico.                |
-| Detalles                  | Describa detalles adicionales o comentarios para la solicitud del grupo de trabajo.                        |
+| Departamento               | Nombre del departamento que solicita la solicitud de trabajo. Este campo es *obligatorio*.             |
+| Ubicación del departamento      | Ubicación del departamento.                                                                |
+| Tipo de solicitud             | Tipo de solicitud de mano de obra, como clínica y no clínica. Este campo es *obligatorio*. |
+| Rol necesario              | Rol del trabajo solicitado, como una niñera o una enfermera registrada.                          |
+| Necesario ahora o el próximo turno | Seleccione un turno para la mano de obra solicitada, el turno actual o un turno próximo.                |
+| Cuántos                 | Cuántos recursos se necesitan, en formato numérico.                |
+| Detalles                  | Describa detalles adicionales o comentarios para la solicitud de mano de obra.                        |
 
+## <a name="discharge-planning"></a>Planificación de alta
 
+![Alta](media/use/discharge.png)
 
-## <a name="discharge-planning"></a>Discharge planning (Planeación de altas)
+Envíe la información del alta y el estado del paciente con el número total utilizando la aplicación  **Planificación de alta**. Puede actualizar los detalles de altas de las últimas 24 horas, las barreras de altas actuales y la separación de las altas. 
 
-![Altas](media/use/discharge.png)
+Seleccione **Atrás** desde arriba a la izquierda si quiere volver a la **Aplicación Hospital Emergency Response** sin enviar ningún cambio. **Enviar** el botón envía los valores que introdujo. Seleccione **Inicio** para volver a la **Aplicación Hospital Emergency Response** tras enviar.
 
-Envíe información de altas y el estado de los pacientes con el número total mediante la aplicación  **Discharge planning** (Planeación de altas). Puede actualizar los detalles de las altas de las últimas 24 horas, las dificultades para las altas y el desglose de las altas.
-
-Seleccione **Back** (Atrás) arriba a la izquierda si quiere volver a la **aplicación Respuesta ante emergencias hospitalarias** sin enviar ningún cambio. El botón **Submit** (Enviar) envía los valores especificados. Seleccione **Inicio** para volver a **Aplicación Respuesta ante emergencias hospitalarias** después de enviarlos.
+**Barreras para altas de larga estancia** se actualiza automáticamente con el número total de pacientes que introduce en el formulario por todas las barreras.
 
 ### <a name="fields-and-description"></a>Campos y descripción
 
 | **Nombre del campo**            | **Descripción**                                                    |
 |---------------------------|--------------------------------------------------------------------|
-| Authorization             | Número de pacientes en el proceso de autorización.                   |
-| Durable medical equipment (Equipo médico duradero) | Número de pacientes que usan el equipo medico duradero.            |
-| Guardianship (Tutela)              | Número de pacientes en tutela.                             |
-| Home + Community Services (Servicios domésticos y comunitarios) | Número de pacientes que usan servicios domésticos y comunitarios.               |
-| Ubicación                 | Número de disposiciones necesarias.                                       |
-| Skilled Nursing Facility (Instalación de enfermería especializada)  | Número de instalaciones de enfermería especializadas.                              |
+| Autorización             | Número de pacientes en proceso de autorización.                   |
+| Equipo médico duradero | Número de pacientes que usan el equipo médico duradero.            |
+| Tutela              | Número de pacientes bajo tutela.                             |
+| Hogar + Servicios comunitarios | Número de pacientes que utilizan los servicios del hogar o la comunidad.               |
+| Ubicación                 | Número de ubicaciones necesarias.                                       |
+| Instalaciones de enfermería especializada  | Número de instalaciones de enfermería especializada.                              |
 | **Altas**            |                                                                    |
-| Past 24 h (Últimas 24 h)                 | Número de pacientes con el alta prevista en las últimas 24 h.  |
-| Likely next 24 h (Probables en las próximas 24 h)          | Número de pacientes dados de alta en las últimas 24 h.                    |
+| Últimas 24 h                 | Número de pacientes que se espera que sean dados de alta en las últimas 24 horas.  |
+| Probable en las próximas 24 h          | Número de pacientes que se dados de altas en las últimas 24 horas.                    |
 
 ## <a name="other-options"></a>Otras opciones
 
-En esta sección se explican otras acciones que puede realizar con la aplicación móvil Respuesta ante emergencias hospitalarias.
+Esta sección explica otras acciones que puede realizar con los componentes de la aplicación móvil Hospital Emergency Response.
 
-### <a name="end-shift---sign-out"></a>Fin de turno - cierre de sesión
+### <a name="end-shift---sign-out"></a>Fin de turno: cerrar sesión
 
-Puede cerrar la sesión desde la aplicación con el icono de perfil que se encuentra en la parte superior izquierda de la pantalla.  
+Puede cerrar sesión desde la aplicación usando el ícono de perfil en el lado superior izquierdo de la pantalla.  
 
-![Cierre de sesión](media/use/sign-out.png)
+![Cerrar sesión](media/use/sign-out.png)
 
-Seleccione el botón **End shift** (Finalizar turno) para finalizar y cerrar la sesión.
+Seleccione el botón **Fin de turno** para finalizar su sesión y cerrar sesión.
 
 > [!NOTE]
-> Puede que este botón no esté disponible si el administrador de TI ha deshabilitado el uso compartido de dispositivos.
+> *Fin de turno* puede no estar disponible si su Administrador de TI ha deshabilitado el uso compartido de dispositivos.
 
 ### <a name="app-feedback"></a>Comentarios sobre la aplicación
 
-Puede enviar comentarios con la opción **App feedback** (Comentarios sobre la aplicación) desde cualquier componente de la aplicación móvil de respuesta ante emergencias. Para compartir sus comentarios, seleccione su perfil en la parte superior izquierda y, luego, elija el botón **Submit feedback** (Enviar comentarios):
+Puede compartir sus comentarios con la opción **Comentarios sobre la aplicación** desde cualquier componente de la aplicación móvil de respuesta a emergencias para hospitales. Para compartir sus comentarios, seleccione su perfil en la esquina superior izquierda y luego seleccione el botón **Enviar comentarios**:
 
-![Envío de comentarios](media/use/give-feedback.png)
+![Proporcionar comentarios](media/use/give-feedback.png)
 
-Al seleccionar **App feedback** (Comentarios de la aplicación), se le presentan opciones para elogiar algo, plantear una idea o notificar un problema con la aplicación.
+Cuando selecciona **Comentarios sobre la aplicación**, tiene opciones para compartir un elogio, una idea o informar de un problema con la aplicación.
 
-### <a name="switch-facility"></a>Cambio de instalación
+### <a name="switch-facility"></a>Cambiar de instalación
 
-![Cambio de instalación](media/use/switch-facility.png)
+![Cambiar de instalación](media/use/switch-facility.png)
 
-Cambie la instalación en cualquier momento seleccionando el nombre de la instalación en la parte superior derecha de la pantalla. Después de seleccionar el nombre de la ubicación, se le dirigirá a la pantalla **Aplicación Respuesta ante emergencias hospitalarias** donde puede seleccionar otro hospital, región o instalación.
+Cambie de instalación en cualquier momento seleccionando el nombre de la instalación en la parte superior derecha de la pantalla. Después de seleccionar el nombre de la ubicación, accederá a la pantalla de la **Aplicación Hospital Emergency Response** donde puede seleccionar un hospital, región o instalación diferente.
+
+## <a name="view-the-mobile-app-in-your-language"></a>Ver la aplicación móvil en su idioma
+
+[!include[cc-lang](includes/cc-lang.md)]
+
+Puede ver la aplicación móvil de respuesta a emergencias para hospitales en uno de los idiomas admitidos en su dispositivo móvil configurando el idioma predeterminado de su dispositivo móvil (Apple o Android) en un idioma compatible. Consulte la documentación de ayuda para su dispositivo móvil respectivo sobre cómo cambiar el idioma predeterminado para su dispositivo.
+
+Si está utilizando las aplicaciones móviles en un navegador en su equipo, seleccione el idioma predeterminado de su navegador para un idioma admitido para la aplicación móvil de respuesta a emergencia para hospitales. Para más información, vaya a [Usar Microsoft Edge en otro idioma](https://support.microsoft.com/help/4532129).
 
 ## <a name="issues-and-feedback"></a>Problemas y comentarios
 
-- Para notificar un problema con la aplicación de ejemplo Respuesta ante emergencias hospitalarias, visite <https://aka.ms/emergency-response-issues>.
+- Para notificar un problema con la aplicación móvil de respuesta a emergencia para hospitales, visite <https://aka.ms/emergency-response-issues>.
 
-- Para ofrecer comentarios sobre la aplicación de ejemplo Respuesta ante emergencias hospitalarias, visite <https://aka.ms/emergency-response-feedback>.
-
-
+- Para ofrecer comentarios sobre la aplicación móvil de respuesta a emergencia para hospitales, visite <https://aka.ms/emergency-response-feedback>.

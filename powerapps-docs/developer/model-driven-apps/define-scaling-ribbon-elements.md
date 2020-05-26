@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 844ac96d1e5e0a0a47b4a0c64d649a417d6fd632
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 0de4ce4a3475be0f5f6a6b4ed67284722601cc7a
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115848"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275816"
 ---
 # <a name="define-scaling-for-ribbon-elements"></a>Definir escalabilidad para elementos de la cinta de opciones
 
@@ -66,6 +66,6 @@ Para las cintas de opciones de aplicación y las cintas de opciones actualizadas
 >  Los valores de atributo `Sequence` del elemento `Scale` no se usan para fijar el orden en el que se aplica la escalabilidad. La escalabilidad se aplica según el orden relativo en que aparecen los elementos `MaxSize` y `Scale` en RibbonDiffXML. El valor de `Sequence` es importante para ambos elementos `MaxSize` y `Scale` porque todos los elementos `MaxSize` deben agruparse juntos sobre los elementos `Scale`. Cuando se agrega un nuevo elemento `MaxSize` o `Scale`, asegúrese de revisar los intervalos de los valores predeterminados de `Sequence` asignados a todos los elementos `MaxSize` y `Scale`. Un error común es asignar los valores de `Sequence` que pueden provocar la superposición de los intervalos.  
   
 ### <a name="see-also"></a>Vea también  
- [Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)   
+ [Personalizar comandos y la cinta de opciones](customize-commands-ribbon.md)   
  [Definir acciones personalizadas para modificar la cinta de opciones](define-custom-actions-modify-ribbon.md)   
  [Definir las reglas de visualización de la pestaña de la cinta de opciones](define-ribbon-tab-display-rules.md)

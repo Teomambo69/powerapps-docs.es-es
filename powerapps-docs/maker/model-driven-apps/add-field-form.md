@@ -1,7 +1,7 @@
 ---
 title: Agregar un campo a un formulario de aplicación controlada por modelos en Power Apps | MicrosoftDocs
 ms.custom: ''
-ms.date: 03/18/2020
+ms.date: 05/04/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f3b24d42fa8a9c800bf16eab51f39bb741c3d3bc
-ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
+ms.openlocfilehash: dcf292660c89e55ec83739c4dba662ff4cf7bff4
+ms.sourcegitcommit: 52b7f59e271437e86ffff226fb6c1982bf7f08b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3166902"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "3332502"
 ---
 # <a name="add-a-field-to-a-model-driven-app-form"></a>Agregar un campo a un formulario de aplicación controlada por modelos 
 
@@ -49,8 +49,13 @@ En este tema, agregará un campo a un formulario.
   
 6.  Cuando haya terminado de editar el formulario, haga clic en **Guardar y cerrar**.  
   
+> [!IMPORTANT]
+>  En la interfaz unificada, cuando configura la seguridad a nivel de campo, no recomendamos que configure solo lectura en un campo obligatorio utilizando las reglas de seguridad a nivel de campo.  Cuando se crea el registro, la canalización para guardar ignorará la configuración de solo lectura en el campo requerido y guardará el registro. Se recomienda configurar la entidad en solo lectura mediante la seguridad basada en roles. Esto ayuda a garantizar que no haya conflictos al crear o guardar un registro.
+  
+  
 > [!NOTE]
->  La publicación de personalizaciones pueden interferir en el funcionamiento normal del sistema. Le recomendamos que publique cuando perjudique menos a los usuarios.  
+>  La publicación de personalizaciones pueden interferir en el funcionamiento normal del sistema. Le recomendamos que publique cuando perjudique menos a los usuarios.
+
   
 ## <a name="next-steps"></a>Pasos siguientes  
  

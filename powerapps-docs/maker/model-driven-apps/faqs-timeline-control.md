@@ -12,12 +12,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c664ca490f3a03d02dfe273c26d061698242a6c3
-ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
+ms.openlocfilehash: b3dfc60d7c34ca91257d9aaa1b5979d894268866
+ms.sourcegitcommit: 3c6c5594b73abd5ff438d50f3b579d56cef7241c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3114386"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3285988"
 ---
 # <a name="faqs-for-timeline-control"></a>Preguntas más frecuentes para control de escala de tiempo
 
@@ -25,65 +25,65 @@ ms.locfileid: "3114386"
 
 La sección **Escala de tiempo** recupera datos y se muestra en las tarjetas de formulario. De forma predeterminada, la escala de tiempo recupera datos para las 10 entidades de actividad estándar, que son:
 
--   Correo
--   Tarea
--   Resolución de incidentes
--   Fax
--   Cierre de oportunidad
--   Carta
--   Cita
--   Llamada de teléfono
+-    Correo
+-    Tarea
+-    Resolución de incidentes
+-    Fax
+-    Cierre de oportunidad
+-    Carta
+-    Cita
+-    Llamada de teléfono
 
 Cuando realice los siguientes procedimientos como administrador, los usuarios verán un error en tiempo de ejecución:
 
 **Procedimiento**
--   Crear cualquier actividad personalizada adicional
--   Habilitar actividades personalizadas para dispositivos móviles
--   Seleccionar un **formulario de tarjeta** para todas las actividades personalizadas 
+-    Crear cualquier actividad personalizada adicional
+-    Habilitar actividades personalizadas para dispositivos móviles
+-    Seleccionar un **formulario de tarjeta** para todas las actividades personalizadas 
 
 **Error:** No se pudieron cargar registros debido a un error inesperado.
 
-   > [!div class=mx-imgBorder] 
+   > [!div class="mx-imgBorder"] 
    > ![No se pudieron cargar registros debido a un error inesperado.](media/timeline-error1.png "No se pudieron cargar registros debido a un error inesperado.")
 
 Este error se produce porque el número de entidades de actividad para la recuperación de datos ha superado el límite máximo de 10.
 
-   > [!div class=mx-imgBorder] 
+   > [!div class="mx-imgBorder"] 
    > ![El número de entidades de vínculos en la consulta superó el límite máximo](media/timeline-error2.png "[El número de entidades de vínculos en la consulta superó el límite máximo")
 
 ### <a name="workaround"></a>Solución alternativa
 
 Para solucionar el problema, debe reducir el número de entidades a 10 o menos. Para ello, siga los pasos que se indican a continuación.
 
-1.  Inicie sesión en el entorno de `https://<YourOrgURL>.dynamics.com/apps`.
+1.  Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 2.  Abra una aplicación basada en modelo y en la barra de comandos seleccione **Configuración** ![Configuración](../model-driven-apps/media/powerapps-gear.png) > **Configuración avanzada**.
 
-3.  Vaya a **Personalizaciones** > **Personalización** > **Personalización del sistema**. La página del explorador de soluciones se abre en una nueva ventana del navegador.
+3.   Vaya a **Personalizaciones** > **Personalización** > **Personalización del sistema**. La página del explorador de soluciones se abre en una nueva ventana del navegador.
 
-4.  Expanda **Entidades** en **Componentes** en el panel de la solución predeterminada.
+4.   Expanda **Entidades** en **Componentes** en el panel de la solución predeterminada.
 
-5.  Seleccione una entidad y seleccione **Formularios**. Por ejemplo, seleccione la entidad **Cuenta**.
+5.   Seleccione una entidad y seleccione **Formularios**. Por ejemplo, seleccione la entidad **Cuenta**.
 
-6.  Selecciona el registro **Cuenta para experiencia interactiva** que es un tipo de formulario **Principal**. El formulario **Cuenta para experiencia interactiva** se abre en una nueva ventana del navegador.
+6.   Selecciona el registro **Cuenta para experiencia interactiva** que es un tipo de formulario **Principal**. El formulario **Cuenta para experiencia interactiva** se abre en una nueva ventana del navegador.
 
-   > [!div class=mx-imgBorder] 
-   > ![Seleccione el formulario de entidad con experiencia interactiva en el nombre](media/account-interactive-experience.png "Seleccione el formulario de entidad con experiencia interactiva en el nombre")
+      > [!div class="mx-imgBorder"] 
+      > ![Seleccione el formulario de entidad con experiencia interactiva en el nombre](media/account-interactive-experience.png "Seleccione el formulario de entidad con experiencia interactiva en el nombre")
 
-   Para la Interfaz unificada, debe usar el nombre del formulario que tiene `<Entity> for Interactive experience`.
+      Para la Interfaz unificada, debe usar el nombre del formulario que tiene `<Entity> for Interactive experience`.
 
-7.  Haga doble clic en el campo **Pestañas de conversación**en la sección **Escala de tiempo**. Se muestra el diálogo **Propiedades de la pestaña Actividades**.
+7.    Haga doble clic en el campo **Pestañas de conversación**en la sección **Escala de tiempo**. Se muestra el diálogo **Propiedades de la pestaña Actividades**.
 
-    > [!div class=mx-imgBorder] 
-    > ![Haga doble clic en el campo del panel de redes sociales](media/timeline-conversation-tabs-field.png "Haga doble clic en el campo del panel de redes sociales")  
+      > [!div class="mx-imgBorder"] 
+      > ![Haga doble clic en el campo del panel de redes sociales](media/timeline-conversation-tabs-field.png "Haga doble clic en el campo del panel de redes sociales")  
 
-8.  Seleccione la opción **Mostrar lo seleccionado** para el campo **Mostrar estas actividades** en el contenedor **Filtrado por**.
+8.    Seleccione la opción **Mostrar lo seleccionado** para el campo **Mostrar estas actividades** en el contenedor **Filtrado por**.
 
-9.  Seleccione las actividades que desea mostrar a los usuarios.
+9.    Seleccione las actividades que desea mostrar a los usuarios.
 
-10. Seleccione **Aceptar** y, a continuación, **Guardar**.
+10.    Seleccione **Aceptar** y, a continuación, **Guardar**.
 
-11. Seleccione **Publicar** para publicar las personalizaciones.
+11.    Seleccione **Publicar** para publicar las personalizaciones.
 
 
 ## <a name="why-i-cant-assign-or-delete-an-activity-from-the-timeline"></a>¿Por qué no puedo asignar o eliminar una actividad de la escala de tiempo?

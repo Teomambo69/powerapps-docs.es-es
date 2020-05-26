@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 27809198af9348b246dd7d0c2a5401880c13eb73
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0301d48ccc739d8f6382deb8b01eeac7719e6dc2
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749592"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275984"
 ---
 # <a name="publish-customizations"></a>Publica personalizaciones
 
@@ -79,7 +79,8 @@ La publicación de personalizaciones permite que la aplicación web tenga conoci
 - <xref:Microsoft.Crm.Sdk.Messages.RetrieveUnpublishedMultipleRequest>  
   
 ### <a name="see-also"></a>Vea también  
- [Personalizar basadas en modelos](/dynamics365/customer-engagement/developer/customize-dev/customize-applications)<br/>
+
+ [Personalizar aplicaciones basadas en modelo](/dynamics365/customer-engagement/developer/customize-dev/customize-applications)<br/>
  [Ampliar el modelo de metadatos](/dynamics365/customer-engagement/developer/org-service/use-organization-service-metadata)<br/>
  [Publicar esquema de solicitud](publish-request-schema.md)<br/>
  [Personalizar formularios de entidad](customize-entity-forms.md)<br/>

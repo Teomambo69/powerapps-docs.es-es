@@ -2,7 +2,7 @@
 title: Crear o editar un gráfico del sistema de una aplicación controlada por modelos en Power Apps | MicrosoftDocs
 description: Aprenda a crear o editar un gráfico
 ms.custom: ''
-ms.date: 05/23/2018
+ms.date: 03/30/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 24c932f34c23c42f938f54ffa4f328f25a714c59
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 426bfaf0ab53e1d896f7e0b098e089c8596ad907
+ms.sourcegitcommit: 3c6c5594b73abd5ff438d50f3b579d56cef7241c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2875198"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3285628"
 ---
 # <a name="create-a-model-driven-app-system-chart"></a>Crear o editar un gráfico del sistema de una aplicación controlada por modelos
 
@@ -35,9 +35,6 @@ En este tema aprenderá a crear un gráfico del sistema. Los gráficos del siste
   
 1. Inicie sesión en [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
-    > [!IMPORTANT]
-    > “Si el modo de diseño **Controlado por modelos** no está disponible, puede que tenga que [Crear un entorno](https://docs.microsoft.com/powerapps/administrator/create-environment).     
-  
 2. Expanda **Datos**, seleccione **Entidades**, seleccione la entidad que desee y, a continuación, seleccione la pestaña **Gráficos**.  
   
 3.  En la barra de herramientas, seleccione **Agregar gráfico**.  

@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 02/11/2020
+ms.date: 05/05/2020
 ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 0c011c61c2084662d1e759d7226140dcf3ddfad6
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: d00b323b33f971ff9c55a7590d3630baadfc09fe
+ms.sourcegitcommit: eaf423817d61b57cbde7c4b820b3e44940c3f8af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3126209"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3340290"
 ---
 # <a name="add-the-azure-storage-web-resource-to-a-form"></a>Agregar el recurso de web Azure Storage a un formulario
 
@@ -23,13 +23,13 @@ Los datos adjuntos cargados en Azure Storage, en lugar de directamente en Common
 Para que los datos adjuntos de un formulario determinado se puedan cargar en Azure Storage, debe agregar un recurso web al formulario y debe [configurar Azure Storage para la organización](enable-azure-storage.md).
 
 > [!NOTE]
-En este ejemplo, el formulario se agrega al formulario de cliente potencial para la entidad Cliente potencial. Se recomienda tener precaución al editar los formularios existentes.
+> En este ejemplo, el formulario se agrega al formulario de cliente potencial para la entidad Cliente potencial. Se recomienda tener precaución al editar los formularios existentes.
 
 Cuando un archivo (por ejemplo, attachments.zip) se carga en Azure Storage mediante el portal, es representado por una nota en una entidad y un marcador para el dato adjunto.
 
 ![Datos adjuntos en un formulario](media/notes-attachment-lead-form.png "Marcador de posición para datos adjuntos en un formulario")
 
-Tenga en cuenta que el archivo de datos adjuntos ahora está denominado attachment.zip.txt. De forma predeterminada, Common Data Service no tiene ningún concepto de archivo Azure, por lo que este archivo placeholder.txt se almacena en Common Data Service en su lugar. El contexto de Azure Storage del archivo con marcadores muestra detalles sobre el archivo.
+Tenga en cuenta que el archivo de datos adjuntos ahora se llama attachment.zip.txt. De forma predeterminada, Common Data Service no tiene ningún concepto de archivo Azure, por lo que este archivo placeholder.txt se almacena en Common Data Service en su lugar. El contexto de Azure Storage del archivo con marcadores muestra detalles sobre el archivo.
 ```
 {
  Name: attachment.zip,
@@ -53,7 +53,7 @@ Para ver e interactuar con el archivo almacenado en Azure, debe agregar el recur
 
 6. Seleccione **Aceptar** para guardar el recurso.
 
-7. Como alternativa, es posible que desee quitar el control existente de notas, o moverlo a una ficha o a una sección que esté marcada para que no se vea de forma predeterminada.
+7. Opcionalmente, puede quitar el control de notas existente. O muévalo a una pestaña o sección marcada como no visible de forma predeterminada.
 
 8. Guarde el formulario y, a continuación, publique los cambios.
 
@@ -70,17 +70,25 @@ El icono de clip de papel se ha reemplazado por un icono de nube para indicar qu
 > - **Orígenes permitidos**: Especifique el dominio. Por ejemplo, `https://contoso.crm.dynamics.com`.
 > - **Verbos permitidos**: OBTENER, PONER, ELIMINAR, ENCABEZAR, PUBLICAR
 > - **Encabezados permitidos**: Especifique los encabezados de solicitud que el dominio de origen puede especificar en la solicitud de CORS. Por ejemplo, x-ms-meta-data\*, x-ms-meta-target\*. En este escenario, debe especificar *, si no el recurso web no generará representaciones correctamente.
-> - **Encabezados expuestos**: Especifique los encabezados de respuesta que se pueden enviar en la respuesta a la solicitud de CORS y que expone el explorador al emisor de la solicitud. Por ejemplo, x-ms-meta-\*.
+> - **Encabezados expuestos**: Especifique los encabezados de respuesta que se pueden enviar en la respuesta a la solicitud de CORS y que expone el explorador al emisor de la solicitud. Ejemplos: \* o x-ms-meta-\*. En este escenario, debe especificar *, si no el recurso web no generará representaciones correctamente.
 > - **Edad máxima (segundos)**: Especifique la cantidad máxima de tiempo que un explorador debe almacenar en caché la solicitud OPCIONES de preparación. Por ejemplo, 200.
 > 
 > [!include[More information](../../includes/proc-more-information.md)] [Soporte CORS para Azure Storage Services](https://docs.microsoft.com/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services).
 
-Si el archivo adjunto es una imagen, el control mostrará la imagen como miniatura si está almacena en Common Data Service o Azure Storage.
+Si el archivo adjunto es una imagen, el control mostrará la imagen como miniatura si está almacenada en Common Data Service o Azure Storage.
 
 > [!Note]
 > La característica de la miniatura está limitada a las imágenes de menos de 1 MB de tamaño.
 
 ![Miniatura de notas](media/notes-thumbnail.png "Miniatura de notas")
+
+### <a name="processes-for-azure-blob-storage"></a>Procesos para Azure Blob Storage
+
+Hay dos procesos necesarios para cargar archivos adjuntos en Azure Storage: **URL de Azure Blob Storage** y **AzureBlobStorageEnabled**.
+
+![Procesos de Blob Storage](media/blob-storage-processes.png "Procesos de Blob Storage")
+
+Durante la migración, los procesos pueden desactivarse. Esto puede hacer que los archivos adjuntos se carguen en Common Data Service en lugar de Azure Storage después de seguir los pasos para agregar recursos web. Asegúrese de que estos dos procesos estén activados para cargar archivos adjuntos en Azure Storage.
 
 ## <a name="cors-protocol-support"></a>Admisión de protocolo CORS
 
@@ -92,7 +100,7 @@ La siguiente configuración se usa para configurar CORS.
 | HTTP/Access-Control-Allow-Credentials | Access-Control-Allow-Credentials | El único valor válido para este encabezado es verdadero (con distinción entre mayúsculas de minúsculas). Si no necesita las credenciales, omita este encabezado completamente (en lugar de establecer el valor en falso). 
 | HTTP/Access-Control-Allow-Headers | Access-Control-Allow-Headers | Una lista delimitada por comas de los encabezados de solicitud HTTP admitidos.
 | HTTP/Access-Control-Allow-Methods | Access-Control-Allow-Methods | Una lista delimitada por comas de los métodos de solicitud HTTP admitidos como OBTENER, CORREO, OPCIONES.
-| HTTP/Access-Control-Allow-Origin | Access-Control-Allow-Origin | Para permitir que un recurso acceda a las recursos, puede especificar \*. De lo contrario, especifique el URI que puede tener acceso a los recursos.                   |
+| HTTP/Access-Control-Allow-Origin | Access-Control-Allow-Origin | URL de la instancia de Dynamics 365, como https://contoso.crm.dynamics.com. Para permitir que cualquier URI acceda a sus recursos, use \*.                 |
 |  HTTP/Access-Control-Expose-Headers | Access-Control-Expose-Headers | Una lista delimitada por comas de nombres de encabezado HTTP distintos a los encabezados de respuesta sencillos que el recurso puede usar y a los que puede ser expuesto.
 | HTTP/Access-Control-Max-Age | Access-Control-Max-Age |  El número máximo de segundos que se pueden almacenar los resultados en la caché.
 | HTTP/Content-Security-Policy | Content-Security-Policy | Controla los recursos que el agente de usuario puede cargar para una página determinada.

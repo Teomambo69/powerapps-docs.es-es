@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c6a1be2be5bda302dcdbaebf57cfb3b50cc71b14
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 61a0ba6433290f832323766699a792f1e57aa9eb
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115856"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276144"
 ---
 # <a name="customize-visualizations-and-dashboards"></a>Personalizar visualizaciones y paneles
 
@@ -35,31 +35,21 @@ La visualización de datos y el análisis en aplicaciones basadas en modelos le 
 - **Panel**. Los paneles actúan como una herramienta empresarial inteligente en aplicaciones basadas en modelos al brindar una instantánea de los datos en diferentes formularios. Use los paneles para mostrar simultáneamente los datos de hasta seis gráficos, cuadrículas, IFrames y recursos web.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Ver los datos con visualizaciones (gráficos)](view-data-with-visualizations-charts.md)  
+
+[Ver los datos con visualizaciones (gráficos)](view-data-with-visualizations-charts.md)  
+[Analizar datos con paneles](analyze-data-with-dashboards.md)  
+[Esquema de descripción de los datos de visualización](visualization-data-description-schema.md)  
   
- [Analizar datos con paneles](analyze-data-with-dashboards.md)  
-  
- [Esquema de descripción de los datos de visualización](visualization-data-description-schema.md)  
-  
-## <a name="related-sections"></a>Secciones relacionadas  
- [Ampliar el modelo de metadatos](/dynamics365/customer-engagement/developer/org-service/use-organization-service-metadata)  <!-- TODO Need to update relevant powerapps repo link-->
-  
- [Personalizar los formularios de entidad](customize-entity-forms.md)  
-  
- [Personalizar vistas de entidad](customize-entity-views.md)  
-  
- [Personalizar conjuntos de opciones globales](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)  <!-- TODO Need to update relevant powerapps repo link-->
-  
- [Cambiar navegación de la aplicación con el mapa del sitio](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap)  <!-- TODO Need to update relevant powerapps repo link-->
-  
- [Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)  
-  
- [Configuración de la apariencia del calendario de servicios](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration)  <!-- TODO Need to update relevant powerapps repo link-->
-  
- [Publicación de personalizaciones](publish-customizations.md)  
-  
- [Cuándo modificar el archivo de personalizaciones](when-edit-customization-file.md)  
-  
- [Extender cliente](/dynamics365/customer-engagement/developer/extend-client)  <!-- TODO Need to update relevant powerapps repo link-->
-  
- [Recursos web](web-resources.md)
+## <a name="related-sections"></a>Secciones relacionadas 
+
+[Extender el modelo de metadatos](/dynamics365/customer-engagement/developer/org-service/use-organization-service-metadata)
+[Personalizar formularios de entidad](customize-entity-forms.md)  
+[Personalizar vistas de entidad](customize-entity-views.md) 
+[Personalizar conjuntos de opciones globales](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)<br/>
+[Cambiar navegación de la aplicación con el mapa del sitio](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap)<br/>  
+[Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)  
+[Configuración de apariencia del calendario de servicio](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration) 
+[Publicar personalizaciones](publish-customizations.md)  
+[Cuándo modificar el archivo de personalizaciones](when-edit-customization-file.md)  
+[Extender cliente](/dynamics365/customer-engagement/developer/extend-client)  
+[Recursos web](web-resources.md)

@@ -9,12 +9,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: grhurl
 ms.reviewer: nkrb
-ms.openlocfilehash: 606f76c4956a5f2249d8d42f78ade3e91c1cda64
-ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
+ms.openlocfilehash: 4a3d00664031bee0e4368f5d497181ba7a774f8c
+ms.sourcegitcommit: b75b29d58adf1547c9fcd3ddd1f14f69fb7f572b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3162073"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "3330231"
 ---
 # <a name="implementing-the-facepile-component"></a>Implementar el componente FacePile
 
@@ -47,7 +47,7 @@ Aplicaciones basadas en modelos y aplicaciones de lienzo (vista previa pública)
 </manifest>
 ```
 
-## <a name="overview"></a>información general
+## <a name="overview"></a>Información general
 
 Este ejemplo proporciona ejemplos de cómo agregar dependencias para las bibliotecas de terceros y Office UI Fabric, indicando cómo usar los componentes Office UI Fabric para React para la interfaz de usuario y realizar de enlace de datos bidireccional entre Power Apps Component Framework y el modelo de estado de React.
 

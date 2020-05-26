@@ -2,7 +2,7 @@
 title: Detección de datos duplicados con la API web (Common Data Service)| Microsoft Docs
 description: Lea cómo detectar duplicados con el encabezado MSCRM.SuppressDuplicateDetection y la API web de Common Data Service
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 04/06/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 73cfe1f28eb95e87e4aedf7eed9e51710ba9b8b2
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 0a32cc136d9876cdf84acd80a2f5229449115876
+ms.sourcegitcommit: 49b69129262a9b530e69508e84c3822b742066df
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3126403"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "3233696"
 ---
 # <a name="detect-duplicate-data-using-the-web-api"></a>Detección de datos duplicados con la API web
 
@@ -81,12 +81,7 @@ OData-Version: 4.0
 {
     "error": {
         "code": "0x80040333",
-        "message": "A record was not created or updated because a duplicate of the current record already exists.",
-        "innererror": {
-            "message": "A record was not created or updated because a duplicate of the current record already exists.",
-            "type": "Microsoft.Crm.CrmException",
-            [ Stack Trace and internal exception details omitted for brevity]
-        }
+        "message": "A record was not created or updated because a duplicate of the current record already exists."
     }
 }
 ```
@@ -128,12 +123,7 @@ OData-Version: 4.0
 {
     "error": {
         "code": "0x80040333",
-        "message": "A record was not created or updated because a duplicate of the current record already exists.",
-        "innererror": {
-            "message": "A record was not created or updated because a duplicate of the current record already exists.",
-            "type": "Microsoft.Crm.CrmException",
-            [ Stack Trace and internal exception details omitted for brevity]
-        }
+        "message": "A record was not created or updated because a duplicate of the current record already exists."
     }
 }
 ```

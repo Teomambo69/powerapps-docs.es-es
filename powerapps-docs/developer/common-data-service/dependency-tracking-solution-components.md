@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 538c26f0f0a0dfbd1347137e0086945783dec441
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 922dc4affafcd6232857dfd99f8d552812848de3
+ms.sourcegitcommit: 94d66a2e1bc7f45f1a8ae97cc5ec4fce89aefdee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156256"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3325656"
 ---
 # <a name="dependency-tracking-for-solution-components"></a>Seguimiento de las dependencias de los componentes de la solución
 
@@ -179,6 +179,7 @@ Las soluciones están hechas de componentes de soluciones. Usará el área **Sol
 >  Los recursos web pueden depender de otros recursos web basándose en los vínculos relativos. Por ejemplo, un recurso web HTML puede usar un recurso web de CSS o de script. Un recurso web de Silverlight mostrado fuera de un gráfico o formulario de entidad debe tener un recurso web HTML para alojarlo. Estas dependencias no se siguen como dependencias de solución.  
   
 ### <a name="see-also"></a>Vea también  
+ [Eliminar dependencias](removing-dependencies.md)   
  [Empaquetar y distribuir extensiones con soluciones de Dynamics 365](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions)   
  [Introducción a las soluciones](introduction-solutions.md)   
  [Planear el desarrollo de la solución](/dynamics365/customer-engagement/developer/plan-solution-development)   

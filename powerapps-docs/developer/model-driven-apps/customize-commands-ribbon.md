@@ -15,29 +15,31 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bf61faabb150e45f80227ed8c776795f2e319d82
-ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
+ms.openlocfilehash: 27b041e7a62b76bab7e920deac9a8933accf4fca
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172571"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275948"
 ---
 # <a name="customize-commands-and-the-ribbon"></a>Personalización de comandos y la cinta de opciones
 
-Common Data Service muestra comandos de diferentes maneras en función de la entidad y del cliente. En la mayoría de los lugares en la aplicación web verá una *barra de comandos* en lugar de una cinta de opciones. Dynamics 365 for tablets también usa los datos definidos como cintas de opciones para controlar qué comandos están disponibles con una barra de comandos optimizada para tacto.  
+Common Data Service muestra comandos de diferentes maneras en función de la entidad y del cliente. En la mayoría de los lugares en la aplicación web, verá una *barra de comandos* en lugar de una cinta de opciones. 
+
+Dynamics 365 for tablets también usa los datos definidos como cintas de opciones para controlar qué comandos están disponibles con una barra de comandos optimizada para tacto.  
   
- La barra de comandos ofrece un mejor rendimiento. La cinta de opciones se sigue mostrando en la aplicación web para determinados formularios de entidad y aún se usa para las vistas de lista en Dynamics 365 for Outlook.  
+La barra de comandos ofrece un mejor rendimiento. La cinta de opciones se sigue mostrando en la aplicación web para determinados formularios de entidad y aún se usa para las vistas de lista en Dynamics 365 for Outlook.  
   
- La barra de comandos y la cinta de opciones usan los mismos datos XML subyacentes para definir qué comandos se van a mostrar, cuándo se habilitan y qué función tienen.  
+La barra de comandos y la cinta de opciones usan los mismos datos XML subyacentes para definir qué comandos se van a mostrar, cuándo se habilitan y qué función tienen.  
   
- Los temas de esta sección presentan conceptos clave que debe comprender y tareas comunes que realiza al personalizar la barra de comandos o la cinta de opciones.  
+Los artículos de esta sección presentan conceptos clave que debe comprender y tareas comunes que realiza al personalizar la barra de comandos o la cinta de opciones.  
   
 > [!NOTE]
 >  Puesto que el esquema XML subyacente se diseñó para mostrar los comandos como cintas de opciones, el término *cinta de opciones* se seguirá usando en la documentación.  
   
 ## <a name="troubleshoot-ribbon-issues"></a>Solución de problemas de cinta
 
-Si tiene un problema con un botón de la barra de comandos de la cinta, use esta guía de solución de problemas para encontrar y resolver el problema: <https://support.microsoft.com/help/4552163>
+Si tiene un problema con un botón de la barra de comandos de la cinta, use esta [guía de solución de problemas](https://support.microsoft.com/help/4552163) para encontrar y resolver el problema.
 
 
 ## <a name="community-tool"></a>Herramienta comunitaria

@@ -10,12 +10,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: a674b37fd4616a21fe8d61336f255debafd552dd
-ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
+ms.openlocfilehash: 59069a6ae5a42b3fb2eb52bf069ba084f6ea0166
+ms.sourcegitcommit: 943672dad0041d3bab25b44cd8c4d25e88f39b93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "3080842"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "3289284"
 ---
 # <a name="how-to-use-the-sample-components"></a>¿Cómo usar los componentes de ejemplo?
 
@@ -24,20 +24,23 @@ Todos los componentes de ejemplo enumerados en esta sección están disponibles 
 Los temas de los componentes de ejemplo individuales en esta sección le proporcionan una visión general del componente de ejemplo, su apariencia visual y el manifiesto, el código y los recursos para el componente de ejemplo.
 
 ## <a name="before-you-can-try-the-sample-components"></a>Antes de poder probar los componentes de ejemplo
+
 Para probar los componentes de ejemplo, primero debe:
+
 - [Descargar](https://go.microsoft.com/fwlink/?linkid=2088525) los componentes de ejemplo para tener una copia local.
 - Instalar [Power Apps CLI](https://aka.ms/PowerAppsCLI).
 
 ## <a name="try-the-sample-components"></a>Probar los componentes de ejemplo
+
 Siga los pasos a continuación para importar y probar los componentes de ejemplo en su aplicación de lienzo o basada en modelo:
 
 1. Vaya a la carpeta de su equipo donde haya descargado los componentes de ejemplo y extraiga el archivo .zip.  
-1. Abra el símbolo del sistema del desarrollador para Visual Studio 2017 y vaya a la carpeta del componente de ejemplo en la carpeta extraída que desea ver en tiempo de ejecución. Por ejemplo, vaya a \<carpeta_extraída>/carpeta TS_IncrementComponent.
+1. Abra el símbolo del sistema del desarrollador para Visual Studio 2017 y vaya a la carpeta del componente de ejemplo en la carpeta extraída que desea ver en tiempo de ejecución. Por ejemplo, navegue hasta la carpeta `/extracted_folder/TS_IncrementComponent`.
 1. Ejecute el siguiente comando para obtener todas las dependencias necesarias:
     ```CLI
     npm install
     ```
-1. Cree una nueva carpeta con el comando `mkdir <folder name>` dentro de la carpeta del componente de ejemplo y vaya a la carpeta con el comando `cd <folder name>`. 
+1. Cree una nueva carpeta con el comando `mkdir <folder name>` dentro de la carpeta del componente de ejemplo que tiene el archivo `pcfproj` y vaya a la carpeta con el comando `cd <folder name>`. 
 1. Cree un nuevo proyecto de solución en la carpeta usando el comando siguiente:
     ```CLI
     pac solution init --publisher-name <Name of the publisher> --publisher-prefix <Publisher prefix>

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 48737a053227cbe5daa6b07ef727a4eba31c1ba7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c4eb7d7bf269541aef706a6e47ae25d7511a1590
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749939"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275908"
 ---
 # <a name="use-localized-labels-with-ribbons"></a>Usar etiquetas localizadas con cintas de opciones
 
@@ -28,6 +28,7 @@ ms.locfileid: "2749939"
 Aunque los elementos de la cinta de opciones que muestran el texto permiten la entrada directa de texto, se recomienda usar etiquetas localizadas para definir el texto que se muestra en la cinta de opciones. Habilita capacidades multilingües y una mejor administración del texto compartido.  
   
 ## <a name="using-localized-labels"></a>Uso de etiquetas localizadas  
+
  El elemento `<RibbonDiffXml>` incluye el elemento `<LocLabels>`. Como se muestra en el siguiente ejemplo, aquí es donde puede especificar qué texto desea mostrar en la información sobre herramientas y las etiquetas de la cinta de opciones con el elemento `<Titles>`.  
   
 ```xml  
@@ -55,12 +56,13 @@ ToolTipDescription="$LocLabels:MyISV.account.SendToOtherSystem.ToolTip"
 ```  
   
 ## <a name="force-a-line-break-in-a-ribbon-control-label"></a>Forzar un salto de línea en una etiqueta del control de la cinta de opciones  
+
  Si tiene una etiqueta del control de la cinta de opciones que es muy larga, el texto se ajustará para adaptarse al espacio disponible. Puede especificar el lugar donde desea incluir un salto de línea usando los siguientes caracteres: `&#x200b;&#x200b;`.  
   
  Si el texto de la etiqueta es muy largo sin un espacio para que se ajuste el texto, el ancho del control se amplía para permitir que se muestre la etiqueta completa.  
   
 ### <a name="see-also"></a>Vea también  
- [Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)   
- [Exportar, preparar para modificar e importar la cinta de opciones](export-prepare-edit-import-ribbon.md)   
+ [Personalizar comandos y la cinta de opciones](customize-commands-ribbon.md)   
+ [Exportar, preparar para editar e importar la cinta de opciones](export-prepare-edit-import-ribbon.md)   
  [Usar etiquetas localizadas con cintas de opciones](use-localized-labels-ribbons.md)   
  [Definir comandos de la cinta de opciones](define-ribbon-commands.md)

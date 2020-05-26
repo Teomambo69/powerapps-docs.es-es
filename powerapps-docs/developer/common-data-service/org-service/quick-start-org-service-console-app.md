@@ -1,6 +1,6 @@
 ---
 title: 'Inicio rápido: Ejemplo de servicio de organización (C#) (Common Data Service) | Microsoft Docs'
-description: En este tutorial se muestra cómo conectarse al servicio de la organización de Common Data Service
+description: En este inicio rápido se muestra cómo conectarse al servicio de la organización de Common Data Service
 ms.custom: ''
 ms.date: 04/25/2019
 ms.reviewer: pehecke
@@ -14,23 +14,23 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f5b8ef34d1be214c9d9a54943166c0dce9cd9223
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 12e46f3069a5362c186d8412f2d533285b0bb3ab
+ms.sourcegitcommit: 08184794f3438c8293b88dbbd16bfe8be4f6c229
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155988"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3321827"
 ---
-# <a name="quick-start-organization-service-sample-c"></a>Tutorial: ejemplo de servicio de organización (C#)
+# <a name="quickstart-organization-service-sample-c"></a>Inicio rápido: ejemplo de servicio de organización (C#)
 
 Aquí es donde comienza a trabajar con los ensamblados de .NET SDK para trabajar con datos usando Common Data Service.
 
-En este tutorial creará una aplicación de consola mínima para conectarse al servicio de organización con la clase <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>. También pasará la información de conexión con una cadena de conexión al constructor.
+En este inicio rápido creará una aplicación de consola mínima para conectarse al servicio de organización con la clase <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>. También pasará la información de conexión con una cadena de conexión al constructor.
 
 Puede usar <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*> el método que pasa una instancia del tipo <xref:Microsoft.Crm.Sdk.Messages.WhoAmIRequest> y se mostrará <xref:Microsoft.Crm.Sdk.Messages.WhoAmIResponse>.<xref:Microsoft.Crm.Sdk.Messages.WhoAmIResponse.UserId> valor.
 
 > [!NOTE]
-> Este ejemplo de tutorial no incluye tratamiento de errores. Es un ejemplo mínimo de lo que necesita para conectarse y usar el servicio de organización.
+> Este ejemplo del inicio rápido no incluye tratamiento de errores. Es un ejemplo mínimo de lo que necesita para conectarse y usar el servicio de organización.
 
 
 ## <a name="prerequisites"></a>Requisitos previos
@@ -72,7 +72,7 @@ Puede usar <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk
     using Microsoft.Xrm.Tooling.Connector;
     ```
 
-1. Reemplace el método `Main` con el siguiente. Los valores admitidos para *AuthType* se enumeran en [Parámetros de cadena de conexión](/dynamics365/customer-engagement/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect#connection-string-parameters).
+1. Reemplace el método `Main` con el siguiente. Los valores admitidos para *AuthType* se enumeran en [Parámetros de cadena de conexión](../xrm-tooling/use-connection-strings-xrm-tooling-connect.md).
 
     ```csharp
     static void Main(string[] args)
@@ -133,7 +133,7 @@ Se ha conectado con éxito al servicio de organización.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Estos temas explicarán cómo trabajar con entidades de Common Data Service:
+Estos artículos explicarán cómo trabajar con entidades de Common Data Service:
 
 [Operaciones de la entidad con el servicio de organización](entity-operations.md)<br />
 [Crear entidades con el servicio de la organización](entity-operations-create.md)<br />

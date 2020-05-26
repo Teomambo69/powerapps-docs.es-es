@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 01/30/2020
+ms.date: 04/23/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 9b2a2333c3e8422470521a7af135ea2c7d7040f2
-ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
+ms.openlocfilehash: 87c85766453bbe352923f2ea191cd6d9be31075f
+ms.sourcegitcommit: 6aa28b13d942c4a907642962348f0c0443623fd1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3012646"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3285318"
 ---
 # <a name="search"></a>Search
 
-En portales de Power Apps, puede buscar los registros a través de varias entidades mediante búsqueda por relevancia o búsqueda categorizada. También puede buscar en los registros de listas de la entidad con funcionalidad de búsqueda de la lista de entidades. 
+En portales de Power Apps, puede buscar los registros a través de varias entidades mediante búsqueda por relevancia o búsqueda categorizada. También puede buscar dentro de registros de listas de entidades mediante la funcionalidad de búsqueda de listas de entidades. 
 
 La funcionalidad de búsqueda de lista de entidades en el portal usa FetchXML en el backend para buscar las columnas definidas en la lista de entidades y luego mostrar los resultados. 
 
@@ -29,9 +29,11 @@ La búsqueda global usa un índice de búsqueda externo que se base en Lucene.Ne
 La búsqueda global de portales le permite buscar los registros a través de varias entidades. También le permite buscar en múltiples columnas y configurar qué columnas de una entidad se pueden buscar.
 
 Entre las ventajas de la búsqueda global está su capacidad para:
-- Encontrar coincidencias con cualquier palabra en el término de búsqueda en cualquier campo de la entidad. Las coincidencias pueden incluir palabras de inflexión como secuencia, secuenciando, o secuenciado.
-- Devolver resultados de todas las entidades que permiten búsquedas en una sola lista ordenada por relevancia, en función de factores como número de palabras que coinciden o su proximidad mutua en el texto.
-- Resaltar coincidencias en la lista de resultados.
+- Encontrar coincidencias con cualquier palabra en el término de búsqueda en cualquier campo de la entidad. Las coincidencias pueden incluir palabras de inflexión como secuencia, transmisión de secuencias o transmitido en secuencias.
+- Devuelve los resultados de todas las entidades de búsqueda en una sola lista ordenada por relevancia, en función de factores como:
+    - Número de palabras coincidentes.
+    - Proximidad entre sí en el texto.
+- Destacar coincidencias en los resultados de la búsqueda.
 - Proporcionar opciones de faceta que se pueden utilizar para filtrar los resultados de búsqueda aún más.
 
 En Búsqueda por relevancia, cuanto mejor sea la correspondencia, más alta aparecerá en los resultados. Una coincidencia tiene una relevancia mayor si se encuentran más palabras del término de búsqueda en gran proximidad mutua. Cuanto más pequeña sea la cantidad de texto donde se encuentran las palabras de búsqueda, más alta será la relevancia. Por ejemplo, si encuentra las palabras de búsqueda en un nombre de compañía y una dirección, podría ser una coincidencia mejor que las mismas palabras se encuentren en un artículo grande, muy alejadas entre sí. Como los resultados se devuelven en una sola lista, puede ver una combinación de registros mostrados uno tras otro, con los trabajos coincidentes resaltados. 
@@ -40,7 +42,7 @@ Las secciones siguientes detallan cómo funciona la búsqueda global en portales
 
 ## <a name="entities-searchable-in-portal-global-search"></a>Entidades de búsqueda en búsqueda global de portal
 
-Las siguientes entidades se pueden buscar en un sitio web del portal siempre que se hayan instalado los paquetes de solución adecuados y se haya agregado la búsqueda a un portal. Las columnas que están indexadas consistirán en las columnas que se encuentran en la vista búsqueda, que se pueden personalizar.  Cada entidad en la lista tiene su conjunto predeterminado de atributos indexados como se detalla aquí:
+De manera predeterminada, las siguientes entidades se pueden buscar en un sitio web del portal siempre que se hayan instalado los paquetes de solución adecuados y se haya agregado la búsqueda a un portal. Las columnas que están indexadas consistirán en las columnas que se encuentran en la vista búsqueda, que se pueden personalizar.  Cada entidad en la lista tiene su conjunto predeterminado de atributos indexados como se detalla aquí:
 - Artículo de conocimientos
     - También se pueden buscar notas y adjuntos de un artículo de conocimiento. Más información: [Buscar en el contenido de los archivos adjuntos](search-file-attachment.md)
     - Solo se pueden realizar búsquedas en los artículos si están publicados y su campo Internal Only se establece en false.
@@ -59,13 +61,13 @@ Las siguientes entidades se pueden buscar en un sitio web del portal siempre que
 - Incidente 
 
 > [!NOTE]
-> Aparte de las entidades incluidas aquí, ninguna otra entidad puede estar habilitada para la búsqueda global en un portal.
+> Puede configurar entidades adicionales para la búsqueda. Para más información, lea [Configurar entidades adicionales para la búsqueda](search-additional-entities.md).
 
 ## <a name="fields-searchable-in-global-search"></a>Campos que se pueden buscar en la búsqueda global
 
 Todos los campos disponibles en la vista definida por la configuración del sitio Search / IndexQueryName para cualquier entidad se indexan en la búsqueda global y se pueden buscar. 
 
-El valor predeterminado para el Search/IndexQueryName es “Portal Search”.
+El valor predeterminado para Search/IndexQueryName es “Portal Search”.
 
 Si la vista no está disponible para una entidad, no se indexa, y los resultados no se muestran en búsqueda global.
 
@@ -79,13 +81,14 @@ La siguiente configuración del sitio está relacionada con la búsqueda global:
 | Nombre    | Valor predeterminado     | Descripción       |
 |-----------------------|--------------------|-------------|
 | Búsqueda / Habilitado | Verdadero  | Un valor booleano que indica si la búsqueda está habilitada. Si establece su valor en falso, la búsqueda global en el portal se desactiva.<br>Si usa plantillas web listas para usar y desactiva esta opción, el cuadro de búsqueda no se mostrará en el encabezado ni en la página de búsqueda. Además, no se devuelven resultados incluso si se introduce la dirección URL directa de la página de búsqueda.  |
+| Búsqueda/Habilitar entidades adicionales  | False  | Establecer este valor en verdadero permite buscar entidades adicionales en su portal. <br> Requiere que *Búsqueda/Habilitado* esté establecido en *Verdadero* cuando se use.  |
 | Búsqueda/Filtros  | Contenido: adx_webpage; Eventos: adx_event, adx_eventschedule; Blogs: adx_blog, adx_blogpost, adx_blogpostcomment; Foros: adx_communityforum, adx_communityforumthread, adx_communityforumpost; Ideas: adx_ideaforum, adx_idea, adx_ideacomment; Problemas: adx_issueforum, adx_issue, adx_issuecomment; Título de datos: incidente | Una recopilación de opciones de filtro del nombre lógico de búsqueda. Definir un valor aquí agregará opciones de filtro desplegable a la búsqueda global. Este valor debe tener la forma de pares nombre / valor, con nombre y valor separados por dos puntos, y pares separados por punto y coma. Por ejemplo: “Foros: adx_communityforum, adx_communityforumthread, adx_communityforumpost; Blogs: adx_blog, adx_blogpost, adx_blogpostcomment”.  |
 | Buscar/IndexQueryName   | Búsqueda del portal  | El nombre de la vista del sistema usada por la consulta de búsqueda de portal para definir los campos de una entidad habilitada se indexan y se buscan.   |
-| Búsqueda/Consulta  | +(@Query) _title:(@Query) _logicalname:adx_webpage\~0.9^0.2 -_logicalname:adx_webfile\~0.9 adx_partialurl:(@Query) _logicalname:adx_blogpost\~0.9^0.1 -_logicalname:adx_communityforumthread\~0.9   | Esta configuración agrega ponderaciones y filtros adicionales a la consulta que un usuario ingresa en el cuadro de búsqueda predeterminado que se muestra en el portal. En el valor predeterminado, @Query es el texto de la consulta escrito por un usuario.<br>Para obtener información sobre cómo modificar este valor, siga [Sintaxis de la consulta de Lucene](https://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html).<br>**Importante**: estas ponderaciones y filtros se aplican solo al cuadro de búsqueda que se proporciona en la página de búsqueda predeterminada del portal. Si usa una etiqueta líquida de búsqueda para crear su propia página de búsqueda, este valor no se aplica. |
+| Búsqueda/Consulta  | +(@Query) _title:(@Query) _logicalname:adx_webpage\~0.9^0.2 -_logicalname:adx_webfile\~0.9 adx_partialurl:(@Query) _logicalname:adx_blogpost\~0.9^0.1 -_logicalname:adx_communityforumthread\~0.9   | Esta configuración agrega ponderaciones y filtros adicionales a la consulta que un usuario ingresa en el cuadro de búsqueda predeterminado que se muestra en el portal. En el valor predeterminado, @Query es el texto de la consulta escrito por un usuario.<br>Para obtener información sobre cómo modificar este valor, siga [Sintaxis de la consulta de Lucene](https://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html).<br>**Importante**: Estas ponderaciones y filtros se aplican solo al cuadro de búsqueda que se proporciona en la página de búsqueda predeterminada del portal. Si usa una etiqueta líquida de búsqueda para crear su propia página de búsqueda, este valor no se aplica. |
 | Buscar/lematizador  | Inglés    | El idioma utilizado por el algoritmo de la lematización de búsqueda de portal.   |
 | Buscar/FacetedView  | True   | Habilita facetas en los resultados de la búsqueda. Cuando se establece en True, las facetas se mostrarán junto con los resultados en la página de búsqueda.  |
 | Search/IndexNotesAttachments   | True    | Indica si se debe indexar el contenido de los datos adjuntos de las notas en artículos de Knowledge Base y archivos web. De forma predeterminada, se establece en Falso. Más información: [Buscar en el contenido de los archivos adjuntos](search-file-attachment.md)    |
-| Buscar/RecordTypeFacetsEntities  | Blogs: adx_blog, adx_blogpost; Foros: adx_communityforum, adx_communityforumthread, adx_communityforumpost; Ideas: adx_ideaforum, adx_idea; Downloads:annotation, adx_webfile    | Esto determina cómo se agrupan las entidades en la faceta tipo de registro en la página de búsqueda. Ésta es la configuración predeterminada. <br>“DisplayNameinRecordTypeFacet1: logicalnameofentity1, logicalnameofentity2; DisplayNameinRecordTypeFacet2: logicalnameofentity3, logicalnameofentity4” <br>El nombre para mostrar en aspecto del tipo de registro aparecerá en la interfaz de usuario. Este grupo de facetas combinará el resultado de las entidades definidas en la configuración.   |
+| Buscar/RecordTypeFacetsEntities  | Blogs: adx_blog, adx_blogpost; Foros: adx_communityforum, adx_communityforumthread, adx_communityforumpost; Ideas: adx_ideaforum, adx_idea; Downloads:annotation, adx_webfile    | Esto determina cómo se agrupan las entidades en la faceta tipo de registro en la página de búsqueda. Ésta es la configuración predeterminada. <br>"DisplayNameinRecordTypeFacet1: logicalnameofentity1, logicalnameofentity2; DisplayNameinRecordTypeFacet2: logicalnameofentity3, logicalnameofentity4" <br>El nombre para mostrar en aspecto del tipo de registro aparecerá en la interfaz de usuario. Este grupo de facetas combinará el resultado de las entidades definidas en la configuración.   |
 | KnowledgeManagement/DisplayNotes | True   | Indica si indexar los datos adjuntos de los artículos de Knowledge Base. De forma predeterminada, se establece en Falso. |
 |||
 
@@ -108,7 +111,7 @@ Los siguientes fragmentos de contenido están relacionados con la búsqueda glob
 | Búsqueda/Faceta/Valoración   | Valoración   | Este fragmento de contenido determina la etiqueta de la faceta Clasificación.<br>![Faceta de calificaciones](../media/facet-rating.png "Faceta de calificaciones")  |
 | Búsqueda/Faceta/Tipo de registro   | Tipo de registro | Este fragmento de contenido determina la etiqueta de la faceta clasificación.<br>![Faceta de tipo de registro](../media/facet-record-type.png "Faceta de tipo de registro")     |
 | Búsqueda/Faceta/Criterio de ordenación/Valoración media de los usuarios | Valoraciones medias de los usuarios | Este fragmento de contenido determina la etiqueta que se muestra para la opción "Ordenar por calificaciones promedio del usuario" en la lista desplegable de clasificación en la página Resultados de la búsqueda.<br>![Ordenar la calificación por promedio](../media/sort-avg-user-rating.png "Ordenar la calificación por promedio")  |
-| Búsqueda/Faceta/Criterio de ordenación/Relevancia| Importancia| Este fragmento de contenido determina la etiqueta que se muestra para la opción "Ordenar por relevancia" en la lista desplegable de clasificación en la página Resultados de la búsqueda.<br>![Ordenar por relevancia](../media/sort-relevance.png "Ordenar por relevancia")|
+| Búsqueda/Faceta/Criterio de ordenación/Relevancia| Relevancia| Este fragmento de contenido determina la etiqueta que se muestra para la opción "Ordenar por relevancia" en la lista desplegable de clasificación en la página Resultados de la búsqueda.<br>![Ordenar por relevancia](../media/sort-relevance.png "Ordenar por relevancia")|
 | Búsqueda/Faceta/Criterio de ordenación/Vistas| Número de visualizaciones| Este fragmento de contenido determina la etiqueta que se muestra para la opción "Ordenar por conteo de vista" en la lista desplegable de clasificación en la página Resultados de la búsqueda.<br>![Ordenar por recuento de vistas](../media/sort-view-count.png "Ordenar por recuento de vistas")|
 |||
 
@@ -134,7 +137,7 @@ Como parte de búsqueda global de portal, se admite una variedad de caracteres e
 
     - **Elegir el período**: El término solo es una palabra única. Por ejemplo, una consulta {hola mundo} se analizaría en varios términos, “hola” y “mundo”. Cada período se busca de forma separada. Por tanto, en la consulta {hola mundo}, todos los registros que tienen el término “hola “o “mundo” se presentarían en resultados de búsqueda.
 
-    - **Frases**: Una frase es un grupo de términos rodeado por comillas dobles ("). Por ejemplo, una consulta {“hola mundo”} se analizaría como usuarios de la frase “hola mundo”. Cada frase se busca completamente. Por lo tanto, en la consulta {"hola mundo"}, todos los registros con la frase completa "hola mundo" se mostrarían en los resultados de búsqueda y no se mostraría ningún registro que solo tuviese "hola" o "mundo".
+    - **Frases**: Una frase es un grupo de términos rodeado por comillas dobles (""). Por ejemplo, una consulta {"hola mundo"} se analizaría como usuarios de la frase "hola mundo". Cada frase se busca completamente. Por lo tanto, en la consulta {"hola mundo"}, todos los registros con la frase completa "hola mundo" se mostrarían en los resultados de búsqueda y no se mostraría ningún registro que solo tuviese "hola" o "mundo".
 
     Cada consulta de búsqueda puede comprender uno o muchos términos de cualquier tipo que se combinen mediante operadores booleanos para crear consultas complejas.
 
@@ -142,13 +145,13 @@ Como parte de búsqueda global de portal, se admite una variedad de caracteres e
 
     - **Búsqueda con caracteres comodín**: Existen dos tipos de comodines disponibles que se va a usar dentro de varios términos de consultas de búsqueda (no dentro de consultas de la frase): Búsqueda con caracteres comodín de carácter individual y búsqueda con caracteres comodín de varios caracteres.
 
-        - **Búsqueda con caracteres comodín de carácter individual**: Para realizar una búsqueda con caracteres comodín de carácter individual, use el símbolo del signo de interrogación (?). La búsqueda con caracteres comodín de carácter individual busca los términos que coinciden con el carácter individual reemplazado. Por ejemplo, para buscar “texto” o “pruébele” puede usar la consulta de búsqueda como “te? t”.
+        - **Búsqueda con caracteres comodín de carácter individual**: Para realizar una búsqueda con caracteres comodín de carácter individual, use el símbolo del signo de interrogación (?). La búsqueda con caracteres comodín de carácter individual busca los términos que coinciden con el carácter individual reemplazado. Por ejemplo, para buscar “texto” o “pruébele” puede usar la consulta de búsqueda como "te? t".
 
-        - **Búsqueda de comodines de varios caracteres**: Para realizar una búsqueda de comodines de varios caracteres, use el símbolo asterisco (\*). Las búsquedas de comodines de múltiples caracteres buscan cero o más caracteres. Por ejemplo, para buscar prueba, pruebas o evaluador, puede usar la consulta de búsqueda como “t *”. También puede usar búsqueda con caracteres comodín de múltiples caracteres en medio de la consulta. Por ejemplo, “te*de prueba”.
+        - **Búsqueda de comodines de varios caracteres**: Para realizar una búsqueda de comodines de varios caracteres, use el símbolo asterisco (\*). Las búsquedas de comodines de múltiples caracteres buscan cero o más caracteres. Por ejemplo, para buscar prueba, pruebas o evaluador, puede usar la consulta de búsqueda como "t *". También puede usar búsqueda con caracteres comodín de múltiples caracteres en medio de la consulta. Por ejemplo, "te*de prueba".
 
         > [!NOTE]
         > - no puede usar un * o ? símbolo como el primer carácter de una búsqueda.
-        > - La búsqueda con caracteres comodín no se puede usar en una consulta de la frase. Por ejemplo, si usa una consulta como “hell* world”, no mostrará resultados con el texto “hello world”.
+        > - La búsqueda con caracteres comodín no se puede usar en una consulta de la frase. Por ejemplo, si usa una consulta como "hell* world", no mostrará resultados con el texto "hello world".
 
     - **Búsqueda de proximidad**: La búsqueda de proximidad le permite buscar palabras que se encuentran a una distancia específica una de la otra. Por ejemplo, si desea encontrar los resultados de las palabras "Imagen" y "Borrosa" que aparecen a una distancia de 10 palabras una de la otra, puede usar la búsqueda de proximidad.
     
@@ -169,19 +172,19 @@ Como parte de búsqueda global de portal, se admite una variedad de caracteres e
 
     - **OR**: El operador OR es el operador predeterminado de la conjunción. Esto significa que si no está el operador booleano entre dos términos, use el operador OR. El operador OR vincula dos términos y busca un registro coincidente si uno de los términos existe en un registro. Esto es equivalente a una combinación mediante conjuntos. El símbolo || se debe usar en lugar de la palabra OR. Por ejemplo, la consulta de búsqueda “Smart TV” (excepto comillas) buscará para todos los registros con la palabra Smart o TV. Esta consulta también se puede escribir como “Smart OR TV”, “Smart || TV”.
 
-    - **Y:** El operador Y combina los registros donde ambos términos existen en cualquier parte del texto de un solo documento. Esto es equivalente a una combinación mediante conjuntos. El símbolo && se debe usar en lugar de la palabra Y. Por ejemplo, la consulta de búsqueda “Smart AND TV” (excepto comillas) buscará para todos los registros con la palabra Smart y TV. Esta consulta también se puede escribir como “Smart && TV”.
+    - **Y:** El operador Y combina los registros donde ambos términos existen en cualquier parte del texto de un solo documento. Esto es equivalente a una combinación mediante conjuntos. El símbolo && se debe usar en lugar de la palabra Y. Por ejemplo, la consulta de búsqueda "Smart AND TV" (excepto comillas) buscará para todos los registros con la palabra Smart y TV. Esta consulta también se puede escribir como "Smart && TV".
 
-    - **NO**: El operador NO excluye los registros después de los que contenga el período NO. Esto es equivalente a una diferencia usando conjuntos. El símbolo ! se puede usar en lugar de la palabra NO. Por ejemplo, la consulta de búsqueda “Smart NOT TV” (excepto comillas) buscará para todos los registros que tengan la palabra Smart pero no la palabra TV. Esta consulta también se puede escribir como “Smart ! TV"
+    - **NO**: El operador NO excluye los registros después de los que contenga el período NO. Esto es equivalente a una diferencia usando conjuntos. El símbolo ! se puede usar en lugar de la palabra NO. Por ejemplo, la consulta de búsqueda "Smart NOT TV" (excepto comillas) buscará para todos los registros que tengan la palabra Smart pero no la palabra TV. Esta consulta también se puede escribir como "Smart ! TV".
 
-    - **Símbolo más (+)**: El símbolo más (+), conocido también como operador requerido, requiere que el término después del símbolo “+” exista en alguna parte de un registro. Por ejemplo, la consulta de búsqueda “Smart + TV” buscará para todos los registros donde la palabra TV debe estar presente, y la palabra Smart puede estar presente también. 
+    - **Símbolo más (+)**: El símbolo más (+), conocido también como operador requerido, requiere que el término después del símbolo “+” exista en alguna parte de un registro. Por ejemplo, la consulta de búsqueda "Smart + TV" buscará para todos los registros donde la palabra TV debe estar presente, y la palabra Smart puede estar presente también. 
 
-    - **Símbolo menos (-)**: El símbolo menos (-), conocido también como el operador de permitir, excluye los documentos que contienen el término después del símbolo “-”. Por ejemplo, la consulta de búsqueda “Smart - TV” buscará para todos los registros donde la palabra Smart está presente, y la palabra TV no está presente.
+    - **Símbolo menos (-)**: El símbolo menos (-), conocido también como el operador de permitir, excluye los documentos que contienen el término después del símbolo “-”. Por ejemplo, la consulta de búsqueda "Smart - TV" buscará para todos los registros donde la palabra Smart está presente, y la palabra TV no está presente.
 
-- **Agrupar**: La búsqueda global de portal admite el uso de paréntesis para agrupar cláusulas para formar subconsultas. Puede ser muy útil si desea gestionar la lógica booleana para una consulta. Por ejemplo, si desea buscar todos los registros donde aparece alguno de los términos "HD" o "Smart", pero la palabra TV siempre está presente, la consulta puede escribirse como "(HD or Smart) AND TV" ( excluyendo las comillas).
+- **Agrupar**: La búsqueda global de portal admite el uso de paréntesis para agrupar cláusulas para formar subconsultas. Puede ser útil si desea gestionar la lógica booleana para una consulta. Por ejemplo, si desea buscar todos los registros donde aparece alguno de los términos "HD" o "Smart", pero la palabra TV siempre está presente, la consulta puede escribirse como "(HD or Smart) AND TV" ( excluyendo las comillas).
 
 ## <a name="liquid-search-tag"></a>Etiqueta líquida de búsqueda
 
-Puede invocar la búsqueda global del portal desde plantillas líquidas utilizando la etiqueta searchindex. Más información: [searchindex](../liquid/portals-entity-tags.md#searchindex).
+Puede invocar la búsqueda global del portal desde plantillas líquidas utilizando la etiqueta *searchindex*. Más información: [searchindex](../liquid/portals-entity-tags.md#searchindex).
 
 > [!IMPORTANT]
 > Cuando se usa la etiqueta de searchindex, las facetas no se devuelven como parte de resultados, ni puede aplicar como filtro.
@@ -194,7 +197,7 @@ Las actualizaciones de índice de búsqueda en los portales de Power Apps se pro
 
 - Cualquier cambio puede tardar hasta 30 minutos en reflejarse en una búsqueda del portal. Sin embargo, el 95 por ciento de los cambios se actualizará en 15 minutos. En caso de que intervengan datos adjuntos puede tardar según el tamaño de los datos adjuntos.
 
-- Se recomienda volver a crear el índice completo manualmente después de realizar la migración de datos en masa o realizar actualizaciones en masa a los registros en un breve de tiempo. Para más información consulte [Reconstruir el índice de búsqueda completo](#rebuild-full-search-index).
+- Se recomienda volver a crear el índice completo manualmente después de realizar la migración de datos en masa o realizar actualizaciones en masa a los registros en un breve espacio de tiempo. Para más información consulte [Reconstruir el índice de búsqueda completo](#rebuild-full-search-index).
 
 ## <a name="rebuild-full-search-index"></a>Reconstruir el índice de búsqueda completo
 
@@ -205,9 +208,9 @@ Se requiere la reconstrucción del índice de búsqueda completo siempre que:
 - Un registro de sitio web, asociado al portal, se modifica en un entorno de Common Data Service.
 
 También puede volver a crear un índice completo de búsqueda de un portal.
-1.  Inicie sesión en el portal como administrador.
-2.  Navegue a la dirección URL de la siguiente manera: `<portal_path>/_services/about`
-3.  Seleccionar **Volver a generar un índice de búsqueda**.
+1.    Inicie sesión en el portal como administrador.
+2.    Navegue a la dirección URL de la siguiente manera: `<portal_path>/_services/about`
+3.    Seleccionar **Volver a generar un índice de búsqueda**.
 
 > [!IMPORTANT]
 > La reconstrucción completa del índice es una operación muy costosa y no debe realizarse durante las horas pico de uso, ya que esto puede hacer que su portal pierda impulso.
@@ -222,7 +225,7 @@ En el siguiente ejemplo, quitaremos la entidad Caso de la búsqueda global de po
 
 Para evitar que la entidad Case se indexe, debe cambiar el nombre de la vista de la entidad Case que define el conjunto de registros a indexar por el portal (definido por la configuración del sitio Search / IndexQueryName). De manera predeterminada, el nombre de esa vista es Portal Search.
 
-1.  Vaya a https://make.powerapps.com y seleccione Soluciones. 
+1.    Vaya a https://make.powerapps.com y seleccione Soluciones. 
 
     ![Soluciones](../media/solutions-page.png)
 
@@ -260,3 +263,12 @@ Una vez que se modifique la configuración de este sitio, la entidad Caso se eli
 ![Buscar en la página](../media/search-on-page.png "Buscar en la página")
 
 ![Buscar en encabezado](../media/search-in-header.png "Buscar en encabezado")
+
+## <a name="next-steps"></a>Pasos siguientes
+
+[Configuración de la búsqueda global de entidades adicionales](search-additional-entities.md)
+
+### <a name="see-also"></a>Vea también
+
+- [Usar la búsqueda por facetas](improve-portal-search-faceted-search.md)
+- [Búsqueda de archivos adjuntos](search-file-attachment.md)

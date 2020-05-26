@@ -2,7 +2,7 @@
 title: Usar la API web de Common Data Service (Common Data Service)| Microsoft Docs
 description: La API web de Common Data Service implementa OData v4 y proporciona una experiencia de desarrollo que puede usarse en una gran variedad de lenguajes de programación, plataformas y dispositivos.
 ms.custom: ''
-ms.date: 04/22/2019
+ms.date: 03/31/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 458e26218141f3c8a6d29fba23d78ee92b4c3165
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: bc52a5058b6246534761d5191d9fed49672ba5b1
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155068"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275808"
 ---
 # <a name="use-the-common-data-service-web-api"></a>Use la API web de Common Data Service
 
@@ -42,6 +42,11 @@ Es útil reconocer que el servicio de organización es lo que define la platafor
 
 La API web permite hacer las mismas operaciones que el servicio de organización, pero las presenta con estilo RESTful. OData v4 permite usar operaciones con nombre mediante *funciones* o *acciones*. La mayoría de los mensajes disponibles en el servicio de organización se exponen como una función o acción con nombre correspondiente. Esos mensajes que se corresponden con operaciones CRUD no están disponibles en la API web porque, al ser un servicio, RESTful, tienen implementaciones que usan los métodos HTTP GET, POST, PATCH y DELETE, pero dentro de la plataforma los mensajes *recuperar*, *crear*, *actualizar* y *eliminar* solo se invocan tal cual cuando se realizan las operaciones correspondientes mediante los ensamblados de .NET Framework.
 
+## <a name="getting-started"></a>Introducción
+
+Ahora que ha leído una descripción general de la API web, vaya al tema [Introducción a la API web de Common Data Service](get-started-dynamics-365-web-api-csharp.md) para aprender a escribir en Visual Studio su primer programa C# que usa la API web.
+
+Si es desarrollador de JavaScript y desea utilizar la API web en aplicaciones basadas en modelos, vaya a [JavaScript del lado del cliente utilizando la API web en aplicaciones basadas en modelos](get-started-web-api-client-side-javascript.md).
   
 ### <a name="related-sections"></a>Secciones relacionadas
 

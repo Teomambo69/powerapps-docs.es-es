@@ -10,12 +10,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: ee265ae0c82cc6b8fe82595ae555b989579177d2
-ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
+ms.openlocfilehash: 1d53a01d91822743311d350ddfce7733aba3f661
+ms.sourcegitcommit: 6fce86edacd9bfe49f8114a2a69bc18302cd01f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3218537"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260662"
 ---
 # <a name="common-issues-and-workarounds"></a>Problemas comunes y soluciones alternativas
 
@@ -102,17 +102,21 @@ Error  **Error en la importación de la solución: el tamaño del contenido de r
     <PcfBuildMode>production</PcfBuildMode>
   </PropertyGroup>
   ```
-## <a name="solution-checker-issue"></a>Problema con el comprobador de soluciones
 
-**Error: No usa la función 'eval' o sus equivalentes funcionales.**
+## <a name="when-running-power-apps-checker-with-the-solution-built-using-cli-tooling-in-default-configuration"></a>Al ejecutar el comprobador de Power Apps con la solución creada mediante herramientas CLI en la configuración predeterminada
 
-Este error ocurre cuando el usuario crea, construye y empaqueta componentes de código usando CLI y crea un archivo de solución usando `msbuild` e importa el archivo de solución a Common Data Service y ejecuta el corrector de soluciones.
+**Error: No use la función 'eval' o sus equivalentes funcionales**. Esta advertencia se muestra por diseño, ya que la configuración predeterminada de `msbuild` es `Configuration=Debug`. Esto a su vez indica a webpack (módulo usado para agrupar el componente de código) que empaquete en modo de desarrollo, lo que emite `eval()`. 
 
 **Solución alternativa**
 
-Vuelva a compilar el archivo de solución con el siguiente comando y reimporte la solución en Common Data Service y ejecute el comprobador de soluciones.
+Vuelva a generar el archivo de solución utilizando cualquiera de los comandos siguientes y vuelva a importar la solución en Common Data Service.
+
 ```CLI
 msbuild/property:configuration:Release
+```
+
+```CLI
+npm run build -- --buildMode production
 ```
 
 ## <a name="power-apps-component-framework-datasets-getvalue-by-property-alias-doesnt-work"></a>La función getValue de los conjuntos de datos de Power Apps component framework por alias de propiedad no funciona

@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: edb149b72716eb22e97ffce2d54a14be3bf84de5
-ms.sourcegitcommit: af653cd30f5879fea97a594d458d355fe18f4834
+ms.openlocfilehash: 12cc43b30b48c9bcfbb735939ad93ace1a7382c7
+ms.sourcegitcommit: 81d6996e870b55797372429d66f9b56a7200d154
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "3258535"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270520"
 ---
 # <a name="make-model-driven-app-grids-lists-editable-using-the-editable-grid-custom-control"></a>Crear cuadrículas (listas) editables de aplicaciones controladas por modelos mediante el control personalizado Cuadrícula editable
 
@@ -145,7 +145,9 @@ Los siguientes tipos de datos no se pueden editar en cuadrículas editables: cam
 ## <a name="group-by-views-work-on-client-side-only"></a>Agrupar por vistas solo funciona en el lado del cliente
 El comportamiento de agrupación solo funciona en el lado del cliente y no abarca páginas. Agrupar por es una función exclusiva del cliente y funciona solo en una página de datos. Agrupar por no le muestra todas las opciones basadas en su conjunto de datos completo en el servidor. Agrupar por muestra la agrupación solo en la página actual. Puede deshabilitar la agrupación utilizando la propiedad en la configuración de control personalizado. Más información: [Hacer que las cuadrículas principales sean editables](#make-main-grids-editable)
 
- 
+## <a name="business-rules-work-only-if-conditional-field-is-a-column-on-the-grid"></a>Las reglas de negocio solo funcionan si el campo condicional es una columna en la cuadrícula
+Las reglas de negocio en una cuadrícula editable solo se admiten si el campo condicional también es una columna en la cuadrícula. Si el campo no es una columna, las reglas de negocio no funcionan. Compruebe que cada campo al que se hace referencia en la regla de negocio también está incluido en el formulario. Tenga en cuenta que las reglas de negocio en una cuadrícula editable no se activarán si la cuadrícula editable está configurada en un panel.
+
 ## <a name="next-steps"></a>Pasos siguientes  
  [Usar métodos abreviados de teclado en cuadrículas editables](https://docs.microsoft.com/dynamics365/customer-engagement/basics/keyboard-shortcuts#editable-grids-views)
 

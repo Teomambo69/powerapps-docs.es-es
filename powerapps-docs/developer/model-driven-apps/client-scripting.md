@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 39f462daeb86dae724aa5b9cde7e7d0a3c9a5d6e
-ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
+ms.openlocfilehash: 27ca63ba1db97d7c5c63e72230852ab4e64617e7
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3162029"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276204"
 ---
 # <a name="apply-business-logic-using-client-scripting-in-model-driven-apps-using-javascript"></a>Aplicar la lógica de negocios usando scripting de cliente en aplicaciones basadas en modelos que usan JavaScript
 
@@ -34,6 +34,7 @@ Sin embargo, si el requisito empresarial no se puede conseguir con una regla de 
 ## <a name="use-client-scripting-in-model-driven-apps"></a>Usar el scripting de cliente en aplicaciones basadas en modelos
 
 Los formularios en las aplicaciones basadas en modelos son útiles para mostrar los datos al usuario. Un formulario en aplicaciones basadas en modelos puede contener elementos como campos, un formulario rápido o una cuadrícula. Un [evento](clientapi/events-forms-grids.md) se produce en formularios de aplicaciones basadas en modelos cuando:
+
 - Se carga un formulario
 - Se cambian los datos en un campo o un elemento dentro del formulario
 - Se guardan datos en un formulario
@@ -59,6 +60,6 @@ Las aplicaciones basadas en modelos proporcionan un amplio conjunto de **API de 
 ### <a name="related-topics"></a>Temas relacionados
 
 [Recursos web para aplicaciones basadas en modelos](web-resources.md)<br/>
-[Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)<br/>
+[Personalizar comandos y la cinta de opciones](customize-commands-ribbon.md)<br/>
 
 

@@ -2,7 +2,7 @@
 title: Atributos de imagen (Common Data Service) | Microsoft Docs
 description: Obtenga información sobre los atributos de imagen que almacenan datos de imagen, atributos de soporte, recuperando datos de imagen y cargando datos de imagen.
 ms.custom: ''
-ms.date: 02/11/2020
+ms.date: 04/27/2020
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 79cacd85ae1478ed43ee21e499fdfd4b1e606c14
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 924fb17728ff1681bcba3d4dd60dc6723156694e
+ms.sourcegitcommit: 9f83d4c09f09256493bc5d49c7b4a4fc02d9342a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156184"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3293009"
 ---
 # <a name="image-attributes"></a>Atributos de imagen
 
 Algunas entidades del sistema y todas las entidades personalizadas admiten imágenes. Esas entidades que admiten imágenes pueden contener una miniatura y una imagen principal de tamaño completo. La imagen en miniatura se puede ver en la aplicación web al ver los datos del formulario de la entidad. Puede haber varios atributos de imagen múltiples en una instancia de entidad pero únicamente puede haber una imagen principal. Sin embargo, puede cambiar la imagen principal de una imagen a otra estableciendo [IsPrimaryImage](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata.isprimaryimage?view=dynamics-general-ce-9#Microsoft_Xrm_Sdk_Metadata_ImageAttributeMetadata_IsPrimaryImage) para ese atributo en `true`. Cada atributo de imagen de tamaño completo está limitada a 30 MB de tamaño. El <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.SchemaName> del atributo de imagen de entidad es `EntityImage`. Más información: [Imágenes de entidad](/dynamics365/customer-engagement/developer/introduction-entities#entity-images).
 
-Las imágenes en miniatura y los metadatos de imagen se almacenan en Common Data Service, que incluye la información necesaria para recuperar la imagen completa. Las imágenes completas se almacenan en el almacenamiento de archivos en el blob de Azure para reducir el consumo de almacenamiento de datos.
+Las imágenes en miniatura y los metadatos de las imágenes se almacenan en Common Data Service, que incluye la información necesaria para recuperar la imagen completa. Las imágenes completas se almacenan en el almacenamiento de archivos en el blob de Azure para reducir el consumo de almacenamiento de datos.
 
 API web (REST) | .NET API (SOAP) 
 ------- | -------
@@ -33,6 +33,9 @@ API web (REST) | .NET API (SOAP)
 IsPrimaryImage, MaxHeight, MaxWidth | [IsPrimaryImage](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata.isprimaryimage?view=dynamics-general-ce-9#Microsoft_Xrm_Sdk_Metadata_ImageAttributeMetadata_IsPrimaryImage), [MaxHeight](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata.maxheight?view=dynamics-general-ce-9), [MaxWidth](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata.maxwidth?view=dynamics-general-ce-9)
 
 Además de atributos de imagen, las entidades personalizadas admiten cero o más atributos de archivo que pueden contener datos de cualquier archivo. Estos atributos de archivo pueden contener una cantidad mucho mayor de datos que atributos de imagen. Para obtener más información, vea [Editar atributos](file-attributes.md).
+
+> [!NOTE]
+> En <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.SdkClientVersion> 9.0.45.329 o superior y la API web versión 9.1 o superior se admiten la capacidad de almacenar más de un atributo de imagen en una instancia de entidad, el almacenamiento de datos de imagen en un blob de Azure, un tamaño máximo de imagen de 30 MB y atributos de archivo.
 
 <a name="BKMK_SupportingAttributes"></a>   
 ## <a name="supporting-attributes"></a>Atributos compatibles  

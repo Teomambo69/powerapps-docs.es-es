@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 80c604cf7595d64a946fab9faf186339d732eb5e
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 2d1f2de34d18db03ef782d511595ccff54329b5f
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115664"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275832"
 ---
 # <a name="create-manage-and-publish-model-driven-apps-using-code"></a>Crear, administrar, y publicar aplicaciones basadas en modelos con código
 
@@ -32,6 +32,7 @@ Además de crear una aplicación basada en modelos usando el diseñador de aplic
 > No tiene que escribir código para crear aplicaciones basadas en modelos si no es necesario. El diseñador de aplicaciones proporciona una experiencia mucho más sencilla e intuitiva para la creación de aplicaciones basadas en modelos sin necesidad de escribir código mediante el suministro de una estructura de información basada en ventanas y una interfaz simplificada. Consúltelo aquí: [Diseñar aplicaciones basadas en modelos mediante el diseñador de aplicaciones](../../maker/model-driven-apps/design-custom-business-apps-using-app-designer.md)  
   
 La creación de una aplicación basada en modelos implica los pasos siguientes:
+
 1. Crear una instancia [entidad AppModule](../common-data-service/reference/entities/appmodule.md) para definir la aplicación y sus propiedades.
 2. Agregar o quitar componentes de la aplicación como la entidad, el mapa del sitio y otros componentes de su aplicación personalizada mediante las acciones <xref:Microsoft.Dynamics.CRM.AddAppComponents> y <xref:Microsoft.Dynamics.CRM.RemoveAppComponents>.
 3. Comprobar que la aplicación tenga todos los componentes necesarios que faltan mediante la función <xref:Microsoft.Dynamics.CRM.ValidateApp>.
@@ -44,6 +45,7 @@ La creación de una aplicación basada en modelos implica los pasos siguientes:
 Para poder crear una aplicación debe disponer del rol de seguridad de Administrador del sistema o de Personalizador del sistema o permisos equivalentes. 
 
 Especifique como mínimo las siguientes propiedades para crear una aplicación:
+
 - **name**: único para la aplicación
 - **uniquename**: puede ser diferente del nombre de la aplicación y solo puede tener caracteres en inglés y números. Al crear esta aplicación, el nombre se antepone automáticamente con su prefijo de editor de soluciones (por ejemplo, 'new_'). 
 - **webresourceid**: identificador de los recursos web que desea establecer como el icono de imagen de la aplicación. El sistema proporciona un recurso web predeterminado (identificador: 953b9fac-1e5e-e611-80d6-00155ded156f) que puede usar como icono de la aplicación.
@@ -77,6 +79,7 @@ OData-EntityId: [Organization URI]/api/data/v9.0/appmodules(dd621d4a-d898-e711-8
 Puede agregar o quitar componentes de una aplicación como el mapa del sitio, la entidad, el panel, los flujos de procesos empresariales, las vistas y los formularios que desea incluir en su aplicación basada en modelos. Para obtener información detallada sobre los componentes que se pueden agregar a una aplicación basada en modelos, vea [Agregar o editar componentes de la aplicación en el diseñador de aplicaciones](../../maker/model-driven-apps/add-edit-app-components.md).
 
 Utilice la acción <xref:Microsoft.Dynamics.CRM.AddAppComponents> o el mensaje <xref:Microsoft.Crm.Sdk.Messages.AddAppComponentsRequest> para agregar componentes a la aplicación basada en modelos. La acción requiere que especifique lo siguiente:
+
 - **AppId**: identificador de la aplicación en la que desea agregar componentes
 - **Components** Una colección de componentes que se va a agregar. Debe especificar el identificador y el tipo de entidad del componente que desea agregar. Para obtener una lista de los tipos de entidad en la API web de Common Data Service, consulte <xref:Microsoft.Dynamics.CRM.EntityTypeIndex>.
 

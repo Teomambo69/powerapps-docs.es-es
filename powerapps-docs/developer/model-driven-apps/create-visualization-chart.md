@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 48245a8034c8dde9da77e7cbd6e2c8d9163bb5d5
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: ef9bb60a64b4b7b88d252fcfbbc99e74307eb298
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115868"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275840"
 ---
 # <a name="create-a-visualization-chart"></a>Crear una visualización (gráfico)
 
@@ -72,7 +72,7 @@ _orgOwnedVisualizationId = _serviceProxy.Create(newWebResourceVisualization);
   
 ```  
   
- Si desea crear una visualización del recurso web mediante la aplicación web Dynamics 365 Common Data Service, debe crear un archivo XML en el siguiente formato y después usar **Importar gráfico** en la cinta de opciones para importar la visualización.  
+ Si desea crear una visualización del recurso web mediante la aplicación web de Common Data Service, debe crear un archivo XML en el siguiente formato, y después usar **Importar gráfico** en la cinta de opciones para importar la visualización.  
   
 ```xml  
 <visualization>  

@@ -2,7 +2,7 @@
 title: Exportar a lago de datos | Microsoft Docs
 description: Obtenga información sobre cómo exportar datos de entidades a un lago de datos de Azure en Power Apps
 ms.custom: ''
-ms.date: 03/04/2020
+ms.date: 04/27/2020
 ms.reviewer: Mattp123
 ms.service: powerapps
 ms.suite: ''
@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 04913c04d6f8209ed3d0a11105964627eec96220
-ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
+ms.openlocfilehash: 52ab32a0ddf27a2a6be3566305655399918b01e4
+ms.sourcegitcommit: 51fa748cde4ea81e918dae1b39f9dca1d6e4e546
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3119921"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3292087"
 ---
 # <a name="export-entity-data-to-azure-data-lake-storage-gen2"></a>Exportar datos de entidad a Azure Data Lake Storage Gen2
 
@@ -44,7 +44,7 @@ Exportar a Data Lake proporciona estas características:
 
 ## <a name="how-data-and-metadata-are-exported"></a>Cómo se exportan los datos y los metadatos
 
-El servicio Export to Data Lake admite escrituras iniciales e incrementales para datos y metadatos de entidad. Cualquier cambio de datos o metadatos en Common Data Service se inserta automáticamente en el lago de datos sin ninguna acción adicional. Se trata de una operación de inserción en lugar de extracción. Los cambios se insertan en el destino sin necesidad de configurar intervalos de actualización. 
+El servicio Export to Data Lake admite escrituras iniciales e incrementales para datos y metadatos de entidad. Cualquier cambio de datos o metadatos en Common Data Service se inserta automáticamente en el lago de datos sin ninguna acción adicional. Se trata de una operación de inserción en lugar de extracción. Los cambios se envían al destino sin necesidad de configurar intervalos de actualización. 
 
 Se pueden exportar entidades estándar y personalizadas. Tenga en cuenta que el atributo de entidad de seguimiento de cambios en Common Data Service se utiliza para mantener los datos sincronizados de forma eficiente detectando qué datos se han modificado desde se extrajeron inicialmente o se sincronizaron por última vez. 
 
@@ -88,6 +88,9 @@ Siga los pasos en el artículo  [Crear una cuenta Azure Storage](/azure/storag
    > ![Seleccionar entidades para exportar](media/export-data-lake-select-entity.png "Seleccionar entidades para exportar")
 
 Su entorno de Common Data Service está vinculado a la cuenta de Azure Data Lake Storage Gen2. El sistema de archivos en la cuenta de almacenamiento de Azure se crea con una carpeta para cada entidad seleccionada para replicarla en el lago de datos. 
+
+> [!NOTE]
+> Los datos exportados por el servicio Exportar al lago de datos se cifran en reposo en Azure Data Lake Storage Gen2. Además, los datos transitorios en el Blob Storage también se cifran en reposo. El cifrado en Azure Data Lake Storage Gen2 lo ayuda a proteger sus datos, implementar políticas de seguridad empresarial y cumplir con los requisitos de cumplimiento normativo. Más información: [Encriptación de datos en reposo de Azure]( /azure/security/fundamentals/encryption-atrest)
 
 ## <a name="manage-entity-data-to-the-data-lake"></a>Administrar los datos de entidad en el lago de datos
 

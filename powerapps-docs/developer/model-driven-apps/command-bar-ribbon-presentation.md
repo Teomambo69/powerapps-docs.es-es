@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ed08b46825e5cbf4d4045fe95df8266d326a4a44
-ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
+ms.openlocfilehash: b4eda2dd6d5414a60837729a18a3ff62632033a4
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172587"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275856"
 ---
 # <a name="command-bar-or-ribbon-presentation"></a>Presentación de la barra de comandos o la cinta de opciones
 
@@ -104,7 +104,7 @@ Los datos que definen comandos en Common Data Service se pueden mostrar en varia
   También hay un elemento preexistente de `<CrmClientTypeRule>`, pero el atributo de `Type` del elemento solo puede distinguir entre clientes `Web` y de `Outlook`. Esta regla evaluará el cliente de Dynamics 365 para tabletas como cliente web.  
   
 ### <a name="see-also"></a>Vea también  
- [Personalización de comandos y la cinta de opciones](customize-commands-ribbon.md)   
+ [Personalizar comandos y la cinta de opciones](customize-commands-ribbon.md)   
  [Cintas de opciones disponibles](/dynamics365/customer-engagement/developer/customize-dev/ribbons-available-microsoft-dynamics-365)   
  [Exportar definiciones de cinta de opciones](export-ribbon-definitions.md)   
  [Solución de problemas de cinta](https://support.microsoft.com/help/4552163)
